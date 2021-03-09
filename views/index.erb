@@ -1,0 +1,15 @@
+
+<div class="pokemon-filter">	
+	<div class="filter-title">Select Rom</div>
+	<select name="rom" id="rom-select">
+		<% @roms.each do |rom| %>
+		    <option value="<%= rom %>"><%= rom %></option>
+	    <% end %>
+	</select>		
+	
+	<button class="btn -default" id="load-rom" type="button">Load</button>
+</div>
+
+<div class="pokemon-list">
+
+

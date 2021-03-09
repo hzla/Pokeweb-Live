@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta name="theme-color" content="#000000">
+	<title>My Poketool</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="/scripts/autocomplete.js"></script>
+	<script src="/scripts/index.js"></script>
+	<link href="/stylesheets/main.css" rel="stylesheet">
+	<link href="/stylesheets/autocomplete.css" rel="stylesheet">
+</head>
+
+	<body>
+		<div id="header">
+			<a class="header-item" href="/roms/new">
+				Export
+			</a>
+			<a class="header-item" href="/roms/new">
+				New
+			</a>
+		</div>
+		<div id="root">
+			<%= yield %>
+		</div>
+		<div id="wait-loading">Loading...</div>
+	</body>
+</html>

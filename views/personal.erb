@@ -1,0 +1,128 @@
+<div class="pokemon-filter">	
+	<div class="filter-title">Search Text</div>
+	<input class="filter-input" id="search-text"/>
+	<button class="btn -default" id="search-text-btn" type="button">Search</button>			
+	<div class="filter-title">Generation</div>
+	<div class="small-filters gen-filters">
+		<button class="btn -default btn-5" type="button">1</button>
+		<button class="btn -default btn-5" type="button">2</button>
+		<button class="btn -default btn-5" type="button">3</button>
+		<button class="btn -default btn-5" type="button">4</button>
+		<button class="btn -default btn-5" type="button">5</button>
+	</div>
+	<div class="filter-title">Types</div>
+	<div class="small-filters type-filters">
+		<button class="btn -default btn-5 -normal" data-ptype="normal" type="button">NOR</button>
+		<button class="btn -default btn-5 -fire" data-ptype="fire" type="button">FIR</button>
+		<button class="btn -default btn-5 -water" data-ptype="water" type="button">WAT</button>
+		<button class="btn -default btn-5 -electric" data-ptype="electric" type="button">ELE</button>
+		<button class="btn -default btn-5 -grass" data-ptype="grass" type="button">GRA</button>
+		<button class="btn -default btn-5 -ice" data-ptype="ice" type="button">ICE</button>
+		<button class="btn -default btn-5 -fighting" data-ptype="fighting" type="button">FIG</button>
+		<button class="btn -default btn-5 -poison" data-ptype="poison" type="button">POI</button>
+		<button class="btn -default btn-5 -ground" data-ptype="ground" type="button">GRO</button>
+		<button class="btn -default btn-5 -flying" data-ptype="flying" type="button">FLY</button>
+		<button class="btn -default btn-5 -psychic" data-ptype="psychic" type="button">PSY</button>
+		<button class="btn -default btn-5 -bug" data-ptype="bug" type="button">BUG</button>
+		<button class="btn -default btn-5 -rock" data-ptype="rock" type="button">ROC</button>
+		<button class="btn -default btn-5 -ghost" data-ptype="ghost" type="button">GHO</button>
+		<button class="btn -default btn-5 -dragon" data-ptype="dragon" type="button">DRA</button>
+		<button class="btn -default btn-5 -dark" data-ptype="dark" type="button">DAR</button>
+		<button class="btn -default btn-5 -steel" data-ptype="steel" type="button">STE</button>
+		<button class="btn -default btn-5 -fairy" data-ptype="fairy" type="button">FAI</button>
+	</div>
+	<button class="btn -default" id="toggle-sheets" type="button">Spreadsheet View</button>
+</div>
+
+<div class="pokemon-list">
+	<% @pokemons.each do |pok|  %>
+		<% if pok %>
+		<div class="pokemon-card" data-gen="<%= to_gen pok["index"] %>" data-index=<%= pok["index"] %>>
+			<div class="pokemon-card__info">
+				<div class="pokemon-card__header">
+					<!-- <div class="pokemon-card__img"><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/<%= pok["index"] %>.png" alt="charizard"></div> -->
+					<div class="pokemon-card__id">#<%= pok["index"] %></div>
+				</div>
+				<div class="pokemon-card__name"><%= pok["name"].titleize %></div>
+				<div class="pokemon-types">
+					<div data-autofill="types" data-field-name="type_1" class="pokemon-type -<%= pok["type_1"].downcase %>" contenteditable="true" data-autocomplete-spy><%= pok["type_1"] %></div>
+					<div data-autofill="types" data-field-name="type_2" class="pokemon-type -<%= pok["type_2"].downcase %>" contenteditable="true" data-autocomplete-spy><%= pok["type_2"] %></div>
+				</div>
+				<div class="pokemon-card__abilities">
+					<div data-autofill="abilities" data-autocomplete-spy data-field-name="ability_1" class="pokemon-card__ability" contenteditable="true"><%= pok["ability_1"].titleize  %></div>
+					<div data-autofill="abilities" data-autocomplete-spy data-field-name="ability_2" class="pokemon-card__ability" contenteditable="true"><%= pok["ability_2"].titleize  %></div>
+					<div data-autofill="abilities" data-autocomplete-spy data-field-name="ability_3" class="pokemon-card__ability" contenteditable="true"><%= pok["ability_3"].titleize  %></div>
+				</div>
+			</div>
+			<table class="pokemon-card__table" cellspacing="0">
+				<tbody>		
+					<% Personal.base_stat_fields.each do |bs_info| %>
+						<tr>
+							<td>
+								<strong><%= bs_info[0] %></strong>
+							</td>
+							<td data-field-name="<%= bs_info[1] %>" contenteditable="true"><%= pok[bs_info[1]] %></td>
+							<td>
+								<div class="pokemon-card__graph-wrapper">
+									<div class="pokemon-card__graph -medium" style="width: calc(100% * (<%= pok[bs_info[1]] %> / 255));"></div>
+								</div>
+							</td>
+						</tr>
+					<% end %>
+				</tbody>
+			</table>
+			<div class="expanded-card-content">
+				<div class="expanded-left">
+					<% Personal.misc_integer_fields.each do |misc| %>
+						<div class="expanded-field">
+							<div class="expanded-field-name"><%= misc[0] %></div>
+							<div data-field-name="<%= pok[misc[1]] %>" class="expanded-field-value" contenteditable="true"><%= pok[misc[1]] %></div>
+						</div>
+					<% end %>
+				
+				</div>
+				<div class="expanded-mid">
+					<% Personal.text_fields.each do |txt_info| %>
+						<div class="expanded-field">
+							<div class="expanded-field-name"><%= txt_info[0] %></div>
+							<div data-autocomplete-spy data-field-name="<%= txt_info[1] %>" class="expanded-field-value" contenteditable="true" data-autofill="<%= txt_info[2] %>"><%= pok[txt_info[1]].titleize %></div>
+						</div>
+					<% end %>
+				</div>
+				<div class="expanded-right">				
+					<% Personal.ev_yield_fields.each do |ev_info| %>
+						<div class="expanded-field">
+							<div class="expanded-field-name"><%= ev_info[0] %> EVs</div>
+							<div data-field-name="<%= ev_info[1] %>" class="expanded-field-value" contenteditable="true"><%= pok[ev_info[1]] %></div>
+					</div>
+					<% end %>
+				</div>
+				<i class="arrow up retract-card"></i>
+			</div>
+			<i class="arrow down expand-card"></i>
+		</div>
+		<% end %>
+	<% end %>
+</div>
+
+
+<script>
+	// json object for filtering
+	pokemons = <%= @poke_data.to_json %>
+
+	// info for autocomplete
+	autofills = {
+		<% [:types, :abilities, :items, :egg_groups, :growth_rates].each do |info| %>
+		"<%= info.to_s %>": <%= RomInfo.send(info) %>,
+	<% end %>
+	}
+
+	// load rest of pokemon (11 to end)
+	$( document ).ready(function() {
+		$('#wait-loading').show()
+		$.get(window.location.href + "/collection", function(data){
+			$('.pokemon-list').append(data)
+			$('#wait-loading').hide()
+		})
+	})	
+</script>
