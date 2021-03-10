@@ -6,18 +6,16 @@ install ruby >= 2.6
 
 install python > 3.6
 
-open cmd.exe or terminal and type:
+open cmd.exe or terminal 
+
+
+navigate to folder in cmd or terminal and type:
 
 bundle install
 
 pip install ndspy
 
-
-navigate to folder in cmd and type
-
 ruby routes.rb
-
-
 
 check localhost:4567 in browser
 
