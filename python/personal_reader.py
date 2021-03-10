@@ -4,6 +4,8 @@ import ndspy.narc
 import code 
 import io
 import os
+import os.path
+from os import path
 import json
 import copy
 
@@ -11,14 +13,21 @@ import copy
 
 ######################### FILE SPECIFIC CONSTANTS #############################
 
-ROM_NAME = 'moddedblack'
+def set_global_vars():
+	global ROM_NAME, TYPES, EGG_GROUPS, GROWTHS, ABILITIES, ITEMS, POKEDEX
+	
+	ROM_NAME = 'moddedblack'
 
-TYPES = ["Normal", "Fighting", "Flying", "Poison", "Ground", "Rock", "Bug", "Ghost", "Steel", "Fire", "Water","Grass","Electric","Psychic","Ice","Dragon","Dark","Fairy"]
-EGG_GROUPS = ["~","Monster","Water 1","Bug","Flying","Field","Fairy","Grass","Human-Like","Water 3","Mineral","Amorphous","Water 2","Ditto","Dragon","Undiscovered"];
-GROWTHS = ["Medium Fast","Erratic","Fluctuating","Medium Slow","Fast","Slow","Medium Fast","Medium Fast"]
-ABILITIES = open(f'{ROM_NAME}/texts/abilities.txt', "r").read().splitlines() 
-ITEMS = open(f'{ROM_NAME}/texts/items.txt', mode="r").read().splitlines()
-POKEDEX = open(f'{ROM_NAME}/texts/pokedex.txt', "r").read().splitlines()
+	with open(f'session_settings.json', "r") as outfile:  
+		settings = json.load(outfile) 
+		ROM_NAME = settings['rom_name']
+
+	TYPES = ["Normal", "Fighting", "Flying", "Poison", "Ground", "Rock", "Bug", "Ghost", "Steel", "Fire", "Water","Grass","Electric","Psychic","Ice","Dragon","Dark","Fairy"]
+	EGG_GROUPS = ["~","Monster","Water 1","Bug","Flying","Field","Fairy","Grass","Human-Like","Water 3","Mineral","Amorphous","Water 2","Ditto","Dragon","Undiscovered"];
+	GROWTHS = ["Medium Fast","Erratic","Fluctuating","Medium Slow","Fast","Slow","Medium Fast","Medium Fast"]
+	ABILITIES = open(f'{ROM_NAME}/texts/abilities.txt', "r").read().splitlines() 
+	ITEMS = open(f'{ROM_NAME}/texts/items.txt', mode="r").read().splitlines()
+	POKEDEX = open(f'{ROM_NAME}/texts/pokedex.txt', "r").read().splitlines()
 
 PERSONAL_NARC_FORMAT = [[1, "base_hp"],
 [1,	"base_atk"],
@@ -57,6 +66,7 @@ PERSONAL_NARC_FORMAT = [[1, "base_hp"],
 
 
 def output_json(narc):
+	set_global_vars()
 	data_index = 0
 	for data in narc.files:
 		data_name = data_index
@@ -139,30 +149,6 @@ def to_readable(raw, file_name):
 		 index -= 2
 
 	return readable
-
-
-def write_readable_to_raw(file_name):
-	personal_data = {}
-	with open(f'{ROM_NAME}/json/personal/{file_name}.json', "r", encoding='ISO8859-1') as outfile:  
-		
-		personal_data = json.load(outfile)
-		
-
-
-
-
-		new_raw_data = to_raw(personal_data["readable"])
-		personal_data["raw"] = new_raw_data
-
-	print(personal_data)
-
-		
-
-	with open(f'{ROM_NAME}/json/personal/{file_name}.json', "w", encoding='ISO8859-1') as outfile: 
-
-		json.dump(personal_data, outfile)
-
-
 
 def read_bytes(stream, n):
 	return int.from_bytes(stream.read(n), 'little')

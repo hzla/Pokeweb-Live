@@ -7,7 +7,7 @@ import codecs
 import os
 import json
 import msg_reader
-import personal_reader
+from personal_reader import output_json
 # code.interact(local=dict(globals(), **locals()))
 
 
@@ -90,16 +90,7 @@ for msg_bank in BW_MSG_BANKS:
 	    			# f.write(str(entry.encode("UTF-8")))
 	    		f.write("\n")
 
-#############################################################
 
-################### CONVERT TO JSON #########################
-
-
-personal_narc_data = ndspy.narc.NARC(rom.files[narc_info["personal"]])
-personal_reader.output_json(personal_narc_data)
-
-
-### TODO IMPLEMENT READERS FOR OTHER NARCS
 
 
 ##############################################################
@@ -112,3 +103,15 @@ settings.update(narc_info)
 
 with open(f'session_settings.json', "w") as outfile:  
 	json.dump(settings, outfile) 
+
+#############################################################
+################### CONVERT TO JSON #########################
+
+
+personal_narc_data = ndspy.narc.NARC(rom.files[narc_info["personal"]])
+output_json(personal_narc_data)
+
+
+### TODO IMPLEMENT READERS FOR OTHER NARCS
+
+
