@@ -6,7 +6,7 @@ install ruby >= 2.6
 
 install python > 3.6
 
-open cmd.exe and type:
+open cmd.exe or terminal and type:
 
 bundle install
 
