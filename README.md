@@ -3,11 +3,13 @@
 
 
 install ruby >= 2.6
+
 install python > 3.6
 
 open cmd.exe and type:
 
 bundle install
+
 pip install ndspy
 
 
