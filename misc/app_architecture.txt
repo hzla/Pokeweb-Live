@@ -5,7 +5,7 @@ APP ARCHITECTURE
 
 ROM LOADING/NARC EXTRACTION
 
-python extracts rom narcs and converts narcs to json (rom_loader.py)
+rom_loader.py extracts rom narcs and converts narcs to json 
 json, narcs, texts are stored in /ROM_NAME
 
 current rom name is stored in session_settings.json, this is what tells the app you have an in progress project
@@ -30,25 +30,38 @@ ruby renders html from the json files using the "readable" portion (routes.rb, v
 
 USER INTERFACE
 
+when user makes an edit
+
 user edits are sent by ajax/js to ruby endpoints defined in routes.rb 
 
 code for event bindings, and ajax calls in public/scripts/index.js
 
-ruby edits the "readable" portions of json using sent data (routes.rb)
+
 example data format sent by ajax:  {file_id: x, field_name: y, value: z}
 
 
 ===========================================================
 
-SAVING DATA
+SAVING DATA to JSON
 
-when user request to save data,
+after edit request
 
-python scripts read the "readable" sections of json, and update the "raw" section accordingly
+routes.rb edits the "readable" portions of json using sent data (routes.rb)
+routes.rb calls the appropriate *_writer.py to convert "readable" to "raw"
 
-then python updates the narcs using the "raw" json data
+*_writer.py writes the new json data
 
-narcs are then packed and rom is saved
 
 logic for reading json data and writing to narcs in *_writer.py files
+
+==================================================================
+
+EXPORTING ROM
+
+when user clicks export
+
+narcs in ROM_NAME/narcs are updated with data from ROM_NAME/json by *_writer.py files
+
+rom_saver.py packs each narc and saves a new rom to /exports/ROM_NAME.nds
+
 

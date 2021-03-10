@@ -676,7 +676,6 @@ table td {
     padding: 5px 10px;
 }
 
-
 #header {
     display: flex;
     position: fixed;
@@ -687,6 +686,7 @@ table td {
     box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
     z-index: 3;
     padding: 5px calc(18vw);
+    padding-right: 40px;
     justify-content: flex-end;
     background: white;
 }
