@@ -61,7 +61,7 @@
 							<td>
 								<strong><%= bs_info[0] %></strong>
 							</td>
-							<td data-field-name="<%= bs_info[1] %>" contenteditable="true"><%= pok[bs_info[1]] %></td>
+							<td data-type="int" data-field-name="<%= bs_info[1] %>" contenteditable="true"><%= pok[bs_info[1]] %></td>
 							<td>
 								<div class="pokemon-card__graph-wrapper">
 									<div class="pokemon-card__graph -medium" style="width: calc(100% * (<%= pok[bs_info[1]] %> / 255));"></div>
@@ -76,7 +76,7 @@
 					<% Personal.misc_integer_fields.each do |misc| %>
 						<div class="expanded-field">
 							<div class="expanded-field-name"><%= misc[0] %></div>
-							<div data-field-name="<%= pok[misc[1]] %>" class="expanded-field-value" contenteditable="true"><%= pok[misc[1]] %></div>
+							<div data-type="int" data-field-name="<%= pok[misc[1]] %>" class="expanded-field-value" contenteditable="true"><%= pok[misc[1]] %></div>
 						</div>
 					<% end %>
 				
@@ -93,7 +93,7 @@
 					<% Personal.ev_yield_fields.each do |ev_info| %>
 						<div class="expanded-field">
 							<div class="expanded-field-name"><%= ev_info[0] %> EVs</div>
-							<div data-field-name="<%= ev_info[1] %>" class="expanded-field-value" contenteditable="true"><%= pok[ev_info[1]] %></div>
+							<div data-type="int" data-field-name="<%= ev_info[1] %>" class="expanded-field-value" contenteditable="true"><%= pok[ev_info[1]] %></div>
 					</div>
 					<% end %>
 				</div>

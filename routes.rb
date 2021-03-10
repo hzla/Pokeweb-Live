@@ -8,9 +8,6 @@ require_relative 'helpers'
 require_relative 'models/models'
 
 
-# set :server, %w[thin]
-
-
 ############# ROM SETUP ROUTES ###########################
 
 get '/' do
@@ -24,7 +21,7 @@ get '/' do
 	end
 end
 
-get '/roms/new' do 
+get '/rom/new' do 
 	File.delete("session_settings.json") if File.exist?("session_settings.json")
 	redirect '/'
 end
@@ -32,13 +29,14 @@ end
 
 # only ever called with ajax
 post '/extract' do 
-	system("python python/rom_loader.py #{params[:rom_name]}")
+	system("python python/rom_loader.py")
 	content_type :json
   	{ url: "roms/#{params[:rom_name][0..-5]}/personal" }.to_json
 end
 
-get '/save_rom' do
-	$rom_name = SessionSettings.rom_name
+post '/rom/save' do
+	system("python python/rom_saver.py")
+	return "200"
 end
 
 
@@ -77,6 +75,7 @@ end
 # called by ajax when user makes an edit
 post '/personal' do 
 	Personal.write_data(params["data"])
+	system("python python/personal_writer.py update #{params['data']['file_name']}")
 	return 200
 end
 

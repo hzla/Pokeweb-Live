@@ -6,6 +6,7 @@ import io
 import os
 import json
 import copy
+import sys
 
 # code.interact(local=dict(globals(), **locals()))
 
@@ -58,22 +59,37 @@ PERSONAL_NARC_FORMAT = [[1, "base_hp"],
 [2,	"height"],
 [2,	"weight"]]
 
-
 #################################################################
 
+## TODO instead of opening and editing the entire narc repeatedly, edit a variable 
+## and edit the narc just once
+
+def output_narc():
+	json_files = os.listdir(f'{ROM_NAME}/json/personal')
+	narcfile_path = f'{ROM_NAME}/narcs/personal-{NARC_FILE_ID}.narc'
+	
+	# ndspy copy of narcfile to edit
+	personal_narc = ndspy.narc.NARC.fromFile(narcfile_path)
+
+	for f in json_files:
+		file_name = int(f.split(".")[0])
+
+		write_narc_data(file_name, PERSONAL_NARC_FORMAT, personal_narc)
+
+	old_personal_narc = open(narcfile_path, "wb")
+	old_personal_narc.write(personal_narc.save()) 
+
+	print("personal narc saved")
 
 def write_bytes(stream, n, data):
-	# code.interact(local=dict(globals(), **locals()))
-	print(data)
-	stream += (data.to_bytes(n, 'little'))
-	
-	
+	stream += (data.to_bytes(n, 'little'))		
 	return stream
-	# print(stream) 
 
 
-def write_narc_data(file_name, narc_format):
+
+def write_narc_data(file_name, narc_format, personal_narc):
 	file_path = f'{ROM_NAME}/json/personal/{file_name}.json'
+	narcfile_path = f'{ROM_NAME}/narcs/personal-{NARC_FILE_ID}.narc'
 
 	stream = bytearray() # bytearray because is mutable
 
@@ -84,25 +100,27 @@ def write_narc_data(file_name, narc_format):
 		for entry in narc_format: 
 			data = personal_data["raw"][entry[1]]
 			write_bytes(stream, entry[0], data)
-
-
-	narc = open(f'{ROM_NAME}/narcs/personal-{NARC_FILE_ID}copy.narc', "wb")
-	print(stream)  	
-	narc.write(stream) 
-
-
-
+	
+	narc_entry_data = bytearray(personal_narc.files[file_name])
+	narc_entry_data[0:len(stream)] = stream
+	personal_narc.files[file_name] = narc_entry_data
+	
 def write_readable_to_raw(file_name):
 	personal_data = {}
 	with open(f'{ROM_NAME}/json/personal/{file_name}.json', "r", encoding='ISO8859-1') as outfile:  	
 		personal_data = json.load(outfile)	
+		
+		
+		if personal_data["readable"] is None:
+			return
+
 		new_raw_data = to_raw(personal_data["readable"])
 		personal_data["raw"] = new_raw_data
 
 	with open(f'{ROM_NAME}/json/personal/{file_name}.json', "w", encoding='ISO8859-1') as outfile: 
 
+		print(personal_data)
 		json.dump(personal_data, outfile)
-
 
 def to_raw(readable):
 	raw = copy.deepcopy(readable)
@@ -134,7 +152,6 @@ def to_raw(readable):
 	raw["ability_2"] = ABILITIES.index(raw["ability_2"].upper())
 	raw["ability_3"] = ABILITIES.index(raw["ability_3"].upper())
 
-
 	binary_ev = bin(raw["evs"])[2:].zfill(16) 
 	bin_ev = "0000"
 
@@ -149,11 +166,15 @@ def to_raw(readable):
 	#TODO CHECK FOR DIGLET DUGTRIO FOR 13TH BIT
 	return raw
 
-
 def read_bytes(stream, n):
 	return int.from_bytes(stream.read(n), 'little')
 
-	
 
-write_narc_data(1, PERSONAL_NARC_FORMAT)
+
+################ If run with arguments #############
+
+if len(sys.argv) > 2 and sys.argv[1] == "update":
+	write_readable_to_raw(int(sys.argv[2]))
+	
+# output_narc()
 

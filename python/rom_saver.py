@@ -5,9 +5,11 @@ import code
 import io
 import codecs
 import os
+import os.path
+from os import path
 import json
 import msg_reader
-import personal_reader
+import personal_writer
 # code.interact(local=dict(globals(), **locals()))
 
 
@@ -42,9 +44,34 @@ rom_name = "moddedblack"
 
 
 ####################################################################
-################### WRITE JSON TO NARCS ############################
+################### WRITE NARCS TO ROM ############################
+
+personal_writer.output_narc()
 
 
 
+with open(f'{rom_name}.nds', 'rb') as f:
+    data = f.read()
+
+rom = ndspy.rom.NintendoDSRom(data)
+
+personal_narc_file_id = 258
+with open(f'session_settings.json', "r") as outfile:  
+	settings = json.load(outfile) 
+	personal_narc_file_id = settings["personal"]
+personal_narc_filepath = f'{rom_name}/narcs/personal-{personal_narc_file_id}.narc'
+
+rom.files[personal_narc_file_id] = open(personal_narc_filepath, 'rb').read()
+
+print("attempting save")
+
+
+
+
+if path.exists(f'exports'):
+	rom.saveToFile(f'exports/{rom_name}.nds')
+else:
+	os.makedirs('exports')
+	rom.saveToFile(f'exports/{rom_name}.nds')
 
 

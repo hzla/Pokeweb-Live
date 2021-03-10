@@ -704,6 +704,7 @@ table td {
 
 .header-item:hover {
     background: #27ae60;
+    cursor: pointer;
 }
 
 #wait-loading {

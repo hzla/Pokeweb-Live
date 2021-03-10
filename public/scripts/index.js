@@ -4,7 +4,7 @@ $( document ).ready(function() {
 ///////////////////// EVENT BINDINGS //////////////////////////
     
 
-    //////////////// LOAD Rom Button //////////////////
+    //////////////// Rom Buttons //////////////////
     
     $(document).on('click', '#load-rom', function(){
         var rom_name = $('#rom-select').val()
@@ -12,6 +12,17 @@ $( document ).ready(function() {
         $.post( "extract", {rom_name: rom_name }, function( data ) {
           window.location.href = data["url"]
         });
+    })
+
+    $(document).on('click', '#save-rom', function(){
+    	btn = $(this)
+    	btn.text('Exporting...')
+        
+        $.post( "/rom/save", function( data ) {
+        	alert("saved to /exports folder")
+        	btn.text('Export')
+        });
+
     })
 
 
@@ -60,6 +71,11 @@ $( document ).ready(function() {
 		data["file_name"] = index
 		data["field"] = field_name
 		data["value"] = value
+		
+		if ($(this).attr('data-type') == "int") {
+			data["int"] = true
+		}
+
 		console.log(data)
 
 		$.post( "/personal", {"data": data }, function( data ) {
