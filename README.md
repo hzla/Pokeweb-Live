@@ -1,5 +1,6 @@
-# Pokeweb
-Gen V Webapp Rom Editor
+# INSTALATION 
+
+
 
 install ruby >= 2.6
 install python > 3.6
