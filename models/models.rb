@@ -12,6 +12,10 @@ class Personal
 		field_to_change = data["field"]
 		changed_value = data["value"]
 
+		if data["int"]
+			changed_value = changed_value.to_i
+		end
+
 		file_path = "#{$rom_name}/json/personal/#{file_name}.json"
 		json_data = JSON.parse(File.open(file_path, "r").read)
 
