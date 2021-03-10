@@ -1,0 +1,11 @@
+TM/HM Data begins at offset 9AAB8 in uncompressed arm9.bin file
+
+
+
+https://projectpokemon.org/home/forums/topic/16104-pok%C3%A9mon-black-and-white-changing-tms-and-hms/page/2/
+
+I noticed that the attacks are listed one after the other. For Black and White, it goes TM01-92, but then HM01-06, then TM93-95 back to back starting at offset 0x0009AAB8.
+
+I've got this handy table for people to download, as I couldn't find a similar resource: https://docs.google.com/spreadsheet/ccc?key=0AnIIigcwlIaNdDBaTm9lX200eVFsdTVlbGpCcWUtWXc&usp=sharing
+
+It lists the current TMs with number and index number in reversed hex. It lists all moves with their reversed index number. This makes for very quick and dirty editing.

@@ -69,6 +69,7 @@ for narc in BW_NARCS:
 	with open(f'{rom_name}/narcs/{narc[1]}-{file_id}.narc', 'wb') as f:
 	    f.write(file)
 
+
 #############################################################
 
 ################### EXTRACT RELEVANT TEXTS ##################
@@ -107,6 +108,7 @@ personal_reader.output_json(personal_narc_data)
 settings = {}
 settings["rom_name"] = rom_name
 settings["base_rom"] = "Pokemon Black"
+settings.update(narc_info)
 
 with open(f'session_settings.json', "w") as outfile:  
-		json.dump(settings, outfile) 
+	json.dump(settings, outfile) 

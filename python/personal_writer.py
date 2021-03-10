@@ -13,6 +13,12 @@ import copy
 
 ROM_NAME = 'moddedblack'
 
+
+NARC_FILE_ID = 258
+with open(f'session_settings.json', "r") as outfile:  
+	settings = json.load(outfile) 
+	NARC_FILE_ID = settings["personal"]
+
 TYPES = ["Normal", "Fighting", "Flying", "Poison", "Ground", "Rock", "Bug", "Ghost", "Steel", "Fire", "Water","Grass","Electric","Psychic","Ice","Dragon","Dark","Fairy"]
 EGG_GROUPS = ["~","Monster","Water 1","Bug","Flying","Field","Fairy","Grass","Human-Like","Water 3","Mineral","Amorphous","Water 2","Ditto","Dragon","Undiscovered"];
 GROWTHS = ["Medium Fast","Erratic","Fluctuating","Medium Slow","Fast","Slow","Medium Fast","Medium Fast"]
@@ -54,6 +60,37 @@ PERSONAL_NARC_FORMAT = [[1, "base_hp"],
 
 
 #################################################################
+
+
+def write_bytes(stream, n, data):
+	# code.interact(local=dict(globals(), **locals()))
+	print(data)
+	stream += (data.to_bytes(n, 'little'))
+	
+	
+	return stream
+	# print(stream) 
+
+
+def write_narc_data(file_name, narc_format):
+	file_path = f'{ROM_NAME}/json/personal/{file_name}.json'
+
+	stream = bytearray() # bytearray because is mutable
+
+	with open(file_path, "r", encoding='ISO8859-1') as outfile:  	
+		personal_data = json.load(outfile)	
+
+		#USE THE FORMAT LIST TO PARSE BYTES
+		for entry in narc_format: 
+			data = personal_data["raw"][entry[1]]
+			write_bytes(stream, entry[0], data)
+
+
+	narc = open(f'{ROM_NAME}/narcs/personal-{NARC_FILE_ID}copy.narc', "wb")
+	print(stream)  	
+	narc.write(stream) 
+
+
 
 def write_readable_to_raw(file_name):
 	personal_data = {}
@@ -118,5 +155,5 @@ def read_bytes(stream, n):
 
 	
 
-write_readable_to_raw(1)
+write_narc_data(1, PERSONAL_NARC_FORMAT)
 
