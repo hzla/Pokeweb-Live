@@ -22,6 +22,8 @@ _________________________________________
 
 check localhost:4567 in browser
 
+put any nds files to edit in root folder
+
 
 
 
