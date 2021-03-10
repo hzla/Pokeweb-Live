@@ -1,0 +1,203 @@
+[b]08-0B[/b] - TMs 01-32
+
+[b]0C-0F[/b] - TMs 33-64
+
+
+[b]OFFSET 0x0030:[/b]
+
+[b]00-03[/b] - TMs 65-92, HMs 01-04
+
+[b]04-07[/b] - HMs 05-06, TMs 93-95
+
+[b]08-0B[/b] - Special Tutors [i](first bit = farthest to the right, obviously)[/i]
+
+[spoiler]08-1: Grass Pledge (08 02)
+08-2: Fire Pledge (07 02)
+08-3: Water Pledge (06 02)
+08-4: Frenzy Plant (52 01)
+08-5: Blast Burn (33 01)
+08-6: Hydro Cannon (34 01)
+08-7: Draco Meteor (B2 01)
+08-8: ---
+
+09-1: ---
+09-2: ---
+09-3: ---
+09-4: ---
+09-5: ---
+09-6: ---
+09-7: ---
+09-8: ---
+
+0A-1: ---
+0A-2: ---
+0A-3: ---
+0A-4: ---
+0A-5: ---
+0A-6: ---
+0A-7: ---
+0A-8: ---
+
+0B-1: ---
+0B-2: ---
+0B-3: ---
+0B-4: ---
+0B-5: ---
+0B-6: ---
+0B-7: ---
+0B-8: ---[/spoiler]
+
+[b]0C-0F[/b] - Tutors #1 [i](Driftveil Tutor)[/i]
+
+[spoiler]0C-1: Bug Bite (C2 01)
+0C-2: Covet (57 01)
+0C-3: Super Fang (A2 00)
+0C-4: Dual Chop (12 02)
+0C-5: Signal Beam (44 01)
+0C-6: Iron Head (BA 01)
+0C-7: Seed Bomb (92 01)
+0C-8: Drill Run (11 02)
+
+0D-1: Bounce (54 01)
+0D-2: Low Kick (43 00)
+0D-3: Gunk Shot (B9 01)
+0D-4: Uproar (FD 00)
+0D-5: ThunderPunch (09 00)
+0D-6: Fire Punch (07 00)
+0D-7: Ice Punch (08 00)
+0D-8: ---
+
+0E-1: ---
+0E-2: ---
+0E-3: ---
+0E-4: ---
+0E-5: ---
+0E-6: ---
+0E-7: ---
+0E-8: ---
+
+0F-1: ---
+0F-2: ---
+0F-3: ---
+0F-4: ---
+0F-5: ---
+0F-6: ---
+0F-7: ---
+0F-8: ---[/spoiler]
+
+
+[b]OFFSET 0x0040:[/b]
+
+[b]00-03[/b] - Tutors #2 [i](Lentimas Tutor)[/i]
+
+[spoiler]00-1: Magic Coat (15 01)
+00-2: Block (4F 01)
+00-3: Earth Power (9E 01)
+00-4: Foul Play (EC 01)
+00-5: Gravity (64 01)
+00-6: Magnet Rise (89 01)
+00-7: Iron Defense (4E 01)
+00-8: Last Resort (83 01)
+
+01-1: Superpower (14 01)
+01-2: Electroweb (0F 02)
+01-3: Icy Wind (C4 00)
+01-4: Aqua Tail (91 01)
+01-5: Dark Pulse (8F 01)
+01-6: Zen Headbutt (AC 01)
+01-7: Dragon Pulse (96 01)
+01-8: Hyper Voice (30 01)
+
+02-1: Iron Tail (E7 00)
+02-2: ---
+02-3: ---
+02-4: ---
+02-5: ---
+02-6: ---
+02-7: ---
+02-8: ---
+
+03-1: ---
+03-2: ---
+03-3: ---
+03-4: ---
+03-5: ---
+03-6: ---
+03-7: ---
+03-8: ---[/spoiler]
+
+[b]04-07[/b] - Tutors #3 [i](Humilau Tutor)[/i]
+
+[spoiler]04-1: Bind (14 00)
+04-2: Snore (AD 00)
+04-3: Knock Off (1A 01)
+04-4: Synthesis (EB 00)
+04-5: Heat Wave (01 01)
+04-6: Role Play (10 01)
+04-7: Heal Bell (D7 00)
+04-8: Tailwind (6E 01)
+
+05-1: Sky Attack (8F 00)
+05-2: Pain Split (DC 00)
+05-3: Giga Drain (CA 00)
+05-4: Drain Punch (99 01)
+05-5: Roost (63 01)
+05-6: ---
+05-7: ---
+05-8: ---
+
+06-1: ---
+06-2: ---
+06-3: ---
+06-4: ---
+06-5: ---
+06-6: ---
+06-7: ---
+06-8: ---
+
+07-1: ---
+07-2: ---
+07-3: ---
+07-4: ---
+07-5: ---
+07-6: ---
+07-7: ---
+07-8: ---[/spoiler]
+
+[b]08-0B[/b] - Tutors #4 [i](Nacrene Tutor)[/i]
+
+[spoiler]08-1: Gastro Acid (7C 01)
+08-2: Worry Seed (84 01)
+08-3: Spite (B4 00)
+08-4: After You (EF 01)
+08-5: Helping Hand (0E 01)
+08-6: Trick (0F 01)
+08-7: Magic Room (DE 01)
+08-8: Wonder Room (D8 01)
+
+09-1: Endeavor (1B 01)
+09-2: Outrage (C8 00)
+09-3: Recycle (16 01)
+09-4: Snatch (21 01)
+09-5: Stealth Rock (BE 01)
+09-6: Sleep Talk (D6 00)
+09-7: Skill Swap (1D 01)
+09-8: ---
+
+0A-1: ---
+0A-2: ---
+0A-3: ---
+0A-4: ---
+0A-5: ---
+0A-6: ---
+0A-7: ---
+0A-8: ---
+
+0B-1: ---
+0B-2: ---
+0B-3: ---
+0B-4: ---
+0B-5: ---
+0B-6: ---
+0B-7: ---
+0B-8: ---[/spoiler]
