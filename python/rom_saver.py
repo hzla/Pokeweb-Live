@@ -48,8 +48,6 @@ rom_name = "moddedblack"
 
 personal_writer.output_narc()
 
-
-
 with open(f'{rom_name}.nds', 'rb') as f:
     data = f.read()
 
@@ -64,8 +62,6 @@ personal_narc_filepath = f'{rom_name}/narcs/personal-{personal_narc_file_id}.nar
 rom.files[personal_narc_file_id] = open(personal_narc_filepath, 'rb').read()
 
 print("attempting save")
-
-
 
 
 if path.exists(f'exports'):

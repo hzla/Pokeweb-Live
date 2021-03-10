@@ -74,9 +74,35 @@ $( document ).ready(function() {
 		
 		if ($(this).attr('data-type') == "int") {
 			data["int"] = true
+			
+			//validate int fields
+			if (!parseInt(value) || parseInt(value) > 255 ) {
+				$(this).css('border', '1px solid red')
+				return
+			}
+
+			// validate ev fields
+			if ($(this).hasClass('ev-field')) {
+				if (!parseInt(value) || parseInt(value) > 3 ) {
+					$(this).css('border', '1px solid red')
+					return
+				}
+			}
+		} else {
+			// validate string fields
+			valid_fields = autofills[$(this).attr('data-autofill')]
+			if (!valid_fields.includes(value)) {
+				$(this).css('border', '1px solid red')
+				return
+			}
 		}
 
+		$(this).css('border', '')
+
+
 		console.log(data)
+
+
 
 		$.post( "/personal", {"data": data }, function( data ) {
           console.log(data)
