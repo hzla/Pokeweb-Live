@@ -7,7 +7,10 @@ import codecs
 import os
 import json
 import msg_reader
-from personal_reader import output_json
+from personal_reader import output_personal_json
+from learnset_reader import output_learnset_json
+from moves_reader import output_moves_json
+
 # code.interact(local=dict(globals(), **locals()))
 
 
@@ -28,7 +31,7 @@ for folder in ["narcs", "texts", "json"]:
 
 BW_NARCS = [["a/0/1/6", "personal"], 
 ["a/0/1/7", "growth"],
-["a/0/1/8", "lvlupmoves"],
+["a/0/1/8", "learnsets"],
 ["a/0/1/9", "evolution"], 
 ["a/0/2/0", "babyforms"],
 ["a/0/2/1","moves"],
@@ -91,8 +94,6 @@ for msg_bank in BW_MSG_BANKS:
 	    		f.write("\n")
 
 
-
-
 ##############################################################
 ################### WRITE SESSION SETTINGS ###################
 
@@ -109,7 +110,13 @@ with open(f'session_settings.json', "w") as outfile:
 
 
 personal_narc_data = ndspy.narc.NARC(rom.files[narc_info["personal"]])
-output_json(personal_narc_data)
+output_personal_json(personal_narc_data)
+
+learnset_narc_data = ndspy.narc.NARC(rom.files[narc_info["learnsets"]])
+output_learnset_json(learnset_narc_data)
+
+moves_narc_data = ndspy.narc.NARC(rom.files[narc_info["moves"]])
+output_moves_json(moves_narc_data)
 
 
 ### TODO IMPLEMENT READERS FOR OTHER NARCS

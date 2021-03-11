@@ -85,8 +85,6 @@ def write_bytes(stream, n, data):
 	stream += (data.to_bytes(n, 'little'))		
 	return stream
 
-
-
 def write_narc_data(file_name, narc_format, personal_narc):
 	file_path = f'{ROM_NAME}/json/personal/{file_name}.json'
 	narcfile_path = f'{ROM_NAME}/narcs/personal-{NARC_FILE_ID}.narc'
@@ -165,10 +163,6 @@ def to_raw(readable):
 	
 	#TODO CHECK FOR DIGLET DUGTRIO FOR 13TH BIT
 	return raw
-
-def read_bytes(stream, n):
-	return int.from_bytes(stream.read(n), 'little')
-
 
 
 ################ If run with arguments #############

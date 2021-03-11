@@ -77,7 +77,6 @@ def parse_msg_bank(filepath, msg_bank):
 			while decchars:
 				char = decchars.pop()
 				
-
 				if char == 0xFFFF:
 					break
 				elif char == 0xFFFE:

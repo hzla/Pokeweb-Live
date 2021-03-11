@@ -1,3 +1,21 @@
+jQuery.fn.selectText = function(){
+   var doc = document;
+   var element = this[0];
+
+   if (doc.body.createTextRange) {
+       var range = document.body.createTextRange();
+       range.moveToElementText(element);
+       range.select();
+   } else if (window.getSelection) {
+       var selection = window.getSelection();        
+       var range = document.createRange();
+       range.selectNodeContents(element);
+       selection.removeAllRanges();
+       selection.addRange(range);
+   }
+};
+
+
 /******/ (function(modules) { // webpackBootstrap
 /******/  // The module cache
 /******/  var installedModules = {};
@@ -52,9 +70,9 @@
 /* 1 */
 /***/ function(module, exports) {
 
-  module.exports = contentedtiableAutocomplete
+  module.exports = contenteditableAutocomplete
 
-  function contentedtiableAutocomplete ($) {
+  function contenteditableAutocomplete ($) {
     // AUTOCOMPLETE CLASS DEFINITION
     // =============================
 
@@ -88,6 +106,7 @@
 
         $input.on('focus', handleFocus)
         $input.on('input', handleInput)
+        $input.on('click', handleInput)
         $input.on('keydown', handleKeydown)
         $input.on('blur', handleBlur)
         $suggestions.on('mousedown touchstart', '> div', handleSuggestionClick)
@@ -102,6 +121,7 @@
           $input.after($container).appendTo($container)
           $input.focus()
           setCursorAt(cursorPosition)
+          $input.selectText()
         })
       }
 
@@ -132,6 +152,7 @@
           } else {
             query = newValue
           }
+          console.log(query)
 
           $input.trigger('autocomplete:request', [query, handleNewSuggestions])
         }
@@ -439,7 +460,7 @@
 
   // if run in a browser, init immediately
   if (typeof window !== 'undefined' && window.jQuery) {
-    contentedtiableAutocomplete(window.jQuery)
+    contenteditableAutocomplete(window.jQuery)
   }
 
 

@@ -5,8 +5,8 @@ require 'csv'
 require 'pry'
 require 'httparty'
 require_relative 'helpers'
-require_relative 'models/models'
 
+Dir["models/*.rb"].each {|file| require_relative file}
 
 ############# ROM SETUP ROUTES ###########################
 
@@ -29,13 +29,13 @@ end
 
 # only ever called with ajax
 post '/extract' do 
-	system("python python/rom_loader.py")
+	system "python python/rom_loader.py"
 	content_type :json
   	{ url: "roms/#{params[:rom_name][0..-5]}/personal" }.to_json
 end
 
 post '/rom/save' do
-	system("python python/rom_saver.py")
+	system "python python/rom_saver.py"
 	return "200"
 end
 
@@ -48,11 +48,17 @@ get '/roms/:rom_name/personal' do
 
 	$rom_name = SessionSettings.rom_name
 
-	files = Dir["#{$rom_name}/json/personal/*.json"].sort_by{ |name| [name[/\d+/].to_i, name] }
-	@poke_data = files.map do |pok|
-		Personal.get_data(pok)
-	end
+	@poke_data = Personal.poke_data
 
+	@moves = Move.get_all
+	@move_names = Move.get_names_from @moves
+
+	@poke_data.each do |pok|
+		if pok
+			pok["learnset"] = expand_learnset_data @moves, pok["learnset"]
+		end
+	end
+	
 	@pokemons = @poke_data[1..10]
 
 	erb :personal
@@ -62,9 +68,13 @@ end
 get '/roms/:rom_name/personal/collection' do
 	$rom_name = SessionSettings.rom_name
 
-	files = Dir["#{$rom_name}/json/personal/*.json"].sort_by{ |name| [name[/\d+/].to_i, name] }
-	poke_data = files.map do |pok|
-		Personal.get_data(pok)
+	@poke_data = Personal.poke_data
+	@moves = Move.get_all
+
+	@poke_data.each do |pok|
+		if pok
+			pok["learnset"] = expand_learnset_data @moves, pok["learnset"]
+		end
 	end
 
 	@pokemons = poke_data[11..-1]
@@ -74,8 +84,13 @@ end
 
 # called by ajax when user makes an edit
 post '/personal' do 
-	Personal.write_data(params["data"])
-	system("python python/personal_writer.py update #{params['data']['file_name']}")
+	$rom_name = SessionSettings.rom_name
+	
+	narc_name = params['data']['narc']
+	
+	Object.const_get(narc_name.capitalize).write_data params["data"]
+	system "python python/#{narc_name}_writer.py update #{params['data']['file_name']}"
+	
 	return 200
 end
 
