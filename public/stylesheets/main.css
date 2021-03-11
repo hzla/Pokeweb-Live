@@ -385,7 +385,7 @@ p {
     align-items: center;
     display: flex;
     flex-wrap: wrap;
-    padding: 30px 20px 20px;
+    padding: 30px 20px 40px;
     position: relative;
     justify-content: space-between;
 }
@@ -676,6 +676,10 @@ table td {
     padding: 5px 10px;
 }
 
+
+
+/****************************************************************/
+
 #header {
     display: flex;
     position: fixed;
@@ -723,9 +727,9 @@ table td {
     border-radius: 20px;
     box-shadow: 10px 10px 60px #e9e8e7;
     padding: 20px;
-    display: flex;
     justify-content: space-between;
     display: none;
+    background: white;
 }
 
 .expanded-left {
@@ -737,6 +741,45 @@ table td {
     padding-right: 20px;
     height: 100%;
     /*justify-content: space-between;*/
+}
+
+.expanded-card-content.expanded-learnset {
+    /*display: flex;*/
+    height: auto;
+}
+
+.expanded-learnset .expanded-left {
+    width: 50%;
+}
+
+.move-level {
+    width: 50px;
+}
+
+.move-name {
+    width: 180px;
+}
+
+.move-type {
+    width: 40px;
+}
+
+.move-type .btn {
+    width: 100%;
+    padding: 10px 0px;
+    font-size: 12px;
+}
+
+.move-cat {
+    width: 30px;
+}
+
+.move-cat img {
+    width: 100%;
+}
+
+.move-power, .move-accuracy {
+    width: 40px;
 }
 
 .expanded-mid {
@@ -764,50 +807,30 @@ table td {
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid #e9e8e7;
-    margin: 10px 0px;
+    padding: 10px 0px;
     font-size: 20px;
+    align-items: center;
 }
 
-.arrow.expand-card, .arrow.retract-card {
+.expand-card {
     position: absolute;
     right: 40px;
-    bottom: 20px;
+    top: 250px;
 }
 
-.arrow.retract-card {
-    bottom: 420px;
+.expand-card.exp-learnset {
+    right: 140px;
 }
 
-.arrow.expand-card:hover, .arrow.retract-card:hover {
+
+.expand-card:hover {
     cursor: pointer;
 }
 
-
-.arrow {
-  border: solid lightgray;
-  border-width: 0 6px 6px 0;
-  display: inline-block;
-  padding: 10px;
-}
-
-.right {
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-}
-
-.left {
-  transform: rotate(135deg);
-  -webkit-transform: rotate(135deg);
-}
-
-.up {
-  transform: rotate(-135deg);
-  -webkit-transform: rotate(-135deg);
-}
-
-.down {
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
+.card-icon {
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
 }
 
 [contenteditable]:hover {
@@ -819,4 +842,8 @@ table td {
 [contenteditable] {
     border: 1px solid transparent;
     padding: 5px 10px;
+}
+
+.show-flex {
+    display: flex !important;
 }

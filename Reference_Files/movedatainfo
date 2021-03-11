@@ -1,0 +1,41 @@
+effectcategory	0  {"No special effect", "Status Inflicting","Stat Changing","Healing","Chance to inflict Status","Opp Stat raising attack", "Opp Stat lowering attack"}; 13 is rest,wish,healing call special heal, safeguard is 11,
+category	1 {"Status","Physical","Special"};
+
+hits	0
+
+
+			short numHits= (short) buffer.readByte();
+            
+            short minHits= Short.parseShort(fixBinaryString(Integer.toBinaryString(numHits),8).substring(4),2);
+            short maxHits= Short.parseShort(fixBinaryString(Integer.toBinaryString(numHits),8).substring(0,4),2);
+
+
+resulteffect	0 (read from effects.txt)
+
+
+status	0 {"None","Sleep","Poison","Burn","Freeze","Paralysis","Confusion","Infatuation"}
+minturns	0
+maxturns	0
+crit	0 (1 for increased crit chance)
+flinch	0 (n% chance to flinch)
+effect	0 (read from effects.txt)
+recoil	0 (254 - n)% damage
+healing	0 (n)% healing
+target	0 {"Any adjacent","Random (User/ Adjacent ally)","Random adjacent ally","Any adjacent opponent","All excluding user","All adjacent opponents","User's party","User","Entire Field","Random adjacent opponent","Field Itself","Opponent's side of field","User's side of field","User (Selects target automatically)"}
+
+
+
+stat1	0 (stat to effect =>  atk, def, spd, spatck, spdef, accuracy, evasion)
+stat2	0
+stat3	0
+magnitude1	0 (n) stages to boost, 256 - n stagess to lower
+magnitude2	0
+magnitude3	0
+statchance1	0 n% to raise
+statchance2	0
+statchance3	0
+flag	73
+
+bitfield convert to bits, read in little endian
+
+{"Contact","Requires Charge","Recharge Turn","Blocked by Protect","Reflected by Magic Coat","Affected by Snatch","Affected by Mirror Move","Punching Move","Sound Move","Affected by Gravity","Melts frozen targets","Hits non-adjacent opponents","Healing move","Hits through Substitute"};

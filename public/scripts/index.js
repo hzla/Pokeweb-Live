@@ -22,7 +22,6 @@ $( document ).ready(function() {
         	alert("saved to /exports folder")
         	btn.text('Export')
         });
-
     })
 
 
@@ -47,13 +46,26 @@ $( document ).ready(function() {
 	////////////////////// POKEMON PERSONAL CARD UI ////////////////////////
 	 
 	$(document).on('click', '.expand-card', function(){
-		$(this).parents('.pokemon-card').find('.expanded-card-content').css('display', 'flex');
-		$(this).hide()
+		expanded_card = $(this).attr('data-expand')
+
+		// if hiding tab
+		console.log('.expanded-' + expanded_card + ":visible")
+		if ($(this).parent().find('.expanded-' + expanded_card + ":visible").length > 0) {
+			$(this).parent().find('.expanded-card-content').removeClass('show-flex')
+			$(this).css('box-shadow', '')
+		} else { // else switching tabs
+			$(this).parent().find('.expanded-card-content').removeClass('show-flex')
+			$(this).parent().find('.expanded-' + expanded_card).addClass('show-flex');
+			$(this).parent().find('.card-icon').css('box-shadow', '')
+			$(this).css('box-shadow', '2px 3px 15px #3498db')
+		}
 	})
 
 	$(document).on('click', '.retract-card', function(){
-		$(this).parents('.pokemon-card').find('.expanded-card-content').hide()
-		$(this).parents('.pokemon-card').find('.expand-card').show();
+		expanded_card = $(this).attr('data-retract')
+		$(this).parents('.pokemon-card').find('.expanded-' + expanded_card).hide()
+		$(this).parents('.pokemon-card').find('.expand-card').show()
+		$(this).parents('.pokemon-card').find('.exp-' + expanded_card).show();
 	})
 
 	/////////////////////////////// DATA UPLOAD ON EDIT ///////////////////////////////
@@ -65,31 +77,26 @@ $( document ).ready(function() {
 		$(this).text(value)
 		var field_name = $(this).attr('data-field-name')
 		var index = $(this).parents('.pokemon-card').attr('data-index')
+		var narc = $(this).attr('data-narc')
 
 		var data = {}
 
 		data["file_name"] = index
 		data["field"] = field_name
 		data["value"] = value
+		data["narc"] = narc
 		
-		if ($(this).attr('data-type') == "int") {
+		if ($(this).attr('data-type') && $(this).attr('data-type').includes("int")) {
 			data["int"] = true
-			
+			max_value = parseInt($(this).attr('data-type').split("-")[1])
 			//validate int fields
-			if (!parseInt(value) || parseInt(value) > 255 ) {
+			if (!parseInt(value) || parseInt(value) > max_value ) {
 				$(this).css('border', '1px solid red')
 				return
 			}
-
-			// validate ev fields
-			if ($(this).hasClass('ev-field')) {
-				if (!parseInt(value) || parseInt(value) > 3 ) {
-					$(this).css('border', '1px solid red')
-					return
-				}
-			}
 		} else {
 			// validate string fields
+			console.log("validating string...")
 			valid_fields = autofills[$(this).attr('data-autofill')]
 			if (!valid_fields.includes(value)) {
 				$(this).css('border', '1px solid red')
@@ -97,17 +104,30 @@ $( document ).ready(function() {
 			}
 		}
 
+		// validate required fields
+		if ($(this).attr('data-require')) {
+			required_field = "." + $(this).attr('data-require')
+			required_input = $(this).parents('.expanded-field').find(required_field)
+
+			console.log(required_input.text())
+			if (required_input.text() == "" || required_input.text() == "-" ) {
+				required_input.css('border', '1px solid red')
+			}
+		}
+
 		$(this).css('border', '')
-
-
-		console.log(data)
-
-
 
 		$.post( "/personal", {"data": data }, function( data ) {
           console.log(data)
         });
 	})
+
+
+	$(document).on('click', "[contenteditable='true']", function(e){
+		console.log()
+		$(this).selectText()
+	})
+
 
 	$(document).on('keypress', "[contenteditable='true']", function(e){
 		if(e.which == 13) {
@@ -120,9 +140,30 @@ $( document ).ready(function() {
 		$(this).removeClass().addClass('pokemon-type').addClass("-" + value.toLowerCase())
 	})
 
+	$(document).on('focusout', ".move-name[contenteditable='true']", function(){
+		var value = $(this).text().trim()
+		move_data = Object.values(moves).find(e => e["name"].toLowerCase().toCamelCase() == value.toLowerCase().toCamelCase() )
+
+		console.log(move_data)
+		if (move_data) {
+			type = move_data["type"] 
+			power = move_data["power"]
+			acc = move_data["accuracy"]
+
+			row = $(this).parents('.expanded-field')
+
+			row.find('button').removeClass().addClass('btn').addClass('-active').addClass("-" +type.toLowerCase()).text(type.toUpperCase().slice(0,3))
+			row.find('.mov-cat img').show().attr("src", "/images/move-" + type.toLowerCase() + ".png")
+
+			row.find('.move-power').text(power)
+			row.find('.move-accuracy').text(acc)
+		}
+
+	})
+
 	$(document).on('focusout', "td[contenteditable='true']", function(){
 		var value = $(this).text().trim()
-		console.log(value)
+
 
 		value = parseInt(value)
 		var width = value / 2.55
@@ -159,7 +200,6 @@ function filter() {
 	// ex "hello world"
 	text_filters = $('#search-text').val()
 
-	console.log(gen_filters)
 	
 	if (gen_filters || type_filters || text_filters) {
 		cards.hide()
@@ -220,3 +260,10 @@ if(typeof(String.prototype.trim) === "undefined")
         return String(this).replace(/^\s+|\s+$/g, '');
     };
 }
+
+String.prototype.toCamelCase = function() {
+    return this.replace(/^([A-Z])|[\s-_](\w)/g, function(match, p1, p2, offset) {
+        if (p2) return p2.toUpperCase();
+        return p1.toLowerCase();        
+    });
+};

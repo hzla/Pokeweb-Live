@@ -5,10 +5,10 @@ APP ARCHITECTURE
 
 ROM LOADING/NARC EXTRACTION
 
-rom_loader.py extracts rom narcs and converts narcs to json 
+rom_loader.py extracts rom narcs and converts narcs to json and .txt files
 json, narcs, texts are stored in /ROM_NAME
 
-current rom name is stored in session_settings.json, this is what tells the app you have an in progress project
+current rom name is stored in session_settings.json, the prescence of this file is what tells the app you have an in progress project
 
 json files have "raw" and "readable" copies of narc data
 

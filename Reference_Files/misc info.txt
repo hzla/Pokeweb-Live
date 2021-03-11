@@ -9,3 +9,7 @@ I noticed that the attacks are listed one after the other. For Black and White, 
 I've got this handy table for people to download, as I couldn't find a similar resource: https://docs.google.com/spreadsheet/ccc?key=0AnIIigcwlIaNdDBaTm9lX200eVFsdTVlbGpCcWUtWXc&usp=sharing
 
 It lists the current TMs with number and index number in reversed hex. It lists all moves with their reversed index number. This makes for very quick and dirty editing.
+
+
+https://projectpokemon.org/home/forums/topic/22629-b2w2-general-rom-info/?do=findComment&comment=155888
+items ^^

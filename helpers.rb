@@ -1,95 +1,9 @@
-def bin_to_hex(s)
-  s.unpack('H*').first
-end
 
-def hex_to_bin(s)
-  s.scan(/../).map { |x| x.hex }.pack('c*')
-end
-
-def stringified_data data
-	characters = data.split("").map do |byte|
-		bin_to_hex byte
-	end
-	characters.join().scan(/.{1,4}/).join(' ')
-end
-
-def to_narc_format data
-	data.split(" ").join("").scan(/.{2}/).map {|byte| hex_to_bin byte}.join
-end
-
-def prng level, species, difficulty, trainer_id, trainer_class, gender
-	seed = (level.to_i + species.to_i + difficulty.to_i + trainer_id.to_i).to_s(16)
-
-	natures = ["Hardy",
-	"Lonely",
-	"Brave",
-	"Adamant",
-	"Naughty",
-	"Bold",
-	"Docile",
-	"Relaxed",
-	"Impish",
-	"Lax",
-	"Timid",
-	"Hasty",
-	"Serious",
-	"Jolly",
-	"Naive",
-	"Modest",
-	"Mild",
-	"Quiet",
-	"Bashful",
-	"Rash",
-	"Calm",
-	"Gentle",
-	"Sassy",
-	"Careful",
-	"Quirky"]
-
-	result = 0
-	trainer_class.to_i.times do 
-		seed = seed.to_i(16)
-		result = 0x41C64E6D * seed + 0x00006073
-		seed = result.to_s(16)[-8..-1]
-
-
-	end
-	result = seed[0..-5]
-
-	mid_bytes = result[-4..-1]
-	low_bytes = ""
-
-	if gender == "male"
-		low_bytes = "88"
-	else
-		low_bytes = "78"
-	end
-	
-	high_bytes = "00"
-
-	pid =  high_bytes + mid_bytes + low_bytes
-	nature_index = pid.to_i(16).to_s[-2..-1].to_i % 25
-
-	natures[nature_index]
-end 
-
-def unpack_narc narc
-	narc = NarcFile.open(narc)
-	parsed_data = {}
-	files = narc.elements
-	parsed_data["file_count"] = files.count
-	parsed_data["files"] = {}
-	binding.pry
-	files.each do |f|
-		parsed_data["files"][f["name"]] = stringified_data(f["data"])
-	end
-	parsed_data
-end
-
+# THIS FILE CONTAINS METHODS USED BY THE FRONTEND ERB
 
 class String
   def titleize
-  	if self == ""
+  	if !self 
   		return "-"
   	end
     gsub("-", " ").split(/([ _-])/).map(&:capitalize).join
@@ -100,6 +14,50 @@ class String
     self
   end
 end
+
+class NilClass
+	def titleize
+		"-"
+	end
+
+	def downcase
+		"-"
+	end
+end
+
+# adds addtional move data to learnset data
+def expand_learnset_data(moves, learnset)
+	move_data = []
+
+	(0..19).each do |move|
+		if learnset["move_id_#{move}_index"]
+			
+			ls_data = {"move_name" => learnset["move_id_#{move}"], "lvl_learned" => learnset["lvl_learned_#{move}"], "move_id" => learnset["move_id_#{move}_index"], "index" => move }
+
+			# all data for this specific move
+			# p ls_data
+			all_move_data = moves[ls_data["move_id"]]
+			# copy these fields to be presented
+			["type", "category", "power", "accuracy"].each do |field|
+				ls_data[field] = all_move_data[field]
+			end
+			move_data << ls_data
+		else
+			move_data << {"index" => move }
+		end
+	end
+
+	# sort by lvl learned, and break ties move index
+	move_data.sort_by do |n| 
+		if n["lvl_learned"]
+			n["lvl_learned"].to_i + n["index"].to_i
+		else
+			101 + n["index"].to_i
+		end
+	end
+end
+
+
 
 def to_gen(pok_id)
 	case pok_id
@@ -123,4 +81,9 @@ def to_gen(pok_id)
 	  gen = ""
 	end
 	gen
+end
+
+
+def img(name, classes="", data=["", ""])
+"<img src='/images/#{name}' alt='#{name}' class='#{classes}' data-#{data[0]}='#{data[1]}' />"
 end
