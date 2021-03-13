@@ -14,9 +14,8 @@ import copy
 ######################### FILE SPECIFIC CONSTANTS #############################
 
 def set_global_vars():
-	global ROM_NAME, TYPES, CATEGORIES, EFFECT_CATEGORIES, EFFECTS, STATUSES, TARGETS, STATS, PROPERTIES, MOVE_NAMES, MOVES_NARC_FORMAT
+	global ROM_NAME, TYPES, CATEGORIES, EFFECT_CATEGORIES, EFFECTS, STATUSES, TARGETS, STATS, PROPERTIES, MOVE_NAMES, MOVES_NARC_FORMAT, RESULT_EFFECTS
 	
-	ROM_NAME = 'moddedblack'
 
 	with open(f'session_settings.json', "r") as outfile:  
 		settings = json.load(outfile) 
@@ -26,19 +25,21 @@ def set_global_vars():
 
 	CATEGORIES = ["Status","Physical","Special"]
 
-	EFFECT_CATEGORIES = ["No Special Effect", "Status Inflicting","Stat Changing","Healing","Chance to Inflict Status","Raising Target's Stat and Attack", "Lowering Target's Stat and Attack","Raise all Stats","Lifesteal","OHKO","Weather","Safeguard", "Force Switch Out", "Unique Effect"]
+	EFFECT_CATEGORIES = ["No Special Effect", "Status Inflicting","User Stat Changing","Healing","Chance to Inflict Status","Raising Target's Stat along Attack", "Lowering Target's Stat along Attack","Raise all Stats","Lifesteal","OHKO","Weather","Safeguard", "Force Switch Out", "Unique Effect"]
 
 	EFFECTS = open(f'Reference_Files/effects.txt', "r").read().splitlines() 
 
-	STATUSES = ["None","Sleep","Poison","Burn","Freeze","Paralysis","Confusion","Infatuation"]
+	STATUSES = ["None","Visible","Temporary","Infatuation", "Trapped"]
 
 	TARGETS = ["Any adjacent","Random (User/ Adjacent ally)","Random adjacent ally","Any adjacent opponent","All excluding user","All adjacent opponents","User's party","User","Entire Field","Random adjacent opponent","Field Itself","Opponent's side of field","User's side of field","User (Selects target automatically)"]
 
-	STATS = ["None", "Atack", "Defense", "Speed", "Special Attack", "Special Defense", "Accuracy", "Evasion", "All" ]
+	STATS = ["None", "Attack", "Defense", "Special Attack", "Special Defense", "Speed", "Accuracy", "Evasion", "All" ]
 
-	PROPERTIES = ["Contact","Requires Charge","Recharge Turn","Blocked by Protect","Reflected by Magic Coat","Affected by Snatch","Affected by Mirror Move","Punching Move","Sound Move","Affected by Gravity","Melts frozen targets","Hits non-adjacent opponents","Healing move","Hits through Substitute"]
+	PROPERTIES = ["contact","requires_charge","recharge_turn","blocked_by_protect","reflected_by_magic_coat","stolen_by_snatch","copied_by_mirror_move","punch_move","sound_move","grounded_by_gravity","defrosts_targets","hits_non-adjacent_opponents","healing_move","hits_through_substitute"]
 
 	MOVE_NAMES = open(f'{ROM_NAME}/texts/moves.txt', "r").read().splitlines() 
+
+	RESULT_EFFECTS = open(f'Reference_Files/result_effects.txt', "r").read().splitlines()
 
 	MOVES_NARC_FORMAT = [[1, "type"],
 	[1,	"effect_category"],
@@ -83,6 +84,7 @@ def output_moves_json(narc):
 		read_narc_data(data, MOVES_NARC_FORMAT, data_name)
 		data_index += 1
 
+
 def read_narc_data(data, narc_format, file_name):
 	stream = io.BytesIO(data)
 	move = {"raw": {}, "readable": {} }
@@ -105,6 +107,8 @@ def read_narc_data(data, narc_format, file_name):
 def to_readable(raw, file_name):
 	readable = copy.deepcopy(raw)
 
+
+
 	readable["index"] = file_name
 	readable["name"]  = MOVE_NAMES[file_name]
 	
@@ -118,7 +122,7 @@ def to_readable(raw, file_name):
 	if raw["result_effect"] == 65535:
 		readable["result_effect"] = EFFECTS[36]
 	else:
-		readable["result_effect"] = EFFECTS[raw["result_effect"]]
+		readable["result_effect"] = RESULT_EFFECTS[raw["result_effect"]]
 
 	readable["effect"] = EFFECTS[raw["effect"]]
 
@@ -158,6 +162,7 @@ def to_readable(raw, file_name):
 		amount = int(binary_props[index - 1])
 		readable[prop] = amount
 		index -= 1
+
 
 	return readable
 

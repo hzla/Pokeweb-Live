@@ -21,4 +21,44 @@ class Move
 		end
 	end
 
+	def self.misc_int_fields
+		[{ "field_name" => "pp", "label" => "PP", "type" => "int-255"},
+			{ "field_name" => "crit", "label" => "+Crit", "type" => "int-15"},
+			{ "field_name" => "flinch", "label" => "Flinch %", "type" => "int-100"},
+			{ "field_name" => "recoil", "label" => "Recoil %", "type" => "int-100"},
+			{ "field_name" => "healing", "label" => "Heal %", "type" => "int-100"}
+		]
+	end
+
+
+	def self.stat_modifier_fields
+		fields = []
+
+		(1..3).each do |n|
+			fields << { "field_name" => "stat_#{n}", "label" => "Stat Mod", "type" => "int-8", "autofill" => "stats" }
+			fields << { "field_name" => "magnitude_#{n}", "label" => "Amount", "type" => "int-6"}
+			fields << { "field_name" => "stat_chance_#{n}", "label" => "Proc %", "type" => "int-100"}
+		end
+		fields
+	end
+
+	def self.effect_fields
+		[{ "field_name" => "effect_category", "label" => "Effect Category", "autofill" => "effect_cats"},
+			{ "field_name" => "result_effect", "label" => "Add. Effects", "autofill" => "effects"},
+			{ "field_name" => "effect_chance", "label" => "Add. Effect Proc %", "type" => "int-100"},
+			{ "field_name" => "status", "label" => "Status Type", "autofill" => "statuses"},
+			{ "field_name" => "min_turns", "label" => "Min Effect Turns", "type"=> "int-255"},
+			{ "field_name" => "max_turns", "label" => "Max Effect Turns", "type"=> "int-255"},
+			{ "field_name" => "min_hits", "label" => "Min Hits", "type"=> "int-255"},
+			{ "field_name" => "max_hits", "label" => "Max Hits", "type"=> "int-255"}
+
+		]
+	end
+
+	def self.props
+		["contact","requires_charge","recharge_turn","blocked_by_protect","reflected_by_magic_coat","stolen_by_snatch","copied_by_mirror_move","punch_move","sound_move","grounded_by_gravity","defrosts_targets","hits_non-adjacent_opponents","healing_move","hits_through_substitute"]
+	end
+
 end
+
+

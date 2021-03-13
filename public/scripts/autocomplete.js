@@ -15,6 +15,21 @@ jQuery.fn.selectText = function(){
    }
 };
 
+if(typeof(String.prototype.trim) === "undefined")
+{
+    String.prototype.trim = function() 
+    {
+        return String(this).replace(/^\s+|\s+$/g, '');
+    };
+}
+
+String.prototype.toCamelCase = function() {
+    return this.replace(/^([A-Z])|[\s-_](\w)/g, function(match, p1, p2, offset) {
+        if (p2) return p2.toUpperCase();
+        return p1.toLowerCase();        
+    });
+};
+
 
 /******/ (function(modules) { // webpackBootstrap
 /******/  // The module cache
@@ -121,7 +136,7 @@ jQuery.fn.selectText = function(){
           $input.after($container).appendTo($container)
           $input.focus()
           setCursorAt(cursorPosition)
-          $input.selectText()
+          // $input.selectText()
         })
       }
 

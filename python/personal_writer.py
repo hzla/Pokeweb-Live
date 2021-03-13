@@ -12,13 +12,12 @@ import sys
 
 ######################### CONSTANTS #############################
 
-ROM_NAME = 'moddedblack'
-
 
 NARC_FILE_ID = 258
 with open(f'session_settings.json', "r") as outfile:  
 	settings = json.load(outfile) 
 	NARC_FILE_ID = settings["personal"]
+	ROM_NAME = settings['rom_name']
 
 TYPES = ["Normal", "Fighting", "Flying", "Poison", "Ground", "Rock", "Bug", "Ghost", "Steel", "Fire", "Water","Grass","Electric","Psychic","Ice","Dragon","Dark","Fairy"]
 EGG_GROUPS = ["~","Monster","Water 1","Bug","Flying","Field","Fairy","Grass","Human-Like","Water 3","Mineral","Amorphous","Water 2","Ditto","Dragon","Undiscovered"];

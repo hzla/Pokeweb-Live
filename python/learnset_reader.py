@@ -16,7 +16,6 @@ import copy
 def set_global_vars():
 	global ROM_NAME, TYPES, MOVES, LEARNSET_NARC_FORMAT
 	
-	ROM_NAME = 'moddedblack'
 
 	with open(f'session_settings.json', "r") as outfile:  
 		settings = json.load(outfile) 

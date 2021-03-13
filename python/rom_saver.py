@@ -8,6 +8,8 @@ import os
 import os.path
 from os import path
 import json
+import sys
+
 import msg_reader
 import personal_writer
 import learnset_writer
@@ -41,7 +43,7 @@ BW_MSG_BANKS = [[286, "moves"],
 [54, "items"],
 [89, "locations"]]
 
-rom_name = "moddedblack"
+rom_name = sys.argv[1].split(".")[0] 
 
 
 ####################################################################

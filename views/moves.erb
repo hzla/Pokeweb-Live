@@ -1,0 +1,55 @@
+<div class="pokemon-filter">	
+	<div class="filter-title">Search Text</div>
+	<input class="filter-input" id="search-text"/>
+	<button class="btn -default" id="search-text-btn" type="button">Search</button>			
+	<div class="small-filters cat-filters">
+		<% ["physical", "special", "status"].each do |cat| %>
+			<button class="btn -default btn-3" type="button">
+				<%= img "move-#{cat}.png", "", ["mcat", cat] %>
+			</button>
+		<% end %>
+	</div>
+	<div class="small-filters type-filters">
+		<% RomInfo.types.each do |type| %>
+			<button class="btn -default btn-5 -<%= type.downcase %>" data-ptype="<%= type.downcase %>" type="button"><%= type.upcase[0..2] %></button>
+		<% end %>
+	</div>
+</div>
+
+<div class="pokemon-list pokemon-move-list spreadsheet" id="moves">
+	<div class="expanded-field field-header">
+		<div class="expanded-field-main">
+			<div class="move-name" data-narc="learnset">Name</div>
+			<div class="move-type">Type</div>
+			<div class="move-cat" data-field-name="category">Category</div>
+			<div class="move-effect">Effect</div>
+			<div class="move-power" >Pow</div>
+			<div class="move-accuracy">Acc</div>
+		</div>
+	</div>
+
+	<% @moves.each do |id, move|  %>
+			
+		<% if move %>
+
+			<%= erb :_move, :layout => false, :locals => { :move => move } %>
+		<% end %>
+	<% end %>
+</div>
+
+<script>
+	// json object for filtering
+	pokemons = <%= @poke_data.to_json %>
+
+	// moves data for populating additonal move info when user makes edits
+	moves = <%= @moves.to_json %>
+
+	// info for autocomplete
+	autofills = {
+		<% [:types].each do |info| %>
+			"<%= info.to_s %>": <%= RomInfo.send(info) %>,
+		<% end %>
+		"move_names": <%= @move_names %>
+	}
+
+</script>

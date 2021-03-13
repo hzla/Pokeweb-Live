@@ -12,13 +12,13 @@ import sys
 
 ######################### CONSTANTS #############################
 
-ROM_NAME = 'moddedblack'
 
-
+	
 NARC_FILE_ID = 260
 with open(f'session_settings.json', "r") as outfile:  
 	settings = json.load(outfile) 
 	NARC_FILE_ID = settings["learnsets"]
+	ROM_NAME = settings['rom_name']
 
 MOVES = open(f'{ROM_NAME}/texts/moves.txt', mode="r").read().splitlines()
 
@@ -64,7 +64,6 @@ def write_narc_data(file_name, narc_format, narc, narc_name="learnsets"):
 		json_data = json.load(outfile)	
 
 		#USE THE FORMAT LIST TO PARSE BYTES
-		print(file_name)
 		for entry in narc_format: 
 			if entry[1] in json_data["raw"]:
 				data = json_data["raw"][entry[1]]
@@ -91,14 +90,12 @@ def write_readable_to_raw(file_name, narc_name="learnsets"):
 
 	with open(json_file_path, "w", encoding='ISO8859-1') as outfile: 
 
-		print(narc_data)
 		json.dump(narc_data, outfile)
 
 def to_raw(readable):
 	raw = copy.deepcopy(readable)
 
 	for n in range(20):
-		print(readable)
 		if f'move_id_{n}' in readable:
 			
 			if readable[f'move_id_{n}'] == "-":
