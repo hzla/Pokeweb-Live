@@ -59,7 +59,6 @@ $( document ).ready(function() {
 		} else { // else switching tabs
 			$(this).parents('.filterable').find('.expanded-card-content').removeClass('show-flex')
 			
-			console.log("hi")
 			$(this).parents('.filterable').find('.expanded-' + expanded_card).addClass('show-flex');
 			$(this).parents('.filterable').find('.card-icon').removeClass('-active')
 			$(this).addClass('-active')
@@ -151,6 +150,32 @@ $( document ).ready(function() {
           console.log('upload successful')
         });
 	})
+
+	$(document).on('click', ".move-prop", function(e){
+		$(this).toggleClass('-active')
+
+		var value = ($(this).hasClass('-active') ? 1 : 0)
+		var field_name = $(this).attr('data-field-name')
+		var index = $(this).parents('.filterable').attr('data-index')
+		var narc = $(this).parent().attr('data-narc')
+
+		var data = {}
+
+		data["file_name"] = index
+		data["field"] = field_name
+		data["value"] = value
+		data["narc"] = narc
+		data["int"] = true
+		
+		console.log(data)
+		$.post( "/personal", {"data": data }, function( e ) {     
+          console.log('upload successful')
+        });	
+	})
+
+
+
+
 
 	//blur box on enter
 	$(document).on('keypress', "[contenteditable='true']", function(e){
