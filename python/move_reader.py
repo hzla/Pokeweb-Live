@@ -25,7 +25,7 @@ def set_global_vars():
 
 	CATEGORIES = ["Status","Physical","Special"]
 
-	EFFECT_CATEGORIES = ["No Special Effect", "Status Inflicting","User Stat Changing","Healing","Chance to Inflict Status","Raising Target's Stat along Attack", "Lowering Target's Stat along Attack","Raise all Stats","Lifesteal","OHKO","Weather","Safeguard", "Force Switch Out", "Unique Effect"]
+	EFFECT_CATEGORIES = ["No Special Effect", "Status Inflicting","Target Stat Changing","Healing","Chance to Inflict Status","Raising Target's Stat along Attack", "Lowering Target's Stat along Attack","Raise user stats","Lifesteal","OHKO","Weather","Safeguard", "Force Switch Out", "Unique Effect"]
 
 	EFFECTS = open(f'Reference_Files/effects.txt', "r").read().splitlines() 
 

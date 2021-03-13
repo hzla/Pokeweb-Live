@@ -31,7 +31,6 @@ class Personal
 		if data["int"]
 			changed_value = changed_value.to_i
 		elsif data["field"].split("_")[0] == "ability"
-			p changed_value
 			changed_value = changed_value.upcase
 		else
 			changed_value = changed_value.titleize

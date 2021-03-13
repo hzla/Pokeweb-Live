@@ -11,7 +11,7 @@ import sys
 import msg_reader
 from personal_reader import output_personal_json
 from learnset_reader import output_learnset_json
-from moves_reader import output_moves_json
+from move_reader import output_moves_json
 
 # code.interact(local=dict(globals(), **locals()))
 

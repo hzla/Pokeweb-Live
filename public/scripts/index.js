@@ -75,7 +75,7 @@ $( document ).ready(function() {
 		var value = $(this).text().trim()
 		$(this).text(value)
 		var field_name = $(this).attr('data-field-name')
-		var index = $(this).parents('.pokemon-card').attr('data-index')
+		var index = $(this).parents('.filterable').attr('data-index')
 		var narc = $(this).attr('data-narc')
 
 		var data = {}
@@ -129,6 +129,29 @@ $( document ).ready(function() {
 		$(this).selectText()
 	})
 
+	// upload choice when clicking 
+	$(document).on('click', ".choosable", function(e){
+		var value = $(this).attr('data-value')
+		var field_name = $(this).parent().attr('data-field-name')
+		var index = $(this).parents('.filterable').attr('data-index')
+		var narc = $(this).parent().attr('data-narc')
+
+		var data = {}
+
+		data["file_name"] = index
+		data["field"] = field_name
+		data["value"] = value
+		data["narc"] = narc
+
+		$(this).parent().children().removeClass('chosen').addClass('unchosen')
+		$(this).addClass('chosen').removeClass('unchosen')
+
+		console.log(data)
+		$.post( "/personal", {"data": data }, function( e ) {     
+          console.log('upload successful')
+        });
+	})
+
 	//blur box on enter
 	$(document).on('keypress', "[contenteditable='true']", function(e){
 		if(e.which == 13) {
@@ -137,9 +160,13 @@ $( document ).ready(function() {
 	})
 
 	// add pokemon type class to change color 
-	$(document).on('focusout', ".pokemon-type[contenteditable='true']", function(){
+	$(document).on('focusout', ".pokemon-type[contenteditable='true'], .move-type .btn", function(){
 		var value = $(this).text().trim()
-		$(this).removeClass().addClass('pokemon-type').addClass("-" + value.toLowerCase())
+		$(this).removeClassPrefix("-").addClass("-" + value.toLowerCase())
+		
+		if ($(this).parents('.move-type').length > 0) {
+			$(this).addClass('-active')
+		}
 	})
 
 	// expand move data 
@@ -173,6 +200,7 @@ $( document ).ready(function() {
 
 
 	$(document).on('autocomplete:request', "[contenteditable='true']", function(event, query, callback) {
+	  console.log("acing")
 	  var suggestions = autofills[$(this).attr('data-autofill')].filter(function(e){
 	  	return e.toLowerCase().includes(query.toLowerCase())
 	  });

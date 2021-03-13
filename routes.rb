@@ -102,6 +102,7 @@ get '/roms/:rom_name/moves' do
 	
 	@moves = Move.get_all
 	@moves = @moves.to_a.sort_by {|mov| mov[0] }
+	# @moves = @moves[0..10]
 	
 	@poke_data = Personal.poke_data
 	@move_names = Move.get_names_from @moves

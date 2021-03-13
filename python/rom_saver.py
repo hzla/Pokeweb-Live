@@ -13,6 +13,7 @@ import sys
 import msg_reader
 import personal_writer
 import learnset_writer
+import move_writer
 # code.interact(local=dict(globals(), **locals()))
 
 
@@ -51,6 +52,7 @@ rom_name = sys.argv[1].split(".")[0]
 
 personal_writer.output_narc()
 learnset_writer.output_narc()
+move_writer.output_narc()
 
 
 
@@ -63,13 +65,16 @@ with open(f'session_settings.json', "r") as outfile:
 	settings = json.load(outfile) 
 	personal_narc_file_id = settings["personal"]
 	learnset_narc_file_id = settings["learnsets"]
+	moves_narc_file_id = settings["moves"]
 
 personal_narc_filepath = f'{rom_name}/narcs/personal-{personal_narc_file_id}.narc'
 learnset_narc_filepath = f'{rom_name}/narcs/learnsets-{learnset_narc_file_id}.narc'
+moves_narc_filepath = f'{rom_name}/narcs/moves-{moves_narc_file_id}.narc'
 
 
 rom.files[personal_narc_file_id] = open(personal_narc_filepath, 'rb').read()
 rom.files[learnset_narc_file_id] = open(learnset_narc_filepath, 'rb').read()
+rom.files[moves_narc_file_id] = open(moves_narc_filepath, 'rb').read()
 
 
 print("attempting save")
