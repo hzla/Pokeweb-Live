@@ -16,7 +16,6 @@ import copy
 def set_global_vars():
 	global ROM_NAME, TYPES, EGG_GROUPS, GROWTHS, ABILITIES, ITEMS, POKEDEX, PERSONAL_NARC_FORMAT
 	
-	ROM_NAME = 'moddedblack'
 
 	with open(f'session_settings.json', "r") as outfile:  
 		settings = json.load(outfile) 
@@ -142,9 +141,9 @@ def to_readable(raw, file_name):
 	ev_yields = ["hp_yield", "atk_yield", "def_yield", "speed_yield", "spatk_yield", "spdef_yield"]
 
 	for ev in ev_yields:
-		 amount = int(binary_ev[index-1:index],2)
-		 readable[ev] = amount
-		 index -= 2
+		amount = int(binary_ev[index-2:index],2)
+		readable[ev] = amount
+		index -= 2
 
 	return readable
 

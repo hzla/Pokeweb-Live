@@ -1,0 +1,22 @@
+None
+Chance to Paralyze
+Chance to Sleep
+Chance to Freeze
+Chance to Burn
+Chance to Poison
+Chance to Confuse
+Chance to Infatuate
+Binding effect
+Cursed effect
+
+
+Torment effect
+Disables last used move
+Force sleep next turn
+Prevents healing
+
+Forsight effect
+Leech Seed effect
+Block item use
+Perish Song effect
+Ingrain effect

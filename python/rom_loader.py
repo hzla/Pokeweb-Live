@@ -6,6 +6,8 @@ import io
 import codecs
 import os
 import json
+import sys
+
 import msg_reader
 from personal_reader import output_personal_json
 from learnset_reader import output_learnset_json
@@ -16,7 +18,7 @@ from moves_reader import output_moves_json
 
 #################### CREATE FOLDERS #############################
 
-rom_name = "moddedblack.nds".split(".")[0] 
+rom_name = sys.argv[1].split(".")[0] 
 
 # code.interact(local=dict(globals(), **locals()))
 

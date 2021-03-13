@@ -33,7 +33,6 @@ def expand_learnset_data(moves, learnset)
 		if learnset["move_id_#{move}_index"]
 			
 			ls_data = {"move_name" => learnset["move_id_#{move}"], "lvl_learned" => learnset["lvl_learned_#{move}"], "move_id" => learnset["move_id_#{move}_index"], "index" => move }
-
 			# all data for this specific move
 			# p ls_data
 			all_move_data = moves[ls_data["move_id"]]
@@ -86,4 +85,12 @@ end
 
 def img(name, classes="", data=["", ""])
 "<img src='/images/#{name}' alt='#{name}' class='#{classes}' data-#{data[0]}='#{data[1]}' />"
+end
+
+def svg(name, classes="", data=["", ""], html="")
+	div_start = "<div class='#{classes}' data-#{data[0]}='#{data[1]}'>"
+	div_end = "</div>"
+	svg = erb(name.to_sym, :layout => false, :locals => { :classes => classes, :data => data })
+
+	div_start + html + svg + div_end
 end

@@ -8,7 +8,7 @@ require_relative 'helpers'
 
 Dir["models/*.rb"].each {|file| require_relative file}
 
-############# ROM SETUP ROUTES ###########################
+############# ROM EDITOR ROUTES ###########################
 
 get '/' do
 	$rom_name = SessionSettings.rom_name
@@ -29,20 +29,21 @@ end
 
 # only ever called with ajax
 post '/extract' do 
-	system "python python/rom_loader.py"
+	system "python python/rom_loader.py #{params['rom_name']}"
 	content_type :json
   	{ url: "roms/#{params[:rom_name][0..-5]}/personal" }.to_json
 end
 
 post '/rom/save' do
-	system "python python/rom_saver.py"
+	$rom_name = SessionSettings.rom_name
+
+	system "python python/rom_saver.py #{$rom_name}"
 	return "200"
 end
 
 
 
-##########################################  EDITOR ROUTES ####################
-
+########################################## PERSONAL EDITOR ROUTES ####################
 
 get '/roms/:rom_name/personal' do
 
@@ -77,15 +78,14 @@ get '/roms/:rom_name/personal/collection' do
 		end
 	end
 
-	@pokemons = poke_data[11..-1]
+	@pokemons = @poke_data[11..-1]
 	erb :personal_partial, layout: false
 end
-
 
 # called by ajax when user makes an edit
 post '/personal' do 
 	$rom_name = SessionSettings.rom_name
-	
+
 	narc_name = params['data']['narc']
 	
 	Object.const_get(narc_name.capitalize).write_data params["data"]
@@ -95,5 +95,16 @@ post '/personal' do
 end
 
 
+########################################## MOVE EDITOR ROUTES ####################
 
+get '/roms/:rom_name/moves' do 
+	$rom_name = SessionSettings.rom_name
+	
+	@moves = Move.get_all
+	@moves = @moves.to_a.sort_by {|mov| mov[0] }
+	
+	@poke_data = Personal.poke_data
+	@move_names = Move.get_names_from @moves
 
+	erb :moves
+end

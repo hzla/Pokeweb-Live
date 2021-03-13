@@ -165,10 +165,10 @@ p {
     margin-bottom: 10px;
     margin-top: 0;
 }
-#root {
+#content-container {
     display: flex;
     top: 40px;
-    overflow: scroll;
+    overflow: auto;
 }
 .btn {
     -webkit-transition-property: background-color, color;
@@ -306,13 +306,13 @@ p {
     background-color: #504843;
 }
 .btn.-electric {
-    color: #c09643;
+    color: #fc3;
 }
 .btn.-electric:hover {
     background-color: rgba(192, 150, 67, .2);
 }
 .btn.-electric.-active {
-    background-color: #c09643;
+    background-color: #fc3;
 }
 .btn.-fighting {
     color: #c03028;
@@ -519,7 +519,8 @@ p {
 .pokemon-filter {
 	width: 18vw;
     background-color: #fff;
-    box-shadow: 0 0 40px #e9e8e7;
+    /*box-shadow: 0 0 20px #e9e8e7;*/
+    box-shadow: 0 0 2px rgb(0 0 0 / 15%);
     flex: 0 0 auto;
     height: 100vh;
     overflow: auto;
@@ -547,6 +548,14 @@ p {
 	padding: 10px 0px;
 }
 
+.small-filters {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e9e8e7;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
 .sub-filters {
 	display: flex;
 	justify-content: space-between
@@ -568,11 +577,27 @@ p {
 	margin-top: 5px; 
 }
 
+.btn-3.-default {
+    padding: 10px 0px;
+    width: 30%;
+    margin-top: 5px;
+    background: white;
+    border: 1px solid transparent;
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn-3.-default.-active {
+    background: white;
+    border: 1px solid #3498db;
+}
+
 .pokemon-list {
     flex: 1 1 auto;
     width: 82vw;
     margin-left: 18vw;
     margin-top: 40px;
+    position: relative;
 }
 .pokemon-moves {
     display: flex;
@@ -645,7 +670,7 @@ p {
     color: #504843;
 }
 .pokemon-type.-electric {
-    color: #c09643;
+    color: #fc3;
 }
 .pokemon-type.-fighting {
     color: #c03028;
@@ -687,19 +712,20 @@ table td {
     right: 0;
     width: 100vw;
     height: 40px;
-    box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
-    z-index: 3;
+    box-shadow: 0 0 2px rgb(255 255 255 / 85%);
+    z-index: 11;
     padding: 5px calc(18vw);
-    padding-right: 40px;
+    padding-right: 30px;
     justify-content: flex-end;
-    background: white;
+    background: #2c3e50;
+
 }
 
 .header-item {
     text-align: center;
     font-size: 24px;
-    background: #2ecc71;
-    border-radius: 5px;
+    background: #006cff;
+    border-radius: 0px;
     height: 100%;
     padding: 0px 20px;
     color: white; 
@@ -707,7 +733,7 @@ table td {
 }
 
 .header-item:hover {
-    background: #27ae60;
+    background: rgba(0,108,255,.8);
     cursor: pointer;
 }
 
@@ -721,7 +747,7 @@ table td {
 }
 
 .expanded-card-content {
-    height: 400px;
+    height: auto;
     width: 100%;
     margin-top: 20px;
     border-radius: 20px;
@@ -752,6 +778,74 @@ table td {
     width: 50%;
 }
 
+.expanded-field-main {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.expanded-field.field-header {
+    background: #2c3e50;
+    color: white;
+    left: 18vw;
+    width: 82vw;
+    position: fixed;
+    top: 40px;
+    box-shadow: 0 0 2px rgb(0 0 0 / 15%);
+    z-index: 10;
+}
+
+#moves .expanded-field {
+    /*cursor: pointer;*/
+    border: 1px solid transparent;
+    border-bottom: 1px solid #e9e8e7;
+}
+
+.spreadsheet > .expanded-field {
+    flex-direction: column;
+}
+
+#moves .move-type {
+    width: 80px;
+}
+
+#moves .move-type {
+    width: 80px;
+}
+
+.expanded-field.filterable {
+    position: relative;
+}
+
+#moves > .expanded-field:hover {
+    border: 1px solid #3498db;
+}
+
+#moves .expanded-mid {
+    width: 20vw;
+     flex-shrink: 5;
+}
+
+#moves .expanded-right {
+    width: 16vw;
+    flex-shrink: 5;
+}
+
+#moves .expanded-left {
+    width: 36vw;
+    flex-grow: 5;
+}
+#moves .expanded-field:hover .move-info {
+    display: block;
+}
+
+.sticky {
+    position: fixed;
+    top: 40px;
+}
+
 .move-level {
     width: 50px;
 }
@@ -764,6 +858,17 @@ table td {
     width: 40px;
 }
 
+.move-info {
+    position: absolute;
+    bottom: calc(50% - 15px);
+    left: 160px;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    display: none;
+    border-radius: 30px;
+}
+
 .move-type .btn {
     width: 100%;
     padding: 10px 0px;
@@ -771,15 +876,64 @@ table td {
 }
 
 .move-cat {
-    width: 30px;
+    width: 35px;
+    border: 1px solid transparent;
 }
+
+#moves .move-cat:hover {  
+
+}
+
+#moves .move-cat {
+    width: 110px;
+    display: flex;
+}
+
+#moves .move-cat img {
+    width: 40px;
+    height: 35px;
+    border: 1px solid transparent;
+}
+
+#moves .move-cat img:hover {
+    border: 1px solid #3498db;
+}
+
+div.-active svg * {
+    /*fill: #3498db;*/
+    stroke:  #3498db;
+}
+
 
 .move-cat img {
     width: 100%;
+    cursor: pointer;
+}
+
+.move-cat:hover .unchosen {
+    display: block;
 }
 
 .move-power, .move-accuracy {
     width: 40px;
+}
+
+.move-effect {
+    width: 340px;
+    text-align: left;
+}
+
+.pokemon-move-list {
+    padding: 20px;
+}
+
+
+.pokemon-move-list .move-power, .pokemon-move-list .move-accuracy {
+    width: 60px;
+} 
+
+#moves .expanded-card-content {
+    flex-wrap: wrap;
 }
 
 .expanded-mid {
@@ -810,6 +964,58 @@ table td {
     padding: 10px 0px;
     font-size: 20px;
     align-items: center;
+}
+
+.expanded-row {
+    border-top: 1px solid lightgray;
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.expanded-row div {
+    height: 60px;
+    width: 60px;
+    position: relative;
+    
+}
+
+.expanded-row div:hover .prop-info {
+    display: inline;
+}
+
+.expanded-row svg {
+    width: 100%;
+    height: 100%;
+}
+
+.expanded-row .prop-info {
+    display: none;
+    position: absolute;
+    top: -30px;
+    left: 0px;
+    cursor: pointer;
+    font-size: 12px;
+    width: 125px;
+}
+
+.move-prop.-active *, .move-prop:hover * {
+    fill: #3498db !important;
+    stroke: #3498db !important;
+}
+
+.spreadsheet.pokemon-list {
+    padding: 0px;
+    margin-top: 85px;
+}
+
+.spreadsheet .expanded-field {
+    padding: 10px 20px;
 }
 
 .expand-card {
@@ -846,4 +1052,12 @@ table td {
 
 .show-flex {
     display: flex !important;
+}
+
+.unchosen {
+    display: none;
+}
+
+.hidden {
+    display: none !important;
 }
