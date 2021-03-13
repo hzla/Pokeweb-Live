@@ -39,14 +39,14 @@
 
 <script>
 	// json object for filtering
-	pokemons = <%= @poke_data.to_json %>
+
 
 	// moves data for populating additonal move info when user makes edits
 	moves = <%= @moves.to_json %>
 
 	// info for autocomplete
 	autofills = {
-		<% [:types].each do |info| %>
+		<% [:types, :status_types, :effects, :result_effects, :effect_cats, :targets, :stats].each do |info| %>
 			"<%= info.to_s %>": <%= RomInfo.send(info) %>,
 		<% end %>
 		"move_names": <%= @move_names %>

@@ -598,6 +598,7 @@ p {
     margin-left: 18vw;
     margin-top: 40px;
     position: relative;
+    min-height: calc(100vh - 80px);
 }
 .pokemon-moves {
     display: flex;
@@ -628,6 +629,7 @@ p {
     font-weight: 500;
     text-transform: uppercase;
 }
+
 /*.pokemon-type+.pokemon-type:before {
     background-color: #a39f99;
     border-radius: 50%;
@@ -873,6 +875,7 @@ table td {
     width: 100%;
     padding: 10px 0px;
     font-size: 12px;
+    text-align: center;
 }
 
 .move-cat {

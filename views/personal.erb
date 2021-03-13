@@ -40,11 +40,11 @@
 	}
 
 	// load rest of pokemon (11 to end)
-	// $( document ).ready(function() {
-	// 	$('#wait-loading').show()
-	// 	$.get(window.location.href + "/collection", function(data){
-	// 		$('.pokemon-list').append(data)
-	// 		$('#wait-loading').hide()
-	// 	})
-	// })	
+	$( document ).ready(function() {
+		$('#wait-loading').show()
+		$.get(window.location.href + "/collection", function(data){
+			$('.pokemon-list').append(data)
+			$('#wait-loading').hide()
+		})
+	})	
 </script>

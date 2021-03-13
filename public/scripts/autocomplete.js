@@ -15,6 +15,16 @@ jQuery.fn.selectText = function(){
    }
 };
 
+$.fn.removeClassPrefix = function(prefix) {
+    this.each(function(i, el) {
+        var classes = el.className.split(" ").filter(function(c) {
+            return c.lastIndexOf(prefix, 0) !== 0;
+        });
+        el.className = $.trim(classes.join(" "));
+    });
+    return this;
+};
+
 if(typeof(String.prototype.trim) === "undefined")
 {
     String.prototype.trim = function() 
@@ -136,7 +146,7 @@ String.prototype.toCamelCase = function() {
           $input.after($container).appendTo($container)
           $input.focus()
           setCursorAt(cursorPosition)
-          // $input.selectText()
+          $input.selectText()
         })
       }
 

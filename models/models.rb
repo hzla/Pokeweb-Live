@@ -40,6 +40,30 @@ class RomInfo
 	def self.growth_rates
 		["Medium Fast","Erratic","Fluctuating","Medium Slow","Fast","Slow"]
 	end
+
+	def self.status_types
+		["None","Visible","Temporary","Infatuation", "Trapped"]
+	end
+
+	def self.targets 
+		["Any adjacent","Random (User/ Adjacent ally)","Random adjacent ally","Any adjacent opponent","All excluding user","All adjacent opponents","User's party","User","Entire Field","Random adjacent opponent","Field Itself","Opponent's side of field","User's side of field","User (Selects target automatically)"]
+	end
+
+	def self.stats
+		["None", "Attack", "Defense", "Special Attack", "Special Defense", "Speed", "Accuracy", "Evasion", "All" ]
+	end
+
+	def self.effects
+		File.open("Reference_Files/effects.txt").read.split("\n")
+	end
+
+	def self.result_effects
+		File.open("Reference_Files/result_effects.txt").read.split("\n")
+	end
+
+	def self.effect_cats
+		["No Special Effect", "Status Inflicting","Target Stat Changing","Healing","Chance to Inflict Status","Raising Target's Stat along Attack", "Lowering Target's Stat along Attack","Raise user stats","Lifesteal","OHKO","Weather","Safeguard", "Force Switch Out", "Unique Effect"]
+	end
 end
 
 class String

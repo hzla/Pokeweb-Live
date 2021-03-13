@@ -94,3 +94,7 @@ def svg(name, classes="", data=["", ""], html="")
 
 	div_start + html + svg + div_end
 end
+
+def autofill(obj)
+	obj["autofill"] ? "data-autocomplete-spy" : ""
+end

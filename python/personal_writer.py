@@ -149,7 +149,6 @@ def to_raw(readable):
 	raw["ability_2"] = ABILITIES.index(raw["ability_2"].upper())
 	raw["ability_3"] = ABILITIES.index(raw["ability_3"].upper())
 
-	binary_ev = bin(raw["evs"])[2:].zfill(16) 
 	bin_ev = "0000"
 
 	ev_yields = ["hp_yield", "atk_yield", "def_yield", "speed_yield", "spatk_yield", "spdef_yield"]
