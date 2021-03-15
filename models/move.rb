@@ -38,7 +38,7 @@ class Move
 
 	def self.get_names_from(moves)
 		names = moves.map do |m|
-			m[1]["name"].titleize
+			m[1]["name"].move_titleize
 		end
 	end
 

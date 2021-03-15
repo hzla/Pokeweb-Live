@@ -3,7 +3,6 @@ $( document ).ready(function() {
 
 ///////////////////// EVENT BINDINGS //////////////////////////
     
-
     //////////////// Rom Buttons //////////////////
     
     $(document).on('click', '#load-rom', function(){
@@ -173,6 +172,28 @@ $( document ).ready(function() {
         });	
 	})
 
+	$(document).on('click', ".cell", function(e){
+		$(this).toggleClass('-active')
+
+		var value = ($(this).hasClass('-active') ? 1 : 0)
+		var field_name = $(this).attr('data-field-name')
+		var index = $(this).parents('.filterable').attr('data-index')
+		var narc = $(this).attr('data-narc')
+
+		var data = {}
+
+		data["file_name"] = index
+		data["field"] = field_name
+		data["value"] = value
+		data["narc"] = narc
+		data["int"] = true
+		
+		console.log(data)
+		$.post( "/personal", {"data": data }, function( e ) {     
+          console.log('upload successful')
+        });	
+	})
+
 
 
 
@@ -203,14 +224,21 @@ $( document ).ready(function() {
 			type = move_data["type"] 
 			power = move_data["power"]
 			acc = move_data["accuracy"]
+			effect = move_data["effect"]
+			
+			type_name_length = 3
+			if ($('.tm-list').length > 0) {
+				type_name_length = type.length
+			}
 
 			row = $(this).parents('.expanded-field')
 
-			row.find('button').removeClass().addClass('btn').addClass('-active').addClass("-" +type.toLowerCase()).text(type.toUpperCase().slice(0,3))
+			row.find('button, .btn').removeClass().addClass('btn').addClass('-active').addClass("-" +type.toLowerCase()).text(type.toUpperCase().slice(0,type_name_length))
 			row.find('.mov-cat img').show().attr("src", "/images/move-" + type.toLowerCase() + ".png")
 
 			row.find('.move-power').text(power)
 			row.find('.move-accuracy').text(acc)
+			row.find('.move-effect').text(effect)
 		}
 	})
 
@@ -317,13 +345,23 @@ function filter() {
 		move_list = Object.values(moves).sort(function(a,b) {
 			parseInt(a["index"]) - parseInt(b["index"]);
 		})
-
+		var tms = true
+		if ($("[data-index='tms']").length == 0) {
+			tms = false
+			
+		}
 		search_results = move_list.filter(function(e) {
-			e = e[1]
-			if (!e["type"]) {
-				return false
+			
+			if (!tms) {
+				e = e[1]
 			}
 			
+
+			if (!e || !e["type"]) {
+				return false
+			}
+
+
 			type = e["type"].toLowerCase()
 			cat = e["category"].toLowerCase()
 
@@ -356,7 +394,13 @@ function filter() {
 			}
 
 			if (type_match && text_match && cat_match) {
-				$(cards[e["index"]]).show()
+				// $(cards[e["index"]]).show()
+				if (tms) {
+					$(".filterable[data-move-index='" + e["index"] + "']").show()
+				} else {
+					$(cards[e["index"]]).show()
+				}
+				
 			}
 
 			return type_match && cat_match && text_match

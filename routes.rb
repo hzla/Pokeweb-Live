@@ -14,7 +14,7 @@ get '/' do
 	$rom_name = SessionSettings.rom_name
 
 	if $rom_name
-		redirect "/roms/#{$rom_name}/personal"
+		redirect "/personal"
 	else
 		@roms = Dir["*.nds"]
 		erb :index
@@ -45,14 +45,16 @@ end
 
 ########################################## PERSONAL EDITOR ROUTES ####################
 
-get '/roms/:rom_name/personal' do
-
+get '/personal' do
+	@title = "- Personals"
+	@active_header = 0
 	$rom_name = SessionSettings.rom_name
-
 	@poke_data = Personal.poke_data
-
 	@moves = Move.get_all
 	@move_names = Move.get_names_from @moves
+	@tm_names = Tm.get_names
+	@tutor_moves = Personal.tutor_moves
+
 
 	@poke_data.each do |pok|
 		if pok
@@ -66,11 +68,14 @@ get '/roms/:rom_name/personal' do
 end
 
 # loading rest of personal files
-get '/roms/:rom_name/personal/collection' do
+get '/personal/collection' do
 	$rom_name = SessionSettings.rom_name
 
 	@poke_data = Personal.poke_data
 	@moves = Move.get_all
+
+	@tm_names = Tm.get_names
+	@tutor_moves = Personal.tutor_moves
 
 	@poke_data.each do |pok|
 		if pok
@@ -97,7 +102,9 @@ end
 
 ########################################## MOVE EDITOR ROUTES ####################
 
-get '/roms/:rom_name/moves' do 
+get '/moves' do 
+	@title = "- Moves"
+	@active_header = 1
 	$rom_name = SessionSettings.rom_name
 	
 	@moves = Move.get_all
@@ -108,4 +115,16 @@ get '/roms/:rom_name/moves' do
 	@move_names = Move.get_names_from @moves
 
 	erb :moves
+end
+
+get '/tms' do 
+	@title = "- TMs"
+	@active_header = 2
+	$rom_name = SessionSettings.rom_name
+	
+	@moves = Move.get_all
+	@tm_moves = Tm.get_tms_from @moves
+	@move_names = Move.get_names_from @moves
+
+	erb :tms
 end

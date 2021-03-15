@@ -7,6 +7,7 @@ import os
 import json
 import copy
 import sys
+import re
 
 # code.interact(local=dict(globals(), **locals()))
 
@@ -21,6 +22,9 @@ with open(f'session_settings.json', "r") as outfile:
 	ROM_NAME = settings['rom_name']
 
 MOVES = open(f'{ROM_NAME}/texts/moves.txt', mode="r").read().splitlines()
+
+for i,move in enumerate(MOVES):
+	MOVES[i] = re.sub(r'[^A-Za-z0-9 \-]+', '', move)
 
 LEARNSET_NARC_FORMAT = []
 

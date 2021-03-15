@@ -1,0 +1,19 @@
+<div class="expanded-field filterable" data-index="tms" data-move-index="<%= move["index"] %>">	
+	<div class="expanded-field-main">
+		<div class="move-name" data-autofill="move_names" data-narc="tm" contenteditable="true" data-autocomplete-spy data-field-name="<%= "#{name.downcase}_#{index + 1}" %>">
+			<%= move["name"].titleize %>	
+		</div>
+		<div class="move-type">
+			<div class="btn -<%= move["type"].downcase %> -active" type="button"><%= move["type"] %></div>
+		</div>
+		<div class="move-cat">
+			<%= "#{name}-#{index + 1}" %>
+		</div>
+		<div class="move-effect"><%= move["effect"] %>
+		</div>
+		<div class="move-power"><%= move["power"] %>
+		</div>
+		<div class="move-accuracy"><%= move["accuracy"] %>
+		</div>
+	</div>
+</div>

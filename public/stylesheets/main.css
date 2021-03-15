@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Rubik:400, 500&display=swap);
-    
-/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html {
+/* https://flatuicolors.com/palette/defo */
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+html {
     line-height: 1.15;
     -webkit-text-size-adjust: 100%}
 body {
@@ -718,23 +719,38 @@ table td {
     z-index: 11;
     padding: 5px calc(18vw);
     padding-right: 30px;
-    justify-content: flex-end;
+    justify-content: space-between;
     background: #2c3e50;
+}
 
+.header-left, .header-right {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.header-left {
+    max-width: 50vw;
+}
+
+.header-right {
+    max-width: 20vw;
+}
+
+.header-left .header-item {
+    background: none;
 }
 
 .header-item {
     text-align: center;
-    font-size: 24px;
-    background: #006cff;
+    font-size: 16px;
+    line-height: 30px;
     border-radius: 0px;
     height: 100%;
     padding: 0px 20px;
     color: white; 
-    margin-left: 20px;
 }
 
-.header-item:hover {
+.header-item:hover, .header-item.-active {
     background: rgba(0,108,255,.8);
     cursor: pointer;
 }
@@ -789,7 +805,7 @@ table td {
 }
 
 .expanded-field.field-header {
-    background: #2c3e50;
+    background: #34495e;
     color: white;
     left: 18vw;
     width: 82vw;
@@ -803,6 +819,7 @@ table td {
     /*cursor: pointer;*/
     border: 1px solid transparent;
     border-bottom: 1px solid #e9e8e7;
+    width: inherit;
 }
 
 .spreadsheet > .expanded-field {
@@ -1024,21 +1041,38 @@ div.-active svg * {
 .expand-card {
     position: absolute;
     right: 40px;
-    top: 250px;
+    top: 260px;
 }
 
 .expand-card.exp-learnset {
-    right: 140px;
+    right: 340px;
 }
 
+.expand-card.exp-tms {
+    right: 240px;
+}
 
-.expand-card:hover {
+.expand-card.exp-tutors {
+    right: 140px ;
+}
+
+.expand-card:hover *, .expand-card.-active * {
     cursor: pointer;
+    fill: #3498db !important;
 }
 
+.expand-card.exp-personal:hover *, .expand-card.exp-personal.-active * {
+    fill: none !important;
+    stroke: #3498db !important;
+}
+
+/*.exp-learnset:hover * {
+    fill: #3498db !important;
+}
+*/
 .card-icon {
-    height: 40px;
-    width: 40px;
+    height: 30px;
+    width: 30px;
     border-radius: 10px;
 }
 
@@ -1063,4 +1097,23 @@ div.-active svg * {
 
 .hidden {
     display: none !important;
+}
+
+.expanded-tms {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    text-align: center;
+}
+
+.cell {
+    width: 20%;
+    height: auto;
+    border: 1px solid lightgray;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.cell.-active {
+    background: #3498db;
+    color: white;
 }
