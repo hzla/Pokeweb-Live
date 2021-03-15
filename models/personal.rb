@@ -36,6 +36,15 @@ class Personal
 			changed_value = changed_value.titleize
 		end
 
+		if field_to_change == "tutors"
+			return
+		end
+
+		if field_to_change == "tms"
+			return
+		end
+
+
 		file_path = "#{$rom_name}/json/personal/#{file_name}.json"
 		json_data = JSON.parse(File.open(file_path, "r").read)
 
@@ -62,5 +71,27 @@ class Personal
 	def self.ev_yield_fields
 		# title to display, field_name in json
 		[["HP", "hp_yield"],["Attack", "atk_yield"],["Defense", "def_yield"],["Sp Attack", "spatk_yield"],["Sp Defense", "spdef_yield"],["Speed", "speed_yield"]]
+	end
+
+	def self.get_tm_list(personal_data)
+		p personal_data["name"]
+		tms_1 = personal_data["tm_1-32"].to_s(2).rjust(32, '0').reverse
+		tms_2 = personal_data["tm_33-64"].to_s(2).rjust(32, '0').reverse
+		tms_3 = personal_data["tm_65-95+hm_1"].to_s(2).rjust(32, '0').reverse[0..-2] #65-95
+		hms_1 = personal_data["tm_65-95+hm_1"].to_s(2).rjust(32, '0').reverse[-1]
+		hms_2 = personal_data["hm_2-6"].to_s(2).rjust(5, '0').reverse
+
+
+		tms = tms_1 + tms_2 + tms_3
+		hms = hms_1 + hms_2
+		{tms: tms.split(""), hms: hms.split("")}
+	end
+
+	def self.get_tutor_list(personal_data)
+		personal_data["tutors"].to_s(2).rjust(7, '0').reverse.split("")
+	end
+
+	def self.tutor_moves
+		["Grass Pledge", "Fire Pledge", "Water Pledge", "Frenzy Plant", "Blast Burn", "Hydro Cannon", "Draco Meteor" ]
 	end
 end

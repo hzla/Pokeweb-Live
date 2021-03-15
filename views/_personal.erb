@@ -67,6 +67,34 @@
 			<%= erb :'_learnset', :layout => false, :locals => { :learnset => pok['learnset'][10..19] } %>			
 		</div>		
 	</div>
-	<%= img 'moves.png', "expand-card exp-learnset card-icon expand-action", ["expand", "learnset"]  %>
-	<%= img 'misc_data.svg', "expand-card exp-personal card-icon expand-action", ["expand", "personal"]  %>
+	<div class="expanded-card-content expanded-tms">
+		<% tm_data = Personal.get_tm_list(pok) %>
+		<% tm_data[:tms].each_with_index do |tm, i| %>
+			<div class="cell tm <%= tm == "1" ? '-active' : '' %>" data-field-name="tms" data-narc="personal">
+				TM<%= i + 1 %><br>
+				<%= @tm_names[:tm_names][i] %>
+
+			</div>
+		<% end %>
+		<% tm_data[:hms].each_with_index do |hm, i| %>
+			<div class="cell tm <%= hm == "1" ? '-active' : '' %>" data-field-name="tms" data-narc="personal">
+				HM<%= i + 1 %><br>
+				<%= @tm_names[:hm_names][i] %>
+			</div>
+		<% end %>
+	</div>
+	<div class="expanded-card-content expanded-tutors">
+		<% Personal.get_tutor_list(pok).each_with_index do |tutor_move, i| %>
+			<div class="cell tutor-move <%= tutor_move == "1" ? '-active' : '' %>" data-field-name="tutors" data-narc="personal">
+				<%= @tutor_moves[i] %>
+			</div>
+		<% end %>
+				
+	</div>
+
+	<%= svg 'svgs/moves', "expand-card exp-learnset card-icon expand-action", ["expand", "learnset"]  %>
+	<%= svg 'svgs/tms', "expand-card exp-tms card-icon expand-action", ["expand", "tms"]  %>
+	<%= svg 'svgs/tutors', "expand-card exp-tutors card-icon expand-action", ["expand", "tutors"]  %>
+	<%= svg 'svgs/misc_data', "expand-card exp-personal card-icon expand-action", ["expand", "personal"]  %>
 </div>
+

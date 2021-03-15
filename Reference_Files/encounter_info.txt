@@ -1,0 +1,54 @@
+It turns out that the offset was actually just a location in the ROM, I just didn't catch it before as I was comparing White 649 with the regular White and most of it was unchanged.
+
+To actually do the wild data yourself, you have two options:
+
+Go to the offset 083CBB44 in the full English ROM, OR extract the a/1/2/6 narc, which contains the same data.
+
+If you use 083CBB44, you will be taken straight to the Route 1 data. The wild data follows on from there although it doesn't appear to be in any order apart from loosely by routes.
+
+The data of each possible wild encounter is stored in the format of XX XX YY ZZ, where XX XX is the Pokemon's index number in hex flipped around (ie Patrat, whose dex number is 504, is 01F8, which is flipped around and entered as F8 01 in the ROM). YY is the minimum level that the Pokemon can appear at (in hex, of course) and ZZ is the maximum level. There will be a relatively equal chance of it appearing between any of those levels inclusive.
+
+The amount of slots is the same since the ADV games. Wild grass encounters have twelve lots of XX XX XX XX, with each group of four bytes referring to one slot. They are, and their encounter rates as follows:
+
+Slot 1 - 20%
+
+Slot 2 - 20%
+
+Slot 3 - 10%
+
+Slot 4 - 10%
+
+Slot 5 - 10%
+
+Slot 6 - 10%
+
+Slot 7 - 5%
+
+Slot 8 - 5%
+
+Slot 9 - 4%
+
+Slot 10 - 4%
+
+Slot 11 - 1%
+
+Slot 12 - 1%
+
+Following the wild encounters there will be another 48 bytes which refer to the encounters in the doubles grass (they will be displayed as 00 00 00 00 ... 00 if no tall grass is there), then another 48 bytes referring to shaking grass encounters, both of which have the same encounter slots as above.
+
+The next 20 bytes refer to Surf encounters. Their encounter rates are as follows
+
+Slot 1 - 60%
+
+Slot 2 - 30%
+
+Slot 3 - 5%
+
+Slot 4 - 4%
+
+Slot 5 - 1%
+
+After those twenty you will have another twenty referring to the rare spots, with the same slots as above. Following that, there are another twenty bytes for the Super Rod, with encounter slots the same as the Surf ones I believe. The next twenty after that refer to rare spots when fishing.
+
+If you happen to go to any sections that also have dust clouds or dark spots (ie Driftveil Drawbridge or Chargestone Cave) there are twelve slots for those, with the same encounter rates as grass for each slot.
+

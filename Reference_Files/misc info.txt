@@ -1,15 +1,35 @@
-TM/HM Data begins at offset 9AAB8 in uncompressed arm9.bin file
-
-
-
-https://projectpokemon.org/home/forums/topic/16104-pok%C3%A9mon-black-and-white-changing-tms-and-hms/page/2/
-
-I noticed that the attacks are listed one after the other. For Black and White, it goes TM01-92, but then HM01-06, then TM93-95 back to back starting at offset 0x0009AAB8.
-
-I've got this handy table for people to download, as I couldn't find a similar resource: https://docs.google.com/spreadsheet/ccc?key=0AnIIigcwlIaNdDBaTm9lX200eVFsdTVlbGpCcWUtWXc&usp=sharing
-
-It lists the current TMs with number and index number in reversed hex. It lists all moves with their reversed index number. This makes for very quick and dirty editing.
-
-
 https://projectpokemon.org/home/forums/topic/22629-b2w2-general-rom-info/?do=findComment&comment=155888
 items ^^
+
+TM/HM moves string is located at offset 0×9AAB8 (arm9), with the following order:
+
+firstly from TM01 to TM92,
+
+then from HM01 to HM06,
+
+and lastly from TM93 to TM95
+
+https://projectpokemon.org/docs/other/notable-breakpoints-r31/
+
+AT 9AAA0 in arm9
+
+[b]08-0B[/b] - TMs 01-32
+
+[b]0C-0F[/b] - TMs 33-64
+
+[b]OFFSET 0x0030:[/b]
+
+[b]00-03[/b] - TMs 65-92, HMs 01-04 (for BW1 tms 65-85, HM 1)
+
+[b]04-07[/b] - HMs 05-06, TMs 93-95 (for bw1 HM 1-5)
+
+[b]08-0B[/b] - Special Tutors [i](first bit = farthest to the right, obviously)[/i]
+
+[spoiler]08-1: Grass Pledge (08 02)
+08-2: Fire Pledge (07 02)
+08-3: Water Pledge (06 02)
+08-4: Frenzy Plant (52 01)
+08-5: Blast Burn (33 01)
+08-6: Hydro Cannon (34 01)
+08-7: Draco Meteor (B2 01)
+08-8: ---

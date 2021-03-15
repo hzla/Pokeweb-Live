@@ -8,6 +8,7 @@ import os.path
 from os import path
 import json
 import copy
+import re
 
 # code.interact(local=dict(globals(), **locals()))
 
@@ -24,6 +25,9 @@ def set_global_vars():
 	TYPES = ["Normal", "Fighting", "Flying", "Poison", "Ground", "Rock", "Bug", "Ghost", "Steel", "Fire", "Water","Grass","Electric","Psychic","Ice","Dragon","Dark","Fairy"]
 
 	MOVES = open(f'{ROM_NAME}/texts/moves.txt', mode="r").read().splitlines()
+
+	for i,move in enumerate(MOVES):
+		MOVES[i] = re.sub(r'[^A-Za-z0-9 \-]+', '', move)
 
 	LEARNSET_NARC_FORMAT = []
 

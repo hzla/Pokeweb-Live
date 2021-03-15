@@ -8,6 +8,7 @@ import os.path
 from os import path
 import json
 import copy
+import re
 
 # code.interact(local=dict(globals(), **locals()))
 
@@ -37,7 +38,11 @@ def set_global_vars():
 
 	PROPERTIES = ["contact","requires_charge","recharge_turn","blocked_by_protect","reflected_by_magic_coat","stolen_by_snatch","copied_by_mirror_move","punch_move","sound_move","grounded_by_gravity","defrosts_targets","hits_non-adjacent_opponents","healing_move","hits_through_substitute"]
 
-	MOVE_NAMES = open(f'{ROM_NAME}/texts/moves.txt', "r").read().splitlines() 
+	MOVE_NAMES = open(f'{ROM_NAME}/texts/moves.txt', mode="r").read().splitlines()
+
+	for i,move in enumerate(MOVE_NAMES):
+		MOVE_NAMES[i] = re.sub(r'[^A-Za-z0-9 \-]+', '', move)
+
 
 	RESULT_EFFECTS = open(f'Reference_Files/result_effects.txt', "r").read().splitlines()
 

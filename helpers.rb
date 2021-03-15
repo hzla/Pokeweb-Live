@@ -9,6 +9,17 @@ class String
     gsub("-", " ").split(/([ _-])/).map(&:capitalize).join
   end
 
+  def move_titleize
+  	if !self 
+  		return ""
+  	end
+    split(/([ _-])/).map(&:capitalize).join
+  end
+
+  def move_untitleize
+  	upcase
+  end
+
   def squish!
     gsub!("\n", '')
     self
@@ -23,6 +34,7 @@ class NilClass
 	def downcase
 		"-"
 	end
+
 end
 
 # adds addtional move data to learnset data
@@ -49,7 +61,7 @@ def expand_learnset_data(moves, learnset)
 	# sort by lvl learned, and break ties move index
 	move_data.sort_by do |n| 
 		if n["lvl_learned"]
-			n["lvl_learned"].to_i + n["index"].to_i
+			n["lvl_learned"].to_i
 		else
 			101 + n["index"].to_i
 		end

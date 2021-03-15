@@ -14,6 +14,7 @@ import msg_reader
 import personal_writer
 import learnset_writer
 import move_writer
+import tm_writer
 # code.interact(local=dict(globals(), **locals()))
 
 
@@ -48,17 +49,21 @@ rom_name = sys.argv[1].split(".")[0]
 
 
 ####################################################################
-################### WRITE NARCS TO ROM ############################
+################### WRITE NARCS/ARM9 TO ROM ############################
 
 personal_writer.output_narc()
 learnset_writer.output_narc()
 move_writer.output_narc()
+
+tm_writer.output_arm9()
 
 
 
 with open(f'{rom_name}.nds', 'rb') as f:
     data = f.read()
 rom = ndspy.rom.NintendoDSRom(data)
+
+arm9 = ndspy.codeCompression.decompress(rom.arm9)
 
 
 with open(f'session_settings.json', "r") as outfile:  

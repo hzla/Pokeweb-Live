@@ -1,5 +1,5 @@
 import ndspy
-import ndspy.rom, ndspy.bmg
+import ndspy.rom, ndspy.bmg, ndspy.codeCompression
 import ndspy.narc
 import code 
 import io
@@ -12,6 +12,7 @@ import msg_reader
 from personal_reader import output_personal_json
 from learnset_reader import output_learnset_json
 from move_reader import output_moves_json
+from arm9_reader import output_tms_json
 
 # code.interact(local=dict(globals(), **locals()))
 
@@ -56,12 +57,13 @@ BW_MSG_BANKS = [[286, "moves"],
 [54, "items"],
 [89, "locations"]]
 
-################### EXTRACT RELEVANT NARCS #######################
+################### EXTRACT RELEVANT NARCS AND ARM9 #######################
 
 narc_info = {} ##store narc names and file id pairs
 
 with open(f'{rom_name}.nds', 'rb') as f:
     data = f.read()
+
 rom = ndspy.rom.NintendoDSRom(data)
 
 for narc in BW_NARCS:
@@ -73,6 +75,12 @@ for narc in BW_NARCS:
 	
 	with open(f'{rom_name}/narcs/{narc[1]}-{file_id}.narc', 'wb') as f:
 	    f.write(file)
+
+
+arm9 = ndspy.codeCompression.decompress(rom.arm9)
+
+with open(f'{rom_name}/arm9.bin', 'wb') as f:
+	f.write(arm9)
 
 
 #############################################################
@@ -119,6 +127,8 @@ output_learnset_json(learnset_narc_data)
 
 moves_narc_data = ndspy.narc.NARC(rom.files[narc_info["moves"]])
 output_moves_json(moves_narc_data)
+
+output_tms_json(arm9)
 
 
 ### TODO IMPLEMENT READERS FOR OTHER NARCS
