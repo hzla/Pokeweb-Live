@@ -3,7 +3,6 @@ require 'sinatra/reloader'
 require 'json'
 require 'csv'
 require 'pry'
-require 'httparty'
 require_relative 'helpers'
 
 Dir["models/*.rb"].each {|file| require_relative file}
@@ -31,7 +30,7 @@ end
 post '/extract' do 
 	system "python python/rom_loader.py #{params['rom_name']}"
 	content_type :json
-  	{ url: "roms/#{params[:rom_name][0..-5]}/personal" }.to_json
+  	{ url: "/personal" }.to_json
 end
 
 post '/rom/save' do
