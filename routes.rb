@@ -103,7 +103,7 @@ end
 
 get '/moves' do 
 	@title = "- Moves"
-	@active_header = 1
+	@active_header = 3
 	$rom_name = SessionSettings.rom_name
 	
 	@moves = Move.get_all
@@ -118,7 +118,7 @@ end
 
 get '/tms' do 
 	@title = "- TMs"
-	@active_header = 2
+	@active_header = 4
 	$rom_name = SessionSettings.rom_name
 	
 	@moves = Move.get_all

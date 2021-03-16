@@ -28,25 +28,38 @@ class Personal
 		field_to_change = data["field"]
 		changed_value = data["value"]
 
+		file_path = "#{$rom_name}/json/personal/#{file_name}.json"
+		json_data = JSON.parse(File.open(file_path, "r").read)
+
 		if data["int"]
 			changed_value = changed_value.to_i
 		elsif data["field"].split("_")[0] == "ability"
 			changed_value = changed_value.upcase
 		else
-			changed_value = changed_value.titleize
+			changed_value = changed_value.titleize if changed_value.is_a? String
 		end
 
 		if field_to_change == "tutors"
+			tutor_list = data["value"].reverse.join("").to_i(2)
+			json_data["readable"]["tutors"] = tutor_list
+			File.open(file_path, "w") { |f| f.write json_data.to_json }
 			return
 		end
 
 		if field_to_change == "tms"
+			tm_list = data["value"]
+			tm_1 = tm_list[0..31].reverse.join("").to_i(2) 
+			tm_2 = tm_list[32..63].reverse.join("").to_i(2) 
+			tm_3 = tm_list[64..95].reverse.join("").to_i(2) 
+			tm_4 = tm_list[96..110].reverse.join("").to_i(2)
+
+			json_data["readable"]["tm_1-32"] = tm_1
+			json_data["readable"]["tm_33-64"] = tm_1
+			json_data["readable"]["tm_65-95+hm_1"] = tm_1
+			json_data["readable"]["hm_2-6"] = tm_1
+			File.open(file_path, "w") { |f| f.write json_data.to_json }
 			return
 		end
-
-
-		file_path = "#{$rom_name}/json/personal/#{file_name}.json"
-		json_data = JSON.parse(File.open(file_path, "r").read)
 
 		json_data["readable"][field_to_change] = changed_value
 

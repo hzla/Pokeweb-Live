@@ -48,6 +48,3 @@ def decomp(car, key1):
 
 print(decomp(56906, 45553))
 
-#region Compressed String
-
-#endregion
