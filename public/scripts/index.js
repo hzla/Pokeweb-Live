@@ -175,10 +175,20 @@ $( document ).ready(function() {
 	$(document).on('click', ".cell", function(e){
 		$(this).toggleClass('-active')
 
-		var value = ($(this).hasClass('-active') ? 1 : 0)
+		var value = []
 		var field_name = $(this).attr('data-field-name')
 		var index = $(this).parents('.filterable').attr('data-index')
 		var narc = $(this).attr('data-narc')
+
+		cells = $(this).parent().children()
+		cells.each(function(n) {
+			
+			if ($(cells[n]).hasClass('-active')){
+				value.push(1)
+			} else {
+				value.push(0)
+			}
+		}) 
 
 		var data = {}
 
@@ -186,7 +196,6 @@ $( document ).ready(function() {
 		data["field"] = field_name
 		data["value"] = value
 		data["narc"] = narc
-		data["int"] = true
 		
 		console.log(data)
 		$.post( "/personal", {"data": data }, function( e ) {     

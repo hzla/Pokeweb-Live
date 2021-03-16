@@ -57,8 +57,6 @@ move_writer.output_narc()
 
 tm_writer.output_arm9()
 
-
-
 with open(f'{rom_name}.nds', 'rb') as f:
     data = f.read()
 rom = ndspy.rom.NintendoDSRom(data)
@@ -67,20 +65,19 @@ rom = ndspy.rom.NintendoDSRom(data)
 mutable_rom = bytearray(data)
 arm9_offset = 16384 #0x4000
 
-#get edited arm9
-edited_arm9_file = bytearray(open(f'{rom_name}/arm9.bin', 'rb').read())
-
-#compress it
-arm9 = bytearray(ndspy.codeCompression.compress(edited_arm9_file, isArm9=True))
-
-#reinsert arm9
-mutable_rom[arm9_offset:arm9_offset + len(arm9)] = arm9
-
-rom = ndspy.rom.NintendoDSRom(mutable_rom)
 
 
-# open(f'exports/{rom_name}new.nds', 'wb').write(mutable_rom)
+# #get edited arm9
+# edited_arm9_file = bytearray(open(f'{rom_name}/arm9.bin', 'rb').read())
 
+# #compress it
+# arm9 = bytearray(ndspy.codeCompression.compress(edited_arm9_file, isArm9=True))
+
+# #reinsert arm9
+# mutable_rom[arm9_offset:arm9_offset + len(arm9)] = arm9
+
+# #update rom in memory
+# rom = ndspy.rom.NintendoDSRom(mutable_rom)
 
 
 with open(f'session_settings.json', "r") as outfile:  
