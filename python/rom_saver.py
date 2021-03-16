@@ -1,5 +1,5 @@
 import ndspy
-import ndspy.rom, ndspy.bmg
+import ndspy.rom, ndspy.bmg, ndspy.codeCompression
 import ndspy.narc
 import code 
 import io
@@ -63,7 +63,24 @@ with open(f'{rom_name}.nds', 'rb') as f:
     data = f.read()
 rom = ndspy.rom.NintendoDSRom(data)
 
-arm9 = ndspy.codeCompression.decompress(rom.arm9)
+
+mutable_rom = bytearray(data)
+arm9_offset = 16384 #0x4000
+
+#get edited arm9
+edited_arm9_file = bytearray(open(f'{rom_name}/arm9.bin', 'rb').read())
+
+#compress it
+arm9 = bytearray(ndspy.codeCompression.compress(edited_arm9_file, isArm9=True))
+
+#reinsert arm9
+mutable_rom[arm9_offset:arm9_offset + len(arm9)] = arm9
+
+rom = ndspy.rom.NintendoDSRom(mutable_rom)
+
+
+# open(f'exports/{rom_name}new.nds', 'wb').write(mutable_rom)
+
 
 
 with open(f'session_settings.json', "r") as outfile:  

@@ -32,7 +32,9 @@ for folder in ["narcs", "texts", "json"]:
 
 ################# HARDCODED ROM INFO ##############################
 
-BW_NARCS = [["a/0/1/6", "personal"], 
+BW_NARCS = [["a/0/1/6", "personal"],
+["a/0/1/2", "headers"],
+["a/0/0/9", "matrix"], 
 ["a/0/1/7", "growth"],
 ["a/0/1/8", "learnsets"],
 ["a/0/1/9", "evolution"], 
@@ -41,7 +43,7 @@ BW_NARCS = [["a/0/1/6", "personal"],
 ["a/0/2/4", "items"],
 ["a/0/9/1", "trdata"],
 ["a/0/9/2", "trpok"],
-["a/1/2/7", "encounters"],
+["a/1/2/6", "encounters"],
 ["a/0/0/3", "storytext"],
 ["a/0/0/2", "messagetext"],
 ["a/0/5/6", "scripts"]]

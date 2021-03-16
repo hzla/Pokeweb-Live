@@ -1,10 +1,3 @@
-It turns out that the offset was actually just a location in the ROM, I just didn't catch it before as I was comparing White 649 with the regular White and most of it was unchanged.
-
-To actually do the wild data yourself, you have two options:
-
-Go to the offset 083CBB44 in the full English ROM, OR extract the a/1/2/6 narc, which contains the same data.
-
-If you use 083CBB44, you will be taken straight to the Route 1 data. The wild data follows on from there although it doesn't appear to be in any order apart from loosely by routes.
 
 The data of each possible wild encounter is stored in the format of XX XX YY ZZ, where XX XX is the Pokemon's index number in hex flipped around (ie Patrat, whose dex number is 504, is 01F8, which is flipped around and entered as F8 01 in the ROM). YY is the minimum level that the Pokemon can appear at (in hex, of course) and ZZ is the maximum level. There will be a relatively equal chance of it appearing between any of those levels inclusive.
 
@@ -51,4 +44,35 @@ Slot 5 - 1%
 After those twenty you will have another twenty referring to the rare spots, with the same slots as above. Following that, there are another twenty bytes for the Super Rod, with encounter slots the same as the Surf ones I believe. The next twenty after that refer to rare spots when fishing.
 
 If you happen to go to any sections that also have dust clouds or dark spots (ie Driftveil Drawbridge or Chargestone Cave) there are twelve slots for those, with the same encounter rates as grass for each slot.
+
+
+
+1, grass_rate
+1, doubles_grass_rate
+1, special_grass_rate
+1, surf_rate
+1, special_surf_rate
+1, super_rod_rate
+1, special_super_rod_rate
+1, blank
+
+12.times n
+2, grass_slot_n
+1, grass_slot_n_min_level
+1, grass_slot_n_max_level
+
+repeat for doubles ^
+
+repeat for shaking grass ^
+
+5.times n
+2, surf_slot_n
+1, surf_slot_n_min_level
+1, surf_slot_n_max_level
+
+repeat for special surf ^
+
+repeat for super rod ^
+
+repeat for special super rod ^
 

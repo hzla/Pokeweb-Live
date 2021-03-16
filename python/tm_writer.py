@@ -111,16 +111,7 @@ def write_bytes(stream, n, data):
 
 ################ If run with arguments #############
 
-# if len(sys.argv) > 2 and sys.argv[1] == "update":
-# 	write_readable_to_raw()
+if len(sys.argv) > 2 and sys.argv[1] == "update":
+	write_readable_to_raw()
 	
 
-
-
-with open(f'moddedblack.nds', 'rb') as f:
-    data = f.read()
-
-rom = ndspy.rom.NintendoDSRom(data)
-arm9 = ndspy.codeCompression.decompress(rom.arm9)
-
-output_arm9(arm9)
