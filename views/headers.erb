@@ -1,0 +1,64 @@
+<div class="pokemon-filter">	
+	<div class="filter-title">Search Location</div>
+	<input class="filter-input" id="search-text"/>
+	<button class="btn -default" id="search-text-btn" type="button">Search</button>			
+	
+</div>
+
+<div class="pokemon-list spreadsheet" id="headers">
+	<div class="expanded-field field-header">
+		<div class="expanded-field-main">
+			<div class="hdr-id">ID</div>
+			<div class="hdr-location">Location Name</div>
+			<div class="hdr-matrix" >Matrix</div>
+			<div class="hdr-script">Scripts</div>
+			<div class="hdr-texts">Texts</div>
+			<div class="hdr-encounters">Encounters</div>
+		</div>
+	</div>
+
+	<% (1..@header_data["count"]).each do |n| %>
+		<div class="expanded-field filterable" data-index="<%= n %>">
+			<div class="expanded-field-main">
+				<div class="hdr-id"><%= n %></div>
+				<%= field 'location_name', 'hdr-location', {value: @header_data[n.to_s]["location_name"],  narc: "header", autofill: "location_names"} %>
+
+				<%= field 'matrix_id', 'hdr-matrix', {value: @header_data[n.to_s]["matrix_id"],  narc: "header", type: "int-65535"} %>
+
+				<%= field 'script_id', 'hdr-script', {value: @header_data[n.to_s]["script_id"],  narc: "header", type: "int-65535"} %>
+
+				<%= field 'text_bank_id', 'hdr-texts', {value: @header_data[n.to_s]["text_bank_id"],  narc: "header", type: "int-65535"} %>
+
+				<%= field 'encounter_id', 'hdr-encounters', {value: @header_data[n.to_s]["encounter_id"],  narc: "header", type: "int-65535"} %>
+
+				<%= svg :misc_data, 'move-info expand-action expand-header svg', ["expand", "header"] %>
+			</div>
+			<div class="expanded-card-content expanded-header">
+				<% Header.expanded_fields.each do |col| %>
+					<div class="expanded-left" %>
+						
+						<% col.each do |field_name| %>
+							<div class="expanded-field">
+								<div class="header-label"><%= field_name[1].move_titleize %></div>
+								<%= field field_name[1], "hdr-#{field_name}", {value: @header_data[n.to_s][field_name[1]], narc: "header", type: "int-#{field_name[0]}"} %>
+							</div>
+						<% end %>
+					</div>
+				<% end %>			
+			</div>
+		</div>
+	<% end %>
+</div>
+
+
+
+<script>
+	// json object for filtering
+	headers = <%= @header_data.to_json %>
+
+
+	// info for autocomplete
+	autofills = {
+		"location_names": <%= @location_names %>
+	}
+</script>

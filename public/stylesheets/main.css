@@ -170,6 +170,7 @@ p {
     display: flex;
     top: 40px;
     overflow: auto;
+    width: 100%;
 }
 .btn {
     -webkit-transition-property: background-color, color;
@@ -595,7 +596,7 @@ p {
 
 .pokemon-list {
     flex: 1 1 auto;
-    width: 82vw;
+    width: 82%;
     margin-left: 18vw;
     margin-top: 40px;
     position: relative;
@@ -804,11 +805,11 @@ table td {
     position: relative;
 }
 
-.expanded-field.field-header {
+.spreadsheet > .expanded-field.field-header {
     background: #34495e;
     color: white;
     left: 18vw;
-    width: 82vw;
+    width: 82%;
     position: fixed;
     top: 40px;
     box-shadow: 0 0 2px rgb(0 0 0 / 15%);
@@ -819,11 +820,11 @@ table td {
     /*cursor: pointer;*/
     border: 1px solid transparent;
     border-bottom: 1px solid #e9e8e7;
-    width: inherit;
 }
 
 .spreadsheet > .expanded-field {
     flex-direction: column;
+    width: 100%;
 }
 
 #moves .move-type {
@@ -856,8 +857,14 @@ table td {
     width: 36vw;
     flex-grow: 5;
 }
+
 #moves .expanded-field:hover .move-info {
     display: block;
+}
+
+#headers .expanded-field:hover .move-info {
+    display: block;
+    left: 80px
 }
 
 .sticky {
@@ -984,6 +991,8 @@ div.-active svg * {
     padding: 10px 0px;
     font-size: 20px;
     align-items: center;
+    width: inherit;
+    width: 100%;
 }
 
 .expanded-row {
@@ -1116,4 +1125,21 @@ div.-active svg * {
 .cell.-active {
     background: #3498db;
     color: white;
+}
+
+
+.hdr-id {
+    width: 60px;
+}
+
+.hdr-location {
+    width: 200px;
+}
+
+.hdr-script, .hdr-texts, .hdr-encounters, .hdr-matrix {
+    width: 100px;
+}
+
+#headers .expanded-left {
+    width: 33.33%;
 }

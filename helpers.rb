@@ -107,6 +107,33 @@ def svg(name, classes="", data=["", ""], html="")
 	div_start + html + svg + div_end
 end
 
+def field(field_name, class_name, data={})
+	
+	div = "<div class='#{class_name}' contenteditable='true' data-narc='#{data[:narc]}' data-field-name='#{field_name}'"
+	if data[:autofill]
+		div += "data-autocomplete-spy data-autofill='#{data[:autofill]}' "
+	end
+
+	if data[:type]
+		div += "data-type='#{data[:type]}'"
+	end
+	div += '>'
+
+	div += data[:value].to_s
+
+	div += "</div>"
+
+	div
+end
+
+
+#  field 'location_name', 'hdr-location', {value: @header_data[n.to_s]["location_name"],  narc: "header", autofill: "location_names"}
+
+
+# <div class="hdr-location" data-autocomplete-spy contenteditable="true" data-autofill="location_names" data-field-name="location_name" data-narc="header"><%= @header_data[n.to_s]["location_name"] %></div>
+
+
+
 def autofill(obj)
 	obj["autofill"] ? "data-autocomplete-spy" : ""
 end

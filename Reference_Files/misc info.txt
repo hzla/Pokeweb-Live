@@ -33,3 +33,5 @@ AT 9AAA0 in arm9
 08-6: Hydro Cannon (34 01)
 08-7: Draco Meteor (B2 01)
 08-8: ---
+
+https://projectpokemon.org/home/forums/topic/24239-editing-hidden-grottos-via-hex/
