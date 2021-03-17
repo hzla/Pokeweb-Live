@@ -13,6 +13,7 @@ from personal_reader import output_personal_json
 from learnset_reader import output_learnset_json
 from move_reader import output_moves_json
 from arm9_reader import output_tms_json
+from header_reader import output_headers_json
 
 # code.interact(local=dict(globals(), **locals()))
 
@@ -35,6 +36,7 @@ for folder in ["narcs", "texts", "json"]:
 BW_NARCS = [["a/0/1/6", "personal"],
 ["a/0/1/2", "headers"],
 ["a/0/0/9", "matrix"], 
+["a/1/2/5", "overworlds"],
 ["a/0/1/7", "growth"],
 ["a/0/1/8", "learnsets"],
 ["a/0/1/9", "evolution"], 
@@ -120,6 +122,8 @@ with open(f'session_settings.json', "w") as outfile:
 #############################################################
 ################### CONVERT TO JSON #########################
 
+headers_narc_data = ndspy.narc.NARC(rom.files[narc_info["headers"]])
+output_headers_json(headers_narc_data)
 
 personal_narc_data = ndspy.narc.NARC(rom.files[narc_info["personal"]])
 output_personal_json(personal_narc_data)

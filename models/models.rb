@@ -5,12 +5,17 @@
 class SessionSettings
 
 	def self.rom_name
-
 		if File.exist?('session_settings.json')
-			JSON.parse(File.open("session_settings.json", "r").read)["rom_name"]
+			contents = File.open("session_settings.json", "r").read
+			return JSON.parse(contents)["rom_name"] if contents != ""
 		else
 			nil
 		end
+		nil
+	end
+
+	def self.reset
+		settings = File.open("session_settings.json", "w").write("")
 	end
 end
 

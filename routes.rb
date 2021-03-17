@@ -13,7 +13,7 @@ get '/' do
 	$rom_name = SessionSettings.rom_name
 
 	if $rom_name
-		redirect "/personal"
+		redirect "/headers"
 	else
 		@roms = Dir["*.nds"]
 		erb :index
@@ -21,7 +21,7 @@ get '/' do
 end
 
 get '/rom/new' do 
-	File.delete("session_settings.json") if File.exist?("session_settings.json")
+	SessionSettings.reset
 	redirect '/'
 end
 
@@ -30,7 +30,7 @@ end
 post '/extract' do 
 	system "python python/rom_loader.py #{params['rom_name']}"
 	content_type :json
-  	{ url: "/personal" }.to_json
+  	{ url: "/headers" }.to_json
 end
 
 post '/rom/save' do
@@ -46,7 +46,7 @@ end
 
 get '/personal' do
 	@title = "- Personals"
-	@active_header = 0
+	@active_header = 1
 	$rom_name = SessionSettings.rom_name
 	@poke_data = Personal.poke_data
 	@moves = Move.get_all
@@ -103,7 +103,7 @@ end
 
 get '/moves' do 
 	@title = "- Moves"
-	@active_header = 3
+	@active_header = 4
 	$rom_name = SessionSettings.rom_name
 	
 	@moves = Move.get_all
@@ -118,7 +118,7 @@ end
 
 get '/tms' do 
 	@title = "- TMs"
-	@active_header = 4
+	@active_header = 5
 	$rom_name = SessionSettings.rom_name
 	
 	@moves = Move.get_all
@@ -126,4 +126,19 @@ get '/tms' do
 	@move_names = Move.get_names_from @moves
 
 	erb :tms
+end
+
+##################################################
+
+get '/headers' do 
+	@title = "- Headers"
+	@active_header = 0
+	$rom_name = SessionSettings.rom_name
+
+	@header_data = Header.get_all
+
+
+	@location_names = Header.location_names
+
+	erb :headers
 end
