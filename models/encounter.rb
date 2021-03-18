@@ -51,19 +51,26 @@ class Encounter
 
 		encounter_data.each_with_index do |enc, i|
 			wilds = []
-			["grass", "grass_doubles", "grass_special"].each do |enc_type|
-				(0..11).each do |n|
-					wilds << enc["#{enc_type}_slot_#{n}"].gsub(/[^0-9A-Za-z]/, '').downcase
+			
+			seasons.each do |season|
+				grass_fields.each do |enc_type|
+					(0..11).each do |n|
+						wilds << enc["#{season}_#{enc_type}_slot_#{n}"].gsub(/[^0-9A-Za-z\-]/, '').name_titleize
+					end
 				end
-			end
-			["surf", "surf_special", "super_rod" , "super_rod_special"].each do |enc_type|
-				(0..4).each do |n|
-					wilds << enc["#{enc_type}_slot_#{n}"].gsub(". ", "-").downcase
+				water_fields.each do |enc_type|
+					(0..4).each do |n|
+						wilds << enc["#{season}_#{enc_type}_slot_#{n}"].gsub(/[^0-9A-Za-z\-]/, '').name_titleize
+					end
 				end
 			end
 			encounter_data[i]["wilds"] = wilds.reject(&:empty?).uniq
 		end
 		encounter_data
+	end
+
+	def self.seasons
+		["spring", "summer", "fall", "winter"]
 	end
 
 	def self.grass_fields

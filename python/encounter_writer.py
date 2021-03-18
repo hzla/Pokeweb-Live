@@ -13,7 +13,7 @@ import sys
 
 ######################### CONSTANTS #############################
 def set_global_vars():
-	global LOCATIONS, ROM_NAME, NARC_FORMAT, POKEDEX, NARC_FILE_ID
+	global LOCATIONS, ROM_NAME, ENCOUNTER_NARC_FORMAT, POKEDEX, NARC_FILE_ID
 	
 	with open(f'session_settings.json', "r") as outfile:  
 		settings = json.load(outfile) 
@@ -24,26 +24,34 @@ def set_global_vars():
 
 	POKEDEX = open(f'{ROM_NAME}/texts/pokedex.txt', "r").read().splitlines()
 
-	NARC_FORMAT = [[1, "grass_rate"],
-	[1, "doubles_grass_rate"],
-	[1, "special_grass_rate"],
-	[1, "surf_rate"],
-	[1, "surf_special_rate"],
-	[1, "super_rod_rate"],
-	[1, "super_rod_special_rate"],
-	[1, "blank"]]
+	ENCOUNTER_NARC_FORMAT = []
 
-	for enc_type in ["grass", "grass_doubles", "grass_special"]:
-		for n in range(0,12):
-			NARC_FORMAT.append([2, f'{enc_type}_slot_{n}'])
-			NARC_FORMAT.append([1, f'{enc_type}_slot_{n}_min_level'])
-			NARC_FORMAT.append([1, f'{enc_type}_slot_{n}_max_level'])
+	seasons = ["spring", "summer", "fall", "winter"]
 
-	for wat_enc_type in ["surf", "surf_special", "super_rod" , "super_rod_special"]:
-		for n in range(0,5):
-			NARC_FORMAT.append([2, f'{wat_enc_type}_slot_{n}'])
-			NARC_FORMAT.append([1, f'{wat_enc_type}_slot_{n}_min_level'])
-			NARC_FORMAT.append([1, f'{wat_enc_type}_slot_{n}_max_level'])
+	for season in seasons:
+		s_encounters = [[1,f'{season}_grass_rate'],
+		[1, f'{season}_grass_doubles_rate'],
+		[1, f'{season}_grass_special_rate'],
+		[1, f'{season}_surf_rate'],
+		[1, f'{season}_surf_special_rate'],
+		[1, f'{season}_super_rod_rate'],
+		[1, f'{season}_super_rod_special_rate'],
+		[1, f'{season}_blank']]
+
+		for enc_type in ["grass", "grass_doubles", "grass_special"]:
+			for n in range(0,12):
+				s_encounters.append([2, f'{season}_{enc_type}_slot_{n}'])
+				s_encounters.append([1, f'{season}_{enc_type}_slot_{n}_min_level'])
+				s_encounters.append([1, f'{season}_{enc_type}_slot_{n}_max_level'])
+
+		for wat_enc_type in ["surf", "surf_special", "super_rod" , "super_rod_special"]:
+			for n in range(0,5):
+				s_encounters.append([2, f'{season}_{wat_enc_type}_slot_{n}'])
+				s_encounters.append([1, f'{season}_{wat_enc_type}_slot_{n}_min_level'])
+				s_encounters.append([1, f'{season}_{wat_enc_type}_slot_{n}_max_level'])
+
+		for entry in s_encounters:
+			ENCOUNTER_NARC_FORMAT.append(entry)
 
 set_global_vars()
 #################################################################
@@ -105,25 +113,27 @@ def write_readable_to_raw(file_name, narc_name="encounters"):
 def to_raw(readable):
 	raw = copy.deepcopy(readable)
 
-	for enc_type in ["grass", "grass_doubles", "grass_special"]:
-		for n in range(0,12):
-			index = POKEDEX.index(readable[f'{enc_type}_slot_{n}'])
-			
-			raw[f'{enc_type}_slot_{n}'] = index
+	for season in ["spring", "summer", "fall", "winter"]:
 
-			alt_form = f'{enc_type}_slot_{n}_form' in readable
-			if alt_form:
-				raw[f'{enc_type}_slot_{n}'] += (int(readable[f'{enc_type}_slot_{n}_form']) * 2048)
-	
-	for enc_type in ["surf", "surf_special", "super_rod" , "super_rod_special"]:
-		for n in range(0,5):
-			index = POKEDEX.index(readable[f'{enc_type}_slot_{n}'])
-			
-			raw[f'{enc_type}_slot_{n}'] = index
-			
-			alt_form = f'{enc_type}_slot_{n}_form' in readable
-			if alt_form:
-				raw[f'{enc_type}_slot_{n}'] += (int(readable[f'{enc_type}_slot_{n}_form']) * 2048)
+		for enc_type in ["grass", "grass_doubles", "grass_special"]:
+			for n in range(0,12):
+				index = POKEDEX.index(readable[f'{season}_{enc_type}_slot_{n}'])
+				
+				raw[f'{season}_{enc_type}_slot_{n}'] = index
+
+				alt_form = f'{season}_{enc_type}_slot_{n}_form' in readable
+				if alt_form:
+					raw[f'{season}_{enc_type}_slot_{n}'] += (int(readable[f'{season}_{enc_type}_slot_{n}_form']) * 2048)
+		
+		for enc_type in ["surf", "surf_special", "super_rod" , "super_rod_special"]:
+			for n in range(0,5):
+				index = POKEDEX.index(readable[f'{season}_{enc_type}_slot_{n}'])
+				
+				raw[f'{season}_{enc_type}_slot_{n}'] = index
+				
+				alt_form = f'{season}_{enc_type}_slot_{n}_form' in readable
+				if alt_form:
+					raw[f'{season}_{enc_type}_slot_{n}'] += (int(readable[f'{season}_{enc_type}_slot_{n}_form']) * 2048)
 
 	return raw
 	

@@ -912,6 +912,27 @@ table td {
     border-radius: 30px;
 }
 
+.expanded-tab-icons {
+    position: absolute;
+    bottom: -35px;
+    left: 40px;
+    height: 30px;
+    width: 150px;
+    cursor: pointer;
+    display: none;
+    /*display: flex;*/
+    justify-content: space-between;
+}
+
+.expanded-tab-icon {
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+
+
+
+
 .move-type .btn {
     width: 100%;
     padding: 10px 0px;
@@ -1068,6 +1089,10 @@ div.-active svg * {
     padding: 10px 20px;
 }
 
+#encounters.spreadsheet .expanded-card-content .expanded-field {
+    padding: 0px 10px;
+}
+
 .expand-card {
     position: absolute;
     right: 40px;
@@ -1176,7 +1201,7 @@ div.-active svg * {
 }
 
 .wild {
-    width: 60px;
+    width: 80px;
 }
 
 .wild img {

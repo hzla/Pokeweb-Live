@@ -30,68 +30,81 @@
 				</div>
 				<%= svg "svgs/grass", 'move-info expand-action expand-grass svg', ["expand", "grass"] %>
 				<%= svg "svgs/water", 'move-info expand-action expand-water svg', ["expand", "water"] %>
+
+				<div class="expanded-tab-icons">
+					<% Encounter.seasons.each do |season| %>
+						<%= svg "svgs/#{season}", "expanded-tab-icon show-#{season} svg", ["show", season] %>
+					<% end %>
+				</div>
+
 			</div>
-			<div class="expanded-card-content expanded-encounter expanded-grass">
-				<% Encounter.grass_fields.each do |field| %>
-					<div class="expanded-left">
-						<div class="expanded-field field-header">
-							<div class="enc-slot">Encounter Rate</div>
-							<%= field "#{field}_rate", 'enc-rate', {value: enc["#{field}_rate"],  narc: "encounter", type: "int-100"} %>
-						</div>
-						<div class="expanded-field field-header">
-							<div class="enc-slot"><%= field.titleize %></div>
-							<div class="enc-lvl">Min</div>
-							<div class="enc-lvl">Max</div>
-							<div class="enc-form">Form</div>
-							<div class="enc-percent">%</div>
-						</div>
-						<% (0..11).each do |n| %>
-							<div class="expanded-field">
-								<%= field "#{field}_slot_#{n}", 'enc-slot enc-name', {value: enc["#{field}_slot_#{n}"].titleize,  narc: "encounter", autofill: "pokemon_names"} %>
 
-								<%= field "#{field}_slot_#{n}_min_level", 'enc-lvl', {value: enc["#{field}_slot_#{n}_min_level"],  narc: "encounter", type: "int-100"} %>
+			<% Encounter.seasons.each do |season| %>
 
-								<%= field "#{field}_slot_#{n}_max_level", 'enc-lvl', {value: enc["#{field}_slot_#{n}_max_level"],  narc: "encounter", type: "int-100"} %>
-
-								<%= field "#{field}_slot_#{n}_form", 'enc-form', {value: (enc["#{field}_slot_#{n}_form"] || 0),  narc: "encounter", type: "int-100"} %>
-							
-								<div class="enc-percent"><%= Encounter.grass_percent_for n %></div>
+				<div class="expanded-card-content expanded-encounter expanded-grass expanded-<%= season %>">
+					<% Encounter.grass_fields.each do |field| %>
+						<div class="expanded-left">
+							<div class="expanded-field field-header">
+								<div class="enc-slot">Encounter Rate</div>
+								<%= field "#{season}_#{field}_rate", 'enc-rate', {value: enc["#{season}_#{field}_rate"],  narc: "encounter", type: "int-100"} %>
 							</div>
-						<% end %>
-					</div>
-				<% end %>
-			</div>
-
-			<div class="expanded-card-content expanded-encounter expanded-water">
-				<% Encounter.water_fields.each do |field| %>
-					<div class="expanded-left">
-						<div class="expanded-field field-header">
-							<div class="enc-slot">Encounter Rate</div>
-							<%= field "#{field}_rate", 'enc-rate', {value: enc["#{field}_rate"],  narc: "encounter", type: "int-100"} %>
-						</div>
-						<div class="expanded-field field-header">
-							<div class="enc-slot"><%= field.titleize %></div>
-							<div class="enc-lvl">Min</div>
-							<div class="enc-lvl">Max</div>
-							<div class="enc-form">Form</div>
-							<div class="enc-percent">%</div>
-						</div>
-						<% (0..4).each do |n| %>
-							<div class="expanded-field">
-								<%= field "#{field}_slot_#{n}", 'enc-slot enc-name', {value: enc["#{field}_slot_#{n}"].titleize,  narc: "encounter", autofill: "pokemon_names"} %>
-
-								<%= field "#{field}_slot_#{n}_min_level", 'enc-lvl', {value: enc["#{field}_slot_#{n}_min_level"],  narc: "encounter", type: "int-100"} %>
-
-								<%= field "#{field}_slot_#{n}_max_level", 'enc-lvl', {value: enc["#{field}_slot_#{n}_max_level"],  narc: "encounter", type: "int-100"} %>
-
-								<%= field "#{field}_slot_#{n}_form", 'enc-form', {value: (enc["#{field}_slot_#{n}_form"] || 0),  narc: "encounter", type: "int-100"} %>
-
-								<div class="enc-percent"><%= Encounter.water_percent_for n %></div>
+							<div class="expanded-field field-header">
+								<div class="enc-slot"><%= field.titleize %></div>
+								<div class="enc-lvl">Min</div>
+								<div class="enc-lvl">Max</div>
+								<div class="enc-form">Form</div>
+								<div class="enc-percent">%</div>
 							</div>
-						<% end %>
-					</div>
-				<% end %>
-			</div>
+							<% (0..11).each do |n| %>
+								<div class="expanded-field">
+									<%= field "#{season}_#{field}_slot_#{n}", 'enc-slot enc-name', {value: enc["#{season}_#{field}_slot_#{n}"].name_titleize,  narc: "encounter", autofill: "pokemon_names"} %>
+
+									<%= field "#{season}_#{field}_slot_#{n}_min_level", 'enc-lvl', {value: enc["#{season}_#{field}_slot_#{n}_min_level"],  narc: "encounter", type: "int-100"} %>
+
+									<%= field "#{season}_#{field}_slot_#{n}_max_level", 'enc-lvl', {value: enc["#{season}_#{field}_slot_#{n}_max_level"],  narc: "encounter", type: "int-100"} %>
+
+									<%= field "#{season}_#{field}_slot_#{n}_form", 'enc-form', {value: (enc["#{season}_#{field}_slot_#{n}_form"] || 0),  narc: "encounter", type: "int-100"} %>
+								
+									<div class="enc-percent"><%= Encounter.grass_percent_for n %></div>
+								</div>
+							<% end %>
+						</div>
+					<% end %>
+				</div>
+			<% end %>
+
+			<% Encounter.seasons.each do |season| %>
+				<div class="expanded-card-content expanded-encounter expanded-water expanded-<%= season %>">
+					<% Encounter.water_fields.each do |field| %>
+						<div class="expanded-left">
+							<div class="expanded-field field-header">
+								<div class="enc-slot">Encounter Rate</div>
+								<%= field "#{season}_#{field}_rate", 'enc-rate', {value: enc["#{season}_#{field}_rate"],  narc: "encounter", type: "int-100"} %>
+							</div>
+							<div class="expanded-field field-header">
+								<div class="enc-slot"><%= field.titleize %></div>
+								<div class="enc-lvl">Min</div>
+								<div class="enc-lvl">Max</div>
+								<div class="enc-form">Form</div>
+								<div class="enc-percent">%</div>
+							</div>
+							<% (0..4).each do |n| %>
+								<div class="expanded-field">
+									<%= field "#{season}_#{field}_slot_#{n}", 'enc-slot enc-name', {value: enc["#{season}_#{field}_slot_#{n}"].name_titleize,  narc: "encounter", autofill: "pokemon_names"} %>
+
+									<%= field "#{season}_#{field}_slot_#{n}_min_level", 'enc-lvl', {value: enc["#{season}_#{field}_slot_#{n}_min_level"],  narc: "encounter", type: "int-100"} %>
+
+									<%= field "#{season}_#{field}_slot_#{n}_max_level", 'enc-lvl', {value: enc["#{season}_#{field}_slot_#{n}_max_level"],  narc: "encounter", type: "int-100"} %>
+
+									<%= field "#{season}_#{field}_slot_#{n}_form", 'enc-form', {value: (enc["#{season}_#{field}_slot_#{n}_form"] || 0),  narc: "encounter", type: "int-100"} %>
+
+									<div class="enc-percent"><%= Encounter.water_percent_for n %></div>
+								</div>
+							<% end %>
+						</div>
+					<% end %>
+				</div>
+			<% end %>
 		</div>
 	<% end %>
 </div>

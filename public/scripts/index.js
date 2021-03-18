@@ -49,17 +49,38 @@ $( document ).ready(function() {
 
 	$(document).on('click', '.expand-action', function(){
 		expanded_card = $(this).attr('data-expand')
-
+		var card = $(this).parents('.filterable')
 		// console.log($(this).parents('.filterable').find('.expanded-card-content'))
 		// if hiding tab
-		if ($(this).parents('.filterable').find('.expanded-' + expanded_card + ":visible").length > 0) {
-			$(this).parents('.filterable').find('.expanded-card-content').removeClass('show-flex')
+		if (card.find('.expanded-' + expanded_card + ":visible").length > 0) {
+			card.find('.expanded-card-content').removeClass('show-flex')
 			$(this).removeClass('-active')
+			card.find('.expanded-tab-icons').removeClass('show-flex')
 		} else { // else switching tabs
-			$(this).parents('.filterable').find('.expanded-card-content').removeClass('show-flex')
+			card.find('.expanded-card-content').removeClass('show-flex')
 			
-			$(this).parents('.filterable').find('.expanded-' + expanded_card).addClass('show-flex');
-			$(this).parents('.filterable').find('.card-icon, .expand-action').removeClass('-active')
+			card.find('.expanded-tab-icons').addClass('show-flex')
+			card.find('.expanded-' + expanded_card).first().addClass('show-flex');
+			card.find('.expanded-tab-icon').removeClass('-active')
+			card.find('.expanded-tab-icon').first().addClass('-active')
+
+			card.find('.card-icon, .expand-action').removeClass('-active')
+			$(this).addClass('-active')
+		}
+	})	
+
+	$(document).on('click', '.expanded-tab-icon', function(){
+		expanded_tab = $(this).attr('data-show')
+		var card = $(this).parents('.filterable')
+		var tab_group = '.expanded-' + card.find('.expand-action.-active').attr('data-expand')
+
+		if (card.find('.expanded-' + expanded_tab + ":visible").length > 0) {
+			// do nothing
+		} else { // else switching tabs
+			card.find('.expanded-card-content').removeClass('show-flex')
+			
+			card.find('.expanded-' + expanded_tab + tab_group).addClass('show-flex');
+			card.find('.expanded-tab-icon').removeClass('-active')
 			$(this).addClass('-active')
 		}
 	})	
@@ -227,13 +248,13 @@ $( document ).ready(function() {
 	// expand move data 
 	$(document).on('focusout', ".move-name[contenteditable='true']", function(){
 		var value = $(this).text().trim()
-		move_data = Object.values(moves).find(e => e["name"].toLowerCase().toCamelCase() == value.toLowerCase().toCamelCase() )
+		move_data = Object.values(moves).find(e => e[1]["name"].toLowerCase().toCamelCase() == value.toLowerCase().toCamelCase() )
 
 		if (move_data) {
-			type = move_data["type"] 
-			power = move_data["power"]
-			acc = move_data["accuracy"]
-			effect = move_data["effect"]
+			type = move_data[1]["type"] 
+			power = move_data[1]["power"]
+			acc = move_data[1]["accuracy"]
+			effect = move_data[1]["effect"]
 			
 			type_name_length = 3
 			if ($('.tm-list').length > 0) {
@@ -277,8 +298,11 @@ $( document ).ready(function() {
 		card.find(".wild").remove()
 		
 		$.each(unique_encs, function(i,v) {
-			var sprite = "<div class='wild'><img src='/images/pokesprite/" + v + ".png'></div>"
-			card.find(".encounter-wilds").append(sprite)
+			if (v != "") {
+				var sprite = "<div class='wild'><img src='/images/pokesprite/" + v + ".png'></div>"
+				card.find(".encounter-wilds").append(sprite)
+			}
+			
 		})
 	})
 
