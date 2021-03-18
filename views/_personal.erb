@@ -1,7 +1,9 @@
 <div class="pokemon-card filterable" data-gen="<%= to_gen pok["index"] %>" data-index=<%= pok["index"] %>>
 	<div class="pokemon-card__info">
 		<div class="pokemon-card__header">
-			<div class="pokemon-card__img"><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/<%= pok["index"] %>.png" alt="charizard"></div>
+			<div class="pokemon-card__img">
+				<%= img "pokesprite/#{pok["name"].gsub(". ", "-").downcase}.png" %>
+			</div>
 			<div class="pokemon-card__id">#<%= pok["index"] %></div>
 		</div>
 		<div class="pokemon-card__name"><%= pok["name"].titleize %></div>

@@ -59,7 +59,7 @@ $( document ).ready(function() {
 			$(this).parents('.filterable').find('.expanded-card-content').removeClass('show-flex')
 			
 			$(this).parents('.filterable').find('.expanded-' + expanded_card).addClass('show-flex');
-			$(this).parents('.filterable').find('.card-icon').removeClass('-active')
+			$(this).parents('.filterable').find('.card-icon, .expand-action').removeClass('-active')
 			$(this).addClass('-active')
 		}
 	})	
@@ -97,7 +97,7 @@ $( document ).ready(function() {
 			valid_fields = autofills[$(this).attr('data-autofill')]
 			valid_fields = JSON.stringify(valid_fields).toLowerCase()
 
-			if (!valid_fields.includes(value.toLowerCase())) {
+			if (!valid_fields.includes(value.toLowerCase()) || value == "-" || value == "") {
 				$(this).css('border', '1px solid red')
 				return
 			}
@@ -260,9 +260,30 @@ $( document ).ready(function() {
 		$(this).parent().find(".pokemon-card__graph").css('width', width.toString() + "%")
 	})
 
+	$(document).on('focusout', ".enc-name[contenteditable='true']", function(){
+		var value = $(this).text().trim()
+		var card = $(this).parents('.filterable')
+		var all_encs = card.find('.enc-name')
+
+		var encs = all_encs.map(function(e) {	
+			return $(all_encs[e]).text() 
+		}).toArray()
+
+
+		let unique_encs = encs.filter((c, index) => {
+		    return (encs.indexOf(c) === index && c != "-");
+		});
+		
+		card.find(".wild").remove()
+		
+		$.each(unique_encs, function(i,v) {
+			var sprite = "<div class='wild'><img src='/images/pokesprite/" + v + ".png'></div>"
+			card.find(".encounter-wilds").append(sprite)
+		})
+	})
+
 
 	$(document).on('autocomplete:request', "[contenteditable='true']", function(event, query, callback) {
-	  console.log("acing")
 	  var suggestions = autofills[$(this).attr('data-autofill')].filter(function(e){
 	  	return e.toLowerCase().includes(query.toLowerCase())
 	  });
@@ -413,6 +434,64 @@ function filter() {
 			}
 
 			return type_match && cat_match && text_match
+		})
+	}
+
+	if ($('#headers').length > 0) {		
+		var list = Object.values(headers).sort(function(a,b) {
+			parseInt(a["index"]) - parseInt(b["index"]);
+		})
+
+		search_results = list.filter(function(e) {
+			text_match = false
+
+			if (text_filters) {
+				texts = text_filters.split(",")
+				for (text in texts) {
+					// console.log(texts)
+					text = texts[text]
+					
+					if (e["location_name"]) {
+						text_match = e["location_name"].toLowerCase().includes(text.toLowerCase())
+					}
+					
+					if (text_match ) {break;}
+				} 
+			} else { // when no text filter
+				text_match = true
+			}
+
+			if (text_match) {
+				$(cards[list.indexOf(e)]).show()
+			}
+			return text_match
+		})
+	}
+
+	if ($('#encounters').length > 0) {		
+		var list = Object.values(encounters).sort(function(a,b) {
+			parseInt(a["index"]) - parseInt(b["index"]);
+		})
+
+		search_results = list.filter(function(e) {
+			text_match = false
+
+			if (text_filters) {
+				texts = text_filters.split(",")
+				for (text in texts) {
+					text = texts[text]
+
+					text_match = JSON.stringify(e).toLowerCase().includes(text.toLowerCase())
+					if (text_match ) {break;}
+				} 
+			} else { // when no text filter
+				text_match = true
+			}
+
+			if (text_match) {
+				$(cards[list.indexOf(e)]).show()
+			}
+			return text_match
 		})
 	}
 	

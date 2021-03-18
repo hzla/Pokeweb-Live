@@ -6,14 +6,21 @@ class String
   	if !self 
   		return "-"
   	end
-    gsub("-", " ").split(/([ _-])/).map(&:capitalize).join
+    downcase.gsub("-", " ").split(/([ _-])/).map(&:capitalize).join
   end
 
   def move_titleize
   	if !self 
   		return ""
   	end
-    split(/([ _-])/).map(&:capitalize).join
+    downcase.split(/([ _-])/).map(&:capitalize).join
+  end
+
+  def name_titleize
+  	if !self 
+  		return ""
+  	end
+    downcase.split(/(?<=[ _-])/).map(&:capitalize).join
   end
 
   def move_untitleize
@@ -50,7 +57,7 @@ def expand_learnset_data(moves, learnset)
 			all_move_data = moves[ls_data["move_id"]]
 			# copy these fields to be presented
 			["type", "category", "power", "accuracy"].each do |field|
-				ls_data[field] = all_move_data[field]
+				ls_data[field] = all_move_data[1][field]
 			end
 			move_data << ls_data
 		else

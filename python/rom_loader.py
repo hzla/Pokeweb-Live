@@ -14,6 +14,7 @@ from learnset_reader import output_learnset_json
 from move_reader import output_moves_json
 from arm9_reader import output_tms_json
 from header_reader import output_headers_json
+from encounter_reader import output_encounters_json
 
 # code.interact(local=dict(globals(), **locals()))
 
@@ -133,6 +134,9 @@ output_learnset_json(learnset_narc_data)
 
 moves_narc_data = ndspy.narc.NARC(rom.files[narc_info["moves"]])
 output_moves_json(moves_narc_data)
+
+encounters_narc_data = ndspy.narc.NARC(rom.files[narc_info["encounters"]])
+output_encounters_json(encounters_narc_data)
 
 output_tms_json(arm9)
 
