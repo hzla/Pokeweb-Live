@@ -21,6 +21,13 @@ end
 
 class RomInfo
 
+	def self.pokemon_names
+		file_path = "#{$rom_name}/texts/pokedex.txt"
+		data = File.open(file_path, "r:ISO8859-1").read.split("\n").map do |p|
+			p.name_titleize
+		end
+	end
+
 	def self.types
 		["Normal", "Fighting", "Flying", "Poison", "Ground", "Rock", "Bug", "Ghost", "Steel", "Fire", "Water","Grass","Electric","Psychic","Ice","Dragon","Dark"].map do |type|
 			type.upcase

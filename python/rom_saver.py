@@ -15,6 +15,8 @@ import personal_writer
 import learnset_writer
 import move_writer
 import tm_writer
+import header_writer
+import encounter_writer
 # code.interact(local=dict(globals(), **locals()))
 
 
@@ -54,6 +56,8 @@ rom_name = sys.argv[1].split(".")[0]
 personal_writer.output_narc()
 learnset_writer.output_narc()
 move_writer.output_narc()
+header_writer.output_narc()
+encounter_writer.output_narc()
 
 tm_writer.output_arm9()
 
@@ -67,17 +71,17 @@ arm9_offset = 16384 #0x4000
 
 
 
-# #get edited arm9
-# edited_arm9_file = bytearray(open(f'{rom_name}/arm9.bin', 'rb').read())
+#get edited arm9
+edited_arm9_file = bytearray(open(f'{rom_name}/arm9.bin', 'rb').read())
 
-# #compress it
-# arm9 = bytearray(ndspy.codeCompression.compress(edited_arm9_file, isArm9=True))
+#compress it
+arm9 = bytearray(ndspy.codeCompression.compress(edited_arm9_file, isArm9=True))
 
-# #reinsert arm9
-# mutable_rom[arm9_offset:arm9_offset + len(arm9)] = arm9
+#reinsert arm9
+mutable_rom[arm9_offset:arm9_offset + len(arm9)] = arm9
 
-# #update rom in memory
-# rom = ndspy.rom.NintendoDSRom(mutable_rom)
+#update rom in memory
+rom = ndspy.rom.NintendoDSRom(mutable_rom)
 
 
 with open(f'session_settings.json', "r") as outfile:  
@@ -85,15 +89,21 @@ with open(f'session_settings.json', "r") as outfile:
 	personal_narc_file_id = settings["personal"]
 	learnset_narc_file_id = settings["learnsets"]
 	moves_narc_file_id = settings["moves"]
+	headers_narc_file_id = settings["headers"]
+	encounters_narc_file_id = settings["encounters"]
 
 personal_narc_filepath = f'{rom_name}/narcs/personal-{personal_narc_file_id}.narc'
 learnset_narc_filepath = f'{rom_name}/narcs/learnsets-{learnset_narc_file_id}.narc'
 moves_narc_filepath = f'{rom_name}/narcs/moves-{moves_narc_file_id}.narc'
+headers_narc_filepath = f'{rom_name}/narcs/headers-{headers_narc_file_id}.narc'
+encounters_narc_filepath = f'{rom_name}/narcs/encounters-{encounters_narc_file_id}.narc'
 
 
 rom.files[personal_narc_file_id] = open(personal_narc_filepath, 'rb').read()
 rom.files[learnset_narc_file_id] = open(learnset_narc_filepath, 'rb').read()
 rom.files[moves_narc_file_id] = open(moves_narc_filepath, 'rb').read()
+rom.files[headers_narc_file_id] = open(headers_narc_filepath, 'rb').read()
+rom.files[encounters_narc_file_id] = open(encounters_narc_filepath, 'rb').read()
 
 
 print("attempting save")

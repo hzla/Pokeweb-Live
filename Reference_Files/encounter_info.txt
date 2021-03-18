@@ -47,14 +47,14 @@ If you happen to go to any sections that also have dust clouds or dark spots (ie
 
 
 
-1, grass_rate
-1, doubles_grass_rate
-1, special_grass_rate
-1, surf_rate
-1, special_surf_rate
-1, super_rod_rate
-1, special_super_rod_rate
-1, blank
+1, "grass_rate"
+1, "doubles_grass_rate"
+1, "special_grass_rate"
+1, "surf_rate"
+1, "special_surf_rate"
+1, "super_rod_rate"
+1, "special_super_rod_rate"
+1, "blank"
 
 12.times n
 2, grass_slot_n

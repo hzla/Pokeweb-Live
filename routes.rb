@@ -107,7 +107,7 @@ get '/moves' do
 	$rom_name = SessionSettings.rom_name
 	
 	@moves = Move.get_all
-	@moves = @moves.to_a.sort_by {|mov| mov[0] }
+
 	# @moves = @moves[0..10]
 	
 	@poke_data = Personal.poke_data
@@ -141,4 +141,16 @@ get '/headers' do
 	@location_names = Header.location_names
 
 	erb :headers
+end
+
+get '/encounters' do 
+	@title = "- Encounters"
+	@active_header = 3
+	$rom_name = SessionSettings.rom_name
+
+	@encounters = Encounter.get_all
+	@location_names = Header.location_names
+
+	erb :encounters
+
 end

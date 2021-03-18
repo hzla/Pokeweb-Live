@@ -404,6 +404,10 @@ p {
     min-height: 96px;
     min-width: 96px;
 }
+
+.pokemon-card__img img {
+    width: 100%;
+}
 .pokemon-card__info {
     background: #fff;
     border-radius: 20px;
@@ -805,9 +809,15 @@ table td {
     position: relative;
 }
 
-.spreadsheet > .expanded-field.field-header {
+.field-header {
     background: #34495e;
     color: white;
+}
+
+
+
+.spreadsheet > .expanded-field.field-header {
+
     left: 18vw;
     width: 82%;
     position: fixed;
@@ -858,13 +868,20 @@ table td {
     flex-grow: 5;
 }
 
-#moves .expanded-field:hover .move-info {
+
+
+.expanded-field:hover .move-info {
     display: block;
 }
 
-#headers .expanded-field:hover .move-info {
+#headers .expanded-field:hover .move-info, #encounters .expanded-field:hover .move-info {
     display: block;
     left: 80px
+}
+
+#encounters .expanded-field:hover .move-info.expand-grass {
+    display: block;
+    left: 40px
 }
 
 .sticky {
@@ -927,8 +944,12 @@ table td {
 }
 
 div.-active svg * {
-    /*fill: #3498db;*/
+    fill: #3498db;
     stroke:  #3498db;
+}
+
+.no-fill.-active svg *  {
+    fill: none;
 }
 
 
@@ -1128,7 +1149,7 @@ div.-active svg * {
 }
 
 
-.hdr-id {
+.hdr-id, .encounter-id {
     width: 60px;
 }
 
@@ -1142,4 +1163,55 @@ div.-active svg * {
 
 #headers .expanded-left {
     width: 33.33%;
+}
+
+.encounter-locations {
+    width: 160px;
+}
+
+.encounter-wilds {
+    width: 50vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.wild {
+    width: 60px;
+}
+
+.wild img {
+    width: 100%;
+}
+
+.expanded-encounter {
+    flex-wrap: wrap;
+}
+
+.expanded-encounter .expanded-left {
+    width: 50%;
+}
+
+.enc-lvl, .enc-form, .enc-percent, .enc-rate {
+    width: 50px;
+    padding: 5px;
+}
+
+.enc-slot {
+    width: 200px;
+}
+
+.expand-water {
+    left: 40px;
+}
+
+.expanded-grass {
+    background: rgba(46, 204, 113,0.2);
+}
+
+.expand-action.expand-grass.-active svg *{
+    fill: rgba(46, 204, 113,1) ;
+}
+
+.expanded-water {
+    background: rgba(52, 152, 219,0.2);
 }

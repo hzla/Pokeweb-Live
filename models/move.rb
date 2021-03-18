@@ -12,7 +12,7 @@ class Move
 			move_id = move_data["index"]
 			moves[move_id] = move_data
 		end
-		moves
+		moves.to_a.sort_by {|mov| mov[0] }
 	end
 
 	def self.write_data data
