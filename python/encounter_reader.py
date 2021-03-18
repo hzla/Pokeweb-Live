@@ -20,30 +20,41 @@ def set_global_vars():
 
 	POKEDEX = open(f'{ROM_NAME}/texts/pokedex.txt', "r").read().splitlines()
 
-	ENCOUNTER_NARC_FORMAT = [[1, "grass_rate"],
-	[1, "grass_doubles_rate"],
-	[1, "grass_special_rate"],
-	[1, "surf_rate"],
-	[1, "surf_special_rate"],
-	[1, "super_rod_rate"],
-	[1, "super_rod_special_rate"],
-	[1, "blank"]]
+	ENCOUNTER_NARC_FORMAT = []
 
-	for enc_type in ["grass", "grass_doubles", "grass_special"]:
-		for n in range(0,12):
-			ENCOUNTER_NARC_FORMAT.append([2, f'{enc_type}_slot_{n}'])
-			ENCOUNTER_NARC_FORMAT.append([1, f'{enc_type}_slot_{n}_min_level'])
-			ENCOUNTER_NARC_FORMAT.append([1, f'{enc_type}_slot_{n}_max_level'])
+	seasons = ["spring", "summer", "fall", "winter"]
 
-	for wat_enc_type in ["surf", "surf_special", "super_rod" , "super_rod_special"]:
-		for n in range(0,5):
-			ENCOUNTER_NARC_FORMAT.append([2, f'{wat_enc_type}_slot_{n}'])
-			ENCOUNTER_NARC_FORMAT.append([1, f'{wat_enc_type}_slot_{n}_min_level'])
-			ENCOUNTER_NARC_FORMAT.append([1, f'{wat_enc_type}_slot_{n}_max_level'])
+	for season in seasons:
+		s_encounters = [[1,f'{season}_grass_rate'],
+		[1, f'{season}_grass_doubles_rate'],
+		[1, f'{season}_grass_special_rate'],
+		[1, f'{season}_surf_rate'],
+		[1, f'{season}_surf_special_rate'],
+		[1, f'{season}_super_rod_rate'],
+		[1, f'{season}_super_rod_special_rate'],
+		[1, f'{season}_blank']]
+
+		for enc_type in ["grass", "grass_doubles", "grass_special"]:
+			for n in range(0,12):
+				s_encounters.append([2, f'{season}_{enc_type}_slot_{n}'])
+				s_encounters.append([1, f'{season}_{enc_type}_slot_{n}_min_level'])
+				s_encounters.append([1, f'{season}_{enc_type}_slot_{n}_max_level'])
+
+		for wat_enc_type in ["surf", "surf_special", "super_rod" , "super_rod_special"]:
+			for n in range(0,5):
+				s_encounters.append([2, f'{season}_{wat_enc_type}_slot_{n}'])
+				s_encounters.append([1, f'{season}_{wat_enc_type}_slot_{n}_min_level'])
+				s_encounters.append([1, f'{season}_{wat_enc_type}_slot_{n}_max_level'])
+
+		for entry in s_encounters:
+			ENCOUNTER_NARC_FORMAT.append(entry)
+
+
 
 def output_encounters_json(narc):
 	set_global_vars()
 	data_index = 0
+	print(ENCOUNTER_NARC_FORMAT)
 	for data in narc.files:
 		data_name = data_index
 		read_narc_data(data, ENCOUNTER_NARC_FORMAT, data_name, "encounters")
@@ -69,24 +80,27 @@ def read_narc_data(data, narc_format, file_name, narc_name):
 
 def to_readable(raw, file_name):
 	readable = copy.deepcopy(raw)
-	for enc_type in ["grass", "grass_doubles", "grass_special"]:
-		for n in range(0,12):
-			index = raw[f'{enc_type}_slot_{n}']
-			
-			if index >= 2048:
-				readable[f'{enc_type}_slot_{n}_form'] = floor(index / 2048)
-				index = index % 2048
+	
+	for season in ["spring", "summer", "fall", "winter"]:
 
-			readable[f'{enc_type}_slot_{n}'] = POKEDEX[index]
+		for enc_type in ["grass", "grass_doubles", "grass_special"]:
+			for n in range(0,12):
+				index = raw[f'{season}_{enc_type}_slot_{n}']
+				
+				if index >= 2048:
+					readable[f'{season}_{enc_type}_slot_{n}_form'] = floor(index / 2048)
+					index = index % 2048
 
-	for wat_enc_type in ["surf", "surf_special", "super_rod" , "super_rod_special"]:
-		for n in range(0,5):
-			index = raw[f'{wat_enc_type}_slot_{n}']		
-			if index >= 2048:
-				readable[f'{wat_enc_type}_slot_{n}_form'] = floor(index / 2048)
-				index = index % 2048
+				readable[f'{season}_{enc_type}_slot_{n}'] = POKEDEX[index]
 
-			readable[f'{wat_enc_type}_slot_{n}'] = POKEDEX[index]
+		for wat_enc_type in ["surf", "surf_special", "super_rod" , "super_rod_special"]:
+			for n in range(0,5):
+				index = raw[f'{season}_{wat_enc_type}_slot_{n}']		
+				if index >= 2048:
+					readable[f'{season}_{wat_enc_type}_slot_{n}_form'] = floor(index / 2048)
+					index = index % 2048
+
+				readable[f'{season}_{wat_enc_type}_slot_{n}'] = POKEDEX[index]
 
 
 	return readable

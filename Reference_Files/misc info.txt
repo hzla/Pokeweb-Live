@@ -35,3 +35,113 @@ AT 9AAA0 in arm9
 08-8: ---
 
 https://projectpokemon.org/home/forums/topic/24239-editing-hidden-grottos-via-hex/
+
+Crossposting from my post at Smogon to here: Pickup Table
+
+Overlay 166, at 7E2 there are 2 tables of items. Same % chance per slot compared to BW.
+
+For the rare table (the 2 1% items you might get at a given level), it starts off with the first two. For every 10 levels, shift down one row. Similar deal for the common table.
+
+Example: Level 1 pickup might get row (0 or 1). Level 11 pickup might get row (1 or 2). Level 21 pickup might get row (2 or 3)...
+
+For the common table it's the same deal, except there's 8 possibilities per level. Level 1 gets row (012345678), Level 11 -> row (123456789.....)
+
+Reportedly the chances are:
+
+ C0    C1    C2    C3    C4    C5    C6    C7    C8  | R1  R2
+0-29 30-39 40-49 50-59 60-69 70-79 80-89 90-93 94-97 | 98  99
+30%   10%   10%   10%   10%   10%   10%    4%    4% | 1%  1%
+
+
+
+
+
+
+Bond697
+Innovator
+ 39
+1358 posts
+Trophies and Medals
+      
+Posted January 30, 2013 (edited)
+021D7540 Type-effectiveness chart(0- no effect, 2- .5x dmg, 4- 1x dmg, 8- 2x dmg) Bond697
+
+021BD1A0 Determine type effectiveness for the current attack Bond697
+
+it is in overlay 167 and it is 17x17.
+
+ovl167 starts at 2199900, so do some subtraction.
+
+21d7540 - 2199900 = 3DC40 into the overlay. subtract 0x40 for black 2.
+
+e: the values to use for each type:
+
+typedef enum
+
+{
+
+TYPE_NORMAL = 0x0,
+
+TYPE_FIGHT = 0x1,
+
+TYPE_FLY = 0x2,
+
+TYPE_POIS = 0x3,
+
+TYPE_GROUND = 0x4,
+
+TYPE_ROCK = 0x5,
+
+TYPE_BUG = 0x6,
+
+TYPE_GHOST = 0x7,
+
+TYPE_STEEL = 0x8,
+
+TYPE_FIRE = 0x9,
+
+TYPE_WATER = 0xA,
+
+TYPE_GRASS = 0xB,
+
+TYPE_ELEC = 0xC,
+
+TYPE_PSY = 0xD,
+
+TYPE_ICE = 0xE,
+
+TYPE_DRAGON = 0xF,
+
+TYPE_DARK = 0x10,
+
+} PokeType;
+
+e2: quick example of how to edit.
+
+say i'm using a normal type attack on a rock type. refer to the chart and see that normal is 0x0 and rock is 0x5. even though the array is 17x17 (u8 type_chart[17][17]), they will be 1 long line in the assembled code. so you do this to get the right value to go to:
+
+attacking_type * 17 + defending type + 1 = value to seek to
+
+*the +1 is because the array starts from index 0, not 1. and it's *17 because there's 17 types. so 17*attacking type skips to that type's "row".
+
+so since i have normal attacking and rock defending, i would do 0*17 + 5 + 1 which means to count to the 6th element in the array. so i would count from the top:
+
+OVL_167:021D7540 04 unk_21D7540 DCB 4 -1
+
+OVL_167:021D7541 04 DCB 4 -2
+
+OVL_167:021D7542 04 DCB 4 -3
+
+OVL_167:021D7543 04 DCB 4 -4
+
+OVL_167:021D7544 04 DCB 4 -5
+
+OVL_167:021D7545 02 DCB 2 -6** normal is .5 dmg against rock
+
+OVL_167:021D7546 04 DCB 4
+
+OVL_167:021D7547 00 DCB 0
+
+let's do one more. i have electric attacking bug, so 12*17 + 6 + 1 is 211. so would start at 21D7540 and count to 211 byte by byte. or start @ 3DC40 and add the result to skip to the right value in your hex editor.
+
+** the type chart in white 1 is @ 21F049C. 3A37C in overlay 93 in white 1.
