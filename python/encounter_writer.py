@@ -13,7 +13,7 @@ import sys
 
 ######################### CONSTANTS #############################
 def set_global_vars():
-	global LOCATIONS, ROM_NAME, ENCOUNTER_NARC_FORMAT, POKEDEX, NARC_FILE_ID
+	global LOCATIONS, ROM_NAME, NARC_FORMAT, POKEDEX, NARC_FILE_ID
 	
 	with open(f'session_settings.json', "r") as outfile:  
 		settings = json.load(outfile) 
@@ -24,7 +24,7 @@ def set_global_vars():
 
 	POKEDEX = open(f'{ROM_NAME}/texts/pokedex.txt', "r").read().splitlines()
 
-	ENCOUNTER_NARC_FORMAT = []
+	NARC_FORMAT = []
 
 	seasons = ["spring", "summer", "fall", "winter"]
 
@@ -51,7 +51,7 @@ def set_global_vars():
 				s_encounters.append([1, f'{season}_{wat_enc_type}_slot_{n}_max_level'])
 
 		for entry in s_encounters:
-			ENCOUNTER_NARC_FORMAT.append(entry)
+			NARC_FORMAT.append(entry)
 
 set_global_vars()
 #################################################################
@@ -91,9 +91,14 @@ def write_narc_data(file_name, narc_format, narc, narc_name="moves"):
 				data = json_data["raw"][entry[1]]
 				write_bytes(stream, entry[0], data)
 	
-	narc_entry_data = bytearray(narc.files[file_name])
-	narc_entry_data[0:len(stream)] = stream
-	narc.files[file_name] = narc_entry_data
+	if file_name >= len(narc.files):
+		narc_entry_data = bytearray()
+		narc_entry_data[0:len(stream)] = stream
+		narc.files.append(narc_entry_data)
+	else:
+		narc_entry_data = bytearray(narc.files[file_name])
+		narc_entry_data[0:len(stream)] = stream
+		narc.files[file_name] = narc_entry_data
 	
 def write_readable_to_raw(file_name, narc_name="encounters"):
 	data = {}

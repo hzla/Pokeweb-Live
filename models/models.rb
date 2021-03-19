@@ -76,6 +76,14 @@ class RomInfo
 	def self.effect_cats
 		["No Special Effect", "Status Inflicting","Target Stat Changing","Healing","Chance to Inflict Status","Raising Target's Stat along Attack", "Lowering Target's Stat along Attack","Raise user stats","Lifesteal","OHKO","Weather","Safeguard", "Force Switch Out", "Unique Effect"]
 	end
+
+	def self.battle_types
+		["Singles", "Doubles", "Triples", "Rotation"]
+	end
+
+	def self.genders
+		["Default", "Female", "Male"]
+	end
 end
 
 class String

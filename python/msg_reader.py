@@ -5,21 +5,11 @@ import code
 import io
 import math
 
-
 def read16(stream):
 	return int.from_bytes(stream.read(2), 'little')
 
 def read32(stream):
 	return int.from_bytes(stream.read(4), 'little')
-
-def char_check(v):
-    return v & 0xFF == 0xFF
-
-def to_char(v):
-    try:
-        return chr(v)
-    except ValueError:
-        return hex(v)
 
 def parse_msg_bank(filepath, msg_bank):
 	messages = ndspy.narc.NARC.fromFile(filepath)
@@ -87,9 +77,13 @@ def parse_msg_bank(filepath, msg_bank):
 					string += "PK"
 				elif char == 9351:
 					string += "MN"
-				# CODE FOR DECOMPRESSION GOES HERE
-				elif char > 300: 
+				elif char == 0xF100:
+					# CODE FOR DECOMPRESSION GOES HERE
+					continue
+				elif char > 127:
+					# code for dealing with weird characters here 
 					# print(decompress.decomp(char))
+					# string += chr(char)
 					continue
 				else:
 					string += chr(char)

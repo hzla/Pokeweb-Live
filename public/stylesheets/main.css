@@ -769,13 +769,12 @@ table td {
     z-index: 10;
 }
 
-.expanded-card-content {
+.expanded-card-content, .expanded-card-subcontent {
     height: auto;
     width: 100%;
     margin-top: 20px;
     border-radius: 20px;
     box-shadow: 10px 10px 60px #e9e8e7;
-    padding: 20px;
     justify-content: space-between;
     display: none;
     background: white;
@@ -797,7 +796,7 @@ table td {
     height: auto;
 }
 
-.expanded-learnset .expanded-left {
+.expanded-learnset .expanded-left, .expanded-trainer .expanded-left,.expanded-pok .expanded-left {
     width: 50%;
 }
 
@@ -826,10 +825,16 @@ table td {
     z-index: 10;
 }
 
-#moves .expanded-field {
+.spreadsheet .expanded-field {
     /*cursor: pointer;*/
     border: 1px solid transparent;
     border-bottom: 1px solid #e9e8e7;
+}
+
+.spreadsheet .expanded-field:last-child {
+    /*cursor: pointer;*/
+    border: 1px solid transparent;
+    border-bottom: 1px solid transparent;
 }
 
 .spreadsheet > .expanded-field {
@@ -874,7 +879,7 @@ table td {
     display: block;
 }
 
-#headers .expanded-field:hover .move-info, #encounters .expanded-field:hover .move-info {
+#headers .expanded-field:hover .move-info, #encounters .expanded-field:hover .move-info, #trainers .expanded-field:hover .move-info {
     display: block;
     left: 80px
 }
@@ -914,7 +919,7 @@ table td {
 
 .expanded-tab-icons {
     position: absolute;
-    bottom: -35px;
+    bottom: -20px;
     left: 40px;
     height: 30px;
     width: 150px;
@@ -1039,7 +1044,7 @@ div.-active svg * {
 
 .expanded-row {
     border-top: 1px solid lightgray;
-    padding-top: 40px;
+    padding: 40px 10px 20px 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1082,7 +1087,7 @@ div.-active svg * {
 
 .spreadsheet.pokemon-list {
     padding: 0px;
-    margin-top: 85px;
+    margin-top: 100px;
 }
 
 .spreadsheet .expanded-field {
@@ -1140,6 +1145,7 @@ div.-active svg * {
 [contenteditable] {
     border: 1px solid transparent;
     padding: 5px 10px;
+    color: #1abc9c;
 }
 
 .show-flex {
@@ -1174,7 +1180,7 @@ div.-active svg * {
 }
 
 
-.hdr-id, .encounter-id {
+.hdr-id, .encounter-id, .trainer-id {
     width: 60px;
 }
 
@@ -1239,4 +1245,45 @@ div.-active svg * {
 
 .expanded-water {
     background: rgba(52, 152, 219,0.2);
+}
+
+
+.trainer-class, .trainer-name {
+    width: 80px;
+    text-align: center;
+}
+
+.trainer-class {
+    margin-top: 10px;
+    width: 160px;
+}
+
+.trainer-btype {
+    width: 100px;
+}
+
+.trainer-moves, .trainer-items {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.trainer-poks {
+    width: 360px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.trainer-poks .wild {
+    width: 120px;
+}
+
+.trainer-poks img {
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+.trainer-poks  img.-active {
+    border: 1px solid rgba(0,108,255,.8);
+    border-radius: 10px;
 }

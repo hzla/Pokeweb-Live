@@ -61,6 +61,8 @@ $( document ).ready(function() {
 			
 			card.find('.expanded-tab-icons').addClass('show-flex')
 			card.find('.expanded-' + expanded_card).first().addClass('show-flex');
+			console.log(expanded_card)
+
 			card.find('.expanded-tab-icon').removeClass('-active')
 			card.find('.expanded-tab-icon').first().addClass('-active')
 
@@ -76,11 +78,29 @@ $( document ).ready(function() {
 
 		if (card.find('.expanded-' + expanded_tab + ":visible").length > 0) {
 			// do nothing
+
 		} else { // else switching tabs
 			card.find('.expanded-card-content').removeClass('show-flex')
 			
 			card.find('.expanded-' + expanded_tab + tab_group).addClass('show-flex');
 			card.find('.expanded-tab-icon').removeClass('-active')
+			$(this).addClass('-active')
+		}
+	})	
+
+	$(document).on('click', '.trainer-poks img', function(){
+		expanded_tab = $(this).attr('data-show')
+		var card = $(this).parents('.filterable')
+
+		if (card.find('.expanded-' + expanded_tab + ":visible").length > 0) {
+			// do nothing
+			card.find('.expanded-pok').removeClass('show-flex')
+			$(this).removeClass('-active')
+		} else { // else switching tabs
+			card.find('.expanded-pok').removeClass('show-flex')
+			card.find('.expanded-' + expanded_tab).addClass('show-flex');
+			
+			card.find('.trainer-poks img').removeClass('-active')
 			$(this).addClass('-active')
 		}
 	})	
