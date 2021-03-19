@@ -42,6 +42,10 @@ class NilClass
 		"-"
 	end
 
+	def capitalize
+		""
+	end
+
 end
 
 # adds addtional move data to learnset data
@@ -53,7 +57,7 @@ def expand_learnset_data(moves, learnset)
 			
 			ls_data = {"move_name" => learnset["move_id_#{move}"], "lvl_learned" => learnset["lvl_learned_#{move}"], "move_id" => learnset["move_id_#{move}_index"], "index" => move }
 			# all data for this specific move
-			# p ls_data
+
 			all_move_data = moves[ls_data["move_id"]]
 			# copy these fields to be presented
 			["type", "category", "power", "accuracy"].each do |field|
@@ -103,7 +107,7 @@ end
 
 
 def img(name, classes="", data=["", ""])
-"<img src='/images/#{name}' alt='#{name}' class='#{classes}' data-#{data[0]}='#{data[1]}' />"
+	"<img src='/images/" + "#{name.gsub("'", "")}'" +  "class='#{classes}' data-#{data[0]}='#{data[1]}' />"
 end
 
 def svg(name, classes="", data=["", ""], html="")

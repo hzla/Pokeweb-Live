@@ -31,7 +31,7 @@
 
 				<%= field 'encounter_id', 'hdr-encounters', {value: @header_data[n.to_s]["encounter_id"],  narc: "header", type: "int-65535"} %>
 
-				<%= svg :misc_data, 'move-info expand-action expand-header svg no-fill', ["expand", "header"] %>
+				<%= svg "svgs/misc_data", 'move-info expand-action expand-header svg no-fill', ["expand", "header"] %>
 			</div>
 			<div class="expanded-card-content expanded-header">
 				<% Header.expanded_fields.each do |col| %>

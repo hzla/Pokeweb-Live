@@ -7,11 +7,20 @@ require_relative 'helpers'
 
 Dir["models/*.rb"].each {|file| require_relative file}
 
+before do
+	$rom_name = SessionSettings.rom_name
+	tabs = ['headers', 'personal', 'trainers', 'encounters', 'moves', 'tms', 'items']
+	tab_name = request.path_info.split('/')[1]
+	@active_header = tabs.find_index tab_name
+	if tab_name
+		@title = "- #{tab_name.capitalize}"
+	end
+
+end
+
 ############# ROM EDITOR ROUTES ###########################
 
 get '/' do
-	$rom_name = SessionSettings.rom_name
-
 	if $rom_name
 		redirect "/headers"
 	else
@@ -25,7 +34,6 @@ get '/rom/new' do
 	redirect '/'
 end
 
-
 # only ever called with ajax
 post '/extract' do 
 	system "python python/rom_loader.py #{params['rom_name']}"
@@ -34,8 +42,6 @@ post '/extract' do
 end
 
 post '/rom/save' do
-	$rom_name = SessionSettings.rom_name
-
 	system "python python/rom_saver.py #{$rom_name}"
 	return "200"
 end
@@ -45,22 +51,17 @@ end
 ########################################## PERSONAL EDITOR ROUTES ####################
 
 get '/personal' do
-	@title = "- Personals"
-	@active_header = 1
-	$rom_name = SessionSettings.rom_name
 	@poke_data = Personal.poke_data
 	@moves = Move.get_all
 	@move_names = Move.get_names_from @moves
 	@tm_names = Tm.get_names
 	@tutor_moves = Personal.tutor_moves
 
-
 	@poke_data.each do |pok|
 		if pok
 			pok["learnset"] = expand_learnset_data @moves, pok["learnset"]
-		end
-	end
-	
+		end # adds addtional move data to learnset data
+	end	
 	@pokemons = @poke_data[1..10]
 
 	erb :personal
@@ -68,8 +69,6 @@ end
 
 # loading rest of personal files
 get '/personal/collection' do
-	$rom_name = SessionSettings.rom_name
-
 	@poke_data = Personal.poke_data
 	@moves = Move.get_all
 
@@ -79,7 +78,7 @@ get '/personal/collection' do
 	@poke_data.each do |pok|
 		if pok
 			pok["learnset"] = expand_learnset_data @moves, pok["learnset"]
-		end
+		end # adds addtional move data to learnset data
 	end
 
 	@pokemons = @poke_data[11..-1]
@@ -88,8 +87,6 @@ end
 
 # called by ajax when user makes an edit
 post '/personal' do 
-	$rom_name = SessionSettings.rom_name
-
 	narc_name = params['data']['narc']
 	
 	Object.const_get(narc_name.capitalize).write_data params["data"]
@@ -101,14 +98,9 @@ end
 
 ########################################## MOVE EDITOR ROUTES ####################
 
-get '/moves' do 
-	@title = "- Moves"
-	@active_header = 4
-	$rom_name = SessionSettings.rom_name
-	
+get '/moves' do 	
 	@moves = Move.get_all
-
-	# @moves = @moves[0..10]
+	@moves = @moves[0..10]
 	
 	@poke_data = Personal.poke_data
 	@move_names = Move.get_names_from @moves
@@ -116,11 +108,7 @@ get '/moves' do
 	erb :moves
 end
 
-get '/tms' do 
-	@title = "- TMs"
-	@active_header = 5
-	$rom_name = SessionSettings.rom_name
-	
+get '/tms' do 	
 	@moves = Move.get_all
 	@tm_moves = Tm.get_tms_from @moves
 	@move_names = Move.get_names_from @moves
@@ -128,29 +116,34 @@ get '/tms' do
 	erb :tms
 end
 
-##################################################
+####################### HEADERS ###########################
 
 get '/headers' do 
-	@title = "- Headers"
-	@active_header = 0
-	$rom_name = SessionSettings.rom_name
-
 	@header_data = Header.get_all
-
-
 	@location_names = Header.location_names
 
 	erb :headers
 end
 
-get '/encounters' do 
-	@title = "- Encounters"
-	@active_header = 3
-	$rom_name = SessionSettings.rom_name
+####################### ENCOUNTERS ###########################
 
+get '/encounters' do 
 	@encounters = Encounter.get_all
 	@location_names = Header.location_names
 
 	erb :encounters
+end
 
+####################### TRAINERS ###########################
+
+get '/trainers' do 
+	@trainers = Trdata.get_all
+	@trainer_poks = Trpok.get_all
+	@move_names = Move.get_names_from Move.get_all
+
+	@names = Trdata.names
+	@class_names = Trdata.class_names
+	
+	
+	erb :trainers
 end

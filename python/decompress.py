@@ -48,3 +48,36 @@ def decomp(car, key1):
 
 print(decomp(56906, 45553))
 
+
+
+# if character == 0xF100:
+#     shift = 0
+#     trans = 0
+#     isEnd == False
+#     string = ""
+#     while isEnd not true:
+#         tmp = char >> shift
+#         if shift >= 0xF:
+#             shift -= 0xF
+#             if shift > 0:
+#                 tmp = (trans | (character << (9 - shift)) & 0x1FF)
+#                 if char_check(tmp):
+#                     isEnd = true
+#                 string += to_char(tmp)
+#         else:
+#             tmp = (char >> shift) & 0x1FF
+#             if char_check(tmp):
+#                 isEnd = true
+#             string += to_char(tmp)
+#             key1 += (key1 + 0x493D) & 0xFFFF
+#             character = # Whatever you used to read the character
+            
+
+# def char_check(v):
+#     return v & 0xFF == 0xFF
+
+# def to_char(v):
+#     try:
+#         return chr(v)
+#     except ValueError:
+#         return hex(v)

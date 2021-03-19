@@ -9,12 +9,15 @@ import json
 import sys
 
 import msg_reader
+import msg_reader2
 from personal_reader import output_personal_json
 from learnset_reader import output_learnset_json
 from move_reader import output_moves_json
 from arm9_reader import output_tms_json
 from header_reader import output_headers_json
 from encounter_reader import output_encounters_json
+from trdata_reader import output_trdata_json
+from trpok_reader import output_trpok_json
 
 # code.interact(local=dict(globals(), **locals()))
 
@@ -97,10 +100,9 @@ msg_file_id = narc_info['messagetext']
 for msg_bank in BW_MSG_BANKS:
 	text = msg_reader.parse_msg_bank(f'{rom_name}/narcs/messagetext-{msg_file_id}.narc', msg_bank[0])
 
-	with codecs.open(f'{rom_name}/texts/{msg_bank[1]}.txt', 'w') as f:
+	with codecs.open(f'{rom_name}/texts/{msg_bank[1]}.txt', 'w', encoding='utf_8') as f:
 	    for block in text:
 	    	for entry in block:
-	    		# print(entry)
 	    		try:
 	    			f.write(entry)
 	    		except UnicodeEncodeError:
@@ -137,6 +139,12 @@ output_moves_json(moves_narc_data)
 
 encounters_narc_data = ndspy.narc.NARC(rom.files[narc_info["encounters"]])
 output_encounters_json(encounters_narc_data)
+
+trdata_narc_data = ndspy.narc.NARC(rom.files[narc_info["trdata"]])
+output_trdata_json(trdata_narc_data)
+
+trpok_narc_data = ndspy.narc.NARC(rom.files[narc_info["trpok"]])
+output_trpok_json(trpok_narc_data)
 
 output_tms_json(arm9)
 

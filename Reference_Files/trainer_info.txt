@@ -1,14 +1,4 @@
 
-Innovator
- 39
-1358 posts
-Trophies and Medals
-      
-Posted February 12, 2013
-opposing trainer and pokemon editing:
-
-(my notes):
-
 type1 8 bytes
 
 u8 strength(iv set- ((strength * 31) / 255)

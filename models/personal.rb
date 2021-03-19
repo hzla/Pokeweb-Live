@@ -87,7 +87,6 @@ class Personal
 	end
 
 	def self.get_tm_list(personal_data)
-		p personal_data["name"]
 		tms_1 = personal_data["tm_1-32"].to_s(2).rjust(32, '0').reverse
 		tms_2 = personal_data["tm_33-64"].to_s(2).rjust(32, '0').reverse
 		tms_3 = personal_data["tm_65-95+hm_1"].to_s(2).rjust(32, '0').reverse[0..-2] #65-95
