@@ -24,33 +24,32 @@
 
 				<div class="trainer-name"><%= @names[i] %></div>
 
-				<div class="trainer-class">
-					<%= trainer["class_id"] %>: <%= @class_names[trainer["class_id"]] %>		
-				</div>
+				<%= field "class", 'trainer-class', {value: "#{trainer['class']} (#{trainer['class_id']})",  narc: "trdata", autofill: "class_names"} %>		
 
 				<%= field "battle_type_1", 'trainer-btype', {value: trainer["battle_type_1"],  narc: "trdata", autofill: "battle_types"} %>	
 
 				<div class="trainer-moves">
-					<label class="container">
-					  <input type="checkbox" <%= Trdata.has_moves?(trainer) %>>
+					<label class="container" data-narc="trdata">
+					  <input class="trainer-tmp-flag has-moves choosable-prop <%= Trdata.has_moves?(trainer) ? '-active' : '' %>" data-field-name="has_moves" type="checkbox" <%= Trdata.has_moves?(trainer) %>>
 					  <span class="checkmark"></span>
 					</label>
 				</div>
 				<div class="trainer-items">
-					<label class="container">
-					  <input type="checkbox" <%= Trdata.has_items?(trainer) %>>
+					<label class="container" data-narc="trdata">
+					  <input class="trainer-tmp-flag has-items choosable-prop <%= Trdata.has_items?(trainer) ? '-active' : '' %>" data-field-name="has_items" type="checkbox" <%= Trdata.has_items?(trainer) %>>
 					  <span class="checkmark"></span>
 					</label>
 				</div>
 
 				<div class="trainer-poks" >
-					<% Trpok.get_poks_for(trainer["num_pokemon"], @trainer_poks[i]).each_with_index do |pok, i| %>
+					<% Trpok.get_poks_for(@trainer_poks[i]["count"] , @trainer_poks[i]).each_with_index do |pok, i| %>
 						<div class="wild">
 							<%= img "pokesprite/#{pok}.png", "", ["show", "pok-#{i}"] %>
 						</div>
 					<% end %>	
 				</div>
 				<%= svg "svgs/misc_data", 'move-info expand-action expand-trainer svg no-fill', ["expand", "trainer"] %>
+				<%= svg "svgs/add", 'add-trpok svg', ["narc", "trpok"] %>
 			</div>
 			
 			<div class="expanded-card-content expanded-trainer">
@@ -58,21 +57,17 @@
 					<% (1..4).each do |n| %>
 						<div class="expanded-field">
 							<div class="expanded-trlabel">Item <%= n %></div>
-							<%= field "item_#{n}", 'tr-item', {value: trainer["item_#{n}"],  narc: "trdata", autofill: "items"} %>	
+							<%= field "item_#{n}", 'tr-item', {value: trainer["item_#{n}"].name_titleize,  narc: "trdata", autofill: "items"} %>	
 						</div>
 					<% end %>			
 				</div>
 				<div class="expanded-left">
 					<div class="expanded-field">
-						<div class="expanded-trlabel">AI Value</div>
-						<%= field "ai", 'tr-item', {value: trainer["ai"],  narc: "trdata", type: "int-255"} %>	
-					</div>
-					<div class="expanded-field">
-						<div class="expanded-trlabel">Reward $</div>
+						<div class="expanded-trlabel">Money</div>
 						<%= field "money", 'tr-item', {value: trainer["money"],  narc: "trdata", type: "int-255"} %>	
 					</div>
 					<div class="expanded-field">
-						<div class="expanded-trlabel">Reward Item</div>
+						<div class="expanded-trlabel">Reward</div>
 						<%= field "reward_item", 'tr-item', {value: trainer["reward_item"],  narc: "trdata", autofill: "items"} %>
 					</div>
 					<div class="expanded-field">
@@ -80,52 +75,19 @@
 						<%= field "heal", 'tr-item', {value: trainer["heal"],  narc: "trdata", type: "int-1"} %>	
 					</div>
 				</div>
+				<div class="expanded-right" data-narc="trdata">
+					<% Trdata.ais.each do |ai| %>
+						<div class="choosable-text choosable-prop <%= trainer[ai] >0 ? '-active' : '' %>" data-field-name="<%= ai %>">
+							<%= ai %>
+						</div>
+					<% end %>
+				</div>
 			</div>
 
-			<% poks = @trainer_poks[i] %>
-			<% (0..trainer["num_pokemon"]-1).each do |pok_index| %>
-				<div class="expanded-card-subcontent expanded-pok expanded-pok-<%= pok_index %>">
-					<div class="expanded-left">
-						<div class="expanded-field">
-							<div class="expanded-trlabel">Species</div>
-							<%= field "species_id_#{pok_index}", 'tr-item', {value: poks["species_id_#{pok_index}"],  narc: "trpok", autofill: "pokemon_names"} %>	
-						</div>
-						<div class="expanded-field">
-							<div class="expanded-trlabel">Level</div>
-							<%= field "level_#{pok_index}", 'tr-item', {value: poks["level_#{pok_index}"],  narc: "trpok", type: "int-100"} %>	
-						</div>
-						<div class="expanded-field">
-							<div class="expanded-trlabel">Ability Slot</div>
-							<%= field "ability_#{pok_index}", 'tr-item', {value: poks["ability_#{pok_index}"],  narc: "trpok", type: "int-2"} %>	
-						</div>
-						<div class="expanded-field">
-							<div class="expanded-trlabel">Gender</div>
-							<%= field "ability_#{pok_index}", 'tr-item', {value: poks["gender_#{pok_index}"],  narc: "trpok", autofill: "genders"} %>	
-						</div>
-						<div class="expanded-field">
-							<div class="expanded-trlabel">IVs</div>
-							<%= field "ivs_#{pok_index}", 'tr-item', {value: poks["ivs_#{pok_index}"],  narc: "trpok", type: "int-255"} %>	
-						</div>
-						<div class="expanded-field">
-							<div class="expanded-trlabel">Form</div>
-							<%= field "form_#{pok_index}", 'tr-item', {value: poks["form_#{pok_index}"],  narc: "trpok", type: "int-255"} %>	
-						</div>
-					</div>
+			<% (0.. @trainer_poks[i]["count"] - 1).each do |pok_index| %>
 
+				<%= erb :_trpok, :layout => false, :locals => { :trpok => @trainer_poks[i], :trpok_index => pok_index, :show => "" } %>
 
-					<div class="expanded-left">
-						<div class="expanded-field">
-							<div class="expanded-trlabel">Held Item</div>
-							<%= field "item_id_#{pok_index}", 'tr-item', {value: poks["item_id_#{pok_index}"],  narc: "trpok", autofill: "items"} %>	
-						</div>
-						<% (1..4).each do |m| %>
-							<div class="expanded-field">
-								<div class="expanded-trlabel">Move <%= m %></div>
-								<%= field "move_#{m}_#{pok_index}", 'tr-item', {value: poks["move_#{m}_#{pok_index}"] || "-",  narc: "trpok", autofill: "move_names"} %>	
-							</div>
-						<% end %>	
-					</div>
-				</div>
 			<% end %>	
 		</div>
 
@@ -139,10 +101,12 @@
 	// json object for filtering
 	trainers = <%= @trainers.to_json %>
 
+	trainer_poks = <%= @trainer_poks.to_json %>
+
 
 	// info for autocomplete
 	autofills = {
-		<% [:items, :pokemon_names, :abilities].each do |info| %>
+		<% [:items, :pokemon_names, :abilities, :class_names, :battle_types, :genders].each do |info| %>
 			"<%= info.to_s %>": <%= RomInfo.send(info) %>,
 		<% end %>
 		"move_names": <%= @move_names %>

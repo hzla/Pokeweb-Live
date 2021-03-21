@@ -46,6 +46,10 @@ class NilClass
 		""
 	end
 
+	 def name_titleize
+	  	"-"
+ 	 end
+
 end
 
 # adds addtional move data to learnset data
@@ -120,7 +124,7 @@ end
 
 def field(field_name, class_name, data={})
 	
-	div = "<div class='#{class_name}' contenteditable='true' data-narc='#{data[:narc]}' data-field-name='#{field_name}'"
+	div = "<div autocorrect='off' class='#{class_name}' contenteditable='true' data-narc='#{data[:narc]}' data-field-name='#{field_name}'"
 	if data[:autofill]
 		div += "data-autocomplete-spy data-autofill='#{data[:autofill]}' "
 	end
@@ -128,6 +132,11 @@ def field(field_name, class_name, data={})
 	if data[:type]
 		div += "data-type='#{data[:type]}'"
 	end
+
+	if data[:check]
+		div += "data-check='#{data[:check]}'"
+	end
+	
 	div += '>'
 
 	div += data[:value].to_s

@@ -36,13 +36,21 @@ end
 
 # only ever called with ajax
 post '/extract' do 
-	system "python python/rom_loader.py #{params['rom_name']}"
+	# system "python python/rom_loader.py #{params['rom_name']}"
+
+	system "python python/header_loader.py #{params['rom_name']}"
+
+	command = "python python/rom_loader.py #{params['rom_name']}"
+	pid = spawn command
+	Process.detach(pid)
+
 	content_type :json
   	{ url: "/headers" }.to_json
 end
 
 post '/rom/save' do
 	system "python python/rom_saver.py #{$rom_name}"
+	
 	return "200"
 end
 
@@ -90,8 +98,11 @@ post '/personal' do
 	narc_name = params['data']['narc']
 	
 	Object.const_get(narc_name.capitalize).write_data params["data"]
-	system "python python/#{narc_name}_writer.py update #{params['data']['file_name']}"
 	
+	command = "python python/#{narc_name}_writer.py update #{params['data']['file_name']}"
+	pid = spawn command
+	Process.detach(pid)
+
 	return 200
 end
 
@@ -146,4 +157,18 @@ get '/trainers' do
 	
 	
 	erb :trainers
+end
+
+post '/create' do
+	narc_name = params['data']['narc']
+	
+	created = Object.const_get(narc_name.capitalize).create params["data"]
+
+	erb ("_" + narc_name).to_sym, :layout => false, :locals => { narc_name.to_sym => created, "#{narc_name}_index".to_sym => params['data']['sub_index'], :show => "show-flex" }
+end
+
+post '/delete' do 
+	narc_name = params['data']['narc']
+	created = Object.const_get(narc_name.capitalize).delete params["data"]
+	return 200
 end

@@ -24,6 +24,22 @@ class Trdata
 		"trainer_sprites/#{sprite_name}.png"
 	end
 
+	def self.ais
+		["Prioritize Effectiveness",
+		"Evaluate Attacks",
+		"Expert",
+		"Prioritize Status",
+		"Risky Attacks",
+		"Prioritize Damage",
+		"Partner",
+		"Double Battle",
+		"Prioritize Healing",
+		"Utilize Weather",
+		"Harassment",
+		"Roaming Pokemon",
+		"Safari Zone",
+		"Catching Demo"]
+	end
 	def self.get_all
 		trainers = []
 		files = Dir["#{$rom_name}/json/trdata/*.json"]
@@ -39,17 +55,39 @@ class Trdata
 	end
 
 	def self.has_items? trainer
-		"checked" if trainer["template"] > 1
+		"checked" if trainer["has_items"] > 0
 	end
 
 	def self.has_moves? trainer
-		"checked" if (trainer["template"] == 1 || trainer["template"] == 3)
+		"checked" if trainer["has_moves"] > 0
 	end
 
 
-
 	def self.write_data data
+		file_name = data["file_name"]
+		field_to_change = data["field"]
+		changed_value = data["value"]
 
+		file_path = "#{$rom_name}/json/trdata/#{file_name}.json"
+		json_data = JSON.parse(File.open(file_path, "r").read)
+
+		if data["int"]
+			changed_value = changed_value.to_i
+		end
+
+		if data["field"] == "class"
+			class_data = changed_value.split(" (")
+			changed_value = class_data[0]
+			
+			new_class_id = class_data[1].split(")")[0]
+			json_data["readable"]["class_id"] = new_class_id
+		end
+
+
+
+		json_data["readable"][field_to_change] = changed_value
+
+		File.open(file_path, "w") { |f| f.write json_data.to_json }
 	end
 
 

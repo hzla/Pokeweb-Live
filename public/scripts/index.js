@@ -1,5 +1,5 @@
 $( document ).ready(function() {
-    
+    $("input[type='checkbox'], .checkmark").show()
 
 ///////////////////// EVENT BINDINGS //////////////////////////
     
@@ -46,12 +46,26 @@ $( document ).ready(function() {
 	
 	// delay to bind to replaced svgs
 
+	$(document).on('dblclick', '.spreadsheet .filterable', function(){
+		element = $(this)
+		$([document.documentElement, document.body]).animate({
+	        scrollTop: (element.offset().top - 100)
+	    }, 100);
+	    element.find('.expand-action').first().click()
+	    clearSelection()
+	})
 
 	$(document).on('click', '.expand-action', function(){
 		expanded_card = $(this).attr('data-expand')
 		var card = $(this).parents('.filterable')
 		// console.log($(this).parents('.filterable').find('.expanded-card-content'))
 		// if hiding tab
+		element_to_scroll = $(this).parents('.filterable')
+		$([document.documentElement, document.body]).animate({
+	        scrollTop: (element_to_scroll.offset().top - 100)
+	    }, 100);
+
+
 		if (card.find('.expanded-' + expanded_card + ":visible").length > 0) {
 			card.find('.expanded-card-content').removeClass('show-flex')
 			$(this).removeClass('-active')
@@ -92,6 +106,11 @@ $( document ).ready(function() {
 		expanded_tab = $(this).attr('data-show')
 		var card = $(this).parents('.filterable')
 
+		element_to_scroll = $(this).parents('.filterable')
+		$([document.documentElement, document.body]).animate({
+	        scrollTop: (element_to_scroll.offset().top - 100)
+	    }, 100);
+
 		if (card.find('.expanded-' + expanded_tab + ":visible").length > 0) {
 			// do nothing
 			card.find('.expanded-pok').removeClass('show-flex')
@@ -105,12 +124,43 @@ $( document ).ready(function() {
 		}
 	})	
 
+	$(document).on('click', '.add-trpok', function(){
+		var card = $(this).parents('.filterable')
+
+		if (card.find('img').length == 6) {
+			return
+		}
+
+		var index = card.attr('data-index')
+		var narc = $(this).attr('data-narc')
+		var pok_index = card.find('.wild').length
+
+		data = {}
+
+		data["file_name"] = index
+		data["sub_index"] = pok_index
+		data["narc"] = narc
+
+		$.post( "/create", {"data": data }, function( e ) {     
+          card.append(e)
+        });
+
+        card.find('img').removeClass('-active')
+        card.find('.expanded-card-subcontent').removeClass('show-flex')
+
+        card.find('.trainer-poks').append("<div class='wild'> <img class='-active' src='images/pokesprite/-.png' data-show='pok-" + pok_index.toString() + "'> </div>")
+
+	})
+
 	
 	
 	/////////////////////////////// DATA UPLOAD ON EDIT ///////////////////////////////
 
 
 	$(document).on('focusout', "[contenteditable='true']", function(){
+		var input = $(this)
+		var card = input.parents('.filterable')
+
 		var value = $(this).text().trim()
 		$(this).text(value)
 		var field_name = $(this).attr('data-field-name')
@@ -160,7 +210,14 @@ $( document ).ready(function() {
 		// send data to server
 		$.post( "/personal", {"data": data }, function( e ) {     
           console.log('upload successful')
+          
+          var checkbox = card.find("." + input.attr('data-check'))
+          if (!checkbox.prop("checked")){
+          	checkbox.click()
+          } 
+          checkbox.prop("checked", true).addClass('-active')
         });
+
 	})
 
 	//high light text on click
@@ -170,9 +227,11 @@ $( document ).ready(function() {
 
 	// upload choice when clicking 
 	$(document).on('click', ".choosable", function(e){
+		card = $(this).parents('.filterable')
+
 		var value = $(this).attr('data-value')
 		var field_name = $(this).parent().attr('data-field-name')
-		var index = $(this).parents('.filterable').attr('data-index')
+		var index = card.attr('data-index')
 		var narc = $(this).parent().attr('data-narc')
 
 		var data = {}
@@ -191,7 +250,7 @@ $( document ).ready(function() {
         });
 	})
 
-	$(document).on('click', ".move-prop", function(e){
+	$(document).on('click', ".move-prop, .choosable-prop", function(e){
 		$(this).toggleClass('-active')
 
 		var value = ($(this).hasClass('-active') ? 1 : 0)
@@ -241,7 +300,10 @@ $( document ).ready(function() {
 		console.log(data)
 		$.post( "/personal", {"data": data }, function( e ) {     
           console.log('upload successful')
-        });	
+        });
+
+
+
 	})
 
 
@@ -301,6 +363,7 @@ $( document ).ready(function() {
 		$(this).parent().find(".pokemon-card__graph").css('width', width.toString() + "%")
 	})
 
+	// update encounter preview
 	$(document).on('focusout', ".enc-name[contenteditable='true']", function(){
 		var value = $(this).text().trim()
 		var card = $(this).parents('.filterable')
@@ -324,6 +387,45 @@ $( document ).ready(function() {
 			}
 			
 		})
+	})
+
+	$(document).on('focusout', ".trpok-name", function(){
+		var value = $(this).text().trim()
+		var card = $(this).parents('.filterable')
+		var pok_index = $(this).parents('.expanded-pok').index() - 2
+
+		console.log(pok_index)
+
+		img_name = value.replace(". ", "-").toLowerCase()
+
+		img_to_update = $(card.find('img')[parseInt(pok_index)])
+
+		img_to_update.attr('src', '/images/pokesprite/' + img_name + ".png")
+
+	})
+
+	$(document).on('click', ".delete-trpok", function(){
+		var card = $(this).parents('.filterable')
+		var pok_index = $(this).parents('.expanded-pok').index() - 2
+		var index = card.attr('data-index')
+		var narc = $(this).attr('data-narc')
+
+
+		var data = {}
+
+		data["file_name"] = index
+		data["narc"] = narc
+		data["sub_index"] = parseInt(pok_index)
+		
+		console.log(data)
+
+		$.post( "/delete", {"data": data }, function( e ) {     
+          	card.find('img.-active').parent().remove()
+        	card.find('.expanded-card-subcontent')[parseInt(pok_index)].remove()
+        });
+
+
+
 	})
 
 
@@ -538,6 +640,66 @@ function filter() {
 			return text_match
 		})
 	}
+
+	if ($('#trainers').length > 0) {		
+		var list = Object.values(trainers).sort(function(a,b) {
+			parseInt(a["index"]) - parseInt(b["index"]);
+		})
+
+		search_results = list.filter(function(e) {
+			text_match = false
+
+			if (text_filters) {
+				texts = text_filters.split(",")
+				for (text in texts) {
+					text = texts[text]
+
+					text_match = JSON.stringify(e).toLowerCase().includes(text.toLowerCase())
+					if (text_match ) {break;}
+				} 
+			} else { // when no text filter
+				text_match = true
+			}
+
+			if (text_match) {
+				$(cards[list.indexOf(e)]).show()
+			}
+			return text_match
+		})
+
+		var list = Object.values(trainer_poks).sort(function(a,b) {
+			parseInt(a["index"]) - parseInt(b["index"]);
+		})
+
+		search_results = list.filter(function(e) {
+			text_match = false
+
+			if (text_filters) {
+				texts = text_filters.split(",")
+				for (text in texts) {
+					text = texts[text]
+
+					text_match = JSON.stringify(e).toLowerCase().includes(text.toLowerCase())
+					if (text_match ) {break;}
+				} 
+			} else { // when no text filter
+				text_match = true
+			}
+
+			if (text_match) {
+				$(cards[list.indexOf(e)]).show()
+			}
+			return text_match
+		})
+	}
 	
 }
 
+function clearSelection() {
+    if(document.selection && document.selection.empty) {
+        document.selection.empty();
+    } else if(window.getSelection) {
+        var sel = window.getSelection();
+        sel.removeAllRanges();
+    }
+}

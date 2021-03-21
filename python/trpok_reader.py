@@ -111,6 +111,7 @@ def read_narc_data(data, narc_format, file_name, narc_name, template, num_pokemo
 def to_readable(raw, file_name, template, num_pokemon):
 	readable = copy.deepcopy(raw)
 
+	readable["count"] = num_pokemon
 	for n in range(0, num_pokemon):
 		readable[f'species_id_{n}'] = POKEDEX[raw[f'species_id_{n}']]
 

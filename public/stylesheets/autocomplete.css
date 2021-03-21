@@ -10,7 +10,7 @@
   border: 1px solid #ccc;
   border-top: 0;
 
-  background: #fff;
+  background: #282a36;
   z-index: 2;
   white-space: nowrap;
   font-size: 13px;
@@ -26,8 +26,8 @@
 
 [data-autocomplete] .suggestions > div.highlight,
 [data-autocomplete] .suggestions > div:hover {
-  background: #0A5CB4;
-  color: #fff;
+  background: #bd93f9;
+  color: #f2f2f2;
 }
 
 [data-autocomplete] .suggestions > div strong {
@@ -69,6 +69,7 @@
   height: 40px;
   width: 40px;
   background-color: #eee;
+  border-radius: 5px;
 }
 
 /* On mouse-over, add a grey background color */

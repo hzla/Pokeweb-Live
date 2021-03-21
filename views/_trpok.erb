@@ -1,0 +1,45 @@
+<div data-sub-index="<%= trpok_index %>" class="expanded-card-subcontent expanded-pok expanded-pok-<%= trpok_index %> <%= show %>">
+	<div class="expanded-left">
+		<div class="expanded-field">
+			<div class="expanded-trlabel">Species</div>
+			<%= field "species_id_#{trpok_index}", 'tr-item trpok-name', {value: trpok["species_id_#{trpok_index}"].name_titleize,  narc: "trpok", autofill: "pokemon_names"} %>	
+		</div>
+		<div class="expanded-field">
+			<div class="expanded-trlabel">Level</div>
+			<%= field "level_#{trpok_index}", 'tr-item', {value: trpok["level_#{trpok_index}"],  narc: "trpok", type: "int-100"} %>	
+		</div>
+		<div class="expanded-field">
+			<div class="expanded-trlabel">Ability Slot</div>
+			<%= field "ability_#{trpok_index}", 'tr-item', {value: trpok["ability_#{trpok_index}"],  narc: "trpok", type: "int-2"} %>	
+		</div>
+		<div class="expanded-field">
+			<div class="expanded-trlabel">Gender</div>
+			<%= field "ability_#{trpok_index}", 'tr-item', {value: trpok["gender_#{trpok_index}"],  narc: "trpok", autofill: "genders"} %>	
+		</div>
+		<div class="expanded-field">
+			<div class="expanded-trlabel">IVs</div>
+			<%= field "ivs_#{trpok_index}", 'tr-item', {value: trpok["ivs_#{trpok_index}"],  narc: "trpok", type: "int-255"} %>	
+		</div>
+		<div class="expanded-field">
+			<div class="expanded-trlabel">Form</div>
+			<%= field "form_#{trpok_index}", 'tr-item', {value: trpok["form_#{trpok_index}"],  narc: "trpok", type: "int-255"} %>	
+		</div>
+	</div>
+
+
+	<div class="expanded-left">
+		<div class="expanded-field">
+			<div class="expanded-trlabel">Held Item</div>
+			<%= field "item_id_#{trpok_index}", 'tr-item', {value: trpok["item_id_#{trpok_index}"].name_titleize,  narc: "trpok", autofill: "items", check: "has-items"} %>	
+		</div>
+		<% (1..4).each do |m| %>
+			<div class="expanded-field">
+				<div class="expanded-trlabel">Move <%= m %></div>
+				<%= field "move_#{m}_#{trpok_index}", 'tr-item', {value: trpok["move_#{m}_#{trpok_index}"].name_titleize || "-",  narc: "trpok", autofill: "move_names", check: "has-moves"} %>	
+			</div>
+		<% end %>	
+		<div class="expanded-field btn-field-right">
+			<div class="delete-trpok del-btn" data-narc="trpok">Delete</div>
+		</div>
+	</div>
+</div>
