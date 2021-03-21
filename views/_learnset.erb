@@ -1,5 +1,5 @@
 <% learnset.each do |move| %>
-	<div class="expanded-field">
+	<div class="expanded-field multi">
 		<div data-require="move-name" data-narc="learnset" data-field-name="lvl_learned_<%= move["index"] %>" data-type="int-100" class="move-level" contenteditable="true"><%= move["lvl_learned"] %></div>
 		<div data-require="move-level" data-autocomplete-spy data-autofill="move_names" class="move-name" contenteditable="true" data-narc="learnset" data-field-name="move_id_<%= move["index"] %>"><%= move["move_name"].titleize %></div>
 		<div class="move-type">

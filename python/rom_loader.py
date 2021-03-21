@@ -14,7 +14,6 @@ from personal_reader import output_personal_json
 from learnset_reader import output_learnset_json
 from move_reader import output_moves_json
 from arm9_reader import output_tms_json
-from header_reader import output_headers_json
 from encounter_reader import output_encounters_json
 from trdata_reader import output_trdata_json
 from trpok_reader import output_trpok_json
@@ -38,7 +37,6 @@ for folder in ["narcs", "texts", "json"]:
 ################# HARDCODED ROM INFO ##############################
 
 BW_NARCS = [["a/0/1/6", "personal"],
-["a/0/1/2", "headers"],
 ["a/0/0/9", "matrix"], 
 ["a/1/2/5", "overworlds"],
 ["a/0/1/7", "growth"],
@@ -51,7 +49,6 @@ BW_NARCS = [["a/0/1/6", "personal"],
 ["a/0/9/3", "trpok"],
 ["a/1/2/6", "encounters"],
 ["a/0/0/3", "storytext"],
-["a/0/0/2", "messagetext"],
 ["a/0/5/6", "scripts"]]
 
 BW_MSG_BANKS = [[286, "moves"],
@@ -62,12 +59,19 @@ BW_MSG_BANKS = [[286, "moves"],
 [284, "pokedex"],
 [191, "tr_classes"],
 [190, "tr_names"],
-[54, "items"],
-[89, "locations"]]
+[54, "items"]]
 
 ################### EXTRACT RELEVANT NARCS AND ARM9 #######################
 
+
 narc_info = {} ##store narc names and file id pairs
+
+with open(f'session_settings.json', "r") as outfile:  
+	narc_info = json.load(outfile) 
+
+
+print("this is narc info 1")
+print(narc_info)
 
 with open(f'{rom_name}.nds', 'rb') as f:
     data = f.read()
@@ -115,18 +119,16 @@ for msg_bank in BW_MSG_BANKS:
 ################### WRITE SESSION SETTINGS ###################
 
 settings = {}
-settings["rom_name"] = rom_name
-settings["base_rom"] = "Pokemon Black"
 settings.update(narc_info)
 
-with open(f'session_settings.json', "w") as outfile:  
+print("this is settings info 1")
+print(settings)
+
+with open(f'session_settings.json', "w+") as outfile:  
 	json.dump(settings, outfile) 
 
 #############################################################
 ################### CONVERT TO JSON #########################
-
-headers_narc_data = ndspy.narc.NARC(rom.files[narc_info["headers"]])
-output_headers_json(headers_narc_data)
 
 personal_narc_data = ndspy.narc.NARC(rom.files[narc_info["personal"]])
 output_personal_json(personal_narc_data)

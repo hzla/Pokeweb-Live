@@ -48,7 +48,7 @@
 								<div class="enc-slot">Encounter Rate</div>
 								<%= field "#{season}_#{field}_rate", 'enc-rate', {value: enc["#{season}_#{field}_rate"],  narc: "encounter", type: "int-100"} %>
 							</div>
-							<div class="expanded-field field-header">
+							<div class="expanded-field multi field-header">
 								<div class="enc-slot"><%= field.titleize %></div>
 								<div class="enc-lvl">Min</div>
 								<div class="enc-lvl">Max</div>
@@ -56,7 +56,7 @@
 								<div class="enc-percent">%</div>
 							</div>
 							<% (0..11).each do |n| %>
-								<div class="expanded-field">
+								<div class="expanded-field multi">
 									<%= field "#{season}_#{field}_slot_#{n}", 'enc-slot enc-name', {value: enc["#{season}_#{field}_slot_#{n}"].name_titleize,  narc: "encounter", autofill: "pokemon_names"} %>
 
 									<%= field "#{season}_#{field}_slot_#{n}_min_level", 'enc-lvl', {value: enc["#{season}_#{field}_slot_#{n}_min_level"],  narc: "encounter", type: "int-100"} %>
@@ -81,7 +81,7 @@
 								<div class="enc-slot">Encounter Rate</div>
 								<%= field "#{season}_#{field}_rate", 'enc-rate', {value: enc["#{season}_#{field}_rate"],  narc: "encounter", type: "int-100"} %>
 							</div>
-							<div class="expanded-field field-header">
+							<div class="expanded-field multi field-header">
 								<div class="enc-slot"><%= field.titleize %></div>
 								<div class="enc-lvl">Min</div>
 								<div class="enc-lvl">Max</div>
@@ -89,7 +89,7 @@
 								<div class="enc-percent">%</div>
 							</div>
 							<% (0..4).each do |n| %>
-								<div class="expanded-field">
+								<div class="expanded-field multi">
 									<%= field "#{season}_#{field}_slot_#{n}", 'enc-slot enc-name', {value: enc["#{season}_#{field}_slot_#{n}"].name_titleize,  narc: "encounter", autofill: "pokemon_names"} %>
 
 									<%= field "#{season}_#{field}_slot_#{n}_min_level", 'enc-lvl', {value: enc["#{season}_#{field}_slot_#{n}_min_level"],  narc: "encounter", type: "int-100"} %>

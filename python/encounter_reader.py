@@ -71,6 +71,11 @@ def read_narc_data(data, narc_format, file_name, narc_name):
 	for entry in narc_format: 
 		file["raw"][entry[1]] = read_bytes(stream, entry[0])
 
+		#copy data from spring section if not present in current season
+		if file["raw"][entry[1]] == 0 and "spring" not in entry[1]:
+			spring_data = "spring_" + "_".join(entry[1].split("_")[1:])
+			file["raw"][entry[1]] = file["raw"][spring_data]
+
 	#CONVERT TO READABLE FORMAT USING CONSTANTS/TEXT BANKS
 	file["readable"] = to_readable(file["raw"], file_name)
 	

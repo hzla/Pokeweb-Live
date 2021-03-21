@@ -73,6 +73,14 @@ class RomInfo
 		File.open("Reference_Files/result_effects.txt").read.split("\n")
 	end
 
+	def self.class_names
+		names =[]
+		File.open("#{$rom_name}/texts/tr_classes.txt").read.split("\n").each_with_index do |n, i|
+			names << "#{n} (#{i})"
+		end
+		names
+	end
+
 	def self.effect_cats
 		["No Special Effect", "Status Inflicting","Target Stat Changing","Healing","Chance to Inflict Status","Raising Target's Stat along Attack", "Lowering Target's Stat along Attack","Raise user stats","Lifesteal","OHKO","Weather","Safeguard", "Force Switch Out", "Unique Effect"]
 	end

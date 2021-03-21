@@ -10,17 +10,38 @@ import copy
 
 
 def set_global_vars():
-	global ROM_NAME, NARC_FORMAT, TRAINER_CLASSES, ITEMS, BATTLE_TYPES, TRAINER_NAMES
+	global ROM_NAME, NARC_FORMAT, TRAINER_CLASSES, ITEMS, BATTLE_TYPES, TRAINER_NAMES, AIS, TEMPLATE_FLAGS
 	
 	with open(f'session_settings.json', "r") as outfile:  
 		settings = json.load(outfile) 
 		ROM_NAME = settings['rom_name']
 
+	TEMPLATE_FLAGS =["has_moves", "has_items"]
+
 
 	TRAINER_CLASSES = open(f'{ROM_NAME}/texts/tr_classes.txt', "r").read().splitlines()
+
+
+	TRAINER_NAMES = open(f'Reference_Files/trainer_names.txt', "r").read().splitlines()
+
 	ITEMS = open(f'{ROM_NAME}/texts/items.txt', mode="r").read().splitlines()
 
 	BATTLE_TYPES = ["Singles", "Doubles", "Triples", "Rotation"]
+
+	AIS = ["Prioritize Effectiveness",
+	"Evaluate Attacks",
+	"Expert",
+	"Prioritize Status",
+	"Risky Attacks",
+	"Prioritize Damage",
+	"Partner",
+	"Double Battle",
+	"Prioritize Healing",
+	"Utilize Weather",
+	"Harassment",
+	"Roaming Pokemon",
+	"Safari Zone",
+	"Catching Demo"]
 
 	NARC_FORMAT = [[1, "template"],
 	[1, "class"],
@@ -69,15 +90,36 @@ def read_narc_data(data, narc_format, file_name, narc_name):
 def to_readable(raw, file_name):
 	readable = copy.deepcopy(raw)
 	
-	readable["class"] = TRAINER_CLASSES[raw["class"]]
+	readable["class"] = TRAINER_CLASSES[raw["class"]] 
 	readable["class_id"] = raw["class"]
+	
 
+	if file_name < len(TRAINER_NAMES):
+		readable["name"] = TRAINER_NAMES[file_name]
 
 	readable["reward_item"] = ITEMS[raw["reward_item"]]
 	readable["battle_type_1"] = BATTLE_TYPES[raw["battle_type_1"]]
 
 	for n in range(1, 5):
 		readable[f'item_{n}'] = ITEMS[raw[f'item_{n}']]
+
+
+	index = 2
+	props = bin(raw["template"])[2:].zfill(index) 
+	
+	for prop in TEMPLATE_FLAGS:
+		amount = int(props[index - 1])
+		readable[prop] = amount
+		index -= 1
+
+
+	index = 14
+	props = bin(raw["ai"])[2:].zfill(index) 
+	
+	for prop in AIS:
+		amount = int(props[index - 1])
+		readable[prop] = amount
+		index -= 1
 
 	return readable
 

@@ -17,6 +17,8 @@ import move_writer
 import tm_writer
 import header_writer
 import encounter_writer
+import trdata_writer
+import trpok_writer
 # code.interact(local=dict(globals(), **locals()))
 
 
@@ -52,36 +54,39 @@ rom_name = sys.argv[1].split(".")[0]
 
 ####################################################################
 ################### WRITE NARCS/ARM9 TO ROM ############################
-
+print("outputting narcs")
 personal_writer.output_narc()
 learnset_writer.output_narc()
 move_writer.output_narc()
 header_writer.output_narc()
 encounter_writer.output_narc()
+trdata_writer.output_narc()
+trpok_writer.output_narc()
 
-tm_writer.output_arm9()
+# tm_writer.output_arm9()
 
 with open(f'{rom_name}.nds', 'rb') as f:
     data = f.read()
 rom = ndspy.rom.NintendoDSRom(data)
 
 
-mutable_rom = bytearray(data)
-arm9_offset = 16384 #0x4000
+# mutable_rom = bytearray(data)
+# arm9_offset = 16384 #0x4000
 
 
 
-#get edited arm9
-edited_arm9_file = bytearray(open(f'{rom_name}/arm9.bin', 'rb').read())
+# #get edited arm9
+# edited_arm9_file = bytearray(open(f'{rom_name}/arm9.bin', 'rb').read())
 
-#compress it
-arm9 = bytearray(ndspy.codeCompression.compress(edited_arm9_file, isArm9=True))
+# # #compress it
+# print ("compressing arm9")
+# arm9 = bytearray(ndspy.codeCompression.compress(edited_arm9_file, isArm9=True))
 
-#reinsert arm9
-mutable_rom[arm9_offset:arm9_offset + len(arm9)] = arm9
+# #reinsert arm9
+# mutable_rom[arm9_offset:arm9_offset + len(arm9)] = arm9
 
-#update rom in memory
-rom = ndspy.rom.NintendoDSRom(mutable_rom)
+# #update rom in memory
+# rom = ndspy.rom.NintendoDSRom(mutable_rom)
 
 
 with open(f'session_settings.json', "r") as outfile:  
@@ -91,19 +96,27 @@ with open(f'session_settings.json', "r") as outfile:
 	moves_narc_file_id = settings["moves"]
 	headers_narc_file_id = settings["headers"]
 	encounters_narc_file_id = settings["encounters"]
+	trdata_narc_file_id = settings["trdata"]
+	trpok_narc_file_id = settings["trpok"]
 
 personal_narc_filepath = f'{rom_name}/narcs/personal-{personal_narc_file_id}.narc'
 learnset_narc_filepath = f'{rom_name}/narcs/learnsets-{learnset_narc_file_id}.narc'
 moves_narc_filepath = f'{rom_name}/narcs/moves-{moves_narc_file_id}.narc'
 headers_narc_filepath = f'{rom_name}/narcs/headers-{headers_narc_file_id}.narc'
 encounters_narc_filepath = f'{rom_name}/narcs/encounters-{encounters_narc_file_id}.narc'
+trdata_narc_filepath = f'{rom_name}/narcs/trdata-{trdata_narc_file_id}.narc'
+trpok_narc_filepath = f'{rom_name}/narcs/trpok-{trpok_narc_file_id}.narc'
 
+print("writing narcs")
 
 rom.files[personal_narc_file_id] = open(personal_narc_filepath, 'rb').read()
 rom.files[learnset_narc_file_id] = open(learnset_narc_filepath, 'rb').read()
 rom.files[moves_narc_file_id] = open(moves_narc_filepath, 'rb').read()
 rom.files[headers_narc_file_id] = open(headers_narc_filepath, 'rb').read()
 rom.files[encounters_narc_file_id] = open(encounters_narc_filepath, 'rb').read()
+rom.files[trdata_narc_file_id] = open(trdata_narc_filepath, 'rb').read()
+rom.files[trpok_narc_file_id] = open(trpok_narc_filepath, 'rb').read()
+
 
 
 print("attempting save")
