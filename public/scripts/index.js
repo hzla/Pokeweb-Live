@@ -1,5 +1,5 @@
 
-    $("input[type='checkbox'], .checkmark").show()
+    
 
 ///////////////////// EVENT BINDINGS //////////////////////////
     
@@ -20,6 +20,15 @@
         $.post( "/rom/save", function( data ) {
         	alert("saved to /exports folder")
         	btn.text('Export')
+        });
+    })
+
+     $(document).on('click', '#load-project', function(){
+    	var rom_name = $('#project-select').val()
+        $(this).text('loading...')
+        console.log("loading")
+        $.get( "/load_project", {"project": rom_name }, function( data ) {
+        	window.location.href = data["url"]
         });
     })
 
@@ -547,11 +556,12 @@ function filter() {
 			tms = false
 			
 		}
+		console.log(tms)
 		search_results = move_list.filter(function(e) {
 			
-			if (!tms) {
-				e = e[1]
-			}
+
+			e = e[1]
+		
 			
 
 			if (!e || !e["type"]) {

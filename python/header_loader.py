@@ -17,7 +17,7 @@ from header_reader import output_headers_json
 
 #################### CREATE FOLDERS #############################
 
-rom_name = sys.argv[1].split(".")[0] 
+rom_name = "projects/" + sys.argv[1].split(".")[0] 
 
 # code.interact(local=dict(globals(), **locals()))
 
@@ -30,20 +30,34 @@ for folder in ["narcs", "texts", "json"]:
 
 ################# HARDCODED ROM INFO ##############################
 
-BW_NARCS = [["a/0/1/2", "headers"],["a/0/0/2", "messagetext"]]
+NARCS = [["a/0/1/2", "headers"],["a/0/0/2", "messagetext"]]
 
 BW_MSG_BANKS = [[89, "locations"]]
 
-################### EXTRACT RELEVANT NARCS AND ARM9 #######################
+
+BW2_MSG_BANKS = [[109, "locations"]]
+
+
+MSG_BANKS = []
+
+
+################### EXTRACT RELEVANT BW_NARCS AND ARM9 #######################
 
 narc_info = {} ##store narc names and file id pairs
 
-with open(f'{rom_name}.nds', 'rb') as f:
+with open(f'{rom_name.split("/")[-1]}.nds', 'rb') as f:
     data = f.read()
 
 rom = ndspy.rom.NintendoDSRom(data)
 
-for narc in BW_NARCS:
+if str(rom.name)[-3] == '2':
+	narc_info["base_rom"] = "BW2"
+	MSG_BANKS = BW2_MSG_BANKS
+else:
+	narc_info["base_rom"] = "BW"
+	MSG_BANKS = BW_MSG_BANKS
+
+for narc in NARCS:
 	file_id = rom.filenames[narc[0]]
 	file = rom.files[file_id]
 	parsed_file = ndspy.narc.NARC(file)
@@ -59,7 +73,7 @@ for narc in BW_NARCS:
 
 msg_file_id = narc_info['messagetext']
 
-for msg_bank in BW_MSG_BANKS:
+for msg_bank in MSG_BANKS:
 	text = msg_reader.parse_msg_bank(f'{rom_name}/narcs/messagetext-{msg_file_id}.narc', msg_bank[0])
 
 	with codecs.open(f'{rom_name}/texts/{msg_bank[1]}.txt', 'w', encoding='utf_8') as f:
@@ -78,7 +92,6 @@ for msg_bank in BW_MSG_BANKS:
 
 settings = {}
 settings["rom_name"] = rom_name
-settings["base_rom"] = "Pokemon Black"
 settings.update(narc_info)
 
 with open(f'session_settings.json', "w") as outfile:  

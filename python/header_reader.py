@@ -15,11 +15,12 @@ import re
 ######################### FILE SPECIFIC CONSTANTS #############################
 
 def set_global_vars():
-	global LOCATIONS, ROM_NAME, HEADER_NARC_FORMAT, HEADER_LENGTH
+	global LOCATIONS, ROM_NAME, HEADER_NARC_FORMAT, HEADER_LENGTH, BASE_ROM
 	
 	with open(f'session_settings.json', "r") as outfile:  
 		settings = json.load(outfile) 
 		ROM_NAME = settings['rom_name']
+		BASE_ROM = settings['base_rom']
 
 	LOCATIONS = open(f'{ROM_NAME}/texts/locations.txt', mode="r").read().splitlines()
 
@@ -50,6 +51,35 @@ def set_global_vars():
 	[4, "fly_x"],
 	[4, "fly_y"],
 	[4, "fly_z"]]
+
+	if BASE_ROM == 'BW2':
+		HEADER_NARC_FORMAT = [[1, "map_type"],
+		[1, "unknown_1"],
+		[2, "texture_id"],
+		[2, "matrix_id"],
+		[2, "script_id"],
+		[2, "level_script_id"],
+		[2, "text_bank_id"],
+		[2, "music_spring_id"],
+		[2, "music_summer_id"],
+		[2, "music_fall_id"],
+		[2, "music_winter_id"],
+		[1, "encounter_id"],
+		[1, 'unknown_4'],
+		[2, "map_id"],
+		[2, "parent_map_id"],
+		[1, "location_name_id"],
+		[1, "name_style_id" ],
+		[1, "weather_id"],
+		[1, "camera_id"],
+		[1, "unknown_2"],
+		[1, "flags"],
+		[2, "unknown_3"],
+		[2, "name_icon"],
+		[4, "fly_x"],
+		[4, "fly_y"],
+		[4, "fly_z"]]
+
 
 
 #################################################################

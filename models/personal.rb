@@ -4,10 +4,16 @@ require 'json'
 class Personal
 
 	def self.poke_data
-		files = Dir["#{$rom_name}/json/personal/*.json"].sort_by{ |name| [name[/\d+/].to_i, name] }
-		files.map do |pok|
-			get_data_for pok
+		files = Dir["#{$rom_name}/json/personal/*.json"]
+		file_count = files.length
+
+		data = []
+
+		(0..file_count - 1).each do |n|
+			file_path = "#{$rom_name}/json/personal/#{n}.json"
+			data << get_data_for(file_path)
 		end
+		data
 	end
 
 	def self.get_data_for(file_name)

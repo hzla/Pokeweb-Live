@@ -8,6 +8,16 @@
 	</select>		
 	
 	<button class="btn -default" id="load-rom" type="button">Load</button>
+
+
+	<div class="filter-title">Select Project</div>
+	<select name="rom" id="project-select">
+		<% @projects.each do |rom| %>
+		    <option value="<%= rom %>"><%= rom.split("/")[-1] %></option>
+	    <% end %>
+	</select>		
+	
+	<button class="btn -default" id="load-project" type="button">Load</button>
 </div>
 
 <div class="pokemon-list"></div>

@@ -25,7 +25,12 @@ from evolution_reader import output_evolutions_json
 
 #################### CREATE FOLDERS #############################
 
-rom_name = sys.argv[1].split(".")[0] 
+narc_info = {} ##store narc names and file id pairs
+
+with open(f'session_settings.json', "r") as outfile:  
+	narc_info = json.load(outfile) 
+
+rom_name = narc_info['rom_name'] 
 
 # code.interact(local=dict(globals(), **locals()))
 
@@ -54,30 +59,53 @@ BW_NARCS = [["a/0/1/6", "personal"],
 ["a/0/5/6", "scripts"]]
 
 BW_MSG_BANKS = [[286, "moves"],
-[199, "types"],
-[202, "move_descriptions"],
 [285, "abilities"],
-[183, "ability_descriptions"],
 [284, "pokedex"],
 [191, "tr_classes"],
 [190, "tr_names"],
 [54, "items"]]
 
+BW2_NARCS = [["a/0/1/6", "personal"],
+["a/0/0/9", "matrix"], 
+["a/1/2/6", "overworlds"],
+["a/0/1/7", "growth"],
+["a/0/1/8", "learnsets"],
+["a/0/1/9", "evolutions"], 
+["a/0/2/0", "babyforms"],
+["a/0/2/1","moves"],
+["a/0/2/4", "items"],
+["a/0/9/1", "trdata"],
+["a/0/9/2", "trpok"],
+["a/1/2/7", "encounters"],
+["a/0/0/3", "storytext"],
+["a/0/5/6", "scripts"]]
+
+BW2_MSG_BANKS = [[488, "moves"],
+[487, "abilities"],
+[486, "pokedex"],
+[383, "tr_classes"],
+[382, "tr_names"],
+[64, "items"]]
+
+NARCS = []
+MSG_BANKS = []
+
 ################### EXTRACT RELEVANT NARCS AND ARM9 #######################
 
+if narc_info["base_rom"] == "BW":
+	MSG_BANKS = BW_MSG_BANKS
+	NARCS = BW_NARCS
+else:
+	MSG_BANKS = BW2_MSG_BANKS
+	NARCS = BW2_NARCS
 
-narc_info = {} ##store narc names and file id pairs
 
-with open(f'session_settings.json', "r") as outfile:  
-	narc_info = json.load(outfile) 
-
-
-with open(f'{rom_name}.nds', 'rb') as f:
+with open(f'{rom_name.split("/")[-1]}.nds', 'rb') as f:
     data = f.read()
 
 rom = ndspy.rom.NintendoDSRom(data)
 
-for narc in BW_NARCS:
+for narc in NARCS:
 	file_id = rom.filenames[narc[0]]
 	file = rom.files[file_id]
 	parsed_file = ndspy.narc.NARC(file)
@@ -100,7 +128,7 @@ with open(f'{rom_name}/arm9.bin', 'wb') as f:
 
 msg_file_id = narc_info['messagetext']
 
-for msg_bank in BW_MSG_BANKS:
+for msg_bank in MSG_BANKS:
 	text = msg_reader.parse_msg_bank(f'{rom_name}/narcs/messagetext-{msg_file_id}.narc', msg_bank[0])
 
 	with codecs.open(f'{rom_name}/texts/{msg_bank[1]}.txt', 'w', encoding='utf_8') as f:
@@ -152,11 +180,6 @@ output_items_json(item_narc_data)
 evolution_narc_data = ndspy.narc.NARC(rom.files[narc_info["evolutions"]])
 output_evolutions_json(evolution_narc_data)
 
-
-
 output_tms_json(arm9)
-
-
-### TODO IMPLEMENT READERS FOR OTHER NARCS
 
 

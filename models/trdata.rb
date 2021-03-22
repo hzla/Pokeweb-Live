@@ -6,7 +6,11 @@ class Trdata
 	end
 
 	def self.names
-		File.open('Reference_Files/trainer_names.txt', "r").read.split("\n")
+		if SessionSettings.base_rom == "BW"
+			File.open('Reference_Files/trainer_names.txt', "r").read.split("\n")
+		else
+			File.open('Reference_Files/trainer_names_2.txt', "r").read.split("\n")
+		end
 	end
 
 	def self.class_names

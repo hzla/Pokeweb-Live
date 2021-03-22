@@ -26,30 +26,6 @@ import evolution_writer
 
 ################# HARDCODED ROM INFO ##############################
 
-BW_NARCS = [["a/0/1/6", "personal"], 
-["a/0/1/7", "growth"],
-["a/0/1/8", "lvlupmoves"],
-["a/0/1/9", "evolution"], 
-["a/0/2/0", "babyforms"],
-["a/0/2/1","moves"],
-["a/0/2/4", "items"],
-["a/0/9/1", "trdata"],
-["a/0/9/2", "trpok"],
-["a/1/2/7", "encounters"],
-["a/0/0/3", "storytext"],
-["a/0/0/2", "messagetext"],
-["a/0/5/6", "scripts"]]
-
-BW_MSG_BANKS = [[286, "moves"],
-[199, "types"],
-[202, "move_descriptions"],
-[285, "abilities"],
-[183, "ability_descriptions"],
-[284, "pokedex"],
-[191, "tr_classes"],
-[190, "tr_names"],
-[54, "items"],
-[89, "locations"]]
 
 rom_name = sys.argv[1].split(".")[0] 
 
@@ -67,31 +43,30 @@ trpok_writer.output_narc()
 item_writer.output_narc()
 evolution_writer.output_narc()
 
-# tm_writer.output_arm9()
+tm_writer.output_arm9()
 
-with open(f'{rom_name}.nds', 'rb') as f:
+with open(f"{rom_name.split('/')[1]}.nds", 'rb') as f:
     data = f.read()
 rom = ndspy.rom.NintendoDSRom(data)
 
 
-# mutable_rom = bytearray(data)
-# arm9_offset = 16384 #0x4000
+mutable_rom = bytearray(data)
+arm9_offset = 16384 #0x4000
 
 
 
-# #get edited arm9
-# edited_arm9_file = bytearray(open(f'{rom_name}/arm9.bin', 'rb').read())
+#get edited arm9
+edited_arm9_file = bytearray(open(f'{rom_name}/arm9.bin', 'rb').read())
 
-# # #compress it
-# print ("compressing arm9")
-# arm9 = bytearray(ndspy.codeCompression.compress(edited_arm9_file, isArm9=True))
+# #compress it
+print ("compressing arm9")
+arm9 = bytearray(ndspy.codeCompression.compress(edited_arm9_file, isArm9=True))
 
-# #reinsert arm9
-# mutable_rom[arm9_offset:arm9_offset + len(arm9)] = arm9
+#reinsert arm9
+mutable_rom[arm9_offset:arm9_offset + len(arm9)] = arm9
 
-# #update rom in memory
-# rom = ndspy.rom.NintendoDSRom(mutable_rom)
-
+#update rom in memory
+rom = ndspy.rom.NintendoDSRom(mutable_rom)
 
 with open(f'session_settings.json', "r") as outfile:  
 	settings = json.load(outfile) 
@@ -133,9 +108,9 @@ print("attempting save")
 
 
 if path.exists(f'exports'):
-	rom.saveToFile(f'exports/{rom_name}.nds')
+	rom.saveToFile(f"exports/{rom_name.split('/')[1]}.nds")
 else:
 	os.makedirs('exports')
-	rom.saveToFile(f'exports/{rom_name}.nds')
+	rom.saveToFile(f"exports/{rom_name.split('/')[1]}.nds")
 
 

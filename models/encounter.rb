@@ -6,12 +6,19 @@ class Encounter
 
 	def self.get_all
 		files = Dir["#{$rom_name}/json/encounters/*.json"].sort_by{ |name| [name[/\d+/].to_i, name] }
-		files = files.map do |pok|
-			get_data pok
+		file_count = files.length
+
+		data = []
+
+		(0..file_count - 1).map do |n|
+			file_path = "#{$rom_name}/json/encounters/#{n}.json"
+			data << get_data(file_path)
 		end
-		expand_encounter_info(files, Header.get_all)
+
+		expand_encounter_info(data, Header.get_all)
 
 	end
+
 
 	def self.write_data data
 		file_name = data["file_name"]

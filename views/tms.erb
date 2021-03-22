@@ -42,7 +42,7 @@
 
 
 	// moves data for populating additonal move info when user makes edits
-	moves = <%= @moves.to_json %>
+	moves = <%= @tm_moves[0].concat(@tm_moves[1]).to_json %>
 
 	// info for autocomplete
 	autofills = {
