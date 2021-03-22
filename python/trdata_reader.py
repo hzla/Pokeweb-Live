@@ -10,19 +10,22 @@ import copy
 
 
 def set_global_vars():
-	global ROM_NAME, NARC_FORMAT, TRAINER_CLASSES, ITEMS, BATTLE_TYPES, TRAINER_NAMES, AIS, TEMPLATE_FLAGS
+	global ROM_NAME, NARC_FORMAT, TRAINER_CLASSES, ITEMS, BATTLE_TYPES, TRAINER_NAMES, AIS, TEMPLATE_FLAGS, BASE_ROM
 	
 	with open(f'session_settings.json', "r") as outfile:  
 		settings = json.load(outfile) 
 		ROM_NAME = settings['rom_name']
+		BASE_ROM = settings['base_rom']
 
 	TEMPLATE_FLAGS =["has_moves", "has_items"]
 
 
 	TRAINER_CLASSES = open(f'{ROM_NAME}/texts/tr_classes.txt', "r").read().splitlines()
 
-
-	TRAINER_NAMES = open(f'Reference_Files/trainer_names.txt', "r").read().splitlines()
+	if BASE_ROM == 'BW':
+		TRAINER_NAMES = open(f'Reference_Files/trainer_names.txt', "r").read().splitlines()
+	else:
+		TRAINER_NAMES = open(f'Reference_Files/trainer_names_2.txt', "r").read().splitlines()
 
 	ITEMS = open(f'{ROM_NAME}/texts/items.txt', mode="r").read().splitlines()
 
@@ -76,6 +79,9 @@ def read_narc_data(data, narc_format, file_name, narc_name):
 	#USE THE FORMAT LIST TO PARSE BYTES
 	for entry in narc_format: 
 		file["raw"][entry[1]] = read_bytes(stream, entry[0])
+		if entry[1] == "template" and file_name == 38:
+			print(file["raw"][entry[1]])
+			print(data)
 
 	#CONVERT TO READABLE FORMAT USING CONSTANTS/TEXT BANKS
 	file["readable"] = to_readable(file["raw"], file_name)

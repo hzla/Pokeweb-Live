@@ -16,9 +16,6 @@ div {
     outline: none;
 }
 
-input[type='checkbox'], .checkmark {
-    display: none;
-}
 
 textarea:focus, input:focus{
     outline: none;
@@ -247,7 +244,7 @@ div  {
     color: #9cb820;
 }
 .btn.-bug:hover {
-    background-color: rgba(156, 184, 32, .2);
+    background-color: rgba(156, 184, 32, .6);
 }
 .btn.-bug.-active {
     background-color: #9cb820;
@@ -256,7 +253,7 @@ div  {
     color: #7038f8;
 }
 .btn.-dragon:hover {
-    background-color: rgba(112, 56, 248, .2);
+    background-color: rgba(112, 56, 248, .6);
 }
 .btn.-dragon.-active {
     background-color: #7038f8;
@@ -265,7 +262,7 @@ div  {
     color: #f09ad9;
 }
 .btn.-fairy:hover {
-    background-color: rgba(240, 154, 217, .2);
+    background-color: rgba(240, 154, 217, .6);
 }
 .btn.-fairy.-active {
     background-color: #f09ad9;
@@ -274,7 +271,7 @@ div  {
     color: #f08030;
 }
 .btn.-fire:hover {
-    background-color: rgba(240, 128, 48, .2);
+    background-color: rgba(240, 128, 48, .6);
 }
 .btn.-fire.-active {
     background-color: #f08030;
@@ -283,7 +280,7 @@ div  {
     color: #705898;
 }
 .btn.-ghost:hover {
-    background-color: rgba(112, 88, 152, .2);
+    background-color: rgba(112, 88, 152, .6);
 }
 .btn.-ghost.-active {
     background-color: #705898;
@@ -292,7 +289,7 @@ div  {
     color: #e0b668;
 }
 .btn.-ground:hover {
-    background-color: rgba(224, 182, 104, .2);
+    background-color: rgba(224, 182, 104, .6);
 }
 .btn.-ground.-active {
     background-color: #e0b668;
@@ -301,7 +298,7 @@ div  {
     color: #a8a8a8;
 }
 .btn.-normal:hover {
-    background-color: hsla(0, 0%, 65.9%, .2);
+    background-color: hsla(0, 0%, 65.9%, .6);
 }
 .btn.-normal.-active {
     background-color: #a8a8a8;
@@ -310,7 +307,7 @@ div  {
     color: #eb2d77;
 }
 .btn.-psychic:hover {
-    background-color: rgba(235, 45, 119, .2);
+    background-color: rgba(235, 45, 119, .6);
 }
 .btn.-psychic.-active {
     background-color: #eb2d77;
@@ -319,7 +316,7 @@ div  {
     color: #6d8f9c;
 }
 .btn.-steel:hover {
-    background-color: rgba(109, 143, 156, .2);
+    background-color: rgba(109, 143, 156, .6);
 }
 .btn.-steel.-active {
     background-color: #6d8f9c;
@@ -328,7 +325,7 @@ div  {
     color: #504843;
 }
 .btn.-dark:hover {
-    background-color: rgba(80, 72, 67, .2);
+    background-color: rgba(80, 72, 67, .6);
 }
 .btn.-dark.-active {
     background-color: #504843;
@@ -337,7 +334,7 @@ div  {
     color: #fc3;
 }
 .btn.-electric:hover {
-    background-color: rgba(192, 150, 67, .2);
+    background-color: rgba(192, 150, 67, .6);
 }
 .btn.-electric.-active {
     background-color: #fc3;
@@ -346,7 +343,7 @@ div  {
     color: #c03028;
 }
 .btn.-fighting:hover {
-    background-color: rgba(192, 48, 40, .2);
+    background-color: rgba(192, 48, 40, .6);
 }
 .btn.-fighting.-active {
     background-color: #c03028;
@@ -355,7 +352,7 @@ div  {
     color: #9096f0;
 }
 .btn.-flying:hover {
-    background-color: rgba(144, 150, 240, .2);
+    background-color: rgba(144, 150, 240, .6);
 }
 .btn.-flying.-active {
     background-color: #9096f0;
@@ -364,7 +361,7 @@ div  {
     color: #22c02a;
 }
 .btn.-grass:hover {
-    background-color: rgba(34, 192, 42, .2);
+    background-color: rgba(34, 192, 42, .6);
 }
 .btn.-grass.-active {
     background-color: #22c02a;
@@ -373,7 +370,7 @@ div  {
     color: #98d8d8;
 }
 .btn.-ice:hover {
-    background-color: rgba(152, 216, 216, .2);
+    background-color: rgba(152, 216, 216, .6);
 }
 .btn.-ice.-active {
     background-color: #98d8d8;
@@ -382,7 +379,7 @@ div  {
     color: #a040a0;
 }
 .btn.-poison:hover {
-    background-color: rgba(160, 64, 160, .2);
+    background-color: rgba(160, 64, 160, .6);
 }
 .btn.-poison.-active {
     background-color: #a040a0;
@@ -391,7 +388,7 @@ div  {
     color: #b8a038;
 }
 .btn.-rock:hover {
-    background-color: rgba(184, 160, 56, .2);
+    background-color: rgba(184, 160, 56, .6);
 }
 .btn.-rock.-active {
     background-color: #b8a038;
@@ -400,7 +397,7 @@ div  {
     color: #6890f0;
 }
 .btn.-water:hover {
-    background-color: rgba(104, 144, 240, .2);
+    background-color: rgba(104, 144, 240, .6);
 }
 .btn.-water.-active {
     background-color: #6890f0;
@@ -423,8 +420,8 @@ div  {
 .pokemon-card__img {
     align-items: center;
     display: flex;
-    -webkit-filter: drop-shadow(4px 4px 4px rgba(4, 8, 12, .2));
-    filter: drop-shadow(4px 4px 4px rgba(4, 8, 12, .2));
+    -webkit-filter: drop-shadow(4px 4px 4px rgba(4, 8, 12, .6));
+    filter: drop-shadow(4px 4px 4px rgba(4, 8, 12, .6));
     flex: 0 0 128px;
     justify-content: center;
     min-height: 96px;
@@ -510,8 +507,8 @@ div  {
     position: absolute;
     right: 0;
     top: 0;
-    background-image: -webkit-linear-gradient(20deg, hsla(0, 0%, 100%, .2), hsla(0, 0%, 100%, 0));
-    background-image: linear-gradient(70deg, hsla(0, 0%, 100%, .2), hsla(0, 0%, 100%, 0));
+    background-image: -webkit-linear-gradient(20deg, hsla(0, 0%, 100%, .6), hsla(0, 0%, 100%, 0));
+    background-image: linear-gradient(70deg, hsla(0, 0%, 100%, .6), hsla(0, 0%, 100%, 0));
 }
 .pokemon-card__graph.-low {
     background-color: #de4141;

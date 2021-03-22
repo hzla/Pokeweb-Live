@@ -9,6 +9,8 @@ Dir["models/*.rb"].each {|file| require_relative file}
 
 before do
 	$rom_name = SessionSettings.rom_name
+	return if !$rom_name
+	@rom_name = $rom_name.split("/")[1]
 	tabs = ['headers', 'personal', 'trainers', 'encounters', 'moves', 'tms', 'items']
 	tab_name = request.path_info.split('/')[1]
 	@active_header = tabs.find_index tab_name
@@ -25,6 +27,8 @@ get '/' do
 		redirect "/headers"
 	else
 		@roms = Dir["*.nds"]
+		@projects = Dir['projects/*/']
+
 		erb :index
 	end
 end
@@ -32,6 +36,13 @@ end
 get '/rom/new' do 
 	SessionSettings.reset
 	redirect '/'
+end
+
+get '/load_project' do 
+	SessionSettings.load_project params["project"]
+
+	content_type :json
+  	{ url: "/headers" }.to_json
 end
 
 # only ever called with ajax
@@ -73,6 +84,8 @@ get '/personal' do
 	end	
 	@pokemons = @poke_data[1..10]
 
+	
+
 	erb :personal
 end
 
@@ -113,7 +126,6 @@ end
 
 get '/moves' do 	
 	@moves = Move.get_all
-	@moves = @moves[0..10]
 	
 	@poke_data = Personal.poke_data
 	@move_names = Move.get_names_from @moves

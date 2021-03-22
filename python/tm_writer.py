@@ -20,11 +20,12 @@ def remove_accents(input_str):
 
 
 ROM_NAME = ""
-
+BASE_ROM = ""
 
 with open(f'session_settings.json', "r") as outfile:  
 	settings = json.load(outfile) 
 	ROM_NAME = settings['rom_name']
+	BASE_ROM = settings['base_rom']
 
 MOVES = open(f'{ROM_NAME}/texts/moves.txt', mode="r").read().splitlines()
 
@@ -36,6 +37,9 @@ for i,move in enumerate(MOVES):
 TM_FORMAT = []
 
 TM_OFFSET = 633504 #0x9aaa0
+
+if BASE_ROM == "BW2":
+	TM_OFFSET = 576644 #0X8cc84
 
 for n in range(1, 93):
 	TM_FORMAT.append([2, f'tm_{n}'])

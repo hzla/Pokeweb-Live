@@ -3,7 +3,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<meta name="theme-color" content="#000000">
-	<title>Pokeweb<%= " #{@title}" %></title>
+	<title><%= @rom_name || "Pokeweb" %> <%= " #{@title}" %></title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="/scripts/autocomplete.js"></script>
 			<script src="/scripts/index.js"></script>
@@ -17,41 +17,44 @@
 
 	<body>
 		<div id="header">
-			
-			<div class="header-left">
-				<a class="header-item"  href="/headers">
-					Headers
-				</a>
-				<a class="header-item"  href="/personal">
-					Pokemon
-				</a>
-				<a class="header-item"  href="/trainers">
-					Trainers
-				</a>
-				<a class="header-item"  href="/encounters">
-					Encounters
-				</a>
-				<a class="header-item"  href="/moves">
-					Moves
-				</a>
-				<a class="header-item"  href="/tms">
-					TMs
-				</a>
-				<a class="header-item"  href="/items">
-					Items
-				</a>
+			<% if $rom_name %>
+				<div class="header-left">
 
-			</div>
+				
+					<a class="header-item"  href="/headers">
+						Headers
+					</a>
+					<a class="header-item"  href="/personal">
+						Pokemon
+					</a>
+					<a class="header-item"  href="/trainers">
+						Trainers
+					</a>
+					<a class="header-item"  href="/encounters">
+						Encounters
+					</a>
+					<a class="header-item"  href="/moves">
+						Moves
+					</a>
+					<a class="header-item"  href="/tms">
+						TMs
+					</a>
+					<a class="header-item"  href="/items">
+						Items
+					</a>
+				
 
-			<div class="header-right">
-				<div class="header-item" id="save-rom">
-					Export
 				</div>
-				<a class="header-item"  href="/rom/new">
-					New
-				</a>
-			</div>
-			
+
+				<div class="header-right">
+					<div class="header-item" id="save-rom">
+						Export
+					</div>
+					<a class="header-item"  href="/rom/new">
+						New
+					</a>
+				</div>
+			<% end %>
 		</div>
 		<div id="content-container">
 			<%= yield %>
