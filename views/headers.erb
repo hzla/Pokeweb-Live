@@ -39,7 +39,7 @@
 						
 						<% col.each do |field_name| %>
 							<div class="expanded-field">
-								<div class="header-label"><%= field_name[1].move_titleize %></div>
+								<div class="header-label"><%= field_name[1]%></div>
 								<%= field field_name[1], "hdr-#{field_name}", {value: @header_data[n.to_s][field_name[1]], narc: "header", type: "int-#{field_name[0]}"} %>
 							</div>
 						<% end %>

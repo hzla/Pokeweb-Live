@@ -112,8 +112,12 @@ def to_readable(raw, file_name, template, num_pokemon):
 	readable = copy.deepcopy(raw)
 
 	readable["count"] = num_pokemon
+
 	for n in range(0, num_pokemon):
+		
+
 		readable[f'species_id_{n}'] = POKEDEX[raw[f'species_id_{n}']]
+
 
 		readable[f'ability_{n}'] = math.floor(raw[f'ability_{n}'] / 16)
 

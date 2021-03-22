@@ -64,6 +64,7 @@ get '/personal' do
 	@move_names = Move.get_names_from @moves
 	@tm_names = Tm.get_names
 	@tutor_moves = Personal.tutor_moves
+	@evolutions = Evolution.get_all
 
 	@poke_data.each do |pok|
 		if pok
@@ -82,6 +83,7 @@ get '/personal/collection' do
 
 	@tm_names = Tm.get_names
 	@tutor_moves = Personal.tutor_moves
+	@evolutions = Evolution.get_all
 
 	@poke_data.each do |pok|
 		if pok
@@ -171,4 +173,13 @@ post '/delete' do
 	narc_name = params['data']['narc']
 	created = Object.const_get(narc_name.capitalize).delete params["data"]
 	return 200
+end
+
+
+####################################### ITEMS ###############
+
+get '/items' do
+	@items = Item.get_all
+
+	erb :items
 end

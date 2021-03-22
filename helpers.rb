@@ -33,6 +33,12 @@ class String
   end
 end
 
+class Integer
+	def name_titleize
+		self == 0 ? "-" : to_s
+	end
+end
+
 class NilClass
 	def titleize
 		"-"
@@ -111,7 +117,7 @@ end
 
 
 def img(name, classes="", data=["", ""])
-	"<img src='/images/" + "#{name.gsub("'", "")}'" +  "class='#{classes}' data-#{data[0]}='#{data[1]}' />"
+	"<img src='/images/" + "#{name.gsub("'", "")}'" +  "class='#{classes}' loading='lazy' data-#{data[0]}='#{data[1]}' />"
 end
 
 def svg(name, classes="", data=["", ""], html="")

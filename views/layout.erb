@@ -6,7 +6,7 @@
 	<title>Pokeweb<%= " #{@title}" %></title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="/scripts/autocomplete.js"></script>
-	<script src="/scripts/index.js"></script>
+			<script src="/scripts/index.js"></script>
 	<link href="/stylesheets/external.css" rel="stylesheet">
 	<link href="/stylesheets/main.css" rel="stylesheet">
 	<link href="/stylesheets/autocomplete.css" rel="stylesheet">
@@ -23,7 +23,7 @@
 					Headers
 				</a>
 				<a class="header-item"  href="/personal">
-					Personals
+					Pokemon
 				</a>
 				<a class="header-item"  href="/trainers">
 					Trainers
@@ -37,7 +37,7 @@
 				<a class="header-item"  href="/tms">
 					TMs
 				</a>
-				<a class="header-item"  href="/tms">
+				<a class="header-item"  href="/items">
 					Items
 				</a>
 
@@ -57,6 +57,7 @@
 			<%= yield %>
 		</div>
 		<div id="wait-loading">Loading...</div>
+
 	</body>
 </html>
 

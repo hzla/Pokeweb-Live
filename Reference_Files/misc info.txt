@@ -145,3 +145,10 @@ OVL_167:021D7547 00 DCB 0
 let's do one more. i have electric attacking bug, so 12*17 + 6 + 1 is 211. so would start at 21D7540 and count to 211 byte by byte. or start @ 3DC40 and add the result to skip to the right value in your hex editor.
 
 ** the type chart in white 1 is @ 21F049C. 3A37C in overlay 93 in white 1.
+
+
+
+
+
+NARC (a/0/5/7)
+starters ^

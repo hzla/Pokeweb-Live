@@ -474,7 +474,7 @@ div  {
     flex-wrap: wrap;
 }
 .pokemon-card__ability {
-    font-size: 13px;
+    font-size: 20px;
     font-weight: 500;
 }
 .pokemon-card__ability+.pokemon-card__ability {

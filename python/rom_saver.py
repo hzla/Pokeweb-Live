@@ -19,6 +19,8 @@ import header_writer
 import encounter_writer
 import trdata_writer
 import trpok_writer
+import item_writer
+import evolution_writer
 # code.interact(local=dict(globals(), **locals()))
 
 
@@ -62,6 +64,8 @@ header_writer.output_narc()
 encounter_writer.output_narc()
 trdata_writer.output_narc()
 trpok_writer.output_narc()
+item_writer.output_narc()
+evolution_writer.output_narc()
 
 # tm_writer.output_arm9()
 
@@ -98,6 +102,8 @@ with open(f'session_settings.json', "r") as outfile:
 	encounters_narc_file_id = settings["encounters"]
 	trdata_narc_file_id = settings["trdata"]
 	trpok_narc_file_id = settings["trpok"]
+	item_narc_file_id = settings["items"]
+	evolution_narc_file_id = settings["evolutions"]
 
 personal_narc_filepath = f'{rom_name}/narcs/personal-{personal_narc_file_id}.narc'
 learnset_narc_filepath = f'{rom_name}/narcs/learnsets-{learnset_narc_file_id}.narc'
@@ -106,6 +112,8 @@ headers_narc_filepath = f'{rom_name}/narcs/headers-{headers_narc_file_id}.narc'
 encounters_narc_filepath = f'{rom_name}/narcs/encounters-{encounters_narc_file_id}.narc'
 trdata_narc_filepath = f'{rom_name}/narcs/trdata-{trdata_narc_file_id}.narc'
 trpok_narc_filepath = f'{rom_name}/narcs/trpok-{trpok_narc_file_id}.narc'
+item_narc_filepath = f'{rom_name}/narcs/items-{item_narc_file_id}.narc'
+evolution_narc_filepath = f'{rom_name}/narcs/evolutions-{evolution_narc_file_id}.narc'
 
 print("writing narcs")
 
@@ -116,6 +124,8 @@ rom.files[headers_narc_file_id] = open(headers_narc_filepath, 'rb').read()
 rom.files[encounters_narc_file_id] = open(encounters_narc_filepath, 'rb').read()
 rom.files[trdata_narc_file_id] = open(trdata_narc_filepath, 'rb').read()
 rom.files[trpok_narc_file_id] = open(trpok_narc_filepath, 'rb').read()
+rom.files[item_narc_file_id] = open(item_narc_filepath, 'rb').read()
+rom.files[evolution_narc_file_id] = open(evolution_narc_filepath, 'rb').read()
 
 
 

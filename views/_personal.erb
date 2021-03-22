@@ -92,11 +92,36 @@
 		<% end %>
 				
 	</div>
+	<div class="expanded-card-content expanded-evos">
+		<% evo = @evolutions[pok["index"].to_i] %>
+		
+		<% [(0..2), (3..5), [6]].each do |range| %>
+			<div class="expanded-left">
+				<% range.each do |n| %>
+					<div class="expanded-field">
+						<div class="evo-label">Method</div>
+						<%= field "method_#{n}", 'evo-value', {value: evo["method_#{n}"],  narc: "evolution", autofill: "evo_methods"} %>
+					</div>
+					<div class="expanded-field">
+						<div class="evo-label">Parameter</div>
+						<%= field "param_#{n}", 'evo-value', {value: evo["param_#{n}"],  narc: "evolution", autofill: "evo_params"} %>
+					</div>
+					<div class="expanded-field">
+						<div class="evo-label">Evolves to</div>
+						<%= field "target_#{n}", 'evo-value', {value: evo["target_#{n}"].name_titleize,  narc: "evolution", autofill: "pokemon_names"} %>
+					</div>
+				<% end %>
+			</div>	
+		<% end %>
+	
+				
+	</div>
 	<div class="personal-icons">
 		<%= svg 'svgs/moves', "expand-card exp-learnset card-icon expand-action", ["expand", "learnset"]  %>
 		<%= svg 'svgs/tms', "expand-card exp-tms card-icon expand-action", ["expand", "tms"]  %>
 		<%= svg 'svgs/tutors', "expand-card exp-tutors card-icon expand-action", ["expand", "tutors"]  %>
-		<%= svg 'svgs/misc_data', "expand-card exp-personal card-icon expand-action", ["expand", "personal"]  %>		
+		<%= svg 'svgs/misc_data', "expand-card exp-personal card-icon expand-action", ["expand", "personal"]  %>
+		<%= svg 'svgs/evo', "expand-card exp-evos card-icon expand-action", ["expand", "evos"]  %>		
 	</div>
 	
 </div>

@@ -40,6 +40,10 @@ class RomInfo
 		end
 	end
 
+	def self.evo_methods
+		File.open("Reference_Files/evo_methods.txt").read.split("\n")
+	end
+
 	def self.items
 		# encoding for latin text ISO8859-1
 		File.open("#{$rom_name}/texts/items.txt", encoding: "ISO8859-1").read.split("\n")
