@@ -80,6 +80,8 @@ def parse_msg_bank(filepath, msg_bank):
 				elif char == 0xF100:
 					# CODE FOR DECOMPRESSION GOES HERE
 					continue
+				elif char == 233:
+					string += "e"
 				elif char > 127:
 					# code for dealing with weird characters here 
 					# print(decompress.decomp(char))

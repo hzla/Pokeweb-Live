@@ -1,4 +1,4 @@
-$( document ).ready(function() {
+
     $("input[type='checkbox'], .checkmark").show()
 
 ///////////////////// EVENT BINDINGS //////////////////////////
@@ -27,14 +27,14 @@ $( document ).ready(function() {
     //////////////// Filters ////////////////////////
 
 
-    $('.small-filters button').on('click', function(){
+    $(document).on('click', '.small-filters button', function(){
     	$(this).toggleClass('-active')
     	filter()
     })
-    $('#search-text-btn').on('click', function(){	
+    $(document).on('click', '#search-text-btn', function(){	
     	filter()
     })
-    $('#search-text').on('keypress',function(e) {
+     $(document).on('keypress', '#search-text', function(e){
 	    if(e.which == 13) {
 	        filter()
 	    }
@@ -186,10 +186,26 @@ $( document ).ready(function() {
 		} else {
 			// validate string in autofill bank if string field
 			valid_fields = autofills[$(this).attr('data-autofill')]
+			
+			if ($(this).attr('data-autofill') == "evo_params") {
+			  	valid_fields = autofills["pokemon_names"].concat(autofills["items"]).concat(autofills["move_names"]).concat(Array.from(Array(101).keys()))
+
+			  	if (!isNaN(value)) {
+			  		data["int"] = true
+			  	}
+
+			 }
+
+
+
 			valid_fields = JSON.stringify(valid_fields).toLowerCase()
 
 			if (!valid_fields.includes(value.toLowerCase()) || value == "-" || value == "") {
+				
+				
 				$(this).css('border', '1px solid red')
+				
+
 				return
 			}
 		}
@@ -430,14 +446,19 @@ $( document ).ready(function() {
 
 
 	$(document).on('autocomplete:request', "[contenteditable='true']", function(event, query, callback) {
-	  var suggestions = autofills[$(this).attr('data-autofill')].filter(function(e){
+	   var textbank = autofills[$(this).attr('data-autofill')]
+
+	  if ($(this).attr('data-autofill') == "evo_params") {
+	  	textbank = autofills["pokemon_names"].concat(autofills["items"]).concat(autofills["move_names"])
+	  }
+
+	  var suggestions = textbank.filter(function(e){
 	  	return e.toLowerCase().includes(query.toLowerCase())
 	  });
 	  callback(suggestions);
 	})
 
 
-})
 
 //////////////////////////////  FUNCTIONS //////////////////////////////////////////
 
@@ -692,6 +713,37 @@ function filter() {
 			return text_match
 		})
 	}
+
+	if ($('#items').length > 0) {		
+		var list = Object.values(items).sort(function(a,b) {
+			parseInt(a["index"]) - parseInt(b["index"]);
+		})
+		console.log(list) 
+		search_results = list.filter(function(e) {
+			text_match = false
+
+			if (text_filters) {
+				texts = text_filters.split(",")
+				for (text in texts) {
+					text = texts[text]
+
+					text_match = JSON.stringify(e).toLowerCase().includes(text.toLowerCase())
+					if (text_match ) {break;}
+				} 
+			} else { // when no text filter
+				text_match = true
+			}
+
+			if (text_match) {
+				$(cards[list.indexOf(e)]).show()
+			}
+			return text_match
+		})
+	}
+
+	$('.filterable, .expanded-card-content').css('background', '')
+	$('.filterable:visible:odd, .filterable:visible:even .expanded-card-content').css('background', '#383a59');
+	$('.filterable:visible:even, .filterable:visible:odd .expanded-card-content').css('background', '#282a36'); 
 	
 }
 

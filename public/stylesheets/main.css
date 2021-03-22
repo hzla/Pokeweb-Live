@@ -509,11 +509,6 @@ div.-active svg * {
     text-align: left;
 }
 
-.pokemon-move-list {
-    padding: 20px;
-}
-
-
 .pokemon-move-list .move-power, .pokemon-move-list .move-accuracy {
     width: 60px;
 } 
@@ -648,7 +643,7 @@ div.-active svg * {
     left: calc(20vw + 120px);
     top: 40px;
     flex-wrap: wrap;
-    width: 200px;
+    width: 300px;
     justify-content: end;
 }
 
@@ -870,4 +865,28 @@ div.-active svg * {
 
 .btn-field-right {
     justify-content: flex-end;
+}
+
+.item-id {
+    width: 140px;
+}
+
+.item-name {
+    width: 50vw;
+}
+
+.item-value {
+    width: 120px;
+}
+
+.expanded-item .expanded-left, .expanded-evos .expanded-left {
+    width: 33.33%;
+}
+
+.expanded-evos .expanded-field:nth-child(3n) {
+    margin-bottom: 20px;
+}
+
+.expanded-evos .expanded-field:last-child {
+    margin-bottom: 0px;
 }

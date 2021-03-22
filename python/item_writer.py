@@ -18,17 +18,48 @@ def set_global_vars():
 	with open(f'session_settings.json', "r") as outfile:  
 		settings = json.load(outfile) 
 		ROM_NAME = settings['rom_name']
-		NARC_FILE_ID = settings[""]
+		NARC_FILE_ID = settings["items"]
 
 	
 
-	NARC_FORMAT = []
+	NARC_FORMAT = [[2, "market_value"],
+				[1, "battle_flags"],
+				[1, "gain_values"],
+				[1, "berry_flags"],
+				[1, "held_flags"],
+				[1, "unknown_flag_1"],
+				[1, "nature_gift_power"],
+				[2, "type_attribute"],
+				[1, "item_group"],
+				[1, "battle_item_group"],
+				[1, "usability_flag"],
+				[1, "item_type"],
+				[1, "consumable_flag"],
+				[1, "name_order_id"],
+				[1, "status_removal_flag"], #also used as ball_id
+				[1, "hp_atk_boost"],
+				[1, "def_spatk_boost"],
+				[1, "spd_spdef_boost"],
+				[1, "acc_crit_pp_boost"],
+				[2, "pp_flags"],
+				[1, "hp_ev_gain"],
+				[1, "atk_ev_gain"],
+				[1, "def_ev_gain"],
+				[1, "spd_ev_gain"],
+				[1, "spatk_ev_gain"],
+				[1, "spdef_ev_gain"],
+				[1, "hp_gain"],
+				[1, "pp_gain"],
+				[1, "battle_happiness"],
+				[1, "ow_happiness"],
+				[1, "hold_happiness"],
+				[2, "padding"]]
 
 set_global_vars()
 #################################################################
 
 
-def output_narc(narc_name="trdata"):
+def output_narc(narc_name="items"):
 	json_files = os.listdir(f'{ROM_NAME}/json/{narc_name}')
 	narcfile_path = f'{ROM_NAME}/narcs/{narc_name}-{NARC_FILE_ID}.narc'
 	
@@ -45,7 +76,7 @@ def output_narc(narc_name="trdata"):
 
 	print("narc saved")
 
-def write_narc_data(file_name, narc_format, narc, narc_name=""):
+def write_narc_data(file_name, narc_format, narc, narc_name="items"):
 	file_path = f'{ROM_NAME}/json/{narc_name}/{file_name}.json'
 	narcfile_path = f'{ROM_NAME}/narcs/{narc_name}-{NARC_FILE_ID}.narc'
 
@@ -69,7 +100,7 @@ def write_narc_data(file_name, narc_format, narc, narc_name=""):
 		narc_entry_data[0:len(stream)] = stream
 		narc.files[file_name] = narc_entry_data
 	
-def write_readable_to_raw(file_name, narc_name=""):
+def write_readable_to_raw(file_name, narc_name="items"):
 	data = {}
 	json_file_path = f'{ROM_NAME}/json/{narc_name}/{file_name}.json'
 

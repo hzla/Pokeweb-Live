@@ -13,22 +13,31 @@ import sys
 
 ######################### CONSTANTS #############################
 def set_global_vars():
-	global ROM_NAME, NARC_FORMAT, NARC_FILE_ID
+	global ROM_NAME, NARC_FORMAT, NARC_FILE_ID, ITEMS, POKEDEX, MOVES, METHODS
 	
 	with open(f'session_settings.json', "r") as outfile:  
 		settings = json.load(outfile) 
 		ROM_NAME = settings['rom_name']
-		NARC_FILE_ID = settings[""]
+		NARC_FILE_ID = settings["evolutions"]
 
-	
+	ITEMS = open(f'{ROM_NAME}/texts/items.txt', mode="r").read().splitlines()
+	POKEDEX = open(f'{ROM_NAME}/texts/pokedex.txt', "r").read().splitlines()
+	MOVES = open(f'{ROM_NAME}/texts/moves.txt', mode="r").read().splitlines()
+
+	METHODS = open(f'Reference_Files/evo_methods.txt', mode="r").read().splitlines()	
 
 	NARC_FORMAT = []
+
+	for n in range(0, 7):
+		NARC_FORMAT.append([2, f'method_{n}'])
+		NARC_FORMAT.append([2, f'param_{n}'])
+		NARC_FORMAT.append([2, f'target_{n}'])
 
 set_global_vars()
 #################################################################
 
 
-def output_narc(narc_name="trdata"):
+def output_narc(narc_name="evolutions"):
 	json_files = os.listdir(f'{ROM_NAME}/json/{narc_name}')
 	narcfile_path = f'{ROM_NAME}/narcs/{narc_name}-{NARC_FILE_ID}.narc'
 	
@@ -45,7 +54,7 @@ def output_narc(narc_name="trdata"):
 
 	print("narc saved")
 
-def write_narc_data(file_name, narc_format, narc, narc_name=""):
+def write_narc_data(file_name, narc_format, narc, narc_name="evolutions"):
 	file_path = f'{ROM_NAME}/json/{narc_name}/{file_name}.json'
 	narcfile_path = f'{ROM_NAME}/narcs/{narc_name}-{NARC_FILE_ID}.narc'
 
@@ -60,16 +69,11 @@ def write_narc_data(file_name, narc_format, narc, narc_name=""):
 				data = json_data["raw"][entry[1]]
 				write_bytes(stream, entry[0], data)
 	
-	if file_name >= len(narc.files):
-		narc_entry_data = bytearray()
-		narc_entry_data[0:len(stream)] = stream
-		narc.files.append(narc_entry_data)
-	else:
 		narc_entry_data = bytearray(narc.files[file_name])
 		narc_entry_data[0:len(stream)] = stream
 		narc.files[file_name] = narc_entry_data
 	
-def write_readable_to_raw(file_name, narc_name=""):
+def write_readable_to_raw(file_name, narc_name="evolutions"):
 	data = {}
 	json_file_path = f'{ROM_NAME}/json/{narc_name}/{file_name}.json'
 
@@ -88,7 +92,19 @@ def write_readable_to_raw(file_name, narc_name=""):
 def to_raw(readable):
 	raw = copy.deepcopy(readable)
 
-	
+	for n in range(0,7):
+		
+		raw[f'method_{n}'] = METHODS.index(readable[f'method_{n}'])
+		raw[f'target_{n}'] = POKEDEX.index(readable[f'target_{n}'].upper())
+
+		if raw[f'method_{n}'] in [6,8,16,17,18,19]:
+			raw[f'param_{n}'] = ITEMS.index(raw[f'param_{n}'])
+		elif raw[f'method_{n}'] == 20:
+			raw[f'param_{n}'] = MOVES.index(readable[f'param_{n}'])
+		elif raw[f'method_{n}'] == 21:
+			raw[f'param_{n}'] = POKEDEX.index(readable[f'param_{n}'].upper())
+		else:
+			raw
 
 	return raw
 	

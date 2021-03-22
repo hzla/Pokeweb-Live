@@ -1,0 +1,29 @@
+None
+Max Happiness
+Level During Day
+Level During Night
+Level Requirement
+Trading
+Trade with Held Item
+Karrablast/Shelmet Trade
+Item Use
+Level Requirement + Atk Stat Greater Than Def
+Level Requirement + Atk Stat Equal To Def
+Level Requirement + Atk Stat Less Than Def
+Level Requirement + PID Greater Than 5
+Level Requirement + PID Less Than 5
+Level Requirement (Ninjask)
+Level Requirement + Empty Party Slot/Pokeball
+Max Beauty
+Item Use + Male
+Item Use + Female
+Item Use + Day
+Item Use + Night
+After Learning Specific Move
+Level With Party Member
+Level Requirement + Male
+Level Requirement + Female
+Level Up in Mt. Coronet
+Level Up in Eterna Forest
+Level Up in Route 217
+Level Up near Moss Rock

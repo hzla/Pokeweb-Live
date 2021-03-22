@@ -1,0 +1,16 @@
+https://projectpokemon.org/home/forums/topic/22629-b2w2-general-rom-info/?do=findComment&comment=146898
+
+
+Using Tinke or editor.exe (kiwids), open the ROM and unpack the a/2/8/2 narc so that you get the individual files.
+Go to wherever you exported the folder to, and you'll have 80 files. The only ones we care about are 0-31, as the rest are empty (zero byte size).
+Using the table of File -> Ingame Location posted in the reply above this post, choose which vendor you will edit.
+Note that location 1 might be named file 0.
+The generic vendors at the marts sell items based on how many badges you have.
+Specialty vendors have unique tables and don't appear in multiple locations.
+[*]Open the location in HxD or other hex editor of choice; the way the file is structured is just a list of items (by hex) that will be sold by the vendor.
+
+[*]Replace or add/delete items.
+
+[*]Save the location file.
+
+[*]Repack the narc, replace the old narc with the new. Save the ROM and you're done.

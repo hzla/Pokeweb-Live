@@ -17,6 +17,8 @@ from arm9_reader import output_tms_json
 from encounter_reader import output_encounters_json
 from trdata_reader import output_trdata_json
 from trpok_reader import output_trpok_json
+from item_reader import output_items_json
+from evolution_reader import output_evolutions_json
 
 # code.interact(local=dict(globals(), **locals()))
 
@@ -41,7 +43,7 @@ BW_NARCS = [["a/0/1/6", "personal"],
 ["a/1/2/5", "overworlds"],
 ["a/0/1/7", "growth"],
 ["a/0/1/8", "learnsets"],
-["a/0/1/9", "evolution"], 
+["a/0/1/9", "evolutions"], 
 ["a/0/2/0", "babyforms"],
 ["a/0/2/1","moves"],
 ["a/0/2/4", "items"],
@@ -69,9 +71,6 @@ narc_info = {} ##store narc names and file id pairs
 with open(f'session_settings.json', "r") as outfile:  
 	narc_info = json.load(outfile) 
 
-
-print("this is narc info 1")
-print(narc_info)
 
 with open(f'{rom_name}.nds', 'rb') as f:
     data = f.read()
@@ -121,7 +120,6 @@ for msg_bank in BW_MSG_BANKS:
 settings = {}
 settings.update(narc_info)
 
-print("this is settings info 1")
 print(settings)
 
 with open(f'session_settings.json', "w+") as outfile:  
@@ -147,6 +145,14 @@ output_trdata_json(trdata_narc_data)
 
 trpok_narc_data = ndspy.narc.NARC(rom.files[narc_info["trpok"]])
 output_trpok_json(trpok_narc_data)
+
+item_narc_data = ndspy.narc.NARC(rom.files[narc_info["items"]])
+output_items_json(item_narc_data)
+
+evolution_narc_data = ndspy.narc.NARC(rom.files[narc_info["evolutions"]])
+output_evolutions_json(evolution_narc_data)
+
+
 
 output_tms_json(arm9)
 
