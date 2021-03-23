@@ -433,6 +433,22 @@
 		})
 	})
 
+	//update mart inv
+	$(document).on('focusout', ".mart-item", function(){
+		var value = $(this).text().trim()
+		var card = $(this).parents('.filterable')
+
+		inventory = []
+		card.find('.mart-item').each(function(i,v) {
+			inventory.push($(v).text())
+		})
+		console.log(inventory)
+
+		card.find('.mart-inv').text(inventory.filter(x => x !== "None").join(", "))
+
+
+	})
+
 	$(document).on('focusout', ".trpok-name", function(){
 		var value = $(this).text().trim()
 		var card = $(this).parents('.filterable')
@@ -745,6 +761,34 @@ function filter() {
 
 	if ($('#items').length > 0) {		
 		var list = Object.values(items).sort(function(a,b) {
+			parseInt(a["index"]) - parseInt(b["index"]);
+		})
+		console.log(list) 
+		search_results = list.filter(function(e) {
+			text_match = false
+
+			if (text_filters) {
+				texts = text_filters.split(",")
+				for (text in texts) {
+					text = texts[text]
+
+					text_match = JSON.stringify(e).toLowerCase().includes(text.toLowerCase())
+					if (text_match ) {break;}
+				} 
+			} else { // when no text filter
+				text_match = true
+			}
+
+			if (text_match) {
+				$(cards[list.indexOf(e)]).show()
+			}
+			return text_match
+		})
+	}
+
+
+	if ($('#marts').length > 0) {		
+		var list = Object.values(marts).sort(function(a,b) {
 			parseInt(a["index"]) - parseInt(b["index"]);
 		})
 		console.log(list) 

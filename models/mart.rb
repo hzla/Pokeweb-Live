@@ -6,7 +6,10 @@ class Mart
 		file_count = files.length
 
 		(0..file_count - 1).each do |n|
-			json = JSON.parse(File.open("#{$rom_name}/json/marts/#{n}.json", "r:ISO8859-1").read)
+			data = File.open("#{$rom_name}/json/marts/#{n}.json", "r:ISO8859-1") do |f|
+				f.read
+			end			
+			json = JSON.parse(data)
 			entry = json["readable"]
 
 			collection[n] = entry
@@ -30,6 +33,16 @@ class Mart
 		json_data["readable"][field_to_change] = changed_value
 
 		File.open(file_path, "w") { |f| f.write json_data.to_json }
+	end
+
+	def self.inventory(mart)
+		inv = []
+		(0..19).each do |n|
+			inv << mart["item_#{n}"]
+		end
+		inv = inv.compact.uniq
+		inv.delete("None")
+		inv.join(", ")
 	end
 
 

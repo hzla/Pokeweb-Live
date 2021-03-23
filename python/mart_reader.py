@@ -56,6 +56,11 @@ def read_narc_data(data, narc_format, file_name, narc_name):
 def to_readable(raw, file_name):
 	readable = copy.deepcopy(raw)
 
+	try:
+		readable["name"] = MART_LOCATIONS[file_name]
+	except IndexError:
+		readable["name"] = "-"
+
 	for n in range(0,20):
 		readable[f'item_{n}'] = ITEMS[raw[f'item_{n}']]
 

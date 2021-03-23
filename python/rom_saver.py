@@ -21,6 +21,7 @@ import trdata_writer
 import trpok_writer
 import item_writer
 import evolution_writer
+import mart_writer
 # code.interact(local=dict(globals(), **locals()))
 
 
@@ -42,6 +43,7 @@ trdata_writer.output_narc()
 trpok_writer.output_narc()
 item_writer.output_narc()
 evolution_writer.output_narc()
+mart_writer.output_narc()
 
 tm_writer.output_arm9()
 
@@ -68,6 +70,7 @@ rom = ndspy.rom.NintendoDSRom(data)
 # #update rom in memory
 # rom = ndspy.rom.NintendoDSRom(mutable_rom)
 
+settings = {}
 with open(f'session_settings.json', "r") as outfile:  
 	settings = json.load(outfile) 
 	personal_narc_file_id = settings["personal"]
@@ -79,6 +82,8 @@ with open(f'session_settings.json', "r") as outfile:
 	trpok_narc_file_id = settings["trpok"]
 	item_narc_file_id = settings["items"]
 	evolution_narc_file_id = settings["evolutions"]
+	if settings["base_rom"] == "BW2":
+		mart_narc_file_id = settings["marts"]
 
 personal_narc_filepath = f'{rom_name}/narcs/personal-{personal_narc_file_id}.narc'
 learnset_narc_filepath = f'{rom_name}/narcs/learnsets-{learnset_narc_file_id}.narc'
@@ -89,6 +94,9 @@ trdata_narc_filepath = f'{rom_name}/narcs/trdata-{trdata_narc_file_id}.narc'
 trpok_narc_filepath = f'{rom_name}/narcs/trpok-{trpok_narc_file_id}.narc'
 item_narc_filepath = f'{rom_name}/narcs/items-{item_narc_file_id}.narc'
 evolution_narc_filepath = f'{rom_name}/narcs/evolutions-{evolution_narc_file_id}.narc'
+
+if settings["base_rom"] == "BW2":
+	mart_narc_filepath = f'{rom_name}/narcs/marts-{mart_narc_file_id}.narc'
 
 print("writing narcs")
 
@@ -102,6 +110,9 @@ rom.files[trpok_narc_file_id] = open(trpok_narc_filepath, 'rb').read()
 rom.files[item_narc_file_id] = open(item_narc_filepath, 'rb').read()
 rom.files[evolution_narc_file_id] = open(evolution_narc_filepath, 'rb').read()
 
+if settings["base_rom"] == "BW2":
+	rom.files[mart_narc_file_id] = open(mart_narc_filepath, 'rb').read()
+	print("saved mart")
 
 
 print("attempting save")
