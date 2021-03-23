@@ -50,23 +50,23 @@ with open(f"{rom_name.split('/')[1]}.nds", 'rb') as f:
 rom = ndspy.rom.NintendoDSRom(data)
 
 
-mutable_rom = bytearray(data)
-arm9_offset = 16384 #0x4000
+# mutable_rom = bytearray(data)
+# arm9_offset = 16384 #0x4000
 
 
 
-#get edited arm9
-edited_arm9_file = bytearray(open(f'{rom_name}/arm9.bin', 'rb').read())
+# #get edited arm9
+# edited_arm9_file = bytearray(open(f'{rom_name}/arm9.bin', 'rb').read())
 
-# #compress it
-print ("compressing arm9")
-arm9 = bytearray(ndspy.codeCompression.compress(edited_arm9_file, isArm9=True))
+# # #compress it
+# print ("compressing arm9")
+# arm9 = bytearray(ndspy.codeCompression.compress(edited_arm9_file, isArm9=True))
 
-#reinsert arm9
-mutable_rom[arm9_offset:arm9_offset + len(arm9)] = arm9
+# #reinsert arm9
+# mutable_rom[arm9_offset:arm9_offset + len(arm9)] = arm9
 
-#update rom in memory
-rom = ndspy.rom.NintendoDSRom(mutable_rom)
+# #update rom in memory
+# rom = ndspy.rom.NintendoDSRom(mutable_rom)
 
 with open(f'session_settings.json', "r") as outfile:  
 	settings = json.load(outfile) 

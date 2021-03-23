@@ -19,6 +19,9 @@ from trdata_reader import output_trdata_json
 from trpok_reader import output_trpok_json
 from item_reader import output_items_json
 from evolution_reader import output_evolutions_json
+from grotto_reader import output_grottos_json
+from mart_reader import output_marts_json
+
 
 # code.interact(local=dict(globals(), **locals()))
 
@@ -78,7 +81,9 @@ BW2_NARCS = [["a/0/1/6", "personal"],
 ["a/0/9/2", "trpok"],
 ["a/1/2/7", "encounters"],
 ["a/0/0/3", "storytext"],
-["a/0/5/6", "scripts"]]
+["a/0/5/6", "scripts"],
+["a/2/8/2", "marts"],
+["a/2/7/3", "grottos"]]
 
 BW2_MSG_BANKS = [[488, "moves"],
 [487, "abilities"],
@@ -179,6 +184,13 @@ output_items_json(item_narc_data)
 
 evolution_narc_data = ndspy.narc.NARC(rom.files[narc_info["evolutions"]])
 output_evolutions_json(evolution_narc_data)
+
+if narc_info["base_rom"] == "BW2":
+	grotto_narc_data = ndspy.narc.NARC(rom.files[narc_info["grottos"]])
+	output_grottos_json(grotto_narc_data)
+
+	mart_narc_data = ndspy.narc.NARC(rom.files[narc_info["marts"]])
+	output_marts_json(mart_narc_data)
 
 output_tms_json(arm9)
 

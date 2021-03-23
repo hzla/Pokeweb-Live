@@ -89,6 +89,20 @@ get '/personal' do
 	erb :personal
 end
 
+get '/expanded_personal/:id' do 
+	moves = Move.get_all
+	tm_names = Tm.get_names
+	tutor_moves = Personal.tutor_moves
+	evolutions = Evolution.get_all
+
+	pok = Personal.get_data_for "#{$rom_name}/json/personal/#{params[:id]}.json"
+
+	pok["learnset"] = expand_learnset_data moves, pok["learnset"]
+
+	erb :'_expanded_personal', :layout => false, :locals => { :pok => pok, :tm_names => tm_names, :tutor_moves => tutor_moves, :evolutions => evolutions }
+
+end
+
 # loading rest of personal files
 get '/personal/collection' do
 	@poke_data = Personal.poke_data
@@ -194,4 +208,20 @@ get '/items' do
 	@items = Item.get_all
 
 	erb :items
+end
+
+####################################### ITEMS ###############
+
+get '/marts' do
+	@marts = Mart.get_all
+
+	erb :marts
+end
+
+####################################### ITEMS ###############
+
+get '/grottos' do
+	@grottos = Grotto.get_all
+
+	erb :grottos
 end

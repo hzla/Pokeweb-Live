@@ -1,0 +1,189 @@
+It occurs to me that I've not actually explained how to do this yet so I figure I may as well:
+
+Step 1 - What's the file you need?
+
+You'll need to extract the a/2/7/3 .narc file from Black 2 or White 2. It doesn't really matter which.
+
+Step 2 - Starting Preparations.
+
+Open it up in a hex editor. I'd recommend crystaltile2 so you can quite easily jump between the files. Alternatively, you can use the kiwi.ds editor to extract the files separately, or whatever other method you wish. I'll walk through this tutorial using the Floccessy Ranch Grotto, which is the first file in the .narc.
+
+Step 3 - Editing the Pokémon Species.
+
+The whole of the first file looks like this:
+
+f1b5fde4793ac7f5694eb10b4f58319a.png
+
+Now it's time to dissect what the file actually means! I'd highly recommend paying attention to this. It's a textified version of the Hidden Grotto listings done by Kaphotics, and it'll help you read what's going on here.
+
+The "CE 00 CE 00 CE 00 CE 00" at the start of the file is a reference to the four Pokémon who can appear with 1% frequency. In this case, Dunsparce takes up Group A, B, C, and D.
+
+206.png
+
+Why Dunsparce? Dunsparce's index number is 206, which is 0x00CE (where 0x signifies it's a hexadecimal number). However, Pokémon games tend to use indices in a flipped form - the latter two bytes come FIRST, and then the former two bytes come last. So 00 CE becomes CE 00, and thus you see it as it's found in the data.
+
+You'll notice other similar strings within this document. As you can see from Kaphotics' list, Herdier is the middle frequency Pokémon. Herdier's National and also index number is 507 -> 0x01FB -> FB 01. You'll see two instances of "FB 01 FB 01 FB 01 FB 01" in the file (also two of "CE 00 CE 00 CE 00 CE 00). The first one refers to Black 2, and the second refers to White 2. So essentially, the file is split like this:
+
+5a8e94a92bceae59e304a98d179f3006.png
+
+The first part is the Black 2 encounter possibilites, the second part is what can appear in White 2. Most of the time this isn't utilised in the game, although you can see it in action in some areas such as Pinwheel Forest's interior, where Beedrill is found in Black 2 and Butterfree in White 2.
+
+In the Floccessy Ranch example, you can also see strings for Marill. Marill is 183 -> 0x00B7 -> B7 00, thus "B7 00 B7 00 B7 00 B7 00".
+
+Actually changing the species is simple - you just edit the strings shown! For example, if you always want Bulbasaur to appear in the Hidden Grotto with a 1% appearance rate, then you'd replace both instances of "CE 00 CE 00 CE 00 CE 00" with "01 00 01 00 01 00 01 00". That is of course, assuming you want the same effect in Black 2 and White 2.
+
+Alternatively, you might want any one of Bulbasaur, Charmander, Squirtle, or Pikachu to appear with a medium rate in the Hidden Grotto. This time, you'd replace the medium rate Pokémon string (Herdier, so FB 01 FB 01 FB 01 FB 01) with "01 00 04 00 07 00 19 00", referring to their index numbers 001, 004, 007 and 025 respectively. This gives them all an equal opportunity to be called (I think) when that encounter rate is selected. Thus, you can have to up to 12 Pokémon appear in a single Grotto on any version!
+
+So, that's the species. But what's the rest?
+
+N.B.: You can place any species in the Hidden Grotto, but they must have an overworld sprite in the game for them to show up. The first 493 Pokémon can all show up, but only the Unovian Pokémon shown on this sprite sheet will be able to show up successfully. Otherwise, you'll get a generic placeholder overworld (a boy with blue hair)..
+
+Step 4 - Editing the Other Pokémon Info.
+
+Let's take a look at an entire string of Pokémon hex in the Grotto, for one version:
+
+"CE 00 CE 00 CE 00 CE 00 0F 0F 0F 0F 0A 0A 0A 0A 1E 1E 1E 1E 00 00 00 00"
+"FB 01 FB 01 FB 01 FB 01 0F 0F 0F 0F 0A 0A 0A 0A 1E 1E 1E 1E 00 00 00 00"
+"B7 00 B7 00 B7 00 B7 00 0F 0F 0F 0F 0A 0A 0A 0A 1E 1E 1E 1E 00 00 00 00"
+Now, we already know these three strings combined make up the Pokémon selection pool for one version. The first one is the rarest, the second the middle, and the third the most common. You're also aware that there's actually four separate Pokémon that can be called in each group - although the game rarely has more than two species in the same group. (You can see an example of there being two in Route 9.)
+
+However, what does the remaining part mean? Let's analyse this...
+
+CE 00 CE 00 CE 00 CE 00 0F 0F 0F 0F 0A 0A 0A 0A 1E 1E 1E 1E 00 00 00 00
+[color="Red"]CE 00 CE 00 CE 00 CE 00[/color] [color="RoyalBlue"]0F 0F 0F 0F [/color][color="SeaGreen"]0A 0A 0A 0A[/color] [color="Orange"]1E 1E 1E 1E[/color] 00 00 00 00
+Suddenly the separate parts become a lot clearer!
+
+We already know the Pokémon species indices are the ones in red.
+
+The four bytes in blue refer to the maximum level that a Pokémon can be.
+
+The four bytes in green refer to the minimum level a Pokémon can be.
+
+The four bytes in orange refer to the percentage chance that the Pokémon that appears is female. Hidden Grottos don't generate Pokémon genders in the same way regular encounters do!
+
+As far as I'm aware, the last four bytes are always 00 00 00 00, so we don't need to worry about those.
+
+NOTE: It appears these values refer to the form(e) the Pokémon will take. I assume it works by slot correspondence, e.g. if your first Pokémon byte is EC 01, then set the first of these bytes to 01 and you should get the Sky Forme generating.
+
+There's one other important distinction here; the bytes are in groups of four as they each refer to a particular group! So in reality, they're split up as follows:
+
+[color="DarkOrchid"]CE 00[/color] [color="Lime"]CE 00[/color] [color="Teal"]CE 00[/color] [color="DarkRed"]CE 00[/color] [color="DarkOrchid"]0F[/color] [color="Lime"]0F[/color] [color="Teal"]0F [/color][color="DarkRed"]0F[/color] [color="DarkOrchid"]0A[/color] [color="Lime"]0A[/color] [color="Teal"]0A[/color] [color="DarkRed"]0A[/color] [color="DarkOrchid"]1E[/color] [color="Lime"]1E[/color] [color="Teal"]1E[/color] [color="DarkRed"]1E[/color] 00 00 00 00
+The bytes that have a matching colour are the ones that are related to each other.
+
+Let's use one of our example strings from before...
+
+01 00 04 00 07 00 19 00 14 14 14 14 0F 0F 0F 0F 32 32 32 32 00 00 00 00
+This might be more easily read like this (even though you can't input this):
+
+"01 00 14 0F 32 00" - Species: Bulbasaur. Max Level: 20. Min Level: 15. Female rate: 50%.
+"04 00 14 0F 32 00" - Species: Charmander. Max Level: 20. Min Level: 15. Female rate: 50%.
+"07 00 14 0F 32 00" - Species: Squirtle. Max Level: 20. Min Level: 15. Female rate: 50%.
+"19 00 14 0F 32 00" - Species: Pikachu. Max Level: 20. Min Level: 15. Female rate: 50%.
+Just for a quick translation:
+
+0x14 = 20.
+
+0x19 = 25.
+
+0x0F = 15.
+
+0x32 = 50.
+
+The Pokémon in question can at any level between the max/min levels inclusive. For example, a Bulbasaur could generate in the Grotto and be encountered at Level 15, 16, 17, 18, 19, or 20. It also has a 50% chance of being female.
+
+From this it should be easy enough to see what's going on now. Just adjust the values to what you need! Quick word of warning, though. You cannot have the max and min levels be the same. If you do that, some funky stuff starts happening and they seem to be able to appear at any level they want. If you want them to appear at only one level, then use the max level as (min level + 1). This generally seems to cause them to appear at the minimum level anyway (though possibly not always).
+
+Step 5 - What's the rest?
+
+The remaining part of the Grotto files deal with the items that you can find in them. Using the Floccessy Ranch example again:
+
+cb765c067f515697fd1cc7712a0e4c52.png
+
+The highlighted section is our items. It may look like random numbers, but when cross-compared with this page, it isn't!
+
+As we can see from that link, 0x0052 refers to a Fire Stone, 0x0054 to Water, 0x0053 to Thunder and 0x0055 to Leaf. This matches up with the Item 1 row in Kaphotics' list. Then the next bytes... 0x0002 are Ultra Balls, 0x004D is a Max Repel, and 0x0019 is a Hyper Potion. That's the item 2 list... etc. You probably get the idea by now.
+
+So, in short...
+
+First 8 bytes - 2 bytes for each group, visible item 1%.
+
+Next 8 bytes - 2 bytes for each group, visible item 4%.
+
+Next 8 - visible item 10%
+
+Next 8 - Visible item 25%
+
+The next 32 bytes refer to the four groups of hidden items, but it works in exactly the same way. There's no difference in the items between Black 2 and White 2, so whatever changes you make should appear the same in both.
+
+Step 6 - What file is what?
+
+These are listed in order in Kaphotics' list anyway, but in case you want another reference point:
+
+File 0 - Floccessy Ranch
+File 1 - Route 5*
+File 2 - Lostlorn Forest
+File 3 - Route 6 [Field, the one just around the corner from Driftveil]
+File 4 - Route 6 [Cave, the one just outside Mistralton Cave]
+File 5 - Route 7
+File 6 - Route 13 [stairLeft, the one next to the staircase close to Cobalion]
+File 7 - Route 13 [stairDown, the one close to the Giant Chasm entrance]
+File 8 - Route 9
+File 9 - Giant Chasm [in the plains, only after you defeat Ghetsis]
+File 10 - Route 22
+File 11 - Route 23
+File 12 - Abundant Shrine [Field, ie the one accessible by land only]
+File 13 - Abundant Shrine [Pond, you need Surf to access this one.]
+File 14 - Pinwheel Forest [interior, inside the forest over a river.]
+File 15 - Pinwheel Forest [Exterior, by the Challenge Rock.]
+File 16 - Route 3 [Daycare, the one just above the Doubles grass]
+File 17 - Route 3 [Pond, across the large pond]
+File 18 - Route 2
+File 19 - Route 18
+
+* The first Pokémon entry here (for your version) is the one that will appear by default when Bianca shows you this Grotto for the first time.
+---
+
+Hopefully that helps some people.
+
+
+rare_1
+rare_2
+rare_3
+rare_4
+min_lvl_1
+min_lvl_2
+min_lvl_3
+min_lvl_4
+max_lvl_1
+max_lvl_2
+max_lvl_3
+max_lvl_4
+gender_1
+gender_2
+gender_3
+gender_4
+form_1
+form_2
+form_3
+form_4
+padding_1
+
+x3 ^
+
+X2 for white
+
+super_rare_item_1 1%
+rare_item_2 
+rare_item_3 
+rare_item_4 
+
+rare_item_1 4%
+x4
+
+uncommon_item_1 10%
+x4
+
+common_item_1 25%
+x4
+
+x2 ^ for hidden items
