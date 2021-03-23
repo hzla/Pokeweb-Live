@@ -43,7 +43,7 @@
     $(document).on('click', '#search-text-btn', function(){	
     	filter()
     })
-     $(document).on('keypress', '#search-text', function(e){
+    $(document).on('keypress', '#search-text', function(e){
 	    if(e.which == 13) {
 	        filter()
 	    }
@@ -73,6 +73,25 @@
 		$([document.documentElement, document.body]).animate({
 	        scrollTop: (element_to_scroll.offset().top - 100)
 	    }, 100);
+
+
+		// lazy load personal content because it's too laggy to load it all 
+	    if ($('#personals').length > 0 && card.find('.expanded-card-content').length == 0 ) {
+	    	index = card.attr('data-index')
+	    	console.log("retrieving personal info")
+	        $.ajax({
+			    url: "/expanded_personal/" + index,
+			    type: "get",
+			    async: false,
+			    success: function( e ) {     
+		          card.find('table').after(e)
+		          	$('.filterable, .expanded-card-content').css('background', '')
+					$('.filterable:visible:odd, .filterable:visible:even .expanded-card-content').css('background', '#383a59');
+					$('.filterable:visible:even, .filterable:visible:odd .expanded-card-content').css('background', '#282a36'); 
+		        }
+			 });
+
+	    }
 
 
 		if (card.find('.expanded-' + expanded_card + ":visible").length > 0) {

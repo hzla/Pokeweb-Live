@@ -35,11 +35,11 @@ for i,move in enumerate(MOVES):
 
 
 TM_FORMAT = []
-
-TM_OFFSET = 633504 #0x9aaa0
+# CHANGE THESE MANUALLY IF YOU HAVE A MODIFIED ARM9
+TM_OFFSET = 633504 #0x9aaa0, #9aab8 for white
 
 if BASE_ROM == "BW2":
-	TM_OFFSET = 576644 #0X8cc84
+	TM_OFFSET = 576644 #0X8cc84, #8ccb0 for white2, 
 
 for n in range(1, 93):
 	TM_FORMAT.append([2, f'tm_{n}'])
