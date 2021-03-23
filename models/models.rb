@@ -16,7 +16,11 @@ class SessionSettings
 		settings = File.open("session_settings.json", "r") do |f|
 			f.read
 		end
-		JSON.parse(settings)["base_rom"]
+		if settings
+			JSON.parse(settings)["base_rom"]
+		else
+			nil
+		end
 	end
 
 	def self.reset

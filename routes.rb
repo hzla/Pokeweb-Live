@@ -11,7 +11,7 @@ before do
 	$rom_name = SessionSettings.rom_name
 	return if !$rom_name
 	@rom_name = $rom_name.split("/")[1]
-	tabs = ['headers', 'personal', 'trainers', 'encounters', 'moves', 'tms', 'items']
+	tabs = ['headers', 'personal', 'trainers', 'encounters', 'moves', 'tms', 'items', 'marts', 'grottos']
 	tab_name = request.path_info.split('/')[1]
 	@active_header = tabs.find_index tab_name
 	if tab_name

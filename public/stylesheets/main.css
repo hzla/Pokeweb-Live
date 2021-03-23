@@ -888,3 +888,25 @@ div.-active svg * {
 .expanded-evos .expanded-field:last-child {
     margin-bottom: 0px;
 }
+
+#marts .expanded-left {
+    width: 50%;
+}
+
+#marts .expanded-card-content div {
+    width: 100%;
+    text-align: left;
+    margin-left: 0px;
+}
+
+.mart-id {
+    width: 60px;
+}
+
+.mart-name {
+    width: 160px;
+}
+.mart-inv {
+    width: 50%;
+    line-height: 1.6;
+}
