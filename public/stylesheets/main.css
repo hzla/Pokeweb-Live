@@ -899,14 +899,19 @@ div.-active svg * {
     margin-left: 0px;
 }
 
-.mart-id {
+.mart-id, .grotto-id {
     width: 60px;
 }
 
-.mart-name {
+.mart-name, .grotto-location {
     width: 160px;
+    text-align: left;
 }
-.mart-inv {
+.mart-inv, .grotto-wilds {
     width: 50%;
     line-height: 1.6;
+}
+
+.grotto-wilds {
+    display: flex;
 }

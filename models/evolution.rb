@@ -6,7 +6,9 @@ class Evolution
 		file_count = files.length
 
 		(0..file_count - 1).each do |n|
-			json = JSON.parse(File.open("#{$rom_name}/json/evolutions/#{n}.json", "r:ISO8859-1").read)
+			
+			file = File.open("#{$rom_name}/json/evolutions/#{n}.json", "r:ISO8859-1") {|f| f.read }
+			json = JSON.parse(file)
 			entry = json["readable"]
 
 			collection[n] = entry
@@ -25,7 +27,7 @@ class Evolution
 		end
 
 		file_path = "#{$rom_name}/json/evolutions/#{file_name}.json"
-		json_data = JSON.parse(File.open(file_path, "r").read)
+		json_data = JSON.parse(File.open(file_path, "r") {|f| f.read})
 
 		json_data["readable"][field_to_change] = changed_value
 

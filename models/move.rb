@@ -1,13 +1,13 @@
 class Move
 
 	def self.get_data(file_name)
-		JSON.parse(File.open(file_name, "r").read)["readable"]
+		JSON.parse(File.open(file_name, "r"){|f| f.read})["readable"]
 	end
 
 	def self.get_all
 		moves = {}
 		Dir["#{$rom_name}/json/moves/*.json"].each do |move|
-			move_data = JSON.parse(File.open(move, "r").read)["readable"]
+			move_data = JSON.parse(File.open(move, "r"){|f| f.read})["readable"]
 
 			move_id = move_data["index"]
 			moves[move_id] = move_data
@@ -29,7 +29,7 @@ class Move
 		end
 
 		file_path = "#{$rom_name}/json/moves/#{file_name}.json"
-		json_data = JSON.parse(File.open(file_path, "r").read)
+		json_data = JSON.parse(File.open(file_path, "r"){|f| f.read})
 
 		json_data["readable"][field_to_change] = changed_value
 

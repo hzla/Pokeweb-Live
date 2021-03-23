@@ -1,6 +1,6 @@
 class Learnset
 	def self.get_data(file_name)
-		JSON.parse(File.open(file_name, "r").read)["readable"]
+		JSON.parse(File.open(file_name, "r"){|f| f.read})["readable"]
 	end
 
 	def self.write_data(data)
@@ -16,7 +16,7 @@ class Learnset
 		end
 
 		file_path = "#{$rom_name}/json/learnsets/#{file_name}.json"
-		json_data = JSON.parse(File.open(file_path, "r").read)
+		json_data = JSON.parse(File.open(file_path, "r"){|f| f.read})
 
 		json_data["readable"][field_to_change] = changed_value
 

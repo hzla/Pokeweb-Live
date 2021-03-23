@@ -1,7 +1,10 @@
 class Encounter
 
 	def self.get_data(file_name)
-		JSON.parse(File.open(file_name, "r").read)["readable"]
+		data = File.open(file_name, "r") do |f|
+			f.read
+		end
+		JSON.parse(data)["readable"]
 	end
 
 	def self.get_all
@@ -32,7 +35,11 @@ class Encounter
 		end
 
 		file_path = "#{$rom_name}/json/encounters/#{file_name}.json"
-		json_data = JSON.parse(File.open(file_path, "r").read)
+		
+		file = File.open(file_path, "r") do |f|
+			f.read
+		end
+		json_data = JSON.parse(file)
 
 		json_data["readable"][field_to_change] = changed_value
 

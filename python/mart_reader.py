@@ -28,7 +28,6 @@ def set_global_vars():
 def output_marts_json(narc):
 	set_global_vars()
 	data_index = 0
-	print(f'THERE ARE THIS MANY FILES: {len(narc.files)}')
 
 	for data in narc.files:
 		data_name = data_index
@@ -38,7 +37,6 @@ def output_marts_json(narc):
 def read_narc_data(data, narc_format, file_name, narc_name):
 	stream = io.BytesIO(data)
 	file = {"raw": {}, "readable": {} }
-	print(data)
 	#USE THE FORMAT LIST TO PARSE BYTES
 	for entry in narc_format: 
 		file["raw"][entry[1]] = read_bytes(stream, entry[0])

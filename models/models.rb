@@ -41,7 +41,6 @@ class SessionSettings
 		project_settings = File.open("#{project_name}/session_settings.json", "r") do |f|
 			f.read
 		end
-		p project_settings
 		File.open("session_settings.json", "w") do |f|
 			f.write project_settings
 		end
@@ -64,18 +63,18 @@ class RomInfo
 	end
 
 	def self.abilities
-		File.open("#{$rom_name}/texts/abilities.txt").read.split("\n").map do |ab|
+		File.open("#{$rom_name}/texts/abilities.txt"){|f| f.read}.split("\n").map do |ab|
 			ab.titleize
 		end
 	end
 
 	def self.evo_methods
-		File.open("Reference_Files/evo_methods.txt").read.split("\n")
+		File.open("Reference_Files/evo_methods.txt"){|f| f.read}.split("\n")
 	end
 
 	def self.items
 		# encoding for latin text ISO8859-1
-		File.open("#{$rom_name}/texts/items.txt", encoding: "ISO8859-1").read.split("\n")
+		File.open("#{$rom_name}/texts/items.txt", encoding: "ISO8859-1"){|f| f.read}.split("\n")
 	end
 
 	def self.egg_groups
@@ -99,16 +98,16 @@ class RomInfo
 	end
 
 	def self.effects
-		File.open("Reference_Files/effects.txt").read.split("\n")
+		File.open("Reference_Files/effects.txt"){|f| f.read}.split("\n")
 	end
 
 	def self.result_effects
-		File.open("Reference_Files/result_effects.txt").read.split("\n")
+		File.open("Reference_Files/result_effects.txt"){|f| f.read}.split("\n")
 	end
 
 	def self.class_names
 		names =[]
-		File.open("#{$rom_name}/texts/tr_classes.txt").read.split("\n").each_with_index do |n, i|
+		File.open("#{$rom_name}/texts/tr_classes.txt"){|f| f.read}.split("\n").each_with_index do |n, i|
 			names << "#{n} (#{i})"
 		end
 		names
@@ -126,6 +125,8 @@ class RomInfo
 		["Default", "Female", "Male"]
 	end
 end
+
+
 
 class String
   def titleize

@@ -3,13 +3,13 @@ class Header
 
 	def self.get_all
 		file_path = "#{$rom_name}/json/headers/headers.json"
-		data = JSON.parse(File.open(file_path, "r").read)
+		data = JSON.parse(File.open(file_path, "r"){|f| f.read})
 		data
 	end
 
 	def self.location_names
 		file_path = "#{$rom_name}/texts/locations.txt"
-		data = File.open(file_path, "r:ISO8859-1").read.split("\n").uniq
+		data = File.open(file_path, "r:ISO8859-1"){|f| f.read}.split("\n").uniq
 	end
 
 	def self.write_data data
@@ -18,7 +18,7 @@ class Header
 		changed_value = data["value"]
 
 		file_path = "#{$rom_name}/json/headers/headers.json"
-		json_data = JSON.parse(File.open(file_path, "r").read)
+		json_data = JSON.parse(File.open(file_path, "r"){|f| f.read})
 
 		if data["int"]
 			changed_value = changed_value.to_i
@@ -26,7 +26,7 @@ class Header
 
 		if data["field"] == "location_name"
 			location_path = "#{$rom_name}/texts/locations.txt"
-			location_names = File.open(location_path, "r:ISO8859-1").read.split("\n")
+			location_names = File.open(location_path, "r:ISO8859-1"){|f| f.read}.split("\n")
 			location_name_id = location_names.find_index(changed_value)
 			json_data[file_name]['location_name_id'] = location_name_id
 		end

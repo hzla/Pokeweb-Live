@@ -11,7 +11,13 @@ before do
 	$rom_name = SessionSettings.rom_name
 	return if !$rom_name
 	@rom_name = $rom_name.split("/")[1]
-	tabs = ['headers', 'personal', 'trainers', 'encounters', 'moves', 'tms', 'items', 'marts', 'grottos']
+	tabs = ['headers', 'personal', 'trainers', 'encounters', 'moves', 'tms', 'items', 'marts', 'grottos', 'logs']
+	
+	if SessionSettings.base_rom == "BW"
+		tabs.delete('marts')
+		tabs.delete('grottos')
+	end
+
 	tab_name = request.path_info.split('/')[1]
 	@active_header = tabs.find_index tab_name
 	if tab_name
@@ -41,6 +47,10 @@ end
 get '/load_project' do 
 	SessionSettings.load_project params["project"]
 
+	open('logs.txt', 'a') do |f|
+	  f.puts "#{Time.now}: Loaded Project : #{params['project']}"
+	end
+
 	content_type :json
   	{ url: "/headers" }.to_json
 end
@@ -54,6 +64,10 @@ post '/extract' do
 	command = "python python/rom_loader.py #{params['rom_name']}"
 	pid = spawn command
 	Process.detach(pid)
+
+	open('logs.txt', 'a') do |f|
+	  f.puts "#{Time.now}: Loaded Rom : #{params['rom_name']}"
+	end
 
 	content_type :json
   	{ url: "/headers" }.to_json
@@ -132,6 +146,10 @@ post '/personal' do
 	pid = spawn command
 	Process.detach(pid)
 
+	open('logs.txt', 'a') do |f|
+	  f.puts "#{Time.now}: Project: #{$rom_name} Updated #{narc_name} File #{params['data']['file_name']} #{params['data']['field']} to #{params['data']['value']} "
+	end
+
 	return 200
 end
 
@@ -192,7 +210,13 @@ post '/create' do
 	
 	created = Object.const_get(narc_name.capitalize).create params["data"]
 
+	open('logs.txt', 'a') do |f|
+	  f.puts "#{Time.now}:  Project: #{$rom_name} Trainer File #{params['data']['file_name']} created new trainer pok"
+	end
+
 	erb ("_" + narc_name).to_sym, :layout => false, :locals => { narc_name.to_sym => created, "#{narc_name}_index".to_sym => params['data']['sub_index'], :show => "show-flex" }
+
+
 end
 
 post '/delete' do 
@@ -224,4 +248,13 @@ get '/grottos' do
 	@grottos = Grotto.get_all
 
 	erb :grottos
+end
+
+get '/logs' do
+	@logs = open('logs.txt', 'a+') do |f|
+	 	f.read.split("\n")
+	end
+
+	erb :logs
+
 end

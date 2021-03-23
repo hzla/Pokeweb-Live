@@ -19,11 +19,11 @@ class Personal
 	def self.get_data_for(file_name)
 		pok_id = file_name.split('/')[-1].split('.')[0]
 
-		personal_data = JSON.parse(File.open(file_name, "r").read)["readable"]
+		personal_data = JSON.parse(File.open(file_name, "r"){|f| f.read})["readable"]
 		
 		return if !personal_data
 		learnset_data_path = "#{$rom_name}/json/learnsets/#{pok_id}.json"
-		learnset_data = JSON.parse(File.open(learnset_data_path, "r").read)["readable"]
+		learnset_data = JSON.parse(File.open(learnset_data_path, "r"){|f| f.read})["readable"]
 
 		personal_data["learnset"] = learnset_data
 		personal_data		
@@ -35,7 +35,7 @@ class Personal
 		changed_value = data["value"]
 
 		file_path = "#{$rom_name}/json/personal/#{file_name}.json"
-		json_data = JSON.parse(File.open(file_path, "r").read)
+		json_data = JSON.parse(File.open(file_path, "r"){|f| f.read})
 
 		if data["int"]
 			changed_value = changed_value.to_i

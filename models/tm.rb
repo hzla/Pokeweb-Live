@@ -1,7 +1,7 @@
 class Tm
 
 	def self.get_data
-		JSON.parse(File.open("#{$rom_name}/json/arm9/tms.json", "r").read)
+		JSON.parse(File.open("#{$rom_name}/json/arm9/tms.json", "r"){|f| f.read})
 	end
 
 	def self.get_names 
@@ -42,7 +42,7 @@ class Tm
 
 		file_path = "#{$rom_name}/json/arm9/tms.json"
 		
-		json_data = JSON.parse(File.open(file_path, "r").read)
+		json_data = JSON.parse(File.open(file_path, "r"){|f| f.read})
 		json_data["readable"][field_to_change] = changed_value
 		File.open(file_path, "w") { |f| f.write json_data.to_json }
 	end

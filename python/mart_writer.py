@@ -13,15 +13,19 @@ import sys
 
 ######################### CONSTANTS #############################
 def set_global_vars():
-	global ROM_NAME, NARC_FORMAT, ITEMS, MART_LOCATIONS, NARC_FILE_ID
+	global ROM_NAME, NARC_FORMAT, ITEMS, MART_LOCATIONS, NARC_FILE_ID, MART_COUNTS_NARC_FILE_ID
 	
 	with open(f'session_settings.json', "r") as outfile:  
 		settings = json.load(outfile) 
 		ROM_NAME = settings['rom_name']
 		NARC_FILE_ID = settings['marts']
+		MART_COUNTS_NARC_FILE_ID = settings['mart_counts']
 
-	ITEMS = open(f'{ROM_NAME}/texts/items.txt', mode="r").read().splitlines()
-	MART_LOCATIONS = open(f'Reference_Files/mart_locations.txt', mode="r").read().splitlines()
+	with open(f'{ROM_NAME}/texts/items.txt', mode="r") as outfile: 
+		ITEMS = outfile.read().splitlines()
+
+	with open(f'Reference_Files/mart_locations.txt', mode="r") as outfile:
+		MART_LOCATIONS =  outfile.read().splitlines()
 
 	NARC_FORMAT = []
 
@@ -35,21 +39,31 @@ set_global_vars()
 def output_narc(narc_name="marts"):
 	json_files = os.listdir(f'{ROM_NAME}/json/{narc_name}')
 	narcfile_path = f'{ROM_NAME}/narcs/{narc_name}-{NARC_FILE_ID}.narc'
+	counts_narcfile_path = f'{ROM_NAME}/narcs/mart_counts-{MART_COUNTS_NARC_FILE_ID}.narc'
 	
 	# ndspy copy of narcfile to edit
 	narc = ndspy.narc.NARC.fromFile(narcfile_path)
+	counts_narc = ndspy.narc.NARC.fromFile(counts_narcfile_path)
+	counts = bytearray(counts_narc.files[0])
 
 	for f in json_files:
 		file_name = int(f.split(".")[0])
 
-		write_narc_data(file_name, NARC_FORMAT, narc, narc_name)
+		write_narc_data(file_name, NARC_FORMAT, narc, counts, narc_name)
 
-	old_narc = open(narcfile_path, "wb")
-	old_narc.write(narc.save()) 
+	print(counts)
+
+	counts_narc.files[0] = counts
+
+	with open(counts_narcfile_path, "wb") as outfile:
+		outfile.write(counts_narc.save()) 
+
+	with open(narcfile_path, "wb") as outfile:
+		outfile.write(narc.save()) 
 
 	print("narc saved")
 
-def write_narc_data(file_name, narc_format, narc, narc_name="marts"):
+def write_narc_data(file_name, narc_format, narc , counts, narc_name=""):
 	file_path = f'{ROM_NAME}/json/{narc_name}/{file_name}.json'
 	narcfile_path = f'{ROM_NAME}/narcs/{narc_name}-{NARC_FILE_ID}.narc'
 
@@ -59,19 +73,18 @@ def write_narc_data(file_name, narc_format, narc, narc_name="marts"):
 		json_data = json.load(outfile)	
 
 		#USE THE FORMAT LIST TO PARSE BYTES
+		item_count = 0
 		for entry in narc_format: 
 			if entry[1] in json_data["raw"]:
 				data = json_data["raw"][entry[1]]
 				write_bytes(stream, entry[0], data)
-	
-	if file_name >= len(narc.files):
-		narc_entry_data = bytearray()
-		narc_entry_data[0:len(stream)] = stream
-		narc.files.append(narc_entry_data)
-	else:
-		narc_entry_data = bytearray(narc.files[file_name])
-		narc_entry_data[0:len(stream)] = stream
-		narc.files[file_name] = narc_entry_data
+				if json_data["raw"][entry[1]] != 0:
+					item_count += 1
+
+	counts[file_name]= item_count
+	narc_entry_data = bytearray(narc.files[file_name])
+	narc_entry_data[0:len(stream)] = stream
+	narc.files[file_name] = narc_entry_data
 	
 def write_readable_to_raw(file_name, narc_name="marts"):
 	data = {}
@@ -95,7 +108,6 @@ def to_raw(readable):
 	for n in range(0,20):
 		raw[f'item_{n}'] = ITEMS.index(readable[f'item_{n}'])
 
-	
 
 	return raw
 	
