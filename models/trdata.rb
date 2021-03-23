@@ -2,7 +2,7 @@ class Trdata
 
 
 	def self.get_data(file_name)
-		JSON.parse(File.open(file_name, "r").read)["readable"]
+		JSON.parse(File.open(file_name, "r"){|f| f.read})["readable"]
 	end
 
 	def self.names
@@ -50,7 +50,7 @@ class Trdata
 		file_count = files.length
 
 		(0..file_count - 1).each do |n|
-			json = JSON.parse(File.open("#{$rom_name}/json/trdata/#{n}.json", "r").read)
+			json = JSON.parse(File.open("#{$rom_name}/json/trdata/#{n}.json", "r"){|f| f.read})
 			tr_data = json["readable"]
 
 			trainers[n] = tr_data
@@ -73,7 +73,7 @@ class Trdata
 		changed_value = data["value"]
 
 		file_path = "#{$rom_name}/json/trdata/#{file_name}.json"
-		json_data = JSON.parse(File.open(file_path, "r").read)
+		json_data = JSON.parse(File.open(file_path, "r"){|f| f.read})
 
 		if data["int"]
 			changed_value = changed_value.to_i

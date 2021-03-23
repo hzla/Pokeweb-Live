@@ -7,7 +7,7 @@ class Trpok
 		file_count = files.length
 
 		(0..file_count - 1).each do |n|
-			json = JSON.parse(File.open("#{$rom_name}/json/trpok/#{n}.json", "r").read)
+			json = JSON.parse(File.open("#{$rom_name}/json/trpok/#{n}.json", "r"){|f| f.read})
 			tr_data = json["readable"]
 
 			trainers[n] = tr_data
@@ -37,7 +37,7 @@ class Trpok
 		end
 
 		file_path = "#{$rom_name}/json/trpok/#{file_name}.json"
-		json_data = JSON.parse(File.open(file_path, "r").read)
+		json_data = JSON.parse(File.open(file_path, "r"){|f| f.read})
 
 		json_data["readable"][field_to_change] = changed_value
 
@@ -49,7 +49,7 @@ class Trpok
 		n = data["sub_index"]
 
 		file_path = "#{$rom_name}/json/trpok/#{file_name}.json"
-		json_data = JSON.parse(File.open(file_path, "r").read)
+		json_data = JSON.parse(File.open(file_path, "r"){|f| f.read})
 
 
 		new_readable_data = {"ivs_#{n}": 0, "ability_#{n}": 0, "level_#{n}": 0, "padding_#{n}": 0, "species_id_#{n}": "-", "form_#{n}": 0, "gender_#{n}": "Default"}
@@ -67,7 +67,7 @@ class Trpok
 		n = data["sub_index"]
 
 		file_path = "#{$rom_name}/json/trpok/#{file_name}.json"
-		json_data = JSON.parse(File.open(file_path, "r").read)
+		json_data = JSON.parse(File.open(file_path, "r"){|f| f.read})
 
 		
 		json_data["readable"].each do |field, value|

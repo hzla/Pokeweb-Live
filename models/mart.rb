@@ -28,7 +28,7 @@ class Mart
 		end
 
 		file_path = "#{$rom_name}/json/marts/#{file_name}.json"
-		json_data = JSON.parse(File.open(file_path, "r").read)
+		json_data = JSON.parse(File.open(file_path, "r"){|f| f.read})
 
 		json_data["readable"][field_to_change] = changed_value
 

@@ -1,0 +1,18 @@
+<div class="pokemon-filter">	
+	
+	
+</div>
+
+<div class="pokemon-list spreadsheet" id="grottos">
+	<% @logs.each_with_index do |log, i| %>
+		<div class="expanded-field filterable" data-index="<%= i %>">
+			<div class="expanded-field-main">
+				<div class="log-text"><%= log %></div>
+
+			</div>
+
+		</div>
+	<% end %>
+</div>
+
+

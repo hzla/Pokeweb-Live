@@ -83,6 +83,7 @@ BW2_NARCS = [["a/0/1/6", "personal"],
 ["a/0/0/3", "storytext"],
 ["a/0/5/6", "scripts"],
 ["a/2/8/2", "marts"],
+["a/2/8/3", "mart_counts"],
 ["a/2/7/3", "grottos"]]
 
 BW2_MSG_BANKS = [[488, "moves"],
@@ -191,6 +192,8 @@ if narc_info["base_rom"] == "BW2":
 
 	mart_narc_data = ndspy.narc.NARC(rom.files[narc_info["marts"]])
 	output_marts_json(mart_narc_data)
+
+	
 
 output_tms_json(arm9)
 

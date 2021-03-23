@@ -9,3 +9,5 @@ session_settings.json
 /cleanblack
 /cleanblack2
 /projects/*
+logs.txt
+/__pycache_

@@ -34,15 +34,15 @@ rom_name = sys.argv[1].split(".")[0]
 ####################################################################
 ################### WRITE NARCS/ARM9 TO ROM ############################
 print("outputting narcs")
-personal_writer.output_narc()
-learnset_writer.output_narc()
-move_writer.output_narc()
-header_writer.output_narc()
-encounter_writer.output_narc()
-trdata_writer.output_narc()
-trpok_writer.output_narc()
-item_writer.output_narc()
-evolution_writer.output_narc()
+# personal_writer.output_narc()
+# learnset_writer.output_narc()
+# move_writer.output_narc()
+# header_writer.output_narc()
+# encounter_writer.output_narc()
+# trdata_writer.output_narc()
+# trpok_writer.output_narc()
+# item_writer.output_narc()
+# evolution_writer.output_narc()
 mart_writer.output_narc()
 
 tm_writer.output_arm9()
@@ -84,6 +84,7 @@ with open(f'session_settings.json', "r") as outfile:
 	evolution_narc_file_id = settings["evolutions"]
 	if settings["base_rom"] == "BW2":
 		mart_narc_file_id = settings["marts"]
+		mart_counts_narc_file_id = settings["mart_counts"]
 
 personal_narc_filepath = f'{rom_name}/narcs/personal-{personal_narc_file_id}.narc'
 learnset_narc_filepath = f'{rom_name}/narcs/learnsets-{learnset_narc_file_id}.narc'
@@ -97,6 +98,7 @@ evolution_narc_filepath = f'{rom_name}/narcs/evolutions-{evolution_narc_file_id}
 
 if settings["base_rom"] == "BW2":
 	mart_narc_filepath = f'{rom_name}/narcs/marts-{mart_narc_file_id}.narc'
+	mart_counts_narc_filepath = f'{rom_name}/narcs/mart_counts-{mart_counts_narc_file_id}.narc'
 
 print("writing narcs")
 
@@ -112,6 +114,7 @@ rom.files[evolution_narc_file_id] = open(evolution_narc_filepath, 'rb').read()
 
 if settings["base_rom"] == "BW2":
 	rom.files[mart_narc_file_id] = open(mart_narc_filepath, 'rb').read()
+	rom.files[mart_counts_narc_file_id] = open(mart_counts_narc_filepath, 'rb').read()
 	print("saved mart")
 
 

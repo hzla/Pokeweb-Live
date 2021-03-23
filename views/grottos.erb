@@ -1,1 +1,53 @@
-grottos.erb
+<div class="pokemon-filter">	
+	<div class="filter-title">Search</div>
+	<input class="filter-input" id="search-text"/>
+	<button class="btn -default" id="search-text-btn" type="button">Search</button>			
+	
+</div>
+
+<div class="pokemon-list spreadsheet" id="grottos">
+	<div class="expanded-field field-header">
+		<div class="expanded-field-main">
+			<div class="grotto-id">ID</div>
+			<div class="grotto-location">Location</div>
+			<div class="grotto-wilds" >Encounters</div>
+		</div>
+	</div>
+
+	<% @grottos.each_with_index do |grotto, i| %>
+		<div class="expanded-field filterable" data-index="<%= i %>">
+			<div class="expanded-field-main">
+				<div class="grotto-id"><%= i %></div>
+
+				<div class="grotto-location"><%= grotto["name"] %></div>
+
+				<div class="grotto-wilds" >
+					<% Grotto.wilds(grotto).each do |wild| %>
+						<div class="wild">
+							<%= img "pokesprite/#{wild}.png" %>
+						</div>
+					<% end %>	
+				</div>
+				<%= svg "svgs/misc_data", 'move-info expand-action expand-grotto svg no-fill', ["expand", "grotto"] %>
+			</div>
+			<div class="expanded-card-content expanded-grotto">
+				
+			</div>		
+		</div>
+	<% end %>
+</div>
+
+
+
+<script>
+	// json object for filtering
+	grottos = <%= @grottos.to_json %>
+
+
+	// info for autocomplete
+	autofills = {
+		<% [:pokemon_names, :items].each do |info| %>
+			"<%= info.to_s %>": <%= RomInfo.send(info) %>,
+		<% end %>
+	}
+</script>
