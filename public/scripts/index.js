@@ -337,7 +337,7 @@ $(document).ready(function() {
 		// the while loops are to stop concurrent requests from editing a file at the same time
 		while (edit_in_progress == false) {
 			edit_in_progress = true	
-			$.post( "/personal", {"data": data }, function( e ) {     
+			$.post( "/update", {"data": data }, function( e ) {     
 	          console.log('upload successful')
 	          
 	          edit_in_progress = false
@@ -353,7 +353,7 @@ $(document).ready(function() {
 		while (edit_in_progress == true) {
 			if (edit_in_progress == false) {
 				edit_in_progress = true
-				$.post( "/personal", {"data": data }, function( e ) {     
+				$.post( "/update", {"data": data }, function( e ) {     
 		          console.log('upload successful')
 		          
 		          edit_in_progress = false
@@ -396,7 +396,7 @@ $(document).ready(function() {
 
 		while (edit_in_progress == false) {
 			edit_in_progress = true
-			$.post( "/personal", {"data": data }, function( e ) {     
+			$.post( "/update", {"data": data }, function( e ) {     
 	          edit_in_progress = false
 	          console.log('upload successful')
 	        });
@@ -423,7 +423,7 @@ $(document).ready(function() {
 		console.log(data)
 		while (edit_in_progress == false) {
 			edit_in_progress = true
-			$.post( "/personal", {"data": data }, function( e ) {     
+			$.post( "/update", {"data": data }, function( e ) {     
 	          edit_in_progress = false
 	          console.log('upload successful')
 	        });
@@ -459,7 +459,7 @@ $(document).ready(function() {
 		console.log(data)
 		while (edit_in_progress == false) {
 			edit_in_progress = true
-			$.post( "/personal", {"data": data }, function( e ) {     
+			$.post( "/update", {"data": data }, function( e ) {     
 	          edit_in_progress = false
 	          console.log('upload successful')
 	        });
