@@ -79,7 +79,7 @@ def read_narc_data(data, narc_format, file_name, narc_name):
 	#USE THE FORMAT LIST TO PARSE BYTES
 	for entry in narc_format: 
 		file["raw"][entry[1]] = read_bytes(stream, entry[0])
-		if entry[1] == "template" and file_name == 38:
+
 
 	#CONVERT TO READABLE FORMAT USING CONSTANTS/TEXT BANKS
 	file["readable"] = to_readable(file["raw"], file_name)

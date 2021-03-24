@@ -1,5 +1,5 @@
 import ndspy
-import ndspy.rom, ndspy.bmg, ndspy.codeCompression
+import ndspy.rom
 import ndspy.narc
 import code 
 import io
