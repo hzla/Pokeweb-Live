@@ -22,6 +22,7 @@ import trpok_writer
 import item_writer
 import evolution_writer
 import mart_writer
+import grotto_writer
 # code.interact(local=dict(globals(), **locals()))
 
 
@@ -43,7 +44,7 @@ print("outputting narcs")
 # trpok_writer.output_narc()
 # item_writer.output_narc()
 # evolution_writer.output_narc()
-mart_writer.output_narc()
+
 
 tm_writer.output_arm9()
 
@@ -85,6 +86,11 @@ with open(f'session_settings.json', "r") as outfile:
 	if settings["base_rom"] == "BW2":
 		mart_narc_file_id = settings["marts"]
 		mart_counts_narc_file_id = settings["mart_counts"]
+		grotto_narc_file_id = settings["grottos"]
+
+if settings["base_rom"] == "BW2":
+	mart_writer.output_narc()
+	grotto_writer.output_narc()
 
 personal_narc_filepath = f'{rom_name}/narcs/personal-{personal_narc_file_id}.narc'
 learnset_narc_filepath = f'{rom_name}/narcs/learnsets-{learnset_narc_file_id}.narc'
@@ -99,6 +105,8 @@ evolution_narc_filepath = f'{rom_name}/narcs/evolutions-{evolution_narc_file_id}
 if settings["base_rom"] == "BW2":
 	mart_narc_filepath = f'{rom_name}/narcs/marts-{mart_narc_file_id}.narc'
 	mart_counts_narc_filepath = f'{rom_name}/narcs/mart_counts-{mart_counts_narc_file_id}.narc'
+
+	grotto_narc_filepath = f'{rom_name}/narcs/grottos-{grotto_narc_file_id}.narc'
 
 print("writing narcs")
 
@@ -116,6 +124,8 @@ if settings["base_rom"] == "BW2":
 	rom.files[mart_narc_file_id] = open(mart_narc_filepath, 'rb').read()
 	rom.files[mart_counts_narc_file_id] = open(mart_counts_narc_filepath, 'rb').read()
 	print("saved mart")
+	rom.files[grotto_narc_file_id] = open(grotto_narc_filepath, 'rb').read()
+	print("saved grotto")
 
 
 print("attempting save")

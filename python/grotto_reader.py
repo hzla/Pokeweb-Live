@@ -22,14 +22,14 @@ def set_global_vars():
 
 	NARC_FORMAT = []
 
-	for version in ["black", "white"]:
+	for version in ["white", "black"]:
 		for rarity in ["rare", "uncommon", "common"]:
 			for n in range(0,4):
 				NARC_FORMAT.append([2, f'{version}_{rarity}_pok_{n}'])
 			for n in range(0,4):
-				NARC_FORMAT.append([1, f'{version}_{rarity}_min_lvl_{n}'])
-			for n in range(0,4):
 				NARC_FORMAT.append([1, f'{version}_{rarity}_max_lvl_{n}'])
+			for n in range(0,4):
+				NARC_FORMAT.append([1, f'{version}_{rarity}_min_lvl_{n}'])
 			for n in range(0,4):
 				NARC_FORMAT.append([1, f'{version}_{rarity}_gender_{n}'])
 			for n in range(0,4):

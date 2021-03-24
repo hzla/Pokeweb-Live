@@ -1,5 +1,5 @@
 
-    
+edit_in_progress = false
 
 ///////////////////// EVENT BINDINGS //////////////////////////
     
@@ -169,10 +169,14 @@
 		data["sub_index"] = pok_index
 		data["narc"] = narc
 
-		$.post( "/create", {"data": data }, function( e ) {     
-          card.append(e)
-        });
-
+		while (edit_in_progress == false) {
+			edit_in_progress = true
+			$.post( "/create", {"data": data }, function( e ) {     
+	          edit_in_progress = false
+	          card.append(e)
+	        });
+		}
+		
         card.find('img').removeClass('-active')
         card.find('.expanded-card-subcontent').removeClass('show-flex')
 
@@ -252,16 +256,39 @@
 		console.log(data)
 		
 		// send data to server
-		$.post( "/personal", {"data": data }, function( e ) {     
-          console.log('upload successful')
-          
-          var checkbox = card.find("." + input.attr('data-check'))
-          if (!checkbox.prop("checked")){
-          	checkbox.click()
-          } 
-          checkbox.prop("checked", true).addClass('-active')
-        });
 
+		// the while loops are to stop concurrent requests from editing a file at the same time
+		while (edit_in_progress == false) {
+			edit_in_progress = true	
+			$.post( "/personal", {"data": data }, function( e ) {     
+	          console.log('upload successful')
+	          
+	          edit_in_progress = false
+	          var checkbox = card.find("." + input.attr('data-check'))
+	          if (!checkbox.prop("checked")){
+	          	checkbox.click()
+	          } 
+	          checkbox.prop("checked", true).addClass('-active')
+	        });
+	        return
+		}
+		console.log("concurrent update detected")
+		while (edit_in_progress == true) {
+			if (edit_in_progress == false) {
+				edit_in_progress = true
+				$.post( "/personal", {"data": data }, function( e ) {     
+		          console.log('upload successful')
+		          
+		          edit_in_progress = false
+		          var checkbox = card.find("." + input.attr('data-check'))
+		          if (!checkbox.prop("checked")){
+		          	checkbox.click()
+		          } 
+		          checkbox.prop("checked", true).addClass('-active')
+		        });
+			}	
+	        return
+		}
 	})
 
 	//high light text on click
@@ -289,9 +316,15 @@
 		$(this).addClass('chosen').removeClass('unchosen')
 
 		console.log(data)
-		$.post( "/personal", {"data": data }, function( e ) {     
-          console.log('upload successful')
-        });
+
+		while (edit_in_progress == false) {
+			edit_in_progress = true
+			$.post( "/personal", {"data": data }, function( e ) {     
+	          edit_in_progress = false
+	          console.log('upload successful')
+	        });
+		}
+		
 	})
 
 	$(document).on('click', ".move-prop, .choosable-prop", function(e){
@@ -311,9 +344,14 @@
 		data["int"] = true
 		
 		console.log(data)
-		$.post( "/personal", {"data": data }, function( e ) {     
-          console.log('upload successful')
-        });	
+		while (edit_in_progress == false) {
+			edit_in_progress = true
+			$.post( "/personal", {"data": data }, function( e ) {     
+	          edit_in_progress = false
+	          console.log('upload successful')
+	        });
+		}
+		
 	})
 
 	$(document).on('click', ".cell", function(e){
@@ -342,9 +380,14 @@
 		data["narc"] = narc
 		
 		console.log(data)
-		$.post( "/personal", {"data": data }, function( e ) {     
-          console.log('upload successful')
-        });
+		while (edit_in_progress == false) {
+			edit_in_progress = true
+			$.post( "/personal", {"data": data }, function( e ) {     
+	          edit_in_progress = false
+	          console.log('upload successful')
+	        });
+		}
+		
 
 
 
@@ -427,7 +470,7 @@
 		$.each(unique_encs, function(i,v) {
 			if (v != "") {
 				var sprite = "<div class='wild'><img src='/images/pokesprite/" + v + ".png'></div>"
-				card.find(".encounter-wilds").append(sprite)
+				card.find(".encounter-wilds, .grotto-wilds").append(sprite)
 			}
 			
 		})
@@ -479,10 +522,17 @@
 		
 		console.log(data)
 
-		$.post( "/delete", {"data": data }, function( e ) {     
-          	card.find('img.-active').parent().remove()
-        	card.find('.expanded-card-subcontent')[parseInt(pok_index)].remove()
-        });
+		while (edit_in_progress == false) {
+			edit_in_progress = true
+
+			$.post( "/delete", {"data": data }, function( e ) { 
+				edit_in_progress = false    
+	          	card.find('img.-active').parent().remove()
+	        	card.find('.expanded-card-subcontent')[parseInt(pok_index)].remove()
+	        });
+		}
+
+
 
 
 
@@ -534,6 +584,9 @@ function filter() {
 		cards.hide()
 	} else {
 		cards.show()
+		$('.filterable, .expanded-card-content').css('background', '')
+		$('.filterable:visible:odd, .filterable:visible:even .expanded-card-content').css('background', '#383a59');
+		$('.filterable:visible:even, .filterable:visible:odd .expanded-card-content').css('background', '#282a36'); 
 		return
 	}
 	
@@ -789,6 +842,34 @@ function filter() {
 
 	if ($('#marts').length > 0) {		
 		var list = Object.values(marts).sort(function(a,b) {
+			parseInt(a["index"]) - parseInt(b["index"]);
+		})
+		console.log(list) 
+		search_results = list.filter(function(e) {
+			text_match = false
+
+			if (text_filters) {
+				texts = text_filters.split(",")
+				for (text in texts) {
+					text = texts[text]
+
+					text_match = JSON.stringify(e).toLowerCase().includes(text.toLowerCase())
+					if (text_match ) {break;}
+				} 
+			} else { // when no text filter
+				text_match = true
+			}
+
+			if (text_match) {
+				$(cards[list.indexOf(e)]).show()
+			}
+			return text_match
+		})
+	}
+
+
+	if ($('#grottos').length > 0) {		
+		var list = Object.values(grottos).sort(function(a,b) {
 			parseInt(a["index"]) - parseInt(b["index"]);
 		})
 		console.log(list) 

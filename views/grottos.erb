@@ -31,7 +31,50 @@
 				<%= svg "svgs/misc_data", 'move-info expand-action expand-grotto svg no-fill', ["expand", "grotto"] %>
 			</div>
 			<div class="expanded-card-content expanded-grotto">
-				
+				<% ["black", "white"].each do |version| %>
+					<% ["common", "uncommon", "rare"].each_with_index do |rarity, i| %>
+						<div class="expanded-left">
+							<div class="expanded-field multi field-header">
+								<div class="enc-slot"><%= version.titleize %> <%= "#{Grotto.encounter_rates[i]}%" %></div>
+								<div class="enc-lvl">Min</div>
+								<div class="enc-lvl">Max</div>
+								<div class="enc-lvl">F/M</div>
+								<div class="enc-form">Form</div>
+							</div>
+
+							<% (0..3).each do |n| %>
+								<div class="expanded-field multi">
+									<%= field "#{version}_#{rarity}_pok_#{n}", 'enc-slot enc-name', {value: grotto["#{version}_#{rarity}_pok_#{n}"].name_titleize,  narc: "grotto", autofill: "pokemon_names"} %>
+
+									<%= field "#{version}_#{rarity}_min_lvl_#{n}", 'enc-lvl', {value: grotto["#{version}_#{rarity}_min_lvl_#{n}"],  narc: "grotto", type: "int-100"} %>
+
+									<%= field "#{version}_#{rarity}_max_lvl_#{n}", 'enc-lvl', {value: grotto["#{version}_#{rarity}_max_lvl_#{n}"],  narc: "grotto", type: "int-100"} %>
+
+									<%= field "#{version}_#{rarity}_gender_#{n}", 'enc-lvl', {value: (grotto["#{version}_#{rarity}_gender_#{n}"]),  narc: "grotto", type: "int-100"} %>
+
+									<%= field "#{version}_#{rarity}_form_#{n}", 'enc-form', {value: (grotto["#{version}_#{rarity}_form_#{n}"]),  narc: "grotto", type: "int-100"} %>
+								</div>
+							<% end %>
+						</div>
+					<% end %>
+				<% end %>
+
+				<% ["normal", "hidden"].each do |i_type| %>
+					<% ["common", "uncommon", "rare", "superrare"].each_with_index do |rarity, i| %>
+						<div class="expanded-left grotto-item">
+							<div class="expanded-field multi field-header">
+								<div class="enc-slot"><%= i_type.titleize %> Items <%= "#{Grotto.item_rates[i]}%" %></div>
+							</div>
+
+							<% (0..3).each do |n| %>
+								<div class="expanded-field multi">
+									<%= field "#{i_type}_#{rarity}_item_#{n}", 'grotto-item-name', {value: grotto["#{i_type}_#{rarity}_item_#{n}"].name_titleize,  narc: "grotto", autofill: "items"} %>	
+								</div>
+							<% end %>
+						</div>
+					<% end %>
+				<% end %>
+
 			</div>		
 		</div>
 	<% end %>

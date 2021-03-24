@@ -915,3 +915,15 @@ div.-active svg * {
 .grotto-wilds {
     display: flex;
 }
+
+.expanded-grotto {
+    flex-wrap: wrap;
+}
+
+.expanded-grotto .expanded-left {
+    width: 33.33%;
+}
+
+.expanded-grotto .expanded-left.grotto-item {
+    width: 25%;
+}
