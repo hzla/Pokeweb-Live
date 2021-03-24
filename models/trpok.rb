@@ -6,7 +6,7 @@ class Trpok < Pokenarc
 		super
 	end
 
-	def self.write_data data
+	def self.write_data data, batch=false
 		@@narc_name = "trpok"
 		@@upcases = ["species", "move"]
 		super

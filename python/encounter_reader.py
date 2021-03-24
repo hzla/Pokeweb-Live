@@ -50,7 +50,6 @@ def set_global_vars():
 			ENCOUNTER_NARC_FORMAT.append(entry)
 
 
-
 def output_encounters_json(narc):
 	set_global_vars()
 	data_index = 0
@@ -109,8 +108,6 @@ def to_readable(raw, file_name):
 					index = index % 2048
 
 				readable[f'{season}_{wat_enc_type}_slot_{n}'] = POKEDEX[index]
-
-
 	return readable
 
 

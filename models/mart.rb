@@ -6,7 +6,7 @@ class Mart < Pokenarc
 	end
 
 
-	def self.write_data data
+	def self.write_data data, batch=false
 		@@narc_name = "marts"
 		super
 	end
