@@ -100,7 +100,7 @@ To view a history of your edits, go to the Logs tab in the navbar on the rop rig
 
 A rough overview of the app detailing what overall structure as well as planned todos can be found in misc/app_info.txt
 
-## Contributing 
+## Credits
 
 Thanks to kaphotics, andibad, bond697 for their posts on the project pokemon forums that helped with much of the format info for the narcs.
 
