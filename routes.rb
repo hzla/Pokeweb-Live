@@ -140,7 +140,7 @@ get '/personal/collection' do
 end
 
 # called by ajax when user makes an edit
-post '/personal' do 
+post '/update' do 
 	narc_name = params['data']['narc']
 	
 	Object.const_get(narc_name.capitalize).write_data params["data"]
