@@ -3,7 +3,7 @@
 
 ## Features
 
-Pokeweb is currently  able to edit map headers, items, personals, level-up learnsets, tm/tutor learnsets, tms, moves, encounters, trainers, evolutions, marts, grottos.
+Pokeweb is currently  able to edit map headers, items, personals, level-up learnsets, tm/tutor learnsets, tms, moves, encounters, trainers, evolutions, marts, and grottos.
 
 To be implemented editors are texts, battle subway trainers, PWT trainers, tutor moves, and OW events. 
 
@@ -95,6 +95,22 @@ The rest is pretty simple.
 If you make an invalid edit the border will turn <span style="color: #ff5555">red</span>, otherwise, your edits are saved automatically. 
 
 To view a history of your edits, go to the Logs tab in the navbar on the rop right.
+
+## Advanced Usage
+
+Upon loading a rom, narc contents are parsed into a more readable format and stored in projects/ROM_NAME/json.
+Every json file has a "raw" section and "readable" section.
+The "raw" section is data taken straight from the narc and converted into an integer.
+The "readable section is the "raw" data converted into a format more understandable to the user. (ex. 1 becomes "Bulbasaur")
+
+You can write your own tools to manipulate the json data as long as you do not change the file locations and validate the inputs yourself.
+Json files can have their "readable" data copied over to the "raw" section by running the respective *_writer.py file in the command line 
+
+	$ python python/NARC_NAME_writer.py update FILE_NAME
+
+Data from the "raw" sections can be output to the Narcs, and saved into a rom by running the rom_saver.py file from the command line.
+
+	$ python python/rom_saver.py ROM_NAME
 
 ## Contributing
 
