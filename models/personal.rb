@@ -1,6 +1,3 @@
-require 'json'
-	
-
 class Personal
 
 	def self.poke_data

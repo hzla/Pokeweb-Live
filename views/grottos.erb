@@ -1,3 +1,16 @@
+<script>
+	// json object for filtering
+	grottos = <%= @grottos.to_json %>
+
+
+	// info for autocomplete
+	autofills = {
+		<% [:pokemon_names, :items].each do |info| %>
+			"<%= info.to_s %>": <%= RomInfo.send(info) %>,
+		<% end %>
+	}
+</script>
+
 <div class="pokemon-filter">	
 	<div class="filter-title">Search</div>
 	<input class="filter-input" id="search-text"/>
@@ -82,15 +95,3 @@
 
 
 
-<script>
-	// json object for filtering
-	grottos = <%= @grottos.to_json %>
-
-
-	// info for autocomplete
-	autofills = {
-		<% [:pokemon_names, :items].each do |info| %>
-			"<%= info.to_s %>": <%= RomInfo.send(info) %>,
-		<% end %>
-	}
-</script>

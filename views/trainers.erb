@@ -1,3 +1,18 @@
+<script>
+	// json object for filtering
+	trainers = <%= @trainers.to_json %>
+
+	trainer_poks = <%= @trainer_poks.to_json %>
+
+	// info for autocomplete
+	autofills = {
+		<% [:items, :pokemon_names, :abilities, :class_names, :battle_types, :genders].each do |info| %>
+			"<%= info.to_s %>": <%= RomInfo.send(info) %>,
+		<% end %>
+		"move_names": <%= @move_names %>
+	}
+</script>
+
 <div class="pokemon-filter">	
 	<div class="filter-title">Search</div>
 	<input class="filter-input" id="search-text"/>
@@ -97,20 +112,4 @@
 </div>
 
 
-<script>
-	// json object for filtering
-	trainers = <%= @trainers.to_json %>
 
-	trainer_poks = <%= @trainer_poks.to_json %>
-
-
-	// info for autocomplete
-	autofills = {
-		<% [:items, :pokemon_names, :abilities, :class_names, :battle_types, :genders].each do |info| %>
-			"<%= info.to_s %>": <%= RomInfo.send(info) %>,
-		<% end %>
-		"move_names": <%= @move_names %>
-	}
-
-
-</script>

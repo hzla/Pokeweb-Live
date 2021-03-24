@@ -1,8 +1,4 @@
-class Move
-
-	def self.get_data(file_name)
-		JSON.parse(File.open(file_name, "r"){|f| f.read})["readable"]
-	end
+class Move < Pokenarc
 
 	def self.get_all
 		moves = {}
@@ -16,24 +12,9 @@ class Move
 	end
 
 	def self.write_data data
-		file_name = data["file_name"]
-		field_to_change = data["field"]
-		changed_value = data["value"]
-
-		if data["int"]
-			changed_value = changed_value.to_i
-		end
-
-		if data["field"] == "type" || data["field"] == "category"
-			changed_value = changed_value.downcase.capitalize
-		end
-
-		file_path = "#{$rom_name}/json/moves/#{file_name}.json"
-		json_data = JSON.parse(File.open(file_path, "r"){|f| f.read})
-
-		json_data["readable"][field_to_change] = changed_value
-
-		File.open(file_path, "w") { |f| f.write json_data.to_json }
+		@@narc_name = "moves"
+		@@upcases = ["type", "category"]
+		super
 	end
 
 	def self.get_names_from(moves)
@@ -50,8 +31,6 @@ class Move
 			{ "field_name" => "healing", "label" => "Heal %", "type" => "int-100"}
 		]
 	end
-
-
 
 	def self.stat_modifier_fields
 		fields = []
@@ -74,7 +53,6 @@ class Move
 			{ "field_name" => "max_turns", "label" => "Max Effect Turns", "type"=> "int-255"},
 			{ "field_name" => "min_hits", "label" => "Min Hits", "type"=> "int-255"},
 			{ "field_name" => "max_hits", "label" => "Max Hits", "type"=> "int-255"}
-
 		]
 	end
 

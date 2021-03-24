@@ -1,3 +1,17 @@
+
+<script>
+	// json object for filtering
+	items = <%= @items.to_json %>
+
+
+	// info for autocomplete
+	autofills = {
+		<% [:items].each do |info| %>
+			"<%= info.to_s %>": <%= RomInfo.send(info) %>,
+		<% end %>
+	}
+</script>
+
 <div class="pokemon-filter">	
 	<div class="filter-title">Search Text</div>
 	<input class="filter-input" id="search-text"/>
@@ -42,16 +56,3 @@
 </div>
 
 
-
-<script>
-	// json object for filtering
-	items = <%= @items.to_json %>
-
-
-	// info for autocomplete
-	autofills = {
-		<% [:items].each do |info| %>
-			"<%= info.to_s %>": <%= RomInfo.send(info) %>,
-		<% end %>
-	}
-</script>

@@ -543,3 +543,50 @@ div  {
 .pokemon-stat.-weight {
     right: -10px;
 }
+
+.site-cm-box {
+    width: auto;
+    border: 1px solid #d2d2d2;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    background-color: #f2f2f2;
+    transition-duration: 0s
+}
+
+.site-cm-box ul.site-cm-group li {
+    height: 36px;
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 36px;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    overflow: hidden;
+    cursor: default;
+}
+
+.site-cm-box .site-cm-separ{
+    height:0;
+    border-top:1px solid #d2d2d2;
+}
+
+.site-cm-box ul.site-cm-group li:hover,
+.site-cm-box ul.site-cm-group li.hover {
+    color: #f2f2f2;
+    background-color: #bd93f9;
+}
+
+.site-cm-box ul.site-cm-group li > .site-cm-box {
+    left: 185px;
+    margin-top: -36px;
+}
+
+.site-cm-box ul.site-cm-group li:hover > .site-cm-box,
+.site-cm-box ul.site-cm-group li.hover > .site-cm-box {
+    color: #000;
+}
+
+.site-cm-icon {
+    color: #666;
+    width: 20px;
+}

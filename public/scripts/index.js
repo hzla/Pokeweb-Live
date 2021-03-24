@@ -1,9 +1,51 @@
 
 edit_in_progress = false
 
+$(document).ready(function() {
+
+	editable_menu = [
+	    [{
+	      text: "Apply to all displayed entries",
+	      action: function (e, i) {
+	      	var value = current_edit.text().trim()
+			current_edit.text(value)
+			var field_name = current_edit.attr('data-field-name')
+			var narc = current_edit.attr('data-narc')
+
+			to_change = $('.filterable:visible')
+			file_count = to_change.length
+
+			var data = {}
+
+
+			data["field"] = field_name
+			data["value"] = value
+			data["narc"] = narc
+
+
+			if (confirm(`You are about to change the ${field_name} of every displayed entry to ${value}. Proceed to change all ${file_count} entries?`)){
+				file_names = []
+
+				to_change.each(function(i,v) {
+					file_names.push($(v).attr('data-index'))
+				})
+				console.log(file_names)
+			} 
+
+	      }
+	    }]
+	];
+
+	$("[contenteditable='true']").contextMenu(editable_menu)
+	console.log("menu ready")
+})
+
 ///////////////////// EVENT BINDINGS //////////////////////////
     
     //////////////// Rom Buttons //////////////////
+
+
+
     
     $(document).on('click', '#load-rom', function(){
         var rom_name = $('#rom-select').val()
@@ -187,6 +229,14 @@ edit_in_progress = false
 	
 	
 	/////////////////////////////// DATA UPLOAD ON EDIT ///////////////////////////////
+
+	
+	$(document).on('mousedown',"[contenteditable='true']", function(e){
+		if (e.which == 3) {
+			current_edit = $(this)
+			console.log(current_edit)		
+		}
+	} )
 
 
 	$(document).on('focusout', "[contenteditable='true']", function(){

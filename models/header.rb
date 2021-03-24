@@ -1,6 +1,5 @@
 class Header
 
-
 	def self.get_all
 		file_path = "#{$rom_name}/json/headers/headers.json"
 		data = JSON.parse(File.open(file_path, "r"){|f| f.read})
