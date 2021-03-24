@@ -1,55 +1,43 @@
 # INSTALLATION 
 
+For windows run WINDOWS_INSTALL.bat
+
+This will install ruby, python, and the required dependencies.
+
+__________________________________________________________________________________
+
+If you want/need to manually install follow these steps:
 
 
 install ruby >= 2.6
-
 install python > 3.6
 
-open cmd.exe or terminal 
+make sure both versions are in use.
+You can check by typing "ruby -v" and "python -V" in your terminal/cmd
 
 
-navigate to folder in cmd or terminal and type:
+navigate to folder in cmd or terminal and run:
 
 bundle install
-
 pip install ndspy
 
+
+now run the following to start the server at localhost:4567
+
 ruby routes.rb
-
-_________________________________________
-
-
-check localhost:4567 in browser
 
 put any nds files to edit in root folder
 
 
 
-
-
-
 RESOURCES:
 
+Ruby Windows Installer: 
 https://www.ruby-lang.org/en/documentation/installation/
-
-
 https://rubyinstaller.org/downloads/
+Ruby 2.7.2-1 (x64) recommended for windows
 
-Ruby+Devkit 2.7.2-1 (x64) recommended for windows
-
-____________________________________________________________
-
-alternate ruby install instructions for windows:
-
-open cmd.exe as admin
-
-@powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((new-object net.webclient).DownloadString('https://chocolatey.org/install.ps1'))" && SET PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin
-
-choco install ruby
-
-_____________________________________________________________
-
+Python Windows Installer:
 https://www.microsoft.com/en-us/p/python-39/9p7qfqmjrfp7?activetab=pivot:overviewtab
 
 
