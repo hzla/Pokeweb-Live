@@ -39,9 +39,11 @@ class Pokenarc
 			changed_value = changed_value.to_i
 		end
 
-		if @@upcases == "all" || @@upcases.any? {|field| field.include? data["field"]} 
+		if @@upcases == "all" || @@upcases.any? {|field| data["field"].include? field } 
 			changed_value = changed_value.upcase
 		end
+
+
 
 		if data["field"] == "class" && @@narc_name == "trdata"
 			class_data = changed_value.split(" (")

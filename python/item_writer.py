@@ -133,7 +133,11 @@ def write_bytes(stream, n, data):
 ################ If run with arguments #############
 
 if len(sys.argv) > 2 and sys.argv[1] == "update":
-	write_readable_to_raw(int(sys.argv[2]))
+
+	file_names = sys.argv[2].split(",")
+	 
+	for file_name in file_names:
+		write_readable_to_raw(int(file_name))
 	
 # output_narc()
 
