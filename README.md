@@ -10,11 +10,26 @@ To be implemented editors are texts, battle subway trainers, PWT trainers, tutor
 You can join this Pokemon DS Rom Hacking discord server for updates as well as general support for your Pokemon gen IV/V rom hacking needs. [https://discord.gg/cTKQq5Y](https://discord.gg/cTKQq5Y)
 ## Windows Installation 
 
-Click the WINDOWS_INSTALL.bat file which will run the included ruby and python installers and the commands for installing the required gems and python modules. 
+[Video of installation on a windows computer without python or ruby installed](https://streamable.com/833yr6)
 
-If you already are using ruby >2.6 and python > 3.6, you can cancel the installers and the WINDOWS_INSTALL.bat will go straight to installing gems and python modules.
+Click the WINDOWS_INSTALL.bat file which will run the included ruby and python installers. 
 
-The Pokeweb server can then be started by clicking and running Pokeweb_Windows.bat. You should be able to view Pokeweb on localhost:4567 in your browser
+If you already are using ruby >2.6 and python > 3.6, you can skip to the next step.
+
+Open the Pokeweb folder in powershell or cmd and run 
+
+	$ bundle install
+
+followed by
+	
+   	 $ pip install ndspy
+	 
+You can now star the server with 
+
+	$ ruby routes.rb
+
+
+The Pokeweb server can also be started by clicking and running Pokeweb_Windows.bat. You should be able to view Pokeweb on localhost:4567 in your browser.
 
 
 ### Manual Windows Install
