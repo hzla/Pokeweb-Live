@@ -20,6 +20,7 @@ def set_global_vars():
 		settings = json.load(outfile) 
 		ROM_NAME = settings['rom_name']
 		BASE_ROM = settings['base_rom']
+		BASE_VERSION = settings['base_version']
 
 	MOVES = open(f'{ROM_NAME}/texts/moves.txt', mode="r").read().splitlines()
 
@@ -28,11 +29,9 @@ def set_global_vars():
 
 	TM_FORMAT = []
 
-	TM_OFFSET = 633504 #0x9aaa0
+	TM_OFFSETS = {"B": 0x9aaa0, "W": 0x9aab8, "B2": 0x8cc84, "W2": 0x8ccb0 }
 
-	if BASE_ROM == "BW2":
-		TM_OFFSET = 576644
-
+	TM_OFFSET = TM_OFFSETS[BASE_VERSION]
 
 	for n in range(1, 93):
 		TM_FORMAT.append([2, f'tm_{n}'])

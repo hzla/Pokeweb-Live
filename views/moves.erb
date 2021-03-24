@@ -1,3 +1,20 @@
+<script>
+	// json object for filtering
+
+
+	// moves data for populating additonal move info when user makes edits
+	moves = <%= @moves.to_json %>
+
+	// info for autocomplete
+	autofills = {
+		<% [:types, :status_types, :effects, :result_effects, :effect_cats, :targets, :stats].each do |info| %>
+			"<%= info.to_s %>": <%= RomInfo.send(info) %>,
+		<% end %>
+		"move_names": <%= @move_names %>
+	}
+
+</script>
+
 <div class="pokemon-filter">	
 	<div class="filter-title">Search Text</div>
 	<input class="filter-input" id="search-text"/>
@@ -37,19 +54,3 @@
 	<% end %>
 </div>
 
-<script>
-	// json object for filtering
-
-
-	// moves data for populating additonal move info when user makes edits
-	moves = <%= @moves.to_json %>
-
-	// info for autocomplete
-	autofills = {
-		<% [:types, :status_types, :effects, :result_effects, :effect_cats, :targets, :stats].each do |info| %>
-			"<%= info.to_s %>": <%= RomInfo.send(info) %>,
-		<% end %>
-		"move_names": <%= @move_names %>
-	}
-
-</script>

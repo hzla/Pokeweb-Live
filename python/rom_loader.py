@@ -143,7 +143,7 @@ for msg_bank in MSG_BANKS:
 	    		try:
 	    			f.write(entry)
 	    		except UnicodeEncodeError:
-	    			print("error")
+	    			print("text parse error")
 	    			# f.write(str(entry.encode("UTF-8")))
 	    		f.write("\n")
 
@@ -153,6 +153,7 @@ for msg_bank in MSG_BANKS:
 
 settings = {}
 settings.update(narc_info)
+settings["output_arm9"] = True
 
 print(settings)
 

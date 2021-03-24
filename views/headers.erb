@@ -1,3 +1,14 @@
+<script>
+	// json object for filtering
+	headers = <%= @header_data.to_json %>
+
+
+	// info for autocomplete
+	autofills = {
+		"location_names": <%= @location_names %>
+	}
+</script>
+
 <div class="pokemon-filter">	
 	<div class="filter-title">Search Location</div>
 	<input class="filter-input" id="search-text"/>
@@ -52,13 +63,3 @@
 
 
 
-<script>
-	// json object for filtering
-	headers = <%= @header_data.to_json %>
-
-
-	// info for autocomplete
-	autofills = {
-		"location_names": <%= @location_names %>
-	}
-</script>

@@ -21,12 +21,10 @@ import trdata_writer
 import trpok_writer
 import item_writer
 import evolution_writer
-import mart_writer
-import grotto_writer
+
 # code.interact(local=dict(globals(), **locals()))
 
 
-################# HARDCODED ROM INFO ##############################
 
 
 rom_name = sys.argv[1].split(".")[0] 
@@ -35,41 +33,21 @@ rom_name = sys.argv[1].split(".")[0]
 ####################################################################
 ################### WRITE NARCS/ARM9 TO ROM ############################
 print("outputting narcs")
-# personal_writer.output_narc()
-# learnset_writer.output_narc()
-# move_writer.output_narc()
-# header_writer.output_narc()
-# encounter_writer.output_narc()
-# trdata_writer.output_narc()
-# trpok_writer.output_narc()
-# item_writer.output_narc()
-# evolution_writer.output_narc()
-
-
-tm_writer.output_arm9()
+personal_writer.output_narc()
+learnset_writer.output_narc()
+move_writer.output_narc()
+header_writer.output_narc()
+encounter_writer.output_narc()
+trdata_writer.output_narc()
+trpok_writer.output_narc()
+item_writer.output_narc()
+evolution_writer.output_narc()
 
 with open(f"{rom_name.split('/')[1]}.nds", 'rb') as f:
     data = f.read()
 rom = ndspy.rom.NintendoDSRom(data)
 
 
-# mutable_rom = bytearray(data)
-# arm9_offset = 16384 #0x4000
-
-
-
-# #get edited arm9
-# edited_arm9_file = bytearray(open(f'{rom_name}/arm9.bin', 'rb').read())
-
-# # #compress it
-# print ("compressing arm9")
-# arm9 = bytearray(ndspy.codeCompression.compress(edited_arm9_file, isArm9=True))
-
-# #reinsert arm9
-# mutable_rom[arm9_offset:arm9_offset + len(arm9)] = arm9
-
-# #update rom in memory
-# rom = ndspy.rom.NintendoDSRom(mutable_rom)
 
 settings = {}
 with open(f'session_settings.json', "r") as outfile:  
@@ -88,9 +66,31 @@ with open(f'session_settings.json', "r") as outfile:
 		mart_counts_narc_file_id = settings["mart_counts"]
 		grotto_narc_file_id = settings["grottos"]
 
+if settings["output_arm9"] == True:
+
+	tm_writer.output_arm9()
+	mutable_rom = bytearray(data)
+	arm9_offset = 16384 #0x4000
+
+	#get edited arm9
+	edited_arm9_file = bytearray(open(f'{rom_name}/arm9.bin', 'rb').read())
+
+	# #compress it
+	print ("compressing arm9")
+	arm9 = bytearray(ndspy.codeCompression.compress(edited_arm9_file, isArm9=True))
+
+	#reinsert arm9
+	mutable_rom[arm9_offset:arm9_offset + len(arm9)] = arm9
+
+	#update rom in memory
+	rom = ndspy.rom.NintendoDSRom(mutable_rom)
+
 if settings["base_rom"] == "BW2":
+	import mart_writer
+	import grotto_writer
 	mart_writer.output_narc()
 	grotto_writer.output_narc()
+
 
 personal_narc_filepath = f'{rom_name}/narcs/personal-{personal_narc_file_id}.narc'
 learnset_narc_filepath = f'{rom_name}/narcs/learnsets-{learnset_narc_file_id}.narc'

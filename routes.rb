@@ -4,8 +4,11 @@ require 'json'
 require 'csv'
 require 'pry'
 require_relative 'helpers'
+require_relative 'models/pokenarc'
 
 Dir["models/*.rb"].each {|file| require_relative file}
+
+
 
 before do
 	$rom_name = SessionSettings.rom_name
@@ -225,6 +228,22 @@ post '/delete' do
 	return 200
 end
 
+
+post '/batch_update' do 
+	narc_name = params['data']['narc']
+	
+	Object.const_get(narc_name.capitalize).write_batch_data params["data"]
+	
+	command = "python python/#{narc_name}_writer.py update all"
+	pid = spawn command
+	Process.detach(pid)
+
+	open('logs.txt', 'a') do |f|
+	  f.puts "#{Time.now}: Project: #{$rom_name} Batch Updated #{narc_name} Files #{params['data']['field']} to #{params['data']['value']} "
+	end
+
+	return 200
+end
 
 ####################################### ITEMS ###############
 

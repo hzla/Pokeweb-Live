@@ -1,3 +1,28 @@
+<script>
+	// json object for filtering
+	pokemons = <%= @poke_data.to_json %>
+
+	// moves data for populating additonal move info when user makes edits
+	moves = <%= @moves.to_json %>
+
+	// info for autocomplete
+	autofills = {
+		<% [:types, :abilities, :items, :egg_groups, :growth_rates, :evo_methods, :pokemon_names].each do |info| %>
+			"<%= info.to_s %>": <%= RomInfo.send(info) %>,
+		<% end %>
+		"move_names": <%= @move_names %>
+	}
+
+	// load rest of pokemon (11 to end)
+	$( document ).ready(function() {
+		$('#wait-loading').show()
+		$.get(window.location.href + "/collection", function(data){
+			$('.pokemon-list').append(data)
+			$('#wait-loading').hide()
+		})
+	})	
+</script>
+
 <div class="pokemon-filter">	
 	<div class="filter-title">Search Text</div>
 	<input class="filter-input" id="search-text"/>
@@ -23,27 +48,3 @@
 	<% end %>
 </div>
 
-<script>
-	// json object for filtering
-	pokemons = <%= @poke_data.to_json %>
-
-	// moves data for populating additonal move info when user makes edits
-	moves = <%= @moves.to_json %>
-
-	// info for autocomplete
-	autofills = {
-		<% [:types, :abilities, :items, :egg_groups, :growth_rates, :evo_methods, :pokemon_names].each do |info| %>
-			"<%= info.to_s %>": <%= RomInfo.send(info) %>,
-		<% end %>
-		"move_names": <%= @move_names %>
-	}
-
-	// load rest of pokemon (11 to end)
-	$( document ).ready(function() {
-		$('#wait-loading').show()
-		$.get(window.location.href + "/collection", function(data){
-			$('.pokemon-list').append(data)
-			$('#wait-loading').hide()
-		})
-	})	
-</script>

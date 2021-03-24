@@ -1,4 +1,4 @@
-class Tm
+class Tm 
 
 	def self.get_data
 		JSON.parse(File.open("#{$rom_name}/json/arm9/tms.json", "r"){|f| f.read})

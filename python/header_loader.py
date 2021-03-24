@@ -53,9 +53,13 @@ rom = ndspy.rom.NintendoDSRom(data)
 if str(rom.name)[-3] == '2':
 	narc_info["base_rom"] = "BW2"
 	MSG_BANKS = BW2_MSG_BANKS
+	narc_info["base_version"] = str(rom.name)[20] + "2"
 else:
 	narc_info["base_rom"] = "BW"
 	MSG_BANKS = BW_MSG_BANKS
+	narc_info["base_version"] = str(rom.name)[20]
+
+# code.interact(local=dict(globals(), **locals()))
 
 for narc in NARCS:
 	file_id = rom.filenames[narc[0]]

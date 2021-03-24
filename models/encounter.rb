@@ -1,49 +1,18 @@
-class Encounter
+class Encounter < Pokenarc
 
-	def self.get_data(file_name)
-		data = File.open(file_name, "r") do |f|
-			f.read
-		end
-		JSON.parse(data)["readable"]
-	end
 
 	def self.get_all
-		files = Dir["#{$rom_name}/json/encounters/*.json"].sort_by{ |name| [name[/\d+/].to_i, name] }
-		file_count = files.length
-
-		data = []
-
-		(0..file_count - 1).map do |n|
-			file_path = "#{$rom_name}/json/encounters/#{n}.json"
-			data << get_data(file_path)
-		end
-
+		@@narc_name = "encounters"
+		data = super
 		expand_encounter_info(data, Header.get_all)
 
 	end
 
 
 	def self.write_data data
-		file_name = data["file_name"]
-		field_to_change = data["field"]
-		changed_value = data["value"]
-
-		if data["int"]
-			changed_value = changed_value.to_i
-		else
-			changed_value = changed_value.upcase
-		end
-
-		file_path = "#{$rom_name}/json/encounters/#{file_name}.json"
-		
-		file = File.open(file_path, "r") do |f|
-			f.read
-		end
-		json_data = JSON.parse(file)
-
-		json_data["readable"][field_to_change] = changed_value
-
-		File.open(file_path, "w") { |f| f.write json_data.to_json }
+		@@narc_name = "encounters"
+		@@upcases = "all"
+		super
 	end
 
 	def self.expand_encounter_info(encounter_data, header_data)
