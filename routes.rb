@@ -1,8 +1,8 @@
 require 'sinatra'
-require 'sinatra/reloader'
+
+
 require 'json'
 require 'csv'
-require 'pry'
 require_relative 'helpers'
 require_relative 'models/pokenarc'
 

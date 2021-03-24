@@ -11,3 +11,4 @@ session_settings.json
 /projects/*
 logs.txt
 /__pycache_
+.exe
