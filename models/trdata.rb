@@ -1,7 +1,7 @@
 class Trdata < Pokenarc
 
 
-	def self.write_data data
+	def self.write_data data, batch=false
 		@@narc_name = "trdata"
 		super
 	end

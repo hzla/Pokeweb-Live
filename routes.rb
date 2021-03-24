@@ -232,11 +232,11 @@ end
 post '/batch_update' do 
 	narc_name = params['data']['narc']
 	
-	Object.const_get(narc_name.capitalize).write_batch_data params["data"]
+	Object.const_get(narc_name.capitalize).write_data params["data"], true
 	
-	command = "python python/#{narc_name}_writer.py update all"
-	pid = spawn command
-	Process.detach(pid)
+	# command = "python python/#{narc_name}_writer.py update all"
+	# pid = spawn command
+	# Process.detach(pid)
 
 	open('logs.txt', 'a') do |f|
 	  f.puts "#{Time.now}: Project: #{$rom_name} Batch Updated #{narc_name} Files #{params['data']['field']} to #{params['data']['value']} "

@@ -7,7 +7,7 @@ class Item < Pokenarc
 	end
 
 
-	def self.write_data data
+	def self.write_data data, batch=false
 		@@narc_name = "items"
 		super
 	end

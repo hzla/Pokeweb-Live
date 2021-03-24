@@ -23,7 +23,11 @@ class Pokenarc
 		collection
 	end
 
-	def self.write_data data
+	def self.write_data data, batch=false
+		if batch
+			write_batch_data data
+		end
+
 		file_name = data["file_name"]
 		field_to_change = data["field"]
 		changed_value = data["value"]
@@ -50,6 +54,13 @@ class Pokenarc
 
 		json_data["readable"][field_to_change] = changed_value
 		File.open(file_path, "w") { |f| f.write json_data.to_json }
+	end
+
+	def self.write_batch_data data
+		data["file_names"].each do |file|
+			data["file_name"] = file
+			write_data(data)
+		end
 	end
 
 

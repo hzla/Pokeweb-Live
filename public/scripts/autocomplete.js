@@ -605,7 +605,8 @@ String.prototype.toCamelCase = function() {
                 e.preventDefault();
 
                 var $menu = createContextMenu();
-                $menu.show().offset({left: e.clientX + params.offsetX, top: e.clientY + params.offsetY});
+
+                $menu.show().offset({left: e.clientX + params.offsetX - 240, top: e.clientY + params.offsetY + window.scrollY + 10});
 
                 $.isFunction(params.afterShow) && params.afterShow.call(this, e)
             });

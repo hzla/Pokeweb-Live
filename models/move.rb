@@ -11,7 +11,7 @@ class Move < Pokenarc
 		moves.to_a.sort_by {|mov| mov[0] }
 	end
 
-	def self.write_data data
+	def self.write_data data, batch=false
 		@@narc_name = "moves"
 		@@upcases = ["type", "category"]
 		super

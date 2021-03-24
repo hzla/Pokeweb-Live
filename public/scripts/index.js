@@ -23,13 +23,27 @@ $(document).ready(function() {
 			data["narc"] = narc
 
 
+			if (current_edit.css('border') == '1px solid rgb(255, 0, 0)') {
+				alert("Value is not valid")
+				return
+			}
+
+
 			if (confirm(`You are about to change the ${field_name} of every displayed entry to ${value}. Proceed to change all ${file_count} entries?`)){
 				file_names = []
 
 				to_change.each(function(i,v) {
 					file_names.push($(v).attr('data-index'))
 				})
-				console.log(file_names)
+				data ["file_names"] = file_names
+
+				$.post( "/batch_update", {"data": data }, function( e ) {     
+
+	        
+
+		        });
+		        $(`.filterable:visible [data-field-name='${field_name}']`).text(value)
+		        alert("Update success, some visual previews (sprites, icons) will a require a refresh reflect changes")
 			} 
 
 	      }
@@ -127,6 +141,7 @@ $(document).ready(function() {
 			    async: false,
 			    success: function( e ) {     
 		          card.find('table').after(e)
+		          card.find("[contenteditable='true']").contextMenu(editable_menu)
 		          	$('.filterable, .expanded-card-content').css('background', '')
 					$('.filterable:visible:odd, .filterable:visible:even .expanded-card-content').css('background', '#383a59');
 					$('.filterable:visible:even, .filterable:visible:odd .expanded-card-content').css('background', '#282a36'); 
@@ -234,7 +249,6 @@ $(document).ready(function() {
 	$(document).on('mousedown',"[contenteditable='true']", function(e){
 		if (e.which == 3) {
 			current_edit = $(this)
-			console.log(current_edit)		
 		}
 	} )
 

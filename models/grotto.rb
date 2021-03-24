@@ -6,7 +6,7 @@ class Grotto < Pokenarc
 	end
 
 
-	def self.write_data data
+	def self.write_data data, batch=false
 		@@narc_name = "grottos"
 		@@upcases = ["pok"]
 		super
