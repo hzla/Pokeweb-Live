@@ -4,8 +4,8 @@
 </div>
 
 <div class="pokemon-list spreadsheet" id="grottos">
-	<% @logs.each_with_index do |log, i| %>
-		<div class="expanded-field filterable" data-index="<%= i %>">
+	<% @logs.reverse.each do |log| %>
+		<div class="expanded-field filterable">
 			<div class="expanded-field-main">
 				<div class="log-text"><%= log %></div>
 

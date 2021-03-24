@@ -24,6 +24,10 @@ class Grotto
 			changed_value = changed_value.to_i
 		end
 
+		if data["field"].include?("pok")
+			changed_value = changed_value.upcase
+		end
+
 		file_path = "#{$rom_name}/json/grottos/#{file_name}.json"
 		json_data = JSON.parse(File.open(file_path, "r") {|f| f.read})
 
@@ -46,4 +50,15 @@ class Grotto
 		wilds.uniq
 	end
 
+	def self.encounter_rates
+		[15,4,1]
+	end
+
+	def self.item_rates
+		[25,10,4,1]
+	end
+
+
+
 end
+
