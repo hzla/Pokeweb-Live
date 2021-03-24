@@ -43,7 +43,20 @@ $(document).ready(function() {
 
 		        });
 		        $(`.filterable:visible [data-field-name='${field_name}']`).text(value)
-		        alert("Update success, some visual previews (sprites, icons) will a require a refresh reflect changes")
+
+		        if (current_edit.hasClass('enc-slot')) {
+		        	$('.filterable:visible').each(function(i,v) {
+		        		updateWilds($(v));
+		        	})
+		        }
+
+		        if (current_edit.hasClass('trpok-name')) {
+		        	var pok_index = current_edit.parents('.expanded-pok').index() - 2
+		        	$('.filterable:visible').each(function(i,v) {
+		        		updateTrImage(value, $(v), pok_index )
+		        	})
+		        }
+		        alert("Update success")
 			} 
 
 	      }
@@ -518,12 +531,15 @@ $(document).ready(function() {
 	$(document).on('focusout', ".enc-name[contenteditable='true']", function(){
 		var value = $(this).text().trim()
 		var card = $(this).parents('.filterable')
+		updateWilds(card)
+	})
+
+	function updateWilds(card) {
 		var all_encs = card.find('.enc-name')
 
 		var encs = all_encs.map(function(e) {	
 			return $(all_encs[e]).text() 
 		}).toArray()
-
 
 		let unique_encs = encs.filter((c, index) => {
 		    return (encs.indexOf(c) === index && c != "-");
@@ -535,10 +551,9 @@ $(document).ready(function() {
 			if (v != "") {
 				var sprite = "<div class='wild'><img src='/images/pokesprite/" + v + ".png'></div>"
 				card.find(".encounter-wilds, .grotto-wilds").append(sprite)
-			}
-			
+			}		
 		})
-	})
+	}
 
 	//update mart inv
 	$(document).on('focusout', ".mart-item", function(){
@@ -561,15 +576,18 @@ $(document).ready(function() {
 		var card = $(this).parents('.filterable')
 		var pok_index = $(this).parents('.expanded-pok').index() - 2
 
-		console.log(pok_index)
+		updateTrImage(value, card, pok_index)
 
+	})
+
+	function updateTrImage(value, card, pok_index) {
 		img_name = value.replace(". ", "-").toLowerCase()
 
 		img_to_update = $(card.find('img')[parseInt(pok_index)])
 
 		img_to_update.attr('src', '/images/pokesprite/' + img_name + ".png")
 
-	})
+	}
 
 	$(document).on('click', ".delete-trpok", function(){
 		var card = $(this).parents('.filterable')

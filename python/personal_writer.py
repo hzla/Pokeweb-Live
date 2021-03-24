@@ -120,8 +120,6 @@ def write_readable_to_raw(file_name):
 		personal_data["raw"] = new_raw_data
 
 	with open(f'{ROM_NAME}/json/personal/{file_name}.json', "w", encoding='ISO8859-1') as outfile: 
-
-		print(personal_data)
 		json.dump(personal_data, outfile)
 
 def to_raw(readable):
@@ -171,7 +169,12 @@ def to_raw(readable):
 ################ If run with arguments #############
 
 if len(sys.argv) > 2 and sys.argv[1] == "update":
-	write_readable_to_raw(int(sys.argv[2]))
+
+	file_names = sys.argv[2].split(",")
+	 
+	for file_name in file_names:
+		write_readable_to_raw(int(file_name))
+	
 	
 # output_narc()
 

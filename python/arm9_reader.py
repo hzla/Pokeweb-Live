@@ -41,9 +41,6 @@ def set_global_vars():
 		TM_FORMAT.append([2, f'tm_{n}'])
 
 
-
-
-
 #################################################################
 ## TODO: create universal read_data function that takes name of narc, and to_readable() function as args
 
@@ -108,12 +105,3 @@ def read_bytes(stream, n):
 	return int.from_bytes(stream.read(n), 'little')
 
 
-
-# with open(f'moddedblack.nds', 'rb') as f:
-#     data = f.read()
-# rom = ndspy.rom.NintendoDSRom(data)
-# arm9 = ndspy.codeCompression.decompress(rom.arm9)
-
-# output_tms_json(arm9)
-
-	
