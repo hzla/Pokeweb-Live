@@ -83,6 +83,20 @@ loading a rom with the same name as a previous project will overwrite all projec
 
 TODOS
 
+write unit/integration tests
+
+write capybara acceptance tests
+
+implement text editor
+
+implement move creator
+
+implement bw2 tutor moves editor
+
+battle subway editor
+
+pwt editor
+
 implement filter data refresh each time on edit so search bar works on newly changed data
 
 UI for expandable/hidable filter
@@ -100,13 +114,5 @@ organise/refactor index.js
 
 create reader writer module for .py files
 
-write unit/integration tests
 
-write capybara acceptance tests
-
-implement text editor
-
-implement move creator
-
-implement bw2 tutor moves editor
 
