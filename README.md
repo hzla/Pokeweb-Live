@@ -89,9 +89,8 @@ If the above steps succeed the server can now be run by running
 Place any roms you wish to edit in root folder of Pokeweb and they should show up in the Load Rom dropdown on the homepage. Loading a rom will take you to the a map headers list for the rom while the rest of the editors load in the background. This can take anywhere between 5-15 seconds. In the future you can select an already loaded rom in the Load Project dropdown.
 
 The rest is pretty simple.
-<span align="r" style="color:  #1abc9c">
-	Any thing this color can be clicked to be edited. 
-</span>
+![#1abc9c](https://via.placeholder.com/15/1abc9c/000000?text=+)Any thing this color can be clicked to be edited. 
+
 If you make an invalid edit the border will turn <span style="color: #ff5555">red</span>, otherwise, your edits are saved automatically. 
 
 To view a history of your edits, go to the Logs tab in the navbar on the rop right.
