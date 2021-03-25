@@ -491,32 +491,35 @@ $(document).ready(function() {
 		}
 	})
 
-	// expand move data 
-	$(document).on('focusout', ".move-name[contenteditable='true']", function(){
-		var value = $(this).text().trim()
-		move_data = Object.values(moves).find(e => e[1]["name"].toLowerCase().toCamelCase() == value.toLowerCase().toCamelCase() )
+	$(document).ready(function() {
+		$(document).on('focusout', ".move-name[contenteditable='true']", function(){
+			var value = $(this).text().trim()
+			move_data = Object.values(moves).find(e => e[1]["name"].toLowerCase().toCamelCase() == value.toLowerCase().toCamelCase() )
 
-		if (move_data) {
-			type = move_data[1]["type"] 
-			power = move_data[1]["power"]
-			acc = move_data[1]["accuracy"]
-			effect = move_data[1]["effect"]
-			
-			type_name_length = 3
-			if ($('.tm-list').length > 0) {
-				type_name_length = type.length
+			if (move_data) {
+				type = move_data[1]["type"] 
+				power = move_data[1]["power"]
+				acc = move_data[1]["accuracy"]
+				effect = move_data[1]["effect"]
+				
+				type_name_length = 3
+				if ($('.tm-list').length > 0) {
+					type_name_length = type.length
+				}
+
+				row = $(this).parents('.expanded-field')
+
+				row.find('button, .btn').removeClass().addClass('btn').addClass('-active').addClass("-" +type.toLowerCase()).text(type.toUpperCase().slice(0,type_name_length))
+				row.find('.mov-cat img').show().attr("src", "/images/move-" + type.toLowerCase() + ".png")
+
+				row.find('.move-power').text(power)
+				row.find('.move-accuracy').text(acc)
+				row.find('.move-effect').text(effect)
 			}
-
-			row = $(this).parents('.expanded-field')
-
-			row.find('button, .btn').removeClass().addClass('btn').addClass('-active').addClass("-" +type.toLowerCase()).text(type.toUpperCase().slice(0,type_name_length))
-			row.find('.mov-cat img').show().attr("src", "/images/move-" + type.toLowerCase() + ".png")
-
-			row.find('.move-power').text(power)
-			row.find('.move-accuracy').text(acc)
-			row.find('.move-effect').text(effect)
-		}
+		})
 	})
+	// expand move data 
+
 
 	// adjust base stat bar length
 	$(document).on('focusout', "td[contenteditable='true']", function(){

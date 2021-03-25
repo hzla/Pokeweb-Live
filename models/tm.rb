@@ -32,6 +32,7 @@ class Tm
 		end
 
 		[hm_moves, tm_moves]
+		
 	end
 
 	# only ever writes tm move name data

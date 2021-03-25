@@ -1,6 +1,0 @@
-ndspy.egg-info/PKG-INFO
-ndspy.egg-info/SOURCES.txt
-ndspy.egg-info/dependency_links.txt
-ndspy.egg-info/entry_points.txt
-ndspy.egg-info/requires.txt
-ndspy.egg-info/top_level.txt

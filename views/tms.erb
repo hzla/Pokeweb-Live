@@ -1,16 +1,4 @@
-<script>
-	// json object for filtering
 
-
-	// moves data for populating additonal move info when user makes edits
-	moves = <%= @tm_moves[0].concat(@tm_moves[1]).to_json %>
-
-	// info for autocomplete
-	autofills = {
-		"move_names": <%= @move_names %>
-	}
-
-</script>
 <div class="pokemon-filter">	
 	<div class="filter-title">Search Text</div>
 	<input class="filter-input" id="search-text"/>
@@ -41,7 +29,7 @@
 		</div>
 	</div>
 
-	<% @tm_moves[0].each_with_index do |move, i|  %>		
+	<% @tm_moves[0].each_with_index do |move, i|  %>	
 		<%= erb :_tm, :layout => false, :locals => { :move => move, :index => i, :name => "HM" } %>
 	<% end %>
 
@@ -51,3 +39,15 @@
 </div>
 
 
+<script>
+	// json object for filtering
+
+	// moves data for populating additonal move info when user makes edits
+	moves = <%= @tm_moves[0].concat(@tm_moves[1]).to_json %>
+
+	// info for autocomplete
+	autofills = {
+		"move_names": <%= @move_names %>
+	}
+
+</script>

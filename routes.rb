@@ -173,6 +173,8 @@ get '/tms' do
 	@tm_moves = Tm.get_tms_from @moves
 	@move_names = Move.get_names_from @moves
 
+
+
 	erb :tms
 end
 
