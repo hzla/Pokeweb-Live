@@ -89,7 +89,7 @@ If the above steps succeed the server can now be run by running
 
 ## Getting Started
 
-Place any roms you wish to edit in root folder of Pokeweb and they should show up in the Load Rom dropdown on the homepage. Loading a rom will take you to the a map headers list for the rom while the rest of the editors load in the background. This can take anywhere between 5-15 seconds. In the future you can select an already loaded rom in the Load Project dropdown.
+Place any roms you wish to edit in root folder of Pokeweb and they should show up in the Load Rom dropdown on the homepage. Make sure the rom name does not contain special characters or spaces. Loading a rom will take you to the a map headers list for the rom while the rest of the editors load in the background. Clicking on a tab before it is loaded will cause an error. This can take anywhere between 5-15 seconds. In the future you can select an already loaded rom in the Load Project dropdown.
 
 The rest is pretty simple.
 ![#1abc9c](https://via.placeholder.com/15/1abc9c/000000?text=+)Any thing this color can be clicked to be edited. 
@@ -97,6 +97,13 @@ The rest is pretty simple.
 If you make an invalid edit the border will turn <span style="color: #ff5555">red</span>, otherwise, your edits are saved automatically. 
 
 To view a history of your edits, go to the Logs tab in the navbar on the rop right.
+
+Quick Tip: If you want to save time on exporting roms, you can open the session_settings.json file in the root folder after loading a rom. 
+If you change "output_arm9": true to  "output_arm9": false, you can save about 5 seconds in rom export time. The arm9 is only used for editing TMs and if you want to enable TM editing again, you can change it back to "output_arm9": true.
+
+## Carrying Over Rom Data To Newer Releases
+
+After downloading a newer release of Pokeweb, simply export your current project data using the export link in the navbar. Copy the ROM from the "exports" folder in the old release of Pokeweb into the root folder of the newer release of Pokeweb. You can load the rom as usual from there. 
 
 ## Advanced Usage
 
