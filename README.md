@@ -101,9 +101,9 @@ To view a history of your edits, go to the Logs tab in the navbar on the rop rig
 Quick Tip: If you want to save time on exporting roms, you can open the session_settings.json file in the root folder after loading a rom. 
 If you change "output_arm9": true to  "output_arm9": false, you can save about 5 seconds in rom export time. The arm9 is only used for editing TMs and if you want to enable TM editing again, you can change it back to "output_arm9": true.
 
-## Carrying over Rom data to new releases
+## Carrying Over Rom Data To Newer Releases
 
-After downloading a newer release of Pokeweb, simply export your current project data using the export link int eh navbar. Copy the ROM from the "exports" folder in the old release of Pokeweb into the root folder of the newer release of Pokeweb. You can load the rom as usual from there. 
+After downloading a newer release of Pokeweb, simply export your current project data using the export link in the navbar. Copy the ROM from the "exports" folder in the old release of Pokeweb into the root folder of the newer release of Pokeweb. You can load the rom as usual from there. 
 
 ## Advanced Usage
 
