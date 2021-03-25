@@ -149,9 +149,9 @@ def to_raw(readable, template):
 	for n in range(0, readable["count"]):
 		raw[f'species_id_{n}'] = POKEDEX.index(readable[f'species_id_{n}'])
 
-		raw['ability'] = readable[f'ability_{n}'] * 16
+		raw[f'ability_{n}'] = readable[f'ability_{n}'] * 16
 
-		raw['ability'] += readable[f'ability_{n}']
+		raw[f'ability_{n}'] += GENDERS.index(readable[f'gender_{n}'])
 
 
 		if template == 1 or template == 3:
