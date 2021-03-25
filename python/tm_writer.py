@@ -21,11 +21,14 @@ def remove_accents(input_str):
 
 ROM_NAME = ""
 BASE_ROM = ""
+BASE_VERSION = ""
+
 
 with open(f'session_settings.json', "r") as outfile:  
 	settings = json.load(outfile) 
 	ROM_NAME = settings['rom_name']
 	BASE_ROM = settings['base_rom']
+	BASE_VERSION = settings['base_version']
 
 MOVES = open(f'{ROM_NAME}/texts/moves.txt', mode="r").read().splitlines()
 
@@ -33,13 +36,11 @@ for i,move in enumerate(MOVES):
 	MOVES[i] = re.sub(r'[^A-Za-z0-9 \-]+', '', move)
 	
 
-
 TM_FORMAT = []
-# CHANGE THESE MANUALLY IF YOU HAVE A MODIFIED ARM9
-TM_OFFSET = 633504 #0x9aaa0, #9aab8 for white
 
-if BASE_ROM == "BW2":
-	TM_OFFSET = 576644 #0X8cc84, #8ccb0 for white2, 
+TM_OFFSETS = {"B": 0x9aaa0, "W": 0x9aab8, "B2": 0x8cc84, "W2": 0x8ccb0 }
+
+TM_OFFSET = TM_OFFSETS[BASE_VERSION]
 
 for n in range(1, 93):
 	TM_FORMAT.append([2, f'tm_{n}'])

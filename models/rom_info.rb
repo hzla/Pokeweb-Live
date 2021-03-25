@@ -1,5 +1,3 @@
-
-
 class RomInfo
 
 	def self.pokemon_names
