@@ -31,6 +31,7 @@ def prng level, species, difficulty, trainer_id, trainer_class, gender
 	trainer_class.to_i.times do 
 		seed = seed.to_i(16)
 		result = 0x41C64E6D * seed + 0x00006073
+		# result = 0x41C64E6D * seed + seeder
 		seed = result.to_s(16)[-8..-1]
 
 
@@ -43,7 +44,7 @@ def prng level, species, difficulty, trainer_id, trainer_class, gender
 	if gender == "male"
 		low_bytes = "88"
 	else
-		low_bytes = "78"
+		low_bytes = "7D"
 	end
 	
 	high_bytes = "00"
@@ -51,6 +52,33 @@ def prng level, species, difficulty, trainer_id, trainer_class, gender
 	pid =  high_bytes + mid_bytes + low_bytes
 	nature_index = pid.to_i(16).to_s[-2..-1].to_i % 25
 
-	puts "#{difficulty} IV: #{natures[nature_index]}"
+	# puts "#{difficulty} IV: #{natures[nature_index]}"
+	pid
 end 
 
+puts(prng(7, 504, 0, 163, 2, "male"))
+puts(prng(8, 504, 0, 163, 2, "male"))
+puts(prng(9, 504, 0, 163, 2, "male"))
+
+ # 00263888
+ # 00986588 
+ # 000A9188
+# pid = ""
+
+# n = 0
+
+# while pid != "000A9188" do 
+# 	pid = prng(6, 504, 0, 163, 2, "male", n)
+# 	p "#{n}: #{pid}"
+# 	n += 1
+# end
+
+# 5 = bold
+
+
+
+# 	Patrat, Lvl. 4 (Completely default) - Youngster Terrell (ID 164 | Youngster(2))- ID No. 07714 - SID - 64446 PID 0026388 - IV's: 0/0/0/0/0/0 - Lax Nature
+
+# Patrat, Lvl. 5 (Completely default) - Youngster Terrell (ID 164 | Youngster(2))- ID No. 07714 - SID - 64446 PID 00986588 - IV's: 0/0/0/0/0/0 - Jolly Nature
+
+# Patrat, Lvl. 6 (Completely default) - Youngster Terrell (ID 164 | Youngster(2))- ID No. 07714 - SID - 64446 PID 000A9188 - IV's: 0/0/0/0/0/0 - Bold Nature

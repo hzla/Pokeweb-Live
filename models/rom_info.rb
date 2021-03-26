@@ -40,6 +40,34 @@ class RomInfo
 		["None","Visible","Temporary","Infatuation", "Trapped"]
 	end
 
+	def self.natures
+		 ["Hardy",
+		"Lonely",
+		"Brave",
+		"Adamant",
+		"Naughty",
+		"Bold",
+		"Docile",
+		"Relaxed",
+		"Impish",
+		"Lax",
+		"Timid",
+		"Hasty",
+		"Serious",
+		"Jolly",
+		"Naive",
+		"Modest",
+		"Mild",
+		"Quiet",
+		"Bashful",
+		"Rash",
+		"Calm",
+		"Gentle",
+		"Sassy",
+		"Careful",
+		"Quirky"]
+	end
+
 	def self.targets 
 		["Any adjacent","Random (User/ Adjacent ally)","Random adjacent ally","Any adjacent opponent","All excluding user","All adjacent opponents","User's party","User","Entire Field","Random adjacent opponent","Field Itself","Opponent's side of field","User's side of field","User (Selects target automatically)"]
 	end

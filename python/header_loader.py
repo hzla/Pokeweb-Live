@@ -10,6 +10,7 @@ import sys
 import msg_reader
 import msg_reader2
 from header_reader import output_headers_json
+import text_reader
 
 
 # code.interact(local=dict(globals(), **locals()))

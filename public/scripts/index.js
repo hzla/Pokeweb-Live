@@ -254,6 +254,16 @@ $(document).ready(function() {
 
 	})
 
+	$(document).on('click', '.iv-label', function(){
+		var card = $(this).parents('.filterable')
+		trdata_index = card.attr('data-index')
+		trpok_index = $(this).parents('.expanded-pok').attr('data-sub-index')
+		iv = $(this).parent().find('.tr-item').text()
+
+		url = `trainers/${trdata_index}/${trpok_index}/natures/${iv}`
+		window.open(url, '_blank');
+	})
+
 	
 	
 	/////////////////////////////// DATA UPLOAD ON EDIT ///////////////////////////////
@@ -955,6 +965,33 @@ function filter() {
 
 	if ($('#grottos').length > 0) {		
 		var list = Object.values(grottos).sort(function(a,b) {
+			parseInt(a["index"]) - parseInt(b["index"]);
+		})
+		console.log(list) 
+		search_results = list.filter(function(e) {
+			text_match = false
+
+			if (text_filters) {
+				texts = text_filters.split(",")
+				for (text in texts) {
+					text = texts[text]
+
+					text_match = JSON.stringify(e).toLowerCase().includes(text.toLowerCase())
+					if (text_match ) {break;}
+				} 
+			} else { // when no text filter
+				text_match = true
+			}
+
+			if (text_match) {
+				$(cards[list.indexOf(e)]).show()
+			}
+			return text_match
+		})
+	}
+
+	if ($('#natures').length > 0) {		
+		var list = Object.values(natures).sort(function(a,b) {
 			parseInt(a["index"]) - parseInt(b["index"]);
 		})
 		console.log(list) 

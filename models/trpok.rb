@@ -1,6 +1,7 @@
 class Trpok < Pokenarc
 
 
+
 	def self.get_all
 		@@narc_name = "trpok"
 		super
@@ -56,7 +57,97 @@ class Trpok < Pokenarc
 		
 		json_data["readable"]["count"] -= 1
 		File.open(file_path, "w") { |f| f.write json_data.to_json }
+	end
 
+	def self.get_nature_info_for(file_name, sub_index, desired_iv=255)
+		file_path = "#{$rom_name}/json/trpok/#{file_name}.json"
+		trpok = JSON.parse(File.open(file_path, "r"){|f| f.read})
+		ability_slot = trpok["readable"]["ability_#{sub_index}"]
+		trpok = trpok["raw"]
+
+		file_path = "#{$rom_name}/json/trdata/#{file_name}.json"
+		trdata = JSON.parse(File.open(file_path, "r"){|f| f.read})["raw"]
+
+
+		pok_id = trpok["species_id_#{sub_index}"]
+
+		file_path = "#{$rom_name}/json/personal/#{pok_id}.json"
+		personal = JSON.parse(File.open(file_path, "r"){|f| f.read})["readable"]
+
+		pok_name = personal["name"].name_titleize
+
+		trainer_id = file_name.to_i
+		trainer_class = trdata["class"]
+		pok_id = pok_id
+		pok_iv = trpok["ivs_#{sub_index}"]
+		pok_lvl = trpok["level_#{sub_index}"]
+		ability_gender = trpok["ability_#{sub_index}"]
+		personal_gender = personal["gender"]
+		trainer_gender = false
+		ability_slot = ability_slot
+
+
+		natures = RomInfo.natures
+
+		nature_info = [[],[], "Trainer #{trainer_id}'s #{pok_name}"]
+
+		255.downto(0).each do |n|
+			pid = get_pid(trainer_id, trainer_class, pok_id, n, pok_lvl, ability_gender, personal_gender, trainer_gender, ability_slot)
+
+			nature_info[0] << "With #{n} IVs: #{convert_pid_to_nature(pid, natures)}"
+		end
+
+		(820..1820).each do |n|
+			pid = get_pid(trainer_id + n, trainer_class, pok_id, desired_iv, pok_lvl, ability_gender, personal_gender, trainer_gender, ability_slot)
+
+			nature_info[1] << "At #{desired_iv} IVs With Trainer ID #{n} : #{convert_pid_to_nature(pid, natures)}"
+		end
+
+		nature_info
+	end
+
+
+	def self.convert_pid_to_nature pid, natures
+		nature = natures[(pid >> 8) % 25]
+	end
+
+	def self.get_pid(trainer_id, trainer_class, pok_id, pok_iv, pok_lvl, ability_gender, personal_gender, trainer_gender, ability_slot)
+
+		seed = trainer_id + pok_id + pok_iv + pok_lvl
+
+		trainer_class.times do 
+			seed = seed * 0x5D588B656C078965 + 0x269EC3
+		end
+
+		pid = (((seed >> 32) & 0xFFFFFFFF) >> 16 << 8) + get_gender_ab(ability_gender, personal_gender, trainer_gender, ability_slot)
+	end
+
+	def self.get_gender_ab(ability_gender, personal_gender, trainer_gender, ablity_slot)
+		result = trainer_gender ? 120 : 136
+		g = ability_gender & 0xF
+		a = (ability_gender & 0xF0) >> 4
+
+		if ability_gender != 0
+
+			if g!= 0
+				result = personal_gender
+				if g == 1
+					result += 2
+				else
+					result -= 2
+				end
+			end
+
+			case ability_slot
+			when 0
+				result
+			when 1
+				result &= 0xFFFFFFFE
+			else 
+				result |= 1
+			end
+		end
+		result
 	end
 end
 

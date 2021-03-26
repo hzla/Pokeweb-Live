@@ -1,0 +1,45 @@
+<script>
+	// json object for filtering
+	natures = <%= (@natures[0] + @natures[1]).to_json %>
+
+
+	// info for autocomplete
+
+</script>
+
+
+<div class="pokemon-filter">	
+	<div class="filter-title">Search Possible Natures/IV Combinations</div>
+	<input class="filter-input" id="search-text"/>
+	<button class="btn -default" id="search-text-btn" type="button">Search</button>
+
+	<div class="filter-msgbox">
+		Change the URL to search Trainer IDs for other IV values.
+
+	</div>			
+</div>
+
+<div class="pokemon-list spreadsheet" id="natures">
+	<div class="spreadsheet-title">
+		<%= @natures[2] %>
+	</div>
+
+	<div class="spreadsheet-col">
+		<% @natures[0].each do |nature| %>
+			<div class="expanded-field filterable">
+				<div class="expanded-field-main">
+					<%= nature %>
+				</div>
+			</div>
+		<% end %>
+		<% @natures[1].each do |nature| %>
+			<div class="expanded-field filterable">
+				<div class="expanded-field-main">
+					<%= nature %>
+				</div>
+			</div>
+		<% end %>
+	</div>
+</div>
+
+
