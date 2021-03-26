@@ -10,6 +10,7 @@ import sys
 
 import msg_reader
 import msg_reader2
+import text_reader
 from personal_reader import output_personal_json
 from learnset_reader import output_learnset_json
 from move_reader import output_moves_json
@@ -136,7 +137,6 @@ msg_file_id = narc_info['messagetext']
 
 for msg_bank in MSG_BANKS:
 	text = msg_reader.parse_msg_bank(f'{rom_name}/narcs/messagetext-{msg_file_id}.narc', msg_bank[0])
-
 	with codecs.open(f'{rom_name}/texts/{msg_bank[1]}.txt', 'w', encoding='utf_8') as f:
 	    for block in text:
 	    	for entry in block:

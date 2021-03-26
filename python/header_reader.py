@@ -10,6 +10,8 @@ import json
 import copy
 import re
 
+import text_reader
+
 # code.interact(local=dict(globals(), **locals()))
 
 ######################### FILE SPECIFIC CONSTANTS #############################

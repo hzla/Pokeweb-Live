@@ -101,7 +101,7 @@
 
 			<% (0.. @trainer_poks[i]["count"] - 1).each do |pok_index| %>
 
-				<%= erb :_trpok, :layout => false, :locals => { :trpok => @trainer_poks[i], :trpok_index => pok_index, :show => "" } %>
+				<%= erb :_trpok, :layout => false, :locals => { :trpok => @trainer_poks[i], :trpok_index => pok_index, :show => "", :trdata_index => i } %>
 
 			<% end %>	
 		</div>

@@ -51,6 +51,11 @@
     width: 100%
 }
 
+.filter-msgbox {
+    margin-top: 40px;
+    text-align: center;
+}
+
 .main-filter-title {
 	font-size: 24px;
 }
@@ -337,6 +342,19 @@ table td {
     line-height: 40px;
 }
 
+.spreadsheet.columns {
+    display: flex;
+}
+
+.spreadsheet-col {
+    display: flex;
+    flex-wrap: wrap
+}
+
+.spreadsheet-col .filterable {
+    width: 33.33%;
+}
+
 
 .spreadsheet .expanded-field {
     /*cursor: pointer;*/
@@ -597,6 +615,20 @@ div.-active svg * {
     margin-top: 0px;
 }
 
+.spreadsheet.pokemon-list#natures {
+    padding-top: 40px;
+}
+
+.spreadsheet-title {
+    width: 100%;
+    text-align: center;
+    height: 60px;
+    color: #f2f2f2;
+    font-size: 24px;
+    line-height: 40px;
+    padding: 10px 0px;
+}
+
 .filterable {
     background: #282a36;
     color: #f2f2f2;
@@ -844,6 +876,13 @@ div.-active svg * {
     width: 50px;
     cursor: pointer;
     display: none;
+}
+
+.iv-label {
+    background: #1abc9c;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 .del-btn {

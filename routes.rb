@@ -1,6 +1,6 @@
 require 'sinatra'
 
-
+require 'pry'
 require 'json'
 require 'csv'
 require_relative 'helpers'
@@ -208,6 +208,12 @@ get '/trainers' do
 	
 	
 	erb :trainers
+end
+
+get '/trainers/:trainer_id/:pok_id/natures/:desired_iv' do 
+	@natures = Trpok.get_nature_info_for params[:trainer_id], params[:pok_id], params[:desired_iv].to_i
+	@iv = params[:desired_iv]
+	erb :trpok_natures
 end
 
 post '/create' do
