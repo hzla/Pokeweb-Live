@@ -83,7 +83,6 @@ class Trpok < Pokenarc
 		pok_lvl = trpok["level_#{sub_index}"]
 		ability_gender = trpok["ability_#{sub_index}"]
 		personal_gender = personal["gender"]
-		trainer_gender = false
 		ability_slot = ability_slot
 
 
@@ -92,16 +91,18 @@ class Trpok < Pokenarc
 		nature_info = [[],[], "Trainer #{trainer_id}'s #{pok_name}"]
 
 		255.downto(0).each do |n|
-			pid = get_pid(trainer_id, trainer_class, pok_id, n, pok_lvl, ability_gender, personal_gender, trainer_gender, ability_slot)
+			pid = get_pid(trainer_id, trainer_class, pok_id, n, pok_lvl, ability_gender, personal_gender, false, ability_slot)
 
-			nature_info[0] << "With #{n} IVs: #{convert_pid_to_nature(pid, natures)}"
+			nature_info[0] << "♀ TR: With #{n} IVs: #{convert_pid_to_nature(pid, natures)}"
 		end
 
-		(820..1820).each do |n|
-			pid = get_pid(trainer_id + n, trainer_class, pok_id, desired_iv, pok_lvl, ability_gender, personal_gender, trainer_gender, ability_slot)
+		255.downto(0).each do |n|
+			pid = get_pid(trainer_id, trainer_class, pok_id, n, pok_lvl, ability_gender, personal_gender, true, ability_slot)
 
-			nature_info[1] << "At #{desired_iv} IVs With Trainer ID #{n} : #{convert_pid_to_nature(pid, natures)}"
+			nature_info[1] << "♂ TR: With #{n} IVs: #{convert_pid_to_nature(pid, natures)}"
 		end
+
+
 
 		nature_info
 	end
