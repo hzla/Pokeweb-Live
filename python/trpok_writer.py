@@ -26,7 +26,7 @@ def set_global_vars():
 
 	MOVES = open(f'{ROM_NAME}/texts/moves.txt', mode="r").read().splitlines()
 
-	GENDERS = ['Default', "Female", "Male"]
+	GENDERS = ['Default', "Male", "Feale"]
 
 	NARC_FORMAT_0 = [[1, "ivs"],
 	[1, "ability"],
