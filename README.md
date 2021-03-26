@@ -29,7 +29,7 @@ followed by
 	
    	 $ pip install ndspy
 	 
-You can now star the server with 
+You can now start the server with 
 
 	$ ruby routes.rb
 
