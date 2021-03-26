@@ -23,7 +23,7 @@ def set_global_vars():
 
 	MOVES = open(f'{ROM_NAME}/texts/moves.txt', mode="r").read().splitlines()
 
-	GENDERS = ['Default', "Female", "Male"]
+	GENDERS = ['Default', "Male", "Female"]
 
 
 

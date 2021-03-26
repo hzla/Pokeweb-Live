@@ -59,6 +59,7 @@ class Trpok < Pokenarc
 		File.open(file_path, "w") { |f| f.write json_data.to_json }
 	end
 
+
 	def self.get_nature_info_for(file_name, sub_index, desired_iv=255)
 		file_path = "#{$rom_name}/json/trpok/#{file_name}.json"
 		trpok = JSON.parse(File.open(file_path, "r"){|f| f.read})

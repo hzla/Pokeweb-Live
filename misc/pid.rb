@@ -64,10 +64,10 @@ natures = ["Hardy",
 	"Careful",
 	"Quirky"]
 
-pid = get_pid(164,2,504,0, 4, 0, 127, false, 0)
+pid = get_pid(164,2,504,0, 6, 0, 127, true, 0)
 nature = natures[(pid >> 8) % 25]
 
-p nature
+p pid.to_s(16)
 
 
 
