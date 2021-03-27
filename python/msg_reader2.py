@@ -9,11 +9,6 @@ from binary16 import binaryreader, binarywriter
 
 
 
-filepath = f'projects/black2natures/narcs/messagetext-349.narc'
-
-messages = ndspy.narc.NARC.fromFile(filepath)
-message = messages.files[382]
-
 
 def gen5get(f):
     texts = []
@@ -112,4 +107,3 @@ def gen5get(f):
     return texts
 
 
-print(gen5get(message))
