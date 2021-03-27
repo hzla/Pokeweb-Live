@@ -1,6 +1,4 @@
 require 'sinatra'
-
-require 'pry'
 require 'json'
 require 'csv'
 require_relative 'helpers'

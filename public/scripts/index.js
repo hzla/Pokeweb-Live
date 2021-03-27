@@ -812,7 +812,7 @@ function filter() {
 					text = texts[text]
 					
 					if (e["location_name"]) {
-						text_match = e["location_name"].toLowerCase().includes(text.toLowerCase())
+						text_match = JSON.stringify(e).toLowerCase().includes(text.toLowerCase())
 					}
 					
 					if (text_match ) {break;}
