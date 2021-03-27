@@ -127,7 +127,9 @@ A rough overview of the app detailing what overall structure as well as planned 
 
 ## Credits
 
-Thanks to kaphotics, andibad, bond697 for their posts on the project pokemon forums that helped with much of the format info for the narcs.
+Thanks to kaphotics, andibad, bond697 for their posts on the project pokemon forums that helped with much of the format info for the narcs, especially bond697's IDB files.
+
+Thanks to Hello007 for his research into the PID algorithm.
 
 Thanks to turtleisaac for pokeditor src code that let me look up what some of bitfields did what as well for his partial list of move effects. 
 
