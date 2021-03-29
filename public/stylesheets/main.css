@@ -218,7 +218,7 @@ table td {
 }
 
 .header-left {
-    max-width: 50vw;
+
 }
 
 .header-right {
@@ -326,9 +326,7 @@ table td {
 .field-header {
     background: #34495e;
     color: #f2f2f2;
-
 }
-
 
 
 .spreadsheet > .expanded-field.field-header {
@@ -341,6 +339,40 @@ table td {
     height: 60px;
     line-height: 40px;
 }
+
+.spreadsheet > .expanded-field.text-header {
+    background: #6272a4;
+    color: #f2f2f2;
+    cursor: pointer;
+}
+
+.spreadsheet > .expanded-field.text-header:not(:first-child) {
+   margin-top: 46px;
+}
+
+.msg-id {
+    width: 120px;
+}
+
+.spreadsheet > .expanded-field.text-header:hover {
+    background: #6272a4;
+    color: #f2f2f2;
+    cursor: pointer;
+    border: 1px solid #bd93f9;
+}
+
+.text-bank .expanded-field {
+    min-height: 46px;
+}
+
+.text-bank .log-text {
+    max-width: calc(100% - 120px);
+}
+
+.text-bank .expanded-field-main {
+    justify-content: flex-start;
+}
+
 
 .spreadsheet.columns {
     display: flex;

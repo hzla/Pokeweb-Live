@@ -63,7 +63,7 @@ $(document).ready(function() {
 	    }]
 	];
 
-	$("[contenteditable='true']").contextMenu(editable_menu)
+	$(":not(.log-text)[contenteditable='true']").contextMenu(editable_menu)
 	console.log("menu ready")
 })
 
@@ -71,9 +71,6 @@ $(document).ready(function() {
     
     //////////////// Rom Buttons //////////////////
 
-
-
-    
     $(document).on('click', '#load-rom', function(){
         var rom_name = $('#rom-select').val()
         $(this).text('loading...')
@@ -117,6 +114,26 @@ $(document).ready(function() {
 	        filter()
 	    }
 	});
+
+	$(document).on('click', '#search-textbanks-btn', function(){	
+		terms = $('#search-textbanks').val() 
+		url = `/story_texts/search?terms=${terms}`
+		if ($('.filter-check input:checked').length > 0) {	
+			url += '&ignore_case=true'
+		}
+		location.replace(url);
+    })
+
+    $(document).on('keypress', '#search-textbanks', function(e){
+	    if(e.which == 13) {
+	    	terms = $('#search-textbanks').val() 
+			url = `/story_texts/search?terms=${terms}`
+			if ($('.filter-check input:checked').length > 0) {	
+				url += '&ignore_case=true'
+			}
+			location.replace(url);
+		    }
+	});
 	///////////////////////////////////////////////////////////////////////
 
 
@@ -132,6 +149,26 @@ $(document).ready(function() {
 	    element.find('.expand-action').first().click()
 	    clearSelection()
 	})
+
+	$(document).on('dblclick', '.spreadsheet .text-header', function(){
+		element = $(this)
+
+		if (element.hasClass('expanded')) {
+			element.next().children().hide()
+			element.next().children().first().show()
+			element.removeClass('expanded')
+			return
+		}
+
+		narc = $('#texts').attr('data-narc')
+		bank_id = $(this).attr('data-index')
+        element.addClass('expanded')
+        $.get( `texts/${narc}/${bank_id}`, function( data ) {
+        	element.next().html(data)
+        });
+	})
+
+
 
 	$(document).on('click', '.expand-action', function(){
 		expanded_card = $(this).attr('data-expand')
@@ -222,6 +259,8 @@ $(document).ready(function() {
 		}
 	})	
 
+
+
 	$(document).on('click', '.add-trpok', function(){
 		var card = $(this).parents('.filterable')
 
@@ -292,42 +331,50 @@ $(document).ready(function() {
 		data["field"] = field_name
 		data["value"] = value
 		data["narc"] = narc
-		
-		if ($(this).attr('data-type') && $(this).attr('data-type').includes("int")) {
-			data["int"] = true
-			max_value = parseInt($(this).attr('data-type').split("-")[1])
-			
-			//validate int value less than max if int field
-			if ((!parseInt(value) || parseInt(value) > max_value ) && parseInt(value) != 0) {
-				$(this).css('border', '1px solid red')
-				return
+
+		if (!input.hasClass('no-validate')) {
+			if ($(this).attr('data-type') && $(this).attr('data-type').includes("int")) {
+				data["int"] = true
+				max_value = parseInt($(this).attr('data-type').split("-")[1])
+				
+				//validate int value less than max if int field
+				if ((!parseInt(value) || parseInt(value) > max_value ) && parseInt(value) != 0) {
+					$(this).css('border', '1px solid red')
+					return
+				}
+			} else {
+				// validate string in autofill bank if string field
+				valid_fields = autofills[$(this).attr('data-autofill')]
+				
+				if ($(this).attr('data-autofill') == "evo_params") {
+				  	valid_fields = autofills["pokemon_names"].concat(autofills["items"]).concat(autofills["move_names"]).concat(Array.from(Array(101).keys()))
+
+				  	if (!isNaN(value)) {
+				  		data["int"] = true
+				  	}
+
+				 }
+
+
+
+				valid_fields = JSON.stringify(valid_fields).toLowerCase()
+
+				if (!valid_fields.includes(value.toLowerCase()) || value == "-" || value == "") {
+					
+					
+					$(this).css('border', '1px solid red')
+					
+
+					return
+				}
 			}
 		} else {
-			// validate string in autofill bank if string field
-			valid_fields = autofills[$(this).attr('data-autofill')]
-			
-			if ($(this).attr('data-autofill') == "evo_params") {
-			  	valid_fields = autofills["pokemon_names"].concat(autofills["items"]).concat(autofills["move_names"]).concat(Array.from(Array(101).keys()))
-
-			  	if (!isNaN(value)) {
-			  		data["int"] = true
-			  	}
-
-			 }
-
-
-
-			valid_fields = JSON.stringify(valid_fields).toLowerCase()
-
-			if (!valid_fields.includes(value.toLowerCase()) || value == "-" || value == "") {
-				
-				
-				$(this).css('border', '1px solid red')
-				
-
-				return
-			}
+			data["narc"] = $('#texts').attr('data-narc')
+			data["narc_const"] = "text"
+			data["file_name"] = data["field"]
 		}
+		
+		
 
 		// validate required fields
 		if ($(this).attr('data-require')) {
@@ -379,7 +426,7 @@ $(document).ready(function() {
 	})
 
 	//high light text on click
-	$(document).on('click', "[contenteditable='true']", function(e){
+	$(document).on('click', ":not(.log-text)[contenteditable='true']", function(e){
 		$(this).selectText()
 	})
 
@@ -626,11 +673,6 @@ $(document).ready(function() {
 	        	card.find('.expanded-card-subcontent')[parseInt(pok_index)].remove()
 	        });
 		}
-
-
-
-
-
 	})
 
 

@@ -1,5 +1,6 @@
 import ndspy
 import ndspy.rom
+import ndspy.narc
 import code 
 import io
 import os
@@ -11,11 +12,13 @@ import math
 
 
 def set_global_vars():
-	global ROM_NAME, NARC_FORMATS, POKEDEX, ITEMS, TRDATA, MOVES, GENDERS
+	global ROM_NAME, NARC_FORMATS, POKEDEX, ITEMS, TRDATA, MOVES, GENDERS, NARC_PATH
 	
 	with open(f'session_settings.json', "r") as outfile:  
 		settings = json.load(outfile) 
 		ROM_NAME = settings['rom_name']
+		NARC_FILE_ID = settings['trpok']
+		NARC_PATH = f'{ROM_NAME}/narcs/trpok-{NARC_FILE_ID}.narc'
 
 
 	POKEDEX = open(f'{ROM_NAME}/texts/pokedex.txt', "r").read().splitlines()
@@ -24,8 +27,6 @@ def set_global_vars():
 	MOVES = open(f'{ROM_NAME}/texts/moves.txt', mode="r").read().splitlines()
 
 	GENDERS = ['Default', "Male", "Female"]
-
-
 
 	NARC_FORMAT_0 = [[1, "ivs"],
 	[1, "ability"],
@@ -68,24 +69,24 @@ def set_global_vars():
 	NARC_FORMATS = [NARC_FORMAT_0,NARC_FORMAT_1,NARC_FORMAT_2,NARC_FORMAT_3]
 
 
-	
-def output_trpok_json(narc):
+def output_trpok_json(trpok_info):
 	set_global_vars()
 	data_index = 0
+	narc = ndspy.narc.NARC.fromFile(NARC_PATH)
 
-	while len(narc.files) < 1000:
+	while len(narc.files) < 850:
 		narc.files.append(narc.files[0])
 
 	for data in narc.files:	
-		tr_data = json.load(open(f'{ROM_NAME}/json/trdata/{data_index}.json', "r")) 
 		data_name = data_index
-
-		template = tr_data["raw"]["template"]
-		num_pokemon = tr_data["raw"]["num_pokemon"]
+		template = trpok_info[data_index][0]
+		num_pokemon = trpok_info[data_index][1]
 		narc_format = NARC_FORMATS[template]
 
 		read_narc_data(data, narc_format, data_name, "trpok", template, num_pokemon)
 		data_index += 1
+
+	print("trpok")
 
 def read_narc_data(data, narc_format, file_name, narc_name, template, num_pokemon):
 	stream = io.BytesIO(data)
