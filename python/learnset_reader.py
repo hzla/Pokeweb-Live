@@ -39,7 +39,7 @@ def set_global_vars():
 #################################################################
 ## TODO: create universal read_narc_data function that takes name of narc, and to_readable() function as args
 
-def output_learnset_json(narc):
+def output_learnsets_json(narc):
 	set_global_vars()
 	data_index = 0
 	for data in narc.files:

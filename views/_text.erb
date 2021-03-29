@@ -1,0 +1,9 @@
+<% text.each do |entry| %>
+	<div class="expanded-field filterable">
+		<div class="expanded-field-main">
+		<div class="msg-id">MSG <%= entry[0].split("_")[1] %></div>
+		<div class="log-text"><%= entry[1] %></div>
+<!-- 		<%= field "bank_#{bank_id}_entry_#{entry[0]}", 'log-text no-validate', {value: entry[1],  narc: narc_name} %> -->
+		</div>
+	</div>		
+<% end %>

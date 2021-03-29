@@ -13,7 +13,6 @@ def read16(stream):
 def read32(stream):
 	return int.from_bytes(stream.read(4), 'little')
 
-
 def parse_msg_bank(filepath, msg_bank):
 	messages = ndspy.narc.NARC.fromFile(filepath)
 	message = messages.files[msg_bank]

@@ -7,18 +7,20 @@ import os.path
 from os import path
 import json
 import copy
+import ndspy.narc
+from trpok_reader import output_trpok_json
 
 
 def set_global_vars():
-	global ROM_NAME, NARC_FORMAT, TRAINER_CLASSES, ITEMS, BATTLE_TYPES, TRAINER_NAMES, AIS, TEMPLATE_FLAGS, BASE_ROM
+	global ROM_NAME, NARC_FORMAT, TRAINER_CLASSES, ITEMS, BATTLE_TYPES, TRAINER_NAMES, AIS, TEMPLATE_FLAGS, BASE_ROM, TRPOK_INFO
 	
 	with open(f'session_settings.json', "r") as outfile:  
 		settings = json.load(outfile) 
 		ROM_NAME = settings['rom_name']
 		BASE_ROM = settings['base_rom']
 
-	TEMPLATE_FLAGS =["has_moves", "has_items"]
 
+	TEMPLATE_FLAGS =["has_moves", "has_items"]
 
 	TRAINER_CLASSES = open(f'{ROM_NAME}/texts/tr_classes.txt', "r").read().splitlines()
 
@@ -30,6 +32,8 @@ def set_global_vars():
 	ITEMS = open(f'{ROM_NAME}/texts/items.txt', mode="r").read().splitlines()
 
 	BATTLE_TYPES = ["Singles", "Doubles", "Triples", "Rotation"]
+
+	TRPOK_INFO = []
 
 	AIS = ["Prioritize Effectiveness",
 	"Evaluate Attacks",
@@ -64,13 +68,15 @@ def output_trdata_json(narc):
 	set_global_vars()
 	data_index = 0
 	# code.interact(local=dict(globals(), **locals()))
-	while len(narc.files) < 1000:
+	while len(narc.files) < 850:
 		narc.files.append(narc.files[0])
 
 	for data in narc.files:
 		data_name = data_index
 		read_narc_data(data, NARC_FORMAT, data_name, "trdata")
 		data_index += 1
+
+	output_trpok_json(TRPOK_INFO)
 
 def read_narc_data(data, narc_format, file_name, narc_name):
 	stream = io.BytesIO(data)
@@ -83,6 +89,7 @@ def read_narc_data(data, narc_format, file_name, narc_name):
 
 	#CONVERT TO READABLE FORMAT USING CONSTANTS/TEXT BANKS
 	file["readable"] = to_readable(file["raw"], file_name)
+	TRPOK_INFO.append([file["raw"]["template"], file["raw"]["num_pokemon"]])
 	
 	#OUTPUT TO JSON
 	if not os.path.exists(f'{ROM_NAME}/json/{narc_name}'):
