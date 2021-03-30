@@ -142,6 +142,11 @@ get '/personal/collection' do
 	erb :personal_partial, layout: false
 end
 
+get '/personal/taken_sprite_indexes' do
+	@taken = Personal.unavailable_sprite_indexes
+
+	erb :sprites
+end
 # called by ajax when user makes an edit
 post '/update' do 
 	narc_name = params['data']['narc']
@@ -179,8 +184,6 @@ get '/tms' do
 	@moves = Move.get_all
 	@tm_moves = Tm.get_tms_from @moves
 	@move_names = Move.get_names_from @moves
-
-
 
 	erb :tms
 end
