@@ -72,6 +72,10 @@ def set_global_vars():
 def output_personal_json(narc):
 	set_global_vars()
 	data_index = 0
+	
+	while len(narc.files) < 800:
+		narc.files.append(narc.files[-2])
+
 	for data in narc.files:
 		data_name = data_index
 		read_narc_data(data, PERSONAL_NARC_FORMAT, data_name)
@@ -116,6 +120,9 @@ def to_readable(raw, file_name):
 		gen = "6"
 	readable["gen"] = gen
 
+
+
+
 	try:
 		readable["name"] = POKEDEX[file_name]
 	except IndexError:
@@ -140,6 +147,8 @@ def to_readable(raw, file_name):
 	readable["ability_1"] = ABILITIES[raw["ability_1"]]
 	readable["ability_2"] = ABILITIES[raw["ability_2"]]
 	readable["ability_3"] = ABILITIES[raw["ability_3"]]
+
+	readable["form_sprites"] = "Default"
 
 	binary_ev = bin(raw["evs"])[2:].zfill(16) 
 	index = 16

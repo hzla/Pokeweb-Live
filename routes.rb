@@ -128,7 +128,6 @@ end
 get '/personal/collection' do
 	@poke_data = Personal.poke_data
 	@moves = Move.get_all
-
 	@tm_names = Tm.get_names
 	@tutor_moves = Personal.tutor_moves
 	@evolutions = Evolution.get_all

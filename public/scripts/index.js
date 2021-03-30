@@ -343,30 +343,34 @@ $(document).ready(function() {
 					return
 				}
 			} else {
-				// validate string in autofill bank if string field
-				valid_fields = autofills[$(this).attr('data-autofill')]
 				
-				if ($(this).attr('data-autofill') == "evo_params") {
-				  	valid_fields = autofills["pokemon_names"].concat(autofills["items"]).concat(autofills["move_names"]).concat(Array.from(Array(101).keys()))
-
-				  	if (!isNaN(value)) {
-				  		data["int"] = true
-				  	}
-
-				 }
-
-
-
-				valid_fields = JSON.stringify(valid_fields).toLowerCase()
-
-				if (!valid_fields.includes(value.toLowerCase()) || value == "-" || value == "") {
+				if (input.attr('data-type') != 'array') {
+									// validate string in autofill bank if string field
+					valid_fields = autofills[$(this).attr('data-autofill')]
 					
-					
-					$(this).css('border', '1px solid red')
-					
+					if ($(this).attr('data-autofill') == "evo_params") {
+					  	valid_fields = autofills["pokemon_names"].concat(autofills["items"]).concat(autofills["move_names"]).concat(Array.from(Array(101).keys()))
 
-					return
+					  	if (!isNaN(value)) {
+					  		data["int"] = true
+					  	}
+
+					 }
+
+
+					valid_fields = JSON.stringify(valid_fields).toLowerCase()
+
+					if (!valid_fields.includes(value.toLowerCase()) || value == "-" || value == "") {
+						
+						
+						$(this).css('border', '1px solid red')
+						
+
+						return
+					}
+
 				}
+
 			}
 		} else {
 			data["narc"] = $('#texts').attr('data-narc')
@@ -753,7 +757,7 @@ function filter() {
 			}
 			
 			if (text_filters) {
-				texts = text_filters.split(",")
+				texts = text_filters.split(", ")
 				for (text in texts) {
 					// console.log(texts)
 					text = texts[text]
@@ -814,7 +818,7 @@ function filter() {
 			}
 			
 			if (text_filters) {
-				texts = text_filters.split(",")
+				texts = text_filters.split(", ")
 				for (text in texts) {
 					// console.log(texts)
 					text = texts[text]
@@ -848,7 +852,7 @@ function filter() {
 			text_match = false
 
 			if (text_filters) {
-				texts = text_filters.split(",")
+				texts = text_filters.split(", ")
 				for (text in texts) {
 					// console.log(texts)
 					text = texts[text]
@@ -879,7 +883,7 @@ function filter() {
 			text_match = false
 
 			if (text_filters) {
-				texts = text_filters.split(",")
+				texts = text_filters.split(", ")
 				for (text in texts) {
 					text = texts[text]
 
@@ -906,7 +910,7 @@ function filter() {
 			text_match = false
 
 			if (text_filters) {
-				texts = text_filters.split(",")
+				texts = text_filters.split(", ")
 				for (text in texts) {
 					text = texts[text]
 
@@ -931,7 +935,7 @@ function filter() {
 			text_match = false
 
 			if (text_filters) {
-				texts = text_filters.split(",")
+				texts = text_filters.split(", ")
 				for (text in texts) {
 					text = texts[text]
 
@@ -958,7 +962,7 @@ function filter() {
 			text_match = false
 
 			if (text_filters) {
-				texts = text_filters.split(",")
+				texts = text_filters.split(", ")
 				for (text in texts) {
 					text = texts[text]
 
@@ -986,7 +990,7 @@ function filter() {
 			text_match = false
 
 			if (text_filters) {
-				texts = text_filters.split(",")
+				texts = text_filters.split(", ")
 				for (text in texts) {
 					text = texts[text]
 
@@ -1014,7 +1018,7 @@ function filter() {
 			text_match = false
 
 			if (text_filters) {
-				texts = text_filters.split(",")
+				texts = text_filters.split(", ")
 				for (text in texts) {
 					text = texts[text]
 
@@ -1041,7 +1045,7 @@ function filter() {
 			text_match = false
 
 			if (text_filters) {
-				texts = text_filters.split(",")
+				texts = text_filters.split(", ")
 				for (text in texts) {
 					text = texts[text]
 

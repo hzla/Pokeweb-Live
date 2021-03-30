@@ -42,6 +42,10 @@ def set_global_vars():
 def output_learnsets_json(narc):
 	set_global_vars()
 	data_index = 0
+
+	while len(narc.files) < 800:
+		narc.files.append(narc.files[-2])
+
 	for data in narc.files:
 		data_name = data_index
 		read_narc_data(data, LEARNSET_NARC_FORMAT, data_name)
