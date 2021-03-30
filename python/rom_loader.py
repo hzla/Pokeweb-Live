@@ -171,7 +171,7 @@ if narc_info["base_rom"] == "BW2":
 	sprite_file_path = f'{rom_name}/narcs/sprites-{settings["sprites"]}.narc'
 	narc = ndspy.narc.NARC.fromFile(sprite_file_path)
 
-	for n in range(15):
+	while len(narc.files) < 15080:
 		narc.files.append(narc.files[-1])
 
 	placeholder_sprites = narc.files[15000:15020]
@@ -187,7 +187,7 @@ if narc_info["base_rom"] == "BW2":
 	sprite_file_path = f'{rom_name}/narcs/icons-{settings["icons"]}.narc'
 	narc = ndspy.narc.NARC.fromFile(sprite_file_path)
 
-	for n in range(6):
+	while len(narc.files) < 1516:
 		narc.files.append(narc.files[-1])
 
 	placeholder_sprites = narc.files[1502:1504]
