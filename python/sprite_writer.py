@@ -22,7 +22,12 @@ def write_sprite_to_index(sprite_indexes, target_index):
 	
 	form_count = 0
 	for sprite_index in sprite_indexes:
-		sprite_index = int(sprite_index) 
+		is_shiny = False
+		print(sprite_index)
+		if sprite_index.split(" ")[0].lower() == "shiny":
+			is_shiny = True
+
+		sprite_index = int(sprite_index.split(" ")[-1]) 
 
 
 		# sprites
@@ -30,6 +35,10 @@ def write_sprite_to_index(sprite_indexes, target_index):
 		narc = ndspy.narc.NARC.fromFile(sprite_file_path)
 		
 		to_copy = narc.files[sprite_index * 20:(sprite_index + 1) * 20]
+
+		if is_shiny:
+			to_copy[18] = to_copy[19]
+
 		narc.files[13700 + (20 * target_index): 13720 + (20 * target_index)] = to_copy
 
 		print(f'{sprite_index * 20} {(sprite_index + 1) * 20}')
