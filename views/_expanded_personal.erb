@@ -2,7 +2,14 @@
 	<div class="expanded-left">
 		<% Personal.misc_integer_fields.each do |misc| %>
 			<div class="expanded-field">
+			
+			<% if misc[3] %>	
+				<a target="_blank" href="personal/taken_sprite_indexes"><div class="expanded-field-name sp-label"><%= misc[0] %></div></a>
+			<% else %>
 				<div class="expanded-field-name"><%= misc[0] %></div>
+			<% end %>
+				
+
 				<div data-narc="personal" data-type="<%= misc[2] || "int-255" %>" data-field-name="<%= misc[1] %>" class="expanded-field-value" contenteditable="true"><%= pok[misc[1]] %></div>
 			</div>
 		<% end %>
