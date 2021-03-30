@@ -23,7 +23,7 @@ def write_sprite_to_index(sprite_indexes, target_index):
 	form_count = 0
 	for sprite_index in sprite_indexes:
 		sprite_index = int(sprite_index) 
-		target_index = target_index + form_count
+
 
 		# sprites
 		sprite_file_path = f'{rom_name}/narcs/sprites-{settings["sprites"]}.narc'
@@ -33,7 +33,7 @@ def write_sprite_to_index(sprite_indexes, target_index):
 		narc.files[13700 + (20 * target_index): 13720 + (20 * target_index)] = to_copy
 
 		print(f'{sprite_index * 20} {(sprite_index + 1) * 20}')
-		print()
+		print(f'{13700 + (20 * target_index)}: {13720 + (20 * target_index)}')
 
 		with open(f'{rom_name}/narcs/sprites-{settings["sprites"]}.narc', 'wb') as f:
 			f.write(narc.save())
@@ -50,8 +50,9 @@ def write_sprite_to_index(sprite_indexes, target_index):
 		with open(f'{rom_name}/narcs/icons-{settings["icons"]}.narc', 'wb') as f:
 			f.write(narc.save())
 
-		form_count += 1
+		target_index += 1
 
-		print("saved")
+
+
 
 
