@@ -5,7 +5,7 @@
 				<%= img "pokesprite/#{pok["name"].gsub(". ", "-").downcase}.png" %>
 			</div>
 		</div>
-		<div class="pokemon-card__name"><%= pok["name"].titleize %></div>
+		<div class="pokemon-card__name">#<%= pok["index"] %> <%= pok["name"].titleize %></div>
 		<div class="pokemon-types">
 			<div data-narc="personal" data-autofill="types" data-field-name="type_1" class="pokemon-type -<%= pok["type_1"].downcase %>" contenteditable="true" data-autocomplete-spy><%= pok["type_1"] %></div>
 			<div data-narc="personal" data-autofill="types" data-field-name="type_2" class="pokemon-type -<%= pok["type_2"].downcase %>" contenteditable="true" data-autocomplete-spy><%= pok["type_2"] %></div>

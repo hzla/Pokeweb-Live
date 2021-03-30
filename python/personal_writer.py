@@ -7,6 +7,7 @@ import os
 import json
 import copy
 import sys
+import sprite_writer
 
 # code.interact(local=dict(globals(), **locals()))
 
@@ -102,11 +103,16 @@ def write_narc_data(file_name, narc_format, personal_narc):
 		for entry in narc_format: 
 			data = personal_data["raw"][entry[1]]
 			write_bytes(stream, entry[0], data)
-	
-	narc_entry_data = bytearray(personal_narc.files[file_name])
-	narc_entry_data[0:len(stream)] = stream
-	personal_narc.files[file_name] = narc_entry_data
-	
+
+	if file_name >= len(personal_narc.files):
+		narc_entry_data = bytearray()
+		narc_entry_data[0:len(stream)] = stream
+		personal_narc.files.append(narc_entry_data)
+	else:
+		narc_entry_data = bytearray(personal_narc.files[file_name])
+		narc_entry_data[0:len(stream)] = stream
+		personal_narc.files[file_name] = narc_entry_data
+		
 def write_readable_to_raw(file_name):
 	personal_data = {}
 	with open(f'{ROM_NAME}/json/personal/{file_name}.json', "r", encoding='ISO8859-1') as outfile:  	
@@ -119,8 +125,13 @@ def write_readable_to_raw(file_name):
 		new_raw_data = to_raw(personal_data["readable"])
 		personal_data["raw"] = new_raw_data
 
+		if personal_data["raw"]["form_sprites"] != "Default":
+			sprite_writer.write_sprite_to_index(personal_data["raw"]["form_sprites"], personal_data["raw"]["form"])
+
 	with open(f'{ROM_NAME}/json/personal/{file_name}.json', "w", encoding='ISO8859-1') as outfile: 
 		json.dump(personal_data, outfile)
+
+
 
 def to_raw(readable):
 	raw = copy.deepcopy(readable)

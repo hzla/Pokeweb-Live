@@ -54,7 +54,9 @@ BW_NARCS = [["a/0/1/6", "personal"],
 ["a/0/9/3", "trpok"],
 ["a/1/2/6", "encounters"],
 ["a/0/0/3", "storytext"],
-["a/0/5/6", "scripts"]]
+["a/0/5/6", "scripts"],
+["a/0/0/4", "sprites"],
+["a/0/0/7", "icons"]]
 
 BW_MSG_BANKS = [[286, "moves"],
 [285, "abilities"],
@@ -79,7 +81,9 @@ BW2_NARCS = [["a/0/1/6", "personal"],
 ["a/0/5/6", "scripts"],
 ["a/2/8/2", "marts"],
 ["a/2/8/3", "mart_counts"],
-["a/2/7/3", "grottos"]]
+["a/2/7/3", "grottos"],
+["a/0/0/4", "sprites"],
+["a/0/0/7", "icons"]]
 
 BW2_MSG_BANKS = [[488, "moves"],
 [487, "abilities"],
@@ -159,7 +163,50 @@ with open(f'session_settings.json', "w+") as outfile:
 	json.dump(settings, outfile) 
 
 #############################################################
-################### CONVERT TO JSON #########################
+################### Provision Placeholders for alt form sprites ###########
+
+
+if narc_info["base_rom"] == "BW2":
+	# sprites
+	sprite_file_path = f'{rom_name}/narcs/sprites-{settings["sprites"]}.narc'
+	narc = ndspy.narc.NARC.fromFile(sprite_file_path)
+
+	for n in range(15):
+		narc.files.append(narc.files[-1])
+
+	placeholder_sprites = narc.files[15000:15020]
+
+	
+	for n in range(100):
+		narc.files += placeholder_sprites
+
+	with open(f'{rom_name}/narcs/sprites-{settings["sprites"]}.narc', 'wb') as f:
+		f.write(narc.save())
+
+	# party icons 
+	sprite_file_path = f'{rom_name}/narcs/icons-{settings["icons"]}.narc'
+	narc = ndspy.narc.NARC.fromFile(sprite_file_path)
+
+	for n in range(6):
+		narc.files.append(narc.files[-1])
+
+	placeholder_sprites = narc.files[1502:1504]
+
+	
+	for n in range(100):
+		narc.files += placeholder_sprites
+
+	with open(f'{rom_name}/narcs/icons-{settings["icons"]}.narc', 'wb') as f:
+		f.write(narc.save())
+
+
+
+	
+
+
+
+#############################################################
+####################CONVERT TO JSON #########################
 
 
 os.system("python python/parallel.py")

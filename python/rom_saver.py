@@ -65,6 +65,8 @@ with open(f'session_settings.json', "r") as outfile:
 		mart_narc_file_id = settings["marts"]
 		mart_counts_narc_file_id = settings["mart_counts"]
 		grotto_narc_file_id = settings["grottos"]
+		sprites_narc_file_id = settings["sprites"]
+		icons_narc_file_id = settings["icons"]
 
 if settings["output_arm9"] == True:
 
@@ -90,6 +92,8 @@ if settings["base_rom"] == "BW2":
 	import grotto_writer
 	mart_writer.output_narc()
 	grotto_writer.output_narc()
+
+
 
 
 personal_narc_filepath = f'{rom_name}/narcs/personal-{personal_narc_file_id}.narc'
@@ -126,6 +130,8 @@ if settings["base_rom"] == "BW2":
 	print("saved mart")
 	rom.files[grotto_narc_file_id] = open(grotto_narc_filepath, 'rb').read()
 	print("saved grotto")
+	rom.files[sprites_narc_file_id] = open(f'{rom_name}/narcs/sprites-{sprites_narc_file_id}.narc', 'rb').read()
+	rom.files[icons_narc_file_id] = open(f'{rom_name}/narcs/icons-{icons_narc_file_id}.narc', 'rb').read()
 
 
 print("attempting save")
