@@ -125,7 +125,8 @@ def write_readable_to_raw(file_name):
 		new_raw_data = to_raw(personal_data["readable"])
 		personal_data["raw"] = new_raw_data
 
-		if personal_data["raw"]["form_sprites"] != "Default":
+		if personal_data["raw"]["form_sprites"] != "Default" and personal_data["raw"]["form"] != 0:
+			print("updating sprites")
 			sprite_writer.write_sprite_to_index(personal_data["raw"]["form_sprites"], personal_data["raw"]["form"])
 
 	with open(f'{ROM_NAME}/json/personal/{file_name}.json', "w", encoding='ISO8859-1') as outfile: 

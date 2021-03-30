@@ -7,6 +7,7 @@ import codecs
 import os
 import json
 import sys
+import copy
 
 
 def write_sprite_to_index(sprite_indexes, target_index):
@@ -23,7 +24,6 @@ def write_sprite_to_index(sprite_indexes, target_index):
 	form_count = 0
 	for sprite_index in sprite_indexes:
 		is_shiny = False
-		print(sprite_index)
 		if sprite_index.split(" ")[0].lower() == "shiny":
 			is_shiny = True
 
@@ -34,7 +34,7 @@ def write_sprite_to_index(sprite_indexes, target_index):
 		sprite_file_path = f'{rom_name}/narcs/sprites-{settings["sprites"]}.narc'
 		narc = ndspy.narc.NARC.fromFile(sprite_file_path)
 		
-		to_copy = narc.files[sprite_index * 20:(sprite_index + 1) * 20]
+		to_copy = copy.deepcopy(narc.files[sprite_index * 20:(sprite_index + 1) * 20])
 
 		if is_shiny:
 			to_copy[18] = to_copy[19]
