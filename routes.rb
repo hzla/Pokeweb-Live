@@ -93,9 +93,6 @@ get '/personal' do
 	@poke_data = Personal.poke_data
 	@moves = Move.get_all
 	@move_names = Move.get_names_from @moves
-	@tm_names = Tm.get_names
-	@tutor_moves = Personal.tutor_moves
-	@evolutions = Evolution.get_all
 
 
 	@poke_data.each do |pok|
@@ -128,9 +125,6 @@ end
 get '/personal/collection' do
 	@poke_data = Personal.poke_data
 	@moves = Move.get_all
-	@tm_names = Tm.get_names
-	@tutor_moves = Personal.tutor_moves
-	@evolutions = Evolution.get_all
 
 	@poke_data.each do |pok|
 		if pok
@@ -236,7 +230,13 @@ post '/create' do
 	end
 
 	erb ("_" + narc_name).to_sym, :layout => false, :locals => { narc_name.to_sym => created, "#{narc_name}_index".to_sym => params['data']['sub_index'], :show => "show-flex" }
+end
 
+get '/trpoks/moves/:trpok_id/:pok_index' do 
+	moves = Trpok.fill_lvl_up_moves params[:lvl], params[:trpok_id], params[:pok_index]
+
+	content_type :json
+  	return { moves: moves }.to_json
 
 end
 

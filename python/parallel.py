@@ -13,6 +13,7 @@ from item_reader import output_items_json
 from evolution_reader import output_evolutions_json
 from grotto_reader import output_grottos_json
 from mart_reader import output_marts_json
+from overworld_reader import output_overworlds_json
 
 
 def output(narc):	
@@ -27,7 +28,8 @@ narc_info = {} ##store narc names and file id pairs
 with open(f'session_settings.json', "r") as outfile:  
 	narc_info = json.load(outfile) 
 
-narcs_to_output = ["trdata", "personal", "learnsets", "moves", "encounters", "items", "evolutions"]
+narcs_to_output = ["trdata", "personal", "learnsets", "moves", "encounters", "items", "evolutions", "overworlds"]
+# narcs_to_output = ["overworlds"]
 if narc_info["base_rom"] == "BW2":
 	narcs_to_output += ["grottos", "marts"]
 

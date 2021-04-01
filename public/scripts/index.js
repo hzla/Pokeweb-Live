@@ -293,6 +293,30 @@ $(document).ready(function() {
 
 	})
 
+	$(document).on('click', '.autofill-btn', function() {
+		card = $(this).parents('.expanded-pok')
+		lvl = card.find('.trpok-lvl').text()
+		pok_index = card.attr('data-sub-index')
+		trainer = $(this).parents('.filterable').attr('data-index')
+
+		moves = []
+
+
+		$.get(`trpoks/moves/${trainer}/${pok_index}?lvl=${lvl}`, function( data ) {
+        	console.log(data)
+        	moves = data["moves"]
+        	card.find('.trpok-mov').each(function(i,v) {
+	        	console.log(v)
+	        	$(this).text(moves[i])  
+	        })
+        });
+
+
+
+
+
+	})
+
 	$(document).on('click', '.iv-label', function(){
 		var card = $(this).parents('.filterable')
 		trdata_index = card.attr('data-index')
