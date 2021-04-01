@@ -1,0 +1,33 @@
+
+
+Looking AROUND (randomly)
+Walking AROUND randomly till max
+Looking UP and DOWN
+Looking LEFT and RIGHT
+Looking UP and LEFT
+Looking UP and RIGHT
+Looking LEFT and DOWN
+Looking RIGHT and DOWN
+Looking UP, DOWN and LEFT (randomly)
+Looking UP, DOWN and RIGHT (randomly)
+Looking UP, LEFT and RIGHT (randomly)
+Looking DOWN, LEFT and RIGHT (randomly)
+Looking UP
+Looking DOWN
+Looking LEFT
+Looking RIGHT
+Looking UP, LEFT, DOWN, RIGHT (counter-clockwise)
+Looking UP, RIGHT, DOWN, LEFT (clockwise)
+
+
+
+
+
+
+
+
+
+
+
+Running DOWN till max, RIGHT till max; then returns + repeats
+Running RIGHT till max, UP till max; then returns + repeats
