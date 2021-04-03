@@ -38,8 +38,14 @@ def write_sprite_to_index(sprite_indexes, target_index):
 		# sprites
 		sprite_file_path = f'{rom_name}/narcs/sprites-{settings["sprites"]}.narc'
 		narc = ndspy.narc.NARC.fromFile(sprite_file_path)
+
+
+		# code.interact(local=dict(globals(), **locals()))
+		
 		
 		to_copy = copy.deepcopy(narc.files[sprite_index * 20:(sprite_index + 1) * 20])
+
+
 
 		if is_shiny:
 			to_copy[18] = to_copy[19]
@@ -47,6 +53,11 @@ def write_sprite_to_index(sprite_indexes, target_index):
 		if is_random:
 			rand_sprite = random.randint(1,649) + random.randint(0,1)
 			to_copy[18] = narc.files[(rand_sprite * 20) + 18]
+
+		
+
+
+
 
 		narc.files[13700 + (20 * target_index): 13720 + (20 * target_index)] = to_copy
 

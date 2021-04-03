@@ -137,6 +137,8 @@ class Trpok < Pokenarc
 			nature_info[1] << "♂ TR: With #{n} IVs: #{convert_pid_to_nature(pid, natures)}"
 		end
 
+		nature_info[3] = trpok["ivs_#{sub_index}"]
+
 
 
 		nature_info
@@ -158,7 +160,7 @@ class Trpok < Pokenarc
 		pid = (((seed >> 32) & 0xFFFFFFFF) >> 16 << 8) + get_gender_ab(ability_gender, personal_gender, trainer_gender, ability_slot)
 	end
 
-	def self.get_gender_ab(ability_gender, personal_gender, trainer_gender, ablity_slot)
+	def self.get_gender_ab(ability_gender, personal_gender, trainer_gender, ability_slot)
 		result = trainer_gender ? 120 : 136
 		g = ability_gender & 0xF
 		a = (ability_gender & 0xF0) >> 4

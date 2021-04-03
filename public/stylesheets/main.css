@@ -387,6 +387,9 @@ table td {
     width: 33.33%;
 }
 
+.filterable.active {
+    background: #bd93f9 !important;
+}
 
 .spreadsheet .expanded-field {
     /*cursor: pointer;*/
@@ -1006,4 +1009,28 @@ div.-active svg * {
 
 .expanded-grotto .expanded-left.grotto-item {
     width: 25%;
+}
+
+
+.overworld-canvas {
+    background: #f2f2f2;
+    border: 1px solid transparent;
+    position: absolute;
+    top: 40px;
+    left: 80px;
+}
+
+.overworld-item {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background: red;
+    overflow: hidden;
+}
+
+.overworld-sprite {
+    height: auto;
+    width: 20px;
+    bottom: 0px;
+    position: absolute;
 }
