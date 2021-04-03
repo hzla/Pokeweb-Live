@@ -340,3 +340,18 @@ get '/logs' do
 	erb :logs
 
 end
+
+####################################### OVERWORLDS ###############
+
+get '/overworlds/:id' do 
+
+	@overworld = Overworld.get_data("#{$rom_name}/json/overworlds/#{params[:id]}.json")
+
+	@box = Overworld.get_bounding_box @overworld
+
+	@width = @box[1][0] - @box[0][0]
+	@height = @box[1][1] - @box[0][1]
+
+	erb :overworld
+
+end
