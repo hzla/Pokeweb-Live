@@ -1,0 +1,91 @@
+
+Notes: user specified adjustable variance means user will enter a number N between 0-100 and the randomizer will search for a value within N% of the original. 
+
+bst = Base Stat Total
+
+MAPS OPTIONS:
+	use original
+	add grass/water to cities (on preset locations)
+
+OVERWORLD OPTIONS:
+	use original 
+	unavoidable trainers
+	+N unavoidable trainers on routes (up to a limit because this is really hard to do)
+	+N unavoidable trainers in gyms (up to a limit because this is really hard to do)
+
+TRAINERS OPTIONS:
+	use original
+	held item use % on all
+	held item use % on bosses
+	max ivs
+	% chance to be double
+	% chance to be triple
+	% chance to be rotation
+	allow pokestudio mons
+
+	randomize mons
+		with original bst by user specified adjustable variance
+		with similar typing
+		with similar role (looks at top 2 stats)
+
+	randomize moves 
+		with smogon moveset bank
+		with similar power
+		with learnset
+
+	level appropriate moves
+	randomize items 
+		from smogon
+		from all held items
+
+POKEMON OPTIONS:
+	use original 
+	randomize
+		bst by user specified adjustable variance
+		bst by redistribution
+
+
+LEARNSETS OPTIONS: 
+	use original
+	randomize 
+		with same type
+		with same power by user specified adjustable variance
+	remove setup
+	remove weather
+	blacklist moves
+
+EVOLUTIONS OPTIONS:
+	use original
+	randomize
+		with same evo tier
+		with same/similar typing
+	remove trade evos
+	convert friendship evos to lvl up (lvl calculated by bst)
+
+ENCOUNTERS OPTIONS:
+	use original
+	randomize
+		with same/similar typing
+		with similar bst by user specified adjustable variance
+	ensure all catchable
+	blacklist legendary
+	level appropriate encounters
+
+OTHER OPTIONS:
+	remove evs
+	add free rare candies to marts
+	output custom documentation
+
+
+
+
+
+
+
+
+
+
+
+
+
+
