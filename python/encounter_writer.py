@@ -20,7 +20,7 @@ def set_global_vars():
 		ROM_NAME = settings['rom_name']
 		NARC_FILE_ID = settings["encounters"]
 
-	LOCATIONS = open(f'{ROM_NAME}/texts/locations.txt', mode="r").read().splitlines()
+	LOCATIONS = open(f'{ROM_NAME}/texts/locations.txt', mode="r" ,encoding='utf-8').read().splitlines()
 
 	POKEDEX = open(f'{ROM_NAME}/texts/pokedex.txt', "r").read().splitlines()
 

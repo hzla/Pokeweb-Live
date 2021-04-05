@@ -16,7 +16,7 @@ def set_global_vars():
 		settings = json.load(outfile) 
 		ROM_NAME = settings['rom_name']
 
-	LOCATIONS = open(f'{ROM_NAME}/texts/locations.txt', mode="r").read().splitlines()
+	LOCATIONS = open(f'{ROM_NAME}/texts/locations.txt', mode="r" ,encoding='utf-8').read().splitlines()
 
 	POKEDEX = open(f'{ROM_NAME}/texts/pokedex.txt', "r").read().splitlines()
 

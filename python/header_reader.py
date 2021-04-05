@@ -24,7 +24,7 @@ def set_global_vars():
 		ROM_NAME = settings['rom_name']
 		BASE_ROM = settings['base_rom']
 
-	LOCATIONS = open(f'{ROM_NAME}/texts/locations.txt', mode="r").read().splitlines()
+	LOCATIONS = open(f'{ROM_NAME}/texts/locations.txt', mode="r" ,encoding='utf-8').read().splitlines()
 
 	HEADER_LENGTH = 48
 
