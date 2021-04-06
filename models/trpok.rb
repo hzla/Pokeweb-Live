@@ -23,6 +23,40 @@ class Trpok < Pokenarc
 		poks
 	end
 
+	def self.fill_lvl_up_moves lvl, trainer, pok_index
+
+		file_path = "#{$rom_name}/json/trpok/#{trainer}.json"
+		trpok = JSON.parse(File.open(file_path, "r"){|f| f.read})
+
+		pok_id = trpok["raw"]["species_id_#{pok_index}"]
+
+
+		learnset_path = "#{$rom_name}/json/learnsets/#{pok_id}.json"
+		learnset = JSON.parse(File.open(learnset_path, "r"){|f| f.read})
+
+		moves = []
+
+		(0..19).to_a.reverse.each do |n|
+			lvl_learned = learnset["raw"]["lvl_learned_#{n}"]
+			if lvl_learned && lvl_learned.to_i <= lvl.to_i
+				moves << [learnset["raw"]["move_id_#{n}"],learnset["readable"]["move_id_#{n}"]]
+			end
+			if moves.length == 4
+				break
+			end
+		end
+
+		moves.each_with_index do |move, i|
+			trpok["raw"]["move_#{i + 1}_#{pok_index}"] = move[0]
+			trpok["readable"]["move_#{i + 1}_#{pok_index}"] = move[1]
+		end
+
+		File.open(file_path, "w") { |f| f.write trpok.to_json }
+		
+		moves.map {|m| m[1].name_titleize}
+
+	end
+
 	def self.create data
 		file_name = data["file_name"]
 		n = data["sub_index"]
@@ -103,6 +137,8 @@ class Trpok < Pokenarc
 			nature_info[1] << "♂ TR: With #{n} IVs: #{convert_pid_to_nature(pid, natures)}"
 		end
 
+		nature_info[3] = trpok["ivs_#{sub_index}"]
+
 
 
 		nature_info
@@ -124,7 +160,7 @@ class Trpok < Pokenarc
 		pid = (((seed >> 32) & 0xFFFFFFFF) >> 16 << 8) + get_gender_ab(ability_gender, personal_gender, trainer_gender, ability_slot)
 	end
 
-	def self.get_gender_ab(ability_gender, personal_gender, trainer_gender, ablity_slot)
+	def self.get_gender_ab(ability_gender, personal_gender, trainer_gender, ability_slot)
 		result = trainer_gender ? 120 : 136
 		g = ability_gender & 0xF
 		a = (ability_gender & 0xF0) >> 4

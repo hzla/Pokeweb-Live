@@ -37,10 +37,12 @@ class Pokenarc
 
 		if data["int"]
 			changed_value = changed_value.to_i
-		end
-
-		if @@upcases == "all" || @@upcases.any? {|field| data["field"].include? field } 
+	
+		elsif @@upcases == "all" || @@upcases.any? {|field| data["field"].include? field } 
+			p @@upcases
+			p data["field"]
 			changed_value = changed_value.upcase
+		else
 		end
 
 

@@ -4,6 +4,11 @@ require 'csv'
 require_relative 'helpers'
 require_relative 'models/pokenarc'
 
+if ENV["DEVMODE"] == "TRUE"
+	require 'pry'
+	require "sinatra/reloader"
+end
+
 Dir["models/*.rb"].each {|file| require_relative file}
 
 
@@ -12,7 +17,7 @@ before do
 	$rom_name = SessionSettings.rom_name
 	return if !$rom_name
 	@rom_name = $rom_name.split("/")[1]
-	tabs = ['headers', 'personal', 'trainers', 'encounters', 'moves', 'tms', 'items', 'marts', 'grottos', 'logs']
+	tabs = ['headers', 'personal', 'trainers', 'encounters', 'moves', 'tms', 'items', 'marts', 'grottos', 'story_texts', 'info_texts', 'logs']
 	
 	if SessionSettings.base_rom == "BW"
 		tabs.delete('marts')
@@ -42,7 +47,7 @@ end
 
 get '/rom/new' do 
 	SessionSettings.reset
-	redirect '/'
+	return (redirect '/') 
 end
 
 get '/load_project' do 
@@ -71,7 +76,7 @@ post '/extract' do
 	end
 
 	content_type :json
-  	{ url: "/headers" }.to_json
+  	return { url: "/headers" }.to_json
 end
 
 post '/rom/save' do
@@ -88,9 +93,7 @@ get '/personal' do
 	@poke_data = Personal.poke_data
 	@moves = Move.get_all
 	@move_names = Move.get_names_from @moves
-	@tm_names = Tm.get_names
-	@tutor_moves = Personal.tutor_moves
-	@evolutions = Evolution.get_all
+
 
 	@poke_data.each do |pok|
 		if pok
@@ -123,10 +126,6 @@ get '/personal/collection' do
 	@poke_data = Personal.poke_data
 	@moves = Move.get_all
 
-	@tm_names = Tm.get_names
-	@tutor_moves = Personal.tutor_moves
-	@evolutions = Evolution.get_all
-
 	@poke_data.each do |pok|
 		if pok
 			pok["learnset"] = expand_learnset_data @moves, pok["learnset"]
@@ -137,13 +136,22 @@ get '/personal/collection' do
 	erb :personal_partial, layout: false
 end
 
+get '/personal/taken_sprite_indexes' do
+	@taken = Personal.unavailable_sprite_indexes
+
+	erb :sprites
+end
 # called by ajax when user makes an edit
 post '/update' do 
 	narc_name = params['data']['narc']
 	
+	if params['data']['narc_const']
+		narc_name = params['data']['narc_const']
+	end
+
 	Object.const_get(narc_name.capitalize).write_data params["data"]
 	
-	command = "python python/#{narc_name}_writer.py update #{params['data']['file_name']}"
+	command = "python python/#{narc_name}_writer.py update #{params['data']['file_name']} #{params['data']['narc']}"
 	pid = spawn command
 	Process.detach(pid)
 
@@ -170,8 +178,6 @@ get '/tms' do
 	@moves = Move.get_all
 	@tm_moves = Tm.get_tms_from @moves
 	@move_names = Move.get_names_from @moves
-
-
 
 	erb :tms
 end
@@ -224,7 +230,13 @@ post '/create' do
 	end
 
 	erb ("_" + narc_name).to_sym, :layout => false, :locals => { narc_name.to_sym => created, "#{narc_name}_index".to_sym => params['data']['sub_index'], :show => "show-flex" }
+end
 
+get '/trpoks/moves/:trpok_id/:pok_index' do 
+	moves = Trpok.fill_lvl_up_moves params[:lvl], params[:trpok_id], params[:pok_index]
+
+	content_type :json
+  	return { moves: moves }.to_json
 
 end
 
@@ -259,7 +271,7 @@ get '/items' do
 	erb :items
 end
 
-####################################### ITEMS ###############
+####################################### MARTS ###############
 
 get '/marts' do
 	@marts = Mart.get_all
@@ -267,7 +279,7 @@ get '/marts' do
 	erb :marts
 end
 
-####################################### ITEMS ###############
+####################################### GROTTOS ###############
 
 get '/grottos' do
 	@grottos = Grotto.get_all
@@ -275,11 +287,71 @@ get '/grottos' do
 	erb :grottos
 end
 
+####################################### TEXTS ###############
+
+
+get '/story_texts' do 
+	@narc_name = 'story_texts'
+	@texts = Text.get_all @narc_name
+	@limit = 0
+
+	erb :texts
+end
+
+get  '/story_texts/search' do 
+	@terms = params[:terms]
+	@narc_name = 'story_texts'
+	@texts = Text.search @narc_name, @terms, params[:ignore_case]
+	@limit = -1
+
+	erb :texts
+
+end
+
+get '/info_texts' do 
+	@narc_name = 'message_texts'
+	@texts = Text.get_all @narc_name
+	@limit = 0
+
+	erb :texts
+end
+
+get  '/info_texts/search' do 
+	@terms = params[:terms]
+	@narc_name = 'message_texts'
+	@texts = Text.search @narc_name, @terms, params[:ignore_case]
+	@limit = -1
+	
+	erb :texts
+end
+
+get '/texts/:narc_name/:bank_id' do 
+	text = Text.get_bank(params[:narc_name], params[:bank_id])
+
+	erb :_text, :layout => false, :locals => { :text => text, :narc_name => params[:narc_name], :bank_id => params[:bank_id] }
+end
+
+
 get '/logs' do
 	@logs = open('logs.txt', 'a+') do |f|
 	 	f.read.split("\n")
 	end
 
 	erb :logs
+
+end
+
+####################################### OVERWORLDS ###############
+
+get '/overworlds/:id' do 
+
+	@overworld = Overworld.get_data("#{$rom_name}/json/overworlds/#{params[:id]}.json")
+
+	@box = Overworld.get_bounding_box @overworld
+
+	@width = @box[1][0] - @box[0][0]
+	@height = @box[1][1] - @box[0][1]
+
+	erb :overworld
 
 end

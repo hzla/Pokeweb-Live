@@ -6,7 +6,7 @@
 		</div>
 		<div class="expanded-field">
 			<div class="expanded-trlabel">Level</div>
-			<%= field "level_#{trpok_index}", 'tr-item', {value: trpok["level_#{trpok_index}"],  narc: "trpok", type: "int-100"} %>	
+			<%= field "level_#{trpok_index}", 'tr-item trpok-lvl', {value: trpok["level_#{trpok_index}"],  narc: "trpok", type: "int-100"} %>	
 		</div>
 		<div class="expanded-field">
 			<div class="expanded-trlabel">Ability Slot</div>
@@ -35,11 +35,13 @@
 		<% (1..4).each do |m| %>
 			<div class="expanded-field">
 				<div class="expanded-trlabel">Move <%= m %></div>
-				<%= field "move_#{m}_#{trpok_index}", 'tr-item', {value: trpok["move_#{m}_#{trpok_index}"].name_titleize || "-",  narc: "trpok", autofill: "move_names", check: "has-moves"} %>	
+				<%= field "move_#{m}_#{trpok_index}", 'tr-item trpok-mov', {value: trpok["move_#{m}_#{trpok_index}"].name_titleize || "-",  narc: "trpok", autofill: "move_names", check: "has-moves"} %>	
 			</div>
 		<% end %>	
-		<div class="expanded-field btn-field-right">
-			<div class="delete-trpok del-btn" data-narc="trpok">Delete</div>
+
+		<div class="expanded-field btn-field-right multi">
+			<div class=" autofill-btn field-btn" data-narc="trpok">Autofill Learnset Moves</div>
+			<div class="delete-trpok del-btn field-btn" data-narc="trpok">Delete</div>
 		</div>
 	</div>
 </div>
