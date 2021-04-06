@@ -6,7 +6,7 @@
 
 ## Features
 
-Pokeweb is currently  able to edit map headers, items, personals, level-up learnsets, tm/tutor learnsets, tms, moves, encounters, trainers, evolutions, marts, and grottos.
+Pokeweb is currently able to edit map headers, items, personals, level-up learnsets, tm/tutor learnsets, tms, moves, encounters, trainers, evolutions, marts, and grottos, alternate forms, and can search/view text banks.
 
 To be implemented editors are texts, battle subway trainers, PWT trainers, tutor moves, and OW events. 
 
@@ -127,7 +127,7 @@ A rough overview of the app detailing what overall structure as well as planned 
 
 ## Credits
 
-Thanks to kaphotics, andibad, bond697 for their posts on the project pokemon forums that helped with much of the format info for the narcs, especially bond697's IDB files.
+Thanks to kaphotics, andibad, bond697, and kazowar for their posts on the project pokemon forums that helped with much of the format info for the narcs, especially bond697's IDB files.
 
 Thanks to Hello007 for his research into the PID algorithm.
 
