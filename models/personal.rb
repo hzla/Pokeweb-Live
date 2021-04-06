@@ -13,6 +13,27 @@ class Personal
 		data
 	end
 
+	def self.unavailable_sprite_indexes
+		personals = poke_data
+		taken_slots = []
+
+		(0..27).each do |n|
+			taken_slots << [n, "Unown"]
+		end
+
+		poke_data.each do |pok|
+			if pok && pok["form"] != 0
+				slot = pok["form"]
+				num_forms = pok["num_forms"]
+				
+				(0..num_forms - 2).each do |form|
+					taken_slots << [(slot + form), pok["name"]]
+				end
+			end
+		end
+		taken_slots.sort_by {|p| p[0]}
+	end
+
 	def self.get_data_for(file_name)
 		pok_id = file_name.split('/')[-1].split('.')[0]
 
@@ -87,7 +108,7 @@ class Personal
 
 	def self.misc_integer_fields
 		# title to display, field_name in json
-		[["Catch Rate", "catchrate"],["Exp Yield", "base_exp"],["Gender", "gender"],["Hatch Rate", "hatch_cycle"],["Happiness", "base_happy"]]
+		[["Catch Rate", "catchrate"],["Exp Yield", "base_exp"],["Gender", "gender"],["Hatch Rate", "hatch_cycle"],["Happiness", "base_happy"], ["# of Forms", "num_forms"], ["Form Personal ID", "form_id", "int-65535"], ["Form Sprite Offset", "form", "int-65535", "iv-label"], ["Form Sprite IDs", "form_sprites", "array" ]]
 	end
 
 	def self.text_fields

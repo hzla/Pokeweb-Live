@@ -69,6 +69,11 @@ def write_narc_data(file_name, narc_format, narc, narc_name="evolutions"):
 				data = json_data["raw"][entry[1]]
 				write_bytes(stream, entry[0], data)
 	
+	if file_name >= len(narc.files):
+		narc_entry_data = bytearray()
+		narc_entry_data[0:len(stream)] = stream
+		narc.files.append(narc_entry_data)
+	else:
 		narc_entry_data = bytearray(narc.files[file_name])
 		narc_entry_data[0:len(stream)] = stream
 		narc.files[file_name] = narc_entry_data

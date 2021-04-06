@@ -6,3 +6,4 @@ session_settings.json
 logs.txt
 /__pycache_
 /projects/*
+/python/__pycache__

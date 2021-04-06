@@ -72,6 +72,20 @@
   border-radius: 5px;
 }
 
+.filter-check {
+  height: 40px;
+  padding: 0px;
+}
+
+.filter-label {
+  line-height: 40px;
+}
+
+.filter-check .checkmark {
+  left: initial;
+  right: 0;
+}
+
 /* On mouse-over, add a grey background color */
 .container:hover input ~ .checkmark {
   background-color: #ccc;

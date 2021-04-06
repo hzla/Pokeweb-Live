@@ -89,6 +89,10 @@ write capybara acceptance tests
 
 implement text editor
 
+rewrite narc readers to output on json
+
+implement form creator
+
 implement move creator
 
 implement bw2 tutor moves editor

@@ -21,15 +21,15 @@
 	</div>
 
 	<div class="spreadsheet-col">
-		<% @natures[0].each do |nature| %>
-			<div class="expanded-field filterable">
+		<% @natures[0].each_with_index do |nature, i| %>
+			<div class="expanded-field filterable <%= @natures[3] == (255 - i) ? 'active' : ''  %>">
 				<div class="expanded-field-main">
 					<%= nature %>
 				</div>
 			</div>
 		<% end %>
-		<% @natures[1].each do |nature| %>
-			<div class="expanded-field filterable">
+		<% @natures[1].each_with_index do |nature, i| %>
+			<div class="expanded-field filterable <%= @natures[3] == (255 - i) ? 'active' : ''  %>">
 				<div class="expanded-field-main">
 				   <%= nature %>
 				</div>

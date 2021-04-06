@@ -218,7 +218,7 @@ table td {
 }
 
 .header-left {
-    max-width: 50vw;
+
 }
 
 .header-right {
@@ -326,9 +326,7 @@ table td {
 .field-header {
     background: #34495e;
     color: #f2f2f2;
-
 }
-
 
 
 .spreadsheet > .expanded-field.field-header {
@@ -341,6 +339,40 @@ table td {
     height: 60px;
     line-height: 40px;
 }
+
+.spreadsheet > .expanded-field.text-header {
+    background: #6272a4;
+    color: #f2f2f2;
+    cursor: pointer;
+}
+
+.spreadsheet > .expanded-field.text-header:not(:first-child) {
+   margin-top: 46px;
+}
+
+.msg-id {
+    width: 120px;
+}
+
+.spreadsheet > .expanded-field.text-header:hover {
+    background: #6272a4;
+    color: #f2f2f2;
+    cursor: pointer;
+    border: 1px solid #bd93f9;
+}
+
+.text-bank .expanded-field {
+    min-height: 46px;
+}
+
+.text-bank .log-text {
+    max-width: calc(100% - 120px);
+}
+
+.text-bank .expanded-field-main {
+    justify-content: flex-start;
+}
+
 
 .spreadsheet.columns {
     display: flex;
@@ -355,6 +387,9 @@ table td {
     width: 33.33%;
 }
 
+.filterable.active {
+    background: #bd93f9 !important;
+}
 
 .spreadsheet .expanded-field {
     /*cursor: pointer;*/
@@ -878,15 +913,25 @@ div.-active svg * {
     display: none;
 }
 
-.iv-label {
+.iv-label, .sp-label {
     background: #1abc9c;
     padding: 5px;
     border-radius: 5px;
     cursor: pointer;
 }
 
+.field-btn {
+    text-align: center;
+    width: auto;
+    background: #1abc9c;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 5px;
+    padding: 0px 10px;
+    cursor: pointer;
+}
+
 .del-btn {
-    width: 50%;
     height: 100%;
     background: #ff5555;
     cursor: pointer;
@@ -896,12 +941,11 @@ div.-active svg * {
     line-height: 40px
 }
 
-.del-btn:hover {
-    background: #c20000;
-}
+
+
 
 .btn-field-right {
-    justify-content: flex-end;
+    justify-content: space-between;
 }
 
 .item-id {
@@ -965,4 +1009,28 @@ div.-active svg * {
 
 .expanded-grotto .expanded-left.grotto-item {
     width: 25%;
+}
+
+
+.overworld-canvas {
+    background: #f2f2f2;
+    border: 1px solid transparent;
+    position: absolute;
+    top: 40px;
+    left: 80px;
+}
+
+.overworld-item {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background: red;
+    overflow: hidden;
+}
+
+.overworld-sprite {
+    height: auto;
+    width: 20px;
+    bottom: 0px;
+    position: absolute;
 }

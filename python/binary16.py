@@ -29,7 +29,7 @@ class binarywriter:
     def writear(self, a):
         self.s.extend(a)
     def tostring(self):
-        return self.s.tostring()
+        return self.s.tobytes()
     def toarray(self):
         return self.s
     def pos(self):
