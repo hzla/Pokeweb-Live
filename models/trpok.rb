@@ -51,7 +51,7 @@ class Trpok < Pokenarc
 			trpok["readable"]["move_#{i + 1}_#{pok_index}"] = move[1]
 		end
 
-		File.open(file_path, "w") { |f| f.write trpok.to_json }
+		# File.open(file_path, "w") { |f| f.write trpok.to_json }
 		
 		moves.map {|m| m[1].name_titleize}
 
@@ -123,26 +123,29 @@ class Trpok < Pokenarc
 
 		natures = RomInfo.natures
 
-		nature_info = [[],[], "Trainer #{trainer_id}'s #{pok_name}"]
+		nature_info = [[],[], "Trainer #{trainer_id}'s #{pok_name}", nil, [], []]
 
 		255.downto(0).each do |n|
 			pid = get_pid(trainer_id, trainer_class, pok_id, n, pok_lvl, ability_gender, personal_gender, false, ability_slot)
 
-			nature_info[0] << "♀ TR: With #{n} IVs: #{convert_pid_to_nature(pid, natures)}"
+			nature_info[0] << "♀: #{n} IVs: #{convert_pid_to_nature(pid, natures)}"
+			nature_info[4] << pid
+			# nature_info[0] << "♀: #{convert_pid_to_nature(pid, natures)}"
 		end
 
 		255.downto(0).each do |n|
 			pid = get_pid(trainer_id, trainer_class, pok_id, n, pok_lvl, ability_gender, personal_gender, true, ability_slot)
 
-			nature_info[1] << "♂ TR: With #{n} IVs: #{convert_pid_to_nature(pid, natures)}"
+			nature_info[1] << "♂: #{n} IVs: #{convert_pid_to_nature(pid, natures)}"
+			nature_info[5] << pid
+			# nature_info[1] << "♂: #{convert_pid_to_nature(pid, natures)}"
 		end
 
 		nature_info[3] = trpok["ivs_#{sub_index}"]
-
-
-
 		nature_info
 	end
+
+
 
 
 	def self.convert_pid_to_nature pid, natures

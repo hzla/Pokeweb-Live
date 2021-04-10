@@ -1034,3 +1034,26 @@ div.-active svg * {
     bottom: 0px;
     position: absolute;
 }
+
+.expanded-docs {
+    display: flex !important;
+    justify-content: flex-start;
+}
+
+.trainer-doc-item {
+    width: 16.6%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.tr-item-info {
+    text-align: center;
+}
+
+.doc-sprite {
+    width: 120px;
+    margin-bottom: 20px;
+}
