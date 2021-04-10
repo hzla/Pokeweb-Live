@@ -131,11 +131,11 @@ def write_readable_to_raw(file_name, narc_name="moves"):
 def to_raw(readable):
 	raw = copy.deepcopy(readable)
 
-	raw["type"] = TYPES.index(readable["type"])
+	raw["type"] = TYPES.index(readable["type"].lower().capitalize())
 
 	raw["effect_category"] = EFFECT_CATEGORIES.index(readable["effect_category"])
 	
-	raw["category"] = CATEGORIES.index(readable["category"])
+	raw["category"] = CATEGORIES.index(readable["category"].lower().capitalize())
 
 	#special case for tri attack
 	if readable["result_effect"] == "Chance of either Paralyzing; Burning; or Freezing target":
