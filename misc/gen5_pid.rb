@@ -11,7 +11,7 @@ def get_pid(trainer_id, trainer_class, pok_id, pok_iv, pok_lvl, ability_gender, 
 end
 
 def get_gender_ab(ability_gender, personal_gender, trainer_gender, ablity_slot)
-	result = trainer_gender ? 120 : 136
+	result = trainer_gender ? 125 : 136
 	g = ability_gender & 0xF
 	a = (ability_gender & 0xF0) >> 4
 
