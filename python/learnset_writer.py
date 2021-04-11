@@ -55,7 +55,7 @@ def output_narc(narc_name="learnsets"):
 	print("narc saved")
 
 def write_bytes(stream, n, data):
-	stream += (data.to_bytes(n, 'little'))		
+	stream += (int(data).to_bytes(n, 'little'))		
 	return stream
 
 def write_narc_data(file_name, narc_format, narc, narc_name="learnsets"):
@@ -124,7 +124,7 @@ def to_raw(readable):
 
 
 def write_bytes(stream, n, data):
-	stream += (data.to_bytes(n, 'little'))		
+	stream += (int(data).to_bytes(n, 'little'))		
 	return stream
 
 

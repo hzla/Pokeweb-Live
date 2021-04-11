@@ -87,7 +87,7 @@ def output_narc():
 	print("personal narc saved")
 
 def write_bytes(stream, n, data):
-	stream += (data.to_bytes(n, 'little'))		
+	stream += (int(data).to_bytes(n, 'little'))		
 	return stream
 
 def write_narc_data(file_name, narc_format, personal_narc):
@@ -170,7 +170,7 @@ def to_raw(readable):
 	ev_yields.reverse()
 
 	for ev in ev_yields:
-		bin_ev += bin(readable[ev])[2:].zfill(2)
+		bin_ev += bin(int(readable[ev]))[2:].zfill(2)
 
 	raw["evs"] = int(bin_ev, 2)
 	
