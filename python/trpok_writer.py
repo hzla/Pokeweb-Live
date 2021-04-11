@@ -26,7 +26,7 @@ def set_global_vars():
 
 	MOVES = open(f'{ROM_NAME}/texts/moves.txt', mode="r").read().splitlines()
 
-	GENDERS = ['Default', "Male", "Feale"]
+	GENDERS = ['Default', "Male", "Female"]
 
 	NARC_FORMAT_0 = [[1, "ivs"],
 	[1, "ability"],
@@ -149,7 +149,7 @@ def to_raw(readable, template):
 	for n in range(0, readable["count"]):
 		raw[f'species_id_{n}'] = POKEDEX.index(readable[f'species_id_{n}'])
 
-		raw[f'ability_{n}'] = readable[f'ability_{n}'] * 16
+		raw[f'ability_{n}'] = int(readable[f'ability_{n}']) * 16
 
 		raw[f'ability_{n}'] += GENDERS.index(readable[f'gender_{n}'])
 
