@@ -81,11 +81,20 @@ def expand_learnset_data(moves, learnset)
 
 	# sort by lvl learned, and break ties move index
 	move_data.sort_by do |n| 
+
 		if n["lvl_learned"]
-			n["lvl_learned"].to_i
+			order = n["lvl_learned"].to_i
+			if n["move_id"] == 0
+				order += 200
+			end
+			order
 		else
 			101 + n["index"].to_i
 		end
+
+
+
+
 	end
 end
 
