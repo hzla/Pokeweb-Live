@@ -78,7 +78,7 @@ def output_arm9():
 	print("arm9 saved")
 
 def write_bytes(stream, n, data):
-	stream += (data.to_bytes(n, 'little'))		
+	stream += (int(data).to_bytes(n, 'little'))		
 	return stream
 
 
@@ -109,7 +109,7 @@ def to_raw(readable):
 	return raw
 
 def write_bytes(stream, n, data):
-	stream += (data.to_bytes(n, 'little'))		
+	stream += (int(data).to_bytes(n, 'little'))		
 	return stream
 
 

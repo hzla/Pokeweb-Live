@@ -183,7 +183,7 @@ def to_raw(readable):
 	
 
 def write_bytes(stream, n, data):
-	stream += (data.to_bytes(n, 'little'))		
+	stream += (int(data).to_bytes(n, 'little'))		
 	return stream
 
 

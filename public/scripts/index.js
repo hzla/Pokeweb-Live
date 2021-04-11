@@ -359,6 +359,7 @@ $(document).ready(function() {
 		if (!input.hasClass('no-validate')) {
 			if ($(this).attr('data-type') && $(this).attr('data-type').includes("int")) {
 				data["int"] = true
+				data["value"] = parseInt(data["value"])
 				max_value = parseInt($(this).attr('data-type').split("-")[1])
 				
 				//validate int value less than max if int field
