@@ -15,7 +15,9 @@ To be implemented editors are texts, battle subway trainers, PWT trainers, tutor
 You can join this Pokemon DS Rom Hacking discord server for updates as well as general support for your Pokemon gen IV/V rom hacking needs. [https://discord.gg/cTKQq5Y](https://discord.gg/cTKQq5Y)
 ## Windows Installation 
 
-[Video of installation on a windows computer without python or ruby installed](https://streamable.com/833yr6)
+### [FRESH INSTALLATION DEMONSTRATION VIDEO](https://streamable.com/833yr6)
+
+If you do not know what python and/or ruby is, please watch the installation demo video that shows an example windows install. 
 
 Click the WINDOWS_INSTALL.bat file which will run the included ruby and python installers. 
 
