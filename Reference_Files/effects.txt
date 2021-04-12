@@ -27,10 +27,10 @@ Resets stat changes
 Bide effect
 Locked into move for 2-3 turns; confuses user after
 Whirlwind/ Roar effect
-Hits target 2-5 times
+Hits target multiple times
 Changes user's type to match one of its moves
 Chance to Flinch
-Restores up to 50% max HP
+Restores up to Heal% max HP
 Badly Poisons
 Pay Day effect
 1/2 damage from Special attacks
@@ -46,7 +46,7 @@ Hits twice
 Deals 1/2 user's max HP to user if it misses
 Prevents lowering of stats
 Sharply raises crit ratio
-1/4 damage dealt recoil
+Recoil% damage dealt to self
 Guaranteed Confusion
 Sharply raises Atk
 Sharply raises Def
@@ -60,9 +60,9 @@ Sharply lowers Atk
 Sharply lowers Def
 Sharply lowers Spd
 Sharply lowers SpAtk
+Sharply lowers SpDef
 Sharply lowers Accuracy
 Sharply lowers Evasion
-64
 1/2 damage from Physical attacks
 Guaranteed Poison
 Guaranteed Paralysis
@@ -76,7 +76,7 @@ Lowers Evasion
 Attacks next turn; chance of flinch; increased crit ratio
 Chance to Confuse
 Hits twice; chance to poison
-Vital Throw ??
+Vital Throw effect
 Substitute effect
 Recharge turn
 Locked into move; raises Atk whenever hit
@@ -101,7 +101,7 @@ Higher power the less HP the user has
 Decreases PP of target's last move used by 4
 False Swipe effect
 Heal Bell effect
-Priority +1
++ Priority 
 Hits the target up to 3 times; increases power by 10 with each hit
 Steals target's held item
 Prevents target from switching out or fleeing
