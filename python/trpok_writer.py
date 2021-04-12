@@ -136,8 +136,17 @@ def write_readable_to_raw(file_name, narc_name="trpok"):
 		template = tr_data["raw"]["template"]
 
 
+
+
 		new_raw_data = to_raw(json_data["readable"], template)
 		json_data["raw"] = new_raw_data
+
+
+		tr_data["raw"]["num_pokemon"] = json_data["readable"]["count"]
+		tr_data["readable"]["num_pokemon"] = json_data["readable"]["count"]
+
+	with open(f'{ROM_NAME}/json/trdata/{file_name}.json', "w") as outfile:
+		json.dump(tr_data, outfile)
 
 	with open(json_file_path, "w", encoding='ISO8859-1') as outfile: 
 		json.dump(json_data, outfile)
