@@ -24,6 +24,7 @@ class Move < Pokenarc
 
 	def self.misc_int_fields
 		[{ "field_name" => "pp", "label" => "PP", "type" => "int-255"},
+			{ "field_name" => "priority", "label" => "Priority", "type" => "int-255"},
 			{ "field_name" => "crit", "label" => "+Crit", "type" => "int-15"},
 			{ "field_name" => "flinch", "label" => "Flinch %", "type" => "int-100"},
 			{ "field_name" => "recoil", "label" => "Recoil %", "type" => "int-100"},

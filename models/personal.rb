@@ -89,9 +89,9 @@ class Personal
 			tm_4 = tm_list[96..110].reverse.join("").to_i(2)
 
 			json_data["readable"]["tm_1-32"] = tm_1
-			json_data["readable"]["tm_33-64"] = tm_1
-			json_data["readable"]["tm_65-95+hm_1"] = tm_1
-			json_data["readable"]["hm_2-6"] = tm_1
+			json_data["readable"]["tm_33-64"] = tm_2
+			json_data["readable"]["tm_65-95+hm_1"] = tm_3
+			json_data["readable"]["hm_2-6"] = tm_4
 			File.open(file_path, "w") { |f| f.write json_data.to_json }
 			return
 		end
