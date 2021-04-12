@@ -38,7 +38,7 @@ $(document).ready(function() {
 				data ["file_names"] = file_names
 
 				$.post( "/batch_update", {"data": data }, function( e ) {     
-
+					alert("Update completed")		
 	        
 
 		        });
@@ -56,7 +56,7 @@ $(document).ready(function() {
 		        		updateTrImage(value, $(v), pok_index )
 		        	})
 		        }
-		        alert("Update success")
+		        alert("Update in progress, please wait for completion notification before making any changes")
 			} 
 
 	      }
@@ -383,9 +383,9 @@ $(document).ready(function() {
 					 }
 
 
-					valid_fields = JSON.stringify(valid_fields).toLowerCase()
+					valid_fields = JSON.stringify(valid_fields)
 
-					if (!valid_fields.includes(value.toLowerCase()) || value == "-" || value == "") {
+					if (!valid_fields.includes(value) || value == "-" || value == "") {
 						
 						
 						$(this).css('border', '1px solid red')
