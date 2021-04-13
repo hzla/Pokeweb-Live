@@ -15,7 +15,7 @@ class Trpok < Pokenarc
 
 	def self.get_poks_for count, trainer_poks
 		poks = []
-		(0..count-1).each do |n|
+		(0..100).each do |n|
 			if trainer_poks["species_id_#{n}"]
 				poks << trainer_poks["species_id_#{n}"].gsub(". ", "-").downcase
 			end
@@ -51,7 +51,7 @@ class Trpok < Pokenarc
 			trpok["readable"]["move_#{i + 1}_#{pok_index}"] = move[1]
 		end
 
-		# File.open(file_path, "w") { |f| f.write trpok.to_json }
+		File.open(file_path, "w") { |f| f.write trpok.to_json }
 		
 		moves.map {|m| m[1].name_titleize}
 

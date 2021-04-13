@@ -115,13 +115,13 @@ def write_narc_data(file_name, narc_format, narc, narc_name="trpok"):
 					write_bytes(stream, entry[0], data)
 
 	if file_name >= len(narc.files):
-		narc_entry_data = bytearray()
-		narc_entry_data[0:len(stream)] = stream
-		narc.files.append(narc_entry_data)
+		# narc_entry_data = bytearray()
+		# narc_entry_data[0:len(stream)] = stream
+		narc.files.append(stream)
 	else:
-		narc_entry_data = bytearray(narc.files[file_name])
-		narc_entry_data[0:len(stream)] = stream
-		narc.files[file_name] = narc_entry_data
+		# narc_entry_data = bytearray(narc.files[file_name])
+		# narc_entry_data[0:len(stream)] = stream
+		narc.files[file_name] = stream
 	
 def write_readable_to_raw(file_name, narc_name="trpok"):
 	data = {}
@@ -155,27 +155,31 @@ def write_readable_to_raw(file_name, narc_name="trpok"):
 def to_raw(readable, template):
 	raw = copy.deepcopy(readable)
 
+	n = 0
+	while n < readable["count"]:
+		if f'species_id_{n}' in raw:	
 
-	for n in range(0, readable["count"]):
-		raw[f'species_id_{n}'] = POKEDEX.index(readable[f'species_id_{n}'])
+			raw[f'species_id_{n}'] = POKEDEX.index(readable[f'species_id_{n}'])
 
-		raw[f'ability_{n}'] = int(readable[f'ability_{n}']) * 16
+			raw[f'ability_{n}'] = int(readable[f'ability_{n}']) * 16
 
-		raw[f'ability_{n}'] += GENDERS.index(readable[f'gender_{n}'])
+			raw[f'ability_{n}'] += GENDERS.index(readable[f'gender_{n}'])
 
 
-		if template == 1 or template == 3:
-			for m in range(1,5):
-				if f'move_{m}_{n}' in readable:
-					raw[f'move_{m}_{n}'] = MOVES.index(readable[f'move_{m}_{n}'])
-				else: 
-					raw[f'move_{m}_{n}'] = 0
+			if template == 1 or template == 3:
+				for m in range(1,5):
+					if f'move_{m}_{n}' in readable:
+						raw[f'move_{m}_{n}'] = MOVES.index(readable[f'move_{m}_{n}'])
+					else: 
+						raw[f'move_{m}_{n}'] = 0
 
-		if template > 1:
-			if f'item_id_{n}' in readable:
-				raw[f'item_id_{n}'] = ITEMS.index(readable[f'item_id_{n}'])
-			else:
-				raw[f'item_id_{n}'] = 0
+			if template > 1:
+				if f'item_id_{n}' in readable:
+					raw[f'item_id_{n}'] = ITEMS.index(readable[f'item_id_{n}'])
+				else:
+					raw[f'item_id_{n}'] = 0
+
+			n += 1
 
 	return raw
 	
