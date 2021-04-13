@@ -84,13 +84,19 @@ class Trpok < Pokenarc
 
 		
 		json_data["readable"].each do |field, value|
-			if field.split("_")[-1] == "_#{n}"
+			if field.split("_")[-1] == "#{n}"
 				json_data["readable"].delete field
 			end
 		end
 		
 		json_data["readable"]["count"] -= 1
 		File.open(file_path, "w") { |f| f.write json_data.to_json }
+
+		trdata_path = "#{$rom_name}/json/trdata/#{file_name}.json"
+		tr_data = JSON.parse(File.open(trdata_path, "r"){|f| f.read})
+		tr_data["readable"]["num_pokemon"] = json_data["readable"]["count"]
+		tr_data["raw"]["num_pokemon"] = json_data["readable"]["count"]
+		File.open(trdata_path, "w") { |f| f.write tr_data.to_json }
 	end
 
 

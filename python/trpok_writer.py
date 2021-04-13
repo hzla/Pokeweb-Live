@@ -102,6 +102,7 @@ def write_narc_data(file_name, narc_format, narc, narc_name="trpok"):
 		template = tr_data["raw"]["template"]
 		# print(json_data)
 		num_pokemon = json_data["readable"]["count"]
+
 		
 		narc_format = narc_format[template]
 
