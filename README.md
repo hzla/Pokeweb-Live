@@ -10,6 +10,8 @@ Pokeweb is currently able to edit map headers, items, personals, level-up learns
 
 To be implemented editors are texts, battle subway trainers, PWT trainers, tutor moves, and OW events. 
 
+Not thoroughly bug tested, was originally made for personal use, use at your own risk.
+
 ### [Quick Feature Tour](https://streamable.com/cjk04j)
 
 You can join this Pokemon DS Rom Hacking discord server for updates as well as general support for your Pokemon gen IV/V rom hacking needs. [https://discord.gg/cTKQq5Y](https://discord.gg/cTKQq5Y)
