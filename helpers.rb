@@ -62,7 +62,7 @@ end
 def expand_learnset_data(moves, learnset)
 	move_data = []
 
-	(0..19).each do |move|
+	(0..24).each do |move|
 		if learnset["move_id_#{move}_index"]
 			
 			ls_data = {"move_name" => learnset["move_id_#{move}"], "lvl_learned" => learnset["lvl_learned_#{move}"], "move_id" => learnset["move_id_#{move}_index"], "index" => move }

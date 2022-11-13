@@ -7,9 +7,42 @@ class Trpok < Pokenarc
 		super
 	end
 
+	def self.get_all_mods
+
+		@@narc_name = "trpok"
+		collection = []
+		files = Dir["#{$rom_name}/json/#{@@narc_name}/*.json"]
+		file_count = files.length
+
+		(0..file_count - 1).each do |n|
+			
+			file = File.open("#{$rom_name}/json/#{@@narc_name}/#{n}.json", "r:ISO8859-1") {|f| f.read }
+			json = JSON.parse(file)
+			entry = json["readable"]
+			entry["id"] = n
+			collection[n] = entry
+		end
+		
+		
+		
+		collection.sort_by! do  |pok|
+			
+			pok["level_0"] || 0
+	
+		end
+
+		collection = collection.filter do |n|
+			
+			n["ivs_0"] and n["ivs_0"] > 250
+		end
+
+		collection
+	end
+
 	def self.write_data data, batch=false
 		@@narc_name = "trpok"
 		@@upcases = ["species", "move"]
+		p data
 		super
 	end
 
@@ -82,12 +115,29 @@ class Trpok < Pokenarc
 		file_path = "#{$rom_name}/json/trpok/#{file_name}.json"
 		json_data = JSON.parse(File.open(file_path, "r"){|f| f.read})
 
-		
+		#remove current pokemon
 		json_data["readable"].each do |field, value|
 			if field.split("_")[-1] == "#{n}"
 				json_data["readable"].delete field
 			end
 		end
+
+		#move everything above it down a slot
+		json_clone = json_data["readable"].clone
+		json_clone.each do |field, value|
+			n = n.to_i
+			((n+1)..(json_clone["count"] - 1)).each do |i|
+
+				if field[-1] == i.to_s
+					json_data["readable"].delete field 
+					field_clone = field.dup
+					field_clone[-1] = (i-1).to_s
+					json_data["readable"][field_clone] = value
+				end
+			end
+		end
+
+
 		
 		json_data["readable"]["count"] -= 1
 		File.open(file_path, "w") { |f| f.write json_data.to_json }
@@ -101,6 +151,7 @@ class Trpok < Pokenarc
 
 
 	def self.get_nature_info_for(file_name, sub_index, desired_iv=255)
+		p "getting info"
 		file_path = "#{$rom_name}/json/trpok/#{file_name}.json"
 		trpok = JSON.parse(File.open(file_path, "r"){|f| f.read})
 		ability_slot = trpok["readable"]["ability_#{sub_index}"]
@@ -111,6 +162,7 @@ class Trpok < Pokenarc
 
 
 		pok_id = trpok["species_id_#{sub_index}"]
+
 
 		file_path = "#{$rom_name}/json/personal/#{pok_id}.json"
 		personal = JSON.parse(File.open(file_path, "r"){|f| f.read})["readable"]
@@ -150,6 +202,73 @@ class Trpok < Pokenarc
 		nature_info[3] = trpok["ivs_#{sub_index}"]
 		nature_info
 	end
+
+	def self.get_nature_for(file_name, sub_index, desired_iv=255)
+		p "getting info"
+		file_path = "#{$rom_name}/json/trpok/#{file_name}.json"
+		trpok = JSON.parse(File.open(file_path, "r"){|f| f.read})
+		ability_slot = trpok["readable"]["ability_#{sub_index}"]
+		trpok = trpok["raw"]
+
+		file_path = "#{$rom_name}/json/trdata/#{file_name}.json"
+		trdata = JSON.parse(File.open(file_path, "r"){|f| f.read})["raw"]
+
+
+		pok_id = trpok["species_id_#{sub_index}"]
+
+		file_path = "#{$rom_name}/json/personal/#{pok_id}.json"
+		personal = JSON.parse(File.open(file_path, "r"){|f| f.read})["readable"]
+
+		pok_name = personal["name"].name_titleize
+
+		trainer_id = file_name.to_i
+		trainer_class = trdata["class"]
+		pok_id = pok_id
+		pok_iv = trpok["ivs_#{sub_index}"]
+		pok_lvl = trpok["level_#{sub_index}"]
+		ability_gender = trpok["ability_#{sub_index}"]
+		personal_gender = personal["gender"]
+		ability_slot = ability_slot
+
+
+		natures = RomInfo.natures
+
+		n = 255
+		pid = get_pid(trainer_id, trainer_class, pok_id, n, pok_lvl, ability_gender, personal_gender, false, ability_slot)
+
+		convert_pid_to_nature(pid, natures)
+		
+	end
+
+	def self.get_abilities_for tr_id
+
+		file_path = "#{$rom_name}/json/trpok/#{tr_id}.json"
+		raw = JSON.parse(File.open(file_path, "r"){|f| f.read})["raw"]
+		poks = JSON.parse(File.open(file_path, "r"){|f| f.read})["readable"]
+
+
+		poks_array = []
+
+		(0..(poks["count"] - 1)).each do |i|			
+			pok_id = raw["species_id_#{i}"]
+			file_path = "#{$rom_name}/json/personal/#{pok_id}.json"
+			personal = JSON.parse(File.open(file_path, "r"){|f| f.read})["readable"]
+
+		
+			ability_id = poks["ability_#{i}"]
+			ability_id += 1 if ability_id < 1
+			ability = personal["ability_#{ability_id}"]
+			poks_array << ability
+		end
+
+		poks_array
+
+
+		
+	end
+
+
+
 
 
 
@@ -196,5 +315,89 @@ class Trpok < Pokenarc
 		end
 		result
 	end
+
+
+	def self.export_all_showdown
+		data = []
+		(0..849).each do |n|
+			file_path = "#{$rom_name}/json/trpok/#{n}.json"
+			raw = JSON.parse(File.open(file_path, "r"){|f| f.read})["raw"]
+
+			if raw["ivs_0"] && raw["ivs_0"] > 250
+				data << export_showdown(n)
+			end
+		end
+
+		data
+	end
+
+	def self.export_showdown tr_id
+
+		file_path = "#{$rom_name}/json/trpok/#{tr_id}.json"
+		raw = JSON.parse(File.open(file_path, "r"){|f| f.read})["raw"]
+		poks = JSON.parse(File.open(file_path, "r"){|f| f.read})["readable"]
+
+		trdata_path = "#{$rom_name}/json/trdata/#{tr_id}.json"
+		
+		tr_name = JSON.parse(File.open(trdata_path, "r"){|f| f.read})["readable"]["name"]
+
+		poks_array = []
+
+		(0..(poks["count"] - 1)).each do |i|
+			
+			species = poks["species_id_#{i}"]
+			
+			level = poks["level_#{i}"]
+			
+			pok_id = raw["species_id_#{i}"]
+			file_path = "#{$rom_name}/json/personal/#{pok_id}.json"
+			personal = JSON.parse(File.open(file_path, "r"){|f| f.read})["readable"]
+			
+			form = poks["form_#{i}"]
+
+			
+
+			ability_id = poks["ability_#{i}"]
+
+			ability_id += 1 if ability_id < 1
+			ability = personal["ability_#{ability_id}"]
+
+			item = poks["item_id_#{i}"]
+
+			nature = get_nature_for(tr_id, i)
+
+			moves = []
+			(1..4).each do |n|
+				moves << poks["move_#{n}_#{i}"]
+			end
+
+			pok = {}
+
+			pok[species] = {}
+
+			pok[species][tr_name] =  {}
+
+			pok[species][tr_name]["level"] = level
+			pok[species][tr_name]["item"] = item
+			pok[species][tr_name]["nature"] = nature
+			pok[species][tr_name]["moves"] = moves
+			pok[species][tr_name]["ability"] = ability
+			pok[species][tr_name]["form"] = form
+
+			poks_array << pok
+
+
+
+
+
+		end
+
+		poks_array
+
+
+		
+	end
 end
+
+
 

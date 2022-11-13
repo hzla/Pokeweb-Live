@@ -13,6 +13,7 @@ class Move < Pokenarc
 
 	def self.write_data data, batch=false
 		@@narc_name = "moves"
+		@@upcases = []
 		super
 	end
 

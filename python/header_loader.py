@@ -63,7 +63,6 @@ for narc in NARCS:
 	narc_file = ndspy.narc.NARC(file)
 
 	# extract text banks
-	print(narc[1][-5:])
 	if narc[1][-5:] == "texts":
 		output_texts(f"{rom_name}/{narc[1]}", narc_file)
 

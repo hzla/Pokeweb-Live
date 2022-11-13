@@ -9,6 +9,7 @@ class Evolution < Pokenarc
 
 	def self.write_data data, batch=false
 		@@narc_name = "evolutions"
+		@@upcases = []
 		super
 	end
 

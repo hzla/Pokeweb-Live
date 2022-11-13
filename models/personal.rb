@@ -58,6 +58,7 @@ class Personal
 		if batch
 			write_batch_data data
 		end
+		@@upcases = []
 
 		file_name = data["file_name"]
 		field_to_change = data["field"]
