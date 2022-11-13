@@ -13,6 +13,7 @@ class Header
 
 
 	def self.write_batch_data data
+		@@upcases = []
 		data["file_names"].each do |file|
 			data["file_name"] = file
 			write_data(data)
@@ -20,6 +21,7 @@ class Header
 	end
 
 	def self.write_data data, batch=false
+		@@upcases = []
 		if batch
 			write_batch_data data
 		end

@@ -51,7 +51,6 @@ def output_narc(narc_name="marts"):
 
 		write_narc_data(file_name, NARC_FORMAT, narc, counts, narc_name)
 
-	print(counts)
 
 	counts_narc.files[0] = counts
 

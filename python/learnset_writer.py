@@ -28,7 +28,7 @@ for i,move in enumerate(MOVES):
 
 LEARNSET_NARC_FORMAT = []
 
-for n in range(20):
+for n in range(25):
 	LEARNSET_NARC_FORMAT.append([2, f'move_id_{n}'])
 	LEARNSET_NARC_FORMAT.append([2, f'lvl_learned_{n}'])
 
@@ -105,7 +105,7 @@ def write_readable_to_raw(file_name, narc_name="learnsets"):
 def to_raw(readable):
 	raw = copy.deepcopy(readable)
 
-	for n in range(20):
+	for n in range(25):
 		if f'move_id_{n}' in readable:
 			
 			if readable[f'move_id_{n}'] == "-":

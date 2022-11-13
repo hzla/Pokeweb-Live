@@ -1,11 +1,11 @@
 None
-Chance to Paralyze
-Chance to Sleep
-Chance to Freeze
-Chance to Burn
-Chance to Poison
-Chance to Confuse
-Chance to Infatuate
+Chance to paralyze
+Chance to sleep
+Chance to freeze
+Chance to burn
+Chance to poison
+Chance to confuse
+Chance to infatuate
 Binding effect
 Cursed effect
 
@@ -16,7 +16,7 @@ Force sleep next turn
 Prevents healing
 
 Forsight effect
-Leech Seed effect
+Leech seed effect
 Block item use
-Perish Song effect
+Perish song effect
 Ingrain effect

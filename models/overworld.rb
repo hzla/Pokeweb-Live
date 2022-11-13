@@ -8,6 +8,7 @@ class Overworld < Pokenarc
 
 	def self.write_data data, batch=false
 		@@narc_name = "overworlds"
+		@@upcases = []
 		super
 	end
 

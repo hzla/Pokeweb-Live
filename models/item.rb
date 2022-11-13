@@ -9,6 +9,7 @@ class Item < Pokenarc
 
 	def self.write_data data, batch=false
 		@@narc_name = "items"
+		@@upcases = []
 		super
 	end
 

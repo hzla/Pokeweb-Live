@@ -149,9 +149,12 @@ post '/update' do
 		narc_name = params['data']['narc_const']
 	end
 
+
+
 	Object.const_get(narc_name.capitalize).write_data params["data"]
 	
 	command = "python python/#{narc_name}_writer.py update #{params['data']['file_name']} #{params['data']['narc']}"
+	p params['data']
 	pid = spawn command
 	Process.detach(pid)
 
@@ -337,8 +340,14 @@ get '/logs' do
 	 	f.read.split("\n")
 	end
 
+
+
 	erb :logs
 
+end
+
+get '/export_showdown' do 
+	Trpok.export_all_showdown.to_json
 end
 
 ####################################### OVERWORLDS ###############
@@ -355,3 +364,5 @@ get '/overworlds/:id' do
 	erb :overworld
 
 end
+
+

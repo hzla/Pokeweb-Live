@@ -25,7 +25,8 @@
 
 
 				</div>
-				<%= field "ivs_#{trpok_index}", 'tr-item', {value: trpok["ivs_#{trpok_index}"],  narc: "trpok", type: "int-255"} %>	
+				<%= field "ivs_#{trpok_index}", 'tr-item', {value: trpok["ivs_#{trpok_index}"],  narc: "trpok", type: "int-255"} %>
+
 			</div>
 			<div class="expanded-field">
 				<div class="expanded-trlabel">Form</div>
@@ -60,8 +61,12 @@
 		<% nature_info = Trpok.get_nature_info_for(trdata_index, trpok_index) %>
 		
 		<div class="trpok-item-info">
-			<%= nature_info[0][255 - trpok["ivs_#{trpok_index}"]] %> <%= nature_info[1][255 - trpok["ivs_#{trpok_index}"]] %>
+			<%= nature_info[0][255 - trpok["ivs_#{trpok_index}"]] %> 
 		</div> 
+		<div class="trpok-item-info">
+			<%= abilities[trpok_index].move_titleize %>
+		</div> 
+		<br>
 
 
 

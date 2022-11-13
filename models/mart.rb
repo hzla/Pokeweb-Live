@@ -8,6 +8,7 @@ class Mart < Pokenarc
 
 	def self.write_data data, batch=false
 		@@narc_name = "marts"
+		@@upcases = []
 		super
 	end
 

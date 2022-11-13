@@ -67,7 +67,7 @@ def to_readable(raw, file_name):
 		readable[f'method_{n}'] = METHODS[raw[f'method_{n}']]
 		readable[f'target_{n}'] = POKEDEX[raw[f'target_{n}']]
 
-		if raw[f'method_{n}'] in [5,6,17,18,19,20]:
+		if raw[f'method_{n}'] in [6,8,17,18,19,20]:
 			readable[f'param_{n}'] = ITEMS[raw[f'param_{n}']]
 		elif raw[f'method_{n}'] == 21:
 

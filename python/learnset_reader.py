@@ -31,7 +31,7 @@ def set_global_vars():
 
 	LEARNSET_NARC_FORMAT = []
 
-	for n in range(20):
+	for n in range(25):
 		LEARNSET_NARC_FORMAT.append([2, f'move_id_{n}'])
 		LEARNSET_NARC_FORMAT.append([2, f'lvl_learned_{n}'])
 
@@ -79,7 +79,7 @@ def to_readable(raw, file_name):
 	readable = copy.deepcopy(raw)
 	readable['index'] = file_name
 
-	for n in range(20):
+	for n in range(25):
 		if f'move_id_{n}' in readable:
 			readable[f'move_id_{n}'] = MOVES[raw[f'move_id_{n}']]
 			readable[f'move_id_{n}_index'] = raw[f'move_id_{n}']

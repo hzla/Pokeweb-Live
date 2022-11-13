@@ -141,7 +141,8 @@ def to_raw(readable):
 	if readable["result_effect"] == "Chance of either Paralyzing; Burning; or Freezing target":
 		raw["result_effect"] = 65535
 	else:
-		raw["result_effect"] = RESULT_EFFECTS.index(raw["result_effect"])
+	
+		raw["result_effect"] = RESULT_EFFECTS.index(raw["result_effect"].lower().capitalize())
 
 	raw["effect"] = EFFECTS.index(raw["effect"])
 

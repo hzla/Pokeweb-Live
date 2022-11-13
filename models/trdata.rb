@@ -3,6 +3,7 @@ class Trdata < Pokenarc
 
 	def self.write_data data, batch=false
 		@@narc_name = "trdata"
+		@@upcases = []
 		super
 	end
 
@@ -11,6 +12,43 @@ class Trdata < Pokenarc
 		super
 	end
 
+
+	def self.get_all_mods
+		@@narc_name = "trdata"
+		collection = []
+		files = Dir["#{$rom_name}/json/#{@@narc_name}/*.json"]
+		file_count = files.length
+
+		(0..file_count - 1).each do |n|
+			
+			file = File.open("#{$rom_name}/json/#{@@narc_name}/#{n}.json", "r:ISO8859-1") {|f| f.read }
+			json = JSON.parse(file)
+			entry = json["readable"]
+			entry["id"] = n
+			collection[n] = entry
+		end
+		
+		
+		
+		collection.sort_by! do  |pok|
+			
+			
+			file_path = "#{$rom_name}/json/trpok/#{pok['id']}.json"
+			raw = JSON.parse(File.open(file_path, "r"){|f| f.read})["raw"]
+			raw["level_0"] || 0
+		
+
+
+		end
+
+		collection = collection.filter do |n|
+			file_path = "#{$rom_name}/json/trpok/#{n['id']}.json"
+			raw = JSON.parse(File.open(file_path, "r"){|f| f.read})["raw"]
+			raw["ivs_0"] and raw["ivs_0"] > 250
+		end
+
+		collection
+	end
 
 
 
@@ -64,6 +102,11 @@ class Trdata < Pokenarc
 
 	def self.has_moves? trainer
 		"checked" if trainer["has_moves"] > 0
+	end
+
+
+	def self.export_showdown
+		
 	end
 
 end
