@@ -368,50 +368,7 @@ class Trpok < Pokenarc
 			f.puts "var SETDEX_BW ="
 			f.puts JSON.dump(formatted)
 		end
-
-
-	  # text = File.read("public/dist/js/data/sets/gen9.js")
-	  # new_contents = text.gsub("=>", ":")
-	  # File.open("public/dist/js/data/sets/gen9.js", "w") {|file| file.puts new_contents }
-
 	end
-
-
-# sets = {}
-#         // import sets
-#         $.getJSON("sets.json", function(json) {
-#             poks = json["data"]
-        
-#             // for every pokemon
-#             for (let i = 0; i < poks.length; i++ ) {
-                
-#                 var name
-#                 var setName
-#                 var setData
-
-#                 //get species name
-#                 for (species in poks[i]) {
-#                     name = species
-
-#                     // get setname
-#                     for (sname in poks[i][species]) {
-#                         setName = sname
-#                         setData = poks[i][species][setName]
-#                     }
-#                 }
-#                 // if pokemon exists
-#                 if (sets[name]) {
-#                     while (sets[name][setName]) {
-#                         setName = setName += "*"
-#                     }
-#                 } else {
-#                     sets[name] = {}
-#                 }
-
-#                 sets[name][setName] = setData            
-#             }
-#         });
-
 
 	def self.export_showdown tr_id
 

@@ -28,7 +28,11 @@ To be implemented editors are texts, battle subway trainers, PWT trainers, tutor
 
 Not thoroughly bug tested, was originally made for personal use, use at your own risk.
 
+
+
 ### [Quick Feature Tour](https://streamable.com/cjk04j)
+
+### [Showdown Calc Generator Demo](https://streamable.com/ky3yn1)
 
 You can join this Pokemon DS Rom Hacking discord server for updates as well as general support for your Pokemon gen IV/V rom hacking needs. [https://discord.gg/cTKQq5Y](https://discord.gg/cTKQq5Y)
 ## Windows Installation 
@@ -128,21 +132,10 @@ After downloading a newer release of Pokeweb, simply export your current project
 
 ## Showdown Calculator (experimental)
 
-Clicking Battle Calculator will export data and take you to a custom fork of the showdown battle calculator. Pokemon changes (bst, typing), and move changes (base power, typing, multihit) and sets are auto imported. 
+Clicking Battle Calculator will export data and take you to a custom fork of the showdown battle calculator. Pokemon changes (bst, typing), and move changes (base power, typing, multihit) and trainer sets are auto imported. Changes sometimes require hard refreshing (cntrl + shift + r) the browser before they appear.
 
-To import custom trainer sets, you must open the dev console with Cntr+Shift+J and then right click on set data that has outputted.
 
-<p align="center">
-    <img src="https://i.imgur.com/qx3qSi6.png" width="auto" height="300">
-</p>
-
-Next, navigate to Pokeweb/public/dist/js/data/sets/gen5.js. This file defines the variable SETDEX_BW, and you need to change the entire contents of this variable to what you just copied. Then hard refresh (refresh and clear cache) and the sets should be imported 
-
-<p align="center">
-    <img src="https://i.imgur.com/uGFhibt.png" width="auto" height="300">
-</p>
-
-If you would like to share the calculator after importing your set data, you can host the dist folder on a service like github
+If you would like to share the calculator after importing your set data, you can can simple send the public/dist folder and anyone can run the calculator by runnning index.html in their browser. 
 
 
 
