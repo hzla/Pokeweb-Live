@@ -13,6 +13,53 @@ class Personal
 		data
 	end
 
+	def self.export_showdown
+		poks = poke_data[1..-1]
+
+		showdown = {}
+
+		poks[28]["name"] = "Nidoran-F"
+		poks[31]["name"] = "Nidoran-M"
+		poks[82]["name"] = "Farfetch’d"
+		poks[684]["name"] = "Deoxys-Attack"
+		poks[685]["name"] = "Deoxys-Defense"
+		poks[686]["name"] = "Deoxys-Speed"
+		poks[689]["name"] = "Shaymin-Sky"	
+		poks[690]["name"] = "Giratina-Origin"
+		poks[691]["name"] = "Rotom-Heat"
+		poks[692]["name"] = "Rotom-Wash"
+		poks[693]["name"] = "Rotom-Frost"
+		poks[694]["name"] = "Rotom-Fan"
+		poks[695]["name"] = "Rotom-Mow"
+		poks[696]["name"] = "Castform-Sunny"
+		poks[697]["name"] = "Castform-Rainy"
+		poks[698]["name"] = "Castform-Snowy"
+		poks[699]["name"] = "Basculin-Blue-Striped"
+		poks[700]["name"] = "Darmanitan-Zen"
+		poks[701]["name"] = "Meloetta-Pirouette"
+		poks[702]["name"] = "Kyurem-White"
+		poks[703]["name"] = "Kyurem-Black"
+		poks[704]["name"] = "Keldeo-Resolute"
+		poks[705]["name"] = "Tornadus-Therian"
+		poks[706]["name"] = "Thundurus-Therian"
+		poks[707]["name"] = "Landorus-Therian"
+
+
+		poks.each do |pok|
+			next if !pok
+			showdown_name = pok["name"].name_titleize
+			showdown[showdown_name] = {}
+			if pok["type_1"] == pok["type_2"]
+				showdown[showdown_name]["types"] = [pok["type_1"]]
+			else
+				showdown[showdown_name]["types"] = [pok["type_1"], pok["type_2"]]
+			end
+
+			showdown[showdown_name]["bs"] = {"hp"=> pok["base_hp"], "at" => pok["base_atk"], "df" => pok["base_def"], "sa" => pok["base_spatk"], "sd" => pok["base_spdef"], "sp" => pok["base_speed"]}
+		end
+		File.write("public/dist/poks.json", JSON.dump(showdown))
+	end
+
 	def self.unavailable_sprite_indexes
 		personals = poke_data
 		taken_slots = []

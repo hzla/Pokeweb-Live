@@ -2,7 +2,7 @@
 edit_in_progress = false
 
 $(document).ready(function() {
-
+	console.log("ready")
 	editable_menu = [
 	    [{
 	      text: "Apply to all displayed entries",
