@@ -4,6 +4,20 @@
     <img src="https://i.imgur.com/CP232tv.png" width="auto" height="400">
 </p>
 
+## Changelog
+
+### 11/13/2022
+
+Placeholder data for data expansion removed
+
+Fix bug where editor only reads 20 learnset moves, should now be 25
+
+Fix bug where after using an editor that autocapitalizes data for formatting, it would continue to autocapitalize for every other editor without default capitilzation settings resulting in some editors breaking depending on what you edited beforehand. This caused messed up move data and basically screwed the whole rom preventing it from even exporting (affected editors: evolutions, items, marts, moves)
+
+Fix bug where after deleting a pokemon, the slots above aren't moved down causing issues when adding/removing poks
+
+Fix bug where incorrect evolution method ids were designated as requiring an item, causing certain evolution  methods to not save properly
+
 ## Features
 
 Pokeweb is currently able to edit map headers, items, personals, level-up learnsets, tm/tutor learnsets, tms, moves, encounters, trainers, evolutions, marts, and grottos, alternate forms, and can search/view text banks.
