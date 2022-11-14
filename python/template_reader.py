@@ -23,8 +23,8 @@ def output_trdata_json(narc):
 	set_global_vars()
 	data_index = 0
 
-	while len(narc.files) < 1000:
-		narc.files.append(narc.files[0])
+	# while len(narc.files) < 1000:
+	# 	narc.files.append(narc.files[0])
 
 	for data in narc.files:
 		data_name = data_index

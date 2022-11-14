@@ -73,8 +73,8 @@ def output_personal_json(narc):
 	set_global_vars()
 	data_index = 0
 	
-	while len(narc.files) < 800:
-		narc.files.append(narc.files[-2])
+	# while len(narc.files) < 800:
+	# 	narc.files.append(narc.files[-2])
 
 	for data in narc.files:
 		data_name = data_index

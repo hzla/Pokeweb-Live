@@ -74,8 +74,8 @@ def output_trpok_json(trpok_info):
 	data_index = 0
 	narc = ndspy.narc.NARC.fromFile(NARC_PATH)
 
-	while len(narc.files) < 850:
-		narc.files.append(narc.files[0])
+	# while len(narc.files) < 850:
+	# 	narc.files.append(narc.files[0])
 
 	for data in narc.files:	
 		data_name = data_index
