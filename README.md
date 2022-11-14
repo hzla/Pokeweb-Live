@@ -133,13 +133,13 @@ Clicking Battle Calculator will export data and take you to a custom fork of the
 To import custom trainer sets, you must open the dev console with Cntr+Shift+J and then right click on set data that has outputted.
 
 <p align="center">
-    <img src="https://imgur.com/qx3qSi6" width="auto" height="300">
+    <img src="https://i.imgur.com/qx3qSi6.png" width="auto" height="300">
 </p>
 
 Next, navigate to Pokeweb/public/dist/js/data/sets/gen5.js. This file defines the variable SETDEX_BW, and you need to change the entire contents of this variable to what you just copied. 
 
 <p align="center">
-    <img src="https://imgur.com/uGFhibt" width="auto" height="300">
+    <img src="https://i.imgur.com/uGFhibt.png" width="auto" height="300">
 </p>
 
 If you would like to share the calculator after importing your set data, simply copy the contents of Pokeweb/public/dist and anyone can use the calculator by running index.html in the browser. 
