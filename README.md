@@ -128,7 +128,7 @@ After downloading a newer release of Pokeweb, simply export your current project
 
 ## Showdown Calculator (experimental)
 
-Clicking Battle Calculator will export data and take you to a custom fork of the showdown battle calculator. Pokemon changes (bst, typing), and move changes (base power, typing, multihit) and auto imported. 
+Clicking Battle Calculator will export data and take you to a custom fork of the showdown battle calculator. Pokemon changes (bst, typing), and move changes (base power, typing, multihit) and sets are auto imported. 
 
 To import custom trainer sets, you must open the dev console with Cntr+Shift+J and then right click on set data that has outputted.
 

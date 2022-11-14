@@ -9,3 +9,4 @@ logs.txt
 /python/__pycache__
 /spec
 /public/dist/*.json
+/public/dist/*.js

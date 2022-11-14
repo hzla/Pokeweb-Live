@@ -1449,7 +1449,6 @@
         var calc = exports = {};
         function require() { return exports };
     </script>
-    <script type="text/javascript" src="sets.json"></script>
     <script type="text/javascript" src="./calc/util.js?8fa0c7ff"></script>
     <script type="text/javascript" src="./calc/stats.js?da4066f9"></script>
     <script type="text/javascript" src="./calc/data/species.js?66abc34d"></script>
@@ -1458,51 +1457,17 @@
     <script type="text/javascript" src="./js/data/sets/gen6.js?2219279f"></script>
     <script type="text/javascript" src="./js/data/sets/gen5.js?0e47243c"></script>
 
+
+    <script type="text/javascript" src="./moves.js"></script>
+    <script type="text/javascript" src="./poks.js"></script>
+
     <script>
     $(document).ready(function() {
-        sets = {}
-        // import sets
-        $.getJSON("sets.json", function(json) {
-            poks = json["data"]
-        
-            // for every pokemon
-            for (let i = 0; i < poks.length; i++ ) {
-                
-                var name
-                var setName
-                var setData
-
-                //get species name
-                for (species in poks[i]) {
-                    name = species
-
-                    // get setname
-                    for (sname in poks[i][species]) {
-                        setName = sname
-                        setData = poks[i][species][setName]
-                    }
-                }
-                // if pokemon exists
-                if (sets[name]) {
-                    while (sets[name][setName]) {
-                        setName = setName += "*"
-                    }
-                } else {
-                    sets[name] = {}
-                }
-
-                sets[name][setName] = setData            
-            }
-            SETDEX_BW = sets
-            console.log ("to import sets from rom, right click 'copy object' on the below set data, and navigate 'public/dist/js/data/sets/gen5.js' ")
-            console.log(sets)
-            console.log("replace everything after  'var SETDEX_BW ='' with what you copied")
-            dexReady = true
-        });
+       
 
         // import moves
-        $.getJSON("moves.json", function(json) {
-            var jsonMoves = json
+        $(document).ready(function() {
+            var jsonMoves = pwMoves
             var jsonMove 
           
             for (move in moves) {
@@ -1520,12 +1485,15 @@
                 if (moves[move]["multihit"]) {
                     moves[move]["multihit"] = jsonMove["multihit"]
                 }
-            }             
+            }  
         })
+                       
+
 
           // import poks
-        $.getJSON("poks.json", function(json) {
-            var jsonPoks = json
+
+        $(document).ready(function() {
+            var jsonPoks = pwPoks
             var jsonPok 
           
             for (pok in pokedex) {
@@ -1583,7 +1551,7 @@
 </div>
 
 
-<div class="credits">To import sets from Rom, open the developer console (Ctr + Shift + J), to copy the set data, and follow instructions. Pokemon and Move changes are imported automatically. <br>
+<div class="credits">
 
 To share, you can copy the public/dist folder, in pokeweb and anyone can run the calculator in the browser by opening dist/index.html.
 
