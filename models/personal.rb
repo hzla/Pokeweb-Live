@@ -58,6 +58,10 @@ class Personal
 			showdown[showdown_name]["bs"] = {"hp"=> pok["base_hp"], "at" => pok["base_atk"], "df" => pok["base_def"], "sa" => pok["base_spatk"], "sd" => pok["base_spdef"], "sp" => pok["base_speed"]}
 		end
 		File.write("public/dist/poks.json", JSON.dump(showdown))
+		open("public/dist/poks.js", "w") do |f| 
+			f.puts "var pwPoks ="
+			f.puts JSON.dump(showdown)
+		end
 	end
 
 	def self.unavailable_sprite_indexes

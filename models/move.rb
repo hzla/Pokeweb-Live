@@ -28,6 +28,10 @@ class Move < Pokenarc
 			end
 		end
 		File.write("public/dist/moves.json", JSON.dump(showdown))
+		open("public/dist/moves.js", "w") do |f| 
+			f.puts "var pwMoves ="
+			f.puts JSON.dump(showdown)
+		end
 	end
 
 	def self.write_data data, batch=false

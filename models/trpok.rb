@@ -326,7 +326,92 @@ class Trpok < Pokenarc
 		end
 		sets["data"] = data.flatten
 		File.write("public/dist/sets.json", JSON.dump(sets))
+		format_exports(sets)
 	end
+
+
+	def self.format_exports exports
+		poks = exports["data"]
+		formatted = {}
+		#for each pokemon
+		poks.each do |pok|
+			species_name = ""
+			set_name = ""
+			set_data = ""
+
+			
+			pok.each do |species, sets|
+				
+		
+
+				species_name = species
+				sets.each do |set|
+					set_name = set[0]
+					set_data = pok[species_name][set_name]
+	
+				end
+			end
+
+			if formatted[species_name]
+				while formatted[species_name][set_name] do 
+					set_name += "*"
+				end
+			else
+				formatted[species_name] = {}
+			end
+
+			formatted[species_name][set_name] = set_data
+		end
+
+
+		open("public/dist/js/data/sets/gen5.js", "w") do |f| 
+			f.puts "var SETDEX_BW ="
+			f.puts JSON.dump(formatted)
+		end
+
+
+	  # text = File.read("public/dist/js/data/sets/gen9.js")
+	  # new_contents = text.gsub("=>", ":")
+	  # File.open("public/dist/js/data/sets/gen9.js", "w") {|file| file.puts new_contents }
+
+	end
+
+
+# sets = {}
+#         // import sets
+#         $.getJSON("sets.json", function(json) {
+#             poks = json["data"]
+        
+#             // for every pokemon
+#             for (let i = 0; i < poks.length; i++ ) {
+                
+#                 var name
+#                 var setName
+#                 var setData
+
+#                 //get species name
+#                 for (species in poks[i]) {
+#                     name = species
+
+#                     // get setname
+#                     for (sname in poks[i][species]) {
+#                         setName = sname
+#                         setData = poks[i][species][setName]
+#                     }
+#                 }
+#                 // if pokemon exists
+#                 if (sets[name]) {
+#                     while (sets[name][setName]) {
+#                         setName = setName += "*"
+#                     }
+#                 } else {
+#                     sets[name] = {}
+#                 }
+
+#                 sets[name][setName] = setData            
+#             }
+#         });
+
 
 	def self.export_showdown tr_id
 
