@@ -318,10 +318,15 @@ class Trpok < Pokenarc
 		sets = {}
 		(0..849).each do |n|
 			file_path = "#{$rom_name}/json/trpok/#{n}.json"
-			raw = JSON.parse(File.open(file_path, "r"){|f| f.read})["raw"]
+			
+			begin
+				raw = JSON.parse(File.open(file_path, "r"){|f| f.read})["raw"]
+			rescue
+				break
+			end
 
 
-				data << export_showdown(n)
+			data << export_showdown(n)
 
 		end
 		sets["data"] = data.flatten
