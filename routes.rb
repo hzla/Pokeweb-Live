@@ -347,7 +347,11 @@ get '/logs' do
 end
 
 get '/export_showdown' do 
-	Trpok.export_all_showdown.to_json
+	Move.export_showdown
+	Personal.export_showdown
+	Trpok.export_all_showdown
+
+	redirect '/dist/index.html?gen=5'
 end
 
 ####################################### OVERWORLDS ###############

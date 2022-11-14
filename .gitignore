@@ -8,3 +8,4 @@ logs.txt
 /projects/*
 /python/__pycache__
 /spec
+/public/dist/*.json

@@ -56,6 +56,10 @@ class NilClass
 	  	"-"
  	 end
 
+ 	def move_titleize
+  	   ""
+  	end
+
 end
 
 # adds addtional move data to learnset data

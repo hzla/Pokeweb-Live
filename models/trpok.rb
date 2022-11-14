@@ -1,7 +1,4 @@
 class Trpok < Pokenarc
-
-
-
 	def self.get_all
 		@@narc_name = "trpok"
 		super
@@ -204,7 +201,6 @@ class Trpok < Pokenarc
 	end
 
 	def self.get_nature_for(file_name, sub_index, desired_iv=255)
-		p "getting info"
 		file_path = "#{$rom_name}/json/trpok/#{file_name}.json"
 		trpok = JSON.parse(File.open(file_path, "r"){|f| f.read})
 		ability_slot = trpok["readable"]["ability_#{sub_index}"]
@@ -319,16 +315,17 @@ class Trpok < Pokenarc
 
 	def self.export_all_showdown
 		data = []
+		sets = {}
 		(0..849).each do |n|
 			file_path = "#{$rom_name}/json/trpok/#{n}.json"
 			raw = JSON.parse(File.open(file_path, "r"){|f| f.read})["raw"]
 
-			if raw["ivs_0"] && raw["ivs_0"] > 250
-				data << export_showdown(n)
-			end
-		end
 
-		data
+				data << export_showdown(n)
+
+		end
+		sets["data"] = data.flatten
+		File.write("public/dist/sets.json", JSON.dump(sets))
 	end
 
 	def self.export_showdown tr_id
@@ -337,17 +334,16 @@ class Trpok < Pokenarc
 		raw = JSON.parse(File.open(file_path, "r"){|f| f.read})["raw"]
 		poks = JSON.parse(File.open(file_path, "r"){|f| f.read})["readable"]
 
-		trdata_path = "#{$rom_name}/json/trdata/#{tr_id}.json"
-		
-		tr_name = JSON.parse(File.open(trdata_path, "r"){|f| f.read})["readable"]["name"]
+
 
 		poks_array = []
 
 		(0..(poks["count"] - 1)).each do |i|
 			
-			species = poks["species_id_#{i}"]
+			species = poks["species_id_#{i}"].downcase.titleize
 			
 			level = poks["level_#{i}"]
+			tr_name = "Lvl #{level}"
 			
 			pok_id = raw["species_id_#{i}"]
 			file_path = "#{$rom_name}/json/personal/#{pok_id}.json"
@@ -368,7 +364,7 @@ class Trpok < Pokenarc
 
 			moves = []
 			(1..4).each do |n|
-				moves << poks["move_#{n}_#{i}"]
+				moves << sub_showdown(poks["move_#{n}_#{i}"].move_titleize)
 			end
 
 			pok = {}
@@ -378,11 +374,12 @@ class Trpok < Pokenarc
 			pok[species][tr_name] =  {}
 
 			pok[species][tr_name]["level"] = level
-			pok[species][tr_name]["item"] = item
+			pok[species][tr_name]["item"] = item.titleize
 			pok[species][tr_name]["nature"] = nature
 			pok[species][tr_name]["moves"] = moves
-			pok[species][tr_name]["ability"] = ability
+			pok[species][tr_name]["ability"] = ability.titleize
 			pok[species][tr_name]["form"] = form
+			pok[species][tr_name]["evs"] = {"df" => 0}
 
 			poks_array << pok
 
@@ -397,7 +394,47 @@ class Trpok < Pokenarc
 
 		
 	end
+
+	def self.showdown_subs
+		{
+		    "Bubblebeam": "Bubble Beam",
+		    "Doubleslap": "Double Slap",
+		    "Solarbeam": "Solar Beam",
+		    "Sonicboom": "Sonic Boom",
+		    "Poisonpowder": "Poison Powder",
+		    "Thunderpunch": "Thunder Punch",
+		    "Thundershock": "Thunder Shock",
+		    "Ancientpower": "Ancient Power",
+		    "Extremespeed": "Extreme Speed",
+		    "Dragonbreath": "Dragon Breath",
+		    "Dynamicpunch": "Dynamic Punch",
+		    "Grasswhistle": "Grass Whistle",
+		    "Featherdance": "Feather Dance",
+		    "Faint Attack": "Feint Attack",
+		    "Smellingsalt": "Smelling Salts",
+		    "Roar Of Time": "Roar of Time",
+		    "U-Turn": "U-turn",
+		    "V-Create": "V-create",
+		    "Sand-Attack": "Sand Attack",
+		    "Selfdestruct": "Self-Destruct",
+		    "Softboiled": "Soft-Boiled",
+		    "Vicegrip": "Vise Grip",
+		    "Hi Jump Kick": "High Jump Kick"
+		}
+	end
+
+	def self.sub_showdown(move)
+		subs = showdown_subs
+		if showdown_subs[move.to_sym]
+			return showdown_subs[move.to_sym]
+		else
+			return move
+		end
+	end
 end
+
+
+# "Abomasnow":{"UU Barack Aboma (Swords Dance)":{"level":100,"ability":"Soundproof","item":"Abomasite","nature":"Adamant","evs":{"hp":76,"at":252,"sp":180},"moves":["Swords Dance","Wood Hammer","Ice Shard","Earthquake"]}
 
 
 
