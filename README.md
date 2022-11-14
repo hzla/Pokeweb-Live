@@ -8,6 +8,8 @@
 
 ### 11/13/2022
 
+Showdown Calculator generator implemented
+
 Placeholder data for data expansion removed
 
 Fix bug where editor only reads 20 learnset moves, should now be 25
@@ -142,6 +144,8 @@ Next, navigate to Pokeweb/public/dist/js/data/sets/gen5.js. This file defines th
 
 If you would like to share the calculator after importing your set data, simply copy the contents of Pokeweb/public/dist and anyone can use the calculator by running index.html in the browser. 
 
+Or if you wish you can simply host the dist folder on a service like github
+
 
 
 
@@ -162,6 +166,8 @@ Data from the "raw" sections can be output to the Narcs, and saved into a rom by
 
 	$ python python/rom_saver.py ROM_NAME
 
+
+Similarly, showdown calculators created can be customized by modifying the moves.json, poks.json, and sets.json files in public/dist. Just follow the existing formatting. 
 ## Contributing
 
 A rough overview of the app detailing what overall structure as well as planned todos can be found in misc/app_info.txt
