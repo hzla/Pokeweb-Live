@@ -137,6 +137,9 @@ Clicking Battle Calculator will export data and take you to a custom fork of the
 
 If you would like to share the calculator after importing your set data, you can can simple send the public/dist folder and anyone can run the calculator by runnning index.html in their browser. 
 
+[Showdown Calc Generator Demo](https://streamable.com/ky3yn1)
+
+Note the second half of the demo is just showing that you can move the files after copying them and it'll still work.
 
 
 
