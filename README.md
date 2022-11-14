@@ -126,7 +126,7 @@ If you change "output_arm9": true to  "output_arm9": false, you can save about 5
 After downloading a newer release of Pokeweb, simply export your current project data using the export link in the navbar. Copy the ROM from the "exports" folder in the old release of Pokeweb into the root folder of the newer release of Pokeweb. You can load the rom as usual from there. 
 
 
-## Showdown Calculator
+## Showdown Calculator (experimental)
 
 Clicking Battle Calculator will export data and take you to a custom fork of the showdown battle calculator. Pokemon changes (bst, typing), and move changes (base power, typing, multihit) and auto imported. 
 
@@ -136,15 +136,13 @@ To import custom trainer sets, you must open the dev console with Cntr+Shift+J a
     <img src="https://i.imgur.com/qx3qSi6.png" width="auto" height="300">
 </p>
 
-Next, navigate to Pokeweb/public/dist/js/data/sets/gen5.js. This file defines the variable SETDEX_BW, and you need to change the entire contents of this variable to what you just copied. 
+Next, navigate to Pokeweb/public/dist/js/data/sets/gen5.js. This file defines the variable SETDEX_BW, and you need to change the entire contents of this variable to what you just copied. Then hard refresh (refresh and clear cache) and the sets should be imported 
 
 <p align="center">
     <img src="https://i.imgur.com/uGFhibt.png" width="auto" height="300">
 </p>
 
-If you would like to share the calculator after importing your set data, simply copy the contents of Pokeweb/public/dist and anyone can use the calculator by running index.html in the browser. 
-
-Or if you wish you can simply host the dist folder on a service like github
+If you would like to share the calculator after importing your set data, you can host the dist folder on a service like github
 
 
 
