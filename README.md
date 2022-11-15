@@ -134,6 +134,8 @@ After downloading a newer release of Pokeweb, simply export your current project
 
 Clicking Battle Calculator will export data and take you to a custom fork of the showdown battle calculator. Pokemon changes (bst, typing), and move changes (base power, typing, multihit) and trainer sets are auto imported. Changes sometimes require hard refreshing (cntrl + shift + r) the browser before they appear.
 
+Sets will autopopulate with Level, Trainer Class, and Location encountered in the game if the trainer uses a trainer script (script 3000 + trainer_id for singles, 5000 + trainer_id for doubles). This means trainers that utilize non global scripts to start battles will not have their location shown (ex. gym leaders).
+
 
 If you would like to share the calculator after importing your set data, you can can simple send the public/dist folder and anyone can run the calculator by runnning index.html in their browser. 
 
