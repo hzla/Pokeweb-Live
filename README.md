@@ -6,7 +6,7 @@
 
 ## Changelog
 
-### 11/13/2022
+### 11/14/2022
 
 Add trainer class and location info for showdown calc
 
