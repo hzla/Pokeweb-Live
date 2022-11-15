@@ -8,6 +8,10 @@
 
 ### 11/13/2022
 
+Add trainer class and location info for showdown calc
+
+### 11/13/2022
+
 Showdown Calculator generator implemented
 
 Placeholder data for data expansion removed
