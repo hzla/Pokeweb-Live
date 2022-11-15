@@ -347,6 +347,7 @@ get '/logs' do
 end
 
 get '/export_showdown' do 
+	Trdata.get_locations
 	Move.export_showdown
 	Personal.export_showdown
 	Trpok.export_all_showdown

@@ -1,7 +1,7 @@
 class Overworld < Pokenarc
 
 	def self.get_all
-		@@Overworld = "overworlds"
+		@@narc_name = "overworlds"
 		super
 	end
 

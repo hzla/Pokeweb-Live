@@ -148,7 +148,6 @@ class Trpok < Pokenarc
 
 
 	def self.get_nature_info_for(file_name, sub_index, desired_iv=255)
-		p "getting info"
 		file_path = "#{$rom_name}/json/trpok/#{file_name}.json"
 		trpok = JSON.parse(File.open(file_path, "r"){|f| f.read})
 		ability_slot = trpok["readable"]["ability_#{sub_index}"]
@@ -385,10 +384,6 @@ class Trpok < Pokenarc
 		trdata = JSON.parse(File.open(file_path, "r"){|f| f.read})["readable"]
 
 
-
-
-
-
 		poks_array = []
 
 		(0..(poks["count"] - 1)).each do |i|
@@ -397,6 +392,7 @@ class Trpok < Pokenarc
 			
 			level = poks["level_#{i}"]
 			tr_name = "Lvl #{level} #{trdata["class"]}"
+			tr_name += " - #{trdata["location"]}" if trdata["location"]
 			
 			pok_id = raw["species_id_#{i}"]
 			file_path = "#{$rom_name}/json/personal/#{pok_id}.json"
@@ -433,9 +429,7 @@ class Trpok < Pokenarc
 			pok[species][tr_name]["ability"] = ability.titleize.gsub("Lightningrod", "Lightning Rod").gsub("Compoundeyes", "Compound Eyes")
 
 
-			if !RomInfo.showdown_abilities.include?(ability.titleize)
-				p ability.titleize
-			end
+
 
 
 			pok[species][tr_name]["form"] = form
