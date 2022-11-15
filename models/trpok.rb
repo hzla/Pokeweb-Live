@@ -381,6 +381,12 @@ class Trpok < Pokenarc
 		raw = JSON.parse(File.open(file_path, "r"){|f| f.read})["raw"]
 		poks = JSON.parse(File.open(file_path, "r"){|f| f.read})["readable"]
 
+		file_path = "#{$rom_name}/json/trdata/#{tr_id}.json"
+		trdata = JSON.parse(File.open(file_path, "r"){|f| f.read})["readable"]
+
+
+
+
 
 
 		poks_array = []
@@ -390,7 +396,7 @@ class Trpok < Pokenarc
 			species = poks["species_id_#{i}"].downcase.titleize
 			
 			level = poks["level_#{i}"]
-			tr_name = "Lvl #{level}"
+			tr_name = "Lvl #{level} #{trdata["class"]}"
 			
 			pok_id = raw["species_id_#{i}"]
 			file_path = "#{$rom_name}/json/personal/#{pok_id}.json"
@@ -424,7 +430,14 @@ class Trpok < Pokenarc
 			pok[species][tr_name]["item"] = item.titleize
 			pok[species][tr_name]["nature"] = nature
 			pok[species][tr_name]["moves"] = moves
-			pok[species][tr_name]["ability"] = ability.titleize
+			pok[species][tr_name]["ability"] = ability.titleize.gsub("Lightningrod", "Lightning Rod").gsub("Compoundeyes", "Compound Eyes")
+
+
+			if !RomInfo.showdown_abilities.include?(ability.titleize)
+				p ability.titleize
+			end
+
+
 			pok[species][tr_name]["form"] = form
 			pok[species][tr_name]["evs"] = {"df" => 0}
 
