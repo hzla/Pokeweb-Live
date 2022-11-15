@@ -11,6 +11,19 @@ class Header
 		data = File.open(file_path, "r:ISO8859-1"){|f| f.read}.split("\n").uniq
 	end
 
+	def self.find_location_by_map_id map_id
+		headers = get_all
+		location = nil
+		headers.each do |k,v|
+			next if k == "count"
+			if v["map_id"] == map_id
+				location = v["location_name"]
+				break
+			end
+		end
+		location
+	end
+
 
 	def self.write_batch_data data
 		@@upcases = []
