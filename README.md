@@ -148,9 +148,9 @@ Additional settings can be found in pokeweb/calculator_settings.json.
 // pokeweb will only export sets that match these conditions
 
 {
-	"min_ivs": 249, // 0 - 255
-	"has_items": [1], // [0] for no, [1] for yes, [0,1] for both
-	"has_moves": [1], // [0] for no, [1] for yes, [0,1] for both
+	"min_ivs": 0, // 0 - 255
+	"has_items": [0,1], // [0] for no, [1] for yes, [0,1] for both
+	"has_moves": [0,1], // [0] for no, [1] for yes, [0,1] for both
 	"battle_types": ["Singles", "Doubles", "Triples", "Rotation"], // "Singles", "Doubles", "Triples", "Rotation"
 	"ai_values": [7,135]
 }
