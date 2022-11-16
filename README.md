@@ -36,7 +36,7 @@ Not thoroughly bug tested, was originally made for personal use, use at your own
 
 ### [Quick Feature Tour](https://streamable.com/cjk04j)
 
-### [Showdown Calc Generator Demo](https://streamable.com/ky3yn1)
+
 
 You can join this Pokemon DS Rom Hacking discord server for updates as well as general support for your Pokemon gen IV/V rom hacking needs. [https://discord.gg/cTKQq5Y](https://discord.gg/cTKQq5Y)
 ## Windows Installation 
@@ -131,22 +131,19 @@ If you change "output_arm9": true to  "output_arm9": false, you can save about 5
 
 ## Carrying Over Rom Data To Newer Releases
 
-After downloading a newer release of Pokeweb, simply export your current project data using the export link in the navbar. Copy the ROM from the "exports" folder in the old release of Pokeweb into the root folder of the newer release of Pokeweb. You can load the rom as usual from there. 
+After downloading a newer release of Pokeweb, export your current project data using the export link in the navbar. Copy the ROM from the "exports" folder in the old release of Pokeweb into the root folder of the newer release of Pokeweb. You can load the rom as usual from there. 
 
 
 ## Showdown Calculator (experimental)
 
-Clicking Battle Calculator will export data and take you to a custom fork of the showdown battle calculator. Pokemon changes (bst, typing), and move changes (base power, typing, multihit) and trainer sets are auto imported. Changes sometimes require hard refreshing (cntrl + shift + r) the browser before they appear.
+Clicking Battle Calculator will export data and take you to a custom fork of the showdown battle calculator. Pokemon changes (bst, typing, nature, abilities), and move changes (base power, typing, multihit) and trainer sets are auto imported. Changes sometimes require hard refreshing (cntrl + shift + r) the browser before they appear.
 
-Sets will autopopulate with Level, Trainer Class, and Location encountered in the game if the trainer uses a trainer script (script 3000 + trainer_id for singles, 5000 + trainer_id for doubles). This means trainers that utilize non global scripts to start battles will not have their location shown (ex. gym leaders).
+Sets will autopopulate with Level, Trainer Class, Trainer Name, and Location encountered in the game if the trainer uses a trainer script (script 3000 + trainer_id for singles, 5000 + trainer_id for doubles). This means trainers that utilize non global scripts to start battles will not have their location shown (ex. gym leaders).
+
+If you have added trainer classes or trainer names, please add the files the "trainer_classes_{ROM_NAME}.txt" and "names_{ROM_NAME}.txt" to "Pokeweb/Reference_Files". For example, if your rom name is "white.nds", replace ROM_NAME with "white" These files should include a line separated list of trainer names and classes. This data can be found in file 382 and 383 in the game text banks using your gen 5 text editor of choice. Otherwise, the calculator will default to vanilla names/classes. Files will need to be added prior to loading a rom in Pokeweb.  
 
 
-If you would like to share the calculator after importing your set data, you can can simple send the public/dist folder and anyone can run the calculator by runnning index.html in their browser. 
-
-[Showdown Calc Generator Demo](https://streamable.com/ky3yn1)
-
-Note the second half of the demo is just showing that you can move the files after copying them and it'll still work.
-
+If you would like to share the calculator after importing your set data, you can send the public/dist folder and anyone can run the calculator by runnning index.html in their browser. 
 
 
 
