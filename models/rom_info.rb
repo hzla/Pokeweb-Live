@@ -121,6 +121,7 @@ class RomInfo
         forms["Thundurus"] = ["Therian"]
         forms["Landorus"] = ["Therian"]
         forms["Wormadam"] = ["Sandy", "Trash"]
+        forms["Genesect"] = ["Douse", "Chill", "Burn", "Shock"]
         forms
     end
 

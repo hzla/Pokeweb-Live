@@ -408,7 +408,7 @@ class Trpok < Pokenarc
 			
 			form = poks["form_#{i}"]
 
-			if form > 0 && !(["Deerling","Sawsbuck","Gastrodon","Shellos","Arceus","Genesect"].include?(species))
+			if form > 0 && !(["Deerling","Sawsbuck","Gastrodon","Shellos","Arceus"].include?(species))
 				species_name = species
 				begin
 					species += "-#{RomInfo.form_info[species_name][form - 1]}"
@@ -416,10 +416,6 @@ class Trpok < Pokenarc
 				
 				end
 			end
-
-
-
-			
 
 			ability_id = poks["ability_#{i}"]
 
