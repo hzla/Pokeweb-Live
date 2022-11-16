@@ -347,7 +347,11 @@ get '/logs' do
 end
 
 get '/export_showdown' do 
-	Trdata.get_locations
+	if !SessionSettings.get("tr_locations_found")
+		Trdata.get_locations
+		SessionSettings.set("tr_locations_found", true)
+	end
+
 	Move.export_showdown
 	Personal.export_showdown
 	Trpok.export_all_showdown

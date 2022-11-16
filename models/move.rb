@@ -20,7 +20,7 @@ class Move < Pokenarc
 			showdown_name = sub_showdown(move[1]["name"].move_titleize)
 
 			showdown[showdown_name] = {}
-			showdown[showdown_name]["type"] = move[1]["type"]
+			showdown[showdown_name]["type"] = move[1]["type"].titleize
 			showdown[showdown_name]["basePower"] = move[1]["power"]
 			showdown[showdown_name]["category"] = move[1]["category"]
 			if move[1]["min_hits"] > 0
