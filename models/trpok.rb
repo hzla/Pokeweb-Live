@@ -316,7 +316,7 @@ class Trpok < Pokenarc
 		data = []
 		sets = {}
 		tr_count = Dir.entries("#{$rom_name}/json/trpok/").length
-		rival_count = 0
+		rival_count = -1
 		(0..tr_count).each do |n|
 
 			begin
@@ -393,11 +393,6 @@ class Trpok < Pokenarc
 
 		poks_array = []
 	
-
-
-		if trdata["name"].downcase.include?("rival")
-			rival_set += 1
-		end
 		
 
 		(0..(poks["count"] - 1)).each do |i|
@@ -412,7 +407,7 @@ class Trpok < Pokenarc
 
 			if tr_name.downcase.include?('rival')
 				# binding.pry
-				tr_name += " - Starter #{rival_set % 3 + 1}"
+				tr_name += " - Starter #{(rival_set % 3) + 1}"
 				
 			end
 			
