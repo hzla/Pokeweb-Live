@@ -26,6 +26,20 @@ def set_global_vars():
 
 	TRAINER_NAMES = open(f'Reference_Files/trainer_names.txt', "r").read().splitlines()
 
+	# customTnames = f'Reference_Files/trainer_names_{ROM_NAME.split("/")[-1]}.txt'
+	# customTclasses = f'Reference_Files/trainer_classes_{ROM_NAME.split("/")[-1]}.txt'
+
+	# print("searching for the following custom trainer names/classes files")
+	# print(customTclasses)
+	# print(customTnames)
+
+	# if os.path.isfile(customTnames) and os.path.isfile(customTclasses):
+	# 	print("custom detected")
+	# 	TRAINER_CLASSES = open(customTclasses, "r").read().splitlines()
+	# 	TRAINER_NAMES = open(customTnames, "r").read().splitlines()
+	# else:
+	# 	print("no custom names/classes found")
+
 	ITEMS = open(f'{ROM_NAME}/texts/items.txt', mode="r").read().splitlines()
 
 	BATTLE_TYPES = ["Singles", "Doubles", "Triples", "Rotation"]
