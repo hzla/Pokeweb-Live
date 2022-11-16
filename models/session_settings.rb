@@ -12,6 +12,13 @@ class SessionSettings
 		nil
 	end
 
+	def self.calc_settings
+		contents = File.open("calculator_settings.json", "r") do |f|
+			f.read
+		end
+		JSON.parse(contents)
+	end
+
 	def self.base_rom
 		settings = File.open("session_settings.json", "r") do |f|
 			f.read
