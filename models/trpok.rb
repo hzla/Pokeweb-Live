@@ -317,6 +317,9 @@ class Trpok < Pokenarc
 		sets = {}
 		tr_count = Dir.entries("#{$rom_name}/json/trpok/").length
 		rival_count = -1
+
+		settings = SessionSettings.calc_settings
+
 		(0..tr_count).each do |n|
 
 			begin
@@ -331,10 +334,11 @@ class Trpok < Pokenarc
 			end
 		
 			
+			if settings["ai_values"].include?(trdata["ai"]) && settings["has_moves"].include?(trdata["has_moves"]) && settings["has_items"].include?(trdata["has_items"]) && settings["battle_types"].include?(trdata["battle_type_1"])
 
-
-
-			data << export_showdown(n, trdata, rival_count)
+				
+				data << export_showdown(n, trdata, settings["min_ivs"], rival_count)
+			end
 
 		end
 		sets["data"] = data.flatten
@@ -383,7 +387,7 @@ class Trpok < Pokenarc
 		end
 	end
 
-	def self.export_showdown tr_id, trdata,rival_set=0
+	def self.export_showdown tr_id, trdata, min_ivs, rival_set=0
 
 		file_path = "#{$rom_name}/json/trpok/#{tr_id}.json"
 		raw = JSON.parse(File.open(file_path, "r"){|f| f.read})["raw"]
@@ -396,7 +400,7 @@ class Trpok < Pokenarc
 		
 
 		(0..(poks["count"] - 1)).each do |i|
-			
+			next if poks["ivs_#{i}"] < min_ivs
 			species = poks["species_id_#{i}"].downcase.titleize
 			
 			level = poks["level_#{i}"]

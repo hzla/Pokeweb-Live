@@ -103,6 +103,10 @@ with open(f'session_settings.json', "w") as outfile:
 	json.dump(settings, outfile) 
 	print(settings)
 
+
+
+
+
 #############################################################
 ################### CONVERT TO JSON #########################
 
