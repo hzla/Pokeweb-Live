@@ -315,17 +315,26 @@ class Trpok < Pokenarc
 	def self.export_all_showdown 
 		data = []
 		sets = {}
-		(0..849).each do |n|
-			file_path = "#{$rom_name}/json/trpok/#{n}.json"
-			
+		tr_count = Dir.entries("#{$rom_name}/json/trpok/").length
+		rival_count = 0
+		(0..tr_count).each do |n|
+
 			begin
-				raw = JSON.parse(File.open(file_path, "r"){|f| f.read})["raw"]
+				file_path = "#{$rom_name}/json/trdata/#{n}.json"
+				trdata = JSON.parse(File.open(file_path, "r"){|f| f.read})["readable"]
+
+				if trdata["name"].downcase.include?("rival") 
+					rival_count += 1
+				end
 			rescue
 				break
 			end
+		
+			
 
 
-			data << export_showdown(n)
+
+			data << export_showdown(n, trdata, rival_count)
 
 		end
 		sets["data"] = data.flatten
@@ -374,17 +383,22 @@ class Trpok < Pokenarc
 		end
 	end
 
-	def self.export_showdown tr_id
+	def self.export_showdown tr_id, trdata,rival_set=0
 
 		file_path = "#{$rom_name}/json/trpok/#{tr_id}.json"
 		raw = JSON.parse(File.open(file_path, "r"){|f| f.read})["raw"]
 		poks = JSON.parse(File.open(file_path, "r"){|f| f.read})["readable"]
 
-		file_path = "#{$rom_name}/json/trdata/#{tr_id}.json"
-		trdata = JSON.parse(File.open(file_path, "r"){|f| f.read})["readable"]
 
 
 		poks_array = []
+	
+
+
+		if trdata["name"].downcase.include?("rival")
+			rival_set += 1
+		end
+		
 
 		(0..(poks["count"] - 1)).each do |i|
 			
@@ -394,12 +408,12 @@ class Trpok < Pokenarc
 			tr_name = "Lvl #{level} #{trdata["class"]} #{trdata["name"]}"
 			tr_name += " - #{trdata["location"]}" if trdata["location"]
 
+			
+
 			if tr_name.downcase.include?('rival')
-				tr_name += " - "
-				(0..(poks["count"] - 1)).each do |pok|
-					pok_name = poks["species_id_#{pok}"]
-					tr_name += ("#{pok_name[0..3]}|")
-				end
+				# binding.pry
+				tr_name += " - Starter #{rival_set % 3 + 1}"
+				
 			end
 			
 			pok_id = raw["species_id_#{i}"]
