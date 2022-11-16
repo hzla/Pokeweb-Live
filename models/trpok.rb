@@ -411,9 +411,9 @@ class Trpok < Pokenarc
 			if form > 0 && !(["Deerling","Sawsbuck","Gastrodon","Shellos","Arceus","Genesect"].include?(species))
 				species_name = species
 				begin
-					species += "-#{RomInfo.form_info[species_name][form]}"
+					species += "-#{RomInfo.form_info[species_name][form - 1]}"
 				rescue
-					binding.pry
+				
 				end
 			end
 
