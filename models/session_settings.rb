@@ -37,6 +37,27 @@ class SessionSettings
 		end
 	end
 
+	def self.set field, value
+		current_settings = File.open("session_settings.json", "r") do |f|
+			f.read
+		end
+		current_settings = JSON.parse current_settings
+		current_settings[field] = value
+		
+		
+		settings = File.open("session_settings.json", "w") do |f|
+			f.write(JSON.dump(current_settings))
+		end
+	end
+
+	def self.get field
+		current_settings = File.open("session_settings.json", "r") do |f|
+			f.read
+		end
+		current_settings = JSON.parse current_settings
+		current_settings[field]
+	end
+
 	def self.load_project project_name
 		project_settings = File.open("#{project_name}/session_settings.json", "r") do |f|
 			f.read

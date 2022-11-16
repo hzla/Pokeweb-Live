@@ -1,5 +1,5 @@
 
-# Pokeweb: A GenV Rom Editor
+# Pokeweb: GenV Rom Editor & Showdown Calc Generator
 <p align="center">
     <img src="https://i.imgur.com/CP232tv.png" width="auto" height="400">
 </p>
@@ -35,6 +35,7 @@ Not thoroughly bug tested, was originally made for personal use, use at your own
 
 
 ### [Quick Feature Tour](https://streamable.com/cjk04j)
+### [Calc Export Demo](https://streamable.com/0ym3uy)
 
 
 
