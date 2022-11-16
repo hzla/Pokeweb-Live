@@ -104,6 +104,26 @@ class RomInfo
 		["Default", "Female", "Male"]
 	end
 
+
+    def self.form_info
+        forms = {}
+        forms["Deoxys"] = ['Attack', 'Defense', 'Speed']
+        forms["Shaymin"] = ["Sky"]
+        forms["Giratina"] = ["Origin"]
+        forms["Rotom"] = ["Heat", "Wash", "Frost", "Fan", "Mow"]
+        forms["Castorm"] = ["Sunny", "Rainy", "Snowy"]
+        forms["Basculin"] = ["Blue-Striped"]
+        forms["Darmanitan"] = ["Zen"]
+        forms["Meloetta"] = ["Pirouette"]
+        forms["Kyurem"] = ["White", "Black"]
+        forms["Keldeo"] = ["Resolute"]
+        forms["Tornadus"] = ["Therian"]
+        forms["Thundurus"] = ["Therian"]
+        forms["Landorus"] = ["Therian"]
+        forms["Wormadam"] = ["Sandy", "Trash"]
+        forms
+    end
+
 	def self.showdown_abilities 
 		[
     "Adaptability",

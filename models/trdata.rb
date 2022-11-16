@@ -132,8 +132,6 @@ class Trdata < Pokenarc
 
 					json_data["readable"]["location"] = location
 					File.open(file_path, "w") { |f| f.write json_data.to_json }
-					p script_id
-					p location
 				end
 			end
 

@@ -228,7 +228,7 @@ class Trpok < Pokenarc
 
 		natures = RomInfo.natures
 
-		n = 255
+		n = desired_iv
 		pid = get_pid(trainer_id, trainer_class, pok_id, n, pok_lvl, ability_gender, personal_gender, false, ability_slot)
 
 		convert_pid_to_nature(pid, natures)
@@ -312,7 +312,7 @@ class Trpok < Pokenarc
 	end
 
 
-	def self.export_all_showdown
+	def self.export_all_showdown 
 		data = []
 		sets = {}
 		(0..849).each do |n|
@@ -391,14 +391,33 @@ class Trpok < Pokenarc
 			species = poks["species_id_#{i}"].downcase.titleize
 			
 			level = poks["level_#{i}"]
-			tr_name = "Lvl #{level} #{trdata["class"]}"
+			tr_name = "Lvl #{level} #{trdata["class"]} #{trdata["name"]}"
 			tr_name += " - #{trdata["location"]}" if trdata["location"]
+
+			if tr_name.downcase.include?('rival')
+				tr_name += " - "
+				(0..(poks["count"] - 1)).each do |pok|
+					pok_name = poks["species_id_#{pok}"]
+					tr_name += ("#{pok_name[0..3]}|")
+				end
+			end
 			
 			pok_id = raw["species_id_#{i}"]
 			file_path = "#{$rom_name}/json/personal/#{pok_id}.json"
 			personal = JSON.parse(File.open(file_path, "r"){|f| f.read})["readable"]
 			
 			form = poks["form_#{i}"]
+
+			if form > 0 && !(["Deerling","Sawsbuck","Gastrodon","Shellos","Arceus","Genesect"].include?(species))
+				species_name = species
+				begin
+					species += "-#{RomInfo.form_info[species_name][form]}"
+				rescue
+					binding.pry
+				end
+			end
+
+
 
 			
 
@@ -409,7 +428,7 @@ class Trpok < Pokenarc
 
 			item = poks["item_id_#{i}"]
 
-			nature = get_nature_for(tr_id, i)
+			nature = get_nature_for(tr_id, i, poks["ivs_#{i}"])
 
 			moves = []
 			(1..4).each do |n|
