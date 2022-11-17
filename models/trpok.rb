@@ -315,6 +315,7 @@ class Trpok < Pokenarc
 	def self.export_all_showdown 
 		data = []
 		sets = {}
+		@@tr_name_counts = {}
 		tr_count = Dir.entries("#{$rom_name}/json/trpok/").length
 		rival_count = -1
 
@@ -336,7 +337,7 @@ class Trpok < Pokenarc
 			
 			if settings["ai_values"].include?(trdata["ai"]) && settings["has_moves"].include?(trdata["has_moves"]) && settings["has_items"].include?(trdata["has_items"]) && settings["battle_types"].include?(trdata["battle_type_1"])
 
-				
+
 				data << export_showdown(n, trdata, settings["min_ivs"], rival_count)
 			end
 
@@ -370,8 +371,13 @@ class Trpok < Pokenarc
 			end
 
 			if formatted[species_name]
+				counter = 1
 				while formatted[species_name][set_name] do 
-					set_name += "*"
+					if counter == 1
+						formatted[species_name]["#{set_name} 1"] = formatted[species_name].delete set_name
+					end
+					set_name = "#{set_name} #{counter + 1}"
+					counter += 1
 				end
 			else
 				formatted[species_name] = {}
@@ -394,6 +400,13 @@ class Trpok < Pokenarc
 		poks = JSON.parse(File.open(file_path, "r"){|f| f.read})["readable"]
 
 
+		trname_info = "#{trdata["class"]} #{trdata["name"]}"
+
+		if @@tr_name_counts[trname_info]
+			@@tr_name_counts[trname_info] += 1
+		else
+			@@tr_name_counts[trname_info] = 1
+		end
 
 		poks_array = []
 	
@@ -402,10 +415,13 @@ class Trpok < Pokenarc
 		(0..(poks["count"] - 1)).each do |i|
 			next if poks["ivs_#{i}"] < min_ivs
 			species = poks["species_id_#{i}"].downcase.titleize
+
+			trname_count = @@tr_name_counts[trname_info]
 			
 			level = poks["level_#{i}"]
-			tr_name = "Lvl #{level} #{trdata["class"]} #{trdata["name"]}"
+			tr_name = "Lvl #{level} #{trdata["class"]} #{trdata["name"]} #{trname_count if trname_count > 1 }"
 			tr_name += " - #{trdata["location"]}" if trdata["location"]
+
 
 			
 
@@ -470,7 +486,7 @@ class Trpok < Pokenarc
 
 
 		end
-
+		p poks_array
 		poks_array
 
 
