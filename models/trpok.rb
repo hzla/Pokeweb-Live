@@ -417,9 +417,11 @@ class Trpok < Pokenarc
 			species = poks["species_id_#{i}"].downcase.titleize
 
 			trname_count = @@tr_name_counts[trname_info]
+
+			show_count = (trname_count > 1 || trdata["class"] = "Grunt" || trdata["class"] = "Shadow" )
 			
 			level = poks["level_#{i}"]
-			tr_name = "Lvl #{level} #{trdata["class"]} #{trdata["name"]} #{trname_count if trname_count > 1 }"
+			tr_name = "Lvl #{level} #{trdata["class"]} #{trdata["name"]} #{trname_count if show_count }"
 			tr_name += " - #{trdata["location"]}" if trdata["location"]
 
 
