@@ -4,7 +4,7 @@
 	"min_ivs": 249, // 0 - 255
 	"has_items": [1], // [0] for no, [1] for yes, [0,1] for both
 	"has_moves": [1], // [0] for no, [1] for yes, [0,1] for both
-	"battle_types": ["Doubles"], // "Singles", "Doubles", "Triples", "Rotation"
+	"battle_types": ["Singles","Doubles"], // "Singles", "Doubles", "Triples", "Rotation"
 	"ai_values": [135]
 }
 

@@ -155,7 +155,7 @@ for msg_bank in MSG_BANKS:
 
 settings = {}
 settings.update(narc_info)
-settings["output_arm9"] = True
+settings["output_arm9"] = False
 
 
 
