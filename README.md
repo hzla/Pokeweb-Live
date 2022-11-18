@@ -141,7 +141,7 @@ Clicking Battle Calculator will export data and take you to a custom fork of the
 
 Sets will autopopulate with Level, Trainer Class, Trainer Name, and Location encountered in the game if the trainer uses a trainer script (script 3000 + trainer_id for singles, 5000 + trainer_id for doubles). This means trainers that utilize non global scripts to start battles will not have their location shown (ex. gym leaders).
 
-If you have added trainer classes or trainer names, please add the files the "trainer_classes_{ROM_NAME}.txt" and "names_{ROM_NAME}.txt" to "Pokeweb/Reference_Files". For example, if your rom name is "white.nds", replace ROM_NAME with "white" These files should include a line separated list of trainer names and classes. This data can be found in file 382 and 383 in the game text banks using your gen 5 text editor of choice. Otherwise, the calculator will default to vanilla names/classes. Files will need to be added prior to loading a rom in Pokeweb.  
+If you have added trainer classes or trainer names, please add the files the "trainer_classes_{ROM_NAME}.txt" and "trainer_names_{ROM_NAME}.txt" to "Pokeweb/Reference_Files". For example, if your rom name is "white.nds", replace ROM_NAME with "white" These files should include a line separated list of trainer names and classes. This data can be found in file 382 and 383 in the game text banks using your gen 5 text editor of choice. Otherwise, the calculator will default to vanilla names/classes. Files will need to be added prior to loading a rom in Pokeweb.  
 Additional settings can be found in pokeweb/calculator_settings.json.
 
 ```
