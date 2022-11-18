@@ -418,10 +418,10 @@ class Trpok < Pokenarc
 
 			trname_count = @@tr_name_counts[trname_info]
 
-			show_count = (trname_count > 1 || trdata["class"] = "Grunt" || trdata["class"] = "Shadow" )
+			show_count = (trname_count > 1 || trdata["name"] == "Grunt" || trdata["name"] == "Shadow" )
 			
 			level = poks["level_#{i}"]
-			tr_name = "Lvl #{level} #{trdata["class"]} #{trdata["name"]} #{trname_count if show_count }"
+			tr_name = "Lvl #{level} #{trdata["class"]} #{trdata["name"]}#{trname_count if show_count }"
 			tr_name += " - #{trdata["location"]}" if trdata["location"]
 
 
