@@ -10,7 +10,10 @@ class Personal
 			file_path = "#{$rom_name}/json/personal/#{n}.json"
 			data << get_data_for(file_path)
 		end
-		data
+
+		data[29]["name"] = "Nidoran-F"
+		data[32]["name"] = "Nidoran-M"
+		data[83]["name"] = "Farfetch’d"
 
 		if SessionSettings.base_rom == "BW2"
 			data[685]["name"] = "Deoxys-Attack"
@@ -63,57 +66,9 @@ class Personal
 
 		showdown = {}
 
-		poks[28]["name"] = "Nidoran-F"
-		poks[31]["name"] = "Nidoran-M"
-		poks[82]["name"] = "Farfetch’d"
+
 		
 
-
-
-
-		# if SessionSettings.base_rom == "BW2"
-		# 	poks[684]["name"] = "Deoxys-Attack"
-		# 	poks[685]["name"] = "Deoxys-Defense"
-		# 	poks[686]["name"] = "Deoxys-Speed"
-		# 	poks[687]["name"] = "Wormadan-Sandy"
-		# 	poks[688]["name"] = "Womadan-Trash"
-		# 	poks[689]["name"] = "Shaymin-Sky"	
-		# 	poks[690]["name"] = "Giratina-Origin"
-		# 	poks[691]["name"] = "Rotom-Heat"
-		# 	poks[692]["name"] = "Rotom-Wash"
-		# 	poks[693]["name"] = "Rotom-Frost"
-		# 	poks[694]["name"] = "Rotom-Fan"
-		# 	poks[695]["name"] = "Rotom-Mow"
-		# 	poks[696]["name"] = "Castform-Sunny"
-		# 	poks[697]["name"] = "Castform-Rainy"
-		# 	poks[698]["name"] = "Castform-Snowy"
-		# 	poks[699]["name"] = "Basculin-Blue-Striped"
-		# 	poks[700]["name"] = "Darmanitan-Zen"
-		# 	poks[701]["name"] = "Meloetta-Pirouette"
-		# 	poks[702]["name"] = "Kyurem-White"
-		# 	poks[703]["name"] = "Kyurem-Black"
-		# 	poks[704]["name"] = "Keldeo-Resolute"
-		# 	poks[705]["name"] = "Tornadus-Therian"
-		# 	poks[706]["name"] = "Thundurus-Therian"
-		# 	poks[707]["name"] = "Landorus-Therian"
-		# else
-		# 	poks[649]["name"] = "Deoxys-Attack"
-		# 	poks[650]["name"] = "Deoxys-Defense"
-		# 	poks[651]["name"] = "Deoxys-Speed"
-		# 	poks[652]["name"] = "Shaymin-Sky"	
-		# 	poks[655]["name"] = "Giratina-Origin"
-		# 	poks[656]["name"] = "Rotom-Heat"
-		# 	poks[657]["name"] = "Rotom-Wash"
-		# 	poks[658]["name"] = "Rotom-Frost"
-		# 	poks[659]["name"] = "Rotom-Fan"
-		# 	poks[660]["name"] = "Rotom-Mow"
-		# 	poks[661]["name"] = "Castform-Sunny"
-		# 	poks[662]["name"] = "Castform-Rainy"
-		# 	poks[663]["name"] = "Castform-Snowy"
-		# 	poks[664]["name"] = "Basculin-Blue-Striped"
-		# 	poks[665]["name"] = "Darmanitan-Zen"
-		# 	poks[666]["name"] = "Meloetta-Pirouette"
-		# end
 
 
 		poks.each do |pok|
@@ -133,6 +88,7 @@ class Personal
 			f.puts "var pwPoks ="
 			f.puts JSON.dump(showdown)
 		end
+		showdown
 	end
 
 	def self.unavailable_sprite_indexes
@@ -264,4 +220,55 @@ class Personal
 	def self.tutor_moves
 		["Grass Pledge", "Fire Pledge", "Water Pledge", "Frenzy Plant", "Blast Burn", "Hydro Cannon", "Draco Meteor" ]
 	end
+
+
+	#DEV USE ONLY
+	def self.remove_setup_tms
+		poke_data[1..708].each do |pok|
+			tm_list = get_tm_list(pok)[:tms] + get_tm_list(pok)[:hms]
+			[1,4,7,8,11,37,69,75,83,90].each do |n|
+				tm_list[n - 1] = 0
+			end
+			data = {}
+			data["file_name"] = pok["index"]
+			data["field"] = "tms"
+			data["value"] = tm_list
+			data["narc"] = "personal"
+			write_data(data)
+
+			command = "python python/personal_writer.py update #{pok["index"]} personal"
+			pid = spawn command
+			Process.detach(pid)
+		end
+		"success"
+	end
+
+
+	#DEV USE ONLY
+	def self.fix
+		$rom_name = "to_copy"
+		b2k_poks = poke_data
+		$rom_name = "to_fix"
+		bb2_poks = poke_data
+		
+		bb2_poks.each_with_index do |pok, i|
+			data_to_copy = b2k_poks[i]
+			next if i == 0
+			break if i > 708
+			file_path = "#{$rom_name}/json/personal/#{i}.json"
+			file = JSON.parse(File.open(file_path){|f| f.read})
+
+			file["readable"]["tm_1-32"]  = data_to_copy["tm_1-32"]  
+			file["readable"]["tm_33-64"] = data_to_copy["tm_33-64"] 
+			file["readable"]["tm_65-95+hm_1"] = data_to_copy["tm_65-95+hm_1"] 
+			file["readable"]["hm_2-6"]   = data_to_copy["hm_2-6"]
+			File.open(file_path, "w") { |f| f.write file.to_json }
+		end
+	end
 end
+
+
+
+
+
+# {"file_name"=>"186", "field"=>"tms", "value"=>["1", "0", "0", "0", "0", "1", "1", "0", "0", "1", "0", "0", "1", "1", "1", "0", "1", "1", "0", "0", "1", "0", "0", "0", "0", "1", "1", "1", "1", "0", "1", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "1", "0", "1", "1", "0", "0", "0", "1", "0", "1", "1", "0", "0", "1", "1", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "1", "0", "0", "0", "0", "0", "0", "0", "0", "0", "1", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "1", "0", "0", "0", "1", "0", "0", "0", "1", "1", "1", "1"], "narc"=>"personal"}

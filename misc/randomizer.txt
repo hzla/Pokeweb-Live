@@ -1,27 +1,10 @@
-
-Notes: user specified adjustable variance means user will enter a number N between 0-100 and the randomizer will search for a value within N% of the original. 
-
-bst = Base Stat Total
-
-MAPS OPTIONS:
-	use original
-	add grass/water to cities (on preset locations)
-
-OVERWORLD OPTIONS:
-	use original 
-	unavoidable trainers
-	+N unavoidable trainers on routes (up to a limit because this is really hard to do)
-	+N unavoidable trainers in gyms (up to a limit because this is really hard to do)
-
 TRAINERS OPTIONS:
-	use original
-	held item use % on all
-	held item use % on bosses
+
 	max ivs
 	% chance to be double
 	% chance to be triple
 	% chance to be rotation
-	allow pokestudio mons
+
 
 	randomize mons
 		with original bst by user specified adjustable variance
@@ -78,7 +61,147 @@ OTHER OPTIONS:
 
 
 
+Base_rom:
+	no evs
+	limited setup
+	nerf op moves (sub, encore)
+	bbredux typings
+	mandatory trainers
+	encounters added everywhere where possible
+	7,135 ai, max ivs
 
+
+
+Trainer Viability Alg
+	(bst -  min(sp_atk, atk)) * viability_mod(customizable) * item_mod * ability_mod * trainer_id_mod
+
+	bst = base stat total - the lower of sp_atk, atk
+	viability_mod = custom defined value that increases or decreases viability
+	item_mod = custom defined value that increases or decreases viability based on chosen item
+	ability_mod = custom defined value that increases or decreases viability based on chosen ability
+	trainer_id_mod = custom defined value that increases or decreases viability based on specific trainer (optionals/bosses)
+
+
+
+
+
+Items: Lightball, Soul Dew
+
+
+SS-tier: Huge Power, Drizzle, Pure Power, Wonderguard
+S-tier: Guts, Drought, Intimidate, Adaptability, Contrary, Toxic Boost, Multiscale, Serene Grace, No Guard, Storm Drain, Sturdy, Water Absorb, Lightningrod
+A-tier: Analytic, Prankster, Technician, Skill Link, Iron Fist
+D-tier: Pickup, Cloud Nine,illuminate,Plus, Minus, honey gather
+F-tier: Truant, Defeatist, Slow Start, Klutz, Stall,
+
+
+Encounter Viability Alg
+	if sp_atk - atk < 20%
+		(bst - avg(sp_atk, atk)) * viability_mod(customizable) * ability_mod
+	else
+		bst - min(sp_atk, atk)) * viability_mod(customizable) * ability_mod
+
+
+	if special attack and attack are close, use the avg, otherwise use the greater of the two
+	use avg of all ability_mod values because they all have a chance to show up
+
+
+
+SS-tier: Huge Power, Drizzle, Pure Power, Poison Heal, Wonderguard
+S-tier: Regenerator, Guts, Drought, Intimidate,Adaptability, Moxie, Illusion,Contrary, Battle Armor, Shell Armor, Toxic Boost, Compound Eyes, Multiscale, Serene Grace, Marvel Scale,Swift Swim, Download, Levitate, Volt Absorb, Speed Boost, No Guard, Storm Drain, Sturdy, Water Absorb, Lightningrod
+A-tier: Magic Bounce, Reckless, Analytic, Simple, Natural Cure, Tinted Lens, Torrent, Overgrow, Quick Feet, Rock Head, Motor Drive, Thick Fat, Swarm, Sheer Force, Sand Stream, Prankster, Technician, Skill Link, Iron Fist, Magnet Pull, Blaze,Chlorophyl,Dry Skin, Harvest, Flare Boost, Iron Barbs, Magic Guard, Heatproof, Rough Skin, Flash Fire, Competetive, Defiant, Heat Proof
+
+
+D-tier: Pickup, Cloud Nine,illuminate,Plus, Minus, honey gather
+F-tier: Truant, Defeatist, Slow Start, Klutz, Stall,
+
+
+
+Move Choosing Alg: 
+	Use Smogon Set > lvl 40
+	defined bp ranges for each modBST range
+
+	1-2 stab moves depending on type and max(sp_atk, atk) or rand(sp_atk, atk) if they're close enough
+	(0-1) status move, either last learnset status move, or random smogon status move
+	1 either status move same criteria as above ^ or random coverage move bp scaled to lvl
+	(0-1) either status move same criteria as above ^ or random coverage move bp scaled to lvl
+	(0-1) first option again if still room && only 1 stab move chosen
+	(0-1) random coverage if still room
+
+
+
+	stab/coverage move chooser:
+		given viability range 30-400
+
+		target bp = 1.01^(avg(bst) - 60) + 40 
+
+		given pokemon viability 500
+
+		52.5 / (500 / 350) = moveBP = 36.9
+
+		given pokemon viability 200
+
+		52.5 / (200/350) = moveBP = 92
+
+		Identify target bp for move type
+		Search all moves. Rand(round up or down). Get closest move
+		Use learnset moves for stab, if none found, use all moves
+		Use all moves for coverage
+
+
+IVs Alg:
+	rand ability
+	Get desired natures from smogon
+	get natures with same beneficial stat
+	brute force natures until one is found
+	else ivs 255
+
+Item Alg: 
+	80% random from smogon + 20%[sitrus, lum, leftoevers]
+
+
+Team Building Alg
+	create viability pool based on viability range and types
+	
+	Monotype/Limited Typing
+		1: Choose random mon from pool with 2 types
+		2: List out types mon is weak too
+		3: Choose random mon from pool 
+		
+	Non-Monotype
+		1: Choose random mon from pool
+		2: List out types mon is weak too
+		3: Choose random mon from pool supereffective against these types, if not found choose random
+		4: repeat
+
+Encounter table alg
+	given viability range, types, lvl range x-x+2
+	maintain global list of used encounters, evolution line cannot appear more than twice
+
+		get all pokemon, including evos in range
+
+		20 lvl x rand from pool
+		20 lvl x rand from pool
+		10 lvl x rand from pool
+		10 lvl x rand from pool
+		10 lvl x rand from pool
+		10 lvl x rand from pool
+		5  lvl x + 1 rand from bottom_fifth_viability from pool
+		5  lvl x + 1 rand from top_fifth_viability from pool
+		4  lvl x + 1 rand from bottom_fifth_viability from pool
+		4  lvl x + 1 rand from top_fifth_viability from pool
+		1  lvl x + 2 rand from bottom_fifth_viability from pool
+		1  lvl x + 2 rand from top_fifth_viability from pool
+
+
+		60 lvl x rand from pool
+		30 lvl x rand from pool
+		5  lvl x rand from pool
+		4  lvl x rand from pool
+		1  lvl x rand from pool
+
+
+	ensure early game has certain monotype enounter tables (fire, ghost, water)
 
 
 
