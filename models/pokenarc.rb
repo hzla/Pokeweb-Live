@@ -7,7 +7,7 @@ class Pokenarc
 		JSON.parse(File.open(file_name, "r"){|f| f.read})["readable"]
 	end
 
-	def self.get_all 
+	def self.get_all use_raw=false
 		collection = []
 		files = Dir["#{$rom_name}/json/#{@@narc_name}/*.json"]
 		file_count = files.length
@@ -17,6 +17,7 @@ class Pokenarc
 			file = File.open("#{$rom_name}/json/#{@@narc_name}/#{n}.json", "r:ISO8859-1") {|f| f.read }
 			json = JSON.parse(file)
 			entry = json["readable"]
+			entry = json["raw"] if use_raw
 
 			collection[n] = entry
 		end

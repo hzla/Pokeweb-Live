@@ -7,8 +7,11 @@ require_relative 'models/pokenarc'
 if ENV["DEVMODE"] == "TRUE"
 	require 'pry'
 	require "sinatra/reloader"
+
 end
 
+$rom_name = 'projects/bb2redux'
+p "init"
 Dir["models/*.rb"].each {|file| require_relative file}
 
 
@@ -357,6 +360,14 @@ get '/export_showdown' do
 	Trpok.export_all_showdown
 
 	redirect '/dist/index.html?gen=5'
+end
+
+
+get '/randomize' do 
+	# Randomizer.create_personal
+	Randomizer.create_team([430,490], 6, ["Psychic", "Dark"])
+	Randomizer.create_moves
+	"200 OK"
 end
 
 ####################################### OVERWORLDS ###############

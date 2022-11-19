@@ -1,0 +1,98 @@
+[
+  {
+    "name": "WHISCASH",
+    "index": 340,
+    "via_player": 1.0,
+    "via_ai": 1.0,
+    "via_player_gym_1": 1.0,
+    "via_player_gym_2": 1.0,
+    "via_player_gym_3": 1.0,
+    "via_player_gym_4": 1.0,
+    "via_player_gym_5": 1.0,
+    "via_player_gym_6": 1.0,
+    "via_player_gym_7": 1.0,
+    "via_player_gym_8": 1.0,
+    "types": [
+      "Water",
+      "Ground"
+    ],
+    "modified_bst": 403.8,
+    "modified_bst_physical": 403.8,
+    "modified_bst_special": 386.8,
+    "can_be_mixed": false,
+    "physical_ok": null,
+    "special_ok": true
+  },
+  {
+    "name": "DELIBIRD",
+    "index": 225,
+    "via_player": 1.0,
+    "via_ai": 1.0,
+    "via_player_gym_1": 1.0,
+    "via_player_gym_2": 1.0,
+    "via_player_gym_3": 1.0,
+    "via_player_gym_4": 1.0,
+    "via_player_gym_5": 1.0,
+    "via_player_gym_6": 1.0,
+    "via_player_gym_7": 1.0,
+    "via_player_gym_8": 1.0,
+    "types": [
+      "Ice",
+      "Flying"
+    ],
+    "modified_bst": 368.0,
+    "modified_bst_physical": 368.0,
+    "modified_bst_special": 338.0,
+    "can_be_mixed": false,
+    "physical_ok": true,
+    "special_ok": true
+  },
+  {
+    "name": "CARRACOSTA",
+    "index": 565,
+    "via_player": 1.0,
+    "via_ai": 1.0,
+    "via_player_gym_1": 1.0,
+    "via_player_gym_2": 1.0,
+    "via_player_gym_3": 1.0,
+    "via_player_gym_4": 1.0,
+    "via_player_gym_5": 1.0,
+    "via_player_gym_6": 1.0,
+    "via_player_gym_7": 1.0,
+    "via_player_gym_8": 1.0,
+    "types": [
+      "Water",
+      "Rock"
+    ],
+    "modified_bst": 378.8,
+    "modified_bst_physical": 378.8,
+    "modified_bst_special": 353.8,
+    "can_be_mixed": false,
+    "physical_ok": true,
+    "special_ok": true
+  },
+  {
+    "name": "LUDICOLO",
+    "index": 272,
+    "via_player": 1.0,
+    "via_ai": 1.0,
+    "via_player_gym_1": 1.0,
+    "via_player_gym_2": 1.0,
+    "via_player_gym_3": 1.0,
+    "via_player_gym_4": 1.0,
+    "via_player_gym_5": 1.0,
+    "via_player_gym_6": 1.0,
+    "via_player_gym_7": 1.0,
+    "via_player_gym_8": 1.0,
+    "types": [
+      "Water",
+      "Grass"
+    ],
+    "modified_bst": 390.0,
+    "modified_bst_physical": 370.0,
+    "modified_bst_special": 390.0,
+    "can_be_mixed": false,
+    "physical_ok": true,
+    "special_ok": true
+  }
+]
