@@ -1,7 +1,7 @@
 [
   {
-    "name": "WHISCASH",
-    "index": 340,
+    "name": "ARCHEOPS",
+    "index": 567,
     "via_player": 1.0,
     "via_ai": 1.0,
     "via_player_gym_1": 1.0,
@@ -13,19 +13,19 @@
     "via_player_gym_7": 1.0,
     "via_player_gym_8": 1.0,
     "types": [
-      "Water",
-      "Ground"
+      "Rock",
+      "Flying"
     ],
-    "modified_bst": 403.8,
-    "modified_bst_physical": 403.8,
-    "modified_bst_special": 386.8,
+    "modified_bst": 451.0,
+    "modified_bst_physical": 451.0,
+    "modified_bst_special": 423.0,
     "can_be_mixed": false,
     "physical_ok": null,
     "special_ok": true
   },
   {
-    "name": "DELIBIRD",
-    "index": 225,
+    "name": "RHYPERIOR",
+    "index": 464,
     "via_player": 1.0,
     "via_ai": 1.0,
     "via_player_gym_1": 1.0,
@@ -37,43 +37,19 @@
     "via_player_gym_7": 1.0,
     "via_player_gym_8": 1.0,
     "types": [
-      "Ice",
-      "Flying"
-    ],
-    "modified_bst": 368.0,
-    "modified_bst_physical": 368.0,
-    "modified_bst_special": 338.0,
-    "can_be_mixed": false,
-    "physical_ok": true,
-    "special_ok": true
-  },
-  {
-    "name": "CARRACOSTA",
-    "index": 565,
-    "via_player": 1.0,
-    "via_ai": 1.0,
-    "via_player_gym_1": 1.0,
-    "via_player_gym_2": 1.0,
-    "via_player_gym_3": 1.0,
-    "via_player_gym_4": 1.0,
-    "via_player_gym_5": 1.0,
-    "via_player_gym_6": 1.0,
-    "via_player_gym_7": 1.0,
-    "via_player_gym_8": 1.0,
-    "types": [
-      "Water",
+      "Ground",
       "Rock"
     ],
-    "modified_bst": 378.8,
-    "modified_bst_physical": 378.8,
-    "modified_bst_special": 353.8,
+    "modified_bst": 451.0,
+    "modified_bst_physical": 451.0,
+    "modified_bst_special": 366.0,
     "can_be_mixed": false,
-    "physical_ok": true,
+    "physical_ok": null,
     "special_ok": true
   },
   {
-    "name": "LUDICOLO",
-    "index": 272,
+    "name": "OMASTAR",
+    "index": 139,
     "via_player": 1.0,
     "via_ai": 1.0,
     "via_player_gym_1": 1.0,
@@ -85,12 +61,84 @@
     "via_player_gym_7": 1.0,
     "via_player_gym_8": 1.0,
     "types": [
-      "Water",
-      "Grass"
+      "Rock",
+      "Water"
     ],
-    "modified_bst": 390.0,
-    "modified_bst_physical": 370.0,
-    "modified_bst_special": 390.0,
+    "modified_bst": 407.0,
+    "modified_bst_physical": 352.0,
+    "modified_bst_special": 407.0,
+    "can_be_mixed": false,
+    "physical_ok": true,
+    "special_ok": true
+  },
+  {
+    "name": "VOLCARONA",
+    "index": 637,
+    "via_player": 1.0,
+    "via_ai": 1.0,
+    "via_player_gym_1": 1.0,
+    "via_player_gym_2": 1.0,
+    "via_player_gym_3": 1.0,
+    "via_player_gym_4": 1.0,
+    "via_player_gym_5": 1.0,
+    "via_player_gym_6": 1.0,
+    "via_player_gym_7": 1.0,
+    "via_player_gym_8": 1.0,
+    "types": [
+      "Bug",
+      "Fire"
+    ],
+    "modified_bst": 476.0,
+    "modified_bst_physical": 401.0,
+    "modified_bst_special": 476.0,
+    "can_be_mixed": false,
+    "physical_ok": true,
+    "special_ok": null
+  },
+  {
+    "name": "PROBOPASS",
+    "index": 476,
+    "via_player": 1.0,
+    "via_ai": 1.0,
+    "via_player_gym_1": 1.0,
+    "via_player_gym_2": 1.0,
+    "via_player_gym_3": 1.0,
+    "via_player_gym_4": 1.0,
+    "via_player_gym_5": 1.0,
+    "via_player_gym_6": 1.0,
+    "via_player_gym_7": 1.0,
+    "via_player_gym_8": 1.0,
+    "types": [
+      "Rock",
+      "Electric"
+    ],
+    "modified_bst": 428.0,
+    "modified_bst_physical": 388.0,
+    "modified_bst_special": 428.0,
+    "can_be_mixed": false,
+    "physical_ok": true,
+    "special_ok": true
+  },
+  {
+    "name": "RAPIDASH",
+    "index": 78,
+    "via_player": 1.0,
+    "via_ai": 1.0,
+    "via_player_gym_1": 1.0,
+    "via_player_gym_2": 1.0,
+    "via_player_gym_3": 1.0,
+    "via_player_gym_4": 1.0,
+    "via_player_gym_5": 1.0,
+    "via_player_gym_6": 1.0,
+    "via_player_gym_7": 1.0,
+    "via_player_gym_8": 1.0,
+    "types": [
+      "Fire",
+      "Fairy"
+    ],
+    "modified_bst": 411.0,
+    "modified_bst_physical": 411.0,
+    "modified_bst_special": 391.0,
     "can_be_mixed": false,
     "physical_ok": true,
     "special_ok": true
