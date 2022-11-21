@@ -365,9 +365,8 @@ end
 
 get '/randomize' do 
 	# Randomizer.create_personal
-	Randomizer.create_team([430,490], 6, ["Psychic", "Dark"])
-	Randomizer.create_moves
-	"200 OK"
+	@team = JSON.pretty_generate(Randomizer.create_team([0,600], 6))
+	erb :randomize
 end
 
 ####################################### OVERWORLDS ###############

@@ -31,6 +31,10 @@ class String
     gsub!("\n", '')
     self
   end
+
+  def smogonlize
+  	downcase.gsub("-", "").gsub(" ", "").gsub("'","")
+  end
 end
 
 class Integer

@@ -161,7 +161,8 @@
       "move_id_19_index": 235
     },
     "evo_at": 16,
-    "evo_target": 2
+    "evo_target": 2,
+    "evo_modified_bst": 326.4
   },
   {
     "base_hp": 60,
@@ -283,7 +284,8 @@
       "move_id_22_index": 79
     },
     "evo_at": 32,
-    "evo_target": 3
+    "evo_target": 3,
+    "evo_modified_bst": 419.0
   },
   {
     "base_hp": 80,
@@ -522,7 +524,8 @@
       "move_id_19_index": 394
     },
     "evo_at": 16,
-    "evo_target": 5
+    "evo_target": 5,
+    "evo_modified_bst": 332.4
   },
   {
     "base_hp": 58,
@@ -644,7 +647,8 @@
       "move_id_22_index": 394
     },
     "evo_at": 36,
-    "evo_target": 6
+    "evo_target": 6,
+    "evo_modified_bst": 420.0
   },
   {
     "base_hp": 75,
@@ -883,7 +887,8 @@
       "move_id_19_index": 428
     },
     "evo_at": 16,
-    "evo_target": 8
+    "evo_target": 8,
+    "evo_modified_bst": 320.6
   },
   {
     "base_hp": 59,
@@ -1005,7 +1010,8 @@
       "move_id_22_index": 56
     },
     "evo_at": 36,
-    "evo_target": 9
+    "evo_target": 9,
+    "evo_modified_bst": 422.6
   },
   {
     "base_hp": 79,
@@ -1199,7 +1205,8 @@
       "move_id_4_index": 527
     },
     "evo_at": 7,
-    "evo_target": 11
+    "evo_target": 11,
+    "evo_modified_bst": 175.0
   },
   {
     "base_hp": 50,
@@ -1258,7 +1265,8 @@
       "move_id_1_index": 334
     },
     "evo_at": 10,
-    "evo_target": 12
+    "evo_target": 12,
+    "evo_modified_bst": 393.0
   },
   {
     "base_hp": 65,
@@ -1431,7 +1439,8 @@
       "move_id_4_index": 342
     },
     "evo_at": 7,
-    "evo_target": 14
+    "evo_target": 14,
+    "evo_modified_bst": 172.0
   },
   {
     "base_hp": 45,
@@ -1490,7 +1499,8 @@
       "move_id_1_index": 334
     },
     "evo_at": 10,
-    "evo_target": 15
+    "evo_target": 15,
+    "evo_modified_bst": 388.0
   },
   {
     "base_hp": 65,
@@ -1708,7 +1718,8 @@
       "move_id_22_index": 143
     },
     "evo_at": 18,
-    "evo_target": 17
+    "evo_target": 17,
+    "evo_modified_bst": 293.2
   },
   {
     "base_hp": 63,
@@ -1833,7 +1844,8 @@
       "move_id_23_index": 143
     },
     "evo_at": 36,
-    "evo_target": 18
+    "evo_target": 18,
+    "evo_modified_bst": 431.2
   },
   {
     "base_hp": 83,
@@ -2081,7 +2093,8 @@
       "move_id_22_index": 515
     },
     "evo_at": 20,
-    "evo_target": 20
+    "evo_target": 20,
+    "evo_modified_bst": 385.6
   },
   {
     "base_hp": 60,
@@ -2317,7 +2330,8 @@
       "move_id_18_index": 143
     },
     "evo_at": 21,
-    "evo_target": 22
+    "evo_target": 22,
+    "evo_modified_bst": 415.2
   },
   {
     "base_hp": 85,
@@ -2562,7 +2576,8 @@
       "move_id_23_index": 441
     },
     "evo_at": 21,
-    "evo_target": 24
+    "evo_target": 24,
+    "evo_modified_bst": 386.0
   },
   {
     "base_hp": 60,
@@ -2816,7 +2831,8 @@
       "move_id_24_index": 344
     },
     "evo_at": 24,
-    "evo_target": 26
+    "evo_target": 26,
+    "evo_modified_bst": 395.0
   },
   {
     "base_hp": 60,
@@ -3022,7 +3038,8 @@
       "move_id_22_index": 264
     },
     "evo_at": 22,
-    "evo_target": 28
+    "evo_target": 28,
+    "evo_modified_bst": 385.0
   },
   {
     "base_hp": 75,
@@ -3264,7 +3281,8 @@
       "move_id_20_index": 457
     },
     "evo_at": 16,
-    "evo_target": 30
+    "evo_target": 30,
+    "evo_modified_bst": 292.79999999999995
   },
   {
     "base_hp": 70,
@@ -3380,7 +3398,8 @@
       "move_id_20_index": 457
     },
     "evo_at": 36,
-    "evo_target": 31
+    "evo_target": 31,
+    "evo_modified_bst": 410.8
   },
   {
     "base_hp": 90,
@@ -3589,7 +3608,8 @@
       "move_id_20_index": 457
     },
     "evo_at": 16,
-    "evo_target": 33
+    "evo_target": 33,
+    "evo_modified_bst": 300.6
   },
   {
     "base_hp": 61,
@@ -3705,7 +3725,8 @@
       "move_id_20_index": 457
     },
     "evo_at": 36,
-    "evo_target": 34
+    "evo_target": 34,
+    "evo_modified_bst": 406.6
   },
   {
     "base_hp": 81,
@@ -3923,7 +3944,8 @@
       "move_id_23_index": 461
     },
     "evo_at": 23,
-    "evo_target": 36
+    "evo_target": 36,
+    "evo_modified_bst": 392.4
   },
   {
     "base_hp": 95,
@@ -4111,7 +4133,8 @@
       "move_id_20_index": 288
     },
     "evo_at": 26,
-    "evo_target": 38
+    "evo_target": 38,
+    "evo_modified_bst": 417.79999999999995
   },
   {
     "base_hp": 73,
@@ -4326,7 +4349,8 @@
       "move_id_21_index": 32
     },
     "evo_at": 24,
-    "evo_target": 40
+    "evo_target": 40,
+    "evo_modified_bst": 365.0
   },
   {
     "base_hp": 140,
@@ -4523,7 +4547,8 @@
       "move_id_22_index": 413
     },
     "evo_at": 22,
-    "evo_target": 42
+    "evo_target": 42,
+    "evo_modified_bst": 379.0
   },
   {
     "base_hp": 75,
@@ -4645,7 +4670,8 @@
       "move_id_22_index": 413
     },
     "evo_at": 37,
-    "evo_target": 169
+    "evo_target": 169,
+    "evo_modified_bst": 459.0
   },
   {
     "base_hp": 45,
@@ -4761,7 +4787,8 @@
       "move_id_20_index": 80
     },
     "evo_at": 21,
-    "evo_target": 44
+    "evo_target": 44,
+    "evo_modified_bst": 309.0
   },
   {
     "base_hp": 60,
@@ -4880,7 +4907,8 @@
       "move_id_21_index": 80
     },
     "evo_at": 36,
-    "evo_target": 182
+    "evo_target": 182,
+    "evo_modified_bst": 376.0
   },
   {
     "base_hp": 75,
@@ -5098,7 +5126,8 @@
       "move_id_22_index": 235
     },
     "evo_at": 24,
-    "evo_target": 47
+    "evo_target": 47,
+    "evo_modified_bst": 368.0
   },
   {
     "base_hp": 65,
@@ -5343,7 +5372,8 @@
       "move_id_21_index": 226
     },
     "evo_at": 28,
-    "evo_target": 49
+    "evo_target": 49,
+    "evo_modified_bst": 386.0
   },
   {
     "base_hp": 70,
@@ -5585,7 +5615,8 @@
       "move_id_21_index": 515
     },
     "evo_at": 26,
-    "evo_target": 51
+    "evo_target": 51,
+    "evo_modified_bst": 375.0
   },
   {
     "base_hp": 35,
@@ -5824,7 +5855,8 @@
       "move_id_21_index": 387
     },
     "evo_at": 28,
-    "evo_target": 53
+    "evo_target": 53,
+    "evo_modified_bst": 388.0
   },
   {
     "base_hp": 65,
@@ -6069,7 +6101,8 @@
       "move_id_22_index": 56
     },
     "evo_at": 25,
-    "evo_target": 55
+    "evo_target": 55,
+    "evo_modified_bst": 396.4
   },
   {
     "base_hp": 80,
@@ -6320,7 +6353,8 @@
       "move_id_23_index": 179
     },
     "evo_at": 28,
-    "evo_target": 57
+    "evo_target": 57,
+    "evo_modified_bst": 388.0
   },
   {
     "base_hp": 65,
@@ -6571,7 +6605,8 @@
       "move_id_23_index": 394
     },
     "evo_at": 25,
-    "evo_target": 59
+    "evo_target": 59,
+    "evo_modified_bst": 437.0
   },
   {
     "base_hp": 90,
@@ -6744,7 +6779,8 @@
       "move_id_13_index": 270
     },
     "evo_at": 25,
-    "evo_target": 61
+    "evo_target": 61,
+    "evo_modified_bst": 330.0
   },
   {
     "base_hp": 65,
@@ -6854,7 +6890,8 @@
       "move_id_18_index": 56
     },
     "evo_at": 36,
-    "evo_target": 62
+    "evo_target": 62,
+    "evo_modified_bst": 427.0
   },
   {
     "base_hp": 90,
@@ -7003,7 +7040,8 @@
       "move_id_2_index": 134
     },
     "evo_at": 16,
-    "evo_target": 64
+    "evo_target": 64,
+    "evo_modified_bst": 366.0
   },
   {
     "base_hp": 40,
@@ -7113,7 +7151,8 @@
       "move_id_18_index": 473
     },
     "evo_at": 38,
-    "evo_target": 65
+    "evo_target": 65,
+    "evo_modified_bst": 446.0
   },
   {
     "base_hp": 55,
@@ -7349,7 +7388,8 @@
       "move_id_23_index": 370
     },
     "evo_at": 28,
-    "evo_target": 67
+    "evo_target": 67,
+    "evo_modified_bst": 338.0
   },
   {
     "base_hp": 80,
@@ -7477,7 +7517,8 @@
       "move_id_24_index": 370
     },
     "evo_at": 37,
-    "evo_target": 68
+    "evo_target": 68,
+    "evo_modified_bst": 418.0
   },
   {
     "base_hp": 90,
@@ -7719,7 +7760,8 @@
       "move_id_20_index": 74
     },
     "evo_at": 21,
-    "evo_target": 70
+    "evo_target": 70,
+    "evo_modified_bst": 294.0
   },
   {
     "base_hp": 65,
@@ -7838,7 +7880,8 @@
       "move_id_21_index": 74
     },
     "evo_at": 30,
-    "evo_target": 71
+    "evo_target": 71,
+    "evo_modified_bst": 374.0
   },
   {
     "base_hp": 80,
@@ -8038,7 +8081,8 @@
       "move_id_19_index": 56
     },
     "evo_at": 30,
-    "evo_target": 73
+    "evo_target": 73,
+    "evo_modified_bst": 423.0
   },
   {
     "base_hp": 80,
@@ -8265,7 +8309,8 @@
       "move_id_19_index": 469
     },
     "evo_at": 25,
-    "evo_target": 75
+    "evo_target": 75,
+    "evo_modified_bst": 320.0
   },
   {
     "base_hp": 55,
@@ -8393,7 +8438,8 @@
       "move_id_24_index": 27
     },
     "evo_at": 32,
-    "evo_target": 76
+    "evo_target": 76,
+    "evo_modified_bst": 410.0
   },
   {
     "base_hp": 80,
@@ -8641,7 +8687,8 @@
       "move_id_22_index": 394
     },
     "evo_at": 35,
-    "evo_target": 78
+    "evo_target": 78,
+    "evo_modified_bst": 411.0
   },
   {
     "base_hp": 65,
@@ -8880,7 +8927,8 @@
       "move_id_20_index": 34
     },
     "evo_at": 33,
-    "evo_target": 80
+    "evo_target": 80,
+    "evo_modified_bst": 383.0
   },
   {
     "base_hp": 95,
@@ -9113,7 +9161,8 @@
       "move_id_20_index": 192
     },
     "evo_at": 30,
-    "evo_target": 82
+    "evo_target": 82,
+    "evo_modified_bst": 386.0
   },
   {
     "base_hp": 50,
@@ -9232,7 +9281,8 @@
       "move_id_21_index": 192
     },
     "evo_at": 40,
-    "evo_target": 462
+    "evo_target": 462,
+    "evo_modified_bst": 436.0
   },
   {
     "base_hp": 55,
@@ -9474,7 +9524,8 @@
       "move_id_21_index": 413
     },
     "evo_at": 31,
-    "evo_target": 85
+    "evo_target": 85,
+    "evo_modified_bst": 406.0
   },
   {
     "base_hp": 60,
@@ -9713,7 +9764,8 @@
       "move_id_20_index": 195
     },
     "evo_at": 34,
-    "evo_target": 87
+    "evo_target": 87,
+    "evo_modified_bst": 404.0
   },
   {
     "base_hp": 90,
@@ -9952,7 +10004,8 @@
       "move_id_20_index": 262
     },
     "evo_at": 35,
-    "evo_target": 89
+    "evo_target": 89,
+    "evo_modified_bst": 410.0
   },
   {
     "base_hp": 105,
@@ -10200,7 +10253,8 @@
       "move_id_22_index": 420
     },
     "evo_at": 35,
-    "evo_target": 91
+    "evo_target": 91,
+    "evo_modified_bst": 404.0
   },
   {
     "base_hp": 50,
@@ -10412,7 +10466,8 @@
       "move_id_22_index": 195
     },
     "evo_at": 25,
-    "evo_target": 93
+    "evo_target": 93,
+    "evo_modified_bst": 354.0
   },
   {
     "base_hp": 45,
@@ -10540,7 +10595,8 @@
       "move_id_24_index": 188
     },
     "evo_at": 36,
-    "evo_target": 94
+    "evo_target": 94,
+    "evo_modified_bst": 430.0
   },
   {
     "base_hp": 60,
@@ -10794,7 +10850,8 @@
       "move_id_24_index": 457
     },
     "evo_at": 39,
-    "evo_target": 208
+    "evo_target": 208,
+    "evo_modified_bst": 428.0
   },
   {
     "base_hp": 70,
@@ -10904,7 +10961,8 @@
       "move_id_18_index": 248
     },
     "evo_at": 26,
-    "evo_target": 97
+    "evo_target": 97,
+    "evo_modified_bst": 387.4
   },
   {
     "base_hp": 92,
@@ -11131,7 +11189,8 @@
       "move_id_19_index": 12
     },
     "evo_at": 28,
-    "evo_target": 99
+    "evo_target": 99,
+    "evo_modified_bst": 407.0
   },
   {
     "base_hp": 55,
@@ -11364,7 +11423,8 @@
       "move_id_19_index": 153
     },
     "evo_at": 30,
-    "evo_target": 101
+    "evo_target": 101,
+    "evo_modified_bst": 440.0
   },
   {
     "base_hp": 60,
@@ -11609,7 +11669,8 @@
       "move_id_24_index": 135
     },
     "evo_at": 32,
-    "evo_target": 103
+    "evo_target": 103,
+    "evo_modified_bst": 414.0
   },
   {
     "base_hp": 95,
@@ -11806,7 +11867,8 @@
       "move_id_20_index": 195
     },
     "evo_at": 27,
-    "evo_target": 105
+    "evo_target": 105,
+    "evo_modified_bst": 346.0
   },
   {
     "base_hp": 60,
@@ -12303,7 +12365,8 @@
       "move_id_22_index": 378
     },
     "evo_at": 40,
-    "evo_target": 463
+    "evo_target": 463,
+    "evo_modified_bst": 404.0
   },
   {
     "base_hp": 40,
@@ -12416,7 +12479,8 @@
       "move_id_19_index": 288
     },
     "evo_at": 35,
-    "evo_target": 110
+    "evo_target": 110,
+    "evo_modified_bst": 376.0
   },
   {
     "base_hp": 65,
@@ -12652,7 +12716,8 @@
       "move_id_20_index": 38
     },
     "evo_at": 36,
-    "evo_target": 112
+    "evo_target": 112,
+    "evo_modified_bst": 415.0
   },
   {
     "base_hp": 105,
@@ -12777,7 +12842,8 @@
       "move_id_23_index": 439
     },
     "evo_at": 48,
-    "evo_target": 464
+    "evo_target": 464,
+    "evo_modified_bst": 451.0
   },
   {
     "base_hp": 250,
@@ -12905,7 +12971,8 @@
       "move_id_24_index": 387
     },
     "evo_at": 50,
-    "evo_target": 242
+    "evo_target": 242,
+    "evo_modified_bst": 512.0
   },
   {
     "base_hp": 65,
@@ -13033,7 +13100,8 @@
       "move_id_24_index": 438
     },
     "evo_at": 40,
-    "evo_target": 465
+    "evo_target": 465,
+    "evo_modified_bst": 405.0
   },
   {
     "base_hp": 105,
@@ -13272,7 +13340,8 @@
       "move_id_19_index": 56
     },
     "evo_at": 32,
-    "evo_target": 117
+    "evo_target": 117,
+    "evo_modified_bst": 364.0
   },
   {
     "base_hp": 55,
@@ -13391,7 +13460,8 @@
       "move_id_21_index": 349
     },
     "evo_at": 47,
-    "evo_target": 230
+    "evo_target": 230,
+    "evo_modified_bst": 424.0
   },
   {
     "base_hp": 45,
@@ -13513,7 +13583,8 @@
       "move_id_22_index": 56
     },
     "evo_at": 33,
-    "evo_target": 119
+    "evo_target": 119,
+    "evo_modified_bst": 407.6
   },
   {
     "base_hp": 80,
@@ -13764,7 +13835,8 @@
       "move_id_24_index": 56
     },
     "evo_at": 28,
-    "evo_target": 121
+    "evo_target": 121,
+    "evo_modified_bst": 434.0
   },
   {
     "base_hp": 60,
@@ -14087,7 +14159,8 @@
       "move_id_23_index": 370
     },
     "evo_at": 37,
-    "evo_target": 212
+    "evo_target": 212,
+    "evo_modified_bst": 422.0
   },
   {
     "base_hp": 75,
@@ -14338,7 +14411,8 @@
       "move_id_24_index": 344
     },
     "evo_at": 42,
-    "evo_target": 466
+    "evo_target": 466,
+    "evo_modified_bst": 433.6
   },
   {
     "base_hp": 65,
@@ -14466,7 +14540,8 @@
       "move_id_24_index": 463
     },
     "evo_at": 42,
-    "evo_target": 467
+    "evo_target": 467,
+    "evo_modified_bst": 434.2
   },
   {
     "base_hp": 65,
@@ -14756,7 +14831,8 @@
       "move_id_5_index": 349
     },
     "evo_at": 25,
-    "evo_target": 130
+    "evo_target": 130,
+    "evo_modified_bst": 460.4
   },
   {
     "base_hp": 95,
@@ -15652,7 +15728,8 @@
       "move_id_23_index": 63
     },
     "evo_at": 26,
-    "evo_target": 233
+    "evo_target": 233,
+    "evo_modified_bst": 410.0
   },
   {
     "base_hp": 35,
@@ -15750,7 +15827,8 @@
       "move_id_14_index": 414
     },
     "evo_at": 30,
-    "evo_target": 139
+    "evo_target": 139,
+    "evo_modified_bst": 407.0
   },
   {
     "base_hp": 70,
@@ -15953,7 +16031,8 @@
       "move_id_13_index": 141
     },
     "evo_at": 30,
-    "evo_target": 141
+    "evo_target": 141,
+    "evo_modified_bst": 411.0
   },
   {
     "base_hp": 60,
@@ -16708,7 +16787,8 @@
       "move_id_19_index": 38
     },
     "evo_at": 30,
-    "evo_target": 148
+    "evo_target": 148,
+    "evo_modified_bst": 337.0
   },
   {
     "base_hp": 61,
@@ -16827,7 +16907,8 @@
       "move_id_21_index": 200
     },
     "evo_at": 55,
-    "evo_target": 149
+    "evo_target": 149,
+    "evo_modified_bst": 477.0
   },
   {
     "base_hp": 91,
@@ -17285,7 +17366,8 @@
       "move_id_18_index": 76
     },
     "evo_at": 16,
-    "evo_target": 153
+    "evo_target": 153,
+    "evo_modified_bst": 322.0
   },
   {
     "base_hp": 60,
@@ -17404,7 +17486,8 @@
       "move_id_21_index": 296
     },
     "evo_at": 32,
-    "evo_target": 154
+    "evo_target": 154,
+    "evo_modified_bst": 423.0
   },
   {
     "base_hp": 80,
@@ -17637,7 +17720,8 @@
       "move_id_17_index": 221
     },
     "evo_at": 14,
-    "evo_target": 156
+    "evo_target": 156,
+    "evo_modified_bst": 332.4
   },
   {
     "base_hp": 58,
@@ -17753,7 +17837,8 @@
       "move_id_20_index": 394
     },
     "evo_at": 36,
-    "evo_target": 157
+    "evo_target": 157,
+    "evo_modified_bst": 438.4
   },
   {
     "base_hp": 78,
@@ -17989,7 +18074,8 @@
       "move_id_18_index": 386
     },
     "evo_at": 18,
-    "evo_target": 159
+    "evo_target": 159,
+    "evo_modified_bst": 337.0
   },
   {
     "base_hp": 75,
@@ -18108,7 +18194,8 @@
       "move_id_21_index": 121
     },
     "evo_at": 30,
-    "evo_target": 160
+    "evo_target": 160,
+    "evo_modified_bst": 447.0
   },
   {
     "base_hp": 85,
@@ -18353,7 +18440,8 @@
       "move_id_21_index": 387
     },
     "evo_at": 15,
-    "evo_target": 162
+    "evo_target": 162,
+    "evo_modified_bst": 397.0
   },
   {
     "base_hp": 90,
@@ -18598,7 +18686,8 @@
       "move_id_21_index": 143
     },
     "evo_at": 20,
-    "evo_target": 164
+    "evo_target": 164,
+    "evo_modified_bst": 402.8
   },
   {
     "base_hp": 100,
@@ -18849,7 +18938,8 @@
       "move_id_23_index": 11
     },
     "evo_at": 18,
-    "evo_target": 166
+    "evo_target": 166,
+    "evo_modified_bst": 380.0
   },
   {
     "base_hp": 60,
@@ -19094,7 +19184,8 @@
       "move_id_21_index": 224
     },
     "evo_at": 22,
-    "evo_target": 168
+    "evo_target": 168,
+    "evo_modified_bst": 388.0
   },
   {
     "base_hp": 70,
@@ -19459,7 +19550,8 @@
       "move_id_20_index": 56
     },
     "evo_at": 27,
-    "evo_target": 171
+    "evo_target": 171,
+    "evo_modified_bst": 411.59999999999997
   },
   {
     "base_hp": 125,
@@ -19677,7 +19769,8 @@
       "move_id_12_index": 217
     },
     "evo_at": 10,
-    "evo_target": 25
+    "evo_target": 25,
+    "evo_modified_bst": 281.0
   },
   {
     "base_hp": 50,
@@ -19757,7 +19850,8 @@
       "move_id_8_index": 186
     },
     "evo_at": 14,
-    "evo_target": 35
+    "evo_target": 35,
+    "evo_modified_bst": 262.4
   },
   {
     "base_hp": 90,
@@ -19834,7 +19928,8 @@
       "move_id_7_index": 186
     },
     "evo_at": 10,
-    "evo_target": 39
+    "evo_target": 39,
+    "evo_modified_bst": 230.0
   },
   {
     "base_hp": 35,
@@ -19950,7 +20045,8 @@
       "move_id_20_index": 387
     },
     "evo_at": 17,
-    "evo_target": 176
+    "evo_target": 176,
+    "evo_modified_bst": 335.0
   },
   {
     "base_hp": 55,
@@ -20078,7 +20174,8 @@
       "move_id_24_index": 417
     },
     "evo_at": 33,
-    "evo_target": 468
+    "evo_target": 468,
+    "evo_modified_bst": 469.0
   },
   {
     "base_hp": 40,
@@ -20191,7 +20288,8 @@
       "move_id_19_index": 322
     },
     "evo_at": 25,
-    "evo_target": 178
+    "evo_target": 178,
+    "evo_modified_bst": 404.0
   },
   {
     "base_hp": 65,
@@ -20439,7 +20537,8 @@
       "move_id_22_index": 192
     },
     "evo_at": 15,
-    "evo_target": 180
+    "evo_target": 180,
+    "evo_modified_bst": 310.0
   },
   {
     "base_hp": 75,
@@ -20564,7 +20663,8 @@
       "move_id_23_index": 192
     },
     "evo_at": 30,
-    "evo_target": 181
+    "evo_target": 181,
+    "evo_modified_bst": 420.0
   },
   {
     "base_hp": 95,
@@ -20911,7 +21011,8 @@
       "move_id_23_index": 56
     },
     "evo_at": 21,
-    "evo_target": 184
+    "evo_target": 184,
+    "evo_modified_bst": 368.0
   },
   {
     "base_hp": 100,
@@ -21378,7 +21479,8 @@
       "move_id_24_index": 262
     },
     "evo_at": 18,
-    "evo_target": 188
+    "evo_target": 188,
+    "evo_modified_bst": 305.0
   },
   {
     "base_hp": 55,
@@ -21506,7 +21608,8 @@
       "move_id_24_index": 262
     },
     "evo_at": 27,
-    "evo_target": 189
+    "evo_target": 189,
+    "evo_modified_bst": 414.0
   },
   {
     "base_hp": 75,
@@ -21739,7 +21842,8 @@
       "move_id_17_index": 387
     },
     "evo_at": 32,
-    "evo_target": 424
+    "evo_target": 424,
+    "evo_modified_bst": 423.6
   },
   {
     "base_hp": 50,
@@ -21858,7 +21962,8 @@
       "move_id_21_index": 76
     },
     "evo_at": 17,
-    "evo_target": 192
+    "evo_target": 192,
+    "evo_modified_bst": 372.0
   },
   {
     "base_hp": 75,
@@ -22094,7 +22199,8 @@
       "move_id_19_index": 403
     },
     "evo_at": 34,
-    "evo_target": 469
+    "evo_target": 469,
+    "evo_modified_bst": 429.6
   },
   {
     "base_hp": 55,
@@ -22216,7 +22322,8 @@
       "move_id_22_index": 105
     },
     "evo_at": 20,
-    "evo_target": 195
+    "evo_target": 195,
+    "evo_modified_bst": 360.0
   },
   {
     "base_hp": 95,
@@ -22701,7 +22808,8 @@
       "move_id_19_index": 417
     },
     "evo_at": 30,
-    "evo_target": 430
+    "evo_target": 430,
+    "evo_modified_bst": 383.4
   },
   {
     "base_hp": 95,
@@ -22931,7 +23039,8 @@
       "move_id_19_index": 417
     },
     "evo_at": 32,
-    "evo_target": 429
+    "evo_target": 429,
+    "evo_modified_bst": 415.8
   },
   {
     "base_hp": 48,
@@ -23311,7 +23420,8 @@
       "move_id_18_index": 153
     },
     "evo_at": 31,
-    "evo_target": 205
+    "evo_target": 205,
+    "evo_modified_bst": 373.0
   },
   {
     "base_hp": 75,
@@ -23676,7 +23786,8 @@
       "move_id_22_index": 12
     },
     "evo_at": 38,
-    "evo_target": 472
+    "evo_target": 472,
+    "evo_modified_bst": 444.0
   },
   {
     "base_hp": 75,
@@ -23918,7 +24029,8 @@
       "move_id_20_index": 387
     },
     "evo_at": 23,
-    "evo_target": 210
+    "evo_target": 210,
+    "evo_modified_bst": 372.0
   },
   {
     "base_hp": 90,
@@ -24649,7 +24761,8 @@
       "move_id_21_index": 420
     },
     "evo_at": 33,
-    "evo_target": 461
+    "evo_target": 461,
+    "evo_modified_bst": 460.0
   },
   {
     "base_hp": 60,
@@ -24771,7 +24884,8 @@
       "move_id_22_index": 27
     },
     "evo_at": 30,
-    "evo_target": 217
+    "evo_target": 217,
+    "evo_modified_bst": 406.0
   },
   {
     "base_hp": 90,
@@ -25019,7 +25133,8 @@
       "move_id_23_index": 504
     },
     "evo_at": 30,
-    "evo_target": 219
+    "evo_target": 219,
+    "evo_modified_bst": 408.0
   },
   {
     "base_hp": 60,
@@ -25264,7 +25379,8 @@
       "move_id_21_index": 25
     },
     "evo_at": 29,
-    "evo_target": 221
+    "evo_target": 221,
+    "evo_modified_bst": 372.0
   },
   {
     "base_hp": 100,
@@ -25392,7 +25508,8 @@
       "move_id_24_index": 27
     },
     "evo_at": 38,
-    "evo_target": 473
+    "evo_target": 473,
+    "evo_modified_bst": 448.0
   },
   {
     "base_hp": 65,
@@ -25619,7 +25736,8 @@
       "move_id_19_index": 323
     },
     "evo_at": 25,
-    "evo_target": 224
+    "evo_target": 224,
+    "evo_modified_bst": 364.0
   },
   {
     "base_hp": 75,
@@ -26209,7 +26327,8 @@
       "move_id_21_index": 517
     },
     "evo_at": 24,
-    "evo_target": 229
+    "evo_target": 229,
+    "evo_modified_bst": 393.0
   },
   {
     "base_hp": 75,
@@ -26574,7 +26693,8 @@
       "move_id_21_index": 457
     },
     "evo_at": 25,
-    "evo_target": 232
+    "evo_target": 232,
+    "evo_modified_bst": 414.0
   },
   {
     "base_hp": 90,
@@ -26825,7 +26945,8 @@
       "move_id_23_index": 63
     },
     "evo_at": 40,
-    "evo_target": 474
+    "evo_target": 474,
+    "evo_modified_bst": 444.0
   },
   {
     "base_hp": 73,
@@ -27121,7 +27242,8 @@
       "move_id_12_index": 69
     },
     "evo_at": 20,
-    "evo_target": 237
+    "evo_target": 237,
+    "evo_modified_bst": 393.0
   },
   {
     "base_hp": 50,
@@ -27360,7 +27482,8 @@
       "move_id_19_index": 171
     },
     "evo_at": 24,
-    "evo_target": 124
+    "evo_target": 124,
+    "evo_modified_bst": 444.0
   },
   {
     "base_hp": 45,
@@ -27479,7 +27602,8 @@
       "move_id_21_index": 435
     },
     "evo_at": 26,
-    "evo_target": 125
+    "evo_target": 125,
+    "evo_modified_bst": 393.6
   },
   {
     "base_hp": 45,
@@ -27598,7 +27722,8 @@
       "move_id_21_index": 76
     },
     "evo_at": 26,
-    "evo_target": 126
+    "evo_target": 126,
+    "evo_modified_bst": 387.2
   },
   {
     "base_hp": 95,
@@ -28248,7 +28373,8 @@
       "move_id_15_index": 63
     },
     "evo_at": 30,
-    "evo_target": 247
+    "evo_target": 247,
+    "evo_modified_bst": 327.2
   },
   {
     "base_hp": 70,
@@ -28355,7 +28481,8 @@
       "move_id_17_index": 231
     },
     "evo_at": 55,
-    "evo_target": 248
+    "evo_target": 248,
+    "evo_modified_bst": 475.2
   },
   {
     "base_hp": 100,
@@ -28879,7 +29006,8 @@
       "move_id_18_index": 348
     },
     "evo_at": 16,
-    "evo_target": 253
+    "evo_target": 253,
+    "evo_modified_bst": 337.0
   },
   {
     "base_hp": 50,
@@ -28998,7 +29126,8 @@
       "move_id_21_index": 437
     },
     "evo_at": 36,
-    "evo_target": 254
+    "evo_target": 254,
+    "evo_modified_bst": 443.0
   },
   {
     "base_hp": 70,
@@ -29234,7 +29363,8 @@
       "move_id_18_index": 387
     },
     "evo_at": 16,
-    "evo_target": 256
+    "evo_target": 256,
+    "evo_modified_bst": 307.0
   },
   {
     "base_hp": 60,
@@ -29350,7 +29480,8 @@
       "move_id_20_index": 340
     },
     "evo_at": 36,
-    "evo_target": 257
+    "evo_target": 257,
+    "evo_modified_bst": 413.0
   },
   {
     "base_hp": 80,
@@ -29583,7 +29714,8 @@
       "move_id_17_index": 133
     },
     "evo_at": 16,
-    "evo_target": 259
+    "evo_target": 259,
+    "evo_modified_bst": 327.0
   },
   {
     "base_hp": 70,
@@ -29699,7 +29831,8 @@
       "move_id_20_index": 469
     },
     "evo_at": 36,
-    "evo_target": 260
+    "evo_target": 260,
+    "evo_modified_bst": 426.0
   },
   {
     "base_hp": 100,
@@ -29950,7 +30083,8 @@
       "move_id_23_index": 492
     },
     "evo_at": 18,
-    "evo_target": 262
+    "evo_target": 262,
+    "evo_modified_bst": 392.0
   },
   {
     "base_hp": 70,
@@ -30183,7 +30317,8 @@
       "move_id_18_index": 387
     },
     "evo_at": 20,
-    "evo_target": 264
+    "evo_target": 264,
+    "evo_modified_bst": 386.0
   },
   {
     "base_hp": 85,
@@ -30368,7 +30503,8 @@
       "move_id_4_index": 527
     },
     "evo_at": 7,
-    "evo_target": 268
+    "evo_target": 268,
+    "evo_modified_bst": 167.0
   },
   {
     "base_hp": 50,
@@ -30427,7 +30563,8 @@
       "move_id_1_index": 334
     },
     "evo_at": 10,
-    "evo_target": 267
+    "evo_target": 267,
+    "evo_modified_bst": 374.0
   },
   {
     "base_hp": 60,
@@ -30585,7 +30722,8 @@
       "move_id_1_index": 334
     },
     "evo_at": 10,
-    "evo_target": 269
+    "evo_target": 269,
+    "evo_modified_bst": 388.0
   },
   {
     "base_hp": 60,
@@ -30797,7 +30935,8 @@
       "move_id_19_index": 38
     },
     "evo_at": 14,
-    "evo_target": 271
+    "evo_target": 271,
+    "evo_modified_bst": 271.0
   },
   {
     "base_hp": 60,
@@ -31117,7 +31256,8 @@
       "move_id_19_index": 153
     },
     "evo_at": 14,
-    "evo_target": 274
+    "evo_target": 274,
+    "evo_modified_bst": 271.0
   },
   {
     "base_hp": 70,
@@ -31242,7 +31382,8 @@
       "move_id_23_index": 437
     },
     "evo_at": 30,
-    "evo_target": 275
+    "evo_target": 275,
+    "evo_modified_bst": 377.0
   },
   {
     "base_hp": 90,
@@ -31448,7 +31589,8 @@
       "move_id_20_index": 143
     },
     "evo_at": 22,
-    "evo_target": 277
+    "evo_target": 277,
+    "evo_modified_bst": 383.0
   },
   {
     "base_hp": 60,
@@ -31690,7 +31832,8 @@
       "move_id_20_index": 56
     },
     "evo_at": 25,
-    "evo_target": 279
+    "evo_target": 279,
+    "evo_modified_bst": 385.0
   },
   {
     "base_hp": 60,
@@ -31926,7 +32069,8 @@
       "move_id_19_index": 500
     },
     "evo_at": 20,
-    "evo_target": 281
+    "evo_target": 281,
+    "evo_modified_bst": 271.0
   },
   {
     "base_hp": 38,
@@ -32045,7 +32189,8 @@
       "move_id_21_index": 194
     },
     "evo_at": 30,
-    "evo_target": 282
+    "evo_target": 282,
+    "evo_modified_bst": 433.0
   },
   {
     "base_hp": 68,
@@ -32278,7 +32423,8 @@
       "move_id_18_index": 226
     },
     "evo_at": 22,
-    "evo_target": 284
+    "evo_target": 284,
+    "evo_modified_bst": 414.0
   },
   {
     "base_hp": 70,
@@ -32529,7 +32675,8 @@
       "move_id_23_index": 264
     },
     "evo_at": 23,
-    "evo_target": 286
+    "evo_target": 286,
+    "evo_modified_bst": 386.0
   },
   {
     "base_hp": 60,
@@ -32762,7 +32909,8 @@
       "move_id_18_index": 264
     },
     "evo_at": 18,
-    "evo_target": 288
+    "evo_target": 288,
+    "evo_modified_bst": 376.0
   },
   {
     "base_hp": 80,
@@ -32884,7 +33032,8 @@
       "move_id_22_index": 38
     },
     "evo_at": 36,
-    "evo_target": 289
+    "evo_target": 289,
+    "evo_modified_bst": 562.0
   },
   {
     "base_hp": 150,
@@ -33129,7 +33278,8 @@
       "move_id_21_index": 515
     },
     "evo_at": 20,
-    "evo_target": 292
+    "evo_target": 292,
+    "evo_modified_bst": 199.0
   },
   {
     "base_hp": 61,
@@ -33431,7 +33581,8 @@
       "move_id_16_index": 485
     },
     "evo_at": 20,
-    "evo_target": 294
+    "evo_target": 294,
+    "evo_modified_bst": 281.4
   },
   {
     "base_hp": 84,
@@ -33538,7 +33689,8 @@
       "move_id_17_index": 485
     },
     "evo_at": 40,
-    "evo_target": 295
+    "evo_target": 295,
+    "evo_modified_bst": 407.4
   },
   {
     "base_hp": 104,
@@ -33774,7 +33926,8 @@
       "move_id_19_index": 484
     },
     "evo_at": 24,
-    "evo_target": 297
+    "evo_target": 297,
+    "evo_modified_bst": 420.0
   },
   {
     "base_hp": 144,
@@ -33980,7 +34133,8 @@
       "move_id_12_index": 217
     },
     "evo_at": 10,
-    "evo_target": 183
+    "evo_target": 183,
+    "evo_modified_bst": 238.0
   },
   {
     "base_hp": 30,
@@ -34096,7 +34250,8 @@
       "move_id_20_index": 457
     },
     "evo_at": 31,
-    "evo_target": 476
+    "evo_target": 476,
+    "evo_modified_bst": 428.0
   },
   {
     "base_hp": 50,
@@ -34224,7 +34379,8 @@
       "move_id_24_index": 226
     },
     "evo_at": 25,
-    "evo_target": 301
+    "evo_target": 301,
+    "evo_modified_bst": 386.0
   },
   {
     "base_hp": 70,
@@ -34673,7 +34829,8 @@
       "move_id_19_index": 484
     },
     "evo_at": 24,
-    "evo_target": 305
+    "evo_target": 305,
+    "evo_modified_bst": 350.0
   },
   {
     "base_hp": 60,
@@ -34789,7 +34946,8 @@
       "move_id_20_index": 484
     },
     "evo_at": 40,
-    "evo_target": 306
+    "evo_target": 306,
+    "evo_modified_bst": 444.0
   },
   {
     "base_hp": 70,
@@ -35034,7 +35192,8 @@
       "move_id_21_index": 136
     },
     "evo_at": 34,
-    "evo_target": 308
+    "evo_target": 308,
+    "evo_modified_bst": 376.0
   },
   {
     "base_hp": 60,
@@ -35267,7 +35426,8 @@
       "move_id_20_index": 435
     },
     "evo_at": 26,
-    "evo_target": 310
+    "evo_target": 310,
+    "evo_modified_bst": 397.0
   },
   {
     "base_hp": 70,
@@ -35965,7 +36125,8 @@
       "move_id_19_index": 438
     },
     "evo_at": 34,
-    "evo_target": 407
+    "evo_target": 407,
+    "evo_modified_bst": 429.0
   },
   {
     "base_hp": 70,
@@ -36087,7 +36248,8 @@
       "move_id_22_index": 378
     },
     "evo_at": 26,
-    "evo_target": 317
+    "evo_target": 317,
+    "evo_modified_bst": 371.8
   },
   {
     "base_hp": 100,
@@ -36326,7 +36488,8 @@
       "move_id_21_index": 38
     },
     "evo_at": 30,
-    "evo_target": 319
+    "evo_target": 319,
+    "evo_modified_bst": 368.0
   },
   {
     "base_hp": 70,
@@ -36568,7 +36731,8 @@
       "move_id_20_index": 266
     },
     "evo_at": 40,
-    "evo_target": 321
+    "evo_target": 321,
+    "evo_modified_bst": 434.0
   },
   {
     "base_hp": 200,
@@ -36813,7 +36977,8 @@
       "move_id_23_index": 284
     },
     "evo_at": 33,
-    "evo_target": 323
+    "evo_target": 323,
+    "evo_modified_bst": 361.0
   },
   {
     "base_hp": 90,
@@ -37163,7 +37328,8 @@
       "move_id_18_index": 340
     },
     "evo_at": 32,
-    "evo_target": 326
+    "evo_target": 326,
+    "evo_modified_bst": 406.0
   },
   {
     "base_hp": 80,
@@ -37510,7 +37676,8 @@
       "move_id_21_index": 38
     },
     "evo_at": 30,
-    "evo_target": 329
+    "evo_target": 329,
+    "evo_modified_bst": 353.0
   },
   {
     "base_hp": 60,
@@ -37632,7 +37799,8 @@
       "move_id_22_index": 38
     },
     "evo_at": 55,
-    "evo_target": 330
+    "evo_target": 330,
+    "evo_modified_bst": 466.0
   },
   {
     "base_hp": 90,
@@ -37883,7 +38051,8 @@
       "move_id_23_index": 415
     },
     "evo_at": 32,
-    "evo_target": 332
+    "evo_target": 332,
+    "evo_modified_bst": 347.0
   },
   {
     "base_hp": 70,
@@ -38128,7 +38297,8 @@
       "move_id_21_index": 143
     },
     "evo_at": 35,
-    "evo_target": 334
+    "evo_target": 334,
+    "evo_modified_bst": 422.0
   },
   {
     "base_hp": 95,
@@ -38829,7 +38999,8 @@
       "move_id_21_index": 56
     },
     "evo_at": 30,
-    "evo_target": 340
+    "evo_target": 340,
+    "evo_modified_bst": 403.8
   },
   {
     "base_hp": 110,
@@ -39071,7 +39242,8 @@
       "move_id_22_index": 12
     },
     "evo_at": 30,
-    "evo_target": 342
+    "evo_target": 342,
+    "evo_modified_bst": 361.0
   },
   {
     "base_hp": 63,
@@ -39301,7 +39473,8 @@
       "move_id_17_index": 153
     },
     "evo_at": 36,
-    "evo_target": 344
+    "evo_target": 344,
+    "evo_modified_bst": 400.0
   },
   {
     "base_hp": 60,
@@ -39525,7 +39698,8 @@
       "move_id_18_index": 378
     },
     "evo_at": 30,
-    "evo_target": 346
+    "evo_target": 346,
+    "evo_modified_bst": 381.8
   },
   {
     "base_hp": 86,
@@ -39749,7 +39923,8 @@
       "move_id_17_index": 444
     },
     "evo_at": 30,
-    "evo_target": 348
+    "evo_target": 348,
+    "evo_modified_bst": 398.0
   },
   {
     "base_hp": 75,
@@ -39922,7 +40097,8 @@
       "move_id_3_index": 352
     },
     "evo_at": 34,
-    "evo_target": 350
+    "evo_target": 350,
+    "evo_modified_bst": 455.4
   },
   {
     "base_hp": 95,
@@ -40386,7 +40562,8 @@
       "move_id_17_index": 194
     },
     "evo_at": 32,
-    "evo_target": 354
+    "evo_target": 354,
+    "evo_modified_bst": 369.4
   },
   {
     "base_hp": 64,
@@ -40616,7 +40793,8 @@
       "move_id_21_index": 288
     },
     "evo_at": 32,
-    "evo_target": 356
+    "evo_target": 356,
+    "evo_modified_bst": 343.0
   },
   {
     "base_hp": 40,
@@ -40738,7 +40916,8 @@
       "move_id_22_index": 288
     },
     "evo_at": 44,
-    "evo_target": 477
+    "evo_target": 477,
+    "evo_modified_bst": 415.0
   },
   {
     "base_hp": 99,
@@ -41169,7 +41348,8 @@
       "move_id_6_index": 321
     },
     "evo_at": 15,
-    "evo_target": 202
+    "evo_target": 202,
+    "evo_modified_bst": 355.4
   },
   {
     "base_hp": 50,
@@ -41276,7 +41456,8 @@
       "move_id_17_index": 59
     },
     "evo_at": 28,
-    "evo_target": 478
+    "evo_target": 478,
+    "evo_modified_bst": 424.0
   },
   {
     "base_hp": 80,
@@ -41500,7 +41681,8 @@
       "move_id_20_index": 90
     },
     "evo_at": 21,
-    "evo_target": 364
+    "evo_target": 364,
+    "evo_modified_bst": 331.0
   },
   {
     "base_hp": 90,
@@ -41622,7 +41804,8 @@
       "move_id_22_index": 329
     },
     "evo_at": 40,
-    "evo_target": 365
+    "evo_target": 365,
+    "evo_modified_bst": 419.0
   },
   {
     "base_hp": 110,
@@ -41825,7 +42008,8 @@
       "move_id_7_index": 534
     },
     "evo_at": 28,
-    "evo_target": 368
+    "evo_target": 368,
+    "evo_modified_bst": 375.4
   },
   {
     "base_hp": 55,
@@ -42391,7 +42575,8 @@
       "move_id_21_index": 56
     },
     "evo_at": 30,
-    "evo_target": 372
+    "evo_target": 372,
+    "evo_modified_bst": 340.0
   },
   {
     "base_hp": 65,
@@ -42513,7 +42698,8 @@
       "move_id_22_index": 56
     },
     "evo_at": 50,
-    "evo_target": 373
+    "evo_target": 373,
+    "evo_modified_bst": 478.0
   },
   {
     "base_hp": 95,
@@ -42707,7 +42893,8 @@
       "move_id_4_index": 36
     },
     "evo_at": 20,
-    "evo_target": 375
+    "evo_target": 375,
+    "evo_modified_bst": 339.0
   },
   {
     "base_hp": 60,
@@ -42817,7 +43004,8 @@
       "move_id_18_index": 153
     },
     "evo_at": 45,
-    "evo_target": 376
+    "evo_target": 376,
+    "evo_modified_bst": 475.0
   },
   {
     "base_hp": 80,
@@ -44052,7 +44240,8 @@
       "move_id_17_index": 79
     },
     "evo_at": 18,
-    "evo_target": 388
+    "evo_target": 388,
+    "evo_modified_bst": 327.2
   },
   {
     "base_hp": 75,
@@ -44168,7 +44357,8 @@
       "move_id_20_index": 200
     },
     "evo_at": 32,
-    "evo_target": 389
+    "evo_target": 389,
+    "evo_modified_bst": 443.2
   },
   {
     "base_hp": 105,
@@ -44401,7 +44591,8 @@
       "move_id_17_index": 517
     },
     "evo_at": 14,
-    "evo_target": 391
+    "evo_target": 391,
+    "evo_modified_bst": 322.4
   },
   {
     "base_hp": 64,
@@ -44517,7 +44708,8 @@
       "move_id_20_index": 13
     },
     "evo_at": 36,
-    "evo_target": 392
+    "evo_target": 392,
+    "evo_modified_bst": 424.4
   },
   {
     "base_hp": 76,
@@ -44750,7 +44942,8 @@
       "move_id_17_index": 445
     },
     "evo_at": 16,
-    "evo_target": 394
+    "evo_target": 394,
+    "evo_modified_bst": 312.20000000000005
   },
   {
     "base_hp": 64,
@@ -44866,7 +45059,8 @@
       "move_id_20_index": 65
     },
     "evo_at": 36,
-    "evo_target": 395
+    "evo_target": 395,
+    "evo_modified_bst": 408.20000000000005
   },
   {
     "base_hp": 84,
@@ -45099,7 +45293,8 @@
       "move_id_17_index": 143
     },
     "evo_at": 14,
-    "evo_target": 397
+    "evo_target": 397,
+    "evo_modified_bst": 298.0
   },
   {
     "base_hp": 55,
@@ -45215,7 +45410,8 @@
       "move_id_20_index": 370
     },
     "evo_at": 34,
-    "evo_target": 398
+    "evo_target": 398,
+    "evo_modified_bst": 429.0
   },
   {
     "base_hp": 85,
@@ -45454,7 +45650,8 @@
       "move_id_21_index": 387
     },
     "evo_at": 15,
-    "evo_target": 400
+    "evo_target": 400,
+    "evo_modified_bst": 368.2
   },
   {
     "base_hp": 84,
@@ -45651,7 +45848,8 @@
       "move_id_5_index": 253
     },
     "evo_at": 10,
-    "evo_target": 402
+    "evo_target": 402,
+    "evo_modified_bst": 345.2
   },
   {
     "base_hp": 75,
@@ -45893,7 +46091,8 @@
       "move_id_23_index": 344
     },
     "evo_at": 15,
-    "evo_target": 404
+    "evo_target": 404,
+    "evo_modified_bst": 295.4
   },
   {
     "base_hp": 60,
@@ -46018,7 +46217,8 @@
       "move_id_23_index": 344
     },
     "evo_at": 30,
-    "evo_target": 405
+    "evo_target": 405,
+    "evo_modified_bst": 410.4
   },
   {
     "base_hp": 80,
@@ -46230,7 +46430,8 @@
       "move_id_10_index": 326
     },
     "evo_at": 16,
-    "evo_target": 315
+    "evo_target": 315,
+    "evo_modified_bst": 328.0
   },
   {
     "base_hp": 60,
@@ -46418,7 +46619,8 @@
       "move_id_17_index": 457
     },
     "evo_at": 30,
-    "evo_target": 409
+    "evo_target": 409,
+    "evo_modified_bst": 419.6
   },
   {
     "base_hp": 97,
@@ -46639,7 +46841,8 @@
       "move_id_15_index": 368
     },
     "evo_at": 30,
-    "evo_target": 411
+    "evo_target": 411,
+    "evo_modified_bst": 412.8
   },
   {
     "base_hp": 60,
@@ -46824,7 +47027,8 @@
       "move_id_6_index": 522
     },
     "evo_at": 25,
-    "evo_target": 414
+    "evo_target": 414,
+    "evo_modified_bst": 354.4
   },
   {
     "base_hp": 66,
@@ -47111,7 +47315,8 @@
       "move_id_4_index": 405
     },
     "evo_at": 21,
-    "evo_target": 416
+    "evo_target": 416,
+    "evo_modified_bst": 379.20000000000005
   },
   {
     "base_hp": 81,
@@ -47449,7 +47654,8 @@
       "move_id_21_index": 56
     },
     "evo_at": 26,
-    "evo_target": 419
+    "evo_target": 419,
+    "evo_modified_bst": 412.0
   },
   {
     "base_hp": 85,
@@ -47685,7 +47891,8 @@
       "move_id_19_index": 361
     },
     "evo_at": 25,
-    "evo_target": 421
+    "evo_target": 421,
+    "evo_modified_bst": 407.4
   },
   {
     "base_hp": 70,
@@ -47921,7 +48128,8 @@
       "move_id_22_index": 56
     },
     "evo_at": 30,
-    "evo_target": 423
+    "evo_target": 423,
+    "evo_modified_bst": 364.8
   },
   {
     "base_hp": 111,
@@ -48274,7 +48482,8 @@
       "move_id_20_index": 194
     },
     "evo_at": 28,
-    "evo_target": 426
+    "evo_target": 426,
+    "evo_modified_bst": 409.4
   },
   {
     "base_hp": 150,
@@ -48504,7 +48713,8 @@
       "move_id_19_index": 361
     },
     "evo_at": 29,
-    "evo_target": 428
+    "evo_target": 428,
+    "evo_modified_bst": 431.0
   },
   {
     "base_hp": 65,
@@ -48914,7 +49124,8 @@
       "move_id_20_index": 387
     },
     "evo_at": 27,
-    "evo_target": 432
+    "evo_target": 432,
+    "evo_modified_bst": 427.0
   },
   {
     "base_hp": 90,
@@ -49135,7 +49346,8 @@
       "move_id_13_index": 95
     },
     "evo_at": 22,
-    "evo_target": 358
+    "evo_target": 358,
+    "evo_modified_bst": 399.0
   },
   {
     "base_hp": 65,
@@ -49251,7 +49463,8 @@
       "move_id_20_index": 441
     },
     "evo_at": 27,
-    "evo_target": 435
+    "evo_target": 435,
+    "evo_modified_bst": 416.0
   },
   {
     "base_hp": 115,
@@ -49475,7 +49688,8 @@
       "move_id_16_index": 265
     },
     "evo_at": 33,
-    "evo_target": 437
+    "evo_target": 437,
+    "evo_modified_bst": 376.20000000000005
   },
   {
     "base_hp": 67,
@@ -49705,7 +49919,8 @@
       "move_id_20_index": 38
     },
     "evo_at": 25,
-    "evo_target": 185
+    "evo_target": 185,
+    "evo_modified_bst": 401.0
   },
   {
     "base_hp": 20,
@@ -49824,7 +50039,8 @@
       "move_id_21_index": 417
     },
     "evo_at": 25,
-    "evo_target": 122
+    "evo_target": 122,
+    "evo_modified_bst": 412.0
   },
   {
     "base_hp": 100,
@@ -49919,7 +50135,8 @@
       "move_id_13_index": 135
     },
     "evo_at": 30,
-    "evo_target": 113
+    "evo_target": 113,
+    "evo_modified_bst": 433.0
   },
   {
     "base_hp": 75,
@@ -50260,7 +50477,8 @@
       "move_id_16_index": 200
     },
     "evo_at": 24,
-    "evo_target": 444
+    "evo_target": 444,
+    "evo_modified_bst": 352.4
   },
   {
     "base_hp": 68,
@@ -50367,7 +50585,8 @@
       "move_id_17_index": 200
     },
     "evo_at": 48,
-    "evo_target": 445
+    "evo_target": 445,
+    "evo_modified_bst": 504.4
   },
   {
     "base_hp": 108,
@@ -50591,7 +50810,8 @@
       "move_id_17_index": 484
     },
     "evo_at": 32,
-    "evo_target": 143
+    "evo_target": 143,
+    "evo_modified_bst": 446.0
   },
   {
     "base_hp": 40,
@@ -50707,7 +50927,8 @@
       "move_id_20_index": 515
     },
     "evo_at": 26,
-    "evo_target": 448
+    "evo_target": 448,
+    "evo_modified_bst": 402.0
   },
   {
     "base_hp": 70,
@@ -50943,7 +51164,8 @@
       "move_id_18_index": 90
     },
     "evo_at": 34,
-    "evo_target": 450
+    "evo_target": 450,
+    "evo_modified_bst": 428.40000000000003
   },
   {
     "base_hp": 108,
@@ -51164,7 +51386,8 @@
       "move_id_16_index": 440
     },
     "evo_at": 39,
-    "evo_target": 452
+    "evo_target": 452,
+    "evo_modified_bst": 422.0
   },
   {
     "base_hp": 70,
@@ -51394,7 +51617,8 @@
       "move_id_19_index": 370
     },
     "evo_at": 33,
-    "evo_target": 454
+    "evo_target": 454,
+    "evo_modified_bst": 395.0
   },
   {
     "base_hp": 83,
@@ -51738,7 +51962,8 @@
       "move_id_19_index": 487
     },
     "evo_at": 31,
-    "evo_target": 457
+    "evo_target": 457,
+    "evo_modified_bst": 429.4
   },
   {
     "base_hp": 70,
@@ -51977,7 +52202,8 @@
       "move_id_20_index": 56
     },
     "evo_at": 27,
-    "evo_target": 226
+    "evo_target": 226,
+    "evo_modified_bst": 417.0
   },
   {
     "base_hp": 60,
@@ -52093,7 +52319,8 @@
       "move_id_20_index": 329
     },
     "evo_at": 40,
-    "evo_target": 460
+    "evo_target": 460,
+    "evo_modified_bst": 382.0
   },
   {
     "base_hp": 90,
@@ -56073,7 +56300,8 @@
       "move_id_17_index": 378
     },
     "evo_at": 17,
-    "evo_target": 496
+    "evo_target": 496,
+    "evo_modified_bst": 339.6
   },
   {
     "base_hp": 60,
@@ -56189,7 +56417,8 @@
       "move_id_20_index": 438
     },
     "evo_at": 36,
-    "evo_target": 497
+    "evo_target": 497,
+    "evo_modified_bst": 443.6
   },
   {
     "base_hp": 80,
@@ -56422,7 +56651,8 @@
       "move_id_17_index": 126
     },
     "evo_at": 17,
-    "evo_target": 499
+    "evo_target": 499,
+    "evo_modified_bst": 337.0
   },
   {
     "base_hp": 90,
@@ -56538,7 +56768,8 @@
       "move_id_20_index": 394
     },
     "evo_at": 36,
-    "evo_target": 500
+    "evo_target": 500,
+    "evo_modified_bst": 446.0
   },
   {
     "base_hp": 115,
@@ -56774,7 +57005,8 @@
       "move_id_18_index": 376
     },
     "evo_at": 17,
-    "evo_target": 502
+    "evo_target": 502,
+    "evo_modified_bst": 322.0
   },
   {
     "base_hp": 75,
@@ -56893,7 +57125,8 @@
       "move_id_21_index": 56
     },
     "evo_at": 36,
-    "evo_target": 503
+    "evo_target": 503,
+    "evo_modified_bst": 412.0
   },
   {
     "base_hp": 95,
@@ -57138,7 +57371,8 @@
       "move_id_21_index": 226
     },
     "evo_at": 20,
-    "evo_target": 505
+    "evo_target": 505,
+    "evo_modified_bst": 364.8
   },
   {
     "base_hp": 60,
@@ -57380,7 +57614,8 @@
       "move_id_20_index": 387
     },
     "evo_at": 16,
-    "evo_target": 507
+    "evo_target": 507,
+    "evo_modified_bst": 321.0
   },
   {
     "base_hp": 65,
@@ -57496,7 +57731,8 @@
       "move_id_20_index": 387
     },
     "evo_at": 32,
-    "evo_target": 508
+    "evo_target": 508,
+    "evo_modified_bst": 445.0
   },
   {
     "base_hp": 95,
@@ -57750,7 +57986,8 @@
       "move_id_24_index": 417
     },
     "evo_at": 20,
-    "evo_target": 510
+    "evo_target": 510,
+    "evo_modified_bst": 361.2
   },
   {
     "base_hp": 64,
@@ -58004,7 +58241,8 @@
       "move_id_24_index": 303
     },
     "evo_at": 20,
-    "evo_target": 512
+    "evo_target": 512,
+    "evo_modified_bst": 396.0
   },
   {
     "base_hp": 75,
@@ -58228,7 +58466,8 @@
       "move_id_24_index": 303
     },
     "evo_at": 20,
-    "evo_target": 514
+    "evo_target": 514,
+    "evo_modified_bst": 396.0
   },
   {
     "base_hp": 75,
@@ -58449,7 +58688,8 @@
       "move_id_24_index": 303
     },
     "evo_at": 20,
-    "evo_target": 516
+    "evo_target": 516,
+    "evo_modified_bst": 396.0
   },
   {
     "base_hp": 75,
@@ -58667,7 +58907,8 @@
       "move_id_22_index": 361
     },
     "evo_at": 30,
-    "evo_target": 518
+    "evo_target": 518,
+    "evo_modified_bst": 401.8
   },
   {
     "base_hp": 116,
@@ -58873,7 +59114,8 @@
       "move_id_20_index": 143
     },
     "evo_at": 21,
-    "evo_target": 520
+    "evo_target": 520,
+    "evo_modified_bst": 306.79999999999995
   },
   {
     "base_hp": 65,
@@ -58992,7 +59234,8 @@
       "move_id_21_index": 143
     },
     "evo_at": 32,
-    "evo_target": 521
+    "evo_target": 521,
+    "evo_modified_bst": 412.0
   },
   {
     "base_hp": 80,
@@ -59231,7 +59474,8 @@
       "move_id_20_index": 394
     },
     "evo_at": 27,
-    "evo_target": 523
+    "evo_target": 523,
+    "evo_modified_bst": 415.0
   },
   {
     "base_hp": 75,
@@ -59458,7 +59702,8 @@
       "move_id_17_index": 469
     },
     "evo_at": 25,
-    "evo_target": 525
+    "evo_target": 525,
+    "evo_modified_bst": 315.0
   },
   {
     "base_hp": 70,
@@ -59571,7 +59816,8 @@
       "move_id_19_index": 439
     },
     "evo_at": 36,
-    "evo_target": 526
+    "evo_target": 526,
+    "evo_modified_bst": 418.0
   },
   {
     "base_hp": 85,
@@ -59798,7 +60044,8 @@
       "move_id_20_index": 417
     },
     "evo_at": 25,
-    "evo_target": 528
+    "evo_target": 528,
+    "evo_modified_bst": 403.2
   },
   {
     "base_hp": 70,
@@ -60028,7 +60275,8 @@
       "move_id_17_index": 90
     },
     "evo_at": 31,
-    "evo_target": 530
+    "evo_target": 530,
+    "evo_modified_bst": 450.6
   },
   {
     "base_hp": 110,
@@ -60372,7 +60620,8 @@
       "move_id_20_index": 183
     },
     "evo_at": 25,
-    "evo_target": 533
+    "evo_target": 533,
+    "evo_modified_bst": 346.0
   },
   {
     "base_hp": 85,
@@ -60494,7 +60743,8 @@
       "move_id_22_index": 370
     },
     "evo_at": 38,
-    "evo_target": 534
+    "evo_target": 534,
+    "evo_modified_bst": 427.0
   },
   {
     "base_hp": 105,
@@ -60730,7 +60980,8 @@
       "move_id_18_index": 56
     },
     "evo_at": 25,
-    "evo_target": 536
+    "evo_target": 536,
+    "evo_modified_bst": 310.8
   },
   {
     "base_hp": 75,
@@ -60840,7 +61091,8 @@
       "move_id_18_index": 56
     },
     "evo_at": 36,
-    "evo_target": 537
+    "evo_target": 537,
+    "evo_modified_bst": 403.8
   },
   {
     "base_hp": 105,
@@ -61277,7 +61529,8 @@
       "move_id_12_index": 175
     },
     "evo_at": 21,
-    "evo_target": 541
+    "evo_target": 541,
+    "evo_modified_bst": 319.4
   },
   {
     "base_hp": 70,
@@ -61354,7 +61607,8 @@
       "move_id_7_index": 334
     },
     "evo_at": 29,
-    "evo_target": 542
+    "evo_target": 542,
+    "evo_modified_bst": 416.4
   },
   {
     "base_hp": 75,
@@ -61587,7 +61841,8 @@
       "move_id_18_index": 537
     },
     "evo_at": 20,
-    "evo_target": 544
+    "evo_target": 544,
+    "evo_modified_bst": 293.8
   },
   {
     "base_hp": 40,
@@ -61703,7 +61958,8 @@
       "move_id_20_index": 140
     },
     "evo_at": 30,
-    "evo_target": 545
+    "evo_target": 545,
+    "evo_modified_bst": 420.8
   },
   {
     "base_hp": 60,
@@ -61945,10 +62201,14 @@
       "move_id_18_index": 412,
       "move_id_19_index": 283,
       "move_id_20_index": 366,
-      "move_id_21_index": 262
+      "move_id_21_index": 262,
+      "lvl_learned_22": 39,
+      "move_id_22": "NATURE POWER",
+      "move_id_22_index": 267
     },
     "evo_at": 28,
-    "evo_target": 547
+    "evo_target": 547,
+    "evo_modified_bst": 399.2
   },
   {
     "base_hp": 60,
@@ -62148,7 +62408,8 @@
       "move_id_21_index": 437
     },
     "evo_at": 21,
-    "evo_target": 549
+    "evo_target": 549,
+    "evo_modified_bst": 419.0
   },
   {
     "base_hp": 70,
@@ -62453,7 +62714,8 @@
       "move_id_20_index": 242
     },
     "evo_at": 27,
-    "evo_target": 552
+    "evo_target": 552,
+    "evo_modified_bst": 302.8
   },
   {
     "base_hp": 60,
@@ -62578,7 +62840,8 @@
       "move_id_23_index": 389
     },
     "evo_at": 40,
-    "evo_target": 553
+    "evo_target": 553,
+    "evo_modified_bst": 442.4
   },
   {
     "base_hp": 95,
@@ -62811,7 +63074,8 @@
       "move_id_17_index": 264
     },
     "evo_at": 35,
-    "evo_target": 555
+    "evo_target": 555,
+    "evo_modified_bst": 447.0
   },
   {
     "base_hp": 105,
@@ -63146,7 +63410,8 @@
       "move_id_17_index": 439
     },
     "evo_at": 34,
-    "evo_target": 558
+    "evo_target": 558,
+    "evo_modified_bst": 389.0
   },
   {
     "base_hp": 70,
@@ -63376,7 +63641,8 @@
       "move_id_20_index": 457
     },
     "evo_at": 30,
-    "evo_target": 560
+    "evo_target": 560,
+    "evo_modified_bst": 408.6
   },
   {
     "base_hp": 65,
@@ -63738,7 +64004,8 @@
       "move_id_23_index": 194
     },
     "evo_at": 34,
-    "evo_target": 563
+    "evo_target": 563,
+    "evo_modified_bst": 399.0
   },
   {
     "base_hp": 68,
@@ -63974,7 +64241,8 @@
       "move_id_18_index": 386
     },
     "evo_at": 37,
-    "evo_target": 565
+    "evo_target": 565,
+    "evo_modified_bst": 378.8
   },
   {
     "base_hp": 74,
@@ -64201,7 +64469,8 @@
       "move_id_18_index": 140
     },
     "evo_at": 37,
-    "evo_target": 567
+    "evo_target": 567,
+    "evo_modified_bst": 451.0
   },
   {
     "base_hp": 75,
@@ -64437,7 +64706,8 @@
       "move_id_21_index": 120
     },
     "evo_at": 36,
-    "evo_target": 569
+    "evo_target": 569,
+    "evo_modified_bst": 416.20000000000005
   },
   {
     "base_hp": 100,
@@ -64679,7 +64949,8 @@
       "move_id_20_index": 326
     },
     "evo_at": 30,
-    "evo_target": 571
+    "evo_target": 571,
+    "evo_modified_bst": 394.0
   },
   {
     "base_hp": 60,
@@ -64921,7 +65192,8 @@
       "move_id_20_index": 387
     },
     "evo_at": 19,
-    "evo_target": 573
+    "evo_target": 573,
+    "evo_modified_bst": 414.0
   },
   {
     "base_hp": 80,
@@ -65109,7 +65381,8 @@
       "move_id_18_index": 539
     },
     "evo_at": 30,
-    "evo_target": 575
+    "evo_target": 575,
+    "evo_modified_bst": 325.0
   },
   {
     "base_hp": 60,
@@ -65222,7 +65495,8 @@
       "move_id_19_index": 539
     },
     "evo_at": 41,
-    "evo_target": 576
+    "evo_target": 576,
+    "evo_modified_bst": 407.0
   },
   {
     "base_hp": 70,
@@ -65452,7 +65726,8 @@
       "move_id_18_index": 500
     },
     "evo_at": 30,
-    "evo_target": 578
+    "evo_target": 578,
+    "evo_modified_bst": 314.0
   },
   {
     "base_hp": 65,
@@ -65565,7 +65840,8 @@
       "move_id_19_index": 500
     },
     "evo_at": 41,
-    "evo_target": 579
+    "evo_target": 579,
+    "evo_modified_bst": 399.0
   },
   {
     "base_hp": 110,
@@ -65801,7 +66077,8 @@
       "move_id_19_index": 413
     },
     "evo_at": 35,
-    "evo_target": 581
+    "evo_target": 581,
+    "evo_modified_bst": 427.0
   },
   {
     "base_hp": 82,
@@ -66034,7 +66311,8 @@
       "move_id_19_index": 229
     },
     "evo_at": 29,
-    "evo_target": 583
+    "evo_target": 583,
+    "evo_modified_bst": 305.8
   },
   {
     "base_hp": 51,
@@ -66153,7 +66431,8 @@
       "move_id_21_index": 114
     },
     "evo_at": 35,
-    "evo_target": 584
+    "evo_target": 584,
+    "evo_modified_bst": 411.8
   },
   {
     "base_hp": 71,
@@ -66386,7 +66665,8 @@
       "move_id_17_index": 76
     },
     "evo_at": 34,
-    "evo_target": 586
+    "evo_target": 586,
+    "evo_modified_bst": 421.0
   },
   {
     "base_hp": 85,
@@ -66739,7 +67019,8 @@
       "move_id_18_index": 224
     },
     "evo_at": 30,
-    "evo_target": 589
+    "evo_target": 589,
+    "evo_modified_bst": 397.0
   },
   {
     "base_hp": 70,
@@ -66981,7 +67262,8 @@
       "move_id_20_index": 76
     },
     "evo_at": 31,
-    "evo_target": 591
+    "evo_target": 591,
+    "evo_modified_bst": 355.0
   },
   {
     "base_hp": 114,
@@ -67205,7 +67487,8 @@
       "move_id_17_index": 323
     },
     "evo_at": 40,
-    "evo_target": 593
+    "evo_target": 593,
+    "evo_modified_bst": 397.0
   },
   {
     "base_hp": 100,
@@ -67552,7 +67835,8 @@
       "move_id_22_index": 141
     },
     "evo_at": 28,
-    "evo_target": 596
+    "evo_target": 596,
+    "evo_modified_bst": 392.6
   },
   {
     "base_hp": 70,
@@ -67791,7 +68075,8 @@
       "move_id_19_index": 120
     },
     "evo_at": 40,
-    "evo_target": 598
+    "evo_target": 598,
+    "evo_modified_bst": 389.6
   },
   {
     "base_hp": 74,
@@ -68021,7 +68306,8 @@
       "move_id_18_index": 63
     },
     "evo_at": 30,
-    "evo_target": 600
+    "evo_target": 600,
+    "evo_modified_bst": 339.0
   },
   {
     "base_hp": 60,
@@ -68131,7 +68417,8 @@
       "move_id_18_index": 63
     },
     "evo_at": 49,
-    "evo_target": 601
+    "evo_target": 601,
+    "evo_modified_bst": 428.0
   },
   {
     "base_hp": 60,
@@ -68313,7 +68600,8 @@
       "move_id_3_index": 159
     },
     "evo_at": 20,
-    "evo_target": 603
+    "evo_target": 603,
+    "evo_modified_bst": 305.0
   },
   {
     "base_hp": 65,
@@ -68420,7 +68708,8 @@
       "move_id_17_index": 192
     },
     "evo_at": 37,
-    "evo_target": 604
+    "evo_target": 604,
+    "evo_modified_bst": 383.0
   },
   {
     "base_hp": 85,
@@ -68638,7 +68927,8 @@
       "move_id_23_index": 354
     },
     "evo_at": 37,
-    "evo_target": 606
+    "evo_target": 606,
+    "evo_modified_bst": 384.0
   },
   {
     "base_hp": 75,
@@ -68883,7 +69173,8 @@
       "move_id_21_index": 262
     },
     "evo_at": 24,
-    "evo_target": 608
+    "evo_target": 608,
+    "evo_modified_bst": 317.0
   },
   {
     "base_hp": 60,
@@ -69011,7 +69302,8 @@
       "move_id_24_index": 262
     },
     "evo_at": 42,
-    "evo_target": 609
+    "evo_target": 609,
+    "evo_modified_bst": 445.0
   },
   {
     "base_hp": 60,
@@ -69205,7 +69497,8 @@
       "move_id_19_index": 416
     },
     "evo_at": 32,
-    "evo_target": 611
+    "evo_target": 611,
+    "evo_modified_bst": 359.4
   },
   {
     "base_hp": 66,
@@ -69321,7 +69614,8 @@
       "move_id_20_index": 416
     },
     "evo_at": 48,
-    "evo_target": 612
+    "evo_target": 612,
+    "evo_modified_bst": 467.4
   },
   {
     "base_hp": 76,
@@ -69563,7 +69857,8 @@
       "move_id_21_index": 329
     },
     "evo_at": 37,
-    "evo_target": 614
+    "evo_target": 614,
+    "evo_modified_bst": 429.0
   },
   {
     "base_hp": 105,
@@ -69907,7 +70202,8 @@
       "move_id_18_index": 515
     },
     "evo_at": 30,
-    "evo_target": 617
+    "evo_target": 617,
+    "evo_modified_bst": 434.0
   },
   {
     "base_hp": 80,
@@ -70260,7 +70556,8 @@
       "move_id_19_index": 136
     },
     "evo_at": 50,
-    "evo_target": 620
+    "evo_target": 620,
+    "evo_modified_bst": 412.0
   },
   {
     "base_hp": 65,
@@ -70607,7 +70904,8 @@
       "move_id_18_index": 325
     },
     "evo_at": 40,
-    "evo_target": 623
+    "evo_target": 623,
+    "evo_modified_bst": 442.0
   },
   {
     "base_hp": 115,
@@ -70846,7 +71144,8 @@
       "move_id_20_index": 12
     },
     "evo_at": 40,
-    "evo_target": 625
+    "evo_target": 625,
+    "evo_modified_bst": 410.0
   },
   {
     "base_hp": 65,
@@ -71208,7 +71507,8 @@
       "move_id_22_index": 370
     },
     "evo_at": 34,
-    "evo_target": 628
+    "evo_target": 628,
+    "evo_modified_bst": 439.0
   },
   {
     "base_hp": 100,
@@ -71447,7 +71747,8 @@
       "move_id_21_index": 276
     },
     "evo_at": 34,
-    "evo_target": 630
+    "evo_target": 630,
+    "evo_modified_bst": 426.0
   },
   {
     "base_hp": 110,
@@ -71911,7 +72212,8 @@
       "move_id_18_index": 200
     },
     "evo_at": 38,
-    "evo_target": 634
+    "evo_target": 634,
+    "evo_modified_bst": 338.6
   },
   {
     "base_hp": 72,
@@ -72027,7 +72329,8 @@
       "move_id_20_index": 200
     },
     "evo_at": 58,
-    "evo_target": 635
+    "evo_target": 635,
+    "evo_modified_bst": 468.6
   },
   {
     "base_hp": 92,
@@ -72254,7 +72557,8 @@
       "move_id_16_index": 394
     },
     "evo_at": 59,
-    "evo_target": 637
+    "evo_target": 637,
+    "evo_modified_bst": 476.0
   },
   {
     "base_hp": 85,

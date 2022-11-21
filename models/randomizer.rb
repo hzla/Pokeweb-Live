@@ -60,14 +60,88 @@ class Randomizer
 		File.write("randomizer/move_viabilities.json", JSON.pretty_generate(moves))
 	end
 
+	def self.smogon_indexed_moves
+		moves = load_file('move_viabilities')
+		indexed = {}
+		moves.each_with_index do |move, i|
+			smogon_id = move[1]["name"].smogonlize
+			indexed[smogon_id] = move[1]
+		end
+		File.write("randomizer/smogon_indexed_move_viabilities.json", JSON.pretty_generate(indexed))
+		indexed
+	end
+
+	def self.create_items
+		items = Item.get_all
+		indexed = {}
+		items.each_with_index do |item, i|
+			smogon_id = item["name"].smogonlize
+			indexed[smogon_id] = item
+		end
+		File.write("randomizer/smogon_indexed_item_viabilities.json", JSON.pretty_generate(indexed))
+	end
+
+	def self.get_trainer_item pok, smogon=true
+		default_pool = ["Sitrus Berry", "Bright Powder", "Choice Scarf", "Eject Button", "Expert Belt", "Focus Sash", "Focus Band", "King's Rock", "Leftovers", "Life Orb",	"Quick Claw", "Razor Claw", "Rocky Helmet" ]
+		species = pok["name"].name_titleize
+		item = nil
+
+		if smogon && (rand(100) > 10)
+			smogon_data = load_file('smogon')['data'][species]
+			if smogon_data
+				smogon_items = smogon_data["Items"]
+
+				#sometimes use default pool if smogon doesn't have enough variety
+				if smogon_items.to_a.length < 3
+					if rand(100) < 50
+						item = default_pool.shuffle.pop.smogonlize
+					else
+						item = weighted_rand(smogon_items) 
+					end
+				else
+					item = weighted_rand(smogon_items) 
+				end
+			else
+				item = default_pool.shuffle.pop.smogonlize
+			end
+		else
+			default_pool.shuffle.pop.smogonlize
+		end
+		item
+	end
 
 
-	def self.create_team v_range, pok_count, types="all"
+	def self.weighted_rand options
+		total = 0
+		expanded_options = options.to_a
+		options.to_a.each_with_index do |option, i|
+			expanded_options[i][2] = total * 100
+			total += (option[1].round(2) * 100).to_i
+		end
+		rand_number = rand(total * 100)
+
+		chosen = nil
+		expanded_options.reverse.each do |option|
+			if rand_number > option[2]
+				chosen = option[0]
+				break
+			end
+		end
+		chosen
+	end
+
+
+
+	def self.create_team v_range, pok_count, types="all", lvl=50
 		poks = []
+		v_range += 1 if v_range == 0
+		types = ["Normal", "Fire", "Water", "Electric", "Grass", "Ice",
+             "Fighting", "Poison", "Ground", "Flying", "Psychic",
+             "Bug", "Rock", "Ghost", "Dragon", "Dark", "Steel", "Fairy"] if types == "all"
 		main_pool = ai_viability_pool(v_range, types)
 		File.write("randomizer/pool.json", JSON.pretty_generate(main_pool))
 
-		p main_pool.map {|n| n["name"]}
+
 		#choose lead pok from main pool
 		lead_pok = main_pool.shuffle!.pop
 		poks << lead_pok
@@ -108,6 +182,19 @@ class Randomizer
 			complentary_types = [next_type_info[1].shuffle.pop]
 
 		end
+
+		poks.each_with_index do |pok, i|
+			poks[i]["item"] = get_trainer_item(pok)
+			target_viability = (v_range[0] + v_range[1]) / 2
+
+			move_cats = []
+			move_cats << "Special" if pok["special_ok"]
+			move_cats << "Physical" if pok["physical_ok"]
+			category = move_cats.shuffle.pop
+
+			poks[i]["moves"] = create_moveset(pok, target_viability, lvl, category )
+		end
+
 		File.write("randomizer/team.json", JSON.pretty_generate(poks))
 		poks
 		# poks.map {|n| n["name"]}
@@ -143,7 +230,7 @@ class Randomizer
 		bst_importance_skew = 100 # how important bst is at low levels vs high
 		bst_importance = 0.5 # how much bst difference should affect move bp difference
 
-		move_bp_modifier = 1 - (((pok["modified_bst_#{move_category}"] - bst_importance_skew) - (target_viability - bst_importance_skew)) / (pok["modified_bst_#{move_category}"] - bst_importance_skew)).to_f * bst_importance
+		move_bp_modifier = 1 - (((pok["modified_bst_#{move_category.downcase}"] - bst_importance_skew) - (target_viability - bst_importance_skew)) / (pok["modified_bst_#{move_category.downcase}"] - bst_importance_skew)).to_f * bst_importance
 		#poks offensive moves should be around this bp
 		pok_target_bp = move_bp_modifier * target_bp
 
@@ -180,8 +267,6 @@ class Randomizer
 		# end
 
 		learnset_moves = learnset_moves.last(2)
-		p (learnset_moves.map{|n| n[1]["name"]})
-
 
 		#create move pool of offensive stab moves within accetable bp range
 		stab_movepool = []
@@ -189,8 +274,8 @@ class Randomizer
 			move = move[1]
 			stab = types.include?(move["type"])
 			category_match = (move["category"].downcase == move_category.downcase)
-			bp_in_range = (move["power"] > (pok_target_bp - 10)) && (move["power"] < (pok_target_bp + 10))
-		
+			bp_in_range = (move["power"] > (pok_target_bp - 20)) && (move["power"] < (pok_target_bp + 20))
+
 			if stab && category_match && bp_in_range
 				stab_movepool << move 
 
@@ -214,14 +299,18 @@ class Randomizer
 		moveset = []
 		# STEP 1: Choose a stab move
 		stab_move1 = stab_movepool.shuffle!.pop 
-		stab_move1_type = stab_move1["type"]
-		moveset << stab_move1
-		p "stab 1 added"
+		
+		if stab_move1
+
+			stab_move1_type = stab_move1["type"]
+			moveset << stab_move1
+			
+		end
 		empty_stab = false
 
 		# STEP 2: 60% chance to choose a second stab move if there is a 2nd type 
 		remaining_types = types.uniq
-		remaining_types.delete stab_move1["type"]
+		remaining_types.delete stab_move1["type"] if stab_move1
 		if remaining_types
 			empty_stab = true
 			if rand(100) > 60
@@ -235,7 +324,6 @@ class Randomizer
 				if stab_move2
 					moveset << stab_move2 
 					empty_stab = false
-					p "stabmove 2 added"
 				end
 
 			end
@@ -246,7 +334,6 @@ class Randomizer
 		if rand(100) > 50
 			if learnset_moves
 				moveset << learnset_moves.shuffle!.pop[1]
-				p "status 1 added"
 			end
 		end
 
@@ -256,14 +343,12 @@ class Randomizer
 		if rand(100) > 50
 			if learnset_moves
 				moveset << learnset_moves.last[1]
-				p "status 2 added"
 			end
 
 		else
 			cov_move_1 = coverage_movepool.shuffle!.pop
 			cov_move_1_type = cov_move_1["type"]
 			moveset << coverage_movepool.shuffle!.pop
-			p "cov 1 added"
 		end
 
 
@@ -276,12 +361,10 @@ class Randomizer
 				until stab_move2_type == remaining_types[0] || stab_movepool.empty?
 					stab_move2 = stab_movepool.shuffle!.pop
 					stab_move2_type = stab_move2["type"] 
-					p "stab 2 added"
 				end
 
 			else
 				moveset << coverage_movepool.shuffle!.pop
-				p "cov 2 added"
 			end
 		end
 
@@ -289,13 +372,17 @@ class Randomizer
 
 		if moveset.length < 4
 			moveset << coverage_movepool.shuffle!.pop
-			p "cov 3 added"
 		end
 
-
-		p moveset.map {|n| n["name"]}
-
-
+		# Step 7: coverage move if still room
+		if moveset.length < 4
+			moveset << coverage_movepool.shuffle!.pop
+		end
+		begin
+			moveset.map {|n| n["name"]}
+		rescue
+			binding.pry
+		end
 	end
 
 	 # a = Randomizer.create_team([320,440],6,["Fire","Rock"])[-1]
@@ -346,6 +433,19 @@ class Randomizer
 		range_data
 	end
 
+	def self.in_enc_v_range? v_range, pok
+		in_range = false
+		
+		begin
+			if pok["modified_bst"] * pok["via_player"] >= v_range[0] && pok["modified_bst"] * pok["via_player"] <= v_range[1]
+				in_range = true
+			end
+		rescue
+			binding.pry
+		end
+		in_range
+	end
+
 	def self.modified_bst pok
 
 		return 0 if !pok || !pok["base_hp"]
@@ -370,6 +470,7 @@ class Randomizer
 		lvl_evo_method_ids = [4,9,10,11,12,13,14,15,23,24]
 		evo_at = nil
 		evo_target = nil
+		poks = load_file('poks')
 		Evolution.get_all(true).each_with_index do |evo, i|
 			(0..6).each do |n|
 				if lvl_evo_method_ids.include?(evo["method_#{n}"])
@@ -377,6 +478,7 @@ class Randomizer
 					evo_target = evo["target_#{n}"]
 					poke_data[i]["evo_at"] = evo_at
 					poke_data[i]["evo_target"] = evo_target
+					poke_data[i]["evo_modified_bst"] = modified_bst(poks[evo_target])[0]
 				else
 				end
 			end
@@ -440,6 +542,71 @@ class Randomizer
         end
 
         [weak_to, complentary_types]
+	end
+
+
+
+	def self.encounter_pool v_range, lvl, types
+		poks = load_file('pok_viabilities')
+		expanded_poks = load_file('poks')
+		pool = []
+
+		#apply bst changes from evos to 
+
+		expanded_poks.each_with_index do |pok, i|
+			break if !pok
+			if pok["evo_at"] && pok["evo_at"] <= lvl
+				next_pok = expanded_poks[pok["evo_target"]]
+				if next_pok["evo_at"] && next_pok["evo_at"] <= lvl
+					poks[i]["modified_bst"] = expanded_poks[pok["evo_target"]]["evo_modified_bst"]
+				else
+					poks[i]["modified_bst"] = expanded_poks[i]["evo_modified_bst"]
+				end
+			else
+			end
+		end
+
+
+		
+		poks.each do |pok|
+			correct_type = true
+			
+			#check if correct type
+			if types != "all"
+				correct_type = false
+				pok["types"].each do |type|
+					if types.include?(type)
+						correct_type = true
+						break
+					end
+				end
+				next if !correct_type
+			end
+
+			#check if in viability range
+			in_range = in_enc_v_range?(v_range, pok)
+			if in_range 
+				pool << pok
+			end
+		end
+		pool.sort_by {|pok| pok["modified_bst"]}
+	end
+
+	def self.create_encounter v_range, lvl, types="all"
+		pool = encounter_pool(v_range, lvl, types)
+		count = pool.length
+		encounters = {}
+
+		upper_pool = pool[(count / 5 * 4)..-1]
+		mid_pool = pool[(count / 5)...(count/5 * 4)]
+		low_pool = pool[0...(count / 5)]
+
+		encounters["upper"] = upper_pool.sample(6)
+		encounters["mid"] = mid_pool.sample(12)
+		encounters["low"] = low_pool.sample(6)
+
+		encounters
+		File.write("randomizer/encounter.json", JSON.pretty_generate(encounters))
 	end
 end
 

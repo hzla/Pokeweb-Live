@@ -1,7 +1,131 @@
 [
   {
-    "name": "ARCHEOPS",
-    "index": 567,
+    "name": "DRAGONAIR",
+    "index": 148,
+    "via_player": 1.0,
+    "via_ai": 1.0,
+    "via_player_gym_1": 1.0,
+    "via_player_gym_2": 1.0,
+    "via_player_gym_3": 1.0,
+    "via_player_gym_4": 1.0,
+    "via_player_gym_5": 1.0,
+    "via_player_gym_6": 1.0,
+    "via_player_gym_7": 1.0,
+    "via_player_gym_8": 1.0,
+    "types": [
+      "Dragon",
+      "None"
+    ],
+    "modified_bst": 337.0,
+    "modified_bst_physical": 337.0,
+    "modified_bst_special": 323.0,
+    "can_be_mixed": false,
+    "physical_ok": true,
+    "special_ok": true,
+    "item": "brightpowder",
+    "moves": [
+      "BREAKING SWIPE",
+      "DRAGON CLAW",
+      "HAZE",
+      "FIRE LASH"
+    ]
+  },
+  {
+    "name": "WIGGLYTUFF",
+    "index": 40,
+    "via_player": 1.0,
+    "via_ai": 1.0,
+    "via_player_gym_1": 1.0,
+    "via_player_gym_2": 1.0,
+    "via_player_gym_3": 1.0,
+    "via_player_gym_4": 1.0,
+    "via_player_gym_5": 1.0,
+    "via_player_gym_6": 1.0,
+    "via_player_gym_7": 1.0,
+    "via_player_gym_8": 1.0,
+    "types": [
+      "Normal",
+      "Fairy"
+    ],
+    "modified_bst": 365.0,
+    "modified_bst_physical": 330.0,
+    "modified_bst_special": 365.0,
+    "can_be_mixed": false,
+    "physical_ok": true,
+    "special_ok": true,
+    "item": "lifeorb",
+    "moves": [
+      "DIZZY PUNCH",
+      "COVET",
+      "GRAVITY",
+      "ZEN HEADBUTT"
+    ]
+  },
+  {
+    "name": "QUAGSIRE",
+    "index": 195,
+    "via_player": 1.0,
+    "via_ai": 1.0,
+    "via_player_gym_1": 1.0,
+    "via_player_gym_2": 1.0,
+    "via_player_gym_3": 1.0,
+    "via_player_gym_4": 1.0,
+    "via_player_gym_5": 1.0,
+    "via_player_gym_6": 1.0,
+    "via_player_gym_7": 1.0,
+    "via_player_gym_8": 1.0,
+    "types": [
+      "Water",
+      "Ground"
+    ],
+    "modified_bst": 360.0,
+    "modified_bst_physical": 360.0,
+    "modified_bst_special": 330.0,
+    "can_be_mixed": false,
+    "physical_ok": true,
+    "special_ok": true,
+    "item": "quickclaw",
+    "moves": [
+      "BULLDOZE",
+      "RECOVER",
+      "LUNGE",
+      "FIRE PUNCH"
+    ]
+  },
+  {
+    "name": "MAMOSWINE",
+    "index": 473,
+    "via_player": 1.0,
+    "via_ai": 1.0,
+    "via_player_gym_1": 1.0,
+    "via_player_gym_2": 1.0,
+    "via_player_gym_3": 1.0,
+    "via_player_gym_4": 1.0,
+    "via_player_gym_5": 1.0,
+    "via_player_gym_6": 1.0,
+    "via_player_gym_7": 1.0,
+    "via_player_gym_8": 1.0,
+    "types": [
+      "Ice",
+      "Ground"
+    ],
+    "modified_bst": 448.0,
+    "modified_bst_physical": 448.0,
+    "modified_bst_special": 388.0,
+    "can_be_mixed": false,
+    "physical_ok": true,
+    "special_ok": true,
+    "item": "focussash",
+    "moves": [
+      "MAGNITUDE",
+      "AVALANCHE",
+      "ROAR",
+      "SKY DROP"
+    ]
+  },
+  {
+    "name": "AERODACTYL",
+    "index": 142,
     "via_player": 1.0,
     "via_ai": 1.0,
     "via_player_gym_1": 1.0,
@@ -16,64 +140,23 @@
       "Rock",
       "Flying"
     ],
-    "modified_bst": 451.0,
-    "modified_bst_physical": 451.0,
-    "modified_bst_special": 423.0,
-    "can_be_mixed": false,
-    "physical_ok": null,
-    "special_ok": true
-  },
-  {
-    "name": "RHYPERIOR",
-    "index": 464,
-    "via_player": 1.0,
-    "via_ai": 1.0,
-    "via_player_gym_1": 1.0,
-    "via_player_gym_2": 1.0,
-    "via_player_gym_3": 1.0,
-    "via_player_gym_4": 1.0,
-    "via_player_gym_5": 1.0,
-    "via_player_gym_6": 1.0,
-    "via_player_gym_7": 1.0,
-    "via_player_gym_8": 1.0,
-    "types": [
-      "Ground",
-      "Rock"
-    ],
-    "modified_bst": 451.0,
-    "modified_bst_physical": 451.0,
-    "modified_bst_special": 366.0,
-    "can_be_mixed": false,
-    "physical_ok": null,
-    "special_ok": true
-  },
-  {
-    "name": "OMASTAR",
-    "index": 139,
-    "via_player": 1.0,
-    "via_ai": 1.0,
-    "via_player_gym_1": 1.0,
-    "via_player_gym_2": 1.0,
-    "via_player_gym_3": 1.0,
-    "via_player_gym_4": 1.0,
-    "via_player_gym_5": 1.0,
-    "via_player_gym_6": 1.0,
-    "via_player_gym_7": 1.0,
-    "via_player_gym_8": 1.0,
-    "types": [
-      "Rock",
-      "Water"
-    ],
-    "modified_bst": 407.0,
-    "modified_bst_physical": 352.0,
-    "modified_bst_special": 407.0,
+    "modified_bst": 453.0,
+    "modified_bst_physical": 453.0,
+    "modified_bst_special": 408.0,
     "can_be_mixed": false,
     "physical_ok": true,
-    "special_ok": true
+    "special_ok": true,
+    "item": "focussash",
+    "moves": [
+      "ROCK SLIDE",
+      "AGILITY",
+      "GEAR GRIND",
+      "RAZOR LEAF"
+    ]
   },
   {
-    "name": "VOLCARONA",
-    "index": 637,
+    "name": "COBALION",
+    "index": 638,
     "via_player": 1.0,
     "via_ai": 1.0,
     "via_player_gym_1": 1.0,
@@ -85,62 +168,21 @@
     "via_player_gym_7": 1.0,
     "via_player_gym_8": 1.0,
     "types": [
-      "Bug",
-      "Fire"
+      "Steel",
+      "Fighting"
     ],
-    "modified_bst": 476.0,
-    "modified_bst_physical": 401.0,
-    "modified_bst_special": 476.0,
-    "can_be_mixed": false,
+    "modified_bst": 471.40000000000003,
+    "modified_bst_physical": 471.40000000000003,
+    "modified_bst_special": 471.40000000000003,
+    "can_be_mixed": true,
     "physical_ok": true,
-    "special_ok": null
-  },
-  {
-    "name": "PROBOPASS",
-    "index": 476,
-    "via_player": 1.0,
-    "via_ai": 1.0,
-    "via_player_gym_1": 1.0,
-    "via_player_gym_2": 1.0,
-    "via_player_gym_3": 1.0,
-    "via_player_gym_4": 1.0,
-    "via_player_gym_5": 1.0,
-    "via_player_gym_6": 1.0,
-    "via_player_gym_7": 1.0,
-    "via_player_gym_8": 1.0,
-    "types": [
-      "Rock",
-      "Electric"
-    ],
-    "modified_bst": 428.0,
-    "modified_bst_physical": 388.0,
-    "modified_bst_special": 428.0,
-    "can_be_mixed": false,
-    "physical_ok": true,
-    "special_ok": true
-  },
-  {
-    "name": "RAPIDASH",
-    "index": 78,
-    "via_player": 1.0,
-    "via_ai": 1.0,
-    "via_player_gym_1": 1.0,
-    "via_player_gym_2": 1.0,
-    "via_player_gym_3": 1.0,
-    "via_player_gym_4": 1.0,
-    "via_player_gym_5": 1.0,
-    "via_player_gym_6": 1.0,
-    "via_player_gym_7": 1.0,
-    "via_player_gym_8": 1.0,
-    "types": [
-      "Fire",
-      "Fairy"
-    ],
-    "modified_bst": 411.0,
-    "modified_bst_physical": 411.0,
-    "modified_bst_special": 391.0,
-    "can_be_mixed": false,
-    "physical_ok": true,
-    "special_ok": true
+    "special_ok": true,
+    "item": "expertbelt",
+    "moves": [
+      "MIRROR SHOT",
+      "CALM MIND",
+      "ICY WIND",
+      "GRASS KNOT"
+    ]
   }
 ]
