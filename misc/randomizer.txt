@@ -1,15 +1,8 @@
-TRAINERS OPTIONS:
-
-	max ivs
-	% chance to be double
-	% chance to be triple
-	% chance to be rotation
-
 Base_rom:
 	no evs
 	limited setup
 	nerf op moves (sub, encore)
-	bbredux typings
+	drayano typings
 	mandatory trainers
 	encounters added everywhere where possible
 	7,135 ai, max ivs
@@ -28,10 +21,7 @@ Trainer Pok Viability Alg
 
 
 
-
-Items: Lightball, Soul Dew
-
-Trainer Ability TL
+Trainer Ability Tiers
 
 SS-tier: Huge Power, Drizzle, Pure Power, Wonderguard
 S-tier: Guts, Drought, Intimidate, Adaptability, Contrary, Toxic Boost, Multiscale, Serene Grace, No Guard, Storm Drain, Sturdy, Water Absorb, Lightningrod
@@ -40,7 +30,7 @@ D-tier: Pickup, Cloud Nine,illuminate,Plus, Minus, honey gather
 F-tier: Truant, Defeatist, Slow Start, Klutz, Stall,
 
 
-Encounter Viability Alg
+Pok Viability Alg
 	if sp_atk - atk < 20%
 		(bst - avg(sp_atk, atk)) * viability_mod(customizable) * ability_mod
 	else
@@ -103,7 +93,7 @@ IVs Alg: DELAY
 	brute force natures until one is found
 	else ivs 255
 
-Item Alg: 
+Item Alg: DONE
 	80% random from smogon + 20%[sitrus, lum, leftoevers]
 
 
@@ -125,9 +115,9 @@ Team Building Alg DONE
 	specify certain types for certain trainer class
 
 
-Encounter table alg
-	given viability range, types, lvl range x-x+2
-	maintain global list of used encounters, evolution line cannot appear more than twice
+Encounter table alg DONE
+	given viability range, types, lvl range x-x+2 (for repel manips)
+	maintain global list of used encounters, evolution line cannot appear more than N times
 
 		get all pokemon, including evos in range
 

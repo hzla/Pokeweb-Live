@@ -265,6 +265,9 @@ class Personal
 			File.open(file_path, "w") { |f| f.write file.to_json }
 		end
 	end
+
+	def self.output_documentation
+	end
 end
 
 

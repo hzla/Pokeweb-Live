@@ -71,5 +71,8 @@ class Encounter < Pokenarc
 	def self.water_percent_for(n)
 		[60, 30, 5, 4, 1][n]
 	end
+
+	def self.output_documentation
+	end
 end
 

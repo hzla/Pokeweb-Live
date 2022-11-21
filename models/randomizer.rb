@@ -198,6 +198,7 @@ class Randomizer
 		File.write("randomizer/team.json", JSON.pretty_generate(poks))
 		poks
 		# poks.map {|n| n["name"]}
+		"output to randomizer/team.json"
 	end
 
 	def self.ai_viability_subpool pool, types, blacklist=nil
@@ -607,6 +608,20 @@ class Randomizer
 
 		encounters
 		File.write("randomizer/encounter.json", JSON.pretty_generate(encounters))
+		"output to randomizer/encounter.json"
+	end
+
+	def self.create_gym_types
+		["Normal", "Fire", "Water", "Electric", "Grass", "Ice",
+             "Fighting", "Poison", "Ground", "Flying", "Psychic",
+             "Bug", "Rock", "Ghost", "Dragon", "Dark", "Steel"].sample(8)
+	end
+
+	def self.apply_trainer_poks poks, tr_id
+
+	end
+
+	def self.apply_encounter encounters, enc_id
 	end
 end
 
