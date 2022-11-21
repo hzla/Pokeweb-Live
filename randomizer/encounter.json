@@ -1,8 +1,8 @@
 {
   "upper": [
     {
-      "name": "SIMISEAR",
-      "index": 514,
+      "name": "CRUSTLE",
+      "index": 558,
       "via_player": 1.0,
       "via_ai": 1.0,
       "via_player_gym_1": 1.0,
@@ -14,39 +14,17 @@
       "via_player_gym_7": 1.0,
       "via_player_gym_8": 1.0,
       "types": [
-        "Fire",
-        "Fire"
+        "Bug",
+        "Rock"
       ],
-      "modified_bst": 396.0,
-      "modified_bst_physical": 396.0,
-      "modified_bst_special": 396.0,
-      "can_be_mixed": true
-    },
-    {
-      "name": "Castform-Sunny",
-      "index": 697,
-      "via_player": 1.0,
-      "via_ai": 1.0,
-      "via_player_gym_1": 1.0,
-      "via_player_gym_2": 1.0,
-      "via_player_gym_3": 1.0,
-      "via_player_gym_4": 1.0,
-      "via_player_gym_5": 1.0,
-      "via_player_gym_6": 1.0,
-      "via_player_gym_7": 1.0,
-      "via_player_gym_8": 1.0,
-      "types": [
-        "Fire",
-        "Fire"
-      ],
-      "modified_bst": 372.0,
-      "modified_bst_physical": 342.0,
-      "modified_bst_special": 372.0,
+      "modified_bst": 389.0,
+      "modified_bst_physical": 389.0,
+      "modified_bst_special": 349.0,
       "can_be_mixed": false
     },
     {
-      "name": "HOUNDOUR",
-      "index": 228,
+      "name": "CORSOLA",
+      "index": 222,
       "via_player": 1.0,
       "via_ai": 1.0,
       "via_player_gym_1": 1.0,
@@ -58,17 +36,17 @@
       "via_player_gym_7": 1.0,
       "via_player_gym_8": 1.0,
       "types": [
-        "Dark",
-        "Fire"
+        "Water",
+        "Rock"
       ],
-      "modified_bst": 393.0,
-      "modified_bst_physical": 247.0,
-      "modified_bst_special": 267.0,
+      "modified_bst": 381.0,
+      "modified_bst_physical": 336.0,
+      "modified_bst_special": 381.0,
       "can_be_mixed": false
     },
     {
-      "name": "HOUNDOOM",
-      "index": 229,
+      "name": "ARMALDO",
+      "index": 348,
       "via_player": 1.0,
       "via_ai": 1.0,
       "via_player_gym_1": 1.0,
@@ -80,17 +58,39 @@
       "via_player_gym_7": 1.0,
       "via_player_gym_8": 1.0,
       "types": [
-        "Dark",
-        "Fire"
+        "Rock",
+        "Bug"
       ],
-      "modified_bst": 393.0,
-      "modified_bst_physical": 383.0,
-      "modified_bst_special": 403.0,
+      "modified_bst": 398.0,
+      "modified_bst_physical": 398.0,
+      "modified_bst_special": 343.0,
+      "can_be_mixed": false
+    },
+    {
+      "name": "CRADILY",
+      "index": 346,
+      "via_player": 1.0,
+      "via_ai": 1.0,
+      "via_player_gym_1": 1.0,
+      "via_player_gym_2": 1.0,
+      "via_player_gym_3": 1.0,
+      "via_player_gym_4": 1.0,
+      "via_player_gym_5": 1.0,
+      "via_player_gym_6": 1.0,
+      "via_player_gym_7": 1.0,
+      "via_player_gym_8": 1.0,
+      "types": [
+        "Rock",
+        "Grass"
+      ],
+      "modified_bst": 381.8,
+      "modified_bst_physical": 381.8,
+      "modified_bst_special": 381.8,
       "can_be_mixed": true
     },
     {
-      "name": "PANSEAR",
-      "index": 513,
+      "name": "CARRACOSTA",
+      "index": 565,
       "via_player": 1.0,
       "via_ai": 1.0,
       "via_player_gym_1": 1.0,
@@ -102,19 +102,41 @@
       "via_player_gym_7": 1.0,
       "via_player_gym_8": 1.0,
       "types": [
-        "Fire",
-        "Fire"
+        "Water",
+        "Rock"
       ],
-      "modified_bst": 396.0,
-      "modified_bst_physical": 256.6,
-      "modified_bst_special": 256.6,
-      "can_be_mixed": true
+      "modified_bst": 378.8,
+      "modified_bst_physical": 378.8,
+      "modified_bst_special": 353.8,
+      "can_be_mixed": false
+    },
+    {
+      "name": "LAIRON",
+      "index": 305,
+      "via_player": 1.0,
+      "via_ai": 1.0,
+      "via_player_gym_1": 1.0,
+      "via_player_gym_2": 1.0,
+      "via_player_gym_3": 1.0,
+      "via_player_gym_4": 1.0,
+      "via_player_gym_5": 1.0,
+      "via_player_gym_6": 1.0,
+      "via_player_gym_7": 1.0,
+      "via_player_gym_8": 1.0,
+      "types": [
+        "Steel",
+        "Rock"
+      ],
+      "modified_bst": 350.0,
+      "modified_bst_physical": 350.0,
+      "modified_bst_special": 310.0,
+      "can_be_mixed": false
     }
   ],
   "mid": [
     {
-      "name": "HEATMOR",
-      "index": 631,
+      "name": "GRAVELER",
+      "index": 75,
       "via_player": 1.0,
       "via_ai": 1.0,
       "via_player_gym_1": 1.0,
@@ -126,39 +148,17 @@
       "via_player_gym_7": 1.0,
       "via_player_gym_8": 1.0,
       "types": [
-        "Fire",
-        "Fire"
-      ],
-      "modified_bst": 369.6,
-      "modified_bst_physical": 365.6,
-      "modified_bst_special": 373.6,
-      "can_be_mixed": true
-    },
-    {
-      "name": "NUMEL",
-      "index": 322,
-      "via_player": 1.0,
-      "via_ai": 1.0,
-      "via_player_gym_1": 1.0,
-      "via_player_gym_2": 1.0,
-      "via_player_gym_3": 1.0,
-      "via_player_gym_4": 1.0,
-      "via_player_gym_5": 1.0,
-      "via_player_gym_6": 1.0,
-      "via_player_gym_7": 1.0,
-      "via_player_gym_8": 1.0,
-      "types": [
-        "Fire",
+        "Rock",
         "Ground"
       ],
-      "modified_bst": 361.0,
-      "modified_bst_physical": 230.0,
-      "modified_bst_special": 235.0,
-      "can_be_mixed": true
+      "modified_bst": 320.0,
+      "modified_bst_physical": 320.0,
+      "modified_bst_special": 270.0,
+      "can_be_mixed": false
     },
     {
-      "name": "CAMERUPT",
-      "index": 323,
+      "name": "NOSEPASS",
+      "index": 299,
       "via_player": 1.0,
       "via_ai": 1.0,
       "via_player_gym_1": 1.0,
@@ -170,19 +170,305 @@
       "via_player_gym_7": 1.0,
       "via_player_gym_8": 1.0,
       "types": [
-        "Fire",
+        "Rock",
+        "Rock"
+      ],
+      "modified_bst": 301.0,
+      "modified_bst_physical": 281.0,
+      "modified_bst_special": 301.0,
+      "can_be_mixed": false
+    },
+    {
+      "name": "LILEEP",
+      "index": 345,
+      "via_player": 1.0,
+      "via_ai": 1.0,
+      "via_player_gym_1": 1.0,
+      "via_player_gym_2": 1.0,
+      "via_player_gym_3": 1.0,
+      "via_player_gym_4": 1.0,
+      "via_player_gym_5": 1.0,
+      "via_player_gym_6": 1.0,
+      "via_player_gym_7": 1.0,
+      "via_player_gym_8": 1.0,
+      "types": [
+        "Rock",
+        "Grass"
+      ],
+      "modified_bst": 285.8,
+      "modified_bst_physical": 265.8,
+      "modified_bst_special": 285.8,
+      "can_be_mixed": false
+    },
+    {
+      "name": "RHYHORN",
+      "index": 111,
+      "via_player": 1.0,
+      "via_ai": 1.0,
+      "via_player_gym_1": 1.0,
+      "via_player_gym_2": 1.0,
+      "via_player_gym_3": 1.0,
+      "via_player_gym_4": 1.0,
+      "via_player_gym_5": 1.0,
+      "via_player_gym_6": 1.0,
+      "via_player_gym_7": 1.0,
+      "via_player_gym_8": 1.0,
+      "types": [
+        "Ground",
+        "Rock"
+      ],
+      "modified_bst": 295.0,
+      "modified_bst_physical": 295.0,
+      "modified_bst_special": 240.0,
+      "can_be_mixed": false
+    },
+    {
+      "name": "ARCHEN",
+      "index": 566,
+      "via_player": 1.0,
+      "via_ai": 1.0,
+      "via_player_gym_1": 1.0,
+      "via_player_gym_2": 1.0,
+      "via_player_gym_3": 1.0,
+      "via_player_gym_4": 1.0,
+      "via_player_gym_5": 1.0,
+      "via_player_gym_6": 1.0,
+      "via_player_gym_7": 1.0,
+      "via_player_gym_8": 1.0,
+      "types": [
+        "Rock",
+        "Flying"
+      ],
+      "modified_bst": 323.0,
+      "modified_bst_physical": 323.0,
+      "modified_bst_special": 285.0,
+      "can_be_mixed": false
+    },
+    {
+      "name": "BOLDORE",
+      "index": 525,
+      "via_player": 1.0,
+      "via_ai": 1.0,
+      "via_player_gym_1": 1.0,
+      "via_player_gym_2": 1.0,
+      "via_player_gym_3": 1.0,
+      "via_player_gym_4": 1.0,
+      "via_player_gym_5": 1.0,
+      "via_player_gym_6": 1.0,
+      "via_player_gym_7": 1.0,
+      "via_player_gym_8": 1.0,
+      "types": [
+        "Rock",
+        "Rock"
+      ],
+      "modified_bst": 315.0,
+      "modified_bst_physical": 315.0,
+      "modified_bst_special": 260.0,
+      "can_be_mixed": false
+    },
+    {
+      "name": "CRANIDOS",
+      "index": 408,
+      "via_player": 1.0,
+      "via_ai": 1.0,
+      "via_player_gym_1": 1.0,
+      "via_player_gym_2": 1.0,
+      "via_player_gym_3": 1.0,
+      "via_player_gym_4": 1.0,
+      "via_player_gym_5": 1.0,
+      "via_player_gym_6": 1.0,
+      "via_player_gym_7": 1.0,
+      "via_player_gym_8": 1.0,
+      "types": [
+        "Rock",
+        "Rock"
+      ],
+      "modified_bst": 317.6,
+      "modified_bst_physical": 317.6,
+      "modified_bst_special": 222.6,
+      "can_be_mixed": false
+    },
+    {
+      "name": "TIRTOUGA",
+      "index": 564,
+      "via_player": 1.0,
+      "via_ai": 1.0,
+      "via_player_gym_1": 1.0,
+      "via_player_gym_2": 1.0,
+      "via_player_gym_3": 1.0,
+      "via_player_gym_4": 1.0,
+      "via_player_gym_5": 1.0,
+      "via_player_gym_6": 1.0,
+      "via_player_gym_7": 1.0,
+      "via_player_gym_8": 1.0,
+      "types": [
+        "Water",
+        "Rock"
+      ],
+      "modified_bst": 276.8,
+      "modified_bst_physical": 276.8,
+      "modified_bst_special": 251.8,
+      "can_be_mixed": false
+    },
+    {
+      "name": "KABUTO",
+      "index": 140,
+      "via_player": 1.0,
+      "via_ai": 1.0,
+      "via_player_gym_1": 1.0,
+      "via_player_gym_2": 1.0,
+      "via_player_gym_3": 1.0,
+      "via_player_gym_4": 1.0,
+      "via_player_gym_5": 1.0,
+      "via_player_gym_6": 1.0,
+      "via_player_gym_7": 1.0,
+      "via_player_gym_8": 1.0,
+      "types": [
+        "Rock",
+        "Water"
+      ],
+      "modified_bst": 284.0,
+      "modified_bst_physical": 284.0,
+      "modified_bst_special": 259.0,
+      "can_be_mixed": false
+    },
+    {
+      "name": "ANORITH",
+      "index": 347,
+      "via_player": 1.0,
+      "via_ai": 1.0,
+      "via_player_gym_1": 1.0,
+      "via_player_gym_2": 1.0,
+      "via_player_gym_3": 1.0,
+      "via_player_gym_4": 1.0,
+      "via_player_gym_5": 1.0,
+      "via_player_gym_6": 1.0,
+      "via_player_gym_7": 1.0,
+      "via_player_gym_8": 1.0,
+      "types": [
+        "Rock",
+        "Bug"
+      ],
+      "modified_bst": 310.0,
+      "modified_bst_physical": 310.0,
+      "modified_bst_special": 255.0,
+      "can_be_mixed": false
+    },
+    {
+      "name": "PUPITAR",
+      "index": 247,
+      "via_player": 1.0,
+      "via_ai": 1.0,
+      "via_player_gym_1": 1.0,
+      "via_player_gym_2": 1.0,
+      "via_player_gym_3": 1.0,
+      "via_player_gym_4": 1.0,
+      "via_player_gym_5": 1.0,
+      "via_player_gym_6": 1.0,
+      "via_player_gym_7": 1.0,
+      "via_player_gym_8": 1.0,
+      "types": [
+        "Rock",
         "Ground"
       ],
-      "modified_bst": 361.0,
-      "modified_bst_physical": 364.0,
-      "modified_bst_special": 359.0,
-      "can_be_mixed": true
+      "modified_bst": 327.2,
+      "modified_bst_physical": 327.2,
+      "modified_bst_special": 308.2,
+      "can_be_mixed": false
+    },
+    {
+      "name": "BONSLY",
+      "index": 438,
+      "via_player": 1.0,
+      "via_ai": 1.0,
+      "via_player_gym_1": 1.0,
+      "via_player_gym_2": 1.0,
+      "via_player_gym_3": 1.0,
+      "via_player_gym_4": 1.0,
+      "via_player_gym_5": 1.0,
+      "via_player_gym_6": 1.0,
+      "via_player_gym_7": 1.0,
+      "via_player_gym_8": 1.0,
+      "types": [
+        "Rock",
+        "Rock"
+      ],
+      "modified_bst": 277.0,
+      "modified_bst_physical": 277.0,
+      "modified_bst_special": 202.0,
+      "can_be_mixed": false
     }
   ],
   "low": [
     {
-      "name": "TORKOAL",
-      "index": 324,
+      "name": "ARON",
+      "index": 304,
+      "via_player": 1.0,
+      "via_ai": 1.0,
+      "via_player_gym_1": 1.0,
+      "via_player_gym_2": 1.0,
+      "via_player_gym_3": 1.0,
+      "via_player_gym_4": 1.0,
+      "via_player_gym_5": 1.0,
+      "via_player_gym_6": 1.0,
+      "via_player_gym_7": 1.0,
+      "via_player_gym_8": 1.0,
+      "types": [
+        "Steel",
+        "Rock"
+      ],
+      "modified_bst": 268.0,
+      "modified_bst_physical": 268.0,
+      "modified_bst_special": 238.0,
+      "can_be_mixed": false
+    },
+    {
+      "name": "LARVITAR",
+      "index": 246,
+      "via_player": 1.0,
+      "via_ai": 1.0,
+      "via_player_gym_1": 1.0,
+      "via_player_gym_2": 1.0,
+      "via_player_gym_3": 1.0,
+      "via_player_gym_4": 1.0,
+      "via_player_gym_5": 1.0,
+      "via_player_gym_6": 1.0,
+      "via_player_gym_7": 1.0,
+      "via_player_gym_8": 1.0,
+      "types": [
+        "Rock",
+        "Ground"
+      ],
+      "modified_bst": 243.2,
+      "modified_bst_physical": 243.2,
+      "modified_bst_special": 224.2,
+      "can_be_mixed": false
+    },
+    {
+      "name": "ROGGENROLA",
+      "index": 524,
+      "via_player": 1.0,
+      "via_ai": 1.0,
+      "via_player_gym_1": 1.0,
+      "via_player_gym_2": 1.0,
+      "via_player_gym_3": 1.0,
+      "via_player_gym_4": 1.0,
+      "via_player_gym_5": 1.0,
+      "via_player_gym_6": 1.0,
+      "via_player_gym_7": 1.0,
+      "via_player_gym_8": 1.0,
+      "types": [
+        "Rock",
+        "Rock"
+      ],
+      "modified_bst": 236.0,
+      "modified_bst_physical": 236.0,
+      "modified_bst_special": 186.0,
+      "can_be_mixed": false
+    },
+    {
+      "name": "SLUGMA",
+      "index": 218,
       "via_player": 1.0,
       "via_ai": 1.0,
       "via_player_gym_1": 1.0,
@@ -195,12 +481,34 @@
       "via_player_gym_8": 1.0,
       "types": [
         "Fire",
-        "Fire"
+        "Rock"
       ],
-      "modified_bst": 347.0,
-      "modified_bst_physical": 347.0,
-      "modified_bst_special": 347.0,
-      "can_be_mixed": true
+      "modified_bst": 234.0,
+      "modified_bst_physical": 204.0,
+      "modified_bst_special": 234.0,
+      "can_be_mixed": false
+    },
+    {
+      "name": "GEODUDE",
+      "index": 74,
+      "via_player": 1.0,
+      "via_ai": 1.0,
+      "via_player_gym_1": 1.0,
+      "via_player_gym_2": 1.0,
+      "via_player_gym_3": 1.0,
+      "via_player_gym_4": 1.0,
+      "via_player_gym_5": 1.0,
+      "via_player_gym_6": 1.0,
+      "via_player_gym_7": 1.0,
+      "via_player_gym_8": 1.0,
+      "types": [
+        "Rock",
+        "Ground"
+      ],
+      "modified_bst": 248.0,
+      "modified_bst_physical": 248.0,
+      "modified_bst_special": 198.0,
+      "can_be_mixed": false
     }
   ]
 }

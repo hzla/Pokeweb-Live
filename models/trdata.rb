@@ -141,5 +141,8 @@ class Trdata < Pokenarc
 
 	end
 
+	def self.output_documentation
+	end
+
 end
 

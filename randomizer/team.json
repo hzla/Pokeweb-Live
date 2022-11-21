@@ -1,7 +1,7 @@
 [
   {
-    "name": "DRAGONAIR",
-    "index": 148,
+    "name": "CYNDAQUIL",
+    "index": 155,
     "via_player": 1.0,
     "via_ai": 1.0,
     "via_player_gym_1": 1.0,
@@ -13,57 +13,26 @@
     "via_player_gym_7": 1.0,
     "via_player_gym_8": 1.0,
     "types": [
-      "Dragon",
+      "Fire",
       "None"
     ],
-    "modified_bst": 337.0,
-    "modified_bst_physical": 337.0,
-    "modified_bst_special": 323.0,
-    "can_be_mixed": false,
-    "physical_ok": true,
-    "special_ok": true,
-    "item": "brightpowder",
-    "moves": [
-      "BREAKING SWIPE",
-      "DRAGON CLAW",
-      "HAZE",
-      "FIRE LASH"
-    ]
-  },
-  {
-    "name": "WIGGLYTUFF",
-    "index": 40,
-    "via_player": 1.0,
-    "via_ai": 1.0,
-    "via_player_gym_1": 1.0,
-    "via_player_gym_2": 1.0,
-    "via_player_gym_3": 1.0,
-    "via_player_gym_4": 1.0,
-    "via_player_gym_5": 1.0,
-    "via_player_gym_6": 1.0,
-    "via_player_gym_7": 1.0,
-    "via_player_gym_8": 1.0,
-    "types": [
-      "Normal",
-      "Fairy"
-    ],
-    "modified_bst": 365.0,
-    "modified_bst_physical": 330.0,
-    "modified_bst_special": 365.0,
-    "can_be_mixed": false,
+    "modified_bst": 247.4,
+    "modified_bst_physical": 243.4,
+    "modified_bst_special": 251.4,
+    "can_be_mixed": true,
     "physical_ok": true,
     "special_ok": true,
     "item": "lifeorb",
     "moves": [
-      "DIZZY PUNCH",
-      "COVET",
-      "GRAVITY",
-      "ZEN HEADBUTT"
+      "FLAME BURST",
+      "NATURE POWER",
+      "LEAF TORNADO",
+      "SCORCHING SANDS"
     ]
   },
   {
-    "name": "QUAGSIRE",
-    "index": 195,
+    "name": "Rotom-Heat",
+    "index": 692,
     "via_player": 1.0,
     "via_ai": 1.0,
     "via_player_gym_1": 1.0,
@@ -75,114 +44,21 @@
     "via_player_gym_7": 1.0,
     "via_player_gym_8": 1.0,
     "types": [
-      "Water",
-      "Ground"
+      "Electric",
+      "Fire"
     ],
-    "modified_bst": 360.0,
-    "modified_bst_physical": 360.0,
-    "modified_bst_special": 330.0,
+    "modified_bst": 429.40000000000003,
+    "modified_bst_physical": 389.40000000000003,
+    "modified_bst_special": 429.40000000000003,
     "can_be_mixed": false,
     "physical_ok": true,
-    "special_ok": true,
-    "item": "quickclaw",
-    "moves": [
-      "BULLDOZE",
-      "RECOVER",
-      "LUNGE",
-      "FIRE PUNCH"
-    ]
-  },
-  {
-    "name": "MAMOSWINE",
-    "index": 473,
-    "via_player": 1.0,
-    "via_ai": 1.0,
-    "via_player_gym_1": 1.0,
-    "via_player_gym_2": 1.0,
-    "via_player_gym_3": 1.0,
-    "via_player_gym_4": 1.0,
-    "via_player_gym_5": 1.0,
-    "via_player_gym_6": 1.0,
-    "via_player_gym_7": 1.0,
-    "via_player_gym_8": 1.0,
-    "types": [
-      "Ice",
-      "Ground"
-    ],
-    "modified_bst": 448.0,
-    "modified_bst_physical": 448.0,
-    "modified_bst_special": 388.0,
-    "can_be_mixed": false,
-    "physical_ok": true,
-    "special_ok": true,
+    "special_ok": null,
     "item": "focussash",
     "moves": [
-      "MAGNITUDE",
-      "AVALANCHE",
-      "ROAR",
-      "SKY DROP"
-    ]
-  },
-  {
-    "name": "AERODACTYL",
-    "index": 142,
-    "via_player": 1.0,
-    "via_ai": 1.0,
-    "via_player_gym_1": 1.0,
-    "via_player_gym_2": 1.0,
-    "via_player_gym_3": 1.0,
-    "via_player_gym_4": 1.0,
-    "via_player_gym_5": 1.0,
-    "via_player_gym_6": 1.0,
-    "via_player_gym_7": 1.0,
-    "via_player_gym_8": 1.0,
-    "types": [
-      "Rock",
-      "Flying"
-    ],
-    "modified_bst": 453.0,
-    "modified_bst_physical": 453.0,
-    "modified_bst_special": 408.0,
-    "can_be_mixed": false,
-    "physical_ok": true,
-    "special_ok": true,
-    "item": "focussash",
-    "moves": [
-      "ROCK SLIDE",
-      "AGILITY",
-      "GEAR GRIND",
-      "RAZOR LEAF"
-    ]
-  },
-  {
-    "name": "COBALION",
-    "index": 638,
-    "via_player": 1.0,
-    "via_ai": 1.0,
-    "via_player_gym_1": 1.0,
-    "via_player_gym_2": 1.0,
-    "via_player_gym_3": 1.0,
-    "via_player_gym_4": 1.0,
-    "via_player_gym_5": 1.0,
-    "via_player_gym_6": 1.0,
-    "via_player_gym_7": 1.0,
-    "via_player_gym_8": 1.0,
-    "types": [
-      "Steel",
-      "Fighting"
-    ],
-    "modified_bst": 471.40000000000003,
-    "modified_bst_physical": 471.40000000000003,
-    "modified_bst_special": 471.40000000000003,
-    "can_be_mixed": true,
-    "physical_ok": true,
-    "special_ok": true,
-    "item": "expertbelt",
-    "moves": [
-      "MIRROR SHOT",
-      "CALM MIND",
-      "ICY WIND",
-      "GRASS KNOT"
+      "FIRE PUNCH",
+      "SPARK",
+      "PAIN SPLIT",
+      "CHARGE"
     ]
   }
 ]
