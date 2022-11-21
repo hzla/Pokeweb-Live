@@ -1,5 +1,5 @@
-[
-  {
+{
+  "": {
     "name": "",
     "index": 0,
     "via_player": 0,
@@ -22,7 +22,7 @@
     "modified_bst_special": 0.0,
     "can_be_mixed": false
   },
-  {
+  "BULBASAUR": {
     "name": "BULBASAUR",
     "index": 1,
     "via_player": 1.0,
@@ -45,7 +45,7 @@
     "modified_bst_special": 255.2,
     "can_be_mixed": false
   },
-  {
+  "IVYSAUR": {
     "name": "IVYSAUR",
     "index": 2,
     "via_player": 1.0,
@@ -68,7 +68,7 @@
     "modified_bst_special": 326.4,
     "can_be_mixed": false
   },
-  {
+  "VENUSAUR": {
     "name": "VENUSAUR",
     "index": 3,
     "via_player": 1.0,
@@ -91,7 +91,7 @@
     "modified_bst_special": 427.0,
     "can_be_mixed": true
   },
-  {
+  "CHARMANDER": {
     "name": "CHARMANDER",
     "index": 4,
     "via_player": 1.0,
@@ -114,7 +114,7 @@
     "modified_bst_special": 251.4,
     "can_be_mixed": true
   },
-  {
+  "CHARMELEON": {
     "name": "CHARMELEON",
     "index": 5,
     "via_player": 1.0,
@@ -137,7 +137,7 @@
     "modified_bst_special": 332.4,
     "can_be_mixed": false
   },
-  {
+  "CHARIZARD": {
     "name": "CHARIZARD",
     "index": 6,
     "via_player": 1.0,
@@ -160,7 +160,7 @@
     "modified_bst_special": 424.0,
     "can_be_mixed": true
   },
-  {
+  "SQUIRTLE": {
     "name": "SQUIRTLE",
     "index": 7,
     "via_player": 1.0,
@@ -183,7 +183,7 @@
     "modified_bst_special": 248.8,
     "can_be_mixed": true
   },
-  {
+  "WARTORTLE": {
     "name": "WARTORTLE",
     "index": 8,
     "via_player": 1.0,
@@ -206,7 +206,7 @@
     "modified_bst_special": 321.6,
     "can_be_mixed": true
   },
-  {
+  "BLASTOISE": {
     "name": "BLASTOISE",
     "index": 9,
     "via_player": 1.0,
@@ -229,7 +229,7 @@
     "modified_bst_special": 426.6,
     "can_be_mixed": true
   },
-  {
+  "CATERPIE": {
     "name": "CATERPIE",
     "index": 10,
     "via_player": 1.0,
@@ -252,7 +252,7 @@
     "modified_bst_special": 163.0,
     "can_be_mixed": false
   },
-  {
+  "METAPOD": {
     "name": "METAPOD",
     "index": 11,
     "via_player": 1.0,
@@ -275,7 +275,7 @@
     "modified_bst_special": 175.0,
     "can_be_mixed": false
   },
-  {
+  "BUTTERFREE": {
     "name": "BUTTERFREE",
     "index": 12,
     "via_player": 1.0,
@@ -298,7 +298,7 @@
     "modified_bst_special": 393.0,
     "can_be_mixed": false
   },
-  {
+  "WEEDLE": {
     "name": "WEEDLE",
     "index": 13,
     "via_player": 1.0,
@@ -321,7 +321,7 @@
     "modified_bst_special": 160.0,
     "can_be_mixed": false
   },
-  {
+  "KAKUNA": {
     "name": "KAKUNA",
     "index": 14,
     "via_player": 1.0,
@@ -344,7 +344,7 @@
     "modified_bst_special": 172.0,
     "can_be_mixed": true
   },
-  {
+  "BEEDRILL": {
     "name": "BEEDRILL",
     "index": 15,
     "via_player": 1.0,
@@ -367,7 +367,7 @@
     "modified_bst_special": 338.0,
     "can_be_mixed": false
   },
-  {
+  "PIDGEY": {
     "name": "PIDGEY",
     "index": 16,
     "via_player": 1.0,
@@ -390,7 +390,7 @@
     "modified_bst_special": 213.2,
     "can_be_mixed": false
   },
-  {
+  "PIDGEOTTO": {
     "name": "PIDGEOTTO",
     "index": 17,
     "via_player": 1.0,
@@ -413,7 +413,7 @@
     "modified_bst_special": 293.2,
     "can_be_mixed": false
   },
-  {
+  "PIDGEOT": {
     "name": "PIDGEOT",
     "index": 18,
     "via_player": 1.0,
@@ -436,7 +436,7 @@
     "modified_bst_special": 431.2,
     "can_be_mixed": false
   },
-  {
+  "RATTATA": {
     "name": "RATTATA",
     "index": 19,
     "via_player": 1.0,
@@ -459,7 +459,7 @@
     "modified_bst_special": 197.39999999999998,
     "can_be_mixed": false
   },
-  {
+  "RATICATE": {
     "name": "RATICATE",
     "index": 20,
     "via_player": 1.0,
@@ -482,7 +482,7 @@
     "modified_bst_special": 343.6,
     "can_be_mixed": false
   },
-  {
+  "SPEAROW": {
     "name": "SPEAROW",
     "index": 21,
     "via_player": 1.0,
@@ -505,7 +505,7 @@
     "modified_bst_special": 221.8,
     "can_be_mixed": false
   },
-  {
+  "FEAROW": {
     "name": "FEAROW",
     "index": 22,
     "via_player": 1.0,
@@ -528,7 +528,7 @@
     "modified_bst_special": 381.2,
     "can_be_mixed": false
   },
-  {
+  "EKANS": {
     "name": "EKANS",
     "index": 23,
     "via_player": 1.0,
@@ -551,7 +551,7 @@
     "modified_bst_special": 219.39999999999998,
     "can_be_mixed": false
   },
-  {
+  "ARBOK": {
     "name": "ARBOK",
     "index": 24,
     "via_player": 1.0,
@@ -574,7 +574,7 @@
     "modified_bst_special": 331.0,
     "can_be_mixed": false
   },
-  {
+  "PIKACHU": {
     "name": "PIKACHU",
     "index": 25,
     "via_player": 1.0,
@@ -597,7 +597,7 @@
     "modified_bst_special": 281.0,
     "can_be_mixed": true
   },
-  {
+  "RAICHU": {
     "name": "RAICHU",
     "index": 26,
     "via_player": 1.0,
@@ -620,7 +620,7 @@
     "modified_bst_special": 395.0,
     "can_be_mixed": true
   },
-  {
+  "SANDSHREW": {
     "name": "SANDSHREW",
     "index": 27,
     "via_player": 1.0,
@@ -643,7 +643,7 @@
     "modified_bst_special": 210.0,
     "can_be_mixed": false
   },
-  {
+  "SANDSLASH": {
     "name": "SANDSLASH",
     "index": 28,
     "via_player": 1.0,
@@ -666,7 +666,7 @@
     "modified_bst_special": 330.0,
     "can_be_mixed": false
   },
-  {
+  "Nidoran-F": {
     "name": "Nidoran-F",
     "index": 29,
     "via_player": 1.0,
@@ -689,7 +689,7 @@
     "modified_bst_special": 217.79999999999998,
     "can_be_mixed": true
   },
-  {
+  "NIDORINA": {
     "name": "NIDORINA",
     "index": 30,
     "via_player": 1.0,
@@ -712,7 +712,7 @@
     "modified_bst_special": 289.79999999999995,
     "can_be_mixed": true
   },
-  {
+  "NIDOQUEEN": {
     "name": "NIDOQUEEN",
     "index": 31,
     "via_player": 1.0,
@@ -735,7 +735,7 @@
     "modified_bst_special": 393.8,
     "can_be_mixed": false
   },
-  {
+  "Nidoran-M": {
     "name": "Nidoran-M",
     "index": 32,
     "via_player": 1.0,
@@ -758,7 +758,7 @@
     "modified_bst_special": 210.0,
     "can_be_mixed": false
   },
-  {
+  "NIDORINO": {
     "name": "NIDORINO",
     "index": 33,
     "via_player": 1.0,
@@ -781,7 +781,7 @@
     "modified_bst_special": 283.6,
     "can_be_mixed": false
   },
-  {
+  "NIDOKING": {
     "name": "NIDOKING",
     "index": 34,
     "via_player": 1.0,
@@ -804,7 +804,7 @@
     "modified_bst_special": 389.6,
     "can_be_mixed": false
   },
-  {
+  "CLEFAIRY": {
     "name": "CLEFAIRY",
     "index": 35,
     "via_player": 1.0,
@@ -827,7 +827,7 @@
     "modified_bst_special": 262.4,
     "can_be_mixed": false
   },
-  {
+  "CLEFABLE": {
     "name": "CLEFABLE",
     "index": 36,
     "via_player": 1.0,
@@ -850,7 +850,7 @@
     "modified_bst_special": 392.4,
     "can_be_mixed": false
   },
-  {
+  "VULPIX": {
     "name": "VULPIX",
     "index": 37,
     "via_player": 1.0,
@@ -873,7 +873,7 @@
     "modified_bst_special": 250.0,
     "can_be_mixed": true
   },
-  {
+  "NINETALES": {
     "name": "NINETALES",
     "index": 38,
     "via_player": 1.0,
@@ -896,7 +896,7 @@
     "modified_bst_special": 424.79999999999995,
     "can_be_mixed": true
   },
-  {
+  "JIGGLYPUFF": {
     "name": "JIGGLYPUFF",
     "index": 39,
     "via_player": 1.0,
@@ -919,7 +919,7 @@
     "modified_bst_special": 230.0,
     "can_be_mixed": false
   },
-  {
+  "WIGGLYTUFF": {
     "name": "WIGGLYTUFF",
     "index": 40,
     "via_player": 1.0,
@@ -942,7 +942,7 @@
     "modified_bst_special": 365.0,
     "can_be_mixed": false
   },
-  {
+  "ZUBAT": {
     "name": "ZUBAT",
     "index": 41,
     "via_player": 1.0,
@@ -965,7 +965,7 @@
     "modified_bst_special": 196.0,
     "can_be_mixed": false
   },
-  {
+  "GOLBAT": {
     "name": "GOLBAT",
     "index": 42,
     "via_player": 1.0,
@@ -988,7 +988,7 @@
     "modified_bst_special": 364.0,
     "can_be_mixed": false
   },
-  {
+  "ODDISH": {
     "name": "ODDISH",
     "index": 43,
     "via_player": 1.0,
@@ -1011,7 +1011,7 @@
     "modified_bst_special": 252.0,
     "can_be_mixed": false
   },
-  {
+  "GLOOM": {
     "name": "GLOOM",
     "index": 44,
     "via_player": 1.0,
@@ -1034,7 +1034,7 @@
     "modified_bst_special": 309.0,
     "can_be_mixed": false
   },
-  {
+  "VILEPLUME": {
     "name": "VILEPLUME",
     "index": 45,
     "via_player": 1.0,
@@ -1057,7 +1057,7 @@
     "modified_bst_special": 385.0,
     "can_be_mixed": false
   },
-  {
+  "PARAS": {
     "name": "PARAS",
     "index": 46,
     "via_player": 1.0,
@@ -1080,7 +1080,7 @@
     "modified_bst_special": 198.0,
     "can_be_mixed": false
   },
-  {
+  "PARASECT": {
     "name": "PARASECT",
     "index": 47,
     "via_player": 1.0,
@@ -1103,7 +1103,7 @@
     "modified_bst_special": 308.0,
     "can_be_mixed": false
   },
-  {
+  "VENONAT": {
     "name": "VENONAT",
     "index": 48,
     "via_player": 1.0,
@@ -1126,7 +1126,7 @@
     "modified_bst_special": 266.0,
     "can_be_mixed": true
   },
-  {
+  "VENOMOTH": {
     "name": "VENOMOTH",
     "index": 49,
     "via_player": 1.0,
@@ -1149,7 +1149,7 @@
     "modified_bst_special": 386.0,
     "can_be_mixed": false
   },
-  {
+  "DIGLETT": {
     "name": "DIGLETT",
     "index": 50,
     "via_player": 1.0,
@@ -1172,7 +1172,7 @@
     "modified_bst_special": 215.0,
     "can_be_mixed": false
   },
-  {
+  "DUGTRIO": {
     "name": "DUGTRIO",
     "index": 51,
     "via_player": 1.0,
@@ -1195,7 +1195,7 @@
     "modified_bst_special": 325.0,
     "can_be_mixed": false
   },
-  {
+  "MEOWTH": {
     "name": "MEOWTH",
     "index": 52,
     "via_player": 1.0,
@@ -1218,7 +1218,7 @@
     "modified_bst_special": 243.0,
     "can_be_mixed": false
   },
-  {
+  "PERSIAN": {
     "name": "PERSIAN",
     "index": 53,
     "via_player": 1.0,
@@ -1241,7 +1241,7 @@
     "modified_bst_special": 383.0,
     "can_be_mixed": true
   },
-  {
+  "PSYDUCK": {
     "name": "PSYDUCK",
     "index": 54,
     "via_player": 1.0,
@@ -1264,7 +1264,7 @@
     "modified_bst_special": 259.4,
     "can_be_mixed": false
   },
-  {
+  "GOLDUCK": {
     "name": "GOLDUCK",
     "index": 55,
     "via_player": 1.0,
@@ -1287,7 +1287,7 @@
     "modified_bst_special": 403.4,
     "can_be_mixed": true
   },
-  {
+  "MANKEY": {
     "name": "MANKEY",
     "index": 56,
     "via_player": 1.0,
@@ -1310,7 +1310,7 @@
     "modified_bst_special": 223.0,
     "can_be_mixed": false
   },
-  {
+  "PRIMEAPE": {
     "name": "PRIMEAPE",
     "index": 57,
     "via_player": 1.0,
@@ -1333,7 +1333,7 @@
     "modified_bst_special": 343.0,
     "can_be_mixed": false
   },
-  {
+  "GROWLITHE": {
     "name": "GROWLITHE",
     "index": 58,
     "via_player": 1.0,
@@ -1356,7 +1356,7 @@
     "modified_bst_special": 273.0,
     "can_be_mixed": true
   },
-  {
+  "ARCANINE": {
     "name": "ARCANINE",
     "index": 59,
     "via_player": 1.0,
@@ -1379,7 +1379,7 @@
     "modified_bst_special": 432.0,
     "can_be_mixed": true
   },
-  {
+  "POLIWAG": {
     "name": "POLIWAG",
     "index": 60,
     "via_player": 1.0,
@@ -1402,7 +1402,7 @@
     "modified_bst_special": 252.0,
     "can_be_mixed": false
   },
-  {
+  "POLIWHIRL": {
     "name": "POLIWHIRL",
     "index": 61,
     "via_player": 1.0,
@@ -1425,7 +1425,7 @@
     "modified_bst_special": 315.0,
     "can_be_mixed": false
   },
-  {
+  "POLIWRATH": {
     "name": "POLIWRATH",
     "index": 62,
     "via_player": 1.0,
@@ -1448,7 +1448,7 @@
     "modified_bst_special": 382.0,
     "can_be_mixed": false
   },
-  {
+  "ABRA": {
     "name": "ABRA",
     "index": 63,
     "via_player": 1.0,
@@ -1471,7 +1471,7 @@
     "modified_bst_special": 294.0,
     "can_be_mixed": false
   },
-  {
+  "KADABRA": {
     "name": "KADABRA",
     "index": 64,
     "via_player": 1.0,
@@ -1494,7 +1494,7 @@
     "modified_bst_special": 366.0,
     "can_be_mixed": false
   },
-  {
+  "ALAKAZAM": {
     "name": "ALAKAZAM",
     "index": 65,
     "via_player": 1.0,
@@ -1517,7 +1517,7 @@
     "modified_bst_special": 446.0,
     "can_be_mixed": false
   },
-  {
+  "MACHOP": {
     "name": "MACHOP",
     "index": 66,
     "via_player": 1.0,
@@ -1540,7 +1540,7 @@
     "modified_bst_special": 215.0,
     "can_be_mixed": false
   },
-  {
+  "MACHOKE": {
     "name": "MACHOKE",
     "index": 67,
     "via_player": 1.0,
@@ -1563,7 +1563,7 @@
     "modified_bst_special": 288.0,
     "can_be_mixed": false
   },
-  {
+  "MACHAMP": {
     "name": "MACHAMP",
     "index": 68,
     "via_player": 1.0,
@@ -1586,7 +1586,7 @@
     "modified_bst_special": 353.0,
     "can_be_mixed": false
   },
-  {
+  "BELLSPROUT": {
     "name": "BELLSPROUT",
     "index": 69,
     "via_player": 1.0,
@@ -1609,7 +1609,7 @@
     "modified_bst_special": 220.0,
     "can_be_mixed": true
   },
-  {
+  "WEEPINBELL": {
     "name": "WEEPINBELL",
     "index": 70,
     "via_player": 1.0,
@@ -1632,7 +1632,7 @@
     "modified_bst_special": 292.0,
     "can_be_mixed": true
   },
-  {
+  "VICTREEBEL": {
     "name": "VICTREEBEL",
     "index": 71,
     "via_player": 1.0,
@@ -1655,7 +1655,7 @@
     "modified_bst_special": 372.0,
     "can_be_mixed": true
   },
-  {
+  "TENTACOOL": {
     "name": "TENTACOOL",
     "index": 72,
     "via_player": 1.0,
@@ -1678,7 +1678,7 @@
     "modified_bst_special": 282.0,
     "can_be_mixed": false
   },
-  {
+  "TENTACRUEL": {
     "name": "TENTACRUEL",
     "index": 73,
     "via_player": 1.0,
@@ -1701,7 +1701,7 @@
     "modified_bst_special": 428.0,
     "can_be_mixed": true
   },
-  {
+  "GEODUDE": {
     "name": "GEODUDE",
     "index": 74,
     "via_player": 1.0,
@@ -1724,7 +1724,7 @@
     "modified_bst_special": 198.0,
     "can_be_mixed": false
   },
-  {
+  "GRAVELER": {
     "name": "GRAVELER",
     "index": 75,
     "via_player": 1.0,
@@ -1747,7 +1747,7 @@
     "modified_bst_special": 270.0,
     "can_be_mixed": false
   },
-  {
+  "GOLEM": {
     "name": "GOLEM",
     "index": 76,
     "via_player": 1.0,
@@ -1770,7 +1770,7 @@
     "modified_bst_special": 345.0,
     "can_be_mixed": false
   },
-  {
+  "PONYTA": {
     "name": "PONYTA",
     "index": 77,
     "via_player": 1.0,
@@ -1793,7 +1793,7 @@
     "modified_bst_special": 319.0,
     "can_be_mixed": false
   },
-  {
+  "RAPIDASH": {
     "name": "RAPIDASH",
     "index": 78,
     "via_player": 1.0,
@@ -1816,7 +1816,7 @@
     "modified_bst_special": 391.0,
     "can_be_mixed": false
   },
-  {
+  "SLOWPOKE": {
     "name": "SLOWPOKE",
     "index": 79,
     "via_player": 1.0,
@@ -1839,7 +1839,7 @@
     "modified_bst_special": 232.0,
     "can_be_mixed": false
   },
-  {
+  "SLOWBRO": {
     "name": "SLOWBRO",
     "index": 80,
     "via_player": 1.0,
@@ -1862,7 +1862,7 @@
     "modified_bst_special": 383.0,
     "can_be_mixed": false
   },
-  {
+  "MAGNEMITE": {
     "name": "MAGNEMITE",
     "index": 81,
     "via_player": 1.0,
@@ -1885,7 +1885,7 @@
     "modified_bst_special": 274.0,
     "can_be_mixed": false
   },
-  {
+  "MAGNETON": {
     "name": "MAGNETON",
     "index": 82,
     "via_player": 1.0,
@@ -1908,7 +1908,7 @@
     "modified_bst_special": 386.0,
     "can_be_mixed": false
   },
-  {
+  "Farfetch’d": {
     "name": "Farfetch’d",
     "index": 83,
     "via_player": 1.0,
@@ -1931,7 +1931,7 @@
     "modified_bst_special": 354.0,
     "can_be_mixed": false
   },
-  {
+  "DODUO": {
     "name": "DODUO",
     "index": 84,
     "via_player": 1.0,
@@ -1954,7 +1954,7 @@
     "modified_bst_special": 224.0,
     "can_be_mixed": false
   },
-  {
+  "DODRIO": {
     "name": "DODRIO",
     "index": 85,
     "via_player": 1.0,
@@ -1977,7 +1977,7 @@
     "modified_bst_special": 356.0,
     "can_be_mixed": false
   },
-  {
+  "SEEL": {
     "name": "SEEL",
     "index": 86,
     "via_player": 1.0,
@@ -2000,7 +2000,7 @@
     "modified_bst_special": 264.0,
     "can_be_mixed": true
   },
-  {
+  "DEWGONG": {
     "name": "DEWGONG",
     "index": 87,
     "via_player": 1.0,
@@ -2023,7 +2023,7 @@
     "modified_bst_special": 384.0,
     "can_be_mixed": false
   },
-  {
+  "GRIMER": {
     "name": "GRIMER",
     "index": 88,
     "via_player": 1.0,
@@ -2046,7 +2046,7 @@
     "modified_bst_special": 246.0,
     "can_be_mixed": false
   },
-  {
+  "MUK": {
     "name": "MUK",
     "index": 89,
     "via_player": 1.0,
@@ -2069,7 +2069,7 @@
     "modified_bst_special": 370.0,
     "can_be_mixed": false
   },
-  {
+  "SHELLDER": {
     "name": "SHELLDER",
     "index": 90,
     "via_player": 1.0,
@@ -2092,7 +2092,7 @@
     "modified_bst_special": 223.0,
     "can_be_mixed": false
   },
-  {
+  "CLOYSTER": {
     "name": "CLOYSTER",
     "index": 91,
     "via_player": 1.0,
@@ -2115,7 +2115,7 @@
     "modified_bst_special": 399.0,
     "can_be_mixed": true
   },
-  {
+  "GASTLY": {
     "name": "GASTLY",
     "index": 92,
     "via_player": 1.0,
@@ -2138,7 +2138,7 @@
     "modified_bst_special": 278.0,
     "can_be_mixed": false
   },
-  {
+  "HAUNTER": {
     "name": "HAUNTER",
     "index": 93,
     "via_player": 1.0,
@@ -2161,7 +2161,7 @@
     "modified_bst_special": 354.0,
     "can_be_mixed": false
   },
-  {
+  "GENGAR": {
     "name": "GENGAR",
     "index": 94,
     "via_player": 1.0,
@@ -2184,7 +2184,7 @@
     "modified_bst_special": 430.0,
     "can_be_mixed": false
   },
-  {
+  "ONIX": {
     "name": "ONIX",
     "index": 95,
     "via_player": 1.0,
@@ -2207,7 +2207,7 @@
     "modified_bst_special": 357.0,
     "can_be_mixed": false
   },
-  {
+  "DROWZEE": {
     "name": "DROWZEE",
     "index": 96,
     "via_player": 1.0,
@@ -2230,7 +2230,7 @@
     "modified_bst_special": 273.4,
     "can_be_mixed": true
   },
-  {
+  "HYPNO": {
     "name": "HYPNO",
     "index": 97,
     "via_player": 1.0,
@@ -2253,7 +2253,7 @@
     "modified_bst_special": 387.4,
     "can_be_mixed": true
   },
-  {
+  "KRABBY": {
     "name": "KRABBY",
     "index": 98,
     "via_player": 1.0,
@@ -2276,7 +2276,7 @@
     "modified_bst_special": 207.0,
     "can_be_mixed": false
   },
-  {
+  "KINGLER": {
     "name": "KINGLER",
     "index": 99,
     "via_player": 1.0,
@@ -2299,7 +2299,7 @@
     "modified_bst_special": 327.0,
     "can_be_mixed": false
   },
-  {
+  "VOLTORB": {
     "name": "VOLTORB",
     "index": 100,
     "via_player": 1.0,
@@ -2322,7 +2322,7 @@
     "modified_bst_special": 317.0,
     "can_be_mixed": false
   },
-  {
+  "ELECTRODE": {
     "name": "ELECTRODE",
     "index": 101,
     "via_player": 1.0,
@@ -2345,7 +2345,7 @@
     "modified_bst_special": 440.0,
     "can_be_mixed": false
   },
-  {
+  "EXEGGCUTE": {
     "name": "EXEGGCUTE",
     "index": 102,
     "via_player": 1.0,
@@ -2368,7 +2368,7 @@
     "modified_bst_special": 268.0,
     "can_be_mixed": false
   },
-  {
+  "EXEGGUTOR": {
     "name": "EXEGGUTOR",
     "index": 103,
     "via_player": 1.0,
@@ -2391,7 +2391,7 @@
     "modified_bst_special": 414.0,
     "can_be_mixed": false
   },
-  {
+  "CUBONE": {
     "name": "CUBONE",
     "index": 104,
     "via_player": 1.0,
@@ -2414,7 +2414,7 @@
     "modified_bst_special": 248.0,
     "can_be_mixed": false
   },
-  {
+  "MAROWAK": {
     "name": "MAROWAK",
     "index": 105,
     "via_player": 1.0,
@@ -2437,7 +2437,7 @@
     "modified_bst_special": 316.0,
     "can_be_mixed": false
   },
-  {
+  "HITMONLEE": {
     "name": "HITMONLEE",
     "index": 106,
     "via_player": 1.0,
@@ -2460,7 +2460,7 @@
     "modified_bst_special": 319.79999999999995,
     "can_be_mixed": false
   },
-  {
+  "HITMONCHAN": {
     "name": "HITMONCHAN",
     "index": 107,
     "via_player": 1.0,
@@ -2483,7 +2483,7 @@
     "modified_bst_special": 327.4,
     "can_be_mixed": false
   },
-  {
+  "LICKITUNG": {
     "name": "LICKITUNG",
     "index": 108,
     "via_player": 1.0,
@@ -2506,7 +2506,7 @@
     "modified_bst_special": 306.0,
     "can_be_mixed": true
   },
-  {
+  "KOFFING": {
     "name": "KOFFING",
     "index": 109,
     "via_player": 1.0,
@@ -2529,7 +2529,7 @@
     "modified_bst_special": 254.0,
     "can_be_mixed": true
   },
-  {
+  "WEEZING": {
     "name": "WEEZING",
     "index": 110,
     "via_player": 1.0,
@@ -2552,7 +2552,7 @@
     "modified_bst_special": 374.0,
     "can_be_mixed": true
   },
-  {
+  "RHYHORN": {
     "name": "RHYHORN",
     "index": 111,
     "via_player": 1.0,
@@ -2575,7 +2575,7 @@
     "modified_bst_special": 240.0,
     "can_be_mixed": false
   },
-  {
+  "RHYDON": {
     "name": "RHYDON",
     "index": 112,
     "via_player": 1.0,
@@ -2598,7 +2598,7 @@
     "modified_bst_special": 330.0,
     "can_be_mixed": false
   },
-  {
+  "CHANSEY": {
     "name": "CHANSEY",
     "index": 113,
     "via_player": 1.0,
@@ -2621,7 +2621,7 @@
     "modified_bst_special": 433.0,
     "can_be_mixed": false
   },
-  {
+  "TANGELA": {
     "name": "TANGELA",
     "index": 114,
     "via_player": 1.0,
@@ -2644,7 +2644,7 @@
     "modified_bst_special": 361.0,
     "can_be_mixed": false
   },
-  {
+  "KANGASKHAN": {
     "name": "KANGASKHAN",
     "index": 115,
     "via_player": 1.0,
@@ -2667,7 +2667,7 @@
     "modified_bst_special": 381.0,
     "can_be_mixed": false
   },
-  {
+  "HORSEA": {
     "name": "HORSEA",
     "index": 116,
     "via_player": 1.0,
@@ -2690,7 +2690,7 @@
     "modified_bst_special": 248.0,
     "can_be_mixed": false
   },
-  {
+  "SEADRA": {
     "name": "SEADRA",
     "index": 117,
     "via_player": 1.0,
@@ -2713,7 +2713,7 @@
     "modified_bst_special": 364.0,
     "can_be_mixed": false
   },
-  {
+  "GOLDEEN": {
     "name": "GOLDEEN",
     "index": 118,
     "via_player": 1.0,
@@ -2736,7 +2736,7 @@
     "modified_bst_special": 245.6,
     "can_be_mixed": false
   },
-  {
+  "SEAKING": {
     "name": "SEAKING",
     "index": 119,
     "via_player": 1.0,
@@ -2759,7 +2759,7 @@
     "modified_bst_special": 350.6,
     "can_be_mixed": false
   },
-  {
+  "STARYU": {
     "name": "STARYU",
     "index": 120,
     "via_player": 1.0,
@@ -2782,7 +2782,7 @@
     "modified_bst_special": 290.0,
     "can_be_mixed": false
   },
-  {
+  "STARMIE": {
     "name": "STARMIE",
     "index": 121,
     "via_player": 1.0,
@@ -2805,7 +2805,7 @@
     "modified_bst_special": 434.0,
     "can_be_mixed": false
   },
-  {
+  "MR. MIME": {
     "name": "MR. MIME",
     "index": 122,
     "via_player": 1.0,
@@ -2828,7 +2828,7 @@
     "modified_bst_special": 412.0,
     "can_be_mixed": false
   },
-  {
+  "SCYTHER": {
     "name": "SCYTHER",
     "index": 123,
     "via_player": 1.0,
@@ -2851,7 +2851,7 @@
     "modified_bst_special": 379.0,
     "can_be_mixed": false
   },
-  {
+  "JYNX": {
     "name": "JYNX",
     "index": 124,
     "via_player": 1.0,
@@ -2874,7 +2874,7 @@
     "modified_bst_special": 444.0,
     "can_be_mixed": false
   },
-  {
+  "ELECTABUZZ": {
     "name": "ELECTABUZZ",
     "index": 125,
     "via_player": 1.0,
@@ -2897,7 +2897,7 @@
     "modified_bst_special": 399.6,
     "can_be_mixed": true
   },
-  {
+  "MAGMAR": {
     "name": "MAGMAR",
     "index": 126,
     "via_player": 1.0,
@@ -2920,7 +2920,7 @@
     "modified_bst_special": 390.2,
     "can_be_mixed": true
   },
-  {
+  "PINSIR": {
     "name": "PINSIR",
     "index": 127,
     "via_player": 1.0,
@@ -2943,7 +2943,7 @@
     "modified_bst_special": 358.0,
     "can_be_mixed": false
   },
-  {
+  "TAUROS": {
     "name": "TAUROS",
     "index": 128,
     "via_player": 1.0,
@@ -2966,7 +2966,7 @@
     "modified_bst_special": 379.0,
     "can_be_mixed": false
   },
-  {
+  "MAGIKARP": {
     "name": "MAGIKARP",
     "index": 129,
     "via_player": 1.0,
@@ -2989,7 +2989,7 @@
     "modified_bst_special": 191.0,
     "can_be_mixed": false
   },
-  {
+  "GYARADOS": {
     "name": "GYARADOS",
     "index": 130,
     "via_player": 1.0,
@@ -3012,7 +3012,7 @@
     "modified_bst_special": 395.4,
     "can_be_mixed": false
   },
-  {
+  "LAPRAS": {
     "name": "LAPRAS",
     "index": 131,
     "via_player": 1.0,
@@ -3035,7 +3035,7 @@
     "modified_bst_special": 427.0,
     "can_be_mixed": true
   },
-  {
+  "DITTO": {
     "name": "DITTO",
     "index": 132,
     "via_player": 1.0,
@@ -3058,7 +3058,7 @@
     "modified_bst_special": 230.4,
     "can_be_mixed": true
   },
-  {
+  "EEVEE": {
     "name": "EEVEE",
     "index": 133,
     "via_player": 1.0,
@@ -3081,7 +3081,7 @@
     "modified_bst_special": 258.0,
     "can_be_mixed": false
   },
-  {
+  "VAPOREON": {
     "name": "VAPOREON",
     "index": 134,
     "via_player": 1.0,
@@ -3104,7 +3104,7 @@
     "modified_bst_special": 442.0,
     "can_be_mixed": false
   },
-  {
+  "JOLTEON": {
     "name": "JOLTEON",
     "index": 135,
     "via_player": 1.0,
@@ -3127,7 +3127,7 @@
     "modified_bst_special": 455.0,
     "can_be_mixed": false
   },
-  {
+  "FLAREON": {
     "name": "FLAREON",
     "index": 136,
     "via_player": 1.0,
@@ -3150,7 +3150,7 @@
     "modified_bst_special": 380.0,
     "can_be_mixed": false
   },
-  {
+  "PORYGON": {
     "name": "PORYGON",
     "index": 137,
     "via_player": 1.0,
@@ -3173,7 +3173,7 @@
     "modified_bst_special": 314.0,
     "can_be_mixed": false
   },
-  {
+  "OMANYTE": {
     "name": "OMANYTE",
     "index": 138,
     "via_player": 1.0,
@@ -3196,7 +3196,7 @@
     "modified_bst_special": 291.0,
     "can_be_mixed": false
   },
-  {
+  "OMASTAR": {
     "name": "OMASTAR",
     "index": 139,
     "via_player": 1.0,
@@ -3219,7 +3219,7 @@
     "modified_bst_special": 407.0,
     "can_be_mixed": false
   },
-  {
+  "KABUTO": {
     "name": "KABUTO",
     "index": 140,
     "via_player": 1.0,
@@ -3242,7 +3242,7 @@
     "modified_bst_special": 259.0,
     "can_be_mixed": false
   },
-  {
+  "KABUTOPS": {
     "name": "KABUTOPS",
     "index": 141,
     "via_player": 1.0,
@@ -3265,7 +3265,7 @@
     "modified_bst_special": 361.0,
     "can_be_mixed": false
   },
-  {
+  "AERODACTYL": {
     "name": "AERODACTYL",
     "index": 142,
     "via_player": 1.0,
@@ -3288,7 +3288,7 @@
     "modified_bst_special": 408.0,
     "can_be_mixed": false
   },
-  {
+  "SNORLAX": {
     "name": "SNORLAX",
     "index": 143,
     "via_player": 1.0,
@@ -3311,7 +3311,7 @@
     "modified_bst_special": 401.0,
     "can_be_mixed": false
   },
-  {
+  "ARTICUNO": {
     "name": "ARTICUNO",
     "index": 144,
     "via_player": 1.0,
@@ -3334,7 +3334,7 @@
     "modified_bst_special": 467.0,
     "can_be_mixed": true
   },
-  {
+  "ZAPDOS": {
     "name": "ZAPDOS",
     "index": 145,
     "via_player": 1.0,
@@ -3357,7 +3357,7 @@
     "modified_bst_special": 475.0,
     "can_be_mixed": false
   },
-  {
+  "MOLTRES": {
     "name": "MOLTRES",
     "index": 146,
     "via_player": 1.0,
@@ -3380,7 +3380,7 @@
     "modified_bst_special": 463.0,
     "can_be_mixed": false
   },
-  {
+  "DRATINI": {
     "name": "DRATINI",
     "index": 147,
     "via_player": 1.0,
@@ -3403,7 +3403,7 @@
     "modified_bst_special": 227.0,
     "can_be_mixed": false
   },
-  {
+  "DRAGONAIR": {
     "name": "DRAGONAIR",
     "index": 148,
     "via_player": 1.0,
@@ -3426,7 +3426,7 @@
     "modified_bst_special": 323.0,
     "can_be_mixed": false
   },
-  {
+  "DRAGONITE": {
     "name": "DRAGONITE",
     "index": 149,
     "via_player": 1.0,
@@ -3449,7 +3449,7 @@
     "modified_bst_special": 443.0,
     "can_be_mixed": false
   },
-  {
+  "MEWTWO": {
     "name": "MEWTWO",
     "index": 150,
     "via_player": 1.0,
@@ -3472,7 +3472,7 @@
     "modified_bst_special": 560.0,
     "can_be_mixed": false
   },
-  {
+  "MEW": {
     "name": "MEW",
     "index": 151,
     "via_player": 1.0,
@@ -3495,7 +3495,7 @@
     "modified_bst_special": 480.0,
     "can_be_mixed": true
   },
-  {
+  "CHIKORITA": {
     "name": "CHIKORITA",
     "index": 152,
     "via_player": 1.0,
@@ -3518,7 +3518,7 @@
     "modified_bst_special": 252.0,
     "can_be_mixed": true
   },
-  {
+  "BAYLEEF": {
     "name": "BAYLEEF",
     "index": 153,
     "via_player": 1.0,
@@ -3541,7 +3541,7 @@
     "modified_bst_special": 323.0,
     "can_be_mixed": true
   },
-  {
+  "MEGANIUM": {
     "name": "MEGANIUM",
     "index": 154,
     "via_player": 1.0,
@@ -3564,7 +3564,7 @@
     "modified_bst_special": 429.0,
     "can_be_mixed": true
   },
-  {
+  "CYNDAQUIL": {
     "name": "CYNDAQUIL",
     "index": 155,
     "via_player": 1.0,
@@ -3587,7 +3587,7 @@
     "modified_bst_special": 251.4,
     "can_be_mixed": true
   },
-  {
+  "QUILAVA": {
     "name": "QUILAVA",
     "index": 156,
     "via_player": 1.0,
@@ -3610,7 +3610,7 @@
     "modified_bst_special": 332.4,
     "can_be_mixed": false
   },
-  {
+  "TYPHLOSION": {
     "name": "TYPHLOSION",
     "index": 157,
     "via_player": 1.0,
@@ -3633,7 +3633,7 @@
     "modified_bst_special": 438.4,
     "can_be_mixed": false
   },
-  {
+  "TOTODILE": {
     "name": "TOTODILE",
     "index": 158,
     "via_player": 1.0,
@@ -3656,7 +3656,7 @@
     "modified_bst_special": 235.20000000000002,
     "can_be_mixed": false
   },
-  {
+  "CROCONAW": {
     "name": "CROCONAW",
     "index": 159,
     "via_player": 1.0,
@@ -3679,7 +3679,7 @@
     "modified_bst_special": 306.0,
     "can_be_mixed": false
   },
-  {
+  "FERALIGATR": {
     "name": "FERALIGATR",
     "index": 160,
     "via_player": 1.0,
@@ -3702,7 +3702,7 @@
     "modified_bst_special": 406.0,
     "can_be_mixed": false
   },
-  {
+  "SENTRET": {
     "name": "SENTRET",
     "index": 161,
     "via_player": 1.0,
@@ -3725,7 +3725,7 @@
     "modified_bst_special": 228.0,
     "can_be_mixed": false
   },
-  {
+  "FURRET": {
     "name": "FURRET",
     "index": 162,
     "via_player": 1.0,
@@ -3748,7 +3748,7 @@
     "modified_bst_special": 357.0,
     "can_be_mixed": false
   },
-  {
+  "HOOTHOOT": {
     "name": "HOOTHOOT",
     "index": 163,
     "via_player": 1.0,
@@ -3771,7 +3771,7 @@
     "modified_bst_special": 224.8,
     "can_be_mixed": true
   },
-  {
+  "NOCTOWL": {
     "name": "NOCTOWL",
     "index": 164,
     "via_player": 1.0,
@@ -3794,7 +3794,7 @@
     "modified_bst_special": 402.8,
     "can_be_mixed": false
   },
-  {
+  "LEDYBA": {
     "name": "LEDYBA",
     "index": 165,
     "via_player": 1.0,
@@ -3817,7 +3817,7 @@
     "modified_bst_special": 239.0,
     "can_be_mixed": false
   },
-  {
+  "LEDIAN": {
     "name": "LEDIAN",
     "index": 166,
     "via_player": 1.0,
@@ -3840,7 +3840,7 @@
     "modified_bst_special": 345.0,
     "can_be_mixed": false
   },
-  {
+  "SPINARAK": {
     "name": "SPINARAK",
     "index": 167,
     "via_player": 1.0,
@@ -3863,7 +3863,7 @@
     "modified_bst_special": 198.0,
     "can_be_mixed": false
   },
-  {
+  "ARIADOS": {
     "name": "ARIADOS",
     "index": 168,
     "via_player": 1.0,
@@ -3886,7 +3886,7 @@
     "modified_bst_special": 328.0,
     "can_be_mixed": false
   },
-  {
+  "CROBAT": {
     "name": "CROBAT",
     "index": 169,
     "via_player": 1.0,
@@ -3909,7 +3909,7 @@
     "modified_bst_special": 439.0,
     "can_be_mixed": false
   },
-  {
+  "CHINCHOU": {
     "name": "CHINCHOU",
     "index": 170,
     "via_player": 1.0,
@@ -3932,7 +3932,7 @@
     "modified_bst_special": 286.6,
     "can_be_mixed": false
   },
-  {
+  "LANTURN": {
     "name": "LANTURN",
     "index": 171,
     "via_player": 1.0,
@@ -3955,7 +3955,7 @@
     "modified_bst_special": 411.59999999999997,
     "can_be_mixed": false
   },
-  {
+  "PICHU": {
     "name": "PICHU",
     "index": 172,
     "via_player": 1.0,
@@ -3978,7 +3978,7 @@
     "modified_bst_special": 167.0,
     "can_be_mixed": true
   },
-  {
+  "CLEFFA": {
     "name": "CLEFFA",
     "index": 173,
     "via_player": 1.0,
@@ -4001,7 +4001,7 @@
     "modified_bst_special": 179.4,
     "can_be_mixed": false
   },
-  {
+  "IGGLYBUFF": {
     "name": "IGGLYBUFF",
     "index": 174,
     "via_player": 1.0,
@@ -4024,7 +4024,7 @@
     "modified_bst_special": 176.0,
     "can_be_mixed": false
   },
-  {
+  "TOGEPI": {
     "name": "TOGEPI",
     "index": 175,
     "via_player": 1.0,
@@ -4047,7 +4047,7 @@
     "modified_bst_special": 203.0,
     "can_be_mixed": false
   },
-  {
+  "TOGETIC": {
     "name": "TOGETIC",
     "index": 176,
     "via_player": 1.0,
@@ -4070,7 +4070,7 @@
     "modified_bst_special": 335.0,
     "can_be_mixed": false
   },
-  {
+  "NATU": {
     "name": "NATU",
     "index": 177,
     "via_player": 1.0,
@@ -4093,7 +4093,7 @@
     "modified_bst_special": 266.0,
     "can_be_mixed": false
   },
-  {
+  "XATU": {
     "name": "XATU",
     "index": 178,
     "via_player": 1.0,
@@ -4116,7 +4116,7 @@
     "modified_bst_special": 404.0,
     "can_be_mixed": false
   },
-  {
+  "MAREEP": {
     "name": "MAREEP",
     "index": 179,
     "via_player": 1.0,
@@ -4139,7 +4139,7 @@
     "modified_bst_special": 234.0,
     "can_be_mixed": false
   },
-  {
+  "FLAAFFY": {
     "name": "FLAAFFY",
     "index": 180,
     "via_player": 1.0,
@@ -4162,7 +4162,7 @@
     "modified_bst_special": 310.0,
     "can_be_mixed": false
   },
-  {
+  "AMPHAROS": {
     "name": "AMPHAROS",
     "index": 181,
     "via_player": 1.0,
@@ -4185,7 +4185,7 @@
     "modified_bst_special": 420.0,
     "can_be_mixed": false
   },
-  {
+  "BELLOSSOM": {
     "name": "BELLOSSOM",
     "index": 182,
     "via_player": 1.0,
@@ -4208,7 +4208,7 @@
     "modified_bst_special": 381.0,
     "can_be_mixed": true
   },
-  {
+  "MARILL": {
     "name": "MARILL",
     "index": 183,
     "via_player": 1.0,
@@ -4231,7 +4231,7 @@
     "modified_bst_special": 238.0,
     "can_be_mixed": false
   },
-  {
+  "AZUMARILL": {
     "name": "AZUMARILL",
     "index": 184,
     "via_player": 1.0,
@@ -4254,7 +4254,7 @@
     "modified_bst_special": 368.0,
     "can_be_mixed": false
   },
-  {
+  "SUDOWOODO": {
     "name": "SUDOWOODO",
     "index": 185,
     "via_player": 1.0,
@@ -4277,7 +4277,7 @@
     "modified_bst_special": 316.0,
     "can_be_mixed": false
   },
-  {
+  "POLITOED": {
     "name": "POLITOED",
     "index": 186,
     "via_player": 1.0,
@@ -4300,7 +4300,7 @@
     "modified_bst_special": 404.0,
     "can_be_mixed": true
   },
-  {
+  "HOPPIP": {
     "name": "HOPPIP",
     "index": 187,
     "via_player": 1.0,
@@ -4323,7 +4323,7 @@
     "modified_bst_special": 240.0,
     "can_be_mixed": false
   },
-  {
+  "SKIPLOOM": {
     "name": "SKIPLOOM",
     "index": 188,
     "via_player": 1.0,
@@ -4346,7 +4346,7 @@
     "modified_bst_special": 310.0,
     "can_be_mixed": true
   },
-  {
+  "JUMPLUFF": {
     "name": "JUMPLUFF",
     "index": 189,
     "via_player": 1.0,
@@ -4369,7 +4369,7 @@
     "modified_bst_special": 414.0,
     "can_be_mixed": false
   },
-  {
+  "AIPOM": {
     "name": "AIPOM",
     "index": 190,
     "via_player": 1.0,
@@ -4392,7 +4392,7 @@
     "modified_bst_special": 285.0,
     "can_be_mixed": false
   },
-  {
+  "SUNKERN": {
     "name": "SUNKERN",
     "index": 191,
     "via_player": 1.0,
@@ -4415,7 +4415,7 @@
     "modified_bst_special": 196.0,
     "can_be_mixed": true
   },
-  {
+  "SUNFLORA": {
     "name": "SUNFLORA",
     "index": 192,
     "via_player": 1.0,
@@ -4438,7 +4438,7 @@
     "modified_bst_special": 372.0,
     "can_be_mixed": false
   },
-  {
+  "YANMA": {
     "name": "YANMA",
     "index": 193,
     "via_player": 1.0,
@@ -4461,7 +4461,7 @@
     "modified_bst_special": 326.0,
     "can_be_mixed": true
   },
-  {
+  "WOOPER": {
     "name": "WOOPER",
     "index": 194,
     "via_player": 1.0,
@@ -4484,7 +4484,7 @@
     "modified_bst_special": 162.0,
     "can_be_mixed": false
   },
-  {
+  "QUAGSIRE": {
     "name": "QUAGSIRE",
     "index": 195,
     "via_player": 1.0,
@@ -4507,7 +4507,7 @@
     "modified_bst_special": 330.0,
     "can_be_mixed": false
   },
-  {
+  "ESPEON": {
     "name": "ESPEON",
     "index": 196,
     "via_player": 1.0,
@@ -4530,7 +4530,7 @@
     "modified_bst_special": 451.0,
     "can_be_mixed": false
   },
-  {
+  "UMBREON": {
     "name": "UMBREON",
     "index": 197,
     "via_player": 1.0,
@@ -4553,7 +4553,7 @@
     "modified_bst_special": 425.0,
     "can_be_mixed": true
   },
-  {
+  "MURKROW": {
     "name": "MURKROW",
     "index": 198,
     "via_player": 1.0,
@@ -4576,7 +4576,7 @@
     "modified_bst_special": 321.4,
     "can_be_mixed": true
   },
-  {
+  "SLOWKING": {
     "name": "SLOWKING",
     "index": 199,
     "via_player": 1.0,
@@ -4599,7 +4599,7 @@
     "modified_bst_special": 383.0,
     "can_be_mixed": false
   },
-  {
+  "MISDREAVUS": {
     "name": "MISDREAVUS",
     "index": 200,
     "via_player": 1.0,
@@ -4622,7 +4622,7 @@
     "modified_bst_special": 363.0,
     "can_be_mixed": false
   },
-  {
+  "UNOWN": {
     "name": "UNOWN",
     "index": 201,
     "via_player": 1.0,
@@ -4645,7 +4645,7 @@
     "modified_bst_special": 320.4,
     "can_be_mixed": false
   },
-  {
+  "WOBBUFFET": {
     "name": "WOBBUFFET",
     "index": 202,
     "via_player": 1.0,
@@ -4668,7 +4668,7 @@
     "modified_bst_special": 355.4,
     "can_be_mixed": true
   },
-  {
+  "GIRAFARIG": {
     "name": "GIRAFARIG",
     "index": 203,
     "via_player": 1.0,
@@ -4691,7 +4691,7 @@
     "modified_bst_special": 377.0,
     "can_be_mixed": true
   },
-  {
+  "PINECO": {
     "name": "PINECO",
     "index": 204,
     "via_player": 1.0,
@@ -4714,7 +4714,7 @@
     "modified_bst_special": 203.0,
     "can_be_mixed": false
   },
-  {
+  "FORRETRESS": {
     "name": "FORRETRESS",
     "index": 205,
     "via_player": 1.0,
@@ -4737,7 +4737,7 @@
     "modified_bst_special": 343.0,
     "can_be_mixed": false
   },
-  {
+  "DUNSPARCE": {
     "name": "DUNSPARCE",
     "index": 206,
     "via_player": 1.0,
@@ -4760,7 +4760,7 @@
     "modified_bst_special": 337.0,
     "can_be_mixed": false
   },
-  {
+  "GLIGAR": {
     "name": "GLIGAR",
     "index": 207,
     "via_player": 1.0,
@@ -4783,7 +4783,7 @@
     "modified_bst_special": 338.0,
     "can_be_mixed": false
   },
-  {
+  "STEELIX": {
     "name": "STEELIX",
     "index": 208,
     "via_player": 1.0,
@@ -4806,7 +4806,7 @@
     "modified_bst_special": 368.0,
     "can_be_mixed": false
   },
-  {
+  "SNUBBULL": {
     "name": "SNUBBULL",
     "index": 209,
     "via_player": 1.0,
@@ -4829,7 +4829,7 @@
     "modified_bst_special": 208.0,
     "can_be_mixed": false
   },
-  {
+  "GRANBULL": {
     "name": "GRANBULL",
     "index": 210,
     "via_player": 1.0,
@@ -4852,7 +4852,7 @@
     "modified_bst_special": 312.0,
     "can_be_mixed": false
   },
-  {
+  "QWILFISH": {
     "name": "QWILFISH",
     "index": 211,
     "via_player": 1.0,
@@ -4875,7 +4875,7 @@
     "modified_bst_special": 344.0,
     "can_be_mixed": false
   },
-  {
+  "SCIZOR": {
     "name": "SCIZOR",
     "index": 212,
     "via_player": 1.0,
@@ -4898,7 +4898,7 @@
     "modified_bst_special": 347.0,
     "can_be_mixed": false
   },
-  {
+  "SHUCKLE": {
     "name": "SHUCKLE",
     "index": 213,
     "via_player": 1.0,
@@ -4921,7 +4921,7 @@
     "modified_bst_special": 404.0,
     "can_be_mixed": true
   },
-  {
+  "HERACROSS": {
     "name": "HERACROSS",
     "index": 214,
     "via_player": 1.0,
@@ -4944,7 +4944,7 @@
     "modified_bst_special": 358.0,
     "can_be_mixed": false
   },
-  {
+  "SNEASEL": {
     "name": "SNEASEL",
     "index": 215,
     "via_player": 1.0,
@@ -4967,7 +4967,7 @@
     "modified_bst_special": 332.0,
     "can_be_mixed": false
   },
-  {
+  "TEDDIURSA": {
     "name": "TEDDIURSA",
     "index": 216,
     "via_player": 1.0,
@@ -4990,7 +4990,7 @@
     "modified_bst_special": 238.0,
     "can_be_mixed": false
   },
-  {
+  "URSARING": {
     "name": "URSARING",
     "index": 217,
     "via_player": 1.0,
@@ -5013,7 +5013,7 @@
     "modified_bst_special": 351.0,
     "can_be_mixed": false
   },
-  {
+  "SLUGMA": {
     "name": "SLUGMA",
     "index": 218,
     "via_player": 1.0,
@@ -5036,7 +5036,7 @@
     "modified_bst_special": 234.0,
     "can_be_mixed": false
   },
-  {
+  "MAGCARGO": {
     "name": "MAGCARGO",
     "index": 219,
     "via_player": 1.0,
@@ -5059,7 +5059,7 @@
     "modified_bst_special": 408.0,
     "can_be_mixed": false
   },
-  {
+  "SWINUB": {
     "name": "SWINUB",
     "index": 220,
     "via_player": 1.0,
@@ -5082,7 +5082,7 @@
     "modified_bst_special": 196.0,
     "can_be_mixed": false
   },
-  {
+  "PILOSWINE": {
     "name": "PILOSWINE",
     "index": 221,
     "via_player": 1.0,
@@ -5105,7 +5105,7 @@
     "modified_bst_special": 332.0,
     "can_be_mixed": false
   },
-  {
+  "CORSOLA": {
     "name": "CORSOLA",
     "index": 222,
     "via_player": 1.0,
@@ -5128,7 +5128,7 @@
     "modified_bst_special": 381.0,
     "can_be_mixed": false
   },
-  {
+  "REMORAID": {
     "name": "REMORAID",
     "index": 223,
     "via_player": 1.0,
@@ -5151,7 +5151,7 @@
     "modified_bst_special": 234.0,
     "can_be_mixed": true
   },
-  {
+  "OCTILLERY": {
     "name": "OCTILLERY",
     "index": 224,
     "via_player": 1.0,
@@ -5174,7 +5174,7 @@
     "modified_bst_special": 364.0,
     "can_be_mixed": true
   },
-  {
+  "DELIBIRD": {
     "name": "DELIBIRD",
     "index": 225,
     "via_player": 1.0,
@@ -5197,7 +5197,7 @@
     "modified_bst_special": 338.0,
     "can_be_mixed": false
   },
-  {
+  "MANTINE": {
     "name": "MANTINE",
     "index": 226,
     "via_player": 1.0,
@@ -5220,7 +5220,7 @@
     "modified_bst_special": 417.0,
     "can_be_mixed": false
   },
-  {
+  "SKARMORY": {
     "name": "SKARMORY",
     "index": 227,
     "via_player": 1.0,
@@ -5243,7 +5243,7 @@
     "modified_bst_special": 357.0,
     "can_be_mixed": false
   },
-  {
+  "HOUNDOUR": {
     "name": "HOUNDOUR",
     "index": 228,
     "via_player": 1.0,
@@ -5266,7 +5266,7 @@
     "modified_bst_special": 267.0,
     "can_be_mixed": false
   },
-  {
+  "HOUNDOOM": {
     "name": "HOUNDOOM",
     "index": 229,
     "via_player": 1.0,
@@ -5289,7 +5289,7 @@
     "modified_bst_special": 403.0,
     "can_be_mixed": true
   },
-  {
+  "KINGDRA": {
     "name": "KINGDRA",
     "index": 230,
     "via_player": 1.0,
@@ -5312,7 +5312,7 @@
     "modified_bst_special": 424.0,
     "can_be_mixed": true
   },
-  {
+  "PHANPY": {
     "name": "PHANPY",
     "index": 231,
     "via_player": 1.0,
@@ -5335,7 +5335,7 @@
     "modified_bst_special": 258.0,
     "can_be_mixed": false
   },
-  {
+  "DONPHAN": {
     "name": "DONPHAN",
     "index": 232,
     "via_player": 1.0,
@@ -5358,7 +5358,7 @@
     "modified_bst_special": 354.0,
     "can_be_mixed": false
   },
-  {
+  "PORYGON2": {
     "name": "PORYGON2",
     "index": 233,
     "via_player": 1.0,
@@ -5381,7 +5381,7 @@
     "modified_bst_special": 410.0,
     "can_be_mixed": false
   },
-  {
+  "STANTLER": {
     "name": "STANTLER",
     "index": 234,
     "via_player": 1.0,
@@ -5404,7 +5404,7 @@
     "modified_bst_special": 379.6,
     "can_be_mixed": true
   },
-  {
+  "SMEARGLE": {
     "name": "SMEARGLE",
     "index": 235,
     "via_player": 1.0,
@@ -5427,7 +5427,7 @@
     "modified_bst_special": 229.0,
     "can_be_mixed": true
   },
-  {
+  "TYROGUE": {
     "name": "TYROGUE",
     "index": 236,
     "via_player": 1.0,
@@ -5450,7 +5450,7 @@
     "modified_bst_special": 168.0,
     "can_be_mixed": true
   },
-  {
+  "HITMONTOP": {
     "name": "HITMONTOP",
     "index": 237,
     "via_player": 1.0,
@@ -5473,7 +5473,7 @@
     "modified_bst_special": 333.0,
     "can_be_mixed": false
   },
-  {
+  "SMOOCHUM": {
     "name": "SMOOCHUM",
     "index": 238,
     "via_player": 1.0,
@@ -5496,7 +5496,7 @@
     "modified_bst_special": 317.6,
     "can_be_mixed": false
   },
-  {
+  "ELEKID": {
     "name": "ELEKID",
     "index": 239,
     "via_player": 1.0,
@@ -5519,7 +5519,7 @@
     "modified_bst_special": 297.6,
     "can_be_mixed": true
   },
-  {
+  "MAGBY": {
     "name": "MAGBY",
     "index": 240,
     "via_player": 1.0,
@@ -5542,7 +5542,7 @@
     "modified_bst_special": 288.2,
     "can_be_mixed": true
   },
-  {
+  "MILTANK": {
     "name": "MILTANK",
     "index": 241,
     "via_player": 1.0,
@@ -5565,7 +5565,7 @@
     "modified_bst_special": 395.0,
     "can_be_mixed": false
   },
-  {
+  "BLISSEY": {
     "name": "BLISSEY",
     "index": 242,
     "via_player": 1.0,
@@ -5588,7 +5588,7 @@
     "modified_bst_special": 512.0,
     "can_be_mixed": false
   },
-  {
+  "RAIKOU": {
     "name": "RAIKOU",
     "index": 243,
     "via_player": 1.0,
@@ -5611,7 +5611,7 @@
     "modified_bst_special": 483.0,
     "can_be_mixed": false
   },
-  {
+  "ENTEI": {
     "name": "ENTEI",
     "index": 244,
     "via_player": 1.0,
@@ -5634,7 +5634,7 @@
     "modified_bst_special": 453.0,
     "can_be_mixed": false
   },
-  {
+  "SUICUNE": {
     "name": "SUICUNE",
     "index": 245,
     "via_player": 1.0,
@@ -5657,7 +5657,7 @@
     "modified_bst_special": 476.0,
     "can_be_mixed": true
   },
-  {
+  "LARVITAR": {
     "name": "LARVITAR",
     "index": 246,
     "via_player": 1.0,
@@ -5680,7 +5680,7 @@
     "modified_bst_special": 224.2,
     "can_be_mixed": false
   },
-  {
+  "PUPITAR": {
     "name": "PUPITAR",
     "index": 247,
     "via_player": 1.0,
@@ -5703,7 +5703,7 @@
     "modified_bst_special": 308.2,
     "can_be_mixed": false
   },
-  {
+  "TYRANITAR": {
     "name": "TYRANITAR",
     "index": 248,
     "via_player": 1.0,
@@ -5726,7 +5726,7 @@
     "modified_bst_special": 436.2,
     "can_be_mixed": false
   },
-  {
+  "LUGIA": {
     "name": "LUGIA",
     "index": 249,
     "via_player": 1.0,
@@ -5749,7 +5749,7 @@
     "modified_bst_special": 555.2,
     "can_be_mixed": true
   },
-  {
+  "HO-OH": {
     "name": "HO-OH",
     "index": 250,
     "via_player": 1.0,
@@ -5772,7 +5772,7 @@
     "modified_bst_special": 519.2,
     "can_be_mixed": true
   },
-  {
+  "CELEBI": {
     "name": "CELEBI",
     "index": 251,
     "via_player": 1.0,
@@ -5795,7 +5795,7 @@
     "modified_bst_special": 480.0,
     "can_be_mixed": true
   },
-  {
+  "TREECKO": {
     "name": "TREECKO",
     "index": 252,
     "via_player": 1.0,
@@ -5818,7 +5818,7 @@
     "modified_bst_special": 261.0,
     "can_be_mixed": false
   },
-  {
+  "GROVYLE": {
     "name": "GROVYLE",
     "index": 253,
     "via_player": 1.0,
@@ -5841,7 +5841,7 @@
     "modified_bst_special": 337.0,
     "can_be_mixed": false
   },
-  {
+  "SCEPTILE": {
     "name": "SCEPTILE",
     "index": 254,
     "via_player": 1.0,
@@ -5864,7 +5864,7 @@
     "modified_bst_special": 423.0,
     "can_be_mixed": false
   },
-  {
+  "TORCHIC": {
     "name": "TORCHIC",
     "index": 255,
     "via_player": 1.0,
@@ -5887,7 +5887,7 @@
     "modified_bst_special": 241.0,
     "can_be_mixed": true
   },
-  {
+  "COMBUSKEN": {
     "name": "COMBUSKEN",
     "index": 256,
     "via_player": 1.0,
@@ -5910,7 +5910,7 @@
     "modified_bst_special": 307.0,
     "can_be_mixed": true
   },
-  {
+  "BLAZIKEN": {
     "name": "BLAZIKEN",
     "index": 257,
     "via_player": 1.0,
@@ -5933,7 +5933,7 @@
     "modified_bst_special": 408.0,
     "can_be_mixed": true
   },
-  {
+  "MUDKIP": {
     "name": "MUDKIP",
     "index": 258,
     "via_player": 1.0,
@@ -5956,7 +5956,7 @@
     "modified_bst_special": 228.0,
     "can_be_mixed": false
   },
-  {
+  "MARSHTOMP": {
     "name": "MARSHTOMP",
     "index": 259,
     "via_player": 1.0,
@@ -5979,7 +5979,7 @@
     "modified_bst_special": 302.0,
     "can_be_mixed": false
   },
-  {
+  "SWAMPERT": {
     "name": "SWAMPERT",
     "index": 260,
     "via_player": 1.0,
@@ -6002,7 +6002,7 @@
     "modified_bst_special": 401.0,
     "can_be_mixed": false
   },
-  {
+  "POOCHYENA": {
     "name": "POOCHYENA",
     "index": 261,
     "via_player": 1.0,
@@ -6025,7 +6025,7 @@
     "modified_bst_special": 183.0,
     "can_be_mixed": false
   },
-  {
+  "MIGHTYENA": {
     "name": "MIGHTYENA",
     "index": 262,
     "via_player": 1.0,
@@ -6048,7 +6048,7 @@
     "modified_bst_special": 342.0,
     "can_be_mixed": false
   },
-  {
+  "ZIGZAGOON": {
     "name": "ZIGZAGOON",
     "index": 263,
     "via_player": 1.0,
@@ -6071,7 +6071,7 @@
     "modified_bst_special": 205.60000000000002,
     "can_be_mixed": false
   },
-  {
+  "LINOONE": {
     "name": "LINOONE",
     "index": 264,
     "via_player": 1.0,
@@ -6094,7 +6094,7 @@
     "modified_bst_special": 361.0,
     "can_be_mixed": false
   },
-  {
+  "WURMPLE": {
     "name": "WURMPLE",
     "index": 265,
     "via_player": 1.0,
@@ -6117,7 +6117,7 @@
     "modified_bst_special": 141.0,
     "can_be_mixed": false
   },
-  {
+  "SILCOON": {
     "name": "SILCOON",
     "index": 266,
     "via_player": 1.0,
@@ -6140,7 +6140,7 @@
     "modified_bst_special": 157.0,
     "can_be_mixed": false
   },
-  {
+  "BEAUTIFLY": {
     "name": "BEAUTIFLY",
     "index": 267,
     "via_player": 1.0,
@@ -6163,7 +6163,7 @@
     "modified_bst_special": 374.0,
     "can_be_mixed": false
   },
-  {
+  "CASCOON": {
     "name": "CASCOON",
     "index": 268,
     "via_player": 1.0,
@@ -6186,7 +6186,7 @@
     "modified_bst_special": 157.0,
     "can_be_mixed": false
   },
-  {
+  "DUSTOX": {
     "name": "DUSTOX",
     "index": 269,
     "via_player": 1.0,
@@ -6209,7 +6209,7 @@
     "modified_bst_special": 388.0,
     "can_be_mixed": false
   },
-  {
+  "LOTAD": {
     "name": "LOTAD",
     "index": 270,
     "via_player": 1.0,
@@ -6232,7 +6232,7 @@
     "modified_bst_special": 180.0,
     "can_be_mixed": false
   },
-  {
+  "LOMBRE": {
     "name": "LOMBRE",
     "index": 271,
     "via_player": 1.0,
@@ -6255,7 +6255,7 @@
     "modified_bst_special": 276.0,
     "can_be_mixed": true
   },
-  {
+  "LUDICOLO": {
     "name": "LUDICOLO",
     "index": 272,
     "via_player": 1.0,
@@ -6278,7 +6278,7 @@
     "modified_bst_special": 390.0,
     "can_be_mixed": false
   },
-  {
+  "SEEDOT": {
     "name": "SEEDOT",
     "index": 273,
     "via_player": 1.0,
@@ -6301,7 +6301,7 @@
     "modified_bst_special": 170.0,
     "can_be_mixed": false
   },
-  {
+  "NUZLEAF": {
     "name": "NUZLEAF",
     "index": 274,
     "via_player": 1.0,
@@ -6324,7 +6324,7 @@
     "modified_bst_special": 266.0,
     "can_be_mixed": true
   },
-  {
+  "SHIFTRY": {
     "name": "SHIFTRY",
     "index": 275,
     "via_player": 1.0,
@@ -6347,7 +6347,7 @@
     "modified_bst_special": 372.0,
     "can_be_mixed": true
   },
-  {
+  "TAILLOW": {
     "name": "TAILLOW",
     "index": 276,
     "via_player": 1.0,
@@ -6370,7 +6370,7 @@
     "modified_bst_special": 220.0,
     "can_be_mixed": false
   },
-  {
+  "SWELLOW": {
     "name": "SWELLOW",
     "index": 277,
     "via_player": 1.0,
@@ -6393,7 +6393,7 @@
     "modified_bst_special": 383.0,
     "can_be_mixed": true
   },
-  {
+  "WINGULL": {
     "name": "WINGULL",
     "index": 278,
     "via_player": 1.0,
@@ -6416,7 +6416,7 @@
     "modified_bst_special": 245.0,
     "can_be_mixed": false
   },
-  {
+  "PELIPPER": {
     "name": "PELIPPER",
     "index": 279,
     "via_player": 1.0,
@@ -6439,7 +6439,7 @@
     "modified_bst_special": 385.0,
     "can_be_mixed": false
   },
-  {
+  "RALTS": {
     "name": "RALTS",
     "index": 280,
     "via_player": 1.0,
@@ -6462,7 +6462,7 @@
     "modified_bst_special": 205.0,
     "can_be_mixed": false
   },
-  {
+  "KIRLIA": {
     "name": "KIRLIA",
     "index": 281,
     "via_player": 1.0,
@@ -6485,7 +6485,7 @@
     "modified_bst_special": 271.0,
     "can_be_mixed": false
   },
-  {
+  "GARDEVOIR": {
     "name": "GARDEVOIR",
     "index": 282,
     "via_player": 1.0,
@@ -6508,7 +6508,7 @@
     "modified_bst_special": 433.0,
     "can_be_mixed": false
   },
-  {
+  "SURSKIT": {
     "name": "SURSKIT",
     "index": 283,
     "via_player": 1.0,
@@ -6531,7 +6531,7 @@
     "modified_bst_special": 241.0,
     "can_be_mixed": false
   },
-  {
+  "MASQUERAIN": {
     "name": "MASQUERAIN",
     "index": 284,
     "via_player": 1.0,
@@ -6554,7 +6554,7 @@
     "modified_bst_special": 414.0,
     "can_be_mixed": false
   },
-  {
+  "SHROOMISH": {
     "name": "SHROOMISH",
     "index": 285,
     "via_player": 1.0,
@@ -6577,7 +6577,7 @@
     "modified_bst_special": 238.0,
     "can_be_mixed": true
   },
-  {
+  "BRELOOM": {
     "name": "BRELOOM",
     "index": 286,
     "via_player": 1.0,
@@ -6600,7 +6600,7 @@
     "modified_bst_special": 316.0,
     "can_be_mixed": false
   },
-  {
+  "SLAKOTH": {
     "name": "SLAKOTH",
     "index": 287,
     "via_player": 1.0,
@@ -6623,7 +6623,7 @@
     "modified_bst_special": 207.0,
     "can_be_mixed": false
   },
-  {
+  "VIGOROTH": {
     "name": "VIGOROTH",
     "index": 288,
     "via_player": 1.0,
@@ -6646,7 +6646,7 @@
     "modified_bst_special": 351.0,
     "can_be_mixed": false
   },
-  {
+  "SLAKING": {
     "name": "SLAKING",
     "index": 289,
     "via_player": 1.0,
@@ -6669,7 +6669,7 @@
     "modified_bst_special": 497.0,
     "can_be_mixed": false
   },
-  {
+  "NINCADA": {
     "name": "NINCADA",
     "index": 290,
     "via_player": 1.0,
@@ -6692,7 +6692,7 @@
     "modified_bst_special": 205.0,
     "can_be_mixed": false
   },
-  {
+  "NINJASK": {
     "name": "NINJASK",
     "index": 291,
     "via_player": 1.0,
@@ -6715,7 +6715,7 @@
     "modified_bst_special": 379.0,
     "can_be_mixed": false
   },
-  {
+  "SHEDINJA": {
     "name": "SHEDINJA",
     "index": 292,
     "via_player": 1.0,
@@ -6738,7 +6738,7 @@
     "modified_bst_special": 139.0,
     "can_be_mixed": false
   },
-  {
+  "WHISMUR": {
     "name": "WHISMUR",
     "index": 293,
     "via_player": 1.0,
@@ -6761,7 +6761,7 @@
     "modified_bst_special": 185.4,
     "can_be_mixed": true
   },
-  {
+  "LOUDRED": {
     "name": "LOUDRED",
     "index": 294,
     "via_player": 1.0,
@@ -6784,7 +6784,7 @@
     "modified_bst_special": 281.4,
     "can_be_mixed": true
   },
-  {
+  "EXPLOUD": {
     "name": "EXPLOUD",
     "index": 295,
     "via_player": 1.0,
@@ -6807,7 +6807,7 @@
     "modified_bst_special": 407.4,
     "can_be_mixed": true
   },
-  {
+  "MAKUHITA": {
     "name": "MAKUHITA",
     "index": 296,
     "via_player": 1.0,
@@ -6830,7 +6830,7 @@
     "modified_bst_special": 181.0,
     "can_be_mixed": false
   },
-  {
+  "HARIYAMA": {
     "name": "HARIYAMA",
     "index": 297,
     "via_player": 1.0,
@@ -6853,7 +6853,7 @@
     "modified_bst_special": 340.0,
     "can_be_mixed": false
   },
-  {
+  "AZURILL": {
     "name": "AZURILL",
     "index": 298,
     "via_player": 1.0,
@@ -6876,7 +6876,7 @@
     "modified_bst_special": 168.0,
     "can_be_mixed": false
   },
-  {
+  "NOSEPASS": {
     "name": "NOSEPASS",
     "index": 299,
     "via_player": 1.0,
@@ -6899,7 +6899,7 @@
     "modified_bst_special": 301.0,
     "can_be_mixed": false
   },
-  {
+  "SKITTY": {
     "name": "SKITTY",
     "index": 300,
     "via_player": 1.0,
@@ -6922,7 +6922,7 @@
     "modified_bst_special": 234.0,
     "can_be_mixed": false
   },
-  {
+  "DELCATTY": {
     "name": "DELCATTY",
     "index": 301,
     "via_player": 1.0,
@@ -6945,7 +6945,7 @@
     "modified_bst_special": 381.0,
     "can_be_mixed": true
   },
-  {
+  "SABLEYE": {
     "name": "SABLEYE",
     "index": 302,
     "via_player": 1.0,
@@ -6968,7 +6968,7 @@
     "modified_bst_special": 339.0,
     "can_be_mixed": true
   },
-  {
+  "MAWILE": {
     "name": "MAWILE",
     "index": 303,
     "via_player": 1.0,
@@ -6991,7 +6991,7 @@
     "modified_bst_special": 345.4,
     "can_be_mixed": false
   },
-  {
+  "ARON": {
     "name": "ARON",
     "index": 304,
     "via_player": 1.0,
@@ -7014,7 +7014,7 @@
     "modified_bst_special": 238.0,
     "can_be_mixed": false
   },
-  {
+  "LAIRON": {
     "name": "LAIRON",
     "index": 305,
     "via_player": 1.0,
@@ -7037,7 +7037,7 @@
     "modified_bst_special": 310.0,
     "can_be_mixed": false
   },
-  {
+  "AGGRON": {
     "name": "AGGRON",
     "index": 306,
     "via_player": 1.0,
@@ -7060,7 +7060,7 @@
     "modified_bst_special": 384.0,
     "can_be_mixed": false
   },
-  {
+  "MEDITITE": {
     "name": "MEDITITE",
     "index": 307,
     "via_player": 1.0,
@@ -7083,7 +7083,7 @@
     "modified_bst_special": 240.0,
     "can_be_mixed": true
   },
-  {
+  "MEDICHAM": {
     "name": "MEDICHAM",
     "index": 308,
     "via_player": 1.0,
@@ -7106,7 +7106,7 @@
     "modified_bst_special": 356.0,
     "can_be_mixed": false
   },
-  {
+  "ELECTRIKE": {
     "name": "ELECTRIKE",
     "index": 309,
     "via_player": 1.0,
@@ -7129,7 +7129,7 @@
     "modified_bst_special": 247.0,
     "can_be_mixed": false
   },
-  {
+  "MANECTRIC": {
     "name": "MANECTRIC",
     "index": 310,
     "via_player": 1.0,
@@ -7152,7 +7152,7 @@
     "modified_bst_special": 397.0,
     "can_be_mixed": false
   },
-  {
+  "PLUSLE": {
     "name": "PLUSLE",
     "index": 311,
     "via_player": 1.0,
@@ -7175,7 +7175,7 @@
     "modified_bst_special": 395.0,
     "can_be_mixed": false
   },
-  {
+  "MINUN": {
     "name": "MINUN",
     "index": 312,
     "via_player": 1.0,
@@ -7198,7 +7198,7 @@
     "modified_bst_special": 393.0,
     "can_be_mixed": false
   },
-  {
+  "VOLBEAT": {
     "name": "VOLBEAT",
     "index": 313,
     "via_player": 1.0,
@@ -7221,7 +7221,7 @@
     "modified_bst_special": 412.0,
     "can_be_mixed": false
   },
-  {
+  "ILLUMISE": {
     "name": "ILLUMISE",
     "index": 314,
     "via_player": 1.0,
@@ -7244,7 +7244,7 @@
     "modified_bst_special": 421.0,
     "can_be_mixed": false
   },
-  {
+  "ROSELIA": {
     "name": "ROSELIA",
     "index": 315,
     "via_player": 1.0,
@@ -7267,7 +7267,7 @@
     "modified_bst_special": 328.0,
     "can_be_mixed": false
   },
-  {
+  "GULPIN": {
     "name": "GULPIN",
     "index": 316,
     "via_player": 1.0,
@@ -7290,7 +7290,7 @@
     "modified_bst_special": 245.8,
     "can_be_mixed": true
   },
-  {
+  "SWALOT": {
     "name": "SWALOT",
     "index": 317,
     "via_player": 1.0,
@@ -7313,7 +7313,7 @@
     "modified_bst_special": 371.8,
     "can_be_mixed": true
   },
-  {
+  "CARVANHA": {
     "name": "CARVANHA",
     "index": 318,
     "via_player": 1.0,
@@ -7336,7 +7336,7 @@
     "modified_bst_special": 220.0,
     "can_be_mixed": false
   },
-  {
+  "SHARPEDO": {
     "name": "SHARPEDO",
     "index": 319,
     "via_player": 1.0,
@@ -7359,7 +7359,7 @@
     "modified_bst_special": 343.0,
     "can_be_mixed": false
   },
-  {
+  "WAILMER": {
     "name": "WAILMER",
     "index": 320,
     "via_player": 1.0,
@@ -7382,7 +7382,7 @@
     "modified_bst_special": 328.0,
     "can_be_mixed": true
   },
-  {
+  "WAILORD": {
     "name": "WAILORD",
     "index": 321,
     "via_player": 1.0,
@@ -7405,7 +7405,7 @@
     "modified_bst_special": 434.0,
     "can_be_mixed": true
   },
-  {
+  "NUMEL": {
     "name": "NUMEL",
     "index": 322,
     "via_player": 1.0,
@@ -7428,7 +7428,7 @@
     "modified_bst_special": 235.0,
     "can_be_mixed": true
   },
-  {
+  "CAMERUPT": {
     "name": "CAMERUPT",
     "index": 323,
     "via_player": 1.0,
@@ -7451,7 +7451,7 @@
     "modified_bst_special": 359.0,
     "can_be_mixed": true
   },
-  {
+  "TORKOAL": {
     "name": "TORKOAL",
     "index": 324,
     "via_player": 1.0,
@@ -7474,7 +7474,7 @@
     "modified_bst_special": 347.0,
     "can_be_mixed": true
   },
-  {
+  "SPOINK": {
     "name": "SPOINK",
     "index": 325,
     "via_player": 1.0,
@@ -7497,7 +7497,7 @@
     "modified_bst_special": 294.0,
     "can_be_mixed": false
   },
-  {
+  "GRUMPIG": {
     "name": "GRUMPIG",
     "index": 326,
     "via_player": 1.0,
@@ -7520,7 +7520,7 @@
     "modified_bst_special": 406.0,
     "can_be_mixed": false
   },
-  {
+  "SPINDA": {
     "name": "SPINDA",
     "index": 327,
     "via_player": 1.0,
@@ -7543,7 +7543,7 @@
     "modified_bst_special": 360.0,
     "can_be_mixed": true
   },
-  {
+  "TRAPINCH": {
     "name": "TRAPINCH",
     "index": 328,
     "via_player": 1.0,
@@ -7566,7 +7566,7 @@
     "modified_bst_special": 184.0,
     "can_be_mixed": false
   },
-  {
+  "VIBRAVA": {
     "name": "VIBRAVA",
     "index": 329,
     "via_player": 1.0,
@@ -7589,7 +7589,7 @@
     "modified_bst_special": 358.0,
     "can_be_mixed": true
   },
-  {
+  "FLYGON": {
     "name": "FLYGON",
     "index": 330,
     "via_player": 1.0,
@@ -7612,7 +7612,7 @@
     "modified_bst_special": 476.0,
     "can_be_mixed": true
   },
-  {
+  "CACNEA": {
     "name": "CACNEA",
     "index": 331,
     "via_player": 1.0,
@@ -7635,7 +7635,7 @@
     "modified_bst_special": 241.0,
     "can_be_mixed": true
   },
-  {
+  "CACTURNE": {
     "name": "CACTURNE",
     "index": 332,
     "via_player": 1.0,
@@ -7658,7 +7658,7 @@
     "modified_bst_special": 347.0,
     "can_be_mixed": true
   },
-  {
+  "SWABLU": {
     "name": "SWABLU",
     "index": 333,
     "via_player": 1.0,
@@ -7681,7 +7681,7 @@
     "modified_bst_special": 283.0,
     "can_be_mixed": true
   },
-  {
+  "ALTARIA": {
     "name": "ALTARIA",
     "index": 334,
     "via_player": 1.0,
@@ -7704,7 +7704,7 @@
     "modified_bst_special": 417.0,
     "can_be_mixed": true
   },
-  {
+  "ZANGOOSE": {
     "name": "ZANGOOSE",
     "index": 335,
     "via_player": 1.0,
@@ -7727,7 +7727,7 @@
     "modified_bst_special": 345.0,
     "can_be_mixed": false
   },
-  {
+  "SEVIPER": {
     "name": "SEVIPER",
     "index": 336,
     "via_player": 1.0,
@@ -7750,7 +7750,7 @@
     "modified_bst_special": 341.0,
     "can_be_mixed": false
   },
-  {
+  "LUNATONE": {
     "name": "LUNATONE",
     "index": 337,
     "via_player": 1.0,
@@ -7773,7 +7773,7 @@
     "modified_bst_special": 409.0,
     "can_be_mixed": false
   },
-  {
+  "SOLROCK": {
     "name": "SOLROCK",
     "index": 338,
     "via_player": 1.0,
@@ -7796,7 +7796,7 @@
     "modified_bst_special": 349.0,
     "can_be_mixed": false
   },
-  {
+  "BARBOACH": {
     "name": "BARBOACH",
     "index": 339,
     "via_player": 1.0,
@@ -7819,7 +7819,7 @@
     "modified_bst_special": 235.20000000000002,
     "can_be_mixed": true
   },
-  {
+  "WHISCASH": {
     "name": "WHISCASH",
     "index": 340,
     "via_player": 1.0,
@@ -7842,7 +7842,7 @@
     "modified_bst_special": 386.8,
     "can_be_mixed": false
   },
-  {
+  "CORPHISH": {
     "name": "CORPHISH",
     "index": 341,
     "via_player": 1.0,
@@ -7865,7 +7865,7 @@
     "modified_bst_special": 215.0,
     "can_be_mixed": false
   },
-  {
+  "CRAWDAUNT": {
     "name": "CRAWDAUNT",
     "index": 342,
     "via_player": 1.0,
@@ -7888,7 +7888,7 @@
     "modified_bst_special": 331.0,
     "can_be_mixed": false
   },
-  {
+  "BALTOY": {
     "name": "BALTOY",
     "index": 343,
     "via_player": 1.0,
@@ -7911,7 +7911,7 @@
     "modified_bst_special": 246.0,
     "can_be_mixed": true
   },
-  {
+  "CLAYDOL": {
     "name": "CLAYDOL",
     "index": 344,
     "via_player": 1.0,
@@ -7934,7 +7934,7 @@
     "modified_bst_special": 400.0,
     "can_be_mixed": true
   },
-  {
+  "LILEEP": {
     "name": "LILEEP",
     "index": 345,
     "via_player": 1.0,
@@ -7957,7 +7957,7 @@
     "modified_bst_special": 285.8,
     "can_be_mixed": false
   },
-  {
+  "CRADILY": {
     "name": "CRADILY",
     "index": 346,
     "via_player": 1.0,
@@ -7980,7 +7980,7 @@
     "modified_bst_special": 381.8,
     "can_be_mixed": true
   },
-  {
+  "ANORITH": {
     "name": "ANORITH",
     "index": 347,
     "via_player": 1.0,
@@ -8003,7 +8003,7 @@
     "modified_bst_special": 255.0,
     "can_be_mixed": false
   },
-  {
+  "ARMALDO": {
     "name": "ARMALDO",
     "index": 348,
     "via_player": 1.0,
@@ -8026,7 +8026,7 @@
     "modified_bst_special": 343.0,
     "can_be_mixed": false
   },
-  {
+  "FEEBAS": {
     "name": "FEEBAS",
     "index": 349,
     "via_player": 1.0,
@@ -8049,7 +8049,7 @@
     "modified_bst_special": 186.0,
     "can_be_mixed": false
   },
-  {
+  "MILOTIC": {
     "name": "MILOTIC",
     "index": 350,
     "via_player": 1.0,
@@ -8072,7 +8072,7 @@
     "modified_bst_special": 455.4,
     "can_be_mixed": false
   },
-  {
+  "CASTFORM": {
     "name": "CASTFORM",
     "index": 351,
     "via_player": 1.0,
@@ -8095,7 +8095,7 @@
     "modified_bst_special": 372.0,
     "can_be_mixed": false
   },
-  {
+  "KECLEON": {
     "name": "KECLEON",
     "index": 352,
     "via_player": 1.0,
@@ -8118,7 +8118,7 @@
     "modified_bst_special": 320.0,
     "can_be_mixed": false
   },
-  {
+  "SHUPPET": {
     "name": "SHUPPET",
     "index": 353,
     "via_player": 1.0,
@@ -8141,7 +8141,7 @@
     "modified_bst_special": 215.4,
     "can_be_mixed": true
   },
-  {
+  "BANETTE": {
     "name": "BANETTE",
     "index": 354,
     "via_player": 1.0,
@@ -8164,7 +8164,7 @@
     "modified_bst_special": 337.4,
     "can_be_mixed": false
   },
-  {
+  "DUSKULL": {
     "name": "DUSKULL",
     "index": 355,
     "via_player": 1.0,
@@ -8187,7 +8187,7 @@
     "modified_bst_special": 224.0,
     "can_be_mixed": false
   },
-  {
+  "DUSCLOPS": {
     "name": "DUSCLOPS",
     "index": 356,
     "via_player": 1.0,
@@ -8210,7 +8210,7 @@
     "modified_bst_special": 338.0,
     "can_be_mixed": true
   },
-  {
+  "TROPIUS": {
     "name": "TROPIUS",
     "index": 357,
     "via_player": 1.0,
@@ -8233,7 +8233,7 @@
     "modified_bst_special": 378.2,
     "can_be_mixed": true
   },
-  {
+  "CHIMECHO": {
     "name": "CHIMECHO",
     "index": 358,
     "via_player": 1.0,
@@ -8256,7 +8256,7 @@
     "modified_bst_special": 399.0,
     "can_be_mixed": false
   },
-  {
+  "ABSOL": {
     "name": "ABSOL",
     "index": 359,
     "via_player": 1.0,
@@ -8279,7 +8279,7 @@
     "modified_bst_special": 348.0,
     "can_be_mixed": false
   },
-  {
+  "WYNAUT": {
     "name": "WYNAUT",
     "index": 360,
     "via_player": 1.0,
@@ -8302,7 +8302,7 @@
     "modified_bst_special": 222.4,
     "can_be_mixed": true
   },
-  {
+  "SNORUNT": {
     "name": "SNORUNT",
     "index": 361,
     "via_player": 1.0,
@@ -8325,7 +8325,7 @@
     "modified_bst_special": 240.0,
     "can_be_mixed": true
   },
-  {
+  "GLALIE": {
     "name": "GLALIE",
     "index": 362,
     "via_player": 1.0,
@@ -8348,7 +8348,7 @@
     "modified_bst_special": 372.0,
     "can_be_mixed": false
   },
-  {
+  "SPHEAL": {
     "name": "SPHEAL",
     "index": 363,
     "via_player": 1.0,
@@ -8371,7 +8371,7 @@
     "modified_bst_special": 235.0,
     "can_be_mixed": false
   },
-  {
+  "SEALEO": {
     "name": "SEALEO",
     "index": 364,
     "via_player": 1.0,
@@ -8394,7 +8394,7 @@
     "modified_bst_special": 331.0,
     "can_be_mixed": false
   },
-  {
+  "WALREIN": {
     "name": "WALREIN",
     "index": 365,
     "via_player": 1.0,
@@ -8417,7 +8417,7 @@
     "modified_bst_special": 427.0,
     "can_be_mixed": true
   },
-  {
+  "CLAMPERL": {
     "name": "CLAMPERL",
     "index": 366,
     "via_player": 1.0,
@@ -8440,7 +8440,7 @@
     "modified_bst_special": 259.4,
     "can_be_mixed": true
   },
-  {
+  "HUNTAIL": {
     "name": "HUNTAIL",
     "index": 367,
     "via_player": 1.0,
@@ -8463,7 +8463,7 @@
     "modified_bst_special": 355.4,
     "can_be_mixed": true
   },
-  {
+  "GOREBYSS": {
     "name": "GOREBYSS",
     "index": 368,
     "via_player": 1.0,
@@ -8486,7 +8486,7 @@
     "modified_bst_special": 375.4,
     "can_be_mixed": false
   },
-  {
+  "RELICANTH": {
     "name": "RELICANTH",
     "index": 369,
     "via_player": 1.0,
@@ -8509,7 +8509,7 @@
     "modified_bst_special": 367.0,
     "can_be_mixed": false
   },
-  {
+  "LUVDISC": {
     "name": "LUVDISC",
     "index": 370,
     "via_player": 1.0,
@@ -8532,7 +8532,7 @@
     "modified_bst_special": 387.4,
     "can_be_mixed": false
   },
-  {
+  "BAGON": {
     "name": "BAGON",
     "index": 371,
     "via_player": 1.0,
@@ -8555,7 +8555,7 @@
     "modified_bst_special": 217.0,
     "can_be_mixed": false
   },
-  {
+  "SHELGON": {
     "name": "SHELGON",
     "index": 372,
     "via_player": 1.0,
@@ -8578,7 +8578,7 @@
     "modified_bst_special": 305.0,
     "can_be_mixed": false
   },
-  {
+  "SALAMENCE": {
     "name": "SALAMENCE",
     "index": 373,
     "via_player": 1.0,
@@ -8601,7 +8601,7 @@
     "modified_bst_special": 453.0,
     "can_be_mixed": false
   },
-  {
+  "BELDUM": {
     "name": "BELDUM",
     "index": 374,
     "via_player": 1.0,
@@ -8624,7 +8624,7 @@
     "modified_bst_special": 223.0,
     "can_be_mixed": false
   },
-  {
+  "METANG": {
     "name": "METANG",
     "index": 375,
     "via_player": 1.0,
@@ -8647,7 +8647,7 @@
     "modified_bst_special": 319.0,
     "can_be_mixed": false
   },
-  {
+  "METAGROSS": {
     "name": "METAGROSS",
     "index": 376,
     "via_player": 1.0,
@@ -8670,7 +8670,7 @@
     "modified_bst_special": 435.0,
     "can_be_mixed": false
   },
-  {
+  "REGIROCK": {
     "name": "REGIROCK",
     "index": 377,
     "via_player": 1.0,
@@ -8693,7 +8693,7 @@
     "modified_bst_special": 430.0,
     "can_be_mixed": false
   },
-  {
+  "REGICE": {
     "name": "REGICE",
     "index": 378,
     "via_player": 1.0,
@@ -8716,7 +8716,7 @@
     "modified_bst_special": 480.0,
     "can_be_mixed": false
   },
-  {
+  "REGISTEEL": {
     "name": "REGISTEEL",
     "index": 379,
     "via_player": 1.0,
@@ -8739,7 +8739,7 @@
     "modified_bst_special": 455.0,
     "can_be_mixed": true
   },
-  {
+  "LATIAS": {
     "name": "LATIAS",
     "index": 380,
     "via_player": 1.0,
@@ -8762,7 +8762,7 @@
     "modified_bst_special": 498.0,
     "can_be_mixed": false
   },
-  {
+  "LATIOS": {
     "name": "LATIOS",
     "index": 381,
     "via_player": 1.0,
@@ -8785,7 +8785,7 @@
     "modified_bst_special": 494.0,
     "can_be_mixed": false
   },
-  {
+  "KYOGRE": {
     "name": "KYOGRE",
     "index": 382,
     "via_player": 1.0,
@@ -8808,7 +8808,7 @@
     "modified_bst_special": 542.0,
     "can_be_mixed": false
   },
-  {
+  "GROUDON": {
     "name": "GROUDON",
     "index": 383,
     "via_player": 1.0,
@@ -8831,7 +8831,7 @@
     "modified_bst_special": 492.0,
     "can_be_mixed": false
   },
-  {
+  "RAYQUAZA": {
     "name": "RAYQUAZA",
     "index": 384,
     "via_player": 1.0,
@@ -8854,7 +8854,7 @@
     "modified_bst_special": 513.0,
     "can_be_mixed": true
   },
-  {
+  "JIRACHI": {
     "name": "JIRACHI",
     "index": 385,
     "via_player": 1.0,
@@ -8877,7 +8877,7 @@
     "modified_bst_special": 480.0,
     "can_be_mixed": true
   },
-  {
+  "DEOXYS": {
     "name": "DEOXYS",
     "index": 386,
     "via_player": 1.0,
@@ -8900,7 +8900,7 @@
     "modified_bst_special": 460.0,
     "can_be_mixed": true
   },
-  {
+  "TURTWIG": {
     "name": "TURTWIG",
     "index": 387,
     "via_player": 1.0,
@@ -8923,7 +8923,7 @@
     "modified_bst_special": 232.39999999999998,
     "can_be_mixed": false
   },
-  {
+  "GROTLE": {
     "name": "GROTLE",
     "index": 388,
     "via_player": 1.0,
@@ -8946,7 +8946,7 @@
     "modified_bst_special": 293.2,
     "can_be_mixed": false
   },
-  {
+  "TORTERRA": {
     "name": "TORTERRA",
     "index": 389,
     "via_player": 1.0,
@@ -8969,7 +8969,7 @@
     "modified_bst_special": 399.2,
     "can_be_mixed": false
   },
-  {
+  "CHIMCHAR": {
     "name": "CHIMCHAR",
     "index": 390,
     "via_player": 1.0,
@@ -8992,7 +8992,7 @@
     "modified_bst_special": 245.60000000000002,
     "can_be_mixed": true
   },
-  {
+  "MONFERNO": {
     "name": "MONFERNO",
     "index": 391,
     "via_player": 1.0,
@@ -9015,7 +9015,7 @@
     "modified_bst_special": 322.4,
     "can_be_mixed": true
   },
-  {
+  "INFERNAPE": {
     "name": "INFERNAPE",
     "index": 392,
     "via_player": 1.0,
@@ -9038,7 +9038,7 @@
     "modified_bst_special": 424.4,
     "can_be_mixed": true
   },
-  {
+  "PIPLUP": {
     "name": "PIPLUP",
     "index": 393,
     "via_player": 1.0,
@@ -9061,7 +9061,7 @@
     "modified_bst_special": 249.20000000000002,
     "can_be_mixed": true
   },
-  {
+  "PRINPLUP": {
     "name": "PRINPLUP",
     "index": 394,
     "via_player": 1.0,
@@ -9084,7 +9084,7 @@
     "modified_bst_special": 320.20000000000005,
     "can_be_mixed": true
   },
-  {
+  "EMPOLEON": {
     "name": "EMPOLEON",
     "index": 395,
     "via_player": 1.0,
@@ -9107,7 +9107,7 @@
     "modified_bst_special": 418.20000000000005,
     "can_be_mixed": true
   },
-  {
+  "STARLY": {
     "name": "STARLY",
     "index": 396,
     "via_player": 1.0,
@@ -9130,7 +9130,7 @@
     "modified_bst_special": 190.0,
     "can_be_mixed": false
   },
-  {
+  "STARAVIA": {
     "name": "STARAVIA",
     "index": 397,
     "via_player": 1.0,
@@ -9153,7 +9153,7 @@
     "modified_bst_special": 263.0,
     "can_be_mixed": false
   },
-  {
+  "STARAPTOR": {
     "name": "STARAPTOR",
     "index": 398,
     "via_player": 1.0,
@@ -9176,7 +9176,7 @@
     "modified_bst_special": 359.0,
     "can_be_mixed": false
   },
-  {
+  "BIDOOF": {
     "name": "BIDOOF",
     "index": 399,
     "via_player": 1.0,
@@ -9199,7 +9199,7 @@
     "modified_bst_special": 195.2,
     "can_be_mixed": false
   },
-  {
+  "BIBAREL": {
     "name": "BIBAREL",
     "index": 400,
     "via_player": 1.0,
@@ -9222,7 +9222,7 @@
     "modified_bst_special": 328.2,
     "can_be_mixed": false
   },
-  {
+  "KRICKETOT": {
     "name": "KRICKETOT",
     "index": 401,
     "via_player": 1.0,
@@ -9245,7 +9245,7 @@
     "modified_bst_special": 167.60000000000002,
     "can_be_mixed": true
   },
-  {
+  "KRICKETUNE": {
     "name": "KRICKETUNE",
     "index": 402,
     "via_player": 1.0,
@@ -9268,7 +9268,7 @@
     "modified_bst_special": 321.2,
     "can_be_mixed": false
   },
-  {
+  "SHINX": {
     "name": "SHINX",
     "index": 403,
     "via_player": 1.0,
@@ -9291,7 +9291,7 @@
     "modified_bst_special": 193.4,
     "can_be_mixed": false
   },
-  {
+  "LUXIO": {
     "name": "LUXIO",
     "index": 404,
     "via_player": 1.0,
@@ -9314,7 +9314,7 @@
     "modified_bst_special": 270.4,
     "can_be_mixed": false
   },
-  {
+  "LUXRAY": {
     "name": "LUXRAY",
     "index": 405,
     "via_player": 1.0,
@@ -9337,7 +9337,7 @@
     "modified_bst_special": 385.4,
     "can_be_mixed": false
   },
-  {
+  "BUDEW": {
     "name": "BUDEW",
     "index": 406,
     "via_player": 1.0,
@@ -9360,7 +9360,7 @@
     "modified_bst_special": 240.0,
     "can_be_mixed": false
   },
-  {
+  "ROSERADE": {
     "name": "ROSERADE",
     "index": 407,
     "via_player": 1.0,
@@ -9383,7 +9383,7 @@
     "modified_bst_special": 429.0,
     "can_be_mixed": false
   },
-  {
+  "CRANIDOS": {
     "name": "CRANIDOS",
     "index": 408,
     "via_player": 1.0,
@@ -9406,7 +9406,7 @@
     "modified_bst_special": 222.6,
     "can_be_mixed": false
   },
-  {
+  "RAMPARDOS": {
     "name": "RAMPARDOS",
     "index": 409,
     "via_player": 1.0,
@@ -9429,7 +9429,7 @@
     "modified_bst_special": 319.6,
     "can_be_mixed": false
   },
-  {
+  "SHIELDON": {
     "name": "SHIELDON",
     "index": 410,
     "via_player": 1.0,
@@ -9452,7 +9452,7 @@
     "modified_bst_special": 252.8,
     "can_be_mixed": false
   },
-  {
+  "BASTIODON": {
     "name": "BASTIODON",
     "index": 411,
     "via_player": 1.0,
@@ -9475,7 +9475,7 @@
     "modified_bst_special": 367.8,
     "can_be_mixed": false
   },
-  {
+  "BURMY": {
     "name": "BURMY",
     "index": 412,
     "via_player": 1.0,
@@ -9498,7 +9498,7 @@
     "modified_bst_special": 193.0,
     "can_be_mixed": false
   },
-  {
+  "WORMADAM": {
     "name": "WORMADAM",
     "index": 413,
     "via_player": 1.0,
@@ -9521,7 +9521,7 @@
     "modified_bst_special": 360.2,
     "can_be_mixed": false
   },
-  {
+  "MOTHIM": {
     "name": "MOTHIM",
     "index": 414,
     "via_player": 1.0,
@@ -9544,7 +9544,7 @@
     "modified_bst_special": 354.4,
     "can_be_mixed": true
   },
-  {
+  "COMBEE": {
     "name": "COMBEE",
     "index": 415,
     "via_player": 1.0,
@@ -9567,7 +9567,7 @@
     "modified_bst_special": 211.2,
     "can_be_mixed": true
   },
-  {
+  "VESPIQUEN": {
     "name": "VESPIQUEN",
     "index": 416,
     "via_player": 1.0,
@@ -9590,7 +9590,7 @@
     "modified_bst_special": 372.20000000000005,
     "can_be_mixed": true
   },
-  {
+  "PACHIRISU": {
     "name": "PACHIRISU",
     "index": 417,
     "via_player": 1.0,
@@ -9613,7 +9613,7 @@
     "modified_bst_special": 375.0,
     "can_be_mixed": true
   },
-  {
+  "BUIZEL": {
     "name": "BUIZEL",
     "index": 418,
     "via_player": 1.0,
@@ -9636,7 +9636,7 @@
     "modified_bst_special": 269.0,
     "can_be_mixed": true
   },
-  {
+  "FLOATZEL": {
     "name": "FLOATZEL",
     "index": 419,
     "via_player": 1.0,
@@ -9659,7 +9659,7 @@
     "modified_bst_special": 392.0,
     "can_be_mixed": false
   },
-  {
+  "CHERUBI": {
     "name": "CHERUBI",
     "index": 420,
     "via_player": 1.0,
@@ -9682,7 +9682,7 @@
     "modified_bst_special": 255.4,
     "can_be_mixed": false
   },
-  {
+  "CHERRIM": {
     "name": "CHERRIM",
     "index": 421,
     "via_player": 1.0,
@@ -9705,7 +9705,7 @@
     "modified_bst_special": 407.4,
     "can_be_mixed": false
   },
-  {
+  "SHELLOS": {
     "name": "SHELLOS",
     "index": 422,
     "via_player": 1.0,
@@ -9728,7 +9728,7 @@
     "modified_bst_special": 261.79999999999995,
     "can_be_mixed": true
   },
-  {
+  "GASTRODON": {
     "name": "GASTRODON",
     "index": 423,
     "via_player": 1.0,
@@ -9751,7 +9751,7 @@
     "modified_bst_special": 369.8,
     "can_be_mixed": true
   },
-  {
+  "AMBIPOM": {
     "name": "AMBIPOM",
     "index": 424,
     "via_player": 1.0,
@@ -9774,7 +9774,7 @@
     "modified_bst_special": 386.6,
     "can_be_mixed": false
   },
-  {
+  "DRIFLOON": {
     "name": "DRIFLOON",
     "index": 425,
     "via_player": 1.0,
@@ -9797,7 +9797,7 @@
     "modified_bst_special": 296.4,
     "can_be_mixed": true
   },
-  {
+  "DRIFBLIM": {
     "name": "DRIFBLIM",
     "index": 426,
     "via_player": 1.0,
@@ -9820,7 +9820,7 @@
     "modified_bst_special": 414.4,
     "can_be_mixed": true
   },
-  {
+  "BUNEARY": {
     "name": "BUNEARY",
     "index": 427,
     "via_player": 1.0,
@@ -9843,7 +9843,7 @@
     "modified_bst_special": 281.0,
     "can_be_mixed": false
   },
-  {
+  "LOPUNNY": {
     "name": "LOPUNNY",
     "index": 428,
     "via_player": 1.0,
@@ -9866,7 +9866,7 @@
     "modified_bst_special": 389.0,
     "can_be_mixed": false
   },
-  {
+  "MISMAGIUS": {
     "name": "MISMAGIUS",
     "index": 429,
     "via_player": 1.0,
@@ -9889,7 +9889,7 @@
     "modified_bst_special": 415.8,
     "can_be_mixed": false
   },
-  {
+  "HONCHKROW": {
     "name": "HONCHKROW",
     "index": 430,
     "via_player": 1.0,
@@ -9912,7 +9912,7 @@
     "modified_bst_special": 373.4,
     "can_be_mixed": true
   },
-  {
+  "GLAMEOW": {
     "name": "GLAMEOW",
     "index": 431,
     "via_player": 1.0,
@@ -9935,7 +9935,7 @@
     "modified_bst_special": 271.0,
     "can_be_mixed": false
   },
-  {
+  "PURUGLY": {
     "name": "PURUGLY",
     "index": 432,
     "via_player": 1.0,
@@ -9958,7 +9958,7 @@
     "modified_bst_special": 397.0,
     "can_be_mixed": false
   },
-  {
+  "CHINGLING": {
     "name": "CHINGLING",
     "index": 433,
     "via_player": 1.0,
@@ -9981,7 +9981,7 @@
     "modified_bst_special": 267.0,
     "can_be_mixed": false
   },
-  {
+  "STUNKY": {
     "name": "STUNKY",
     "index": 434,
     "via_player": 1.0,
@@ -10004,7 +10004,7 @@
     "modified_bst_special": 267.0,
     "can_be_mixed": false
   },
-  {
+  "SKUNTANK": {
     "name": "SKUNTANK",
     "index": 435,
     "via_player": 1.0,
@@ -10027,7 +10027,7 @@
     "modified_bst_special": 391.0,
     "can_be_mixed": false
   },
-  {
+  "BRONZOR": {
     "name": "BRONZOR",
     "index": 436,
     "via_player": 1.0,
@@ -10050,7 +10050,7 @@
     "modified_bst_special": 246.2,
     "can_be_mixed": true
   },
-  {
+  "BRONZONG": {
     "name": "BRONZONG",
     "index": 437,
     "via_player": 1.0,
@@ -10073,7 +10073,7 @@
     "modified_bst_special": 371.20000000000005,
     "can_be_mixed": true
   },
-  {
+  "BONSLY": {
     "name": "BONSLY",
     "index": 438,
     "via_player": 1.0,
@@ -10096,7 +10096,7 @@
     "modified_bst_special": 202.0,
     "can_be_mixed": false
   },
-  {
+  "MIME JR.": {
     "name": "MIME JR.",
     "index": 439,
     "via_player": 1.0,
@@ -10119,7 +10119,7 @@
     "modified_bst_special": 286.0,
     "can_be_mixed": false
   },
-  {
+  "HAPPINY": {
     "name": "HAPPINY",
     "index": 440,
     "via_player": 1.0,
@@ -10142,7 +10142,7 @@
     "modified_bst_special": 207.0,
     "can_be_mixed": false
   },
-  {
+  "CHATOT": {
     "name": "CHATOT",
     "index": 441,
     "via_player": 1.0,
@@ -10165,7 +10165,7 @@
     "modified_bst_special": 375.2,
     "can_be_mixed": false
   },
-  {
+  "SPIRITOMB": {
     "name": "SPIRITOMB",
     "index": 442,
     "via_player": 1.0,
@@ -10188,7 +10188,7 @@
     "modified_bst_special": 356.8,
     "can_be_mixed": true
   },
-  {
+  "GIBLE": {
     "name": "GIBLE",
     "index": 443,
     "via_player": 1.0,
@@ -10211,7 +10211,7 @@
     "modified_bst_special": 220.4,
     "can_be_mixed": false
   },
-  {
+  "GABITE": {
     "name": "GABITE",
     "index": 444,
     "via_player": 1.0,
@@ -10234,7 +10234,7 @@
     "modified_bst_special": 312.4,
     "can_be_mixed": false
   },
-  {
+  "GARCHOMP": {
     "name": "GARCHOMP",
     "index": 445,
     "via_player": 1.0,
@@ -10257,7 +10257,7 @@
     "modified_bst_special": 454.4,
     "can_be_mixed": false
   },
-  {
+  "MUNCHLAX": {
     "name": "MUNCHLAX",
     "index": 446,
     "via_player": 1.0,
@@ -10280,7 +10280,7 @@
     "modified_bst_special": 281.0,
     "can_be_mixed": false
   },
-  {
+  "RIOLU": {
     "name": "RIOLU",
     "index": 447,
     "via_player": 1.0,
@@ -10303,7 +10303,7 @@
     "modified_bst_special": 211.0,
     "can_be_mixed": false
   },
-  {
+  "LUCARIO": {
     "name": "LUCARIO",
     "index": 448,
     "via_player": 1.0,
@@ -10326,7 +10326,7 @@
     "modified_bst_special": 405.0,
     "can_be_mixed": true
   },
-  {
+  "HIPPOPOTAS": {
     "name": "HIPPOPOTAS",
     "index": 449,
     "via_player": 1.0,
@@ -10349,7 +10349,7 @@
     "modified_bst_special": 240.4,
     "can_be_mixed": false
   },
-  {
+  "HIPPOWDON": {
     "name": "HIPPOWDON",
     "index": 450,
     "via_player": 1.0,
@@ -10372,7 +10372,7 @@
     "modified_bst_special": 384.40000000000003,
     "can_be_mixed": false
   },
-  {
+  "SKORUPI": {
     "name": "SKORUPI",
     "index": 451,
     "via_player": 1.0,
@@ -10395,7 +10395,7 @@
     "modified_bst_special": 264.0,
     "can_be_mixed": false
   },
-  {
+  "DRAPION": {
     "name": "DRAPION",
     "index": 452,
     "via_player": 1.0,
@@ -10418,7 +10418,7 @@
     "modified_bst_special": 392.0,
     "can_be_mixed": false
   },
-  {
+  "CROAGUNK": {
     "name": "CROAGUNK",
     "index": 453,
     "via_player": 1.0,
@@ -10441,7 +10441,7 @@
     "modified_bst_special": 233.0,
     "can_be_mixed": true
   },
-  {
+  "TOXICROAK": {
     "name": "TOXICROAK",
     "index": 454,
     "via_player": 1.0,
@@ -10464,7 +10464,7 @@
     "modified_bst_special": 375.0,
     "can_be_mixed": false
   },
-  {
+  "CARNIVINE": {
     "name": "CARNIVINE",
     "index": 455,
     "via_player": 1.0,
@@ -10487,7 +10487,7 @@
     "modified_bst_special": 332.4,
     "can_be_mixed": true
   },
-  {
+  "FINNEON": {
     "name": "FINNEON",
     "index": 456,
     "via_player": 1.0,
@@ -10510,7 +10510,7 @@
     "modified_bst_special": 290.0,
     "can_be_mixed": false
   },
-  {
+  "LUMINEON": {
     "name": "LUMINEON",
     "index": 457,
     "via_player": 1.0,
@@ -10533,7 +10533,7 @@
     "modified_bst_special": 429.4,
     "can_be_mixed": false
   },
-  {
+  "MANTYKE": {
     "name": "MANTYKE",
     "index": 458,
     "via_player": 1.0,
@@ -10556,7 +10556,7 @@
     "modified_bst_special": 301.0,
     "can_be_mixed": false
   },
-  {
+  "SNOVER": {
     "name": "SNOVER",
     "index": 459,
     "via_player": 1.0,
@@ -10579,7 +10579,7 @@
     "modified_bst_special": 258.0,
     "can_be_mixed": true
   },
-  {
+  "ABOMASNOW": {
     "name": "ABOMASNOW",
     "index": 460,
     "via_player": 1.0,
@@ -10602,7 +10602,7 @@
     "modified_bst_special": 382.0,
     "can_be_mixed": true
   },
-  {
+  "WEAVILE": {
     "name": "WEAVILE",
     "index": 461,
     "via_player": 1.0,
@@ -10625,7 +10625,7 @@
     "modified_bst_special": 385.0,
     "can_be_mixed": false
   },
-  {
+  "MAGNEZONE": {
     "name": "MAGNEZONE",
     "index": 462,
     "via_player": 1.0,
@@ -10648,7 +10648,7 @@
     "modified_bst_special": 436.0,
     "can_be_mixed": false
   },
-  {
+  "LICKILICKY": {
     "name": "LICKILICKY",
     "index": 463,
     "via_player": 1.0,
@@ -10671,7 +10671,7 @@
     "modified_bst_special": 402.0,
     "can_be_mixed": true
   },
-  {
+  "RHYPERIOR": {
     "name": "RHYPERIOR",
     "index": 464,
     "via_player": 1.0,
@@ -10694,7 +10694,7 @@
     "modified_bst_special": 366.0,
     "can_be_mixed": false
   },
-  {
+  "TANGROWTH": {
     "name": "TANGROWTH",
     "index": 465,
     "via_player": 1.0,
@@ -10717,7 +10717,7 @@
     "modified_bst_special": 410.0,
     "can_be_mixed": true
   },
-  {
+  "ELECTIVIRE": {
     "name": "ELECTIVIRE",
     "index": 466,
     "via_player": 1.0,
@@ -10740,7 +10740,7 @@
     "modified_bst_special": 405.6,
     "can_be_mixed": false
   },
-  {
+  "MAGMORTAR": {
     "name": "MAGMORTAR",
     "index": 467,
     "via_player": 1.0,
@@ -10763,7 +10763,7 @@
     "modified_bst_special": 434.2,
     "can_be_mixed": false
   },
-  {
+  "TOGEKISS": {
     "name": "TOGEKISS",
     "index": 468,
     "via_player": 1.0,
@@ -10786,7 +10786,7 @@
     "modified_bst_special": 469.0,
     "can_be_mixed": false
   },
-  {
+  "YANMEGA": {
     "name": "YANMEGA",
     "index": 469,
     "via_player": 1.0,
@@ -10809,7 +10809,7 @@
     "modified_bst_special": 429.6,
     "can_be_mixed": false
   },
-  {
+  "LEAFEON": {
     "name": "LEAFEON",
     "index": 470,
     "via_player": 1.0,
@@ -10832,7 +10832,7 @@
     "modified_bst_special": 395.0,
     "can_be_mixed": false
   },
-  {
+  "GLACEON": {
     "name": "GLACEON",
     "index": 471,
     "via_player": 1.0,
@@ -10855,7 +10855,7 @@
     "modified_bst_special": 449.0,
     "can_be_mixed": false
   },
-  {
+  "GLISCOR": {
     "name": "GLISCOR",
     "index": 472,
     "via_player": 1.0,
@@ -10878,7 +10878,7 @@
     "modified_bst_special": 394.0,
     "can_be_mixed": false
   },
-  {
+  "MAMOSWINE": {
     "name": "MAMOSWINE",
     "index": 473,
     "via_player": 1.0,
@@ -10901,7 +10901,7 @@
     "modified_bst_special": 388.0,
     "can_be_mixed": false
   },
-  {
+  "PORYGON-Z": {
     "name": "PORYGON-Z",
     "index": 474,
     "via_player": 1.0,
@@ -10924,7 +10924,7 @@
     "modified_bst_special": 444.0,
     "can_be_mixed": false
   },
-  {
+  "GALLADE": {
     "name": "GALLADE",
     "index": 475,
     "via_player": 1.0,
@@ -10947,7 +10947,7 @@
     "modified_bst_special": 375.0,
     "can_be_mixed": false
   },
-  {
+  "PROBOPASS": {
     "name": "PROBOPASS",
     "index": 476,
     "via_player": 1.0,
@@ -10970,7 +10970,7 @@
     "modified_bst_special": 428.0,
     "can_be_mixed": false
   },
-  {
+  "DUSKNOIR": {
     "name": "DUSKNOIR",
     "index": 477,
     "via_player": 1.0,
@@ -10993,7 +10993,7 @@
     "modified_bst_special": 380.0,
     "can_be_mixed": false
   },
-  {
+  "FROSLASS": {
     "name": "FROSLASS",
     "index": 478,
     "via_player": 1.0,
@@ -11016,7 +11016,7 @@
     "modified_bst_special": 424.0,
     "can_be_mixed": false
   },
-  {
+  "ROTOM": {
     "name": "ROTOM",
     "index": 479,
     "via_player": 1.0,
@@ -11039,7 +11039,7 @@
     "modified_bst_special": 389.4,
     "can_be_mixed": false
   },
-  {
+  "UXIE": {
     "name": "UXIE",
     "index": 480,
     "via_player": 1.0,
@@ -11062,7 +11062,7 @@
     "modified_bst_special": 472.0,
     "can_be_mixed": true
   },
-  {
+  "MESPRIT": {
     "name": "MESPRIT",
     "index": 481,
     "via_player": 1.0,
@@ -11085,7 +11085,7 @@
     "modified_bst_special": 449.0,
     "can_be_mixed": true
   },
-  {
+  "AZELF": {
     "name": "AZELF",
     "index": 482,
     "via_player": 1.0,
@@ -11108,7 +11108,7 @@
     "modified_bst_special": 450.0,
     "can_be_mixed": true
   },
-  {
+  "DIALGA": {
     "name": "DIALGA",
     "index": 483,
     "via_player": 1.0,
@@ -11131,7 +11131,7 @@
     "modified_bst_special": 534.0,
     "can_be_mixed": false
   },
-  {
+  "PALKIA": {
     "name": "PALKIA",
     "index": 484,
     "via_player": 1.0,
@@ -11154,7 +11154,7 @@
     "modified_bst_special": 536.0,
     "can_be_mixed": false
   },
-  {
+  "HEATRAN": {
     "name": "HEATRAN",
     "index": 485,
     "via_player": 1.0,
@@ -11177,7 +11177,7 @@
     "modified_bst_special": 483.0,
     "can_be_mixed": false
   },
-  {
+  "REGIGIGAS": {
     "name": "REGIGIGAS",
     "index": 486,
     "via_player": 1.0,
@@ -11200,7 +11200,7 @@
     "modified_bst_special": 486.0,
     "can_be_mixed": false
   },
-  {
+  "GIRATINA": {
     "name": "GIRATINA",
     "index": 487,
     "via_player": 1.0,
@@ -11223,7 +11223,7 @@
     "modified_bst_special": 550.0,
     "can_be_mixed": true
   },
-  {
+  "CRESSELIA": {
     "name": "CRESSELIA",
     "index": 488,
     "via_player": 1.0,
@@ -11246,7 +11246,7 @@
     "modified_bst_special": 497.0,
     "can_be_mixed": true
   },
-  {
+  "PHIONE": {
     "name": "PHIONE",
     "index": 489,
     "via_player": 1.0,
@@ -11269,7 +11269,7 @@
     "modified_bst_special": 384.0,
     "can_be_mixed": true
   },
-  {
+  "MANAPHY": {
     "name": "MANAPHY",
     "index": 490,
     "via_player": 1.0,
@@ -11292,7 +11292,7 @@
     "modified_bst_special": 480.0,
     "can_be_mixed": true
   },
-  {
+  "DARKRAI": {
     "name": "DARKRAI",
     "index": 491,
     "via_player": 1.0,
@@ -11315,7 +11315,7 @@
     "modified_bst_special": 499.0,
     "can_be_mixed": false
   },
-  {
+  "SHAYMIN": {
     "name": "SHAYMIN",
     "index": 492,
     "via_player": 1.0,
@@ -11338,7 +11338,7 @@
     "modified_bst_special": 480.0,
     "can_be_mixed": true
   },
-  {
+  "ARCEUS": {
     "name": "ARCEUS",
     "index": 493,
     "via_player": 1.0,
@@ -11361,7 +11361,7 @@
     "modified_bst_special": 576.0,
     "can_be_mixed": true
   },
-  {
+  "VICTINI": {
     "name": "VICTINI",
     "index": 494,
     "via_player": 1.0,
@@ -11384,7 +11384,7 @@
     "modified_bst_special": 480.0,
     "can_be_mixed": true
   },
-  {
+  "SNIVY": {
     "name": "SNIVY",
     "index": 495,
     "via_player": 1.0,
@@ -11407,7 +11407,7 @@
     "modified_bst_special": 253.6,
     "can_be_mixed": true
   },
-  {
+  "SERVINE": {
     "name": "SERVINE",
     "index": 496,
     "via_player": 1.0,
@@ -11430,7 +11430,7 @@
     "modified_bst_special": 339.6,
     "can_be_mixed": true
   },
-  {
+  "SERPERIOR": {
     "name": "SERPERIOR",
     "index": 497,
     "via_player": 1.0,
@@ -11453,7 +11453,7 @@
     "modified_bst_special": 444.6,
     "can_be_mixed": true
   },
-  {
+  "TEPIG": {
     "name": "TEPIG",
     "index": 498,
     "via_player": 1.0,
@@ -11476,7 +11476,7 @@
     "modified_bst_special": 236.0,
     "can_be_mixed": false
   },
-  {
+  "PIGNITE": {
     "name": "PIGNITE",
     "index": 499,
     "via_player": 1.0,
@@ -11499,7 +11499,7 @@
     "modified_bst_special": 314.0,
     "can_be_mixed": false
   },
-  {
+  "EMBOAR": {
     "name": "EMBOAR",
     "index": 500,
     "via_player": 1.0,
@@ -11522,7 +11522,7 @@
     "modified_bst_special": 391.0,
     "can_be_mixed": false
   },
-  {
+  "OSHAWOTT": {
     "name": "OSHAWOTT",
     "index": 501,
     "via_player": 1.0,
@@ -11545,7 +11545,7 @@
     "modified_bst_special": 244.0,
     "can_be_mixed": true
   },
-  {
+  "DEWOTT": {
     "name": "DEWOTT",
     "index": 502,
     "via_player": 1.0,
@@ -11568,7 +11568,7 @@
     "modified_bst_special": 326.0,
     "can_be_mixed": true
   },
-  {
+  "SAMUROTT": {
     "name": "SAMUROTT",
     "index": 503,
     "via_player": 1.0,
@@ -11591,7 +11591,7 @@
     "modified_bst_special": 417.0,
     "can_be_mixed": true
   },
-  {
+  "PATRAT": {
     "name": "PATRAT",
     "index": 504,
     "via_player": 1.0,
@@ -11614,7 +11614,7 @@
     "modified_bst_special": 200.6,
     "can_be_mixed": false
   },
-  {
+  "WATCHOG": {
     "name": "WATCHOG",
     "index": 505,
     "via_player": 1.0,
@@ -11637,7 +11637,7 @@
     "modified_bst_special": 334.8,
     "can_be_mixed": false
   },
-  {
+  "LILLIPUP": {
     "name": "LILLIPUP",
     "index": 506,
     "via_player": 1.0,
@@ -11660,7 +11660,7 @@
     "modified_bst_special": 208.0,
     "can_be_mixed": false
   },
-  {
+  "HERDIER": {
     "name": "HERDIER",
     "index": 507,
     "via_player": 1.0,
@@ -11683,7 +11683,7 @@
     "modified_bst_special": 276.0,
     "can_be_mixed": false
   },
-  {
+  "STOUTLAND": {
     "name": "STOUTLAND",
     "index": 508,
     "via_player": 1.0,
@@ -11706,7 +11706,7 @@
     "modified_bst_special": 380.0,
     "can_be_mixed": false
   },
-  {
+  "PURRLOIN": {
     "name": "PURRLOIN",
     "index": 509,
     "via_player": 1.0,
@@ -11729,7 +11729,7 @@
     "modified_bst_special": 229.4,
     "can_be_mixed": true
   },
-  {
+  "LIEPARD": {
     "name": "LIEPARD",
     "index": 510,
     "via_player": 1.0,
@@ -11752,7 +11752,7 @@
     "modified_bst_special": 361.2,
     "can_be_mixed": true
   },
-  {
+  "PANSAGE": {
     "name": "PANSAGE",
     "index": 511,
     "via_player": 1.0,
@@ -11775,7 +11775,7 @@
     "modified_bst_special": 256.6,
     "can_be_mixed": true
   },
-  {
+  "SIMISAGE": {
     "name": "SIMISAGE",
     "index": 512,
     "via_player": 1.0,
@@ -11798,7 +11798,7 @@
     "modified_bst_special": 396.0,
     "can_be_mixed": true
   },
-  {
+  "PANSEAR": {
     "name": "PANSEAR",
     "index": 513,
     "via_player": 1.0,
@@ -11821,7 +11821,7 @@
     "modified_bst_special": 256.6,
     "can_be_mixed": true
   },
-  {
+  "SIMISEAR": {
     "name": "SIMISEAR",
     "index": 514,
     "via_player": 1.0,
@@ -11844,7 +11844,7 @@
     "modified_bst_special": 396.0,
     "can_be_mixed": true
   },
-  {
+  "PANPOUR": {
     "name": "PANPOUR",
     "index": 515,
     "via_player": 1.0,
@@ -11867,7 +11867,7 @@
     "modified_bst_special": 256.6,
     "can_be_mixed": true
   },
-  {
+  "SIMIPOUR": {
     "name": "SIMIPOUR",
     "index": 516,
     "via_player": 1.0,
@@ -11890,7 +11890,7 @@
     "modified_bst_special": 396.0,
     "can_be_mixed": true
   },
-  {
+  "MUNNA": {
     "name": "MUNNA",
     "index": 517,
     "via_player": 1.0,
@@ -11913,7 +11913,7 @@
     "modified_bst_special": 251.8,
     "can_be_mixed": false
   },
-  {
+  "MUSHARNA": {
     "name": "MUSHARNA",
     "index": 518,
     "via_player": 1.0,
@@ -11936,7 +11936,7 @@
     "modified_bst_special": 401.8,
     "can_be_mixed": false
   },
-  {
+  "PIDOVE": {
     "name": "PIDOVE",
     "index": 519,
     "via_player": 1.0,
@@ -11959,7 +11959,7 @@
     "modified_bst_special": 220.6,
     "can_be_mixed": false
   },
-  {
+  "TRANQUILL": {
     "name": "TRANQUILL",
     "index": 520,
     "via_player": 1.0,
@@ -11982,7 +11982,7 @@
     "modified_bst_special": 306.79999999999995,
     "can_be_mixed": false
   },
-  {
+  "UNFEZANT": {
     "name": "UNFEZANT",
     "index": 521,
     "via_player": 1.0,
@@ -12005,7 +12005,7 @@
     "modified_bst_special": 412.0,
     "can_be_mixed": false
   },
-  {
+  "BLITZLE": {
     "name": "BLITZLE",
     "index": 522,
     "via_player": 1.0,
@@ -12028,7 +12028,7 @@
     "modified_bst_special": 237.39999999999998,
     "can_be_mixed": false
   },
-  {
+  "ZEBSTRIKA": {
     "name": "ZEBSTRIKA",
     "index": 523,
     "via_player": 1.0,
@@ -12051,7 +12051,7 @@
     "modified_bst_special": 395.0,
     "can_be_mixed": false
   },
-  {
+  "ROGGENROLA": {
     "name": "ROGGENROLA",
     "index": 524,
     "via_player": 1.0,
@@ -12074,7 +12074,7 @@
     "modified_bst_special": 186.0,
     "can_be_mixed": false
   },
-  {
+  "BOLDORE": {
     "name": "BOLDORE",
     "index": 525,
     "via_player": 1.0,
@@ -12097,7 +12097,7 @@
     "modified_bst_special": 260.0,
     "can_be_mixed": false
   },
-  {
+  "GIGALITH": {
     "name": "GIGALITH",
     "index": 526,
     "via_player": 1.0,
@@ -12120,7 +12120,7 @@
     "modified_bst_special": 343.0,
     "can_be_mixed": false
   },
-  {
+  "WOOBAT": {
     "name": "WOOBAT",
     "index": 527,
     "via_player": 1.0,
@@ -12143,7 +12143,7 @@
     "modified_bst_special": 285.2,
     "can_be_mixed": false
   },
-  {
+  "SWOOBAT": {
     "name": "SWOOBAT",
     "index": 528,
     "via_player": 1.0,
@@ -12166,7 +12166,7 @@
     "modified_bst_special": 403.2,
     "can_be_mixed": false
   },
-  {
+  "DRILBUR": {
     "name": "DRILBUR",
     "index": 529,
     "via_player": 1.0,
@@ -12189,7 +12189,7 @@
     "modified_bst_special": 239.6,
     "can_be_mixed": false
   },
-  {
+  "EXCADRILL": {
     "name": "EXCADRILL",
     "index": 530,
     "via_player": 1.0,
@@ -12212,7 +12212,7 @@
     "modified_bst_special": 365.6,
     "can_be_mixed": false
   },
-  {
+  "AUDINO": {
     "name": "AUDINO",
     "index": 531,
     "via_player": 1.0,
@@ -12235,7 +12235,7 @@
     "modified_bst_special": 360.6,
     "can_be_mixed": true
   },
-  {
+  "TIMBURR": {
     "name": "TIMBURR",
     "index": 532,
     "via_player": 1.0,
@@ -12258,7 +12258,7 @@
     "modified_bst_special": 214.0,
     "can_be_mixed": false
   },
-  {
+  "GURDURR": {
     "name": "GURDURR",
     "index": 533,
     "via_player": 1.0,
@@ -12281,7 +12281,7 @@
     "modified_bst_special": 281.0,
     "can_be_mixed": false
   },
-  {
+  "CONKELDURR": {
     "name": "CONKELDURR",
     "index": 534,
     "via_player": 1.0,
@@ -12304,7 +12304,7 @@
     "modified_bst_special": 342.0,
     "can_be_mixed": false
   },
-  {
+  "TYMPOLE": {
     "name": "TYMPOLE",
     "index": 535,
     "via_player": 1.0,
@@ -12327,7 +12327,7 @@
     "modified_bst_special": 240.8,
     "can_be_mixed": true
   },
-  {
+  "PALPITOAD": {
     "name": "PALPITOAD",
     "index": 536,
     "via_player": 1.0,
@@ -12350,7 +12350,7 @@
     "modified_bst_special": 310.8,
     "can_be_mixed": true
   },
-  {
+  "SEISMITOAD": {
     "name": "SEISMITOAD",
     "index": 537,
     "via_player": 1.0,
@@ -12373,7 +12373,7 @@
     "modified_bst_special": 398.8,
     "can_be_mixed": true
   },
-  {
+  "THROH": {
     "name": "THROH",
     "index": 538,
     "via_player": 1.0,
@@ -12396,7 +12396,7 @@
     "modified_bst_special": 340.0,
     "can_be_mixed": false
   },
-  {
+  "SAWK": {
     "name": "SAWK",
     "index": 539,
     "via_player": 1.0,
@@ -12419,7 +12419,7 @@
     "modified_bst_special": 327.0,
     "can_be_mixed": false
   },
-  {
+  "SEWADDLE": {
     "name": "SEWADDLE",
     "index": 540,
     "via_player": 1.0,
@@ -12442,7 +12442,7 @@
     "modified_bst_special": 239.4,
     "can_be_mixed": false
   },
-  {
+  "SWADLOON": {
     "name": "SWADLOON",
     "index": 541,
     "via_player": 1.0,
@@ -12465,7 +12465,7 @@
     "modified_bst_special": 306.4,
     "can_be_mixed": false
   },
-  {
+  "LEAVANNY": {
     "name": "LEAVANNY",
     "index": 542,
     "via_player": 1.0,
@@ -12488,7 +12488,7 @@
     "modified_bst_special": 383.4,
     "can_be_mixed": false
   },
-  {
+  "VENIPEDE": {
     "name": "VENIPEDE",
     "index": 543,
     "via_player": 1.0,
@@ -12511,7 +12511,7 @@
     "modified_bst_special": 206.8,
     "can_be_mixed": false
   },
-  {
+  "WHIRLIPEDE": {
     "name": "WHIRLIPEDE",
     "index": 544,
     "via_player": 1.0,
@@ -12534,7 +12534,7 @@
     "modified_bst_special": 278.8,
     "can_be_mixed": false
   },
-  {
+  "SCOLIPEDE": {
     "name": "SCOLIPEDE",
     "index": 545,
     "via_player": 1.0,
@@ -12557,7 +12557,7 @@
     "modified_bst_special": 375.8,
     "can_be_mixed": false
   },
-  {
+  "COTTONEE": {
     "name": "COTTONEE",
     "index": 546,
     "via_player": 1.0,
@@ -12580,7 +12580,7 @@
     "modified_bst_special": 244.2,
     "can_be_mixed": false
   },
-  {
+  "WHIMSICOTT": {
     "name": "WHIMSICOTT",
     "index": 547,
     "via_player": 1.0,
@@ -12603,7 +12603,7 @@
     "modified_bst_special": 404.2,
     "can_be_mixed": true
   },
-  {
+  "PETILIL": {
     "name": "PETILIL",
     "index": 548,
     "via_player": 1.0,
@@ -12626,7 +12626,7 @@
     "modified_bst_special": 231.0,
     "can_be_mixed": false
   },
-  {
+  "LILLIGANT": {
     "name": "LILLIGANT",
     "index": 549,
     "via_player": 1.0,
@@ -12649,7 +12649,7 @@
     "modified_bst_special": 419.0,
     "can_be_mixed": false
   },
-  {
+  "BASCULIN": {
     "name": "BASCULIN",
     "index": 550,
     "via_player": 1.0,
@@ -12672,7 +12672,7 @@
     "modified_bst_special": 393.6,
     "can_be_mixed": true
   },
-  {
+  "SANDILE": {
     "name": "SANDILE",
     "index": 551,
     "via_player": 1.0,
@@ -12695,7 +12695,7 @@
     "modified_bst_special": 219.0,
     "can_be_mixed": false
   },
-  {
+  "KROKOROK": {
     "name": "KROKOROK",
     "index": 552,
     "via_player": 1.0,
@@ -12718,7 +12718,7 @@
     "modified_bst_special": 265.8,
     "can_be_mixed": false
   },
-  {
+  "KROOKODILE": {
     "name": "KROOKODILE",
     "index": 553,
     "via_player": 1.0,
@@ -12741,7 +12741,7 @@
     "modified_bst_special": 390.4,
     "can_be_mixed": false
   },
-  {
+  "DARUMAKA": {
     "name": "DARUMAKA",
     "index": 554,
     "via_player": 1.0,
@@ -12764,7 +12764,7 @@
     "modified_bst_special": 217.0,
     "can_be_mixed": false
   },
-  {
+  "DARMANITAN": {
     "name": "DARMANITAN",
     "index": 555,
     "via_player": 1.0,
@@ -12787,7 +12787,7 @@
     "modified_bst_special": 337.0,
     "can_be_mixed": false
   },
-  {
+  "MARACTUS": {
     "name": "MARACTUS",
     "index": 556,
     "via_player": 1.0,
@@ -12810,7 +12810,7 @@
     "modified_bst_special": 355.4,
     "can_be_mixed": false
   },
-  {
+  "DWEBBLE": {
     "name": "DWEBBLE",
     "index": 557,
     "via_player": 1.0,
@@ -12833,7 +12833,7 @@
     "modified_bst_special": 247.0,
     "can_be_mixed": false
   },
-  {
+  "CRUSTLE": {
     "name": "CRUSTLE",
     "index": 558,
     "via_player": 1.0,
@@ -12856,7 +12856,7 @@
     "modified_bst_special": 349.0,
     "can_be_mixed": false
   },
-  {
+  "SCRAGGY": {
     "name": "SCRAGGY",
     "index": 559,
     "via_player": 1.0,
@@ -12879,7 +12879,7 @@
     "modified_bst_special": 254.6,
     "can_be_mixed": false
   },
-  {
+  "SCRAFTY": {
     "name": "SCRAFTY",
     "index": 560,
     "via_player": 1.0,
@@ -12902,7 +12902,7 @@
     "modified_bst_special": 363.6,
     "can_be_mixed": false
   },
-  {
+  "SIGILYPH": {
     "name": "SIGILYPH",
     "index": 561,
     "via_player": 1.0,
@@ -12925,7 +12925,7 @@
     "modified_bst_special": 419.4,
     "can_be_mixed": false
   },
-  {
+  "YAMASK": {
     "name": "YAMASK",
     "index": 562,
     "via_player": 1.0,
@@ -12948,7 +12948,7 @@
     "modified_bst_special": 249.0,
     "can_be_mixed": false
   },
-  {
+  "COFAGRIGUS": {
     "name": "COFAGRIGUS",
     "index": 563,
     "via_player": 1.0,
@@ -12971,7 +12971,7 @@
     "modified_bst_special": 399.0,
     "can_be_mixed": false
   },
-  {
+  "TIRTOUGA": {
     "name": "TIRTOUGA",
     "index": 564,
     "via_player": 1.0,
@@ -12994,7 +12994,7 @@
     "modified_bst_special": 251.8,
     "can_be_mixed": false
   },
-  {
+  "CARRACOSTA": {
     "name": "CARRACOSTA",
     "index": 565,
     "via_player": 1.0,
@@ -13017,7 +13017,7 @@
     "modified_bst_special": 353.8,
     "can_be_mixed": false
   },
-  {
+  "ARCHEN": {
     "name": "ARCHEN",
     "index": 566,
     "via_player": 1.0,
@@ -13040,7 +13040,7 @@
     "modified_bst_special": 285.0,
     "can_be_mixed": false
   },
-  {
+  "ARCHEOPS": {
     "name": "ARCHEOPS",
     "index": 567,
     "via_player": 1.0,
@@ -13063,7 +13063,7 @@
     "modified_bst_special": 423.0,
     "can_be_mixed": false
   },
-  {
+  "TRUBBISH": {
     "name": "TRUBBISH",
     "index": 568,
     "via_player": 1.0,
@@ -13086,7 +13086,7 @@
     "modified_bst_special": 267.2,
     "can_be_mixed": false
   },
-  {
+  "GARBODOR": {
     "name": "GARBODOR",
     "index": 569,
     "via_player": 1.0,
@@ -13109,7 +13109,7 @@
     "modified_bst_special": 381.20000000000005,
     "can_be_mixed": false
   },
-  {
+  "ZORUA": {
     "name": "ZORUA",
     "index": 570,
     "via_player": 1.0,
@@ -13132,7 +13132,7 @@
     "modified_bst_special": 262.0,
     "can_be_mixed": true
   },
-  {
+  "ZOROARK": {
     "name": "ZOROARK",
     "index": 571,
     "via_player": 1.0,
@@ -13155,7 +13155,7 @@
     "modified_bst_special": 402.0,
     "can_be_mixed": true
   },
-  {
+  "MINCCINO": {
     "name": "MINCCINO",
     "index": 572,
     "via_player": 1.0,
@@ -13178,7 +13178,7 @@
     "modified_bst_special": 249.0,
     "can_be_mixed": false
   },
-  {
+  "CINCCINO": {
     "name": "CINCCINO",
     "index": 573,
     "via_player": 1.0,
@@ -13201,7 +13201,7 @@
     "modified_bst_special": 379.0,
     "can_be_mixed": false
   },
-  {
+  "GOTHITA": {
     "name": "GOTHITA",
     "index": 574,
     "via_player": 1.0,
@@ -13224,7 +13224,7 @@
     "modified_bst_special": 246.0,
     "can_be_mixed": false
   },
-  {
+  "GOTHORITA": {
     "name": "GOTHORITA",
     "index": 575,
     "via_player": 1.0,
@@ -13247,7 +13247,7 @@
     "modified_bst_special": 325.0,
     "can_be_mixed": false
   },
-  {
+  "GOTHITELLE": {
     "name": "GOTHITELLE",
     "index": 576,
     "via_player": 1.0,
@@ -13270,7 +13270,7 @@
     "modified_bst_special": 407.0,
     "can_be_mixed": false
   },
-  {
+  "SOLOSIS": {
     "name": "SOLOSIS",
     "index": 577,
     "via_player": 1.0,
@@ -13293,7 +13293,7 @@
     "modified_bst_special": 246.0,
     "can_be_mixed": false
   },
-  {
+  "DUOSION": {
     "name": "DUOSION",
     "index": 578,
     "via_player": 1.0,
@@ -13316,7 +13316,7 @@
     "modified_bst_special": 314.0,
     "can_be_mixed": false
   },
-  {
+  "REUNICLUS": {
     "name": "REUNICLUS",
     "index": 579,
     "via_player": 1.0,
@@ -13339,7 +13339,7 @@
     "modified_bst_special": 399.0,
     "can_be_mixed": false
   },
-  {
+  "DUCKLETT": {
     "name": "DUCKLETT",
     "index": 580,
     "via_player": 1.0,
@@ -13362,7 +13362,7 @@
     "modified_bst_special": 252.0,
     "can_be_mixed": true
   },
-  {
+  "SWANNA": {
     "name": "SWANNA",
     "index": 581,
     "via_player": 1.0,
@@ -13385,7 +13385,7 @@
     "modified_bst_special": 427.0,
     "can_be_mixed": false
   },
-  {
+  "VANILLITE": {
     "name": "VANILLITE",
     "index": 582,
     "via_player": 1.0,
@@ -13408,7 +13408,7 @@
     "modified_bst_special": 241.8,
     "can_be_mixed": false
   },
-  {
+  "VANILLISH": {
     "name": "VANILLISH",
     "index": 583,
     "via_player": 1.0,
@@ -13431,7 +13431,7 @@
     "modified_bst_special": 313.8,
     "can_be_mixed": true
   },
-  {
+  "VANILLUXE": {
     "name": "VANILLUXE",
     "index": 584,
     "via_player": 1.0,
@@ -13454,7 +13454,7 @@
     "modified_bst_special": 419.8,
     "can_be_mixed": true
   },
-  {
+  "DEERLING": {
     "name": "DEERLING",
     "index": 585,
     "via_player": 1.0,
@@ -13477,7 +13477,7 @@
     "modified_bst_special": 270.0,
     "can_be_mixed": false
   },
-  {
+  "SAWSBUCK": {
     "name": "SAWSBUCK",
     "index": 586,
     "via_player": 1.0,
@@ -13500,7 +13500,7 @@
     "modified_bst_special": 371.0,
     "can_be_mixed": false
   },
-  {
+  "EMOLGA": {
     "name": "EMOLGA",
     "index": 587,
     "via_player": 1.0,
@@ -13523,7 +13523,7 @@
     "modified_bst_special": 372.0,
     "can_be_mixed": true
   },
-  {
+  "KARRABLAST": {
     "name": "KARRABLAST",
     "index": 588,
     "via_player": 1.0,
@@ -13546,7 +13546,7 @@
     "modified_bst_special": 234.0,
     "can_be_mixed": false
   },
-  {
+  "ESCAVALIER": {
     "name": "ESCAVALIER",
     "index": 589,
     "via_player": 1.0,
@@ -13569,7 +13569,7 @@
     "modified_bst_special": 322.0,
     "can_be_mixed": false
   },
-  {
+  "FOONGUS": {
     "name": "FOONGUS",
     "index": 590,
     "via_player": 1.0,
@@ -13592,7 +13592,7 @@
     "modified_bst_special": 222.0,
     "can_be_mixed": true
   },
-  {
+  "AMOONGUSS": {
     "name": "AMOONGUSS",
     "index": 591,
     "via_player": 1.0,
@@ -13615,7 +13615,7 @@
     "modified_bst_special": 355.0,
     "can_be_mixed": true
   },
-  {
+  "FRILLISH": {
     "name": "FRILLISH",
     "index": 592,
     "via_player": 1.0,
@@ -13638,7 +13638,7 @@
     "modified_bst_special": 276.0,
     "can_be_mixed": false
   },
-  {
+  "JELLICENT": {
     "name": "JELLICENT",
     "index": 593,
     "via_player": 1.0,
@@ -13661,7 +13661,7 @@
     "modified_bst_special": 397.0,
     "can_be_mixed": false
   },
-  {
+  "ALOMOMOLA": {
     "name": "ALOMOMOLA",
     "index": 594,
     "via_player": 1.0,
@@ -13684,7 +13684,7 @@
     "modified_bst_special": 383.0,
     "can_be_mixed": false
   },
-  {
+  "JOLTIK": {
     "name": "JOLTIK",
     "index": 595,
     "via_player": 1.0,
@@ -13707,7 +13707,7 @@
     "modified_bst_special": 265.0,
     "can_be_mixed": true
   },
-  {
+  "GALVANTULA": {
     "name": "GALVANTULA",
     "index": 596,
     "via_player": 1.0,
@@ -13730,7 +13730,7 @@
     "modified_bst_special": 398.6,
     "can_be_mixed": true
   },
-  {
+  "FERROSEED": {
     "name": "FERROSEED",
     "index": 597,
     "via_player": 1.0,
@@ -13753,7 +13753,7 @@
     "modified_bst_special": 221.60000000000002,
     "can_be_mixed": false
   },
-  {
+  "FERROTHORN": {
     "name": "FERROTHORN",
     "index": 598,
     "via_player": 1.0,
@@ -13776,7 +13776,7 @@
     "modified_bst_special": 349.6,
     "can_be_mixed": false
   },
-  {
+  "KLINK": {
     "name": "KLINK",
     "index": 599,
     "via_player": 1.0,
@@ -13799,7 +13799,7 @@
     "modified_bst_special": 225.0,
     "can_be_mixed": false
   },
-  {
+  "KLANG": {
     "name": "KLANG",
     "index": 600,
     "via_player": 1.0,
@@ -13822,7 +13822,7 @@
     "modified_bst_special": 334.0,
     "can_be_mixed": true
   },
-  {
+  "KLINKLANG": {
     "name": "KLINKLANG",
     "index": 601,
     "via_player": 1.0,
@@ -13845,7 +13845,7 @@
     "modified_bst_special": 398.0,
     "can_be_mixed": false
   },
-  {
+  "TYNAMO": {
     "name": "TYNAMO",
     "index": 602,
     "via_player": 1.0,
@@ -13868,7 +13868,7 @@
     "modified_bst_special": 216.0,
     "can_be_mixed": false
   },
-  {
+  "EELEKTRIK": {
     "name": "EELEKTRIK",
     "index": 603,
     "via_player": 1.0,
@@ -13891,7 +13891,7 @@
     "modified_bst_special": 300.0,
     "can_be_mixed": true
   },
-  {
+  "EELEKTROSS": {
     "name": "EELEKTROSS",
     "index": 604,
     "via_player": 1.0,
@@ -13914,7 +13914,7 @@
     "modified_bst_special": 378.0,
     "can_be_mixed": true
   },
-  {
+  "ELGYEM": {
     "name": "ELGYEM",
     "index": 605,
     "via_player": 1.0,
@@ -13937,7 +13937,7 @@
     "modified_bst_special": 264.0,
     "can_be_mixed": false
   },
-  {
+  "BEHEEYEM": {
     "name": "BEHEEYEM",
     "index": 606,
     "via_player": 1.0,
@@ -13960,7 +13960,7 @@
     "modified_bst_special": 384.0,
     "can_be_mixed": false
   },
-  {
+  "LITWICK": {
     "name": "LITWICK",
     "index": 607,
     "via_player": 1.0,
@@ -13983,7 +13983,7 @@
     "modified_bst_special": 227.0,
     "can_be_mixed": false
   },
-  {
+  "LAMPENT": {
     "name": "LAMPENT",
     "index": 608,
     "via_player": 1.0,
@@ -14006,7 +14006,7 @@
     "modified_bst_special": 317.0,
     "can_be_mixed": false
   },
-  {
+  "CHANDELURE": {
     "name": "CHANDELURE",
     "index": 609,
     "via_player": 1.0,
@@ -14029,7 +14029,7 @@
     "modified_bst_special": 445.0,
     "can_be_mixed": false
   },
-  {
+  "AXEW": {
     "name": "AXEW",
     "index": 610,
     "via_player": 1.0,
@@ -14052,7 +14052,7 @@
     "modified_bst_special": 224.39999999999998,
     "can_be_mixed": false
   },
-  {
+  "FRAXURE": {
     "name": "FRAXURE",
     "index": 611,
     "via_player": 1.0,
@@ -14075,7 +14075,7 @@
     "modified_bst_special": 282.4,
     "can_be_mixed": false
   },
-  {
+  "HAXORUS": {
     "name": "HAXORUS",
     "index": 612,
     "via_player": 1.0,
@@ -14098,7 +14098,7 @@
     "modified_bst_special": 380.4,
     "can_be_mixed": false
   },
-  {
+  "CUBCHOO": {
     "name": "CUBCHOO",
     "index": 613,
     "via_player": 1.0,
@@ -14121,7 +14121,7 @@
     "modified_bst_special": 227.0,
     "can_be_mixed": true
   },
-  {
+  "BEARTIC": {
     "name": "BEARTIC",
     "index": 614,
     "via_player": 1.0,
@@ -14144,7 +14144,7 @@
     "modified_bst_special": 369.0,
     "can_be_mixed": false
   },
-  {
+  "CRYOGONAL": {
     "name": "CRYOGONAL",
     "index": 615,
     "via_player": 1.0,
@@ -14167,7 +14167,7 @@
     "modified_bst_special": 449.0,
     "can_be_mixed": false
   },
-  {
+  "SHELMET": {
     "name": "SHELMET",
     "index": 616,
     "via_player": 1.0,
@@ -14190,7 +14190,7 @@
     "modified_bst_special": 240.0,
     "can_be_mixed": true
   },
-  {
+  "ACCELGOR": {
     "name": "ACCELGOR",
     "index": 617,
     "via_player": 1.0,
@@ -14213,7 +14213,7 @@
     "modified_bst_special": 434.0,
     "can_be_mixed": false
   },
-  {
+  "STUNFISK": {
     "name": "STUNFISK",
     "index": 618,
     "via_player": 1.0,
@@ -14236,7 +14236,7 @@
     "modified_bst_special": 383.8,
     "can_be_mixed": false
   },
-  {
+  "MIENFOO": {
     "name": "MIENFOO",
     "index": 619,
     "via_player": 1.0,
@@ -14259,7 +14259,7 @@
     "modified_bst_special": 258.0,
     "can_be_mixed": false
   },
-  {
+  "MIENSHAO": {
     "name": "MIENSHAO",
     "index": 620,
     "via_player": 1.0,
@@ -14282,7 +14282,7 @@
     "modified_bst_special": 382.0,
     "can_be_mixed": false
   },
-  {
+  "DRUDDIGON": {
     "name": "DRUDDIGON",
     "index": 621,
     "via_player": 1.0,
@@ -14305,7 +14305,7 @@
     "modified_bst_special": 338.6,
     "can_be_mixed": false
   },
-  {
+  "GOLETT": {
     "name": "GOLETT",
     "index": 622,
     "via_player": 1.0,
@@ -14328,7 +14328,7 @@
     "modified_bst_special": 216.0,
     "can_be_mixed": false
   },
-  {
+  "GOLURK": {
     "name": "GOLURK",
     "index": 623,
     "via_player": 1.0,
@@ -14351,7 +14351,7 @@
     "modified_bst_special": 372.0,
     "can_be_mixed": false
   },
-  {
+  "PAWNIARD": {
     "name": "PAWNIARD",
     "index": 624,
     "via_player": 1.0,
@@ -14374,7 +14374,7 @@
     "modified_bst_special": 245.0,
     "can_be_mixed": false
   },
-  {
+  "BISHARP": {
     "name": "BISHARP",
     "index": 625,
     "via_player": 1.0,
@@ -14397,7 +14397,7 @@
     "modified_bst_special": 345.0,
     "can_be_mixed": false
   },
-  {
+  "BOUFFALANT": {
     "name": "BOUFFALANT",
     "index": 626,
     "via_player": 1.0,
@@ -14420,7 +14420,7 @@
     "modified_bst_special": 353.0,
     "can_be_mixed": false
   },
-  {
+  "RUFFLET": {
     "name": "RUFFLET",
     "index": 627,
     "via_player": 1.0,
@@ -14443,7 +14443,7 @@
     "modified_bst_special": 259.0,
     "can_be_mixed": false
   },
-  {
+  "BRAVIARY": {
     "name": "BRAVIARY",
     "index": 628,
     "via_player": 1.0,
@@ -14466,7 +14466,7 @@
     "modified_bst_special": 373.0,
     "can_be_mixed": false
   },
-  {
+  "VULLABY": {
     "name": "VULLABY",
     "index": 629,
     "via_player": 1.0,
@@ -14489,7 +14489,7 @@
     "modified_bst_special": 299.0,
     "can_be_mixed": false
   },
-  {
+  "MANDIBUZZ": {
     "name": "MANDIBUZZ",
     "index": 630,
     "via_player": 1.0,
@@ -14512,7 +14512,7 @@
     "modified_bst_special": 421.0,
     "can_be_mixed": true
   },
-  {
+  "HEATMOR": {
     "name": "HEATMOR",
     "index": 631,
     "via_player": 1.0,
@@ -14535,7 +14535,7 @@
     "modified_bst_special": 373.6,
     "can_be_mixed": true
   },
-  {
+  "DURANT": {
     "name": "DURANT",
     "index": 632,
     "via_player": 1.0,
@@ -14558,7 +14558,7 @@
     "modified_bst_special": 364.79999999999995,
     "can_be_mixed": false
   },
-  {
+  "DEINO": {
     "name": "DEINO",
     "index": 633,
     "via_player": 1.0,
@@ -14581,7 +14581,7 @@
     "modified_bst_special": 222.6,
     "can_be_mixed": false
   },
-  {
+  "ZWEILOUS": {
     "name": "ZWEILOUS",
     "index": 634,
     "via_player": 1.0,
@@ -14604,7 +14604,7 @@
     "modified_bst_special": 318.6,
     "can_be_mixed": false
   },
-  {
+  "HYDREIGON": {
     "name": "HYDREIGON",
     "index": 635,
     "via_player": 1.0,
@@ -14627,7 +14627,7 @@
     "modified_bst_special": 478.6,
     "can_be_mixed": true
   },
-  {
+  "LARVESTA": {
     "name": "LARVESTA",
     "index": 636,
     "via_player": 1.0,
@@ -14650,7 +14650,7 @@
     "modified_bst_special": 265.0,
     "can_be_mixed": false
   },
-  {
+  "VOLCARONA": {
     "name": "VOLCARONA",
     "index": 637,
     "via_player": 1.0,
@@ -14673,7 +14673,7 @@
     "modified_bst_special": 476.0,
     "can_be_mixed": false
   },
-  {
+  "COBALION": {
     "name": "COBALION",
     "index": 638,
     "via_player": 1.0,
@@ -14696,7 +14696,7 @@
     "modified_bst_special": 471.40000000000003,
     "can_be_mixed": true
   },
-  {
+  "TERRAKION": {
     "name": "TERRAKION",
     "index": 639,
     "via_player": 1.0,
@@ -14719,7 +14719,7 @@
     "modified_bst_special": 436.6,
     "can_be_mixed": false
   },
-  {
+  "VIRIZION": {
     "name": "VIRIZION",
     "index": 640,
     "via_player": 1.0,
@@ -14742,7 +14742,7 @@
     "modified_bst_special": 471.4,
     "can_be_mixed": true
   },
-  {
+  "TORNADUS": {
     "name": "TORNADUS",
     "index": 641,
     "via_player": 1.0,
@@ -14765,7 +14765,7 @@
     "modified_bst_special": 457.2,
     "can_be_mixed": true
   },
-  {
+  "THUNDURUS": {
     "name": "THUNDURUS",
     "index": 642,
     "via_player": 1.0,
@@ -14788,7 +14788,7 @@
     "modified_bst_special": 457.2,
     "can_be_mixed": true
   },
-  {
+  "RESHIRAM": {
     "name": "RESHIRAM",
     "index": 643,
     "via_player": 1.0,
@@ -14811,7 +14811,7 @@
     "modified_bst_special": 534.0,
     "can_be_mixed": false
   },
-  {
+  "ZEKROM": {
     "name": "ZEKROM",
     "index": 644,
     "via_player": 1.0,
@@ -14834,7 +14834,7 @@
     "modified_bst_special": 504.0,
     "can_be_mixed": false
   },
-  {
+  "LANDORUS": {
     "name": "LANDORUS",
     "index": 645,
     "via_player": 1.0,
@@ -14857,7 +14857,7 @@
     "modified_bst_special": 461.2,
     "can_be_mixed": true
   },
-  {
+  "KYUREM": {
     "name": "KYUREM",
     "index": 646,
     "via_player": 1.0,
@@ -14880,7 +14880,7 @@
     "modified_bst_special": 513.0,
     "can_be_mixed": true
   },
-  {
+  "KELDEO": {
     "name": "KELDEO",
     "index": 647,
     "via_player": 1.0,
@@ -14903,7 +14903,7 @@
     "modified_bst_special": 493.6,
     "can_be_mixed": false
   },
-  {
+  "MELOETTA": {
     "name": "MELOETTA",
     "index": 648,
     "via_player": 1.0,
@@ -14926,7 +14926,7 @@
     "modified_bst_special": 500.0,
     "can_be_mixed": false
   },
-  {
+  "GENESECT": {
     "name": "GENESECT",
     "index": 649,
     "via_player": 1.0,
@@ -14949,7 +14949,7 @@
     "modified_bst_special": 461.8,
     "can_be_mixed": true
   },
-  {
+  "EGG": {
     "name": "EGG",
     "index": 650,
     "via_player": 1.0,
@@ -14972,7 +14972,7 @@
     "modified_bst_special": 542.0,
     "can_be_mixed": false
   },
-  {
+  "BAD EGG": {
     "name": "BAD EGG",
     "index": 651,
     "via_player": 1.0,
@@ -14995,651 +14995,7 @@
     "modified_bst_special": 542.0,
     "can_be_mixed": false
   },
-  {
-    "name": "    ",
-    "index": 652,
-    "via_player": 0,
-    "form": 0,
-    "via_ai": 0,
-    "via_player_gym_1": 0,
-    "via_player_gym_2": 0,
-    "via_player_gym_3": 0,
-    "via_player_gym_4": 0,
-    "via_player_gym_5": 0,
-    "via_player_gym_6": 0,
-    "via_player_gym_7": 0,
-    "via_player_gym_8": 0,
-    "types": [
-      "Flying",
-      "Electric"
-    ],
-    "modified_bst": 480.0,
-    "modified_bst_physical": 480.0,
-    "modified_bst_special": 480.0,
-    "can_be_mixed": true
-  },
-  {
-    "name": "     ",
-    "index": 653,
-    "via_player": 0,
-    "form": 0,
-    "via_ai": 0,
-    "via_player_gym_1": 0,
-    "via_player_gym_2": 0,
-    "via_player_gym_3": 0,
-    "via_player_gym_4": 0,
-    "via_player_gym_5": 0,
-    "via_player_gym_6": 0,
-    "via_player_gym_7": 0,
-    "via_player_gym_8": 0,
-    "types": [
-      "Dark",
-      "Psychic"
-    ],
-    "modified_bst": 480.0,
-    "modified_bst_physical": 480.0,
-    "modified_bst_special": 480.0,
-    "can_be_mixed": true
-  },
-  {
-    "name": "    ",
-    "index": 654,
-    "via_player": 0,
-    "form": 0,
-    "via_ai": 0,
-    "via_player_gym_1": 0,
-    "via_player_gym_2": 0,
-    "via_player_gym_3": 0,
-    "via_player_gym_4": 0,
-    "via_player_gym_5": 0,
-    "via_player_gym_6": 0,
-    "via_player_gym_7": 0,
-    "via_player_gym_8": 0,
-    "types": [
-      "Steel",
-      "Steel"
-    ],
-    "modified_bst": 480.0,
-    "modified_bst_physical": 480.0,
-    "modified_bst_special": 480.0,
-    "can_be_mixed": true
-  },
-  {
-    "name": "    ",
-    "index": 655,
-    "via_player": 0,
-    "form": 0,
-    "via_ai": 0,
-    "via_player_gym_1": 0,
-    "via_player_gym_2": 0,
-    "via_player_gym_3": 0,
-    "via_player_gym_4": 0,
-    "via_player_gym_5": 0,
-    "via_player_gym_6": 0,
-    "via_player_gym_7": 0,
-    "via_player_gym_8": 0,
-    "types": [
-      "Steel",
-      "Electric"
-    ],
-    "modified_bst": 480.0,
-    "modified_bst_physical": 480.0,
-    "modified_bst_special": 480.0,
-    "can_be_mixed": true
-  },
-  {
-    "name": "     ",
-    "index": 656,
-    "via_player": 0,
-    "form": 0,
-    "via_ai": 0,
-    "via_player_gym_1": 0,
-    "via_player_gym_2": 0,
-    "via_player_gym_3": 0,
-    "via_player_gym_4": 0,
-    "via_player_gym_5": 0,
-    "via_player_gym_6": 0,
-    "via_player_gym_7": 0,
-    "via_player_gym_8": 0,
-    "types": [
-      "Steel",
-      "Steel"
-    ],
-    "modified_bst": 480.0,
-    "modified_bst_physical": 480.0,
-    "modified_bst_special": 480.0,
-    "can_be_mixed": true
-  },
-  {
-    "name": "    ",
-    "index": 657,
-    "via_player": 0,
-    "form": 0,
-    "via_ai": 0,
-    "via_player_gym_1": 0,
-    "via_player_gym_2": 0,
-    "via_player_gym_3": 0,
-    "via_player_gym_4": 0,
-    "via_player_gym_5": 0,
-    "via_player_gym_6": 0,
-    "via_player_gym_7": 0,
-    "via_player_gym_8": 0,
-    "types": [
-      "Normal",
-      "Normal"
-    ],
-    "modified_bst": 480.0,
-    "modified_bst_physical": 480.0,
-    "modified_bst_special": 480.0,
-    "can_be_mixed": true
-  },
-  {
-    "name": "    ",
-    "index": 658,
-    "via_player": 0,
-    "form": 0,
-    "via_ai": 0,
-    "via_player_gym_1": 0,
-    "via_player_gym_2": 0,
-    "via_player_gym_3": 0,
-    "via_player_gym_4": 0,
-    "via_player_gym_5": 0,
-    "via_player_gym_6": 0,
-    "via_player_gym_7": 0,
-    "via_player_gym_8": 0,
-    "types": [
-      "Normal",
-      "Normal"
-    ],
-    "modified_bst": 480.0,
-    "modified_bst_physical": 480.0,
-    "modified_bst_special": 480.0,
-    "can_be_mixed": true
-  },
-  {
-    "name": "    ",
-    "index": 659,
-    "via_player": 0,
-    "form": 0,
-    "via_ai": 0,
-    "via_player_gym_1": 0,
-    "via_player_gym_2": 0,
-    "via_player_gym_3": 0,
-    "via_player_gym_4": 0,
-    "via_player_gym_5": 0,
-    "via_player_gym_6": 0,
-    "via_player_gym_7": 0,
-    "via_player_gym_8": 0,
-    "types": [
-      "Dark",
-      "Dark"
-    ],
-    "modified_bst": 480.0,
-    "modified_bst_physical": 480.0,
-    "modified_bst_special": 480.0,
-    "can_be_mixed": true
-  },
-  {
-    "name": "    ",
-    "index": 660,
-    "via_player": 0,
-    "form": 0,
-    "via_ai": 0,
-    "via_player_gym_1": 0,
-    "via_player_gym_2": 0,
-    "via_player_gym_3": 0,
-    "via_player_gym_4": 0,
-    "via_player_gym_5": 0,
-    "via_player_gym_6": 0,
-    "via_player_gym_7": 0,
-    "via_player_gym_8": 0,
-    "types": [
-      "Steel",
-      "Normal"
-    ],
-    "modified_bst": 480.0,
-    "modified_bst_physical": 480.0,
-    "modified_bst_special": 480.0,
-    "can_be_mixed": true
-  },
-  {
-    "name": "     ",
-    "index": 661,
-    "via_player": 0,
-    "form": 0,
-    "via_ai": 0,
-    "via_player_gym_1": 0,
-    "via_player_gym_2": 0,
-    "via_player_gym_3": 0,
-    "via_player_gym_4": 0,
-    "via_player_gym_5": 0,
-    "via_player_gym_6": 0,
-    "via_player_gym_7": 0,
-    "via_player_gym_8": 0,
-    "types": [
-      "Dark",
-      "Ghost"
-    ],
-    "modified_bst": 480.0,
-    "modified_bst_physical": 480.0,
-    "modified_bst_special": 480.0,
-    "can_be_mixed": true
-  },
-  {
-    "name": "     ",
-    "index": 662,
-    "via_player": 0,
-    "form": 0,
-    "via_ai": 0,
-    "via_player_gym_1": 0,
-    "via_player_gym_2": 0,
-    "via_player_gym_3": 0,
-    "via_player_gym_4": 0,
-    "via_player_gym_5": 0,
-    "via_player_gym_6": 0,
-    "via_player_gym_7": 0,
-    "via_player_gym_8": 0,
-    "types": [
-      "Fire",
-      "Fire"
-    ],
-    "modified_bst": 480.0,
-    "modified_bst_physical": 480.0,
-    "modified_bst_special": 480.0,
-    "can_be_mixed": true
-  },
-  {
-    "name": "     ",
-    "index": 663,
-    "via_player": 0,
-    "form": 0,
-    "via_ai": 0,
-    "via_player_gym_1": 0,
-    "via_player_gym_2": 0,
-    "via_player_gym_3": 0,
-    "via_player_gym_4": 0,
-    "via_player_gym_5": 0,
-    "via_player_gym_6": 0,
-    "via_player_gym_7": 0,
-    "via_player_gym_8": 0,
-    "types": [
-      "Grass",
-      "Grass"
-    ],
-    "modified_bst": 480.0,
-    "modified_bst_physical": 480.0,
-    "modified_bst_special": 480.0,
-    "can_be_mixed": true
-  },
-  {
-    "name": "     ",
-    "index": 664,
-    "via_player": 0,
-    "form": 0,
-    "via_ai": 0,
-    "via_player_gym_1": 0,
-    "via_player_gym_2": 0,
-    "via_player_gym_3": 0,
-    "via_player_gym_4": 0,
-    "via_player_gym_5": 0,
-    "via_player_gym_6": 0,
-    "via_player_gym_7": 0,
-    "via_player_gym_8": 0,
-    "types": [
-      "Flying",
-      "Electric"
-    ],
-    "modified_bst": 480.0,
-    "modified_bst_physical": 480.0,
-    "modified_bst_special": 480.0,
-    "can_be_mixed": true
-  },
-  {
-    "name": "     ",
-    "index": 665,
-    "via_player": 0,
-    "form": 0,
-    "via_ai": 0,
-    "via_player_gym_1": 0,
-    "via_player_gym_2": 0,
-    "via_player_gym_3": 0,
-    "via_player_gym_4": 0,
-    "via_player_gym_5": 0,
-    "via_player_gym_6": 0,
-    "via_player_gym_7": 0,
-    "via_player_gym_8": 0,
-    "types": [
-      "Psychic",
-      "Electric"
-    ],
-    "modified_bst": 480.0,
-    "modified_bst_physical": 480.0,
-    "modified_bst_special": 480.0,
-    "can_be_mixed": true
-  },
-  {
-    "name": "     ",
-    "index": 666,
-    "via_player": 0,
-    "form": 0,
-    "via_ai": 0,
-    "via_player_gym_1": 0,
-    "via_player_gym_2": 0,
-    "via_player_gym_3": 0,
-    "via_player_gym_4": 0,
-    "via_player_gym_5": 0,
-    "via_player_gym_6": 0,
-    "via_player_gym_7": 0,
-    "via_player_gym_8": 0,
-    "types": [
-      "Dark",
-      "Psychic"
-    ],
-    "modified_bst": 480.0,
-    "modified_bst_physical": 480.0,
-    "modified_bst_special": 480.0,
-    "can_be_mixed": true
-  },
-  {
-    "name": "     ",
-    "index": 667,
-    "via_player": 0,
-    "form": 0,
-    "via_ai": 0,
-    "via_player_gym_1": 0,
-    "via_player_gym_2": 0,
-    "via_player_gym_3": 0,
-    "via_player_gym_4": 0,
-    "via_player_gym_5": 0,
-    "via_player_gym_6": 0,
-    "via_player_gym_7": 0,
-    "via_player_gym_8": 0,
-    "types": [
-      "Steel",
-      "Steel"
-    ],
-    "modified_bst": 480.0,
-    "modified_bst_physical": 480.0,
-    "modified_bst_special": 480.0,
-    "can_be_mixed": true
-  },
-  {
-    "name": "     ",
-    "index": 668,
-    "via_player": 0,
-    "form": 0,
-    "via_ai": 0,
-    "via_player_gym_1": 0,
-    "via_player_gym_2": 0,
-    "via_player_gym_3": 0,
-    "via_player_gym_4": 0,
-    "via_player_gym_5": 0,
-    "via_player_gym_6": 0,
-    "via_player_gym_7": 0,
-    "via_player_gym_8": 0,
-    "types": [
-      "Steel",
-      "Electric"
-    ],
-    "modified_bst": 480.0,
-    "modified_bst_physical": 480.0,
-    "modified_bst_special": 480.0,
-    "can_be_mixed": true
-  },
-  {
-    "name": "     ",
-    "index": 669,
-    "via_player": 0,
-    "form": 0,
-    "via_ai": 0,
-    "via_player_gym_1": 0,
-    "via_player_gym_2": 0,
-    "via_player_gym_3": 0,
-    "via_player_gym_4": 0,
-    "via_player_gym_5": 0,
-    "via_player_gym_6": 0,
-    "via_player_gym_7": 0,
-    "via_player_gym_8": 0,
-    "types": [
-      "Steel",
-      "Steel"
-    ],
-    "modified_bst": 480.0,
-    "modified_bst_physical": 480.0,
-    "modified_bst_special": 480.0,
-    "can_be_mixed": true
-  },
-  {
-    "name": "     ",
-    "index": 670,
-    "via_player": 0,
-    "form": 0,
-    "via_ai": 0,
-    "via_player_gym_1": 0,
-    "via_player_gym_2": 0,
-    "via_player_gym_3": 0,
-    "via_player_gym_4": 0,
-    "via_player_gym_5": 0,
-    "via_player_gym_6": 0,
-    "via_player_gym_7": 0,
-    "via_player_gym_8": 0,
-    "types": [
-      "Normal",
-      "Normal"
-    ],
-    "modified_bst": 480.0,
-    "modified_bst_physical": 480.0,
-    "modified_bst_special": 480.0,
-    "can_be_mixed": true
-  },
-  {
-    "name": "     ",
-    "index": 671,
-    "via_player": 0,
-    "form": 0,
-    "via_ai": 0,
-    "via_player_gym_1": 0,
-    "via_player_gym_2": 0,
-    "via_player_gym_3": 0,
-    "via_player_gym_4": 0,
-    "via_player_gym_5": 0,
-    "via_player_gym_6": 0,
-    "via_player_gym_7": 0,
-    "via_player_gym_8": 0,
-    "types": [
-      "Normal",
-      "Normal"
-    ],
-    "modified_bst": 480.0,
-    "modified_bst_physical": 480.0,
-    "modified_bst_special": 480.0,
-    "can_be_mixed": true
-  },
-  {
-    "name": "     ",
-    "index": 672,
-    "via_player": 0,
-    "form": 0,
-    "via_ai": 0,
-    "via_player_gym_1": 0,
-    "via_player_gym_2": 0,
-    "via_player_gym_3": 0,
-    "via_player_gym_4": 0,
-    "via_player_gym_5": 0,
-    "via_player_gym_6": 0,
-    "via_player_gym_7": 0,
-    "via_player_gym_8": 0,
-    "types": [
-      "Normal",
-      "Normal"
-    ],
-    "modified_bst": 480.0,
-    "modified_bst_physical": 480.0,
-    "modified_bst_special": 480.0,
-    "can_be_mixed": true
-  },
-  {
-    "name": "     ",
-    "index": 673,
-    "via_player": 0,
-    "form": 0,
-    "via_ai": 0,
-    "via_player_gym_1": 0,
-    "via_player_gym_2": 0,
-    "via_player_gym_3": 0,
-    "via_player_gym_4": 0,
-    "via_player_gym_5": 0,
-    "via_player_gym_6": 0,
-    "via_player_gym_7": 0,
-    "via_player_gym_8": 0,
-    "types": [
-      "Dark",
-      "Dark"
-    ],
-    "modified_bst": 480.0,
-    "modified_bst_physical": 480.0,
-    "modified_bst_special": 480.0,
-    "can_be_mixed": true
-  },
-  {
-    "name": "     ",
-    "index": 674,
-    "via_player": 0,
-    "form": 0,
-    "via_ai": 0,
-    "via_player_gym_1": 0,
-    "via_player_gym_2": 0,
-    "via_player_gym_3": 0,
-    "via_player_gym_4": 0,
-    "via_player_gym_5": 0,
-    "via_player_gym_6": 0,
-    "via_player_gym_7": 0,
-    "via_player_gym_8": 0,
-    "types": [
-      "Dark",
-      "Ghost"
-    ],
-    "modified_bst": 480.0,
-    "modified_bst_physical": 480.0,
-    "modified_bst_special": 480.0,
-    "can_be_mixed": true
-  },
-  {
-    "name": "     ",
-    "index": 675,
-    "via_player": 0,
-    "form": 0,
-    "via_ai": 0,
-    "via_player_gym_1": 0,
-    "via_player_gym_2": 0,
-    "via_player_gym_3": 0,
-    "via_player_gym_4": 0,
-    "via_player_gym_5": 0,
-    "via_player_gym_6": 0,
-    "via_player_gym_7": 0,
-    "via_player_gym_8": 0,
-    "types": [
-      "Fire",
-      "Fire"
-    ],
-    "modified_bst": 480.0,
-    "modified_bst_physical": 480.0,
-    "modified_bst_special": 480.0,
-    "can_be_mixed": true
-  },
-  {
-    "name": "     ",
-    "index": 676,
-    "via_player": 0,
-    "form": 0,
-    "via_ai": 0,
-    "via_player_gym_1": 0,
-    "via_player_gym_2": 0,
-    "via_player_gym_3": 0,
-    "via_player_gym_4": 0,
-    "via_player_gym_5": 0,
-    "via_player_gym_6": 0,
-    "via_player_gym_7": 0,
-    "via_player_gym_8": 0,
-    "types": [
-      "Grass",
-      "Grass"
-    ],
-    "modified_bst": 480.0,
-    "modified_bst_physical": 480.0,
-    "modified_bst_special": 480.0,
-    "can_be_mixed": true
-  },
-  {
-    "name": "     ",
-    "index": 677,
-    "via_player": 0,
-    "form": 0,
-    "via_ai": 0,
-    "via_player_gym_1": 0,
-    "via_player_gym_2": 0,
-    "via_player_gym_3": 0,
-    "via_player_gym_4": 0,
-    "via_player_gym_5": 0,
-    "via_player_gym_6": 0,
-    "via_player_gym_7": 0,
-    "via_player_gym_8": 0,
-    "types": [
-      "Steel",
-      "Normal"
-    ],
-    "modified_bst": 480.0,
-    "modified_bst_physical": 480.0,
-    "modified_bst_special": 480.0,
-    "can_be_mixed": true
-  },
-  {
-    "name": "     ",
-    "index": 678,
-    "via_player": 0,
-    "form": 0,
-    "via_ai": 0,
-    "via_player_gym_1": 0,
-    "via_player_gym_2": 0,
-    "via_player_gym_3": 0,
-    "via_player_gym_4": 0,
-    "via_player_gym_5": 0,
-    "via_player_gym_6": 0,
-    "via_player_gym_7": 0,
-    "via_player_gym_8": 0,
-    "types": [
-      "Steel",
-      "Normal"
-    ],
-    "modified_bst": 480.0,
-    "modified_bst_physical": 480.0,
-    "modified_bst_special": 480.0,
-    "can_be_mixed": true
-  },
-  {
-    "name": "     ",
-    "index": 679,
-    "via_player": 0,
-    "form": 0,
-    "via_ai": 0,
-    "via_player_gym_1": 0,
-    "via_player_gym_2": 0,
-    "via_player_gym_3": 0,
-    "via_player_gym_4": 0,
-    "via_player_gym_5": 0,
-    "via_player_gym_6": 0,
-    "via_player_gym_7": 0,
-    "via_player_gym_8": 0,
-    "types": [
-      "Fighting",
-      "Fighting"
-    ],
-    "modified_bst": 480.0,
-    "modified_bst_physical": 480.0,
-    "modified_bst_special": 480.0,
-    "can_be_mixed": true
-  },
-  {
+  "    ": {
     "name": "    ",
     "index": 680,
     "via_player": 0,
@@ -15662,76 +15018,7 @@
     "modified_bst_special": 480.0,
     "can_be_mixed": true
   },
-  {
-    "name": "     ",
-    "index": 681,
-    "via_player": 0,
-    "form": 0,
-    "via_ai": 0,
-    "via_player_gym_1": 0,
-    "via_player_gym_2": 0,
-    "via_player_gym_3": 0,
-    "via_player_gym_4": 0,
-    "via_player_gym_5": 0,
-    "via_player_gym_6": 0,
-    "via_player_gym_7": 0,
-    "via_player_gym_8": 0,
-    "types": [
-      "Normal",
-      "Normal"
-    ],
-    "modified_bst": 480.0,
-    "modified_bst_physical": 480.0,
-    "modified_bst_special": 480.0,
-    "can_be_mixed": true
-  },
-  {
-    "name": "     ",
-    "index": 682,
-    "via_player": 0,
-    "form": 0,
-    "via_ai": 0,
-    "via_player_gym_1": 0,
-    "via_player_gym_2": 0,
-    "via_player_gym_3": 0,
-    "via_player_gym_4": 0,
-    "via_player_gym_5": 0,
-    "via_player_gym_6": 0,
-    "via_player_gym_7": 0,
-    "via_player_gym_8": 0,
-    "types": [
-      "Steel",
-      "Normal"
-    ],
-    "modified_bst": 480.0,
-    "modified_bst_physical": 480.0,
-    "modified_bst_special": 480.0,
-    "can_be_mixed": true
-  },
-  {
-    "name": "     ",
-    "index": 683,
-    "via_player": 0,
-    "form": 0,
-    "via_ai": 0,
-    "via_player_gym_1": 0,
-    "via_player_gym_2": 0,
-    "via_player_gym_3": 0,
-    "via_player_gym_4": 0,
-    "via_player_gym_5": 0,
-    "via_player_gym_6": 0,
-    "via_player_gym_7": 0,
-    "via_player_gym_8": 0,
-    "types": [
-      "Fighting",
-      "Fighting"
-    ],
-    "modified_bst": 480.0,
-    "modified_bst_physical": 480.0,
-    "modified_bst_special": 480.0,
-    "can_be_mixed": true
-  },
-  {
+  "     ": {
     "name": "     ",
     "index": 684,
     "via_player": 0,
@@ -15754,7 +15041,7 @@
     "modified_bst_special": 229.0,
     "can_be_mixed": true
   },
-  {
+  "Deoxys-Attack": {
     "name": "Deoxys-Attack",
     "index": 685,
     "via_player": 1.0,
@@ -15775,11 +15062,9 @@
     "modified_bst": 442.0,
     "modified_bst_physical": 442.0,
     "modified_bst_special": 442.0,
-    "can_be_mixed": true,
-    "base_form": 386,
-    "form_index": 1
+    "can_be_mixed": true
   },
-  {
+  "Deoxys-Defense": {
     "name": "Deoxys-Defense",
     "index": 686,
     "via_player": 1.0,
@@ -15800,11 +15085,9 @@
     "modified_bst": 484.0,
     "modified_bst_physical": 484.0,
     "modified_bst_special": 484.0,
-    "can_be_mixed": true,
-    "base_form": 386,
-    "form_index": 2
+    "can_be_mixed": true
   },
-  {
+  "Deoxys-Speed": {
     "name": "Deoxys-Speed",
     "index": 687,
     "via_player": 1.0,
@@ -15825,11 +15108,9 @@
     "modified_bst": 505.0,
     "modified_bst_physical": 505.0,
     "modified_bst_special": 505.0,
-    "can_be_mixed": true,
-    "base_form": 386,
-    "form_index": 3
+    "can_be_mixed": true
   },
-  {
+  "Wormadam-Sandy": {
     "name": "Wormadam-Sandy",
     "index": 688,
     "via_player": 1.0,
@@ -15850,11 +15131,9 @@
     "modified_bst": 360.2,
     "modified_bst_physical": 360.2,
     "modified_bst_special": 320.2,
-    "can_be_mixed": false,
-    "base_form": 413,
-    "form_index": 1
+    "can_be_mixed": false
   },
-  {
+  "Wormadam-Trash": {
     "name": "Wormadam-Trash",
     "index": 689,
     "via_player": 1.0,
@@ -15875,11 +15154,9 @@
     "modified_bst": 341.40000000000003,
     "modified_bst_physical": 341.40000000000003,
     "modified_bst_special": 341.40000000000003,
-    "can_be_mixed": true,
-    "base_form": 413,
-    "form_index": 2
+    "can_be_mixed": true
   },
-  {
+  "Shaymin-Sky": {
     "name": "Shaymin-Sky",
     "index": 690,
     "via_player": 1.0,
@@ -15900,11 +15177,9 @@
     "modified_bst": 483.4,
     "modified_bst_physical": 475.4,
     "modified_bst_special": 492.4,
-    "can_be_mixed": true,
-    "base_form": 492,
-    "form_index": 1
+    "can_be_mixed": true
   },
-  {
+  "Giratina-Origin": {
     "name": "Giratina-Origin",
     "index": 691,
     "via_player": 1.0,
@@ -15925,11 +15200,9 @@
     "modified_bst": 538.0,
     "modified_bst_physical": 538.0,
     "modified_bst_special": 538.0,
-    "can_be_mixed": true,
-    "base_form": 487,
-    "form_index": 1
+    "can_be_mixed": true
   },
-  {
+  "Rotom-Heat": {
     "name": "Rotom-Heat",
     "index": 692,
     "via_player": 1.0,
@@ -15950,11 +15223,9 @@
     "modified_bst": 429.40000000000003,
     "modified_bst_physical": 389.40000000000003,
     "modified_bst_special": 429.40000000000003,
-    "can_be_mixed": false,
-    "base_form": 479,
-    "form_index": 1
+    "can_be_mixed": false
   },
-  {
+  "Rotom-Wash": {
     "name": "Rotom-Wash",
     "index": 693,
     "via_player": 1.0,
@@ -15975,11 +15246,9 @@
     "modified_bst": 429.40000000000003,
     "modified_bst_physical": 389.40000000000003,
     "modified_bst_special": 429.40000000000003,
-    "can_be_mixed": false,
-    "base_form": 479,
-    "form_index": 2
+    "can_be_mixed": false
   },
-  {
+  "Rotom-Frost": {
     "name": "Rotom-Frost",
     "index": 694,
     "via_player": 1.0,
@@ -16000,11 +15269,9 @@
     "modified_bst": 429.40000000000003,
     "modified_bst_physical": 389.40000000000003,
     "modified_bst_special": 429.40000000000003,
-    "can_be_mixed": false,
-    "base_form": 479,
-    "form_index": 3
+    "can_be_mixed": false
   },
-  {
+  "Rotom-Fan": {
     "name": "Rotom-Fan",
     "index": 695,
     "via_player": 1.0,
@@ -16025,11 +15292,9 @@
     "modified_bst": 429.40000000000003,
     "modified_bst_physical": 389.40000000000003,
     "modified_bst_special": 429.40000000000003,
-    "can_be_mixed": false,
-    "base_form": 479,
-    "form_index": 4
+    "can_be_mixed": false
   },
-  {
+  "Rotom-Mow": {
     "name": "Rotom-Mow",
     "index": 696,
     "via_player": 1.0,
@@ -16050,11 +15315,9 @@
     "modified_bst": 429.40000000000003,
     "modified_bst_physical": 389.40000000000003,
     "modified_bst_special": 429.40000000000003,
-    "can_be_mixed": false,
-    "base_form": 479,
-    "form_index": 5
+    "can_be_mixed": false
   },
-  {
+  "Castform-Sunny": {
     "name": "Castform-Sunny",
     "index": 697,
     "via_player": 1.0,
@@ -16075,11 +15338,9 @@
     "modified_bst": 372.0,
     "modified_bst_physical": 342.0,
     "modified_bst_special": 372.0,
-    "can_be_mixed": false,
-    "base_form": 351,
-    "form_index": 1
+    "can_be_mixed": false
   },
-  {
+  "Castform-Rainy": {
     "name": "Castform-Rainy",
     "index": 698,
     "via_player": 1.0,
@@ -16100,11 +15361,9 @@
     "modified_bst": 372.0,
     "modified_bst_physical": 342.0,
     "modified_bst_special": 372.0,
-    "can_be_mixed": false,
-    "base_form": 351,
-    "form_index": 2
+    "can_be_mixed": false
   },
-  {
+  "Castform-Snowy": {
     "name": "Castform-Snowy",
     "index": 699,
     "via_player": 1.0,
@@ -16125,11 +15384,9 @@
     "modified_bst": 372.0,
     "modified_bst_physical": 342.0,
     "modified_bst_special": 372.0,
-    "can_be_mixed": false,
-    "base_form": 351,
-    "form_index": 3
+    "can_be_mixed": false
   },
-  {
+  "Basculin-Blue-Striped": {
     "name": "Basculin-Blue-Striped",
     "index": 700,
     "via_player": 1.0,
@@ -16150,11 +15407,9 @@
     "modified_bst": 399.6,
     "modified_bst_physical": 405.6,
     "modified_bst_special": 393.6,
-    "can_be_mixed": true,
-    "base_form": 550,
-    "form_index": 1
+    "can_be_mixed": true
   },
-  {
+  "Darmanitan-Zen": {
     "name": "Darmanitan-Zen",
     "index": 701,
     "via_player": 1.0,
@@ -16175,11 +15430,9 @@
     "modified_bst": 479.0,
     "modified_bst_physical": 369.0,
     "modified_bst_special": 479.0,
-    "can_be_mixed": false,
-    "base_form": 555,
-    "form_index": 1
+    "can_be_mixed": false
   },
-  {
+  "Meloetta-Pirouette": {
     "name": "Meloetta-Pirouette",
     "index": 702,
     "via_player": 1.0,
@@ -16200,11 +15453,9 @@
     "modified_bst": 515.2,
     "modified_bst_physical": 515.2,
     "modified_bst_special": 464.20000000000005,
-    "can_be_mixed": false,
-    "base_form": 648,
-    "form_index": 1
+    "can_be_mixed": false
   },
-  {
+  "Kyurem-White": {
     "name": "Kyurem-White",
     "index": 703,
     "via_player": 1.0,
@@ -16225,11 +15476,9 @@
     "modified_bst": 561.0,
     "modified_bst_physical": 511.0,
     "modified_bst_special": 561.0,
-    "can_be_mixed": false,
-    "base_form": 646,
-    "form_index": 1
+    "can_be_mixed": false
   },
-  {
+  "Kyurem-Black": {
     "name": "Kyurem-Black",
     "index": 704,
     "via_player": 1.0,
@@ -16250,11 +15499,9 @@
     "modified_bst": 561.0,
     "modified_bst_physical": 561.0,
     "modified_bst_special": 511.0,
-    "can_be_mixed": false,
-    "base_form": 646,
-    "form_index": 2
+    "can_be_mixed": false
   },
-  {
+  "Keldeo-Resolute": {
     "name": "Keldeo-Resolute",
     "index": 705,
     "via_player": 1.0,
@@ -16275,11 +15522,9 @@
     "modified_bst": 493.6,
     "modified_bst_physical": 436.6,
     "modified_bst_special": 493.6,
-    "can_be_mixed": false,
-    "base_form": 647,
-    "form_index": 1
+    "can_be_mixed": false
   },
-  {
+  "Tornadus-Therian": {
     "name": "Tornadus-Therian",
     "index": 706,
     "via_player": 1.0,
@@ -16300,11 +15545,9 @@
     "modified_bst": 465.2,
     "modified_bst_physical": 460.2,
     "modified_bst_special": 470.2,
-    "can_be_mixed": true,
-    "base_form": 641,
-    "form_index": 1
+    "can_be_mixed": true
   },
-  {
+  "Thundurus-Therian": {
     "name": "Thundurus-Therian",
     "index": 707,
     "via_player": 1.0,
@@ -16325,11 +15568,9 @@
     "modified_bst": 465.2,
     "modified_bst_physical": 425.2,
     "modified_bst_special": 465.2,
-    "can_be_mixed": false,
-    "base_form": 642,
-    "form_index": 1
+    "can_be_mixed": false
   },
-  {
+  "Landorus-Therian": {
     "name": "Landorus-Therian",
     "index": 708,
     "via_player": 1.0,
@@ -16350,8 +15591,6 @@
     "modified_bst": 479.2,
     "modified_bst_physical": 479.2,
     "modified_bst_special": 439.2,
-    "can_be_mixed": false,
-    "base_form": 645,
-    "form_index": 1
+    "can_be_mixed": false
   }
-]
+}
