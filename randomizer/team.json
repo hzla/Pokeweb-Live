@@ -1,8 +1,9 @@
 [
   {
-    "name": "CYNDAQUIL",
-    "index": 155,
+    "name": "Castform-Rainy",
+    "index": 698,
     "via_player": 1.0,
+    "form": 0,
     "via_ai": 1.0,
     "via_player_gym_1": 1.0,
     "via_player_gym_2": 1.0,
@@ -13,27 +14,42 @@
     "via_player_gym_7": 1.0,
     "via_player_gym_8": 1.0,
     "types": [
-      "Fire",
+      "Water",
       "None"
     ],
-    "modified_bst": 247.4,
-    "modified_bst_physical": 243.4,
-    "modified_bst_special": 251.4,
-    "can_be_mixed": true,
-    "physical_ok": true,
+    "modified_bst": 372.0,
+    "modified_bst_physical": 342.0,
+    "modified_bst_special": 372.0,
+    "can_be_mixed": false,
+    "base_form": 351,
+    "form_index": 2,
+    "physical_ok": null,
     "special_ok": true,
-    "item": "lifeorb",
+    "item": "quickclaw",
     "moves": [
-      "FLAME BURST",
-      "NATURE POWER",
-      "LEAF TORNADO",
-      "SCORCHING SANDS"
+      [
+        "WATER PULSE",
+        352
+      ],
+      [
+        "HAIL",
+        258
+      ],
+      [
+        "MYSTICAL FIRE",
+        221
+      ],
+      [
+        "AIR SLASH",
+        403
+      ]
     ]
   },
   {
-    "name": "Rotom-Heat",
-    "index": 692,
+    "name": "MASQUERAIN",
+    "index": 284,
     "via_player": 1.0,
+    "form": 0,
     "via_ai": 1.0,
     "via_player_gym_1": 1.0,
     "via_player_gym_2": 1.0,
@@ -44,21 +60,33 @@
     "via_player_gym_7": 1.0,
     "via_player_gym_8": 1.0,
     "types": [
-      "Electric",
-      "Fire"
+      "Bug",
+      "Water"
     ],
-    "modified_bst": 429.40000000000003,
-    "modified_bst_physical": 389.40000000000003,
-    "modified_bst_special": 429.40000000000003,
+    "modified_bst": 414.0,
+    "modified_bst_physical": 374.0,
+    "modified_bst_special": 414.0,
     "can_be_mixed": false,
     "physical_ok": true,
     "special_ok": null,
-    "item": "focussash",
+    "item": "kingsrock",
     "moves": [
-      "FIRE PUNCH",
-      "SPARK",
-      "PAIN SPLIT",
-      "CHARGE"
+      [
+        "BUG BITE",
+        450
+      ],
+      [
+        "STEEL WING",
+        211
+      ],
+      [
+        "SMART STRIKE",
+        5
+      ],
+      [
+        "ROCK SLIDE",
+        157
+      ]
     ]
   }
 ]

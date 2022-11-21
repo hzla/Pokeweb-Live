@@ -1,41 +1,61 @@
-// Default data uses Emerald Kaizo gyms as guideline
+// Default range/lvl data uses Emerald Kaizo gyms as guideline
+// please input trainer_id for each gym leader, and gym trainers manually
+
 
 [
 	{
 		"range": [240, 415],
-		"lvl": 16
+		"lvl": 16,
+		"tr_id": 100,
+		"gym_tr_ids": []
 	},
 	{
 		"range": [300, 427],
-		"lvl": 21
+		"lvl": 21,
+		"tr_id": 100,
+		"gym_tr_ids": []
 	},
 	{
 		"range": [350, 460],
-		"lvl": 29
+		"lvl": 29,
+		"tr_id": 100,
+		"gym_tr_ids": []
 	},
 	{
 		"range": [360, 460],
-		"lvl": 42
+		"lvl": 42,
+		"tr_id": 100,
+		"gym_tr_ids": []
 	},
 	{
 		"range": [400, 465],
-		"lvl": 48
+		"lvl": 48,
+		"tr_id": 100,
+		"gym_tr_ids": []
 	},
 	{
 		"range": [440, 475],
-		"lvl": 55
+		"lvl": 55,
+		"tr_id": 100,
+		"gym_tr_ids": []
 	},
 	{
 		"range": [440, 500],
-		"lvl": 70
+		"lvl": 70,
+		"tr_id": 100,
+		"gym_tr_ids": []
 	},
 	{
 		"range": [440, 520],
-		"lvl": 77
+		"lvl": 77,
+		"tr_id": 100,
+		"gym_tr_ids": []
 	},
 	{
 		"range": [450, 600],
-		"lvl": 100
-	},
+		"lvl": 10,
+		"tr_id": 100,
+		"gym_tr_ids": []
+	}
 
 ]

@@ -159,9 +159,10 @@ Additional settings can be found in pokeweb/calculator_settings.json.
 
 If you would like to share the calculator after importing your set data, you can send the public/dist folder and anyone can run the calculator by runnning index.html in their browser. 
 
-## Smart Randomizer Functions (experimental)
+## Smart Randomizer Functions (made for dev use)
 
-Assumes basic programming knowledge. Navigate to root pokeweb folder in cmd/terminal/powershell. Run
+
+Assumes basic programming knowledge and fairy implementation on base rom. Navigate to root pokeweb folder in cmd/terminal/powershell. Run
 ```
  irb -r ./routes.rb
 ```

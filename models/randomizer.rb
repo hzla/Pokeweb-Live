@@ -14,6 +14,7 @@ class Randomizer
 		 		viability["name"] = pok["name"]
 		 		viability["index"] = pok["index"]
 		 		viability["via_player"] = 1.0
+		 		viability["form"] = 0
 
 		 		viability["via_player"]
 		 		viability["via_ai"] = 1.0
@@ -40,8 +41,69 @@ class Randomizer
 		 	end
 	 	end
 
-	 	File.write("randomizer/pok_viabilities.json", JSON.pretty_generate(viabilities))
 	 	
+
+	 	indexed = {}
+	 	viabilities.each do |v|
+	 		indexed[v["name"]] = v
+	 	end
+
+	 	File.write("randomizer/name_indexed_pok_viabilities.json", JSON.pretty_generate(indexed))
+	 	viabilities = add_form_data(viabilities)	
+
+	 	File.write("randomizer/pok_viabilities.json", JSON.pretty_generate(viabilities))
+	end
+
+	def self.add_form_data poks
+		name_indexed_forms = load_file('name_indexed_pok_viabilities')
+		first_form_index = 685
+		form_counts = {}
+		forms =	["Deoxys-Attack",
+			"Deoxys-Defense",
+			"Deoxys-Speed",
+			"Wormadam-Sandy",
+			"Wormadam-Trash",
+			"Shaymin-Sky"	,
+			"Giratina-Origin",
+			"Rotom-Heat",
+			"Rotom-Wash",
+			"Rotom-Frost",
+			"Rotom-Fan",
+			"Rotom-Mow",
+			"Castform-Sunny",
+			"Castform-Rainy",
+			"Castform-Snowy",
+			"Basculin-Blue-Striped",
+			"Darmanitan-Zen",
+			"Meloetta-Pirouette",
+			"Kyurem-White",
+			"Kyurem-Black",
+			"Keldeo-Resolute",
+			"Tornadus-Therian",
+			"Thundurus-Therian",
+			"Landorus-Therian"]
+
+		(first_form_index..first_form_index + 23).each do |n|
+			form_name = forms[n - first_form_index]
+			base_form_name = form_name.split("-", 2)[0].upcase
+			
+			base_pok = name_indexed_forms[base_form_name]
+
+
+			pok = name_indexed_forms[form_name]
+
+			poks[n]["base_form"] = base_pok["index"]
+
+			if form_counts[base_form_name]
+				form_counts[base_form_name] += 1
+			else
+				form_counts[base_form_name] = 1
+			end
+
+			poks[n]["form_index"] = form_counts[base_form_name]
+		end
+
+		poks
 	end
 
 	def self.create_abilities
@@ -76,6 +138,7 @@ class Randomizer
 		indexed = {}
 		items.each_with_index do |item, i|
 			smogon_id = item["name"].smogonlize
+			item["index"] = i
 			indexed[smogon_id] = item
 		end
 		File.write("randomizer/smogon_indexed_item_viabilities.json", JSON.pretty_generate(indexed))
@@ -196,10 +259,154 @@ class Randomizer
 		end
 
 		File.write("randomizer/team.json", JSON.pretty_generate(poks))
-		poks
-		# poks.map {|n| n["name"]}
 		"output to randomizer/team.json"
+
+		poks
 	end
+
+	# team = Randomizer.create_team [370,375], 2, ["Water","Fire"], 21
+	# Randomizer.apply_team(team, 157, 21)
+
+	def self.apply_team poks, tr_id, lvl 
+		trdata = JSON.parse(File.read(("#{$rom_name}/json/trdata/#{tr_id}.json")))
+		trpok =  JSON.parse(File.read(("#{$rom_name}/json/trpok/#{tr_id}.json")))
+		items = load_file('smogon_indexed_item_viabilities')
+		readable = apply_team_readable poks, tr_id, lvl, trdata, trpok, items
+		raw = apply_team_raw poks, tr_id, lvl, trdata, trpok, items
+
+		trdata["readable"] = readable[0]
+		trdata["raw"] = raw[0]
+
+		trpok["readable"] = readable[1]
+		trpok["raw"] = raw[1]
+
+		p trpok
+		File.open("#{$rom_name}/json/trdata/#{tr_id}.json", "w") { |f| f.write trdata.to_json }
+		File.open("#{$rom_name}/json/trpok/#{tr_id}.json", "w") { |f| f.write trpok.to_json }
+	end
+
+
+	def self.apply_team_readable poks, tr_id, lvl, trdata, trpok, items
+		trdata = trdata["readable"]
+		trpok =  trpok["readable"]
+		items = load_file('smogon_indexed_item_viabilities')
+		# turn moves, items, expert ai on
+		
+		trdata["template"] = 3
+		trdata["has_items"] = 1
+		trdata["has_moves"] = 1
+		trdata["Prioritize Effectiveness"] = 1
+		trdata["Evaluate Attacks"] = 1
+		trdata["Expert"] = 1
+		trdata["ai"] = trdata["Double Battle"] == 1 ? 135 : 7
+
+		#wipe old data
+		trpok.each do |field, value|
+			if field.split("_")[-1].is_integer?
+				p field
+				trpok.delete field
+			end
+		end
+
+		#add new team
+		poks.each_with_index do |pok, i|
+			trpok["ivs_#{i}"] = 255
+			trpok["ability_#{i}"] = rand(3)
+			trpok["level_#{i}"] = lvl
+			trpok["padding_#{i}"] = 0
+
+			if pok["base_form"]
+				trpok["species_id_#{i}"] = pok["name"].split("-", 2)[0].upcase
+				trpok["form_#{i}"] = pok["form_index"]
+			else
+				trpok["species_id_#{i}"] = pok["name"]
+				trpok["form_#{i}"] = 0
+			end
+
+			p trpok["species_id_#{i}"]
+
+			
+			trpok["gender_#{i}"] = "Default"
+
+			
+
+			if pok["item"]
+				trpok["item_id_#{i}"] = items[pok["item"]]["name"] 
+			else
+				trpok["item_id_#{i}"] = "Sitrus Berry"
+			end
+
+			(1..4).each do |m|
+				trpok["move_#{m}_#{i}"] = pok["moves"][m - 1][0]
+			end
+		end
+
+		trpok["count"] = poks.length
+		trdata["num_pokemon"] = poks.length
+
+		[trdata, trpok]
+
+		
+ 	end
+
+ 	def self.apply_team_raw poks, tr_id, lvl, trdata, trpok, items
+		trdata = trdata["raw"]
+		all_trpok = trpok
+		trpok =  trpok["raw"]
+
+		items = load_file('smogon_indexed_item_viabilities')
+		# turn moves, items, expert ai on
+		
+		trdata["template"] = 3
+		trdata["has_items"] = 1
+		trdata["has_moves"] = 1
+		trdata["Prioritize Effectiveness"] = 1
+		trdata["Evaluate Attacks"] = 1
+		trdata["Expert"] = 1
+		trdata["ai"] = trdata["Double Battle"] == 1 ? 135 : 7
+
+		#wipe old data
+		trpok.each do |field, value|
+			if field.split("_")[-1].is_integer?
+				trpok.delete field
+			end
+		end
+
+		#add new team
+		poks.each_with_index do |pok, i|
+			trpok["ivs_#{i}"] = 255
+			trpok["ability_#{i}"] = rand(3) * 16
+			trpok["level_#{i}"] = lvl
+			trpok["padding_#{i}"] = 0
+			if pok["base_form"]
+				trpok["species_id_#{i}"] = pok["base_form"]
+				trpok["form_#{i}"] = pok["form_index"]
+			else
+				trpok["species_id_#{i}"] = pok["index"]
+				trpok["form_#{i}"] = 0
+			end
+
+			p trpok["species_id_#{i}"]
+
+			if pok["item"]
+				trpok["item_id_#{i}"] = items[pok["item"]]["index"] 
+			else
+				trpok["item_id_#{i}"] = 158
+			end
+
+			(1..4).each do |m|
+				trpok["move_#{m}_#{i}"] = pok["moves"][m - 1][1]
+			end
+		end
+		trpok["count"] = poks.length
+		trdata["num_pokemon"] = poks.length
+
+		[trdata, trpok]
+
+		
+ 	end
+
+
 
 	def self.ai_viability_subpool pool, types, blacklist=nil
 		subpool = []
@@ -379,11 +586,9 @@ class Randomizer
 		if moveset.length < 4
 			moveset << coverage_movepool.shuffle!.pop
 		end
-		begin
-			moveset.map {|n| n["name"]}
-		rescue
-			binding.pry
-		end
+
+		moveset.map {|n| [n["name"], n["index"]]}
+
 	end
 
 	 # a = Randomizer.create_team([320,440],6,["Fire","Rock"])[-1]
@@ -593,6 +798,7 @@ class Randomizer
 		pool.sort_by {|pok| pok["modified_bst"]}
 	end
 
+
 	def self.create_encounter v_range, lvl, types="all"
 		pool = encounter_pool(v_range, lvl, types)
 		count = pool.length
@@ -605,10 +811,11 @@ class Randomizer
 		encounters["upper"] = upper_pool.sample(6)
 		encounters["mid"] = mid_pool.sample(12)
 		encounters["low"] = low_pool.sample(6)
+		encounters["lvl"] = lvl
 
-		encounters
 		File.write("randomizer/encounter.json", JSON.pretty_generate(encounters))
 		"output to randomizer/encounter.json"
+		encounters
 	end
 
 	def self.create_gym_types
@@ -617,13 +824,224 @@ class Randomizer
              "Bug", "Rock", "Ghost", "Dragon", "Dark", "Steel"].sample(8)
 	end
 
-	def self.apply_trainer_poks poks, tr_id
-
-	end
 
 	def self.apply_encounter encounters, enc_id
+		enc_data = JSON.parse(File.read(("#{$rom_name}/json/encounters/#{enc_id}.json")))
+		lvl = encounters["lvl"]
+		lvls = [lvl] * 6 + [lvl + 1] * 4 + [lvl + 2] * 2
+		water_lvls = [lvl] * 2 + [lvl+1] + [lvl+2]
+		["spring", "summer", "fall", "winter"].each do |season|
+			['grass', 'grass_doubles', 'grass_special'].each do |enc_type| 
+
+				(0..5).each do |n|
+					pool_index = n
+					pool_index += 6 if enc_type == 'grass_special'
+					encounter = encounters["mid"][pool_index]
+					if !encounter
+						encounter = encounters["mid"].sample
+					end
+
+					if encounter['base_form']
+
+						enc_data['raw']["#{season}_#{enc_type}_slot_#{n}"] = encounter['base_form']
+						enc_data['raw']["#{season}_#{enc_type}_slot_#{n}_form"] = encounter['form_index']
+
+						enc_data['readable']["#{season}_#{enc_type}_slot_#{n}"] = encounter['name'].split("-", 2)[0].upcase
+						enc_data['readable']["#{season}_#{enc_type}_slot_#{n}_form"] = encounter['form_index']
+					else
+						enc_data['raw']["#{season}_#{enc_type}_slot_#{n}"] = encounter['index']
+						enc_data['raw']["#{season}_#{enc_type}_slot_#{n}_form"] = 0
+
+						enc_data['readable']["#{season}_#{enc_type}_slot_#{n}"] = encounter['name']
+						enc_data['readable']["#{season}_#{enc_type}_slot_#{n}_form"] = 0
+					end
+
+					enc_data['raw']["#{season}_#{enc_type}_slot_#{n}_min_level"] = lvls[n]
+					enc_data['raw']["#{season}_#{enc_type}_slot_#{n}_max_level"] = lvls[n]
+
+					enc_data['readable']["#{season}_#{enc_type}_slot_#{n}_min_level"] = lvls[n]
+					enc_data['readable']["#{season}_#{enc_type}_slot_#{n}_max_level"] = lvls[n]
+
+				end
+
+				[6,8,10].each do |n|
+					pool_index = (n - 6) / 2
+					pool_index += 3 if enc_type == 'grass_special'
+					encounter = encounters["low"][pool_index]
+					if !encounter
+						encounter = encounters["low"].sample
+					end
+
+					if encounter['base_form']
+						enc_data['raw']["#{season}_#{enc_type}_slot_#{n}"] = encounter['base_form']
+						enc_data['raw']["#{season}_#{enc_type}_slot_#{n}_form"] = encounter['form_index']
+
+						enc_data['readable']["#{season}_#{enc_type}_slot_#{n}"] = encounter['name'].split("-", 2)[0].upcase
+						enc_data['readable']["#{season}_#{enc_type}_slot_#{n}_form"] = encounter['form_index']
+					else
+						enc_data['raw']["#{season}_#{enc_type}_slot_#{n}"] = encounter['index']
+						enc_data['raw']["#{season}_#{enc_type}_slot_#{n}_form"] = 0
+
+						enc_data['readable']["#{season}_#{enc_type}_slot_#{n}"] = encounter['name']
+						enc_data['readable']["#{season}_#{enc_type}_slot_#{n}_form"] = 0
+					end
+
+					enc_data['raw']["#{season}_#{enc_type}_slot_#{n}_min_level"] = lvls[n]
+					enc_data['raw']["#{season}_#{enc_type}_slot_#{n}_max_level"] = lvls[n]
+
+					enc_data['readable']["#{season}_#{enc_type}_slot_#{n}_min_level"] = lvls[n]
+					enc_data['readable']["#{season}_#{enc_type}_slot_#{n}_max_level"] = lvls[n]
+				end
+
+				[7,9,11].each do |n|
+					pool_index = (n - 7) / 2
+					pool_index += 3 if enc_type == 'grass_special'
+					encounter = encounters["upper"][pool_index]
+					if !encounter
+						encounter = encounters["upper"].sample
+					end
+
+					if encounter['base_form']
+						enc_data['raw']["#{season}_#{enc_type}_slot_#{n}"] = encounter['base_form']
+						enc_data['raw']["#{season}_#{enc_type}_slot_#{n}_form"] = encounter['form_index']
+
+						enc_data['readable']["#{season}_#{enc_type}_slot_#{n}"] = encounter['name'].split("-", 2)[0].upcase
+						enc_data['readable']["#{season}_#{enc_type}_slot_#{n}_form"] = encounter['form_index']
+					else
+						enc_data['raw']["#{season}_#{enc_type}_slot_#{n}"] = encounter['index']
+						enc_data['raw']["#{season}_#{enc_type}_slot_#{n}_form"] = 0
+
+						enc_data['readable']["#{season}_#{enc_type}_slot_#{n}"] = encounter['name']
+						enc_data['readable']["#{season}_#{enc_type}_slot_#{n}_form"] = 0
+					end
+
+					enc_data['raw']["#{season}_#{enc_type}_slot_#{n}_min_level"] = lvls[n]
+					enc_data['raw']["#{season}_#{enc_type}_slot_#{n}_max_level"] = lvls[n]
+
+					enc_data['readable']["#{season}_#{enc_type}_slot_#{n}_min_level"] = lvls[n]
+					enc_data['readable']["#{season}_#{enc_type}_slot_#{n}_max_level"] = lvls[n]					
+				end
+			end
+
+			["surf", "surf_special", "super_rod", "super_rod_special"].each do |enc_type|
+				(0..1).each do |n|
+					pool_index = n
+					pool_index += 2 if enc_type.split("_") == 'special'
+					encounter = encounters["mid"][pool_index]
+					if !encounter
+						encounter = encounters["mid"].sample
+					end
+
+					if encounter['base_form']
+						enc_data['raw']["#{season}_#{enc_type}_slot_#{n}"] = encounter['base_form']
+						enc_data['raw']["#{season}_#{enc_type}_slot_#{n}_form"] = encounter['form_index']
+
+						enc_data['readable']["#{season}_#{enc_type}_slot_#{n}"] = encounter['name'].split("-", 2)[0].upcase
+						enc_data['readable']["#{season}_#{enc_type}_slot_#{n}_form"] = encounter['form_index']
+					else
+						enc_data['raw']["#{season}_#{enc_type}_slot_#{n}"] = encounter['index']
+						enc_data['raw']["#{season}_#{enc_type}_slot_#{n}_form"] = 0
+
+						enc_data['readable']["#{season}_#{enc_type}_slot_#{n}"] = encounter['name']
+						enc_data['readable']["#{season}_#{enc_type}_slot_#{n}_form"] = 0
+					end
+
+					enc_data['raw']["#{season}_#{enc_type}_slot_#{n}_min_level"] = lvls[n]
+					enc_data['raw']["#{season}_#{enc_type}_slot_#{n}_max_level"] = lvls[n]
+
+					enc_data['readable']["#{season}_#{enc_type}_slot_#{n}_min_level"] = lvls[n]
+					enc_data['readable']["#{season}_#{enc_type}_slot_#{n}_max_level"] = lvls[n]
+
+				end
+
+				[2,4].each do |n|
+					pool_index = (n - 2) / 2
+					pool_index += 2 if enc_type.split("_") == 'special'
+					encounter = encounters["low"][pool_index]
+					if !encounter
+						encounter = encounters["low"].sample
+					end
+
+					if encounter['base_form']
+						enc_data['raw']["#{season}_#{enc_type}_slot_#{n}"] = encounter['base_form']
+						enc_data['raw']["#{season}_#{enc_type}_slot_#{n}_form"] = encounter['form_index']
+
+						enc_data['readable']["#{season}_#{enc_type}_slot_#{n}"] = encounter['name'].split("-", 2)[0].upcase
+						enc_data['readable']["#{season}_#{enc_type}_slot_#{n}_form"] = encounter['form_index']
+					else
+						enc_data['raw']["#{season}_#{enc_type}_slot_#{n}"] = encounter['index']
+						enc_data['raw']["#{season}_#{enc_type}_slot_#{n}_form"] = 0
+
+						enc_data['readable']["#{season}_#{enc_type}_slot_#{n}"] = encounter['name']
+						enc_data['readable']["#{season}_#{enc_type}_slot_#{n}_form"] = 0
+					end
+
+					enc_data['raw']["#{season}_#{enc_type}_slot_#{n}_min_level"] = lvls[n]
+					enc_data['raw']["#{season}_#{enc_type}_slot_#{n}_max_level"] = lvls[n]
+
+					enc_data['readable']["#{season}_#{enc_type}_slot_#{n}_min_level"] = lvls[n]
+					enc_data['readable']["#{season}_#{enc_type}_slot_#{n}_max_level"] = lvls[n]
+				end
+
+				[3].each do |n|
+					pool_index = (n - 3) / 2
+					pool_index += 2 if enc_type.split("_") == 'special'
+					encounter = encounters["upper"][pool_index]
+					if !encounter
+						encounter = encounters["upper"].sample
+					end
+
+					if encounter['base_form']
+						enc_data['raw']["#{season}_#{enc_type}_slot_#{n}"] = encounter['base_form']
+						enc_data['raw']["#{season}_#{enc_type}_slot_#{n}_form"] = encounter['form_index']
+
+						enc_data['readable']["#{season}_#{enc_type}_slot_#{n}"] = encounter['name'].split("-", 2)[0].upcase
+						enc_data['readable']["#{season}_#{enc_type}_slot_#{n}_form"] = encounter['form_index']
+					else
+						enc_data['raw']["#{season}_#{enc_type}_slot_#{n}"] = encounter['index']
+						enc_data['raw']["#{season}_#{enc_type}_slot_#{n}_form"] = 0
+
+						enc_data['readable']["#{season}_#{enc_type}_slot_#{n}"] = encounter['name']
+						enc_data['readable']["#{season}_#{enc_type}_slot_#{n}_form"] = 0
+					end
+
+					enc_data['raw']["#{season}_#{enc_type}_slot_#{n}_min_level"] = lvls[n]
+					enc_data['raw']["#{season}_#{enc_type}_slot_#{n}_max_level"] = lvls[n]
+
+					enc_data['readable']["#{season}_#{enc_type}_slot_#{n}_min_level"] = lvls[n]
+					enc_data['readable']["#{season}_#{enc_type}_slot_#{n}_max_level"] = lvls[n]					
+				end
+			end
+		end
+
+
+		File.open("#{$rom_name}/json/encounters/#{enc_id}.json", "w") { |f| f.write enc_data.to_json }
+		"200 OK"
 	end
 end
 
+# enc = Randomizer.create_encounter [300,400], 16
+# Randomizer.apply_encounter enc, 1
 
+# for season in ["spring", "summer", "fall", "winter"]:
+
+# 		for enc_type in ["grass", "grass_doubles", "grass_special"]:
+# 			for n in range(0,12):
+# 				index = POKEDEX.index(readable[f'{season}_{enc_type}_slot_{n}'])
+				
+# 				raw[f'{season}_{enc_type}_slot_{n}'] = index
+
+# 				alt_form = f'{season}_{enc_type}_slot_{n}_form' in readable
+# 				if alt_form:
+# 					raw[f'{season}_{enc_type}_slot_{n}'] += (int(readable[f'{season}_{enc_type}_slot_{n}_form']) * 2048)
+		
+# 		for enc_type in ["surf", "surf_special", "super_rod" , "super_rod_special"]:
+# 			for n in range(0,5):
+# 				index = POKEDEX.index(readable[f'{season}_{enc_type}_slot_{n}'])
+				
+# 				raw[f'{season}_{enc_type}_slot_{n}'] = index
+				
+# 				alt_form = f'{season}_{enc_type}_slot_{n}_form' in readable
+# 				if alt_form:
+# 					raw[f'{season}_{enc_type}_slot_{n}'] += (int(readable[f'{season}_{enc_type}_slot_{n}_form']) * 2048)
 

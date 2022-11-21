@@ -1,5 +1,5 @@
 {
-  "none": {
+  "nothing": {
     "market_value": 0,
     "battle_flags": 0,
     "gain_values": 0,
@@ -32,7 +32,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "None"
+    "name": "None",
+    "index": 0
   },
   "masterball": {
     "market_value": 0,
@@ -67,7 +68,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Master Ball"
+    "name": "Master Ball",
+    "index": 1
   },
   "ultraball": {
     "market_value": 30,
@@ -102,7 +104,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Ultra Ball"
+    "name": "Ultra Ball",
+    "index": 2
   },
   "greatball": {
     "market_value": 15,
@@ -137,7 +140,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Great Ball"
+    "name": "Great Ball",
+    "index": 3
   },
   "pokeball": {
     "market_value": 5,
@@ -172,7 +176,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Poke Ball"
+    "name": "Poke Ball",
+    "index": 4
   },
   "safariball": {
     "market_value": 0,
@@ -207,7 +212,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Safari Ball"
+    "name": "Safari Ball",
+    "index": 5
   },
   "netball": {
     "market_value": 100,
@@ -242,7 +248,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Net Ball"
+    "name": "Net Ball",
+    "index": 6
   },
   "diveball": {
     "market_value": 100,
@@ -277,7 +284,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Dive Ball"
+    "name": "Dive Ball",
+    "index": 7
   },
   "nestball": {
     "market_value": 100,
@@ -312,7 +320,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Nest Ball"
+    "name": "Nest Ball",
+    "index": 8
   },
   "repeatball": {
     "market_value": 100,
@@ -347,7 +356,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Repeat Ball"
+    "name": "Repeat Ball",
+    "index": 9
   },
   "timerball": {
     "market_value": 100,
@@ -382,7 +392,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Timer Ball"
+    "name": "Timer Ball",
+    "index": 10
   },
   "luxuryball": {
     "market_value": 100,
@@ -417,7 +428,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Luxury Ball"
+    "name": "Luxury Ball",
+    "index": 11
   },
   "premierball": {
     "market_value": 20,
@@ -452,7 +464,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Premier Ball"
+    "name": "Premier Ball",
+    "index": 12
   },
   "duskball": {
     "market_value": 100,
@@ -487,7 +500,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Dusk Ball"
+    "name": "Dusk Ball",
+    "index": 13
   },
   "healball": {
     "market_value": 30,
@@ -522,7 +536,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Heal Ball"
+    "name": "Heal Ball",
+    "index": 14
   },
   "quickball": {
     "market_value": 100,
@@ -557,7 +572,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Quick Ball"
+    "name": "Quick Ball",
+    "index": 15
   },
   "cherishball": {
     "market_value": 20,
@@ -592,7 +608,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Cherish Ball"
+    "name": "Cherish Ball",
+    "index": 16
   },
   "potion": {
     "market_value": 30,
@@ -627,7 +644,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Potion"
+    "name": "Potion",
+    "index": 17
   },
   "antidote": {
     "market_value": 10,
@@ -662,7 +680,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Antidote"
+    "name": "Antidote",
+    "index": 18
   },
   "burnheal": {
     "market_value": 25,
@@ -697,7 +716,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Burn Heal"
+    "name": "Burn Heal",
+    "index": 19
   },
   "iceheal": {
     "market_value": 25,
@@ -732,7 +752,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Ice Heal"
+    "name": "Ice Heal",
+    "index": 20
   },
   "awakening": {
     "market_value": 25,
@@ -767,7 +788,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Awakening"
+    "name": "Awakening",
+    "index": 21
   },
   "paralyzeheal": {
     "market_value": 20,
@@ -802,7 +824,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Paralyze Heal"
+    "name": "Paralyze Heal",
+    "index": 22
   },
   "fullrestore": {
     "market_value": 300,
@@ -837,7 +860,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Full Restore"
+    "name": "Full Restore",
+    "index": 23
   },
   "maxpotion": {
     "market_value": 250,
@@ -872,7 +896,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Max Potion"
+    "name": "Max Potion",
+    "index": 24
   },
   "hyperpotion": {
     "market_value": 120,
@@ -907,7 +932,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Hyper Potion"
+    "name": "Hyper Potion",
+    "index": 25
   },
   "superpotion": {
     "market_value": 70,
@@ -942,7 +968,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Super Potion"
+    "name": "Super Potion",
+    "index": 26
   },
   "fullheal": {
     "market_value": 60,
@@ -977,7 +1004,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Full Heal"
+    "name": "Full Heal",
+    "index": 27
   },
   "revive": {
     "market_value": 150,
@@ -1012,7 +1040,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Revive"
+    "name": "Revive",
+    "index": 28
   },
   "maxrevive": {
     "market_value": 400,
@@ -1047,7 +1076,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Max Revive"
+    "name": "Max Revive",
+    "index": 29
   },
   "freshwater": {
     "market_value": 20,
@@ -1082,7 +1112,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Fresh Water"
+    "name": "Fresh Water",
+    "index": 30
   },
   "sodapop": {
     "market_value": 30,
@@ -1117,7 +1148,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Soda Pop"
+    "name": "Soda Pop",
+    "index": 31
   },
   "lemonade": {
     "market_value": 35,
@@ -1152,7 +1184,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Lemonade"
+    "name": "Lemonade",
+    "index": 32
   },
   "moomoomilk": {
     "market_value": 50,
@@ -1187,7 +1220,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Moomoo Milk"
+    "name": "Moomoo Milk",
+    "index": 33
   },
   "energypowder": {
     "market_value": 50,
@@ -1222,7 +1256,8 @@
     "ow_happiness": 251,
     "hold_happiness": 246,
     "padding": 0,
-    "name": "Energy Powder"
+    "name": "Energy Powder",
+    "index": 34
   },
   "energyroot": {
     "market_value": 80,
@@ -1257,7 +1292,8 @@
     "ow_happiness": 246,
     "hold_happiness": 241,
     "padding": 0,
-    "name": "Energy Root"
+    "name": "Energy Root",
+    "index": 35
   },
   "healpowder": {
     "market_value": 45,
@@ -1292,7 +1328,8 @@
     "ow_happiness": 251,
     "hold_happiness": 246,
     "padding": 0,
-    "name": "Heal Powder"
+    "name": "Heal Powder",
+    "index": 36
   },
   "revivalherb": {
     "market_value": 280,
@@ -1327,7 +1364,8 @@
     "ow_happiness": 241,
     "hold_happiness": 236,
     "padding": 0,
-    "name": "Revival Herb"
+    "name": "Revival Herb",
+    "index": 37
   },
   "ether": {
     "market_value": 120,
@@ -1362,7 +1400,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Ether"
+    "name": "Ether",
+    "index": 38
   },
   "maxether": {
     "market_value": 200,
@@ -1397,7 +1436,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Max Ether"
+    "name": "Max Ether",
+    "index": 39
   },
   "elixir": {
     "market_value": 300,
@@ -1432,7 +1472,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Elixir"
+    "name": "Elixir",
+    "index": 40
   },
   "maxelixir": {
     "market_value": 450,
@@ -1467,7 +1508,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Max Elixir"
+    "name": "Max Elixir",
+    "index": 41
   },
   "lavacookie": {
     "market_value": 20,
@@ -1502,7 +1544,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Lava Cookie"
+    "name": "Lava Cookie",
+    "index": 42
   },
   "berryjuice": {
     "market_value": 10,
@@ -1537,7 +1580,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Berry Juice"
+    "name": "Berry Juice",
+    "index": 43
   },
   "sacredash": {
     "market_value": 20,
@@ -1572,7 +1616,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Sacred Ash"
+    "name": "Sacred Ash",
+    "index": 44
   },
   "hpup": {
     "market_value": 980,
@@ -1607,7 +1652,8 @@
     "ow_happiness": 3,
     "hold_happiness": 2,
     "padding": 0,
-    "name": "HP Up"
+    "name": "HP Up",
+    "index": 45
   },
   "protein": {
     "market_value": 980,
@@ -1642,7 +1688,8 @@
     "ow_happiness": 3,
     "hold_happiness": 2,
     "padding": 0,
-    "name": "Protein"
+    "name": "Protein",
+    "index": 46
   },
   "iron": {
     "market_value": 980,
@@ -1677,7 +1724,8 @@
     "ow_happiness": 3,
     "hold_happiness": 2,
     "padding": 0,
-    "name": "Iron"
+    "name": "Iron",
+    "index": 47
   },
   "carbos": {
     "market_value": 980,
@@ -1712,7 +1760,8 @@
     "ow_happiness": 3,
     "hold_happiness": 2,
     "padding": 0,
-    "name": "Carbos"
+    "name": "Carbos",
+    "index": 48
   },
   "calcium": {
     "market_value": 980,
@@ -1747,7 +1796,8 @@
     "ow_happiness": 3,
     "hold_happiness": 2,
     "padding": 0,
-    "name": "Calcium"
+    "name": "Calcium",
+    "index": 49
   },
   "rarecandy": {
     "market_value": 480,
@@ -1782,7 +1832,8 @@
     "ow_happiness": 3,
     "hold_happiness": 2,
     "padding": 0,
-    "name": "Rare Candy"
+    "name": "Rare Candy",
+    "index": 50
   },
   "ppup": {
     "market_value": 980,
@@ -1817,7 +1868,8 @@
     "ow_happiness": 3,
     "hold_happiness": 2,
     "padding": 0,
-    "name": "PP Up"
+    "name": "PP Up",
+    "index": 51
   },
   "zinc": {
     "market_value": 980,
@@ -1852,7 +1904,8 @@
     "ow_happiness": 3,
     "hold_happiness": 2,
     "padding": 0,
-    "name": "Zinc"
+    "name": "Zinc",
+    "index": 52
   },
   "ppmax": {
     "market_value": 980,
@@ -1887,7 +1940,8 @@
     "ow_happiness": 3,
     "hold_happiness": 2,
     "padding": 0,
-    "name": "PP Max"
+    "name": "PP Max",
+    "index": 53
   },
   "oldgateau": {
     "market_value": 20,
@@ -1922,7 +1976,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Old Gateau"
+    "name": "Old Gateau",
+    "index": 54
   },
   "guardspec.": {
     "market_value": 70,
@@ -1957,7 +2012,8 @@
     "ow_happiness": 1,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Guard Spec."
+    "name": "Guard Spec.",
+    "index": 55
   },
   "direhit": {
     "market_value": 65,
@@ -1992,7 +2048,8 @@
     "ow_happiness": 1,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Dire Hit"
+    "name": "Dire Hit",
+    "index": 56
   },
   "xattack": {
     "market_value": 50,
@@ -2027,7 +2084,8 @@
     "ow_happiness": 1,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "X Attack"
+    "name": "X Attack",
+    "index": 57
   },
   "xdefend": {
     "market_value": 55,
@@ -2062,7 +2120,8 @@
     "ow_happiness": 1,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "X Defend"
+    "name": "X Defend",
+    "index": 58
   },
   "xspeed": {
     "market_value": 35,
@@ -2097,7 +2156,8 @@
     "ow_happiness": 1,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "X Speed"
+    "name": "X Speed",
+    "index": 59
   },
   "xaccuracy": {
     "market_value": 95,
@@ -2132,7 +2192,8 @@
     "ow_happiness": 1,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "X Accuracy"
+    "name": "X Accuracy",
+    "index": 60
   },
   "xsp.atk": {
     "market_value": 35,
@@ -2167,7 +2228,8 @@
     "ow_happiness": 1,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "X Sp. Atk"
+    "name": "X Sp. Atk",
+    "index": 61
   },
   "xsp.def": {
     "market_value": 35,
@@ -2202,7 +2264,8 @@
     "ow_happiness": 1,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "X Sp. Def"
+    "name": "X Sp. Def",
+    "index": 62
   },
   "pokedoll": {
     "market_value": 100,
@@ -2237,7 +2300,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Poke Doll"
+    "name": "Poke Doll",
+    "index": 63
   },
   "fluffytail": {
     "market_value": 100,
@@ -2272,7 +2336,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Fluffy Tail"
+    "name": "Fluffy Tail",
+    "index": 64
   },
   "blueflute": {
     "market_value": 2,
@@ -2307,7 +2372,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Blue Flute"
+    "name": "Blue Flute",
+    "index": 65
   },
   "yellowflute": {
     "market_value": 2,
@@ -2342,7 +2408,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Yellow Flute"
+    "name": "Yellow Flute",
+    "index": 66
   },
   "redflute": {
     "market_value": 2,
@@ -2377,7 +2444,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Red Flute"
+    "name": "Red Flute",
+    "index": 67
   },
   "blackflute": {
     "market_value": 2,
@@ -2412,7 +2480,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Black Flute"
+    "name": "Black Flute",
+    "index": 68
   },
   "whiteflute": {
     "market_value": 2,
@@ -2447,7 +2516,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "White Flute"
+    "name": "White Flute",
+    "index": 69
   },
   "shoalsalt": {
     "market_value": 2,
@@ -2482,7 +2552,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Shoal Salt"
+    "name": "Shoal Salt",
+    "index": 70
   },
   "shoalshell": {
     "market_value": 2,
@@ -2517,7 +2588,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Shoal Shell"
+    "name": "Shoal Shell",
+    "index": 71
   },
   "redshard": {
     "market_value": 60,
@@ -2552,7 +2624,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Red Shard"
+    "name": "Red Shard",
+    "index": 72
   },
   "blueshard": {
     "market_value": 60,
@@ -2587,7 +2660,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Blue Shard"
+    "name": "Blue Shard",
+    "index": 73
   },
   "yellowshard": {
     "market_value": 60,
@@ -2622,7 +2696,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Yellow Shard"
+    "name": "Yellow Shard",
+    "index": 74
   },
   "greenshard": {
     "market_value": 60,
@@ -2657,7 +2732,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Green Shard"
+    "name": "Green Shard",
+    "index": 75
   },
   "superrepel": {
     "market_value": 50,
@@ -2692,7 +2768,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Super Repel"
+    "name": "Super Repel",
+    "index": 76
   },
   "maxrepel": {
     "market_value": 70,
@@ -2727,7 +2804,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Max Repel"
+    "name": "Max Repel",
+    "index": 77
   },
   "escaperope": {
     "market_value": 55,
@@ -2762,7 +2840,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Escape Rope"
+    "name": "Escape Rope",
+    "index": 78
   },
   "repel": {
     "market_value": 35,
@@ -2797,7 +2876,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Repel"
+    "name": "Repel",
+    "index": 79
   },
   "sunstone": {
     "market_value": 210,
@@ -2832,7 +2912,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Sun Stone"
+    "name": "Sun Stone",
+    "index": 80
   },
   "moonstone": {
     "market_value": 210,
@@ -2867,7 +2948,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Moon Stone"
+    "name": "Moon Stone",
+    "index": 81
   },
   "firestone": {
     "market_value": 210,
@@ -2902,7 +2984,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Fire Stone"
+    "name": "Fire Stone",
+    "index": 82
   },
   "thunderstone": {
     "market_value": 210,
@@ -2937,7 +3020,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Thunder Stone"
+    "name": "Thunder Stone",
+    "index": 83
   },
   "waterstone": {
     "market_value": 210,
@@ -2972,7 +3056,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Water Stone"
+    "name": "Water Stone",
+    "index": 84
   },
   "leafstone": {
     "market_value": 210,
@@ -3007,7 +3092,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Leaf Stone"
+    "name": "Leaf Stone",
+    "index": 85
   },
   "tinymushroom": {
     "market_value": 50,
@@ -3042,7 +3128,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Tiny Mushroom"
+    "name": "Tiny Mushroom",
+    "index": 86
   },
   "bigmushroom": {
     "market_value": 500,
@@ -3077,7 +3164,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Big Mushroom"
+    "name": "Big Mushroom",
+    "index": 87
   },
   "pearl": {
     "market_value": 140,
@@ -3112,7 +3200,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Pearl"
+    "name": "Pearl",
+    "index": 88
   },
   "bigpearl": {
     "market_value": 750,
@@ -3147,7 +3236,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Big Pearl"
+    "name": "Big Pearl",
+    "index": 89
   },
   "stardust": {
     "market_value": 200,
@@ -3182,7 +3272,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Stardust"
+    "name": "Stardust",
+    "index": 90
   },
   "starpiece": {
     "market_value": 980,
@@ -3217,7 +3308,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Star Piece"
+    "name": "Star Piece",
+    "index": 91
   },
   "nugget": {
     "market_value": 1000,
@@ -3252,7 +3344,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Nugget"
+    "name": "Nugget",
+    "index": 92
   },
   "heartscale": {
     "market_value": 100,
@@ -3287,7 +3380,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Heart Scale"
+    "name": "Heart Scale",
+    "index": 93
   },
   "honey": {
     "market_value": 10,
@@ -3322,7 +3416,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Honey"
+    "name": "Honey",
+    "index": 94
   },
   "growthmulch": {
     "market_value": 20,
@@ -3357,7 +3452,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Growth Mulch"
+    "name": "Growth Mulch",
+    "index": 95
   },
   "dampmulch": {
     "market_value": 20,
@@ -3392,7 +3488,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Damp Mulch"
+    "name": "Damp Mulch",
+    "index": 96
   },
   "stablemulch": {
     "market_value": 20,
@@ -3427,7 +3524,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Stable Mulch"
+    "name": "Stable Mulch",
+    "index": 97
   },
   "gooeymulch": {
     "market_value": 20,
@@ -3462,7 +3560,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Gooey Mulch"
+    "name": "Gooey Mulch",
+    "index": 98
   },
   "rootfossil": {
     "market_value": 100,
@@ -3497,7 +3596,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Root Fossil"
+    "name": "Root Fossil",
+    "index": 99
   },
   "clawfossil": {
     "market_value": 100,
@@ -3532,7 +3632,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Claw Fossil"
+    "name": "Claw Fossil",
+    "index": 100
   },
   "helixfossil": {
     "market_value": 100,
@@ -3567,7 +3668,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Helix Fossil"
+    "name": "Helix Fossil",
+    "index": 101
   },
   "domefossil": {
     "market_value": 100,
@@ -3602,7 +3704,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Dome Fossil"
+    "name": "Dome Fossil",
+    "index": 102
   },
   "oldamber": {
     "market_value": 100,
@@ -3637,7 +3740,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Old Amber"
+    "name": "Old Amber",
+    "index": 103
   },
   "armorfossil": {
     "market_value": 100,
@@ -3672,7 +3776,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Armor Fossil"
+    "name": "Armor Fossil",
+    "index": 104
   },
   "skullfossil": {
     "market_value": 100,
@@ -3707,7 +3812,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Skull Fossil"
+    "name": "Skull Fossil",
+    "index": 105
   },
   "rarebone": {
     "market_value": 1000,
@@ -3742,7 +3848,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Rare Bone"
+    "name": "Rare Bone",
+    "index": 106
   },
   "shinystone": {
     "market_value": 210,
@@ -3777,7 +3884,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Shiny Stone"
+    "name": "Shiny Stone",
+    "index": 107
   },
   "duskstone": {
     "market_value": 210,
@@ -3812,7 +3920,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Dusk Stone"
+    "name": "Dusk Stone",
+    "index": 108
   },
   "dawnstone": {
     "market_value": 210,
@@ -3847,7 +3956,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Dawn Stone"
+    "name": "Dawn Stone",
+    "index": 109
   },
   "linkcable": {
     "market_value": 210,
@@ -3882,7 +3992,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Link Cable"
+    "name": "Link Cable",
+    "index": 262
   },
   "oddkeystone": {
     "market_value": 210,
@@ -3917,7 +4028,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Odd Keystone"
+    "name": "Odd Keystone",
+    "index": 111
   },
   "griseousorb": {
     "market_value": 1000,
@@ -3952,7 +4064,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Griseous Orb"
+    "name": "Griseous Orb",
+    "index": 112
   },
   "???": {
     "market_value": 0,
@@ -3987,7 +4100,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "???"
+    "name": "???",
+    "index": 427
   },
   "dousedrive": {
     "market_value": 100,
@@ -4022,7 +4136,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Douse Drive"
+    "name": "Douse Drive",
+    "index": 116
   },
   "shockdrive": {
     "market_value": 100,
@@ -4057,7 +4172,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Shock Drive"
+    "name": "Shock Drive",
+    "index": 117
   },
   "burndrive": {
     "market_value": 100,
@@ -4092,7 +4208,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Burn Drive"
+    "name": "Burn Drive",
+    "index": 118
   },
   "chilldrive": {
     "market_value": 100,
@@ -4127,7 +4244,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Chill Drive"
+    "name": "Chill Drive",
+    "index": 119
   },
   "sweetheart": {
     "market_value": 10,
@@ -4162,7 +4280,8 @@
     "ow_happiness": 1,
     "hold_happiness": 1,
     "padding": 0,
-    "name": "Sweet Heart"
+    "name": "Sweet Heart",
+    "index": 134
   },
   "adamantorb": {
     "market_value": 1000,
@@ -4197,7 +4316,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Adamant Orb"
+    "name": "Adamant Orb",
+    "index": 135
   },
   "lustrousorb": {
     "market_value": 1000,
@@ -4232,7 +4352,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Lustrous Orb"
+    "name": "Lustrous Orb",
+    "index": 136
   },
   "greetmail": {
     "market_value": 5,
@@ -4267,7 +4388,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Greet Mail"
+    "name": "Greet Mail",
+    "index": 137
   },
   "favoredmail": {
     "market_value": 5,
@@ -4302,7 +4424,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Favored Mail"
+    "name": "Favored Mail",
+    "index": 138
   },
   "rsvpmail": {
     "market_value": 5,
@@ -4337,7 +4460,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "RSVP Mail"
+    "name": "RSVP Mail",
+    "index": 139
   },
   "thanksmail": {
     "market_value": 5,
@@ -4372,7 +4496,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Thanks Mail"
+    "name": "Thanks Mail",
+    "index": 140
   },
   "inquirymail": {
     "market_value": 5,
@@ -4407,7 +4532,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Inquiry Mail"
+    "name": "Inquiry Mail",
+    "index": 141
   },
   "likemail": {
     "market_value": 5,
@@ -4442,7 +4568,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Like Mail"
+    "name": "Like Mail",
+    "index": 142
   },
   "replymail": {
     "market_value": 5,
@@ -4477,7 +4604,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Reply Mail"
+    "name": "Reply Mail",
+    "index": 143
   },
   "bridgemails": {
     "market_value": 5,
@@ -4512,7 +4640,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Bridge Mail S"
+    "name": "Bridge Mail S",
+    "index": 144
   },
   "bridgemaild": {
     "market_value": 5,
@@ -4547,7 +4676,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Bridge Mail D"
+    "name": "Bridge Mail D",
+    "index": 145
   },
   "bridgemailt": {
     "market_value": 5,
@@ -4582,7 +4712,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Bridge Mail T"
+    "name": "Bridge Mail T",
+    "index": 146
   },
   "bridgemailv": {
     "market_value": 5,
@@ -4617,7 +4748,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Bridge Mail V"
+    "name": "Bridge Mail V",
+    "index": 147
   },
   "bridgemailm": {
     "market_value": 5,
@@ -4652,7 +4784,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Bridge Mail M"
+    "name": "Bridge Mail M",
+    "index": 148
   },
   "cheriberry": {
     "market_value": 2,
@@ -4687,7 +4820,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Cheri Berry"
+    "name": "Cheri Berry",
+    "index": 149
   },
   "chestoberry": {
     "market_value": 2,
@@ -4722,7 +4856,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Chesto Berry"
+    "name": "Chesto Berry",
+    "index": 150
   },
   "pechaberry": {
     "market_value": 2,
@@ -4757,7 +4892,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Pecha Berry"
+    "name": "Pecha Berry",
+    "index": 151
   },
   "rawstberry": {
     "market_value": 2,
@@ -4792,7 +4928,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Rawst Berry"
+    "name": "Rawst Berry",
+    "index": 152
   },
   "aspearberry": {
     "market_value": 2,
@@ -4827,7 +4964,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Aspear Berry"
+    "name": "Aspear Berry",
+    "index": 153
   },
   "leppaberry": {
     "market_value": 2,
@@ -4862,7 +5000,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Leppa Berry"
+    "name": "Leppa Berry",
+    "index": 154
   },
   "oranberry": {
     "market_value": 2,
@@ -4897,7 +5036,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Oran Berry"
+    "name": "Oran Berry",
+    "index": 155
   },
   "persimberry": {
     "market_value": 2,
@@ -4932,7 +5072,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Persim Berry"
+    "name": "Persim Berry",
+    "index": 156
   },
   "lumberry": {
     "market_value": 2,
@@ -4967,7 +5108,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Lum Berry"
+    "name": "Lum Berry",
+    "index": 157
   },
   "sitrusberry": {
     "market_value": 2,
@@ -5002,7 +5144,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Sitrus Berry"
+    "name": "Sitrus Berry",
+    "index": 158
   },
   "figyberry": {
     "market_value": 2,
@@ -5037,7 +5180,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Figy Berry"
+    "name": "Figy Berry",
+    "index": 159
   },
   "wikiberry": {
     "market_value": 2,
@@ -5072,7 +5216,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Wiki Berry"
+    "name": "Wiki Berry",
+    "index": 160
   },
   "magoberry": {
     "market_value": 2,
@@ -5107,7 +5252,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Mago Berry"
+    "name": "Mago Berry",
+    "index": 161
   },
   "aguavberry": {
     "market_value": 2,
@@ -5142,7 +5288,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Aguav Berry"
+    "name": "Aguav Berry",
+    "index": 162
   },
   "iapapaberry": {
     "market_value": 2,
@@ -5177,7 +5324,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Iapapa Berry"
+    "name": "Iapapa Berry",
+    "index": 163
   },
   "razzberry": {
     "market_value": 2,
@@ -5212,7 +5360,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Razz Berry"
+    "name": "Razz Berry",
+    "index": 164
   },
   "blukberry": {
     "market_value": 2,
@@ -5247,7 +5396,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Bluk Berry"
+    "name": "Bluk Berry",
+    "index": 165
   },
   "nanabberry": {
     "market_value": 2,
@@ -5282,7 +5432,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Nanab Berry"
+    "name": "Nanab Berry",
+    "index": 166
   },
   "wepearberry": {
     "market_value": 2,
@@ -5317,7 +5468,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Wepear Berry"
+    "name": "Wepear Berry",
+    "index": 167
   },
   "pinapberry": {
     "market_value": 2,
@@ -5352,7 +5504,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Pinap Berry"
+    "name": "Pinap Berry",
+    "index": 168
   },
   "pomegberry": {
     "market_value": 2,
@@ -5387,7 +5540,8 @@
     "ow_happiness": 5,
     "hold_happiness": 2,
     "padding": 0,
-    "name": "Pomeg Berry"
+    "name": "Pomeg Berry",
+    "index": 169
   },
   "kelpsyberry": {
     "market_value": 2,
@@ -5422,7 +5576,8 @@
     "ow_happiness": 5,
     "hold_happiness": 2,
     "padding": 0,
-    "name": "Kelpsy Berry"
+    "name": "Kelpsy Berry",
+    "index": 170
   },
   "qualotberry": {
     "market_value": 2,
@@ -5457,7 +5612,8 @@
     "ow_happiness": 5,
     "hold_happiness": 2,
     "padding": 0,
-    "name": "Qualot Berry"
+    "name": "Qualot Berry",
+    "index": 171
   },
   "hondewberry": {
     "market_value": 2,
@@ -5492,7 +5648,8 @@
     "ow_happiness": 5,
     "hold_happiness": 2,
     "padding": 0,
-    "name": "Hondew Berry"
+    "name": "Hondew Berry",
+    "index": 172
   },
   "grepaberry": {
     "market_value": 2,
@@ -5527,7 +5684,8 @@
     "ow_happiness": 5,
     "hold_happiness": 2,
     "padding": 0,
-    "name": "Grepa Berry"
+    "name": "Grepa Berry",
+    "index": 173
   },
   "tamatoberry": {
     "market_value": 2,
@@ -5562,7 +5720,8 @@
     "ow_happiness": 5,
     "hold_happiness": 2,
     "padding": 0,
-    "name": "Tamato Berry"
+    "name": "Tamato Berry",
+    "index": 174
   },
   "cornnberry": {
     "market_value": 2,
@@ -5597,7 +5756,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Cornn Berry"
+    "name": "Cornn Berry",
+    "index": 175
   },
   "magostberry": {
     "market_value": 2,
@@ -5632,7 +5792,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Magost Berry"
+    "name": "Magost Berry",
+    "index": 176
   },
   "rabutaberry": {
     "market_value": 2,
@@ -5667,7 +5828,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Rabuta Berry"
+    "name": "Rabuta Berry",
+    "index": 177
   },
   "nomelberry": {
     "market_value": 2,
@@ -5702,7 +5864,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Nomel Berry"
+    "name": "Nomel Berry",
+    "index": 178
   },
   "spelonberry": {
     "market_value": 2,
@@ -5737,7 +5900,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Spelon Berry"
+    "name": "Spelon Berry",
+    "index": 179
   },
   "pamtreberry": {
     "market_value": 2,
@@ -5772,7 +5936,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Pamtre Berry"
+    "name": "Pamtre Berry",
+    "index": 180
   },
   "watmelberry": {
     "market_value": 2,
@@ -5807,7 +5972,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Watmel Berry"
+    "name": "Watmel Berry",
+    "index": 181
   },
   "durinberry": {
     "market_value": 2,
@@ -5842,7 +6008,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Durin Berry"
+    "name": "Durin Berry",
+    "index": 182
   },
   "belueberry": {
     "market_value": 2,
@@ -5877,7 +6044,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Belue Berry"
+    "name": "Belue Berry",
+    "index": 183
   },
   "occaberry": {
     "market_value": 2,
@@ -5912,7 +6080,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Occa Berry"
+    "name": "Occa Berry",
+    "index": 184
   },
   "passhoberry": {
     "market_value": 2,
@@ -5947,7 +6116,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Passho Berry"
+    "name": "Passho Berry",
+    "index": 185
   },
   "wacanberry": {
     "market_value": 2,
@@ -5982,7 +6152,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Wacan Berry"
+    "name": "Wacan Berry",
+    "index": 186
   },
   "rindoberry": {
     "market_value": 2,
@@ -6017,7 +6188,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Rindo Berry"
+    "name": "Rindo Berry",
+    "index": 187
   },
   "yacheberry": {
     "market_value": 2,
@@ -6052,7 +6224,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Yache Berry"
+    "name": "Yache Berry",
+    "index": 188
   },
   "chopleberry": {
     "market_value": 2,
@@ -6087,7 +6260,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Chople Berry"
+    "name": "Chople Berry",
+    "index": 189
   },
   "kebiaberry": {
     "market_value": 2,
@@ -6122,7 +6296,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Kebia Berry"
+    "name": "Kebia Berry",
+    "index": 190
   },
   "shucaberry": {
     "market_value": 2,
@@ -6157,7 +6332,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Shuca Berry"
+    "name": "Shuca Berry",
+    "index": 191
   },
   "cobaberry": {
     "market_value": 2,
@@ -6192,7 +6368,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Coba Berry"
+    "name": "Coba Berry",
+    "index": 192
   },
   "payapaberry": {
     "market_value": 2,
@@ -6227,7 +6404,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Payapa Berry"
+    "name": "Payapa Berry",
+    "index": 193
   },
   "tangaberry": {
     "market_value": 2,
@@ -6262,7 +6440,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Tanga Berry"
+    "name": "Tanga Berry",
+    "index": 194
   },
   "chartiberry": {
     "market_value": 2,
@@ -6297,7 +6476,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Charti Berry"
+    "name": "Charti Berry",
+    "index": 195
   },
   "kasibberry": {
     "market_value": 2,
@@ -6332,7 +6512,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Kasib Berry"
+    "name": "Kasib Berry",
+    "index": 196
   },
   "habanberry": {
     "market_value": 2,
@@ -6367,7 +6548,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Haban Berry"
+    "name": "Haban Berry",
+    "index": 197
   },
   "colburberry": {
     "market_value": 2,
@@ -6402,7 +6584,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Colbur Berry"
+    "name": "Colbur Berry",
+    "index": 198
   },
   "babiriberry": {
     "market_value": 2,
@@ -6437,7 +6620,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Babiri Berry"
+    "name": "Babiri Berry",
+    "index": 199
   },
   "chilanberry": {
     "market_value": 2,
@@ -6472,7 +6656,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Chilan Berry"
+    "name": "Chilan Berry",
+    "index": 200
   },
   "liechiberry": {
     "market_value": 2,
@@ -6507,7 +6692,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Liechi Berry"
+    "name": "Liechi Berry",
+    "index": 201
   },
   "ganlonberry": {
     "market_value": 2,
@@ -6542,7 +6728,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Ganlon Berry"
+    "name": "Ganlon Berry",
+    "index": 202
   },
   "salacberry": {
     "market_value": 2,
@@ -6577,7 +6764,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Salac Berry"
+    "name": "Salac Berry",
+    "index": 203
   },
   "petayaberry": {
     "market_value": 2,
@@ -6612,7 +6800,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Petaya Berry"
+    "name": "Petaya Berry",
+    "index": 204
   },
   "apicotberry": {
     "market_value": 2,
@@ -6647,7 +6836,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Apicot Berry"
+    "name": "Apicot Berry",
+    "index": 205
   },
   "lansatberry": {
     "market_value": 2,
@@ -6682,7 +6872,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Lansat Berry"
+    "name": "Lansat Berry",
+    "index": 206
   },
   "starfberry": {
     "market_value": 2,
@@ -6717,7 +6908,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Starf Berry"
+    "name": "Starf Berry",
+    "index": 207
   },
   "enigmaberry": {
     "market_value": 2,
@@ -6752,7 +6944,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Enigma Berry"
+    "name": "Enigma Berry",
+    "index": 208
   },
   "micleberry": {
     "market_value": 2,
@@ -6787,7 +6980,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Micle Berry"
+    "name": "Micle Berry",
+    "index": 209
   },
   "custapberry": {
     "market_value": 2,
@@ -6822,7 +7016,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Custap Berry"
+    "name": "Custap Berry",
+    "index": 210
   },
   "jabocaberry": {
     "market_value": 2,
@@ -6857,7 +7052,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Jaboca Berry"
+    "name": "Jaboca Berry",
+    "index": 211
   },
   "rowapberry": {
     "market_value": 2,
@@ -6892,7 +7088,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Rowap Berry"
+    "name": "Rowap Berry",
+    "index": 212
   },
   "brightpowder": {
     "market_value": 1,
@@ -6927,7 +7124,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Bright Powder"
+    "name": "Bright Powder",
+    "index": 213
   },
   "whiteherb": {
     "market_value": 10,
@@ -6962,7 +7160,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "White Herb"
+    "name": "White Herb",
+    "index": 214
   },
   "machobrace": {
     "market_value": 300,
@@ -6997,7 +7196,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Macho Brace"
+    "name": "Macho Brace",
+    "index": 215
   },
   "exp.share": {
     "market_value": 300,
@@ -7032,7 +7232,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Exp. Share"
+    "name": "Exp. Share",
+    "index": 216
   },
   "quickclaw": {
     "market_value": 10,
@@ -7067,7 +7268,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Quick Claw"
+    "name": "Quick Claw",
+    "index": 217
   },
   "soothebell": {
     "market_value": 10,
@@ -7102,7 +7304,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Soothe Bell"
+    "name": "Soothe Bell",
+    "index": 218
   },
   "mentalherb": {
     "market_value": 10,
@@ -7137,7 +7340,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Mental Herb"
+    "name": "Mental Herb",
+    "index": 219
   },
   "choiceband": {
     "market_value": 10,
@@ -7172,7 +7376,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Choice Band"
+    "name": "Choice Band",
+    "index": 220
   },
   "kingsrock": {
     "market_value": 10,
@@ -7207,7 +7412,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "King's Rock"
+    "name": "King's Rock",
+    "index": 221
   },
   "silverpowder": {
     "market_value": 10,
@@ -7242,7 +7448,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Silver Powder"
+    "name": "Silver Powder",
+    "index": 222
   },
   "amuletcoin": {
     "market_value": 10,
@@ -7277,7 +7484,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Amulet Coin"
+    "name": "Amulet Coin",
+    "index": 223
   },
   "cleansetag": {
     "market_value": 20,
@@ -7312,7 +7520,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Cleanse Tag"
+    "name": "Cleanse Tag",
+    "index": 224
   },
   "souldew": {
     "market_value": 20,
@@ -7347,7 +7556,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Soul Dew"
+    "name": "Soul Dew",
+    "index": 225
   },
   "deepseatooth": {
     "market_value": 20,
@@ -7382,7 +7592,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Deep Sea Tooth"
+    "name": "Deep Sea Tooth",
+    "index": 226
   },
   "deepseascale": {
     "market_value": 20,
@@ -7417,7 +7628,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Deep Sea Scale"
+    "name": "Deep Sea Scale",
+    "index": 227
   },
   "smokeball": {
     "market_value": 20,
@@ -7452,7 +7664,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Smoke Ball"
+    "name": "Smoke Ball",
+    "index": 228
   },
   "everstone": {
     "market_value": 20,
@@ -7487,7 +7700,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Everstone"
+    "name": "Everstone",
+    "index": 229
   },
   "focusband": {
     "market_value": 20,
@@ -7522,7 +7736,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Focus Band"
+    "name": "Focus Band",
+    "index": 230
   },
   "luckyegg": {
     "market_value": 20,
@@ -7557,7 +7772,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Lucky Egg"
+    "name": "Lucky Egg",
+    "index": 231
   },
   "scopelens": {
     "market_value": 20,
@@ -7592,7 +7808,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Scope Lens"
+    "name": "Scope Lens",
+    "index": 232
   },
   "metalcoat": {
     "market_value": 10,
@@ -7627,7 +7844,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Metal Coat"
+    "name": "Metal Coat",
+    "index": 233
   },
   "leftovers": {
     "market_value": 20,
@@ -7662,7 +7880,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Leftovers"
+    "name": "Leftovers",
+    "index": 234
   },
   "dragonscale": {
     "market_value": 210,
@@ -7697,7 +7916,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Dragon Scale"
+    "name": "Dragon Scale",
+    "index": 235
   },
   "lightball": {
     "market_value": 10,
@@ -7732,7 +7952,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Light Ball"
+    "name": "Light Ball",
+    "index": 236
   },
   "softsand": {
     "market_value": 10,
@@ -7767,7 +7988,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Soft Sand"
+    "name": "Soft Sand",
+    "index": 237
   },
   "hardstone": {
     "market_value": 10,
@@ -7802,7 +8024,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Hard Stone"
+    "name": "Hard Stone",
+    "index": 238
   },
   "miracleseed": {
     "market_value": 10,
@@ -7837,7 +8060,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Miracle Seed"
+    "name": "Miracle Seed",
+    "index": 239
   },
   "blackglasses": {
     "market_value": 10,
@@ -7872,7 +8096,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Black Glasses"
+    "name": "Black Glasses",
+    "index": 240
   },
   "blackbelt": {
     "market_value": 10,
@@ -7907,7 +8132,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Black Belt"
+    "name": "Black Belt",
+    "index": 241
   },
   "magnet": {
     "market_value": 10,
@@ -7942,7 +8168,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Magnet"
+    "name": "Magnet",
+    "index": 242
   },
   "mysticwater": {
     "market_value": 10,
@@ -7977,7 +8204,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Mystic Water"
+    "name": "Mystic Water",
+    "index": 243
   },
   "sharpbeak": {
     "market_value": 10,
@@ -8012,7 +8240,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Sharp Beak"
+    "name": "Sharp Beak",
+    "index": 244
   },
   "poisonbarb": {
     "market_value": 10,
@@ -8047,7 +8276,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Poison Barb"
+    "name": "Poison Barb",
+    "index": 245
   },
   "nevermeltice": {
     "market_value": 10,
@@ -8082,7 +8312,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Never-Melt Ice"
+    "name": "Never-Melt Ice",
+    "index": 246
   },
   "spelltag": {
     "market_value": 10,
@@ -8117,7 +8348,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Spell Tag"
+    "name": "Spell Tag",
+    "index": 247
   },
   "twistedspoon": {
     "market_value": 10,
@@ -8152,7 +8384,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Twisted Spoon"
+    "name": "Twisted Spoon",
+    "index": 248
   },
   "charcoal": {
     "market_value": 980,
@@ -8187,7 +8420,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Charcoal"
+    "name": "Charcoal",
+    "index": 249
   },
   "dragonfang": {
     "market_value": 10,
@@ -8222,7 +8456,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Dragon Fang"
+    "name": "Dragon Fang",
+    "index": 250
   },
   "silkscarf": {
     "market_value": 10,
@@ -8257,7 +8492,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Silk Scarf"
+    "name": "Silk Scarf",
+    "index": 251
   },
   "upgrade": {
     "market_value": 210,
@@ -8292,7 +8528,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Upgrade"
+    "name": "Upgrade",
+    "index": 252
   },
   "shellbell": {
     "market_value": 20,
@@ -8327,7 +8564,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Shell Bell"
+    "name": "Shell Bell",
+    "index": 253
   },
   "seaincense": {
     "market_value": 960,
@@ -8362,7 +8600,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Sea Incense"
+    "name": "Sea Incense",
+    "index": 254
   },
   "laxincense": {
     "market_value": 960,
@@ -8397,7 +8636,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Lax Incense"
+    "name": "Lax Incense",
+    "index": 255
   },
   "luckypunch": {
     "market_value": 1,
@@ -8432,7 +8672,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Lucky Punch"
+    "name": "Lucky Punch",
+    "index": 256
   },
   "metalpowder": {
     "market_value": 1,
@@ -8467,7 +8708,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Metal Powder"
+    "name": "Metal Powder",
+    "index": 257
   },
   "thickclub": {
     "market_value": 50,
@@ -8502,7 +8744,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Thick Club"
+    "name": "Thick Club",
+    "index": 258
   },
   "stick": {
     "market_value": 20,
@@ -8537,7 +8780,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Stick"
+    "name": "Stick",
+    "index": 259
   },
   "redscarf": {
     "market_value": 210,
@@ -8572,7 +8816,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Red Scarf"
+    "name": "Red Scarf",
+    "index": 260
   },
   "icestone": {
     "market_value": 210,
@@ -8607,7 +8852,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Ice Stone"
+    "name": "Ice Stone",
+    "index": 261
   },
   "greenscarf": {
     "market_value": 10,
@@ -8642,7 +8888,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Green Scarf"
+    "name": "Green Scarf",
+    "index": 263
   },
   "yellowscarf": {
     "market_value": 10,
@@ -8677,7 +8924,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Yellow Scarf"
+    "name": "Yellow Scarf",
+    "index": 264
   },
   "widelens": {
     "market_value": 20,
@@ -8712,7 +8960,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Wide Lens"
+    "name": "Wide Lens",
+    "index": 265
   },
   "muscleband": {
     "market_value": 20,
@@ -8747,7 +8996,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Muscle Band"
+    "name": "Muscle Band",
+    "index": 266
   },
   "wiseglasses": {
     "market_value": 20,
@@ -8782,7 +9032,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Wise Glasses"
+    "name": "Wise Glasses",
+    "index": 267
   },
   "expertbelt": {
     "market_value": 20,
@@ -8817,7 +9068,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Expert Belt"
+    "name": "Expert Belt",
+    "index": 268
   },
   "lightclay": {
     "market_value": 20,
@@ -8852,7 +9104,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Light Clay"
+    "name": "Light Clay",
+    "index": 269
   },
   "lifeorb": {
     "market_value": 20,
@@ -8887,7 +9140,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Life Orb"
+    "name": "Life Orb",
+    "index": 270
   },
   "powerherb": {
     "market_value": 10,
@@ -8922,7 +9176,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Power Herb"
+    "name": "Power Herb",
+    "index": 271
   },
   "toxicorb": {
     "market_value": 10,
@@ -8957,7 +9212,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Toxic Orb"
+    "name": "Toxic Orb",
+    "index": 272
   },
   "flameorb": {
     "market_value": 10,
@@ -8992,7 +9248,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Flame Orb"
+    "name": "Flame Orb",
+    "index": 273
   },
   "quickpowder": {
     "market_value": 1,
@@ -9027,7 +9284,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Quick Powder"
+    "name": "Quick Powder",
+    "index": 274
   },
   "focussash": {
     "market_value": 20,
@@ -9062,7 +9320,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Focus Sash"
+    "name": "Focus Sash",
+    "index": 275
   },
   "zoomlens": {
     "market_value": 20,
@@ -9097,7 +9356,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Zoom Lens"
+    "name": "Zoom Lens",
+    "index": 276
   },
   "metronome": {
     "market_value": 20,
@@ -9132,7 +9392,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Metronome"
+    "name": "Metronome",
+    "index": 277
   },
   "ironball": {
     "market_value": 20,
@@ -9167,7 +9428,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Iron Ball"
+    "name": "Iron Ball",
+    "index": 278
   },
   "laggingtail": {
     "market_value": 20,
@@ -9202,7 +9464,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Lagging Tail"
+    "name": "Lagging Tail",
+    "index": 279
   },
   "destinyknot": {
     "market_value": 20,
@@ -9237,7 +9500,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Destiny Knot"
+    "name": "Destiny Knot",
+    "index": 280
   },
   "blacksludge": {
     "market_value": 20,
@@ -9272,7 +9536,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Black Sludge"
+    "name": "Black Sludge",
+    "index": 281
   },
   "icyrock": {
     "market_value": 20,
@@ -9307,7 +9572,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Icy Rock"
+    "name": "Icy Rock",
+    "index": 282
   },
   "smoothrock": {
     "market_value": 20,
@@ -9342,7 +9608,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Smooth Rock"
+    "name": "Smooth Rock",
+    "index": 283
   },
   "heatrock": {
     "market_value": 20,
@@ -9377,7 +9644,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Heat Rock"
+    "name": "Heat Rock",
+    "index": 284
   },
   "damprock": {
     "market_value": 20,
@@ -9412,7 +9680,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Damp Rock"
+    "name": "Damp Rock",
+    "index": 285
   },
   "gripclaw": {
     "market_value": 20,
@@ -9447,7 +9716,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Grip Claw"
+    "name": "Grip Claw",
+    "index": 286
   },
   "choicescarf": {
     "market_value": 20,
@@ -9482,7 +9752,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Choice Scarf"
+    "name": "Choice Scarf",
+    "index": 287
   },
   "stickybarb": {
     "market_value": 20,
@@ -9517,7 +9788,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Sticky Barb"
+    "name": "Sticky Barb",
+    "index": 288
   },
   "powerbracer": {
     "market_value": 300,
@@ -9552,7 +9824,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Power Bracer"
+    "name": "Power Bracer",
+    "index": 289
   },
   "powerbelt": {
     "market_value": 300,
@@ -9587,7 +9860,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Power Belt"
+    "name": "Power Belt",
+    "index": 290
   },
   "powerlens": {
     "market_value": 300,
@@ -9622,7 +9896,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Power Lens"
+    "name": "Power Lens",
+    "index": 291
   },
   "powerband": {
     "market_value": 300,
@@ -9657,7 +9932,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Power Band"
+    "name": "Power Band",
+    "index": 292
   },
   "poweranklet": {
     "market_value": 300,
@@ -9692,7 +9968,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Power Anklet"
+    "name": "Power Anklet",
+    "index": 293
   },
   "powerweight": {
     "market_value": 300,
@@ -9727,7 +10004,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Power Weight"
+    "name": "Power Weight",
+    "index": 294
   },
   "shedshell": {
     "market_value": 10,
@@ -9762,7 +10040,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Shed Shell"
+    "name": "Shed Shell",
+    "index": 295
   },
   "bigroot": {
     "market_value": 20,
@@ -9797,7 +10076,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Big Root"
+    "name": "Big Root",
+    "index": 296
   },
   "choicespecs": {
     "market_value": 20,
@@ -9832,7 +10112,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Choice Specs"
+    "name": "Choice Specs",
+    "index": 297
   },
   "flameplate": {
     "market_value": 100,
@@ -9867,7 +10148,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Flame Plate"
+    "name": "Flame Plate",
+    "index": 298
   },
   "splashplate": {
     "market_value": 100,
@@ -9902,7 +10184,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Splash Plate"
+    "name": "Splash Plate",
+    "index": 299
   },
   "zapplate": {
     "market_value": 100,
@@ -9937,7 +10220,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Zap Plate"
+    "name": "Zap Plate",
+    "index": 300
   },
   "meadowplate": {
     "market_value": 100,
@@ -9972,7 +10256,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Meadow Plate"
+    "name": "Meadow Plate",
+    "index": 301
   },
   "icicleplate": {
     "market_value": 100,
@@ -10007,7 +10292,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Icicle Plate"
+    "name": "Icicle Plate",
+    "index": 302
   },
   "fistplate": {
     "market_value": 100,
@@ -10042,7 +10328,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Fist Plate"
+    "name": "Fist Plate",
+    "index": 303
   },
   "toxicplate": {
     "market_value": 100,
@@ -10077,7 +10364,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Toxic Plate"
+    "name": "Toxic Plate",
+    "index": 304
   },
   "earthplate": {
     "market_value": 100,
@@ -10112,7 +10400,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Earth Plate"
+    "name": "Earth Plate",
+    "index": 305
   },
   "skyplate": {
     "market_value": 100,
@@ -10147,7 +10436,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Sky Plate"
+    "name": "Sky Plate",
+    "index": 306
   },
   "mindplate": {
     "market_value": 100,
@@ -10182,7 +10472,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Mind Plate"
+    "name": "Mind Plate",
+    "index": 307
   },
   "insectplate": {
     "market_value": 100,
@@ -10217,7 +10508,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Insect Plate"
+    "name": "Insect Plate",
+    "index": 308
   },
   "stoneplate": {
     "market_value": 100,
@@ -10252,7 +10544,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Stone Plate"
+    "name": "Stone Plate",
+    "index": 309
   },
   "spookyplate": {
     "market_value": 100,
@@ -10287,7 +10580,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Spooky Plate"
+    "name": "Spooky Plate",
+    "index": 310
   },
   "dracoplate": {
     "market_value": 100,
@@ -10322,7 +10616,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Draco Plate"
+    "name": "Draco Plate",
+    "index": 311
   },
   "dreadplate": {
     "market_value": 100,
@@ -10357,7 +10652,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Dread Plate"
+    "name": "Dread Plate",
+    "index": 312
   },
   "ironplate": {
     "market_value": 100,
@@ -10392,7 +10688,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Iron Plate"
+    "name": "Iron Plate",
+    "index": 313
   },
   "oddincense": {
     "market_value": 960,
@@ -10427,7 +10724,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Odd Incense"
+    "name": "Odd Incense",
+    "index": 314
   },
   "rockincense": {
     "market_value": 960,
@@ -10462,7 +10760,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Rock Incense"
+    "name": "Rock Incense",
+    "index": 315
   },
   "fullincense": {
     "market_value": 960,
@@ -10497,7 +10796,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Full Incense"
+    "name": "Full Incense",
+    "index": 316
   },
   "waveincense": {
     "market_value": 960,
@@ -10532,7 +10832,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Wave Incense"
+    "name": "Wave Incense",
+    "index": 317
   },
   "roseincense": {
     "market_value": 960,
@@ -10567,7 +10868,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Rose Incense"
+    "name": "Rose Incense",
+    "index": 318
   },
   "luckincense": {
     "market_value": 960,
@@ -10602,7 +10904,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Luck Incense"
+    "name": "Luck Incense",
+    "index": 319
   },
   "pureincense": {
     "market_value": 960,
@@ -10637,7 +10940,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Pure Incense"
+    "name": "Pure Incense",
+    "index": 320
   },
   "protector": {
     "market_value": 210,
@@ -10672,7 +10976,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Protector"
+    "name": "Protector",
+    "index": 321
   },
   "electirizer": {
     "market_value": 210,
@@ -10707,7 +11012,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Electirizer"
+    "name": "Electirizer",
+    "index": 322
   },
   "magmarizer": {
     "market_value": 210,
@@ -10742,7 +11048,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Magmarizer"
+    "name": "Magmarizer",
+    "index": 323
   },
   "dubiousdisc": {
     "market_value": 210,
@@ -10777,7 +11084,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Dubious Disc"
+    "name": "Dubious Disc",
+    "index": 324
   },
   "reapercloth": {
     "market_value": 210,
@@ -10812,7 +11120,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Reaper Cloth"
+    "name": "Reaper Cloth",
+    "index": 325
   },
   "razorclaw": {
     "market_value": 210,
@@ -10847,7 +11156,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Razor Claw"
+    "name": "Razor Claw",
+    "index": 326
   },
   "razorfang": {
     "market_value": 210,
@@ -10882,7 +11192,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Razor Fang"
+    "name": "Razor Fang",
+    "index": 327
   },
   "tm01": {
     "market_value": 1000,
@@ -10917,7 +11228,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "TM01"
+    "name": "TM01",
+    "index": 328
   },
   "tm02": {
     "market_value": 1000,
@@ -10952,7 +11264,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "TM02"
+    "name": "TM02",
+    "index": 329
   },
   "tm03": {
     "market_value": 1000,
@@ -10987,7 +11300,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "TM03"
+    "name": "TM03",
+    "index": 330
   },
   "tm04": {
     "market_value": 8000,
@@ -11022,7 +11336,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "TM04"
+    "name": "TM04",
+    "index": 331
   },
   "tm05": {
     "market_value": 1000,
@@ -11057,7 +11372,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "TM05"
+    "name": "TM05",
+    "index": 332
   },
   "tm06": {
     "market_value": 1000,
@@ -11092,7 +11408,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "TM06"
+    "name": "TM06",
+    "index": 333
   },
   "tm07": {
     "market_value": 5000,
@@ -11127,7 +11444,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "TM07"
+    "name": "TM07",
+    "index": 334
   },
   "tm08": {
     "market_value": 8000,
@@ -11162,7 +11480,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "TM08"
+    "name": "TM08",
+    "index": 335
   },
   "tm09": {
     "market_value": 1000,
@@ -11197,7 +11516,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "TM09"
+    "name": "TM09",
+    "index": 336
   },
   "tm10": {
     "market_value": 1000,
@@ -11232,7 +11552,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "TM10"
+    "name": "TM10",
+    "index": 337
   },
   "tm11": {
     "market_value": 5000,
@@ -11267,7 +11588,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "TM11"
+    "name": "TM11",
+    "index": 338
   },
   "tm12": {
     "market_value": 1000,
@@ -11302,7 +11624,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "TM12"
+    "name": "TM12",
+    "index": 339
   },
   "tm13": {
     "market_value": 1000,
@@ -11337,7 +11660,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "TM13"
+    "name": "TM13",
+    "index": 340
   },
   "tm14": {
     "market_value": 7000,
@@ -11372,7 +11696,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "TM14"
+    "name": "TM14",
+    "index": 341
   },
   "tm15": {
     "market_value": 9000,
@@ -11407,7 +11732,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "TM15"
+    "name": "TM15",
+    "index": 342
   },
   "tm16": {
     "market_value": 3000,
@@ -11442,7 +11768,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "TM16"
+    "name": "TM16",
+    "index": 343
   },
   "tm17": {
     "market_value": 1000,
@@ -11477,7 +11804,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "TM17"
+    "name": "TM17",
+    "index": 344
   },
   "tm18": {
     "market_value": 5000,
@@ -11512,7 +11840,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "TM18"
+    "name": "TM18",
+    "index": 345
   },
   "tm19": {
     "market_value": 1000,
@@ -11547,7 +11876,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "TM19"
+    "name": "TM19",
+    "index": 346
   },
   "tm20": {
     "market_value": 3000,
@@ -11582,7 +11912,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "TM20"
+    "name": "TM20",
+    "index": 347
   },
   "tm21": {
     "market_value": 1000,
@@ -11617,7 +11948,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "TM21"
+    "name": "TM21",
+    "index": 348
   },
   "tm22": {
     "market_value": 1000,
@@ -11652,7 +11984,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "TM22"
+    "name": "TM22",
+    "index": 349
   },
   "tm23": {
     "market_value": 1000,
@@ -11687,7 +12020,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "TM23"
+    "name": "TM23",
+    "index": 350
   },
   "tm24": {
     "market_value": 1000,
@@ -11722,7 +12056,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "TM24"
+    "name": "TM24",
+    "index": 351
   },
   "tm25": {
     "market_value": 7000,
@@ -11757,7 +12092,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "TM25"
+    "name": "TM25",
+    "index": 352
   },
   "tm26": {
     "market_value": 1000,
@@ -11792,7 +12128,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "TM26"
+    "name": "TM26",
+    "index": 353
   },
   "tm27": {
     "market_value": 1000,
@@ -11827,7 +12164,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "TM27"
+    "name": "TM27",
+    "index": 354
   },
   "tm28": {
     "market_value": 1000,
@@ -11862,7 +12200,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "TM28"
+    "name": "TM28",
+    "index": 355
   },
   "tm29": {
     "market_value": 1000,
@@ -11897,7 +12236,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "TM29"
+    "name": "TM29",
+    "index": 356
   },
   "tm30": {
     "market_value": 1000,
@@ -11932,7 +12272,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "TM30"
+    "name": "TM30",
+    "index": 357
   },
   "tm31": {
     "market_value": 1000,
@@ -11967,7 +12308,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "TM31"
+    "name": "TM31",
+    "index": 358
   },
   "tm32": {
     "market_value": 1000,
@@ -12002,7 +12344,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "TM32"
+    "name": "TM32",
+    "index": 359
   },
   "tm33": {
     "market_value": 3000,
@@ -12037,7 +12380,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "TM33"
+    "name": "TM33",
+    "index": 360
   },
   "tm34": {
     "market_value": 1000,
@@ -12072,7 +12416,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "TM34"
+    "name": "TM34",
+    "index": 361
   },
   "tm35": {
     "market_value": 1000,
@@ -12107,7 +12452,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "TM35"
+    "name": "TM35",
+    "index": 362
   },
   "tm36": {
     "market_value": 1000,
@@ -12142,7 +12488,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "TM36"
+    "name": "TM36",
+    "index": 363
   },
   "tm37": {
     "market_value": 5000,
@@ -12177,7 +12524,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "TM37"
+    "name": "TM37",
+    "index": 364
   },
   "tm38": {
     "market_value": 7000,
@@ -12212,7 +12560,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "TM38"
+    "name": "TM38",
+    "index": 365
   },
   "tm39": {
     "market_value": 1000,
@@ -12247,7 +12596,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "TM39"
+    "name": "TM39",
+    "index": 366
   },
   "tm40": {
     "market_value": 1000,
@@ -12282,7 +12632,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "TM40"
+    "name": "TM40",
+    "index": 367
   },
   "tm41": {
     "market_value": 1000,
@@ -12317,7 +12668,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "TM41"
+    "name": "TM41",
+    "index": 368
   },
   "tm42": {
     "market_value": 1000,
@@ -12352,7 +12704,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "TM42"
+    "name": "TM42",
+    "index": 369
   },
   "tm43": {
     "market_value": 1000,
@@ -12387,7 +12740,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "TM43"
+    "name": "TM43",
+    "index": 370
   },
   "tm44": {
     "market_value": 1000,
@@ -12422,7 +12776,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "TM44"
+    "name": "TM44",
+    "index": 371
   },
   "tm45": {
     "market_value": 1000,
@@ -12457,7 +12812,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "TM45"
+    "name": "TM45",
+    "index": 372
   },
   "tm46": {
     "market_value": 1000,
@@ -12492,7 +12848,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "TM46"
+    "name": "TM46",
+    "index": 373
   },
   "tm47": {
     "market_value": 1000,
@@ -12527,7 +12884,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "TM47"
+    "name": "TM47",
+    "index": 374
   },
   "tm48": {
     "market_value": 1000,
@@ -12562,7 +12920,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "TM48"
+    "name": "TM48",
+    "index": 375
   },
   "tm49": {
     "market_value": 1000,
@@ -12597,7 +12956,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "TM49"
+    "name": "TM49",
+    "index": 376
   },
   "tm50": {
     "market_value": 1000,
@@ -12632,7 +12992,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "TM50"
+    "name": "TM50",
+    "index": 377
   },
   "tm51": {
     "market_value": 1000,
@@ -12667,7 +13028,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "TM51"
+    "name": "TM51",
+    "index": 378
   },
   "tm52": {
     "market_value": 1000,
@@ -12702,7 +13064,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "TM52"
+    "name": "TM52",
+    "index": 379
   },
   "tm53": {
     "market_value": 1000,
@@ -12737,7 +13100,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "TM53"
+    "name": "TM53",
+    "index": 380
   },
   "tm54": {
     "market_value": 1000,
@@ -12772,7 +13136,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "TM54"
+    "name": "TM54",
+    "index": 381
   },
   "tm55": {
     "market_value": 1000,
@@ -12807,7 +13172,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "TM55"
+    "name": "TM55",
+    "index": 382
   },
   "tm56": {
     "market_value": 1000,
@@ -12842,7 +13208,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "TM56"
+    "name": "TM56",
+    "index": 383
   },
   "tm57": {
     "market_value": 1000,
@@ -12877,7 +13244,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "TM57"
+    "name": "TM57",
+    "index": 384
   },
   "tm58": {
     "market_value": 1000,
@@ -12912,7 +13280,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "TM58"
+    "name": "TM58",
+    "index": 385
   },
   "tm59": {
     "market_value": 1000,
@@ -12947,7 +13316,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "TM59"
+    "name": "TM59",
+    "index": 386
   },
   "tm60": {
     "market_value": 1000,
@@ -12982,7 +13352,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "TM60"
+    "name": "TM60",
+    "index": 387
   },
   "tm61": {
     "market_value": 1000,
@@ -13017,7 +13388,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "TM61"
+    "name": "TM61",
+    "index": 388
   },
   "tm62": {
     "market_value": 1000,
@@ -13052,7 +13424,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "TM62"
+    "name": "TM62",
+    "index": 389
   },
   "tm63": {
     "market_value": 1000,
@@ -13087,7 +13460,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "TM63"
+    "name": "TM63",
+    "index": 390
   },
   "tm64": {
     "market_value": 1000,
@@ -13122,7 +13496,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "TM64"
+    "name": "TM64",
+    "index": 391
   },
   "tm65": {
     "market_value": 1000,
@@ -13157,7 +13532,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "TM65"
+    "name": "TM65",
+    "index": 392
   },
   "tm66": {
     "market_value": 1000,
@@ -13192,7 +13568,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "TM66"
+    "name": "TM66",
+    "index": 393
   },
   "tm67": {
     "market_value": 1000,
@@ -13227,7 +13604,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "TM67"
+    "name": "TM67",
+    "index": 394
   },
   "tm68": {
     "market_value": 9000,
@@ -13262,7 +13640,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "TM68"
+    "name": "TM68",
+    "index": 395
   },
   "tm69": {
     "market_value": 1000,
@@ -13297,7 +13676,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "TM69"
+    "name": "TM69",
+    "index": 396
   },
   "tm70": {
     "market_value": 1000,
@@ -13332,7 +13712,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "TM70"
+    "name": "TM70",
+    "index": 397
   },
   "tm71": {
     "market_value": 1000,
@@ -13367,7 +13748,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "TM71"
+    "name": "TM71",
+    "index": 398
   },
   "tm72": {
     "market_value": 1000,
@@ -13402,7 +13784,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "TM72"
+    "name": "TM72",
+    "index": 399
   },
   "tm73": {
     "market_value": 1000,
@@ -13437,7 +13820,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "TM73"
+    "name": "TM73",
+    "index": 400
   },
   "tm74": {
     "market_value": 1000,
@@ -13472,7 +13856,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "TM74"
+    "name": "TM74",
+    "index": 401
   },
   "tm75": {
     "market_value": 1000,
@@ -13507,7 +13892,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "TM75"
+    "name": "TM75",
+    "index": 402
   },
   "tm76": {
     "market_value": 1000,
@@ -13542,7 +13928,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "TM76"
+    "name": "TM76",
+    "index": 403
   },
   "tm77": {
     "market_value": 1000,
@@ -13577,7 +13964,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "TM77"
+    "name": "TM77",
+    "index": 404
   },
   "tm78": {
     "market_value": 1000,
@@ -13612,7 +14000,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "TM78"
+    "name": "TM78",
+    "index": 405
   },
   "tm79": {
     "market_value": 1000,
@@ -13647,7 +14036,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "TM79"
+    "name": "TM79",
+    "index": 406
   },
   "tm80": {
     "market_value": 1000,
@@ -13682,7 +14072,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "TM80"
+    "name": "TM80",
+    "index": 407
   },
   "tm81": {
     "market_value": 1000,
@@ -13717,7 +14108,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "TM81"
+    "name": "TM81",
+    "index": 408
   },
   "tm82": {
     "market_value": 1000,
@@ -13752,7 +14144,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "TM82"
+    "name": "TM82",
+    "index": 409
   },
   "tm83": {
     "market_value": 1000,
@@ -13787,7 +14180,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "TM83"
+    "name": "TM83",
+    "index": 410
   },
   "tm84": {
     "market_value": 1000,
@@ -13822,7 +14216,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "TM84"
+    "name": "TM84",
+    "index": 411
   },
   "tm85": {
     "market_value": 1000,
@@ -13857,7 +14252,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "TM85"
+    "name": "TM85",
+    "index": 412
   },
   "tm86": {
     "market_value": 1000,
@@ -13892,7 +14288,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "TM86"
+    "name": "TM86",
+    "index": 413
   },
   "tm87": {
     "market_value": 1000,
@@ -13927,7 +14324,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "TM87"
+    "name": "TM87",
+    "index": 414
   },
   "tm88": {
     "market_value": 1000,
@@ -13962,7 +14360,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "TM88"
+    "name": "TM88",
+    "index": 415
   },
   "tm89": {
     "market_value": 1000,
@@ -13997,7 +14396,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "TM89"
+    "name": "TM89",
+    "index": 416
   },
   "tm90": {
     "market_value": 1000,
@@ -14032,7 +14432,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "TM90"
+    "name": "TM90",
+    "index": 417
   },
   "tm91": {
     "market_value": 1000,
@@ -14067,7 +14468,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "TM91"
+    "name": "TM91",
+    "index": 418
   },
   "tm92": {
     "market_value": 1000,
@@ -14102,7 +14504,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "TM92"
+    "name": "TM92",
+    "index": 419
   },
   "hm01": {
     "market_value": 0,
@@ -14137,7 +14540,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "HM01"
+    "name": "HM01",
+    "index": 420
   },
   "hm02": {
     "market_value": 0,
@@ -14172,7 +14576,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "HM02"
+    "name": "HM02",
+    "index": 421
   },
   "hm03": {
     "market_value": 0,
@@ -14207,7 +14612,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "HM03"
+    "name": "HM03",
+    "index": 422
   },
   "hm04": {
     "market_value": 0,
@@ -14242,7 +14648,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "HM04"
+    "name": "HM04",
+    "index": 423
   },
   "hm05": {
     "market_value": 0,
@@ -14277,7 +14684,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "HM05"
+    "name": "HM05",
+    "index": 424
   },
   "hm06": {
     "market_value": 0,
@@ -14312,7 +14720,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "HM06"
+    "name": "HM06",
+    "index": 425
   },
   "explorerkit": {
     "market_value": 0,
@@ -14347,7 +14756,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Explorer Kit"
+    "name": "Explorer Kit",
+    "index": 428
   },
   "lootsack": {
     "market_value": 0,
@@ -14382,7 +14792,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Loot Sack"
+    "name": "Loot Sack",
+    "index": 429
   },
   "rulebook": {
     "market_value": 0,
@@ -14417,7 +14828,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Rule Book"
+    "name": "Rule Book",
+    "index": 430
   },
   "pokeradar": {
     "market_value": 0,
@@ -14452,7 +14864,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Poke Radar"
+    "name": "Poke Radar",
+    "index": 431
   },
   "pointcard": {
     "market_value": 0,
@@ -14487,7 +14900,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Point Card"
+    "name": "Point Card",
+    "index": 432
   },
   "journal": {
     "market_value": 0,
@@ -14522,7 +14936,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Journal"
+    "name": "Journal",
+    "index": 433
   },
   "sealcase": {
     "market_value": 0,
@@ -14557,7 +14972,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Seal Case"
+    "name": "Seal Case",
+    "index": 434
   },
   "fashioncase": {
     "market_value": 0,
@@ -14592,7 +15008,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Fashion Case"
+    "name": "Fashion Case",
+    "index": 435
   },
   "sealbag": {
     "market_value": 0,
@@ -14627,7 +15044,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Seal Bag"
+    "name": "Seal Bag",
+    "index": 436
   },
   "palpad": {
     "market_value": 0,
@@ -14662,7 +15080,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Pal Pad"
+    "name": "Pal Pad",
+    "index": 437
   },
   "workskey": {
     "market_value": 0,
@@ -14697,7 +15116,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Works Key"
+    "name": "Works Key",
+    "index": 438
   },
   "oldcharm": {
     "market_value": 0,
@@ -14732,7 +15152,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Old Charm"
+    "name": "Old Charm",
+    "index": 439
   },
   "galactickey": {
     "market_value": 0,
@@ -14767,7 +15188,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Galactic Key"
+    "name": "Galactic Key",
+    "index": 440
   },
   "redchain": {
     "market_value": 0,
@@ -14802,7 +15224,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Red Chain"
+    "name": "Red Chain",
+    "index": 441
   },
   "townmap": {
     "market_value": 0,
@@ -14837,7 +15260,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Town Map"
+    "name": "Town Map",
+    "index": 442
   },
   "vs.seeker": {
     "market_value": 0,
@@ -14872,7 +15296,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Vs. Seeker"
+    "name": "Vs. Seeker",
+    "index": 443
   },
   "coincase": {
     "market_value": 0,
@@ -14907,7 +15332,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Coin Case"
+    "name": "Coin Case",
+    "index": 444
   },
   "oldrod": {
     "market_value": 0,
@@ -14942,7 +15368,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Old Rod"
+    "name": "Old Rod",
+    "index": 445
   },
   "goodrod": {
     "market_value": 0,
@@ -14977,7 +15404,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Good Rod"
+    "name": "Good Rod",
+    "index": 446
   },
   "superrod": {
     "market_value": 0,
@@ -15012,7 +15440,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Super Rod"
+    "name": "Super Rod",
+    "index": 447
   },
   "sprayduck": {
     "market_value": 0,
@@ -15047,7 +15476,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Sprayduck"
+    "name": "Sprayduck",
+    "index": 448
   },
   "poffincase": {
     "market_value": 0,
@@ -15082,7 +15512,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Poffin Case"
+    "name": "Poffin Case",
+    "index": 449
   },
   "bicycle": {
     "market_value": 0,
@@ -15117,7 +15548,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Bicycle"
+    "name": "Bicycle",
+    "index": 450
   },
   "suitekey": {
     "market_value": 0,
@@ -15152,7 +15584,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Suite Key"
+    "name": "Suite Key",
+    "index": 451
   },
   "oaksletter": {
     "market_value": 0,
@@ -15187,7 +15620,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Oak's Letter"
+    "name": "Oak's Letter",
+    "index": 452
   },
   "lunarwing": {
     "market_value": 0,
@@ -15222,7 +15656,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Lunar Wing"
+    "name": "Lunar Wing",
+    "index": 453
   },
   "membercard": {
     "market_value": 0,
@@ -15257,7 +15692,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Member Card"
+    "name": "Member Card",
+    "index": 454
   },
   "azureflute": {
     "market_value": 0,
@@ -15292,7 +15728,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Azure Flute"
+    "name": "Azure Flute",
+    "index": 455
   },
   "s.s.ticket": {
     "market_value": 0,
@@ -15327,7 +15764,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "S.S. Ticket"
+    "name": "S.S. Ticket",
+    "index": 456
   },
   "contestpass": {
     "market_value": 0,
@@ -15362,7 +15800,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Contest Pass"
+    "name": "Contest Pass",
+    "index": 457
   },
   "magmastone": {
     "market_value": 0,
@@ -15397,7 +15836,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Magma Stone"
+    "name": "Magma Stone",
+    "index": 458
   },
   "parcel": {
     "market_value": 0,
@@ -15432,7 +15872,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Parcel"
+    "name": "Parcel",
+    "index": 459
   },
   "coupon1": {
     "market_value": 50,
@@ -15467,7 +15908,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Coupon 1"
+    "name": "Coupon 1",
+    "index": 460
   },
   "coupon2": {
     "market_value": 50,
@@ -15502,7 +15944,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Coupon 2"
+    "name": "Coupon 2",
+    "index": 461
   },
   "coupon3": {
     "market_value": 50,
@@ -15537,7 +15980,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Coupon 3"
+    "name": "Coupon 3",
+    "index": 462
   },
   "storagekey": {
     "market_value": 0,
@@ -15572,7 +16016,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Storage Key"
+    "name": "Storage Key",
+    "index": 463
   },
   "secretpotion": {
     "market_value": 0,
@@ -15607,7 +16052,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Secret Potion"
+    "name": "Secret Potion",
+    "index": 464
   },
   "vs.recorder": {
     "market_value": 0,
@@ -15642,7 +16088,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Vs. Recorder"
+    "name": "Vs. Recorder",
+    "index": 465
   },
   "gracidea": {
     "market_value": 0,
@@ -15677,7 +16124,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Gracidea"
+    "name": "Gracidea",
+    "index": 466
   },
   "secretkey": {
     "market_value": 0,
@@ -15712,7 +16160,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Secret Key"
+    "name": "Secret Key",
+    "index": 467
   },
   "apricornbox": {
     "market_value": 0,
@@ -15747,7 +16196,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Apricorn Box"
+    "name": "Apricorn Box",
+    "index": 468
   },
   "unownreport": {
     "market_value": 0,
@@ -15782,7 +16232,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Unown Report"
+    "name": "Unown Report",
+    "index": 469
   },
   "berrypots": {
     "market_value": 0,
@@ -15817,7 +16268,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Berry Pots"
+    "name": "Berry Pots",
+    "index": 470
   },
   "dowsingmachine": {
     "market_value": 0,
@@ -15852,7 +16304,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Dowsing Machine"
+    "name": "Dowsing Machine",
+    "index": 471
   },
   "bluecard": {
     "market_value": 0,
@@ -15887,7 +16340,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Blue Card"
+    "name": "Blue Card",
+    "index": 472
   },
   "slowpoketail": {
     "market_value": 0,
@@ -15922,7 +16376,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Slowpoke Tail"
+    "name": "Slowpoke Tail",
+    "index": 473
   },
   "clearbell": {
     "market_value": 0,
@@ -15957,7 +16412,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Clear Bell"
+    "name": "Clear Bell",
+    "index": 474
   },
   "cardkey": {
     "market_value": 0,
@@ -15992,7 +16448,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Card Key"
+    "name": "Card Key",
+    "index": 475
   },
   "basementkey": {
     "market_value": 0,
@@ -16027,7 +16484,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Basement Key"
+    "name": "Basement Key",
+    "index": 476
   },
   "squirtbottle": {
     "market_value": 0,
@@ -16062,7 +16520,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Squirt Bottle"
+    "name": "Squirt Bottle",
+    "index": 477
   },
   "redscale": {
     "market_value": 0,
@@ -16097,7 +16556,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Red Scale"
+    "name": "Red Scale",
+    "index": 478
   },
   "lostitem": {
     "market_value": 0,
@@ -16132,7 +16592,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Lost Item"
+    "name": "Lost Item",
+    "index": 479
   },
   "pass": {
     "market_value": 0,
@@ -16167,7 +16628,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Pass"
+    "name": "Pass",
+    "index": 480
   },
   "machinepart": {
     "market_value": 0,
@@ -16202,7 +16664,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Machine Part"
+    "name": "Machine Part",
+    "index": 481
   },
   "silverwing": {
     "market_value": 0,
@@ -16237,7 +16700,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Silver Wing"
+    "name": "Silver Wing",
+    "index": 482
   },
   "rainbowwing": {
     "market_value": 0,
@@ -16272,7 +16736,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Rainbow Wing"
+    "name": "Rainbow Wing",
+    "index": 483
   },
   "mysteryegg": {
     "market_value": 0,
@@ -16307,7 +16772,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Mystery Egg"
+    "name": "Mystery Egg",
+    "index": 484
   },
   "redapricorn": {
     "market_value": 2,
@@ -16342,7 +16808,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Red Apricorn"
+    "name": "Red Apricorn",
+    "index": 485
   },
   "bluapricorn": {
     "market_value": 2,
@@ -16377,7 +16844,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Blu Apricorn"
+    "name": "Blu Apricorn",
+    "index": 486
   },
   "ylwapricorn": {
     "market_value": 2,
@@ -16412,7 +16880,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Ylw Apricorn"
+    "name": "Ylw Apricorn",
+    "index": 487
   },
   "grnapricorn": {
     "market_value": 2,
@@ -16447,7 +16916,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Grn Apricorn"
+    "name": "Grn Apricorn",
+    "index": 488
   },
   "pnkapricorn": {
     "market_value": 2,
@@ -16482,7 +16952,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Pnk Apricorn"
+    "name": "Pnk Apricorn",
+    "index": 489
   },
   "whtapricorn": {
     "market_value": 2,
@@ -16517,7 +16988,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Wht Apricorn"
+    "name": "Wht Apricorn",
+    "index": 490
   },
   "blkapricorn": {
     "market_value": 2,
@@ -16552,7 +17024,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Blk Apricorn"
+    "name": "Blk Apricorn",
+    "index": 491
   },
   "fastball": {
     "market_value": 30,
@@ -16587,7 +17060,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Fast Ball"
+    "name": "Fast Ball",
+    "index": 492
   },
   "levelball": {
     "market_value": 30,
@@ -16622,7 +17096,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Level Ball"
+    "name": "Level Ball",
+    "index": 493
   },
   "lureball": {
     "market_value": 30,
@@ -16657,7 +17132,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Lure Ball"
+    "name": "Lure Ball",
+    "index": 494
   },
   "heavyball": {
     "market_value": 30,
@@ -16692,7 +17168,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Heavy Ball"
+    "name": "Heavy Ball",
+    "index": 495
   },
   "loveball": {
     "market_value": 30,
@@ -16727,7 +17204,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Love Ball"
+    "name": "Love Ball",
+    "index": 496
   },
   "friendball": {
     "market_value": 30,
@@ -16762,7 +17240,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Friend Ball"
+    "name": "Friend Ball",
+    "index": 497
   },
   "moonball": {
     "market_value": 30,
@@ -16797,7 +17276,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Moon Ball"
+    "name": "Moon Ball",
+    "index": 498
   },
   "sportball": {
     "market_value": 30,
@@ -16832,7 +17312,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Sport Ball"
+    "name": "Sport Ball",
+    "index": 499
   },
   "parkball": {
     "market_value": 0,
@@ -16867,7 +17348,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Park Ball"
+    "name": "Park Ball",
+    "index": 500
   },
   "photoalbum": {
     "market_value": 0,
@@ -16902,7 +17384,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Photo Album"
+    "name": "Photo Album",
+    "index": 501
   },
   "gbsounds": {
     "market_value": 0,
@@ -16937,7 +17420,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "GB Sounds"
+    "name": "GB Sounds",
+    "index": 502
   },
   "tidalbell": {
     "market_value": 0,
@@ -16972,7 +17456,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Tidal Bell"
+    "name": "Tidal Bell",
+    "index": 503
   },
   "ragecandybar": {
     "market_value": 30,
@@ -17007,7 +17492,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Rage Candy Bar"
+    "name": "Rage Candy Bar",
+    "index": 504
   },
   "datacard01": {
     "market_value": 0,
@@ -17042,7 +17528,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Data Card 01"
+    "name": "Data Card 01",
+    "index": 505
   },
   "datacard02": {
     "market_value": 0,
@@ -17077,7 +17564,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Data Card 02"
+    "name": "Data Card 02",
+    "index": 506
   },
   "datacard03": {
     "market_value": 0,
@@ -17112,7 +17600,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Data Card 03"
+    "name": "Data Card 03",
+    "index": 507
   },
   "datacard04": {
     "market_value": 0,
@@ -17147,7 +17636,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Data Card 04"
+    "name": "Data Card 04",
+    "index": 508
   },
   "datacard05": {
     "market_value": 0,
@@ -17182,7 +17672,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Data Card 05"
+    "name": "Data Card 05",
+    "index": 509
   },
   "datacard06": {
     "market_value": 0,
@@ -17217,7 +17708,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Data Card 06"
+    "name": "Data Card 06",
+    "index": 510
   },
   "datacard07": {
     "market_value": 0,
@@ -17252,7 +17744,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Data Card 07"
+    "name": "Data Card 07",
+    "index": 511
   },
   "datacard08": {
     "market_value": 0,
@@ -17287,7 +17780,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Data Card 08"
+    "name": "Data Card 08",
+    "index": 512
   },
   "datacard09": {
     "market_value": 0,
@@ -17322,7 +17816,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Data Card 09"
+    "name": "Data Card 09",
+    "index": 513
   },
   "datacard10": {
     "market_value": 0,
@@ -17357,7 +17852,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Data Card 10"
+    "name": "Data Card 10",
+    "index": 514
   },
   "datacard11": {
     "market_value": 0,
@@ -17392,7 +17888,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Data Card 11"
+    "name": "Data Card 11",
+    "index": 515
   },
   "datacard12": {
     "market_value": 0,
@@ -17427,7 +17924,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Data Card 12"
+    "name": "Data Card 12",
+    "index": 516
   },
   "datacard13": {
     "market_value": 0,
@@ -17462,7 +17960,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Data Card 13"
+    "name": "Data Card 13",
+    "index": 517
   },
   "datacard14": {
     "market_value": 0,
@@ -17497,7 +17996,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Data Card 14"
+    "name": "Data Card 14",
+    "index": 518
   },
   "datacard15": {
     "market_value": 0,
@@ -17532,7 +18032,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Data Card 15"
+    "name": "Data Card 15",
+    "index": 519
   },
   "datacard16": {
     "market_value": 0,
@@ -17567,7 +18068,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Data Card 16"
+    "name": "Data Card 16",
+    "index": 520
   },
   "datacard17": {
     "market_value": 0,
@@ -17602,7 +18104,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Data Card 17"
+    "name": "Data Card 17",
+    "index": 521
   },
   "datacard18": {
     "market_value": 0,
@@ -17637,7 +18140,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Data Card 18"
+    "name": "Data Card 18",
+    "index": 522
   },
   "datacard19": {
     "market_value": 0,
@@ -17672,7 +18176,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Data Card 19"
+    "name": "Data Card 19",
+    "index": 523
   },
   "datacard20": {
     "market_value": 0,
@@ -17707,7 +18212,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Data Card 20"
+    "name": "Data Card 20",
+    "index": 524
   },
   "datacard21": {
     "market_value": 0,
@@ -17742,7 +18248,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Data Card 21"
+    "name": "Data Card 21",
+    "index": 525
   },
   "datacard22": {
     "market_value": 0,
@@ -17777,7 +18284,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Data Card 22"
+    "name": "Data Card 22",
+    "index": 526
   },
   "datacard23": {
     "market_value": 0,
@@ -17812,7 +18320,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Data Card 23"
+    "name": "Data Card 23",
+    "index": 527
   },
   "datacard24": {
     "market_value": 0,
@@ -17847,7 +18356,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Data Card 24"
+    "name": "Data Card 24",
+    "index": 528
   },
   "datacard25": {
     "market_value": 0,
@@ -17882,7 +18392,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Data Card 25"
+    "name": "Data Card 25",
+    "index": 529
   },
   "datacard26": {
     "market_value": 0,
@@ -17917,7 +18428,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Data Card 26"
+    "name": "Data Card 26",
+    "index": 530
   },
   "datacard27": {
     "market_value": 0,
@@ -17952,7 +18464,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Data Card 27"
+    "name": "Data Card 27",
+    "index": 531
   },
   "jadeorb": {
     "market_value": 0,
@@ -17987,7 +18500,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Jade Orb"
+    "name": "Jade Orb",
+    "index": 532
   },
   "lockcapsule": {
     "market_value": 0,
@@ -18022,7 +18536,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Lock Capsule"
+    "name": "Lock Capsule",
+    "index": 533
   },
   "redorb": {
     "market_value": 0,
@@ -18057,7 +18572,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Red Orb"
+    "name": "Red Orb",
+    "index": 534
   },
   "blueorb": {
     "market_value": 0,
@@ -18092,7 +18608,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Blue Orb"
+    "name": "Blue Orb",
+    "index": 535
   },
   "enigmastone": {
     "market_value": 0,
@@ -18127,7 +18644,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Enigma Stone"
+    "name": "Enigma Stone",
+    "index": 536
   },
   "prismscale": {
     "market_value": 50,
@@ -18162,7 +18680,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Prism Scale"
+    "name": "Prism Scale",
+    "index": 537
   },
   "eviolite": {
     "market_value": 20,
@@ -18197,7 +18716,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Eviolite"
+    "name": "Eviolite",
+    "index": 538
   },
   "floatstone": {
     "market_value": 20,
@@ -18232,7 +18752,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Float Stone"
+    "name": "Float Stone",
+    "index": 539
   },
   "rockyhelmet": {
     "market_value": 20,
@@ -18267,7 +18788,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Rocky Helmet"
+    "name": "Rocky Helmet",
+    "index": 540
   },
   "airballoon": {
     "market_value": 20,
@@ -18302,7 +18824,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Air Balloon"
+    "name": "Air Balloon",
+    "index": 541
   },
   "redcard": {
     "market_value": 20,
@@ -18337,7 +18860,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Red Card"
+    "name": "Red Card",
+    "index": 542
   },
   "ringtarget": {
     "market_value": 20,
@@ -18372,7 +18896,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Ring Target"
+    "name": "Ring Target",
+    "index": 543
   },
   "bindingband": {
     "market_value": 20,
@@ -18407,7 +18932,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Binding Band"
+    "name": "Binding Band",
+    "index": 544
   },
   "absorbbulb": {
     "market_value": 20,
@@ -18442,7 +18968,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Absorb Bulb"
+    "name": "Absorb Bulb",
+    "index": 545
   },
   "cellbattery": {
     "market_value": 20,
@@ -18477,7 +19004,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Cell Battery"
+    "name": "Cell Battery",
+    "index": 546
   },
   "ejectbutton": {
     "market_value": 20,
@@ -18512,7 +19040,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Eject Button"
+    "name": "Eject Button",
+    "index": 547
   },
   "firegem": {
     "market_value": 20,
@@ -18547,7 +19076,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Fire Gem"
+    "name": "Fire Gem",
+    "index": 548
   },
   "watergem": {
     "market_value": 20,
@@ -18582,7 +19112,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Water Gem"
+    "name": "Water Gem",
+    "index": 549
   },
   "electricgem": {
     "market_value": 20,
@@ -18617,7 +19148,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Electric Gem"
+    "name": "Electric Gem",
+    "index": 550
   },
   "grassgem": {
     "market_value": 20,
@@ -18652,7 +19184,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Grass Gem"
+    "name": "Grass Gem",
+    "index": 551
   },
   "icegem": {
     "market_value": 20,
@@ -18687,7 +19220,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Ice Gem"
+    "name": "Ice Gem",
+    "index": 552
   },
   "fightinggem": {
     "market_value": 20,
@@ -18722,7 +19256,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Fighting Gem"
+    "name": "Fighting Gem",
+    "index": 553
   },
   "poisongem": {
     "market_value": 20,
@@ -18757,7 +19292,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Poison Gem"
+    "name": "Poison Gem",
+    "index": 554
   },
   "groundgem": {
     "market_value": 20,
@@ -18792,7 +19328,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Ground Gem"
+    "name": "Ground Gem",
+    "index": 555
   },
   "flyinggem": {
     "market_value": 20,
@@ -18827,7 +19364,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Flying Gem"
+    "name": "Flying Gem",
+    "index": 556
   },
   "psychicgem": {
     "market_value": 20,
@@ -18862,7 +19400,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Psychic Gem"
+    "name": "Psychic Gem",
+    "index": 557
   },
   "buggem": {
     "market_value": 20,
@@ -18897,7 +19436,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Bug Gem"
+    "name": "Bug Gem",
+    "index": 558
   },
   "rockgem": {
     "market_value": 20,
@@ -18932,7 +19472,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Rock Gem"
+    "name": "Rock Gem",
+    "index": 559
   },
   "ghostgem": {
     "market_value": 20,
@@ -18967,7 +19508,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Ghost Gem"
+    "name": "Ghost Gem",
+    "index": 560
   },
   "dragongem": {
     "market_value": 20,
@@ -19002,7 +19544,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Dragon Gem"
+    "name": "Dragon Gem",
+    "index": 561
   },
   "darkgem": {
     "market_value": 20,
@@ -19037,7 +19580,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Dark Gem"
+    "name": "Dark Gem",
+    "index": 562
   },
   "steelgem": {
     "market_value": 20,
@@ -19072,7 +19616,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Steel Gem"
+    "name": "Steel Gem",
+    "index": 563
   },
   "normalgem": {
     "market_value": 20,
@@ -19107,7 +19652,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Normal Gem"
+    "name": "Normal Gem",
+    "index": 564
   },
   "healthwing": {
     "market_value": 300,
@@ -19142,7 +19688,8 @@
     "ow_happiness": 2,
     "hold_happiness": 1,
     "padding": 0,
-    "name": "Health Wing"
+    "name": "Health Wing",
+    "index": 565
   },
   "musclewing": {
     "market_value": 300,
@@ -19177,7 +19724,8 @@
     "ow_happiness": 2,
     "hold_happiness": 1,
     "padding": 0,
-    "name": "Muscle Wing"
+    "name": "Muscle Wing",
+    "index": 566
   },
   "resistwing": {
     "market_value": 300,
@@ -19212,7 +19760,8 @@
     "ow_happiness": 2,
     "hold_happiness": 1,
     "padding": 0,
-    "name": "Resist Wing"
+    "name": "Resist Wing",
+    "index": 567
   },
   "geniuswing": {
     "market_value": 300,
@@ -19247,7 +19796,8 @@
     "ow_happiness": 2,
     "hold_happiness": 1,
     "padding": 0,
-    "name": "Genius Wing"
+    "name": "Genius Wing",
+    "index": 568
   },
   "cleverwing": {
     "market_value": 300,
@@ -19282,7 +19832,8 @@
     "ow_happiness": 2,
     "hold_happiness": 1,
     "padding": 0,
-    "name": "Clever Wing"
+    "name": "Clever Wing",
+    "index": 569
   },
   "swiftwing": {
     "market_value": 300,
@@ -19317,7 +19868,8 @@
     "ow_happiness": 2,
     "hold_happiness": 1,
     "padding": 0,
-    "name": "Swift Wing"
+    "name": "Swift Wing",
+    "index": 570
   },
   "prettywing": {
     "market_value": 20,
@@ -19352,7 +19904,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Pretty Wing"
+    "name": "Pretty Wing",
+    "index": 571
   },
   "coverfossil": {
     "market_value": 100,
@@ -19387,7 +19940,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Cover Fossil"
+    "name": "Cover Fossil",
+    "index": 572
   },
   "plumefossil": {
     "market_value": 100,
@@ -19422,7 +19976,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Plume Fossil"
+    "name": "Plume Fossil",
+    "index": 573
   },
   "libertypass": {
     "market_value": 0,
@@ -19457,7 +20012,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Liberty Pass"
+    "name": "Liberty Pass",
+    "index": 574
   },
   "passorb": {
     "market_value": 20,
@@ -19492,7 +20048,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Pass Orb"
+    "name": "Pass Orb",
+    "index": 575
   },
   "dreamball": {
     "market_value": 0,
@@ -19527,7 +20084,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Dream Ball"
+    "name": "Dream Ball",
+    "index": 576
   },
   "poketoy": {
     "market_value": 100,
@@ -19562,7 +20120,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Poke Toy"
+    "name": "Poke Toy",
+    "index": 577
   },
   "propcase": {
     "market_value": 0,
@@ -19597,7 +20156,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Prop Case"
+    "name": "Prop Case",
+    "index": 578
   },
   "dragonskull": {
     "market_value": 0,
@@ -19632,7 +20192,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Dragon Skull"
+    "name": "Dragon Skull",
+    "index": 579
   },
   "balmmushroom": {
     "market_value": 0,
@@ -19667,7 +20228,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Balm Mushroom"
+    "name": "Balm Mushroom",
+    "index": 580
   },
   "bignugget": {
     "market_value": 0,
@@ -19702,7 +20264,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Big Nugget"
+    "name": "Big Nugget",
+    "index": 581
   },
   "pearlstring": {
     "market_value": 0,
@@ -19737,7 +20300,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Pearl String"
+    "name": "Pearl String",
+    "index": 582
   },
   "cometshard": {
     "market_value": 0,
@@ -19772,7 +20336,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Comet Shard"
+    "name": "Comet Shard",
+    "index": 583
   },
   "reliccopper": {
     "market_value": 0,
@@ -19807,7 +20372,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Relic Copper"
+    "name": "Relic Copper",
+    "index": 584
   },
   "relicsilver": {
     "market_value": 0,
@@ -19842,7 +20408,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Relic Silver"
+    "name": "Relic Silver",
+    "index": 585
   },
   "relicgold": {
     "market_value": 0,
@@ -19877,7 +20444,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Relic Gold"
+    "name": "Relic Gold",
+    "index": 586
   },
   "relicvase": {
     "market_value": 0,
@@ -19912,7 +20480,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Relic Vase"
+    "name": "Relic Vase",
+    "index": 587
   },
   "relicband": {
     "market_value": 0,
@@ -19947,7 +20516,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Relic Band"
+    "name": "Relic Band",
+    "index": 588
   },
   "relicstatue": {
     "market_value": 0,
@@ -19982,7 +20552,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Relic Statue"
+    "name": "Relic Statue",
+    "index": 589
   },
   "reliccrown": {
     "market_value": 0,
@@ -20017,7 +20588,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Relic Crown"
+    "name": "Relic Crown",
+    "index": 590
   },
   "casteliacone": {
     "market_value": 10,
@@ -20052,7 +20624,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Casteliacone"
+    "name": "Casteliacone",
+    "index": 591
   },
   "direhit2": {
     "market_value": 0,
@@ -20087,7 +20660,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Dire Hit 2"
+    "name": "Dire Hit 2",
+    "index": 592
   },
   "xspeed2": {
     "market_value": 0,
@@ -20122,7 +20696,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "X Speed 2"
+    "name": "X Speed 2",
+    "index": 593
   },
   "xspecial2": {
     "market_value": 0,
@@ -20157,7 +20732,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "X Special 2"
+    "name": "X Special 2",
+    "index": 594
   },
   "xsp.def2": {
     "market_value": 0,
@@ -20192,7 +20768,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "X Sp. Def 2"
+    "name": "X Sp. Def 2",
+    "index": 595
   },
   "xdefend2": {
     "market_value": 0,
@@ -20227,7 +20804,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "X Defend 2"
+    "name": "X Defend 2",
+    "index": 596
   },
   "xattack2": {
     "market_value": 0,
@@ -20262,7 +20840,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "X Attack 2"
+    "name": "X Attack 2",
+    "index": 597
   },
   "xaccuracy2": {
     "market_value": 0,
@@ -20297,7 +20876,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "X Accuracy 2"
+    "name": "X Accuracy 2",
+    "index": 598
   },
   "xspeed3": {
     "market_value": 0,
@@ -20332,7 +20912,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "X Speed 3"
+    "name": "X Speed 3",
+    "index": 599
   },
   "xspecial3": {
     "market_value": 0,
@@ -20367,7 +20948,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "X Special 3"
+    "name": "X Special 3",
+    "index": 600
   },
   "xsp.def3": {
     "market_value": 0,
@@ -20402,7 +20984,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "X Sp. Def 3"
+    "name": "X Sp. Def 3",
+    "index": 601
   },
   "xdefend3": {
     "market_value": 0,
@@ -20437,7 +21020,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "X Defend 3"
+    "name": "X Defend 3",
+    "index": 602
   },
   "xattack3": {
     "market_value": 0,
@@ -20472,7 +21056,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "X Attack 3"
+    "name": "X Attack 3",
+    "index": 603
   },
   "xaccuracy3": {
     "market_value": 0,
@@ -20507,7 +21092,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "X Accuracy 3"
+    "name": "X Accuracy 3",
+    "index": 604
   },
   "xspeed6": {
     "market_value": 0,
@@ -20542,7 +21128,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "X Speed 6"
+    "name": "X Speed 6",
+    "index": 605
   },
   "xspecial6": {
     "market_value": 0,
@@ -20577,7 +21164,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "X Special 6"
+    "name": "X Special 6",
+    "index": 606
   },
   "xsp.def6": {
     "market_value": 0,
@@ -20612,7 +21200,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "X Sp. Def 6"
+    "name": "X Sp. Def 6",
+    "index": 607
   },
   "xdefend6": {
     "market_value": 0,
@@ -20647,7 +21236,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "X Defend 6"
+    "name": "X Defend 6",
+    "index": 608
   },
   "xattack6": {
     "market_value": 0,
@@ -20682,7 +21272,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "X Attack 6"
+    "name": "X Attack 6",
+    "index": 609
   },
   "xaccuracy6": {
     "market_value": 0,
@@ -20717,7 +21308,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "X Accuracy 6"
+    "name": "X Accuracy 6",
+    "index": 610
   },
   "abilityurge": {
     "market_value": 0,
@@ -20752,7 +21344,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Ability Urge"
+    "name": "Ability Urge",
+    "index": 611
   },
   "itemdrop": {
     "market_value": 0,
@@ -20787,7 +21380,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Item Drop"
+    "name": "Item Drop",
+    "index": 612
   },
   "itemurge": {
     "market_value": 0,
@@ -20822,7 +21416,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Item Urge"
+    "name": "Item Urge",
+    "index": 613
   },
   "reseturge": {
     "market_value": 0,
@@ -20857,7 +21452,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Reset Urge"
+    "name": "Reset Urge",
+    "index": 614
   },
   "direhit3": {
     "market_value": 0,
@@ -20892,7 +21488,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Dire Hit 3"
+    "name": "Dire Hit 3",
+    "index": 615
   },
   "lightstone": {
     "market_value": 0,
@@ -20927,7 +21524,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Light Stone"
+    "name": "Light Stone",
+    "index": 616
   },
   "darkstone": {
     "market_value": 0,
@@ -20962,7 +21560,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Dark Stone"
+    "name": "Dark Stone",
+    "index": 617
   },
   "tm93": {
     "market_value": 1000,
@@ -20997,7 +21596,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "TM93"
+    "name": "TM93",
+    "index": 618
   },
   "tm94": {
     "market_value": 1000,
@@ -21032,7 +21632,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "TM94"
+    "name": "TM94",
+    "index": 619
   },
   "tm95": {
     "market_value": 1000,
@@ -21067,7 +21668,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "TM95"
+    "name": "TM95",
+    "index": 620
   },
   "xtransceiver": {
     "market_value": 0,
@@ -21102,7 +21704,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Xtransceiver"
+    "name": "Xtransceiver",
+    "index": 626
   },
   "oldseamap": {
     "market_value": 0,
@@ -21137,7 +21740,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Old Sea Map"
+    "name": "Old Sea Map",
+    "index": 622
   },
   "gram1": {
     "market_value": 0,
@@ -21172,7 +21776,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Gram 1"
+    "name": "Gram 1",
+    "index": 623
   },
   "gram2": {
     "market_value": 0,
@@ -21207,7 +21812,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Gram 2"
+    "name": "Gram 2",
+    "index": 624
   },
   "gram3": {
     "market_value": 0,
@@ -21242,7 +21848,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Gram 3"
+    "name": "Gram 3",
+    "index": 625
   },
   "medalbox": {
     "market_value": 0,
@@ -21277,7 +21884,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Medal Box"
+    "name": "Medal Box",
+    "index": 627
   },
   "dnasplicers": {
     "market_value": 0,
@@ -21312,7 +21920,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "DNA Splicers"
+    "name": "DNA Splicers",
+    "index": 629
   },
   "permit": {
     "market_value": 0,
@@ -21347,7 +21956,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Permit"
+    "name": "Permit",
+    "index": 630
   },
   "ovalcharm": {
     "market_value": 0,
@@ -21382,7 +21992,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Oval Charm"
+    "name": "Oval Charm",
+    "index": 631
   },
   "shinycharm": {
     "market_value": 0,
@@ -21417,7 +22028,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Shiny Charm"
+    "name": "Shiny Charm",
+    "index": 632
   },
   "plasmacard": {
     "market_value": 0,
@@ -21452,7 +22064,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Plasma Card"
+    "name": "Plasma Card",
+    "index": 633
   },
   "grubbyhanky": {
     "market_value": 0,
@@ -21487,7 +22100,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Grubby Hanky"
+    "name": "Grubby Hanky",
+    "index": 634
   },
   "colressmachine": {
     "market_value": 0,
@@ -21522,7 +22136,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Colress Machine"
+    "name": "Colress Machine",
+    "index": 635
   },
   "droppeditem": {
     "market_value": 0,
@@ -21557,7 +22172,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Dropped Item"
+    "name": "Dropped Item",
+    "index": 637
   },
   "revealglass": {
     "market_value": 0,
@@ -21592,6 +22208,7 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Reveal Glass"
+    "name": "Reveal Glass",
+    "index": 638
   }
 }

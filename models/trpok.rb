@@ -4,6 +4,12 @@ class Trpok < Pokenarc
 		super
 	end
 
+
+	def self.get_data file_name
+		@@narc_name = "trpok"
+		super
+	end
+	
 	def self.get_all_mods
 
 		@@narc_name = "trpok"

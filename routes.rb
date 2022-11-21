@@ -7,11 +7,11 @@ require_relative 'models/pokenarc'
 if ENV["DEVMODE"] == "TRUE"
 	require 'pry'
 	require "sinatra/reloader"
-
+	$rom_name = 'projects/bb2redux'
+	p "init"
 end
 
-$rom_name = 'projects/bb2redux'
-p "init"
+
 Dir["models/*.rb"].each {|file| require_relative file}
 
 

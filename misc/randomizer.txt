@@ -3,8 +3,8 @@ Base_rom:
 	limited setup
 	nerf op moves (sub, encore)
 	drayano typings
-	mandatory trainers
-	encounters added everywhere where possible
+	mandatory trainers Todo
+	encounters added everywhere where possible todo
 	7,135 ai, max ivs
 	meromero fairy
 
