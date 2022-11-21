@@ -5,62 +5,6 @@ TRAINERS OPTIONS:
 	% chance to be triple
 	% chance to be rotation
 
-
-	randomize mons
-		with original bst by user specified adjustable variance
-		with similar typing
-		with similar role (looks at top 2 stats)
-
-	randomize moves 
-		with smogon moveset bank
-		with similar power
-		with learnset
-
-	level appropriate moves
-	randomize items 
-		from smogon
-		from all held items
-
-POKEMON OPTIONS:
-	use original 
-	randomize
-		bst by user specified adjustable variance
-		bst by redistribution
-
-
-LEARNSETS OPTIONS: 
-	use original
-	randomize 
-		with same type
-		with same power by user specified adjustable variance
-	remove setup
-	remove weather
-	blacklist moves
-
-EVOLUTIONS OPTIONS:
-	use original
-	randomize
-		with same evo tier
-		with same/similar typing
-	remove trade evos
-	convert friendship evos to lvl up (lvl calculated by bst)
-
-ENCOUNTERS OPTIONS:
-	use original
-	randomize
-		with same/similar typing
-		with similar bst by user specified adjustable variance
-	ensure all catchable
-	blacklist legendary
-	level appropriate encounters
-
-OTHER OPTIONS:
-	remove evs
-	add free rare candies to marts
-	output custom documentation
-
-
-
 Base_rom:
 	no evs
 	limited setup
@@ -69,10 +13,10 @@ Base_rom:
 	mandatory trainers
 	encounters added everywhere where possible
 	7,135 ai, max ivs
+	meromero fairy
 
 
-
-Trainer Viability Alg
+Trainer Pok Viability Alg
 	(bst -  min(sp_atk, atk)) * viability_mod(customizable) * item_mod * ability_mod * trainer_id_mod
 
 	bst = base stat total - the lower of sp_atk, atk
@@ -87,6 +31,7 @@ Trainer Viability Alg
 
 Items: Lightball, Soul Dew
 
+Trainer Ability TL
 
 SS-tier: Huge Power, Drizzle, Pure Power, Wonderguard
 S-tier: Guts, Drought, Intimidate, Adaptability, Contrary, Toxic Boost, Multiscale, Serene Grace, No Guard, Storm Drain, Sturdy, Water Absorb, Lightningrod
@@ -107,6 +52,8 @@ Encounter Viability Alg
 
 
 
+Player Ability TL
+
 SS-tier: Huge Power, Drizzle, Pure Power, Poison Heal, Wonderguard
 S-tier: Regenerator, Guts, Drought, Intimidate,Adaptability, Moxie, Illusion,Contrary, Battle Armor, Shell Armor, Toxic Boost, Compound Eyes, Multiscale, Serene Grace, Marvel Scale,Swift Swim, Download, Levitate, Volt Absorb, Speed Boost, No Guard, Storm Drain, Sturdy, Water Absorb, Lightningrod
 A-tier: Magic Bounce, Reckless, Analytic, Simple, Natural Cure, Tinted Lens, Torrent, Overgrow, Quick Feet, Rock Head, Motor Drive, Thick Fat, Swarm, Sheer Force, Sand Stream, Prankster, Technician, Skill Link, Iron Fist, Magnet Pull, Blaze,Chlorophyl,Dry Skin, Harvest, Flare Boost, Iron Barbs, Magic Guard, Heatproof, Rough Skin, Flash Fire, Competetive, Defiant, Heat Proof
@@ -117,7 +64,7 @@ F-tier: Truant, Defeatist, Slow Start, Klutz, Stall,
 
 
 
-Move Choosing Alg: 
+Move Choosing Alg: DONE
 	Use Smogon Set > lvl 40
 	defined bp ranges for each modBST range
 
@@ -149,7 +96,7 @@ Move Choosing Alg:
 		Use all moves for coverage
 
 
-IVs Alg:
+IVs Alg: DELAY
 	rand ability
 	Get desired natures from smogon
 	get natures with same beneficial stat
@@ -160,7 +107,7 @@ Item Alg:
 	80% random from smogon + 20%[sitrus, lum, leftoevers]
 
 
-Team Building Alg
+Team Building Alg DONE 
 	create viability pool based on viability range and types
 	
 	Monotype/Limited Typing
@@ -173,6 +120,10 @@ Team Building Alg
 		2: List out types mon is weak too
 		3: Choose random mon from pool supereffective against these types, if not found choose random
 		4: repeat
+
+
+	specify certain types for certain trainer class
+
 
 Encounter table alg
 	given viability range, types, lvl range x-x+2
@@ -201,7 +152,18 @@ Encounter table alg
 		1  lvl x rand from pool
 
 
-	ensure early game has certain monotype enounter tables (fire, ghost, water)
+	ensure early game has certain enounter tables based on gym 1 & 2
+	encounter bsts scale up by level
+	each gym city has encounter table to match type
+	ensure a pokemon evo line only shows up max N number of times
+	
+
+	default encounter uses random pokemon 
+
+
+	159 
+
+
 
 
 

@@ -1,0 +1,206 @@
+{
+  "upper": [
+    {
+      "name": "SIMISEAR",
+      "index": 514,
+      "via_player": 1.0,
+      "via_ai": 1.0,
+      "via_player_gym_1": 1.0,
+      "via_player_gym_2": 1.0,
+      "via_player_gym_3": 1.0,
+      "via_player_gym_4": 1.0,
+      "via_player_gym_5": 1.0,
+      "via_player_gym_6": 1.0,
+      "via_player_gym_7": 1.0,
+      "via_player_gym_8": 1.0,
+      "types": [
+        "Fire",
+        "Fire"
+      ],
+      "modified_bst": 396.0,
+      "modified_bst_physical": 396.0,
+      "modified_bst_special": 396.0,
+      "can_be_mixed": true
+    },
+    {
+      "name": "Castform-Sunny",
+      "index": 697,
+      "via_player": 1.0,
+      "via_ai": 1.0,
+      "via_player_gym_1": 1.0,
+      "via_player_gym_2": 1.0,
+      "via_player_gym_3": 1.0,
+      "via_player_gym_4": 1.0,
+      "via_player_gym_5": 1.0,
+      "via_player_gym_6": 1.0,
+      "via_player_gym_7": 1.0,
+      "via_player_gym_8": 1.0,
+      "types": [
+        "Fire",
+        "Fire"
+      ],
+      "modified_bst": 372.0,
+      "modified_bst_physical": 342.0,
+      "modified_bst_special": 372.0,
+      "can_be_mixed": false
+    },
+    {
+      "name": "HOUNDOUR",
+      "index": 228,
+      "via_player": 1.0,
+      "via_ai": 1.0,
+      "via_player_gym_1": 1.0,
+      "via_player_gym_2": 1.0,
+      "via_player_gym_3": 1.0,
+      "via_player_gym_4": 1.0,
+      "via_player_gym_5": 1.0,
+      "via_player_gym_6": 1.0,
+      "via_player_gym_7": 1.0,
+      "via_player_gym_8": 1.0,
+      "types": [
+        "Dark",
+        "Fire"
+      ],
+      "modified_bst": 393.0,
+      "modified_bst_physical": 247.0,
+      "modified_bst_special": 267.0,
+      "can_be_mixed": false
+    },
+    {
+      "name": "HOUNDOOM",
+      "index": 229,
+      "via_player": 1.0,
+      "via_ai": 1.0,
+      "via_player_gym_1": 1.0,
+      "via_player_gym_2": 1.0,
+      "via_player_gym_3": 1.0,
+      "via_player_gym_4": 1.0,
+      "via_player_gym_5": 1.0,
+      "via_player_gym_6": 1.0,
+      "via_player_gym_7": 1.0,
+      "via_player_gym_8": 1.0,
+      "types": [
+        "Dark",
+        "Fire"
+      ],
+      "modified_bst": 393.0,
+      "modified_bst_physical": 383.0,
+      "modified_bst_special": 403.0,
+      "can_be_mixed": true
+    },
+    {
+      "name": "PANSEAR",
+      "index": 513,
+      "via_player": 1.0,
+      "via_ai": 1.0,
+      "via_player_gym_1": 1.0,
+      "via_player_gym_2": 1.0,
+      "via_player_gym_3": 1.0,
+      "via_player_gym_4": 1.0,
+      "via_player_gym_5": 1.0,
+      "via_player_gym_6": 1.0,
+      "via_player_gym_7": 1.0,
+      "via_player_gym_8": 1.0,
+      "types": [
+        "Fire",
+        "Fire"
+      ],
+      "modified_bst": 396.0,
+      "modified_bst_physical": 256.6,
+      "modified_bst_special": 256.6,
+      "can_be_mixed": true
+    }
+  ],
+  "mid": [
+    {
+      "name": "HEATMOR",
+      "index": 631,
+      "via_player": 1.0,
+      "via_ai": 1.0,
+      "via_player_gym_1": 1.0,
+      "via_player_gym_2": 1.0,
+      "via_player_gym_3": 1.0,
+      "via_player_gym_4": 1.0,
+      "via_player_gym_5": 1.0,
+      "via_player_gym_6": 1.0,
+      "via_player_gym_7": 1.0,
+      "via_player_gym_8": 1.0,
+      "types": [
+        "Fire",
+        "Fire"
+      ],
+      "modified_bst": 369.6,
+      "modified_bst_physical": 365.6,
+      "modified_bst_special": 373.6,
+      "can_be_mixed": true
+    },
+    {
+      "name": "NUMEL",
+      "index": 322,
+      "via_player": 1.0,
+      "via_ai": 1.0,
+      "via_player_gym_1": 1.0,
+      "via_player_gym_2": 1.0,
+      "via_player_gym_3": 1.0,
+      "via_player_gym_4": 1.0,
+      "via_player_gym_5": 1.0,
+      "via_player_gym_6": 1.0,
+      "via_player_gym_7": 1.0,
+      "via_player_gym_8": 1.0,
+      "types": [
+        "Fire",
+        "Ground"
+      ],
+      "modified_bst": 361.0,
+      "modified_bst_physical": 230.0,
+      "modified_bst_special": 235.0,
+      "can_be_mixed": true
+    },
+    {
+      "name": "CAMERUPT",
+      "index": 323,
+      "via_player": 1.0,
+      "via_ai": 1.0,
+      "via_player_gym_1": 1.0,
+      "via_player_gym_2": 1.0,
+      "via_player_gym_3": 1.0,
+      "via_player_gym_4": 1.0,
+      "via_player_gym_5": 1.0,
+      "via_player_gym_6": 1.0,
+      "via_player_gym_7": 1.0,
+      "via_player_gym_8": 1.0,
+      "types": [
+        "Fire",
+        "Ground"
+      ],
+      "modified_bst": 361.0,
+      "modified_bst_physical": 364.0,
+      "modified_bst_special": 359.0,
+      "can_be_mixed": true
+    }
+  ],
+  "low": [
+    {
+      "name": "TORKOAL",
+      "index": 324,
+      "via_player": 1.0,
+      "via_ai": 1.0,
+      "via_player_gym_1": 1.0,
+      "via_player_gym_2": 1.0,
+      "via_player_gym_3": 1.0,
+      "via_player_gym_4": 1.0,
+      "via_player_gym_5": 1.0,
+      "via_player_gym_6": 1.0,
+      "via_player_gym_7": 1.0,
+      "via_player_gym_8": 1.0,
+      "types": [
+        "Fire",
+        "Fire"
+      ],
+      "modified_bst": 347.0,
+      "modified_bst_physical": 347.0,
+      "modified_bst_special": 347.0,
+      "can_be_mixed": true
+    }
+  ]
+}

@@ -1,30 +1,41 @@
+// Default data uses Emerald Kaizo gyms as guideline
+
 [
 	{
-		"range": [240, 300]
+		"range": [240, 415],
+		"lvl": 16
 	},
 	{
-		"range": [260, 320]
+		"range": [300, 427],
+		"lvl": 21
 	},
 	{
-		"range": [280, 340]
+		"range": [350, 460],
+		"lvl": 29
 	},
 	{
-		"range": [300, 360]
+		"range": [360, 460],
+		"lvl": 42
 	},
 	{
-		"range": [320, 380]
+		"range": [400, 465],
+		"lvl": 48
 	},
 	{
-		"range": [340, 400]
+		"range": [440, 475],
+		"lvl": 55
 	},
 	{
-		"range": [360, 420]
+		"range": [440, 500],
+		"lvl": 70
 	},
 	{
-		"range": [380, 440]
+		"range": [440, 520],
+		"lvl": 77
 	},
 	{
-		"range": [400, 500]
+		"range": [450, 600],
+		"lvl": 100
 	},
 
 ]
