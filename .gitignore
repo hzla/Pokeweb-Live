@@ -10,3 +10,4 @@ logs.txt
 /spec
 /public/dist/*.json
 /public/dist/*.js
+*.zip

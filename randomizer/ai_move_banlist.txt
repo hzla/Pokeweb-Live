@@ -1,0 +1,56 @@
+50 disable
+54 mist
+102 mimic
+119 mirror move
+160 conversion
+176 mind reader
+171 nightmare
+180 spite
+193 foresight
+199 lock on
+244 psych up
+266 follow me
+269 taunt
+270 helping hand
+277 magic coat
+285 skill swap
+286 imprison
+287 refresh
+289 snatch
+293 camoflouge
+300 mud sport
+415 switcheroo
+469 wide guard
+383 copycat
+393 magnet rise
+472 wonder room
+476 rage powder
+494 entrainment
+495 after you
+511 quash
+513 reflect type
+516 bestow
+487 soak
+377 heal block
+356 gravity
+316 odor sleuth
+278 recycle
+272 role play
+271 trick
+259 torment
+114 haze
+166 sketch
+173 snore
+262 memento
+268 charge
+357 miracle eye
+367 acupressure
+379 power trick
+384 power swap
+385 guard swap
+388 worry seed
+391 heart swap
+477 telekinesis
+501 quick guard
+505 heal pulse
+381 lucky chant

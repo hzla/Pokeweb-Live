@@ -7,14 +7,18 @@ require_relative 'models/pokenarc'
 if ENV["DEVMODE"] == "TRUE"
 	require 'pry'
 	require "sinatra/reloader"
+	require 'benchmark'
 end
+
 
 Dir["models/*.rb"].each {|file| require_relative file}
 
-
+$rom_name = SessionSettings.rom_name
+p "init"
 
 before do
 	$rom_name = SessionSettings.rom_name
+	$fairy = SessionSettings.fairy?
 	return if !$rom_name
 	@rom_name = $rom_name.split("/")[1]
 	tabs = ['headers', 'personal', 'trainers', 'encounters', 'moves', 'tms', 'items', 'marts', 'grottos', 'story_texts', 'info_texts', 'logs']
@@ -357,6 +361,14 @@ get '/export_showdown' do
 	Trpok.export_all_showdown
 
 	redirect '/dist/index.html?gen=5'
+end
+
+
+get '/randomize' do 
+	# Randomizer.create_personal
+	Action.rand_teams
+	Action.rand_encs
+	erb :randomize
 end
 
 ####################################### OVERWORLDS ###############

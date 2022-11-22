@@ -1,0 +1,662 @@
+{
+  " -": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "STENCH": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "DRIZZLE": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "SPEED BOOST": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "BATTLE ARMOR": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "STURDY": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "DAMP": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "LIMBER": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "SAND VEIL": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "STATIC": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "VOLT ABSORB": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "WATER ABSORB": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "OBLIVIOUS": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "CLOUD NINE": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "COMPOUNDEYES": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "INSOMNIA": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "COLOR CHANGE": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "IMMUNITY": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "FLASH FIRE": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "SHIELD DUST": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "OWN TEMPO": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "SUCTION CUPS": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "INTIMIDATE": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "SHADOW TAG": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "ROUGH SKIN": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "WONDER GUARD": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "LEVITATE": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "EFFECT SPORE": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "SYNCHRONIZE": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "CLEAR BODY": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "NATURAL CURE": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "LIGHTNINGROD": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "SERENE GRACE": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "SWIFT SWIM": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "CHLOROPHYLL": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "ILLUMINATE": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "TRACE": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "HUGE POWER": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "POISON POINT": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "INNER FOCUS": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "MAGMA ARMOR": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "WATER VEIL": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "MAGNET PULL": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "SOUNDPROOF": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "RAIN DISH": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "SAND STREAM": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "PRESSURE": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "THICK FAT": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "EARLY BIRD": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "FLAME BODY": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "RUN AWAY": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "KEEN EYE": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "HYPER CUTTER": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "PICKUP": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "TRUANT": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "HUSTLE": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "CUTE CHARM": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "PLUS": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "MINUS": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "FORECAST": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "STICKY HOLD": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "SHED SKIN": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "GUTS": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "MARVEL SCALE": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "LIQUID OOZE": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "OVERGROW": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "BLAZE": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "TORRENT": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "SWARM": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "ROCK HEAD": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "DROUGHT": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "ARENA TRAP": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "VITAL SPIRIT": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "WHITE SMOKE": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "PURE POWER": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "SHELL ARMOR": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "AIR LOCK": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "TANGLED FEET": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "MOTOR DRIVE": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "RIVALRY": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "STEADFAST": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "SNOW CLOAK": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "GLUTTONY": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "ANGER POINT": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "UNBURDEN": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "HEATPROOF": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "SIMPLE": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "DRY SKIN": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "DOWNLOAD": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "IRON FIST": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "POISON HEAL": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "ADAPTABILITY": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "SKILL LINK": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "HYDRATION": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "SOLAR POWER": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "QUICK FEET": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "NORMALIZE": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "SNIPER": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "MAGIC GUARD": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "NO GUARD": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "STALL": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "TECHNICIAN": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "LEAF GUARD": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "KLUTZ": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "MOLD BREAKER": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "SUPER LUCK": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "AFTERMATH": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "ANTICIPATION": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "FOREWARN": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "UNAWARE": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "TINTED LENS": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "FILTER": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "SLOW START": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "SCRAPPY": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "STORM DRAIN": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "ICE BODY": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "SOLID ROCK": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "SNOW WARNING": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "HONEY GATHER": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "FRISK": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "RECKLESS": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "MULTITYPE": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "FLOWER GIFT": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "BAD DREAMS": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "PICKPOCKET": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "SHEER FORCE": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "CONTRARY": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "UNNERVE": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "DEFIANT": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "DEFEATIST": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "CURSED BODY": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "HEALER": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "FRIEND GUARD": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "WEAK ARMOR": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "HEAVY METAL": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "LIGHT METAL": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "MULTISCALE": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "TOXIC BOOST": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "FLARE BOOST": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "HARVEST": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "TELEPATHY": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "MOODY": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "OVERCOAT": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "POISON TOUCH": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "REGENERATOR": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "BIG PECKS": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "SAND RUSH": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "WONDER SKIN": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "ANALYTIC": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "ILLUSION": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "IMPOSTER": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "INFILTRATOR": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "MUMMY": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "MOXIE": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "JUSTIFIED": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "RATTLED": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "MAGIC BOUNCE": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "SAP SIPPER": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "PRANKSTER": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "SAND FORCE": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "IRON BARBS": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "ZEN MODE": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "VICTORY STAR": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "TURBOBLAZE": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  },
+  "TERAVOLT": {
+    "via_player": 1.0,
+    "via_ai": 1.0
+  }
+}

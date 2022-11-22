@@ -38,7 +38,7 @@
 			<div class="expanded-field-main">
 				<div class="trainer-id"><%= i %></div>
 
-				<div class="trainer-name"><%= trainer["name"] %></div>
+				<div class="trainer-name"><%= trainer["name"] %> <%= trainer["location"] ? "(#{trainer["location"]})" : ""  %></div>
 
 				<%= field "class", 'trainer-class', {value: "#{trainer['class']} (#{trainer['class_id']})",  narc: "trdata", autofill: "class_names"} %>		
 
