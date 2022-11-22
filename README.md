@@ -296,12 +296,18 @@ Set the level caps for the base rom you are trying to randomize here so that the
 
 The team generator will randomly choose pokemon1, then choose pokemon3 based on typing that is supereffective against mons that are supereffective against pokemon1 and so forth. 
 
+Gyms and gym trainers will only use certain types unless the given settings are too narrow.
+
 The moveset generator will first determine how powerful moves generally should be by looking at the level and bst specified. It will then generally try to find stab moves, then sometimes status moves. Then fill the rest with coverage moves (moves that are supereffective against types that are supereffective against itself). Only status moves are limited to the pokemon's learnset.
 
 
 Randomizer algorithms are in Pokeweb/models/randomizer.rb. This is where adjustments to the team/encounter/move generator algs can be made. For example, modifying the modified_bst formula.
 
 The application of the randomizer algorithms are in Pokeweb/models/action.rb. This is where adjustments to how and where the randomizations are applied can be made. For example forcing certain encounters to be of a certain type.
+
+To be implemented:
+
+Ability viabilities, gym specific viabilities per pokemon, type viabilities. Auto remove evs. Auto remove setup moves. Auto adjust overworld trainers to unavoidable locations.
 
 
 ## Advanced Usage
