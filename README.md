@@ -8,6 +8,10 @@
 
 ### 11/14/2022
 
+Add experimental kaizo randomizer code
+
+### 11/14/2022
+
 Add trainer class and location info for showdown calc
 
 ### 11/13/2022
