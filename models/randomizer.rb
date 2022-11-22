@@ -1,7 +1,18 @@
 class Randomizer
 
+
+	def self.setup
+		create_personal
+		create_abilities
+		create_moves
+		smogon_indexed_moves
+		create_items
+		p "Setup Successful"
+	end
+
 	def self.create_personal
 	 	data = Personal.poke_data
+	 	File.write("randomizer/poks.json", JSON.pretty_generate(data))
 	 	data = add_evolution_data(data)
 	 	File.write("randomizer/poks.json", JSON.pretty_generate(data))
 
@@ -53,6 +64,7 @@ class Randomizer
 
 	 	File.write("randomizer/pok_viabilities.json", JSON.pretty_generate(viabilities))
 	end
+
 
 	def self.add_form_data poks
 		name_indexed_forms = load_file('name_indexed_pok_viabilities')
@@ -1071,29 +1083,3 @@ class Randomizer
 		"200 OK"
 	end
 end
-
-# enc = Randomizer.create_encounter [300,400], 16
-# Randomizer.apply_encounter enc, 1
-
-# for season in ["spring", "summer", "fall", "winter"]:
-
-# 		for enc_type in ["grass", "grass_doubles", "grass_special"]:
-# 			for n in range(0,12):
-# 				index = POKEDEX.index(readable[f'{season}_{enc_type}_slot_{n}'])
-				
-# 				raw[f'{season}_{enc_type}_slot_{n}'] = index
-
-# 				alt_form = f'{season}_{enc_type}_slot_{n}_form' in readable
-# 				if alt_form:
-# 					raw[f'{season}_{enc_type}_slot_{n}'] += (int(readable[f'{season}_{enc_type}_slot_{n}_form']) * 2048)
-		
-# 		for enc_type in ["surf", "surf_special", "super_rod" , "super_rod_special"]:
-# 			for n in range(0,5):
-# 				index = POKEDEX.index(readable[f'{season}_{enc_type}_slot_{n}'])
-				
-# 				raw[f'{season}_{enc_type}_slot_{n}'] = index
-				
-# 				alt_form = f'{season}_{enc_type}_slot_{n}_form' in readable
-# 				if alt_form:
-# 					raw[f'{season}_{enc_type}_slot_{n}'] += (int(readable[f'{season}_{enc_type}_slot_{n}_form']) * 2048)
-

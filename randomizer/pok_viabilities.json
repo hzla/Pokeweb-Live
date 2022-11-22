@@ -14952,9 +14952,9 @@
   {
     "name": "EGG",
     "index": 650,
-    "via_player": 0.0,
+    "via_player": 1.0,
     "form": 0,
-    "via_ai": 0.0,
+    "via_ai": 1.0,
     "via_player_gym_1": 1.0,
     "via_player_gym_2": 1.0,
     "via_player_gym_3": 1.0,
@@ -14975,9 +14975,9 @@
   {
     "name": "BAD EGG",
     "index": 651,
-    "via_player": 0.0,
+    "via_player": 1.0,
     "form": 0,
-    "via_ai": 0.0,
+    "via_ai": 1.0,
     "via_player_gym_1": 1.0,
     "via_player_gym_2": 1.0,
     "via_player_gym_3": 1.0,

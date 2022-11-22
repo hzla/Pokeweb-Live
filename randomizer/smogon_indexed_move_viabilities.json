@@ -1,5 +1,5 @@
 {
-  "nothing": {
+  "": {
     "type": "Normal",
     "effect_category": "No Special Effect",
     "category": "Status",
@@ -1071,7 +1071,7 @@
     "viability": 1.0
   },
   "brutalswing": {
-    "type": "Dark",
+    "type": "DARK",
     "effect_category": "No Special Effect",
     "category": "Physical",
     "power": 60,
