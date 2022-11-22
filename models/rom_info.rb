@@ -12,6 +12,7 @@ class RomInfo
 			type.upcase
 		end
         typing << "FAIRY" if $fairy
+        typing
 	end
 
 	def self.abilities
