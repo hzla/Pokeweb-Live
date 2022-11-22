@@ -30,9 +30,11 @@ Fix bug where incorrect evolution method ids were designated as requiring an ite
 
 ## Features
 
-Pokeweb is currently able to edit map headers, items, personals, level-up learnsets, tm/tutor learnsets, tms, moves, encounters, trainers, evolutions, marts, and grottos, alternate forms, and can search/view text banks.
+Pokeweb is currently able to edit map headers, items, personals, level-up learnsets, tm/tutor learnsets, tms, moves, encounters, trainers, evolutions, marts, and grottos, and alternate forms.
 
-To be implemented editors are texts, battle subway trainers, PWT trainers, tutor moves, and OW events. 
+Can export a custom showdown damage calculator, with trainer names,classes,locations, natures, movesets, and held items, taken from the loaded rom.
+
+Can randomize a rom based on settings in pokeweb/randomizer. 
 
 Not thoroughly bug tested, was originally made for personal use, use at your own risk.
 
@@ -169,7 +171,7 @@ If you would like to share the calculator after importing your set data, you can
 ## Smart Randomizer Functions (experimental)
 
 
-Assumes fairy implemented on base rom, and BW2. 
+Assumes fairy implemented on base rom, and BW2. Use localhost:4567/patcher for fairy patcher on a clean rom or use a rom with fairy already implemented. Change "fairy": false to true in session_settings.json. 
 
 ### Setup
 
@@ -375,6 +377,10 @@ Thanks to Drayano for his forum post on the hidden grotto narc format.
 Thanks to Spike-Eared Pichu for SDSME which helped me obtain some text banks and which I used as reference for the encounter editor.
 
 Thanks to Mero Mero for info on where to find the tm list in the arm9
+
+
+
+Thanks to https://hack64.net/ for the browser patcher. 
 
 
 ## License
