@@ -5,9 +5,22 @@ class Randomizer
 		create_personal
 		create_abilities
 		create_moves
+		update_ban_list
 		smogon_indexed_moves
 		create_items
 		p "Setup Successful"
+	end
+
+	def self.update_move_ban_list
+		moves = load_file "move_viabilities"
+		File.readlines('randomizer/ai_move_banlist.txt').each do |line|
+		    move_id = line.split(" ")[0].to_i
+		    moves[move_id][1]["viability"] = 0
+		end
+		File.write("randomizer/move_viabilities.json", JSON.pretty_generate(moves))
+		smogon_indexed_moves
+		p "updated move ban list"
+
 	end
 
 	def self.create_personal
@@ -34,7 +47,7 @@ class Randomizer
 				end
 
 		 		#remove pokestudios
-		 		if pok["name"].gsub(" ", "") == ""
+		 		if pok["name"].gsub(" ", "") == "" || pok["name"].split(" ").last.downcase == "egg"
 		 			viability["via_player"] = 0
 		 			viability["via_ai"] = 0
 		 			(1..8).each do |n|
@@ -498,6 +511,16 @@ class Randomizer
 			if learnset_data["move_id_#{n}_index"]
 				move = all_moves[learnset_data["move_id_#{n}_index"]][1]
 				if move["category"] == "Status" && move["viability"] > 0
+					
+					#dont let physical/special sets use stat raising moves for the wrong stat			
+					if move["magnitude_1"] > 0
+						if move_category.downcase == "special" 
+							next if move["stat_1"] == "Attack"
+						else
+							next if move["stat_1"] == "Special Attack"
+						end
+					end
+					
 					learnset_moves << all_moves[learnset_data["move_id_#{n}_index"]]
 				end
 			else

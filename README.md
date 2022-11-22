@@ -166,11 +166,22 @@ If you would like to share the calculator after importing your set data, you can
 ## Smart Randomizer Functions (experimental)
 
 
-Assumes fairy implemented on base rom, and BW2. Navigate to root pokeweb folder in cmd/terminal/powershell. Run the following to to start ruby console. 
+Assumes fairy implemented on base rom, and BW2. 
+
+### Setup
+
+First enter your gym level/elite 4 level caps of the base rom into pokeweb/randomizer/base_rom_level_caps.json
+The randomizer assumes every trainer with lvl N pokemon between the a gym with level < N and > N is encountered in between those gyms.  
+
+Navigate to root pokeweb folder in cmd/terminal/powershell. 
+
+
+Run the following to to start ruby console. 
+
 ```
  irb -r ./routes.rb
 ```
-Then run the following to setup the randomizer with the necessary settings files. This only ever needs to be run once. 
+Then run the following to setup the randomizer with the necessary settings files. This only ever needs to be run once per base rom. It is advisable to backup a copy of all settings files in pokeweb/randomizer. 
 
 ```ruby
 Randomizer.setup
@@ -250,6 +261,12 @@ All other variables in this file should not be touched.
 
 This is a list of moves, the only variable that should be adjusted is "viability". Currently the only function supported is setting a variable to 0. At viability 0, trainer teams will never have the move in their movesets.
 
+A list of banned moves for the ai is in randomizer/ai_move_banlist.txt. To add to the list, add a new line with the move_id as the first entry followed by a space. Everything after the space is optional and can be used for notes. Running the following command in the ruby console will update move_viabilities.json with the banlist. 
+
+```ruby
+Randomizer.update_move_ban_list
+```
+
 #### gym_viabilities.json
 
 This file container 9 entries, 1 for each gym, and 1 for the elite 4
@@ -284,9 +301,9 @@ tr_id is a list of trainer_ids that are used by the gym leader
 
 gym_tr_ids is a list of trainer_ids of the gym trainers.
 
-The ids are needed so that the randomizer will know they should use the same type.
-
 e1 to e4 and champ are the trainer_ids for the elite 4 members and the champion.
+
+The ids are needed so that the randomizer will know they should use their assigned gym type.
 
 #### base_rom_level_caps.json
 
@@ -296,20 +313,26 @@ Set the level caps for the base rom you are trying to randomize here so that the
 #### Other info
 
 
-The team generator will randomly choose pokemon1, then choose pokemon3 based on typing that is supereffective against mons that are supereffective against pokemon1 and so forth. 
+The team generator will randomly choose pokemon1, then choose pokemon2 based on typing that is supereffective against mons that are supereffective against pokemon1 and so forth until the team is filled. 
 
 Gyms and gym trainers will only use certain types unless the given settings are too narrow.
 
 The moveset generator will first determine how powerful moves generally should be by looking at the level and bst specified. It will then generally try to find stab moves, then sometimes status moves. Then fill the rest with coverage moves (moves that are supereffective against types that are supereffective against itself). Only status moves are limited to the pokemon's learnset.
 
+Held items have a percent chance to chosen from smogon usage data, and a default pool of items.
 
-Randomizer algorithms are in Pokeweb/models/randomizer.rb. This is where adjustments to the team/encounter/move generator algs can be made. For example, modifying the modified_bst formula.
+Abilities are randomly chosen.
 
-The application of the randomizer algorithms are in Pokeweb/models/action.rb. This is where adjustments to how and where the randomizations are applied can be made. For example forcing certain encounters to be of a certain type.
+Randomizer algorithms are in Pokeweb/models/randomizer.rb. This is where adjustments to the team/encounter/move generator algs can be made. For example, modifying the modified_bst formula, % chance of coverage moves etc. Requires programming knowledge.
+
+The application of the randomizer algorithms are in Pokeweb/models/action.rb. This is where adjustments to how and where the randomizations are applied can be made. For example forcing certain encounters to be of a certain type. Requires programming knowledge.
+
 
 To be implemented:
 
-Ability viabilities, gym specific viabilities per pokemon, type viabilities. Auto remove evs. Auto remove setup moves. Auto adjust overworld trainers to unavoidable locations.
+Ability viabilities, gym specific viabilities per pokemon, typing viabilities. Restricting movesets based on held item. Auto remove evs. Auto remove setup moves. Auto adjust overworld trainers to unavoidable locations.
+
+
 
 
 ## Advanced Usage

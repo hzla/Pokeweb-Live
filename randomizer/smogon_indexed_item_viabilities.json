@@ -791,7 +791,7 @@
     "name": "Awakening",
     "index": 21
   },
-  "paralyzeheal": {
+  "parlyzheal": {
     "market_value": 20,
     "battle_flags": 0,
     "gain_values": 0,
@@ -824,7 +824,7 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Paralyze Heal",
+    "name": "Parlyz Heal",
     "index": 22
   },
   "fullrestore": {
@@ -1256,7 +1256,7 @@
     "ow_happiness": 251,
     "hold_happiness": 246,
     "padding": 0,
-    "name": "Energy Powder",
+    "name": "EnergyPowder",
     "index": 34
   },
   "energyroot": {
@@ -2195,7 +2195,7 @@
     "name": "X Accuracy",
     "index": 60
   },
-  "xsp.atk": {
+  "xspecial": {
     "market_value": 35,
     "battle_flags": 0,
     "gain_values": 0,
@@ -2228,7 +2228,7 @@
     "ow_happiness": 1,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "X Sp. Atk",
+    "name": "X Special",
     "index": 61
   },
   "xsp.def": {
@@ -3020,7 +3020,7 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Thunder Stone",
+    "name": "Thunderstone",
     "index": 83
   },
   "waterstone": {
@@ -3128,7 +3128,7 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Tiny Mushroom",
+    "name": "TinyMushroom",
     "index": 86
   },
   "bigmushroom": {
@@ -3959,13 +3959,13 @@
     "name": "Dawn Stone",
     "index": 109
   },
-  "linkcable": {
+  "ovalstone": {
     "market_value": 210,
     "battle_flags": 0,
     "gain_values": 0,
     "berry_flags": 0,
     "held_flags": 0,
-    "unknown_flag_1": 30,
+    "unknown_flag_1": 80,
     "nature_gift_power": 0,
     "type_attribute": 31,
     "item_group": 20,
@@ -3973,7 +3973,7 @@
     "usability_flag": 1,
     "item_type": 2,
     "consumable_flag": 0,
-    "name_order_id": 209,
+    "name_order_id": 207,
     "status_removal_flag": 0,
     "hp_atk_boost": 8,
     "def_spatk_boost": 0,
@@ -3992,8 +3992,8 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Link Cable",
-    "index": 262
+    "name": "Oval Stone",
+    "index": 110
   },
   "oddkeystone": {
     "market_value": 210,
@@ -4075,13 +4075,13 @@
     "held_flags": 0,
     "unknown_flag_1": 0,
     "nature_gift_power": 0,
-    "type_attribute": 0,
+    "type_attribute": 543,
     "item_group": 0,
     "battle_item_group": 0,
     "usability_flag": 0,
-    "item_type": 2,
+    "item_type": 0,
     "consumable_flag": 0,
-    "name_order_id": 0,
+    "name_order_id": 255,
     "status_removal_flag": 0,
     "hp_atk_boost": 0,
     "def_spatk_boost": 0,
@@ -4101,7 +4101,7 @@
     "hold_happiness": 0,
     "padding": 0,
     "name": "???",
-    "index": 427
+    "index": 622
   },
   "dousedrive": {
     "market_value": 100,
@@ -4640,7 +4640,7 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Bridge Mail S",
+    "name": "BridgeMail S",
     "index": 144
   },
   "bridgemaild": {
@@ -4676,7 +4676,7 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Bridge Mail D",
+    "name": "BridgeMail D",
     "index": 145
   },
   "bridgemailt": {
@@ -4712,7 +4712,7 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Bridge Mail T",
+    "name": "BridgeMail T",
     "index": 146
   },
   "bridgemailv": {
@@ -4748,7 +4748,7 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Bridge Mail V",
+    "name": "BridgeMail V",
     "index": 147
   },
   "bridgemailm": {
@@ -4784,7 +4784,7 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Bridge Mail M",
+    "name": "BridgeMail M",
     "index": 148
   },
   "cheriberry": {
@@ -7124,7 +7124,7 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Bright Powder",
+    "name": "BrightPowder",
     "index": 213
   },
   "whiteherb": {
@@ -7448,7 +7448,7 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Silver Powder",
+    "name": "SilverPowder",
     "index": 222
   },
   "amuletcoin": {
@@ -7592,7 +7592,7 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Deep Sea Tooth",
+    "name": "DeepSeaTooth",
     "index": 226
   },
   "deepseascale": {
@@ -7628,7 +7628,7 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Deep Sea Scale",
+    "name": "DeepSeaScale",
     "index": 227
   },
   "smokeball": {
@@ -8096,7 +8096,7 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Black Glasses",
+    "name": "BlackGlasses",
     "index": 240
   },
   "blackbelt": {
@@ -8312,7 +8312,7 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Never-Melt Ice",
+    "name": "NeverMeltIce",
     "index": 246
   },
   "spelltag": {
@@ -8384,7 +8384,7 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Twisted Spoon",
+    "name": "TwistedSpoon",
     "index": 248
   },
   "charcoal": {
@@ -8528,7 +8528,7 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Upgrade",
+    "name": "Up-Grade",
     "index": 252
   },
   "shellbell": {
@@ -8819,7 +8819,7 @@
     "name": "Red Scarf",
     "index": 260
   },
-  "icestone": {
+  "bluescarf": {
     "market_value": 210,
     "battle_flags": 0,
     "gain_values": 0,
@@ -8852,8 +8852,44 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Ice Stone",
+    "name": "Blue Scarf",
     "index": 261
+  },
+  "pinkscarf": {
+    "market_value": 210,
+    "battle_flags": 0,
+    "gain_values": 0,
+    "berry_flags": 0,
+    "held_flags": 0,
+    "unknown_flag_1": 30,
+    "nature_gift_power": 0,
+    "type_attribute": 31,
+    "item_group": 20,
+    "battle_item_group": 0,
+    "usability_flag": 1,
+    "item_type": 2,
+    "consumable_flag": 0,
+    "name_order_id": 209,
+    "status_removal_flag": 0,
+    "hp_atk_boost": 8,
+    "def_spatk_boost": 0,
+    "spd_spdef_boost": 0,
+    "acc_crit_pp_boost": 0,
+    "pp_flags": 0,
+    "hp_ev_gain": 0,
+    "atk_ev_gain": 0,
+    "def_ev_gain": 0,
+    "spd_ev_gain": 0,
+    "spatk_ev_gain": 0,
+    "spdef_ev_gain": 0,
+    "hp_gain": 0,
+    "pp_gain": 0,
+    "battle_happiness": 0,
+    "ow_happiness": 0,
+    "hold_happiness": 0,
+    "padding": 0,
+    "name": "Pink Scarf",
+    "index": 262
   },
   "greenscarf": {
     "market_value": 10,
@@ -16052,7 +16088,7 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Secret Potion",
+    "name": "SecretPotion",
     "index": 464
   },
   "vs.recorder": {
@@ -16271,7 +16307,7 @@
     "name": "Berry Pots",
     "index": 470
   },
-  "dowsingmachine": {
+  "dowsingmchn": {
     "market_value": 0,
     "battle_flags": 0,
     "gain_values": 0,
@@ -16304,7 +16340,7 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Dowsing Machine",
+    "name": "Dowsing MCHN",
     "index": 471
   },
   "bluecard": {
@@ -16376,7 +16412,7 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Slowpoke Tail",
+    "name": "SlowpokeTail",
     "index": 473
   },
   "clearbell": {
@@ -16520,7 +16556,7 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Squirt Bottle",
+    "name": "SquirtBottle",
     "index": 477
   },
   "redscale": {
@@ -17492,7 +17528,7 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Rage Candy Bar",
+    "name": "RageCandyBar",
     "index": 504
   },
   "datacard01": {
@@ -20228,7 +20264,7 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Balm Mushroom",
+    "name": "BalmMushroom",
     "index": 580
   },
   "bignugget": {
@@ -21707,42 +21743,6 @@
     "name": "Xtransceiver",
     "index": 626
   },
-  "oldseamap": {
-    "market_value": 0,
-    "battle_flags": 0,
-    "gain_values": 0,
-    "berry_flags": 0,
-    "held_flags": 0,
-    "unknown_flag_1": 0,
-    "nature_gift_power": 0,
-    "type_attribute": 543,
-    "item_group": 0,
-    "battle_item_group": 0,
-    "usability_flag": 0,
-    "item_type": 0,
-    "consumable_flag": 0,
-    "name_order_id": 255,
-    "status_removal_flag": 0,
-    "hp_atk_boost": 0,
-    "def_spatk_boost": 0,
-    "spd_spdef_boost": 0,
-    "acc_crit_pp_boost": 0,
-    "pp_flags": 0,
-    "hp_ev_gain": 0,
-    "atk_ev_gain": 0,
-    "def_ev_gain": 0,
-    "spd_ev_gain": 0,
-    "spatk_ev_gain": 0,
-    "spdef_ev_gain": 0,
-    "hp_gain": 0,
-    "pp_gain": 0,
-    "battle_happiness": 0,
-    "ow_happiness": 0,
-    "hold_happiness": 0,
-    "padding": 0,
-    "name": "Old Sea Map",
-    "index": 622
-  },
   "gram1": {
     "market_value": 0,
     "battle_flags": 0,
@@ -22103,7 +22103,7 @@
     "name": "Grubby Hanky",
     "index": 634
   },
-  "colressmachine": {
+  "colressmchn": {
     "market_value": 0,
     "battle_flags": 0,
     "gain_values": 0,
@@ -22136,7 +22136,7 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "Colress Machine",
+    "name": "Colress MCHN",
     "index": 635
   },
   "droppeditem": {
