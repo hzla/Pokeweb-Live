@@ -132,7 +132,10 @@ If you make an invalid edit the border will turn <span style="color: #ff5555">re
 To view a history of your edits, go to the Logs tab in the navbar on the rop right.
 
 Quick Tip: If you want to save time on exporting roms, you can open the session_settings.json file in the root folder after loading a rom. 
+
 If you change "output_arm9": true to  "output_arm9": false, you can save about 5 seconds in rom export time. The arm9 is only used for editing TMs and if you want to enable TM editing again, you can change it back to "output_arm9": true.
+
+If your rom has fairy typing implented change  "fairy": false to "fairy": true, to support fairy typing edits.
 
 ## Carrying Over Rom Data To Newer Releases
 

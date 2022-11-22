@@ -8,9 +8,10 @@ class RomInfo
 	end
 
 	def self.types
-		["Normal", "Fighting", "Flying", "Poison", "Ground", "Rock", "Bug", "Ghost", "Steel", "Fire", "Water","Grass","Electric","Psychic","Ice","Dragon","Dark"].map do |type|
+		typing = ["Normal", "Fighting", "Flying", "Poison", "Ground", "Rock", "Bug", "Ghost", "Steel", "Fire", "Water","Grass","Electric","Psychic","Ice","Dragon","Dark"].map do |type|
 			type.upcase
 		end
+        typing << "FAIRY" if $fairy
 	end
 
 	def self.abilities
