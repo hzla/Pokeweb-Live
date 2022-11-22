@@ -173,14 +173,16 @@ Assumes basic programming knowledge, fairy implemented on base rom, and BW2. Nav
 ```ruby
 Action.rand_teams
 ```
-Randomize every team on the rom based on settings in the pokeweb/randomizer folder. 
+Randomize every team on the rom based on settings in the pokeweb/randomizer folder. WARNING: this irreversible and takes 4-5 minutes
 
 ### Encounter Randomization
 
 ```ruby
 Action.rand_teams
 ```
-Randomize every encounter on the rom based on settings in the pokeweb/randomizer folder. 
+Randomize every encounter on the rom based on settings in the pokeweb/randomizer folder. WARNING: this is irreversible
+
+After randomizing, the rom and showdown calculator can be exported as usual.
 
 It is required that randomizer/base_rom_level_caps.json be filled out. The randomizer will use these level caps to determine what levels trainers should be. 
 
