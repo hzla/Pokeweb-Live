@@ -7,7 +7,12 @@ class Trdata < Pokenarc
 		super
 	end
 
-	def self.get_all
+	def self.get_all 
+		@@narc_name = "trdata"
+		super
+	end
+
+	def self.get_data file_name
 		@@narc_name = "trdata"
 		super
 	end
@@ -139,6 +144,9 @@ class Trdata < Pokenarc
 
 		end
 
+	end
+
+	def self.output_documentation
 	end
 
 end

@@ -9,6 +9,10 @@ class String
     downcase.gsub("-", " ").split(/([ _-])/).map(&:capitalize).join
   end
 
+  def is_integer?
+    self.to_i.to_s == self
+  end
+
   def move_titleize
   	if !self 
   		return ""
@@ -30,6 +34,10 @@ class String
   def squish!
     gsub!("\n", '')
     self
+  end
+
+  def smogonlize
+  	downcase.gsub("-", "").gsub(" ", "").gsub("'","")
   end
 end
 

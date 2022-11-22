@@ -1,9 +1,9 @@
 class Evolution < Pokenarc
 	
 
-	def self.get_all
+	def self.get_all use_raw=false
 		@@narc_name = "evolutions"
-		super
+		super(use_raw)
 	end
 
 

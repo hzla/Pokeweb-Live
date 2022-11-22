@@ -8,11 +8,42 @@ class Encounter < Pokenarc
 
 	end
 
+	def self.get_data file_name
+		@@narc_name = "encounters"
+		super
+	end
+
 
 	def self.write_data data, batch=false
 		@@narc_name = "encounters"
 		@@upcases = "all"
 		super
+	end
+
+	def self.get_max_level id
+		enc =  get_data("#{$rom_name}/json/encounters/#{id}.json")
+		max = 0
+		(0..11).each do |n|
+			if enc["spring_grass_doubles_slot_#{n}_max_level"] > max
+				max = enc["spring_grass_doubles_slot_#{n}_max_level"]
+			end
+		end
+
+		(0..11).each do |n|
+			if enc["spring_grass_slot_#{n}_max_level"] > max
+				max = enc["spring_grass_slot_#{n}_max_level"]
+			end
+		end
+
+		return max if max != 0
+
+		(0..4).each do |n|
+			if enc["spring_surf_slot_#{n}_max_level"] > max
+				max = enc["spring_surf_slot_#{n}_max_level"]
+			end
+		end
+
+		max
 	end
 
 	def self.expand_encounter_info(encounter_data, header_data)
@@ -70,6 +101,9 @@ class Encounter < Pokenarc
 
 	def self.water_percent_for(n)
 		[60, 30, 5, 4, 1][n]
+	end
+
+	def self.output_documentation
 	end
 end
 
