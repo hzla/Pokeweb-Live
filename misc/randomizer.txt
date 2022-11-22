@@ -142,6 +142,12 @@ Encounter table alg DONE
 		1  lvl x rand from pool
 
 
+	lvl alg
+		highest =  highest lvl from base rom, 
+		gym_index = index of next gym with closest lvl cap
+		new_lvl = new_gym_lvl_caps[gym index] - (old_gym_lvl_cap - highest_lvl_from_base_rom)
+
+
 	ensure early game has certain enounter tables based on gym 1 & 2
 	encounter bsts scale up by level
 	each gym city has encounter table to match type
@@ -155,7 +161,11 @@ Encounter table alg DONE
 
 
 
+Optimization
 
+create json file for every pokemon type, sorted by bst
+
+create json fiel for every move type, sorted by bst
 
 
 

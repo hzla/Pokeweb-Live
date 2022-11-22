@@ -7,6 +7,7 @@ require_relative 'models/pokenarc'
 if ENV["DEVMODE"] == "TRUE"
 	require 'pry'
 	require "sinatra/reloader"
+	require 'benchmark'
 	$rom_name = 'projects/bb2redux'
 	p "init"
 end
@@ -365,7 +366,8 @@ end
 
 get '/randomize' do 
 	# Randomizer.create_personal
-	@team = JSON.pretty_generate(Randomizer.create_team([0,600], 6))
+	Action.rand_teams
+	Action.rand_encs
 	erb :randomize
 end
 
