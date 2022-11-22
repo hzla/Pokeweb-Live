@@ -1,5 +1,5 @@
 {
-  "none": {
+  "nothing": {
     "market_value": 0,
     "battle_flags": 0,
     "gain_values": 0,
@@ -32,7 +32,7 @@
     "ow_happiness": 0,
     "hold_happiness": 0,
     "padding": 0,
-    "name": "None",
+    "name": "nothing",
     "index": 0
   },
   "masterball": {

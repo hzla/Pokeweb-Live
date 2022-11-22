@@ -166,11 +166,11 @@ If you would like to share the calculator after importing your set data, you can
 ## Smart Randomizer Functions (experimental)
 
 
-Assumes basic programming knowledge, fairy implemented on base rom, and BW2. Navigate to root pokeweb folder in cmd/terminal/powershell. Run the following to to start ruby console. 
+Assumes fairy implemented on base rom, and BW2. Navigate to root pokeweb folder in cmd/terminal/powershell. Run the following to to start ruby console. 
 ```
  irb -r ./routes.rb
 ```
-Then run the following to setup the randomizer with the necessary settings files.
+Then run the following to setup the randomizer with the necessary settings files. This only ever needs to be run once. 
 
 ```ruby
 Randomizer.setup

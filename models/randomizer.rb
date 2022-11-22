@@ -147,6 +147,7 @@ class Randomizer
 
 	def self.create_items
 		items = Item.get_all
+		items[0]["name"] = "nothing"
 		indexed = {}
 		items.each_with_index do |item, i|
 			smogon_id = item["name"].smogonlize
