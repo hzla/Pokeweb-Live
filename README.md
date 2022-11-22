@@ -197,14 +197,14 @@ Randomizer.setup
 ```ruby
 Action.rand_teams
 ```
-Randomize every team on the rom based on settings in the pokeweb/randomizer folder. WARNING: this irreversible and takes 4-5 minutes
+Randomize every team on the rom based on settings in the pokeweb/randomizer folder. WARNING: this irreversible and takes 4-5 minutes. Must be run at least once before running encounter randomization. This is so that encounters can be dynamically balanced against gym types.
 
 ### Encounter Randomization
 
 ```ruby
-Action.rand_teams
+Action.rand_encs
 ```
-Randomize every encounter on the rom based on settings in the pokeweb/randomizer folder. WARNING: this is irreversible
+Randomize every encounter on the rom based on settings in the pokeweb/randomizer folder. WARNING: this is irreversible. Must randomize trainers first before running.
 
 After randomizing, the rom and showdown calculator can be exported as usual.
 
