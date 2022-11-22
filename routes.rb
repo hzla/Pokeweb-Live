@@ -8,14 +8,13 @@ if ENV["DEVMODE"] == "TRUE"
 	require 'pry'
 	require "sinatra/reloader"
 	require 'benchmark'
-	$rom_name = 'projects/bb2redux'
-	p "init"
 end
 
 
 Dir["models/*.rb"].each {|file| require_relative file}
 
-
+$rom_name = SessionSettings.rom_name
+p "init"
 
 before do
 	$rom_name = SessionSettings.rom_name
