@@ -18,6 +18,7 @@ p "init"
 
 before do
 	$rom_name = SessionSettings.rom_name
+	$fairy = SessionSettings.fairy?
 	return if !$rom_name
 	@rom_name = $rom_name.split("/")[1]
 	tabs = ['headers', 'personal', 'trainers', 'encounters', 'moves', 'tms', 'items', 'marts', 'grottos', 'story_texts', 'info_texts', 'logs']

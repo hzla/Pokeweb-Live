@@ -1,0 +1,276 @@
+
+<!-- saved from url=(0036)https://hack64.net/tools/patcher.php -->
+<html><link type="text/css" rel="stylesheet" id="dark-mode-custom-link"><link type="text/css" rel="stylesheet" id="dark-mode-general-link"><style lang="en" type="text/css" id="dark-mode-custom-style"></style><style lang="en" type="text/css" id="dark-mode-native-style"></style><style lang="en" type="text/css" id="dark-mode-native-sheet"></style><input type="hidden" id="__yoroi_connector_api_injected_type" value="prod"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Hack64 - Web Patcher</title>
+<link href="./patcher_files/css" rel="stylesheet" type="text/css">
+<script src="./patcher_files/libpatch.js"></script>
+<script src="./patcher_files/lzma.js"></script>
+<style>
+td {
+    padding: 10px;
+}
+body {
+    background: rgb(32,34,37);
+    color: #EEE;
+}
+body, table, input {
+    font-size: 14px;
+    font-family: 'Open Sans';
+}
+a {
+    text-decoration: none;
+    color: #30A2EC;
+}
+a:visited
+{
+    color: #30A2EC;
+}
+
+input[type='file']
+{
+    background-color: rgba(0,0,0,0.15);
+    padding: 10px;
+}
+
+input[type='text']
+{
+    padding: 5px;
+    border: none;
+    background-color: #EEE;
+}
+
+</style>
+</head>
+<body style="font-size: 14px;">
+    <div style="display: flex; flex-direction: column; width: 100%; height: 100%;">
+        <div style="flex: 1;"></div>
+        <div style="flex: 1; flex-grow: 0; text-align: center;">
+            <div style="display: inline-block;">
+                <div style="background-color: rgb(47,49,54); padding: 10px;">
+                    <div style="font-size: 24px;">Web Patcher</div>
+                    <div style="font-size: 11px; color: #888;">APS • BPS • IPS • MOD (Star Rod) • PPF • UPS • VCDiff (xdelta)</div>
+                </div>
+                <table style="background-color: rgb(47,49,54); padding: 10px;">
+                    <tbody><tr><td>ROM</td><td><input type="file" id="input-rom" accept=".bin, .rom, .iso, .z64, .nes, .smc, .sfc, .gb, .gba, .gbc, .nds, .3ds, .gmc"></td></tr>
+                    <tr><td>Patch</td><td><input type="file" id="input-patch" accept=".patch, .ppf, .bps, .ips, .ups, .xdelta, .aps, .mod"></td></tr>
+                    <tr><td>Save as</td><td><input type="text" style="width: 100%;" id="input-saveas" spellcheck="false"></td></tr>
+                </tbody></table>
+                <table style="background-color: rgb(47,49,54); width: 100%;">
+                    <tbody><tr>
+                        <td>
+                            <label style="padding: 5px; background-color:rgba(0,0,0,0.15); font-size: 12px; vertical-align: center;" title="Skip checksum verification (not recommended)">
+                                <input type="checkbox" style="vertical-align: middle;" id="input-skip-checksums">
+                                <span style="margin-left: 5px;">Skip checksums</span>
+                            </label>
+                        </td>
+                        <td style="text-align: right;">
+                            <input type="button" value="Patch" id="input-apply" disabled="true">
+                        </td>
+                    </tr>
+                </tbody></table>
+                <div style="background: #666; text-align: left;">
+                    <div id="progress-bar" style="display: inline-block; height: 2px; width: 0px; background: #0FF;"></div>
+                </div>
+            </div>
+            <div style="font-size: 12px; margin-top:10px;"><a href="https://hack64.net/">Home</a></div>
+        </div>
+        <div style="flex: 1;"></div>
+    </div>
+<script>
+
+var sourceData = null;
+var patchData = null;
+var saveAsName = '';
+
+var domInputRom = document.querySelector('#input-rom');
+var domInputPatch = document.querySelector('#input-patch');
+var domInputSaveAs = document.querySelector('#input-saveas');
+var domInputApply = document.querySelector('#input-apply');
+var domInputSkipChecksums = document.querySelector('#input-skip-checksums')
+var domProgressBar = document.querySelector('#progress-bar');
+
+function attachBinaryInput(selector, onloadend)
+{
+    var elem = document.querySelector(selector);
+
+    if(!elem)
+    {
+        return false;
+    }
+
+    elem.onchange = function(e)
+    {
+        if(!this.files[0])
+        {
+            return;
+        }
+
+        var reader = new FileReader();
+        reader.onloadend = function()
+        {
+            onloadend(reader.result);
+        }
+        reader.readAsArrayBuffer(this.files[0]);
+    }
+}
+
+attachBinaryInput('#input-rom', function(result)
+{
+    sourceData = result;
+    autoName();
+    setApplyButtonState();
+})
+
+attachBinaryInput('#input-patch', function(result)
+{
+    patchData = result;
+    autoName();
+    setApplyButtonState();
+})
+
+domInputSaveAs.onchange = domInputSaveAs.onkeydown = function()
+{
+    setApplyButtonState();
+}
+
+function isReady()
+{
+    return (!!domInputRom.files[0] && !!domInputPatch.files[0] && domInputSaveAs.value != '');
+}
+
+function autoName()
+{
+    if(domInputSaveAs.value != '' || !domInputRom.files[0] || !domInputPatch.files[0])
+    {
+        return;
+    }
+
+    var romFileName = domInputRom.files[0].name;
+    var patchFileName = domInputPatch.files[0].name;
+
+    var ext = romFileName.split('.').pop();
+    var parts = patchFileName.split('.');
+    parts.pop();
+
+    var name = parts.join('.') + '.' + ext;
+
+    domInputSaveAs.value = name;
+}
+
+domInputApply.onclick = function()
+{
+    runPatcher();
+}
+
+domInputApply.oncontextmenu = function()
+{
+    runPatcher({debug: true});
+}
+
+function runPatcher(cfg)
+{
+	cfg = cfg || {};
+    var debug = cfg.debug || false;
+
+    if(!isReady())
+    {
+        return;
+    }
+
+    disableInputs();
+
+    function onpatchend(targetData)
+    {
+        domProgressBar.style.width = '0px';
+        enableInputs();
+
+        if(!debug)
+        {
+            saveAs(domInputSaveAs.value, targetData);
+        }
+    }
+
+    function onprogress(ratio)
+    {
+        domProgressBar.style.width = (ratio * 100) + '%';
+    }
+
+    function onerror(message)
+    {
+        alert("Error: " + message + "\n\n" + "See console output for more information.");
+        domProgressBar.style.width = '0px';
+        enableInputs();
+    }
+
+    var config = {
+        ignoreChecksums: domInputSkipChecksums.checked,
+        onerror: onerror,
+        onpatchend: onpatchend,
+        onprogress: onprogress
+    };
+
+    applyPatchAsync(sourceData, patchData, config);
+}
+
+function setApplyButtonState()
+{
+    if(!isReady())
+    {
+        domInputApply.setAttribute('disabled', 'true');
+        return;
+    }
+
+    domInputApply.removeAttribute('disabled');
+}
+
+function disableInputs()
+{
+    domInputRom.setAttribute('disabled', 'true');
+    domInputPatch.setAttribute('disabled', 'true');
+    domInputSaveAs.setAttribute('disabled', 'true');
+    domInputApply.setAttribute('disabled', 'true');
+}
+
+function enableInputs()
+{
+    domInputRom.removeAttribute('disabled');
+    domInputPatch.removeAttribute('disabled');
+    domInputSaveAs.removeAttribute('disabled');
+    domInputApply.removeAttribute('disabled');
+}
+
+function saveAs(filename, data)
+{
+    console.log('saving ' + filename + '...')
+
+    var blob = new Blob([data], {type: 'octet/stream'});
+    var url = window.URL.createObjectURL(blob);
+
+    if(navigator && navigator.msSaveBlob)
+    {
+        console.log("using msSaveBlob...");
+        navigator.msSaveBlob(blob, filename);
+    }
+    else
+    {
+        var a = document.createElement('a');
+        a.style = "display: none";
+        a.href = url;
+        a.download = filename;
+        document.body.appendChild(a);
+        try
+        {
+            a.click();
+        }
+        catch(e)
+        {
+            console.error(e);
+            console.log('failed to save file');
+        }
+        window.URL.revokeObjectURL(url);
+        document.body.removeChild(a);
+    }
+}
+
+</script>
+</body></html>

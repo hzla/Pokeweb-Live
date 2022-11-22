@@ -12,6 +12,18 @@ class SessionSettings
 		nil
 	end
 
+	def self.fairy?
+		if File.exist?('session_settings.json')
+			contents = File.open("session_settings.json", "r") do |f|
+				f.read
+			end
+			return ( JSON.parse(contents)["fairy"]) if contents != ""
+		else
+			nil
+		end
+		nil
+	end
+
 	def self.calc_settings
 		contents = File.open("calculator_settings.json", "r") do |f|
 			f.read
