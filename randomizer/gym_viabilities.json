@@ -1,61 +1,67 @@
 // Default range/lvl data uses Emerald Kaizo gyms as guideline
 // please input trainer_id for each gym leader, and gym trainers manually
+// pokemon bst scores can be seen in pok_viabilites.json
 
 
 [
 	{
-		"range": [240, 415],
-		"lvl": 16,
-		"tr_id": 100,
-		"gym_tr_ids": []
+		"range": [240, 400],
+		"lvl": 15,
+		"tr_id": [156, 764],
+		"gym_tr_ids": [171,172]
 	},
 	{
 		"range": [300, 427],
-		"lvl": 21,
-		"tr_id": 100,
-		"gym_tr_ids": []
+		"lvl": 20,
+		"tr_id": [157,765],
+		"gym_tr_ids": [178,179]
 	},
 	{
 		"range": [350, 460],
 		"lvl": 29,
-		"tr_id": 100,
-		"gym_tr_ids": []
+		"tr_id": [154, 766],
+		"gym_tr_ids": [734,735,736]
 	},
 	{
 		"range": [360, 460],
 		"lvl": 42,
-		"tr_id": 100,
-		"gym_tr_ids": []
+		"tr_id": [153, 767],
+		"gym_tr_ids": [207,208, 209]
 	},
 	{
 		"range": [400, 465],
 		"lvl": 48,
-		"tr_id": 100,
-		"gym_tr_ids": []
+		"tr_id": [158, 768],
+		"gym_tr_ids": [323,324,325]
 	},
 	{
 		"range": [440, 475],
 		"lvl": 55,
-		"tr_id": 100,
-		"gym_tr_ids": []
+		"tr_id": [155, 769],
+		"gym_tr_ids": [149,150,151,152]
 	},
 	{
 		"range": [440, 500],
 		"lvl": 70,
-		"tr_id": 100,
-		"gym_tr_ids": []
+		"tr_id": [159, 770],
+		"gym_tr_ids": [381,382,383,384,385,683]
 	},
 	{
 		"range": [440, 520],
 		"lvl": 77,
-		"tr_id": 100,
-		"gym_tr_ids": []
+		"tr_id": [160, 771],
+		"gym_tr_ids": [349,350,351,352,353,354,355]
 	},
 	{
 		"range": [450, 600],
-		"lvl": 10,
-		"tr_id": 100,
-		"gym_tr_ids": []
+		"lvl": 100,
+		"tr_id": [],
+		"gym_tr_ids": [],
+		"e1": [38,143,772,777],
+		"e2": [39,144,774, 779],
+		"e3": [40,145, 773,778],
+		"e4": [41,146,775,780],
+		"champ": [341,536,776,781,345] 
 	}
 
 ]

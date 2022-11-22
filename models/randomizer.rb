@@ -178,6 +178,7 @@ class Randomizer
 		total = 0
 		expanded_options = options.to_a
 		options.to_a.each_with_index do |option, i|
+			# return option
 			expanded_options[i][2] = total * 100
 			total += (option[1].round(2) * 100).to_i
 		end
@@ -197,29 +198,50 @@ class Randomizer
 
 	def self.create_team v_range, pok_count, types="all", lvl=50
 		poks = []
-		v_range += 1 if v_range == 0
-		types = ["Normal", "Fire", "Water", "Electric", "Grass", "Ice",
-             "Fighting", "Poison", "Ground", "Flying", "Psychic",
-             "Bug", "Rock", "Ghost", "Dragon", "Dark", "Steel", "Fairy"] if types == "all"
-		main_pool = ai_viability_pool(v_range, types)
+		# types = ["Normal", "Fire", "Water", "Electric", "Grass", "Ice",
+  #            "Fighting", "Poison", "Ground", "Flying", "Psychic",
+  #            "Bug", "Rock", "Ghost", "Dragon", "Dark", "Steel", "Fairy"] if types == "all"
+		
+		#cache old pools
+		key = (v_range.map(&:to_s) + [types]).flatten.join("")
+
+		main_pool = nil
+		if $last_used_pool[key]
+			main_pool = $last_used_pool[key]
+		else
+			main_pool = ai_viability_pool(v_range, types)
+		end
+		$last_used_pool = {}
+		$last_used_pool[key] = main_pool
+
 		File.write("randomizer/pool.json", JSON.pretty_generate(main_pool))
+
+		until main_pool.length > 5
+			v_range[0] -= 20 
+			main_pool = ai_viability_pool(v_range, types)
+		end
 
 
 		#choose lead pok from main pool
 		lead_pok = main_pool.shuffle!.pop
 		poks << lead_pok
 
-		lead_types = lead_pok["types"]
-		type_info = get_type_info lead_types
+		lead_types = nil
+		type_info = nil
+		begin
+			lead_types = lead_pok["types"]
+			type_info = get_type_info lead_types
+		rescue
+			binding.pry
+		end
 
 		#get list of types that are SE against types that are SE against lead pok
 		complentary_types = type_info[1] 
 
 
-		until poks.uniq.length == pok_count
+		until poks.length == pok_count
 			if types == "all"
 				#get a complementary typed pokemon from all pokemon
-				# p complentary_types
 				next_pool = ai_viability_pool(v_range, complentary_types)
 			else
 				#get a comp type pokemon from the main pool
@@ -234,15 +256,28 @@ class Randomizer
 
 			#if no pokemon could be found, choose another random pokemon from main pool
 			if !next_pok
-				p "could not find complimentary"
+				next_pok = main_pool.shuffle!.pop 
+	
+			end
+
+			# if main pool is still empty, expand to all types
+			if !next_pok
+				types = ["Normal", "Fire", "Water", "Electric", "Grass", "Ice",
+             "Fighting", "Poison", "Ground", "Flying", "Psychic",
+             "Bug", "Rock", "Ghost", "Dragon", "Dark", "Steel", "Fairy"]
+            	 main_pool = ai_viability_pool(v_range, types)
 				next_pok = main_pool.shuffle!.pop 
 	
 			end
 			
 			poks << next_pok
 
-			next_type_info = get_type_info(next_pok["types"]) 
-			complentary_types = [next_type_info[1].shuffle.pop]
+			begin
+				next_type_info = get_type_info(next_pok["types"]) 
+			rescue
+				binding.pry
+			end
+			complentary_types = [next_type_info[1].sample]
 
 		end
 
@@ -258,7 +293,7 @@ class Randomizer
 			poks[i]["moves"] = create_moveset(pok, target_viability, lvl, category )
 		end
 
-		File.write("randomizer/team.json", JSON.pretty_generate(poks))
+		# File.write("randomizer/team.json", JSON.pretty_generate(poks))
 		"output to randomizer/team.json"
 
 		poks
@@ -280,7 +315,6 @@ class Randomizer
 		trpok["readable"] = readable[1]
 		trpok["raw"] = raw[1]
 
-		p trpok
 		File.open("#{$rom_name}/json/trdata/#{tr_id}.json", "w") { |f| f.write trdata.to_json }
 		File.open("#{$rom_name}/json/trpok/#{tr_id}.json", "w") { |f| f.write trpok.to_json }
 	end
@@ -303,7 +337,6 @@ class Randomizer
 		#wipe old data
 		trpok.each do |field, value|
 			if field.split("_")[-1].is_integer?
-				p field
 				trpok.delete field
 			end
 		end
@@ -323,7 +356,6 @@ class Randomizer
 				trpok["form_#{i}"] = 0
 			end
 
-			p trpok["species_id_#{i}"]
 
 			
 			trpok["gender_#{i}"] = "Default"
@@ -336,7 +368,7 @@ class Randomizer
 				trpok["item_id_#{i}"] = "Sitrus Berry"
 			end
 
-			(1..4).each do |m|
+			(1..(pok["moves"].length)).each do |m|
 				trpok["move_#{m}_#{i}"] = pok["moves"][m - 1][0]
 			end
 		end
@@ -386,15 +418,13 @@ class Randomizer
 				trpok["form_#{i}"] = 0
 			end
 
-			p trpok["species_id_#{i}"]
-
 			if pok["item"]
 				trpok["item_id_#{i}"] = items[pok["item"]]["index"] 
 			else
 				trpok["item_id_#{i}"] = 158
 			end
 
-			(1..4).each do |m|
+			(1..(pok["moves"].length )).each do |m|
 				trpok["move_#{m}_#{i}"] = pok["moves"][m - 1][1]
 			end
 		end
@@ -427,8 +457,6 @@ class Randomizer
 		JSON.parse(File.read("randomizer/#{file_name}.json"))
 	end
 
-
-
 	def self.create_moveset pok, target_viability, lvl, move_category
 		all_poks = load_file('poks')
 		
@@ -450,12 +478,13 @@ class Randomizer
 		learnset_moves = []
 		learnset_data = pok["learnset"]
 		
+		# return all_moves.sample(4).map {|n| [n[1]["name"], n[1]["index"]]}
 
 		#get learnset status moves
 		(0..24).each do |n|
 			if learnset_data["move_id_#{n}_index"]
 				move = all_moves[learnset_data["move_id_#{n}_index"]][1]
-				if move["category"] == "Status"
+				if move["category"] == "Status" && move["viability"] > 0
 					learnset_moves << all_moves[learnset_data["move_id_#{n}_index"]]
 				end
 			else
@@ -473,7 +502,7 @@ class Randomizer
 		# 		learnset_moves << tm_data
 		# 	end
 		# end
-
+		all_learnset_moves = learnset_moves
 		learnset_moves = learnset_moves.last(2)
 
 		#create move pool of offensive stab moves within accetable bp range
@@ -525,6 +554,7 @@ class Randomizer
 				stab_move2_type = nil
 				stab_move2 = nil
 				until stab_move2_type == remaining_types[0] || stab_movepool.empty?
+					
 					stab_move2 = stab_movepool.shuffle!.pop
 					stab_move2_type = stab_move2["type"] 
 
@@ -541,7 +571,9 @@ class Randomizer
 
 		if rand(100) > 50
 			if learnset_moves
-				moveset << learnset_moves.shuffle!.pop[1]
+				ls_move = learnset_moves.shuffle!.pop
+				
+				moveset << ls_move[1] if ls_move
 			end
 		end
 
@@ -549,14 +581,20 @@ class Randomizer
 		cov_move_1 = nil
 		cov_move_1_type = nil
 		if rand(100) > 50
-			if learnset_moves
+			if learnset_moves && learnset_moves.last
 				moveset << learnset_moves.last[1]
 			end
 
 		else
+			
 			cov_move_1 = coverage_movepool.shuffle!.pop
-			cov_move_1_type = cov_move_1["type"]
-			moveset << coverage_movepool.shuffle!.pop
+			
+			if cov_move_1
+				cov_move_1_type = cov_move_1["type"]
+				moveset << cov_move_1
+			else
+				moveset << stab_movepool.shuffle!.pop
+			end
 		end
 
 
@@ -567,6 +605,7 @@ class Randomizer
 				stab_move2_type = nil
 				stab_move2 = nil
 				until stab_move2_type == remaining_types[0] || stab_movepool.empty?
+					
 					stab_move2 = stab_movepool.shuffle!.pop
 					stab_move2_type = stab_move2["type"] 
 				end
@@ -582,12 +621,25 @@ class Randomizer
 			moveset << coverage_movepool.shuffle!.pop
 		end
 
+		
+
 		# Step 7: coverage move if still room
-		if moveset.length < 4
+		until moveset.length == 4 || coverage_movepool.empty?
 			moveset << coverage_movepool.shuffle!.pop
 		end
 
-		moveset.map {|n| [n["name"], n["index"]]}
+		# Step 8: status move from complete learnset pool if room
+		if moveset.length < 4
+			moveset << all_learnset_moves.shuffle!.pop[1]
+		end
+
+		moveset = moveset.compact
+		begin 
+			moveset.map {|n| [n["name"], n["index"]]}
+		rescue
+			binding.pry
+		end
+
 
 	end
 
