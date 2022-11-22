@@ -195,7 +195,7 @@
       "flag": 21331,
       "properties": 73,
       "index": 3,
-      "name": "DOUBLE SLAP",
+      "name": "DOUBLESLAP",
       "min_hits": 2,
       "max_hits": 5,
       "contact": 1,
@@ -249,7 +249,7 @@
       "flag": 21331,
       "properties": 201,
       "index": 4,
-      "name": "POWER-UP PUNCH",
+      "name": "COMET PUNCH",
       "min_hits": 0,
       "max_hits": 0,
       "contact": 1,
@@ -303,7 +303,7 @@
       "flag": 21331,
       "properties": 201,
       "index": 5,
-      "name": "SMART STRIKE",
+      "name": "MEGA PUNCH",
       "min_hits": 0,
       "max_hits": 0,
       "contact": 1,
@@ -519,7 +519,7 @@
       "flag": 21331,
       "properties": 201,
       "index": 9,
-      "name": "THUNDER PUNCH",
+      "name": "THUNDERPUNCH",
       "min_hits": 0,
       "max_hits": 0,
       "contact": 1,
@@ -627,7 +627,7 @@
       "flag": 21331,
       "properties": 2121,
       "index": 11,
-      "name": "DUAL WINGBEAT",
+      "name": "VICEGRIP",
       "min_hits": 2,
       "max_hits": 2,
       "contact": 1,
@@ -735,7 +735,7 @@
       "flag": 21331,
       "properties": 1097,
       "index": 13,
-      "name": "FIRE LASH",
+      "name": "RAZOR WIND",
       "min_hits": 0,
       "max_hits": 0,
       "contact": 1,
@@ -1136,7 +1136,7 @@
   [
     21,
     {
-      "type": "DARK",
+      "type": "Dark",
       "effect_category": "No Special Effect",
       "category": "Physical",
       "power": 60,
@@ -1167,7 +1167,7 @@
       "flag": 21331,
       "properties": 73,
       "index": 21,
-      "name": "BRUTAL SWING",
+      "name": "SLAM",
       "min_hits": 0,
       "max_hits": 0,
       "contact": 1,
@@ -1383,7 +1383,7 @@
       "flag": 21331,
       "properties": 73,
       "index": 25,
-      "name": "HIGH HORSEPOWER",
+      "name": "MEGA KICK",
       "min_hits": 0,
       "max_hits": 0,
       "contact": 1,
@@ -1491,7 +1491,7 @@
       "flag": 21331,
       "properties": 73,
       "index": 27,
-      "name": "HEADLONG RUSH",
+      "name": "ROLLING KICK",
       "min_hits": 0,
       "max_hits": 0,
       "contact": 1,
@@ -1545,7 +1545,7 @@
       "flag": 21331,
       "properties": 88,
       "index": 28,
-      "name": "SAND ATTACK",
+      "name": "SAND-ATTACK",
       "min_hits": 0,
       "max_hits": 0,
       "contact": 0,
@@ -1761,7 +1761,7 @@
       "flag": 21331,
       "properties": 8520,
       "index": 32,
-      "name": "BOOMBURST",
+      "name": "HORN DRILL",
       "min_hits": 0,
       "max_hits": 0,
       "contact": 0,
@@ -2031,7 +2031,7 @@
       "flag": 21331,
       "properties": 73,
       "index": 37,
-      "name": "RAGING FURY",
+      "name": "THRASH",
       "min_hits": 0,
       "max_hits": 0,
       "contact": 1,
@@ -2679,7 +2679,7 @@
       "flag": 21331,
       "properties": 72,
       "index": 49,
-      "name": "SONIC BOOM",
+      "name": "SONICBOOM",
       "min_hits": 0,
       "max_hits": 0,
       "contact": 0,
@@ -2750,7 +2750,7 @@
       "hits_non-adjacent_opponents": 0,
       "healing_move": 0,
       "hits_through_substitute": 1,
-      "viability": 1.0
+      "viability": 0
     }
   ],
   [
@@ -2966,7 +2966,7 @@
       "hits_non-adjacent_opponents": 0,
       "healing_move": 0,
       "hits_through_substitute": 0,
-      "viability": 1.0
+      "viability": 0
     }
   ],
   [
@@ -3327,7 +3327,7 @@
       "flag": 21331,
       "properties": 72,
       "index": 61,
-      "name": "BUBBLE BEAM",
+      "name": "BUBBLEBEAM",
       "min_hits": 0,
       "max_hits": 0,
       "contact": 0,
@@ -3597,7 +3597,7 @@
       "flag": 21331,
       "properties": 72,
       "index": 66,
-      "name": "PLAY ROUGH",
+      "name": "SUBMISSION",
       "min_hits": 0,
       "max_hits": 0,
       "contact": 0,
@@ -4137,7 +4137,7 @@
       "flag": 21331,
       "properties": 74,
       "index": 76,
-      "name": "SOLAR BEAM",
+      "name": "SOLARBEAM",
       "min_hits": 0,
       "max_hits": 0,
       "contact": 0,
@@ -4191,7 +4191,7 @@
       "flag": 21331,
       "properties": 88,
       "index": 77,
-      "name": "POISON POWDER",
+      "name": "POISONPOWDER",
       "min_hits": 0,
       "max_hits": 0,
       "contact": 0,
@@ -4569,7 +4569,7 @@
       "flag": 21331,
       "properties": 72,
       "index": 84,
-      "name": "THUNDER SHOCK",
+      "name": "THUNDERSHOCK",
       "min_hits": 0,
       "max_hits": 0,
       "contact": 0,
@@ -5558,7 +5558,7 @@
       "hits_non-adjacent_opponents": 0,
       "healing_move": 0,
       "hits_through_substitute": 1,
-      "viability": 1.0
+      "viability": 0
     }
   ],
   [
@@ -6206,7 +6206,7 @@
       "hits_non-adjacent_opponents": 0,
       "healing_move": 0,
       "hits_through_substitute": 0,
-      "viability": 1.0
+      "viability": 0
     }
   ],
   [
@@ -6476,7 +6476,7 @@
       "hits_non-adjacent_opponents": 0,
       "healing_move": 0,
       "hits_through_substitute": 0,
-      "viability": 1.0
+      "viability": 0
     }
   ],
   [
@@ -6513,7 +6513,7 @@
       "flag": 21331,
       "properties": 72,
       "index": 120,
-      "name": "SELF-DESTRUCT",
+      "name": "SELFDESTRUCT",
       "min_hits": 0,
       "max_hits": 0,
       "contact": 0,
@@ -6567,7 +6567,7 @@
       "flag": 21331,
       "properties": 73,
       "index": 121,
-      "name": "PSYCHIC FANGS",
+      "name": "EGG BOMB",
       "min_hits": 0,
       "max_hits": 0,
       "contact": 1,
@@ -7107,7 +7107,7 @@
       "flag": 21331,
       "properties": 73,
       "index": 131,
-      "name": "BREAKING SWIPE",
+      "name": "SPIKE CANNON",
       "min_hits": 0,
       "max_hits": 0,
       "contact": 1,
@@ -7161,7 +7161,7 @@
       "flag": 21331,
       "properties": 72,
       "index": 132,
-      "name": "INFESTATION",
+      "name": "CONSTRICT",
       "min_hits": 0,
       "max_hits": 0,
       "contact": 0,
@@ -7323,7 +7323,7 @@
       "flag": 21331,
       "properties": 4128,
       "index": 135,
-      "name": "SOFT-BOILED",
+      "name": "SOFTBOILED",
       "min_hits": 0,
       "max_hits": 0,
       "contact": 0,
@@ -7377,7 +7377,7 @@
       "flag": 21331,
       "properties": 585,
       "index": 136,
-      "name": "HIGH JUMP KICK",
+      "name": "HI JUMP KICK",
       "min_hits": 0,
       "max_hits": 0,
       "contact": 1,
@@ -7593,7 +7593,7 @@
       "flag": 21331,
       "properties": 73,
       "index": 140,
-      "name": "LUNGE",
+      "name": "BARRAGE",
       "min_hits": 0,
       "max_hits": 0,
       "contact": 1,
@@ -7863,7 +7863,7 @@
       "flag": 21331,
       "properties": 72,
       "index": 145,
-      "name": "ESPER WING",
+      "name": "BUBBLE",
       "min_hits": 0,
       "max_hits": 0,
       "contact": 0,
@@ -8619,7 +8619,7 @@
       "flag": 21331,
       "properties": 72,
       "index": 159,
-      "name": "NUZZLE",
+      "name": "SHARPEN",
       "min_hits": 0,
       "max_hits": 0,
       "contact": 0,
@@ -8690,7 +8690,7 @@
       "hits_non-adjacent_opponents": 0,
       "healing_move": 0,
       "hits_through_substitute": 0,
-      "viability": 1.0
+      "viability": 0
     }
   ],
   [
@@ -9014,7 +9014,7 @@
       "hits_non-adjacent_opponents": 0,
       "healing_move": 0,
       "hits_through_substitute": 1,
-      "viability": 1.0
+      "viability": 0
     }
   ],
   [
@@ -9051,7 +9051,7 @@
       "flag": 21331,
       "properties": 73,
       "index": 167,
-      "name": "TRIPLE AXEL",
+      "name": "TRIPLE KICK",
       "min_hits": 3,
       "max_hits": 3,
       "contact": 1,
@@ -9284,7 +9284,7 @@
       "hits_non-adjacent_opponents": 0,
       "healing_move": 0,
       "hits_through_substitute": 0,
-      "viability": 1.0
+      "viability": 0
     }
   ],
   [
@@ -9392,7 +9392,7 @@
       "hits_non-adjacent_opponents": 0,
       "healing_move": 0,
       "hits_through_substitute": 1,
-      "viability": 1.0
+      "viability": 0
     }
   ],
   [
@@ -9554,7 +9554,7 @@
       "hits_non-adjacent_opponents": 0,
       "healing_move": 0,
       "hits_through_substitute": 1,
-      "viability": 1.0
+      "viability": 0
     }
   ],
   [
@@ -9770,7 +9770,7 @@
       "hits_non-adjacent_opponents": 0,
       "healing_move": 0,
       "hits_through_substitute": 1,
-      "viability": 1.0
+      "viability": 0
     }
   ],
   [
@@ -10023,7 +10023,7 @@
       "flag": 21331,
       "properties": 73,
       "index": 185,
-      "name": "FEINT ATTACK",
+      "name": "FAINT ATTACK",
       "min_hits": 0,
       "max_hits": 0,
       "contact": 1,
@@ -10077,7 +10077,7 @@
       "flag": 21331,
       "properties": 72,
       "index": 186,
-      "name": "DRAINING KISS",
+      "name": "SWEET KISS",
       "min_hits": 0,
       "max_hits": 0,
       "contact": 0,
@@ -10472,7 +10472,7 @@
       "hits_non-adjacent_opponents": 0,
       "healing_move": 0,
       "hits_through_substitute": 1,
-      "viability": 1.0
+      "viability": 0
     }
   ],
   [
@@ -10796,7 +10796,7 @@
       "hits_non-adjacent_opponents": 0,
       "healing_move": 0,
       "hits_through_substitute": 0,
-      "viability": 1.0
+      "viability": 0
     }
   ],
   [
@@ -11967,7 +11967,7 @@
       "flag": 21331,
       "properties": 72,
       "index": 221,
-      "name": "MYSTICAL FIRE",
+      "name": "SACRED FIRE",
       "min_hits": 0,
       "max_hits": 0,
       "contact": 0,
@@ -12075,7 +12075,7 @@
       "flag": 21331,
       "properties": 201,
       "index": 223,
-      "name": "DYNAMIC PUNCH",
+      "name": "DYNAMICPUNCH",
       "min_hits": 0,
       "max_hits": 0,
       "contact": 1,
@@ -12183,7 +12183,7 @@
       "flag": 21331,
       "properties": 72,
       "index": 225,
-      "name": "DRAGON BREATH",
+      "name": "DRAGONBREATH",
       "min_hits": 0,
       "max_hits": 0,
       "contact": 0,
@@ -13226,7 +13226,7 @@
       "hits_non-adjacent_opponents": 0,
       "healing_move": 0,
       "hits_through_substitute": 1,
-      "viability": 1.0
+      "viability": 0
     }
   ],
   [
@@ -13263,7 +13263,7 @@
       "flag": 21331,
       "properties": 73,
       "index": 245,
-      "name": "EXTREME SPEED",
+      "name": "EXTREMESPEED",
       "min_hits": 0,
       "max_hits": 0,
       "contact": 1,
@@ -13317,7 +13317,7 @@
       "flag": 21331,
       "properties": 72,
       "index": 246,
-      "name": "ANCIENT POWER",
+      "name": "ANCIENTPOWER",
       "min_hits": 0,
       "max_hits": 0,
       "contact": 0,
@@ -14036,7 +14036,7 @@
       "hits_non-adjacent_opponents": 0,
       "healing_move": 0,
       "hits_through_substitute": 1,
-      "viability": 1.0
+      "viability": 0
     }
   ],
   [
@@ -14198,7 +14198,7 @@
       "hits_non-adjacent_opponents": 0,
       "healing_move": 0,
       "hits_through_substitute": 0,
-      "viability": 1.0
+      "viability": 0
     }
   ],
   [
@@ -14343,7 +14343,7 @@
       "flag": 21331,
       "properties": 72,
       "index": 265,
-      "name": "PSYSHIELD BASH",
+      "name": "SMELLINGSALT",
       "min_hits": 0,
       "max_hits": 0,
       "contact": 0,
@@ -14414,7 +14414,7 @@
       "hits_non-adjacent_opponents": 0,
       "healing_move": 0,
       "hits_through_substitute": 0,
-      "viability": 1.0
+      "viability": 0
     }
   ],
   [
@@ -14522,7 +14522,7 @@
       "hits_non-adjacent_opponents": 0,
       "healing_move": 0,
       "hits_through_substitute": 0,
-      "viability": 1.0
+      "viability": 0
     }
   ],
   [
@@ -14576,7 +14576,7 @@
       "hits_non-adjacent_opponents": 0,
       "healing_move": 0,
       "hits_through_substitute": 1,
-      "viability": 1.0
+      "viability": 0
     }
   ],
   [
@@ -14630,7 +14630,7 @@
       "hits_non-adjacent_opponents": 0,
       "healing_move": 0,
       "hits_through_substitute": 1,
-      "viability": 1.0
+      "viability": 0
     }
   ],
   [
@@ -14684,7 +14684,7 @@
       "hits_non-adjacent_opponents": 0,
       "healing_move": 0,
       "hits_through_substitute": 0,
-      "viability": 1.0
+      "viability": 0
     }
   ],
   [
@@ -14738,7 +14738,7 @@
       "hits_non-adjacent_opponents": 0,
       "healing_move": 0,
       "hits_through_substitute": 1,
-      "viability": 1.0
+      "viability": 0
     }
   ],
   [
@@ -15008,7 +15008,7 @@
       "hits_non-adjacent_opponents": 0,
       "healing_move": 0,
       "hits_through_substitute": 0,
-      "viability": 1.0
+      "viability": 0
     }
   ],
   [
@@ -15062,7 +15062,7 @@
       "hits_non-adjacent_opponents": 0,
       "healing_move": 0,
       "hits_through_substitute": 0,
-      "viability": 1.0
+      "viability": 0
     }
   ],
   [
@@ -15440,7 +15440,7 @@
       "hits_non-adjacent_opponents": 0,
       "healing_move": 0,
       "hits_through_substitute": 1,
-      "viability": 1.0
+      "viability": 0
     }
   ],
   [
@@ -15494,7 +15494,7 @@
       "hits_non-adjacent_opponents": 0,
       "healing_move": 0,
       "hits_through_substitute": 1,
-      "viability": 1.0
+      "viability": 0
     }
   ],
   [
@@ -15548,7 +15548,7 @@
       "hits_non-adjacent_opponents": 0,
       "healing_move": 0,
       "hits_through_substitute": 0,
-      "viability": 1.0
+      "viability": 0
     }
   ],
   [
@@ -15656,7 +15656,7 @@
       "hits_non-adjacent_opponents": 0,
       "healing_move": 0,
       "hits_through_substitute": 1,
-      "viability": 1.0
+      "viability": 0
     }
   ],
   [
@@ -15872,7 +15872,7 @@
       "hits_non-adjacent_opponents": 0,
       "healing_move": 0,
       "hits_through_substitute": 0,
-      "viability": 1.0
+      "viability": 0
     }
   ],
   [
@@ -15963,7 +15963,7 @@
       "flag": 21331,
       "properties": 72,
       "index": 295,
-      "name": "DAZZLING GLEAM",
+      "name": "LUSTER PURGE",
       "min_hits": 0,
       "max_hits": 0,
       "contact": 0,
@@ -16017,7 +16017,7 @@
       "flag": 21331,
       "properties": 72,
       "index": 296,
-      "name": "MOONBLAST",
+      "name": "MIST BALL",
       "min_hits": 0,
       "max_hits": 0,
       "contact": 0,
@@ -16071,7 +16071,7 @@
       "flag": 21331,
       "properties": 88,
       "index": 297,
-      "name": "FEATHER DANCE",
+      "name": "FEATHERDANCE",
       "min_hits": 0,
       "max_hits": 0,
       "contact": 0,
@@ -16250,7 +16250,7 @@
       "hits_non-adjacent_opponents": 0,
       "healing_move": 0,
       "hits_through_substitute": 0,
-      "viability": 1.0
+      "viability": 0
     }
   ],
   [
@@ -17114,7 +17114,7 @@
       "hits_non-adjacent_opponents": 0,
       "healing_move": 0,
       "hits_through_substitute": 1,
-      "viability": 1.0
+      "viability": 0
     }
   ],
   [
@@ -17259,7 +17259,7 @@
       "flag": 21331,
       "properties": 72,
       "index": 319,
-      "name": "SCORCHING SANDS",
+      "name": "METAL SOUND",
       "min_hits": 0,
       "max_hits": 0,
       "contact": 0,
@@ -17313,7 +17313,7 @@
       "flag": 21331,
       "properties": 8536,
       "index": 320,
-      "name": "GRASS WHISTLE",
+      "name": "GRASSWHISTLE",
       "min_hits": 0,
       "max_hits": 0,
       "contact": 0,
@@ -17745,7 +17745,7 @@
       "flag": 21331,
       "properties": 73,
       "index": 328,
-      "name": "ACCELEROCK",
+      "name": "SAND TOMB",
       "min_hits": 0,
       "max_hits": 0,
       "contact": 1,
@@ -19274,7 +19274,7 @@
       "hits_non-adjacent_opponents": 0,
       "healing_move": 0,
       "hits_through_substitute": 0,
-      "viability": 1.0
+      "viability": 0
     }
   ],
   [
@@ -19328,7 +19328,7 @@
       "hits_non-adjacent_opponents": 0,
       "healing_move": 0,
       "hits_through_substitute": 1,
-      "viability": 1.0
+      "viability": 0
     }
   ],
   [
@@ -19868,7 +19868,7 @@
       "hits_non-adjacent_opponents": 0,
       "healing_move": 0,
       "hits_through_substitute": 0,
-      "viability": 1.0
+      "viability": 0
     }
   ],
   [
@@ -20408,7 +20408,7 @@
       "hits_non-adjacent_opponents": 0,
       "healing_move": 0,
       "hits_through_substitute": 0,
-      "viability": 1.0
+      "viability": 0
     }
   ],
   [
@@ -20516,7 +20516,7 @@
       "hits_non-adjacent_opponents": 0,
       "healing_move": 0,
       "hits_through_substitute": 0,
-      "viability": 1.0
+      "viability": 0
     }
   ],
   [
@@ -20624,7 +20624,7 @@
       "hits_non-adjacent_opponents": 0,
       "healing_move": 0,
       "hits_through_substitute": 0,
-      "viability": 1.0
+      "viability": 0
     }
   ],
   [
@@ -20732,7 +20732,7 @@
       "hits_non-adjacent_opponents": 0,
       "healing_move": 0,
       "hits_through_substitute": 0,
-      "viability": 1.0
+      "viability": 0
     }
   ],
   [
@@ -20786,7 +20786,7 @@
       "hits_non-adjacent_opponents": 0,
       "healing_move": 0,
       "hits_through_substitute": 1,
-      "viability": 1.0
+      "viability": 0
     }
   ],
   [
@@ -20840,7 +20840,7 @@
       "hits_non-adjacent_opponents": 0,
       "healing_move": 0,
       "hits_through_substitute": 1,
-      "viability": 1.0
+      "viability": 0
     }
   ],
   [
@@ -20877,7 +20877,7 @@
       "flag": 21331,
       "properties": 73,
       "index": 386,
-      "name": "WAVE CRASH",
+      "name": "PUNISHMENT",
       "min_hits": 0,
       "max_hits": 0,
       "contact": 1,
@@ -21002,7 +21002,7 @@
       "hits_non-adjacent_opponents": 0,
       "healing_move": 0,
       "hits_through_substitute": 0,
-      "viability": 1.0
+      "viability": 0
     }
   ],
   [
@@ -21164,7 +21164,7 @@
       "hits_non-adjacent_opponents": 0,
       "healing_move": 0,
       "hits_through_substitute": 1,
-      "viability": 1.0
+      "viability": 0
     }
   ],
   [
@@ -21272,7 +21272,7 @@
       "hits_non-adjacent_opponents": 0,
       "healing_move": 0,
       "hits_through_substitute": 0,
-      "viability": 1.0
+      "viability": 0
     }
   ],
   [
@@ -22460,7 +22460,7 @@
       "hits_non-adjacent_opponents": 0,
       "healing_move": 0,
       "hits_through_substitute": 0,
-      "viability": 1.0
+      "viability": 0
     }
   ],
   [
@@ -25376,7 +25376,7 @@
       "hits_non-adjacent_opponents": 0,
       "healing_move": 0,
       "hits_through_substitute": 0,
-      "viability": 1.0
+      "viability": 0
     }
   ],
   [
@@ -25538,7 +25538,7 @@
       "hits_non-adjacent_opponents": 0,
       "healing_move": 0,
       "hits_through_substitute": 0,
-      "viability": 1.0
+      "viability": 0
     }
   ],
   [
@@ -25754,7 +25754,7 @@
       "hits_non-adjacent_opponents": 0,
       "healing_move": 0,
       "hits_through_substitute": 0,
-      "viability": 1.0
+      "viability": 0
     }
   ],
   [
@@ -25808,7 +25808,7 @@
       "hits_non-adjacent_opponents": 0,
       "healing_move": 0,
       "hits_through_substitute": 0,
-      "viability": 1.0
+      "viability": 0
     }
   ],
   [
@@ -26348,7 +26348,7 @@
       "hits_non-adjacent_opponents": 0,
       "healing_move": 0,
       "hits_through_substitute": 0,
-      "viability": 1.0
+      "viability": 0
     }
   ],
   [
@@ -26726,7 +26726,7 @@
       "hits_non-adjacent_opponents": 0,
       "healing_move": 0,
       "hits_through_substitute": 0,
-      "viability": 1.0
+      "viability": 0
     }
   ],
   [
@@ -26780,7 +26780,7 @@
       "hits_non-adjacent_opponents": 0,
       "healing_move": 0,
       "hits_through_substitute": 1,
-      "viability": 1.0
+      "viability": 0
     }
   ],
   [
@@ -26817,7 +26817,7 @@
       "flag": 21331,
       "properties": 328,
       "index": 496,
-      "name": "DISARMING VOICE",
+      "name": "ROUND",
       "min_hits": 0,
       "max_hits": 0,
       "contact": 0,
@@ -27104,7 +27104,7 @@
       "hits_non-adjacent_opponents": 0,
       "healing_move": 0,
       "hits_through_substitute": 0,
-      "viability": 1.0
+      "viability": 0
     }
   ],
   [
@@ -27320,7 +27320,7 @@
       "hits_non-adjacent_opponents": 1,
       "healing_move": 1,
       "hits_through_substitute": 0,
-      "viability": 1.0
+      "viability": 0
     }
   ],
   [
@@ -27644,7 +27644,7 @@
       "hits_non-adjacent_opponents": 0,
       "healing_move": 0,
       "hits_through_substitute": 0,
-      "viability": 1.0
+      "viability": 0
     }
   ],
   [
@@ -27752,7 +27752,7 @@
       "hits_non-adjacent_opponents": 0,
       "healing_move": 0,
       "hits_through_substitute": 1,
-      "viability": 1.0
+      "viability": 0
     }
   ],
   [
@@ -27914,7 +27914,7 @@
       "hits_non-adjacent_opponents": 0,
       "healing_move": 0,
       "hits_through_substitute": 0,
-      "viability": 1.0
+      "viability": 0
     }
   ],
   [

@@ -15,6 +15,7 @@ class Personal
 		data[32]["name"] = "Nidoran-M"
 		data[83]["name"] = "Farfetch’d"
 
+
 		if SessionSettings.base_rom == "BW2"
 			data[685]["name"] = "Deoxys-Attack"
 			data[686]["name"] = "Deoxys-Defense"
