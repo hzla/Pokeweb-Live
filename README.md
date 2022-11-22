@@ -6,7 +6,7 @@
 
 ## Changelog
 
-### 11/14/2022
+### 11/21/2022
 
 Add experimental kaizo randomizer code
 
@@ -190,10 +190,12 @@ After randomizing, the rom and showdown calculator can be exported as usual.
 
 It is required that randomizer/base_rom_level_caps.json be filled out. The randomizer will use these level caps to determine what levels trainers should be. 
 
-Randomized rom settings are in randomizer/gym_viabilities.json.
+
 
 
 ### How to Customize
+
+Randomized rom settings are in Pokeweb/randomizer
 
 #### pok_viabilities.json
 
