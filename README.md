@@ -170,7 +170,6 @@ If you would like to share the calculator after importing your set data, you can
 
 ## Smart Randomizer Functions (experimental)
 
-
 Assumes fairy implemented on base rom, and BW2. Use localhost:4567/patcher for fairy patcher on a clean rom or use a rom with fairy already implemented. Change "fairy": false to true in session_settings.json if you are editing the rom. 
 
 ### How to randomize
@@ -217,19 +216,13 @@ Only pokedex.json is meant to be edited by the user, not pok_viabilities.json
 
 In essence, via_player and via_ai gives the randomizer user the ability to customize how strong a pokemon should be viewed relative to their raw stats. 
 
-
 All other variables in this file should not be touched. 
-
 
 #### move_viabilities.json
 
 This is a list of moves, the only variable that should be adjusted is "viability". Currently the only function supported is setting a variable to 0. At viability 0, trainer teams will never have the move in their movesets.
 
-A list of banned moves for the ai is in randomizer/ai_move_banlist.txt. To add to the list, add a new line with the move_id as the first entry followed by a space. Everything after the space is optional and can be used for notes. Running the following command in the ruby console will update move_viabilities.json with the banlist. 
-
-```ruby
-Randomizer.update_move_ban_list
-```
+A list of banned moves for the ai is in randomizer/ai_move_banlist.txt. To add to the list, add a new line with the move_id as the first entry followed by a space. Everything after the space is optional and can be used for notes.  
 
 #### gym_viabilities.json
 
