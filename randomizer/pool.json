@@ -1,99 +1,99 @@
 [
   {
-    "name": "PALKIA",
-    "index": 484,
+    "name": "Landorus-Therian",
+    "index": 708,
     "via_player": 1.0,
-    "form": 0,
     "via_ai": 1.0,
-    "types": [
-      "Water",
-      "Dragon"
-    ],
-    "modified_bst": 536.0,
-    "modified_bst_physical": 506.0,
-    "modified_bst_special": 536.0,
-    "can_be_mixed": false,
-    "physical_ok": true,
-    "special_ok": true
-  },
-  {
-    "name": "Giratina-Origin",
-    "index": 691,
-    "via_player": 1.0,
     "form": 0,
-    "via_ai": 1.0,
     "types": [
-      "Ghost",
-      "Dragon"
-    ],
-    "modified_bst": 538.0,
-    "modified_bst_physical": 538.0,
-    "modified_bst_special": 538.0,
-    "can_be_mixed": true,
-    "base_form": 487,
-    "form_index": 1,
-    "physical_ok": true,
-    "special_ok": true
-  },
-  {
-    "name": "VIRIZION",
-    "index": 640,
-    "via_player": 1.0,
-    "form": 0,
-    "via_ai": 1.0,
-    "types": [
-      "Grass",
-      "Fighting"
-    ],
-    "modified_bst": 471.4,
-    "modified_bst_physical": 471.4,
-    "modified_bst_special": 471.4,
-    "can_be_mixed": true,
-    "physical_ok": true,
-    "special_ok": true
-  },
-  {
-    "name": "DRAGONITE",
-    "index": 149,
-    "via_player": 1.0,
-    "form": 0,
-    "via_ai": 1.0,
-    "types": [
-      "Dragon",
+      "Ground",
       "Flying"
     ],
-    "modified_bst": 477.0,
-    "modified_bst_physical": 477.0,
-    "modified_bst_special": 443.0,
+    "modified_bst": 479.2,
+    "modified_bst_physical": 479.2,
+    "modified_bst_special": 439.2,
     "can_be_mixed": false,
+    "base_form": 645,
+    "form_index": 1,
     "physical_ok": true,
     "special_ok": null
   },
   {
-    "name": "MEWTWO",
-    "index": 150,
+    "name": "UXIE",
+    "index": 480,
     "via_player": 1.0,
-    "form": 0,
     "via_ai": 1.0,
+    "form": 0,
     "types": [
       "Psychic",
       "Psychic"
     ],
-    "modified_bst": 560.0,
-    "modified_bst_physical": 516.0,
-    "modified_bst_special": 560.0,
+    "modified_bst": 472.0,
+    "modified_bst_physical": 472.0,
+    "modified_bst_special": 472.0,
+    "can_be_mixed": true,
+    "physical_ok": true,
+    "special_ok": true
+  },
+  {
+    "name": "ZEKROM",
+    "index": 644,
+    "via_player": 1.0,
+    "via_ai": 1.0,
+    "form": 0,
+    "types": [
+      "Dragon",
+      "Electric"
+    ],
+    "modified_bst": 534.0,
+    "modified_bst_physical": 534.0,
+    "modified_bst_special": 504.0,
     "can_be_mixed": false,
     "physical_ok": true,
     "special_ok": true
   },
   {
-    "name": "JIRACHI",
-    "index": 385,
+    "name": "RAYQUAZA",
+    "index": 384,
     "via_player": 1.0,
-    "form": 0,
     "via_ai": 1.0,
+    "form": 0,
+    "types": [
+      "Dragon",
+      "Flying"
+    ],
+    "modified_bst": 513.0,
+    "modified_bst_physical": 513.0,
+    "modified_bst_special": 513.0,
+    "can_be_mixed": true,
+    "physical_ok": true,
+    "special_ok": true
+  },
+  {
+    "name": "REGISTEEL",
+    "index": 379,
+    "via_player": 1.0,
+    "via_ai": 1.0,
+    "form": 0,
     "types": [
       "Steel",
+      "Steel"
+    ],
+    "modified_bst": 455.0,
+    "modified_bst_physical": 455.0,
+    "modified_bst_special": 455.0,
+    "can_be_mixed": true,
+    "physical_ok": true,
+    "special_ok": true
+  },
+  {
+    "name": "MEW",
+    "index": 151,
+    "via_player": 1.0,
+    "via_ai": 1.0,
+    "form": 0,
+    "types": [
+      "Psychic",
       "Psychic"
     ],
     "modified_bst": 480.0,
@@ -104,132 +104,28 @@
     "special_ok": true
   },
   {
-    "name": "Kyurem-Black",
-    "index": 704,
+    "name": "WEAVILE",
+    "index": 461,
     "via_player": 1.0,
-    "form": 0,
     "via_ai": 1.0,
+    "form": 0,
     "types": [
-      "Dragon",
+      "Dark",
       "Ice"
     ],
-    "modified_bst": 561.0,
-    "modified_bst_physical": 561.0,
-    "modified_bst_special": 511.0,
+    "modified_bst": 460.0,
+    "modified_bst_physical": 460.0,
+    "modified_bst_special": 385.0,
     "can_be_mixed": false,
-    "base_form": 646,
-    "form_index": 2,
     "physical_ok": true,
-    "special_ok": true
-  },
-  {
-    "name": "MELOETTA",
-    "index": 648,
-    "via_player": 1.0,
-    "form": 0,
-    "via_ai": 1.0,
-    "types": [
-      "Normal",
-      "Psychic"
-    ],
-    "modified_bst": 500.0,
-    "modified_bst_physical": 449.0,
-    "modified_bst_special": 500.0,
-    "can_be_mixed": false,
-    "physical_ok": null,
-    "special_ok": true
-  },
-  {
-    "name": "ARCEUS",
-    "index": 493,
-    "via_player": 1.0,
-    "form": 0,
-    "via_ai": 1.0,
-    "types": [
-      "Normal",
-      "Normal"
-    ],
-    "modified_bst": 576.0,
-    "modified_bst_physical": 576.0,
-    "modified_bst_special": 576.0,
-    "can_be_mixed": true,
-    "physical_ok": true,
-    "special_ok": true
-  },
-  {
-    "name": "LUGIA",
-    "index": 249,
-    "via_player": 1.0,
-    "form": 0,
-    "via_ai": 1.0,
-    "types": [
-      "Psychic",
-      "Flying"
-    ],
-    "modified_bst": 555.2,
-    "modified_bst_physical": 555.2,
-    "modified_bst_special": 555.2,
-    "can_be_mixed": true,
-    "physical_ok": true,
-    "special_ok": true
-  },
-  {
-    "name": "AZELF",
-    "index": 482,
-    "via_player": 1.0,
-    "form": 0,
-    "via_ai": 1.0,
-    "types": [
-      "Psychic",
-      "Fairy"
-    ],
-    "modified_bst": 450.0,
-    "modified_bst_physical": 450.0,
-    "modified_bst_special": 450.0,
-    "can_be_mixed": true,
-    "physical_ok": true,
-    "special_ok": true
-  },
-  {
-    "name": "REGICE",
-    "index": 378,
-    "via_player": 1.0,
-    "form": 0,
-    "via_ai": 1.0,
-    "types": [
-      "Ice",
-      "Ice"
-    ],
-    "modified_bst": 480.0,
-    "modified_bst_physical": 430.0,
-    "modified_bst_special": 480.0,
-    "can_be_mixed": false,
-    "physical_ok": null,
-    "special_ok": true
-  },
-  {
-    "name": "CRESSELIA",
-    "index": 488,
-    "via_player": 1.0,
-    "form": 0,
-    "via_ai": 1.0,
-    "types": [
-      "Psychic",
-      "Psychic"
-    ],
-    "modified_bst": 494.0,
-    "modified_bst_physical": 492.0,
-    "modified_bst_special": 497.0,
-    "can_be_mixed": true,
-    "physical_ok": true,
-    "special_ok": true
+    "special_ok": null
   },
   {
     "name": "GROUDON",
     "index": 383,
     "via_player": 1.0,
-    "form": 0,
     "via_ai": 1.0,
+    "form": 0,
     "types": [
       "Ground",
       "Ground"
@@ -242,134 +138,62 @@
     "special_ok": true
   },
   {
-    "name": "Meloetta-Pirouette",
-    "index": 702,
+    "name": "JOLTEON",
+    "index": 135,
     "via_player": 1.0,
-    "form": 0,
     "via_ai": 1.0,
-    "types": [
-      "Normal",
-      "Fighting"
-    ],
-    "modified_bst": 515.2,
-    "modified_bst_physical": 515.2,
-    "modified_bst_special": 464.20000000000005,
-    "can_be_mixed": false,
-    "base_form": 648,
-    "form_index": 1,
-    "physical_ok": true,
-    "special_ok": true
-  },
-  {
-    "name": "DARKRAI",
-    "index": 491,
-    "via_player": 1.0,
     "form": 0,
-    "via_ai": 1.0,
     "types": [
-      "Dark",
-      "Dark"
+      "Electric",
+      "Electric"
     ],
-    "modified_bst": 499.0,
-    "modified_bst_physical": 454.0,
-    "modified_bst_special": 499.0,
-    "can_be_mixed": false,
-    "physical_ok": true,
-    "special_ok": true
-  },
-  {
-    "name": "TORNADUS",
-    "index": 641,
-    "via_player": 1.0,
-    "form": 0,
-    "via_ai": 1.0,
-    "types": [
-      "Flying",
-      "Flying"
-    ],
-    "modified_bst": 452.2,
-    "modified_bst_physical": 447.2,
-    "modified_bst_special": 457.2,
-    "can_be_mixed": true,
-    "physical_ok": null,
-    "special_ok": true
-  },
-  {
-    "name": "Deoxys-Defense",
-    "index": 686,
-    "via_player": 1.0,
-    "form": 0,
-    "via_ai": 1.0,
-    "types": [
-      "Psychic",
-      "Psychic"
-    ],
-    "modified_bst": 484.0,
-    "modified_bst_physical": 484.0,
-    "modified_bst_special": 484.0,
-    "can_be_mixed": true,
-    "base_form": 386,
-    "form_index": 2,
-    "physical_ok": true,
-    "special_ok": true
-  },
-  {
-    "name": "BLISSEY",
-    "index": 242,
-    "via_player": 1.0,
-    "form": 0,
-    "via_ai": 1.0,
-    "types": [
-      "Normal",
-      "Normal"
-    ],
-    "modified_bst": 512.0,
-    "modified_bst_physical": 447.0,
-    "modified_bst_special": 512.0,
+    "modified_bst": 455.0,
+    "modified_bst_physical": 410.0,
+    "modified_bst_special": 455.0,
     "can_be_mixed": false,
     "physical_ok": null,
     "special_ok": true
   },
   {
-    "name": "ENTEI",
-    "index": 244,
+    "name": "SHAYMIN",
+    "index": 492,
     "via_player": 1.0,
-    "form": 0,
     "via_ai": 1.0,
+    "form": 0,
     "types": [
-      "Fire",
-      "Fire"
+      "Grass",
+      "Grass"
     ],
-    "modified_bst": 478.0,
-    "modified_bst_physical": 478.0,
-    "modified_bst_special": 453.0,
-    "can_be_mixed": false,
+    "modified_bst": 480.0,
+    "modified_bst_physical": 480.0,
+    "modified_bst_special": 480.0,
+    "can_be_mixed": true,
     "physical_ok": true,
     "special_ok": true
   },
   {
-    "name": "SUICUNE",
-    "index": 245,
+    "name": "GYARADOS",
+    "index": 130,
     "via_player": 1.0,
-    "form": 0,
     "via_ai": 1.0,
+    "form": 0,
     "types": [
       "Water",
-      "Water"
+      "Flying"
     ],
-    "modified_bst": 468.0,
-    "modified_bst_physical": 461.0,
-    "modified_bst_special": 476.0,
-    "can_be_mixed": true,
+    "modified_bst": 460.4,
+    "modified_bst_physical": 460.4,
+    "modified_bst_special": 395.4,
+    "can_be_mixed": false,
     "physical_ok": true,
-    "special_ok": true
+    "special_ok": null
   },
   {
     "name": "Thundurus-Therian",
     "index": 707,
     "via_player": 1.0,
-    "form": 0,
     "via_ai": 1.0,
+    "form": 0,
     "types": [
       "Electric",
       "Flying"
@@ -384,878 +208,52 @@
     "special_ok": true
   },
   {
-    "name": "MEW",
-    "index": 151,
+    "name": "ENTEI",
+    "index": 244,
     "via_player": 1.0,
-    "form": 0,
     "via_ai": 1.0,
-    "types": [
-      "Psychic",
-      "Psychic"
-    ],
-    "modified_bst": 480.0,
-    "modified_bst_physical": 480.0,
-    "modified_bst_special": 480.0,
-    "can_be_mixed": true,
-    "physical_ok": true,
-    "special_ok": true
-  },
-  {
-    "name": "Shaymin-Sky",
-    "index": 690,
-    "via_player": 1.0,
     "form": 0,
-    "via_ai": 1.0,
-    "types": [
-      "Grass",
-      "Flying"
-    ],
-    "modified_bst": 483.4,
-    "modified_bst_physical": 475.4,
-    "modified_bst_special": 492.4,
-    "can_be_mixed": true,
-    "base_form": 492,
-    "form_index": 1,
-    "physical_ok": true,
-    "special_ok": true
-  },
-  {
-    "name": "AERODACTYL",
-    "index": 142,
-    "via_player": 1.0,
-    "form": 0,
-    "via_ai": 1.0,
-    "types": [
-      "Rock",
-      "Flying"
-    ],
-    "modified_bst": 453.0,
-    "modified_bst_physical": 453.0,
-    "modified_bst_special": 408.0,
-    "can_be_mixed": false,
-    "physical_ok": true,
-    "special_ok": null
-  },
-  {
-    "name": "VICTINI",
-    "index": 494,
-    "via_player": 1.0,
-    "form": 0,
-    "via_ai": 1.0,
-    "types": [
-      "Psychic",
-      "Fire"
-    ],
-    "modified_bst": 480.0,
-    "modified_bst_physical": 480.0,
-    "modified_bst_special": 480.0,
-    "can_be_mixed": true,
-    "physical_ok": true,
-    "special_ok": true
-  },
-  {
-    "name": "KYOGRE",
-    "index": 382,
-    "via_player": 1.0,
-    "form": 0,
-    "via_ai": 1.0,
-    "types": [
-      "Water",
-      "Water"
-    ],
-    "modified_bst": 542.0,
-    "modified_bst_physical": 492.0,
-    "modified_bst_special": 542.0,
-    "can_be_mixed": false,
-    "physical_ok": true,
-    "special_ok": true
-  },
-  {
-    "name": "RAYQUAZA",
-    "index": 384,
-    "via_player": 1.0,
-    "form": 0,
-    "via_ai": 1.0,
-    "types": [
-      "Dragon",
-      "Flying"
-    ],
-    "modified_bst": 513.0,
-    "modified_bst_physical": 513.0,
-    "modified_bst_special": 513.0,
-    "can_be_mixed": true,
-    "physical_ok": true,
-    "special_ok": true
-  },
-  {
-    "name": "TOGEKISS",
-    "index": 468,
-    "via_player": 1.0,
-    "form": 0,
-    "via_ai": 1.0,
-    "types": [
-      "Flying",
-      "Fairy"
-    ],
-    "modified_bst": 469.0,
-    "modified_bst_physical": 399.0,
-    "modified_bst_special": 469.0,
-    "can_be_mixed": false,
-    "physical_ok": null,
-    "special_ok": true
-  },
-  {
-    "name": "LATIAS",
-    "index": 380,
-    "via_player": 1.0,
-    "form": 0,
-    "via_ai": 1.0,
-    "types": [
-      "Dragon",
-      "Psychic"
-    ],
-    "modified_bst": 498.0,
-    "modified_bst_physical": 468.0,
-    "modified_bst_special": 498.0,
-    "can_be_mixed": false,
-    "physical_ok": true,
-    "special_ok": true
-  },
-  {
-    "name": "FLYGON",
-    "index": 330,
-    "via_player": 1.0,
-    "form": 0,
-    "via_ai": 1.0,
-    "types": [
-      "Bug",
-      "Dragon"
-    ],
-    "modified_bst": 466.0,
-    "modified_bst_physical": 456.0,
-    "modified_bst_special": 476.0,
-    "can_be_mixed": true,
-    "physical_ok": true,
-    "special_ok": true
-  },
-  {
-    "name": "ARTICUNO",
-    "index": 144,
-    "via_player": 1.0,
-    "form": 0,
-    "via_ai": 1.0,
-    "types": [
-      "Ice",
-      "Flying"
-    ],
-    "modified_bst": 462.0,
-    "modified_bst_physical": 457.0,
-    "modified_bst_special": 467.0,
-    "can_be_mixed": true,
-    "physical_ok": true,
-    "special_ok": true
-  },
-  {
-    "name": "CROBAT",
-    "index": 169,
-    "via_player": 1.0,
-    "form": 0,
-    "via_ai": 1.0,
-    "types": [
-      "Poison",
-      "Flying"
-    ],
-    "modified_bst": 459.0,
-    "modified_bst_physical": 459.0,
-    "modified_bst_special": 439.0,
-    "can_be_mixed": false,
-    "physical_ok": true,
-    "special_ok": null
-  },
-  {
-    "name": "EXCADRILL",
-    "index": 530,
-    "via_player": 1.0,
-    "form": 0,
-    "via_ai": 1.0,
-    "types": [
-      "Ground",
-      "Steel"
-    ],
-    "modified_bst": 450.6,
-    "modified_bst_physical": 450.6,
-    "modified_bst_special": 365.6,
-    "can_be_mixed": false,
-    "physical_ok": true,
-    "special_ok": null
-  },
-  {
-    "name": "JOLTEON",
-    "index": 135,
-    "via_player": 1.0,
-    "form": 0,
-    "via_ai": 1.0,
-    "types": [
-      "Electric",
-      "Electric"
-    ],
-    "modified_bst": 455.0,
-    "modified_bst_physical": 410.0,
-    "modified_bst_special": 455.0,
-    "can_be_mixed": false,
-    "physical_ok": null,
-    "special_ok": true
-  },
-  {
-    "name": "METAGROSS",
-    "index": 376,
-    "via_player": 1.0,
-    "form": 0,
-    "via_ai": 1.0,
-    "types": [
-      "Steel",
-      "Psychic"
-    ],
-    "modified_bst": 475.0,
-    "modified_bst_physical": 475.0,
-    "modified_bst_special": 435.0,
-    "can_be_mixed": false,
-    "physical_ok": true,
-    "special_ok": null
-  },
-  {
-    "name": "RESHIRAM",
-    "index": 643,
-    "via_player": 1.0,
-    "form": 0,
-    "via_ai": 1.0,
-    "types": [
-      "Dragon",
-      "Fire"
-    ],
-    "modified_bst": 534.0,
-    "modified_bst_physical": 504.0,
-    "modified_bst_special": 534.0,
-    "can_be_mixed": false,
-    "physical_ok": true,
-    "special_ok": true
-  },
-  {
-    "name": "MOLTRES",
-    "index": 146,
-    "via_player": 1.0,
-    "form": 0,
-    "via_ai": 1.0,
     "types": [
       "Fire",
-      "Flying"
+      "Fire"
     ],
-    "modified_bst": 463.0,
-    "modified_bst_physical": 438.0,
-    "modified_bst_special": 463.0,
-    "can_be_mixed": false,
-    "physical_ok": null,
-    "special_ok": true
-  },
-  {
-    "name": "GARCHOMP",
-    "index": 445,
-    "via_player": 1.0,
-    "form": 0,
-    "via_ai": 1.0,
-    "types": [
-      "Dragon",
-      "Ground"
-    ],
-    "modified_bst": 504.4,
-    "modified_bst_physical": 504.4,
-    "modified_bst_special": 454.4,
+    "modified_bst": 478.0,
+    "modified_bst_physical": 478.0,
+    "modified_bst_special": 453.0,
     "can_be_mixed": false,
     "physical_ok": true,
     "special_ok": true
   },
   {
-    "name": "HAXORUS",
-    "index": 612,
+    "name": "CRESSELIA",
+    "index": 488,
     "via_player": 1.0,
-    "form": 0,
     "via_ai": 1.0,
-    "types": [
-      "Dragon",
-      "Dragon"
-    ],
-    "modified_bst": 467.4,
-    "modified_bst_physical": 467.4,
-    "modified_bst_special": 380.4,
-    "can_be_mixed": false,
-    "physical_ok": true,
-    "special_ok": null
-  },
-  {
-    "name": "HEATRAN",
-    "index": 485,
-    "via_player": 1.0,
     "form": 0,
-    "via_ai": 1.0,
     "types": [
-      "Fire",
-      "Steel"
-    ],
-    "modified_bst": 483.0,
-    "modified_bst_physical": 443.0,
-    "modified_bst_special": 483.0,
-    "can_be_mixed": false,
-    "physical_ok": null,
-    "special_ok": true
-  },
-  {
-    "name": "SLAKING",
-    "index": 289,
-    "via_player": 1.0,
-    "form": 0,
-    "via_ai": 1.0,
-    "types": [
-      "Normal",
-      "Normal"
-    ],
-    "modified_bst": 562.0,
-    "modified_bst_physical": 562.0,
-    "modified_bst_special": 497.0,
-    "can_be_mixed": false,
-    "physical_ok": true,
-    "special_ok": true
-  },
-  {
-    "name": "TERRAKION",
-    "index": 639,
-    "via_player": 1.0,
-    "form": 0,
-    "via_ai": 1.0,
-    "types": [
-      "Rock",
-      "Fighting"
-    ],
-    "modified_bst": 493.6,
-    "modified_bst_physical": 493.6,
-    "modified_bst_special": 436.6,
-    "can_be_mixed": false,
-    "physical_ok": true,
-    "special_ok": null
-  },
-  {
-    "name": "REGIROCK",
-    "index": 377,
-    "via_player": 1.0,
-    "form": 0,
-    "via_ai": 1.0,
-    "types": [
-      "Rock",
-      "Rock"
-    ],
-    "modified_bst": 480.0,
-    "modified_bst_physical": 480.0,
-    "modified_bst_special": 430.0,
-    "can_be_mixed": false,
-    "physical_ok": true,
-    "special_ok": null
-  },
-  {
-    "name": "GYARADOS",
-    "index": 130,
-    "via_player": 1.0,
-    "form": 0,
-    "via_ai": 1.0,
-    "types": [
-      "Water",
-      "Flying"
-    ],
-    "modified_bst": 460.4,
-    "modified_bst_physical": 460.4,
-    "modified_bst_special": 395.4,
-    "can_be_mixed": false,
-    "physical_ok": true,
-    "special_ok": null
-  },
-  {
-    "name": "LATIOS",
-    "index": 381,
-    "via_player": 1.0,
-    "form": 0,
-    "via_ai": 1.0,
-    "types": [
-      "Dragon",
+      "Psychic",
       "Psychic"
     ],
     "modified_bst": 494.0,
-    "modified_bst_physical": 454.0,
-    "modified_bst_special": 494.0,
-    "can_be_mixed": false,
-    "physical_ok": true,
-    "special_ok": true
-  },
-  {
-    "name": "REGIGIGAS",
-    "index": 486,
-    "via_player": 1.0,
-    "form": 0,
-    "via_ai": 1.0,
-    "types": [
-      "Normal",
-      "Normal"
-    ],
-    "modified_bst": 566.0,
-    "modified_bst_physical": 566.0,
-    "modified_bst_special": 486.0,
-    "can_be_mixed": false,
-    "physical_ok": true,
-    "special_ok": true
-  },
-  {
-    "name": "Kyurem-White",
-    "index": 703,
-    "via_player": 1.0,
-    "form": 0,
-    "via_ai": 1.0,
-    "types": [
-      "Dragon",
-      "Ice"
-    ],
-    "modified_bst": 561.0,
-    "modified_bst_physical": 511.0,
-    "modified_bst_special": 561.0,
-    "can_be_mixed": false,
-    "base_form": 646,
-    "form_index": 1,
-    "physical_ok": true,
-    "special_ok": true
-  },
-  {
-    "name": "ZAPDOS",
-    "index": 145,
-    "via_player": 1.0,
-    "form": 0,
-    "via_ai": 1.0,
-    "types": [
-      "Electric",
-      "Flying"
-    ],
-    "modified_bst": 475.0,
-    "modified_bst_physical": 440.0,
-    "modified_bst_special": 475.0,
-    "can_be_mixed": false,
-    "physical_ok": null,
-    "special_ok": true
-  },
-  {
-    "name": "ZEKROM",
-    "index": 644,
-    "via_player": 1.0,
-    "form": 0,
-    "via_ai": 1.0,
-    "types": [
-      "Dragon",
-      "Electric"
-    ],
-    "modified_bst": 534.0,
-    "modified_bst_physical": 534.0,
-    "modified_bst_special": 504.0,
-    "can_be_mixed": false,
-    "physical_ok": true,
-    "special_ok": true
-  },
-  {
-    "name": "DIALGA",
-    "index": 483,
-    "via_player": 1.0,
-    "form": 0,
-    "via_ai": 1.0,
-    "types": [
-      "Steel",
-      "Dragon"
-    ],
-    "modified_bst": 534.0,
-    "modified_bst_physical": 504.0,
-    "modified_bst_special": 534.0,
-    "can_be_mixed": false,
-    "physical_ok": true,
-    "special_ok": true
-  },
-  {
-    "name": "KELDEO",
-    "index": 647,
-    "via_player": 1.0,
-    "form": 0,
-    "via_ai": 1.0,
-    "types": [
-      "Water",
-      "Fighting"
-    ],
-    "modified_bst": 493.6,
-    "modified_bst_physical": 436.6,
-    "modified_bst_special": 493.6,
-    "can_be_mixed": false,
-    "physical_ok": null,
-    "special_ok": true
-  },
-  {
-    "name": "COBALION",
-    "index": 638,
-    "via_player": 1.0,
-    "form": 0,
-    "via_ai": 1.0,
-    "types": [
-      "Steel",
-      "Fighting"
-    ],
-    "modified_bst": 471.40000000000003,
-    "modified_bst_physical": 471.40000000000003,
-    "modified_bst_special": 471.40000000000003,
+    "modified_bst_physical": 492.0,
+    "modified_bst_special": 497.0,
     "can_be_mixed": true,
     "physical_ok": true,
     "special_ok": true
   },
   {
-    "name": "HO-OH",
-    "index": 250,
+    "name": "MEWTWO",
+    "index": 150,
     "via_player": 1.0,
-    "form": 0,
     "via_ai": 1.0,
-    "types": [
-      "Fire",
-      "Flying"
-    ],
-    "modified_bst": 529.2,
-    "modified_bst_physical": 539.2,
-    "modified_bst_special": 519.2,
-    "can_be_mixed": true,
-    "physical_ok": true,
-    "special_ok": true
-  },
-  {
-    "name": "MANAPHY",
-    "index": 490,
-    "via_player": 1.0,
     "form": 0,
-    "via_ai": 1.0,
-    "types": [
-      "Water",
-      "Water"
-    ],
-    "modified_bst": 480.0,
-    "modified_bst_physical": 480.0,
-    "modified_bst_special": 480.0,
-    "can_be_mixed": true,
-    "physical_ok": true,
-    "special_ok": true
-  },
-  {
-    "name": "LANDORUS",
-    "index": 645,
-    "via_player": 1.0,
-    "form": 0,
-    "via_ai": 1.0,
-    "types": [
-      "Ground",
-      "Flying"
-    ],
-    "modified_bst": 466.2,
-    "modified_bst_physical": 471.2,
-    "modified_bst_special": 461.2,
-    "can_be_mixed": true,
-    "physical_ok": true,
-    "special_ok": true
-  },
-  {
-    "name": "ESPEON",
-    "index": 196,
-    "via_player": 1.0,
-    "form": 0,
-    "via_ai": 1.0,
     "types": [
       "Psychic",
       "Psychic"
     ],
-    "modified_bst": 451.0,
-    "modified_bst_physical": 386.0,
-    "modified_bst_special": 451.0,
-    "can_be_mixed": false,
-    "physical_ok": null,
-    "special_ok": true
-  },
-  {
-    "name": "THUNDURUS",
-    "index": 642,
-    "via_player": 1.0,
-    "form": 0,
-    "via_ai": 1.0,
-    "types": [
-      "Electric",
-      "Flying"
-    ],
-    "modified_bst": 452.2,
-    "modified_bst_physical": 447.2,
-    "modified_bst_special": 457.2,
-    "can_be_mixed": true,
-    "physical_ok": null,
-    "special_ok": true
-  },
-  {
-    "name": "Keldeo-Resolute",
-    "index": 705,
-    "via_player": 1.0,
-    "form": 0,
-    "via_ai": 1.0,
-    "types": [
-      "Water",
-      "Fighting"
-    ],
-    "modified_bst": 493.6,
-    "modified_bst_physical": 436.6,
-    "modified_bst_special": 493.6,
-    "can_be_mixed": false,
-    "base_form": 647,
-    "form_index": 1,
-    "physical_ok": null,
-    "special_ok": true
-  },
-  {
-    "name": "CELEBI",
-    "index": 251,
-    "via_player": 1.0,
-    "form": 0,
-    "via_ai": 1.0,
-    "types": [
-      "Psychic",
-      "Grass"
-    ],
-    "modified_bst": 480.0,
-    "modified_bst_physical": 480.0,
-    "modified_bst_special": 480.0,
-    "can_be_mixed": true,
-    "physical_ok": true,
-    "special_ok": true
-  },
-  {
-    "name": "Deoxys-Speed",
-    "index": 687,
-    "via_player": 1.0,
-    "form": 0,
-    "via_ai": 1.0,
-    "types": [
-      "Psychic",
-      "Psychic"
-    ],
-    "modified_bst": 505.0,
-    "modified_bst_physical": 505.0,
-    "modified_bst_special": 505.0,
-    "can_be_mixed": true,
-    "base_form": 386,
-    "form_index": 3,
-    "physical_ok": true,
-    "special_ok": true
-  },
-  {
-    "name": "UXIE",
-    "index": 480,
-    "via_player": 1.0,
-    "form": 0,
-    "via_ai": 1.0,
-    "types": [
-      "Psychic",
-      "Fairy"
-    ],
-    "modified_bst": 472.0,
-    "modified_bst_physical": 472.0,
-    "modified_bst_special": 472.0,
-    "can_be_mixed": true,
-    "physical_ok": true,
-    "special_ok": true
-  },
-  {
-    "name": "GENESECT",
-    "index": 649,
-    "via_player": 1.0,
-    "form": 0,
-    "via_ai": 1.0,
-    "types": [
-      "Bug",
-      "Steel"
-    ],
-    "modified_bst": 461.8,
-    "modified_bst_physical": 461.8,
-    "modified_bst_special": 461.8,
-    "can_be_mixed": true,
-    "physical_ok": true,
-    "special_ok": true
-  },
-  {
-    "name": "KYUREM",
-    "index": 646,
-    "via_player": 1.0,
-    "form": 0,
-    "via_ai": 1.0,
-    "types": [
-      "Dragon",
-      "Ice"
-    ],
-    "modified_bst": 513.0,
-    "modified_bst_physical": 513.0,
-    "modified_bst_special": 513.0,
-    "can_be_mixed": true,
-    "physical_ok": true,
-    "special_ok": true
-  },
-  {
-    "name": "DEOXYS",
-    "index": 386,
-    "via_player": 1.0,
-    "form": 0,
-    "via_ai": 1.0,
-    "types": [
-      "Psychic",
-      "Psychic"
-    ],
-    "modified_bst": 460.0,
-    "modified_bst_physical": 460.0,
-    "modified_bst_special": 460.0,
-    "can_be_mixed": true,
-    "physical_ok": true,
-    "special_ok": true
-  },
-  {
-    "name": "RHYPERIOR",
-    "index": 464,
-    "via_player": 1.0,
-    "form": 0,
-    "via_ai": 1.0,
-    "types": [
-      "Ground",
-      "Rock"
-    ],
-    "modified_bst": 451.0,
-    "modified_bst_physical": 451.0,
-    "modified_bst_special": 366.0,
-    "can_be_mixed": false,
-    "physical_ok": true,
-    "special_ok": null
-  },
-  {
-    "name": "GIRATINA",
-    "index": 487,
-    "via_player": 1.0,
-    "form": 0,
-    "via_ai": 1.0,
-    "types": [
-      "Ghost",
-      "Dragon"
-    ],
-    "modified_bst": 550.0,
-    "modified_bst_physical": 550.0,
-    "modified_bst_special": 550.0,
-    "can_be_mixed": true,
-    "physical_ok": true,
-    "special_ok": true
-  },
-  {
-    "name": "WEAVILE",
-    "index": 461,
-    "via_player": 1.0,
-    "form": 0,
-    "via_ai": 1.0,
-    "types": [
-      "Dark",
-      "Ice"
-    ],
-    "modified_bst": 460.0,
-    "modified_bst_physical": 460.0,
-    "modified_bst_special": 385.0,
-    "can_be_mixed": false,
-    "physical_ok": true,
-    "special_ok": null
-  },
-  {
-    "name": "HYDREIGON",
-    "index": 635,
-    "via_player": 1.0,
-    "form": 0,
-    "via_ai": 1.0,
-    "types": [
-      "Dark",
-      "Dragon"
-    ],
-    "modified_bst": 468.6,
-    "modified_bst_physical": 458.6,
-    "modified_bst_special": 478.6,
-    "can_be_mixed": true,
-    "physical_ok": true,
-    "special_ok": true
-  },
-  {
-    "name": "TYRANITAR",
-    "index": 248,
-    "via_player": 1.0,
-    "form": 0,
-    "via_ai": 1.0,
-    "types": [
-      "Rock",
-      "Dark"
-    ],
-    "modified_bst": 475.2,
-    "modified_bst_physical": 475.2,
-    "modified_bst_special": 436.2,
-    "can_be_mixed": false,
-    "physical_ok": true,
-    "special_ok": null
-  },
-  {
-    "name": "Tornadus-Therian",
-    "index": 706,
-    "via_player": 1.0,
-    "form": 0,
-    "via_ai": 1.0,
-    "types": [
-      "Flying",
-      "Flying"
-    ],
-    "modified_bst": 465.2,
-    "modified_bst_physical": 460.2,
-    "modified_bst_special": 470.2,
-    "can_be_mixed": true,
-    "base_form": 641,
-    "form_index": 1,
-    "physical_ok": true,
-    "special_ok": true
-  },
-  {
-    "name": "VOLCARONA",
-    "index": 637,
-    "via_player": 1.0,
-    "form": 0,
-    "via_ai": 1.0,
-    "types": [
-      "Bug",
-      "Fire"
-    ],
-    "modified_bst": 476.0,
-    "modified_bst_physical": 401.0,
-    "modified_bst_special": 476.0,
-    "can_be_mixed": false,
-    "physical_ok": null,
-    "special_ok": true
-  },
-  {
-    "name": "RAIKOU",
-    "index": 243,
-    "via_player": 1.0,
-    "form": 0,
-    "via_ai": 1.0,
-    "types": [
-      "Electric",
-      "Electric"
-    ],
-    "modified_bst": 483.0,
-    "modified_bst_physical": 453.0,
-    "modified_bst_special": 483.0,
+    "modified_bst": 560.0,
+    "modified_bst_physical": 516.0,
+    "modified_bst_special": 560.0,
     "can_be_mixed": false,
     "physical_ok": true,
     "special_ok": true
@@ -1264,8 +262,8 @@
     "name": "Darmanitan-Zen",
     "index": 701,
     "via_player": 1.0,
-    "form": 0,
     "via_ai": 1.0,
+    "form": 0,
     "types": [
       "Fire",
       "Psychic"
@@ -1280,28 +278,671 @@
     "special_ok": true
   },
   {
-    "name": "MILOTIC",
-    "index": 350,
+    "name": "LANDORUS",
+    "index": 645,
     "via_player": 1.0,
-    "form": 0,
     "via_ai": 1.0,
+    "form": 0,
+    "types": [
+      "Ground",
+      "Flying"
+    ],
+    "modified_bst": 466.2,
+    "modified_bst_physical": 471.2,
+    "modified_bst_special": 461.2,
+    "can_be_mixed": true,
+    "physical_ok": true,
+    "special_ok": true
+  },
+  {
+    "name": "Kyurem-White",
+    "index": 703,
+    "via_player": 1.0,
+    "via_ai": 1.0,
+    "form": 0,
+    "types": [
+      "Dragon",
+      "Ice"
+    ],
+    "modified_bst": 561.0,
+    "modified_bst_physical": 511.0,
+    "modified_bst_special": 561.0,
+    "can_be_mixed": false,
+    "base_form": 646,
+    "form_index": 1,
+    "physical_ok": true,
+    "special_ok": true
+  },
+  {
+    "name": "RHYPERIOR",
+    "index": 464,
+    "via_player": 1.0,
+    "via_ai": 1.0,
+    "form": 0,
+    "types": [
+      "Ground",
+      "Rock"
+    ],
+    "modified_bst": 451.0,
+    "modified_bst_physical": 451.0,
+    "modified_bst_special": 366.0,
+    "can_be_mixed": false,
+    "physical_ok": true,
+    "special_ok": null
+  },
+  {
+    "name": "LUGIA",
+    "index": 249,
+    "via_player": 1.0,
+    "via_ai": 1.0,
+    "form": 0,
+    "types": [
+      "Psychic",
+      "Flying"
+    ],
+    "modified_bst": 555.2,
+    "modified_bst_physical": 555.2,
+    "modified_bst_special": 555.2,
+    "can_be_mixed": true,
+    "physical_ok": true,
+    "special_ok": true
+  },
+  {
+    "name": "CROBAT",
+    "index": 169,
+    "via_player": 1.0,
+    "via_ai": 1.0,
+    "form": 0,
+    "types": [
+      "Poison",
+      "Flying"
+    ],
+    "modified_bst": 459.0,
+    "modified_bst_physical": 459.0,
+    "modified_bst_special": 439.0,
+    "can_be_mixed": false,
+    "physical_ok": true,
+    "special_ok": null
+  },
+  {
+    "name": "Shaymin-Sky",
+    "index": 690,
+    "via_player": 1.0,
+    "via_ai": 1.0,
+    "form": 0,
+    "types": [
+      "Grass",
+      "Flying"
+    ],
+    "modified_bst": 483.4,
+    "modified_bst_physical": 475.4,
+    "modified_bst_special": 492.4,
+    "can_be_mixed": true,
+    "base_form": 492,
+    "form_index": 1,
+    "physical_ok": true,
+    "special_ok": true
+  },
+  {
+    "name": "REGICE",
+    "index": 378,
+    "via_player": 1.0,
+    "via_ai": 1.0,
+    "form": 0,
+    "types": [
+      "Ice",
+      "Ice"
+    ],
+    "modified_bst": 480.0,
+    "modified_bst_physical": 430.0,
+    "modified_bst_special": 480.0,
+    "can_be_mixed": false,
+    "physical_ok": null,
+    "special_ok": true
+  },
+  {
+    "name": "HEATRAN",
+    "index": 485,
+    "via_player": 1.0,
+    "via_ai": 1.0,
+    "form": 0,
+    "types": [
+      "Fire",
+      "Steel"
+    ],
+    "modified_bst": 483.0,
+    "modified_bst_physical": 443.0,
+    "modified_bst_special": 483.0,
+    "can_be_mixed": false,
+    "physical_ok": null,
+    "special_ok": true
+  },
+  {
+    "name": "DRAGONITE",
+    "index": 149,
+    "via_player": 1.0,
+    "via_ai": 1.0,
+    "form": 0,
+    "types": [
+      "Dragon",
+      "Flying"
+    ],
+    "modified_bst": 477.0,
+    "modified_bst_physical": 477.0,
+    "modified_bst_special": 443.0,
+    "can_be_mixed": false,
+    "physical_ok": true,
+    "special_ok": null
+  },
+  {
+    "name": "AERODACTYL",
+    "index": 142,
+    "via_player": 1.0,
+    "via_ai": 1.0,
+    "form": 0,
+    "types": [
+      "Rock",
+      "Flying"
+    ],
+    "modified_bst": 453.0,
+    "modified_bst_physical": 453.0,
+    "modified_bst_special": 408.0,
+    "can_be_mixed": false,
+    "physical_ok": true,
+    "special_ok": null
+  },
+  {
+    "name": "LATIAS",
+    "index": 380,
+    "via_player": 1.0,
+    "via_ai": 1.0,
+    "form": 0,
+    "types": [
+      "Dragon",
+      "Psychic"
+    ],
+    "modified_bst": 498.0,
+    "modified_bst_physical": 468.0,
+    "modified_bst_special": 498.0,
+    "can_be_mixed": false,
+    "physical_ok": true,
+    "special_ok": true
+  },
+  {
+    "name": "MOLTRES",
+    "index": 146,
+    "via_player": 1.0,
+    "via_ai": 1.0,
+    "form": 0,
+    "types": [
+      "Fire",
+      "Flying"
+    ],
+    "modified_bst": 463.0,
+    "modified_bst_physical": 438.0,
+    "modified_bst_special": 463.0,
+    "can_be_mixed": false,
+    "physical_ok": null,
+    "special_ok": true
+  },
+  {
+    "name": "RAIKOU",
+    "index": 243,
+    "via_player": 1.0,
+    "via_ai": 1.0,
+    "form": 0,
+    "types": [
+      "Electric",
+      "Electric"
+    ],
+    "modified_bst": 483.0,
+    "modified_bst_physical": 453.0,
+    "modified_bst_special": 483.0,
+    "can_be_mixed": false,
+    "physical_ok": true,
+    "special_ok": true
+  },
+  {
+    "name": "KYUREM",
+    "index": 646,
+    "via_player": 1.0,
+    "via_ai": 1.0,
+    "form": 0,
+    "types": [
+      "Dragon",
+      "Ice"
+    ],
+    "modified_bst": 513.0,
+    "modified_bst_physical": 513.0,
+    "modified_bst_special": 513.0,
+    "can_be_mixed": true,
+    "physical_ok": true,
+    "special_ok": true
+  },
+  {
+    "name": "Deoxys-Defense",
+    "index": 686,
+    "via_player": 1.0,
+    "via_ai": 1.0,
+    "form": 0,
+    "types": [
+      "Psychic",
+      "Psychic"
+    ],
+    "modified_bst": 484.0,
+    "modified_bst_physical": 484.0,
+    "modified_bst_special": 484.0,
+    "can_be_mixed": true,
+    "base_form": 386,
+    "form_index": 2,
+    "physical_ok": true,
+    "special_ok": true
+  },
+  {
+    "name": "REGIGIGAS",
+    "index": 486,
+    "via_player": 1.0,
+    "via_ai": 1.0,
+    "form": 0,
+    "types": [
+      "Normal",
+      "Normal"
+    ],
+    "modified_bst": 566.0,
+    "modified_bst_physical": 566.0,
+    "modified_bst_special": 486.0,
+    "can_be_mixed": false,
+    "physical_ok": true,
+    "special_ok": true
+  },
+  {
+    "name": "JIRACHI",
+    "index": 385,
+    "via_player": 1.0,
+    "via_ai": 1.0,
+    "form": 0,
+    "types": [
+      "Steel",
+      "Psychic"
+    ],
+    "modified_bst": 480.0,
+    "modified_bst_physical": 480.0,
+    "modified_bst_special": 480.0,
+    "can_be_mixed": true,
+    "physical_ok": true,
+    "special_ok": true
+  },
+  {
+    "name": "REGIROCK",
+    "index": 377,
+    "via_player": 1.0,
+    "via_ai": 1.0,
+    "form": 0,
+    "types": [
+      "Rock",
+      "Rock"
+    ],
+    "modified_bst": 480.0,
+    "modified_bst_physical": 480.0,
+    "modified_bst_special": 430.0,
+    "can_be_mixed": false,
+    "physical_ok": true,
+    "special_ok": null
+  },
+  {
+    "name": "TORNADUS",
+    "index": 641,
+    "via_player": 1.0,
+    "via_ai": 1.0,
+    "form": 0,
+    "types": [
+      "Flying",
+      "Flying"
+    ],
+    "modified_bst": 452.2,
+    "modified_bst_physical": 447.2,
+    "modified_bst_special": 457.2,
+    "can_be_mixed": true,
+    "physical_ok": null,
+    "special_ok": true
+  },
+  {
+    "name": "VIRIZION",
+    "index": 640,
+    "via_player": 1.0,
+    "via_ai": 1.0,
+    "form": 0,
+    "types": [
+      "Grass",
+      "Fighting"
+    ],
+    "modified_bst": 471.4,
+    "modified_bst_physical": 471.4,
+    "modified_bst_special": 471.4,
+    "can_be_mixed": true,
+    "physical_ok": true,
+    "special_ok": true
+  },
+  {
+    "name": "KELDEO",
+    "index": 647,
+    "via_player": 1.0,
+    "via_ai": 1.0,
+    "form": 0,
+    "types": [
+      "Water",
+      "Fighting"
+    ],
+    "modified_bst": 493.6,
+    "modified_bst_physical": 436.6,
+    "modified_bst_special": 493.6,
+    "can_be_mixed": false,
+    "physical_ok": null,
+    "special_ok": true
+  },
+  {
+    "name": "HO-OH",
+    "index": 250,
+    "via_player": 1.0,
+    "via_ai": 1.0,
+    "form": 0,
+    "types": [
+      "Fire",
+      "Flying"
+    ],
+    "modified_bst": 529.2,
+    "modified_bst_physical": 539.2,
+    "modified_bst_special": 519.2,
+    "can_be_mixed": true,
+    "physical_ok": true,
+    "special_ok": true
+  },
+  {
+    "name": "Kyurem-Black",
+    "index": 704,
+    "via_player": 1.0,
+    "via_ai": 1.0,
+    "form": 0,
+    "types": [
+      "Dragon",
+      "Ice"
+    ],
+    "modified_bst": 561.0,
+    "modified_bst_physical": 561.0,
+    "modified_bst_special": 511.0,
+    "can_be_mixed": false,
+    "base_form": 646,
+    "form_index": 2,
+    "physical_ok": true,
+    "special_ok": true
+  },
+  {
+    "name": "Meloetta-Pirouette",
+    "index": 702,
+    "via_player": 1.0,
+    "via_ai": 1.0,
+    "form": 0,
+    "types": [
+      "Normal",
+      "Fighting"
+    ],
+    "modified_bst": 515.2,
+    "modified_bst_physical": 515.2,
+    "modified_bst_special": 464.20000000000005,
+    "can_be_mixed": false,
+    "base_form": 648,
+    "form_index": 1,
+    "physical_ok": true,
+    "special_ok": true
+  },
+  {
+    "name": "DEOXYS",
+    "index": 386,
+    "via_player": 1.0,
+    "via_ai": 1.0,
+    "form": 0,
+    "types": [
+      "Psychic",
+      "Psychic"
+    ],
+    "modified_bst": 460.0,
+    "modified_bst_physical": 460.0,
+    "modified_bst_special": 460.0,
+    "can_be_mixed": true,
+    "physical_ok": true,
+    "special_ok": true
+  },
+  {
+    "name": "LATIOS",
+    "index": 381,
+    "via_player": 1.0,
+    "via_ai": 1.0,
+    "form": 0,
+    "types": [
+      "Dragon",
+      "Psychic"
+    ],
+    "modified_bst": 494.0,
+    "modified_bst_physical": 454.0,
+    "modified_bst_special": 494.0,
+    "can_be_mixed": false,
+    "physical_ok": true,
+    "special_ok": true
+  },
+  {
+    "name": "ARCEUS",
+    "index": 493,
+    "via_player": 1.0,
+    "via_ai": 1.0,
+    "form": 0,
+    "types": [
+      "Normal",
+      "Normal"
+    ],
+    "modified_bst": 576.0,
+    "modified_bst_physical": 576.0,
+    "modified_bst_special": 576.0,
+    "can_be_mixed": true,
+    "physical_ok": true,
+    "special_ok": true
+  },
+  {
+    "name": "GARCHOMP",
+    "index": 445,
+    "via_player": 1.0,
+    "via_ai": 1.0,
+    "form": 0,
+    "types": [
+      "Dragon",
+      "Ground"
+    ],
+    "modified_bst": 504.4,
+    "modified_bst_physical": 504.4,
+    "modified_bst_special": 454.4,
+    "can_be_mixed": false,
+    "physical_ok": true,
+    "special_ok": true
+  },
+  {
+    "name": "RESHIRAM",
+    "index": 643,
+    "via_player": 1.0,
+    "via_ai": 1.0,
+    "form": 0,
+    "types": [
+      "Dragon",
+      "Fire"
+    ],
+    "modified_bst": 534.0,
+    "modified_bst_physical": 504.0,
+    "modified_bst_special": 534.0,
+    "can_be_mixed": false,
+    "physical_ok": true,
+    "special_ok": true
+  },
+  {
+    "name": "SUICUNE",
+    "index": 245,
+    "via_player": 1.0,
+    "via_ai": 1.0,
+    "form": 0,
     "types": [
       "Water",
       "Water"
     ],
-    "modified_bst": 455.4,
-    "modified_bst_physical": 415.4,
-    "modified_bst_special": 455.4,
+    "modified_bst": 468.0,
+    "modified_bst_physical": 461.0,
+    "modified_bst_special": 476.0,
+    "can_be_mixed": true,
+    "physical_ok": true,
+    "special_ok": true
+  },
+  {
+    "name": "Giratina-Origin",
+    "index": 691,
+    "via_player": 1.0,
+    "via_ai": 1.0,
+    "form": 0,
+    "types": [
+      "Ghost",
+      "Dragon"
+    ],
+    "modified_bst": 538.0,
+    "modified_bst_physical": 538.0,
+    "modified_bst_special": 538.0,
+    "can_be_mixed": true,
+    "base_form": 487,
+    "form_index": 1,
+    "physical_ok": true,
+    "special_ok": true
+  },
+  {
+    "name": "VOLCARONA",
+    "index": 637,
+    "via_player": 1.0,
+    "via_ai": 1.0,
+    "form": 0,
+    "types": [
+      "Bug",
+      "Fire"
+    ],
+    "modified_bst": 476.0,
+    "modified_bst_physical": 401.0,
+    "modified_bst_special": 476.0,
     "can_be_mixed": false,
     "physical_ok": null,
+    "special_ok": true
+  },
+  {
+    "name": "ESPEON",
+    "index": 196,
+    "via_player": 1.0,
+    "via_ai": 1.0,
+    "form": 0,
+    "types": [
+      "Psychic",
+      "Psychic"
+    ],
+    "modified_bst": 451.0,
+    "modified_bst_physical": 386.0,
+    "modified_bst_special": 451.0,
+    "can_be_mixed": false,
+    "physical_ok": null,
+    "special_ok": true
+  },
+  {
+    "name": "TOGEKISS",
+    "index": 468,
+    "via_player": 1.0,
+    "via_ai": 1.0,
+    "form": 0,
+    "types": [
+      "Normal",
+      "Flying"
+    ],
+    "modified_bst": 469.0,
+    "modified_bst_physical": 399.0,
+    "modified_bst_special": 469.0,
+    "can_be_mixed": false,
+    "physical_ok": null,
+    "special_ok": true
+  },
+  {
+    "name": "BLISSEY",
+    "index": 242,
+    "via_player": 1.0,
+    "via_ai": 1.0,
+    "form": 0,
+    "types": [
+      "Normal",
+      "Normal"
+    ],
+    "modified_bst": 512.0,
+    "modified_bst_physical": 447.0,
+    "modified_bst_special": 512.0,
+    "can_be_mixed": false,
+    "physical_ok": null,
+    "special_ok": true
+  },
+  {
+    "name": "Keldeo-Resolute",
+    "index": 705,
+    "via_player": 1.0,
+    "via_ai": 1.0,
+    "form": 0,
+    "types": [
+      "Water",
+      "Fighting"
+    ],
+    "modified_bst": 493.6,
+    "modified_bst_physical": 436.6,
+    "modified_bst_special": 493.6,
+    "can_be_mixed": false,
+    "base_form": 647,
+    "form_index": 1,
+    "physical_ok": null,
+    "special_ok": true
+  },
+  {
+    "name": "MELOETTA",
+    "index": 648,
+    "via_player": 1.0,
+    "via_ai": 1.0,
+    "form": 0,
+    "types": [
+      "Normal",
+      "Psychic"
+    ],
+    "modified_bst": 500.0,
+    "modified_bst_physical": 449.0,
+    "modified_bst_special": 500.0,
+    "can_be_mixed": false,
+    "physical_ok": null,
+    "special_ok": true
+  },
+  {
+    "name": "AZELF",
+    "index": 482,
+    "via_player": 1.0,
+    "via_ai": 1.0,
+    "form": 0,
+    "types": [
+      "Psychic",
+      "Psychic"
+    ],
+    "modified_bst": 450.0,
+    "modified_bst_physical": 450.0,
+    "modified_bst_special": 450.0,
+    "can_be_mixed": true,
+    "physical_ok": true,
     "special_ok": true
   },
   {
     "name": "SALAMENCE",
     "index": 373,
     "via_player": 1.0,
-    "form": 0,
     "via_ai": 1.0,
+    "form": 0,
     "types": [
       "Dragon",
       "Flying"
@@ -1310,6 +951,333 @@
     "modified_bst_physical": 478.0,
     "modified_bst_special": 453.0,
     "can_be_mixed": false,
+    "physical_ok": true,
+    "special_ok": true
+  },
+  {
+    "name": "GENESECT",
+    "index": 649,
+    "via_player": 1.0,
+    "via_ai": 1.0,
+    "form": 0,
+    "types": [
+      "Bug",
+      "Steel"
+    ],
+    "modified_bst": 461.8,
+    "modified_bst_physical": 461.8,
+    "modified_bst_special": 461.8,
+    "can_be_mixed": true,
+    "physical_ok": true,
+    "special_ok": true
+  },
+  {
+    "name": "DIALGA",
+    "index": 483,
+    "via_player": 1.0,
+    "via_ai": 1.0,
+    "form": 0,
+    "types": [
+      "Steel",
+      "Dragon"
+    ],
+    "modified_bst": 534.0,
+    "modified_bst_physical": 504.0,
+    "modified_bst_special": 534.0,
+    "can_be_mixed": false,
+    "physical_ok": true,
+    "special_ok": true
+  },
+  {
+    "name": "ARTICUNO",
+    "index": 144,
+    "via_player": 1.0,
+    "via_ai": 1.0,
+    "form": 0,
+    "types": [
+      "Ice",
+      "Flying"
+    ],
+    "modified_bst": 462.0,
+    "modified_bst_physical": 457.0,
+    "modified_bst_special": 467.0,
+    "can_be_mixed": true,
+    "physical_ok": true,
+    "special_ok": true
+  },
+  {
+    "name": "METAGROSS",
+    "index": 376,
+    "via_player": 1.0,
+    "via_ai": 1.0,
+    "form": 0,
+    "types": [
+      "Steel",
+      "Psychic"
+    ],
+    "modified_bst": 475.0,
+    "modified_bst_physical": 475.0,
+    "modified_bst_special": 435.0,
+    "can_be_mixed": false,
+    "physical_ok": true,
+    "special_ok": null
+  },
+  {
+    "name": "DARKRAI",
+    "index": 491,
+    "via_player": 1.0,
+    "via_ai": 1.0,
+    "form": 0,
+    "types": [
+      "Dark",
+      "Dark"
+    ],
+    "modified_bst": 499.0,
+    "modified_bst_physical": 454.0,
+    "modified_bst_special": 499.0,
+    "can_be_mixed": false,
+    "physical_ok": true,
+    "special_ok": true
+  },
+  {
+    "name": "COBALION",
+    "index": 638,
+    "via_player": 1.0,
+    "via_ai": 1.0,
+    "form": 0,
+    "types": [
+      "Steel",
+      "Fighting"
+    ],
+    "modified_bst": 471.40000000000003,
+    "modified_bst_physical": 471.40000000000003,
+    "modified_bst_special": 471.40000000000003,
+    "can_be_mixed": true,
+    "physical_ok": true,
+    "special_ok": true
+  },
+  {
+    "name": "Deoxys-Speed",
+    "index": 687,
+    "via_player": 1.0,
+    "via_ai": 1.0,
+    "form": 0,
+    "types": [
+      "Psychic",
+      "Psychic"
+    ],
+    "modified_bst": 505.0,
+    "modified_bst_physical": 505.0,
+    "modified_bst_special": 505.0,
+    "can_be_mixed": true,
+    "base_form": 386,
+    "form_index": 3,
+    "physical_ok": true,
+    "special_ok": true
+  },
+  {
+    "name": "ZAPDOS",
+    "index": 145,
+    "via_player": 1.0,
+    "via_ai": 1.0,
+    "form": 0,
+    "types": [
+      "Electric",
+      "Flying"
+    ],
+    "modified_bst": 475.0,
+    "modified_bst_physical": 440.0,
+    "modified_bst_special": 475.0,
+    "can_be_mixed": false,
+    "physical_ok": null,
+    "special_ok": true
+  },
+  {
+    "name": "THUNDURUS",
+    "index": 642,
+    "via_player": 1.0,
+    "via_ai": 1.0,
+    "form": 0,
+    "types": [
+      "Electric",
+      "Flying"
+    ],
+    "modified_bst": 452.2,
+    "modified_bst_physical": 447.2,
+    "modified_bst_special": 457.2,
+    "can_be_mixed": true,
+    "physical_ok": null,
+    "special_ok": true
+  },
+  {
+    "name": "TERRAKION",
+    "index": 639,
+    "via_player": 1.0,
+    "via_ai": 1.0,
+    "form": 0,
+    "types": [
+      "Rock",
+      "Fighting"
+    ],
+    "modified_bst": 493.6,
+    "modified_bst_physical": 493.6,
+    "modified_bst_special": 436.6,
+    "can_be_mixed": false,
+    "physical_ok": true,
+    "special_ok": null
+  },
+  {
+    "name": "VICTINI",
+    "index": 494,
+    "via_player": 1.0,
+    "via_ai": 1.0,
+    "form": 0,
+    "types": [
+      "Psychic",
+      "Fire"
+    ],
+    "modified_bst": 480.0,
+    "modified_bst_physical": 480.0,
+    "modified_bst_special": 480.0,
+    "can_be_mixed": true,
+    "physical_ok": true,
+    "special_ok": true
+  },
+  {
+    "name": "HYDREIGON",
+    "index": 635,
+    "via_player": 1.0,
+    "via_ai": 1.0,
+    "form": 0,
+    "types": [
+      "Dark",
+      "Dragon"
+    ],
+    "modified_bst": 468.6,
+    "modified_bst_physical": 458.6,
+    "modified_bst_special": 478.6,
+    "can_be_mixed": true,
+    "physical_ok": true,
+    "special_ok": true
+  },
+  {
+    "name": "CELEBI",
+    "index": 251,
+    "via_player": 1.0,
+    "via_ai": 1.0,
+    "form": 0,
+    "types": [
+      "Psychic",
+      "Grass"
+    ],
+    "modified_bst": 480.0,
+    "modified_bst_physical": 480.0,
+    "modified_bst_special": 480.0,
+    "can_be_mixed": true,
+    "physical_ok": true,
+    "special_ok": true
+  },
+  {
+    "name": "MANAPHY",
+    "index": 490,
+    "via_player": 1.0,
+    "via_ai": 1.0,
+    "form": 0,
+    "types": [
+      "Water",
+      "Water"
+    ],
+    "modified_bst": 480.0,
+    "modified_bst_physical": 480.0,
+    "modified_bst_special": 480.0,
+    "can_be_mixed": true,
+    "physical_ok": true,
+    "special_ok": true
+  },
+  {
+    "name": "EXCADRILL",
+    "index": 530,
+    "via_player": 1.0,
+    "via_ai": 1.0,
+    "form": 0,
+    "types": [
+      "Ground",
+      "Steel"
+    ],
+    "modified_bst": 450.6,
+    "modified_bst_physical": 450.6,
+    "modified_bst_special": 365.6,
+    "can_be_mixed": false,
+    "physical_ok": true,
+    "special_ok": null
+  },
+  {
+    "name": "SLAKING",
+    "index": 289,
+    "via_player": 1.0,
+    "via_ai": 1.0,
+    "form": 0,
+    "types": [
+      "Normal",
+      "Normal"
+    ],
+    "modified_bst": 562.0,
+    "modified_bst_physical": 562.0,
+    "modified_bst_special": 497.0,
+    "can_be_mixed": false,
+    "physical_ok": true,
+    "special_ok": true
+  },
+  {
+    "name": "TYRANITAR",
+    "index": 248,
+    "via_player": 1.0,
+    "via_ai": 1.0,
+    "form": 0,
+    "types": [
+      "Rock",
+      "Dark"
+    ],
+    "modified_bst": 475.2,
+    "modified_bst_physical": 475.2,
+    "modified_bst_special": 436.2,
+    "can_be_mixed": false,
+    "physical_ok": true,
+    "special_ok": null
+  },
+  {
+    "name": "GIRATINA",
+    "index": 487,
+    "via_player": 1.0,
+    "via_ai": 1.0,
+    "form": 0,
+    "types": [
+      "Ghost",
+      "Dragon"
+    ],
+    "modified_bst": 550.0,
+    "modified_bst_physical": 550.0,
+    "modified_bst_special": 550.0,
+    "can_be_mixed": true,
+    "physical_ok": true,
+    "special_ok": true
+  },
+  {
+    "name": "Tornadus-Therian",
+    "index": 706,
+    "via_player": 1.0,
+    "via_ai": 1.0,
+    "form": 0,
+    "types": [
+      "Flying",
+      "Flying"
+    ],
+    "modified_bst": 465.2,
+    "modified_bst_physical": 460.2,
+    "modified_bst_special": 470.2,
+    "can_be_mixed": true,
+    "base_form": 641,
+    "form_index": 1,
     "physical_ok": true,
     "special_ok": true
   }
