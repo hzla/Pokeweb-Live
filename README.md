@@ -171,45 +171,21 @@ If you would like to share the calculator after importing your set data, you can
 ## Smart Randomizer Functions (experimental)
 
 
-Assumes fairy implemented on base rom, and BW2. Use localhost:4567/patcher for fairy patcher on a clean rom or use a rom with fairy already implemented. Change "fairy": false to true in session_settings.json. 
+Assumes fairy implemented on base rom, and BW2. Use localhost:4567/patcher for fairy patcher on a clean rom or use a rom with fairy already implemented. Change "fairy": false to true in session_settings.json if you are editing the rom. 
 
-### Setup
+### How to randomize
 
-First enter your gym level/elite 4 level caps of the base rom into pokeweb/randomizer/base_rom_level_caps.json
-The randomizer assumes every trainer with lvl N pokemon between the a gym with level < N and > N is encountered in between those gyms.  
+**Step 1:** Load rom into pokweb. 
 
-Navigate to root pokeweb folder in cmd/terminal/powershell. 
+**Step 2 (Optional if vanilla rom):** Enter the base rom's gym/elite 4 level caps into pokeweb/randomizer/base_rom_level_caps.json. This defaults to vanilla B/W2 values.
 
+**Step 3 (Optional if vanilla rom):**Enter the target gym/elite 4 level caps and target BST ranges into pokeweb/randomizer/gym_viabilities.json. Enter trainer_ids of gym leaders and gym trainers if those have been changed from vanilla. Default difficulty values follow roughly Emerald Kaizo bsts/level ranges. 
 
-Run the following to to start ruby console. 
+**Step 4 (Optional):** Customize pokedex.json, move_viabilities.json. More explained below.
 
-```
- irb -r ./routes.rb
-```
-Then run the following to setup the randomizer with the necessary settings files. This only ever needs to be run once per base rom. It is advisable to backup a copy of all settings files in pokeweb/randomizer. 
+**Step 5:** Click "Randomize" on the webapp header. Wait 4-5 minutes. The screen will say "Randomization Successful" when done
 
-```ruby
-Randomizer.setup
-```
-
-### Team Randomization
-
-```ruby
-Action.rand_teams
-```
-Randomize every team on the rom based on settings in the pokeweb/randomizer folder. WARNING: this irreversible and takes 4-5 minutes. Must be run at least once before running encounter randomization. This is so that encounters can be dynamically balanced against gym types.
-
-### Encounter Randomization
-
-```ruby
-Action.rand_encs
-```
-Randomize every encounter on the rom based on settings in the pokeweb/randomizer folder. WARNING: this is irreversible. Must randomize trainers first before running.
-
-After randomizing, the rom and showdown calculator can be exported as usual.
-
-It is required that randomizer/base_rom_level_caps.json be filled out. The randomizer will use these level caps to determine what levels trainers should be. 
-
+**Step 6:** Click export on the webapp header. You can find the rom in pokeweb/exports. You can also export a custom showdown calculator and view other changes on the other tabs of pokeweb. 
 
 ### How to Customize
 
