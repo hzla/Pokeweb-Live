@@ -170,7 +170,7 @@ If you would like to share the calculator after importing your set data, you can
 
 ## Smart Randomizer Functions (experimental)
 
-Assumes fairy implemented on base rom, and BW2. Use localhost:4567/patcher for fairy patcher on a clean rom or use a rom with fairy already implemented. Change "fairy": false to true in session_settings.json if you are editing the rom. 
+Assumes fairy implemented on base rom, and BW2. Use localhost:4567/patcher for fairy patcher on a clean rom or use a rom with fairy already implemented. Change "fairy": false to true in session_settings.json if you are editing the rom. Included in Pokeweb/Reference_Files is also a xdelta of a clean black2 rom with fairy type added and pokemon center encounters that can be used as a base rom for randomization.  
 
 ### How to randomize
 
