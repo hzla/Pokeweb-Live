@@ -215,45 +215,28 @@ It is required that randomizer/base_rom_level_caps.json be filled out. The rando
 
 Randomized rom settings are in Pokeweb/randomizer
 
-#### pok_viabilities.json
+#### pokedex.json
 
 This file lists every pokemon/alt form in the game. Each pokemon has an entry like so 
 
 ```json
-{
+ {
     "name": "BULBASAUR",
-    "index": 1,
     "via_player": 1.0,
-    "form": 0,
-    "via_ai": 1.0,
-    "via_player_gym_1": 1.0,
-    "via_player_gym_2": 1.0,
-    "via_player_gym_3": 1.0,
-    "via_player_gym_4": 1.0,
-    "via_player_gym_5": 1.0,
-    "via_player_gym_6": 1.0,
-    "via_player_gym_7": 1.0,
-    "via_player_gym_8": 1.0,
-    "types": [
-      "Grass",
-      "Poison"
-    ],
-    "modified_bst": 255.2,
-    "modified_bst_physical": 239.2,
-    "modified_bst_special": 255.2,
-    "can_be_mixed": false
+    "via_ai": 1.0
   }
 ```
 
-The important variables are "modified_bst", "via_player" and "via_ai". 
+The important variables are "via_player" and "via_ai". 
 
-Modified_bst is how the randomizer determines how strong a pokemon is. 
-The modified_bst formula is the same as regular bst with the weaker offensive stat subtracted/averaged depending on how close in values they are. Defensive stats are slightly deprioritized, and speed is given a slightly more weight to the value. For reference, cleffa sits at around 176 and mewtwo at 570.
+Every pokemon has a modified_bst value that is how the randomizer determines how strong a pokemon is. 
+The modified_bst formula is the same as regular bst with the weaker offensive stat subtracted/averaged depending on how close in values they are. Defensive stats are slightly deprioritized, and speed is given a slightly more weight to the value. For reference, cleffa sits at around 176 and mewtwo at 570. Modified_bst values can be viewed in randomizer/pok_viabilities.json
 
 Via_player is multiplied with modified_bst when the randomizer is deciding whether or not to allow the pokemon into an encounter pool. This variable is meant to be modified by the user and allows a user to adjust the at what stage of the game a certain pokemon will appear depending on how strong the user thinks it is. Lowering it to 0 will cause it to never appear and is the default value of certain entries such as the pokestudios mons and bad eggs.
 
-
 Via_ai is multiplied with modified_bst when the randomizer is deciding whether or not to allow the pokemon into an a trainer's team of possible pokemon. Raising or lowering the value with cause the randomizer to see the pokemon as stronger or weaker. Lowering to 0 will cause the pokemon to never show up. 
+
+Only pokedex.json is meant to be edited by the user, not pok_viabilities.json
 
 
 In essence, via_player and via_ai gives the randomizer user the ability to customize how strong a pokemon should be viewed relative to their raw stats. 
