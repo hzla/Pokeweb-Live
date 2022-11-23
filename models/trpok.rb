@@ -379,7 +379,7 @@ class Trpok < Pokenarc
 					rival_count += 1
 				end
 			rescue
-				# break
+				break
 				# binding.pry
 			end
 			
