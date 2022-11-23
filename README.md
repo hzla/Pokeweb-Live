@@ -182,7 +182,7 @@ Assumes fairy implemented on base rom, and BW2. Use localhost:4567/patcher for f
 
 **Step 4 (Optional):** Customize pokedex.json, move_viabilities.json. More explained below.
 
-**Step 5:** Click "Randomize" on the webapp header. Wait 4-5 minutes. The screen will say "Randomization Successful" when done
+**Step 5:** Click "Randomize" on the webapp header. Wait 4-5 minutes. The screen will say "Randomization Successful" when done. You can view progress in your terminal/cmd.
 
 **Step 6:** Click export on the webapp header. You can find the rom in pokeweb/exports. You can also export a custom showdown calculator and view other changes on the other tabs of pokeweb. 
 
