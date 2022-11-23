@@ -5,7 +5,7 @@ class Randomizer
 		create_personal
 		create_abilities
 		create_moves
-		update_ban_list
+		update_move_ban_list
 		smogon_indexed_moves
 		create_items
 		p "Setup Successful"

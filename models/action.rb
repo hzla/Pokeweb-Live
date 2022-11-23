@@ -156,7 +156,7 @@ class Action
 
 		headers = Header.get_all
 		ai_advantage_low = 50 #adjusts how weak the low end of your encounters are compared to ai trainers
-		ai_advantage_high = 30 #adjusts how weak the high end of your encounters are compared to ai trainers
+		ai_advantage_high = 50 #adjusts how weak the high end of your encounters are compared to ai trainers
 
 		gym_ids = RomInfo.pokemon_center_headers[1]
 		other_ids = [444,461,414,408] #flocessy, lentimas, lacunosa, undella
@@ -169,7 +169,7 @@ class Action
 			range = target_gym_viabilities[i]["range"]
 			range 
 
-			rand_enc = Randomizer.create_encounter [range[0] - ai_advantage_low, range[1] - ai_advantage_high], [1, lvl].max, [gym_types[i]]
+			rand_enc = Randomizer.create_encounter [range[0] - ai_advantage_low, range[1] - ai_advantage_high ], [1, lvl].max, [gym_types[i]]
 			Randomizer.apply_encounter rand_enc, 136 + i
 			
 			headers[gym.to_s]["unknown_4"] = 192 
