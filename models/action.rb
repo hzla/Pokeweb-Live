@@ -21,6 +21,8 @@ class Action
 
         rival1_tr_ids = [161,162,163]
 
+        multi_battles = [588,589,590, 342,356,732,733,363,364,365,360,361,362]
+
         blacklist = {}
 
         target_gym_viabilities[0..7].each do |gym|
@@ -31,10 +33,16 @@ class Action
 
         (target_gym_viabilities[8]["e1"] + target_gym_viabilities[8]["e2"] + target_gym_viabilities[8]["e3"] + target_gym_viabilities[8]["e4"] + target_gym_viabilities[8]["champ"] + rival1_tr_ids).each do |n|
         	blacklist[n] = true
+       	end 
 
-       	end  
+       	 multi_battle_list = {}
+       	 multi_battles.each do |n|
+       	 	multi_battle_list[n] = true
+       	 end
        	
        	p blacklist
+       	p multi_battle_list
+
        	level_grouped_trainers.each_with_index do |group, i|
        		group_count = group.length 
        		
@@ -60,6 +68,10 @@ class Action
        			# weaker trainers before gym 1
        			below_gym = (i == 0 ? 80 : 50)
        			pok_count = (i == 0 ? rand(2) + 3 : rand(3) + 4)
+
+       			if multi_battle_list[trpok["index"]]
+       				pok_count = 3
+       			end
    		
    				#create non gym trainers
 
