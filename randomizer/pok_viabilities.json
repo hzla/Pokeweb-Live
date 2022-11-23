@@ -25,9 +25,9 @@
   {
     "name": "BULBASAUR",
     "index": 1,
-    "via_player": 1.01,
+    "via_player": 1.0,
     "form": 0,
-    "via_ai": 1.05,
+    "via_ai": 1.0,
     "types": [
       "Grass",
       "Poison"

@@ -62,7 +62,7 @@ class Action
        			p "randomizing trainer #{j}, gym #{i}"
 
 
-       			#avoid gym trainers/leader and rival1
+       # 			#avoid gym trainers/leader and rival1
        	
    
        			# weaker trainers before gym 1
@@ -237,12 +237,6 @@ class Action
 		end
 	end
 
-	# floccesy 1 444
-# lentimas 7 461
-# undella 7 414
-# lacunosa 7 408
-
-	
 
 
 

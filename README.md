@@ -174,6 +174,9 @@ Assumes fairy implemented on base rom, and BW2. Use localhost:4567/patcher for f
 
 ### How to randomize
 
+[DEMO](https://streamable.com/n20iws)
+Note: demo video speeds up the trainer randomization process to save time. Actual randomization takes 4-5 minutes.  
+
 **Step 1:** Load rom into pokweb. 
 
 **Step 2 (Optional if vanilla rom):** Enter the base rom's gym/elite 4 level caps into pokeweb/randomizer/base_rom_level_caps.json. This defaults to vanilla B/W2 values.
@@ -274,11 +277,18 @@ The team generator will randomly choose pokemon1, then choose pokemon2 based on 
 
 Gyms and gym trainers will only use certain types unless the given settings are too narrow.
 
-The moveset generator will first determine how powerful moves generally should be by looking at the level and bst specified. It will then generally try to find stab moves, then sometimes status moves. Then fill the rest with coverage moves (moves that are supereffective against types that are supereffective against itself). Only status moves are limited to the pokemon's learnset.
+Battle types are unchanged. Singles will still be singles and so on. Note changing single battles to doubles in pokeweb will not work unless the overworld npc is given a partner, or unless the partner check in the global trainer script is removed. 
+
+The moveset generator will first determine how powerful moves generally should be by looking at the level and bst specified. It will then generally try to find stab moves, then sometimes status moves. Then fill the rest with coverage moves (moves that are supereffective against types that are supereffective against itself). Only status moves are limited to the pokemon's learnset. 
+Some trainer pokemon are forced to use their weaker offensive stat as a way of balancing. A special/physical set will be prohibited from using stat boosting moves for the wrong stat.
+
 
 Held items have a percent chance to chosen from smogon usage data, and a default pool of items.
 
 Abilities are randomly chosen.
+
+Each encounter is made from a pool of pokemon slightly weaker than the next gym leader's pool. Evolutions are taken into account, so a Charmander in a pool of lvl 30 pokemon will be seen as a Charmeleon. Pokecenter encounters are monotype according to their gymleader. Flocessy Town pokemon center will always have a type that is super effective against gym 1.  
+
 
 Randomizer algorithms are in Pokeweb/models/randomizer.rb. This is where adjustments to the team/encounter/move generator algs can be made. For example, modifying the modified_bst formula, % chance of coverage moves etc. Requires programming knowledge.
 

@@ -14,18 +14,6 @@ class RomInfo
 
     end
 
-#     aspertia
-# floccesy
-# virbank
-# castelia
-# nimbasa
-# driftveil
-# mistralton
-# lentimas
-# undella
-# lacunosa
-# opelucid
-# humilau
 
 	def self.types
 		typing = ["Normal", "Fighting", "Flying", "Poison", "Ground", "Rock", "Bug", "Ghost", "Steel", "Fire", "Water","Grass","Electric","Psychic","Ice","Dragon","Dark"].map do |type|
