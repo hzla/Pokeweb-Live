@@ -367,7 +367,7 @@ class Trpok < Pokenarc
 
 		settings = SessionSettings.calc_settings
 
-		(0..4).each do |n|
+		(0..tr_count).each do |n|
 			ai = nil
 			begin
 				file_path = "#{$rom_name}/json/trdata/#{n}.json"
