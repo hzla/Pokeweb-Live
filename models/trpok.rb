@@ -367,21 +367,26 @@ class Trpok < Pokenarc
 
 		settings = SessionSettings.calc_settings
 
-		(0..tr_count).each do |n|
-
+		(0..4).each do |n|
+			ai = nil
 			begin
 				file_path = "#{$rom_name}/json/trdata/#{n}.json"
-				trdata = JSON.parse(File.open(file_path, "r"){|f| f.read})["readable"]
+				full_trdata = JSON.parse(File.open(file_path, "r"){|f| f.read})
+				trdata = full_trdata["readable"]
+				ai = full_trdata["raw"]["ais"] || full_trdata["raw"]["ai"]
 
 				if trdata["name"].downcase.include?("rival") 
 					rival_count += 1
 				end
 			rescue
-				break
+				# break
+				# binding.pry
 			end
-		
 			
-			if settings["ai_values"].include?(trdata["ai"]) && settings["has_moves"].include?(trdata["has_moves"]) && settings["has_items"].include?(trdata["has_items"]) && settings["battle_types"].include?(trdata["battle_type_1"])
+			# 
+
+			
+			if settings["ai_values"].include?(ai) && settings["has_moves"].include?(trdata["has_moves"]) && settings["has_items"].include?(trdata["has_items"]) && settings["battle_types"].include?(trdata["battle_type_1"])
 
 
 				data << export_showdown(n, trdata, settings["min_ivs"], rival_count)

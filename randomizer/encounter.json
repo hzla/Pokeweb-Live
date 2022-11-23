@@ -1,56 +1,41 @@
 {
   "upper": [
     {
-      "name": "MAMOSWINE",
-      "index": 473,
+      "name": "CYNDAQUIL",
+      "index": 155,
       "via_player": 1.0,
-      "form": 0,
       "via_ai": 1.0,
+      "form": 0,
       "types": [
-        "Ice",
-        "Ground"
+        "Fire",
+        "Fire"
       ],
-      "modified_bst": 448.0,
-      "modified_bst_physical": 448.0,
-      "modified_bst_special": 388.0,
-      "can_be_mixed": false
+      "modified_bst": 437.4,
+      "modified_bst_physical": 243.4,
+      "modified_bst_special": 251.4,
+      "can_be_mixed": true
     },
     {
-      "name": "MILTANK",
-      "index": 241,
+      "name": "MUNCHLAX",
+      "index": 446,
       "via_player": 1.0,
-      "form": 0,
       "via_ai": 1.0,
+      "form": 0,
       "types": [
         "Normal",
         "Normal"
       ],
-      "modified_bst": 435.0,
-      "modified_bst_physical": 435.0,
-      "modified_bst_special": 395.0,
+      "modified_bst": 446.0,
+      "modified_bst_physical": 326.0,
+      "modified_bst_special": 281.0,
       "can_be_mixed": false
-    },
-    {
-      "name": "WAILORD",
-      "index": 321,
-      "via_player": 1.0,
-      "form": 0,
-      "via_ai": 1.0,
-      "types": [
-        "Water",
-        "Water"
-      ],
-      "modified_bst": 434.0,
-      "modified_bst_physical": 434.0,
-      "modified_bst_special": 434.0,
-      "can_be_mixed": true
     },
     {
       "name": "LEAFEON",
       "index": 470,
       "via_player": 1.0,
-      "form": 0,
       "via_ai": 1.0,
+      "form": 0,
       "types": [
         "Grass",
         "Grass"
@@ -61,308 +46,325 @@
       "can_be_mixed": false
     },
     {
-      "name": "TOTODILE",
-      "index": 158,
+      "name": "LAMPENT",
+      "index": 608,
       "via_player": 1.0,
-      "form": 0,
       "via_ai": 1.0,
+      "form": 0,
       "types": [
-        "Water",
-        "Water"
+        "Ghost",
+        "Fire"
       ],
-      "modified_bst": 447.0,
-      "modified_bst_physical": 256.20000000000005,
-      "modified_bst_special": 235.20000000000002,
+      "modified_bst": 445.0,
+      "modified_bst_physical": 262.0,
+      "modified_bst_special": 317.0,
       "can_be_mixed": false
     },
     {
-      "name": "PORYGON",
-      "index": 137,
+      "name": "GENGAR",
+      "index": 94,
       "via_player": 1.0,
-      "form": 0,
       "via_ai": 1.0,
+      "form": 0,
       "types": [
-        "Normal",
-        "Normal"
+        "Ghost",
+        "Poison"
       ],
-      "modified_bst": 444.0,
-      "modified_bst_physical": 289.0,
-      "modified_bst_special": 314.0,
+      "modified_bst": 430.0,
+      "modified_bst_physical": 365.0,
+      "modified_bst_special": 430.0,
       "can_be_mixed": false
+    },
+    {
+      "name": "ELEKID",
+      "index": 239,
+      "via_player": 1.0,
+      "via_ai": 1.0,
+      "form": 0,
+      "types": [
+        "Electric",
+        "Electric"
+      ],
+      "modified_bst": 433.6,
+      "modified_bst_physical": 295.6,
+      "modified_bst_special": 297.6,
+      "can_be_mixed": true
     }
   ],
   "mid": [
     {
-      "name": "GRAVELER",
-      "index": 75,
+      "name": "UMBREON",
+      "index": 197,
       "via_player": 1.0,
-      "form": 0,
       "via_ai": 1.0,
+      "form": 0,
+      "types": [
+        "Dark",
+        "Dark"
+      ],
+      "modified_bst": 427.0,
+      "modified_bst_physical": 430.0,
+      "modified_bst_special": 425.0,
+      "can_be_mixed": true
+    },
+    {
+      "name": "PIDOVE",
+      "index": 519,
+      "via_player": 1.0,
+      "via_ai": 1.0,
+      "form": 0,
+      "types": [
+        "Normal",
+        "Flying"
+      ],
+      "modified_bst": 404.6,
+      "modified_bst_physical": 220.6,
+      "modified_bst_special": 201.6,
+      "can_be_mixed": false
+    },
+    {
+      "name": "LEAVANNY",
+      "index": 542,
+      "via_player": 1.0,
+      "via_ai": 1.0,
+      "form": 0,
+      "types": [
+        "Bug",
+        "Grass"
+      ],
+      "modified_bst": 408.4,
+      "modified_bst_physical": 408.4,
+      "modified_bst_special": 375.4,
+      "can_be_mixed": false
+    },
+    {
+      "name": "CHIMCHAR",
+      "index": 390,
+      "via_player": 1.0,
+      "via_ai": 1.0,
+      "form": 0,
+      "types": [
+        "Fire",
+        "Fire"
+      ],
+      "modified_bst": 423.2,
+      "modified_bst_physical": 245.60000000000002,
+      "modified_bst_special": 245.60000000000002,
+      "can_be_mixed": true
+    },
+    {
+      "name": "GEODUDE",
+      "index": 74,
+      "via_player": 1.0,
+      "via_ai": 1.0,
+      "form": 0,
       "types": [
         "Rock",
         "Ground"
       ],
-      "modified_bst": 410.0,
-      "modified_bst_physical": 320.0,
-      "modified_bst_special": 270.0,
+      "modified_bst": 400.0,
+      "modified_bst_physical": 248.0,
+      "modified_bst_special": 198.0,
       "can_be_mixed": false
     },
     {
-      "name": "GARBODOR",
-      "index": 569,
+      "name": "SCYTHER",
+      "index": 123,
       "via_player": 1.0,
-      "form": 0,
       "via_ai": 1.0,
+      "form": 0,
       "types": [
-        "Poison",
-        "Poison"
+        "Bug",
+        "Flying"
       ],
-      "modified_bst": 416.20000000000005,
-      "modified_bst_physical": 416.20000000000005,
-      "modified_bst_special": 381.20000000000005,
+      "modified_bst": 422.0,
+      "modified_bst_physical": 434.0,
+      "modified_bst_special": 379.0,
       "can_be_mixed": false
     },
     {
-      "name": "TENTACRUEL",
-      "index": 73,
+      "name": "Rotom-Fan",
+      "index": 695,
       "via_player": 1.0,
-      "form": 0,
       "via_ai": 1.0,
+      "form": 0,
+      "types": [
+        "Electric",
+        "Flying"
+      ],
+      "modified_bst": 429.40000000000003,
+      "modified_bst_physical": 389.40000000000003,
+      "modified_bst_special": 429.40000000000003,
+      "can_be_mixed": false,
+      "base_form": 479,
+      "form_index": 4
+    },
+    {
+      "name": "MACHOKE",
+      "index": 67,
+      "via_player": 1.0,
+      "via_ai": 1.0,
+      "form": 0,
+      "types": [
+        "Fighting",
+        "Fighting"
+      ],
+      "modified_bst": 418.0,
+      "modified_bst_physical": 338.0,
+      "modified_bst_special": 288.0,
+      "can_be_mixed": false
+    },
+    {
+      "name": "TENTACOOL",
+      "index": 72,
+      "via_player": 1.0,
+      "via_ai": 1.0,
+      "form": 0,
       "types": [
         "Water",
         "Poison"
       ],
       "modified_bst": 423.0,
-      "modified_bst_physical": 418.0,
-      "modified_bst_special": 428.0,
-      "can_be_mixed": true
-    },
-    {
-      "name": "CHARMELEON",
-      "index": 5,
-      "via_player": 1.0,
-      "form": 0,
-      "via_ai": 1.0,
-      "types": [
-        "Fire",
-        "Dragon"
-      ],
-      "modified_bst": 420.0,
-      "modified_bst_physical": 316.4,
-      "modified_bst_special": 332.4,
+      "modified_bst_physical": 272.0,
+      "modified_bst_special": 282.0,
       "can_be_mixed": false
     },
     {
-      "name": "HIPPOWDON",
-      "index": 450,
+      "name": "ELECTRODE",
+      "index": 101,
       "via_player": 1.0,
-      "form": 0,
       "via_ai": 1.0,
-      "types": [
-        "Ground",
-        "Ground"
-      ],
-      "modified_bst": 428.40000000000003,
-      "modified_bst_physical": 428.40000000000003,
-      "modified_bst_special": 384.40000000000003,
-      "can_be_mixed": false
-    },
-    {
-      "name": "COMBUSKEN",
-      "index": 256,
-      "via_player": 1.0,
       "form": 0,
-      "via_ai": 1.0,
       "types": [
-        "Fire",
-        "Fighting"
-      ],
-      "modified_bst": 413.0,
-      "modified_bst_physical": 307.0,
-      "modified_bst_special": 307.0,
-      "can_be_mixed": true
-    },
-    {
-      "name": "DUCKLETT",
-      "index": 580,
-      "via_player": 1.0,
-      "form": 0,
-      "via_ai": 1.0,
-      "types": [
-        "Water",
-        "Flying"
-      ],
-      "modified_bst": 427.0,
-      "modified_bst_physical": 252.0,
-      "modified_bst_special": 252.0,
-      "can_be_mixed": true
-    },
-    {
-      "name": "SEWADDLE",
-      "index": 540,
-      "via_player": 1.0,
-      "form": 0,
-      "via_ai": 1.0,
-      "types": [
-        "Bug",
-        "Grass"
-      ],
-      "modified_bst": 416.4,
-      "modified_bst_physical": 252.4,
-      "modified_bst_special": 239.4,
-      "can_be_mixed": false
-    },
-    {
-      "name": "VENIPEDE",
-      "index": 543,
-      "via_player": 1.0,
-      "form": 0,
-      "via_ai": 1.0,
-      "types": [
-        "Bug",
-        "Poison"
-      ],
-      "modified_bst": 420.8,
-      "modified_bst_physical": 221.8,
-      "modified_bst_special": 206.8,
-      "can_be_mixed": false
-    },
-    {
-      "name": "INFERNAPE",
-      "index": 392,
-      "via_player": 1.0,
-      "form": 0,
-      "via_ai": 1.0,
-      "types": [
-        "Fire",
-        "Fighting"
-      ],
-      "modified_bst": 424.4,
-      "modified_bst_physical": 424.4,
-      "modified_bst_special": 424.4,
-      "can_be_mixed": true
-    },
-    {
-      "name": "VOLBEAT",
-      "index": 313,
-      "via_player": 1.0,
-      "form": 0,
-      "via_ai": 1.0,
-      "types": [
-        "Bug",
+        "Electric",
         "Electric"
       ],
-      "modified_bst": 412.0,
-      "modified_bst_physical": 338.0,
-      "modified_bst_special": 412.0,
+      "modified_bst": 428.0,
+      "modified_bst_physical": 398.0,
+      "modified_bst_special": 428.0,
       "can_be_mixed": false
     },
     {
-      "name": "GOTHITELLE",
-      "index": 576,
+      "name": "TRANQUILL",
+      "index": 520,
       "via_player": 1.0,
-      "form": 0,
       "via_ai": 1.0,
+      "form": 0,
       "types": [
-        "Psychic",
-        "Dark"
+        "Normal",
+        "Flying"
       ],
-      "modified_bst": 407.0,
-      "modified_bst_physical": 367.0,
-      "modified_bst_special": 407.0,
+      "modified_bst": 404.6,
+      "modified_bst_physical": 300.2,
+      "modified_bst_special": 273.2,
+      "can_be_mixed": false
+    },
+    {
+      "name": "EXEGGUTOR",
+      "index": 103,
+      "via_player": 1.0,
+      "via_ai": 1.0,
+      "form": 0,
+      "types": [
+        "Grass",
+        "Psychic"
+      ],
+      "modified_bst": 406.0,
+      "modified_bst_physical": 376.0,
+      "modified_bst_special": 406.0,
       "can_be_mixed": false
     }
   ],
   "low": [
     {
-      "name": "PALPITOAD",
-      "index": 536,
+      "name": "DODRIO",
+      "index": 85,
       "via_player": 1.0,
-      "form": 0,
       "via_ai": 1.0,
+      "form": 0,
+      "types": [
+        "Normal",
+        "Flying"
+      ],
+      "modified_bst": 394.0,
+      "modified_bst_physical": 394.0,
+      "modified_bst_special": 344.0,
+      "can_be_mixed": false
+    },
+    {
+      "name": "SIMIPOUR",
+      "index": 516,
+      "via_player": 1.0,
+      "via_ai": 1.0,
+      "form": 0,
       "types": [
         "Water",
-        "Ground"
+        "Water"
       ],
-      "modified_bst": 403.8,
-      "modified_bst_physical": 310.8,
-      "modified_bst_special": 310.8,
+      "modified_bst": 395.0,
+      "modified_bst_physical": 395.0,
+      "modified_bst_special": 395.0,
       "can_be_mixed": true
     },
     {
-      "name": "SHUCKLE",
-      "index": 213,
+      "name": "MR. MIME",
+      "index": 122,
       "via_player": 1.0,
-      "form": 0,
       "via_ai": 1.0,
-      "types": [
-        "Bug",
-        "Rock"
-      ],
-      "modified_bst": 404.0,
-      "modified_bst_physical": 404.0,
-      "modified_bst_special": 404.0,
-      "can_be_mixed": true
-    },
-    {
-      "name": "REUNICLUS",
-      "index": 579,
-      "via_player": 1.0,
       "form": 0,
-      "via_ai": 1.0,
       "types": [
         "Psychic",
         "Psychic"
       ],
-      "modified_bst": 399.0,
-      "modified_bst_physical": 339.0,
-      "modified_bst_special": 399.0,
+      "modified_bst": 396.0,
+      "modified_bst_physical": 341.0,
+      "modified_bst_special": 396.0,
       "can_be_mixed": false
     },
     {
-      "name": "ZANGOOSE",
-      "index": 335,
+      "name": "NIDOKING",
+      "index": 34,
       "via_player": 1.0,
-      "form": 0,
       "via_ai": 1.0,
+      "form": 0,
       "types": [
-        "Normal",
-        "Normal"
+        "Poison",
+        "Ground"
       ],
-      "modified_bst": 400.0,
-      "modified_bst_physical": 400.0,
-      "modified_bst_special": 345.0,
-      "can_be_mixed": false
+      "modified_bst": 392.6,
+      "modified_bst_physical": 396.6,
+      "modified_bst_special": 389.6,
+      "can_be_mixed": true
     },
     {
-      "name": "COFAGRIGUS",
-      "index": 563,
+      "name": "POLITOED",
+      "index": 186,
       "via_player": 1.0,
-      "form": 0,
       "via_ai": 1.0,
+      "form": 0,
       "types": [
-        "Ghost",
-        "Ghost"
+        "Water",
+        "Water"
       ],
-      "modified_bst": 399.0,
-      "modified_bst_physical": 354.0,
-      "modified_bst_special": 399.0,
-      "can_be_mixed": false
+      "modified_bst": 396.0,
+      "modified_bst_physical": 389.0,
+      "modified_bst_special": 404.0,
+      "can_be_mixed": true
     },
     {
-      "name": "PIKACHU",
-      "index": 25,
+      "name": "ELECTRIKE",
+      "index": 309,
       "via_player": 1.0,
-      "form": 0,
       "via_ai": 1.0,
+      "form": 0,
       "types": [
         "Electric",
         "Electric"
       ],
-      "modified_bst": 395.0,
-      "modified_bst_physical": 281.0,
-      "modified_bst_special": 281.0,
-      "can_be_mixed": true
+      "modified_bst": 397.0,
+      "modified_bst_physical": 227.0,
+      "modified_bst_special": 247.0,
+      "can_be_mixed": false
     }
   ],
   "lvl": 64
