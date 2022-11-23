@@ -174,6 +174,8 @@ Assumes fairy implemented on base rom, and BW2. Use localhost:4567/patcher for f
 
 ### How to randomize
 
+
+
 [DEMO](https://streamable.com/n20iws)
 Note: demo video speeds up the trainer randomization process to save time. Actual randomization takes 4-5 minutes.  
 
