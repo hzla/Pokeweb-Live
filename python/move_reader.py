@@ -115,7 +115,9 @@ def to_readable(raw, file_name):
 
 
 	readable["index"] = file_name
-	readable["name"]  = MOVE_NAMES[file_name]
+	if file_name >= len(MOVE_NAMES):
+		file_name = 0
+	readable["name"]  = MOVE_NAMES[file_name] 
 	
 	readable["type"] = TYPES[raw["type"]]
 

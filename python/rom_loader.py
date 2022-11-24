@@ -191,9 +191,49 @@ if narc_info["base_rom"] == "BW2":
 	animations = ndspy.narc.NARC.fromFile(animations_file_path)
 	b_animations = ndspy.narc.NARC.fromFile(b_animations_file_path)
 
+	## Expand moves
+
+	# when using move id N > 673, b_animation_id (n - 561) is used
+	# N must be greater than b_animations.files + moves.files = 559 + 114 = 673
+
+	expansion = 5
+
+	settings["original_move_count"] = len(moves.files)
+	settings["battle_animation_count"] = len(b_animations.files)
+	
+	with open(f'session_settings.json', "w+") as outfile:  
+		json.dump(settings, outfile) 
+
+	# add filler moves
+	for n in range(0, len(b_animations.files)):
+		moves.files.append(moves.files[0])
 
 
-	code.interact(local=dict(globals(), **locals()))
+	# expand animations and move files
+	for n in range(0,expansion):
+		n %= 559
+		b_animations.files.append(animations.files[0])
+		moves.files.append(moves.files[0])
+
+
+
+	
+
+	# b_animations.files[138] = animations.files[247]
+	# b_animations.files[697] = animations.files[25]
+
+	# print(b_animations.files[697] == animations.files[24])
+
+
+
+	with open(moves_file_path, 'wb') as f:
+		f.write(moves.save())
+
+	with open(b_animations_file_path, 'wb') as f:
+		f.write(b_animations.save())
+
+
+	# code.interact(local=dict(globals(), **locals()))
 
 
 	while len(narc.files) < 15080:
