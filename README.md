@@ -8,7 +8,7 @@
 
 ### 11/24/2022
 
-Add move expansion option
+Add move animation editor and move expansion option
 
 ### 11/21/2022
 
