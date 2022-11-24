@@ -6,6 +6,10 @@
 
 ## Changelog
 
+### 11/24/2022
+
+Add move expansion option
+
 ### 11/21/2022
 
 Add experimental kaizo randomizer code
