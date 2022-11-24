@@ -111,7 +111,10 @@ def to_raw(readable):
 			if readable[f'move_id_{n}'] == "-":
 				continue
 
-			raw[f'move_id_{n}'] = MOVES.index(readable[f'move_id_{n}'])
+			if readable[f'move_id_{n}'].split(" ")[0].lower() == "expanded":
+				raw[f'move_id_{n}'] = int(readable[f'move_id_{n}'].split(" ")[-1])
+			else:
+				raw[f'move_id_{n}'] = MOVES.index(readable[f'move_id_{n}'])
 
 			#update index info for readable since ruby side only updates the name, not id
 			readable[f'move_id_{n}_index'] = raw[f'move_id_{n}']

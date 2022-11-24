@@ -17,6 +17,8 @@ with open(f'session_settings.json', "r") as outfile:
 	settings = json.load(outfile) 
 	ROM_NAME = settings['rom_name']
 	NARC_FILE_ID = settings["moves"]
+	ANIMATION_ID = settings["move_animations"]
+	B_ANIMATION_ID = settings["battle_animations"]
 
 TYPES = ["Normal", "Fighting", "Flying", "Poison", "Ground", "Rock", "Bug", "Ghost", "Steel", "Fire", "Water","Grass","Electric","Psychic","Ice","Dragon","Dark","Fairy"]
 
@@ -179,6 +181,29 @@ def to_raw(readable):
 		binary_props += bin(readable[prop])[2:].zfill(1)
 	raw["properties"] = int(binary_props, 2)
 
+
+	# set animation
+	animations_file_path = f'{ROM_NAME}/narcs/move_animations-{ANIMATION_ID}.narc'
+	b_animations_file_path = f'{ROM_NAME}/narcs/battle_animations-{B_ANIMATION_ID}.narc'
+
+	# for non expanded moves
+	print(readable["index"])
+	if readable["index"] < 674:
+		print("no exp")
+		animations = ndspy.narc.NARC.fromFile(animations_file_path)
+		print(readable["index"])
+		animations.files[readable["index"]] = animations.files[readable["animation"]]
+		# code.interact(local=dict(globals(), **locals()))
+		with open(animations_file_path, 'wb') as f:
+			f.write(animations.save())
+
+	else: # for expanded moves
+		print("exp")
+		animations = ndspy.narc.NARC.fromFile(animations_file_path)
+		b_animations = ndspy.narc.NARC.fromFile(b_animations_file_path)
+		b_animations.files[readable["index"] - 561] = animations.files[readable["animation"]]
+		with open(b_animations_file_path, 'wb') as f:
+			f.write(b_animations.save())
 
 	return raw
 	

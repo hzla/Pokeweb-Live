@@ -113,11 +113,14 @@ def to_readable(raw, file_name):
 	readable = copy.deepcopy(raw)
 
 
-
 	readable["index"] = file_name
+	readable["animation"] = file_name
 	if file_name >= len(MOVE_NAMES):
+		readable["name"] = f'EXPANDED MOVE {file_name}'
 		file_name = 0
-	readable["name"]  = MOVE_NAMES[file_name] 
+		readable["animation"] = 0
+	else:
+		readable["name"]  = MOVE_NAMES[file_name] 
 	
 	readable["type"] = TYPES[raw["type"]]
 

@@ -67,6 +67,7 @@ with open(f'session_settings.json', "r") as outfile:
 		grotto_narc_file_id = settings["grottos"]
 		sprites_narc_file_id = settings["sprites"]
 		b_animations_narc_file_id = settings["battle_animations"]
+		animations_narc_file_id = settings["move_animations"]
 		icons_narc_file_id = settings["icons"]
 
 if settings["output_arm9"] == True:
@@ -133,6 +134,7 @@ if settings["base_rom"] == "BW2":
 	print("saved grotto")
 	rom.files[sprites_narc_file_id] = open(f'{rom_name}/narcs/sprites-{sprites_narc_file_id}.narc', 'rb').read()
 	rom.files[b_animations_narc_file_id] = open(f'{rom_name}/narcs/battle_animations-{b_animations_narc_file_id}.narc', 'rb').read()
+	rom.files[animations_narc_file_id] = open(f'{rom_name}/narcs/move_animations-{animations_narc_file_id}.narc', 'rb').read()
 	rom.files[icons_narc_file_id] = open(f'{rom_name}/narcs/icons-{icons_narc_file_id}.narc', 'rb').read()
 
 
