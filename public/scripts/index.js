@@ -79,6 +79,13 @@ $(document).ready(function() {
         });
     })
 
+    $(document).on('click', '#randomize', function(e){
+        if (confirm('Randomization is irreversible and will take 4-5 minutes. Are you sure?')) {
+        	window.location.href = '/randomize'
+        }
+
+    })
+
     $(document).on('click', '#save-rom', function(){
     	btn = $(this)
     	btn.text('Exporting...')

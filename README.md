@@ -172,107 +172,64 @@ If you would like to share the calculator after importing your set data, you can
 
 ## Smart Randomizer Functions (experimental)
 
+Assumes fairy implemented on base rom, and BW2. Use localhost:4567/patcher for fairy patcher on a clean rom or use a rom with fairy already implemented. Change "fairy": false to true in session_settings.json if you are editing the rom. Included in Pokeweb/Reference_Files is also a xdelta of a clean black2 rom with fairy type added and pokemon center encounters that can be used as a base rom for randomization.  
 
-Assumes fairy implemented on base rom, and BW2. Use localhost:4567/patcher for fairy patcher on a clean rom or use a rom with fairy already implemented. Change "fairy": false to true in session_settings.json. 
-
-### Setup
-
-First enter your gym level/elite 4 level caps of the base rom into pokeweb/randomizer/base_rom_level_caps.json
-The randomizer assumes every trainer with lvl N pokemon between the a gym with level < N and > N is encountered in between those gyms.  
-
-Navigate to root pokeweb folder in cmd/terminal/powershell. 
+### How to randomize
 
 
-Run the following to to start ruby console. 
 
-```
- irb -r ./routes.rb
-```
-Then run the following to setup the randomizer with the necessary settings files. This only ever needs to be run once per base rom. It is advisable to backup a copy of all settings files in pokeweb/randomizer. 
+[DEMO](https://streamable.com/n20iws)
+Note: demo video speeds up the trainer randomization process to save time. Actual randomization takes 4-5 minutes.  
 
-```ruby
-Randomizer.setup
-```
+**Step 1:** Load rom into pokweb. 
 
-### Team Randomization
+**Step 2 (Optional if vanilla rom):** Enter the base rom's gym/elite 4 level caps into pokeweb/randomizer/base_rom_level_caps.json. This defaults to vanilla B/W2 values.
 
-```ruby
-Action.rand_teams
-```
-Randomize every team on the rom based on settings in the pokeweb/randomizer folder. WARNING: this irreversible and takes 4-5 minutes
+**Step 3 (Optional if vanilla rom):**Enter the target gym/elite 4 level caps and target BST ranges into pokeweb/randomizer/gym_viabilities.json. Enter trainer_ids of gym leaders and gym trainers if those have been changed from vanilla. Default difficulty values follow roughly Emerald Kaizo bsts/level ranges. 
 
-### Encounter Randomization
+**Step 4 (Optional):** Customize pokedex.json, move_viabilities.json. More explained below.
 
-```ruby
-Action.rand_teams
-```
-Randomize every encounter on the rom based on settings in the pokeweb/randomizer folder. WARNING: this is irreversible
+**Step 5:** Click "Randomize" on the webapp header. Wait 4-5 minutes. The screen will say "Randomization Successful" when done. You can view progress in your terminal/cmd.
 
-After randomizing, the rom and showdown calculator can be exported as usual.
-
-It is required that randomizer/base_rom_level_caps.json be filled out. The randomizer will use these level caps to determine what levels trainers should be. 
-
+**Step 6:** Click export on the webapp header. You can find the rom in pokeweb/exports. You can also export a custom showdown calculator and view other changes on the other tabs of pokeweb. 
 
 ### How to Customize
 
 Randomized rom settings are in Pokeweb/randomizer
 
-#### pok_viabilities.json
+#### pokedex.json
 
 This file lists every pokemon/alt form in the game. Each pokemon has an entry like so 
 
 ```json
-{
+ {
     "name": "BULBASAUR",
-    "index": 1,
     "via_player": 1.0,
-    "form": 0,
-    "via_ai": 1.0,
-    "via_player_gym_1": 1.0,
-    "via_player_gym_2": 1.0,
-    "via_player_gym_3": 1.0,
-    "via_player_gym_4": 1.0,
-    "via_player_gym_5": 1.0,
-    "via_player_gym_6": 1.0,
-    "via_player_gym_7": 1.0,
-    "via_player_gym_8": 1.0,
-    "types": [
-      "Grass",
-      "Poison"
-    ],
-    "modified_bst": 255.2,
-    "modified_bst_physical": 239.2,
-    "modified_bst_special": 255.2,
-    "can_be_mixed": false
+    "via_ai": 1.0
   }
 ```
 
-The important variables are "modified_bst", "via_player" and "via_ai". 
+The important variables are "via_player" and "via_ai". 
 
-Modified_bst is how the randomizer determines how strong a pokemon is. 
-The modified_bst formula is the same as regular bst with the weaker offensive stat subtracted/averaged depending on how close in values they are. Defensive stats are slightly deprioritized, and speed is given a slightly more weight to the value. For reference, cleffa sits at around 176 and mewtwo at 570.
+Every pokemon has a modified_bst value that is how the randomizer determines how strong a pokemon is. 
+The modified_bst formula is the same as regular bst with the weaker offensive stat subtracted/averaged depending on how close in values they are. Defensive stats are slightly deprioritized, and speed is given a slightly more weight to the value. For reference, cleffa sits at around 176 and mewtwo at 570. Modified_bst values can be viewed in randomizer/pok_viabilities.json
 
 Via_player is multiplied with modified_bst when the randomizer is deciding whether or not to allow the pokemon into an encounter pool. This variable is meant to be modified by the user and allows a user to adjust the at what stage of the game a certain pokemon will appear depending on how strong the user thinks it is. Lowering it to 0 will cause it to never appear and is the default value of certain entries such as the pokestudios mons and bad eggs.
 
-
 Via_ai is multiplied with modified_bst when the randomizer is deciding whether or not to allow the pokemon into an a trainer's team of possible pokemon. Raising or lowering the value with cause the randomizer to see the pokemon as stronger or weaker. Lowering to 0 will cause the pokemon to never show up. 
+
+Only pokedex.json is meant to be edited by the user, not pok_viabilities.json
 
 
 In essence, via_player and via_ai gives the randomizer user the ability to customize how strong a pokemon should be viewed relative to their raw stats. 
 
-
 All other variables in this file should not be touched. 
-
 
 #### move_viabilities.json
 
 This is a list of moves, the only variable that should be adjusted is "viability". Currently the only function supported is setting a variable to 0. At viability 0, trainer teams will never have the move in their movesets.
 
-A list of banned moves for the ai is in randomizer/ai_move_banlist.txt. To add to the list, add a new line with the move_id as the first entry followed by a space. Everything after the space is optional and can be used for notes. Running the following command in the ruby console will update move_viabilities.json with the banlist. 
-
-```ruby
-Randomizer.update_move_ban_list
-```
+A list of banned moves for the ai is in randomizer/ai_move_banlist.txt. To add to the list, add a new line with the move_id as the first entry followed by a space. Everything after the space is optional and can be used for notes.  
 
 #### gym_viabilities.json
 
@@ -324,11 +281,18 @@ The team generator will randomly choose pokemon1, then choose pokemon2 based on 
 
 Gyms and gym trainers will only use certain types unless the given settings are too narrow.
 
-The moveset generator will first determine how powerful moves generally should be by looking at the level and bst specified. It will then generally try to find stab moves, then sometimes status moves. Then fill the rest with coverage moves (moves that are supereffective against types that are supereffective against itself). Only status moves are limited to the pokemon's learnset.
+Battle types are unchanged. Singles will still be singles and so on. Note changing single battles to doubles in pokeweb will not work unless the overworld npc is given a partner, or unless the partner check in the global trainer script is removed. 
+
+The moveset generator will first determine how powerful moves generally should be by looking at the level and bst specified. It will then generally try to find stab moves, then sometimes status moves. Then fill the rest with coverage moves (moves that are supereffective against types that are supereffective against itself). Only status moves are limited to the pokemon's learnset. 
+Some trainer pokemon are forced to use their weaker offensive stat as a way of balancing. A special/physical set will be prohibited from using stat boosting moves for the wrong stat.
+
 
 Held items have a percent chance to chosen from smogon usage data, and a default pool of items.
 
 Abilities are randomly chosen.
+
+Each encounter is made from a pool of pokemon slightly weaker than the next gym leader's pool. Evolutions are taken into account, so a Charmander in a pool of lvl 30 pokemon will be seen as a Charmeleon. Pokecenter encounters are monotype according to their gymleader. Flocessy Town pokemon center will always have a type that is super effective against gym 1.  
+
 
 Randomizer algorithms are in Pokeweb/models/randomizer.rb. This is where adjustments to the team/encounter/move generator algs can be made. For example, modifying the modified_bst formula, % chance of coverage moves etc. Requires programming knowledge.
 
