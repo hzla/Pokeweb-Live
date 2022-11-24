@@ -137,6 +137,8 @@ Quick Tip: If you want to save time on exporting roms, you can open the session_
 
 If you change "output_arm9": true to  "output_arm9": false, you can save about 5 seconds in rom export time. The arm9 is only used for editing TMs and if you want to enable TM editing again, you can change it back to "output_arm9": true.
 
+If you would like to expand your move slots and are editing BW2, use expansion_settings.json to set how many extra move slots you would like to provision when loading the rom. Note: You will still need to expand necessary text banks16,402,403,and 488 starting at id 673 for text banks 402, 403, 488 and id 2019 for textbank 16.
+
 If your rom has fairy typing implented change  "fairy": false to "fairy": true, to support fairy typing edits.
 
 ## Carrying Over Rom Data To Newer Releases
