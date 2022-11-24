@@ -13,6 +13,9 @@ from multiprocessing import Pool
 import subprocess
 from arm9_reader import output_tms_json
 
+from pathlib import Path
+import shutil
+
 
 
 # code.interact(local=dict(globals(), **locals()))
@@ -29,6 +32,11 @@ with open(f'session_settings.json', "r") as outfile:
 rom_name = narc_info['rom_name'] 
 
 # code.interact(local=dict(globals(), **locals()))
+
+dirpath = Path(f'{rom_name}/json/moves')
+print(dirpath) 
+if dirpath.exists() and dirpath.is_dir():
+    shutil.rmtree(dirpath)
 
 if not os.path.exists(f'{rom_name}'):
 	os.makedirs(f'{rom_name}')
@@ -83,14 +91,24 @@ BW2_NARCS = [["a/0/1/6", "personal"],
 ["a/2/8/3", "mart_counts"],
 ["a/2/7/3", "grottos"],
 ["a/0/0/4", "sprites"],
-["a/0/0/7", "icons"]]
+["a/0/0/7", "icons"],
+["a/0/0/6", "move_effects"],
+["a/0/6/5", "move_animations"],
+["a/0/6/6", "battle_animations"],
+["a/0/9/4", "move_backgrounds"]]
 
 BW2_MSG_BANKS = [[488, "moves"],
 [487, "abilities"],
 [486, "pokedex"],
 [383, "tr_classes"],
 [382, "tr_names"],
-[64, "items"]]
+[64, "items"],
+[16, "move_usage"],
+[402, "moves1"],
+[403, "moves2"],
+[488, "moves3"]]
+
+
 
 NARCS = []
 MSG_BANKS = []
@@ -171,6 +189,56 @@ if narc_info["base_rom"] == "BW2":
 	# sprites
 	sprite_file_path = f'{rom_name}/narcs/sprites-{settings["sprites"]}.narc'
 	narc = ndspy.narc.NARC.fromFile(sprite_file_path)
+	
+	with open(f'expansion_settings.json', "r") as outfile:  
+		expansion_settings = json.load(outfile) 
+		expansion = expansion_settings["moves"]
+
+	if expansion > 0:
+		moves_file_path = f'{rom_name}/narcs/moves-{settings["moves"]}.narc'
+		animations_file_path = f'{rom_name}/narcs/move_animations-{settings["move_animations"]}.narc'
+		b_animations_file_path = f'{rom_name}/narcs/battle_animations-{settings["battle_animations"]}.narc'
+
+		moves = ndspy.narc.NARC.fromFile(moves_file_path)
+		animations = ndspy.narc.NARC.fromFile(animations_file_path)
+		b_animations = ndspy.narc.NARC.fromFile(b_animations_file_path)
+
+		## Expand moves
+
+		# when using move id N > 673, b_animation_id (n - 561) is used
+		# N must be greater than b_animations.files + moves.files = 559 + 114 = 673
+
+		settings["original_move_count"] = len(moves.files)
+		settings["battle_animation_count"] = len(b_animations.files)
+		
+		with open(f'session_settings.json', "w+") as outfile:  
+			json.dump(settings, outfile) 
+
+		# add filler moves
+
+		print(len(b_animations.files))
+
+		for n in range(0, len(b_animations.files)):
+			moves.files.append(moves.files[1])
+
+		print(expansion)
+		# expand animations and move files
+		for n in range(0,expansion):
+			print(n)
+			n %= 559
+			b_animations.files.append(animations.files[1])
+			moves.files.append(moves.files[1])
+
+
+		with open(moves_file_path, 'wb') as f:
+			f.write(moves.save())
+
+		with open(b_animations_file_path, 'wb') as f:
+			f.write(b_animations.save())
+
+
+	# code.interact(local=dict(globals(), **locals()))
+
 
 	while len(narc.files) < 15080:
 		narc.files.append(narc.files[-1])
