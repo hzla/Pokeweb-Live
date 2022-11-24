@@ -1,1 +1,10 @@
 https://projectpokemon.org/home/forums/topic/37539-solved-pok%C3%A9mon-black-amp-white-adding-new-move-animations/
+
+step 1: expand move narc a/0/2/1
+step 2: expand move info text banks [16 * 3,402,403, 488]
+
+step 3: expand battle animation narc a/0/6/6 with data from move animation narc starting at move id 559
+
+
+
+In fact, every move after 559 gets a battle effect from NARC a/0/6/7 in BW (move effects; which is a/0/6/6 in B2W2, and move animations is a/0/6/5 in B2W2). So if you want to add new moves, add the animations to this NARC starting at move ID 659.
