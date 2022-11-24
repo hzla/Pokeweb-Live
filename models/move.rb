@@ -17,6 +17,8 @@ class Move < Pokenarc
 		moves
 	end
 
+
+
 	def self.export_showdown
 		moves = get_all[1..-1]
 
@@ -57,7 +59,8 @@ class Move < Pokenarc
 			{ "field_name" => "crit", "label" => "+Crit", "type" => "int-15"},
 			{ "field_name" => "flinch", "label" => "Flinch %", "type" => "int-100"},
 			{ "field_name" => "recoil", "label" => "Recoil %", "type" => "int-100"},
-			{ "field_name" => "healing", "label" => "Heal %", "type" => "int-100"}
+			{ "field_name" => "healing", "label" => "Heal %", "type" => "int-100"},
+			{ "field_name" => "animation", "label" => "Animation ID", "type" => "int-#{RomInfo.original_move_count - 1}"}
 		]
 	end
 

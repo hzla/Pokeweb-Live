@@ -82,8 +82,16 @@ def expand_learnset_data(moves, learnset)
 
 			all_move_data = moves[ls_data["move_id"]]
 			# copy these fields to be presented
+			if learnset["move_id_#{move}_index"] > 673
+				all_move_data = moves[ls_data["move_id"] - (673 - RomInfo.original_move_count)]
+			end
+
 			["type", "category", "power", "accuracy"].each do |field|
-				ls_data[field] = all_move_data[1][field]
+				begin
+					ls_data[field] = all_move_data[1][field]
+				rescue
+					binding.pry
+				end
 			end
 			move_data << ls_data
 		else
