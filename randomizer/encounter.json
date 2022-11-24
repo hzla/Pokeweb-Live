@@ -1,19 +1,86 @@
 {
   "upper": [
     {
+      "name": "CYNDAQUIL",
+      "index": 155,
+      "via_player": 1.0,
+      "via_ai": 1.0,
+      "form": 0,
+      "types": [
+        "Fire",
+        "Fire"
+      ],
+      "modified_bst": 437.4,
+      "modified_bst_physical": 243.4,
+      "modified_bst_special": 251.4,
+      "can_be_mixed": true
+    },
+    {
+      "name": "MUNCHLAX",
+      "index": 446,
+      "via_player": 1.0,
+      "via_ai": 1.0,
+      "form": 0,
+      "types": [
+        "Normal",
+        "Normal"
+      ],
+      "modified_bst": 446.0,
+      "modified_bst_physical": 326.0,
+      "modified_bst_special": 281.0,
+      "can_be_mixed": false
+    },
+    {
+      "name": "LEAFEON",
+      "index": 470,
+      "via_player": 1.0,
+      "via_ai": 1.0,
+      "form": 0,
+      "types": [
+        "Grass",
+        "Grass"
+      ],
+      "modified_bst": 445.0,
+      "modified_bst_physical": 445.0,
+      "modified_bst_special": 395.0,
+      "can_be_mixed": false
+    },
+    {
+      "name": "LAMPENT",
+      "index": 608,
+      "via_player": 1.0,
+      "via_ai": 1.0,
+      "form": 0,
+      "types": [
+        "Ghost",
+        "Fire"
+      ],
+      "modified_bst": 445.0,
+      "modified_bst_physical": 262.0,
+      "modified_bst_special": 317.0,
+      "can_be_mixed": false
+    },
+    {
+      "name": "GENGAR",
+      "index": 94,
+      "via_player": 1.0,
+      "via_ai": 1.0,
+      "form": 0,
+      "types": [
+        "Ghost",
+        "Poison"
+      ],
+      "modified_bst": 430.0,
+      "modified_bst_physical": 365.0,
+      "modified_bst_special": 430.0,
+      "can_be_mixed": false
+    },
+    {
       "name": "ELEKID",
       "index": 239,
       "via_player": 1.0,
-      "form": 0,
       "via_ai": 1.0,
-      "via_player_gym_1": 1.0,
-      "via_player_gym_2": 1.0,
-      "via_player_gym_3": 1.0,
-      "via_player_gym_4": 1.0,
-      "via_player_gym_5": 1.0,
-      "via_player_gym_6": 1.0,
-      "via_player_gym_7": 1.0,
-      "via_player_gym_8": 1.0,
+      "form": 0,
       "types": [
         "Electric",
         "Electric"
@@ -22,278 +89,274 @@
       "modified_bst_physical": 295.6,
       "modified_bst_special": 297.6,
       "can_be_mixed": true
-    },
+    }
+  ],
+  "mid": [
     {
-      "name": "LUMINEON",
-      "index": 457,
+      "name": "UMBREON",
+      "index": 197,
       "via_player": 1.0,
-      "form": 0,
       "via_ai": 1.0,
-      "via_player_gym_1": 1.0,
-      "via_player_gym_2": 1.0,
-      "via_player_gym_3": 1.0,
-      "via_player_gym_4": 1.0,
-      "via_player_gym_5": 1.0,
-      "via_player_gym_6": 1.0,
-      "via_player_gym_7": 1.0,
-      "via_player_gym_8": 1.0,
+      "form": 0,
       "types": [
-        "Water",
-        "Water"
+        "Dark",
+        "Dark"
       ],
-      "modified_bst": 429.4,
-      "modified_bst_physical": 367.4,
-      "modified_bst_special": 429.4,
-      "can_be_mixed": false
+      "modified_bst": 427.0,
+      "modified_bst_physical": 430.0,
+      "modified_bst_special": 425.0,
+      "can_be_mixed": true
     },
     {
-      "name": "KIRLIA",
-      "index": 281,
+      "name": "PIDOVE",
+      "index": 519,
       "via_player": 1.0,
-      "form": 0,
       "via_ai": 1.0,
-      "via_player_gym_1": 1.0,
-      "via_player_gym_2": 1.0,
-      "via_player_gym_3": 1.0,
-      "via_player_gym_4": 1.0,
-      "via_player_gym_5": 1.0,
-      "via_player_gym_6": 1.0,
-      "via_player_gym_7": 1.0,
-      "via_player_gym_8": 1.0,
-      "types": [
-        "Psychic",
-        "Fairy"
-      ],
-      "modified_bst": 433.0,
-      "modified_bst_physical": 221.0,
-      "modified_bst_special": 271.0,
-      "can_be_mixed": false
-    },
-    {
-      "name": "STARAPTOR",
-      "index": 398,
-      "via_player": 1.0,
       "form": 0,
-      "via_ai": 1.0,
-      "via_player_gym_1": 1.0,
-      "via_player_gym_2": 1.0,
-      "via_player_gym_3": 1.0,
-      "via_player_gym_4": 1.0,
-      "via_player_gym_5": 1.0,
-      "via_player_gym_6": 1.0,
-      "via_player_gym_7": 1.0,
-      "via_player_gym_8": 1.0,
       "types": [
         "Normal",
         "Flying"
       ],
-      "modified_bst": 429.0,
-      "modified_bst_physical": 429.0,
-      "modified_bst_special": 359.0,
+      "modified_bst": 404.6,
+      "modified_bst_physical": 220.6,
+      "modified_bst_special": 201.6,
       "can_be_mixed": false
     },
     {
-      "name": "ELECTIVIRE",
-      "index": 466,
+      "name": "LEAVANNY",
+      "index": 542,
       "via_player": 1.0,
-      "form": 0,
       "via_ai": 1.0,
-      "via_player_gym_1": 1.0,
-      "via_player_gym_2": 1.0,
-      "via_player_gym_3": 1.0,
-      "via_player_gym_4": 1.0,
-      "via_player_gym_5": 1.0,
-      "via_player_gym_6": 1.0,
-      "via_player_gym_7": 1.0,
-      "via_player_gym_8": 1.0,
+      "form": 0,
       "types": [
-        "Electric",
-        "Fighting"
+        "Bug",
+        "Grass"
       ],
-      "modified_bst": 433.6,
-      "modified_bst_physical": 433.6,
-      "modified_bst_special": 405.6,
+      "modified_bst": 408.4,
+      "modified_bst_physical": 408.4,
+      "modified_bst_special": 375.4,
       "can_be_mixed": false
     },
     {
-      "name": "Rotom-Frost",
-      "index": 694,
+      "name": "CHIMCHAR",
+      "index": 390,
       "via_player": 1.0,
-      "form": 0,
       "via_ai": 1.0,
-      "via_player_gym_1": 1.0,
-      "via_player_gym_2": 1.0,
-      "via_player_gym_3": 1.0,
-      "via_player_gym_4": 1.0,
-      "via_player_gym_5": 1.0,
-      "via_player_gym_6": 1.0,
-      "via_player_gym_7": 1.0,
-      "via_player_gym_8": 1.0,
+      "form": 0,
+      "types": [
+        "Fire",
+        "Fire"
+      ],
+      "modified_bst": 423.2,
+      "modified_bst_physical": 245.60000000000002,
+      "modified_bst_special": 245.60000000000002,
+      "can_be_mixed": true
+    },
+    {
+      "name": "GEODUDE",
+      "index": 74,
+      "via_player": 1.0,
+      "via_ai": 1.0,
+      "form": 0,
+      "types": [
+        "Rock",
+        "Ground"
+      ],
+      "modified_bst": 400.0,
+      "modified_bst_physical": 248.0,
+      "modified_bst_special": 198.0,
+      "can_be_mixed": false
+    },
+    {
+      "name": "SCYTHER",
+      "index": 123,
+      "via_player": 1.0,
+      "via_ai": 1.0,
+      "form": 0,
+      "types": [
+        "Bug",
+        "Flying"
+      ],
+      "modified_bst": 422.0,
+      "modified_bst_physical": 434.0,
+      "modified_bst_special": 379.0,
+      "can_be_mixed": false
+    },
+    {
+      "name": "Rotom-Fan",
+      "index": 695,
+      "via_player": 1.0,
+      "via_ai": 1.0,
+      "form": 0,
       "types": [
         "Electric",
-        "Ice"
+        "Flying"
       ],
       "modified_bst": 429.40000000000003,
       "modified_bst_physical": 389.40000000000003,
       "modified_bst_special": 429.40000000000003,
       "can_be_mixed": false,
       "base_form": 479,
-      "form_index": 3
-    }
-  ],
-  "mid": [
+      "form_index": 4
+    },
     {
-      "name": "FURRET",
-      "index": 162,
+      "name": "MACHOKE",
+      "index": 67,
       "via_player": 1.0,
-      "form": 0,
       "via_ai": 1.0,
-      "via_player_gym_1": 1.0,
-      "via_player_gym_2": 1.0,
-      "via_player_gym_3": 1.0,
-      "via_player_gym_4": 1.0,
-      "via_player_gym_5": 1.0,
-      "via_player_gym_6": 1.0,
-      "via_player_gym_7": 1.0,
-      "via_player_gym_8": 1.0,
+      "form": 0,
       "types": [
-        "Normal",
-        "Normal"
+        "Fighting",
+        "Fighting"
       ],
-      "modified_bst": 397.0,
-      "modified_bst_physical": 397.0,
-      "modified_bst_special": 357.0,
+      "modified_bst": 418.0,
+      "modified_bst_physical": 338.0,
+      "modified_bst_special": 288.0,
       "can_be_mixed": false
     },
     {
-      "name": "GARBODOR",
-      "index": 569,
+      "name": "TENTACOOL",
+      "index": 72,
       "via_player": 1.0,
-      "form": 0,
       "via_ai": 1.0,
-      "via_player_gym_1": 1.0,
-      "via_player_gym_2": 1.0,
-      "via_player_gym_3": 1.0,
-      "via_player_gym_4": 1.0,
-      "via_player_gym_5": 1.0,
-      "via_player_gym_6": 1.0,
-      "via_player_gym_7": 1.0,
-      "via_player_gym_8": 1.0,
+      "form": 0,
       "types": [
-        "Poison",
+        "Water",
         "Poison"
       ],
-      "modified_bst": 416.20000000000005,
-      "modified_bst_physical": 416.20000000000005,
-      "modified_bst_special": 381.20000000000005,
+      "modified_bst": 423.0,
+      "modified_bst_physical": 272.0,
+      "modified_bst_special": 282.0,
       "can_be_mixed": false
     },
     {
-      "name": "KABUTOPS",
-      "index": 141,
+      "name": "ELECTRODE",
+      "index": 101,
       "via_player": 1.0,
-      "form": 0,
       "via_ai": 1.0,
-      "via_player_gym_1": 1.0,
-      "via_player_gym_2": 1.0,
-      "via_player_gym_3": 1.0,
-      "via_player_gym_4": 1.0,
-      "via_player_gym_5": 1.0,
-      "via_player_gym_6": 1.0,
-      "via_player_gym_7": 1.0,
-      "via_player_gym_8": 1.0,
+      "form": 0,
       "types": [
-        "Rock",
+        "Electric",
+        "Electric"
+      ],
+      "modified_bst": 428.0,
+      "modified_bst_physical": 398.0,
+      "modified_bst_special": 428.0,
+      "can_be_mixed": false
+    },
+    {
+      "name": "TRANQUILL",
+      "index": 520,
+      "via_player": 1.0,
+      "via_ai": 1.0,
+      "form": 0,
+      "types": [
+        "Normal",
+        "Flying"
+      ],
+      "modified_bst": 404.6,
+      "modified_bst_physical": 300.2,
+      "modified_bst_special": 273.2,
+      "can_be_mixed": false
+    },
+    {
+      "name": "EXEGGUTOR",
+      "index": 103,
+      "via_player": 1.0,
+      "via_ai": 1.0,
+      "form": 0,
+      "types": [
+        "Grass",
+        "Psychic"
+      ],
+      "modified_bst": 406.0,
+      "modified_bst_physical": 376.0,
+      "modified_bst_special": 406.0,
+      "can_be_mixed": false
+    }
+  ],
+  "low": [
+    {
+      "name": "DODRIO",
+      "index": 85,
+      "via_player": 1.0,
+      "via_ai": 1.0,
+      "form": 0,
+      "types": [
+        "Normal",
+        "Flying"
+      ],
+      "modified_bst": 394.0,
+      "modified_bst_physical": 394.0,
+      "modified_bst_special": 344.0,
+      "can_be_mixed": false
+    },
+    {
+      "name": "SIMIPOUR",
+      "index": 516,
+      "via_player": 1.0,
+      "via_ai": 1.0,
+      "form": 0,
+      "types": [
+        "Water",
         "Water"
       ],
-      "modified_bst": 411.0,
-      "modified_bst_physical": 411.0,
-      "modified_bst_special": 361.0,
-      "can_be_mixed": false
-    },
-    {
-      "name": "CHIMECHO",
-      "index": 358,
-      "via_player": 1.0,
-      "form": 0,
-      "via_ai": 1.0,
-      "via_player_gym_1": 1.0,
-      "via_player_gym_2": 1.0,
-      "via_player_gym_3": 1.0,
-      "via_player_gym_4": 1.0,
-      "via_player_gym_5": 1.0,
-      "via_player_gym_6": 1.0,
-      "via_player_gym_7": 1.0,
-      "via_player_gym_8": 1.0,
-      "types": [
-        "Psychic",
-        "Psychic"
-      ],
-      "modified_bst": 399.0,
-      "modified_bst_physical": 339.0,
-      "modified_bst_special": 399.0,
-      "can_be_mixed": false
-    },
-    {
-      "name": "CLAYDOL",
-      "index": 344,
-      "via_player": 1.0,
-      "form": 0,
-      "via_ai": 1.0,
-      "via_player_gym_1": 1.0,
-      "via_player_gym_2": 1.0,
-      "via_player_gym_3": 1.0,
-      "via_player_gym_4": 1.0,
-      "via_player_gym_5": 1.0,
-      "via_player_gym_6": 1.0,
-      "via_player_gym_7": 1.0,
-      "via_player_gym_8": 1.0,
-      "types": [
-        "Ground",
-        "Psychic"
-      ],
-      "modified_bst": 400.0,
-      "modified_bst_physical": 400.0,
-      "modified_bst_special": 400.0,
+      "modified_bst": 395.0,
+      "modified_bst_physical": 395.0,
+      "modified_bst_special": 395.0,
       "can_be_mixed": true
     },
     {
-      "name": "REUNICLUS",
-      "index": 579,
+      "name": "MR. MIME",
+      "index": 122,
       "via_player": 1.0,
-      "form": 0,
       "via_ai": 1.0,
-      "via_player_gym_1": 1.0,
-      "via_player_gym_2": 1.0,
-      "via_player_gym_3": 1.0,
-      "via_player_gym_4": 1.0,
-      "via_player_gym_5": 1.0,
-      "via_player_gym_6": 1.0,
-      "via_player_gym_7": 1.0,
-      "via_player_gym_8": 1.0,
+      "form": 0,
       "types": [
         "Psychic",
         "Psychic"
       ],
-      "modified_bst": 399.0,
-      "modified_bst_physical": 339.0,
-      "modified_bst_special": 399.0,
+      "modified_bst": 396.0,
+      "modified_bst_physical": 341.0,
+      "modified_bst_special": 396.0,
       "can_be_mixed": false
+    },
+    {
+      "name": "NIDOKING",
+      "index": 34,
+      "via_player": 1.0,
+      "via_ai": 1.0,
+      "form": 0,
+      "types": [
+        "Poison",
+        "Ground"
+      ],
+      "modified_bst": 392.6,
+      "modified_bst_physical": 396.6,
+      "modified_bst_special": 389.6,
+      "can_be_mixed": true
+    },
+    {
+      "name": "POLITOED",
+      "index": 186,
+      "via_player": 1.0,
+      "via_ai": 1.0,
+      "form": 0,
+      "types": [
+        "Water",
+        "Water"
+      ],
+      "modified_bst": 396.0,
+      "modified_bst_physical": 389.0,
+      "modified_bst_special": 404.0,
+      "can_be_mixed": true
     },
     {
       "name": "ELECTRIKE",
       "index": 309,
       "via_player": 1.0,
-      "form": 0,
       "via_ai": 1.0,
-      "via_player_gym_1": 1.0,
-      "via_player_gym_2": 1.0,
-      "via_player_gym_3": 1.0,
-      "via_player_gym_4": 1.0,
-      "via_player_gym_5": 1.0,
-      "via_player_gym_6": 1.0,
-      "via_player_gym_7": 1.0,
-      "via_player_gym_8": 1.0,
+      "form": 0,
       "types": [
         "Electric",
         "Electric"
@@ -302,262 +365,7 @@
       "modified_bst_physical": 227.0,
       "modified_bst_special": 247.0,
       "can_be_mixed": false
-    },
-    {
-      "name": "GOLEM",
-      "index": 76,
-      "via_player": 1.0,
-      "form": 0,
-      "via_ai": 1.0,
-      "via_player_gym_1": 1.0,
-      "via_player_gym_2": 1.0,
-      "via_player_gym_3": 1.0,
-      "via_player_gym_4": 1.0,
-      "via_player_gym_5": 1.0,
-      "via_player_gym_6": 1.0,
-      "via_player_gym_7": 1.0,
-      "via_player_gym_8": 1.0,
-      "types": [
-        "Rock",
-        "Ground"
-      ],
-      "modified_bst": 410.0,
-      "modified_bst_physical": 410.0,
-      "modified_bst_special": 345.0,
-      "can_be_mixed": false
-    },
-    {
-      "name": "HARIYAMA",
-      "index": 297,
-      "via_player": 1.0,
-      "form": 0,
-      "via_ai": 1.0,
-      "via_player_gym_1": 1.0,
-      "via_player_gym_2": 1.0,
-      "via_player_gym_3": 1.0,
-      "via_player_gym_4": 1.0,
-      "via_player_gym_5": 1.0,
-      "via_player_gym_6": 1.0,
-      "via_player_gym_7": 1.0,
-      "via_player_gym_8": 1.0,
-      "types": [
-        "Fighting",
-        "Fighting"
-      ],
-      "modified_bst": 420.0,
-      "modified_bst_physical": 420.0,
-      "modified_bst_special": 340.0,
-      "can_be_mixed": false
-    },
-    {
-      "name": "SENTRET",
-      "index": 161,
-      "via_player": 1.0,
-      "form": 0,
-      "via_ai": 1.0,
-      "via_player_gym_1": 1.0,
-      "via_player_gym_2": 1.0,
-      "via_player_gym_3": 1.0,
-      "via_player_gym_4": 1.0,
-      "via_player_gym_5": 1.0,
-      "via_player_gym_6": 1.0,
-      "via_player_gym_7": 1.0,
-      "via_player_gym_8": 1.0,
-      "types": [
-        "Normal",
-        "Normal"
-      ],
-      "modified_bst": 397.0,
-      "modified_bst_physical": 243.0,
-      "modified_bst_special": 228.0,
-      "can_be_mixed": false
-    },
-    {
-      "name": "DWEBBLE",
-      "index": 557,
-      "via_player": 1.0,
-      "form": 0,
-      "via_ai": 1.0,
-      "via_player_gym_1": 1.0,
-      "via_player_gym_2": 1.0,
-      "via_player_gym_3": 1.0,
-      "via_player_gym_4": 1.0,
-      "via_player_gym_5": 1.0,
-      "via_player_gym_6": 1.0,
-      "via_player_gym_7": 1.0,
-      "via_player_gym_8": 1.0,
-      "types": [
-        "Bug",
-        "Rock"
-      ],
-      "modified_bst": 389.0,
-      "modified_bst_physical": 277.0,
-      "modified_bst_special": 247.0,
-      "can_be_mixed": false
-    },
-    {
-      "name": "HITMONCHAN",
-      "index": 107,
-      "via_player": 1.0,
-      "form": 0,
-      "via_ai": 1.0,
-      "via_player_gym_1": 1.0,
-      "via_player_gym_2": 1.0,
-      "via_player_gym_3": 1.0,
-      "via_player_gym_4": 1.0,
-      "via_player_gym_5": 1.0,
-      "via_player_gym_6": 1.0,
-      "via_player_gym_7": 1.0,
-      "via_player_gym_8": 1.0,
-      "types": [
-        "Fighting",
-        "Fighting"
-      ],
-      "modified_bst": 397.4,
-      "modified_bst_physical": 397.4,
-      "modified_bst_special": 327.4,
-      "can_be_mixed": false
     }
   ],
-  "low": [
-    {
-      "name": "SUNFLORA",
-      "index": 192,
-      "via_player": 1.0,
-      "form": 0,
-      "via_ai": 1.0,
-      "via_player_gym_1": 1.0,
-      "via_player_gym_2": 1.0,
-      "via_player_gym_3": 1.0,
-      "via_player_gym_4": 1.0,
-      "via_player_gym_5": 1.0,
-      "via_player_gym_6": 1.0,
-      "via_player_gym_7": 1.0,
-      "via_player_gym_8": 1.0,
-      "types": [
-        "Grass",
-        "Grass"
-      ],
-      "modified_bst": 372.0,
-      "modified_bst_physical": 322.0,
-      "modified_bst_special": 372.0,
-      "can_be_mixed": false
-    },
-    {
-      "name": "TROPIUS",
-      "index": 357,
-      "via_player": 1.0,
-      "form": 0,
-      "via_ai": 1.0,
-      "via_player_gym_1": 1.0,
-      "via_player_gym_2": 1.0,
-      "via_player_gym_3": 1.0,
-      "via_player_gym_4": 1.0,
-      "via_player_gym_5": 1.0,
-      "via_player_gym_6": 1.0,
-      "via_player_gym_7": 1.0,
-      "via_player_gym_8": 1.0,
-      "types": [
-        "Grass",
-        "Flying"
-      ],
-      "modified_bst": 386.2,
-      "modified_bst_physical": 394.2,
-      "modified_bst_special": 378.2,
-      "can_be_mixed": true
-    },
-    {
-      "name": "ZIGZAGOON",
-      "index": 263,
-      "via_player": 1.0,
-      "form": 0,
-      "via_ai": 1.0,
-      "via_player_gym_1": 1.0,
-      "via_player_gym_2": 1.0,
-      "via_player_gym_3": 1.0,
-      "via_player_gym_4": 1.0,
-      "via_player_gym_5": 1.0,
-      "via_player_gym_6": 1.0,
-      "via_player_gym_7": 1.0,
-      "via_player_gym_8": 1.0,
-      "types": [
-        "Normal",
-        "Normal"
-      ],
-      "modified_bst": 386.0,
-      "modified_bst_physical": 215.60000000000002,
-      "modified_bst_special": 205.60000000000002,
-      "can_be_mixed": false
-    },
-    {
-      "name": "CARRACOSTA",
-      "index": 565,
-      "via_player": 1.0,
-      "form": 0,
-      "via_ai": 1.0,
-      "via_player_gym_1": 1.0,
-      "via_player_gym_2": 1.0,
-      "via_player_gym_3": 1.0,
-      "via_player_gym_4": 1.0,
-      "via_player_gym_5": 1.0,
-      "via_player_gym_6": 1.0,
-      "via_player_gym_7": 1.0,
-      "via_player_gym_8": 1.0,
-      "types": [
-        "Water",
-        "Rock"
-      ],
-      "modified_bst": 378.8,
-      "modified_bst_physical": 378.8,
-      "modified_bst_special": 353.8,
-      "can_be_mixed": false
-    },
-    {
-      "name": "LINOONE",
-      "index": 264,
-      "via_player": 1.0,
-      "form": 0,
-      "via_ai": 1.0,
-      "via_player_gym_1": 1.0,
-      "via_player_gym_2": 1.0,
-      "via_player_gym_3": 1.0,
-      "via_player_gym_4": 1.0,
-      "via_player_gym_5": 1.0,
-      "via_player_gym_6": 1.0,
-      "via_player_gym_7": 1.0,
-      "via_player_gym_8": 1.0,
-      "types": [
-        "Normal",
-        "Normal"
-      ],
-      "modified_bst": 386.0,
-      "modified_bst_physical": 386.0,
-      "modified_bst_special": 361.0,
-      "can_be_mixed": false
-    },
-    {
-      "name": "PELIPPER",
-      "index": 279,
-      "via_player": 1.0,
-      "form": 0,
-      "via_ai": 1.0,
-      "via_player_gym_1": 1.0,
-      "via_player_gym_2": 1.0,
-      "via_player_gym_3": 1.0,
-      "via_player_gym_4": 1.0,
-      "via_player_gym_5": 1.0,
-      "via_player_gym_6": 1.0,
-      "via_player_gym_7": 1.0,
-      "via_player_gym_8": 1.0,
-      "types": [
-        "Water",
-        "Flying"
-      ],
-      "modified_bst": 385.0,
-      "modified_bst_physical": 340.0,
-      "modified_bst_special": 385.0,
-      "can_be_mixed": false
-    }
-  ],
-  "lvl": 42
+  "lvl": 64
 }

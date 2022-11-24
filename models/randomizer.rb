@@ -5,7 +5,7 @@ class Randomizer
 		create_personal
 		create_abilities
 		create_moves
-		update_ban_list
+		update_move_ban_list
 		smogon_indexed_moves
 		create_items
 		p "Setup Successful"
@@ -29,22 +29,35 @@ class Randomizer
 	 	data = add_evolution_data(data)
 	 	File.write("randomizer/poks.json", JSON.pretty_generate(data))
 
+	 	via_info = load_file('pokedex')
+
 	 	viabilities = []
 
-	 	data.each do |pok|
+	 	data.each_with_index do |pok, i|
 	 		viability = {}
-	 		
 	 		if pok
 		 		viability["name"] = pok["name"]
+		 		
 		 		viability["index"] = pok["index"]
-		 		viability["via_player"] = 1.0
+
+		 		
+		 		if via_info[i]
+			 		viability["via_player"] = via_info[i]["via_player"]
+			 		viability["via_ai"] = via_info[i]["via_ai"]
+			 	else
+			 		viability["via_player"] = 0
+			 		viability["via_ai"] = 0
+			 	end
+
+
 		 		viability["form"] = 0
 
-		 		viability["via_player"]
-		 		viability["via_ai"] = 1.0
-		 		(1..8).each do |n|
-					viability["via_player_gym_#{n}"] = 1.0
-				end
+
+		 	# 	(1..8).each do |n|
+				# 	viability["via_player_gym_#{n}"] = 1.0
+				# end
+
+
 
 		 		#remove pokestudios
 		 		if pok["name"].gsub(" ", "") == "" || pok["name"].split(" ").last.downcase == "egg"

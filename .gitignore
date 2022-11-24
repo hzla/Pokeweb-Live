@@ -11,3 +11,4 @@ logs.txt
 /public/dist/*.json
 /public/dist/*.js
 *.zip
+.DS_Store

@@ -7,6 +7,14 @@ class RomInfo
 		end
 	end
 
+    def self.pokemon_center_headers
+        ids = [9,21,42,66,100,110,116,123,399,408,414,426,436,444,455,461,473]
+        gyms = [436,455,42,66,100,110,123,473]
+        [ids, gyms]
+
+    end
+
+
 	def self.types
 		typing = ["Normal", "Fighting", "Flying", "Poison", "Ground", "Rock", "Bug", "Ghost", "Steel", "Fire", "Water","Grass","Electric","Psychic","Ice","Dragon","Dark"].map do |type|
 			type.upcase

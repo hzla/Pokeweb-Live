@@ -365,7 +365,7 @@ end
 
 
 get '/randomize' do 
-	# Randomizer.create_personal
+	Randomizer.setup
 	Action.rand_teams
 	Action.rand_encs
 	erb :randomize

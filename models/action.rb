@@ -21,6 +21,8 @@ class Action
 
         rival1_tr_ids = [161,162,163]
 
+        multi_battles = [588,589,590, 342,356,732,733,363,364,365,360,361,362]
+
         blacklist = {}
 
         target_gym_viabilities[0..7].each do |gym|
@@ -31,10 +33,16 @@ class Action
 
         (target_gym_viabilities[8]["e1"] + target_gym_viabilities[8]["e2"] + target_gym_viabilities[8]["e3"] + target_gym_viabilities[8]["e4"] + target_gym_viabilities[8]["champ"] + rival1_tr_ids).each do |n|
         	blacklist[n] = true
+       	end 
 
-       	end  
+       	 multi_battle_list = {}
+       	 multi_battles.each do |n|
+       	 	multi_battle_list[n] = true
+       	 end
        	
        	p blacklist
+       	p multi_battle_list
+
        	level_grouped_trainers.each_with_index do |group, i|
        		group_count = group.length 
        		
@@ -54,12 +62,16 @@ class Action
        			p "randomizing trainer #{j}, gym #{i}"
 
 
-       			#avoid gym trainers/leader and rival1
+       # 			#avoid gym trainers/leader and rival1
        	
    
        			# weaker trainers before gym 1
        			below_gym = (i == 0 ? 80 : 50)
        			pok_count = (i == 0 ? rand(2) + 3 : rand(3) + 4)
+
+       			if multi_battle_list[trpok["index"]]
+       				pok_count = 3
+       			end
    		
    				#create non gym trainers
 
@@ -150,11 +162,59 @@ class Action
 	def self.rand_encs
 		old_gym_caps = load_file('base_rom_level_caps') 
 		target_gym_viabilities = load_file('gym_viabilities')
+		gym_types = load_file('randomized_gym_types')
 
+		all_types = ["Normal", "Fighting", "Flying", "Poison", "Ground", "Rock", "Bug", "Ghost", "Steel", "Fire", "Water","Grass","Electric","Psychic","Ice","Dragon","Dark"]
 
+		headers = Header.get_all
+		ai_advantage_low = 50 #adjusts how weak the low end of your encounters are compared to ai trainers
+		ai_advantage_high = 50 #adjusts how weak the high end of your encounters are compared to ai trainers
+
+		gym_ids = RomInfo.pokemon_center_headers[1]
+		other_ids = [444,461,414,408] #flocessy, lentimas, lacunosa, undella
+		
 		encounter_count = Encounter.get_all.length
 
-		(0..encounter_count - 1).each do |n|
+		gym_ids.each_with_index do |gym, i|
+			p "randomizing gym #{i}"
+			lvl = target_gym_viabilities[i]["lvl"] - 6
+			range = target_gym_viabilities[i]["range"]
+			range 
+
+			rand_enc = Randomizer.create_encounter [range[0] - ai_advantage_low, range[1] - ai_advantage_high ], [1, lvl].max, [gym_types[i]]
+			Randomizer.apply_encounter rand_enc, 136 + i
+			
+			headers[gym.to_s]["unknown_4"] = 192 
+			headers[gym.to_s]["encounter_id"] = 136 + i			
+		end
+
+		remaining_types = all_types - gym_types
+
+		other_ids.each_with_index do |city, i|
+
+			headers[city.to_s]["unknown_4"] = 192
+			headers[city.to_s]["encounter_id"] = 144 + i
+			lvl = nil
+			range = nil
+			type = nil
+			if i < 1
+				lvl = target_gym_viabilities[0]["lvl"] - 6
+				range = target_gym_viabilities[0]["range"]
+				type = Randomizer.get_type_info([gym_types[0]] * 2)[0].sample
+				p type
+			else
+				lvl = target_gym_viabilities[6]["lvl"] - 6
+				range = target_gym_viabilities[6]["range"]
+				type = remaining_types.shuffle!.pop
+			end
+
+			rand_enc = Randomizer.create_encounter [range[0] - ai_advantage_low, range[1] - ai_advantage_high], [1, lvl].max, [type]
+			Randomizer.apply_encounter rand_enc, 144 + i
+		end
+
+		File.write("#{$rom_name}/json/headers/headers.json", JSON.pretty_generate(headers))
+
+		(0..135).each do |n|
 			p "randomizing enc file #{n}"
 			lvl =  Encounter.get_max_level n
 			next_gym_lvl = nil
@@ -171,13 +231,12 @@ class Action
 			next_gym_lvl = target_gym_viabilities[-1]['lvl'] if !next_gym_lvl
 			next_gym_range = target_gym_viabilities[-1]['range'] if !next_gym_range
 
-			p "lvl #{next_gym_lvl - 6}"
-			p next_gym_range
-			rand_enc = Randomizer.create_encounter [next_gym_range[0] - 30, next_gym_range[1] - 30], [1, next_gym_lvl - 6].max
+			rand_enc = Randomizer.create_encounter [next_gym_range[0] - ai_advantage_low, next_gym_range[1] - ai_advantage_high], [1, next_gym_lvl - 6].max
 
 			Randomizer.apply_encounter rand_enc, n
 		end
 	end
+
 
 
 

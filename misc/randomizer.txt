@@ -94,7 +94,7 @@ IVs Alg: DELAY
 	else ivs 255
 
 Item Alg: DONE
-	80% random from smogon + 20%[sitrus, lum, leftoevers]
+	80% weighted random from smogon + 20% rand
 
 
 Team Building Alg DONE 
@@ -155,10 +155,6 @@ Encounter table alg DONE
 	
 
 	default encounter uses random pokemon 
-
-
-	159 
-
 
 
 Optimization
