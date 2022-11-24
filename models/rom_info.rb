@@ -14,6 +14,13 @@ class RomInfo
 
     end
 
+    def self.original_move_count 
+        contents = File.open("session_settings.json", "r") do |f|
+            f.read
+        end
+        return JSON.parse(contents)["original_move_count"]
+    end
+
 
 	def self.types
 		typing = ["Normal", "Fighting", "Flying", "Poison", "Ground", "Rock", "Bug", "Ghost", "Steel", "Fire", "Water","Grass","Electric","Psychic","Ice","Dragon","Dark"].map do |type|

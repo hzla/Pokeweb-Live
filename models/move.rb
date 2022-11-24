@@ -9,7 +9,12 @@ class Move < Pokenarc
 			move_id = move_data["index"]
 			moves[move_id] = move_data
 		end
-		moves.to_a.sort_by {|mov| mov[0] }
+		moves = moves.to_a.sort_by {|mov| mov[0] }
+		if RomInfo.original_move_count
+			num_moves = RomInfo.original_move_count - 1
+			moves = moves[0..num_moves] + moves[673..-1]
+		end
+		moves
 	end
 
 	def self.export_showdown
