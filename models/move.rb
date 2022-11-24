@@ -10,9 +10,9 @@ class Move < Pokenarc
 			moves[move_id] = move_data
 		end
 		moves = moves.to_a.sort_by {|mov| mov[0] }
-		if RomInfo.original_move_count
+		if RomInfo.original_move_count && RomInfo.original_move_count > moves.length
 			num_moves = RomInfo.original_move_count - 1
-			moves = moves[0..num_moves] + moves[673..-1]
+			moves = moves[0..num_moves] + moves[672..-1]
 		end
 		moves
 	end
