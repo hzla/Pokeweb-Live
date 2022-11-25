@@ -101,7 +101,7 @@ Higher power the less HP the user has
 Decreases PP of target's last move used by 4
 False Swipe effect
 Heal Bell effect
-+ Priority 
++ Priority
 Hits the target up to 3 times; increases power by 10 with each hit
 Steals target's held item
 Prevents target from switching out or fleeing

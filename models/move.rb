@@ -58,7 +58,7 @@ class Move < Pokenarc
 			{ "field_name" => "priority", "label" => "Priority", "type" => "int-255"},
 			{ "field_name" => "crit", "label" => "+Crit", "type" => "int-15"},
 			{ "field_name" => "flinch", "label" => "Flinch %", "type" => "int-100"},
-			{ "field_name" => "recoil", "label" => "Recoil %", "type" => "int-100"},
+			{ "field_name" => "recoil", "label" => "Recoil %", "type" => "int-255"},
 			{ "field_name" => "healing", "label" => "Heal %", "type" => "int-100"},
 			{ "field_name" => "animation", "label" => "Animation ID", "type" => "int-#{RomInfo.original_move_count - 1}"}
 		]

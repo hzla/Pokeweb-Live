@@ -18,7 +18,6 @@ precipice blades
 steam eruption
 thousand waves
 water shuriken
-=== 7
 accelerock
 bouncy bubble
 brutal swing
@@ -47,7 +46,6 @@ spirit shackle
 trop kick
 zing zap
 zippy zap
-=== 8
 apple acid
 astral barrage
 branch poke
@@ -58,7 +56,7 @@ decorate
 dire claw
 dragon darts
 dragon energy
-drump beating
+drum beating
 dual wingbeat
 esper wing
 eternabeam
@@ -87,6 +85,8 @@ victory dance
 wave crash
 wicked blow
 wildbolt storm
+
+
 ===== 9
 aqua cutter
 aqua step
