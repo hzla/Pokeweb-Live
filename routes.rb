@@ -209,6 +209,12 @@ get '/encounters' do
 	erb :encounters
 end
 
+post '/encounter_season_copy' do 
+	Encounter.copy_season_to_all params["data"]["id"], params["data"]["season"]
+	p params
+	"200 OK"
+end
+
 ####################### TRAINERS ###########################
 
 get '/trainers' do 
