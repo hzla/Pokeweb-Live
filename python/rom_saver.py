@@ -89,11 +89,37 @@ if settings["output_arm9"] == True:
 	#update rom in memory
 	rom = ndspy.rom.NintendoDSRom(mutable_rom)
 
+
+
 if settings["base_rom"] == "BW2":
 	import mart_writer
 	import grotto_writer
 	mart_writer.output_narc()
 	grotto_writer.output_narc()
+
+	grotto_odds = 0
+
+	grotto_odds = open(f'{rom_name}/grotto_odds.bin','rb').read()
+
+	#load decompressed overlay
+	overlay36 = rom.loadArm9Overlays([36])[36]
+	
+	#set data
+	overlay36_data = overlay36.data
+
+	B2_GROTTO_ODDS_OFFSET = 0x00055218
+	
+	# overwrite data with edits
+
+	overlay36_data[B2_GROTTO_ODDS_OFFSET:(B2_GROTTO_ODDS_OFFSET + 200)] = grotto_odds
+	
+	#set new data
+	overlay36.data = overlay36_data
+
+	# recompress and insert
+
+	rom.files[36] = overlay36.save(compress=True)
+	print("saved grotto odds")
 
 
 

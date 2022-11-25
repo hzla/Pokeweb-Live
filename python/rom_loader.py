@@ -94,18 +94,14 @@ BW2_NARCS = [["a/0/1/6", "personal"],
 ["a/0/0/7", "icons"],
 ["a/0/0/6", "move_effects"],
 ["a/0/6/5", "move_animations"],
-["a/0/6/6", "battle_animations"],
-["a/0/9/4", "move_backgrounds"]]
+["a/0/6/6", "battle_animations"]]
 
 BW2_MSG_BANKS = [[488, "moves"],
 [487, "abilities"],
 [486, "pokedex"],
 [383, "tr_classes"],
 [382, "tr_names"],
-[64, "items"],
-[16, "move_usage"],
-[402, "moves1"],
-[403, "moves2"]]
+[64, "items"]]
 
 
 
@@ -145,6 +141,27 @@ arm9 = ndspy.codeCompression.decompress(rom.arm9)
 
 with open(f'{rom_name}/arm9.bin', 'wb') as f:
 	f.write(arm9)
+
+
+
+overlay36 = rom.loadArm9Overlays([36])[36]
+overlay16 = rom.loadArm9Overlays([16])[16]
+
+with open(f'{rom_name}/overlay36.bin', 'wb') as f:
+	f.write(overlay36.data)
+
+with open(f'{rom_name}/overlay16.bin', 'wb') as f:
+	f.write(overlay16.data)
+
+B2_SWARM_OFFSET = 0x00050bfc
+B2_GROTTO_ODDS_OFFSET = 0x00055218
+
+
+
+with open(f'{rom_name}/grotto_odds.bin', 'wb') as f:
+	f.write(overlay36.data[B2_GROTTO_ODDS_OFFSET:(B2_GROTTO_ODDS_OFFSET + 200)])
+
+# code.interact(local=dict(globals(), **locals()))
 
 
 #############################################################

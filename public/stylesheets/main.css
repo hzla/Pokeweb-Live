@@ -986,10 +986,18 @@ div.-active svg * {
     width: 60px;
 }
 
-.mart-name, .grotto-location {
+.odds-header, .odds-item {
+    width: 100px;
+}
+
+
+.mart-name, .grotto-location, .grotto-name.odds-header, .grotto-name {
     width: 160px;
     text-align: left;
+    color:  #f2f2f2;
 }
+
+
 .mart-inv, .grotto-wilds {
     width: 50%;
     line-height: 1.6;

@@ -1,0 +1,79 @@
+
+<div class="pokemon-filter">	
+	SR = Super Rare
+	<br>
+	<br>
+	R = Rare
+	<br>
+	<br>
+	UC = Uncommon
+	<br>
+	<br>
+	CM = Common
+	<br>
+	<br>
+	H-Item = Hidden Item
+	<br>
+	<br>
+	CM H-Item = 100 - all other odds
+
+</div>
+
+<div class="pokemon-list pokemon-move-list spreadsheet tm-list" id="moves">
+	<div class="expanded-field field-header">
+		<div class="expanded-field-main">
+			<div class="odds-header grotto-name">Name</div>
+			
+			<div class="odds-header">R Pok</div>
+			<div class="odds-header">UC Pok</div>
+			<div class="odds-header">CM Pok</div>
+
+			<div class="odds-header">SR Item</div>
+			<div class="odds-header">R Item</div>
+			<div class="odds-header">UC Item</div>
+			<div class="odds-header">CM Item</div>
+
+			<div class="odds-header">SR H-Item</div>
+			<div class="odds-header">R H-Item</div>
+			<div class="odds-header">UC H-Item</div>
+		</div>
+	</div>
+
+	<% (0..19).each_with_index do |n|  %>	
+		
+		<div class="expanded-field" data-index="<%= n %>">	
+			<div class="expanded-field-main">
+				<div class="grotto-name" data-narc="grotto">
+					<%= @grottos[n]["name"] %>	
+				</div>
+
+				<% ["rare", "uncommon", "common"].each do |rarity| %>
+
+					<div data-narc="grotto" class="odds-item" data-type="int-100" contenteditable="true" data-field-name="<%= "#{rarity}_pok_odds_#{n}" %>">
+						<%= @odds["#{rarity}_pok_odds_#{n}" ]%>
+					</div>
+
+				<% end %>
+
+				<% ["superrare", "rare", "uncommon", "common"].each do |rarity| %>
+
+					<div data-narc="grotto" class="odds-item" data-type="int-100" contenteditable="true" data-field-name="<%= "#{rarity}_normal_item_odds_#{n}" %>">
+						<%= @odds["#{rarity}_normal_item_odds_#{n}"] %>
+					</div>
+
+				<% end %>
+
+				<% ["superrare", "rare", "uncommon"].each do |rarity| %>
+					<div data-narc="grotto" class="odds-item" data-type="int-100" contenteditable="true" data-field-name="<%= "#{rarity}_hidden_item_odds_#{n}" %>">
+						<%= @odds["#{rarity}_hidden_item_odds_#{n}" ]%>
+					</div>
+				<% end %>
+
+			</div>
+		</div>
+	<% end %>
+
+
+</div>
+
+

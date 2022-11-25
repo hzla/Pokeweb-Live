@@ -7,6 +7,7 @@ from personal_reader import output_personal_json
 from learnset_reader import output_learnsets_json
 from move_reader import output_moves_json
 from arm9_reader import output_tms_json
+from grotto_odds_reader import output_grotto_odds_json
 from encounter_reader import output_encounters_json
 from trdata_reader import output_trdata_json
 from item_reader import output_items_json
@@ -17,8 +18,14 @@ from overworld_reader import output_overworlds_json
 
 
 def output(narc):	
-	file_name = f'{rom_name}/narcs/{narc}-{narc_info[narc]}.narc'
-	narc_data = ndspy.narc.NARC.fromFile(file_name)
+	narc_data = 0
+	if narc != "grotto_odds":
+		file_name = f'{rom_name}/narcs/{narc}-{narc_info[narc]}.narc'
+		narc_data = ndspy.narc.NARC.fromFile(file_name)
+	else:		
+		narc_data = open(f'{rom_name}/grotto_odds.bin','rb')
+		# narc_data.close()
+	
 	eval(f'output_{narc}_json')(narc_data)
 	print(narc)
 	return narc
@@ -31,7 +38,7 @@ with open(f'session_settings.json', "r") as outfile:
 narcs_to_output = ["trdata", "personal", "learnsets", "moves", "encounters", "items", "evolutions", "overworlds"]
 # narcs_to_output = ["overworlds"]
 if narc_info["base_rom"] == "BW2":
-	narcs_to_output += ["grottos", "marts"]
+	narcs_to_output += ["grottos", "marts", "grotto_odds"]
 
 rom_name = narc_info["rom_name"]
 

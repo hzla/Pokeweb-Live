@@ -9,8 +9,38 @@ class Grotto < Pokenarc
 	def self.write_data data, batch=false
 		@@narc_name = "grottos"
 		@@upcases = ["pok"]
-		super
+
+		if data["field"].include?("odds")
+			write_odds data
+		else
+			super
+		end
 	end
+
+	def self.write_odds data
+		odds_path = "#{$rom_name}/json/arm9/grotto_odds.json"
+		odds = JSON.parse(File.open(odds_path, "r"){|f| f.read})
+		odds["readable"][data["field"]] = data["value"].to_i
+
+		File.open(odds_path, "w") { |f| f.write odds.to_json }
+	end
+
+	def self.odds_data
+		odds_path = "#{$rom_name}/json/arm9/grotto_odds.json"
+		odds = JSON.parse(File.open(odds_path, "r"){|f| f.read})
+
+	end
+
+	def self.remaining_odd odds_data, n
+		remaining = 100
+		odds_data.each do |k,v|
+			if k.split("_").last == n.to_s
+				remaining -= v
+			end
+		end
+		remaining
+	end
+
 
 	def self.wilds grotto
 		wilds = []

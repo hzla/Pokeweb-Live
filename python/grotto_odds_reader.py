@@ -14,62 +14,43 @@ import re
 ######################### FILE SPECIFIC CONSTANTS #############################
 
 def set_global_vars():
-	global ROM_NAME, MOVES, TM_FORMAT, TUTOR_FORMAT, TM_OFFSET, TUTOR_OFFSET, BASE_ROM
+	global ROM_NAME, NARC_FORMAT, BASE_ROM
 	
 	with open(f'session_settings.json', "r") as outfile:  
 		settings = json.load(outfile) 
 		ROM_NAME = settings['rom_name']
 		BASE_ROM = settings['base_rom']
-		BASE_VERSION = settings['base_version']
 
-	MOVES = open(f'{ROM_NAME}/texts/moves.txt', mode="r").read().splitlines()
 
-	for i,move in enumerate(MOVES):
-		MOVES[i] = re.sub(r'[^A-Za-z0-9 \-]+', '', move)
+	NARC_FORMAT = []
 
-	TM_FORMAT = []
+	for n in range(0, 20):
 
-	TM_OFFSETS = {"B": 0x9aaa0, "W": 0x9aab8, "B2": 0x8cc84, "W2": 0x8ccb0 }
+		for rarity in ["rare", "uncommon", "common"]:
+			NARC_FORMAT.append([1, f'{rarity}_pok_odds_{n}'])
 
-	TM_OFFSET = TM_OFFSETS[BASE_VERSION]
 
-	for n in range(1, 93):
-		TM_FORMAT.append([2, f'tm_{n}'])
-	for n in range(1, 7):
-		TM_FORMAT.append([2, f'hm_{n}'])
-	for n in range(93, 96):
-		TM_FORMAT.append([2, f'tm_{n}'])
+		for item_type in ["normal", "hidden"]:
+			for rarity in ["superrare", "rare", "uncommon", "common"]:
+				if item_type == "hidden" and rarity == "common":
+					continue
+				NARC_FORMAT.append([1, f'{rarity}_{item_type}_item_odds_{n}'])
 
 
 #################################################################
 ## TODO: create universal read_data function that takes name of narc, and to_readable() function as args
 
-def output_tms_json(arm9):
+def output_grotto_odds_json(grotto_odds):
 	set_global_vars()
 	data_index = 0
-	data_name = "tms"
+	data_name = "grotto_odds"
 	folder_name = "arm9"
 
-	arm9 = arm9[TM_OFFSET:TM_OFFSET + 204]
-
-	read_data(arm9, TM_FORMAT, data_name, folder_name)
+	read_data(grotto_odds, NARC_FORMAT, data_name, folder_name)
 	data_index += 1
-
-def output_tutors_json(arm9):
-	set_global_vars()
-	data_index = 0
-	data_name = "tutors"
-	folder_name = "arm9"
-
-	arm9 = arm9[TUTOR_OFFSET:TM_OFFSET + 1000]
-
-	read_data(arm9, TM_FORMAT, data_name, folder_name)
-	data_index += 1
-
-
 
 def read_data(data, narc_format, file_name, folder_name):
-	stream = io.BytesIO(data)
+	stream = data
 	json_data = {"raw": {}, "readable": {} }
 	
 	#USE THE FORMAT LIST TO PARSE BYTES
@@ -90,17 +71,10 @@ def read_data(data, narc_format, file_name, folder_name):
 
 def to_readable(raw, file_name=""):
 	readable = copy.deepcopy(raw)
-
-	for n in range(1, 93):
-		readable[f'tm_{n}'] = MOVES[raw[f'tm_{n}']]
-	for n in range(1, 7):
-		readable[f'hm_{n}'] = MOVES[raw[f'hm_{n}']]
-	for n in range(93, 96):
-		readable[f'tm_{n}'] = MOVES[raw[f'tm_{n}']]
-	
 	return readable
 
 
 def read_bytes(stream, n):
 	return int.from_bytes(stream.read(n), 'little')
+
 

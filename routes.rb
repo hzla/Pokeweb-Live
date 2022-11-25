@@ -157,7 +157,14 @@ post '/update' do
 
 
 
+
+
+
 	Object.const_get(narc_name.capitalize).write_data params["data"]
+
+	if params['data']['field'].include?('odds') && narc_name == 'grotto'
+		narc_name = 'grotto_odds'
+	end
 	
 	command = "python python/#{narc_name}_writer.py update #{params['data']['file_name']} #{params['data']['narc']}"
 	p params['data']
@@ -298,8 +305,15 @@ end
 
 get '/grottos' do
 	@grottos = Grotto.get_all
+	@odds = Grotto.odds_data["readable"]
 
 	erb :grottos
+end
+
+get '/grotto_odds' do 
+	@grottos = Grotto.get_all
+	@odds = Grotto.odds_data["readable"]
+	erb :grotto_odds
 end
 
 ####################################### TEXTS ###############
