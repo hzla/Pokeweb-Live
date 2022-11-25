@@ -8,7 +8,7 @@ class Encounter < Pokenarc
 
 	end
 
-	def self.get_data file_name
+	def self.get_data file_name, type="readable"
 		@@narc_name = "encounters"
 		super
 	end
@@ -45,6 +45,28 @@ class Encounter < Pokenarc
 
 		max
 	end
+
+	def self.copy_season_to_all id, copied_season
+		enc_path = "#{$rom_name}/json/encounters/#{id}.json"
+		enc_data = get_data(enc_path, "all")
+		
+		enc = enc_data.clone
+		
+
+		["readable", "raw"].each do |type|
+			enc_data[type].each do |k, v|
+				(["spring", "summer", "fall", "winter"] - [copied_season]).each do |season|
+					if k.include? season
+						enc[type][k] = enc[type][k.gsub(season, copied_season)]
+					end
+				end
+			end
+		end
+
+		File.open(enc_path, "w") { |f| f.write enc.to_json }
+		"200 OK"
+	end
+
 
 	def self.expand_encounter_info(encounter_data, header_data)
 		header_count = header_data["count"]
