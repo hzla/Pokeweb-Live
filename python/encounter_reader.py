@@ -57,8 +57,8 @@ def output_encounters_json(narc):
 	data_index = 0
 	# code.interact(local=dict(globals(), **locals()))
 
-	while len(narc.files) < 160:
-		narc.files.append(narc.files[89])
+	# while len(narc.files) < 160:
+	# 	narc.files.append(narc.files[89])
 	for data in narc.files:
 		data_name = data_index
 		read_narc_data(data, ENCOUNTER_NARC_FORMAT, data_name, "encounters")
