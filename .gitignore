@@ -12,3 +12,4 @@ logs.txt
 /public/dist/*.js
 *.zip
 .DS_Store
+*.bin

@@ -146,6 +146,7 @@ def to_raw(readable):
 	
 		raw["result_effect"] = RESULT_EFFECTS.index(raw["result_effect"].lower().capitalize())
 
+	# code.interact(local=dict(globals(), **locals()))
 	raw["effect"] = EFFECTS.index(raw["effect"])
 
 	raw["status"] = STATUSES.index(raw["status"])
@@ -188,7 +189,7 @@ def to_raw(readable):
 
 	# for non expanded moves
 	print(readable["index"])
-	if readable["index"] < 674:
+	if readable["index"] < 673:
 		print("no exp")
 		animations = ndspy.narc.NARC.fromFile(animations_file_path)
 		print(readable["index"])
@@ -201,6 +202,7 @@ def to_raw(readable):
 		print("exp")
 		animations = ndspy.narc.NARC.fromFile(animations_file_path)
 		b_animations = ndspy.narc.NARC.fromFile(b_animations_file_path)
+		# code.interact(local=dict(globals(), **locals()))
 		b_animations.files[readable["index"] - 561] = animations.files[readable["animation"]]
 		with open(b_animations_file_path, 'wb') as f:
 			f.write(b_animations.save())

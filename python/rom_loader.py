@@ -105,8 +105,7 @@ BW2_MSG_BANKS = [[488, "moves"],
 [64, "items"],
 [16, "move_usage"],
 [402, "moves1"],
-[403, "moves2"],
-[488, "moves3"]]
+[403, "moves2"]]
 
 
 
@@ -224,7 +223,6 @@ if narc_info["base_rom"] == "BW2":
 		print(expansion)
 		# expand animations and move files
 		for n in range(0,expansion):
-			print(n)
 			n %= 559
 			b_animations.files.append(animations.files[1])
 			moves.files.append(moves.files[1])

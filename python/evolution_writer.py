@@ -105,7 +105,7 @@ def to_raw(readable):
 		if raw[f'method_{n}'] in [6,8,17,18,19,20]:
 			raw[f'param_{n}'] = ITEMS.index(raw[f'param_{n}'])
 		elif raw[f'method_{n}'] == 21:
-			raw[f'param_{n}'] = MOVES.index(readable[f'param_{n}'])
+			raw[f'param_{n}'] = MOVES.index(readable[f'param_{n}'].upper())
 		elif raw[f'method_{n}'] == 22:
 			raw[f'param_{n}'] = POKEDEX.index(readable[f'param_{n}'].upper())
 		else:

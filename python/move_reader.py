@@ -118,9 +118,15 @@ def to_readable(raw, file_name):
 	if file_name >= len(MOVE_NAMES):
 		readable["name"] = f'EXPANDED MOVE {file_name}'
 		file_name = 0
-		readable["animation"] = 0
+		
 	else:
 		readable["name"]  = MOVE_NAMES[file_name] 
+
+
+	if file_name >= 673:
+		readable["animation"] = 0
+
+
 	
 	readable["type"] = TYPES[raw["type"]]
 
