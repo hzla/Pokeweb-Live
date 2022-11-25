@@ -3,8 +3,12 @@ class Pokenarc
 	@@upcases = []
 
 
-	def self.get_data(file_name)
-		JSON.parse(File.open(file_name, "r"){|f| f.read})["readable"]
+	def self.get_data(file_name, type="readable")
+		if type != "all"
+			JSON.parse(File.open(file_name, "r"){|f| f.read})[type]
+		else
+			JSON.parse(File.open(file_name, "r"){|f| f.read})
+		end
 	end
 
 	def self.get_all use_raw=false
@@ -18,6 +22,7 @@ class Pokenarc
 			json = JSON.parse(file)
 			entry = json["readable"]
 			entry = json["raw"] if use_raw
+			entry = json if use_raw == "both"
 
 			collection[n] = entry
 		end
