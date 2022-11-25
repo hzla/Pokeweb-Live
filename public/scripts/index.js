@@ -63,6 +63,32 @@ $(document).ready(function() {
 	    }]
 	];
 
+	copy_menu = [
+	    [{
+	      text: "Copy to other seasons",
+	      action: function (e, i) {
+	      	console.log(current_season)
+	      	console.log(current_encounter)
+	      	var data = {}
+	      	data["season"] = current_season
+	      	data["id"] = current_encounter
+	      	if (confirm(`Copy ${current_season} to other seasons in enc file ${current_encounter} ?`)){
+
+				$.post( "/encounter_season_copy", {"data": data }, function( e ) {     
+						
+	        
+
+		        });
+		        location.reload();
+			} 
+
+			
+
+	      }
+	    }]
+	];
+
+	$(".season-icon").contextMenu(copy_menu)
 	$(":not(.log-text)[contenteditable='true']").contextMenu(editable_menu)
 	console.log("menu ready")
 })
@@ -343,6 +369,11 @@ $(document).ready(function() {
 		if (e.which == 3) {
 			current_edit = $(this)
 		}
+	} )
+
+	$(document).on('mousedown',".season-icon", function(e){
+			current_encounter = $(this).parents('.expanded-field').attr('data-index')
+			current_season = $(this).attr('data-show')
 	} )
 
 
