@@ -14,10 +14,11 @@
 <div class="pokemon-filter">	
 	<div class="filter-title">Search</div>
 	<input class="filter-input" id="search-text"/>
+
 	<button class="btn -default" id="search-text-btn" type="button">Search</button>	
 
 	<button class="btn -default" id="edit-odds" type="button"><a href="/grotto_odds">Edit Odds</a></button>			
-	
+
 </div>
 
 <div class="pokemon-list spreadsheet" id="grottos">
@@ -31,7 +32,9 @@
 
 	<% @grottos.each_with_index do |grotto, i| %>
 		<div class="expanded-field filterable" data-index="<%= i %>">
+
 			<% grotto_index = i %>
+
 			<div class="expanded-field-main">
 				<div class="grotto-id"><%= i %></div>
 
@@ -51,7 +54,9 @@
 					<% ["common", "uncommon", "rare"].each_with_index do |rarity, i| %>
 						<div class="expanded-left">
 							<div class="expanded-field multi field-header">
+
 								<div class="enc-slot"><%= version.titleize %> <%= @odds["#{rarity}_pok_odds_#{grotto_index}"] %>%</div>
+
 								<div class="enc-lvl">Min</div>
 								<div class="enc-lvl">Max</div>
 								<div class="enc-lvl">F/M</div>
@@ -79,7 +84,9 @@
 					<% ["common", "uncommon", "rare", "superrare"].each_with_index do |rarity, i| %>
 						<div class="expanded-left grotto-item">
 							<div class="expanded-field multi field-header">
+
 								<div class="enc-slot"><%= i_type.titleize %> Items <%= @odds["#{rarity}_#{i_type}_item_odds_#{grotto_index}"] || Grotto.remaining_odd(@odds, grotto_index) %>%</div>
+
 							</div>
 
 							<% (0..3).each do |n| %>

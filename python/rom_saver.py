@@ -90,12 +90,12 @@ if settings["output_arm9"] == True:
 	rom = ndspy.rom.NintendoDSRom(mutable_rom)
 
 
-
 if settings["base_rom"] == "BW2":
 	import mart_writer
 	import grotto_writer
 	mart_writer.output_narc()
 	grotto_writer.output_narc()
+
 
 	grotto_odds = 0
 
@@ -120,6 +120,7 @@ if settings["base_rom"] == "BW2":
 
 	rom.files[36] = overlay36.save(compress=True)
 	print("saved grotto odds")
+
 
 
 

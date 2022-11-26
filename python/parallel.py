@@ -25,7 +25,7 @@ def output(narc):
 	else:		
 		narc_data = open(f'{rom_name}/grotto_odds.bin','rb')
 		# narc_data.close()
-	
+
 	eval(f'output_{narc}_json')(narc_data)
 	print(narc)
 	return narc
@@ -39,6 +39,7 @@ narcs_to_output = ["trdata", "personal", "learnsets", "moves", "encounters", "it
 # narcs_to_output = ["overworlds"]
 if narc_info["base_rom"] == "BW2":
 	narcs_to_output += ["grottos", "marts", "grotto_odds"]
+
 
 rom_name = narc_info["rom_name"]
 

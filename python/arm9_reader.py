@@ -104,3 +104,4 @@ def to_readable(raw, file_name=""):
 def read_bytes(stream, n):
 	return int.from_bytes(stream.read(n), 'little')
 
+

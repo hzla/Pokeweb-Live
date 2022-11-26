@@ -23,12 +23,21 @@ import shutil
 
 #################### CREATE FOLDERS #############################
 print("creating project folders")
+<<<<<<< HEAD
 
 narc_info = {} ##store narc names and file id pairs
 
 with open(f'session_settings.json', "r") as outfile:  
 	narc_info = json.load(outfile) 
 
+=======
+
+narc_info = {} ##store narc names and file id pairs
+
+with open(f'session_settings.json', "r") as outfile:  
+	narc_info = json.load(outfile) 
+
+>>>>>>> bf48b7af49eabd33c9ad162ad6044c482e2be945
 rom_name = narc_info['rom_name'] 
 
 # code.interact(local=dict(globals(), **locals()))
@@ -96,12 +105,14 @@ BW2_NARCS = [["a/0/1/6", "personal"],
 ["a/0/6/5", "move_animations"],
 ["a/0/6/6", "battle_animations"]]
 
+
 BW2_MSG_BANKS = [[488, "moves"],
 [487, "abilities"],
 [486, "pokedex"],
 [383, "tr_classes"],
 [382, "tr_names"],
 [64, "items"]]
+
 
 
 
@@ -134,6 +145,16 @@ for narc in NARCS:
 	with open(f'{rom_name}/narcs/{narc[1]}-{file_id}.narc', 'wb') as f:
 		f.write(file)
 
+print("decompressing arm9")
+
+arm9 = ndspy.codeCompression.decompress(rom.arm9)
+
+with open(f'{rom_name}/arm9.bin', 'wb') as f:
+	f.write(arm9)
+
+
+
+
 
 print("decompressing arm9")
 
@@ -155,6 +176,62 @@ with open(f'{rom_name}/overlay16.bin', 'wb') as f:
 
 B2_SWARM_OFFSET = 0x00050bfc
 B2_GROTTO_ODDS_OFFSET = 0x00055218
+
+################### EXTRACT RELEVANT TEXTS ##################
+print("parsing texts")
+
+msg_file_id = narc_info['message_texts']
+
+for msg_bank in MSG_BANKS:
+	text = msg_reader.parse_msg_bank(f'{rom_name}/narcs/message_texts-{msg_file_id}.narc', msg_bank[0])
+	with codecs.open(f'{rom_name}/texts/{msg_bank[1]}.txt', 'w', encoding='utf_8') as f:
+		for block in text:
+			for entry in block:
+				try:
+					f.write(entry)
+				except UnicodeEncodeError:
+					print("text parse error")
+					# f.write(str(entry.encode("UTF-8")))
+				f.write("\n")
+
+
+##############################################################
+################### WRITE SESSION SETTINGS ###################
+
+settings = {}
+settings.update(narc_info)
+settings["output_arm9"] = False
+settings["fairy"] = False
+
+
+
+with open(f'session_settings.json', "w+") as outfile:  
+	json.dump(settings, outfile) 
+
+#############################################################
+################### Provision Placeholders for alt form sprites ###########
+
+
+if narc_info["base_rom"] == "BW2":
+	# sprites
+	sprite_file_path = f'{rom_name}/narcs/sprites-{settings["sprites"]}.narc'
+	narc = ndspy.narc.NARC.fromFile(sprite_file_path)
+	
+	with open(f'expansion_settings.json', "r") as outfile:  
+		expansion_settings = json.load(outfile) 
+		expansion = expansion_settings["moves"]
+
+	if expansion > 0:
+		moves_file_path = f'{rom_name}/narcs/moves-{settings["moves"]}.narc'
+		animations_file_path = f'{rom_name}/narcs/move_animations-{settings["move_animations"]}.narc'
+		b_animations_file_path = f'{rom_name}/narcs/battle_animations-{settings["battle_animations"]}.narc'
+
+		moves = ndspy.narc.NARC.fromFile(moves_file_path)
+		animations = ndspy.narc.NARC.fromFile(animations_file_path)
+		b_animations = ndspy.narc.NARC.fromFile(b_animations_file_path)
+
+
+		## Expand moves
 
 
 
@@ -183,9 +260,17 @@ for msg_bank in MSG_BANKS:
 					# f.write(str(entry.encode("UTF-8")))
 				f.write("\n")
 
+		# when using move id N > 673, b_animation_id (n - 561) is used
+		# N must be greater than b_animations.files + moves.files = 559 + 114 = 673
 
-##############################################################
-################### WRITE SESSION SETTINGS ###################
+
+		settings["original_move_count"] = len(moves.files)
+		settings["battle_animation_count"] = len(b_animations.files)
+		
+		with open(f'session_settings.json', "w+") as outfile:  
+			json.dump(settings, outfile) 
+
+		# add filler moves
 
 settings = {}
 settings.update(narc_info)

@@ -42,6 +42,8 @@ class Grotto < Pokenarc
 	end
 
 
+
+
 	def self.wilds grotto
 		wilds = []
 

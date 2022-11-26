@@ -643,6 +643,7 @@ div.-active svg * {
 .move-prop.-active *, .move-prop:hover * {
     fill: #bd93f9!important;
     stroke: #bd93f9!important;
+<<<<<<< HEAD
 }
 
 .spreadsheet.pokemon-list {
@@ -714,6 +715,79 @@ div.-active svg * {
     justify-content: end;
 }
 
+=======
+}
+
+.spreadsheet.pokemon-list {
+    padding-top: 100px;
+    margin-top: 0px;
+}
+
+.spreadsheet.pokemon-list#natures {
+    padding-top: 40px;
+}
+
+.spreadsheet-title {
+    width: 100%;
+    text-align: center;
+    height: 60px;
+    color: #f2f2f2;
+    font-size: 24px;
+    line-height: 40px;
+    padding: 10px 0px;
+}
+
+.filterable {
+    background: #282a36;
+    color: #f2f2f2;
+}
+
+.filterable .expanded-card-content, .filterable .expanded-card-subcontent, .filterable .pokemon-card__info {
+    background: #383a59;
+}
+
+.filterable:nth-child(2n) {
+    background: #383a59;
+}
+
+.filterable:nth-child(2n) .expanded-card-content, .filterable:nth-child(2n) .expanded-card-subcontent, .filterable:nth-child(2n) .pokemon-card__info {
+    background: #282a36;
+}
+
+.spreadsheet .expanded-field {
+    padding: 10px 20px;
+}
+
+#encounters.spreadsheet .expanded-card-content .expanded-field {
+    padding: 0px 10px;
+}
+
+.expand-card:hover *, .expand-card.-active * {
+    cursor: pointer;
+    fill: #bd93f9!important;
+}
+
+.expand-card.exp-personal:hover *, .expand-card.exp-personal.-active * {
+    fill: none !important;
+    stroke: #bd93f9!important;
+}
+
+/*.exp-learnset:hover * {
+    fill: #bd93f9!important;
+}
+*/
+
+.personal-icons {
+    display: flex;
+    position: absolute;
+    left: calc(20vw + 120px);
+    top: 40px;
+    flex-wrap: wrap;
+    width: 300px;
+    justify-content: end;
+}
+
+>>>>>>> bf48b7af49eabd33c9ad162ad6044c482e2be945
 .card-icon {
     height: 60px;
     width: 60px;
@@ -986,6 +1060,7 @@ div.-active svg * {
     width: 60px;
 }
 
+
 .odds-header, .odds-item {
     width: 100px;
 }
@@ -997,6 +1072,12 @@ div.-active svg * {
     color:  #f2f2f2;
 }
 
+
+
+.mart-name, .grotto-location {
+    width: 160px;
+    text-align: left;
+}
 
 .mart-inv, .grotto-wilds {
     width: 50%;

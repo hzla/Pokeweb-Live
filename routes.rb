@@ -156,10 +156,6 @@ post '/update' do
 	end
 
 
-
-
-
-
 	Object.const_get(narc_name.capitalize).write_data params["data"]
 
 	if params['data']['field'].include?('odds') && narc_name == 'grotto'
@@ -168,6 +164,7 @@ post '/update' do
 	
 	command = "python python/#{narc_name}_writer.py update #{params['data']['file_name']} #{params['data']['narc']}"
 	p params['data']
+
 	pid = spawn command
 	Process.detach(pid)
 
@@ -179,6 +176,156 @@ post '/update' do
 end
 
 
+########################################## MOVE EDITOR ROUTES ####################
+
+get '/moves' do 	
+	@moves = Move.get_all
+	
+	@poke_data = Personal.poke_data
+	@move_names = Move.get_names_from @moves
+
+	erb :moves
+end
+
+get '/tms' do 	
+	@moves = Move.get_all
+	@tm_moves = Tm.get_tms_from @moves
+	@move_names = Move.get_names_from @moves
+
+	erb :tms
+end
+
+####################### HEADERS ###########################
+
+get '/headers' do 
+	@header_data = Header.get_all
+	@location_names = Header.location_names
+
+	erb :headers
+end
+
+####################### ENCOUNTERS ###########################
+
+get '/encounters' do 
+	@encounters = Encounter.get_all
+	@location_names = Header.location_names
+
+	erb :encounters
+end
+
+post '/encounter_season_copy' do 
+	Encounter.copy_season_to_all params["data"]["id"], params["data"]["season"]
+	p params
+	"200 OK"
+end
+
+####################### TRAINERS ###########################
+
+get '/trainers' do 
+	@trainers = Trdata.get_all
+	@trainer_poks = Trpok.get_all
+	@move_names = Move.get_names_from Move.get_all
+
+	@names = Trdata.names
+	@class_names = Trdata.class_names
+	
+	
+	erb :trainers
+end
+
+get '/trainers/:trainer_id/:pok_id/natures/:desired_iv' do 
+	@natures = Trpok.get_nature_info_for params[:trainer_id], params[:pok_id], params[:desired_iv].to_i 
+	@iv = params[:desired_iv]
+	erb :trpok_natures
+end
+
+post '/create' do
+	narc_name = params['data']['narc']
+	
+	created = Object.const_get(narc_name.capitalize).create params["data"]
+
+	open('logs.txt', 'a') do |f|
+	  f.puts "#{Time.now}:  Project: #{$rom_name} Trainer File #{params['data']['file_name']} created new trainer pok"
+	end
+
+	erb ("_" + narc_name).to_sym, :layout => false, :locals => { narc_name.to_sym => created, "#{narc_name}_index".to_sym => params['data']['sub_index'], :show => "show-flex", :doc_view => false }
+end
+
+get '/trpoks/moves/:trpok_id/:pok_index' do 
+	moves = Trpok.fill_lvl_up_moves params[:lvl], params[:trpok_id], params[:pok_index]
+
+	content_type :json
+  	return { moves: moves }.to_json
+
+end
+
+post '/delete' do 
+	narc_name = params['data']['narc']
+	created = Object.const_get(narc_name.capitalize).delete params["data"]
+	return 200
+end
+
+
+post '/batch_update' do 
+	narc_name = params['data']['narc']
+	
+	Object.const_get(narc_name.capitalize).write_data params["data"], true
+	
+	command = "python python/#{narc_name}_writer.py update #{params['data']['file_names'].join(',')} "
+	pid = spawn command
+	Process.detach(pid)
+
+	open('logs.txt', 'a') do |f|
+
+	  f.puts "#{Time.now}: Project: #{$rom_name} Batch Updated #{narc_name} Files #{params['data']['field']} to #{params['data']['value']} "
+
+	end
+
+	return 200
+end
+
+####################################### ITEMS ###############
+
+get '/items' do
+	@items = Item.get_all
+
+	erb :items
+end
+
+####################################### MARTS ###############
+
+get '/marts' do
+	@marts = Mart.get_all
+
+	erb :marts
+end
+
+####################################### GROTTOS ###############
+
+get '/grottos' do
+	@grottos = Grotto.get_all
+
+	erb :grottos
+end
+
+####################################### TEXTS ###############
+
+
+get '/story_texts' do 
+	@narc_name = 'story_texts'
+	@texts = Text.get_all @narc_name
+	@limit = 0
+
+	erb :texts
+end
+
+get  '/story_texts/search' do 
+	@terms = params[:terms]
+	@narc_name = 'story_texts'
+	@texts = Text.search @narc_name, @terms, params[:ignore_case]
+	@limit = -1
+
+end
 ########################################## MOVE EDITOR ROUTES ####################
 
 get '/moves' do 	

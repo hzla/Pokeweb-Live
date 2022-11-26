@@ -112,7 +112,7 @@ def read_narc_data(data, narc_format, file_count):
 		except:
 			headers[n]["location_name"] = "Unknown Location"
 			print(n)
-	
+
 	#OUTPUT TO JSON
 	if not os.path.exists(f'{ROM_NAME}/json/headers'):
 		os.makedirs(f'{ROM_NAME}/json/headers')
