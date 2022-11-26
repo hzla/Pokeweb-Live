@@ -643,7 +643,7 @@ div.-active svg * {
 .move-prop.-active *, .move-prop:hover * {
     fill: #bd93f9!important;
     stroke: #bd93f9!important;
-<<<<<<< HEAD
+
 }
 
 .spreadsheet.pokemon-list {
@@ -715,7 +715,7 @@ div.-active svg * {
     justify-content: end;
 }
 
-=======
+
 }
 
 .spreadsheet.pokemon-list {
@@ -787,7 +787,7 @@ div.-active svg * {
     justify-content: end;
 }
 
->>>>>>> bf48b7af49eabd33c9ad162ad6044c482e2be945
+
 .card-icon {
     height: 60px;
     width: 60px;

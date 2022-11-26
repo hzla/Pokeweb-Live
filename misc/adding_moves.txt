@@ -19,3 +19,8 @@ CMD_4D
 finishes move
 
 
+MoveCamera 1, 11, 16, 0, 8 
+focus on opponent
+
+MoveCamera 1, 8, 16, 0, 8
+unfocus on opponent
