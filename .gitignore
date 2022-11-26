@@ -13,3 +13,4 @@ logs.txt
 *.zip
 .DS_Store
 *.bin
+*.xdelta
