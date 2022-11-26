@@ -23,21 +23,13 @@ import shutil
 
 #################### CREATE FOLDERS #############################
 print("creating project folders")
-<<<<<<< HEAD
 
 narc_info = {} ##store narc names and file id pairs
 
 with open(f'session_settings.json', "r") as outfile:  
 	narc_info = json.load(outfile) 
 
-=======
 
-narc_info = {} ##store narc names and file id pairs
-
-with open(f'session_settings.json', "r") as outfile:  
-	narc_info = json.load(outfile) 
-
->>>>>>> bf48b7af49eabd33c9ad162ad6044c482e2be945
 rom_name = narc_info['rom_name'] 
 
 # code.interact(local=dict(globals(), **locals()))
