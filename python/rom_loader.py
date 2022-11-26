@@ -256,9 +256,7 @@ for msg_bank in MSG_BANKS:
 		# N must be greater than b_animations.files + moves.files = 559 + 114 = 673
 
 
-		settings["original_move_count"] = len(moves.files)
-		settings["battle_animation_count"] = len(b_animations.files)
-		
+
 		with open(f'session_settings.json', "w+") as outfile:  
 			json.dump(settings, outfile) 
 
