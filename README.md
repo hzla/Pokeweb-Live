@@ -100,9 +100,9 @@ If the above steps succeed the server can now be run by running
 
 Place any roms you wish to edit in root folder of Pokeweb and they should show up in the Load Rom dropdown on the homepage. 
 
-**Make sure the rom name does not contain special characters or spaces. Loading a rom will take you to the**
+**Make sure the rom name does not contain special characters or spaces.**
 
-A map headers list for the rom while the rest of the editors load in the background. Clicking on a tab before it is loaded will cause an error. This can take anywhere between 5-15 seconds. In the future you can select an already loaded rom in the Load Project dropdown.
+Loading a rom will take you to the a map headers list for the rom while the rest of the editors load in the background. Clicking on a tab before it is loaded will cause an error. This can take anywhere between 5-15 seconds. In the future you can select an already loaded rom in the Load Project dropdown.
 
 ![#1abc9c](https://placehold.co/15x15/1abc9c/1abc9c.png)Any thing this color can be clicked to be edited. 
 
