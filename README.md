@@ -4,34 +4,6 @@
     <img src="https://i.imgur.com/CP232tv.png" width="auto" height="400">
 </p>
 
-## Changelog
-
-### 11/24/2022
-
-Add move animation editor and move expansion option
-
-### 11/21/2022
-
-Add experimental kaizo randomizer code
-
-### 11/14/2022
-
-Add trainer class and location info for showdown calc
-
-### 11/13/2022
-
-Showdown Calculator generator implemented
-
-Placeholder data for data expansion removed
-
-Fix bug where editor only reads 20 learnset moves, should now be 25
-
-Fix bug where after using an editor that autocapitalizes data for formatting, it would continue to autocapitalize for every other editor without default capitilzation settings resulting in some editors breaking depending on what you edited beforehand. This caused messed up move data and basically screwed the whole rom preventing it from even exporting (affected editors: evolutions, items, marts, moves)
-
-Fix bug where after deleting a pokemon, the slots above aren't moved down causing issues when adding/removing poks
-
-Fix bug where incorrect evolution method ids were designated as requiring an item, causing certain evolution  methods to not save properly
-
 ## Features
 
 Pokeweb is currently able to edit map headers, items, personals, level-up learnsets, tm/tutor learnsets, tms, moves, encounters, trainers, evolutions, marts, and grottos, and alternate forms.
@@ -47,9 +19,8 @@ Not thoroughly bug tested, was originally made for personal use, use at your own
 ### [Quick Feature Tour](https://streamable.com/cjk04j)
 ### [Calc Export Demo](https://streamable.com/0ym3uy)
 
-
-
 You can join this Pokemon DS Rom Hacking discord server for updates as well as general support for your Pokemon gen IV/V rom hacking needs. [https://discord.gg/cTKQq5Y](https://discord.gg/cTKQq5Y)
+
 ## Windows Installation 
 
 ### [FRESH INSTALLATION DEMONSTRATION VIDEO](https://streamable.com/833yr6)
@@ -125,13 +96,15 @@ If the above steps succeed the server can now be run by running
 	$ ruby routes.rb
 
 
-
 ## Getting Started
 
-Place any roms you wish to edit in root folder of Pokeweb and they should show up in the Load Rom dropdown on the homepage. Make sure the rom name does not contain special characters or spaces. Loading a rom will take you to the a map headers list for the rom while the rest of the editors load in the background. Clicking on a tab before it is loaded will cause an error. This can take anywhere between 5-15 seconds. In the future you can select an already loaded rom in the Load Project dropdown.
+Place any roms you wish to edit in root folder of Pokeweb and they should show up in the Load Rom dropdown on the homepage. 
 
-The rest is pretty simple.
-![#1abc9c](https://via.placeholder.com/15/1abc9c/000000?text=+)Any thing this color can be clicked to be edited. 
+**Make sure the rom name does not contain special characters or spaces. Loading a rom will take you to the**
+
+A map headers list for the rom while the rest of the editors load in the background. Clicking on a tab before it is loaded will cause an error. This can take anywhere between 5-15 seconds. In the future you can select an already loaded rom in the Load Project dropdown.
+
+![#1abc9c](https://placehold.co/15x15/1abc9c/1abc9c.png)Any thing this color can be clicked to be edited. 
 
 If you make an invalid edit the border will turn <span style="color: #ff5555">red</span>, otherwise, your edits are saved automatically. 
 
