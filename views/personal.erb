@@ -19,6 +19,7 @@
 		$.get(window.location.href + "/collection", function(data){
 			$('.pokemon-list').append(data)
 			$('#wait-loading').hide()
+			$(":not(.log-text)[contenteditable='true']").contextMenu(editable_menu)
 		})
 	})	
 </script>

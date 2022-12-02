@@ -366,9 +366,8 @@ $(document).ready(function() {
 
 	
 	$(document).on('mousedown',"[contenteditable='true']", function(e){
-		if (e.which == 3) {
-			current_edit = $(this)
-		}
+		current_edit = $(this)
+
 	} )
 
 	$(document).on('mousedown',".season-icon", function(e){

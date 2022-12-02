@@ -17,8 +17,8 @@ Level Requirement + Empty Party Slot/Pokeball
 Max Beauty
 Item Use + Male
 Item Use + Female
-Item Use + Day
-Item Use + Night
+Level with Item + Day
+Level with Item + Night
 After Learning Specific Move
 Level With Party Member
 Level Requirement + Male
