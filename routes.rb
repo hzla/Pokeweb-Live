@@ -304,6 +304,7 @@ end
 
 get '/grottos' do
 	@grottos = Grotto.get_all
+	@odds = Grotto.odds_data["readable"]
 
 	erb :grottos
 end
