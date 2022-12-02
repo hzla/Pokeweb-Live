@@ -624,6 +624,7 @@ $(document).ready(function() {
 				power = move_data[1]["power"]
 				acc = move_data[1]["accuracy"]
 				effect = move_data[1]["effect"]
+				cat = move_data[1]["category"]
 				
 				type_name_length = 3
 				if ($('.tm-list').length > 0) {
@@ -633,8 +634,8 @@ $(document).ready(function() {
 				row = $(this).parents('.expanded-field')
 
 				row.find('button, .btn').removeClass().addClass('btn').addClass('-active').addClass("-" +type.toLowerCase()).text(type.toUpperCase().slice(0,type_name_length))
-				row.find('.mov-cat img').show().attr("src", "/images/move-" + type.toLowerCase() + ".png")
-
+				
+				row.find('img').show().attr("src", "/images/move-" + cat.toLowerCase() + ".png")
 				row.find('.move-power').text(power)
 				row.find('.move-accuracy').text(acc)
 				row.find('.move-effect').text(effect)
