@@ -122,33 +122,6 @@ If your rom has fairy typing implented change  "fairy": false to "fairy": true, 
 
 After downloading a newer release of Pokeweb, export your current project data using the export link in the navbar. Copy the ROM from the "exports" folder in the old release of Pokeweb into the root folder of the newer release of Pokeweb. You can load the rom as usual from there. 
 
-
-## Showdown Calculator (experimental)
-
-Clicking Battle Calculator will export data and take you to a custom fork of the showdown battle calculator. Pokemon changes (bst, typing, nature, abilities), and move changes (base power, typing, multihit) and trainer sets are auto imported. Changes sometimes require hard refreshing (cntrl + shift + r) the browser before they appear.
-
-Sets will autopopulate with Level, Trainer Class, Trainer Name, and Location encountered in the game if the trainer uses a trainer script (script 3000 + trainer_id for singles, 5000 + trainer_id for doubles). This means trainers that utilize non global scripts to start battles will not have their location shown (ex. gym leaders).
-
-
-If you have added trainer classes or trainer names, please add the files the "trainer_classes_{ROM_NAME}.txt" and "trainer_names_{ROM_NAME}.txt" to "Pokeweb/Reference_Files". For example, if your rom name is "white.nds", replace ROM_NAME with "white" These files should include a line separated list of trainer names and classes. This data can be found in file 382 and 383 in the game text banks using your gen 5 text editor of choice. Otherwise, the calculator will default to vanilla names/classes. Files will need to be added prior to loading a rom in Pokeweb.  
-
-Additional settings can be found in pokeweb/calculator_settings.json.
-
-```
-// pokeweb will only export sets that match these conditions
-
-{
-	"min_ivs": 0, // 0 - 255
-	"has_items": [0,1], // [0] for no, [1] for yes, [0,1] for both
-	"has_moves": [0,1], // [0] for no, [1] for yes, [0,1] for both
-	"battle_types": ["Singles", "Doubles", "Triples", "Rotation"], // "Singles", "Doubles", "Triples", "Rotation"
-	"ai_values": [7,135]
-}
-```
-
-
-If you would like to share the calculator after importing your set data, you can send the public/dist folder and anyone can run the calculator by runnning index.html in their browser. 
-
 ## Smart Randomizer Functions (experimental)
 
 Assumes fairy implemented on base rom, and BW2. Use localhost:4567/patcher for fairy patcher on a clean rom or use a rom with fairy already implemented. Change "fairy": false to true in session_settings.json if you are editing the rom. Included in Pokeweb/Reference_Files is also a xdelta of a clean black2 rom with fairy type added and pokemon center encounters that can be used as a base rom for randomization.  
