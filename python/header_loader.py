@@ -7,7 +7,6 @@ import codecs
 import os
 import json
 import sys
-import msg_reader
 import msg_reader2
 from header_reader import output_headers_json
 from msg_reader2 import output_texts
@@ -72,24 +71,22 @@ for narc in NARCS:
 	with open(f'{rom_name}/narcs/{narc[1]}-{file_id}.narc', 'wb') as f:
 	    f.write(file)
 
+
 #############################################################
 
 ################### EXTRACT RELEVANT TEXTS ##################
 
 msg_file_id = narc_info['message_texts']
 
-for msg_bank in MSG_BANKS:
-	text = msg_reader.parse_msg_bank(f'{rom_name}/narcs/message_texts-{msg_file_id}.narc', msg_bank[0])
+with open(f'{rom_name}/message_texts/texts.json', 'r') as f:
+	messages = json.load(f)
+	
+	for msg_bank in MSG_BANKS:
+		text = messages[msg_bank[0]]
 
-	with codecs.open(f'{rom_name}/texts/{msg_bank[1]}.txt', 'w', encoding='utf_8') as f:
-	    for block in text:
-	    	for entry in block:
-	    		try:
-	    			f.write(entry)
-	    		except UnicodeEncodeError:
-	    			print("error")
-	    			# f.write(str(entry.encode("UTF-8")))
-	    		f.write("\n")
+		with open(f'{rom_name}/texts/{msg_bank[1]}.txt', 'w+') as outfile:
+			for line in text:
+				outfile.write(line[1] + "\n")
 
 
 ##############################################################

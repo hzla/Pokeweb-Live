@@ -1,6 +1,146 @@
 class Action
 
 # skip 161,162,163
+	
+	def self.output_moves
+		moves = Move.get_all
+		vanilla_moves = Move.get_all "documentation/vanilla"
+		
+		p vanilla_moves.length
+		open('documentation/moves.txt', 'w') do |f|
+			moves.each_with_index do |move, i|
+				if move != vanilla_moves[i]
+					move = move[1]
+					vanilla_move = vanilla_moves[i][1]
+
+					f.puts "==================="
+					f.puts move["name"].move_titleize
+					f.puts "==================="
+
+					
+					f.puts "(Old)"
+					f.puts "#{vanilla_move["power"]}  BP || #{vanilla_move["accuracy"]} ACC || #{vanilla_move["category"]} || #{vanilla_move["type"]} || #{vanilla_move["pp"]} PP"
+
+					f.puts "Effect: #{vanilla_move["effect"]}"
+					f.puts
+
+		
+					f.puts "(New)"
+					f.puts "#{move["power"]}  BP || #{move["accuracy"]} ACC || #{move["category"]} || #{move["type"]} || #{move["pp"]} PP"
+
+					f.puts "Effect: #{move["effect"]}"
+					f.puts
+				end
+			end
+		end
+		"200 OK"
+	end
+
+	def self.output_docs
+		poks = Personal.poke_data
+		vanilla_poks = Personal.poke_data "documentation/vanilla"
+		evolutions = Evolution.get_all
+
+
+		open('documentation/pokedex.txt', 'w') do |f|
+		  	poks.each_with_index do |pok, i|
+		  		next if i == 0
+
+		  		if pok && pok["base_hp"]
+			  		f.puts "==================="
+			  		f.puts "#{i} - #{pok["name"].name_titleize}"
+			  		f.puts "==================="
+			  		
+			  		if format_types(pok) != format_types(vanilla_poks[i])
+			  			f.puts "Old: " + format_types(vanilla_poks[i])
+			  			f.puts "New: " + format_types(pok)
+			  		else
+			  			f.puts format_types(pok)
+			  		end
+			  		f.puts
+
+			  		if format_abilities(pok) != format_abilities(vanilla_poks[i])
+			  			f.puts "Old: " + format_abilities(vanilla_poks[i])
+			  			f.puts "New: " + format_abilities(pok)
+			  		else
+			  			f.puts format_abilities(pok)
+			  		end
+			  		
+			  		formatted_stats = format_stats(pok)
+			  		formatted_vanilla_stats = format_stats(vanilla_poks[i])
+			  		
+			  		f.puts
+			  		if formatted_stats != formatted_vanilla_stats	
+			  			f.puts "Old: " + formatted_vanilla_stats
+			  			f.puts "New: " + formatted_stats
+			  		else
+			  			f.puts formatted_stats
+			  		end
+
+			  		f.puts
+
+			  		evo = evolutions[i]
+
+			  		(0..6).each do |n|
+			  			if evo["target_#{n}"] != ""
+			  				target = evo["target_#{n}"]
+			  				meth = evo["method_#{n}"]
+			  				param = evo["param_#{n}"]
+			  				f.puts "Evolves to #{target.name_titleize} by #{meth} / #{param}"
+			  			end
+			  		end
+			 
+			  		f.puts 
+			  		f.puts "Level Up:"
+			  		learnset = pok["learnset"]
+			  		n = 0
+			  		until !learnset["move_id_#{n}"]
+			  			f.puts "#{learnset["lvl_learned_#{n}"]} - #{learnset["move_id_#{n}"].move_titleize}"
+			  			n += 1
+			  		end
+			  		f.puts 
+			  		f.puts
+			  	end
+			end
+		end
+		"success"	
+	end
+
+	def self.output_encs
+		encs = Encounter.level_sorted
+
+		open('documentation/encounters.txt', 'w') do |f|
+			encs.each do |enc|
+				if enc["locations"] and !enc["locations"].empty?
+					f.puts "=================="
+					f.puts enc["locations"].join(" / ").gsub(/\(.*\)/, "")
+					f.puts "=================="
+					f.puts
+				end
+
+			end
+		end
+		"200 OK"
+	end
+
+	def self.format_stats pok
+		stats = [pok["base_hp"], pok["base_atk"],  pok["base_def"], pok["base_spatk"], pok["base_spdef"], pok["base_speed"]]
+		bst = stats.inject(&:+)
+		formatted = ""
+
+		["hp", "atk", "def", "spatk", "spdef", "speed"].each do |stat|
+			formatted += "#{stat.downcase} #{pok["base_#{stat}"]}/ "
+		end
+		formatted += "(#{bst}) BST"   
+	end
+
+	def self.format_abilities pok
+		[pok["ability_1"], pok["ability_2"], pok["ability_3"]].join(" / ").name_titleize
+	end
+
+	def self.format_types pok
+		[pok["type_1"], pok["type_2"]].uniq.join(" ").name_titleize
+	end
 
 	def self.rand_teams
 		# determine gym and e4 types
@@ -62,9 +202,7 @@ class Action
        			p "randomizing trainer #{j}, gym #{i}"
 
 
-       # 			#avoid gym trainers/leader and rival1
-       	
-   
+        			#avoid gym trainers/leader and rival1   
        			# weaker trainers before gym 1
        			below_gym = (i == 0 ? 80 : 50)
        			pok_count = (i == 0 ? rand(2) + 3 : rand(3) + 4)

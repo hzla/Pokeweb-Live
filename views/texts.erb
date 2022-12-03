@@ -20,12 +20,12 @@
 				</div>
 			</div>
 			<div class="text-bank">
-				<% text[0..-1].each do |entry| %>
+				<% text[0..@limit].each do |entry| %>
 					<div class="expanded-field filterable">
 						<div class="expanded-field-main">
 								<div class="msg-id">MSG <%= entry[0].split("_")[1] %></div>
-									<div class="log-text"><%= entry[1] %></div><!-- 
-							<%= field "bank_#{i}_entry_#{entry[0]}", 'log-text no-validate', {value: entry[1],  narc: "text"} %> -->
+									
+							<%= field "bank_#{i}_entry_#{entry[0]}", 'log-text no-validate', {value: entry[1],  narc: "text"} %>
 						</div>
 					</div>		
 				<% end %>

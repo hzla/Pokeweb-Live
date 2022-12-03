@@ -46,6 +46,13 @@ class Encounter < Pokenarc
 		max
 	end
 
+	def self.level_sorted
+		data = get_all
+		get_all.sort_by do |enc|
+			get_max_level(enc["index"])
+		end
+	end
+
 	def self.copy_season_to_all id, copied_season
 		enc_path = "#{$rom_name}/json/encounters/#{id}.json"
 		enc_data = get_data(enc_path, "all")
@@ -101,6 +108,7 @@ class Encounter < Pokenarc
 				end
 			end
 			encounter_data[i]["wilds"] = wilds.reject(&:empty?).uniq
+			encounter_data[i]["index"] = i
 		end
 		encounter_data
 	end

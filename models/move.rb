@@ -1,9 +1,10 @@
 require 'json'
 class Move < Pokenarc
 
-	def self.get_all
+	def self.get_all directory=nil
 		moves = {}
-		Dir["#{$rom_name}/json/moves/*.json"].each do |move|
+		directory = $rom_name if !directory
+		Dir["#{directory}/json/moves/*.json"].each do |move|
 			move_data = JSON.parse(File.open(move, "r"){|f| f.read})["readable"]
 
 			move_id = move_data["index"]

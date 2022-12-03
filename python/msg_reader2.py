@@ -7,8 +7,19 @@ import io
 import math
 import struct, re
 import json
+import io as StringIO
+# import unicodeparser
 from binary16 import binaryreader, binarywriter
 
+
+def set_global_vars():
+    global ROM_NAME, NARC_FORMAT, STORY_NARC_FILE_ID,MESSAGE_NARC_FILE_ID
+    
+    with open(f'session_settings.json', "r") as outfile:  
+        settings = json.load(outfile) 
+        ROM_NAME = settings['rom_name']
+        STORY_NARC_FILE_ID = settings["story_texts"]
+        MESSAGE_NARC_FILE_ID = settings["message_texts"]
 
 
 def gen5get(f):
@@ -114,6 +125,131 @@ def gen5get(f):
             texts.append([e, text, initial_key])
     return texts
 
+def gen5put(texts):
+    textofs = {}
+    sizes = {}
+    comments = {}
+    textflags = {}
+    blockwriters = {}
+    for entry in texts:
+        match = re.match("([^_]+)_([0-9]+)(.*)", entry[0])
+        if not match:
+            continue
+        blockid = match.group(1)
+        textid = int(match.group(2))
+        flags = match.group(3)
+        text = entry[1]
+        if blockid.lower() == "comment":
+            comments[textid] = text
+            continue
+        blockid = int(blockid)
+        if blockid not in blockwriters:
+            blockwriters[blockid] = binarywriter()
+            textofs[blockid] = {}
+            sizes[blockid] = {}
+            textflags[blockid] = {}
+        textofs[blockid][textid] = blockwriters[blockid].pos()
+        dec = []
+        while text:
+            c = text[0]
+            text = text[1:]
+            if c == '\\':
+                c = text[0]
+                text = text[1:]
+                if c == 'x':
+                    n = int(text[:4], 16)
+                    text = text[4:]
+                elif c == 'n':
+                    n = 0xFFFE
+                elif c == 'r':
+                    dec.append(0xF000)
+                    dec.append(0xbe01)
+                    dec.append(0)
+                    continue
+                elif c == 'f':
+                    dec.append(0xF000)
+                    dec.append(0xbe00)
+                    dec.append(0)
+                    continue
+                else:
+                    n = 1
+                dec.append(n)
+            elif c == 'V':
+                if text[:2] == "AR":
+                    text = text[3:]
+                    eov = text.find(")")
+                    args = list(map(int, text[:eov].split(",")))
+                    text = text[eov+1:]
+                    dec.append(0xF000)
+                    dec.append(args.pop(0))
+                    dec.append(len(args))
+                    for a in args:
+                        dec.append(a)
+                else:
+                    dec.append(ord('V'))
+            else:
+                dec.append(ord(c))
+        flag = 0
+        for i in range(16):
+            if chr(65+i) in flags:
+                flag |= 1<<i
+        textflags[blockid][textid] = flag
+        if "c" in flags:
+            comp = [0xF100]
+            container = 0
+            bit = 0
+            while dec:
+                c = dec.pop(0)
+                if c>>9:
+                    print("Illegal compressed character: %i"%c)
+                container |= c<<bit
+                bit += 9
+                while bit >= 16:
+                    bit -= 16
+                    comp.append(container&0xFFFF)
+                    container >>= 16
+            container |= 0xFFFF<<bit
+            comp.append(container&0xFFFF)
+            dec = comp[:]
+        key = 0
+        enc = []
+        while dec:
+            char = dec.pop() ^ key
+            key = ((key>>3)|(key<<13))&0xFFFF
+            enc.insert(0, char)
+        enc.append(key^0xFFFF)
+        sizes[blockid][textid] = len(enc)
+        for e in enc:
+            blockwriters[blockid].write16(e)
+    numblocks = max(blockwriters)+1
+    if numblocks != len(blockwriters):
+        raise KeyError
+    numentries = 0
+    for block in blockwriters:
+        numentries = max(numentries, max(textofs[block])+1)
+    offsets = []
+    baseofs = 12+4*numblocks
+    textblock = binarywriter()
+    for i in range(numblocks):
+        data = blockwriters[i].toarray()
+        offsets.append(baseofs+textblock.pos())
+        relofs = numentries*8+4
+        textblock.write32(len(data)+relofs)
+        for j in range(numentries):
+            textblock.write32(textofs[i][j]+relofs)
+            textblock.write16(sizes[i][j])
+            textblock.write16(textflags[i][j])
+        textblock.writear(data)
+    writer = binarywriter()
+    writer.write16(numblocks)
+    writer.write16(numentries)
+    writer.write32(textblock.pos())
+    writer.write32(0)
+    for i in range(numblocks):
+        writer.write32(offsets[i])
+    writer.writear(textblock.toarray())
+    return writer.tostring()
+
 def output_texts(folder, narc):
     n = 0
     texts = []
@@ -123,6 +259,49 @@ def output_texts(folder, narc):
         texts.append(block)
     with codecs.open(f'{folder}/texts.json', 'w', encoding='utf_8') as f:
         json.dump(texts, f)
+
+
+
+def output_narc():
+    set_global_vars()
+
+    with codecs.open(f'{ROM_NAME}/message_texts/texts.json', 'r', encoding='utf_8') as f:
+        texts = json.load(f)
+        narcfile_path = f'{ROM_NAME}/narcs/message_texts-{MESSAGE_NARC_FILE_ID}.narc'
+        narc = ndspy.narc.NARC.fromFile(narcfile_path)
+
+        for idx, text in enumerate(texts):
+            try:
+                data = gen5put(text)
+                narc.files[idx] = data
+            except:
+                # print(idx)
+                continue
+
+        old_narc = open(narcfile_path, "wb")
+        old_narc.write(narc.save()) 
+
+    with codecs.open(f'{ROM_NAME}/story_texts/texts.json', 'r', encoding='utf_8') as f:
+        texts = json.load(f)
+        narcfile_path = f'{ROM_NAME}/narcs/story_texts-{STORY_NARC_FILE_ID}.narc'
+        narc = ndspy.narc.NARC.fromFile(narcfile_path)
+
+        for idx, text in enumerate(texts):
+            try:
+                data = gen5put(text)
+                narc.files[idx] = data
+            except:
+                # print(idx)
+                continue
+
+        old_narc = open(narcfile_path, "wb")
+        old_narc.write(narc.save()) 
+
+    print("texts narc saved")
+
+
+
+
 
 
 

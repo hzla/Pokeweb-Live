@@ -10,7 +10,7 @@ from os import path
 import json
 import sys
 
-import msg_reader
+
 import personal_writer
 import learnset_writer
 import move_writer
@@ -21,6 +21,7 @@ import trdata_writer
 import trpok_writer
 import item_writer
 import evolution_writer
+import msg_reader2
 
 # code.interact(local=dict(globals(), **locals()))
 
@@ -42,6 +43,7 @@ trpok_writer.output_narc()
 trdata_writer.output_narc()
 item_writer.output_narc()
 evolution_writer.output_narc()
+msg_reader2.output_narc()
 
 with open(f"{rom_name.split('/')[1]}.nds", 'rb') as f:
     data = f.read()
@@ -61,6 +63,8 @@ with open(f'session_settings.json', "r") as outfile:
 	trpok_narc_file_id = settings["trpok"]
 	item_narc_file_id = settings["items"]
 	evolution_narc_file_id = settings["evolutions"]
+	story_texts_narc_file_id = settings["story_texts"]
+	message_texts_narc_file_id = settings["message_texts"]
 	if settings["base_rom"] == "BW2":
 		mart_narc_file_id = settings["marts"]
 		mart_counts_narc_file_id = settings["mart_counts"]
@@ -134,6 +138,8 @@ trdata_narc_filepath = f'{rom_name}/narcs/trdata-{trdata_narc_file_id}.narc'
 trpok_narc_filepath = f'{rom_name}/narcs/trpok-{trpok_narc_file_id}.narc'
 item_narc_filepath = f'{rom_name}/narcs/items-{item_narc_file_id}.narc'
 evolution_narc_filepath = f'{rom_name}/narcs/evolutions-{evolution_narc_file_id}.narc'
+message_texts_narc_filepath = f'{rom_name}/narcs/message_texts-{message_texts_narc_file_id}.narc'
+story_texts_narc_filepath = f'{rom_name}/narcs/story_texts-{story_texts_narc_file_id}.narc'
 
 if settings["base_rom"] == "BW2":
 	mart_narc_filepath = f'{rom_name}/narcs/marts-{mart_narc_file_id}.narc'
@@ -152,6 +158,8 @@ rom.files[trdata_narc_file_id] = open(trdata_narc_filepath, 'rb').read()
 rom.files[trpok_narc_file_id] = open(trpok_narc_filepath, 'rb').read()
 rom.files[item_narc_file_id] = open(item_narc_filepath, 'rb').read()
 rom.files[evolution_narc_file_id] = open(evolution_narc_filepath, 'rb').read()
+rom.files[message_texts_narc_file_id] = open(message_texts_narc_filepath, 'rb').read()
+rom.files[story_texts_narc_file_id] = open(story_texts_narc_filepath, 'rb').read()
 
 if settings["base_rom"] == "BW2":
 	rom.files[mart_narc_file_id] = open(mart_narc_filepath, 'rb').read()

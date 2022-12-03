@@ -150,7 +150,8 @@ $(document).ready(function() {
 
 	$(document).on('click', '#search-textbanks-btn', function(){	
 		terms = $('#search-textbanks').val() 
-		url = `/story_texts/search?terms=${terms}`
+		text_bank = window.location.href.split("/")[3].split("_")[0]
+		url = `/${text_bank}_texts/search?terms=${terms}`
 		if ($('.filter-check input:checked').length > 0) {	
 			url += '&ignore_case=true'
 		}
@@ -160,13 +161,16 @@ $(document).ready(function() {
     $(document).on('keypress', '#search-textbanks', function(e){
 	    if(e.which == 13) {
 	    	terms = $('#search-textbanks').val() 
-			url = `/story_texts/search?terms=${terms}`
+			text_bank = window.location.href.split("/")[3].split("_")[0]
+			url = `/${text_bank}_texts/search?terms=${terms}`
 			if ($('.filter-check input:checked').length > 0) {	
 				url += '&ignore_case=true'
 			}
 			location.replace(url);
 		    }
 	});
+
+
 	///////////////////////////////////////////////////////////////////////
 
 

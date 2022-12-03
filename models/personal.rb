@@ -1,13 +1,15 @@
 class Personal
 
-	def self.poke_data
-		files = Dir["#{$rom_name}/json/personal/*.json"]
+	def self.poke_data directory=nil
+		directory = $rom_name if !directory
+
+		files = Dir["#{directory}/json/personal/*.json"]
 		file_count = files.length
 
 		data = []
 
 		(0..file_count - 1).each do |n|
-			file_path = "#{$rom_name}/json/personal/#{n}.json"
+			file_path = "#{directory}/json/personal/#{n}.json"
 			data << get_data_for(file_path)
 		end
 

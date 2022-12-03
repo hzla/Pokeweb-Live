@@ -320,11 +320,13 @@ get '/story_texts' do
 	erb :texts
 end
 
-get  '/story_texts/search' do 
+get '/story_texts/search' do 
 	@terms = params[:terms]
 	@narc_name = 'story_texts'
 	@texts = Text.search @narc_name, @terms, params[:ignore_case]
 	@limit = -1
+
+	erb :texts
 
 end
 ########################################## MOVE EDITOR ROUTES ####################
@@ -467,23 +469,25 @@ end
 ####################################### TEXTS ###############
 
 
-get '/story_texts' do 
-	@narc_name = 'story_texts'
-	@texts = Text.get_all @narc_name
-	@limit = 0
+# get '/story_texts' do 
+# 	@narc_name = 'story_texts'
+# 	# @texts = Text.get_all @narc_name
+# 	# @texts = Text.search @narc_name, "Patrat", params[:ignore_case]
+# 	# p @texts[0]
+# 	@limit = 0
 
-	erb :texts
-end
+# 	erb :texts
+# end
 
-get  '/story_texts/search' do 
-	@terms = params[:terms]
-	@narc_name = 'story_texts'
-	@texts = Text.search @narc_name, @terms, params[:ignore_case]
-	@limit = -1
+# get '/story_texts/search' do 
+# 	@terms = params[:terms]
+# 	@narc_name = 'story_texts'
+# 	@texts = Text.search @narc_name, "look", params[:ignore_case]
+# 	@limit = -1
+# 	"200 OK"
+# 	erb :texts
 
-	erb :texts
-
-end
+# end
 
 get '/info_texts' do 
 	@narc_name = 'message_texts'
@@ -493,7 +497,7 @@ get '/info_texts' do
 	erb :texts
 end
 
-get  '/info_texts/search' do 
+get '/info_texts/search' do 
 	@terms = params[:terms]
 	@narc_name = 'message_texts'
 	@texts = Text.search @narc_name, @terms, params[:ignore_case]

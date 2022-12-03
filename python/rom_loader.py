@@ -7,7 +7,7 @@ import codecs
 import os
 import json
 import sys
-import msg_reader
+
 
 from multiprocessing import Pool
 import subprocess
@@ -148,17 +148,6 @@ with open(f'{rom_name}/arm9.bin', 'wb') as f:
 
 
 
-
-
-print("decompressing arm9")
-
-arm9 = ndspy.codeCompression.decompress(rom.arm9)
-
-with open(f'{rom_name}/arm9.bin', 'wb') as f:
-	f.write(arm9)
-
-
-
 overlay36 = rom.loadArm9Overlays([36])[36]
 overlay16 = rom.loadArm9Overlays([16])[16]
 
@@ -176,17 +165,20 @@ print("parsing texts")
 
 msg_file_id = narc_info['message_texts']
 
-for msg_bank in MSG_BANKS:
-	text = msg_reader.parse_msg_bank(f'{rom_name}/narcs/message_texts-{msg_file_id}.narc', msg_bank[0])
-	with codecs.open(f'{rom_name}/texts/{msg_bank[1]}.txt', 'w', encoding='utf_8') as f:
-		for block in text:
-			for entry in block:
-				try:
-					f.write(entry)
-				except UnicodeEncodeError:
-					print("text parse error")
-					# f.write(str(entry.encode("UTF-8")))
-				f.write("\n")
+
+with open(f'{rom_name}/message_texts/texts.json', 'r') as f:
+	messages = json.load(f)
+	
+	for msg_bank in MSG_BANKS:
+		text = messages[msg_bank[0]]
+
+		with open(f'{rom_name}/texts/{msg_bank[1]}.txt', 'w+') as outfile:
+			for line in text:
+				outfile.write(line[1] + "\n")
+
+	
+
+
 
 
 ##############################################################
@@ -233,46 +225,6 @@ with open(f'{rom_name}/grotto_odds.bin', 'wb') as f:
 	f.write(overlay36.data[B2_GROTTO_ODDS_OFFSET:(B2_GROTTO_ODDS_OFFSET + 200)])
 
 # code.interact(local=dict(globals(), **locals()))
-
-
-#############################################################
-
-################### EXTRACT RELEVANT TEXTS ##################
-print("parsing texts")
-
-msg_file_id = narc_info['message_texts']
-
-for msg_bank in MSG_BANKS:
-	text = msg_reader.parse_msg_bank(f'{rom_name}/narcs/message_texts-{msg_file_id}.narc', msg_bank[0])
-	with codecs.open(f'{rom_name}/texts/{msg_bank[1]}.txt', 'w', encoding='utf_8') as f:
-		for block in text:
-			for entry in block:
-				try:
-					f.write(entry)
-				except UnicodeEncodeError:
-					print("text parse error")
-					# f.write(str(entry.encode("UTF-8")))
-				f.write("\n")
-
-		# when using move id N > 673, b_animation_id (n - 561) is used
-		# N must be greater than b_animations.files + moves.files = 559 + 114 = 673
-
-
-
-		with open(f'session_settings.json', "w+") as outfile:  
-			json.dump(settings, outfile) 
-
-		# add filler moves
-
-settings = {}
-settings.update(narc_info)
-settings["output_arm9"] = False
-settings["fairy"] = False
-
-
-
-with open(f'session_settings.json', "w+") as outfile:  
-	json.dump(settings, outfile) 
 
 #############################################################
 ################### Provision Placeholders for alt form sprites ###########
