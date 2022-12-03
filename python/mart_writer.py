@@ -105,7 +105,7 @@ def to_raw(readable):
 	raw = copy.deepcopy(readable)
 
 	for n in range(0,20):
-		raw[f'item_{n}'] = ITEMS.index(readable[f'item_{n}'])
+		raw[f'item_{n}'] = ITEMS.index(readable[f'item_{n}'].replace('Ã©', 'é'))
 
 
 	return raw

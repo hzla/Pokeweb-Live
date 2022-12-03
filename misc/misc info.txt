@@ -152,3 +152,58 @@ let's do one more. i have electric attacking bug, so 12*17 + 6 + 1 is 211. so wo
 
 NARC (a/0/5/7)
 starters ^
+
+
+
+a089 is the trainer text table
+is one blob
+2326 entries each corresponding to text bank 381
+
+u16 trid 
+u16 text_type
+
+
+a090 is trainer lookup table
+
+u16 offset of trid in a089
+
+
+When addding trainer text to new trainer
+
+add entry to text bank 381
+add entry to end of a089 and add offset to end of a090 (4 * entry_id)
+
+
+
+When addding trainer text to existing trainer
+
+
+
+insert entry to text bank 381 at offset found in a090 / 4
+insert entry to a089 at offset found in a090
+update all offset after in a090 to +4 
+
+0x00 - before battle
+0x01 - battle - after loss
+0x02 - field - after loss
+0x03 - before battle - double pair member 1
+0x05 - field - after loss double pair member 1
+0x06 - reject double battle (not enough pokemon) pair member 1
+0x07 - before battle - double pair member 2
+0x09 - field - after loss double pair member 2
+0x0a - reject double battle pair member 2
+0x0d - healer before heal
+0x0e - healer after heal
+0x0f - after battle item text
+0x10 - another item text?
+0x11 - battle - after first hit
+0x13 - battle - last pokemon
+0x14 - battle - less than half HP
+0x18 - reject triple battle (not enough pokemon)
+
+
+
+
+
+
+

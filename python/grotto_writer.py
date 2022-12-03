@@ -119,7 +119,7 @@ def to_raw(readable):
 	for item_type in ["normal", "hidden"]:
 		for rarity in ["superrare", "rare", "uncommon", "common"]:
 			for n in range(0,4):
-				raw[f'{item_type}_{rarity}_item_{n}'] = ITEMS.index(readable[f'{item_type}_{rarity}_item_{n}'])
+				raw[f'{item_type}_{rarity}_item_{n}'] = ITEMS.index(readable[f'{item_type}_{rarity}_item_{n}'].replace('Ã©', 'é'))
 
 
 	return raw

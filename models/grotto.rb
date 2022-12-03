@@ -10,6 +10,8 @@ class Grotto < Pokenarc
 		@@narc_name = "grottos"
 		@@upcases = ["pok"]
 
+		p data
+		p "/////////"
 		if data["field"].include?("odds")
 			write_odds data
 		else

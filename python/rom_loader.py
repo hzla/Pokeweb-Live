@@ -61,6 +61,8 @@ BW_NARCS = [["a/0/1/6", "personal"],
 ["a/0/6/6", "move_animations"],
 ["a/0/6/7", "battle_animations"],
 ["a/0/2/4", "items"],
+["a/0/9/0", "trtext_table"],
+["a/0/9/1", "trtext_offsets"],
 ["a/0/9/2", "trdata"],
 ["a/0/9/3", "trpok"],
 ["a/1/2/6", "encounters"],
@@ -85,6 +87,8 @@ BW2_NARCS = [["a/0/1/6", "personal"],
 ["a/0/2/0", "babyforms"],
 ["a/0/2/1","moves"],
 ["a/0/2/4", "items"],
+["a/0/8/9", "trtext_table"],
+["a/0/9/0", "trtext_offsets"],
 ["a/0/9/1", "trdata"],
 ["a/0/9/2", "trpok"],
 ["a/1/2/7", "encounters"],
@@ -136,6 +140,44 @@ for narc in NARCS:
 	
 	narc_info[narc[1]] = file_id # store file ID for later
 	
+	if narc[1] == "trtext_table":
+		data = parsed_file.files[0]
+		offset = 0
+		json_data = []
+
+		while offset < len(data):
+			entry = data[offset:(offset + 4)]
+			tr_id = int.from_bytes(entry[:2], 'little')
+			text_type = int.from_bytes(entry[2:], 'little')
+			json_data.append([tr_id, text_type])
+
+
+			offset += 4
+
+		with open(f'{rom_name}/texts/trtexts.json', 'w') as f:
+			json.dump(json_data, f)
+
+	if narc[1] == "trtext_offsets":
+		data = parsed_file.files[0]
+		offset = 0
+		json_data = []
+
+		while offset < len(data):
+			entry = data[offset:(offset + 2)]
+			ofs = int.from_bytes(entry, 'little')
+			json_data.append(ofs)
+			offset += 2
+
+		with open(f'{rom_name}/texts/trtexts_offsets.json', 'w') as f:
+			json.dump(json_data, f)
+
+
+
+
+
+
+
+
 	with open(f'{rom_name}/narcs/{narc[1]}-{file_id}.narc', 'wb') as f:
 		f.write(file)
 

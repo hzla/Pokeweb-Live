@@ -97,13 +97,19 @@ def write_readable_to_raw(file_name, narc_name="evolutions"):
 def to_raw(readable):
 	raw = copy.deepcopy(readable)
 
+	# print(raw)
+	# code.interact(local=dict(globals(), **locals()))
 	for n in range(0,7):
 		
 		raw[f'method_{n}'] = METHODS.index(readable[f'method_{n}'])
-		raw[f'target_{n}'] = POKEDEX.index(readable[f'target_{n}'].upper())
+		
+		if readable[f'target_{n}'].upper() in POKEDEX:
+			raw[f'target_{n}'] = POKEDEX.index(readable[f'target_{n}'].upper())
+		else:
+			raw[f'target_{n}'] = 0
 
 		if raw[f'method_{n}'] in [6,8,17,18,19,20]:
-			raw[f'param_{n}'] = ITEMS.index(raw[f'param_{n}'])
+			raw[f'param_{n}'] = ITEMS.index(raw[f'param_{n}'].replace('Ã©', 'é'))
 		elif raw[f'method_{n}'] == 21:
 			raw[f'param_{n}'] = MOVES.index(readable[f'param_{n}'].upper())
 		elif raw[f'method_{n}'] == 22:

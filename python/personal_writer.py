@@ -142,9 +142,9 @@ def to_raw(readable):
 	raw["type_1"] = TYPES.index(readable["type_1"])
 	raw["type_2"] = TYPES.index(readable["type_2"])
 
-	item_1 = readable["item_1"].encode("latin_1").decode("utf_8")
-	item_2 = readable["item_2"].encode("latin_1").decode("utf_8")
-	item_3 = readable["item_3"].encode("latin_1").decode("utf_8")
+	item_1 = readable["item_1"].encode("latin_1").decode("utf_8").replace('Ã©', 'é')
+	item_2 = readable["item_2"].encode("latin_1").decode("utf_8").replace('Ã©', 'é')
+	item_3 = readable["item_3"].encode("latin_1").decode("utf_8").replace('Ã©', 'é')
 
 	readable["item_1"] = item_1
 	readable["item_2"] = item_2

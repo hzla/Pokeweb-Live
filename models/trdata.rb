@@ -17,6 +17,24 @@ class Trdata < Pokenarc
 		super
 	end
 
+	def self.get_texts file_name #, offset, text_table, text_bank
+		offset = JSON.parse(File.open("#{$rom_name}/texts/trtexts_offsets.json", "r"){|f| f.read})[file_name] / 4
+
+		text_table = JSON.parse(File.open("#{$rom_name}/texts/trtexts.json", "r"){|f| f.read})[offset..-1]
+		text_bank = JSON.parse(File.open("#{$rom_name}/message_texts/texts.json", "r"){|f| f.read})[381]
+		texts = {}
+
+		text_table.each_with_index do |text, i|
+			break if text_table[i][0] != file_name
+			texts[text_table[i][1]] = text_bank[offset + i]
+
+		end
+		texts
+	end
+
+	def self.update_text tr_id, text_data
+	end
+
 
 	def self.get_all_mods
 		@@narc_name = "trdata"

@@ -42,7 +42,7 @@ class RomInfo
 
 	def self.items
 		# encoding for latin text ISO8859-1
-		File.open("#{$rom_name}/texts/items.txt", encoding: "ISO8859-1"){|f| f.read}.split("\n")
+		File.open("#{$rom_name}/texts/items.txt"){|f| f.read}.split("\n")
 	end
 
 	def self.egg_groups
