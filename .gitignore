@@ -14,3 +14,4 @@ logs.txt
 .DS_Store
 *.bin
 *.xdelta
+/documentation/*.txt
