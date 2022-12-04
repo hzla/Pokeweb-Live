@@ -150,8 +150,9 @@ $(document).ready(function() {
 
 	$(document).on('click', '#search-textbanks-btn', function(){	
 		terms = $('#search-textbanks').val() 
-		text_bank = window.location.href.split("/")[3].split("_")[0]
-		url = `/${text_bank}_texts/search?terms=${terms}`
+		var text_bank = window.location.href.split("/")[3].split("_")[0]
+
+		var url = `/${text_bank}_texts/search?terms=${terms}`
 		if ($('.filter-check input:checked').length > 0) {	
 			url += '&ignore_case=true'
 		}
@@ -178,14 +179,14 @@ $(document).ready(function() {
 	
 	// delay to bind to replaced svgs
 
-	$(document).on('dblclick', '.spreadsheet .filterable', function(){
-		element = $(this)
-		$([document.documentElement, document.body]).animate({
-	        scrollTop: (element.offset().top - 100)
-	    }, 100);
-	    element.find('.expand-action').first().click()
-	    clearSelection()
-	})
+	// $(document).on('dblclick', '.spreadsheet .filterable', function(){
+	// 	element = $(this)
+	// 	$([document.documentElement, document.body]).animate({
+	//         scrollTop: (element.offset().top - 100)
+	//     }, 100);
+	//     element.find('.expand-action').first().click()
+	//     clearSelection()
+	// })
 
 	$(document).on('dblclick', '.spreadsheet .text-header', function(){
 		element = $(this)
@@ -371,6 +372,8 @@ $(document).ready(function() {
 	
 	$(document).on('mousedown',"[contenteditable='true']", function(e){
 		current_edit = $(this)
+		initial_value = $(this).text()
+		console.log(initial_value)
 
 	} )
 
@@ -439,9 +442,57 @@ $(document).ready(function() {
 
 			}
 		} else {
-			data["narc"] = $('#texts').attr('data-narc')
+			data["narc"] = $('#texts').attr('data-narc')			
 			data["narc_const"] = "text"
 			data["file_name"] = data["field"]
+			if ($(this).hasClass('empty-text')) {
+				data['narc_const'] = 'trdata'
+				data['trtext'] = true
+				data["file_name"] = index
+				var old_field_name = $(this).attr('data-field-name')
+
+				
+				if (data["value"] == "" && initial_value == "") {
+					// do nothing if no change
+					console.log("already empty no change")
+				} else if (data["value"] == "" && initial_value != "") {
+					// if deleting
+					console.log("deleting")
+					var text_id = parseInt(data["field"].split("_").slice(-1)[0])
+					$('.empty-text').each(function() {
+						var field_name = $(this).attr('data-field-name')
+						var field_text_id = parseInt(field_name.split("_").slice(-1)[0])
+
+						if (field_text_id >= text_id) {
+							var new_field_name = field_name.replace(`entry_${field_text_id}`, `entry_${field_text_id - 1}`)
+							$(this).attr('data-field-name', new_field_name)
+						}
+					})
+					$(this).attr('data-field-name', old_field_name)
+
+
+				} else if (data["value"] != "" && initial_value != "") {
+					// do nothing if editing
+					console.log("just editting no change")
+				} else {
+					// if adding entry
+					console.log("adding")
+					var text_id = parseInt(data["field"].split("_").slice(-1)[0])
+					$('.empty-text').each(function() {
+						var field_name = $(this).attr('data-field-name')
+						var field_text_id = parseInt(field_name.split("_").slice(-1)[0])
+
+						if (field_text_id >= text_id) {
+							var new_field_name = field_name.replace(`entry_${field_text_id}`, `entry_${field_text_id + 1}`)
+							$(this).attr('data-field-name', new_field_name)
+						}
+					})
+					$(this).attr('data-field-name', old_field_name)
+				}
+
+
+
+			}
 		}
 		
 		
@@ -473,7 +524,9 @@ $(document).ready(function() {
 	          	checkbox.click()
 	          } 
 	          checkbox.prop("checked", true).addClass('-active')
-	        });
+	        }).fail(function(xhr, status, error) {
+		       	edit_in_progress = false
+		    });;
 	        return
 		}
 		console.log("concurrent update detected")
@@ -498,6 +551,10 @@ $(document).ready(function() {
 	//high light text on click
 	$(document).on('click', ":not(.log-text)[contenteditable='true']", function(e){
 		$(this).selectText()
+	})
+
+	$(document).on('click', ".show-bottom", function(e){
+		$(this).parents('.expanded-card-content').find('.expanded-bottom').toggle()
 	})
 
 	// upload choice when clicking 

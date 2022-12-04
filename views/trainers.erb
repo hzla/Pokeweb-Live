@@ -18,7 +18,7 @@
 	<input class="filter-input" id="search-text"/>
 	<button class="btn -default" id="search-text-btn" type="button">Search</button>			
 </div>
-
+<div id="texts" data-narc="message_texts"></div>
 <div class="pokemon-list spreadsheet" id="trainers">
 	<div class="expanded-field field-header">
 		<div class="expanded-field-main">
@@ -77,7 +77,8 @@
 							<div class="expanded-trlabel">Item <%= n %></div>
 							<%= field "item_#{n}", 'tr-item', {value: trainer["item_#{n}"].name_titleize,  narc: "trdata", autofill: "items"} %>	
 						</div>
-					<% end %>			
+					<% end %>
+					<div class="show-bottom">Texts</div>			
 				</div>
 				<div class="expanded-left">
 					<div class="expanded-field">
@@ -100,7 +101,29 @@
 						</div>
 					<% end %>
 				</div>
+				<div class="expanded-bottom">
+					<% Trdata.text_type_ids.each do |type_id| %>
+						<% texts = Trdata.get_texts(i, @offsets, @text_table, @text_bank) %>
+						
+						<div class="expanded-field">
+							<div class="expanded-field-main">
+								<div class="msg-id"><%= @text_types[type_id] %></div>
+									
+								<% if texts[type_id] %>
+
+						
+
+									<%= field "text_#{type_id}_entry_#{texts[type_id][0]}", 'log-text no-validate empty-text', {value: texts[type_id][1],  narc: "trdata"} %>
+	
+								<% else %>
+									<%= field "text_#{type_id}_entry_#{(@offsets[i] / 4) + texts.length}", 'log-text no-validate empty-text', {value: "",  narc: "trdata"} %>
+								<% end %>
+							</div>
+						</div>	
+					<% end %>
+				</div>
 			</div>
+
 
 
 			<% if @trainer_poks[i] %>

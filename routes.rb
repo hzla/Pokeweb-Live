@@ -147,6 +147,8 @@ get '/personal/taken_sprite_indexes' do
 
 	erb :sprites
 end
+
+
 # called by ajax when user makes an edit
 post '/update' do 
 	narc_name = params['data']['narc']
@@ -161,12 +163,20 @@ post '/update' do
 	if params['data']['field'].include?('odds') && narc_name == 'grotto'
 		narc_name = 'grotto_odds'
 	end
+
+
+	if params['data']['trtext']
+		narc_name = "text"
+		params['data']['file_name'] = "bank_381"
+		params['data']['narc'] == "message_texts"
+	end
 	
 	command = "python python/#{narc_name}_writer.py update #{params['data']['file_name']} #{params['data']['narc']}"
 	p params['data']
 
 	pid = spawn command
 	Process.detach(pid)
+
 
 	open('logs.txt', 'a') do |f|
 	  f.puts "#{Time.now}: Project: #{$rom_name} Updated #{narc_name} File #{params['data']['file_name']} #{params['data']['field']} to #{params['data']['value']} "
@@ -225,6 +235,13 @@ get '/trainers' do
 	@trainers = Trdata.get_all
 	@trainer_poks = Trpok.get_all
 	@move_names = Move.get_names_from Move.get_all
+
+
+	@offsets = JSON.parse(File.open("#{$rom_name}/texts/trtexts_offsets.json", "r"){|f| f.read})
+	@text_table = JSON.parse(File.open("#{$rom_name}/texts/trtexts.json", "r"){|f| f.read})
+	@text_bank = JSON.parse(File.open("#{$rom_name}/message_texts/texts.json", "r"){|f| f.read})[381]
+
+	@text_types = Trdata.text_types
 
 	@names = Trdata.names
 	@class_names = Trdata.class_names
@@ -419,22 +436,6 @@ post '/delete' do
 end
 
 
-post '/batch_update' do 
-	narc_name = params['data']['narc']
-	
-	Object.const_get(narc_name.capitalize).write_data params["data"], true
-	
-	command = "python python/#{narc_name}_writer.py update #{params['data']['file_names'].join(',')} "
-	pid = spawn command
-	Process.detach(pid)
-
-	open('logs.txt', 'a') do |f|
-	  f.puts "#{Time.now}: Project: #{$rom_name} Batch Updated #{narc_name} Files #{params['data']['field']} to #{params['data']['value']} "
-	end
-
-	return 200
-end
-
 ####################################### ITEMS ###############
 
 get '/items' do
@@ -468,26 +469,6 @@ end
 
 ####################################### TEXTS ###############
 
-
-# get '/story_texts' do 
-# 	@narc_name = 'story_texts'
-# 	# @texts = Text.get_all @narc_name
-# 	# @texts = Text.search @narc_name, "Patrat", params[:ignore_case]
-# 	# p @texts[0]
-# 	@limit = 0
-
-# 	erb :texts
-# end
-
-# get '/story_texts/search' do 
-# 	@terms = params[:terms]
-# 	@narc_name = 'story_texts'
-# 	@texts = Text.search @narc_name, "look", params[:ignore_case]
-# 	@limit = -1
-# 	"200 OK"
-# 	erb :texts
-
-# end
 
 get '/info_texts' do 
 	@narc_name = 'message_texts'

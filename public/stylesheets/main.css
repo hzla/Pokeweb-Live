@@ -261,9 +261,27 @@ table td {
     margin-top: 20px;
     border-radius: 20px;
     justify-content: space-between;
+    flex-wrap: wrap;
     display: none;
     background: #282a36;
     align-items: stretch;
+}
+
+.expanded-bottom {
+    width: 100%;
+    padding:  10px;
+    display: none;
+}
+
+.show-bottom {
+    margin: 20px;
+    width: 100px;
+    text-align: center;
+    background: #1abc9c;
+    border-radius: 5px;
+    height: 40px;
+    cursor: pointer;
+    line-height: 40px;
 }
 
 .expanded-left {
@@ -352,6 +370,10 @@ table td {
 
 .msg-id {
     width: 120px;
+}
+
+#trainers .msg-id {
+    width:  200px;
 }
 
 .spreadsheet > .expanded-field.text-header:hover {

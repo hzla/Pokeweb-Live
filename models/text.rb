@@ -11,6 +11,48 @@ class Text
 		bank = data[bank_id.to_i]
 	end
 
+	def self.insert_text idx, text_data, bank_id=381, narc_name="message_texts"
+		bank = get_bank narc_name, bank_id
+		text_id = "0_#{idx}"
+
+		#insert text
+		bank.insert(idx, [text_id, text_data])
+
+		
+		#update idx for all other banks
+		bank[idx+1..-1].each do |bank|
+			old_id = bank[0].split("_")[-1]
+			new_id = (old_id.gsub(/\D/, '').to_i + 1).to_s
+			bank[0] = bank[0].gsub("_#{old_id}", "_#{new_id}")
+		end
+		banks = get_all(narc_name)
+		banks[bank_id] = bank
+
+		File.open("#{$rom_name}/#{narc_name}/texts.json", "w") { |f| f.write banks.to_json }
+
+
+		p "Inserted into Bank #{bank_id} at index #{idx}"
+	end
+
+	def self.delete_text idx, bank_id=381, narc_name="message_texts"
+		bank = get_bank narc_name, bank_id
+
+		bank.delete_at(idx)
+
+		bank[idx..-1].each do |bank|
+			old_id = bank[0].split("_")[-1]
+			new_id = (old_id.gsub(/\D/, '').to_i - 1).to_s
+			bank[0] = bank[0].gsub("_#{old_id}", "_#{new_id}")
+		end
+		banks = get_all(narc_name)
+		banks[bank_id] = bank
+
+		File.open("#{$rom_name}/#{narc_name}/texts.json", "w") { |f| f.write banks.to_json}
+		p "Deleted from Bank #{bank_id} at index #{idx}"
+	end
+
+
+
 
 	def self.write_data data
 		file_path = "#{$rom_name}/#{data['narc']}/texts.json"

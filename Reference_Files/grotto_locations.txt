@@ -1,11 +1,11 @@
-Floccessy Ranch
+Floccesy Ranch
 Route 5
 Lostlorn Forest
 Route 6 (Field)
 Route 6 (Cave)
 Route 7
 Route 13 (Stairs Left)
-Route 13 (Stairs Down,)
+Route 13 (Stairs Down)
 Route 9
 Giant Chasm 
 Route 22
