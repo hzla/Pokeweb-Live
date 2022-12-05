@@ -71,9 +71,9 @@ post '/extract' do
 
 
 
-	system "python python/header_loader.py #{params['rom_name']}"
+	system "python3 python/header_loader.py #{params['rom_name']}"
 
-	command = "python python/rom_loader.py #{params['rom_name']}"
+	command = "python3 python/rom_loader.py #{params['rom_name']}"
 	pid = spawn command
 	Process.detach(pid)
 
@@ -86,7 +86,7 @@ post '/extract' do
 end
 
 post '/rom/save' do
-	system "python python/rom_saver.py #{$rom_name}"
+	system "python3 python/rom_saver.py #{$rom_name}"
 	
 	return "200"
 end
@@ -171,7 +171,7 @@ post '/update' do
 		params['data']['narc'] == "message_texts"
 	end
 	
-	command = "python python/#{narc_name}_writer.py update #{params['data']['file_name']} #{params['data']['narc']}"
+	command = "python3 python/#{narc_name}_writer.py update #{params['data']['file_name']} #{params['data']['narc']}"
 	p params['data']
 
 	pid = spawn command
@@ -288,7 +288,7 @@ post '/batch_update' do
 	
 	Object.const_get(narc_name.capitalize).write_data params["data"], true
 	
-	command = "python python/#{narc_name}_writer.py update #{params['data']['file_names'].join(',')} "
+	command = "python3 python/#{narc_name}_writer.py update #{params['data']['file_names'].join(',')} "
 	pid = spawn command
 	Process.detach(pid)
 
