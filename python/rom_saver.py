@@ -167,18 +167,18 @@ rom.files[evolution_narc_file_id] = open(evolution_narc_filepath, 'rb').read()
 
 # code.interact(local=dict(globals(), **locals()))
 
-rom.files[message_texts_narc_file_id] = open(message_texts_narc_filepath, 'rb').read()
-rom.files[story_texts_narc_file_id] = open(story_texts_narc_filepath, 'rb').read()
+# rom.files[message_texts_narc_file_id] = open(message_texts_narc_filepath, 'rb').read()
+# rom.files[story_texts_narc_file_id] = open(story_texts_narc_filepath, 'rb').read()
 
-print(message_texts_narc_filepath)
-print(story_texts_narc_filepath)
+# print(message_texts_narc_filepath)
+# print(story_texts_narc_filepath)
 
 
-print(len(open(message_texts_narc_filepath, 'rb').read()))
-print(len(open(story_texts_narc_filepath, 'rb').read()))
+# print(len(open(message_texts_narc_filepath, 'rb').read()))
+# print(len(open(story_texts_narc_filepath, 'rb').read()))
 
-rom.files[trtext_table_narc_file_id] = open(trtext_table_narc_filepath, 'rb').read()
-rom.files[trtext_offsets_narc_file_id] = open(trtext_offsets_narc_filepath, 'rb').read()
+# rom.files[trtext_table_narc_file_id] = open(trtext_table_narc_filepath, 'rb').read()
+# rom.files[trtext_offsets_narc_file_id] = open(trtext_offsets_narc_filepath, 'rb').read()
 
 
 if settings["base_rom"] == "BW2":
