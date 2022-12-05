@@ -38,7 +38,14 @@ Open the Pokeweb folder in powershell or cmd and run
 followed by
 	
    	 $ pip install ndspy
-	 
+
+or 
+
+	$ pip3 install ndspy
+
+
+if the above doesn't work.
+
 You can now start the server with 
 
 	$ ruby routes.rb
@@ -90,6 +97,13 @@ Once they are installed, navigate to the project folder in Terminal.app
 followed by
 	
     $ pip install ndspy
+
+or 
+
+	$ pip3 install ndspy
+
+
+if the above doesn't work.
 
 If the above steps succeed the server can now be run by running 
 
