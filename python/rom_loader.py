@@ -140,6 +140,7 @@ for narc in NARCS:
 	
 	narc_info[narc[1]] = file_id # store file ID for later
 	
+
 	if narc[1] == "trtext_table":
 		data = parsed_file.files[0]
 		offset = 0

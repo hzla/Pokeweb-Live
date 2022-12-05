@@ -212,14 +212,6 @@ def update_narc(file_name, narc_name):
             outfile.write(offset_narc_data.save()) 
 
 
-
-
-
-
-
-
-
-
 if len(sys.argv) > 2 and sys.argv[1] == "update":
     file_name = sys.argv[2]
     update_narc(file_name, sys.argv[3])

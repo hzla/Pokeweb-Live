@@ -21,7 +21,7 @@ import trdata_writer
 import trpok_writer
 import item_writer
 import evolution_writer
-import msg_reader2
+# import msg_reader2
 
 # code.interact(local=dict(globals(), **locals()))
 
@@ -43,7 +43,7 @@ trpok_writer.output_narc()
 trdata_writer.output_narc()
 item_writer.output_narc()
 evolution_writer.output_narc()
-msg_reader2.output_narc()
+# msg_reader2.output_narc()
 
 with open(f"{rom_name.split('/')[1]}.nds", 'rb') as f:
     data = f.read()
@@ -164,11 +164,21 @@ rom.files[trdata_narc_file_id] = open(trdata_narc_filepath, 'rb').read()
 rom.files[trpok_narc_file_id] = open(trpok_narc_filepath, 'rb').read()
 rom.files[item_narc_file_id] = open(item_narc_filepath, 'rb').read()
 rom.files[evolution_narc_file_id] = open(evolution_narc_filepath, 'rb').read()
-# rom.files[message_texts_narc_file_id] = open(message_texts_narc_filepath, 'rb').read()
-# rom.files[story_texts_narc_file_id] = open(story_texts_narc_filepath, 'rb').read()
 
-# rom.files[trtext_table_narc_file_id] = open(trtext_table_narc_filepath, 'rb').read()
-# rom.files[trtext_offsets_narc_file_id] = open(trtext_offsets_narc_filepath, 'rb').read()
+# code.interact(local=dict(globals(), **locals()))
+
+rom.files[message_texts_narc_file_id] = open(message_texts_narc_filepath, 'rb').read()
+rom.files[story_texts_narc_file_id] = open(story_texts_narc_filepath, 'rb').read()
+
+print(message_texts_narc_filepath)
+print(story_texts_narc_filepath)
+
+
+print(len(open(message_texts_narc_filepath, 'rb').read()))
+print(len(open(story_texts_narc_filepath, 'rb').read()))
+
+rom.files[trtext_table_narc_file_id] = open(trtext_table_narc_filepath, 'rb').read()
+rom.files[trtext_offsets_narc_file_id] = open(trtext_offsets_narc_filepath, 'rb').read()
 
 
 if settings["base_rom"] == "BW2":
