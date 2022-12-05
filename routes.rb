@@ -67,7 +67,7 @@ end
 
 # only ever called with ajax
 post '/extract' do 
-	# system "python python/rom_loader.py #{params['rom_name']}"
+
 
 
 
