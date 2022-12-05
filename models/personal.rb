@@ -10,7 +10,11 @@ class Personal
 
 		(0..file_count - 1).each do |n|
 			file_path = "#{directory}/json/personal/#{n}.json"
-			data << get_data_for(file_path)
+			begin
+				data << get_data_for(file_path)
+			rescue
+				break
+			end
 		end
 
 		data[29]["name"] = "Nidoran-F"

@@ -518,6 +518,12 @@ get '/export_showdown' do
 	redirect '/dist/index.html?gen=5'
 end
 
+get '/export_docs' do 
+	Action.docs
+
+	redirect '/headers'
+end
+
 
 get '/randomize' do 
 	Randomizer.setup

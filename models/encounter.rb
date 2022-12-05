@@ -35,6 +35,12 @@ class Encounter < Pokenarc
 			end
 		end
 
+		(0..11).each do |n|
+			if enc["spring_grass_special_slot_#{n}_max_level"] > max
+				max = enc["spring_grass_special_slot_#{n}_max_level"]
+			end
+		end
+
 		return max if max != 0
 
 		(0..4).each do |n|

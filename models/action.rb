@@ -1,12 +1,66 @@
+require 'terminal-table'
+
 class Action
 
-# skip 161,162,163
+	def self.output_trainers
+		trainers = Trpok.export_all_showdown false
+
+		trainers = trainers.sort_by do |tr|
+			max_lvl = 0
+			tr.each do |pok|
+				lvl = pok.to_a[0][1].to_a[0][1]["level"]
+				max_lvl = lvl if lvl > max_lvl
+			end
+			max_lvl
+		end
+		
+		open('documentation/trainers.txt', 'w') do |f|
+			last_location = ""
+			trainers.each do |tr|
+				next if tr.empty?
+				tr_title = tr[0].to_a[0][1].to_a[0][0]
+				trname = tr_title.split("-")[0].gsub(/Lvl \d*/, "").strip
+
+				if tr_title.split("-")[1] && !tr_title.include?("Starter")
+					location = tr_title.split("-")[1].strip
+
+					if location != last_location
+						f.puts "-----------------"
+						f.puts location
+						f.puts "-----------------"
+						f.puts
+						f.puts ">>>>>>>>>>>>>>>>"
+						last_location = location
+					end
+				end
+							
+				f.puts trname
+				
+				tr.each do |pok|
+					pok = pok.to_a
+					pok_name = pok[0][0]
+					pok_data = pok[0][1].to_a[0][1]
+
+					entry = "#{pok_name} (#{pok_data["ability"]}) Lv.#{pok_data["level"]} @#{pok_data["item"]}: #{pok_data["moves"].join(", ")} [#{pok_data["nature"]}]"
+
+					f.puts entry
+
+
+				end
+				f.puts "---"
+				f.puts
+			end
+
+		end
+		p "trainers"
+	end
+
+
 	
 	def self.output_moves
 		moves = Move.get_all
 		vanilla_moves = Move.get_all "documentation/vanilla"
 		
-		p vanilla_moves.length
 		open('documentation/moves.txt', 'w') do |f|
 			moves.each_with_index do |move, i|
 				if move != vanilla_moves[i]
@@ -33,10 +87,10 @@ class Action
 				end
 			end
 		end
-		"200 OK"
+		p "moves"
 	end
 
-	def self.output_docs
+	def self.output_pokedex
 		poks = Personal.poke_data
 		vanilla_poks = Personal.poke_data "documentation/vanilla"
 		evolutions = Evolution.get_all
@@ -82,7 +136,7 @@ class Action
 			  		evo = evolutions[i]
 
 			  		(0..6).each do |n|
-			  			if evo["target_#{n}"] != ""
+			  			if evo["target_#{n}"].gsub("―","") != "" 
 			  				target = evo["target_#{n}"]
 			  				meth = evo["method_#{n}"]
 			  				param = evo["param_#{n}"]
@@ -103,7 +157,7 @@ class Action
 			  	end
 			end
 		end
-		"success"	
+		p "pokedex"	
 	end
 
 	def self.output_encs
@@ -116,26 +170,115 @@ class Action
 					f.puts enc["locations"].join(" / ").gsub(/\(.*\)/, "")
 					f.puts "=================="
 					f.puts
-				end
+ 					
 
+ 					######## GRASS ######################
+					header = []
+					slot_types = [false, false, false]
+					rows = []
+					types = ["", "doubles_", "special_"]
+					grass_rates = [20,20,10,10,10,10,5,5,4,4,1,1]
+
+
+					if enc["spring_grass_rate"] != 0
+						header << 'Normal' << 'Mn' <<  'Mx' << '%' << '  '
+						slot_types[0] = true
+					end
+					if enc["spring_grass_doubles_rate"] != 0
+						header << 'Doubles' << 'Mn' <<  'Mx' << '%' << '  '
+						slot_types[1] = true
+					end
+					if enc["spring_grass_special_rate"] != 0
+						header << 'Special' << 'Mn' <<  'Mx' << '%'
+						slot_types[2] = true
+					end
+					header.pop if header.length == 5
+
+					(0..11).each do |n|
+						row = []
+						(0..2).each do |m|
+							if slot_types[m]
+								row << enc["spring_grass_#{types[m]}slot_#{n}"].name_titleize
+								row << enc["spring_grass_#{types[m]}slot_#{n}_min_level"]
+								row << enc["spring_grass_#{types[m]}slot_#{n}_max_level"]
+								row << grass_rates[n]
+								row << '  ' if m != 2
+							end
+						end
+						row.pop if row.length == 5
+						rows << row
+					end
+					
+					if !header.empty?
+						table = Terminal::Table.new :title => "Grass", :headings => header, :rows => rows
+						f.puts table
+					end
+
+					f.puts
+
+					########### WATER ##########
+
+					header = []
+					slot_types = [false, false, false, false]
+					rows = []
+					types = ["surf", "surf_special", "super_rod", "super_rod_special"]
+					slot_names = ["Surf", "Surf Dark", "Rod", "Rod Dark"]
+					water_rates = [60,30,5,4,1]
+
+
+					types.each_with_index do |slot_type, i|
+						if enc["spring_#{types[i]}_rate"] != 0
+		
+							header << slot_names[i] << 'Mn' <<  'Mx' << '%'
+		
+							slot_types[i] = true
+						end
+					end
+
+
+					(0..4).each do |n|
+						row = []
+						(0..3).each do |m|
+							if slot_types[m]
+								row << enc["spring_#{types[m]}_slot_#{n}"].name_titleize
+								row << enc["spring_#{types[m]}_slot_#{n}_min_level"]
+								row << enc["spring_#{types[m]}_slot_#{n}_max_level"]
+								row << water_rates[n]
+							end
+						end
+						rows << row
+					end
+					
+					if !header.empty?
+						table = Terminal::Table.new :title => "Water", :headings => header, :rows => rows
+						f.puts table
+					end
+					f.puts
+				end
 			end
 		end
-		"200 OK"
+		p "encounter"
 	end
 
+	def self.docs
+		output_pokedex
+		output_moves
+		output_encs
+		output_trainers
+	end
 	def self.format_stats pok
 		stats = [pok["base_hp"], pok["base_atk"],  pok["base_def"], pok["base_spatk"], pok["base_spdef"], pok["base_speed"]]
 		bst = stats.inject(&:+)
 		formatted = ""
-
-		["hp", "atk", "def", "spatk", "spdef", "speed"].each do |stat|
-			formatted += "#{stat.downcase} #{pok["base_#{stat}"]}/ "
+		stat_names = ["HP", "Atk", "Def", "SAtk", "SDef", "Spd"]
+		["hp", "atk", "def", "spatk", "spdef", "speed"].each_with_index do |stat, i|
+			formatted += "#{pok["base_#{stat}"]} #{stat_names[i]} / "
 		end
 		formatted += "(#{bst}) BST"   
 	end
 
 	def self.format_abilities pok
-		[pok["ability_1"], pok["ability_2"], pok["ability_3"]].join(" / ").name_titleize
+		[pok["ability_1"].gsub("-","").strip, pok["ability_2"].gsub("-","").strip, pok["ability_3"].gsub("-","").strip].join(" / ").name_titleize
 	end
 
 	def self.format_types pok

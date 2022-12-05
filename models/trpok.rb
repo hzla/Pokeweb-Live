@@ -358,7 +358,7 @@ class Trpok < Pokenarc
 	end
 
 
-	def self.export_all_showdown 
+	def self.export_all_showdown use_format=true
 		data = []
 		sets = {}
 		@@tr_name_counts = {}
@@ -386,14 +386,18 @@ class Trpok < Pokenarc
 			# 
 
 			
-			if settings["ai_values"].include?(ai) && settings["has_moves"].include?(trdata["has_moves"]) && settings["has_items"].include?(trdata["has_items"]) && settings["battle_types"].include?(trdata["battle_type_1"])
+			if (settings["ai_values"] == "all" or settings["ai_values"].include?(ai)) && settings["has_moves"].include?(trdata["has_moves"]) && settings["has_items"].include?(trdata["has_items"]) && settings["battle_types"].include?(trdata["battle_type_1"])
 
 				data << export_showdown(n, trdata, settings["min_ivs"], rival_count)
 			end
 
 		end
+		
+		return data if !use_format
+
 		sets["data"] = data.flatten
 		File.write("public/dist/sets.json", JSON.dump(sets))
+
 		format_exports(sets)
 	end
 
@@ -441,6 +445,7 @@ class Trpok < Pokenarc
 			f.puts "var SETDEX_BW ="
 			f.puts JSON.dump(formatted)
 		end
+		formatted
 	end
 
 	def self.export_showdown tr_id, trdata, min_ivs, rival_set=0
@@ -471,7 +476,7 @@ class Trpok < Pokenarc
 			show_count = (trname_count > 1 || trdata["name"] == "Grunt" || trdata["name"] == "Shadow" )
 			
 			level = poks["level_#{i}"]
-			tr_name = "Lvl #{level} #{trdata["class"]} #{trdata["name"]}#{trname_count if show_count }"
+			tr_name = "Lvl #{level} #{trdata["class"].gsub("⒆⒇", "PKMN")} #{trdata["name"]}#{trname_count if show_count }"
 			tr_name += " - #{trdata["location"]}" if trdata["location"]
 
 
@@ -538,7 +543,6 @@ class Trpok < Pokenarc
 
 
 		end
-		p poks_array
 		poks_array
 
 
