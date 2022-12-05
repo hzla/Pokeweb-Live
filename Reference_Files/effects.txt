@@ -208,7 +208,7 @@ Raises user's Def and SpDef
 Can hit Pokemon during semi-invulnerable turns of Fly/Bounce
 Raises user's Atk and Def
 Chance of causing Poison; increased crit ratio
-1/3 damage dealt recoil
+Weakens Fire-type moves by 50% until user switches out
 Raises user's SpAtk and SpDef
 Raises user's Atk and Spd
 Camouflage effect
