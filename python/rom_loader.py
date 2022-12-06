@@ -365,7 +365,7 @@ if narc_info["base_rom"] == "BW2":
 ####################CONVERT TO JSON #########################
 
 
-os.system("python3 python/parallel.py")
+os.system("py python/parallel.py")
 
 output_tms_json(arm9)
 
