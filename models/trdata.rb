@@ -261,10 +261,9 @@ class Trdata < Pokenarc
 					File.open(file_path, "w") { |f| f.write json_data.to_json }
 				end
 			end
-
-
-
 		end
+
+		
 
 	end
 

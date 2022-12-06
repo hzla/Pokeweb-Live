@@ -118,11 +118,13 @@ Place any roms you wish to edit in root folder of Pokeweb and they should show u
 
 Loading a rom will take you to the a map headers list for the rom while the rest of the editors load in the background. Clicking on a tab before it is loaded will cause an error. This can take anywhere between 5-15 seconds. In the future you can select an already loaded rom in the Load Project dropdown.
 
-![#1abc9c](https://placehold.co/15x15/1abc9c/1abc9c.png)Any thing this color can be clicked to be edited. 
+![#1abc9c](https://placehold.co/15x15/1abc9c/1abc9c.png) Any thing this color can be clicked to be edited. 
 
 If you make an invalid edit the border will turn <span style="color: #ff5555">red</span>, otherwise, your edits are saved automatically. 
 
 To view a history of your edits, go to the Logs tab in the navbar on the rop right.
+
+[Wiki](https://github.com/hzla/Pokeweb/wiki) - For More detailed information on the editors check the wiki.
 
 Quick Tip: If you want to save time on exporting roms, you can open the session_settings.json file in the root folder after loading a rom. 
 

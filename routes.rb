@@ -68,8 +68,10 @@ end
 # only ever called with ajax
 post '/extract' do 
 
-
-
+	params['rom_name'] = params['rom_name'].gsub(/[^0-9a-z ]/i, '').gsub(" ", "_")
+	params['rom_name'][-3..-1] = ".nd"
+	params['rom_name'] += "s"
+	p params['rom_name']
 
 	system "python3 python/header_loader.py #{params['rom_name']}"
 
@@ -519,6 +521,7 @@ get '/export_showdown' do
 end
 
 get '/export_docs' do 
+	Trdata.get_locations
 	Action.docs
 
 	redirect '/headers'
