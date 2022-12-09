@@ -14,6 +14,8 @@ Can randomize a rom based on settings in pokeweb/randomizer.
 
 Not thoroughly bug tested, was originally made for personal use, use at your own risk.
 
+[WIKI](https://github.com/hzla/Pokeweb/wiki)
+
 
 
 ### [Quick Feature Tour](https://streamable.com/cjk04j)
