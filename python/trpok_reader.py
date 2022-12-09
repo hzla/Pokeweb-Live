@@ -109,6 +109,7 @@ def read_narc_data(data, narc_format, file_name, narc_name, template, num_pokemo
 	with open(f'{ROM_NAME}/json/{narc_name}/{file_name}.json', "w") as outfile:  
 		json.dump(file, outfile) 
 
+
 def to_readable(raw, file_name, template, num_pokemon):
 	readable = copy.deepcopy(raw)
 
@@ -118,14 +119,10 @@ def to_readable(raw, file_name, template, num_pokemon):
 		
 
 		readable[f'species_id_{n}'] = POKEDEX[raw[f'species_id_{n}']]
-
-
 		if raw[f'ability_{n}'] == 255:
 			raw[f'ability_{n}'] = 0
 
-		readable[f'ability_{n}'] = math.floor(raw[f'ability_{n}'] / 16)
-
-		
+		readable[f'ability_{n}'] = math.floor(raw[f'ability_{n}'] / 16)	
 		readable[f'gender_{n}'] = GENDERS[raw[f'ability_{n}'] % 16]
 
 		if template == 1 or template == 3:

@@ -9,6 +9,7 @@ from os import path
 import json
 import copy
 import re
+import rom_data
 # code.interact(local=dict(globals(), **locals()))
 
 ######################### FILE SPECIFIC CONSTANTS #############################

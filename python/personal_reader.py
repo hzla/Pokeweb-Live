@@ -1,104 +1,12 @@
-import ndspy
-import ndspy.rom
-import ndspy.narc
 import code 
-import io
-import os
-import os.path
-from os import path
-import json
 import copy
+import rom_data
+import tools
 
 # code.interact(local=dict(globals(), **locals()))
 
-######################### FILE SPECIFIC CONSTANTS #############################
-
-def set_global_vars():
-	global ROM_NAME, TYPES, EGG_GROUPS, GROWTHS, ABILITIES, ITEMS, POKEDEX, PERSONAL_NARC_FORMAT
-	
-
-	with open(f'session_settings.json', "r") as outfile:  
-		settings = json.load(outfile) 
-		ROM_NAME = settings['rom_name']
-
-	TYPES = ["Normal", "Fighting", "Flying", "Poison", "Ground", "Rock", "Bug", "Ghost", "Steel", "Fire", "Water","Grass","Electric","Psychic","Ice","Dragon","Dark","Fairy"]
-	EGG_GROUPS = ["~","Monster","Water 1","Bug","Flying","Field","Fairy","Grass","Human-Like","Water 3","Mineral","Amorphous","Water 2","Ditto","Dragon","Undiscovered"];
-	GROWTHS = ["Medium Fast","Erratic","Fluctuating","Medium Slow","Fast","Slow","Medium Fast","Medium Fast"]
-	ABILITIES = open(f'{ROM_NAME}/texts/abilities.txt', "r").read().splitlines() 
-	ITEMS = open(f'{ROM_NAME}/texts/items.txt', mode="r").read().splitlines()
-	POKEDEX = open(f'{ROM_NAME}/texts/pokedex.txt', "r").read().splitlines()
-
-	PERSONAL_NARC_FORMAT = [[1, "base_hp"],
-	[1,	"base_atk"],
-	[1,	"base_def"],
-	[1,	"base_speed"],
-	[1,	"base_spatk"],
-	[1,	"base_spdef"],
-	[1,	"type_1"],
-	[1,	"type_2"],
-	[1,	"catchrate"],
-	[1,	"stage"],
-	[2,	"evs"],
-	[2,	"item_1"],
-	[2,	"item_2"],
-	[2,	"item_3"],
-	[1,	"gender"],
-	[1,	"hatch_cycle"],
-	[1,	"base_happy"],
-	[1,	"exp_rate"],
-	[1,	"egg_group_1"],
-	[1,	"egg_group_2"],
-	[1,	"ability_1"],
-	[1,	"ability_2"],
-	[1,	"ability_3"],
-	[1,	"flee"],
-	[2,	"form_id"],
-	[2,	"form"],
-	[1,	"num_forms"],
-	[1,	"color"],
-	[2,	"base_exp"],
-	[2,	"height"],
-	[2,	"weight"],
-	[4, "tm_1-32"],
-	[4, "tm_33-64"],
-	[4, "tm_65-95+hm_1"],
-	[4, "hm_2-6"],
-	[1, "tutors"]]
-
-
-#################################################################
-
-
 def output_personal_json(narc):
-	set_global_vars()
-	data_index = 0
-	
-	# while len(narc.files) < 800:
-	# 	narc.files.append(narc.files[-2])
-
-	for data in narc.files:
-		data_name = data_index
-		read_narc_data(data, PERSONAL_NARC_FORMAT, data_name)
-		data_index += 1
-
-def read_narc_data(data, narc_format, file_name):
-	stream = io.BytesIO(data)
-	pokemon = {"raw": {}, "readable": {} }
-	
-	#USE THE FORMAT LIST TO PARSE BYTES
-	for entry in narc_format: 
-		pokemon["raw"][entry[1]] = read_bytes(stream, entry[0])
-
-	#CONVERT TO READABLE FORMAT USING CONSTANTS/TEXT BANKS
-	pokemon["readable"] = to_readable(pokemon["raw"], file_name)
-	
-	#OUTPUT TO JSON
-	if not os.path.exists(f'{ROM_NAME}/json/personal'):
-		os.makedirs(f'{ROM_NAME}/json/personal')
-
-	with open(f'{ROM_NAME}/json/personal/{file_name}.json', "w") as outfile:  
-		json.dump(pokemon, outfile) 
-
+	tools.output_json(narc, "personal", to_readable)
 
 def to_readable(raw, file_name):
 	readable = copy.deepcopy(raw)
@@ -120,33 +28,30 @@ def to_readable(raw, file_name):
 		gen = "6"
 	readable["gen"] = gen
 
-
-
-
 	try:
-		readable["name"] = POKEDEX[file_name]
+		readable["name"] = rom_data.POKEDEX[file_name]
 	except IndexError:
 		readable["name"] = "Alt Form"
 
 	try:
-		readable["type_1"] = TYPES[raw["type_1"]]
+		readable["type_1"] = rom_data.TYPES[raw["type_1"]]
 	except IndexError:
 		return
 
-	readable["type_2"] = TYPES[raw["type_2"]]
+	readable["type_2"] = rom_data.TYPES[raw["type_2"]]
 
-	readable["item_1"] = ITEMS[raw["item_1"]]
-	readable["item_2"] = ITEMS[raw["item_2"]]
-	readable["item_3"] = ITEMS[raw["item_3"]]
+	readable["item_1"] = rom_data.ITEMS[raw["item_1"]]
+	readable["item_2"] = rom_data.ITEMS[raw["item_2"]]
+	readable["item_3"] = rom_data.ITEMS[raw["item_3"]]
 
-	readable["exp_rate"] = GROWTHS[raw["exp_rate"]]
+	readable["exp_rate"] = rom_data.GROWTHS[raw["exp_rate"]]
 
-	readable["egg_group_1"] = EGG_GROUPS[raw["egg_group_1"]]
-	readable["egg_group_2"] = EGG_GROUPS[raw["egg_group_2"]]
+	readable["egg_group_1"] = rom_data.EGG_GROUPS[raw["egg_group_1"]]
+	readable["egg_group_2"] = rom_data.EGG_GROUPS[raw["egg_group_2"]]
 
-	readable["ability_1"] = ABILITIES[raw["ability_1"]]
-	readable["ability_2"] = ABILITIES[raw["ability_2"]]
-	readable["ability_3"] = ABILITIES[raw["ability_3"]]
+	readable["ability_1"] = rom_data.ABILITIES[raw["ability_1"]]
+	readable["ability_2"] = rom_data.ABILITIES[raw["ability_2"]]
+	readable["ability_3"] = rom_data.ABILITIES[raw["ability_3"]]
 
 	readable["form_sprites"] = "Default"
 
@@ -161,7 +66,5 @@ def to_readable(raw, file_name):
 
 	return readable
 
-def read_bytes(stream, n):
-	return int.from_bytes(stream.read(n), 'little')
 
 	

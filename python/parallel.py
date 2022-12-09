@@ -2,6 +2,7 @@ from multiprocessing import Pool
 import os
 import ndspy.narc
 import json
+import rom_data
 
 from personal_reader import output_personal_json
 from learnset_reader import output_learnsets_json
