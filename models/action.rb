@@ -2,6 +2,14 @@ require 'terminal-table'
 
 class Action
 
+	def self.docs
+		output_pokedex
+		output_moves
+		output_encs
+		Trdata.get_locations
+		output_trainers
+	end
+
 	def self.output_trainers
 		trainers = Trpok.export_all_showdown false
 
@@ -14,16 +22,18 @@ class Action
 			max_lvl
 		end
 		
+		p trainers.length
+		nol = 0
 		open('documentation/trainers.txt', 'w') do |f|
 			last_location = ""
 			trainers.each do |tr|
 				next if tr.empty?
 				tr_title = tr[0].to_a[0][1].to_a[0][0]
 				trname = tr_title.split("-")[0].gsub(/Lvl \d*/, "").strip
-
+				
 				if tr_title.split("-")[1] && !tr_title.include?("Starter")
 					location = tr_title.split("-")[1].strip
-
+					nol += 1
 					if location != last_location
 						f.puts "-----------------"
 						f.puts location
@@ -35,16 +45,22 @@ class Action
 				end
 							
 				f.puts trname
+				f.puts
 				
 				tr.each do |pok|
 					pok = pok.to_a
-					pok_name = pok[0][0]
 					pok_data = pok[0][1].to_a[0][1]
 
-					entry = "#{pok_name} (#{pok_data["ability"]}) Lv.#{pok_data["level"]} @#{pok_data["item"]}: #{pok_data["moves"].join(", ")} [#{pok_data["nature"]}]"
+					pok_name = pok[0][0].ljust(10)
+					lvl = "Lv.#{pok_data["level"]}".ljust(6)
+					item = "#{pok_data["item"]}".ljust(14)
+					ability = pok_data["ability"].ljust(14)
+					nature = "#{pok_data["nature"]}".ljust(8)
+					moves = pok_data["moves"].join(", ")
+					
+					entry = "#{pok_name} #{lvl} @#{item} #{ability} #{nature} #{moves}"
 
 					f.puts entry
-
 
 				end
 				f.puts "---"
@@ -52,6 +68,7 @@ class Action
 			end
 
 		end
+		p nol
 		p "trainers"
 	end
 
@@ -260,12 +277,6 @@ class Action
 		p "encounter"
 	end
 
-	def self.docs
-		output_pokedex
-		output_moves
-		output_encs
-		output_trainers
-	end
 	def self.format_stats pok
 		stats = [pok["base_hp"], pok["base_atk"],  pok["base_def"], pok["base_spatk"], pok["base_spdef"], pok["base_speed"]]
 		bst = stats.inject(&:+)

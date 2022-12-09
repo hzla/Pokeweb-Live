@@ -67,7 +67,12 @@ class NilClass
  	def move_titleize
   	   ""
   	end
+end
 
+class Integer
+	def ljust n
+		self.to_s.rjust n
+	end
 end
 
 # adds addtional move data to learnset data

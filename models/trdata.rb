@@ -256,7 +256,6 @@ class Trdata < Pokenarc
 					json_data = JSON.parse(File.open(file_path, "r") {|f| f.read})
 
 					location = Header.find_location_by_map_id(i)
-
 					json_data["readable"]["location"] = location
 					File.open(file_path, "w") { |f| f.write json_data.to_json }
 				end
@@ -267,8 +266,6 @@ class Trdata < Pokenarc
 
 	end
 
-	def self.output_documentation
-	end
 
 end
 

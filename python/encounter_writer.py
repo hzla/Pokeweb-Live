@@ -122,7 +122,11 @@ def to_raw(readable):
 
 		for enc_type in ["grass", "grass_doubles", "grass_special"]:
 			for n in range(0,12):
-				index = POKEDEX.index(readable[f'{season}_{enc_type}_slot_{n}'])
+				
+				if readable[f'{season}_{enc_type}_slot_{n}'] == "":
+					index = 0
+				else:
+					index = POKEDEX.index(readable[f'{season}_{enc_type}_slot_{n}'])
 				
 				raw[f'{season}_{enc_type}_slot_{n}'] = index
 

@@ -2,7 +2,7 @@
 
 
 {
-	"min_ivs": 0, // 0 - 255
+	"min_ivs": 251, // 0 - 255
 	"has_items": [1], // [0] for no, [1] for yes, [0,1] for both
 	"has_moves": [1], // [0] for no, [1] for yes, [0,1] for both
 	"battle_types": ["Singles", "Doubles", "Triples", "Rotation"], // "Singles", "Doubles", "Triples", "Rotation"

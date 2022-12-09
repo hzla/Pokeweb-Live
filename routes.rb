@@ -68,14 +68,12 @@ end
 # only ever called with ajax
 post '/extract' do 
 
-	params['rom_name'] = params['rom_name'].gsub(/[^0-9a-z ]/i, '').gsub(" ", "_")
-	params['rom_name'][-3..-1] = ".nd"
-	params['rom_name'] += "s"
-	p params['rom_name']
+	# params['rom_name'] = params['rom_name']
+	# p params['rom_name']
 
-	system "py python/header_loader.py #{params['rom_name']}"
+	system "python python/header_loader.py #{params['rom_name']}"
 
-	command = "py python/rom_loader.py #{params['rom_name']}"
+	command = "python python/rom_loader.py #{params['rom_name']}"
 	pid = spawn command
 	Process.detach(pid)
 
@@ -88,7 +86,7 @@ post '/extract' do
 end
 
 post '/rom/save' do
-	system "py python/rom_saver.py #{$rom_name}"
+	system "python python/rom_saver.py #{$rom_name}"
 	
 	return "200"
 end
@@ -173,7 +171,7 @@ post '/update' do
 		params['data']['narc'] == "message_texts"
 	end
 	
-	command = "py python/#{narc_name}_writer.py update #{params['data']['file_name']} #{params['data']['narc']}"
+	command = "python python/#{narc_name}_writer.py update #{params['data']['file_name']} #{params['data']['narc']}"
 	p params['data']
 
 	pid = spawn command
@@ -290,7 +288,7 @@ post '/batch_update' do
 	
 	Object.const_get(narc_name.capitalize).write_data params["data"], true
 	
-	command = "py python/#{narc_name}_writer.py update #{params['data']['file_names'].join(',')} "
+	command = "python python/#{narc_name}_writer.py update #{params['data']['file_names'].join(',')} "
 	pid = spawn command
 	Process.detach(pid)
 
@@ -521,7 +519,6 @@ get '/export_showdown' do
 end
 
 get '/export_docs' do 
-	Trdata.get_locations
 	Action.docs
 
 	redirect '/headers'

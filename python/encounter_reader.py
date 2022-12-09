@@ -101,6 +101,8 @@ def to_readable(raw, file_name):
 					index = index % 2048
 
 				readable[f'{season}_{enc_type}_slot_{n}'] = POKEDEX[index]
+				if index == 0:
+					readable[f'{season}_{enc_type}_slot_{n}'] = ""
 
 		for wat_enc_type in ["surf", "surf_special", "super_rod" , "super_rod_special"]:
 			for n in range(0,5):
@@ -110,6 +112,10 @@ def to_readable(raw, file_name):
 					index = index % 2048
 
 				readable[f'{season}_{wat_enc_type}_slot_{n}'] = POKEDEX[index]
+
+				if index == 0:
+					readable[f'{season}_{wat_enc_type}_slot_{n}'] = ""
+
 	return readable
 
 
