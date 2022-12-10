@@ -19,7 +19,7 @@ def set_global_vars():
 		B_ANIMATION_ID = settings["battle_animations"]
 
 
-	LOCATIONS = open(f'{ROM_NAME}/texts/locations.txt', mode="r" ,encoding='utf-8').read().splitlines()
+	LOCATIONS = open(f'{ROM_NAME}/texts/locations.txt', mode="r").read().splitlines()
 	POKEDEX = open(f'{ROM_NAME}/texts/pokedex.txt', "r").read().splitlines()
 	ITEMS = open(f'{ROM_NAME}/texts/items.txt', mode="r").read().splitlines()
 	MOVES = open(f'{ROM_NAME}/texts/moves.txt', mode="r").read().splitlines()

@@ -214,6 +214,7 @@ with open(f'{rom_name}/message_texts/texts.json', 'r') as f:
 		with open(f'{rom_name}/texts/{msg_bank[1]}.txt', 'w+') as outfile:
 			for idx, line in enumerate(text):
 				try:
+					line[1] = line[1].encode("ascii", "ignore").decode()
 					outfile.write(line[1] + "\n")
 				except:
 					print(line[1])
