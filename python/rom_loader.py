@@ -198,6 +198,12 @@ with open(f'{rom_name}/overlay16.bin', 'wb') as f:
 
 B2_SWARM_OFFSET = 0x00050bfc
 B2_GROTTO_ODDS_OFFSET = 0x00055218
+W2_GROTTO_ODDS_OFFSET = 0x00055218 - 12
+
+if narc_info["base_version"] == "B2":
+	GROTTO_ODDS_OFFSET = B2_GROTTO_ODDS_OFFSET
+else:
+	GROTTO_ODDS_OFFSET = W2_GROTTO_ODDS_OFFSET
 
 ################### EXTRACT RELEVANT TEXTS ##################
 print("parsing texts")
@@ -238,7 +244,7 @@ with open(f'session_settings.json', "w+") as outfile:
 
 
 with open(f'{rom_name}/grotto_odds.bin', 'wb') as f:
-	f.write(overlay36.data[B2_GROTTO_ODDS_OFFSET:(B2_GROTTO_ODDS_OFFSET + 200)])
+	f.write(overlay36.data[GROTTO_ODDS_OFFSET:(GROTTO_ODDS_OFFSET + 200)])
 
 # code.interact(local=dict(globals(), **locals()))
 
