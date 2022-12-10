@@ -212,8 +212,12 @@ with open(f'{rom_name}/message_texts/texts.json', 'r') as f:
 		text = messages[msg_bank[0]]
 
 		with open(f'{rom_name}/texts/{msg_bank[1]}.txt', 'w+') as outfile:
-			for line in text:
-				outfile.write(line[1] + "\n")
+			for idx, line in enumerate(text):
+				try:
+					outfile.write(line[1] + "\n")
+				except:
+					print(line[1])
+					outfile.write(f"Entry {idx}" + "\n")
 
 	
 
