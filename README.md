@@ -6,7 +6,7 @@
 
 ## Features
 
-Pokeweb is currently able to edit map headers, items, personals, level-up learnsets, tm/tutor learnsets, tms, moves, encounters, trainers, evolutions, marts, and grottos, and alternate forms.
+Pokeweb is currently able to edit map headers, items, personals, level-up learnsets, tm/tutor learnsets, tms, moves, encounters, trainers, evolutions, marts, and grottos, and alternate forms. Only supports America/English Roms.
 
 Can export a custom showdown damage calculator, with trainer names,classes,locations, natures, movesets, and held items, taken from the loaded rom.
 
