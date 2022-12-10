@@ -540,7 +540,7 @@ get '/publish_calc' do
 	
 	url = Action.pb
 
-	redirect url
+	redirect "https://hzla.github.io/Dynamic-Calc/?data=#{SessionSettings.get("pastebin")}&gen=5"
 end
 
 
