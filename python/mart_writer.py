@@ -105,7 +105,7 @@ def to_raw(readable):
 	raw = copy.deepcopy(readable)
 
 	for n in range(0,20):
-		raw[f'item_{n}'] = ITEMS.index(readable[f'item_{n}'].replace('Ã©', 'é'))
+		raw[f'item_{n}'] = ITEMS.index(readable[f'item_{n}'].replace("Ã\x83Â©","é").replace('Ã©', 'é'))
 
 
 	return raw
@@ -126,6 +126,3 @@ if len(sys.argv) > 2 and sys.argv[1] == "update":
 	for file_name in file_names:
 		write_readable_to_raw(int(file_name))
 	
-# output_narc()
-
-# write_readable_to_raw(1)

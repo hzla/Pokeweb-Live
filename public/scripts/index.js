@@ -117,7 +117,7 @@ $(document).ready(function() {
     	btn.text('Exporting...')
         
         $.post( "/rom/save", function( data ) {
-        	alert("saved to /exports folder")
+        	alert(data)
         	btn.text('Export')
         });
     })

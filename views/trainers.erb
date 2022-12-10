@@ -16,7 +16,14 @@
 <div class="pokemon-filter">	
 	<div class="filter-title">Search</div>
 	<input class="filter-input" id="search-text"/>
-	<button class="btn -default" id="search-text-btn" type="button">Search</button>			
+	<button class="btn -default" id="search-text-btn" type="button">Search</button>
+
+	<br>
+	<% if SessionSettings.get "pastebin" %>	
+		
+
+		<div class="filter-title"><a href="<%= "https://hzla.github.io/Dynamic-Calc/?data=#{SessionSettings.get("pastebin")}&gen=5" %>">Public Calculator</a></div>
+	<% end %>		
 </div>
 <div id="texts" data-narc="message_texts"></div>
 <div class="pokemon-list spreadsheet" id="trainers">

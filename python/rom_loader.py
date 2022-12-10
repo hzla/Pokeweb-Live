@@ -46,6 +46,11 @@ for folder in ["narcs", "texts", "json"]:
 	if not os.path.exists(f'{rom_name}/{folder}'):
 		os.makedirs(f'{rom_name}/{folder}')
 
+with open(f'expansion_settings.json', "r") as outfile:  
+	expansion_settings = json.load(outfile) 
+	expand_moves = expansion_settings["moves"]
+	expand_sprites = expansion_settings["alt_form_sprites"]
+
 
 
 ################# HARDCODED ROM INFO ##############################
@@ -68,7 +73,6 @@ BW_NARCS = [["a/0/1/6", "personal"],
 ["a/1/2/6", "encounters"],
 ["a/0/0/3", "storytext"],
 ["a/0/5/6", "scripts"],
-["a/0/0/4", "sprites"],
 ["a/0/0/7", "icons"]]
 
 BW_MSG_BANKS = [[286, "moves"],
@@ -97,9 +101,7 @@ BW2_NARCS = [["a/0/1/6", "personal"],
 ["a/2/8/2", "marts"],
 ["a/2/8/3", "mart_counts"],
 ["a/2/7/3", "grottos"],
-["a/0/0/4", "sprites"],
 ["a/0/0/7", "icons"],
-["a/0/0/6", "move_effects"],
 ["a/0/6/5", "move_animations"],
 ["a/0/6/6", "battle_animations"]]
 
@@ -126,6 +128,9 @@ else:
 	MSG_BANKS = BW2_MSG_BANKS
 	NARCS = BW2_NARCS
 
+if expand_sprites:
+	NARCS.append(["a/0/0/4", "sprites"])
+
 print("extracting narcs")
 
 with open(f'{rom_name.split("/")[-1]}.nds', 'rb') as f:
@@ -151,8 +156,6 @@ for narc in NARCS:
 			tr_id = int.from_bytes(entry[:2], 'little')
 			text_type = int.from_bytes(entry[2:], 'little')
 			json_data.append([tr_id, text_type])
-
-
 			offset += 4
 
 		with open(f'{rom_name}/texts/trtexts.json', 'w') as f:
@@ -171,13 +174,6 @@ for narc in NARCS:
 
 		with open(f'{rom_name}/texts/trtexts_offsets.json', 'w') as f:
 			json.dump(json_data, f)
-
-
-
-
-
-
-
 
 	with open(f'{rom_name}/narcs/{narc[1]}-{file_id}.narc', 'wb') as f:
 		f.write(file)
@@ -221,9 +217,6 @@ with open(f'{rom_name}/message_texts/texts.json', 'r') as f:
 
 	
 
-
-
-
 ##############################################################
 ################### WRITE SESSION SETTINGS ###################
 
@@ -237,32 +230,6 @@ settings["fairy"] = False
 with open(f'session_settings.json', "w+") as outfile:  
 	json.dump(settings, outfile) 
 
-#############################################################
-################### Provision Placeholders for alt form sprites ###########
-
-
-if narc_info["base_rom"] == "BW2":
-	# sprites
-	sprite_file_path = f'{rom_name}/narcs/sprites-{settings["sprites"]}.narc'
-	narc = ndspy.narc.NARC.fromFile(sprite_file_path)
-	
-	with open(f'expansion_settings.json', "r") as outfile:  
-		expansion_settings = json.load(outfile) 
-		expansion = expansion_settings["moves"]
-
-	if expansion > 0:
-		moves_file_path = f'{rom_name}/narcs/moves-{settings["moves"]}.narc'
-		animations_file_path = f'{rom_name}/narcs/move_animations-{settings["move_animations"]}.narc'
-		b_animations_file_path = f'{rom_name}/narcs/battle_animations-{settings["battle_animations"]}.narc'
-
-		moves = ndspy.narc.NARC.fromFile(moves_file_path)
-		animations = ndspy.narc.NARC.fromFile(animations_file_path)
-		b_animations = ndspy.narc.NARC.fromFile(b_animations_file_path)
-
-
-		## Expand moves
-
-
 
 with open(f'{rom_name}/grotto_odds.bin', 'wb') as f:
 	f.write(overlay36.data[B2_GROTTO_ODDS_OFFSET:(B2_GROTTO_ODDS_OFFSET + 200)])
@@ -274,15 +241,8 @@ with open(f'{rom_name}/grotto_odds.bin', 'wb') as f:
 
 
 if narc_info["base_rom"] == "BW2":
-	# sprites
-	sprite_file_path = f'{rom_name}/narcs/sprites-{settings["sprites"]}.narc'
-	narc = ndspy.narc.NARC.fromFile(sprite_file_path)
-	
-	with open(f'expansion_settings.json', "r") as outfile:  
-		expansion_settings = json.load(outfile) 
-		expansion = expansion_settings["moves"]
 
-	if expansion > 0:
+	if expand_moves > 0:
 		moves_file_path = f'{rom_name}/narcs/moves-{settings["moves"]}.narc'
 		animations_file_path = f'{rom_name}/narcs/move_animations-{settings["move_animations"]}.narc'
 		b_animations_file_path = f'{rom_name}/narcs/battle_animations-{settings["battle_animations"]}.narc'
@@ -309,9 +269,9 @@ if narc_info["base_rom"] == "BW2":
 		for n in range(0, len(b_animations.files)):
 			moves.files.append(moves.files[1])
 
-		print(expansion)
+		print(expand_moves)
 		# expand animations and move files
-		for n in range(0,expansion):
+		for n in range(0,expand_moves):
 			n %= 559
 			b_animations.files.append(animations.files[1])
 			moves.files.append(moves.files[1])
@@ -325,41 +285,39 @@ if narc_info["base_rom"] == "BW2":
 
 
 	# code.interact(local=dict(globals(), **locals()))
-
-
-	while len(narc.files) < 15080:
-		narc.files.append(narc.files[-1])
-
-	placeholder_sprites = narc.files[15000:15020]
-
 	
-	for n in range(100):
-		narc.files += placeholder_sprites
+	# sprites
+	if expand_sprites:
+		sprite_file_path = f'{rom_name}/narcs/sprites-{settings["sprites"]}.narc'
+		narc = ndspy.narc.NARC.fromFile(sprite_file_path)
 
-	with open(f'{rom_name}/narcs/sprites-{settings["sprites"]}.narc', 'wb') as f:
-		f.write(narc.save())
+		while len(narc.files) < 15080:
+			narc.files.append(narc.files[-1])
 
-	# party icons 
-	sprite_file_path = f'{rom_name}/narcs/icons-{settings["icons"]}.narc'
-	narc = ndspy.narc.NARC.fromFile(sprite_file_path)
+		placeholder_sprites = narc.files[15000:15020]
 
-	while len(narc.files) < 1516:
-		narc.files.append(narc.files[-1])
+		
+		for n in range(100):
+			narc.files += placeholder_sprites
 
-	placeholder_sprites = narc.files[1502:1504]
+		with open(f'{rom_name}/narcs/sprites-{settings["sprites"]}.narc', 'wb') as f:
+			f.write(narc.save())
 
-	
-	for n in range(100):
-		narc.files += placeholder_sprites
+		# party icons 
+		sprite_file_path = f'{rom_name}/narcs/icons-{settings["icons"]}.narc'
+		narc = ndspy.narc.NARC.fromFile(sprite_file_path)
 
-	with open(f'{rom_name}/narcs/icons-{settings["icons"]}.narc', 'wb') as f:
-		f.write(narc.save())
+		while len(narc.files) < 1516:
+			narc.files.append(narc.files[-1])
 
+		placeholder_sprites = narc.files[1502:1504]
 
+		
+		for n in range(100):
+			narc.files += placeholder_sprites
 
-	
-
-
+		with open(f'{rom_name}/narcs/icons-{settings["icons"]}.narc', 'wb') as f:
+			f.write(narc.save())
 
 #############################################################
 ####################CONVERT TO JSON #########################

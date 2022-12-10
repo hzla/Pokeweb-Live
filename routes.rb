@@ -1,6 +1,7 @@
 require 'sinatra'
 require 'json'
 require 'csv'
+require 'net/http'
 require_relative 'helpers'
 require_relative 'models/pokenarc'
 
@@ -86,9 +87,13 @@ post '/extract' do
 end
 
 post '/rom/save' do
-	system "python python/rom_saver.py #{$rom_name}"
+	save = `python python/rom_saver.py #{$rom_name}`
 	
-	return "200"
+	if save[-3..-1] == "OK\n"
+		return "saved to /exports folder"
+	else
+		return save
+	end
 end
 
 
@@ -522,6 +527,20 @@ get '/export_docs' do
 	Action.docs
 
 	redirect '/headers'
+end
+
+get '/publish_calc' do 
+	if !SessionSettings.get("tr_locations_found")
+		Trdata.get_locations
+		SessionSettings.set("tr_locations_found", true)
+	end
+	Move.export_showdown
+	Personal.export_showdown
+	Trpok.export_all_showdown
+	
+	url = Action.pb
+
+	redirect url
 end
 
 

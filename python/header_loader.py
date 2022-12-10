@@ -68,10 +68,6 @@ for narc in NARCS:
 
 	narc_info[narc[1]] = file_id # store file ID for later
 
-	# print("#######")
-	# print(f'{rom_name}/narcs/{narc[1]}-{file_id}.narc')
-	# print(narc[1])
-	# print(len(file))
 
 	
 	with open(f'{rom_name}/narcs/{narc[1]}-{file_id}.narc', 'wb') as f:

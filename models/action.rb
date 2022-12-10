@@ -1,6 +1,31 @@
 require 'terminal-table'
+require 'base64'
 
 class Action
+
+	def self.pb
+		key = Base64.decode64 Base64.decode64(SessionSettings.calc_settings["pbk"])
+		poks = File.read("public/dist/poks.js")
+		moves = File.read("public/dist/moves.js")
+		sets = File.read("public/dist/js/data/sets/gen5.js")
+
+		url = paste_content([poks, moves, sets].join("\n"), key)
+		SessionSettings.set "pastebin", url.split(".com/")[-1]
+		url
+
+	end
+
+	def self.paste_content( content, key )
+      params = {
+        :api_dev_key => key,
+        :api_option => "paste",
+        :api_paste_name => $rom_name,
+        :api_paste_format => "javascript",
+        :api_paste_expire_date => "N",
+        :api_paste_code => content
+      }
+      Net::HTTP.post_form(URI.parse("https://pastebin.com/api/api_post.php"), params).body
+    end
 
 	def self.docs
 		output_pokedex

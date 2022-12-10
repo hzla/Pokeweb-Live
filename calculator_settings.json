@@ -2,13 +2,13 @@
 
 
 {
-	"min_ivs": 251, // 0 - 255
+	"min_ivs": 250, // 0 - 255
 	"has_items": [1], // [0] for no, [1] for yes, [0,1] for both
 	"has_moves": [1], // [0] for no, [1] for yes, [0,1] for both
 	"battle_types": ["Singles", "Doubles", "Triples", "Rotation"], // "Singles", "Doubles", "Triples", "Rotation"
 	"ai_values": [7,135], // [7, 135] for expert ai only, "all" for everything
-	"use_vanilla_boss_battle_locations": false // sets in game locations of boss battles to vanilla locations
-
+	"use_vanilla_boss_battle_locations": false, // sets in game locations of boss battles to vanilla locations
+	"pbk": "TnpsM1RqaFpTVXhZTWsxWk1FVXlkRXhQZGxoT2RWSjBaRUp5UjNac1pIZz0=" // do not touch
 }
 
 

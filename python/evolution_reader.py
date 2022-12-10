@@ -13,6 +13,10 @@ def to_readable(raw, file_name):
 		readable[f'method_{n}'] = rom_data.METHODS[raw[f'method_{n}']]
 		readable[f'target_{n}'] = rom_data.POKEDEX[raw[f'target_{n}']]
 
+		if raw[f'target_{n}'] == 0:
+			readable[f'target_{n}'] = ""
+
+
 		if raw[f'method_{n}'] in [6,8,17,18,19,20]:
 			readable[f'param_{n}'] = rom_data.ITEMS[raw[f'param_{n}']]
 		elif raw[f'method_{n}'] == 21:

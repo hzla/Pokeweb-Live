@@ -175,7 +175,7 @@ def to_raw(readable, template):
 
 			if template > 1:
 				if f'item_id_{n}' in readable:
-					raw[f'item_id_{n}'] = ITEMS.index(readable[f'item_id_{n}'].replace('Ã©', 'é'))
+					raw[f'item_id_{n}'] = ITEMS.index(readable[f'item_id_{n}'].replace("Ã\x83Â©","é").replace('Ã©', 'é'))
 				else:
 					raw[f'item_id_{n}'] = 0
 

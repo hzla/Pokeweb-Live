@@ -442,7 +442,7 @@ class Trpok < Pokenarc
 
 
 		open("public/dist/js/data/sets/gen5.js", "w") do |f| 
-			f.puts "var SETDEX_BW ="
+			f.puts "SETDEX_BW ="
 			f.puts JSON.dump(formatted)
 		end
 		formatted

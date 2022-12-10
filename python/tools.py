@@ -51,6 +51,11 @@ def write_narc_data(file_name, narc_format, narc, narc_name, narc_file_id):
 			if entry[1] in json_data["raw"]:
 				data = json_data["raw"][entry[1]]
 				write_bytes(stream, entry[0], data)
+
+		# add terminator bytes for learnsets
+		if narc_name == "learnsets":
+			write_bytes(stream, 2, 65535) 
+			write_bytes(stream, 2, 65535) 
 	
 	if file_name >= len(narc.files):
 		narc_entry_data = bytearray()
@@ -59,7 +64,25 @@ def write_narc_data(file_name, narc_format, narc, narc_name, narc_file_id):
 	else:
 		narc_entry_data = bytearray(narc.files[file_name])
 		narc_entry_data[0:len(stream)] = stream
-		narc.files[file_name] = narc_entry_data
+		if narc_name != "learnsets":
+			narc.files[file_name] = narc_entry_data
+		else:
+			narc.files[file_name] = stream
+
+def write_readable_to_raw(file_name, narc_name, to_raw):
+	data = {}
+	json_file_path = f'{rom_data.ROM_NAME}/json/{narc_name}/{file_name}.json'
+
+	with open(json_file_path, "r", encoding='ISO8859-1') as outfile:  	
+		json_data = json.load(outfile)	
+			
+		if json_data["readable"] is None:
+			return
+		new_raw_data = to_raw(json_data["readable"])
+		json_data["raw"] = new_raw_data
+
+	with open(json_file_path, "w", encoding='ISO8859-1') as outfile: 
+		json.dump(json_data, outfile)
 
 def output_json(narc, narc_name, to_readable):
 	rom_data.set_global_vars()
@@ -112,6 +135,7 @@ def read_narc_data(data, narc_format, file_name, narc_name, rom_name, to_readabl
 
 	with open(f'{rom_name}/json/{narc_name}/{file_name}.json', "w") as outfile:  
 		json.dump(file, outfile) 
+
 
 def read_bytes(stream, n):
 	return int.from_bytes(stream.read(n), 'little')

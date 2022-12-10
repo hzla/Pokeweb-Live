@@ -17,19 +17,7 @@ def output_narc(narc_name="encounters"):
 	tools.output_narc("encounters")
 
 def write_readable_to_raw(file_name, narc_name="encounters"):
-	data = {}
-	json_file_path = f'{rom_data.ROM_NAME}/json/{narc_name}/{file_name}.json'
-
-	with open(json_file_path, "r", encoding='ISO8859-1') as outfile:  	
-		json_data = json.load(outfile)	
-			
-		if json_data["readable"] is None:
-			return
-		new_raw_data = to_raw(json_data["readable"])
-		json_data["raw"] = new_raw_data
-
-	with open(json_file_path, "w", encoding='ISO8859-1') as outfile: 
-		json.dump(json_data, outfile)
+	tools.write_readable_to_raw(file_name, narc_name, to_raw)
 
 def to_raw(readable):
 	raw = copy.deepcopy(readable)
