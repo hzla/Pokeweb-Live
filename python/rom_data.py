@@ -346,6 +346,15 @@ def set_global_vars():
 	[4, "hm_2-6"],
 	[1, "tutors"]]
 
+	if BASE_ROM == "BW2":
+		additional_tutor_data = [
+		[3, "padding"],
+		[4, "driftveil_tutor"],
+		[4, "lentimas_tutor"],
+		[4, "humilau_tutor"],
+		[4, "nacrene_tutor"]]
+
+		PERSONAL_NARC_FORMAT += additional_tutor_data
 	NARC_FORMATS["personal"] = PERSONAL_NARC_FORMAT
 
 

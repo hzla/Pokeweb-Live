@@ -160,9 +160,11 @@ class Personal
 			changed_value = changed_value.titleize if changed_value.is_a? String
 		end
 
-		if field_to_change == "tutors"
-			tutor_list = data["value"].reverse.join("").to_i(2)
-			json_data["readable"]["tutors"] = tutor_list
+		if field_to_change.include? "tutor"
+			indexes = tutor_indexes(field_to_change)
+			tutor_list = data["value"][indexes[0]..indexes[1]].reverse.join("").to_i(2)
+
+			json_data["readable"][field_to_change] = tutor_list
 			File.open(file_path, "w") { |f| f.write json_data.to_json }
 			return
 		end
@@ -220,12 +222,36 @@ class Personal
 		{tms: tms.split(""), hms: hms.split("")}
 	end
 
-	def self.get_tutor_list(personal_data)
-		personal_data["tutors"].to_s(2).rjust(7, '0').reverse.split("")
+	def self.get_tutor_list(personal_data, field="tutors", length=31)
+		personal_data[field].to_s(2).rjust(length, '0').reverse.split("")
 	end
 
-	def self.tutor_moves
-		["Grass Pledge", "Fire Pledge", "Water Pledge", "Frenzy Plant", "Blast Burn", "Hydro Cannon", "Draco Meteor" ]
+	def self.tutor_names
+		if SessionSettings.get("base_rom") == "BW2"
+			["tutors", "driftveil_tutor", "lentimas_tutor", "humilau_tutor", "nacrene_tutor"]
+		else
+			["tutors"]
+		end
+	end
+
+	def self.tutor_moves list="default"
+		tutors = {}
+		tutors["tutors"] = ["Grass Pledge", "Fire Pledge", "Water Pledge", "Frenzy Plant", "Blast Burn", "Hydro Cannon", "Draco Meteor" ]
+		tutors["driftveil_tutor"] = ["Bug Bite", "Covet","Super Fang","Dual Chop","Signal Beam","Iron Head","Seed Bomb","Drill Run", "Bounce", "Low Kick", "Gunk Shot", "Uproar", "Thunder Punch", "Fire Punch", "Ice Punch"]
+		tutors["lentimas_tutor"] = ["Magic Coat", "Block","Earth Power","Foul Play","Gravity","Magnet Rise","Iron Defense","Last Resort","Superpower","Electroweb","Icy Wind","Aqua Tail","Dark Pulse","Zen Headbutt","Dragon Pulse","Hyper Voice","Iron Tail"]
+		tutors["humilau_tutor"] = ["Bind","Snore","Knock Off","Synthesis","Heat Wave","Role Play","Heal Bell","Tailwind","Sky Attack","Pain Split","Giga Drain","Drain Punch","Roost"]
+		tutors["nacrene_tutor"] = ["Gastro Acid","Worry Seed","Spite","After You","Helping Hand","Trick","Magic Room","Wonder Room","Endeavor","Outrage","Recycle","Snatch","Stealth Rock","Sleep Talk","Skill Swap"]
+		tutors[list]
+	end
+
+	def self.tutor_indexes field
+		tutors = {}
+		tutors["tutors"] = [0, 6]
+		tutors["driftveil_tutor"] = [7,21]
+		tutors["lentimas_tutor"] = [22, 38]
+		tutors["humilau_tutor"] = [39, 51]
+		tutors["nacrene_tutor"] = [52,66]
+		tutors[field]
 	end
 
 

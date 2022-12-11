@@ -57,10 +57,13 @@
 	<% end %>
 </div>
 <div class="expanded-card-content expanded-tutors">
-	<% Personal.get_tutor_list(pok).each_with_index do |tutor_move, i| %>
-		<div class="cell tutor-move <%= tutor_move == "1" ? '-active' : '' %>" data-field-name="tutors" data-narc="personal">
-			<%= tutor_moves[i] %>
-		</div>
+	<% Personal.tutor_names.each do |tutor| %>
+
+		<% Personal.get_tutor_list(pok, tutor, Personal.tutor_moves(tutor).length ).each_with_index do |tutor_move, i| %>
+			<div class="cell tutor-move <%= tutor_move == "1" ? '-active' : '' %>" data-field-name="<%= tutor %>" data-narc="personal">
+				<%= Personal.tutor_moves(tutor)[i] %>
+			</div>
+		<% end %>
 	<% end %>
 			
 </div>

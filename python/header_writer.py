@@ -22,7 +22,7 @@ with open(f'session_settings.json', "r") as outfile:
 	NARC_FILE_ID = settings["headers"]
 	BASE_ROM = settings["base_rom"]
 
-LOCATIONS = open(f'{ROM_NAME}/texts/locations.txt', mode="r" ,encoding='utf-8').read().splitlines()
+LOCATIONS = open(f'{ROM_NAME}/texts/locations.txt', mode="r").read().splitlines()
 
 HEADER_LENGTH = 48
 

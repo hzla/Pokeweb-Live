@@ -441,6 +441,11 @@ table td {
     position: relative;
 }
 
+.expanded-tutors {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
 #moves > .expanded-field:hover {
     border: 1px solid #bd93f9;
 }
@@ -862,6 +867,8 @@ div.-active svg * {
     border: 1px solid #44475a;
     cursor: pointer;
     padding: 10px;
+    text-align: center;
+    max-width: 160px;
 }
 
 .cell.-active {
