@@ -156,7 +156,7 @@ try:
 		grotto_narc_filepath = f'{rom_name}/narcs/grottos-{grotto_narc_file_id}.narc'
 
 
-	# rom.files[personal_narc_file_id] = open(personal_narc_filepath, 'rb').read()
+	rom.files[personal_narc_file_id] = open(personal_narc_filepath, 'rb').read()
 	rom.files[learnset_narc_file_id] = open(learnset_narc_filepath, 'rb').read()
 	rom.files[moves_narc_file_id] = open(moves_narc_filepath, 'rb').read()
 	rom.files[headers_narc_file_id] = open(headers_narc_filepath, 'rb').read()
@@ -190,7 +190,7 @@ try:
 		rom.files[b_animations_narc_file_id] = open(f'{rom_name}/narcs/battle_animations-{b_animations_narc_file_id}.narc', 'rb').read()
 		rom.files[animations_narc_file_id] = open(f'{rom_name}/narcs/move_animations-{animations_narc_file_id}.narc', 'rb').read()
 		# rom.files[icons_narc_file_id] = open(f'{rom_name}/narcs/icons-{icons_narc_file_id}.narc', 'rb').read()
-		# rom.files[overworlds_narc_file_id] = open(f'{rom_name}/narcs/overworlds-{overworlds_narc_file_id}.narc', 'rb').read()
+		rom.files[overworlds_narc_file_id] = open(f'{rom_name}/narcs/overworlds-{overworlds_narc_file_id}.narc', 'rb').read()
 
 	if path.exists(f'exports'):
 		rom.saveToFile(f"exports/{rom_name.split('/')[1]}.nds")
