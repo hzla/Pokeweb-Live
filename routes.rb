@@ -555,15 +555,28 @@ end
 
 get '/overworlds/:id' do 
 
-	@overworld = Overworld.get_data("#{$rom_name}/json/overworlds/#{params[:id]}.json")
-
+	@overworld = Overworld.get_data("#{$rom_name}/json/overworlds/#{params[:id]}.json", "raw")
+	@index = params[:id]
 	@box = Overworld.get_bounding_box @overworld
 
 	@width = @box[1][0] - @box[0][0]
 	@height = @box[1][1] - @box[0][1]
 
+
 	erb :overworld
 
+end
+
+get '/overworlds/:id/box' do 
+
+	overworld = Overworld.get_data("#{$rom_name}/json/overworlds/#{params[:id]}.json", "raw")
+	selected = params["selected"]
+	box = Overworld.get_bounding_box overworld	
+	width = box[1][0] - box[0][0]
+	height = box[1][1] - box[0][1]
+
+
+	erb :'_overworld', :layout => false, :locals => { :overworld => overworld, :box => box, :height => height, :width => width, :selected => selected}
 end
 
 

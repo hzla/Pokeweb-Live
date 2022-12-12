@@ -476,7 +476,7 @@ class Trpok < Pokenarc
 			show_count = (trname_count > 1 || trdata["name"] == "Grunt" || trdata["name"] == "Shadow" )
 			
 			level = poks["level_#{i}"]
-			tr_name = "Lvl #{level} #{trdata["class"].gsub("⒆⒇", "PKMN")} #{trdata["name"]}#{trname_count if show_count }"
+			tr_name = "Lvl #{level} #{trdata["class"].gsub("⒆⒇", "PKMN")} #{trdata["name"]}#{trname_count if show_count } "
 			tr_name += " - #{trdata["location"]}" if trdata["location"]
 
 
@@ -524,6 +524,9 @@ class Trpok < Pokenarc
 			pok[species][tr_name] =  {}
 
 			pok[species][tr_name]["level"] = level
+			pok[species][tr_name]["tr_id"] = tr_id
+			pok[species][tr_name]["battle_type"] = trdata["battle_type_1"]
+			pok[species][tr_name]["reward_item"] = trdata["reward_item"]
 			pok[species][tr_name]["item"] = item.titleize
 			pok[species][tr_name]["nature"] = nature
 			pok[species][tr_name]["moves"] = moves

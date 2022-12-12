@@ -29,7 +29,7 @@ class Pokenarc
 		collection
 	end
 
-	def self.write_data data, batch=false
+	def self.write_data data, batch=false, write_to="readable"
 		if batch
 			write_batch_data data
 		end
@@ -59,11 +59,11 @@ class Pokenarc
 			changed_value = class_data[0]
 			
 			new_class_id = class_data[1].split(")")[0]
-			json_data["readable"]["class_id"] = new_class_id
+			json_data[write_to]["class_id"] = new_class_id
 		end
 
 
-		json_data["readable"][field_to_change] = changed_value
+		json_data[write_to][field_to_change] = changed_value
 		File.open(file_path, "w") { |f| f.write json_data.to_json }
 	end
 

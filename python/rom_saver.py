@@ -23,6 +23,7 @@ import item_writer
 import evolution_writer
 # import msg_reader2
 import traceback
+import overworld_writer
 
 # code.interact(local=dict(globals(), **locals()))
 
@@ -42,6 +43,7 @@ try:
 	trdata_writer.output_narc()
 	item_writer.output_narc()
 	evolution_writer.output_narc()
+	overworld_writer.output_narc()
 	# msg_reader2.output_narc()
 
 	with open(f"{rom_name.split('/')[1]}.nds", 'rb') as f:
@@ -75,6 +77,7 @@ try:
 			b_animations_narc_file_id = settings["battle_animations"]
 			animations_narc_file_id = settings["move_animations"]
 			icons_narc_file_id = settings["icons"]
+			overworlds_narc_file_id = settings["overworlds"]
 
 	if settings["output_arm9"] == True:
 
@@ -149,11 +152,11 @@ try:
 	if settings["base_rom"] == "BW2":
 		mart_narc_filepath = f'{rom_name}/narcs/marts-{mart_narc_file_id}.narc'
 		mart_counts_narc_filepath = f'{rom_name}/narcs/mart_counts-{mart_counts_narc_file_id}.narc'
-
+		overworlds_narc_filepath = f'{rom_name}/narcs/overworlds-{overworlds_narc_file_id}.narc' 
 		grotto_narc_filepath = f'{rom_name}/narcs/grottos-{grotto_narc_file_id}.narc'
 
 
-	rom.files[personal_narc_file_id] = open(personal_narc_filepath, 'rb').read()
+	# rom.files[personal_narc_file_id] = open(personal_narc_filepath, 'rb').read()
 	rom.files[learnset_narc_file_id] = open(learnset_narc_filepath, 'rb').read()
 	rom.files[moves_narc_file_id] = open(moves_narc_filepath, 'rb').read()
 	rom.files[headers_narc_file_id] = open(headers_narc_filepath, 'rb').read()
@@ -186,8 +189,8 @@ try:
 		# rom.files[sprites_narc_file_id] = open(f'{rom_name}/narcs/sprites-{sprites_narc_file_id}.narc', 'rb').read()
 		rom.files[b_animations_narc_file_id] = open(f'{rom_name}/narcs/battle_animations-{b_animations_narc_file_id}.narc', 'rb').read()
 		rom.files[animations_narc_file_id] = open(f'{rom_name}/narcs/move_animations-{animations_narc_file_id}.narc', 'rb').read()
-		rom.files[icons_narc_file_id] = open(f'{rom_name}/narcs/icons-{icons_narc_file_id}.narc', 'rb').read()
-
+		# rom.files[icons_narc_file_id] = open(f'{rom_name}/narcs/icons-{icons_narc_file_id}.narc', 'rb').read()
+		# rom.files[overworlds_narc_file_id] = open(f'{rom_name}/narcs/overworlds-{overworlds_narc_file_id}.narc', 'rb').read()
 
 	if path.exists(f'exports'):
 		rom.saveToFile(f"exports/{rom_name.split('/')[1]}.nds")

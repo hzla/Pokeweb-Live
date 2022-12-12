@@ -120,7 +120,7 @@ def read_narc_data(data, file_name, narc_name):
 		os.makedirs(f'{ROM_NAME}/json/{narc_name}')
 
 	with open(f'{ROM_NAME}/json/{narc_name}/{file_name}.json', "w") as outfile:  
-		json.dump(file, outfile) 
+		json.dump(file, outfile, indent=4) 
 
 def to_readable(raw, file_name):
 	readable = copy.deepcopy(raw)

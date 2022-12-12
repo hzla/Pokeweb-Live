@@ -1129,13 +1129,31 @@ div.-active svg * {
     width: 25%;
 }
 
+.sidebar-row {
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px;
+}
+
+.sidebar-val {
+    max-width: 100px;
+}
+
+.overworld-item.selected {
+    border: 2px solid red;
+}
+
+.pokemon-filter.overworld-bar {
+    width: 25vw;
+}
 
 .overworld-canvas {
     background: #f2f2f2;
     border: 1px solid transparent;
     position: absolute;
     top: 40px;
-    left: 80px;
+    left: 10vw;
 }
 
 .overworld-item {

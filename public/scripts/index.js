@@ -297,6 +297,60 @@ $(document).ready(function() {
 		}
 	})	
 
+	$(document).on('click', '.overworld-item', function(){
+		keys = Object.keys(overworld).filter((key) => key.includes($(this).attr("data-id")))
+
+		$('.overworld-item').removeClass("selected")
+		$(this).addClass("selected")
+
+		for (n in keys) {
+			
+			var fieldName = keys[n].split($(this).attr("data-id"))[1] 
+
+			$(`#${fieldName}`).text(overworld[keys[n]])
+			$(`#${fieldName}`).attr("data-field-name", keys[n])
+		}
+	})	
+
+	
+	// $(document).on('keypress', '.overworld-item', function(e){
+	// 	console.log("press")
+	// 	if ($("#overworld").length > 0) {
+	//       	if(e.which == 37) {
+	// 	        console.log("left")
+	// 	    }
+
+ //      }
+	// })
+
+	 document.onkeydown = function (event) {
+      if ($("#overworld").length > 0) {
+	      switch (event.keyCode) {
+	         case 37:
+	            console.log("Left key is pressed.");
+	            $('#x_cord').text(parseInt( $('#x_cord').text()) - 1)
+	            $('#x_cord').focus().blur()
+	            break;
+	         case 38:
+	            console.log("Up key is pressed.");
+	            $('#y_cord').text(parseInt( $('#y_cord').text()) - 1)
+	            $('#y_cord').focus().blur()
+	            break;
+	         case 39:
+	            console.log("Right key is pressed.");
+	            $('#x_cord').text(parseInt( $('#x_cord').text()) + 1)
+	            $('#x_cord').focus().blur()
+	            break;
+	         case 40:
+	            console.log("Down key is pressed.");
+	            $('#y_cord').text(parseInt( $('#y_cord').text()) + 1)
+	            $('#y_cord').focus().blur()
+	            break;
+      	}
+      }
+   };
+
+
 
 
 	$(document).on('click', '.add-trpok', function(){
@@ -524,28 +578,21 @@ $(document).ready(function() {
 	          	checkbox.click()
 	          } 
 	          checkbox.prop("checked", true).addClass('-active')
+
+	          if ($("#overworld").length > 0) {
+	          	ow_id = $(".overworld-item.selected").attr("data-id")
+	          	$.get(window.location.href + `/box?selected=${ow_id}`, function(data){
+					
+					$("#overworld").html(data)
+				})
+
+	          }
 	        }).fail(function(xhr, status, error) {
 		       	edit_in_progress = false
 		    });;
 	        return
 		}
 		console.log("concurrent update detected")
-		while (edit_in_progress == true) {
-			if (edit_in_progress == false) {
-				edit_in_progress = true
-				$.post( "/update", {"data": data }, function( e ) {     
-		          console.log('upload successful')
-		          
-		          edit_in_progress = false
-		          var checkbox = card.find("." + input.attr('data-check'))
-		          if (!checkbox.prop("checked")){
-		          	checkbox.click()
-		          } 
-		          checkbox.prop("checked", true).addClass('-active')
-		        });
-			}	
-	        return
-		}
 	})
 
 	//high light text on click

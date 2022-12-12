@@ -1,7 +1,22 @@
 
+<script>
+	// json object for filtering
+	overworld = <%= @overworld.to_json %>
+	box = <%= @box.to_json %>
+</script>
 
-<div class="pokemon-filter">	
-	
+<div class="pokemon-filter overworld-bar">	
+	<div class="overworld-info filterable" data-index="<%= @index %>">
+		<% Overworld.npc_fields.each do |field| %>
+			<div class="sidebar-row">
+				<div class="sidebar-label"><%= field %></div>
+				<div class="sidebar-val" ></div>
+				<div class="sidebar-val" data-narc="overworld" contenteditable="true" data-field-name="<%= field %>" data-type="int-65535" id="<%= field %>">
+				</div>
+			</div>
+		<% end %>
+
+	</div>
 	
 </div>
 
@@ -11,11 +26,10 @@
 
 		<% (0..@overworld['npc_count']-1).each do |ov_index| %>
 
-			<div class="overworld-item" data-id="npc-<%= ov_index  %>" style='bottom: <%= (@box[1][1] - @overworld["npc_#{ov_index}_y_cord"]) * 20 %>px;
+			<div title="npc-<%= ov_index  %>" class="overworld-item" data-id="npc_<%= ov_index  %>_" style='bottom: <%= (@box[1][1] - @overworld["npc_#{ov_index}_y_cord"]) * 20 %>px;
 			right: <%= (@box[1][0] - @overworld["npc_#{ov_index}_x_cord"]) * 20 %>px'>
 
-				<%= img "overworlds/#{@overworld["npc_#{ov_index}_overworld_sprite"] + 6}.png", 'overworld-sprite' %>
-				
+				<%= img "overworlds/#{Overworld.png_id(@overworld["npc_#{ov_index}_overworld_sprite"])}.png", 'overworld-sprite' %>			
 			</div>
 
 

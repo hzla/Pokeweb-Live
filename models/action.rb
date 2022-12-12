@@ -1,5 +1,7 @@
 require 'terminal-table'
 require 'base64'
+require 'csv'
+require 'json'
 
 class Action
 
@@ -12,7 +14,15 @@ class Action
 		url = paste_content([poks, moves, sets].join("\n"), key)
 		SessionSettings.set "pastebin", url.split(".com/")[-1]
 		url
+	end
 
+	def self.sprite
+		data = CSV.read("sp_id_to_btx.csv")
+		maps = {}
+		data.each do |entry|
+			maps[entry[0]] = entry[1]
+		end
+		open("Reference_Files/sprite_hash.json", 'w') {|f| f.puts JSON.pretty_generate(maps)}
 	end
 
 	def self.paste_content( content, key )
@@ -33,6 +43,37 @@ class Action
 		output_encs
 		Trdata.get_locations
 		output_trainers
+	end
+
+	def self.tr_template
+		data = CSV.read("Reference_Files/bw2_tr.csv")
+		last_location = nil
+		trainers = Trpok.export_all_showdown false
+		found = []
+
+		data.each do |entry|
+			location = nil
+			location = entry[0] ? entry[0] : last_location
+			last_location = location
+
+			found_trainers = trainers.select do |tr|
+				if !tr.empty?
+					title = tr[0].to_a[0][1].to_a[0][0]
+					title.match /#{entry[1]}[\d?\W]/
+				else
+					false
+				end
+			end
+
+			found_trainers = found_trainers.map do |tr|
+				tr[0].to_a[0][1].to_a[0][1]["tr_id"]
+			end
+			found << [last_location, found_trainers, entry[1]]
+		end
+		found
+
+		open("documentation/sample.json", 'w') {|f| f.puts JSON.pretty_generate(found)}
+
 	end
 
 	def self.output_trainers
@@ -57,7 +98,7 @@ class Action
 				trname = tr_title.split("-")[0].gsub(/Lvl \d*/, "").strip
 				
 				if tr_title.split("-")[1] && !tr_title.include?("Starter")
-					location = tr_title.split("-")[1].strip
+					location = tr_title.split("-")[-1].strip
 					nol += 1
 					if location != last_location
 						f.puts "-----------------"
@@ -68,8 +109,10 @@ class Action
 						last_location = location
 					end
 				end
-							
-				f.puts trname
+				
+
+				tr_info = tr[0].to_a[0][1].to_a[0][1]
+				f.puts "#{trname} #{tr_info["tr_id"]} (#{tr_info['battle_type']}) (#{tr_info["reward_item"]})" 
 				f.puts
 				
 				tr.each do |pok|
