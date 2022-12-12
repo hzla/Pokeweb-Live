@@ -45,7 +45,9 @@ with open(f'{rom_name.split("/")[-1]}.nds', 'rb') as f:
 
 rom = ndspy.rom.NintendoDSRom(data)
 
-if str(rom.name)[-3] == '2':
+
+## check if T to deal with SAK
+if str(rom.name)[-3] == '2' or str(rom.name)[-3] == 'T' :
 	narc_info["base_rom"] = "BW2"
 	MSG_BANKS = BW2_MSG_BANKS
 	narc_info["base_version"] = str(rom.name)[20] + "2"
