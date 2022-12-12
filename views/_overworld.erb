@@ -1,9 +1,9 @@
-<div class="overworld-canvas" style="height:<%= height * 20 %>px;width:<%= width * 20 %>px">
+<div class="overworld-canvas" style="height:<%= height * 32 %>px;width:<%= width * 32 %>px">
 
 	<% (0..overworld['npc_count']-1).each do |ov_index| %>
 
-		<div title="npc-<%= ov_index  %>" class="overworld-item <%= "selected" if selected == "npc_#{ov_index}_" %>" data-id="npc_<%= ov_index  %>_" style='bottom: <%= (box[1][1] - overworld["npc_#{ov_index}_y_cord"]) * 20 %>px;
-		right: <%= (box[1][0] - overworld["npc_#{ov_index}_x_cord"]) * 20 %>px'>
+		<div title="npc-<%= ov_index  %>" class="overworld-item <%= "selected" if selected == "npc_#{ov_index}_" %>" data-id="npc_<%= ov_index  %>_" style='bottom: <%= (box[1][1] - overworld["npc_#{ov_index}_y_cord"]) * 32 %>px;
+		right: <%= (box[1][0] - overworld["npc_#{ov_index}_x_cord"]) * 32 %>px'>
 
 			<%= img "overworlds/#{Overworld.png_id(overworld["npc_#{ov_index}_overworld_sprite"])}.png", 'overworld-sprite' %>			
 		</div>

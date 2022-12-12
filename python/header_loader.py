@@ -91,6 +91,8 @@ with open(f'{rom_name}/message_texts/texts.json', 'r') as f:
 
 		with open(f'{rom_name}/texts/{msg_bank[1]}.txt', 'w+') as outfile:
 			for line in text:
+				line[1] = line[1].replace("―", "").replace("⑮", " F").replace("⑭", " M").replace("⒆⒇", "PkMn").replace("é", "e").encode("ascii", "ignore").decode()
+
 				outfile.write(line[1] + "\n")
 
 
