@@ -43,20 +43,25 @@ narc_info = {} ##store narc names and file id pairs
 with open(f'{rom_name.split("/")[-1]}.nds', 'rb') as f:
     data = f.read()
 
+print("decompressing arm9")
 rom = ndspy.rom.NintendoDSRom(data)
+arm9 = ndspy.codeCompression.decompress(rom.arm9)
+arm9_sample = int.from_bytes(arm9[14:16], 'little')
+version_identifier = {15395: ["B2","BW2"], 63038: ["W2","BW2"], 43676: ["B","BW"], 4581: ["W","BW"]}
+
+narc_info["base_version"] = version_identifier[arm9_sample][0]
+narc_info["base_rom"] = version_identifier[arm9_sample][1]
+
+with open(f'{rom_name}/arm9.bin', 'wb') as f:
+	f.write(arm9)
 
 
-## check if T to deal with SAK
-if str(rom.name)[-3] == '2' or str(rom.name)[-3] == 'T' :
-	narc_info["base_rom"] = "BW2"
+if narc_info["base_rom"] == "BW2":
 	MSG_BANKS = BW2_MSG_BANKS
-	narc_info["base_version"] = str(rom.name)[20] + "2"
 else:
-	narc_info["base_rom"] = "BW"
 	MSG_BANKS = BW_MSG_BANKS
-	narc_info["base_version"] = str(rom.name)[20]
 
-# code.interact(local=dict(globals(), **locals()))
+
 
 for narc in NARCS:
 	file_id = rom.filenames[narc[0]]
@@ -74,9 +79,6 @@ for narc in NARCS:
 	
 	with open(f'{rom_name}/narcs/{narc[1]}-{file_id}.narc', 'wb') as f:
 	    f.write(file)
-
-	# f = open(f'{rom_name}/narcs/{narc[1]}-{file_id}.narc', 'rb')
-	# print(len(f.read()))
 
 
 #############################################################

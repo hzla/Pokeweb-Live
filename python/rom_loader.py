@@ -37,7 +37,7 @@ rom_name = narc_info['rom_name']
 dirpath = Path(f'{rom_name}/json/moves')
 print(dirpath) 
 if dirpath.exists() and dirpath.is_dir():
-    shutil.rmtree(dirpath)
+	shutil.rmtree(dirpath)
 
 if not os.path.exists(f'{rom_name}'):
 	os.makedirs(f'{rom_name}')
@@ -119,6 +119,8 @@ BW2_MSG_BANKS = [[488, "moves"],
 NARCS = []
 MSG_BANKS = []
 
+
+
 ################### EXTRACT RELEVANT NARCS AND ARM9 #######################
 
 if narc_info["base_rom"] == "BW":
@@ -178,14 +180,8 @@ for narc in NARCS:
 	with open(f'{rom_name}/narcs/{narc[1]}-{file_id}.narc', 'wb') as f:
 		f.write(file)
 
-print("decompressing arm9")
 
-arm9 = ndspy.codeCompression.decompress(rom.arm9)
-
-with open(f'{rom_name}/arm9.bin', 'wb') as f:
-	f.write(arm9)
-
-
+arm9 = bytearray(open(f'{rom_name}/arm9.bin', "rb").read())
 
 overlay36 = rom.loadArm9Overlays([36])[36]
 overlay16 = rom.loadArm9Overlays([16])[16]
