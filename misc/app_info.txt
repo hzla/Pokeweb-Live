@@ -89,34 +89,24 @@ write capybara acceptance tests
 
 implement text editor
 
-rewrite narc readers to output on json
-
-implement form creator
-
-implement move creator
-
-implement bw2 tutor moves editor
-
 battle subway editor
 
 pwt editor
 
 implement filter data refresh each time on edit so search bar works on newly changed data
 
-UI for expandable/hidable filter
-
 advanced search by specific field
 
 warn user when loading a rom that will overwrite project data
-
-python parallel processing to speed up load/save times
 
 implement user settings page to allow user to choose whether or not to load/save specific narcs/arm9
 (arm9 currently takes around 5 seconds for ndspy to compress)
 
 organise/refactor index.js 
 
-create reader writer module for .py files
+dynamic expansion
+
+show move perms for overworld editor
 
 
 

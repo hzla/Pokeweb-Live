@@ -35,7 +35,15 @@ class Action
         :api_paste_code => content
       }
       Net::HTTP.post_form(URI.parse("https://pastebin.com/api/api_post.php"), params).body
-    end
+  end
+
+  def self.np_payload
+		payload = {}
+		["moves", "poks", "formatted_sets"].each do |data|
+  		payload[data] = JSON.parse(File.open("public/dist/#{data}.json", "r"){|f| f.read})
+  	end
+  	payload
+  end
 
 	def self.docs
 		output_pokedex

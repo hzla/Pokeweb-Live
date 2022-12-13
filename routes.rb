@@ -538,9 +538,10 @@ get '/publish_calc' do
 	Personal.export_showdown
 	Trpok.export_all_showdown
 	
-	url = Action.pb
+	data = Action.np_payload
 
-	redirect "https://hzla.github.io/Dynamic-Calc/?data=#{SessionSettings.get("pastebin")}&gen=5"
+
+	return data.to_json
 end
 
 

@@ -440,6 +440,7 @@ class Trpok < Pokenarc
 			formatted[species_name][set_name] = set_data
 		end
 
+		File.write("public/dist/formatted_sets.json", JSON.dump(formatted))
 
 		open("public/dist/js/data/sets/gen5.js", "w") do |f| 
 			f.puts "SETDEX_BW ="
