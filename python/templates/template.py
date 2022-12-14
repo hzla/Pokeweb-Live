@@ -4,6 +4,8 @@
 
 # add narc name to parallel.py at line 39
 
+# define narc_format in rom_data.py
+
 # create file narc_name NARCNAME_reader.py in pokeweb/python, template as follows
 
 import code 
@@ -11,7 +13,7 @@ import copy
 import rom_data
 import tools
 
-def output_items_json(narc):
+def output_your_narc_name_json(narc):
 	tools.output_json(narc, YOUR_NARCNAME_HERE, to_readable)
 
 
