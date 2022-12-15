@@ -216,10 +216,7 @@ get '/headers' do
 	@header_data = Header.get_all
 	@location_names = Header.location_names
 
-	if !SessionSettings.get("cords_found")
-		MapMatrix.output_cords
-		SessionSettings.set("cords_found", true)
-	end
+
 
 	erb :headers
 end
@@ -560,6 +557,11 @@ end
 ####################################### OVERWORLDS ###############
 
 get '/overworlds/:id' do 
+
+	if !SessionSettings.get("cords_found")
+		MapMatrix.output_cords
+		SessionSettings.set("cords_found", true)
+	end
 
 	@overworld = Overworld.get_data("#{$rom_name}/json/overworlds/#{params[:id]}.json", "raw")
 	@index = params[:id]

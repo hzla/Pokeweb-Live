@@ -60,6 +60,7 @@ class Overworld < Pokenarc
 			return {"maps" => all_maps, "translate" => [0,0]}
 		end
 		
+
 		# search matrix for matching headers
 		matching_headers = []
 		matrix["headers"].each_with_index do |h, i|
@@ -68,6 +69,7 @@ class Overworld < Pokenarc
 			end
 		end
 		
+		# binding.pry
 		# convert headers to map/cord pairs
 		all_map_cords = []
 		matching_maps = matching_headers.map do |h|
