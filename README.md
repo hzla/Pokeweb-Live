@@ -41,12 +41,10 @@ followed by
 	
    	 pip install ndspy
 
-or 
+or if the above doesn't work.
 
 	pip3 install ndspy
 
-
-if the above doesn't work.
 
 You can now start the server with 
 
