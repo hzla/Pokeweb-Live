@@ -35,22 +35,20 @@ If you already are using ruby >2.6 and python > 3.6, you can skip to the next st
 
 Open the Pokeweb folder in powershell or cmd and run 
 
-	$ bundle install
+	bundle install
 
 followed by
 	
-   	 $ pip install ndspy
+   	 pip install ndspy
 
-or 
+or if the above doesn't work.
 
-	$ pip3 install ndspy
+	pip3 install ndspy
 
-
-if the above doesn't work.
 
 You can now start the server with 
 
-	$ ruby routes.rb
+	ruby routes.rb
 
 
 The Pokeweb server can also be started by clicking and running Pokeweb_Windows.bat. You should be able to view Pokeweb on localhost:4567 in your browser.
@@ -58,25 +56,24 @@ The Pokeweb server can also be started by clicking and running Pokeweb_Windows.b
 
 ### Manual Windows Install
 
-If you are running into issues, try manually installing by clicking and running the ruby and python installers individually. Make sure both versions are in use. If the included installers fail, you can download download windows ruby installer [here](https://rubyinstaller.org/downloads/) and python installer [here](
-).
+If you are running into issues, try manually installing by clicking and running the ruby and python installers individually. Make sure both versions are in use. If the included installers fail, you can download download windows ruby installer [here](https://rubyinstaller.org/downloads/) and python installer [here](https://www.python.org/downloads/).
 You can check your version by typing 
 
- 	$ ruby -v
+ 	ruby -v
 and 
-	$ python -V
+	python -V
 
 Next, navigate to the Pokeweb root folder in cmd or powershell and run
 
-	$ bundle install
+	bundle install
 
 followed by
 	
-    $ pip install ndspy
+    pip install ndspy
 
 If the above steps succeed the server can now be run by running 
 
-	$ ruby routes.rb
+	ruby routes.rb
 
 or by clicking and running Pokeweb_Windows.bat
 
@@ -94,22 +91,20 @@ And then to follow these guides to update ruby and python.
 Once they are installed, navigate to the project folder in Terminal.app 
 
 
-	$ bundle install
+	bundle install
 
 followed by
 	
-    $ pip install ndspy
+    pip install ndspy
 
-or 
+or if the above doesn't work.
 
-	$ pip3 install ndspy
+	pip3 install ndspy
 
-
-if the above doesn't work.
 
 If the above steps succeed the server can now be run by running 
 
-	$ ruby routes.rb
+	ruby routes.rb
 
 
 ## Getting Started
