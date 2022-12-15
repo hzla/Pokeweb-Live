@@ -35,7 +35,7 @@ If you already are using ruby >2.6 and python > 3.6, you can skip to the next st
 
 Open the Pokeweb folder in powershell or cmd and run 
 
-	$ bundle install
+	bundle install
 
 followed by
 	
