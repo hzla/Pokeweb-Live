@@ -216,6 +216,11 @@ get '/headers' do
 	@header_data = Header.get_all
 	@location_names = Header.location_names
 
+	if !SessionSettings.get("cords_found")
+		MapMatrix.output_cords
+		SessionSettings.set("cords_found", true)
+	end
+
 	erb :headers
 end
 
@@ -558,10 +563,13 @@ get '/overworlds/:id' do
 
 	@overworld = Overworld.get_data("#{$rom_name}/json/overworlds/#{params[:id]}.json", "raw")
 	@index = params[:id]
-	@box = Overworld.get_bounding_box @overworld
+	@location = Header.find_location_by_map_id @index.to_i
 
-	@width = @box[1][0] - @box[0][0]
-	@height = @box[1][1] - @box[0][1]
+
+	@map_data = Overworld.get_maps @index.to_i
+	@maps = @map_data["maps"]
+	@tl_x = @map_data["translate"][0]
+	@tl_y = @map_data["translate"][1]
 
 
 	erb :overworld
@@ -572,12 +580,16 @@ get '/overworlds/:id/box' do
 
 	overworld = Overworld.get_data("#{$rom_name}/json/overworlds/#{params[:id]}.json", "raw")
 	selected = params["selected"]
-	box = Overworld.get_bounding_box overworld	
-	width = box[1][0] - box[0][0]
-	height = box[1][1] - box[0][1]
+
+	@index = params[:id]
 
 
-	erb :'_overworld', :layout => false, :locals => { :overworld => overworld, :box => box, :height => height, :width => width, :selected => selected}
+	map_data = Overworld.get_maps @index.to_i
+	maps = map_data["maps"]
+	tl_x = map_data["translate"][0]
+	tl_y = map_data["translate"][1]
+
+	erb :'_overworld', :layout => false, :locals => { :overworld => overworld, :tl_x => tl_x, :tl_y => tl_y, :maps => maps , :selected => selected}
 end
 
 

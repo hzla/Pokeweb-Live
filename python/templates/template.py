@@ -83,7 +83,7 @@ if len(sys.argv) > 2 and sys.argv[1] == "update":
 		write_readable_to_raw(int(file_name))
 
 
-# define narc file paths and in rom_saver.py 
+# add narc to top of rom_saver.py 
 
 import your_narc_name_writer
 

@@ -15,7 +15,6 @@ class Pokenarc
 		collection = []
 		files = Dir["#{$rom_name}/json/#{@@narc_name}/*.json"]
 		file_count = files.length
-
 		(0..file_count - 1).each do |n|
 			
 			file = File.open("#{$rom_name}/json/#{@@narc_name}/#{n}.json", "r:ISO8859-1") {|f| f.read }

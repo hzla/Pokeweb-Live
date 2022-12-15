@@ -16,7 +16,7 @@ class Header
 		location = nil
 		headers.each do |k,v|
 			next if k == "count"
-			if v["map_id"] == map_id
+			if v["overworlds_id"] == map_id
 				location = v["location_name"]
 				break
 			end
