@@ -1146,6 +1146,32 @@ div.-active svg * {
     border: 2px solid red;
 }
 
+.sidebar-btns {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0px;
+}
+
+.ow-btn {
+    height: 40px;
+    color: #f2f2f2;
+    font-size: 16px;
+    cursor:  pointer;
+    text-align: center;
+    line-height: 30px;
+    padding:  5px;
+    border-radius: 2px;
+
+}
+
+#add-npc {
+    background: #1abc9c;
+}
+
+#del-npc {
+    background: #e74c3c;
+}
+
 .overworld-canvas {
     background: #f2f2f2;
     position: absolute;
@@ -1168,12 +1194,13 @@ div.-active svg * {
     width: 32px;
     background: red;
     overflow: hidden;
+    box-sizing: content-box;
 }
 
 .overworld-sprite {
     height: auto;
     width: 32px;
-    bottom: 0px;
+    top:  0px;
     position: absolute;
 }
 

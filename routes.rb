@@ -563,7 +563,7 @@ get '/overworlds/:id' do
 		SessionSettings.set("cords_found", true)
 	end
 
-	@overworld = Overworld.get_data("#{$rom_name}/json/overworlds/#{params[:id]}.json", "raw")
+	@overworld = Overworld.get_data(params[:id].to_i, "raw")
 	@index = params[:id]
 	@location = Header.find_location_by_map_id @index.to_i
 
@@ -573,14 +573,25 @@ get '/overworlds/:id' do
 	@tl_x = @map_data["translate"][0]
 	@tl_y = @map_data["translate"][1]
 
-
 	erb :overworld
-
 end
+
+put '/overworlds/:id/npc' do 
+	Overworld.add_npc params["id"].to_i
+	p params["id"]
+	"200 OK"
+end
+
+delete '/overworlds/:id/npc' do
+	Overworld.remove_npc params["id"].to_i
+	"200 OK"
+end
+
+
 
 get '/overworlds/:id/box' do 
 
-	overworld = Overworld.get_data("#{$rom_name}/json/overworlds/#{params[:id]}.json", "raw")
+	overworld = Overworld.get_data(params[:id].to_i, "raw")
 	selected = params["selected"]
 
 	@index = params[:id]

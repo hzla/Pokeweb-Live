@@ -16,7 +16,7 @@
 
 		 <%  %>
 		<div title="npc-<%= ov_index  %>" class="overworld-item <%= "selected" if selected == "npc_#{ov_index}_" %>" data-id="npc_<%= ov_index  %>_" style='top: <%= (overworld["npc_#{ov_index}_y_cord"] - tl_y) * 32 + 40 %>px;
-		left:calc(2vw + <%= (overworld["npc_#{ov_index}_x_cord"] - tl_x) * 32%>px)'>
+		left:calc(2vw + <%= (overworld["npc_#{ov_index}_x_cord"] - tl_x) * 32%>px)' data-dir="<%= overworld["npc_#{ov_index}_direction"] %>">
 
 			<%= img "overworlds/#{Overworld.png_id(overworld["npc_#{ov_index}_overworld_sprite"])}.png", 'overworld-sprite' %>			
 		</div>

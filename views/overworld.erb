@@ -24,7 +24,14 @@
 		<% end %>
 	</div>
 
+
+
 	<a href="https://github.com/hzla/Pokeweb/wiki/Editors#overworlds" target="_blank">Instructions</a>
+
+	<div class="sidebar-btns">
+		<div class="ow-btn" id="add-npc">Add NPC</div>
+		<div class="ow-btn" id="del-npc">Del Last NPC</div>
+	</div>
 	
 </div>
 
@@ -48,7 +55,7 @@
 
 		 <%  %>
 		<div title="npc-<%= ov_index  %>" class="overworld-item" data-id="npc_<%= ov_index  %>_" style='top: <%= (@overworld["npc_#{ov_index}_y_cord"] - @tl_y) * 32 + 40 %>px;
-		left:calc(2vw + <%= (@overworld["npc_#{ov_index}_x_cord"] - @tl_x) * 32%>px)'>
+		left:calc(2vw + <%= (@overworld["npc_#{ov_index}_x_cord"] - @tl_x) * 32%>px)' data-dir="<%= @overworld["npc_#{ov_index}_direction"] %>">
 
 			<%= img "overworlds/#{Overworld.png_id(@overworld["npc_#{ov_index}_overworld_sprite"])}.png", 'overworld-sprite' %>			
 		</div>

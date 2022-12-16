@@ -5,6 +5,87 @@ class Overworld < Pokenarc
 		super
 	end
 
+	def self.get_data file_name, file_type
+		@@narc_name = "overworlds"
+		file_name = "#{$rom_name}/json/overworlds/#{file_name}.json"
+		super file_name, file_type
+	end
+
+	def self.add_npc ow_id
+		overworld = get_data(ow_id, "all")
+		ow = overworld["raw"]
+		
+		npc_index = ow["npc_count"]
+		npc_fields = ["overworld_id",
+        "overworld_sprite",
+        "movement_permissions",
+        "movement_permissions_2",
+        "overworld_flag",
+        "script_id",
+        "direction",
+        "sight",
+        "unknown_1",
+        "unknown_2",
+        "horizontal_leash",
+        "vertical_leash",
+        "unknown_3",
+        "unknown_4",
+        "x_cord",
+        "y_cord",
+        "unknown_5",
+        "z_cord"]
+
+        # increment npc count and file length
+		ow["npc_count"] += 1
+		ow["file_length"] += 36
+
+		# set all fields to 0
+		npc_fields.each do |field|
+			ow["npc_#{npc_index}_#{field}"] = 0
+		end
+
+		# set to default sprite and overworld_id
+		ow["npc_#{npc_index}_overworld_sprite"] = 1
+		ow["npc_#{npc_index}_overworld_id"] = npc_index
+
+		# place next to last npc
+		if npc_index > 0
+			ow["npc_#{npc_index}_x_cord"] = ow["npc_#{npc_index - 1}_x_cord"] + 1
+			ow["npc_#{npc_index}_y_cord"] = ow["npc_#{npc_index - 1}_y_cord"] + 1	
+		end 
+		overworld["raw"] = ow
+		file_path = "#{$rom_name}/json/overworlds/#{ow_id}.json"
+		File.open(file_path, "w") { |f| f.write overworld.to_json}
+
+		ow
+	end
+
+	# deletes last npc
+	def self.remove_npc ow_id
+		
+		overworld = get_data(ow_id, "all")
+		ow = overworld["raw"]		
+		npc_index = ow["npc_count"]
+
+		return if npc_index < 1
+
+        # deincrement npc count and file length
+		overworld["raw"]["npc_count"] -= 1
+		overworld["raw"]["file_length"] -= 36
+
+		# delete all fields for npc
+		ow.each do |k,v|
+			if k.include?("npc_#{npc_index - 1}_")
+				overworld["raw"].delete(k)
+			end
+		end
+
+		file_path = "#{$rom_name}/json/overworlds/#{ow_id}.json"
+		File.open(file_path, "w") { |f| f.write overworld.to_json}
+
+		ow
+	end
+
 	def self.sprite_hash
 		JSON.parse(File.open('Reference_Files/sprite_hash.json', "r"){|f| f.read})
 	end
@@ -115,27 +196,6 @@ class Overworld < Pokenarc
 		 'unknown_5',
 		 'z_cord']
 	end
-
-	# def self.get_data(file_name)
-	# 	@@narc_name = "overworlds"
-	# 	# JSON.parse(File.open(file_name, "r"){|f| f.read})["readable"]
-	# 	super
-	# end
-
-	def self.get_bounding_box(overworld)
-		npc_count = overworld["npc_count"]
-
-		x_cords = []
-		y_cords = []
-
-		(0..npc_count - 1).each do |n|
-			x_cords << overworld["npc_#{n}_x_cord"]
-			y_cords << overworld["npc_#{n}_y_cord"]
-		end
-
-		[[x_cords.min, y_cords.min], [x_cords.max, y_cords.max]]
-	end
-
 end
 
 

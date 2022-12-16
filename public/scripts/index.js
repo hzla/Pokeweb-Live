@@ -91,6 +91,41 @@ $(document).ready(function() {
 	$(".season-icon").contextMenu(copy_menu)
 	$(":not(.log-text)[contenteditable='true']").contextMenu(editable_menu)
 	console.log("menu ready")
+
+	get_offset = function(height, direction) {
+		var offsets = [0,0,0,0]
+		if (height >= 12) {
+			offsets = [0,3,6,9]
+		}
+		if (height == 16) {
+			offsets = [0,4,8,12]
+		}
+		if (height == 2) {
+			offsets = [0,4,8,12]
+		}
+
+		if (height == 6 || height == 7) {
+			offsets = [0,2,5,"f"]
+		}
+
+		return offsets[direction]
+	}
+
+	adjust_directions = function(){
+		$('.overworld-sprite').each(function(){
+			var sprite_height = Math.round($(this)[0].naturalHeight / 32)
+			var direction = $(this).parent().attr('data-dir')
+			var offset = get_offset(sprite_height, direction)
+			if (offset == "f") {
+				$(this).css("top", `-${5 * 32}px`)
+				$(this).css("transform", "scaleX(-1)")
+			} else {
+				$(this).css("top", `-${offset * 32}px`)
+			}
+
+		})
+	}
+	adjust_directions()
 })
 
 ///////////////////// EVENT BINDINGS //////////////////////////
@@ -312,17 +347,29 @@ $(document).ready(function() {
 		}
 	})	
 
+	$(document).on('click', '#add-npc', function(){	
+		$.put(window.location.href + `/npc`, data => {
+			var new_ow_id = parseInt($(".overworld-item").last().attr("data-id").split("_")[1]) + 1
+			new_ow_id = `npc_${new_ow_id}_`
+			
+			$.get(window.location.href + `/box?selected=${new_ow_id}`, data => {		
+				$("#overworld").html(data)
+				$(".overworld-item").last().click()
+				adjust_directions()
+			})
+		})	
+	})
+
+	$(document).on('click', '#del-npc', function(){	
+		$.delete(window.location.href + `/npc`, data => {
+			$.get(window.location.href + `/box?selected`, data => {		
+				$("#overworld").html(data)
+				adjust_directions()
+			})
+		})	
+	})	
+
 	
-	// $(document).on('keypress', '.overworld-item', function(e){
-	// 	console.log("press")
-	// 	if ($("#overworld").length > 0) {
-	//       	if(e.which == 37) {
-	// 	        console.log("left")
-	// 	    }
-
- //      }
-	// })
-
 	 document.onkeydown = function (event) {
       if ($("#overworld").length > 0) {
 	      switch (event.keyCode) {
@@ -584,6 +631,7 @@ $(document).ready(function() {
 	          	$.get(window.location.href + `/box?selected=${ow_id}`, function(data){
 					
 					$("#overworld").html(data)
+					adjust_directions()
 				})
 
 	          }
