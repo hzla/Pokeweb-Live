@@ -56,7 +56,7 @@ The Pokeweb server can also be started by clicking and running Pokeweb_Windows.b
 
 ### Manual Windows Install
 
-If you are running into issues, try manually installing by clicking and running the ruby and python installers individually. Make sure both versions are in use. If the included installers fail, you can download download windows ruby installer [here](https://rubyinstaller.org/downloads/) and python installer [here](https://www.python.org/downloads/).
+If you are running into issues, try manually installing by downloading the latest windows ruby installer [here](https://rubyinstaller.org/downloads/) and python installer [here](https://www.python.org/downloads/).
 You can check your version by typing 
 
  	ruby -v
