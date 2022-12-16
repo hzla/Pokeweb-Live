@@ -1,10 +1,18 @@
 [
   {
-    "name": "―――――",
+    "name": "",
     "index": 0,
-    "via_player": 1.0,
-    "via_ai": 1.0,
+    "via_player": 0,
+    "via_ai": 0,
     "form": 0,
+    "via_player_gym_1": 0,
+    "via_player_gym_2": 0,
+    "via_player_gym_3": 0,
+    "via_player_gym_4": 0,
+    "via_player_gym_5": 0,
+    "via_player_gym_6": 0,
+    "via_player_gym_7": 0,
+    "via_player_gym_8": 0,
     "types": [
       "Normal",
       "Normal"
@@ -54,9 +62,9 @@
       "Grass",
       "Poison"
     ],
-    "modified_bst": 419.0,
-    "modified_bst_physical": 411.0,
-    "modified_bst_special": 427.0,
+    "modified_bst": 413.4,
+    "modified_bst_physical": 404.4,
+    "modified_bst_special": 422.4,
     "can_be_mixed": true
   },
   {
@@ -82,7 +90,7 @@
     "form": 0,
     "types": [
       "Fire",
-      "Dragon"
+      "Fire"
     ],
     "modified_bst": 332.4,
     "modified_bst_physical": 316.4,
@@ -97,12 +105,12 @@
     "form": 0,
     "types": [
       "Fire",
-      "Dragon"
+      "Flying"
     ],
-    "modified_bst": 420.0,
-    "modified_bst_physical": 416.0,
-    "modified_bst_special": 424.0,
-    "can_be_mixed": true
+    "modified_bst": 437.4,
+    "modified_bst_physical": 412.4,
+    "modified_bst_special": 437.4,
+    "can_be_mixed": false
   },
   {
     "name": "SQUIRTLE",
@@ -144,9 +152,9 @@
       "Water",
       "Water"
     ],
-    "modified_bst": 422.6,
+    "modified_bst": 420.6,
     "modified_bst_physical": 419.6,
-    "modified_bst_special": 426.6,
+    "modified_bst_special": 421.6,
     "can_be_mixed": true
   },
   {
@@ -189,9 +197,9 @@
       "Bug",
       "Flying"
     ],
-    "modified_bst": 393.0,
-    "modified_bst_physical": 338.0,
-    "modified_bst_special": 393.0,
+    "modified_bst": 328.0,
+    "modified_bst_physical": 293.0,
+    "modified_bst_special": 328.0,
     "can_be_mixed": false
   },
   {
@@ -234,9 +242,9 @@
       "Bug",
       "Poison"
     ],
-    "modified_bst": 388.0,
-    "modified_bst_physical": 388.0,
-    "modified_bst_special": 338.0,
+    "modified_bst": 331.0,
+    "modified_bst_physical": 331.0,
+    "modified_bst_special": 296.0,
     "can_be_mixed": false
   },
   {
@@ -249,9 +257,9 @@
       "Normal",
       "Flying"
     ],
-    "modified_bst": 213.2,
-    "modified_bst_physical": 198.2,
-    "modified_bst_special": 213.2,
+    "modified_bst": 212.2,
+    "modified_bst_physical": 212.2,
+    "modified_bst_special": 202.2,
     "can_be_mixed": false
   },
   {
@@ -264,9 +272,9 @@
       "Normal",
       "Flying"
     ],
-    "modified_bst": 293.2,
-    "modified_bst_physical": 278.2,
-    "modified_bst_special": 293.2,
+    "modified_bst": 292.2,
+    "modified_bst_physical": 292.2,
+    "modified_bst_special": 282.2,
     "can_be_mixed": false
   },
   {
@@ -279,10 +287,10 @@
       "Normal",
       "Flying"
     ],
-    "modified_bst": 431.2,
-    "modified_bst_physical": 376.2,
-    "modified_bst_special": 431.2,
-    "can_be_mixed": false
+    "modified_bst": 383.2,
+    "modified_bst_physical": 388.2,
+    "modified_bst_special": 378.2,
+    "can_be_mixed": true
   },
   {
     "name": "RATTATA",
@@ -309,9 +317,9 @@
       "Normal",
       "Normal"
     ],
-    "modified_bst": 385.6,
-    "modified_bst_physical": 385.6,
-    "modified_bst_special": 343.6,
+    "modified_bst": 356.4,
+    "modified_bst_physical": 356.4,
+    "modified_bst_special": 325.4,
     "can_be_mixed": false
   },
   {
@@ -321,12 +329,12 @@
     "via_ai": 1.0,
     "form": 0,
     "types": [
-      "Flying",
+      "Normal",
       "Flying"
     ],
-    "modified_bst": 250.8,
-    "modified_bst_physical": 250.8,
-    "modified_bst_special": 221.8,
+    "modified_bst": 232.8,
+    "modified_bst_physical": 232.8,
+    "modified_bst_special": 203.8,
     "can_be_mixed": false
   },
   {
@@ -336,12 +344,12 @@
     "via_ai": 1.0,
     "form": 0,
     "types": [
-      "Flying",
+      "Normal",
       "Flying"
     ],
-    "modified_bst": 415.2,
-    "modified_bst_physical": 415.2,
-    "modified_bst_special": 381.2,
+    "modified_bst": 375.8,
+    "modified_bst_physical": 375.8,
+    "modified_bst_special": 346.8,
     "can_be_mixed": false
   },
   {
@@ -369,9 +377,9 @@
       "Poison",
       "Poison"
     ],
-    "modified_bst": 386.0,
-    "modified_bst_physical": 386.0,
-    "modified_bst_special": 331.0,
+    "modified_bst": 359.4,
+    "modified_bst_physical": 359.4,
+    "modified_bst_special": 339.4,
     "can_be_mixed": false
   },
   {
@@ -384,9 +392,9 @@
       "Electric",
       "Electric"
     ],
-    "modified_bst": 281.0,
-    "modified_bst_physical": 281.0,
-    "modified_bst_special": 281.0,
+    "modified_bst": 251.0,
+    "modified_bst_physical": 254.0,
+    "modified_bst_special": 249.0,
     "can_be_mixed": true
   },
   {
@@ -399,9 +407,9 @@
       "Electric",
       "Electric"
     ],
-    "modified_bst": 395.0,
-    "modified_bst_physical": 395.0,
-    "modified_bst_special": 395.0,
+    "modified_bst": 378.0,
+    "modified_bst_physical": 378.0,
+    "modified_bst_special": 378.0,
     "can_be_mixed": true
   },
   {
@@ -474,10 +482,10 @@
       "Poison",
       "Ground"
     ],
-    "modified_bst": 410.8,
-    "modified_bst_physical": 410.8,
+    "modified_bst": 396.8,
+    "modified_bst_physical": 400.8,
     "modified_bst_special": 393.8,
-    "can_be_mixed": false
+    "can_be_mixed": true
   },
   {
     "name": "Nidoran-M",
@@ -519,10 +527,10 @@
       "Poison",
       "Ground"
     ],
-    "modified_bst": 406.6,
-    "modified_bst_physical": 406.6,
+    "modified_bst": 392.6,
+    "modified_bst_physical": 396.6,
     "modified_bst_special": 389.6,
-    "can_be_mixed": false
+    "can_be_mixed": true
   },
   {
     "name": "CLEFAIRY",
@@ -531,8 +539,8 @@
     "via_ai": 1.0,
     "form": 0,
     "types": [
-      "Fairy",
-      "Fairy"
+      "Normal",
+      "Normal"
     ],
     "modified_bst": 262.4,
     "modified_bst_physical": 247.4,
@@ -546,13 +554,13 @@
     "via_ai": 1.0,
     "form": 0,
     "types": [
-      "Fairy",
-      "Fairy"
+      "Normal",
+      "Normal"
     ],
-    "modified_bst": 392.4,
+    "modified_bst": 374.4,
     "modified_bst_physical": 367.4,
-    "modified_bst_special": 392.4,
-    "can_be_mixed": false
+    "modified_bst_special": 382.4,
+    "can_be_mixed": true
   },
   {
     "name": "VULPIX",
@@ -577,11 +585,11 @@
     "form": 0,
     "types": [
       "Fire",
-      "Fairy"
+      "Fire"
     ],
-    "modified_bst": 417.79999999999995,
-    "modified_bst_physical": 410.79999999999995,
-    "modified_bst_special": 424.79999999999995,
+    "modified_bst": 411.0,
+    "modified_bst_physical": 409.0,
+    "modified_bst_special": 414.0,
     "can_be_mixed": true
   },
   {
@@ -592,12 +600,12 @@
     "form": 0,
     "types": [
       "Normal",
-      "Fairy"
+      "Normal"
     ],
-    "modified_bst": 230.0,
-    "modified_bst_physical": 210.0,
-    "modified_bst_special": 230.0,
-    "can_be_mixed": false
+    "modified_bst": 220.0,
+    "modified_bst_physical": 220.0,
+    "modified_bst_special": 220.0,
+    "can_be_mixed": true
   },
   {
     "name": "WIGGLYTUFF",
@@ -607,12 +615,12 @@
     "form": 0,
     "types": [
       "Normal",
-      "Fairy"
+      "Normal"
     ],
-    "modified_bst": 365.0,
-    "modified_bst_physical": 330.0,
-    "modified_bst_special": 365.0,
-    "can_be_mixed": false
+    "modified_bst": 342.0,
+    "modified_bst_physical": 340.0,
+    "modified_bst_special": 345.0,
+    "can_be_mixed": true
   },
   {
     "name": "ZUBAT",
@@ -684,9 +692,9 @@
       "Grass",
       "Poison"
     ],
-    "modified_bst": 385.0,
+    "modified_bst": 375.0,
     "modified_bst_physical": 355.0,
-    "modified_bst_special": 385.0,
+    "modified_bst_special": 375.0,
     "can_be_mixed": false
   },
   {
@@ -714,9 +722,9 @@
       "Bug",
       "Grass"
     ],
-    "modified_bst": 368.0,
-    "modified_bst_physical": 368.0,
-    "modified_bst_special": 308.0,
+    "modified_bst": 319.0,
+    "modified_bst_physical": 319.0,
+    "modified_bst_special": 284.0,
     "can_be_mixed": false
   },
   {
@@ -729,10 +737,10 @@
       "Bug",
       "Poison"
     ],
-    "modified_bst": 268.0,
-    "modified_bst_physical": 271.0,
-    "modified_bst_special": 266.0,
-    "can_be_mixed": true
+    "modified_bst": 253.0,
+    "modified_bst_physical": 253.0,
+    "modified_bst_special": 238.0,
+    "can_be_mixed": false
   },
   {
     "name": "VENOMOTH",
@@ -744,9 +752,9 @@
       "Bug",
       "Poison"
     ],
-    "modified_bst": 386.0,
-    "modified_bst_physical": 341.0,
-    "modified_bst_special": 386.0,
+    "modified_bst": 376.0,
+    "modified_bst_physical": 351.0,
+    "modified_bst_special": 376.0,
     "can_be_mixed": false
   },
   {
@@ -774,8 +782,8 @@
       "Ground",
       "Ground"
     ],
-    "modified_bst": 375.0,
-    "modified_bst_physical": 375.0,
+    "modified_bst": 355.0,
+    "modified_bst_physical": 355.0,
     "modified_bst_special": 325.0,
     "can_be_mixed": false
   },
@@ -789,10 +797,10 @@
       "Normal",
       "Normal"
     ],
-    "modified_bst": 273.0,
-    "modified_bst_physical": 273.0,
-    "modified_bst_special": 243.0,
-    "can_be_mixed": false
+    "modified_bst": 250.0,
+    "modified_bst_physical": 253.0,
+    "modified_bst_special": 248.0,
+    "can_be_mixed": true
   },
   {
     "name": "PERSIAN",
@@ -804,9 +812,9 @@
       "Normal",
       "Normal"
     ],
-    "modified_bst": 388.0,
-    "modified_bst_physical": 393.0,
-    "modified_bst_special": 383.0,
+    "modified_bst": 370.0,
+    "modified_bst_physical": 373.0,
+    "modified_bst_special": 368.0,
     "can_be_mixed": true
   },
   {
@@ -832,7 +840,7 @@
     "form": 0,
     "types": [
       "Water",
-      "Psychic"
+      "Water"
     ],
     "modified_bst": 396.4,
     "modified_bst_physical": 390.4,
@@ -939,9 +947,9 @@
       "Water",
       "Fighting"
     ],
-    "modified_bst": 427.0,
-    "modified_bst_physical": 427.0,
-    "modified_bst_special": 382.0,
+    "modified_bst": 407.0,
+    "modified_bst_physical": 407.0,
+    "modified_bst_special": 392.0,
     "can_be_mixed": false
   },
   {
@@ -984,9 +992,9 @@
       "Psychic",
       "Psychic"
     ],
-    "modified_bst": 446.0,
-    "modified_bst_physical": 361.0,
-    "modified_bst_special": 446.0,
+    "modified_bst": 438.0,
+    "modified_bst_physical": 353.0,
+    "modified_bst_special": 438.0,
     "can_be_mixed": false
   },
   {
@@ -1074,9 +1082,9 @@
       "Grass",
       "Poison"
     ],
-    "modified_bst": 374.0,
-    "modified_bst_physical": 377.0,
-    "modified_bst_special": 372.0,
+    "modified_bst": 366.0,
+    "modified_bst_physical": 369.0,
+    "modified_bst_special": 364.0,
     "can_be_mixed": true
   },
   {
@@ -1149,8 +1157,8 @@
       "Rock",
       "Ground"
     ],
-    "modified_bst": 410.0,
-    "modified_bst_physical": 410.0,
+    "modified_bst": 400.0,
+    "modified_bst_physical": 400.0,
     "modified_bst_special": 345.0,
     "can_be_mixed": false
   },
@@ -1177,7 +1185,7 @@
     "form": 0,
     "types": [
       "Fire",
-      "Fairy"
+      "Fire"
     ],
     "modified_bst": 411.0,
     "modified_bst_physical": 411.0,
@@ -1251,13 +1259,13 @@
     "via_ai": 1.0,
     "form": 0,
     "types": [
-      "Fighting",
+      "Normal",
       "Flying"
     ],
-    "modified_bst": 389.0,
-    "modified_bst_physical": 389.0,
-    "modified_bst_special": 354.0,
-    "can_be_mixed": false
+    "modified_bst": 278.6,
+    "modified_bst_physical": 282.6,
+    "modified_bst_special": 275.6,
+    "can_be_mixed": true
   },
   {
     "name": "DODUO",
@@ -1284,9 +1292,9 @@
       "Normal",
       "Flying"
     ],
-    "modified_bst": 406.0,
-    "modified_bst_physical": 406.0,
-    "modified_bst_special": 356.0,
+    "modified_bst": 394.0,
+    "modified_bst_physical": 394.0,
+    "modified_bst_special": 344.0,
     "can_be_mixed": false
   },
   {
@@ -1314,10 +1322,10 @@
       "Water",
       "Ice"
     ],
-    "modified_bst": 404.0,
-    "modified_bst_physical": 404.0,
+    "modified_bst": 384.0,
+    "modified_bst_physical": 384.0,
     "modified_bst_special": 384.0,
-    "can_be_mixed": false
+    "can_be_mixed": true
   },
   {
     "name": "GRIMER",
@@ -1329,9 +1337,9 @@
       "Poison",
       "Poison"
     ],
-    "modified_bst": 286.0,
-    "modified_bst_physical": 286.0,
-    "modified_bst_special": 246.0,
+    "modified_bst": 270.0,
+    "modified_bst_physical": 270.0,
+    "modified_bst_special": 230.0,
     "can_be_mixed": false
   },
   {
@@ -1357,7 +1365,7 @@
     "form": 0,
     "types": [
       "Water",
-      "Ice"
+      "Water"
     ],
     "modified_bst": 243.0,
     "modified_bst_physical": 243.0,
@@ -1434,9 +1442,9 @@
       "Rock",
       "Ground"
     ],
-    "modified_bst": 412.0,
-    "modified_bst_physical": 412.0,
-    "modified_bst_special": 357.0,
+    "modified_bst": 328.0,
+    "modified_bst_physical": 328.0,
+    "modified_bst_special": 313.0,
     "can_be_mixed": false
   },
   {
@@ -1449,9 +1457,9 @@
       "Psychic",
       "Psychic"
     ],
-    "modified_bst": 274.4,
-    "modified_bst_physical": 276.4,
-    "modified_bst_special": 273.4,
+    "modified_bst": 263.4,
+    "modified_bst_physical": 266.4,
+    "modified_bst_special": 261.4,
     "can_be_mixed": true
   },
   {
@@ -1464,9 +1472,9 @@
       "Psychic",
       "Psychic"
     ],
-    "modified_bst": 387.4,
-    "modified_bst_physical": 387.4,
-    "modified_bst_special": 387.4,
+    "modified_bst": 386.4,
+    "modified_bst_physical": 386.4,
+    "modified_bst_special": 386.4,
     "can_be_mixed": true
   },
   {
@@ -1509,9 +1517,9 @@
       "Electric",
       "Electric"
     ],
-    "modified_bst": 317.0,
-    "modified_bst_physical": 282.0,
-    "modified_bst_special": 317.0,
+    "modified_bst": 299.0,
+    "modified_bst_physical": 274.0,
+    "modified_bst_special": 299.0,
     "can_be_mixed": false
   },
   {
@@ -1524,9 +1532,9 @@
       "Electric",
       "Electric"
     ],
-    "modified_bst": 440.0,
-    "modified_bst_physical": 410.0,
-    "modified_bst_special": 440.0,
+    "modified_bst": 428.0,
+    "modified_bst_physical": 398.0,
+    "modified_bst_special": 428.0,
     "can_be_mixed": false
   },
   {
@@ -1554,9 +1562,9 @@
       "Grass",
       "Psychic"
     ],
-    "modified_bst": 414.0,
-    "modified_bst_physical": 384.0,
-    "modified_bst_special": 414.0,
+    "modified_bst": 406.0,
+    "modified_bst_physical": 376.0,
+    "modified_bst_special": 406.0,
     "can_be_mixed": false
   },
   {
@@ -1779,9 +1787,9 @@
       "Water",
       "Water"
     ],
-    "modified_bst": 297.6,
-    "modified_bst_physical": 297.6,
-    "modified_bst_special": 245.6,
+    "modified_bst": 275.6,
+    "modified_bst_physical": 275.6,
+    "modified_bst_special": 243.6,
     "can_be_mixed": false
   },
   {
@@ -1794,9 +1802,9 @@
       "Water",
       "Water"
     ],
-    "modified_bst": 407.6,
-    "modified_bst_physical": 407.6,
-    "modified_bst_special": 350.6,
+    "modified_bst": 369.6,
+    "modified_bst_physical": 369.6,
+    "modified_bst_special": 342.6,
     "can_be_mixed": false
   },
   {
@@ -1837,11 +1845,11 @@
     "form": 0,
     "types": [
       "Psychic",
-      "Fairy"
+      "Psychic"
     ],
-    "modified_bst": 412.0,
-    "modified_bst_physical": 337.0,
-    "modified_bst_special": 412.0,
+    "modified_bst": 396.0,
+    "modified_bst_physical": 341.0,
+    "modified_bst_special": 396.0,
     "can_be_mixed": false
   },
   {
@@ -1869,9 +1877,9 @@
       "Ice",
       "Psychic"
     ],
-    "modified_bst": 444.0,
-    "modified_bst_physical": 362.0,
-    "modified_bst_special": 444.0,
+    "modified_bst": 398.0,
+    "modified_bst_physical": 333.0,
+    "modified_bst_special": 398.0,
     "can_be_mixed": false
   },
   {
@@ -1929,8 +1937,8 @@
       "Normal",
       "Normal"
     ],
-    "modified_bst": 449.0,
-    "modified_bst_physical": 449.0,
+    "modified_bst": 439.0,
+    "modified_bst_physical": 439.0,
     "modified_bst_special": 379.0,
     "can_be_mixed": false
   },
@@ -2049,9 +2057,9 @@
       "Fire",
       "Fire"
     ],
-    "modified_bst": 445.0,
-    "modified_bst_physical": 445.0,
-    "modified_bst_special": 380.0,
+    "modified_bst": 409.0,
+    "modified_bst_physical": 409.0,
+    "modified_bst_special": 374.0,
     "can_be_mixed": false
   },
   {
@@ -2302,7 +2310,7 @@
     "form": 0,
     "types": [
       "Grass",
-      "Fairy"
+      "Grass"
     ],
     "modified_bst": 322.0,
     "modified_bst_physical": 322.0,
@@ -2317,11 +2325,11 @@
     "form": 0,
     "types": [
       "Grass",
-      "Fairy"
+      "Grass"
     ],
-    "modified_bst": 423.0,
+    "modified_bst": 418.0,
     "modified_bst_physical": 418.0,
-    "modified_bst_special": 429.0,
+    "modified_bst_special": 419.0,
     "can_be_mixed": true
   },
   {
@@ -2364,9 +2372,9 @@
       "Fire",
       "Fire"
     ],
-    "modified_bst": 438.4,
+    "modified_bst": 437.4,
     "modified_bst_physical": 412.4,
-    "modified_bst_special": 438.4,
+    "modified_bst_special": 437.4,
     "can_be_mixed": false
   },
   {
@@ -2394,9 +2402,9 @@
       "Water",
       "Water"
     ],
-    "modified_bst": 337.0,
-    "modified_bst_physical": 337.0,
-    "modified_bst_special": 306.0,
+    "modified_bst": 329.0,
+    "modified_bst_physical": 329.0,
+    "modified_bst_special": 308.0,
     "can_be_mixed": false
   },
   {
@@ -2409,9 +2417,9 @@
       "Water",
       "Water"
     ],
-    "modified_bst": 447.0,
-    "modified_bst_physical": 447.0,
-    "modified_bst_special": 406.0,
+    "modified_bst": 430.0,
+    "modified_bst_physical": 430.0,
+    "modified_bst_special": 404.0,
     "can_be_mixed": false
   },
   {
@@ -2424,9 +2432,9 @@
       "Normal",
       "Normal"
     ],
-    "modified_bst": 243.0,
-    "modified_bst_physical": 243.0,
-    "modified_bst_special": 228.0,
+    "modified_bst": 168.2,
+    "modified_bst_physical": 168.2,
+    "modified_bst_special": 157.2,
     "can_be_mixed": false
   },
   {
@@ -2439,9 +2447,9 @@
       "Normal",
       "Normal"
     ],
-    "modified_bst": 397.0,
-    "modified_bst_physical": 397.0,
-    "modified_bst_special": 357.0,
+    "modified_bst": 364.2,
+    "modified_bst_physical": 364.2,
+    "modified_bst_special": 333.2,
     "can_be_mixed": false
   },
   {
@@ -2451,7 +2459,7 @@
     "via_ai": 1.0,
     "form": 0,
     "types": [
-      "Psychic",
+      "Normal",
       "Flying"
     ],
     "modified_bst": 221.8,
@@ -2466,12 +2474,12 @@
     "via_ai": 1.0,
     "form": 0,
     "types": [
-      "Psychic",
+      "Normal",
       "Flying"
     ],
-    "modified_bst": 402.8,
-    "modified_bst_physical": 336.8,
-    "modified_bst_special": 402.8,
+    "modified_bst": 376.8,
+    "modified_bst_physical": 350.8,
+    "modified_bst_special": 376.8,
     "can_be_mixed": false
   },
   {
@@ -2484,9 +2492,9 @@
       "Bug",
       "Flying"
     ],
-    "modified_bst": 254.0,
-    "modified_bst_physical": 254.0,
-    "modified_bst_special": 239.0,
+    "modified_bst": 234.0,
+    "modified_bst_physical": 214.0,
+    "modified_bst_special": 234.0,
     "can_be_mixed": false
   },
   {
@@ -2499,9 +2507,9 @@
       "Bug",
       "Flying"
     ],
-    "modified_bst": 380.0,
-    "modified_bst_physical": 380.0,
-    "modified_bst_special": 345.0,
+    "modified_bst": 340.0,
+    "modified_bst_physical": 320.0,
+    "modified_bst_special": 340.0,
     "can_be_mixed": false
   },
   {
@@ -2514,9 +2522,9 @@
       "Bug",
       "Poison"
     ],
-    "modified_bst": 228.0,
-    "modified_bst_physical": 228.0,
-    "modified_bst_special": 198.0,
+    "modified_bst": 200.0,
+    "modified_bst_physical": 200.0,
+    "modified_bst_special": 180.0,
     "can_be_mixed": false
   },
   {
@@ -2529,9 +2537,9 @@
       "Bug",
       "Poison"
     ],
-    "modified_bst": 388.0,
-    "modified_bst_physical": 388.0,
-    "modified_bst_special": 328.0,
+    "modified_bst": 312.0,
+    "modified_bst_physical": 312.0,
+    "modified_bst_special": 282.0,
     "can_be_mixed": false
   },
   {
@@ -2574,9 +2582,9 @@
       "Water",
       "Electric"
     ],
-    "modified_bst": 411.59999999999997,
-    "modified_bst_physical": 378.59999999999997,
-    "modified_bst_special": 411.59999999999997,
+    "modified_bst": 388.59999999999997,
+    "modified_bst_physical": 370.59999999999997,
+    "modified_bst_special": 388.59999999999997,
     "can_be_mixed": false
   },
   {
@@ -2601,8 +2609,8 @@
     "via_ai": 1.0,
     "form": 0,
     "types": [
-      "Fairy",
-      "Fairy"
+      "Normal",
+      "Normal"
     ],
     "modified_bst": 179.4,
     "modified_bst_physical": 159.4,
@@ -2617,7 +2625,7 @@
     "form": 0,
     "types": [
       "Normal",
-      "Fairy"
+      "Normal"
     ],
     "modified_bst": 176.0,
     "modified_bst_physical": 166.0,
@@ -2631,8 +2639,8 @@
     "via_ai": 1.0,
     "form": 0,
     "types": [
-      "Fairy",
-      "Fairy"
+      "Normal",
+      "Normal"
     ],
     "modified_bst": 203.0,
     "modified_bst_physical": 183.0,
@@ -2646,8 +2654,8 @@
     "via_ai": 1.0,
     "form": 0,
     "types": [
-      "Flying",
-      "Fairy"
+      "Normal",
+      "Flying"
     ],
     "modified_bst": 335.0,
     "modified_bst_physical": 295.0,
@@ -2679,9 +2687,9 @@
       "Psychic",
       "Flying"
     ],
-    "modified_bst": 404.0,
-    "modified_bst_physical": 364.0,
-    "modified_bst_special": 404.0,
+    "modified_bst": 386.0,
+    "modified_bst_physical": 366.0,
+    "modified_bst_special": 386.0,
     "can_be_mixed": false
   },
   {
@@ -2694,9 +2702,9 @@
       "Electric",
       "Electric"
     ],
-    "modified_bst": 234.0,
-    "modified_bst_physical": 209.0,
-    "modified_bst_special": 234.0,
+    "modified_bst": 230.0,
+    "modified_bst_physical": 205.0,
+    "modified_bst_special": 230.0,
     "can_be_mixed": false
   },
   {
@@ -2709,9 +2717,9 @@
       "Electric",
       "Electric"
     ],
-    "modified_bst": 310.0,
-    "modified_bst_physical": 280.0,
-    "modified_bst_special": 310.0,
+    "modified_bst": 296.0,
+    "modified_bst_physical": 271.0,
+    "modified_bst_special": 296.0,
     "can_be_mixed": false
   },
   {
@@ -2722,11 +2730,11 @@
     "form": 0,
     "types": [
       "Electric",
-      "Dragon"
+      "Electric"
     ],
-    "modified_bst": 420.0,
-    "modified_bst_physical": 385.0,
-    "modified_bst_special": 420.0,
+    "modified_bst": 403.0,
+    "modified_bst_physical": 363.0,
+    "modified_bst_special": 403.0,
     "can_be_mixed": false
   },
   {
@@ -2739,9 +2747,9 @@
       "Grass",
       "Grass"
     ],
-    "modified_bst": 376.0,
-    "modified_bst_physical": 371.0,
-    "modified_bst_special": 381.0,
+    "modified_bst": 368.0,
+    "modified_bst_physical": 363.0,
+    "modified_bst_special": 373.0,
     "can_be_mixed": true
   },
   {
@@ -2752,12 +2760,12 @@
     "form": 0,
     "types": [
       "Water",
-      "Fairy"
+      "Water"
     ],
-    "modified_bst": 238.0,
+    "modified_bst": 218.0,
     "modified_bst_physical": 218.0,
-    "modified_bst_special": 238.0,
-    "can_be_mixed": false
+    "modified_bst_special": 218.0,
+    "can_be_mixed": true
   },
   {
     "name": "AZUMARILL",
@@ -2767,12 +2775,12 @@
     "form": 0,
     "types": [
       "Water",
-      "Fairy"
+      "Water"
     ],
-    "modified_bst": 368.0,
+    "modified_bst": 338.0,
     "modified_bst_physical": 338.0,
-    "modified_bst_special": 368.0,
-    "can_be_mixed": false
+    "modified_bst_special": 338.0,
+    "can_be_mixed": true
   },
   {
     "name": "SUDOWOODO",
@@ -2784,9 +2792,9 @@
       "Rock",
       "Rock"
     ],
-    "modified_bst": 401.0,
-    "modified_bst_physical": 401.0,
-    "modified_bst_special": 316.0,
+    "modified_bst": 350.0,
+    "modified_bst_physical": 350.0,
+    "modified_bst_special": 280.0,
     "can_be_mixed": false
   },
   {
@@ -2814,10 +2822,10 @@
       "Grass",
       "Flying"
     ],
-    "modified_bst": 240.0,
-    "modified_bst_physical": 230.0,
-    "modified_bst_special": 240.0,
-    "can_be_mixed": false
+    "modified_bst": 206.0,
+    "modified_bst_physical": 206.0,
+    "modified_bst_special": 206.0,
+    "can_be_mixed": true
   },
   {
     "name": "SKIPLOOM",
@@ -2829,9 +2837,9 @@
       "Grass",
       "Flying"
     ],
-    "modified_bst": 305.0,
-    "modified_bst_physical": 300.0,
-    "modified_bst_special": 310.0,
+    "modified_bst": 288.0,
+    "modified_bst_physical": 288.0,
+    "modified_bst_special": 288.0,
     "can_be_mixed": true
   },
   {
@@ -2844,10 +2852,10 @@
       "Grass",
       "Flying"
     ],
-    "modified_bst": 414.0,
-    "modified_bst_physical": 394.0,
-    "modified_bst_special": 414.0,
-    "can_be_mixed": false
+    "modified_bst": 386.0,
+    "modified_bst_physical": 386.0,
+    "modified_bst_special": 386.0,
+    "can_be_mixed": true
   },
   {
     "name": "AIPOM",
@@ -2874,9 +2882,9 @@
       "Grass",
       "Grass"
     ],
-    "modified_bst": 196.0,
-    "modified_bst_physical": 196.0,
-    "modified_bst_special": 196.0,
+    "modified_bst": 144.0,
+    "modified_bst_physical": 144.0,
+    "modified_bst_special": 144.0,
     "can_be_mixed": true
   },
   {
@@ -2889,9 +2897,9 @@
       "Grass",
       "Grass"
     ],
-    "modified_bst": 372.0,
-    "modified_bst_physical": 322.0,
-    "modified_bst_special": 372.0,
+    "modified_bst": 328.0,
+    "modified_bst_physical": 298.0,
+    "modified_bst_special": 328.0,
     "can_be_mixed": false
   },
   {
@@ -2919,9 +2927,9 @@
       "Water",
       "Ground"
     ],
-    "modified_bst": 192.0,
-    "modified_bst_physical": 192.0,
-    "modified_bst_special": 162.0,
+    "modified_bst": 174.0,
+    "modified_bst_physical": 174.0,
+    "modified_bst_special": 154.0,
     "can_be_mixed": false
   },
   {
@@ -2934,9 +2942,9 @@
       "Water",
       "Ground"
     ],
-    "modified_bst": 360.0,
-    "modified_bst_physical": 360.0,
-    "modified_bst_special": 330.0,
+    "modified_bst": 342.0,
+    "modified_bst_physical": 342.0,
+    "modified_bst_special": 322.0,
     "can_be_mixed": false
   },
   {
@@ -3007,7 +3015,7 @@
     "form": 0,
     "types": [
       "Ghost",
-      "Fairy"
+      "Ghost"
     ],
     "modified_bst": 363.0,
     "modified_bst_physical": 338.0,
@@ -3024,10 +3032,10 @@
       "Psychic",
       "Psychic"
     ],
-    "modified_bst": 320.4,
-    "modified_bst_physical": 290.4,
-    "modified_bst_special": 320.4,
-    "can_be_mixed": false
+    "modified_bst": 254.4,
+    "modified_bst_physical": 254.4,
+    "modified_bst_special": 254.4,
+    "can_be_mixed": true
   },
   {
     "name": "WOBBUFFET",
@@ -3054,9 +3062,9 @@
       "Normal",
       "Psychic"
     ],
-    "modified_bst": 374.0,
-    "modified_bst_physical": 372.0,
-    "modified_bst_special": 377.0,
+    "modified_bst": 361.0,
+    "modified_bst_physical": 356.0,
+    "modified_bst_special": 366.0,
     "can_be_mixed": true
   },
   {
@@ -3099,10 +3107,10 @@
       "Normal",
       "Normal"
     ],
-    "modified_bst": 372.0,
-    "modified_bst_physical": 372.0,
-    "modified_bst_special": 337.0,
-    "can_be_mixed": false
+    "modified_bst": 329.0,
+    "modified_bst_physical": 332.0,
+    "modified_bst_special": 327.0,
+    "can_be_mixed": true
   },
   {
     "name": "GLIGAR",
@@ -3129,9 +3137,9 @@
       "Steel",
       "Ground"
     ],
-    "modified_bst": 428.0,
-    "modified_bst_physical": 428.0,
-    "modified_bst_special": 368.0,
+    "modified_bst": 408.0,
+    "modified_bst_physical": 408.0,
+    "modified_bst_special": 378.0,
     "can_be_mixed": false
   },
   {
@@ -3141,8 +3149,8 @@
     "via_ai": 1.0,
     "form": 0,
     "types": [
-      "Fighting",
-      "Fairy"
+      "Normal",
+      "Normal"
     ],
     "modified_bst": 248.0,
     "modified_bst_physical": 248.0,
@@ -3156,8 +3164,8 @@
     "via_ai": 1.0,
     "form": 0,
     "types": [
-      "Fighting",
-      "Fairy"
+      "Normal",
+      "Normal"
     ],
     "modified_bst": 372.0,
     "modified_bst_physical": 372.0,
@@ -3174,9 +3182,9 @@
       "Water",
       "Poison"
     ],
-    "modified_bst": 394.0,
-    "modified_bst_physical": 394.0,
-    "modified_bst_special": 344.0,
+    "modified_bst": 366.0,
+    "modified_bst_physical": 366.0,
+    "modified_bst_special": 326.0,
     "can_be_mixed": false
   },
   {
@@ -3247,7 +3255,7 @@
     "form": 0,
     "types": [
       "Normal",
-      "Ground"
+      "Normal"
     ],
     "modified_bst": 268.0,
     "modified_bst_physical": 268.0,
@@ -3262,7 +3270,7 @@
     "form": 0,
     "types": [
       "Normal",
-      "Ground"
+      "Normal"
     ],
     "modified_bst": 406.0,
     "modified_bst_physical": 406.0,
@@ -3277,11 +3285,11 @@
     "form": 0,
     "types": [
       "Fire",
-      "Rock"
+      "Fire"
     ],
-    "modified_bst": 234.0,
-    "modified_bst_physical": 204.0,
-    "modified_bst_special": 234.0,
+    "modified_bst": 198.0,
+    "modified_bst_physical": 168.0,
+    "modified_bst_special": 198.0,
     "can_be_mixed": false
   },
   {
@@ -3294,9 +3302,9 @@
       "Fire",
       "Rock"
     ],
-    "modified_bst": 408.0,
-    "modified_bst_physical": 338.0,
-    "modified_bst_special": 408.0,
+    "modified_bst": 326.0,
+    "modified_bst_physical": 296.0,
+    "modified_bst_special": 326.0,
     "can_be_mixed": false
   },
   {
@@ -3339,10 +3347,10 @@
       "Water",
       "Rock"
     ],
-    "modified_bst": 381.0,
-    "modified_bst_physical": 336.0,
-    "modified_bst_special": 381.0,
-    "can_be_mixed": false
+    "modified_bst": 293.0,
+    "modified_bst_physical": 288.0,
+    "modified_bst_special": 298.0,
+    "can_be_mixed": true
   },
   {
     "name": "REMORAID",
@@ -3369,9 +3377,9 @@
       "Water",
       "Water"
     ],
-    "modified_bst": 364.0,
-    "modified_bst_physical": 364.0,
-    "modified_bst_special": 364.0,
+    "modified_bst": 354.0,
+    "modified_bst_physical": 354.0,
+    "modified_bst_special": 354.0,
     "can_be_mixed": true
   },
   {
@@ -3384,10 +3392,10 @@
       "Ice",
       "Flying"
     ],
-    "modified_bst": 368.0,
-    "modified_bst_physical": 368.0,
-    "modified_bst_special": 338.0,
-    "can_be_mixed": false
+    "modified_bst": 267.0,
+    "modified_bst_physical": 262.0,
+    "modified_bst_special": 272.0,
+    "can_be_mixed": true
   },
   {
     "name": "MANTINE",
@@ -3399,9 +3407,9 @@
       "Water",
       "Flying"
     ],
-    "modified_bst": 417.0,
-    "modified_bst_physical": 377.0,
-    "modified_bst_special": 417.0,
+    "modified_bst": 397.0,
+    "modified_bst_physical": 357.0,
+    "modified_bst_special": 397.0,
     "can_be_mixed": false
   },
   {
@@ -3519,9 +3527,9 @@
       "Normal",
       "Normal"
     ],
-    "modified_bst": 379.6,
-    "modified_bst_physical": 379.6,
-    "modified_bst_special": 379.6,
+    "modified_bst": 366.6,
+    "modified_bst_physical": 371.6,
+    "modified_bst_special": 361.6,
     "can_be_mixed": true
   },
   {
@@ -3579,9 +3587,9 @@
       "Ice",
       "Psychic"
     ],
-    "modified_bst": 317.6,
-    "modified_bst_physical": 264.6,
-    "modified_bst_special": 317.6,
+    "modified_bst": 272.0,
+    "modified_bst_physical": 217.0,
+    "modified_bst_special": 272.0,
     "can_be_mixed": false
   },
   {
@@ -3817,12 +3825,12 @@
     "form": 0,
     "types": [
       "Grass",
-      "Dragon"
+      "Grass"
     ],
-    "modified_bst": 443.0,
-    "modified_bst_physical": 443.0,
-    "modified_bst_special": 423.0,
-    "can_be_mixed": false
+    "modified_bst": 429.0,
+    "modified_bst_physical": 419.0,
+    "modified_bst_special": 439.0,
+    "can_be_mixed": true
   },
   {
     "name": "TORCHIC",
@@ -3864,9 +3872,9 @@
       "Fire",
       "Fighting"
     ],
-    "modified_bst": 413.0,
-    "modified_bst_physical": 418.0,
-    "modified_bst_special": 408.0,
+    "modified_bst": 403.0,
+    "modified_bst_physical": 408.0,
+    "modified_bst_special": 398.0,
     "can_be_mixed": true
   },
   {
@@ -3924,9 +3932,9 @@
       "Dark",
       "Dark"
     ],
-    "modified_bst": 218.0,
-    "modified_bst_physical": 218.0,
-    "modified_bst_special": 183.0,
+    "modified_bst": 184.0,
+    "modified_bst_physical": 184.0,
+    "modified_bst_special": 159.0,
     "can_be_mixed": false
   },
   {
@@ -3939,9 +3947,9 @@
       "Dark",
       "Dark"
     ],
-    "modified_bst": 392.0,
-    "modified_bst_physical": 392.0,
-    "modified_bst_special": 342.0,
+    "modified_bst": 348.0,
+    "modified_bst_physical": 348.0,
+    "modified_bst_special": 318.0,
     "can_be_mixed": false
   },
   {
@@ -3954,10 +3962,10 @@
       "Normal",
       "Normal"
     ],
-    "modified_bst": 215.60000000000002,
-    "modified_bst_physical": 215.60000000000002,
+    "modified_bst": 205.60000000000002,
+    "modified_bst_physical": 205.60000000000002,
     "modified_bst_special": 205.60000000000002,
-    "can_be_mixed": false
+    "can_be_mixed": true
   },
   {
     "name": "LINOONE",
@@ -3969,9 +3977,9 @@
       "Normal",
       "Normal"
     ],
-    "modified_bst": 386.0,
-    "modified_bst_physical": 386.0,
-    "modified_bst_special": 361.0,
+    "modified_bst": 365.6,
+    "modified_bst_physical": 365.6,
+    "modified_bst_special": 345.6,
     "can_be_mixed": false
   },
   {
@@ -4014,9 +4022,9 @@
       "Bug",
       "Flying"
     ],
-    "modified_bst": 374.0,
-    "modified_bst_physical": 324.0,
-    "modified_bst_special": 374.0,
+    "modified_bst": 308.0,
+    "modified_bst_physical": 288.0,
+    "modified_bst_special": 308.0,
     "can_be_mixed": false
   },
   {
@@ -4044,10 +4052,10 @@
       "Bug",
       "Poison"
     ],
-    "modified_bst": 388.0,
-    "modified_bst_physical": 358.0,
-    "modified_bst_special": 388.0,
-    "can_be_mixed": false
+    "modified_bst": 316.0,
+    "modified_bst_physical": 316.0,
+    "modified_bst_special": 316.0,
+    "can_be_mixed": true
   },
   {
     "name": "LOTAD",
@@ -4166,8 +4174,8 @@
     ],
     "modified_bst": 383.0,
     "modified_bst_physical": 383.0,
-    "modified_bst_special": 383.0,
-    "can_be_mixed": true
+    "modified_bst_special": 348.0,
+    "can_be_mixed": false
   },
   {
     "name": "WINGULL",
@@ -4194,9 +4202,9 @@
       "Water",
       "Flying"
     ],
-    "modified_bst": 385.0,
-    "modified_bst_physical": 340.0,
-    "modified_bst_special": 385.0,
+    "modified_bst": 359.0,
+    "modified_bst_physical": 324.0,
+    "modified_bst_special": 359.0,
     "can_be_mixed": false
   },
   {
@@ -4207,11 +4215,11 @@
     "form": 0,
     "types": [
       "Psychic",
-      "Fairy"
+      "Psychic"
     ],
-    "modified_bst": 205.0,
-    "modified_bst_physical": 165.0,
-    "modified_bst_special": 205.0,
+    "modified_bst": 169.0,
+    "modified_bst_physical": 149.0,
+    "modified_bst_special": 169.0,
     "can_be_mixed": false
   },
   {
@@ -4222,11 +4230,11 @@
     "form": 0,
     "types": [
       "Psychic",
-      "Fairy"
+      "Psychic"
     ],
-    "modified_bst": 271.0,
-    "modified_bst_physical": 221.0,
-    "modified_bst_special": 271.0,
+    "modified_bst": 235.0,
+    "modified_bst_physical": 205.0,
+    "modified_bst_special": 235.0,
     "can_be_mixed": false
   },
   {
@@ -4237,11 +4245,11 @@
     "form": 0,
     "types": [
       "Psychic",
-      "Fairy"
+      "Psychic"
     ],
-    "modified_bst": 508.0,
+    "modified_bst": 433.0,
     "modified_bst_physical": 373.0,
-    "modified_bst_special": 508.0,
+    "modified_bst_special": 433.0,
     "can_be_mixed": false
   },
   {
@@ -4254,9 +4262,9 @@
       "Bug",
       "Water"
     ],
-    "modified_bst": 241.0,
-    "modified_bst_physical": 216.0,
-    "modified_bst_special": 241.0,
+    "modified_bst": 235.2,
+    "modified_bst_physical": 215.2,
+    "modified_bst_special": 235.2,
     "can_be_mixed": false
   },
   {
@@ -4267,11 +4275,11 @@
     "form": 0,
     "types": [
       "Bug",
-      "Water"
+      "Flying"
     ],
-    "modified_bst": 414.0,
-    "modified_bst_physical": 374.0,
-    "modified_bst_special": 414.0,
+    "modified_bst": 337.2,
+    "modified_bst_physical": 317.2,
+    "modified_bst_special": 337.2,
     "can_be_mixed": false
   },
   {
@@ -4434,9 +4442,9 @@
       "Normal",
       "Normal"
     ],
-    "modified_bst": 407.4,
-    "modified_bst_physical": 407.4,
-    "modified_bst_special": 407.4,
+    "modified_bst": 377.4,
+    "modified_bst_physical": 377.4,
+    "modified_bst_special": 377.4,
     "can_be_mixed": true
   },
   {
@@ -4449,9 +4457,9 @@
       "Fighting",
       "Fighting"
     ],
-    "modified_bst": 226.0,
-    "modified_bst_physical": 226.0,
-    "modified_bst_special": 181.0,
+    "modified_bst": 210.0,
+    "modified_bst_physical": 210.0,
+    "modified_bst_special": 170.0,
     "can_be_mixed": false
   },
   {
@@ -4477,12 +4485,12 @@
     "form": 0,
     "types": [
       "Normal",
-      "Fairy"
+      "Normal"
     ],
-    "modified_bst": 168.0,
+    "modified_bst": 158.0,
     "modified_bst_physical": 158.0,
-    "modified_bst_special": 168.0,
-    "can_be_mixed": false
+    "modified_bst_special": 158.0,
+    "can_be_mixed": true
   },
   {
     "name": "NOSEPASS",
@@ -4494,10 +4502,10 @@
       "Rock",
       "Rock"
     ],
-    "modified_bst": 301.0,
-    "modified_bst_physical": 281.0,
-    "modified_bst_special": 301.0,
-    "can_be_mixed": false
+    "modified_bst": 291.0,
+    "modified_bst_physical": 291.0,
+    "modified_bst_special": 291.0,
+    "can_be_mixed": true
   },
   {
     "name": "SKITTY",
@@ -4509,9 +4517,9 @@
       "Normal",
       "Normal"
     ],
-    "modified_bst": 244.0,
-    "modified_bst_physical": 244.0,
-    "modified_bst_special": 234.0,
+    "modified_bst": 219.0,
+    "modified_bst_physical": 219.0,
+    "modified_bst_special": 209.0,
     "can_be_mixed": false
   },
   {
@@ -4524,9 +4532,9 @@
       "Normal",
       "Normal"
     ],
-    "modified_bst": 386.0,
-    "modified_bst_physical": 391.0,
-    "modified_bst_special": 381.0,
+    "modified_bst": 310.0,
+    "modified_bst_physical": 315.0,
+    "modified_bst_special": 305.0,
     "can_be_mixed": true
   },
   {
@@ -4539,9 +4547,9 @@
       "Dark",
       "Ghost"
     ],
-    "modified_bst": 339.0,
-    "modified_bst_physical": 339.0,
-    "modified_bst_special": 339.0,
+    "modified_bst": 292.0,
+    "modified_bst_physical": 297.0,
+    "modified_bst_special": 287.0,
     "can_be_mixed": true
   },
   {
@@ -4552,11 +4560,11 @@
     "form": 0,
     "types": [
       "Steel",
-      "Fairy"
+      "Steel"
     ],
-    "modified_bst": 365.4,
-    "modified_bst_physical": 365.4,
-    "modified_bst_special": 345.4,
+    "modified_bst": 307.0,
+    "modified_bst_physical": 307.0,
+    "modified_bst_special": 277.0,
     "can_be_mixed": false
   },
   {
@@ -4599,9 +4607,9 @@
       "Steel",
       "Rock"
     ],
-    "modified_bst": 444.0,
-    "modified_bst_physical": 444.0,
-    "modified_bst_special": 384.0,
+    "modified_bst": 432.0,
+    "modified_bst_physical": 432.0,
+    "modified_bst_special": 382.0,
     "can_be_mixed": false
   },
   {
@@ -4614,9 +4622,9 @@
       "Fighting",
       "Psychic"
     ],
-    "modified_bst": 240.0,
-    "modified_bst_physical": 240.0,
-    "modified_bst_special": 240.0,
+    "modified_bst": 230.0,
+    "modified_bst_physical": 230.0,
+    "modified_bst_special": 230.0,
     "can_be_mixed": true
   },
   {
@@ -4629,10 +4637,10 @@
       "Fighting",
       "Psychic"
     ],
-    "modified_bst": 376.0,
-    "modified_bst_physical": 376.0,
-    "modified_bst_special": 356.0,
-    "can_be_mixed": false
+    "modified_bst": 336.0,
+    "modified_bst_physical": 336.0,
+    "modified_bst_special": 336.0,
+    "can_be_mixed": true
   },
   {
     "name": "ELECTRIKE",
@@ -4674,9 +4682,9 @@
       "Electric",
       "Electric"
     ],
-    "modified_bst": 395.0,
-    "modified_bst_physical": 350.0,
-    "modified_bst_special": 395.0,
+    "modified_bst": 351.0,
+    "modified_bst_physical": 316.0,
+    "modified_bst_special": 351.0,
     "can_be_mixed": false
   },
   {
@@ -4689,9 +4697,9 @@
       "Electric",
       "Electric"
     ],
-    "modified_bst": 393.0,
-    "modified_bst_physical": 358.0,
-    "modified_bst_special": 393.0,
+    "modified_bst": 357.0,
+    "modified_bst_physical": 322.0,
+    "modified_bst_special": 357.0,
     "can_be_mixed": false
   },
   {
@@ -4702,11 +4710,11 @@
     "form": 0,
     "types": [
       "Bug",
-      "Electric"
+      "Bug"
     ],
-    "modified_bst": 412.0,
-    "modified_bst_physical": 338.0,
-    "modified_bst_special": 412.0,
+    "modified_bst": 344.0,
+    "modified_bst_physical": 344.0,
+    "modified_bst_special": 318.0,
     "can_be_mixed": false
   },
   {
@@ -4717,11 +4725,11 @@
     "form": 0,
     "types": [
       "Bug",
-      "Fairy"
+      "Bug"
     ],
-    "modified_bst": 421.0,
-    "modified_bst_physical": 367.0,
-    "modified_bst_special": 421.0,
+    "modified_bst": 344.0,
+    "modified_bst_physical": 318.0,
+    "modified_bst_special": 344.0,
     "can_be_mixed": false
   },
   {
@@ -4824,9 +4832,9 @@
       "Water",
       "Water"
     ],
-    "modified_bst": 434.0,
-    "modified_bst_physical": 434.0,
-    "modified_bst_special": 434.0,
+    "modified_bst": 404.0,
+    "modified_bst_physical": 404.0,
+    "modified_bst_special": 404.0,
     "can_be_mixed": true
   },
   {
@@ -4854,9 +4862,9 @@
       "Fire",
       "Ground"
     ],
-    "modified_bst": 361.0,
-    "modified_bst_physical": 364.0,
-    "modified_bst_special": 359.0,
+    "modified_bst": 336.0,
+    "modified_bst_physical": 334.0,
+    "modified_bst_special": 339.0,
     "can_be_mixed": true
   },
   {
@@ -4914,9 +4922,9 @@
       "Normal",
       "Normal"
     ],
-    "modified_bst": 360.0,
-    "modified_bst_physical": 360.0,
-    "modified_bst_special": 360.0,
+    "modified_bst": 288.0,
+    "modified_bst_physical": 288.0,
+    "modified_bst_special": 288.0,
     "can_be_mixed": true
   },
   {
@@ -4926,12 +4934,12 @@
     "via_ai": 1.0,
     "form": 0,
     "types": [
-      "Bug",
+      "Ground",
       "Ground"
     ],
-    "modified_bst": 239.0,
-    "modified_bst_physical": 239.0,
-    "modified_bst_special": 184.0,
+    "modified_bst": 229.0,
+    "modified_bst_physical": 229.0,
+    "modified_bst_special": 174.0,
     "can_be_mixed": false
   },
   {
@@ -4941,13 +4949,13 @@
     "via_ai": 1.0,
     "form": 0,
     "types": [
-      "Bug",
+      "Ground",
       "Dragon"
     ],
-    "modified_bst": 353.0,
-    "modified_bst_physical": 348.0,
-    "modified_bst_special": 358.0,
-    "can_be_mixed": true
+    "modified_bst": 284.0,
+    "modified_bst_physical": 284.0,
+    "modified_bst_special": 264.0,
+    "can_be_mixed": false
   },
   {
     "name": "FLYGON",
@@ -4956,13 +4964,13 @@
     "via_ai": 1.0,
     "form": 0,
     "types": [
-      "Bug",
+      "Ground",
       "Dragon"
     ],
-    "modified_bst": 466.0,
-    "modified_bst_physical": 456.0,
-    "modified_bst_special": 476.0,
-    "can_be_mixed": true
+    "modified_bst": 428.0,
+    "modified_bst_physical": 428.0,
+    "modified_bst_special": 408.0,
+    "can_be_mixed": false
   },
   {
     "name": "CACNEA",
@@ -4972,7 +4980,7 @@
     "form": 0,
     "types": [
       "Grass",
-      "Dark"
+      "Grass"
     ],
     "modified_bst": 241.0,
     "modified_bst_physical": 241.0,
@@ -5001,12 +5009,12 @@
     "via_ai": 1.0,
     "form": 0,
     "types": [
-      "Flying",
-      "Fairy"
+      "Normal",
+      "Flying"
     ],
-    "modified_bst": 283.0,
-    "modified_bst_physical": 283.0,
-    "modified_bst_special": 283.0,
+    "modified_bst": 253.0,
+    "modified_bst_physical": 253.0,
+    "modified_bst_special": 253.0,
     "can_be_mixed": true
   },
   {
@@ -5017,11 +5025,11 @@
     "form": 0,
     "types": [
       "Dragon",
-      "Fairy"
+      "Flying"
     ],
-    "modified_bst": 422.0,
-    "modified_bst_physical": 427.0,
-    "modified_bst_special": 417.0,
+    "modified_bst": 397.0,
+    "modified_bst_physical": 397.0,
+    "modified_bst_special": 397.0,
     "can_be_mixed": true
   },
   {
@@ -5034,9 +5042,9 @@
       "Normal",
       "Normal"
     ],
-    "modified_bst": 400.0,
-    "modified_bst_physical": 400.0,
-    "modified_bst_special": 345.0,
+    "modified_bst": 392.0,
+    "modified_bst_physical": 392.0,
+    "modified_bst_special": 337.0,
     "can_be_mixed": false
   },
   {
@@ -5049,10 +5057,10 @@
       "Poison",
       "Poison"
     ],
-    "modified_bst": 376.0,
-    "modified_bst_physical": 376.0,
-    "modified_bst_special": 341.0,
-    "can_be_mixed": false
+    "modified_bst": 347.0,
+    "modified_bst_physical": 347.0,
+    "modified_bst_special": 347.0,
+    "can_be_mixed": true
   },
   {
     "name": "LUNATONE",
@@ -5064,9 +5072,9 @@
       "Rock",
       "Psychic"
     ],
-    "modified_bst": 409.0,
-    "modified_bst_physical": 349.0,
-    "modified_bst_special": 409.0,
+    "modified_bst": 369.0,
+    "modified_bst_physical": 329.0,
+    "modified_bst_special": 369.0,
     "can_be_mixed": false
   },
   {
@@ -5079,9 +5087,9 @@
       "Rock",
       "Psychic"
     ],
-    "modified_bst": 409.0,
-    "modified_bst_physical": 409.0,
-    "modified_bst_special": 349.0,
+    "modified_bst": 369.0,
+    "modified_bst_physical": 369.0,
+    "modified_bst_special": 329.0,
     "can_be_mixed": false
   },
   {
@@ -5109,10 +5117,10 @@
       "Water",
       "Ground"
     ],
-    "modified_bst": 403.8,
-    "modified_bst_physical": 403.8,
-    "modified_bst_special": 386.8,
-    "can_be_mixed": false
+    "modified_bst": 374.2,
+    "modified_bst_physical": 375.2,
+    "modified_bst_special": 373.2,
+    "can_be_mixed": true
   },
   {
     "name": "CORPHISH",
@@ -5274,10 +5282,10 @@
       "Normal",
       "Normal"
     ],
-    "modified_bst": 372.0,
-    "modified_bst_physical": 342.0,
-    "modified_bst_special": 372.0,
-    "can_be_mixed": false
+    "modified_bst": 336.0,
+    "modified_bst_physical": 336.0,
+    "modified_bst_special": 336.0,
+    "can_be_mixed": true
   },
   {
     "name": "KECLEON",
@@ -5289,8 +5297,8 @@
       "Normal",
       "Normal"
     ],
-    "modified_bst": 360.0,
-    "modified_bst_physical": 360.0,
+    "modified_bst": 350.0,
+    "modified_bst_physical": 350.0,
     "modified_bst_special": 320.0,
     "can_be_mixed": false
   },
@@ -5317,11 +5325,11 @@
     "form": 0,
     "types": [
       "Ghost",
-      "Normal"
+      "Ghost"
     ],
-    "modified_bst": 369.4,
-    "modified_bst_physical": 369.4,
-    "modified_bst_special": 337.4,
+    "modified_bst": 359.4,
+    "modified_bst_physical": 359.4,
+    "modified_bst_special": 327.4,
     "can_be_mixed": false
   },
   {
@@ -5364,9 +5372,9 @@
       "Grass",
       "Flying"
     ],
-    "modified_bst": 386.2,
-    "modified_bst_physical": 394.2,
-    "modified_bst_special": 378.2,
+    "modified_bst": 366.2,
+    "modified_bst_physical": 364.2,
+    "modified_bst_special": 368.2,
     "can_be_mixed": true
   },
   {
@@ -5379,9 +5387,9 @@
       "Psychic",
       "Psychic"
     ],
-    "modified_bst": 399.0,
-    "modified_bst_physical": 339.0,
-    "modified_bst_special": 399.0,
+    "modified_bst": 358.0,
+    "modified_bst_physical": 313.0,
+    "modified_bst_special": 358.0,
     "can_be_mixed": false
   },
   {
@@ -5394,9 +5402,9 @@
       "Dark",
       "Dark"
     ],
-    "modified_bst": 393.0,
-    "modified_bst_physical": 393.0,
-    "modified_bst_special": 348.0,
+    "modified_bst": 381.0,
+    "modified_bst_physical": 381.0,
+    "modified_bst_special": 326.0,
     "can_be_mixed": false
   },
   {
@@ -5437,12 +5445,12 @@
     "form": 0,
     "types": [
       "Ice",
-      "Rock"
+      "Ice"
     ],
-    "modified_bst": 422.0,
-    "modified_bst_physical": 422.0,
-    "modified_bst_special": 372.0,
-    "can_be_mixed": false
+    "modified_bst": 384.0,
+    "modified_bst_physical": 384.0,
+    "modified_bst_special": 384.0,
+    "can_be_mixed": true
   },
   {
     "name": "SPHEAL",
@@ -5557,11 +5565,11 @@
     "form": 0,
     "types": [
       "Water",
-      "Fairy"
+      "Water"
     ],
-    "modified_bst": 387.4,
-    "modified_bst_physical": 327.4,
-    "modified_bst_special": 387.4,
+    "modified_bst": 295.4,
+    "modified_bst_physical": 285.4,
+    "modified_bst_special": 295.4,
     "can_be_mixed": false
   },
   {
@@ -5844,9 +5852,9 @@
       "Grass",
       "Ground"
     ],
-    "modified_bst": 443.2,
-    "modified_bst_physical": 443.2,
-    "modified_bst_special": 399.2,
+    "modified_bst": 423.2,
+    "modified_bst_physical": 423.2,
+    "modified_bst_special": 389.2,
     "can_be_mixed": false
   },
   {
@@ -5889,9 +5897,9 @@
       "Fire",
       "Fighting"
     ],
-    "modified_bst": 424.4,
-    "modified_bst_physical": 424.4,
-    "modified_bst_special": 424.4,
+    "modified_bst": 423.2,
+    "modified_bst_physical": 423.2,
+    "modified_bst_special": 423.2,
     "can_be_mixed": true
   },
   {
@@ -5934,10 +5942,10 @@
       "Water",
       "Steel"
     ],
-    "modified_bst": 408.20000000000005,
-    "modified_bst_physical": 398.20000000000005,
+    "modified_bst": 418.20000000000005,
+    "modified_bst_physical": 393.20000000000005,
     "modified_bst_special": 418.20000000000005,
-    "can_be_mixed": true
+    "can_be_mixed": false
   },
   {
     "name": "STARLY",
@@ -5979,9 +5987,9 @@
       "Normal",
       "Flying"
     ],
-    "modified_bst": 429.0,
-    "modified_bst_physical": 429.0,
-    "modified_bst_special": 359.0,
+    "modified_bst": 421.0,
+    "modified_bst_physical": 421.0,
+    "modified_bst_special": 351.0,
     "can_be_mixed": false
   },
   {
@@ -6009,9 +6017,9 @@
       "Normal",
       "Water"
     ],
-    "modified_bst": 368.2,
-    "modified_bst_physical": 368.2,
-    "modified_bst_special": 328.2,
+    "modified_bst": 345.2,
+    "modified_bst_physical": 345.2,
+    "modified_bst_special": 315.2,
     "can_be_mixed": false
   },
   {
@@ -6024,9 +6032,9 @@
       "Bug",
       "Bug"
     ],
-    "modified_bst": 167.60000000000002,
-    "modified_bst_physical": 167.60000000000002,
-    "modified_bst_special": 167.60000000000002,
+    "modified_bst": 157.60000000000002,
+    "modified_bst_physical": 157.60000000000002,
+    "modified_bst_special": 157.60000000000002,
     "can_be_mixed": true
   },
   {
@@ -6039,9 +6047,9 @@
       "Bug",
       "Bug"
     ],
-    "modified_bst": 345.2,
-    "modified_bst_physical": 345.2,
-    "modified_bst_special": 321.2,
+    "modified_bst": 321.6,
+    "modified_bst_physical": 321.6,
+    "modified_bst_special": 291.6,
     "can_be_mixed": false
   },
   {
@@ -6082,7 +6090,7 @@
     "form": 0,
     "types": [
       "Electric",
-      "Dark"
+      "Electric"
     ],
     "modified_bst": 410.4,
     "modified_bst_physical": 410.4,
@@ -6114,9 +6122,9 @@
       "Grass",
       "Poison"
     ],
-    "modified_bst": 429.0,
-    "modified_bst_physical": 374.0,
-    "modified_bst_special": 429.0,
+    "modified_bst": 421.0,
+    "modified_bst_physical": 366.0,
+    "modified_bst_special": 421.0,
     "can_be_mixed": false
   },
   {
@@ -6159,10 +6167,10 @@
       "Rock",
       "Steel"
     ],
-    "modified_bst": 292.8,
-    "modified_bst_physical": 292.8,
-    "modified_bst_special": 252.8,
-    "can_be_mixed": false
+    "modified_bst": 272.8,
+    "modified_bst_physical": 272.8,
+    "modified_bst_special": 272.8,
+    "can_be_mixed": true
   },
   {
     "name": "BASTIODON",
@@ -6174,10 +6182,10 @@
       "Rock",
       "Steel"
     ],
-    "modified_bst": 412.8,
-    "modified_bst_physical": 412.8,
-    "modified_bst_special": 367.8,
-    "can_be_mixed": false
+    "modified_bst": 389.8,
+    "modified_bst_physical": 392.8,
+    "modified_bst_special": 387.8,
+    "can_be_mixed": true
   },
   {
     "name": "BURMY",
@@ -6189,10 +6197,10 @@
       "Bug",
       "Bug"
     ],
-    "modified_bst": 193.0,
-    "modified_bst_physical": 168.0,
-    "modified_bst_special": 193.0,
-    "can_be_mixed": false
+    "modified_bst": 184.2,
+    "modified_bst_physical": 184.2,
+    "modified_bst_special": 184.2,
+    "can_be_mixed": true
   },
   {
     "name": "WORMADAM",
@@ -6204,9 +6212,9 @@
       "Bug",
       "Grass"
     ],
-    "modified_bst": 360.2,
-    "modified_bst_physical": 320.2,
-    "modified_bst_special": 360.2,
+    "modified_bst": 334.2,
+    "modified_bst_physical": 314.2,
+    "modified_bst_special": 334.2,
     "can_be_mixed": false
   },
   {
@@ -6219,9 +6227,9 @@
       "Bug",
       "Flying"
     ],
-    "modified_bst": 354.4,
-    "modified_bst_physical": 354.4,
-    "modified_bst_special": 354.4,
+    "modified_bst": 323.2,
+    "modified_bst_physical": 323.2,
+    "modified_bst_special": 323.2,
     "can_be_mixed": true
   },
   {
@@ -6249,9 +6257,9 @@
       "Bug",
       "Flying"
     ],
-    "modified_bst": 379.20000000000005,
-    "modified_bst_physical": 387.20000000000005,
-    "modified_bst_special": 372.20000000000005,
+    "modified_bst": 361.20000000000005,
+    "modified_bst_physical": 361.20000000000005,
+    "modified_bst_special": 361.20000000000005,
     "can_be_mixed": true
   },
   {
@@ -6264,9 +6272,9 @@
       "Electric",
       "Electric"
     ],
-    "modified_bst": 375.0,
-    "modified_bst_physical": 375.0,
-    "modified_bst_special": 375.0,
+    "modified_bst": 347.0,
+    "modified_bst_physical": 347.0,
+    "modified_bst_special": 347.0,
     "can_be_mixed": true
   },
   {
@@ -6309,9 +6317,9 @@
       "Grass",
       "Grass"
     ],
-    "modified_bst": 255.4,
-    "modified_bst_physical": 228.4,
-    "modified_bst_special": 255.4,
+    "modified_bst": 227.4,
+    "modified_bst_physical": 200.4,
+    "modified_bst_special": 227.4,
     "can_be_mixed": false
   },
   {
@@ -6324,9 +6332,9 @@
       "Grass",
       "Grass"
     ],
-    "modified_bst": 407.4,
-    "modified_bst_physical": 345.4,
-    "modified_bst_special": 407.4,
+    "modified_bst": 377.4,
+    "modified_bst_physical": 350.4,
+    "modified_bst_special": 377.4,
     "can_be_mixed": false
   },
   {
@@ -6369,9 +6377,9 @@
       "Normal",
       "Normal"
     ],
-    "modified_bst": 423.6,
-    "modified_bst_physical": 423.6,
-    "modified_bst_special": 386.6,
+    "modified_bst": 418.6,
+    "modified_bst_physical": 418.6,
+    "modified_bst_special": 378.6,
     "can_be_mixed": false
   },
   {
@@ -6427,10 +6435,10 @@
     "form": 0,
     "types": [
       "Normal",
-      "Fighting"
+      "Normal"
     ],
-    "modified_bst": 431.0,
-    "modified_bst_physical": 431.0,
+    "modified_bst": 411.0,
+    "modified_bst_physical": 411.0,
     "modified_bst_special": 389.0,
     "can_be_mixed": false
   },
@@ -6442,11 +6450,11 @@
     "form": 0,
     "types": [
       "Ghost",
-      "Fairy"
+      "Ghost"
     ],
-    "modified_bst": 415.8,
-    "modified_bst_physical": 374.8,
-    "modified_bst_special": 415.8,
+    "modified_bst": 423.0,
+    "modified_bst_physical": 378.0,
+    "modified_bst_special": 423.0,
     "can_be_mixed": false
   },
   {
@@ -6474,9 +6482,9 @@
       "Normal",
       "Normal"
     ],
-    "modified_bst": 291.0,
-    "modified_bst_physical": 291.0,
-    "modified_bst_special": 271.0,
+    "modified_bst": 269.2,
+    "modified_bst_physical": 269.2,
+    "modified_bst_special": 256.2,
     "can_be_mixed": false
   },
   {
@@ -6489,9 +6497,9 @@
       "Normal",
       "Normal"
     ],
-    "modified_bst": 427.0,
-    "modified_bst_physical": 427.0,
-    "modified_bst_special": 397.0,
+    "modified_bst": 385.8,
+    "modified_bst_physical": 385.8,
+    "modified_bst_special": 367.8,
     "can_be_mixed": false
   },
   {
@@ -6504,9 +6512,9 @@
       "Psychic",
       "Psychic"
     ],
-    "modified_bst": 267.0,
-    "modified_bst_physical": 217.0,
-    "modified_bst_special": 267.0,
+    "modified_bst": 244.0,
+    "modified_bst_physical": 209.0,
+    "modified_bst_special": 244.0,
     "can_be_mixed": false
   },
   {
@@ -6519,9 +6527,9 @@
       "Poison",
       "Dark"
     ],
-    "modified_bst": 292.0,
-    "modified_bst_physical": 292.0,
-    "modified_bst_special": 267.0,
+    "modified_bst": 285.20000000000005,
+    "modified_bst_physical": 285.20000000000005,
+    "modified_bst_special": 263.20000000000005,
     "can_be_mixed": false
   },
   {
@@ -6534,9 +6542,9 @@
       "Poison",
       "Dark"
     ],
-    "modified_bst": 416.0,
-    "modified_bst_physical": 416.0,
-    "modified_bst_special": 391.0,
+    "modified_bst": 399.20000000000005,
+    "modified_bst_physical": 399.20000000000005,
+    "modified_bst_special": 377.20000000000005,
     "can_be_mixed": false
   },
   {
@@ -6579,9 +6587,9 @@
       "Rock",
       "Rock"
     ],
-    "modified_bst": 277.0,
-    "modified_bst_physical": 277.0,
-    "modified_bst_special": 202.0,
+    "modified_bst": 254.0,
+    "modified_bst_physical": 254.0,
+    "modified_bst_special": 184.0,
     "can_be_mixed": false
   },
   {
@@ -6592,11 +6600,11 @@
     "form": 0,
     "types": [
       "Psychic",
-      "Fairy"
+      "Psychic"
     ],
-    "modified_bst": 286.0,
-    "modified_bst_physical": 221.0,
-    "modified_bst_special": 286.0,
+    "modified_bst": 270.0,
+    "modified_bst_physical": 225.0,
+    "modified_bst_special": 270.0,
     "can_be_mixed": false
   },
   {
@@ -6624,9 +6632,9 @@
       "Normal",
       "Flying"
     ],
-    "modified_bst": 375.2,
-    "modified_bst_physical": 335.2,
-    "modified_bst_special": 375.2,
+    "modified_bst": 346.79999999999995,
+    "modified_bst_physical": 319.79999999999995,
+    "modified_bst_special": 346.79999999999995,
     "can_be_mixed": false
   },
   {
@@ -6834,9 +6842,9 @@
       "Grass",
       "Grass"
     ],
-    "modified_bst": 337.4,
-    "modified_bst_physical": 342.4,
-    "modified_bst_special": 332.4,
+    "modified_bst": 339.4,
+    "modified_bst_physical": 344.4,
+    "modified_bst_special": 334.4,
     "can_be_mixed": true
   },
   {
@@ -6849,10 +6857,10 @@
       "Water",
       "Water"
     ],
-    "modified_bst": 290.0,
-    "modified_bst_physical": 260.0,
-    "modified_bst_special": 290.0,
-    "can_be_mixed": false
+    "modified_bst": 270.8,
+    "modified_bst_physical": 270.8,
+    "modified_bst_special": 270.8,
+    "can_be_mixed": true
   },
   {
     "name": "LUMINEON",
@@ -6864,10 +6872,10 @@
       "Water",
       "Water"
     ],
-    "modified_bst": 429.4,
-    "modified_bst_physical": 367.4,
-    "modified_bst_special": 429.4,
-    "can_be_mixed": false
+    "modified_bst": 376.8,
+    "modified_bst_physical": 376.8,
+    "modified_bst_special": 376.8,
+    "can_be_mixed": true
   },
   {
     "name": "MANTYKE",
@@ -6997,7 +7005,7 @@
     "form": 0,
     "types": [
       "Electric",
-      "Fighting"
+      "Electric"
     ],
     "modified_bst": 433.6,
     "modified_bst_physical": 433.6,
@@ -7014,9 +7022,9 @@
       "Fire",
       "Fire"
     ],
-    "modified_bst": 434.2,
+    "modified_bst": 429.2,
     "modified_bst_physical": 399.2,
-    "modified_bst_special": 434.2,
+    "modified_bst_special": 429.2,
     "can_be_mixed": false
   },
   {
@@ -7026,8 +7034,8 @@
     "via_ai": 1.0,
     "form": 0,
     "types": [
-      "Flying",
-      "Fairy"
+      "Normal",
+      "Flying"
     ],
     "modified_bst": 469.0,
     "modified_bst_physical": 399.0,
@@ -7074,9 +7082,9 @@
       "Ice",
       "Ice"
     ],
-    "modified_bst": 449.0,
-    "modified_bst_physical": 379.0,
-    "modified_bst_special": 449.0,
+    "modified_bst": 437.0,
+    "modified_bst_physical": 367.0,
+    "modified_bst_special": 437.0,
     "can_be_mixed": false
   },
   {
@@ -7134,9 +7142,9 @@
       "Psychic",
       "Fighting"
     ],
-    "modified_bst": 435.0,
-    "modified_bst_physical": 435.0,
-    "modified_bst_special": 375.0,
+    "modified_bst": 433.0,
+    "modified_bst_physical": 433.0,
+    "modified_bst_special": 373.0,
     "can_be_mixed": false
   },
   {
@@ -7147,11 +7155,11 @@
     "form": 0,
     "types": [
       "Rock",
-      "Electric"
+      "Steel"
     ],
-    "modified_bst": 428.0,
-    "modified_bst_physical": 388.0,
-    "modified_bst_special": 428.0,
+    "modified_bst": 419.0,
+    "modified_bst_physical": 399.0,
+    "modified_bst_special": 419.0,
     "can_be_mixed": false
   },
   {
@@ -7179,10 +7187,10 @@
       "Ice",
       "Ghost"
     ],
-    "modified_bst": 424.0,
-    "modified_bst_physical": 384.0,
-    "modified_bst_special": 424.0,
-    "can_be_mixed": false
+    "modified_bst": 394.0,
+    "modified_bst_physical": 394.0,
+    "modified_bst_special": 394.0,
+    "can_be_mixed": true
   },
   {
     "name": "ROTOM",
@@ -7194,9 +7202,9 @@
       "Electric",
       "Ghost"
     ],
-    "modified_bst": 389.4,
-    "modified_bst_physical": 344.4,
-    "modified_bst_special": 389.4,
+    "modified_bst": 377.4,
+    "modified_bst_physical": 332.4,
+    "modified_bst_special": 377.4,
     "can_be_mixed": false
   },
   {
@@ -7207,7 +7215,7 @@
     "form": 0,
     "types": [
       "Psychic",
-      "Fairy"
+      "Psychic"
     ],
     "modified_bst": 472.0,
     "modified_bst_physical": 472.0,
@@ -7222,7 +7230,7 @@
     "form": 0,
     "types": [
       "Psychic",
-      "Fairy"
+      "Psychic"
     ],
     "modified_bst": 449.0,
     "modified_bst_physical": 449.0,
@@ -7237,7 +7245,7 @@
     "form": 0,
     "types": [
       "Psychic",
-      "Fairy"
+      "Psychic"
     ],
     "modified_bst": 450.0,
     "modified_bst_physical": 450.0,
@@ -7447,7 +7455,7 @@
     "form": 0,
     "types": [
       "Grass",
-      "Dragon"
+      "Grass"
     ],
     "modified_bst": 339.6,
     "modified_bst_physical": 339.6,
@@ -7462,11 +7470,11 @@
     "form": 0,
     "types": [
       "Grass",
-      "Dragon"
+      "Grass"
     ],
-    "modified_bst": 443.6,
-    "modified_bst_physical": 442.6,
-    "modified_bst_special": 444.6,
+    "modified_bst": 437.6,
+    "modified_bst_physical": 437.6,
+    "modified_bst_special": 437.6,
     "can_be_mixed": true
   },
   {
@@ -7492,7 +7500,7 @@
     "form": 0,
     "types": [
       "Fire",
-      "Ground"
+      "Fighting"
     ],
     "modified_bst": 337.0,
     "modified_bst_physical": 337.0,
@@ -7507,11 +7515,11 @@
     "form": 0,
     "types": [
       "Fire",
-      "Ground"
+      "Fighting"
     ],
-    "modified_bst": 446.0,
-    "modified_bst_physical": 446.0,
-    "modified_bst_special": 391.0,
+    "modified_bst": 415.0,
+    "modified_bst_physical": 415.0,
+    "modified_bst_special": 392.0,
     "can_be_mixed": false
   },
   {
@@ -7537,7 +7545,7 @@
     "form": 0,
     "types": [
       "Water",
-      "Fighting"
+      "Water"
     ],
     "modified_bst": 322.0,
     "modified_bst_physical": 318.0,
@@ -7552,11 +7560,11 @@
     "form": 0,
     "types": [
       "Water",
-      "Fighting"
+      "Water"
     ],
-    "modified_bst": 412.0,
-    "modified_bst_physical": 407.0,
-    "modified_bst_special": 417.0,
+    "modified_bst": 407.0,
+    "modified_bst_physical": 403.0,
+    "modified_bst_special": 411.0,
     "can_be_mixed": true
   },
   {
@@ -7569,9 +7577,9 @@
       "Normal",
       "Normal"
     ],
-    "modified_bst": 220.6,
-    "modified_bst_physical": 220.6,
-    "modified_bst_special": 200.6,
+    "modified_bst": 212.8,
+    "modified_bst_physical": 212.8,
+    "modified_bst_special": 192.8,
     "can_be_mixed": false
   },
   {
@@ -7584,9 +7592,9 @@
       "Normal",
       "Normal"
     ],
-    "modified_bst": 364.8,
-    "modified_bst_physical": 364.8,
-    "modified_bst_special": 334.8,
+    "modified_bst": 347.79999999999995,
+    "modified_bst_physical": 347.79999999999995,
+    "modified_bst_special": 322.79999999999995,
     "can_be_mixed": false
   },
   {
@@ -7629,9 +7637,9 @@
       "Normal",
       "Normal"
     ],
-    "modified_bst": 445.0,
-    "modified_bst_physical": 445.0,
-    "modified_bst_special": 380.0,
+    "modified_bst": 425.0,
+    "modified_bst_physical": 425.0,
+    "modified_bst_special": 370.0,
     "can_be_mixed": false
   },
   {
@@ -7659,9 +7667,9 @@
       "Dark",
       "Dark"
     ],
-    "modified_bst": 361.2,
-    "modified_bst_physical": 361.2,
-    "modified_bst_special": 361.2,
+    "modified_bst": 359.2,
+    "modified_bst_physical": 359.2,
+    "modified_bst_special": 359.2,
     "can_be_mixed": true
   },
   {
@@ -7689,9 +7697,9 @@
       "Grass",
       "Grass"
     ],
-    "modified_bst": 396.0,
-    "modified_bst_physical": 396.0,
-    "modified_bst_special": 396.0,
+    "modified_bst": 395.0,
+    "modified_bst_physical": 395.0,
+    "modified_bst_special": 395.0,
     "can_be_mixed": true
   },
   {
@@ -7719,9 +7727,9 @@
       "Fire",
       "Fire"
     ],
-    "modified_bst": 396.0,
-    "modified_bst_physical": 396.0,
-    "modified_bst_special": 396.0,
+    "modified_bst": 395.0,
+    "modified_bst_physical": 395.0,
+    "modified_bst_special": 395.0,
     "can_be_mixed": true
   },
   {
@@ -7749,9 +7757,9 @@
       "Water",
       "Water"
     ],
-    "modified_bst": 396.0,
-    "modified_bst_physical": 396.0,
-    "modified_bst_special": 396.0,
+    "modified_bst": 395.0,
+    "modified_bst_physical": 395.0,
+    "modified_bst_special": 395.0,
     "can_be_mixed": true
   },
   {
@@ -7762,7 +7770,7 @@
     "form": 0,
     "types": [
       "Psychic",
-      "Fairy"
+      "Psychic"
     ],
     "modified_bst": 251.8,
     "modified_bst_physical": 209.8,
@@ -7777,7 +7785,7 @@
     "form": 0,
     "types": [
       "Psychic",
-      "Fairy"
+      "Psychic"
     ],
     "modified_bst": 401.8,
     "modified_bst_physical": 349.8,
@@ -7795,8 +7803,8 @@
       "Flying"
     ],
     "modified_bst": 220.6,
-    "modified_bst_physical": 201.6,
-    "modified_bst_special": 220.6,
+    "modified_bst_physical": 220.6,
+    "modified_bst_special": 201.6,
     "can_be_mixed": false
   },
   {
@@ -7809,9 +7817,9 @@
       "Normal",
       "Flying"
     ],
-    "modified_bst": 306.79999999999995,
-    "modified_bst_physical": 279.79999999999995,
-    "modified_bst_special": 306.79999999999995,
+    "modified_bst": 300.2,
+    "modified_bst_physical": 300.2,
+    "modified_bst_special": 273.2,
     "can_be_mixed": false
   },
   {
@@ -7824,9 +7832,9 @@
       "Normal",
       "Flying"
     ],
-    "modified_bst": 412.0,
-    "modified_bst_physical": 367.0,
-    "modified_bst_special": 412.0,
+    "modified_bst": 404.6,
+    "modified_bst_physical": 404.6,
+    "modified_bst_special": 364.6,
     "can_be_mixed": false
   },
   {
@@ -7899,9 +7907,9 @@
       "Rock",
       "Rock"
     ],
-    "modified_bst": 418.0,
-    "modified_bst_physical": 418.0,
-    "modified_bst_special": 343.0,
+    "modified_bst": 410.0,
+    "modified_bst_physical": 410.0,
+    "modified_bst_special": 335.0,
     "can_be_mixed": false
   },
   {
@@ -7914,10 +7922,10 @@
       "Psychic",
       "Flying"
     ],
-    "modified_bst": 285.2,
-    "modified_bst_physical": 265.2,
-    "modified_bst_special": 285.2,
-    "can_be_mixed": false
+    "modified_bst": 260.2,
+    "modified_bst_physical": 255.2,
+    "modified_bst_special": 265.2,
+    "can_be_mixed": true
   },
   {
     "name": "SWOOBAT",
@@ -7929,9 +7937,9 @@
       "Psychic",
       "Flying"
     ],
-    "modified_bst": 403.2,
-    "modified_bst_physical": 374.2,
-    "modified_bst_special": 403.2,
+    "modified_bst": 368.79999999999995,
+    "modified_bst_physical": 348.79999999999995,
+    "modified_bst_special": 368.79999999999995,
     "can_be_mixed": false
   },
   {
@@ -7972,7 +7980,7 @@
     "form": 0,
     "types": [
       "Normal",
-      "Fairy"
+      "Normal"
     ],
     "modified_bst": 360.6,
     "modified_bst_physical": 360.6,
@@ -8064,8 +8072,8 @@
       "Water",
       "Ground"
     ],
-    "modified_bst": 403.8,
-    "modified_bst_physical": 408.8,
+    "modified_bst": 398.8,
+    "modified_bst_physical": 398.8,
     "modified_bst_special": 398.8,
     "can_be_mixed": true
   },
@@ -8124,9 +8132,9 @@
       "Bug",
       "Grass"
     ],
-    "modified_bst": 319.4,
-    "modified_bst_physical": 319.4,
-    "modified_bst_special": 306.4,
+    "modified_bst": 304.4,
+    "modified_bst_physical": 304.4,
+    "modified_bst_special": 291.4,
     "can_be_mixed": false
   },
   {
@@ -8139,9 +8147,9 @@
       "Bug",
       "Grass"
     ],
-    "modified_bst": 416.4,
-    "modified_bst_physical": 416.4,
-    "modified_bst_special": 383.4,
+    "modified_bst": 408.4,
+    "modified_bst_physical": 408.4,
+    "modified_bst_special": 375.4,
     "can_be_mixed": false
   },
   {
@@ -8184,8 +8192,8 @@
       "Bug",
       "Poison"
     ],
-    "modified_bst": 420.8,
-    "modified_bst_physical": 420.8,
+    "modified_bst": 410.8,
+    "modified_bst_physical": 410.8,
     "modified_bst_special": 375.8,
     "can_be_mixed": false
   },
@@ -8197,7 +8205,7 @@
     "form": 0,
     "types": [
       "Grass",
-      "Fairy"
+      "Grass"
     ],
     "modified_bst": 244.2,
     "modified_bst_physical": 234.2,
@@ -8212,7 +8220,7 @@
     "form": 0,
     "types": [
       "Grass",
-      "Fairy"
+      "Grass"
     ],
     "modified_bst": 399.2,
     "modified_bst_physical": 394.2,
@@ -8244,9 +8252,9 @@
       "Grass",
       "Grass"
     ],
-    "modified_bst": 419.0,
-    "modified_bst_physical": 364.0,
-    "modified_bst_special": 419.0,
+    "modified_bst": 408.0,
+    "modified_bst_physical": 358.0,
+    "modified_bst_special": 408.0,
     "can_be_mixed": false
   },
   {
@@ -8259,9 +8267,9 @@
       "Water",
       "Water"
     ],
-    "modified_bst": 399.6,
-    "modified_bst_physical": 405.6,
-    "modified_bst_special": 393.6,
+    "modified_bst": 369.6,
+    "modified_bst_physical": 375.6,
+    "modified_bst_special": 363.6,
     "can_be_mixed": true
   },
   {
@@ -8304,9 +8312,9 @@
       "Ground",
       "Dark"
     ],
-    "modified_bst": 442.4,
-    "modified_bst_physical": 442.4,
-    "modified_bst_special": 390.4,
+    "modified_bst": 434.4,
+    "modified_bst_physical": 434.4,
+    "modified_bst_special": 382.4,
     "can_be_mixed": false
   },
   {
@@ -8349,10 +8357,10 @@
       "Grass",
       "Grass"
     ],
-    "modified_bst": 375.4,
-    "modified_bst_physical": 375.4,
-    "modified_bst_special": 355.4,
-    "can_be_mixed": false
+    "modified_bst": 350.2,
+    "modified_bst_physical": 340.2,
+    "modified_bst_special": 360.2,
+    "can_be_mixed": true
   },
   {
     "name": "DWEBBLE",
@@ -8379,8 +8387,8 @@
       "Bug",
       "Rock"
     ],
-    "modified_bst": 389.0,
-    "modified_bst_physical": 389.0,
+    "modified_bst": 379.0,
+    "modified_bst_physical": 379.0,
     "modified_bst_special": 349.0,
     "can_be_mixed": false
   },
@@ -8454,9 +8462,9 @@
       "Ghost",
       "Ghost"
     ],
-    "modified_bst": 399.0,
-    "modified_bst_physical": 354.0,
-    "modified_bst_special": 399.0,
+    "modified_bst": 389.0,
+    "modified_bst_physical": 344.0,
+    "modified_bst_special": 389.0,
     "can_be_mixed": false
   },
   {
@@ -8544,9 +8552,9 @@
       "Poison",
       "Poison"
     ],
-    "modified_bst": 416.20000000000005,
-    "modified_bst_physical": 416.20000000000005,
-    "modified_bst_special": 381.20000000000005,
+    "modified_bst": 396.20000000000005,
+    "modified_bst_physical": 396.20000000000005,
+    "modified_bst_special": 361.20000000000005,
     "can_be_mixed": false
   },
   {
@@ -8604,9 +8612,9 @@
       "Normal",
       "Normal"
     ],
-    "modified_bst": 414.0,
-    "modified_bst_physical": 414.0,
-    "modified_bst_special": 379.0,
+    "modified_bst": 404.0,
+    "modified_bst_physical": 404.0,
+    "modified_bst_special": 374.0,
     "can_be_mixed": false
   },
   {
@@ -8617,7 +8625,7 @@
     "form": 0,
     "types": [
       "Psychic",
-      "Dark"
+      "Psychic"
     ],
     "modified_bst": 246.0,
     "modified_bst_physical": 221.0,
@@ -8632,7 +8640,7 @@
     "form": 0,
     "types": [
       "Psychic",
-      "Dark"
+      "Psychic"
     ],
     "modified_bst": 325.0,
     "modified_bst_physical": 295.0,
@@ -8647,7 +8655,7 @@
     "form": 0,
     "types": [
       "Psychic",
-      "Dark"
+      "Psychic"
     ],
     "modified_bst": 407.0,
     "modified_bst_physical": 367.0,
@@ -8724,10 +8732,10 @@
       "Water",
       "Flying"
     ],
-    "modified_bst": 427.0,
-    "modified_bst_physical": 381.0,
-    "modified_bst_special": 427.0,
-    "can_be_mixed": false
+    "modified_bst": 380.4,
+    "modified_bst_physical": 380.4,
+    "modified_bst_special": 380.4,
+    "can_be_mixed": true
   },
   {
     "name": "VANILLITE",
@@ -8767,7 +8775,7 @@
     "form": 0,
     "types": [
       "Ice",
-      "Fairy"
+      "Ice"
     ],
     "modified_bst": 411.8,
     "modified_bst_physical": 404.8,
@@ -8799,9 +8807,9 @@
       "Normal",
       "Grass"
     ],
-    "modified_bst": 421.0,
-    "modified_bst_physical": 421.0,
-    "modified_bst_special": 371.0,
+    "modified_bst": 406.0,
+    "modified_bst_physical": 406.0,
+    "modified_bst_special": 366.0,
     "can_be_mixed": false
   },
   {
@@ -8814,9 +8822,9 @@
       "Electric",
       "Flying"
     ],
-    "modified_bst": 364.0,
-    "modified_bst_physical": 357.0,
-    "modified_bst_special": 372.0,
+    "modified_bst": 349.6,
+    "modified_bst_physical": 349.6,
+    "modified_bst_special": 349.6,
     "can_be_mixed": true
   },
   {
@@ -8950,9 +8958,9 @@
       "Electric"
     ],
     "modified_bst": 392.6,
-    "modified_bst_physical": 387.6,
-    "modified_bst_special": 398.6,
-    "can_be_mixed": true
+    "modified_bst_physical": 372.6,
+    "modified_bst_special": 392.6,
+    "can_be_mixed": false
   },
   {
     "name": "FERROSEED",
@@ -9217,11 +9225,11 @@
     "form": 0,
     "types": [
       "Ice",
-      "Fighting"
+      "Ice"
     ],
-    "modified_bst": 429.0,
-    "modified_bst_physical": 429.0,
-    "modified_bst_special": 369.0,
+    "modified_bst": 393.0,
+    "modified_bst_physical": 393.0,
+    "modified_bst_special": 353.0,
     "can_be_mixed": false
   },
   {
@@ -9234,9 +9242,9 @@
       "Ice",
       "Ice"
     ],
-    "modified_bst": 449.0,
-    "modified_bst_physical": 404.0,
-    "modified_bst_special": 449.0,
+    "modified_bst": 423.0,
+    "modified_bst_physical": 378.0,
+    "modified_bst_special": 423.0,
     "can_be_mixed": false
   },
   {
@@ -9279,10 +9287,10 @@
       "Ground",
       "Electric"
     ],
-    "modified_bst": 383.8,
+    "modified_bst": 366.8,
     "modified_bst_physical": 359.8,
-    "modified_bst_special": 383.8,
-    "can_be_mixed": false
+    "modified_bst_special": 374.8,
+    "can_be_mixed": true
   },
   {
     "name": "MIENFOO",
@@ -9354,9 +9362,9 @@
       "Ground",
       "Ghost"
     ],
-    "modified_bst": 442.0,
-    "modified_bst_physical": 442.0,
-    "modified_bst_special": 372.0,
+    "modified_bst": 407.0,
+    "modified_bst_physical": 407.0,
+    "modified_bst_special": 338.0,
     "can_be_mixed": false
   },
   {
@@ -10615,9 +10623,9 @@
       "Bug",
       "Ground"
     ],
-    "modified_bst": 360.2,
-    "modified_bst_physical": 360.2,
-    "modified_bst_special": 320.2,
+    "modified_bst": 334.2,
+    "modified_bst_physical": 334.2,
+    "modified_bst_special": 314.2,
     "can_be_mixed": false,
     "base_form": 413,
     "form_index": 1
@@ -10632,9 +10640,9 @@
       "Bug",
       "Steel"
     ],
-    "modified_bst": 341.40000000000003,
-    "modified_bst_physical": 341.40000000000003,
-    "modified_bst_special": 341.40000000000003,
+    "modified_bst": 324.2,
+    "modified_bst_physical": 324.2,
+    "modified_bst_special": 324.2,
     "can_be_mixed": true,
     "base_form": 413,
     "form_index": 2
@@ -10768,10 +10776,10 @@
       "Fire",
       "Fire"
     ],
-    "modified_bst": 372.0,
-    "modified_bst_physical": 342.0,
-    "modified_bst_special": 372.0,
-    "can_be_mixed": false,
+    "modified_bst": 336.0,
+    "modified_bst_physical": 336.0,
+    "modified_bst_special": 336.0,
+    "can_be_mixed": true,
     "base_form": 351,
     "form_index": 1
   },
@@ -10785,10 +10793,10 @@
       "Water",
       "Water"
     ],
-    "modified_bst": 372.0,
-    "modified_bst_physical": 342.0,
-    "modified_bst_special": 372.0,
-    "can_be_mixed": false,
+    "modified_bst": 336.0,
+    "modified_bst_physical": 336.0,
+    "modified_bst_special": 336.0,
+    "can_be_mixed": true,
     "base_form": 351,
     "form_index": 2
   },
@@ -10802,10 +10810,10 @@
       "Ice",
       "Ice"
     ],
-    "modified_bst": 372.0,
-    "modified_bst_physical": 342.0,
-    "modified_bst_special": 372.0,
-    "can_be_mixed": false,
+    "modified_bst": 336.0,
+    "modified_bst_physical": 336.0,
+    "modified_bst_special": 336.0,
+    "can_be_mixed": true,
     "base_form": 351,
     "form_index": 3
   },
@@ -10819,9 +10827,9 @@
       "Water",
       "Water"
     ],
-    "modified_bst": 399.6,
-    "modified_bst_physical": 405.6,
-    "modified_bst_special": 393.6,
+    "modified_bst": 369.6,
+    "modified_bst_physical": 375.6,
+    "modified_bst_special": 363.6,
     "can_be_mixed": true,
     "base_form": 550,
     "form_index": 1

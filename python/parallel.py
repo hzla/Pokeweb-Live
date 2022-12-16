@@ -16,6 +16,8 @@ from evolution_reader import output_evolutions_json
 from grotto_reader import output_grottos_json
 from mart_reader import output_marts_json
 from overworld_reader import output_overworlds_json
+from map_reader import output_maps_json
+from matrix_reader import output_matrix_json
 
 
 def output(narc):	
@@ -39,13 +41,19 @@ with open(f'session_settings.json', "r") as outfile:
 narcs_to_output = ["trdata", "personal", "learnsets", "moves", "encounters", "items", "evolutions", "overworlds"]
 # narcs_to_output = ["overworlds"]
 if narc_info["base_rom"] == "BW2":
-	narcs_to_output += ["grottos", "marts", "grotto_odds"]
+	narcs_to_output += ["grottos", "marts", "grotto_odds", "maps", "matrix"]
 
 
 rom_name = narc_info["rom_name"]
 
 
 if __name__ == '__main__':
+	
+
+	# file_name = f'{rom_name}/narcs/maps-{narc_info["maps"]}.narc'
+	# narc_data = ndspy.narc.NARC.fromFile(file_name)
+	# output_maps_json(narc_data)
+	
 	print("settings up processing pools")
 	pool = Pool(processes=os.cpu_count())
 	print("outputing narcs")

@@ -1,17 +1,33 @@
-<div class="overworld-canvas" style="height:<%= height * 32 %>px;width:<%= width * 32 %>px">
+<% maps.each do |map| %>
+		<div class="overworld-canvas" style='height:<%= map[1][3] * 32 %>px;width:<%= map[1][2] * 32 %>px;left:calc(2vw + <%= (map[1][0] - tl_x) * 32 %>px);top: <%= (map[1][1] - tl_y) * 32 + 40 %>px'>
+			<% perms = Map.perms(map[0]) %>
+
+			<% perms.each do |tile| %>
+
+				<div class="tile" style='background:<%= Map.color(tile)[0] %>' title="<%= tile %>: <%= Map.color(tile)[1] %>" data-perm="<%= tile %>">
+				</div>
+			<% end %>
+
+						
+		</div>
+	<% end %>
 
 	<% (0..overworld['npc_count']-1).each do |ov_index| %>
 
-		<div title="npc-<%= ov_index  %>" class="overworld-item <%= "selected" if selected == "npc_#{ov_index}_" %>" data-id="npc_<%= ov_index  %>_" style='bottom: <%= (box[1][1] - overworld["npc_#{ov_index}_y_cord"]) * 32 %>px;
-		right: <%= (box[1][0] - overworld["npc_#{ov_index}_x_cord"]) * 32 %>px'>
+		 <%  %>
+		<div title="npc-<%= ov_index  %>" class="overworld-item <%= "selected" if selected == "npc_#{ov_index}_" %>" data-id="npc_<%= ov_index  %>_" style='top: <%= (overworld["npc_#{ov_index}_y_cord"] - tl_y) * 32 + 40 %>px;
+		left:calc(2vw + <%= (overworld["npc_#{ov_index}_x_cord"] - tl_x) * 32%>px)' data-dir="<%= overworld["npc_#{ov_index}_direction"] %>">
 
 			<%= img "overworlds/#{Overworld.png_id(overworld["npc_#{ov_index}_overworld_sprite"])}.png", 'overworld-sprite' %>			
 		</div>
-
 	<% end %>
-</div>
 
 <script>
 	overworld = <%= overworld.to_json %>
-	box = <%= box.to_json %>
+
 </script>
+
+
+
+
+

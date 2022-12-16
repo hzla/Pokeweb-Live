@@ -6,7 +6,14 @@
 </script>
 
 <div class="pokemon-filter overworld-bar">	
+	<% p @map_data %>
+	
+
+
+
+
 	<div class="overworld-info filterable" data-index="<%= @index %>">
+		<div class="filter-title"><%= @location %></div>
 		<% Overworld.npc_fields.each do |field| %>
 			<div class="sidebar-row">
 				<div class="sidebar-label"><%= field %></div>
@@ -17,26 +24,43 @@
 		<% end %>
 	</div>
 
+
+
 	<a href="https://github.com/hzla/Pokeweb/wiki/Editors#overworlds" target="_blank">Instructions</a>
+
+	<div class="sidebar-btns">
+		<div class="ow-btn" id="add-npc">Add NPC</div>
+		<div class="ow-btn" id="del-npc">Del Last NPC</div>
+	</div>
 	
 </div>
 
 <div class="pokemon-list" id="overworld">
 
-	<div class="overworld-canvas" style='height:<%= @height * 32 %>px;width:<%= @width * 32 %>px'>
+	<% @maps.each do |map| %>
+		<div class="overworld-canvas" style='height:<%= map[1][3] * 32 %>px;width:<%= map[1][2] * 32 %>px;left:calc(2vw + <%= (map[1][0] - @tl_x) * 32 %>px);top: <%= (map[1][1] - @tl_y) * 32 + 40 %>px'>
+			<% perms = Map.perms(map[0]) %>
 
-		<% (0..@overworld['npc_count']-1).each do |ov_index| %>
+			<% perms.each do |tile| %>
 
-			<div title="npc-<%= ov_index  %>" class="overworld-item" data-id="npc_<%= ov_index  %>_" style='bottom: <%= (@box[1][1] - @overworld["npc_#{ov_index}_y_cord"]) * 32 %>px;
-			right: <%= (@box[1][0] - @overworld["npc_#{ov_index}_x_cord"]) * 32 %>px'>
+				<div class="tile" style='background:<%= Map.color(tile)[0] %>' title="<%= tile %>: <%= Map.color(tile)[1] %>" data-perm="<%= tile %>">
+				</div>
+			<% end %>
 
-				<%= img "overworlds/#{Overworld.png_id(@overworld["npc_#{ov_index}_overworld_sprite"])}.png", 'overworld-sprite' %>			
-			</div>
+						
+		</div>
+	<% end %>
 
+	<% (0..@overworld['npc_count']-1).each do |ov_index| %>
 
-		<% end %>
-		
-	</div>
+		 <%  %>
+		<div title="npc-<%= ov_index  %>" class="overworld-item" data-id="npc_<%= ov_index  %>_" style='top: <%= (@overworld["npc_#{ov_index}_y_cord"] - @tl_y) * 32 + 40 %>px;
+		left:calc(2vw + <%= (@overworld["npc_#{ov_index}_x_cord"] - @tl_x) * 32%>px)' data-dir="<%= @overworld["npc_#{ov_index}_direction"] %>">
+
+			<%= img "overworlds/#{Overworld.png_id(@overworld["npc_#{ov_index}_overworld_sprite"])}.png", 'overworld-sprite' %>			
+		</div>
+	<% end %>
+
 	
 </div>
 

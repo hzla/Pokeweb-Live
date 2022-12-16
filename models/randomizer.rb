@@ -1,3 +1,5 @@
+require 'pp'
+
 class Randomizer
 
 
@@ -8,6 +10,7 @@ class Randomizer
 		update_move_ban_list
 		smogon_indexed_moves
 		create_items
+		$last_used_pool = {}
 		p "Setup Successful"
 	end
 
@@ -245,6 +248,7 @@ class Randomizer
 		key = (v_range.map(&:to_s) + [types]).flatten.join("")
 
 		main_pool = nil
+
 		if $last_used_pool[key]
 			main_pool = $last_used_pool[key]
 		else

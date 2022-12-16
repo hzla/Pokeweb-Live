@@ -30,6 +30,7 @@
 	display: block;
 	border-bottom: 1px solid #44475a;
 	padding: 10px 0px;
+    font-size:  1.5vw;
 }
 
 .small-filters {
@@ -210,6 +211,7 @@ table td {
     justify-content: space-between;
     background: #282a36;
     box-shadow: 0 5px 10px 0 rgb(0 0 0 / 15%);
+    font-size: 0.8vw;
 }
 
 .header-left, .header-right {
@@ -1130,7 +1132,7 @@ div.-active svg * {
 }
 
 .sidebar-row {
-    font-size: 12px;
+    font-size: 0.8vw;
     display: flex;
     justify-content: space-between;
     margin: 10px 0px;
@@ -1144,8 +1146,30 @@ div.-active svg * {
     border: 2px solid red;
 }
 
-.pokemon-filter.overworld-bar {
-    width: 25vw;
+.sidebar-btns {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0px;
+}
+
+.ow-btn {
+    height: 40px;
+    color: #f2f2f2;
+    font-size: 16px;
+    cursor:  pointer;
+    text-align: center;
+    line-height: 30px;
+    padding:  5px;
+    border-radius: 2px;
+
+}
+
+#add-npc {
+    background: #1abc9c;
+}
+
+#del-npc {
+    background: #e74c3c;
 }
 
 .overworld-canvas {
@@ -1153,8 +1177,15 @@ div.-active svg * {
     position: absolute;
     top: 40px;
     left: 10vw;
+    display: flex;
+    flex-wrap: wrap;
     background-image: linear-gradient(to right, grey 1px, transparent 1px), linear-gradient(to bottom, grey 1px, transparent 1px);
     background-size: 32px 32px;
+}
+
+#overworld .tile {
+    height: 32px;
+    width:  32px;
 }
 
 .overworld-item {
@@ -1163,12 +1194,13 @@ div.-active svg * {
     width: 32px;
     background: red;
     overflow: hidden;
+    box-sizing: content-box;
 }
 
 .overworld-sprite {
     height: auto;
     width: 32px;
-    bottom: 0px;
+    top:  0px;
     position: absolute;
 }
 

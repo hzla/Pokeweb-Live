@@ -83,6 +83,7 @@ BW_MSG_BANKS = [[286, "moves"],
 [54, "items"]]
 
 BW2_NARCS = [["a/0/1/6", "personal"],
+["a/0/0/8", "maps"],
 ["a/0/0/9", "matrix"], 
 ["a/1/2/6", "overworlds"],
 ["a/0/1/7", "growth"],
