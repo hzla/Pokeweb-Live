@@ -26,6 +26,7 @@ You can join this Pokemon DS Rom Hacking discord server for updates as well as g
 ## Windows Installation 
 
 ### [FRESH INSTALLATION DEMONSTRATION VIDEO](https://streamable.com/833yr6)
+#### [Troubleshooting](https://github.com/hzla/Pokeweb/wiki/Troubleshooting)
 
 If you do not know what python and/or ruby is, please watch the installation demo video that shows an example windows install. 
 
