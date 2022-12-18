@@ -11,6 +11,14 @@ class Text
 		bank = data[bank_id.to_i]
 	end
 
+	def self.handle_compressed text, bank, msg_id
+		if text.include?("xF100")
+			p bank[msg_id]
+			text = bank[msg_id][1] + "      "
+		end
+		text
+	end
+
 	def self.insert_text idx, text_data, bank_id=381, narc_name="message_texts"
 		bank = get_bank narc_name, bank_id
 		text_id = "0_#{idx}"

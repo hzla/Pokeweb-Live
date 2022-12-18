@@ -225,6 +225,7 @@ get '/story_texts/text/:id' do
 	@texts = texts.split("# STR_")
 	@index = n
 	@narc_name = "story_texts"
+	@bank = Text.get_bank @narc_name, @index
 	
 	erb :text
 end
@@ -243,6 +244,7 @@ get '/message_texts/text/:id' do
 	@texts = texts.split("# STR_")
 	@index = n
 	@narc_name = "message_texts"
+	@bank = Text.get_bank @narc_name, @index
 	
 	erb :text
 end
