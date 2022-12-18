@@ -8,6 +8,8 @@ import math
 import struct, re
 import json
 import io as StringIO
+import os
+import subprocess
 # import unicodeparser
 from binary16 import binaryreader, binarywriter
 
@@ -254,9 +256,14 @@ def output_texts(folder, narc):
     n = 0
     texts = []
     print("outputting")
-    for message in narc.files:
+    for message in narc.files:   
+        with open(f'{folder}/{n}.bin', "wb") as binary_file:
+            binary_file.write(message)
+        
         block = gen5get(message)
         texts.append(block)
+        n += 1
+
     with codecs.open(f'{folder}/texts.json', 'w', encoding='utf_8') as f:
         json.dump(texts, f)
 

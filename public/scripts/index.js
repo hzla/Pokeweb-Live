@@ -347,6 +347,39 @@ $(document).ready(function() {
 		}
 	})	
 
+	$(document).on('click', '#del-text', function(){	
+		var count = parseInt($(this).parent().find('.sb-field').val())
+		
+		for(var i = 0; i < count; i++){
+		   $('#texts').children().last().remove()
+		   $('#texts').children().last().remove()
+		}
+	})
+
+	$(document).on('click', '#add-text', function(){	
+		var count = parseInt($(this).parent().find('.sb-field').val())
+		
+		// create empty msg
+		var last_msg = $('.text-bank').last().clone()
+		var empty_line = last_msg.find('.expanded-field').last()
+		last_msg.html(empty_line)
+		
+		var last_header = $('.text-header').last().clone()
+		var last_msg_id = parseInt(last_msg.attr('data-index'))
+		
+
+
+		for(var i = 0; i < count; i++){
+		    
+			last_header.find('.log-text').text(`MSG ${last_msg_id + i + 1}`)
+		    last_msg.attr('data-index', last_msg_id + i + 1)
+
+		    $('#texts').append(last_header.clone())
+		    $('#texts').append(last_msg.clone())
+
+		}
+	})
+
 	$(document).on('click', '#add-npc', function(){	
 		$.put(window.location.href + `/npc`, data => {
 			var new_ow_id = parseInt($(".overworld-item").last().attr("data-id").split("_")[1]) + 1
@@ -483,8 +516,41 @@ $(document).ready(function() {
 			current_season = $(this).attr('data-show')
 	} )
 
+	$(document).on('focusout', ".text-line[contenteditable='true']", function(){
+		var bank = []
+		$('.text-bank').each(function(){
+			var entry = []
+			$(this).find('.text-line').each(function(){
+				if ($(this).text() != "") {
+					entry.push($(this).text())
+				}
+				
+			})
+			bank.push(entry)
+		})
+		
+		var narc = $('.pokemon-list').attr('data-narc')
+		var bank_id = $('.pokemon-list').attr('data-index')
 
-	$(document).on('focusout', "[contenteditable='true']", function(){
+		$.post( `/texts/${bank_id}`, { bank: bank, narc: narc }, function(data){
+			console.log(data)
+		})
+	})
+
+	$(document).on('click', ".text-line[contenteditable='true']", function(){
+		var line = $(this).parents('.expanded-field')
+		
+		if (line.is(':last-child')) {
+			console.log(line)
+			$(this).parents('.text-bank').append(line.clone())
+			// $(this).parents('.text-bank').find('text-line:last-child').text("")
+		}
+	})
+
+
+
+
+	$(document).on('focusout', ":not(.text-line)[contenteditable='true']", function(){
 		var input = $(this)
 		var card = input.parents('.filterable')
 

@@ -149,6 +149,10 @@ for narc in NARCS:
 	narc_info[narc[1]] = file_id # store file ID for later
 	
 
+	
+
+	
+	# handle trainer text narcs
 	if narc[1] == "trtext_table":
 		data = parsed_file.files[0]
 		offset = 0
@@ -233,6 +237,7 @@ settings = {}
 settings.update(narc_info)
 settings["output_arm9"] = False
 settings["fairy"] = False
+settings["text_editor"] = False
 
 
 
