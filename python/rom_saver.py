@@ -72,7 +72,27 @@ try:
 
 			#update rom in memory
 			rom = ndspy.rom.NintendoDSRom(mutable_rom)
-		
+
+			if settings["base_rom"] == "BW2":
+
+				grotto_odds = 0
+				grotto_odds = open(f'{rom_name}/grotto_odds.bin','rb').read()
+
+				#load decompressed overlay
+				overlay36 = rom.loadArm9Overlays([36])[36]
+				
+				#set data
+				overlay36_data = overlay36.data
+				B2_GROTTO_ODDS_OFFSET = 0x00055218
+				
+				# overwrite data with edits
+				overlay36_data[B2_GROTTO_ODDS_OFFSET:(B2_GROTTO_ODDS_OFFSET + 200)] = grotto_odds
+				
+				#set new data
+				overlay36.data = overlay36_data
+
+				# recompress and insert
+				rom.files[36] = overlay36.save(compress=True)
 		
 		for narc in narcs:
 			rom = eval(f'{narc}_writer.output_narc(rom)')
@@ -80,27 +100,7 @@ try:
 		# for narc in plural_narcs:
 		# 	file_ids[narc] = settings[narc]
 
-	if settings["base_rom"] == "BW2":
-
-		grotto_odds = 0
-		grotto_odds = open(f'{rom_name}/grotto_odds.bin','rb').read()
-
-		#load decompressed overlay
-		overlay36 = rom.loadArm9Overlays([36])[36]
-		
-		#set data
-		overlay36_data = overlay36.data
-		B2_GROTTO_ODDS_OFFSET = 0x00055218
-		
-		# overwrite data with edits
-		overlay36_data[B2_GROTTO_ODDS_OFFSET:(B2_GROTTO_ODDS_OFFSET + 200)] = grotto_odds
-		
-		#set new data
-		overlay36.data = overlay36_data
-
-		# recompress and insert
-		rom.files[36] = overlay36.save(compress=True)
-
+			
 	##### write Narcs to rom
 	# for narc in plural_narcs:
 	# 	narc_path = f'{rom_name}/narcs/{narc}-{file_ids[narc]}.narc'
