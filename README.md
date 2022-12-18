@@ -167,7 +167,7 @@ Thanks to Hello007 for his research into the PID algorithm.
 
 Thanks to turtleisaac for pokeditor src code that let me look up what some of bitfields did what as well for his partial list of move effects. 
 
-Thanks to platinummaster for helping with my text parser algorithm
+Thanks to platinummaster for allowing the use of BeaterText for the text editors
 
 Thanks to Drayano for his forum post on the hidden grotto narc format.
 
