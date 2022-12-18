@@ -115,11 +115,11 @@ class Text
 		results = texts.map do |text_bank|
 			if text_bank
 				text_bank.select do |line|
-					search_terms = /(?<!\\)#{terms}/
+					search_terms = /(?<!\\)#{terms.downcase}/
 						
 					if line[1]
 						if ignore_case
-							(line[1].downcase =~ search_terms.downcase)
+							(line[1].downcase =~ search_terms)
 						else
 							(line[1] =~ search_terms)
 						end
