@@ -119,7 +119,7 @@ class Text
 						
 					if line[1]
 						if ignore_case
-							(line[1].downcase =~ search_terms)
+							(line[1].downcase =~ search_terms.downcase)
 						else
 							(line[1] =~ search_terms)
 						end
