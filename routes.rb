@@ -214,7 +214,7 @@ end
 ####################### Texts ###########################
 
 get '/story_texts/text/:id' do 
-	return "Set text_editor to 'true in session_settings.json to access', for windows only" if !SessionSettings.get('text_editor')
+	# return "Set text_editor to 'true in session_settings.json to access', for windows only" if !SessionSettings.get('text_editor')
 
 	bank = "story_texts"
 	n = params[:id]
@@ -232,7 +232,7 @@ get '/story_texts/text/:id' do
 end
 
 get '/message_texts/text/:id' do 
-	return "Set text_editor to 'true in session_settings.json to access', for windows only" if !SessionSettings.get('text_editor')
+	# return "Set text_editor to 'true in session_settings.json to access', for windows only" if !SessionSettings.get('text_editor')
 
 	bank = "message_texts"
 	n = params[:id]
