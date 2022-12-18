@@ -36,31 +36,26 @@ set_global_vars()
 #################################################################
 
 
-def output_narc(narc_name="marts"):
+def output_narc(rom, narc_name="marts"):
 	json_files = os.listdir(f'{ROM_NAME}/json/{narc_name}')
-	narcfile_path = f'{ROM_NAME}/narcs/{narc_name}-{NARC_FILE_ID}.narc'
-	counts_narcfile_path = f'{ROM_NAME}/narcs/mart_counts-{MART_COUNTS_NARC_FILE_ID}.narc'
-	
+		
 	# ndspy copy of narcfile to edit
-	narc = ndspy.narc.NARC.fromFile(narcfile_path)
-	counts_narc = ndspy.narc.NARC.fromFile(counts_narcfile_path)
+	narc = ndspy.narc.NARC(rom.files[NARC_FILE_ID])
+	counts_narc = ndspy.narc.NARC(rom.files[MART_COUNTS_NARC_FILE_ID])
+	
 	counts = bytearray(counts_narc.files[0])
 
 	for f in json_files:
 		file_name = int(f.split(".")[0])
-
 		write_narc_data(file_name, NARC_FORMAT, narc, counts, narc_name)
 
-
 	counts_narc.files[0] = counts
-
-	with open(counts_narcfile_path, "wb") as outfile:
-		outfile.write(counts_narc.save()) 
-
-	with open(narcfile_path, "wb") as outfile:
-		outfile.write(narc.save()) 
-
+	rom.files[NARC_FILE_ID] = narc.save()
+	rom.files[MART_COUNTS_NARC_FILE_ID] = counts_narc.save()
+	
 	print("narc saved")
+	return rom
+
 
 def write_narc_data(file_name, narc_format, narc , counts, narc_name=""):
 	file_path = f'{ROM_NAME}/json/{narc_name}/{file_name}.json'

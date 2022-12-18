@@ -94,22 +94,18 @@ set_global_vars()
 #################################################################
 
 
-def output_narc(narc_name="overworlds"):
+def output_narc(rom, narc_name="overworlds"):
 	json_files = os.listdir(f'{ROM_NAME}/json/{narc_name}')
-	narcfile_path = f'{ROM_NAME}/narcs/{narc_name}-{NARC_FILE_ID}.narc'
 	
 	# ndspy copy of narcfile to edit
-	narc = ndspy.narc.NARC.fromFile(narcfile_path)
+	narc = ndspy.narc.NARC(rom.files[NARC_FILE_ID])
 
 	for f in json_files:
 		file_name = int(f.split(".")[0])
-
 		write_narc_data(file_name, NARC_FORMAT, narc, narc_name)
 
-	old_narc = open(narcfile_path, "wb")
-	old_narc.write(narc.save()) 
-
-
+	rom.files[NARC_FILE_ID] = narc.save()
+	return rom
 
 def write_narc_data(file_name, narc_format, narc, narc_name="trpok"):
 	file_path = f'{ROM_NAME}/json/{narc_name}/{file_name}.json'

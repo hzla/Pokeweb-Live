@@ -85,21 +85,16 @@ if BASE_ROM == 'BW2':
 ## TODO instead of opening and editing the entire narc repeatedly, edit a variable 
 ## and edit the narc just once
 
-def output_narc(narc_name="headers"):
-	narcfile_path = f'{ROM_NAME}/narcs/{narc_name}-{NARC_FILE_ID}.narc'
+def output_narc(rom, narc_name="headers"):	
 	
-	# ndspy copy of narcfile to edit
-	
-	narc = ndspy.narc.NARC.fromFile(narcfile_path)
-
-
+	narc = ndspy.narc.NARC(rom.files[NARC_FILE_ID])
 	updated_narc = write_narc_data(HEADER_NARC_FORMAT, "headers")
 	narc.files[0] = updated_narc
-	
-	old_narc = open(narcfile_path, "wb")
-	old_narc.write(narc.save()) 
+	rom.files[NARC_FILE_ID] = narc.save()
 
 	print("narc saved")
+
+	return rom
 
 def write_narc_data(narc_format, narc_name="headers"):
 	file_path = f'{ROM_NAME}/json/{narc_name}/headers.json'

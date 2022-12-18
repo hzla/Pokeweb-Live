@@ -77,8 +77,8 @@ for narc in NARCS:
 
 
 	
-	with open(f'{rom_name}/narcs/{narc[1]}-{file_id}.narc', 'wb') as f:
-	    f.write(file)
+	# with open(f'{rom_name}/narcs/{narc[1]}-{file_id}.narc', 'wb') as f:
+	#     f.write(file)
 
 
 #############################################################

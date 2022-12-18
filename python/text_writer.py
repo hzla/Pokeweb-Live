@@ -21,12 +21,11 @@ def set_global_vars():
         NARC_FILE_IDS["trtext_offsets"] = settings["trtext_offsets"]
 
 
-def output_narc():
+def output_narc(rom):
     set_global_vars()
 
     for narc_name in ["story_texts", "message_texts"]:
-        narc_path = f'{ROM_NAME}/narcs/{narc_name}-{NARC_FILE_IDS[narc_name]}.narc'
-        narc = ndspy.narc.NARC.fromFile(narc_path)
+        narc = ndspy.narc.NARC(rom.files[NARC_FILE_IDS[narc_name]])
 
         texts = os.listdir(f'{ROM_NAME}/{narc_name}')
 
@@ -37,8 +36,9 @@ def output_narc():
                 bank_bin = open(f'{ROM_NAME}/{narc_name}/{bank_id}.bin', "rb").read()
                 narc.files[bank_id] = bank_bin
 
-        with open(narc_path, "wb") as outfile:
-            outfile.write(narc.save()) 
+        rom.files[NARC_FILE_IDS[narc_name]] = narc.save()
+
+    return rom
 
 
 def update_narc(file_name, narc_name):

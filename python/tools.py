@@ -15,7 +15,7 @@ from trpok_reader import output_trpok_json
 
 ################ STANDARD FUNCTIONS FOR MULTI FILE STATIC FORMAT NARCS ###################
 
-def output_narc(narc_name):
+def output_narc(narc_name, rom):
 	rom_data.set_global_vars()
 
 	with open(f'session_settings.json', "r") as outfile:  
@@ -23,19 +23,18 @@ def output_narc(narc_name):
 		NARC_FILE_ID = settings[narc_name]
 
 	json_files = os.listdir(f'{rom_data.ROM_NAME}/json/{narc_name}')
-	narcfile_path = f'{rom_data.ROM_NAME}/narcs/{narc_name}-{NARC_FILE_ID}.narc'
 	
 	# ndspy copy of narcfile to edit
-	narc = ndspy.narc.NARC.fromFile(narcfile_path)
+	narc = ndspy.narc.NARC(rom.files[NARC_FILE_ID])
 
 	for f in json_files:
 		file_name = int(f.split(".")[0])
 		write_narc_data(file_name, rom_data.NARC_FORMATS[narc_name], narc, narc_name, NARC_FILE_ID)
 	
-	old_narc = open(narcfile_path, "wb")
-	old_narc.write(narc.save()) 
-
+	rom.files[NARC_FILE_ID] = narc.save()
 	print("narc saved")
+
+	return rom
 
 def write_narc_data(file_name, narc_format, narc, narc_name, narc_file_id):
 	file_path = f'{rom_data.ROM_NAME}/json/{narc_name}/{file_name}.json'

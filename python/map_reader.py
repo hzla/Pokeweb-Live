@@ -61,14 +61,16 @@ def read_narc_data(data, narc_name, file_name):
 
 	for n in range(0, map_data["width"] * map_data["height"]):
 		for m in range(0,4):		
-			map_data[f'layer_{m}'].append(read_bytes(stream, 2))
+			tile = read_bytes(stream, 2)
+			if m == 2:
+				map_data[f'layer_{m}'].append(tile)
 
-	try:
-		for n in range(0, map_data["width"] * map_data["height"]):
-			for m in range(4,8):		
-				map_data[f'layer_{m}'].append(read_bytes(stream, 2))
-	except:
-		print("no layer 2")
+	# try:
+	# 	for n in range(0, map_data["width"] * map_data["height"]):
+	# 		for m in range(4,8):		
+	# 			map_data[f'layer_{m}'].append(read_bytes(stream, 2))
+	# except:
+	# 	print("no layer 2")
 
 
 

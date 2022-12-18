@@ -14,8 +14,8 @@ import tools
 # code.interact(local=dict(globals(), **locals()))
 
 
-def output_narc():
-	tools.output_narc("personal")
+def output_narc(rom, narc_name="personal"):
+	return tools.output_narc("personal", rom)
 
 def write_readable_to_raw(file_name):
 	personal_data = {}

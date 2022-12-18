@@ -7,8 +7,8 @@ import tools
 
 # code.interact(local=dict(globals(), **locals()))
 
-def output_narc(narc_name="trdata"):
-	tools.output_narc("trdata")
+def output_narc(rom, narc_name="trdata"):
+	return tools.output_narc("trdata", rom)
 
 def write_readable_to_raw(file_name, narc_name="trdata"):
 	tools.write_readable_to_raw(file_name, narc_name, to_raw)

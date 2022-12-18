@@ -6,11 +6,22 @@ import copy
 import sys
 import rom_data
 import tools
+import json
 
 # code.interact(local=dict(globals(), **locals()))
 
-def output_narc(narc_name="moves"):
-	tools.output_narc("moves")
+def output_narc(rom, narc_name="moves"):
+	
+	with open(f'session_settings.json', "r") as outfile:  
+		settings = json.load(outfile) 
+		ROM_NAME = settings["rom_name"]
+
+		for ani in ["move_animations", "battle_animations"]:
+			narc_id = settings[ani]
+			narcfile_path = narcfile_path = f'{ROM_NAME}/narcs/{ani}-{narc_id}.narc'
+			rom.files[narc_id] = ndspy.narc.NARC.fromFile(narcfile_path).save()
+
+	return tools.output_narc("moves", rom)
 
 def write_readable_to_raw(file_name, narc_name="moves"):
 	tools.write_readable_to_raw(file_name, narc_name, to_raw)

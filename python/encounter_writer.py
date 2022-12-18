@@ -13,8 +13,8 @@ import tools
 
 # code.interact(local=dict(globals(), **locals()))
 
-def output_narc(narc_name="encounters"):
-	tools.output_narc("encounters")
+def output_narc(rom, narc_name="encounters"):
+	return tools.output_narc("encounters", rom)
 
 def write_readable_to_raw(file_name, narc_name="encounters"):
 	tools.write_readable_to_raw(file_name, narc_name, to_raw)

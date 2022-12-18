@@ -36,6 +36,7 @@ bw_narcs = ["mart" , "grotto"]
 plural_narcs = ["personal","story_texts","message_texts", "learnsets", "moves", "headers", "encounters", "trdata", "trpok", "items", "evolutions", "overworlds"]
 plural_bw_narcs = ["marts", "grottos","mart_counts", "battle_animations", "move_animations"]
 
+
 try: 
 	rom_name = sys.argv[1].split(".")[0] 
 
@@ -53,31 +54,31 @@ try:
 		if settings["base_rom"] == "BW2":
 			narcs += bw_narcs
 			plural_narcs += plural_bw_narcs
+
+		if settings["output_arm9"] == True:
+			tm_writer.output_arm9()
+			mutable_rom = bytearray(data)
+			arm9_offset = 16384 #0x4000
+
+			#get edited arm9
+			edited_arm9_file = bytearray(open(f'{rom_name}/arm9.bin', 'rb').read())
+
+			# #compress it
+			print ("compressing arm9")
+			arm9 = bytearray(ndspy.codeCompression.compress(edited_arm9_file, isArm9=True))
+
+			#reinsert arm9
+			mutable_rom[arm9_offset:arm9_offset + len(arm9)] = arm9
+
+			#update rom in memory
+			rom = ndspy.rom.NintendoDSRom(mutable_rom)
+		
 		
 		for narc in narcs:
-			eval(f'{narc}_writer.output_narc()')
+			rom = eval(f'{narc}_writer.output_narc(rom)')
 			
-		for narc in plural_narcs:
-			file_ids[narc] = settings[narc]
-
-	if settings["output_arm9"] == True:
-
-		tm_writer.output_arm9()
-		mutable_rom = bytearray(data)
-		arm9_offset = 16384 #0x4000
-
-		#get edited arm9
-		edited_arm9_file = bytearray(open(f'{rom_name}/arm9.bin', 'rb').read())
-
-		# #compress it
-		print ("compressing arm9")
-		arm9 = bytearray(ndspy.codeCompression.compress(edited_arm9_file, isArm9=True))
-
-		#reinsert arm9
-		mutable_rom[arm9_offset:arm9_offset + len(arm9)] = arm9
-
-		#update rom in memory
-		rom = ndspy.rom.NintendoDSRom(mutable_rom)
+		# for narc in plural_narcs:
+		# 	file_ids[narc] = settings[narc]
 
 	if settings["base_rom"] == "BW2":
 
@@ -101,9 +102,9 @@ try:
 		rom.files[36] = overlay36.save(compress=True)
 
 	##### write Narcs to rom
-	for narc in plural_narcs:
-		narc_path = f'{rom_name}/narcs/{narc}-{file_ids[narc]}.narc'
-		rom.files[file_ids[narc]] = open(narc_path, 'rb').read()
+	# for narc in plural_narcs:
+	# 	narc_path = f'{rom_name}/narcs/{narc}-{file_ids[narc]}.narc'
+	# 	rom.files[file_ids[narc]] = open(narc_path, 'rb').read()
 
 	
 	##### save rom to exports

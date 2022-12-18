@@ -54,11 +54,6 @@ def write_sprite_to_index(sprite_indexes, target_index):
 			rand_sprite = random.randint(1,649) + random.randint(0,1)
 			to_copy[18] = narc.files[(rand_sprite * 20) + 18]
 
-		
-
-
-
-
 		narc.files[13700 + (20 * target_index): 13720 + (20 * target_index)] = to_copy
 
 		print(f'{sprite_index * 20} {(sprite_index + 1) * 20}')

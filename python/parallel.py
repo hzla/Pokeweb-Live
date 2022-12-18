@@ -25,12 +25,15 @@ def output(narc):
 	if narc != "grotto_odds":
 		file_name = f'{rom_name}/narcs/{narc}-{narc_info[narc]}.narc'
 		narc_data = ndspy.narc.NARC.fromFile(file_name)
+		os.remove(file_name)
 	else:		
 		narc_data = open(f'{rom_name}/grotto_odds.bin','rb')
 		# narc_data.close()
 
 	eval(f'output_{narc}_json')(narc_data)
 	print(narc)
+
+
 	return narc
 
 

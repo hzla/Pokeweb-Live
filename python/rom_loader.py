@@ -58,10 +58,8 @@ with open(f'expansion_settings.json', "r") as outfile:
 BW_NARCS = [["a/0/1/6", "personal"],
 ["a/0/0/9", "matrix"], 
 ["a/1/2/5", "overworlds"],
-["a/0/1/7", "growth"],
 ["a/0/1/8", "learnsets"],
 ["a/0/1/9", "evolutions"], 
-["a/0/2/0", "babyforms"],
 ["a/0/2/1","moves"],
 ["a/0/6/6", "move_animations"],
 ["a/0/6/7", "battle_animations"],
@@ -71,9 +69,7 @@ BW_NARCS = [["a/0/1/6", "personal"],
 ["a/0/9/2", "trdata"],
 ["a/0/9/3", "trpok"],
 ["a/1/2/6", "encounters"],
-["a/0/0/3", "storytext"],
-["a/0/5/6", "scripts"],
-["a/0/0/7", "icons"]]
+["a/0/5/6", "scripts"]]
 
 BW_MSG_BANKS = [[286, "moves"],
 [285, "abilities"],
@@ -86,10 +82,8 @@ BW2_NARCS = [["a/0/1/6", "personal"],
 ["a/0/0/8", "maps"],
 ["a/0/0/9", "matrix"], 
 ["a/1/2/6", "overworlds"],
-["a/0/1/7", "growth"],
 ["a/0/1/8", "learnsets"],
 ["a/0/1/9", "evolutions"], 
-["a/0/2/0", "babyforms"],
 ["a/0/2/1","moves"],
 ["a/0/2/4", "items"],
 ["a/0/8/9", "trtext_table"],
@@ -97,12 +91,10 @@ BW2_NARCS = [["a/0/1/6", "personal"],
 ["a/0/9/1", "trdata"],
 ["a/0/9/2", "trpok"],
 ["a/1/2/7", "encounters"],
-["a/0/0/3", "storytext"],
 ["a/0/5/6", "scripts"],
 ["a/2/8/2", "marts"],
 ["a/2/8/3", "mart_counts"],
 ["a/2/7/3", "grottos"],
-["a/0/0/7", "icons"],
 ["a/0/6/5", "move_animations"],
 ["a/0/6/6", "battle_animations"]]
 
@@ -113,6 +105,8 @@ BW2_MSG_BANKS = [[488, "moves"],
 [383, "tr_classes"],
 [382, "tr_names"],
 [64, "items"]]
+
+
 
 
 
