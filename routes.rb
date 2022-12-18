@@ -195,8 +195,6 @@ end
 
 get '/moves' do 	
 	@moves = Move.get_all
-	
-	@poke_data = Personal.poke_data
 	@move_names = Move.get_names_from @moves
 
 	erb :moves

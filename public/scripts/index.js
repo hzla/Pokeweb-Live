@@ -103,9 +103,8 @@ $(document).ready(function() {
 		if (height == 2) {
 			offsets = [0,4,8,12]
 		}
-
-		if (height == 6 || height == 7) {
-			offsets = [0,2,5,"f"]
+		if (height == 6 || height == 7|| height == 9) {
+			offsets = [0,3,5,"f"]
 		}
 
 		return offsets[direction]
@@ -506,9 +505,14 @@ $(document).ready(function() {
 				data["int"] = true
 				data["value"] = parseInt(data["value"])
 				max_value = parseInt($(this).attr('data-type').split("-")[1])
+				min_value = 0
+
+				if (max_value == 6) {
+					min_value = -6
+				}
 				
 				//validate int value less than max if int field
-				if ((!parseInt(value) || parseInt(value) > max_value ) && parseInt(value) != 0) {
+				if (((!parseInt(value) || parseInt(value) > max_value ) && parseInt(value) != 0)  || parseInt(value) < min_value) {
 					$(this).css('border', '1px solid red')
 					return
 				}
