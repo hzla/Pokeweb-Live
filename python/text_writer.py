@@ -2,141 +2,11 @@ import ndspy
 import ndspy.rom
 import ndspy.narc
 import code 
-import codecs
 import io
-import math
 import struct, re
 import json
-from binary16 import binaryreader, binarywriter
 import sys
-
-
-
-def gen5put(texts):
-    textofs = {}
-    sizes = {}
-    comments = {}
-    textflags = {}
-    blockwriters = {}
-    for entry in texts:
-        match = re.match("([^_]+)_([0-9]+)(.*)", entry[0])
-        if not match:
-            continue
-        blockid = match.group(1)
-        textid = int(match.group(2))
-        flags = match.group(3)
-        text = entry[1]
-        if blockid.lower() == "comment":
-            comments[textid] = text
-            continue
-        blockid = int(blockid)
-        if blockid not in blockwriters:
-            blockwriters[blockid] = binarywriter()
-            textofs[blockid] = {}
-            sizes[blockid] = {}
-            textflags[blockid] = {}
-        textofs[blockid][textid] = blockwriters[blockid].pos()
-        dec = []
-        while text:
-            c = text[0]
-            text = text[1:]
-            if c == '\\':
-                c = text[0]
-                text = text[1:]
-                if c == 'x':
-                    n = int(text[:4], 16)
-                    text = text[4:]
-                elif c == 'n':
-                    n = 0xFFFE
-                elif c == 'r':
-                    dec.append(0xF000)
-                    dec.append(0xbe01)
-                    dec.append(0)
-                    continue
-                elif c == 'f':
-                    dec.append(0xF000)
-                    dec.append(0xbe00)
-                    dec.append(0)
-                    continue
-                else:
-                    n = 1
-                dec.append(n)
-            elif c == 'V':
-                if text[:2] == "AR":
-                    text = text[3:]
-                    eov = text.find(")")
-                    args = list(map(int, text[:eov].split(",")))
-                    text = text[eov+1:]
-                    dec.append(0xF000)
-                    dec.append(args.pop(0))
-                    dec.append(len(args))
-                    for a in args:
-                        dec.append(a)
-                else:
-                    dec.append(ord('V'))
-            else:
-                dec.append(ord(c))
-        flag = 0
-        for i in range(16):
-            if chr(65+i) in flags:
-                flag |= 1<<i
-        textflags[blockid][textid] = flag
-        if "c" in flags:
-            comp = [0xF100]
-            container = 0
-            bit = 0
-            while dec:
-                c = dec.pop(0)
-                if c>>9:
-                    print("Illegal compressed character: %i"%c)
-                container |= c<<bit
-                bit += 9
-                while bit >= 16:
-                    bit -= 16
-                    comp.append(container&0xFFFF)
-                    container >>= 16
-            container |= 0xFFFF<<bit
-            comp.append(container&0xFFFF)
-            dec = comp[:]
-        key = 0
-        enc = []
-        while dec:
-            char = dec.pop() ^ key
-            key = ((key>>3)|(key<<13))&0xFFFF
-            enc.insert(0, char)
-        enc.append(key^0xFFFF)
-        sizes[blockid][textid] = len(enc)
-        for e in enc:
-            blockwriters[blockid].write16(e)
-    numblocks = max(blockwriters)+1
-    if numblocks != len(blockwriters):
-        raise KeyError
-    numentries = 0
-    for block in blockwriters:
-        numentries = max(numentries, max(textofs[block])+1)
-    offsets = []
-    baseofs = 12+4*numblocks
-    textblock = binarywriter()
-    for i in range(numblocks):
-        data = blockwriters[i].toarray()
-        offsets.append(baseofs+textblock.pos())
-        relofs = numentries*8+4
-        textblock.write32(len(data)+relofs)
-        for j in range(numentries):
-            textblock.write32(textofs[i][j]+relofs)
-            textblock.write16(sizes[i][j])
-            textblock.write16(textflags[i][j])
-        textblock.writear(data)
-    writer = binarywriter()
-    writer.write16(numblocks)
-    writer.write16(numentries)
-    writer.write32(textblock.pos())
-    writer.write32(0)
-    for i in range(numblocks):
-        writer.write32(offsets[i])
-    writer.writear(textblock.toarray())
-    return writer.tostring()
-
+import os
 
 def set_global_vars():
     global ROM_NAME, NARC_FILE_IDS
@@ -149,7 +19,26 @@ def set_global_vars():
         NARC_FILE_IDS["message_texts"] = settings["message_texts"]
         NARC_FILE_IDS["trtext_table"] = settings["trtext_table"]
         NARC_FILE_IDS["trtext_offsets"] = settings["trtext_offsets"]
- 
+
+
+def output_narc():
+    set_global_vars()
+
+    for narc_name in ["story_texts", "message_texts"]:
+        narc_path = f'{ROM_NAME}/narcs/{narc_name}-{NARC_FILE_IDS[narc_name]}.narc'
+        narc = ndspy.narc.NARC.fromFile(narc_path)
+
+        texts = os.listdir(f'{ROM_NAME}/{narc_name}')
+
+        for file in texts:
+            if file.endswith("_edited.txt"):
+                print(file)
+                bank_id = int(file.split("_edited.txt")[0])
+                bank_bin = open(f'{ROM_NAME}/{narc_name}/{bank_id}.bin', "rb").read()
+                narc.files[bank_id] = bank_bin
+
+        with open(narc_path, "wb") as outfile:
+            outfile.write(narc.save()) 
 
 
 def update_narc(file_name, narc_name):
