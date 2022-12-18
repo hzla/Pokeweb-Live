@@ -364,6 +364,7 @@ table td {
     background: #6272a4;
     color: #f2f2f2;
     cursor: pointer;
+    align-items: start
 }
 
 .spreadsheet > .expanded-field.text-header:not(:first-child) {
@@ -391,6 +392,10 @@ table td {
 
 .text-bank .log-text {
     max-width: calc(100% - 120px);
+}
+
+.text-line {
+    min-width: calc(100% - 120px) ;
 }
 
 .text-bank .expanded-field-main {
@@ -1152,7 +1157,7 @@ div.-active svg * {
     margin: 40px 0px;
 }
 
-.ow-btn {
+.ow-btn, .sb-btn {
     height: 40px;
     color: #f2f2f2;
     font-size: 16px;
@@ -1161,14 +1166,19 @@ div.-active svg * {
     line-height: 30px;
     padding:  5px;
     border-radius: 2px;
-
 }
 
-#add-npc {
+.sb-field {
+    width: 60px;
+    text-align: center;
+    border-radius: 2px;
+}
+
+#add-npc, #add-text {
     background: #1abc9c;
 }
 
-#del-npc {
+#del-npc, #del-text {
     background: #e74c3c;
 }
 

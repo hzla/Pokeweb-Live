@@ -208,11 +208,64 @@ get '/tms' do
 	erb :tms
 end
 
+
+####################### Texts ###########################
+
+get '/story_texts/text/:id' do 
+	return "Set text_editor to 'true in session_settings.json to access', download and install dotnetcore3.1 for macos if you are on mac https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-3.1.32-macos-x64-installer?cid=getdotnetcore" if !SessionSettings.get('text_editor')
+
+	bank = "story_texts"
+	n = params[:id]
+	command = "tools/beatertext/BeaterText -d #{$rom_name}/#{bank}/#{n}.bin #{$rom_name}/#{bank}/#{n}.txt"
+	pid = spawn command
+	Process.detach(pid)
+	sleep 0.2
+
+	texts = File.open("#{$rom_name}/#{bank}/#{n}.txt").read()
+	@texts = texts.split("# STR_")
+	@index = n
+	@narc_name = "story_texts"
+	
+	erb :text
+end
+
+get '/message_texts/text/:id' do 
+	return "Set text_editor to 'true in session_settings.json to access', download and install dotnetcore3.1 for macos if you are on mac https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-3.1.32-macos-x64-installer?cid=getdotnetcore" if !SessionSettings.get('text_editor')
+
+	bank = "message_texts"
+	n = params[:id]
+	command = "tools/beatertext/BeaterText -d #{$rom_name}/#{bank}/#{n}.bin #{$rom_name}/#{bank}/#{n}.txt"
+	pid = spawn command
+	Process.detach(pid)
+	sleep 0.2
+
+	texts = File.open("#{$rom_name}/#{bank}/#{n}.txt").read()
+	@texts = texts.split("# STR_")
+	@index = n
+	@narc_name = "message_texts"
+	
+	erb :text
+end
+
+post '/texts/:id' do 
+	bank = params["bank"]
+
+	Text.edit_bank params["narc"], params["id"], params["bank"]
+	return 200
+end
+
+
 ####################### HEADERS ###########################
 
 get '/headers' do 
 	@header_data = Header.get_all
 	@location_names = Header.location_names
+
+
+	
+
+	
+
 
 
 

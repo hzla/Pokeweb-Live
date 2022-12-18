@@ -24,13 +24,16 @@ import evolution_writer
 import mart_writer
 import grotto_writer
 import overworld_writer
+import text_writer
 
 # code.interact(local=dict(globals(), **locals()))
 
-narcs = ["personal", "learnset","move","header","encounter","trdata","trpok","item","evolution", "overworld"]
+# _writer files to run
+narcs = ["personal","text", "learnset","move","header","encounter","trdata","trpok","item","evolution", "overworld"]
 bw_narcs = ["mart" , "grotto"]
 
-plural_narcs = ["personal", "learnsets", "moves", "headers", "encounters", "trdata", "trpok", "items", "evolutions", "overworlds"]
+# narcs to save
+plural_narcs = ["personal","story_texts","message_texts", "learnsets", "moves", "headers", "encounters", "trdata", "trpok", "items", "evolutions", "overworlds"]
 plural_bw_narcs = ["marts", "grottos","mart_counts", "battle_animations", "move_animations"]
 
 try: 

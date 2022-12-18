@@ -51,6 +51,36 @@ class Text
 		p "Deleted from Bank #{bank_id} at index #{idx}"
 	end
 
+	def self.edit_bank narc, bank_id, bank
+
+		open("#{$rom_name}/#{narc}/#{bank_id}_edited.txt", 'w') do |f|
+			n = 0
+			until !bank[n.to_s]
+				f.puts "# STR_#{n}"
+				entry = bank[n.to_s]
+				entry.each_with_index do |line, j|	
+					prefix = "\""
+					suffix = "\","
+
+					#first line
+					prefix = "[\"" if j == 0
+					#last line
+					suffix = "$\"]" if j == entry.length - 1
+
+					f.puts (prefix + line + suffix)
+				end
+				f.puts
+				n += 1
+			end
+			f.puts "END_MSG"
+		end
+
+		command = "tools/beatertext/BeaterText -m #{$rom_name}/#{narc}/#{bank_id}_edited.txt #{$rom_name}/#{narc}/#{bank_id}.bin"
+		pid = spawn command
+		Process.detach(pid)
+
+	end
+
 
 
 

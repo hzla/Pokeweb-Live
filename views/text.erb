@@ -1,0 +1,44 @@
+<div class="pokemon-filter">	
+	<div class="filter-title">Bank <%= @index  %></div>
+
+
+	<div class="sidebar-btns">
+		<div class="sb-btn" id="add-text">Add Text(s)</div>
+		<input class="sb-field" value="1"></input>
+	</div>
+	<div class="sidebar-btns">
+		<div class="sb-btn" id="del-text">Del Last Text(s)</div>
+		<input class="sb-field" value="1"></input>
+	</div>
+				
+</div>
+
+<div class="pokemon-list spreadsheet" id="texts" data-narc="<%= @narc_name %>" data-index="<%= @index %>">
+	<% @texts.each_with_index do |text, i| %>
+		<% text = text.split("\n[\"") %>
+
+		<% if !text.empty? %>
+
+			<div class="expanded-field filterable text-header">
+				<div class="expanded-field-main">
+					<div class="log-text">MSG <%= text[0] %></div>
+				</div>
+			</div>
+			<div class="text-bank" data-index="<%= text[0] %>">
+				<% text[1][0..-6].split("\",\n\"").each_with_index do |line, i| %>
+					<div class="expanded-field filterable">
+						<div class="expanded-field-main">				
+								<div class="log-text text-line" contenteditable="true"><%= line.gsub("$\"]\n\nEND", "") %></div>
+						</div>
+					</div>	
+				<% end %>
+				<div class="expanded-field filterable">
+					<div class="expanded-field-main">				
+							<div class="log-text text-line" contenteditable="true"></div>
+					</div>
+				</div>		
+			</div>
+		<% end %>
+
+	<% end %>
+</div>
