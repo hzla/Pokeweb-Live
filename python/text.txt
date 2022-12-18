@@ -1,0 +1,282 @@
+# STR_0
+["I'm Chili! My Water-type Pokémon\n",
+"and I are too hot to handle!\c\n",
+"What it boils down to is\n",
+"I want you to be my partner!$"]
+
+# STR_1
+["Yeeeeooow!\c\n",
+"I'm the strongest of us brothers,\n",
+"and I'll make sure you win!\c$"]
+
+# STR_2
+["Aww, man!\n",
+"I was all fired up, too!$"]
+
+# STR_3
+["That's that, then!\n",
+"I'm going to show you what\l\n",
+"me and my blazing Fire types can do!\c$"]
+
+# STR_4
+["I was good, too,\n",
+"but you aren't half bad!\c\n",
+"How about it,\n",
+"Cilan and Cress?\c\n",
+"Out of the three of us,\n",
+"I'm the strongest Trainer, right?!$"]
+
+# STR_5
+["Eeeooow! You're intense!\c\n",
+"Battling together with you\n",
+"got me all fired up, man!\l\n",
+"Come battle again sometime!$"]
+
+# STR_6
+["You look like you'd be fun to\n",
+"battle together with!\l\n",
+"All right! Team up with me tomorrow!$"]
+
+# STR_7
+["C'mon! What it boils down to is\n",
+"I want you to be my partner!$"]
+
+# STR_8
+["I'm a Water-type specialist,\n",
+"and my name is Cress.\l\n",
+"Pleased to make your acquaintance.\c\n",
+"You there. Would you be so kind\n",
+"as to be my partner in a battle\l\n",
+"with my siblings?$"]
+
+# STR_9
+["That's wonderful. With me, Cress,\n",
+"as your partner, victory is assured.\c$"]
+
+# STR_10
+["Oh, what's this?\n",
+"I'm amazed you turned me, Cress, down.$"]
+
+# STR_11
+["That is correct!\c\n",
+"It shall be I and my esteemed Water\n",
+"types that you must face in battle!\c\n",
+"Let us begin, then!\c\n",
+"En garde, user of Grass-type Pokémon--\n",
+"Cilan--and of Fire-type Pokémon--Chili!\c$"]
+
+# STR_12
+["My attacks flow like water.\c\n",
+"You were blessed with an\n",
+"amazing partner.$"]
+
+# STR_13
+["Battling together with you helped\n",
+"me find new potential in myself.\l\n",
+"That's what I think.\c\n",
+"I'd like it if you were to team up\n",
+"with me tomorrow as well.$"]
+
+# STR_14
+["Losing made me realize something.\c\n",
+"If I were to team up with you,\n",
+"our onslaught would be like a torrent!$"]
+
+# STR_15
+["What do you think?\n",
+"Will you partner up with me\l\n",
+"and compete against my siblings?$"]
+
+# STR_16
+["Um. My name is Cilan.\n",
+"I like Grass-type Pokémon.\c\n",
+"We were Gym Leaders, but\n",
+"in order to improve ourselves further,\l\n",
+"we are working at this Restaurant\l\n",
+"and spending every day with Pokémon.\c\n",
+"How about it? Would you team up with me\n",
+"and take part in a Double Battle?$"]
+
+# STR_17
+["OK. If you're fine with me,\n",
+"I will put everything I have into\l\n",
+"being your partner in battle!\c$"]
+
+# STR_18
+["...Ah, hmm. I must've timed...\n",
+"my invitation poorly...\c\n",
+"True enough, I did want to...\n",
+"to have a Pokémon battle with you.$"]
+
+# STR_19
+["OK... So, um,\n",
+"I'm Cilan, I like Grass-type Pokémon,\l\n",
+"and this is my partner here!\c$"]
+
+# STR_20
+["OK... So, um,\n",
+"I'm Cilan, I like Grass-type Pokémon,\l\n",
+"and this was my partner here!$"]
+
+# STR_21
+["...What a surprise.\n",
+"You...are very strong.\c\n",
+"Would you team up with me again sometime?\n",
+"There's still much I want to learn.$"]
+
+# STR_22
+["During the battle I was so\n",
+"taken with your fighting style,\c\n",
+"I almost lost the timing for\n",
+"giving my Pokémon directions!\c\n",
+"Next time, I would like to\n",
+"team up with you.$"]
+
+# STR_23
+["How about it? Would you team up with me\n",
+"and take part in a Double Battle?$"]
+
+# STR_24
+["Hello! I'm giving out water!$"]
+
+# STR_25
+["Welcome!\c\n",
+"This is a lively restaurant where\n",
+"you can enjoy a show!$"]
+
+# STR_26
+["Will you come see Striaton Restaurant's\n",
+"famous \xF000ā\x0001\x0001 show?$"]
+
+# STR_27
+["OK!\n",
+"I'm going to get all fired up!\c$"]
+
+# STR_28
+["That's too bad...\n",
+"I guarantee it's great, though.$"]
+
+# STR_29
+["Ready all \xF000ā\x0001\x0001!\n",
+"Everyone, gather up!\c$"]
+
+# STR_30
+["The \xF000ā\x0001\x0001 that I will have you\n",
+"follow today is...\c$"]
+
+# STR_31
+["This--the \xF000ā\x0001\x0001 that's\n",
+"absolutely raring to go!\c\n",
+"It's holding a \xF000ĉ\x0001\x0000!\n",
+"Ready, set, go!\c$"]
+
+# STR_32
+["This--the \xF000ā\x0001\x0001 with the\n",
+"cute round eyes!\c\n",
+"It's holding a \xF000ĉ\x0001\x0000!\n",
+"Ready, set, go!\c$"]
+
+# STR_33
+["This--the \xF000ā\x0001\x0001 with the\n",
+"pretty tail!\c\n",
+"It's holding a \xF000ĉ\x0001\x0000!\n",
+"Ready, set, go!\c$"]
+
+# STR_34
+["OK! Find the \xF000ā\x0001\x0001 that\n",
+"I asked you to follow!$"]
+
+# STR_35
+["That \xF000ā\x0001\x0001 is holding\n",
+"a \xF000ĉ\x0001\x0000, right?$"]
+
+# STR_36
+["You are...\n",
+"...\l\n",
+"totally correct!\c\n",
+"Receive your prize, a \xF000ĉ\x0001\x0000,\n",
+"from that \xF000ā\x0001\x0001!\c$"]
+
+# STR_37
+["You are...\n",
+"...\l\n",
+"inconceivably incorrect! I'm sorry...\c$"]
+
+# STR_38
+["That marks the grand finale of\n",
+"our \xF000ā\x0001\x0001 show!\l\n",
+"Thank you, one and all!\c$"]
+
+# STR_39
+["You want to see the \xF000ā\x0001\x0001 again?\c\n",
+"There are a lot of preparations and\n",
+"such to make, so come back tomorrow!$"]
+
+# STR_40
+["Waaatch!$"]
+
+# STR_41
+["Tch-hooog!$"]
+
+# STR_42
+["Oh? This show doesn't\n",
+"feature Patrat...$"]
+
+# STR_43
+["Striaton City's triplets\n",
+"make a fantastic combination!\c\n",
+"The user of Grass-type Pokémon, Cilan,\n",
+"can pick the finest leaves.\c\n",
+"The user of Water-type Pokémon, Cress,\n",
+"can bring the finest water.\c\n",
+"The user of Fire-type Pokémon, Chili, can\n",
+"heat water to the perfect temperature.\c\n",
+"Now I get it!\n",
+"They can make the perfect tea!$"]
+
+# STR_44
+["Hey! You've got the...\n",
+"Oh yeah...\l\n",
+"There's no Trio Badge now!$"]
+
+# STR_45
+["Let us tell you why the Trio Badge\n",
+"no longer exists!\c$"]
+
+# STR_46
+["The unobtainable Trio Badge...\c\n",
+"No! One day we will make the\n",
+"Trio Badge shine again!$"]
+
+# STR_47
+["I hope today is a special day for you.$"]
+
+# STR_48
+["A day that's important to me, Cress...\c$"]
+
+# STR_49
+["Part of my past I want to forget...\n",
+"No, I mustn't forget it.$"]
+
+# STR_50
+["Welcome to Striaton Restaurant!\c\n",
+"This place used to be a\n",
+"Pokémon Gym, but a lot happened...$"]
+
+# STR_51
+["Well, why don't I tell you\n",
+"what happened...\c$"]
+
+# STR_52
+["Because of that day, we can\n",
+"truly aim for the top!$"]
+
+# STR_53
+["Huh? Aren't you going to guess which\n",
+"\xF000ā\x0001\x0001 has the Big Mushroom?$"]
+
+# STR_54
+["I see... Well, come talk to me\n",
+"if you change your mind!\c$"]
+
+END_MSG
