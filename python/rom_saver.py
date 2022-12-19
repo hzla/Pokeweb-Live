@@ -21,8 +21,6 @@ import trdata_writer
 import trpok_writer
 import item_writer
 import evolution_writer
-import mart_writer
-import grotto_writer
 import overworld_writer
 import text_writer
 
@@ -52,6 +50,8 @@ try:
 		settings = json.load(outfile) 
 		
 		if settings["base_rom"] == "BW2":
+			import mart_writer
+			import grotto_writer
 			narcs += bw_narcs
 			plural_narcs += plural_bw_narcs
 
