@@ -16,8 +16,11 @@ class Pokenarc
 		files = Dir["#{$rom_name}/json/#{@@narc_name}/*.json"]
 		file_count = files.length
 		(0..file_count - 1).each do |n|
-			
-			file = File.open("#{$rom_name}/json/#{@@narc_name}/#{n}.json", "r:ISO8859-1") {|f| f.read }
+			begin
+				file = File.open("#{$rom_name}/json/#{@@narc_name}/#{n}.json", "r:ISO8859-1") {|f| f.read }
+			rescue
+				break
+			end
 			json = JSON.parse(file)
 			entry = json["readable"]
 			entry = json["raw"] if use_raw

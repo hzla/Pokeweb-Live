@@ -49,7 +49,6 @@ try:
 			import grotto_writer
 			narcs += bw_narcs
 
-
 		if settings["output_arm9"] == True:
 			tm_writer.output_arm9()
 			mutable_rom = bytearray(data)
