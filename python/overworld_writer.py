@@ -133,9 +133,9 @@ def write_narc_data(file_name, narc_format, narc, narc_name="trpok"):
 		# narc_entry_data[0:len(stream)] = stream
 		narc.files.append(stream)
 	else:
-		# narc_entry_data = bytearray(narc.files[file_name])
-		# narc_entry_data[0:len(stream)] = stream
-		narc.files[file_name] = stream
+		narc_entry_data = bytearray(narc.files[file_name])
+		narc_entry_data[0:len(stream)] = stream
+		narc.files[file_name] = narc_entry_data
 	
 def write_readable_to_raw(file_name, narc_name="trpok"):
 	data = {}
