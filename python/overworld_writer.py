@@ -128,14 +128,18 @@ def write_narc_data(file_name, narc_format, narc, narc_name="trpok"):
 					data = json_data["raw"][f'{overworld}_{n}_{entry[1]}']
 					write_bytes(stream, entry[0], data)
 
+		write_bytes(stream, json_data["raw"]["footer_length"], json_data["raw"]["footer"])
+
+
+
 	if file_name >= len(narc.files):
 		# narc_entry_data = bytearray()
 		# narc_entry_data[0:len(stream)] = stream
 		narc.files.append(stream)
 	else:
-		narc_entry_data = bytearray(narc.files[file_name])
-		narc_entry_data[0:len(stream)] = stream
-		narc.files[file_name] = narc_entry_data
+		# narc_entry_data = bytearray(narc.files[file_name])
+		# narc_entry_data[0:len(stream)] = stream
+		narc.files[file_name] = stream
 	
 def write_readable_to_raw(file_name, narc_name="trpok"):
 	data = {}

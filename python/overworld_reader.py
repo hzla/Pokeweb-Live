@@ -112,6 +112,11 @@ def read_narc_data(data, file_name, narc_name):
 			for entry in NARC_FORMAT[overworld]:
 				file["raw"][f'{overworld}_{n}_{entry[1]}'] = read_bytes(stream, entry[0])
 
+
+	# code.interact(local=dict(globals(), **locals()))
+	file["raw"]["footer"] = int.from_bytes(data[stream.tell():], "little")
+	file["raw"]["footer_length"] = len(data[stream.tell():])
+
 	#CONVERT TO READABLE FORMAT USING CONSTANTS/TEXT BANKS
 	file["readable"] = to_readable(file["raw"], file_name)
 	

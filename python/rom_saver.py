@@ -27,7 +27,7 @@ import text_writer
 # code.interact(local=dict(globals(), **locals()))
 
 # _writer files to run
-narcs = ["personal","text", "learnset","move","header","encounter","trdata","trpok","item","evolution"]
+narcs = ["personal","text", "learnset","move","header","encounter","trdata","trpok","item","evolution", "overworld"]
 bw_narcs = ["mart" , "grotto"]
 
 try: 
@@ -49,8 +49,6 @@ try:
 			import grotto_writer
 			narcs += bw_narcs
 
-		if settings["output_overworlds"] == True:
-			narcs.append("overworld")
 
 		if settings["output_arm9"] == True:
 			tm_writer.output_arm9()
