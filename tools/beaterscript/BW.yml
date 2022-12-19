@@ -1,0 +1,1153 @@
+0x0:
+    Name: Nop
+
+0x1:
+    Name: Nop2
+
+0x2:
+    Name: EndScript
+
+0x3:
+    Name: ReturnAfterDelay
+    Parameters:
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0x4:
+    Name: CallRoutine
+    Parameters:
+        - int
+    HasFunction: true
+    HasMovement: false
+
+0x5:
+    Name: EndRoutine
+
+0x6:
+    Name: DerefAndReturn
+
+0x7:
+    Name: PopDerefVar
+
+0x8:
+    Name: PushStackVar
+    Parameters:
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0x9:
+    Name: PushStackDerefVar
+    Parameters:
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0xa:
+    Name: PopStackVar
+    Parameters:
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0xb:
+    Name: PopStack
+
+0xc:
+    Name: AddVars
+
+0xd:
+    Name: SubVars
+
+0xe:
+    Name: MultiplyVars
+
+0xf:
+    Name: DivideVars
+
+0x10:
+    Name: StoreFlag
+    Parameters:
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0x11:
+    Name: CompareStackVarTo
+    Parameters:
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0x12:
+    Name: AndDerefToVar
+    Parameters:
+        - ushort
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0x13:
+    Name: OrDerefToVar
+    Parameters:
+        - ushort
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0x14:
+    Name: StoreU8Global
+    Parameters:
+        - byte
+        - byte
+    HasFunction: false
+    HasMovement: false
+
+0x15:
+    Name: StoreU32Global
+    Parameters:
+        - byte
+        - int
+    HasFunction: false
+    HasMovement: false
+
+0x16:
+    Name: MoveGlobalVars
+    Parameters:
+        - byte
+        - byte
+    HasFunction: false
+    HasMovement: false
+
+0x17:
+    Name: CompareGlobalVars
+    Parameters:
+        - byte
+        - byte
+    HasFunction: false
+    HasMovement: false
+
+0x18:
+    Name: CompareGlobalToVar
+    Parameters:
+        - byte
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0x19:
+    Name: CompareVarToParam
+    Parameters:
+        - ushort
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0x1a:
+    Name: CompareVars
+    Parameters:
+        - ushort
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0x1b:
+    Name: AddVirtualMachine
+    Parameters:
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0x1c:
+    Name: CallStd
+    Parameters:
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0x1d:
+    Name: EndStd
+
+0x1e:
+    Name: UnconditionalJump
+    Parameters:
+        - int
+    HasFunction: true
+    HasMovement: false
+
+0x1f:
+    Name: ConditionalJump
+    Parameters:
+        - byte
+        - int
+    HasFunction: true
+    HasMovement: false
+
+0x20:
+    Name: ConditionalCall
+    Parameters:
+        - byte
+        - int
+    HasFunction: true
+    HasMovement: false
+
+0x21:
+    Name: SetMapEventStatusFlag
+    Parameters:
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0x22:
+    Name: StoreMapTypeChange
+    Parameters:
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0x23:
+    Name: SetFlag
+    Parameters:
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0x24:
+    Name: ClearFlag
+    Parameters:
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0x25:
+    Name: ReadAndStoreFlag
+    Parameters:
+        - ushort
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0x26:
+    Name: AddToVar
+    Parameters:
+        - ushort
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0x27:
+    Name: SubFromVar
+    Parameters:
+        - ushort
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0x28:
+    Name: StoreInVar
+    Parameters:
+        - ushort
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0x29:
+    Name: CopyVar
+    Parameters:
+        - ushort
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0x2a:
+    Name: StoreDerefVar
+    Parameters:
+        - ushort
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0x2b:
+    Name: MultiplyVar1
+    Parameters:
+        - ushort
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0x2c:
+    Name: DivideVar1
+    Parameters:
+        - ushort
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0x2d:
+    Name: ModulusVar1
+    Parameters:
+        - ushort
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0x2e:
+    Name: LockAll
+
+0x2f:
+    Name: UnlockAll
+
+0x30:
+    Name: ExecuteSpecialEvent
+0x31:
+    Name: WaitKeypressAB
+
+0x32:
+    Name: WaitKeypress
+
+0x33:
+    Name: MusicalMessage
+    Parameters:
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0x34:
+    Name: EventGrayMessage
+    Parameters:
+        - ushort
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0x35:
+    Name: NextEventGrayMessage
+    Parameters:
+        - ushort
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0x36:
+    Name: CloseEventGrayMessage
+
+0x37:
+    Name: CMD_37
+    Parameters:
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0x38:
+    Name: UnassociatedMessage
+    Parameters:
+        - ushort
+        - byte
+    HasFunction: false
+    HasMovement: false
+
+0x39:
+    Name: ClosePositionalMessage
+
+0x3a:
+    Name: PositionalMessage
+    Parameters:
+        - ushort
+        - ushort
+        - ushort
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0x3c:
+    Name: NPCMesssage
+    Parameters:
+        - ushort
+        - ushort
+        - ushort
+        - ushort
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0x3d:
+    Name: NonNPCMessage
+    Parameters:
+        - ushort
+        - ushort
+        - ushort
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0x3e:
+    Name: CloseSpecificMessageOnKeypress
+
+0x3f:
+    Name: CloseMessageOnKeypress
+
+0x40:
+    Name: ShowMoneyBox
+    Parameters:
+        - ushort
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0x41:
+    Name: CloseMoneyBox
+
+0x42:
+    Name: UpdateMoneyBox
+
+0x43:
+    Name: BorderedMessage
+    Parameters:
+        - ushort
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0x44:
+    Name: CloseBorderedMessage
+
+0x45:
+    Name: CheckerMessage
+
+0x46:
+    Name: CloseCheckerMessage
+
+0x47:
+    Name: YesNoBox
+    Parameters:
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0x48:
+    Name: GenderSpecificMessage
+    Parameters:
+        - ushort
+        - ushort
+        - ushort
+        - ushort
+        - ushort
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0x49:
+    Name: VersionSpecificMessage
+    Parameters:
+        - ushort
+        - ushort
+        - ushort
+        - ushort
+        - ushort
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0x4a:
+    Name: SpikedMessage
+    Parameters:
+        - ushort
+        - byte
+    HasFunction: false
+    HasMovement: false
+
+0x4b:
+    Name: CloseAllMessages
+
+0x4c:
+    Name: OTNameToStrbuf
+    Parameters:
+        - byte
+
+0x54:
+    Name: SetVarPartyPokemonNick
+    Parameters:
+        - byte
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0x56:
+    Name: CMD_56  
+    Parameters:
+        - byte
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0x57:
+    Name: SetVarPoke
+    Parameters:
+        - byte
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0x5c:
+    Name: SetVarNumberBound
+    Parameters:
+        - byte
+        - ushort
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0x64:
+    Name: ApplyMovement
+    Parameters:
+        - ushort
+        - int
+    HasFunction: false
+    HasMovement: true
+
+0x65:
+    Name: WaitMovement
+
+0x66:
+    Name: StoreNPCPositionDeref
+    Parameters:
+        - ushort
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0x67:
+    Name: StoreNPCPosition
+    Parameters:
+        - ushort
+        - ushort
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0x68:
+    Name: StoreHeroPosition
+    Parameters:
+        - ushort
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0x69:
+    Name: MakeNPC
+    Parameters:
+        - ushort
+        - ushort
+        - ushort
+        - ushort
+        - ushort
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0x6A:
+    Name: CMD_6A
+    Parameters:
+        - ushort
+        - ushort
+    HasFunction: false
+    HasMovement: false
+    
+0x6b:
+    Name: AddNPC
+    Parameters:
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0x6c:
+    Name: RemoveNPC
+    Parameters:
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0x6d:
+    Name: SetOWPosition
+    Parameters:
+        - ushort
+        - ushort
+        - ushort
+        - ushort
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0x6e:
+    Name: StoreHeroOrientation
+    Parameters:
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0x74:
+    Name: FacePlayer
+
+0x85:
+    Name: SoloTrainerBattle
+    Parameters:
+        - ushort
+        - ushort
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0x86:
+    Name: DoubleTrainerBattle
+    Parameters:
+        - ushort
+        - ushort
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0x8c:
+    Name: EndBattle
+
+0x8d:
+    Name: StoreBattleResult
+    Parameters:
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0x8e:
+    Name: DisableTrainer
+
+0x94:
+    Name: EventTrainerBattle
+    Parameters:
+        - ushort
+        - ushort
+        - ushort
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0x98:
+    Name: ChangeMusic
+    Parameters:
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0x9e:
+    Name: FadeToDefaultMusic
+
+0xa6:
+    Name: PlaySound
+    Parameters:
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0xa7:
+    Name: StopSound
+
+0xa8:
+    Name: WaitSound
+
+0xa9:
+    Name: PlayFanfare
+    Parameters:
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0xaa:
+    Name: WaitFanfare
+
+0xab:
+    Name: PlayCry
+    Parameters:
+        - ushort
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0xac:
+    Name: WaitCry
+
+0xaf:
+    Name: SetWindowText
+    Parameters:
+        - ushort
+        - ushort
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0xB0:
+    Name: PauseAndClose
+
+0xB1:
+    Name: PauseAndClose2
+
+0xB2:
+    Name: Menu
+    Parameters:
+        - byte
+        - byte
+        - ushort
+        - byte
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0xb3:
+    Name: FadeScreen
+    Parameters:
+        - ushort
+        - ushort
+        - ushort
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0xb4:
+    Name: WaitFade
+
+0xb7:
+    Name: CheckItemBagSpace
+    Parameters:
+        - ushort
+        - ushort
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0xc2:
+    Name: FastWarp
+    Parameters:
+        - ushort
+        - ushort
+        - ushort
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0xc4:
+    Name: TeleportWarp
+    Parameters:
+        - ushort
+        - ushort
+        - ushort
+        - ushort
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0xcb:
+    Name: StoreRandomNumber
+    Parameters:
+        - ushort
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0xcf:
+    Name: StoreDay
+    Parameters:
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0xe0:
+    Name: StoreVersion
+    Parameters:
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0xe1:
+    Name: StoreGender
+    Parameters:
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0xe3:
+    Name: CMD_E3
+
+0xe7:
+    Name: ActivateRelocator
+    Parameters:
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0xf9:
+    Name: AddMoney
+    Parameters:
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0xfa:
+    Name: TakeMoney
+    Parameters:
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0xfb:
+    Name: CheckMoney
+    Parameters:
+        - ushort
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0xfe:
+    Name: StoreSpecies
+    Parameters:
+        - ushort
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0xff:
+    Name: StoreIfFormChange
+    Parameters:
+        - ushort
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0x103:
+    Name: CMD_103
+    Parameters:
+        - ushort
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0x104:
+    Name: HealPokemon
+
+0x105:
+    Name: RenamePokemon
+    Parameters:
+        - ushort
+        - ushort
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0x10c:
+    Name: GivePokemon
+    Parameters:
+        - ushort
+        - ushort
+        - ushort
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0x110:
+    Name: StorePokemonSex
+    Parameters:
+        - ushort
+        - ushort
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0x127:
+    Name: CMD_127
+    Parameters:
+        - ushort
+        - ushort
+        - ushort
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0x128:
+    Name: CMD_128
+    Parameters:
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0x129:
+    Name: CMD_129
+    Parameters:
+        - ushort
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0x12a:
+    Name: CMD_12A
+    Parameters:
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0x13b:
+    Name: CMD_13B
+    Parameters:
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0x13f:
+    Name: MakeCamera
+
+0x140:
+    Name: StopCamera
+
+0x141:
+    Name: LockCamera
+
+0x142:
+    Name: ReleaseCamera
+
+0x143:
+    Name: MoveCamera
+    Parameters:
+        - ushort
+        - ushort
+        - int
+        - int
+        - int
+        - int
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0x144:
+    Name: CMD_144
+    Parameters:
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0x145:
+    Name: EndCamera
+
+0x147:
+    Name: ResetCamera
+    Parameters:
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0x14A:
+    Name: CallEnd
+
+0x14B:
+    Name: CallStart
+
+0x151:
+    Name: ShowDiploma
+    Parameters:
+        - ushort
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0x153:
+    Name: CMD_153
+    Parameters:
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0x155:
+    Name: OpenInterpoke
+    Parameters:
+        - ushort
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0x175:
+    Name: CMD_175
+    Parameters:
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0x197:
+    Name: CMD_197
+    Parameters:
+        - byte
+        - byte
+    HasFunction: false
+    HasMovement: false
+
+0x19a:
+    Name: CMD_19A
+    Parameters:
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0x19b:
+    Name: SetStatusCG
+    Parameters:
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0x1a0:
+    Name: CMD_1A0
+    Parameters:
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0x1a3:
+    Name: FlashBlackInstant
+
+0x1a4:
+    Name: Xtransciever4
+
+0x1a5:
+    Name: Xtransciever5
+
+0x1a6:
+    Name: CMD_1A6
+    Parameters:
+        - ushort
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0x1a7:
+    Name: Xtransciever7
+
+0x1ac:
+    Name: FadeIntoBlack
+
+0x1d7:
+    Name: SetVarAffinityCheck
+    Parameters:
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0x1d8:
+    Name: CMD_1D8
+    Parameters:
+        - ushort
+        - ushort
+        - ushort
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0x1f2:
+    Name: CMD_1F2
+
+0x209:
+    Name: CMD_209
+    Parameters:
+        - ushort
+        - ushort
+    HasFunction: false
+    HasMovement: false
+    
+0x227:
+    Name: CMD_227
+    Parameters:
+        - ushort
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0x24f:
+    Name: DetachNPCPair
+    Parameters:
+        - ushort
+        - ushort
+        - ushort
+        - ushort
+        - ushort
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0x253:
+    Name: CMD_253
+    Parameters:
+        - byte
+    HasFunction: false
+    HasMovement: false
+
+0x262:
+    Name: CMD_262
+    Parameters:
+        - ushort
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0x263:
+    Name: CMD_263
+    Parameters:
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0x276:
+    Name: CMD_276
+    Parameters:
+        - ushort
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0x290:
+    Name: CMD_290
+    Parameters:
+        - byte
+    HasFunction: false
+    HasMovement: false
+
+0x29f:
+    Name: CMD_29F
+    Parameters:
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0x2d1:
+    Name: CMD_2D1
+    Parameters:
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0x2e5:
+    Name: GenerateHollowFromVars
+    Parameters:
+        - ushort
+        - ushort
+        - ushort
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0x2ee:
+    Name: Prop2EE
+    Parameters:
+        - ushort
+        - ushort
+    HasFunction: false
+    HasMovement: false
+
+0x3e8:
+    Name: CMD_3E8
+
+0x3f3:
+    Name: CMD_3F3
+

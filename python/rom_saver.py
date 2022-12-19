@@ -27,13 +27,8 @@ import text_writer
 # code.interact(local=dict(globals(), **locals()))
 
 # _writer files to run
-narcs = ["personal","text", "learnset","move","header","encounter","trdata","trpok","item","evolution", "overworld"]
+narcs = ["personal","text", "learnset","move","header","encounter","trdata","trpok","item","evolution"]
 bw_narcs = ["mart" , "grotto"]
-
-# narcs to save
-plural_narcs = ["personal","story_texts","message_texts", "learnsets", "moves", "headers", "encounters", "trdata", "trpok", "items", "evolutions", "overworlds"]
-plural_bw_narcs = ["marts", "grottos","mart_counts", "battle_animations", "move_animations"]
-
 
 try: 
 	rom_name = sys.argv[1].split(".")[0] 
@@ -53,7 +48,9 @@ try:
 			import mart_writer
 			import grotto_writer
 			narcs += bw_narcs
-			plural_narcs += plural_bw_narcs
+
+		if settings["output_overworlds"] == True:
+			narcs.append("overworld")
 
 		if settings["output_arm9"] == True:
 			tm_writer.output_arm9()
@@ -96,17 +93,7 @@ try:
 		
 		for narc in narcs:
 			rom = eval(f'{narc}_writer.output_narc(rom)')
-			
-		# for narc in plural_narcs:
-		# 	file_ids[narc] = settings[narc]
-
-			
-	##### write Narcs to rom
-	# for narc in plural_narcs:
-	# 	narc_path = f'{rom_name}/narcs/{narc}-{file_ids[narc]}.narc'
-	# 	rom.files[file_ids[narc]] = open(narc_path, 'rb').read()
-
-	
+				
 	##### save rom to exports
 	if path.exists(f'exports'):
 		rom.saveToFile(f"exports/{rom_name.split('/')[1]}.nds")
