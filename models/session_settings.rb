@@ -32,6 +32,13 @@ class SessionSettings
 		JSON.parse(contents)
 	end
 
+	def self.global_settings
+		contents = File.open("global_settings.json", "r") do |f|
+			f.read
+		end
+		JSON.parse(contents)
+	end
+
 	def self.base_rom
 		settings = File.open("session_settings.json", "r") do |f|
 			f.read

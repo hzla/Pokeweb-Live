@@ -56,6 +56,7 @@ with open(f'expansion_settings.json', "r") as outfile:
 ################# HARDCODED ROM INFO ##############################
 
 BW_NARCS = [["a/0/1/6", "personal"],
+["a/0/0/8", "maps"],
 ["a/0/0/9", "matrix"], 
 ["a/1/2/5", "overworlds"],
 ["a/0/1/8", "learnsets"],

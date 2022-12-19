@@ -1,0 +1,46 @@
+<div class="pokemon-filter">	
+	<div class="filter-title">Pokeweb Settings</div>
+	
+</div>
+
+<div class="pokemon-list pokemon-move-list spreadsheet settings" id="moves">
+	<div class="expanded-field field-header">
+		<div class="expanded-field-main">
+			<div class="move-name" data-narc="learnset">Load Settings</div>
+		</div>
+	</div>
+
+	<% @settings.each do |k, v| %>
+		<div class="expanded-field filterable">		
+			<div class="expanded-field-main">
+				<div class="move-name" data-narc="learnset">
+					<%= k %>
+				</div>
+				<div class="move-type" data-narc="global" contenteditable="true" data-field="<%= k %>">
+					<%= v %>
+				</div>
+			</div>
+		</div>
+	<% end %>
+
+
+	<div class="expanded-field field-header">
+		<div class="expanded-field-main">
+			<div class="move-name" data-narc="learnset">Calc Settings</div>
+		</div>
+	</div>
+
+	<% @calculator_settings.each do |k, v| %>
+		<div class="expanded-field filterable">		
+			<div class="expanded-field-main">
+				<div class="move-name" data-narc="learnset">
+					<%= k %>
+				</div>
+				<div class="move-type" data-narc="calculator" contenteditable="true" data-field="<%= k %>">
+					<%= v %>
+				</div>
+			</div>
+		</div>
+	<% end %>
+</div>
+

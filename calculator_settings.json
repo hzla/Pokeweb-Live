@@ -6,9 +6,7 @@
 	"has_items": [0,1], // [0] for no, [1] for yes, [0,1] for both
 	"has_moves": [0,1], // [0] for no, [1] for yes, [0,1] for both
 	"battle_types": ["Singles", "Doubles", "Triples", "Rotation"], // "Singles", "Doubles", "Triples", "Rotation"
-	"ai_values": "all", // [7, 135] for expert ai only, "all" for everything
-	"use_vanilla_boss_battle_locations": false, // sets in game locations of boss battles to vanilla locations
-	"pbk": "TnpsM1RqaFpTVXhZTWsxWk1FVXlkRXhQZGxoT2RWSjBaRUp5UjNac1pIZz0=" // do not touch
+	"ai_values": "all" // [7, 135] for expert ai only, "all" for everything
 }
 
 

@@ -360,6 +360,12 @@ table td {
     line-height: 40px;
 }
 
+.spreadsheet.settings > .expanded-field.field-header {
+    position: static;
+    margin-top:  40px;
+    width:  100%;
+}
+
 .spreadsheet > .expanded-field.text-header {
     background: #6272a4;
     color: #f2f2f2;
@@ -438,6 +444,10 @@ table td {
 
 #moves .move-type {
     width: 80px;
+}
+
+#moves.settings .move-type {
+    width:  auto;
 }
 
 #moves .move-type {

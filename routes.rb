@@ -658,4 +658,10 @@ get '/overworlds/:id/box' do
 	erb :'_overworld', :layout => false, :locals => { :overworld => overworld, :tl_x => tl_x, :tl_y => tl_y, :maps => maps , :selected => selected}
 end
 
+get '/settings' do 
+	@settings = SessionSettings.global_settings
+	@calculator_settings = SessionSettings.calc_settings
+	erb :settings
+end
+
 
