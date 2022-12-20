@@ -9,20 +9,25 @@ import sys
 import os
 
 def set_global_vars():
-    global ROM_NAME, NARC_FILE_IDS
+    global ROM_NAME, NARC_FILE_IDS, REPLACE_TR_SCRIPT, BASE_ROM
     
     NARC_FILE_IDS = {}
     with open(f'session_settings.json', "r") as outfile:  
         settings = json.load(outfile) 
         ROM_NAME = settings['rom_name']
+        BASE_ROM = settings['base_rom']
         NARC_FILE_IDS["story_texts"] = settings["story_texts"]
         NARC_FILE_IDS["message_texts"] = settings["message_texts"]
         NARC_FILE_IDS["trtext_table"] = settings["trtext_table"]
         NARC_FILE_IDS["trtext_offsets"] = settings["trtext_offsets"]
+        NARC_FILE_IDS["scripts"] = settings["scripts"]
+        REPLACE_TR_SCRIPT = settings["enable_single_npc_dbl_battles"]
 
 
 def output_narc(rom):
     set_global_vars()
+
+    ######## TEXTS #########
 
     for narc_name in ["story_texts", "message_texts"]:
         narc = ndspy.narc.NARC(rom.files[NARC_FILE_IDS[narc_name]])
@@ -36,7 +41,24 @@ def output_narc(rom):
                 bank_bin = open(f'{ROM_NAME}/{narc_name}/{bank_id}.bin', "rb").read()
                 narc.files[bank_id] = bank_bin
 
-        rom.files[NARC_FILE_IDS[narc_name]] = narc.save()
+    ######## SCRIPTS ###########
+
+    narc = ndspy.narc.NARC(rom.files[NARC_FILE_IDS["scripts"]])
+
+    scripts = os.listdir(f'{ROM_NAME}/scripts')
+
+    for file in scripts:
+        if file.endswith(".txt"):
+            print(f'detected')
+            bank_id = int(file.split(".txt")[0])
+            bank_bin = open(f'{ROM_NAME}/scripts/{bank_id}.bin', "rb").read()
+            narc.files[bank_id] = bank_bin
+
+
+    if REPLACE_TR_SCRIPT and BASE_ROM == "BW2":
+        bank_bin = open(f'Reference_Files/1239.bin', "rb").read()
+        narc.files[1239] = bank_bin
+        rom.files[NARC_FILE_IDS["scripts"]] = narc.save()
 
     return rom
 

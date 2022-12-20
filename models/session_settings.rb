@@ -73,7 +73,7 @@ class SessionSettings
 		
 		
 		settings = File.open("session_settings.json", "w") do |f|
-			f.write(JSON.dump(current_settings))
+			f.write(JSON.pretty_generate(current_settings))
 		end
 	end
 

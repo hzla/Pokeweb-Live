@@ -178,6 +178,15 @@ $(document).ready(function() {
     $(document).on('click', '#search-text-btn', function(){	
     	filter()
     })
+
+    $(document).on('click', '.settings-toggle', function(){	
+    	var field = $(this).attr('data-field')
+    	$.get(`/settings/set?field=${field}`, function(data){ 
+    		console.log(data)
+    		alert(`${field} changed to ${data}`)
+    	})
+    })
+
     $(document).on('keypress', '#search-text', function(e){
 	    if(e.which == 13) {
 	        filter()
@@ -382,11 +391,11 @@ $(document).ready(function() {
 	})
 
 	$(document).on('click', '#add-npc', function(){	
-		$.put(window.location.href + `/npc`, data => {
+		base_url = window.location.href.split("?")[0]
+		$.put(base_url + `/npc`, data => {
 			var new_ow_id = parseInt($(".overworld-item").last().attr("data-id").split("_")[1]) + 1
 			new_ow_id = `npc_${new_ow_id}_`
-			
-			$.get(window.location.href + `/box?selected=${new_ow_id}`, data => {		
+			$.get(base_url + `/box?selected=${new_ow_id}`, data => {		
 				$("#overworld").html(data)
 				$(".overworld-item").last().click()
 				adjust_directions()
@@ -395,8 +404,9 @@ $(document).ready(function() {
 	})
 
 	$(document).on('click', '#del-npc', function(){	
-		$.delete(window.location.href + `/npc`, data => {
-			$.get(window.location.href + `/box?selected`, data => {		
+		base_url = window.location.href.split("?")[0]
+		$.delete(base_url + `/npc`, data => {
+			$.get(base_url + `/box?selected`, data => {		
 				$("#overworld").html(data)
 				adjust_directions()
 			})
@@ -711,7 +721,8 @@ $(document).ready(function() {
 
 	          if ($("#overworld").length > 0) {
 	          	ow_id = $(".overworld-item.selected").attr("data-id")
-	          	$.get(window.location.href + `/box?selected=${ow_id}`, function(data){
+	          	var base_url = window.location.href.split("?")[0]
+	          	$.get(base_url + `/box?selected=${ow_id}`, function(data){
 					
 					$("#overworld").html(data)
 					adjust_directions()

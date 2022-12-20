@@ -629,6 +629,22 @@ end
 
 ####################################### OVERWORLDS ###############
 
+get '/overworlds/:id/box' do 
+
+	overworld = Overworld.get_data(params[:id].to_i, "raw")
+	selected = params["selected"]
+
+	@index = params[:id]
+
+
+	map_data = Overworld.get_maps @index.to_i
+	maps = map_data["maps"]
+	tl_x = map_data["translate"][0]
+	tl_y = map_data["translate"][1]
+
+	erb :'_overworld', :layout => false, :locals => { :overworld => overworld, :tl_x => tl_x, :tl_y => tl_y, :maps => maps , :selected => selected}
+end
+
 get '/overworlds/:id' do 
 
 	if !SessionSettings.get("cords_found")
@@ -662,23 +678,7 @@ delete '/overworlds/:id/npc' do
 	"200 OK"
 end
 
-
-
-get '/overworlds/:id/box' do 
-
-	overworld = Overworld.get_data(params[:id].to_i, "raw")
-	selected = params["selected"]
-
-	@index = params[:id]
-
-
-	map_data = Overworld.get_maps @index.to_i
-	maps = map_data["maps"]
-	tl_x = map_data["translate"][0]
-	tl_y = map_data["translate"][1]
-
-	erb :'_overworld', :layout => false, :locals => { :overworld => overworld, :tl_x => tl_x, :tl_y => tl_y, :maps => maps , :selected => selected}
-end
+##### SETTINGS ########
 
 get '/settings' do 
 	@settings = SessionSettings.global_settings
@@ -686,4 +686,12 @@ get '/settings' do
 	erb :settings
 end
 
+
+get '/settings/set' do 
+	field = params["field"]
+	current_value = SessionSettings.get(field)
+
+	SessionSettings.set field, !current_value
+	return [SessionSettings.get(field).to_s].to_json
+end
 

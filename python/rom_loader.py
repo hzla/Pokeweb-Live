@@ -228,11 +228,12 @@ settings["output_arm9"] = False
 settings["fairy"] = False
 settings["text_editor"] = False
 settings["output_overworlds"] = False
+settings["enable_single_npc_dbl_battles"] = False
 
 
 
 with open(f'session_settings.json', "w+") as outfile:  
-	json.dump(settings, outfile) 
+	json.dump(settings, outfile, indent=4) 
 
 
 with open(f'{rom_name}/grotto_odds.bin', 'wb') as f:

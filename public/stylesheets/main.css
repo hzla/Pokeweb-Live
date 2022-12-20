@@ -1178,7 +1178,7 @@ div.-active svg * {
     border-radius: 2px;
 }
 
-#open-script, #save-script {
+#open-script, #save-script, .ow-btn {
     background:  #bd93f9;
 }
 
