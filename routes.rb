@@ -72,9 +72,9 @@ post '/extract' do
 	# params['rom_name'] = params['rom_name']
 	# p params['rom_name']
 
-	system "python python/header_loader.py #{params['rom_name']}"
+	system "python3 python/header_loader.py #{params['rom_name']}"
 
-	command = "python python/rom_loader.py #{params['rom_name']}"
+	command = "python3 python/rom_loader.py #{params['rom_name']}"
 	pid = spawn command
 	Process.detach(pid)
 
@@ -87,7 +87,7 @@ post '/extract' do
 end
 
 post '/rom/save' do
-	save = `python python/rom_saver.py #{$rom_name}`
+	save = `python3 python/rom_saver.py #{$rom_name}`
 	
 	if save[-3..-1] == "OK\n"
 		return "saved to /exports folder"
@@ -176,7 +176,7 @@ post '/update' do
 		params['data']['narc'] == "message_texts"
 	end
 	
-	command = "python python/#{narc_name}_writer.py update #{params['data']['file_name']} #{params['data']['narc']}"
+	command = "python3 python/#{narc_name}_writer.py update #{params['data']['file_name']} #{params['data']['narc']}"
 	p params['data']
 
 	pid = spawn command
@@ -217,9 +217,7 @@ get '/story_texts/text/:id' do
 	bank = "story_texts"
 	n = params[:id]
 	command = "tools/beatertext/BeaterText -d #{$rom_name}/#{bank}/#{n}.bin #{$rom_name}/#{bank}/#{n}.txt"
-	pid = spawn command
-	Process.detach(pid)
-	sleep 0.2
+	system command
 
 	texts = File.open("#{$rom_name}/#{bank}/#{n}.txt").read()
 	@texts = texts.split("# STR_")
@@ -236,9 +234,7 @@ get '/message_texts/text/:id' do
 	bank = "message_texts"
 	n = params[:id]
 	command = "tools/beatertext/BeaterText -d #{$rom_name}/#{bank}/#{n}.bin #{$rom_name}/#{bank}/#{n}.txt"
-	pid = spawn command
-	Process.detach(pid)
-	sleep 0.2
+	system command
 
 	texts = File.open("#{$rom_name}/#{bank}/#{n}.txt").read()
 	@texts = texts.split("# STR_")
@@ -348,7 +344,7 @@ post '/batch_update' do
 	
 	Object.const_get(narc_name.capitalize).write_data params["data"], true
 	
-	command = "python python/#{narc_name}_writer.py update #{params['data']['file_names'].join(',')} "
+	command = "python3 python/#{narc_name}_writer.py update #{params['data']['file_names'].join(',')} "
 	pid = spawn command
 	Process.detach(pid)
 
@@ -607,6 +603,30 @@ get '/randomize' do
 	erb :randomize
 end
 
+####################################### SCRIPTS ###############
+
+
+get '/scripts/:id' do 
+	base_rom = SessionSettings.base_rom 
+	id = params[:id]
+
+	command = "dotnet tools/beaterscript/BeaterScript.dll -d #{$rom_name}/scripts/#{id}.bin #{base_rom} #{$rom_name}/scripts/#{id}.txt"
+
+	system command
+	system "open -a TextEdit #{$rom_name}/scripts/#{id}.txt"
+	system "open -a Notepad #{$rom_name}/scripts/#{id}.txt"
+	return 200
+end
+
+get '/scripts/:id/save' do 
+	id = params[:id]
+	command = "dotnet tools/beaterscript/BeaterScript.dll -m #{$rom_name}/scripts/#{id}.txt #{$rom_name}/scripts/#{id}.bin"
+	p command
+	system "export DEVKITARM=/opt/devkitpro/devkitARM"
+	system command
+	return 200
+end
+
 ####################################### OVERWORLDS ###############
 
 get '/overworlds/:id' do 
@@ -618,8 +638,10 @@ get '/overworlds/:id' do
 
 	@overworld = Overworld.get_data(params[:id].to_i, "raw")
 	@index = params[:id]
-	@location = Header.find_location_by_map_id @index.to_i
-
+	
+	header_info = Header.find_location_by_map_id(@index.to_i)
+	@location = header_info[0]
+	@script = header_info[1]
 
 	@map_data = Overworld.get_maps @index.to_i
 	@maps = @map_data["maps"]

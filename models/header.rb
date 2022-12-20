@@ -14,14 +14,18 @@ class Header
 	def self.find_location_by_map_id map_id
 		headers = get_all
 		location = nil
+		script = nil
 		headers.each do |k,v|
 			next if k == "count"
 			if v["overworlds_id"] == map_id
 				location = v["location_name"]
+				
+				script = v["script_id"]
+				p script
 				break
 			end
 		end
-		location
+		[location, script]
 	end
 
 

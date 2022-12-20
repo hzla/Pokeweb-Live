@@ -25,7 +25,6 @@
 				</div>
 			</div>
 			<div class="text-bank" data-index="<%= text[0] %>">
-				<% p text[1] %>
 				<% text[1] = Text.handle_compressed(text[1], @bank, text[0].to_i) %>
 				
 				<% text[1][0..-6].split("\",\n\"").each_with_index do |line, i| %>

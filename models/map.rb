@@ -31,6 +31,7 @@ class Map < Pokenarc
 		pallete[6] = ["#00b894", "doubles grass"]
 		pallete[20] = ["#81ecec", "puddle"]
 		pallete[31] = ["#55efc4", "short grass (no enc)"]
+		pallete[34] = ["#2ecc71", "dreamyard grass?"]
 		pallete[61] = ["#74b9ff", "pond"]
 		pallete[63] = ["#0984e3", "surf"]
 		pallete[65] = ["#0984e3", "surf edge"]

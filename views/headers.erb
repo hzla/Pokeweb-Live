@@ -51,7 +51,7 @@
 						<% col.each do |field_name| %>
 							<div class="expanded-field">
 								<% if field_name[1] == "overworlds_id" %>
-									<a href="/overworlds/<%= @header_data[n.to_s][field_name[1]] %>" target="_blank"><div style="background: #1abc9c;padding: 5px; border-radius:2px;" class="header-label"><%= field_name[1]%></div></a>
+									<a href="/overworlds/<%= @header_data[n.to_s][field_name[1]] %>?location=<%=@header_data[n.to_s]["location_name"] %>&script=<%= @header_data[n.to_s]["script_id"] %>" target="_blank"><div style="background: #1abc9c;padding: 5px; border-radius:2px;" class="header-label"><%= field_name[1]%></div></a>
 								<% else %>
 									<div class="header-label"><%= field_name[1]%></div>
 								<% end %>

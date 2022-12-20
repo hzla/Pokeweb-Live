@@ -69,8 +69,7 @@ BW_NARCS = [["a/0/1/6", "personal"],
 ["a/0/9/1", "trtext_offsets"],
 ["a/0/9/2", "trdata"],
 ["a/0/9/3", "trpok"],
-["a/1/2/6", "encounters"],
-["a/0/5/6", "scripts"]]
+["a/1/2/6", "encounters"]]
 
 BW_MSG_BANKS = [[286, "moves"],
 [285, "abilities"],
@@ -92,7 +91,6 @@ BW2_NARCS = [["a/0/1/6", "personal"],
 ["a/0/9/1", "trdata"],
 ["a/0/9/2", "trpok"],
 ["a/1/2/7", "encounters"],
-["a/0/5/6", "scripts"],
 ["a/2/8/2", "marts"],
 ["a/2/8/3", "mart_counts"],
 ["a/2/7/3", "grottos"],
@@ -142,11 +140,7 @@ for narc in NARCS:
 	parsed_file = ndspy.narc.NARC(file)
 	
 	narc_info[narc[1]] = file_id # store file ID for later
-	
-
-	
-
-	
+		
 	# handle trainer text narcs
 	if narc[1] == "trtext_table":
 		data = parsed_file.files[0]

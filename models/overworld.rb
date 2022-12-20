@@ -142,12 +142,12 @@ class Overworld < Pokenarc
 		end
 		
 		location = nil
+		script = nil
 		# search matrix for matching headers
 		matching_headers = []
 		matrix["headers"].each_with_index do |h, i|
 			if h == (n - 2)
 				matching_headers << i
-				location = headers[h.to_s]["location_name"]
 			end
 		end
 		
@@ -164,7 +164,7 @@ class Overworld < Pokenarc
 		# binding.pry
 		# location = headers[matching_headers[0].to_s]["location_name"]
 
-		{"maps" => matching_maps.uniq, "translate" => get_translate(all_map_cords), "headers" => matching_headers, "location" => location}
+		{"maps" => matching_maps.uniq, "translate" => get_translate(all_map_cords), "headers" => matching_headers}
 	end
 
 	def self.get_translate map_cords

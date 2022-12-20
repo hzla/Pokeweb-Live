@@ -124,8 +124,10 @@ $(document).ready(function() {
 
 		})
 	}
-	adjust_directions()
+	setTimeout(adjust_directions, 2000)
+
 })
+
 
 ///////////////////// EVENT BINDINGS //////////////////////////
     
@@ -400,6 +402,17 @@ $(document).ready(function() {
 			})
 		})	
 	})	
+
+	$(document).on('click', '.script-btn', function(){	
+		var btn = $(this)
+		var url = btn.attr('href')
+		$.get(url, function(){
+			if (btn.attr('id') == "save-script") {
+				alert("Script Applied")
+			}
+		})	
+	})	
+
 
 	
 	 document.onkeydown = function (event) {

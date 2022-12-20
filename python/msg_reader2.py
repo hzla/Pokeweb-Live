@@ -255,7 +255,7 @@ def gen5put(texts):
 def output_texts(folder, narc):
     n = 0
     texts = []
-    print("outputting")
+    print("outputting texts")
     for message in narc.files:   
         with open(f'{folder}/{n}.bin', "wb") as binary_file:
             binary_file.write(message)
@@ -266,6 +266,17 @@ def output_texts(folder, narc):
 
     with codecs.open(f'{folder}/texts.json', 'w', encoding='utf_8') as f:
         json.dump(texts, f)
+
+def output_scripts(folder, narc):
+    print("outputting scripts")
+    
+    for n, message in enumerate(narc.files):   
+        with open(f'{folder}/{n}.bin', "wb") as binary_file:
+            binary_file.write(message)
+        
+
+
+
 
 
 

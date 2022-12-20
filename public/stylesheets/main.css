@@ -1178,6 +1178,10 @@ div.-active svg * {
     border-radius: 2px;
 }
 
+#open-script, #save-script {
+    background:  #bd93f9;
+}
+
 .sb-field {
     width: 60px;
     text-align: center;
