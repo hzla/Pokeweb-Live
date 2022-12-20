@@ -227,7 +227,7 @@ settings.update(narc_info)
 settings["output_arm9"] = False
 settings["fairy"] = False
 settings["text_editor"] = False
-settings["output_overworlds"] = False
+settings["output_overworlds"] = True
 settings["enable_single_npc_dbl_battles"] = False
 
 

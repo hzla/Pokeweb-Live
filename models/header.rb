@@ -15,17 +15,19 @@ class Header
 		headers = get_all
 		location = nil
 		script = nil
+		text = nil
 		headers.each do |k,v|
 			next if k == "count"
 			if v["overworlds_id"] == map_id
 				location = v["location_name"]
 				
 				script = v["script_id"]
+				text = v["text_bank_id"]
 				p script
 				break
 			end
 		end
-		[location, script]
+		[location, script, text]
 	end
 
 

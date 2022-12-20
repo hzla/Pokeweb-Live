@@ -685,6 +685,7 @@ get '/overworlds/:id' do
 	header_info = Header.find_location_by_map_id(@index.to_i)
 	@location = header_info[0]
 	@script = header_info[1]
+	@text = header_info[2]
 
 	@map_data = Overworld.get_maps @index.to_i
 	@maps = @map_data["maps"]
@@ -708,9 +709,9 @@ end
 ##### SETTINGS ########
 
 get '/settings' do 
-	@settings = SessionSettings.global_settings
-	@calculator_settings = SessionSettings.calc_settings
-	erb :settings
+	system "open -a TextEdit session_settings.json"
+	system "start notepad  session_settings.json"
+	return 200
 end
 
 
