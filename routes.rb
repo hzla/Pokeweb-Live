@@ -71,12 +71,18 @@ post '/extract' do
 
 	# params['rom_name'] = params['rom_name']
 	# p params['rom_name']
+	py = "python3"
 
-	system "python3 python/header_loader.py #{params['rom_name']}"
-
-	command = "python3 python/rom_loader.py #{params['rom_name']}"
-	pid = spawn command
-	Process.detach(pid)
+	begin
+		system "#{py} python/header_loader.py #{params['rom_name']}"
+		command = "#{py} python/rom_loader.py #{params['rom_name']}"
+		pid = spawn command
+		Process.detach(pid)
+	rescue
+		py = "python"
+		retry
+	end
+	
 
 	open('logs.txt', 'a') do |f|
 	  f.puts "#{Time.now}: Loaded Rom : #{params['rom_name']}"
@@ -87,7 +93,14 @@ post '/extract' do
 end
 
 post '/rom/save' do
-	save = `python3 python/rom_saver.py #{$rom_name}`
+	py = "python3"
+
+	begin
+		save = `#{py} python/rom_saver.py #{$rom_name}`
+	rescue
+		py = "python"
+		retry
+	end
 	
 	if save[-3..-1] == "OK\n"
 		return "saved to /exports folder"
@@ -175,12 +188,19 @@ post '/update' do
 		params['data']['file_name'] = "bank_381"
 		params['data']['narc'] == "message_texts"
 	end
-	
-	command = "python3 python/#{narc_name}_writer.py update #{params['data']['file_name']} #{params['data']['narc']}"
 	p params['data']
+	
+	py = "python3"
 
-	pid = spawn command
-	Process.detach(pid)
+	begin
+		retries ||= 0
+		command = "#{py} python/#{narc_name}_writer.py update #{params['data']['file_name']} #{params['data']['narc']}"
+		pid = spawn command
+		Process.detach(pid)
+	rescue
+		py = "python"
+		retry if (retries += 1) < 2 
+	end
 
 
 	open('logs.txt', 'a') do |f|
@@ -343,10 +363,17 @@ post '/batch_update' do
 	narc_name = params['data']['narc']
 	
 	Object.const_get(narc_name.capitalize).write_data params["data"], true
+
+	py = "python3"
 	
-	command = "python3 python/#{narc_name}_writer.py update #{params['data']['file_names'].join(',')} "
-	pid = spawn command
-	Process.detach(pid)
+	begin
+		command = "#{py} python/#{narc_name}_writer.py update #{params['data']['file_names'].join(',')} "
+		pid = spawn command
+		Process.detach(pid)
+	rescue
+		py = "python"
+		retry
+	end
 
 	open('logs.txt', 'a') do |f|
 
@@ -614,7 +641,7 @@ get '/scripts/:id' do
 
 	system command
 	system "open -a TextEdit #{$rom_name}/scripts/#{id}.txt"
-	system "open -a Notepad #{$rom_name}/scripts/#{id}.txt"
+	system "start notepad  #{$rom_name}/scripts/#{id}.txt"
 	return 200
 end
 

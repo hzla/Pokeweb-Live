@@ -327,8 +327,10 @@ if narc_info["base_rom"] == "BW2":
 #############################################################
 ####################CONVERT TO JSON #########################
 
-
-os.system("python3 python/parallel.py")
+try:
+	subprocess.run(['python3', 'python/parallel.py'], check = True)
+except:
+	subprocess.run(['python', 'python/parallel.py'], check = True)
 
 output_tms_json(arm9)
 
