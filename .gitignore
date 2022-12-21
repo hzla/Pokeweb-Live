@@ -16,3 +16,4 @@ logs.txt
 *.xdelta
 /documentation/*.txt
 *.o
+.env

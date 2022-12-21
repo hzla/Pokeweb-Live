@@ -2,6 +2,9 @@ require 'sinatra'
 require 'json'
 require 'csv'
 require 'net/http'
+require 'dotenv'
+require 'active_support'
+require 'pry'
 require_relative 'helpers'
 require_relative 'models/pokenarc'
 
@@ -12,6 +15,7 @@ if ENV["DEVMODE"] == "TRUE"
 end
 
 enable :sessions
+Dotenv.load
 
 
 Dir["models/*.rb"].each {|file| require_relative file}
@@ -27,6 +31,7 @@ before do
 	@rom_name = $rom_name.split("/")[1]
 	tabs = ['headers', 'personal', 'trainers', 'encounters', 'moves', 'tms', 'items', 'marts', 'grottos', 'story_texts', 'info_texts', 'logs']
 	
+
 	if SessionSettings.base_rom == "BW"
 		tabs.delete('marts')
 		tabs.delete('grottos')
@@ -59,7 +64,17 @@ get '/rom/new' do
 end
 
 get '/load_project' do 
+	
+	pw = params["pw"]
+
+
+	if !Cipher.auth?(params["project"], pw) 
+		return { url: "/rom/new" }.to_json
+	end
+
+
 	SessionSettings.load_project params["project"]
+	session[:rom_name] = params["project"]
 
 	open('logs.txt', 'a') do |f|
 	  f.puts "#{Time.now}: Loaded Project : #{params['project']}"
@@ -75,9 +90,10 @@ post '/extract' do
 	# params['rom_name'] = params['rom_name']
 	# p params['rom_name']
 	py = "python3"
+	pw = Cipher.encrypt params['pw']
 
 	begin
-		system "#{py} python/header_loader.py #{params['rom_name']}"
+		system "#{py} python/header_loader.py #{params['rom_name']} #{pw}"
 		session[:rom_name] = "projects/#{params['rom_name'].split(".")[0]}"
 		command = "#{py} python/rom_loader.py #{params['rom_name']}"
 		pid = spawn command
@@ -119,6 +135,8 @@ end
 ########################################## PERSONAL EDITOR ROUTES ####################
 
 get '/personal' do
+
+
 	@poke_data = Personal.poke_data
 	@moves = Move.get_all
 	@move_names = Move.get_names_from @moves

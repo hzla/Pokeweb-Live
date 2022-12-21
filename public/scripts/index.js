@@ -136,8 +136,9 @@ $(document).ready(function() {
 
     $(document).on('click', '#load-rom', function(){
         var rom_name = $('#rom-select').val()
+        var pw = $('#rom-pw').val()
         $(this).text('loading...')
-        $.post( "extract?rom_name=" + rom_name , {rom_name: rom_name }, function( data ) {
+        $.post( "extract?rom_name=" + rom_name , {rom_name: rom_name, pw: pw }, function( data ) {
           window.location.href = data["url"]
         });
     })
@@ -161,9 +162,10 @@ $(document).ready(function() {
 
      $(document).on('click', '#load-project', function(){
     	var rom_name = $('#project-select').val()
+    	var pw = $('#rom-pw').val()
         $(this).text('loading...')
         console.log("loading")
-        $.get( "/load_project", {"project": rom_name }, function( data ) {
+        $.get( "/load_project", {"project": rom_name, "pw": pw }, function( data ) {
         	window.location.href = data["url"]
         });
     })

@@ -77,7 +77,8 @@ class SessionSettings
 		end
 	end
 
-	def self.get field
+	def self.get field, rom_name=nil
+		$rom_name = rom_name if rom_name
 		current_settings = File.open("#{$rom_name}/session_settings.json", "r") do |f|
 			f.read
 		end

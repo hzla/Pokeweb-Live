@@ -18,7 +18,8 @@ from msg_reader2 import output_scripts
 
 #################### CREATE FOLDERS #############################
 
-rom_name = "projects/" + sys.argv[1].split(".")[0] 
+rom_name = "projects/" + sys.argv[1].split(".")[0]
+pw = sys.argv[2] 
 
 # code.interact(local=dict(globals(), **locals()))
 
@@ -112,6 +113,7 @@ with open(f'{rom_name}/message_texts/texts.json', 'r') as f:
 
 settings = {}
 settings["rom_name"] = rom_name
+settings["pw"] = pw
 settings.update(narc_info)
 
 with open(f'{rom_name}/session_settings.json', "w") as outfile:  
