@@ -16,10 +16,10 @@ import text_reader
 
 ######################### FILE SPECIFIC CONSTANTS #############################
 
-def set_global_vars():
+def set_global_vars(rom_name):
 	global ROM_NAME
 	
-	with open(f'session_settings.json', "r") as outfile:  
+	with open(f'{rom_name}/session_settings.json', "r") as outfile:  
 		settings = json.load(outfile) 
 		ROM_NAME = settings['rom_name']
 		BASE_ROM = settings['base_rom']
@@ -30,14 +30,14 @@ def set_global_vars():
 #################################################################
 
 
-def output_matrix_json(narc, narc_name="matrix"):
-	set_global_vars()
+def output_matrix_json(narc, rom_name):
+	set_global_vars(rom_name)
 	data_index = 0
 
 
 	for data in narc.files:
 		data_name = data_index
-		read_narc_data(data, narc_name, data_index)
+		read_narc_data(data,"matrix", data_index)
 		data_index += 1
 
 def read_narc_data(data, narc_name, file_name):

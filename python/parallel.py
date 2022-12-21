@@ -3,6 +3,7 @@ import os
 import ndspy.narc
 import json
 import rom_data
+import sys
 
 from personal_reader import output_personal_json
 from learnset_reader import output_learnsets_json
@@ -30,7 +31,7 @@ def output(narc):
 		narc_data = open(f'{rom_name}/grotto_odds.bin','rb')
 		# narc_data.close()
 
-	eval(f'output_{narc}_json')(narc_data)
+	eval(f'output_{narc}_json')(narc_data, rom_name)
 	print(narc)
 
 
@@ -38,7 +39,10 @@ def output(narc):
 
 
 narc_info = {} ##store narc names and file id pairs
-with open(f'session_settings.json', "r") as outfile:  
+
+rom_name = sys.argv[1]
+
+with open(f'{rom_name}/session_settings.json', "r") as outfile:  
 	narc_info = json.load(outfile) 
 
 narcs_to_output = ["trdata", "personal", "learnsets", "moves", "encounters", "items", "evolutions", "overworlds", "maps", "matrix"]

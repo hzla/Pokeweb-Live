@@ -11,14 +11,17 @@ if ENV["DEVMODE"] == "TRUE"
 	require 'benchmark'
 end
 
+enable :sessions
+
 
 Dir["models/*.rb"].each {|file| require_relative file}
 
-$rom_name = SessionSettings.rom_name
+
 p "init"
 
 before do
-	$rom_name = SessionSettings.rom_name
+	# $rom_name = "projects/white2"
+	$rom_name = session[:rom_name]
 	$fairy = SessionSettings.fairy?
 	return if !$rom_name
 	@rom_name = $rom_name.split("/")[1]
@@ -40,7 +43,7 @@ end
 ############# ROM EDITOR ROUTES ###########################
 
 get '/' do
-	if $rom_name
+	if session[:rom_name]
 		redirect "/headers"
 	else
 		@roms = Dir["*.nds"]
@@ -51,7 +54,7 @@ get '/' do
 end
 
 get '/rom/new' do 
-	SessionSettings.reset
+	session[:rom_name] = nil
 	return (redirect '/') 
 end
 
@@ -75,6 +78,7 @@ post '/extract' do
 
 	begin
 		system "#{py} python/header_loader.py #{params['rom_name']}"
+		session[:rom_name] = "projects/#{params['rom_name'].split(".")[0]}"
 		command = "#{py} python/rom_loader.py #{params['rom_name']}"
 		pid = spawn command
 		Process.detach(pid)
@@ -82,6 +86,7 @@ post '/extract' do
 		py = "python"
 		retry
 	end
+
 	
 
 	open('logs.txt', 'a') do |f|
@@ -194,7 +199,7 @@ post '/update' do
 
 	begin
 		retries ||= 0
-		command = "#{py} python/#{narc_name}_writer.py update #{params['data']['file_name']} #{params['data']['narc']}"
+		command = "#{py} python/#{narc_name}_writer.py update #{params['data']['file_name']} #{$rom_name}"
 		pid = spawn command
 		Process.detach(pid)
 	rescue
@@ -232,7 +237,6 @@ end
 ####################### Texts ###########################
 
 get '/story_texts/text/:id' do 
-	return "Set text_editor to 'true in session_settings.json to access', download and install dotnetcore3.1 for macos if you are on mac https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-3.1.32-macos-x64-installer?cid=getdotnetcore" if !SessionSettings.get('text_editor')
 
 	bank = "story_texts"
 	n = params[:id]
@@ -249,7 +253,6 @@ get '/story_texts/text/:id' do
 end
 
 get '/message_texts/text/:id' do 
-	return "Set text_editor to 'true in session_settings.json to access', download and install dotnetcore3.1 for macos if you are on mac https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-3.1.32-macos-x64-installer?cid=getdotnetcore" if !SessionSettings.get('text_editor')
 
 	bank = "message_texts"
 	n = params[:id]
@@ -276,16 +279,9 @@ end
 ####################### HEADERS ###########################
 
 get '/headers' do 
+	p $rom_name
 	@header_data = Header.get_all
 	@location_names = Header.location_names
-
-
-	
-
-	
-
-
-
 
 	erb :headers
 end
@@ -656,8 +652,8 @@ end
 ##### SETTINGS ########
 
 get '/settings' do 
-	system "open -a TextEdit session_settings.json"
-	system "start notepad  session_settings.json"
+	system "open -a TextEdit #{$rom_name}/session_settings.json"
+	system "start notepad   #{$rom_name}/session_settings.json"
 	return 200
 end
 

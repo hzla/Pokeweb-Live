@@ -3,8 +3,8 @@ import copy
 import tools
 import rom_data
 
-def output_evolutions_json(narc):
-	tools.output_json(narc, "evolutions", to_readable)
+def output_evolutions_json(narc, rom_name):
+	tools.output_json(narc, "evolutions", to_readable, rom_name)
 
 def to_readable(raw, file_name):
 	readable = copy.deepcopy(raw)

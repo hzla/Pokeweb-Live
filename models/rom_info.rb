@@ -15,7 +15,7 @@ class RomInfo
     end
 
     def self.original_move_count 
-        contents = File.open("session_settings.json", "r") do |f|
+        contents = File.open("#{$rom_name}/session_settings.json", "r") do |f|
             f.read
         end
         return JSON.parse(contents)["original_move_count"] || 559

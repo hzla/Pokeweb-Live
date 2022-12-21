@@ -23,41 +23,43 @@ ROM_NAME = ""
 BASE_ROM = ""
 BASE_VERSION = ""
 
-
-with open(f'session_settings.json', "r") as outfile:  
-	settings = json.load(outfile) 
-	ROM_NAME = settings['rom_name']
-	BASE_ROM = settings['base_rom']
-	BASE_VERSION = settings['base_version']
-
-MOVES = open(f'{ROM_NAME}/texts/moves.txt', mode="r").read().splitlines()
-
-for i,move in enumerate(MOVES):
-	MOVES[i] = re.sub(r'[^A-Za-z0-9 \-]+', '', move)
+def set_global_vars(rom_name):
 	
+	with open(f'{rom_name}/session_settings.json', "r") as outfile:  
+		settings = json.load(outfile) 
+		ROM_NAME = settings['rom_name']
+		BASE_ROM = settings['base_rom']
+		BASE_VERSION = settings['base_version']
 
-TM_FORMAT = []
+	MOVES = open(f'{ROM_NAME}/texts/moves.txt', mode="r").read().splitlines()
 
-TM_OFFSETS = {"B": 0x9aaa0, "W": 0x9aab8, "B2": 0x8cc84, "W2": 0x8ccb0 }
+	for i,move in enumerate(MOVES):
+		MOVES[i] = re.sub(r'[^A-Za-z0-9 \-]+', '', move)
+		
 
-TM_OFFSET = TM_OFFSETS[BASE_VERSION]
+	TM_FORMAT = []
 
-for n in range(1, 93):
-	TM_FORMAT.append([2, f'tm_{n}'])
-for n in range(1, 7):
-	TM_FORMAT.append([2, f'hm_{n}'])
-for n in range(93, 96):
-	TM_FORMAT.append([2, f'tm_{n}'])
+	TM_OFFSETS = {"B": 0x9aaa0, "W": 0x9aab8, "B2": 0x8cc84, "W2": 0x8ccb0 }
+
+	TM_OFFSET = TM_OFFSETS[BASE_VERSION]
+
+	for n in range(1, 93):
+		TM_FORMAT.append([2, f'tm_{n}'])
+	for n in range(1, 7):
+		TM_FORMAT.append([2, f'hm_{n}'])
+	for n in range(93, 96):
+		TM_FORMAT.append([2, f'tm_{n}'])
 
 
 #################################################################
 
 
-def output_arm9():
-	json_file_path = f'{ROM_NAME}/json/arm9/tms.json'
+def output_arm9(rom_name):
+	set_global_vars(rom_name)
+	json_file_path = f'{rom_name}/json/arm9/tms.json'
 	
 	# ndspy copy of narcfile to edit
-	arm9_file_path = f'{ROM_NAME}/arm9.bin'
+	arm9_file_path = f'{rom_name}/arm9.bin'
 	old_arm9 = open(arm9_file_path, "rb")
 	
 	to_edit_arm9 = bytearray(old_arm9.read())
@@ -82,9 +84,9 @@ def write_bytes(stream, n, data):
 	return stream
 
 
-def write_readable_to_raw():
+def write_readable_to_raw(rom_name):
 	data = {}
-	json_file_path = f'{ROM_NAME}/json/arm9/tms.json'
+	json_file_path = f'{rom_name}/json/arm9/tms.json'
 
 	with open(json_file_path, "r", encoding='ISO8859-1') as outfile:  	
 		narc_data = json.load(outfile)	
@@ -117,6 +119,6 @@ def write_bytes(stream, n, data):
 ################ If run with arguments #############
 
 if len(sys.argv) > 2 and sys.argv[1] == "update":
-	write_readable_to_raw()
+	write_readable_to_raw(sys.argv[3])
 	
 

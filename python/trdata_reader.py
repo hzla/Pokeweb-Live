@@ -13,8 +13,8 @@ from trpok_reader import output_trpok_json
 import rom_data
 import tools
 
-def output_trdata_json(narc):
-	tools.output_json(narc, "trdata", to_readable)
+def output_trdata_json(narc, rom_name):
+	tools.output_json(narc, "trdata", to_readable, rom_name)
 
 def to_readable(raw, file_name):
 	readable = copy.deepcopy(raw)

@@ -12,10 +12,10 @@ import sys
 # code.interact(local=dict(globals(), **locals()))
 
 ######################### CONSTANTS #############################
-def set_global_vars():
+def set_global_vars(rom_name):
 	global MAP_NARC_ID, ROM_NAME, NARC_FORMAT, MOVEMENTS, HEADER_FORMAT, FURNITURE_FORMAT, NPC_FORMAT, WARP_FORMAT, TRIGGER_FORMAT, DIRECTIONS, NARC_FILE_ID
 	
-	with open(f'session_settings.json', "r") as outfile:  
+	with open(f'{rom_name}/session_settings.json', "r") as outfile:  
 		settings = json.load(outfile) 
 		ROM_NAME = settings['rom_name']
 		NARC_FILE_ID = settings["overworlds"]
@@ -91,31 +91,31 @@ def set_global_vars():
 	NARC_FORMAT["warp"] = WARP_FORMAT
 	NARC_FORMAT["trigger"] = TRIGGER_FORMAT
 
-set_global_vars()
 #################################################################
 
 
-def output_narc(rom, narc_name="overworlds"):
-	json_files = os.listdir(f'{ROM_NAME}/json/{narc_name}')
+def output_narc(rom, rom_name):
+	set_global_vars(rom_name)
+	json_files = os.listdir(f'{rom_name}/json/overworlds')
 	
 	# ndspy copy of narcfile to edit
 	narc = ndspy.narc.NARC(rom.files[NARC_FILE_ID])
 
 	for f in json_files:
 		file_name = int(f.split(".")[0])
-		write_narc_data(file_name, NARC_FORMAT, narc, narc_name)
+		write_narc_data(file_name, NARC_FORMAT, narc, "overworlds", rom_name)
 
 	rom.files[NARC_FILE_ID] = narc.save()
 
 
 	####### maps ##########
-	json_files = os.listdir(f'{ROM_NAME}/json/maps')
+	json_files = os.listdir(f'{rom_name}/json/maps')
 	narc = ndspy.narc.NARC(rom.files[MAP_NARC_ID])
 
 
 	for f in json_files:
 		file_name = int(f.split(".")[0])
-		write_map_narc_data(file_name, narc, "maps")
+		write_map_narc_data(file_name, narc, "maps", rom_name)
 
 	rom.files[MAP_NARC_ID] = narc.save()
 
@@ -123,8 +123,8 @@ def output_narc(rom, narc_name="overworlds"):
 	return rom
 
 
-def write_map_narc_data(file_name, narc, narc_name="trpok"):
-	file_path = f'{ROM_NAME}/json/{narc_name}/{file_name}.json'
+def write_map_narc_data(file_name, narc, narc_name, rom_name):
+	file_path = f'{rom_name}/json/{narc_name}/{file_name}.json'
 
 	with open(file_path, "r", encoding='ISO8859-1') as outfile:  	
 		json_data = json.load(outfile)	
@@ -158,13 +158,9 @@ def write_map_narc_data(file_name, narc, narc_name="trpok"):
 			narc.files[file_name] = stream.read()
 
 
-
-
-
-
-def write_narc_data(file_name, narc_format, narc, narc_name="trpok"):
-	file_path = f'{ROM_NAME}/json/{narc_name}/{file_name}.json'
-	narcfile_path = f'{ROM_NAME}/narcs/{narc_name}-{NARC_FILE_ID}.narc'
+def write_narc_data(file_name, narc_format, narc, narc_name, rom_name):
+	file_path = f'{rom_name}/json/{narc_name}/{file_name}.json'
+	narcfile_path = f'{rom_name}/narcs/{narc_name}-{NARC_FILE_ID}.narc'
 
 	stream = bytearray() # bytearray because is mutable
 
@@ -209,28 +205,6 @@ def write_narc_data(file_name, narc_format, narc, narc_name="trpok"):
 		# narc_entry_data = bytearray(narc.files[file_name])
 		# narc_entry_data[0:len(stream)] = stream
 		narc.files[file_name] = stream
-	
-def write_readable_to_raw(file_name, narc_name="trpok"):
-	data = {}
-	json_file_path = f'{ROM_NAME}/json/{narc_name}/{file_name}.json'
-
-	with open(json_file_path, "r", encoding='ISO8859-1') as outfile:  	
-		json_data = json.load(outfile)	
-			
-		if json_data["readable"] is None:
-			return
-		new_raw_data = to_raw(json_data["readable"])
-		json_data["raw"] = new_raw_data
-
-	with open(json_file_path, "w", encoding='ISO8859-1') as outfile: 
-		json.dump(json_data, outfile)
-
-def to_raw(readable, template):
-	raw = copy.deepcopy(readable)
-
-
-
-	return raw
 	
 
 def write_bytes(stream, n, data):

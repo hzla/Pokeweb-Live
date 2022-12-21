@@ -10,18 +10,18 @@ import json
 
 # code.interact(local=dict(globals(), **locals()))
 
-def output_narc(rom, narc_name="moves"):
+def output_narc(rom, rom_name):
 	
-	with open(f'session_settings.json', "r") as outfile:  
+	with open(f'{rom_name}/session_settings.json', "r") as outfile:  
 		settings = json.load(outfile) 
 		ROM_NAME = settings["rom_name"]
 
 		for ani in ["move_animations", "battle_animations"]:
 			narc_id = settings[ani]
-			narcfile_path = narcfile_path = f'{ROM_NAME}/narcs/{ani}-{narc_id}.narc'
+			narcfile_path = narcfile_path = f'{rom_name}/narcs/{ani}-{narc_id}.narc'
 			rom.files[narc_id] = ndspy.narc.NARC.fromFile(narcfile_path).save()
 
-	return tools.output_narc("moves", rom)
+	return tools.output_narc("moves", rom, rom_name)
 
 def write_readable_to_raw(file_name, narc_name="moves"):
 	tools.write_readable_to_raw(file_name, narc_name, to_raw)
@@ -109,7 +109,7 @@ def to_raw(readable):
 ################ If run with arguments #############
 
 if len(sys.argv) > 2 and sys.argv[1] == "update":
-	rom_data.set_global_vars()
+	rom_data.set_global_vars(sys.argv[3])
 	file_names = sys.argv[2].split(",")
 	 
 	for file_name in file_names:

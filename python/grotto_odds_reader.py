@@ -14,10 +14,10 @@ import rom_data
 
 ######################### FILE SPECIFIC CONSTANTS #############################
 
-def set_global_vars():
+def set_global_vars(rom_name):
 	global ROM_NAME, NARC_FORMAT, BASE_ROM
 	
-	with open(f'session_settings.json', "r") as outfile:  
+	with open(f'{rom_name}/session_settings.json', "r") as outfile:  
 		settings = json.load(outfile) 
 		ROM_NAME = settings['rom_name']
 		BASE_ROM = settings['base_rom']
@@ -41,8 +41,8 @@ def set_global_vars():
 #################################################################
 ## TODO: create universal read_data function that takes name of narc, and to_readable() function as args
 
-def output_grotto_odds_json(grotto_odds):
-	set_global_vars()
+def output_grotto_odds_json(grotto_odds, rom_name):
+	set_global_vars(rom_name)
 	data_index = 0
 	data_name = "grotto_odds"
 	folder_name = "arm9"

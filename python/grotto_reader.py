@@ -3,8 +3,8 @@ import tools
 import copy
 import rom_data
 
-def output_grottos_json(narc):
-	tools.output_json(narc, "grottos", to_readable)
+def output_grottos_json(narc, rom_name):
+	tools.output_json(narc, "grottos", to_readable, rom_name)
 
 def to_readable(raw, file_name):
 	readable = copy.deepcopy(raw)

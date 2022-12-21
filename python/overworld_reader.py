@@ -9,10 +9,10 @@ import json
 import copy
 
 
-def set_global_vars():
+def set_global_vars(rom_name):
 	global ROM_NAME, NARC_FORMAT, MOVEMENTS, HEADER_FORMAT, FURNITURE_FORMAT, NPC_FORMAT, WARP_FORMAT, TRIGGER_FORMAT, DIRECTIONS
 	
-	with open(f'session_settings.json', "r") as outfile:  
+	with open(f'{rom_name}/session_settings.json', "r") as outfile:  
 		settings = json.load(outfile) 
 		ROM_NAME = settings['rom_name']
 
@@ -89,8 +89,8 @@ def set_global_vars():
 
 
 
-def output_overworlds_json(narc):
-	set_global_vars()
+def output_overworlds_json(narc, rom_name):
+	set_global_vars(rom_name)
 	data_index = 0
 
 

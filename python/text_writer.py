@@ -8,11 +8,11 @@ import json
 import sys
 import os
 
-def set_global_vars():
+def set_global_vars(rom_name):
     global ROM_NAME, NARC_FILE_IDS, REPLACE_TR_SCRIPT, BASE_ROM
     
     NARC_FILE_IDS = {}
-    with open(f'session_settings.json', "r") as outfile:  
+    with open(f'{rom_name}/session_settings.json', "r") as outfile:  
         settings = json.load(outfile) 
         ROM_NAME = settings['rom_name']
         BASE_ROM = settings['base_rom']
@@ -24,8 +24,8 @@ def set_global_vars():
         REPLACE_TR_SCRIPT = settings["enable_single_npc_dbl_battles"]
 
 
-def output_narc(rom):
-    set_global_vars()
+def output_narc(rom, rom_name):
+    set_global_vars(rom_name)
 
     ######## TEXTS #########
 
@@ -40,6 +40,8 @@ def output_narc(rom):
                 bank_id = int(file.split("_edited.txt")[0])
                 bank_bin = open(f'{ROM_NAME}/{narc_name}/{bank_id}.bin', "rb").read()
                 narc.files[bank_id] = bank_bin
+
+        rom.files[NARC_FILE_IDS[narc_name]] = narc.save()
 
     ######## SCRIPTS ###########
 

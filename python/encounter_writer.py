@@ -13,8 +13,8 @@ import tools
 
 # code.interact(local=dict(globals(), **locals()))
 
-def output_narc(rom, narc_name="encounters"):
-	return tools.output_narc("encounters", rom)
+def output_narc(rom, rom_name):
+	return tools.output_narc("encounters", rom, rom_name)
 
 def write_readable_to_raw(file_name, narc_name="encounters"):
 	tools.write_readable_to_raw(file_name, narc_name, to_raw)
@@ -53,7 +53,8 @@ def to_raw(readable):
 ################ If run with arguments #############
 
 if len(sys.argv) > 2 and sys.argv[1] == "update":
-	rom_data.set_global_vars()
+	
+	rom_data.set_global_vars(sys.argv[3])
 	file_names = sys.argv[2].split(",")
 	 
 	for file_name in file_names:

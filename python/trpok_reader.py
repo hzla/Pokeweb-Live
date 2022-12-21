@@ -11,10 +11,10 @@ import copy
 import math
 
 
-def set_global_vars():
+def set_global_vars(rom_name):
 	global ROM_NAME, NARC_FORMATS, POKEDEX, ITEMS, TRDATA, MOVES, GENDERS, NARC_PATH
 	
-	with open(f'session_settings.json', "r") as outfile:  
+	with open(f'{rom_name}/session_settings.json', "r") as outfile:  
 		settings = json.load(outfile) 
 		ROM_NAME = settings['rom_name']
 		NARC_FILE_ID = settings['trpok']
@@ -69,8 +69,8 @@ def set_global_vars():
 	NARC_FORMATS = [NARC_FORMAT_0,NARC_FORMAT_1,NARC_FORMAT_2,NARC_FORMAT_3]
 
 
-def output_trpok_json(trpok_info):
-	set_global_vars()
+def output_trpok_json(trpok_info, rom_name):
+	set_global_vars(rom_name)
 	data_index = 0
 	narc = ndspy.narc.NARC.fromFile(NARC_PATH)
 

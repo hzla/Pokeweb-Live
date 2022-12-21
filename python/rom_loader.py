@@ -26,11 +26,12 @@ print("creating project folders")
 
 narc_info = {} ##store narc names and file id pairs
 
-with open(f'session_settings.json', "r") as outfile:  
+rom_name = "projects/" + sys.argv[1].split(".")[0]
+
+with open(f'{rom_name}/session_settings.json', "r") as outfile:  
 	narc_info = json.load(outfile) 
 
 
-rom_name = narc_info['rom_name'] 
 
 # code.interact(local=dict(globals(), **locals()))
 
@@ -232,7 +233,7 @@ settings["enable_single_npc_dbl_battles"] = False
 
 
 
-with open(f'session_settings.json', "w+") as outfile:  
+with open(f'{rom_name}/session_settings.json', "w+") as outfile:  
 	json.dump(settings, outfile, indent=4) 
 
 
@@ -264,7 +265,7 @@ if narc_info["base_rom"] == "BW2":
 		settings["original_move_count"] = len(moves.files)
 		settings["battle_animation_count"] = len(b_animations.files)
 		
-		with open(f'session_settings.json', "w+") as outfile:  
+		with open(f'{rom_name}/session_settings.json', "w+") as outfile:  
 			json.dump(settings, outfile) 
 
 		# add filler moves
@@ -328,9 +329,9 @@ if narc_info["base_rom"] == "BW2":
 ####################CONVERT TO JSON #########################
 
 try:
-	subprocess.run(['python3', 'python/parallel.py'], check = True)
+	subprocess.run(['python3', 'python/parallel.py', rom_name], check = True)
 except:
-	subprocess.run(['python', 'python/parallel.py'], check = True)
+	subprocess.run(['python', 'python/parallel.py', rom_name], check = True)
 
-output_tms_json(arm9)
+output_tms_json(arm9, rom_name)
 

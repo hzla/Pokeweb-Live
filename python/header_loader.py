@@ -114,7 +114,7 @@ settings = {}
 settings["rom_name"] = rom_name
 settings.update(narc_info)
 
-with open(f'session_settings.json', "w") as outfile:  
+with open(f'{rom_name}/session_settings.json', "w") as outfile:  
 	json.dump(settings, outfile) 
 	print(settings)
 
@@ -126,7 +126,7 @@ with open(f'session_settings.json', "w") as outfile:
 ################### CONVERT TO JSON #########################
 
 headers_narc_data = ndspy.narc.NARC(rom.files[narc_info["headers"]])
-output_headers_json(headers_narc_data)
+output_headers_json(headers_narc_data, rom_name)
 
 
 

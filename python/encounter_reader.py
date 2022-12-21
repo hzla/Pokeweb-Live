@@ -5,8 +5,8 @@ import rom_data
 import tools
 
 
-def output_encounters_json(narc):
-	tools.output_json(narc, "encounters", to_readable)
+def output_encounters_json(narc, rom_name):
+	tools.output_json(narc, "encounters", to_readable, rom_name)
 
 def to_readable(raw, file_name):
 	readable = copy.deepcopy(raw)

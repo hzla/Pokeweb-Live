@@ -41,7 +41,7 @@ try:
 
 	settings = {}
 	file_ids = {}
-	with open(f'session_settings.json', "r") as outfile:  
+	with open(f'{sys.argv[1]}/session_settings.json', "r") as outfile:  
 		settings = json.load(outfile) 
 
 		if settings["output_overworlds"] == False:
@@ -100,7 +100,7 @@ try:
 				rom.files[36] = overlay36.save(compress=True)
 		
 		for narc in narcs:
-			rom = eval(f'{narc}_writer.output_narc(rom)')
+			rom = eval(f'{narc}_writer.output_narc(rom, rom_name)')
 
 				
 	##### save rom to exports

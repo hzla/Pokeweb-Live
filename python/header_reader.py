@@ -16,10 +16,10 @@ import text_reader
 
 ######################### FILE SPECIFIC CONSTANTS #############################
 
-def set_global_vars():
+def set_global_vars(rom_name):
 	global LOCATIONS, ROM_NAME, HEADER_NARC_FORMAT, HEADER_LENGTH, BASE_ROM
 	
-	with open(f'session_settings.json', "r") as outfile:  
+	with open(f'{rom_name}/session_settings.json', "r") as outfile:  
 		settings = json.load(outfile) 
 		ROM_NAME = settings['rom_name']
 		BASE_ROM = settings['base_rom']
@@ -87,8 +87,8 @@ def set_global_vars():
 #################################################################
 
 
-def output_headers_json(headers):
-	set_global_vars()
+def output_headers_json(headers, rom_name):
+	set_global_vars(rom_name)
 	headers = headers.files[0]
 	header_count = int(len(headers) / HEADER_LENGTH)
 

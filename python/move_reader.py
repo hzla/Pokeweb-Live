@@ -5,8 +5,8 @@ import rom_data
 import tools
 # code.interact(local=dict(globals(), **locals()))
 
-def output_moves_json(narc):
-	tools.output_json(narc, "moves", to_readable)
+def output_moves_json(narc, rom_name):
+	tools.output_json(narc, "moves", to_readable, rom_name)
 
 def to_readable(raw, file_name):
 	readable = copy.deepcopy(raw)

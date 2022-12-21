@@ -14,12 +14,9 @@ import re
 ######################### CONSTANTS #############################
 
 
-global ROM_NAME, NARC_FORMAT, BASE_ROM
+global NARC_FORMAT
 
-with open(f'session_settings.json', "r") as outfile:  
-	settings = json.load(outfile) 
-	ROM_NAME = settings['rom_name']
-	BASE_ROM = settings['base_rom']
+
 
 
 NARC_FORMAT = []
@@ -40,11 +37,11 @@ for n in range(0, 20):
 #################################################################
 
 
-def output_grotto_odds():
-	json_file_path = f'{ROM_NAME}/json/arm9/grotto_odds.json'
+def output_grotto_odds(rom_name):
+	json_file_path = f'{rom_name}/json/arm9/grotto_odds.json'
 	
 	# ndspy copy of narcfile to edit
-	grotto_odds_file_path = f'{ROM_NAME}/grotto_odds.bin'		
+	grotto_odds_file_path = f'{rom_name}/grotto_odds.bin'		
 	stream = bytearray() 
 
 	with open(json_file_path, "r") as outfile:  	
@@ -65,9 +62,9 @@ def write_bytes(stream, n, data):
 	return stream
 
 
-def write_readable_to_raw():
+def write_readable_to_raw(rom_name):
 	data = {}
-	json_file_path = f'{ROM_NAME}/json/arm9/grotto_odds.json'
+	json_file_path = f'{rom_name}/json/arm9/grotto_odds.json'
 
 	with open(json_file_path, "r", encoding='ISO8859-1') as outfile:  	
 		narc_data = json.load(outfile)	
@@ -93,7 +90,7 @@ def write_bytes(stream, n, data):
 ################ If run with arguments #############
 
 if len(sys.argv) > 2 and sys.argv[1] == "update":
-	write_readable_to_raw()
-	output_grotto_odds()
+	write_readable_to_raw(sys.argv[3])
+	output_grotto_odds(sys.argv[3])
 	
 

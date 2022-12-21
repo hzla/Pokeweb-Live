@@ -12,10 +12,10 @@ import sys
 # code.interact(local=dict(globals(), **locals()))
 
 ######################### CONSTANTS #############################
-def set_global_vars():
-	global ROM_NAME, NARC_FORMATS, NARC_FILE_ID, POKEDEX, ITEMS, trpok, MOVES, GENDERS
+def set_global_vars(rom_name):
+	global ROM_NAME, NARC_FORMATS, NARC_FILE_ID, POKEDEX, ITEMS, MOVES, GENDERS
 	
-	with open(f'session_settings.json', "r") as outfile:  
+	with open(f'{rom_name}/session_settings.json', "r") as outfile:  
 		settings = json.load(outfile) 
 		ROM_NAME = settings['rom_name']
 		NARC_FILE_ID = settings["trpok"]
@@ -68,30 +68,29 @@ def set_global_vars():
 
 	NARC_FORMATS = [NARC_FORMAT_0,NARC_FORMAT_1,NARC_FORMAT_2,NARC_FORMAT_3]
 
-set_global_vars()
 #################################################################
 
 
-def output_narc(rom, narc_name="trpok"):
-	set_global_vars()
-	json_files = os.listdir(f'{ROM_NAME}/json/{narc_name}')
-	narcfile_path = f'{ROM_NAME}/narcs/{narc_name}-{NARC_FILE_ID}.narc'
+def output_narc(rom, rom_name):
+	set_global_vars(rom_name)
+	json_files = os.listdir(f'{ROM_NAME}/json/trpok')
+	narcfile_path = f'{ROM_NAME}/narcs/trpok-{NARC_FILE_ID}.narc'
 	
 	# ndspy copy of narcfile to edit
 	narc = ndspy.narc.NARC.fromFile(narcfile_path)
 
 	for f in json_files:
 		file_name = int(f.split(".")[0])
-		write_narc_data(file_name, NARC_FORMATS, narc, narc_name)
+		write_narc_data(file_name, NARC_FORMATS, narc, rom_name)
 
 	rom.files[NARC_FILE_ID] = narc.save()
 	print("trpok narc saved")
 
 	return rom
 
-def write_narc_data(file_name, narc_format, narc, narc_name="trpok"):
-	file_path = f'{ROM_NAME}/json/{narc_name}/{file_name}.json'
-	narcfile_path = f'{ROM_NAME}/narcs/{narc_name}-{NARC_FILE_ID}.narc'
+def write_narc_data(file_name, narc_format, narc, rom_name):
+	file_path = f'{ROM_NAME}/json/trpok/{file_name}.json'
+	narcfile_path = f'{ROM_NAME}/narcs/trpok-{NARC_FILE_ID}.narc'
 
 	stream = bytearray() # bytearray because is mutable
 
@@ -123,9 +122,9 @@ def write_narc_data(file_name, narc_format, narc, narc_name="trpok"):
 		# narc_entry_data[0:len(stream)] = stream
 		narc.files[file_name] = stream
 	
-def write_readable_to_raw(file_name, narc_name="trpok"):
+def write_readable_to_raw(file_name, rom_name):
 	data = {}
-	json_file_path = f'{ROM_NAME}/json/{narc_name}/{file_name}.json'
+	json_file_path = f'{rom_name}/json/trpok/{file_name}.json'
 
 	with open(json_file_path, "r", encoding='ISO8859-1') as outfile:  	
 		json_data = json.load(outfile)	
@@ -133,7 +132,7 @@ def write_readable_to_raw(file_name, narc_name="trpok"):
 		if json_data["readable"] is None:
 			return
 
-		tr_data = json.load(open(f'{ROM_NAME}/json/trdata/{file_name}.json', "r"))
+		tr_data = json.load(open(f'{rom_name}/json/trdata/{file_name}.json', "r"))
 		template = tr_data["raw"]["template"]
 
 
@@ -191,9 +190,10 @@ def write_bytes(stream, n, data):
 ################ If run with arguments #############
 
 if len(sys.argv) > 2 and sys.argv[1] == "update":
+	set_global_vars(sys.argv[3])
 
 	file_names = sys.argv[2].split(",")
 	 
 	for file_name in file_names:
-		write_readable_to_raw(int(file_name))
+		write_readable_to_raw(int(file_name), sys.argv[3])
 	

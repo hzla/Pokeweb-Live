@@ -8,10 +8,10 @@ import copy
 import re
 
 
-def set_global_vars():
+def set_global_vars(rom_name):
 	global LOCATIONS, ROM_NAME, NARC_FORMATS, POKEDEX, METHODS, ITEMS, MOVES, GROTTO_NAMES, HEADER_LENGTH, MART_LOCATIONS, TYPES, CATEGORIES, EFFECT_CATEGORIES, EFFECTS, STATUSES, TARGETS, STATS, PROPERTIES, RESULT_EFFECTS, EGG_GROUPS, GROWTHS, ABILITIES, TRAINER_CLASSES, BATTLE_TYPES, TRAINER_NAMES, AIS, TEMPLATE_FLAGS, ANIMATION_ID, B_ANIMATION_ID
 
-	with open(f'session_settings.json', "r") as outfile:  
+	with open(f'{rom_name}/session_settings.json', "r") as outfile:  
 		settings = json.load(outfile) 
 		ROM_NAME = settings['rom_name']
 		BASE_ROM = settings['base_rom']
