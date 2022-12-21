@@ -14,7 +14,7 @@
 			<div class="sidebar-row">
 				<div class="sidebar-label"><%= field %></div>
 				<div class="sidebar-val" ></div>
-				<div class="sidebar-val" data-narc="overworld" contenteditable="true" data-field-name="<%= field %>" data-type="int-65535" id="<%= field %>">
+				<div class="sidebar-val" data-narc="overworld" contenteditable="<%= !(field == "overworld_id") %>" data-field-name="<%= field %>" data-type="int-65535" id="<%= field %>">
 				</div>
 			</div>
 		<% end %>
@@ -22,7 +22,6 @@
 
 
 
-	<a href="https://github.com/hzla/Pokeweb/wiki/Editors#overworlds" target="_blank">Instructions</a>
 
 	<div class="sidebar-btns">
 		<div class="ow-btn" id="add-npc">Add NPC</div>
@@ -36,6 +35,7 @@
 
 	<div class="sidebar-btns">
 		<a class="ow-btn" href="/story_texts/text/<%= @text %>" target="_blank">Open Text <%= @text %></a>
+		<a class="ow-btn" href="https://github.com/hzla/Pokeweb/wiki/Editors#overworlds" target="_blank">Instructions</a>
 	</div>
 </div>
 
