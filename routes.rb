@@ -352,12 +352,6 @@ get '/trpoks/moves/:trpok_id/:pok_index' do
 
 end
 
-post '/delete' do 
-	narc_name = params['data']['narc']
-	created = Object.const_get(narc_name.capitalize).delete params["data"]
-	return 200
-end
-
 
 post '/batch_update' do 
 	narc_name = params['data']['narc']
@@ -471,53 +465,6 @@ post '/encounter_season_copy' do
 	p params
 	"200 OK"
 end
-
-####################### TRAINERS ###########################
-
-get '/trainers' do 
-	@trainers = Trdata.get_all
-	@trainer_poks = Trpok.get_all
-	@move_names = Move.get_names_from Move.get_all
-
-	@names = Trdata.names
-	@class_names = Trdata.class_names
-	
-	
-	erb :trainers
-end
-
-get '/trainers/:trainer_id/:pok_id/natures/:desired_iv' do 
-	@natures = Trpok.get_nature_info_for params[:trainer_id], params[:pok_id], params[:desired_iv].to_i 
-	@iv = params[:desired_iv]
-	erb :trpok_natures
-end
-
-post '/create' do
-	narc_name = params['data']['narc']
-	
-	created = Object.const_get(narc_name.capitalize).create params["data"]
-
-	open('logs.txt', 'a') do |f|
-	  f.puts "#{Time.now}:  Project: #{$rom_name} Trainer File #{params['data']['file_name']} created new trainer pok"
-	end
-
-	erb ("_" + narc_name).to_sym, :layout => false, :locals => { narc_name.to_sym => created, "#{narc_name}_index".to_sym => params['data']['sub_index'], :show => "show-flex", :doc_view => false }
-end
-
-get '/trpoks/moves/:trpok_id/:pok_index' do 
-	moves = Trpok.fill_lvl_up_moves params[:lvl], params[:trpok_id], params[:pok_index]
-
-	content_type :json
-  	return { moves: moves }.to_json
-
-end
-
-post '/delete' do 
-	narc_name = params['data']['narc']
-	created = Object.const_get(narc_name.capitalize).delete params["data"]
-	return 200
-end
-
 
 ####################################### ITEMS ###############
 
@@ -702,7 +649,7 @@ put '/overworlds/:id/npc' do
 end
 
 delete '/overworlds/:id/npc' do
-	Overworld.remove_npc params["id"].to_i
+	Overworld.remove_npc params["id"].to_i, params["npc_index"].to_i
 	"200 OK"
 end
 

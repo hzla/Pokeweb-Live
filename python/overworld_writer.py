@@ -178,10 +178,24 @@ def write_narc_data(file_name, narc_format, narc, narc_name="trpok"):
 				write_bytes(stream, entry[0], data)
 
 		for overworld in ['furniture', 'npc', 'warp', 'trigger']:
-			for n in range(json_data['raw'][f'{overworld}_count']):
+			n = 0
+			m = 0
+
+			while n < json_data['raw'][f'{overworld}_count']:
+				
+				# if entity has been deleted
+				if f'{overworld}_{m}_{ NARC_FORMAT[overworld][0][1]}' not in json_data["raw"]:
+					m += 1
+				else:
+					found = True
+
 				for entry in NARC_FORMAT[overworld]:
-					data = json_data["raw"][f'{overworld}_{n}_{entry[1]}']
+					data = json_data["raw"][f'{overworld}_{m}_{entry[1]}']
 					write_bytes(stream, entry[0], data)
+
+				m += 1
+				if found:
+					n += 1
 
 		write_bytes(stream, json_data["raw"]["footer_length"], json_data["raw"]["footer"])
 

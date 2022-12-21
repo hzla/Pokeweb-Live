@@ -82,9 +82,16 @@ try:
 				#set data
 				overlay36_data = overlay36.data
 				B2_GROTTO_ODDS_OFFSET = 0x00055218
+				W2_GROTTO_ODDS_OFFSET = 0x00055218 - 12
+
+				if narc_info["base_version"] == "B2":
+					GROTTO_ODDS_OFFSET = B2_GROTTO_ODDS_OFFSET
+				else:
+					GROTTO_ODDS_OFFSET = W2_GROTTO_ODDS_OFFSET
+
 				
 				# overwrite data with edits
-				overlay36_data[B2_GROTTO_ODDS_OFFSET:(B2_GROTTO_ODDS_OFFSET + 200)] = grotto_odds
+				overlay36_data[GROTTO_ODDS_OFFSET:(GROTTO_ODDS_OFFSET + 200)] = grotto_odds
 				
 				#set new data
 				overlay36.data = overlay36_data
@@ -94,7 +101,7 @@ try:
 		
 		for narc in narcs:
 			rom = eval(f'{narc}_writer.output_narc(rom)')
-		
+
 				
 	##### save rom to exports
 	if path.exists(f'exports'):

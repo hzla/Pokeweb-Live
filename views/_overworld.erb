@@ -14,9 +14,9 @@
 		</div>
 	<% end %>
 
-	<% (0..overworld['npc_count']-1).each do |ov_index| %>
+	<% (0..Overworld.highest_ow_id(overworld)).each do |ov_index| %>
 
-		 <%  %>
+		 <% next if !overworld["npc_#{ov_index}_overworld_id"] %>
 		<div title="npc-<%= ov_index  %>" class="overworld-item <%= "selected" if selected == "npc_#{ov_index}_" %>" data-id="npc_<%= ov_index  %>_" style='top: <%= (overworld["npc_#{ov_index}_y_cord"] - tl_y) * 32 + 40 %>px;
 		left:calc(2vw + <%= (overworld["npc_#{ov_index}_x_cord"] - tl_x) * 32%>px)' data-dir="<%= overworld["npc_#{ov_index}_direction"] %>">
 

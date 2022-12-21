@@ -125,7 +125,7 @@ $(document).ready(function() {
 
 
 	}
-	setTimeout(adjust_directions, 1500)
+	setTimeout(adjust_directions, 1000)
 
 })
 
@@ -348,6 +348,7 @@ $(document).ready(function() {
 
 		$('.overworld-item').removeClass("selected")
 		$(this).addClass("selected")
+		$('#del-npc').attr('data-npc-index', $(this).attr("data-id"))
 
 		for (n in keys) {
 			
@@ -427,7 +428,15 @@ $(document).ready(function() {
 
 	$(document).on('click', '#del-npc', function(){	
 		base_url = window.location.href.split("?")[0]
-		$.delete(base_url + `/npc`, data => {
+
+		if ($('#del-npc').attr('data-npc-index') == '') {
+			alert('no npc selected')
+			return
+		}
+
+		var npc_index = $(this).attr('data-npc-index').split("_")[1]
+
+		$.delete(base_url + `/npc?npc_index=${npc_index}`, data => {
 			$.get(base_url + `/box?selected`, data => {		
 				$("#overworld").html(data)
 				adjust_directions()

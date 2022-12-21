@@ -11,11 +11,28 @@ class Overworld < Pokenarc
 		super file_name, file_type
 	end
 
+	def self.highest_ow_id ow
+		npc_count = ow["npc_count"]
+		highest = 0
+		n = 0
+		m = 0
+
+		while n < npc_count do 
+			ow_id = ow["npc_#{m}_overworld_id"]
+			m += 1
+			if ow_id
+				highest = ow_id if ow_id > highest
+				n += 1
+			end
+		end
+		highest 
+	end
+
 	def self.add_npc ow_id
 		overworld = get_data(ow_id, "all")
 		ow = overworld["raw"]
 		
-		npc_index = ow["npc_count"]
+		npc_index = highest_ow_id ow
 		npc_fields = ["overworld_id",
         "overworld_sprite",
         "movement_permissions",
@@ -41,17 +58,17 @@ class Overworld < Pokenarc
 
 		# set all fields to 0
 		npc_fields.each do |field|
-			ow["npc_#{npc_index}_#{field}"] = 0
+			ow["npc_#{npc_index + 1}_#{field}"] = 0
 		end
 
 		# set to default sprite and overworld_id
-		ow["npc_#{npc_index}_overworld_sprite"] = 1
-		ow["npc_#{npc_index}_overworld_id"] = npc_index
+		ow["npc_#{npc_index + 1}_overworld_sprite"] = 1
+		ow["npc_#{npc_index + 1}_overworld_id"] = npc_index + 1
 
 		# place next to last npc
-		if npc_index > 0
-			ow["npc_#{npc_index}_x_cord"] = ow["npc_#{npc_index - 1}_x_cord"] + 1
-			ow["npc_#{npc_index}_y_cord"] = ow["npc_#{npc_index - 1}_y_cord"] + 1	
+		if ow["npc_count"] > 1
+			ow["npc_#{npc_index + 1}_x_cord"] = ow["npc_#{npc_index - 1}_x_cord"] + 1
+			ow["npc_#{npc_index + 1}_y_cord"] = ow["npc_#{npc_index - 1}_y_cord"] + 1	
 		end 
 		overworld["raw"] = ow
 		file_path = "#{$rom_name}/json/overworlds/#{ow_id}.json"
@@ -61,13 +78,10 @@ class Overworld < Pokenarc
 	end
 
 	# deletes last npc
-	def self.remove_npc ow_id
+	def self.remove_npc ow_id, npc_index
 		
 		overworld = get_data(ow_id, "all")
 		ow = overworld["raw"]		
-		npc_index = ow["npc_count"]
-
-		return if npc_index < 1
 
         # deincrement npc count and file length
 		overworld["raw"]["npc_count"] -= 1
@@ -75,7 +89,7 @@ class Overworld < Pokenarc
 
 		# delete all fields for npc
 		ow.each do |k,v|
-			if k.include?("npc_#{npc_index - 1}_")
+			if k.include?("npc_#{npc_index}_")
 				overworld["raw"].delete(k)
 			end
 		end
