@@ -38,7 +38,6 @@ def output_narc(narc_name, rom):
 
 def write_narc_data(file_name, narc_format, narc, narc_name, narc_file_id):
 	file_path = f'{rom_data.ROM_NAME}/json/{narc_name}/{file_name}.json'
-	narcfile_path = f'{rom_data.ROM_NAME}/narcs/{narc_name}-{narc_file_id}.narc'
 
 	stream = bytearray() 
 

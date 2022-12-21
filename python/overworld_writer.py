@@ -13,12 +13,13 @@ import sys
 
 ######################### CONSTANTS #############################
 def set_global_vars():
-	global ROM_NAME, NARC_FORMAT, MOVEMENTS, HEADER_FORMAT, FURNITURE_FORMAT, NPC_FORMAT, WARP_FORMAT, TRIGGER_FORMAT, DIRECTIONS, NARC_FILE_ID
+	global MAP_NARC_ID, ROM_NAME, NARC_FORMAT, MOVEMENTS, HEADER_FORMAT, FURNITURE_FORMAT, NPC_FORMAT, WARP_FORMAT, TRIGGER_FORMAT, DIRECTIONS, NARC_FILE_ID
 	
 	with open(f'session_settings.json', "r") as outfile:  
 		settings = json.load(outfile) 
 		ROM_NAME = settings['rom_name']
 		NARC_FILE_ID = settings["overworlds"]
+		MAP_NARC_ID = settings["maps"]
 
 	MOVEMENTS = open(f'Reference_Files/movements.txt', mode="r").read().splitlines()
 
@@ -105,7 +106,61 @@ def output_narc(rom, narc_name="overworlds"):
 		write_narc_data(file_name, NARC_FORMAT, narc, narc_name)
 
 	rom.files[NARC_FILE_ID] = narc.save()
+
+
+	####### maps ##########
+	json_files = os.listdir(f'{ROM_NAME}/json/maps')
+	narc = ndspy.narc.NARC(rom.files[MAP_NARC_ID])
+
+
+	for f in json_files:
+		file_name = int(f.split(".")[0])
+		write_map_narc_data(file_name, narc, "maps")
+
+	rom.files[MAP_NARC_ID] = narc.save()
+
+	
 	return rom
+
+
+def write_map_narc_data(file_name, narc, narc_name="trpok"):
+	file_path = f'{ROM_NAME}/json/{narc_name}/{file_name}.json'
+
+	with open(file_path, "r", encoding='ISO8859-1') as outfile:  	
+		json_data = json.load(outfile)	
+		
+
+		if "edited" in json_data:
+			print(f"edited {file_name}")
+
+			# get start of map data
+			stream = io.BytesIO(narc.files[file_name])
+			stream.seek(8)
+			offset = read_bytes(stream, 4)
+			stream.seek(offset)
+			
+			# get height and width
+			width = read_bytes(stream, 2)
+			height = read_bytes(stream, 2)
+		
+			# only write flags and movements
+			for idx, n in enumerate(range(0, width * height)):
+				for m in range(0,4):		
+					if m == 2 or m == 3:
+						tile_val = json_data[f'layer_{m}'][idx]
+						stream.write(int(tile_val).to_bytes(2, 'little'))
+					else:
+						stream.seek(stream.tell() + 2)
+
+			# code.interact(local=dict(globals(), **locals()))
+
+			stream.seek(0)
+			narc.files[file_name] = stream.read()
+
+
+
+
+
 
 def write_narc_data(file_name, narc_format, narc, narc_name="trpok"):
 	file_path = f'{ROM_NAME}/json/{narc_name}/{file_name}.json'
@@ -167,5 +222,8 @@ def to_raw(readable, template):
 def write_bytes(stream, n, data):
 	stream += (int(data).to_bytes(n, 'little'))		
 	return stream
+
+def read_bytes(stream, n):
+	return int.from_bytes(stream.read(n), 'little')
 
 ################ If run with arguments #############

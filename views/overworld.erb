@@ -33,6 +33,10 @@
 		<div class="ow-btn script-btn" id="open-script" href="/scripts/<%= @script %>">Open Script</div>
 		<div class="ow-btn script-btn" id="save-script" href="/scripts/<%= @script %>/save">Apply Script</div>
 	</div>	
+
+	<div class="sidebar-btns">
+		<a class="ow-btn" href="/story_texts/text/<%= @text %>" target="_blank">Open Text <%= @text %></a>
+	</div>
 </div>
 
 <div class="popup-editor field-holder" data-index data-map>
@@ -40,11 +44,6 @@
 		<div class="popup-field-label">Flag</div>
 		<div class="popup-field" data-field-name="layer_2" data-narc="map" id="tile-flag" contenteditable="true" data-type="int-255">0</div>
 	</div>
-
-	<div class="sidebar-btns">
-		<a class="ow-btn" href="/story_texts/text/<%= @text %>">Open Text <%= @text %></a>
-	</div>
-	
 
 	<div class="popup-field-row">
 		<div class="popup-field-label">Movement</div>

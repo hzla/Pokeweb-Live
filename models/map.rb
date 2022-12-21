@@ -24,6 +24,7 @@ class Map < Pokenarc
 		field = data["field"].split("_index")[0]
 		field_index = data["field"].split("_")[-1].to_i
 		map[field][field_index] = data["value"].to_i
+		map["edited"] = true
 
 		File.open("#{$rom_name}/json/maps/#{data["file_name"]}.json", "w") { |f| f.write map.to_json } 
 	end
