@@ -62,7 +62,7 @@ def read_narc_data(data, narc_name, file_name):
 	for n in range(0, map_data["width"] * map_data["height"]):
 		for m in range(0,4):		
 			tile = read_bytes(stream, 2)
-			if m == 2:
+			if m == 2 or m == 3:
 				map_data[f'layer_{m}'].append(tile)
 
 	# try:

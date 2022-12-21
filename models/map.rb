@@ -17,8 +17,15 @@ class Map < Pokenarc
 	end
 
 	def self.cords file_name, matrix_id
+	end
 
+	def self.write_data data
+		map = get_data data["file_name"]
+		field = data["field"].split("_index")[0]
+		field_index = data["field"].split("_")[-1].to_i
+		map[field][field_index] = data["value"].to_i
 
+		File.open("#{$rom_name}/json/maps/#{data["file_name"]}.json", "w") { |f| f.write map.to_json } 
 	end
 
 	def self.colors

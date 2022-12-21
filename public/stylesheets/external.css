@@ -7,8 +7,8 @@ html, body{
   padding: 0;
   margin: 0;
   background-color: #1c263d;
-  transition: 0.3s;
-  transition-property: all;
+/*  transition: 0.3s;
+  transition-property: all;*/
 }
 
 div {

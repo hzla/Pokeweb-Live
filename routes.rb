@@ -162,7 +162,7 @@ post '/update' do
 		narc_name = params['data']['narc_const']
 	end
 
-
+	p params['data']
 	Object.const_get(narc_name.capitalize).write_data params["data"]
 
 	if params['data']['field'].include?('odds') && narc_name == 'grotto'

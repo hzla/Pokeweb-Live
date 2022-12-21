@@ -1,10 +1,12 @@
 <% maps.each do |map| %>
 		<div class="overworld-canvas" style='height:<%= map[1][3] * 32 %>px;width:<%= map[1][2] * 32 %>px;left:calc(2vw + <%= (map[1][0] - tl_x) * 32 %>px);top: <%= (map[1][1] - tl_y) * 32 + 40 %>px'>
 			<% perms = Map.perms(map[0]) %>
+			<% movements = Map.perms(map[0], 3) %>
 
-			<% perms.each do |tile| %>
+			<% perms.each_with_index do |tile, i| %>
 
-				<div class="tile" style='background:<%= Map.color(tile)[0] %>' title="<%= tile %>: <%= Map.color(tile)[1] %>" data-perm="<%= tile %>">
+				<div class="tile" style='background:<%= Map.color(tile)[0] %>;color:<%= Map.color(tile)[0] %>' title="<%= tile %>: <%= Map.color(tile)[1] %>" data-perm="<%= tile %>" data-map="<%= map[0] %>" data-mov="<%= movements[i] %>" data-index="<%= i %>">
+					<%= tile %> 
 				</div>
 			<% end %>
 

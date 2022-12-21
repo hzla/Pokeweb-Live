@@ -121,10 +121,11 @@ $(document).ready(function() {
 			} else {
 				$(this).css("top", `-${offset * 32}px`)
 			}
-
 		})
+
+
 	}
-	setTimeout(adjust_directions, 2000)
+	setTimeout(adjust_directions, 1500)
 
 })
 
@@ -355,6 +356,27 @@ $(document).ready(function() {
 			$(`#${fieldName}`).text(overworld[keys[n]])
 			$(`#${fieldName}`).attr("data-field-name", keys[n])
 		}
+	})
+
+	$(document).on('click', '.tile', function(){
+		var index = $(this).attr('data-index')
+		var map_id = $(this).attr('data-map')
+		var flag = $(this).attr('data-perm')
+		var mov = $(this).attr('data-mov')
+
+
+		$('.popup-editor').show()
+		$('.popup-editor').attr('data-index', map_id)
+		$('.popup-editor').attr('data-map', index)
+		$('.popup-editor').find('#tile-flag').text(flag)
+		
+		var flag_field = $('.popup-editor').find('#tile-flag')
+		var mov_field = $('.popup-editor').find('#tile-mov')
+		
+		flag_field.text(flag)
+		mov_field.text(mov)
+		flag_field.attr('data-field-name',`layer_2_index_${index}`)
+		mov_field.attr('data-field-name',`layer_3_index_${index}`)
 	})	
 
 	$(document).on('click', '#del-text', function(){	
@@ -579,7 +601,7 @@ $(document).ready(function() {
 		var value = $(this).text().trim()
 		$(this).text(value)
 		var field_name = $(this).attr('data-field-name')
-		var index = $(this).parents('.filterable').attr('data-index')
+		var index = $(this).parents('.filterable, .field-holder').attr('data-index')
 		var narc = $(this).attr('data-narc')
 
 		var data = {}

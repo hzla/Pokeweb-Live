@@ -1207,9 +1207,34 @@ div.-active svg * {
     background-size: 32px 32px;
 }
 
+.popup-editor {
+    position:  fixed;
+    left: calc(40vw);
+    width: 160px;
+    top:  200px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding:  10px;
+    z-index: 10;
+    background: #f2f2f2;
+    display: none;
+}
+
+.popup-field-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px;
+}
+
 #overworld .tile {
     height: 32px;
     width:  32px;
+    cursor:  pointer;
+    text-align: center;
+}
+
+#overworld .tile:hover {
+    color: black !important;
 }
 
 .overworld-item {
