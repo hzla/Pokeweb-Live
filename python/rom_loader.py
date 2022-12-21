@@ -227,7 +227,7 @@ settings.update(narc_info)
 settings["output_arm9"] = False
 settings["fairy"] = False
 settings["text_editor"] = False
-settings["output_overworlds"] = False
+settings["output_overworlds"] = True
 settings["enable_single_npc_dbl_battles"] = False
 
 
@@ -327,8 +327,10 @@ if narc_info["base_rom"] == "BW2":
 #############################################################
 ####################CONVERT TO JSON #########################
 
-
-os.system("python3 python/parallel.py")
+try:
+	subprocess.run(['python3', 'python/parallel.py'], check = True)
+except:
+	subprocess.run(['python', 'python/parallel.py'], check = True)
 
 output_tms_json(arm9)
 

@@ -43,11 +43,15 @@ try:
 	file_ids = {}
 	with open(f'session_settings.json', "r") as outfile:  
 		settings = json.load(outfile) 
+
+		if settings["output_overworlds"] == False:
+			narcs.remove("overworld")
 		
 		if settings["base_rom"] == "BW2":
 			import mart_writer
 			import grotto_writer
 			narcs += bw_narcs
+
 
 		if settings["output_arm9"] == True:
 			tm_writer.output_arm9()
