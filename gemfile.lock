@@ -16,12 +16,16 @@ GEM
     minitest (5.16.3)
     mustermann (1.1.1)
       ruby2_keywords (~> 0.0.1)
+    passenger (6.0.16)
+      rack
+      rake (>= 0.8.1)
     pry (0.14.1)
       coderay (~> 1.1)
       method_source (~> 1.0)
     rack (2.2.3)
     rack-protection (2.1.0)
       rack
+    rake (13.0.6)
     ruby2_keywords (0.0.4)
     sinatra (2.1.0)
       mustermann (~> 1.0)
@@ -34,7 +38,6 @@ GEM
     tzinfo (2.0.5)
       concurrent-ruby (~> 1.0)
     unicode-display_width (2.3.0)
-    webrick (1.7.0)
     zeitwerk (2.6.6)
 
 PLATFORMS
@@ -44,10 +47,10 @@ PLATFORMS
 DEPENDENCIES
   activesupport (= 6.1.7)
   dotenv
+  passenger (>= 5.3.2)
   pry
   sinatra
   terminal-table
-  webrick
 
 BUNDLED WITH
    2.1.4

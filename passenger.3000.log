@@ -1,0 +1,113 @@
+[ N 2022-12-22 15:26:43.1291 25112/T1 age/Wat/WatchdogMain.cpp:1377 ]: Starting Passenger watchdog...
+[ N 2022-12-22 15:26:43.1584 25114/T1 age/Cor/CoreMain.cpp:1340 ]: Starting Passenger core...
+[ N 2022-12-22 15:26:43.1587 25114/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ N 2022-12-22 15:26:43.1940 25114/T1 age/Cor/CoreMain.cpp:1015 ]: Passenger core online, PID 25114
+2022/12/22 15:26:45 [error] 25117#0: *4 directory index of "/Users/andylee/Repos/pokeweb/public/" is forbidden, client: 127.0.0.1, server: _, request: "HEAD / HTTP/1.1", host: "0.0.0.0"
+[ N 2022-12-22 15:26:46.1984 25114/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+
+[ N 2022-12-22 15:34:11.8868 25114/T8 age/Cor/CoreMain.cpp:671 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2022-12-22 15:34:11.8869 25114/T1 age/Cor/CoreMain.cpp:1246 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2022-12-22 15:34:11.8869 25114/Ta Ser/Server.h:901 ]: [ServerThr.2] Freed 0 spare client objects
+[ N 2022-12-22 15:34:11.8869 25114/T8 Ser/Server.h:901 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2022-12-22 15:34:11.8869 25114/Tm Ser/Server.h:901 ]: [ServerThr.8] Freed 0 spare client objects
+[ N 2022-12-22 15:34:11.8869 25114/Ts Ser/Server.h:901 ]: [ServerThr.11] Freed 0 spare client objects
+[ N 2022-12-22 15:34:11.8869 25114/Tu Ser/Server.h:901 ]: [ServerThr.12] Freed 0 spare client objects
+[ N 2022-12-22 15:34:11.8869 25114/Tg Ser/Server.h:901 ]: [ServerThr.5] Freed 0 spare client objects
+[ N 2022-12-22 15:34:11.8870 25114/Ts Ser/Server.h:558 ]: [ServerThr.11] Shutdown finished
+[ N 2022-12-22 15:34:11.8871 25114/Tg Ser/Server.h:558 ]: [ServerThr.5] Shutdown finished
+[ N 2022-12-22 15:34:11.8870 25114/Tm Ser/Server.h:558 ]: [ServerThr.8] Shutdown finished
+[ N 2022-12-22 15:34:11.8870 25114/Tw Ser/Server.h:901 ]: [ApiServer] Freed 0 spare client objects
+[ N 2022-12-22 15:34:11.8869 25114/Te Ser/Server.h:901 ]: [ServerThr.4] Freed 0 spare client objects
+[ N 2022-12-22 15:34:11.8870 25114/Tq Ser/Server.h:901 ]: [ServerThr.10] Freed 0 spare client objects
+[ N 2022-12-22 15:34:11.8869 25114/Ti Ser/Server.h:901 ]: [ServerThr.6] Freed 0 spare client objects
+[ N 2022-12-22 15:34:11.8872 25114/Te Ser/Server.h:558 ]: [ServerThr.4] Shutdown finished
+[ N 2022-12-22 15:34:11.8869 25114/Tk Ser/Server.h:901 ]: [ServerThr.7] Freed 0 spare client objects
+[ N 2022-12-22 15:34:11.8870 25114/T8 Ser/Server.h:558 ]: [ServerThr.1] Shutdown finished
+[ N 2022-12-22 15:34:11.8869 25114/Tc Ser/Server.h:901 ]: [ServerThr.3] Freed 0 spare client objects
+[ N 2022-12-22 15:34:11.8871 25114/Tw Ser/Server.h:558 ]: [ApiServer] Shutdown finished
+[ N 2022-12-22 15:34:11.8872 25114/Tq Ser/Server.h:558 ]: [ServerThr.10] Shutdown finished
+[ N 2022-12-22 15:34:11.8869 25114/To Ser/Server.h:901 ]: [ServerThr.9] Freed 0 spare client objects
+[ N 2022-12-22 15:34:11.8871 25114/Tu Ser/Server.h:558 ]: [ServerThr.12] Shutdown finished
+[ N 2022-12-22 15:34:11.8873 25114/To Ser/Server.h:558 ]: [ServerThr.9] Shutdown finished
+[ N 2022-12-22 15:34:11.8872 25114/Tk Ser/Server.h:558 ]: [ServerThr.7] Shutdown finished
+[ N 2022-12-22 15:34:11.8873 25114/Tc Ser/Server.h:558 ]: [ServerThr.3] Shutdown finished
+[ N 2022-12-22 15:34:11.8872 25114/Ti Ser/Server.h:558 ]: [ServerThr.6] Shutdown finished
+[ N 2022-12-22 15:34:11.8870 25114/Ta Ser/Server.h:558 ]: [ServerThr.2] Shutdown finished
+[ N 2022-12-22 15:34:13.0158 25114/T1 age/Cor/CoreMain.cpp:1325 ]: Passenger core shutdown finished
+[ N 2022-12-22 15:34:31.8058 25203/T1 age/Wat/WatchdogMain.cpp:1377 ]: Starting Passenger watchdog...
+[ N 2022-12-22 15:34:31.8305 25205/T1 age/Cor/CoreMain.cpp:1340 ]: Starting Passenger core...
+[ N 2022-12-22 15:34:31.8308 25205/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ N 2022-12-22 15:34:31.8599 25205/T1 age/Cor/CoreMain.cpp:1015 ]: Passenger core online, PID 25205
+2022/12/22 15:34:34 [error] 25208#0: *4 directory index of "/Users/andylee/Repos/pokeweb/public/" is forbidden, client: 127.0.0.1, server: _, request: "HEAD / HTTP/1.1", host: "0.0.0.0"
+[ N 2022-12-22 15:34:34.9022 25205/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+[ E 2022-12-22 15:34:34.9096 25205/T5 Sec/Crypto.cpp:990 ]: Removing Passenger private key from keychain failed: Write permissions error.. Please remove the private key from the certificate labeled Phusion Passenger Open Source in your keychain.
+2022/12/22 15:34:47 [error] 25208#0: *5 directory index of "/Users/andylee/Repos/pokeweb/public/" is forbidden, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost:3000"
+
+[ N 2022-12-22 15:37:08.3366 25205/T8 age/Cor/CoreMain.cpp:671 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2022-12-22 15:37:08.3366 25205/T1 age/Cor/CoreMain.cpp:1246 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2022-12-22 15:37:08.3367 25205/Td Ser/Server.h:901 ]: [ServerThr.3] Freed 0 spare client objects
+[ N 2022-12-22 15:37:08.3367 25205/Ta Ser/Server.h:901 ]: [ServerThr.2] Freed 0 spare client objects
+[ N 2022-12-22 15:37:08.3367 25205/To Ser/Server.h:901 ]: [ServerThr.9] Freed 0 spare client objects
+[ N 2022-12-22 15:37:08.3367 25205/Tu Ser/Server.h:901 ]: [ServerThr.12] Freed 0 spare client objects
+[ N 2022-12-22 15:37:08.3367 25205/Ti Ser/Server.h:901 ]: [ServerThr.6] Freed 0 spare client objects
+[ N 2022-12-22 15:37:08.3368 25205/Tu Ser/Server.h:558 ]: [ServerThr.12] Shutdown finished
+[ N 2022-12-22 15:37:08.3367 25205/Tm Ser/Server.h:901 ]: [ServerThr.8] Freed 0 spare client objects
+[ N 2022-12-22 15:37:08.3367 25205/Tg Ser/Server.h:901 ]: [ServerThr.5] Freed 0 spare client objects
+[ N 2022-12-22 15:37:08.3368 25205/Ta Ser/Server.h:558 ]: [ServerThr.2] Shutdown finished
+[ N 2022-12-22 15:37:08.3369 25205/Tg Ser/Server.h:558 ]: [ServerThr.5] Shutdown finished
+[ N 2022-12-22 15:37:08.3367 25205/Tk Ser/Server.h:901 ]: [ServerThr.7] Freed 0 spare client objects
+[ N 2022-12-22 15:37:08.3367 25205/Ts Ser/Server.h:901 ]: [ServerThr.11] Freed 0 spare client objects
+[ N 2022-12-22 15:37:08.3367 25205/Tq Ser/Server.h:901 ]: [ServerThr.10] Freed 0 spare client objects
+[ N 2022-12-22 15:37:08.3367 25205/Te Ser/Server.h:901 ]: [ServerThr.4] Freed 0 spare client objects
+[ N 2022-12-22 15:37:08.3370 25205/Tq Ser/Server.h:558 ]: [ServerThr.10] Shutdown finished
+[ N 2022-12-22 15:37:08.3367 25205/T8 Ser/Server.h:901 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2022-12-22 15:37:08.3368 25205/Ti Ser/Server.h:558 ]: [ServerThr.6] Shutdown finished
+[ N 2022-12-22 15:37:08.3371 25205/T8 Ser/Server.h:558 ]: [ServerThr.1] Shutdown finished
+[ N 2022-12-22 15:37:08.3367 25205/Td Ser/Server.h:558 ]: [ServerThr.3] Shutdown finished
+[ N 2022-12-22 15:37:08.3368 25205/To Ser/Server.h:558 ]: [ServerThr.9] Shutdown finished
+[ N 2022-12-22 15:37:08.3369 25205/Tw Ser/Server.h:901 ]: [ApiServer] Freed 0 spare client objects
+[ N 2022-12-22 15:37:08.3370 25205/Ts Ser/Server.h:558 ]: [ServerThr.11] Shutdown finished
+[ N 2022-12-22 15:37:08.3370 25205/Tk Ser/Server.h:558 ]: [ServerThr.7] Shutdown finished
+[ N 2022-12-22 15:37:08.3370 25205/Te Ser/Server.h:558 ]: [ServerThr.4] Shutdown finished
+[ N 2022-12-22 15:37:08.3372 25205/Tw Ser/Server.h:558 ]: [ApiServer] Shutdown finished
+[ N 2022-12-22 15:37:08.3369 25205/Tm Ser/Server.h:558 ]: [ServerThr.8] Shutdown finished
+[ N 2022-12-22 15:37:09.3797 25205/T1 age/Cor/CoreMain.cpp:1325 ]: Passenger core shutdown finished
+[ N 2022-12-22 15:37:10.1362 25253/T1 age/Wat/WatchdogMain.cpp:1377 ]: Starting Passenger watchdog...
+[ N 2022-12-22 15:37:10.1605 25255/T1 age/Cor/CoreMain.cpp:1340 ]: Starting Passenger core...
+[ N 2022-12-22 15:37:10.1608 25255/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ N 2022-12-22 15:37:10.1916 25255/T1 age/Cor/CoreMain.cpp:1015 ]: Passenger core online, PID 25255
+[ N 2022-12-22 15:37:12.9881 25255/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+[ E 2022-12-22 15:37:12.9930 25255/T5 Sec/Crypto.cpp:990 ]: Removing Passenger private key from keychain failed: Write permissions error.. Please remove the private key from the certificate labeled Phusion Passenger Open Source in your keychain.
+App 25271 output: "init"
+
+[ N 2022-12-22 15:37:35.0058 25255/T8 age/Cor/CoreMain.cpp:671 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2022-12-22 15:37:35.0058 25255/T1 age/Cor/CoreMain.cpp:1246 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2022-12-22 15:37:35.0059 25255/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 25304, application /Users/andylee/Repos/pokeweb (development)
+[ N 2022-12-22 15:37:35.0064 25255/Ti Ser/Server.h:901 ]: [ServerThr.6] Freed 0 spare client objects
+[ N 2022-12-22 15:37:35.0064 25255/Tc Ser/Server.h:901 ]: [ServerThr.3] Freed 0 spare client objects
+[ N 2022-12-22 15:37:35.0064 25255/Te Ser/Server.h:901 ]: [ServerThr.4] Freed 0 spare client objects
+[ N 2022-12-22 15:37:35.0065 25255/Tq Ser/Server.h:901 ]: [ServerThr.10] Freed 0 spare client objects
+[ N 2022-12-22 15:37:35.0065 25255/Te Ser/Server.h:558 ]: [ServerThr.4] Shutdown finished
+[ N 2022-12-22 15:37:35.0065 25255/Tq Ser/Server.h:558 ]: [ServerThr.10] Shutdown finished
+[ N 2022-12-22 15:37:35.0065 25255/Tu Ser/Server.h:901 ]: [ServerThr.12] Freed 0 spare client objects
+[ N 2022-12-22 15:37:35.0064 25255/Tm Ser/Server.h:901 ]: [ServerThr.8] Freed 0 spare client objects
+[ N 2022-12-22 15:37:35.0066 25255/Tu Ser/Server.h:558 ]: [ServerThr.12] Shutdown finished
+[ N 2022-12-22 15:37:35.0066 25255/Tm Ser/Server.h:558 ]: [ServerThr.8] Shutdown finished
+[ N 2022-12-22 15:37:35.0063 25255/T8 Ser/Server.h:901 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2022-12-22 15:37:35.0063 25255/Ta Ser/Server.h:901 ]: [ServerThr.2] Freed 0 spare client objects
+[ N 2022-12-22 15:37:35.0064 25255/Tg Ser/Server.h:901 ]: [ServerThr.5] Freed 0 spare client objects
+[ N 2022-12-22 15:37:35.0067 25255/Tw Ser/Server.h:901 ]: [ApiServer] Freed 0 spare client objects
+[ N 2022-12-22 15:37:35.0064 25255/To Ser/Server.h:901 ]: [ServerThr.9] Freed 0 spare client objects
+[ N 2022-12-22 15:37:35.0065 25255/Tc Ser/Server.h:558 ]: [ServerThr.3] Shutdown finished
+[ N 2022-12-22 15:37:35.0068 25255/To Ser/Server.h:558 ]: [ServerThr.9] Shutdown finished
+[ N 2022-12-22 15:37:35.0067 25255/Tg Ser/Server.h:558 ]: [ServerThr.5] Shutdown finished
+[ N 2022-12-22 15:37:35.0064 25255/Tk Ser/Server.h:901 ]: [ServerThr.7] Freed 0 spare client objects
+[ N 2022-12-22 15:37:35.0064 25255/Ti Ser/Server.h:558 ]: [ServerThr.6] Shutdown finished
+[ N 2022-12-22 15:37:35.0067 25255/Tw Ser/Server.h:558 ]: [ApiServer] Shutdown finished
+[ N 2022-12-22 15:37:35.0067 25255/T8 Ser/Server.h:558 ]: [ServerThr.1] Shutdown finished
+[ N 2022-12-22 15:37:35.0067 25255/Ta Ser/Server.h:558 ]: [ServerThr.2] Shutdown finished
+[ N 2022-12-22 15:37:35.0069 25255/Tk Ser/Server.h:558 ]: [ServerThr.7] Shutdown finished
+[ N 2022-12-22 15:37:35.0065 25255/Tt Ser/Server.h:901 ]: [ServerThr.11] Freed 0 spare client objects
+[ N 2022-12-22 15:37:35.0070 25255/Tt Ser/Server.h:558 ]: [ServerThr.11] Shutdown finished
+[ N 2022-12-22 15:37:35.0071 25255/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 25304, application /Users/andylee/Repos/pokeweb (development)
+[ N 2022-12-22 15:37:36.2553 25255/T1 age/Cor/CoreMain.cpp:1325 ]: Passenger core shutdown finished

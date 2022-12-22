@@ -3,6 +3,7 @@
 *.nds
 session_settings.json
 /exports
+/xdeltas
 logs.txt
 /__pycache_
 /projects/*
