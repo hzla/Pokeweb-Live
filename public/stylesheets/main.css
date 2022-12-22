@@ -12,6 +12,15 @@
     box-shadow: 10px 0px 10px 0 rgb(0 0 0 / 15%);
 }
 
+.pokemon-filter > form > input, .pokemon-filter > form > select  {
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    margin: 10px 0px;
+    padding: 0px 5px;
+}
+
 #toggle-sheets {
 	margin-top: 40px;
 }

@@ -1,27 +1,49 @@
 
 <div class="pokemon-filter">	
-	<div class="filter-title">Select Rom</div>
-	<select name="rom" id="rom-select">
-		<% @roms.each do |rom| %>
-		    <option value="<%= rom %>"><%= rom %></option>
-	    <% end %>
-	</select>		
+
+	<form action="/extract" method="POST" enctype="multipart/form-data">
+		<div class="filter-title">Upload xdelta</div>
+		<input type="file" id="xdelta" name="filename"></input>
+
+		<div class="filter-title">Set Base Rom</div>
+		<select name="rom_base" id="project-select">
+			<% ["B", "W", "B2", "W2"].each do |rom| %>
+			    <option value="<%= rom %>"><%= rom %></option>
+		    <% end %>
+		</select>
+
+		<div class="filter-title">Name Rom (with .nds)</div>
+		<input id="rom-name" type="text" name="rom_name"></input>
+
+		<div class="filter-title">Set Rom Password</div>
+		<input id="new-rom-pw" type="password" name="password"></input>
+
+		<button class="btn -default" id="load-rom" type="submit">Load</button>
+	</form>
+
 	
-	<button class="btn -default" id="load-rom" type="button">Load</button>
 
-
-	<div class="filter-title">Select Project</div>
-	<select name="rom" id="project-select">
-		<% @projects.each do |rom| %>
-		    <option value="<%= rom %>"><%= rom.split("/")[-1] %></option>
-	    <% end %>
-	</select>		
 	
-	<button class="btn -default" id="load-project" type="button">Load</button>
 
 
-	<div class="filter-title">Password</div>
-	<input id="rom-pw" type="password"></div>
+	<div class="filter-title"> OR </div>
+
+
+
+	<form action="/load_project" method="GET">
+		<div class="filter-title">Select Existing Project</div>
+		<select name="rom" id="project-select">
+			<% @projects.each do |rom| %>
+			    <option value="<%= rom %>"><%= rom.split("/")[-1] %></option>
+		    <% end %>
+		</select>	
+		<div class="filter-title">Password</div>
+		<input id="rom-pw" type="password" name="password"></input>	
+		
+		<button class="btn -default" id="load-project" type="submit">Load</button>
+	</form>
+
+
 </div>
 
 <div class="pokemon-list"></div>

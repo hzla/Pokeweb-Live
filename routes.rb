@@ -52,7 +52,7 @@ get '/' do
 		redirect "/headers"
 	else
 		@roms = Dir["*.nds"]
-		@projects = Dir['projects/*/']
+		@projects = Dir['projects/*']
 
 		erb :index
 	end
@@ -65,23 +65,24 @@ end
 
 get '/load_project' do 
 	
-	pw = params["pw"]
+	pw = params["password"]
+	p params
+	project = params["rom"]
 
 
-	if !Cipher.auth?(params["project"], pw) 
-		return { url: "/rom/new" }.to_json
+	if !Cipher.auth?(project, pw) 
+		redirect '/?wrong_password=true'
 	end
 
 
-	SessionSettings.load_project params["project"]
-	session[:rom_name] = params["project"]
+	SessionSettings.load_project project
+	session[:rom_name] = project
 
 	open('logs.txt', 'a') do |f|
-	  f.puts "#{Time.now}: Loaded Project : #{params['project']}"
+	  f.puts "#{Time.now}: Loaded Project : #{project}"
 	end
 
-	content_type :json
-  	{ url: "/headers" }.to_json
+	redirect '/headers'
 end
 
 # only ever called with ajax
@@ -89,8 +90,32 @@ post '/extract' do
 
 	# params['rom_name'] = params['rom_name']
 	# p params['rom_name']
+
+	p params
 	py = "python3"
-	pw = Cipher.encrypt params['pw']
+	pw = Cipher.encrypt params['password']
+
+	base = params["rom_base"]
+	file = params["filename"]["tempfile"]
+	rom_name = params['rom_name'].split(".")[0]
+
+	File.open("./xdeltas/#{rom_name}.xdelta", 'wb') do |f|
+    	f.write(file.read)
+  	end
+
+
+	# create base rom
+	p "xdelta3 -d -s ./base/blank.nds ./base/#{base}.xdelta ./base/#{base}.nds"
+	system "xdelta3 -d -s ./base/blank.nds ./base/#{base}.xdelta ./base/#{base}.nds"
+
+	# create uploaded rom
+	p "xdelta3 -d -s ./base/#{base}.nds ./xdeltas/#{rom_name}.xdelta #{rom_name}.nds"
+	system "xdelta3 -d -s ./base/#{base}.nds ./xdeltas/#{rom_name}.xdelta #{rom_name}.nds"
+
+
+	# delete base rom
+	system "rm -rf ./base/#{base}.nds"
+
 
 	begin
 		system "#{py} python/header_loader.py #{params['rom_name']} #{pw}"
@@ -109,12 +134,33 @@ post '/extract' do
 	  f.puts "#{Time.now}: Loaded Rom : #{params['rom_name']}"
 	end
 
-	content_type :json
-  	return { url: "/headers" }.to_json
+  	redirect '/headers'
 end
 
-post '/rom/save' do
+get '/rom/save' do
 	py = "python3"
+
+	base = SessionSettings.get "base_version"
+	rom_name = $rom_name.split("/")[1]
+
+
+
+
+	# create base rom
+	p "creating base rom"
+	p "xdelta3 -d -s ./base/blank.nds ./base/#{base}.xdelta ./base/#{base}.nds"
+	# system "xdelta3 -d -s ./base/blank.nds ./base/#{base}.xdelta ./base/#{base}.nds"
+
+	
+
+	# create uploaded rom
+	p "creating edited rom"
+	p "xdelta3 -d -s ./base/#{base}.nds ./xdeltas/#{rom_name}.xdelta #{rom_name}.nds"
+	system "xdelta3 -d -s ./base/#{base}.nds ./xdeltas/#{rom_name}.xdelta #{rom_name}.nds"
+
+	#delete base rom
+	system "rm -rf ./base/#{base}.nds"
+	p "deleting base rom"
 
 	begin
 		save = `#{py} python/rom_saver.py #{$rom_name}`
@@ -122,12 +168,19 @@ post '/rom/save' do
 		py = "python"
 		retry
 	end
-	
-	if save[-3..-1] == "OK\n"
-		return "saved to /exports folder"
-	else
-		return save
-	end
+
+	p "generating xdelta"
+
+	p "xdelta3 -e -s ./base/#{base}.nds ./exports/#{rom_name}.nds ./exports/#{rom_name}_edited.xdelta"
+	system "xdelta3 -e -s ./base/#{base}.nds ./exports/#{rom_name}.nds ./exports/#{rom_name}_edited.xdelta"
+
+	#delete uploaded rom
+	system "rm -rf #{rom_name}.nds"
+	p "deleting base rom"
+
+	system "rm -rf ./exports/#{rom_name}.nds"
+
+	send_file "./exports/#{rom_name}_edited.xdelta", :filename => "#{rom_name}_edited.xdelta" , :type => 'Application/octet-stream'
 end
 
 

@@ -335,3 +335,8 @@ except:
 
 output_tms_json(arm9, rom_name)
 
+
+subprocess.run(['rm', '-rf', sys.argv[1]], check = True)
+
+
+
