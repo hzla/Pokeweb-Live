@@ -2,6 +2,7 @@ require File.expand_path('routes', File.dirname(__FILE__))
 
 
 enable :sessions
-Dotenv.load
+use Rack::Session::Pool, :domain => 'fishbowlweb.cloud', :expire_after => 60 * 60 * 24 * 365
+
 
 run MyApp
