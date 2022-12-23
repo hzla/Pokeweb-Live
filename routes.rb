@@ -157,9 +157,7 @@ class MyApp < Sinatra::Base
 		# create base rom
 		p "creating base rom"
 		p "xdelta3 -d -s ./base/blank.nds ./base/#{base}.xdelta ./base/#{base}.nds"
-		# system "xdelta3 -d -s ./base/blank.nds ./base/#{base}.xdelta ./base/#{base}.nds"
-
-		
+		system "xdelta3 -d -s ./base/blank.nds ./base/#{base}.xdelta ./base/#{base}.nds"
 
 		# create uploaded rom
 		p "creating edited rom"
@@ -171,7 +169,9 @@ class MyApp < Sinatra::Base
 		p "deleting base rom"
 
 		begin
+			p "creating edited rom"
 			save = `#{py} python/rom_saver.py #{$rom_name}`
+			p "edited rom created"
 		rescue
 			py = "python"
 			retry
@@ -180,13 +180,16 @@ class MyApp < Sinatra::Base
 		p "generating xdelta"
 
 		p "xdelta3 -e -s ./base/#{base}.nds ./exports/#{rom_name}.nds ./exports/#{rom_name}_edited.xdelta"
-		system "xdelta3 -e -s ./base/#{base}.nds ./exports/#{rom_name}.nds ./exports/#{rom_name}_edited.xdelta"
+		system "xdelta3 -e -s -f ./base/#{base}.nds ./exports/#{rom_name}.nds ./exports/#{rom_name}_edited.xdelta"
 
 		#delete uploaded rom
 		system "rm -rf #{rom_name}.nds"
-		p "deleting base rom"
+		p "deleting uploaded rom"
 
-		system "rm -rf ./exports/#{rom_name}.nds"
+		#delete uploaded rom
+		system "rm -rf ./exports/#{rom_name}_edited.nds"
+		p "deleting edited rom"
+
 
 		send_file "./exports/#{rom_name}_edited.xdelta", :filename => "#{rom_name}_edited.xdelta" , :type => 'Application/octet-stream'
 	end
