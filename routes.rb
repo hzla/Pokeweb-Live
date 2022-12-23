@@ -151,9 +151,6 @@ class MyApp < Sinatra::Base
 		base = SessionSettings.get "base_version"
 		rom_name = $rom_name.split("/")[1]
 
-
-
-
 		# create base rom
 		p "creating base rom"
 		p "xdelta3 -d -s ./base/blank.nds ./base/#{base}.xdelta ./base/#{base}.nds"
@@ -163,10 +160,6 @@ class MyApp < Sinatra::Base
 		p "creating edited rom"
 		p "xdelta3 -d -s ./base/#{base}.nds ./xdeltas/#{rom_name}.xdelta #{rom_name}.nds"
 		system "xdelta3 -d -s ./base/#{base}.nds ./xdeltas/#{rom_name}.xdelta #{rom_name}.nds"
-
-		#delete base rom
-		system "rm -rf ./base/#{base}.nds"
-		p "deleting base rom"
 
 		begin
 			p "creating edited rom"
@@ -182,11 +175,15 @@ class MyApp < Sinatra::Base
 		p "xdelta3 -e -s ./base/#{base}.nds ./exports/#{rom_name}.nds ./exports/#{rom_name}_edited.xdelta"
 		system "xdelta3 -e -s ./base/#{base}.nds ./exports/#{rom_name}.nds ./exports/#{rom_name}_edited.xdelta"
 
+		#delete base rom
+		system "rm -rf ./base/#{base}.nds"
+		p "deleting base rom"
+
 		#delete uploaded rom
 		system "rm -rf #{rom_name}.nds"
 		p "deleting uploaded rom"
 
-		#delete uploaded rom
+		#delete editted rom
 		system "rm -rf ./exports/#{rom_name}_edited.nds"
 		p "deleting edited rom"
 
