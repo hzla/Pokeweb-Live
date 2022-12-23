@@ -134,7 +134,38 @@ $(document).ready(function() {
     
     //////////////// Rom Buttons //////////////////
 
-    $(document).on('click', '#load-rom', function(){
+    $(document).on('submit', '#rom-form', function(e){
+    	
+    	var rom_name = $('#rom-name').val()
+
+    	if (rom_name.slice(-4) != ".nds" ){
+    		e.preventDefault()
+    		$('#rom-name').css('border', '1px solid red')
+    		alert("rom name must end in .nds")
+    		return 
+    	}
+
+    	rom_name = rom_name.slice(0,-4)
+
+
+
+
+
+    	var project_names = []
+    	$('#project-select option').each(function(){
+    		project_names.push($(this).val().split("/")[1])
+    	})
+
+
+    	console.log(project_names)
+
+    	if (project_names.includes(rom_name)) {
+    		e.preventDefault()
+    		$('#rom-name').css('border', '1px solid red')
+    		alert("That name has already been taken")
+    		return 	
+    	}
+
         // var rom_name = $('#rom-select').val()
         // var pw = $('#rom-pw').val()
         // $(this).text('loading...')

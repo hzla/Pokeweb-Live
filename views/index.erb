@@ -1,22 +1,22 @@
 
 <div class="pokemon-filter">	
 
-	<form action="/extract" method="POST" enctype="multipart/form-data">
+	<form id="rom-form" action="/extract" method="POST" enctype="multipart/form-data">
 		<div class="filter-title">Upload xdelta</div>
-		<input type="file" id="xdelta" name="filename"></input>
+		<input type="file" id="xdelta" name="filename" required></input>
 
 		<div class="filter-title">Set Base Rom</div>
-		<select name="rom_base" id="project-select">
+		<select name="rom_base" id="base-select" required>
 			<% ["B", "W", "B2", "W2"].each do |rom| %>
 			    <option value="<%= rom %>"><%= rom %></option>
 		    <% end %>
 		</select>
 
 		<div class="filter-title">Name Rom (with .nds)</div>
-		<input id="rom-name" type="text" name="rom_name"></input>
+		<input id="rom-name" type="text" name="rom_name" required></input>
 
 		<div class="filter-title">Set Rom Password</div>
-		<input id="new-rom-pw" type="password" name="password"></input>
+		<input id="new-rom-pw" type="password" name="password" required></input>
 
 		<button class="btn -default" id="load-rom" type="submit">Load</button>
 	</form>

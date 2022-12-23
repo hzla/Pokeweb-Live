@@ -111,3 +111,117 @@ App 25271 output: "init"
 [ N 2022-12-22 15:37:35.0070 25255/Tt Ser/Server.h:558 ]: [ServerThr.11] Shutdown finished
 [ N 2022-12-22 15:37:35.0071 25255/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 25304, application /Users/andylee/Repos/pokeweb (development)
 [ N 2022-12-22 15:37:36.2553 25255/T1 age/Cor/CoreMain.cpp:1325 ]: Passenger core shutdown finished
+[ N 2022-12-22 16:35:08.6685 25758/T1 age/Wat/WatchdogMain.cpp:1377 ]: Starting Passenger watchdog...
+[ N 2022-12-22 16:35:08.7013 25760/T1 age/Cor/CoreMain.cpp:1340 ]: Starting Passenger core...
+[ N 2022-12-22 16:35:08.7023 25760/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ N 2022-12-22 16:35:08.7467 25760/T1 age/Cor/CoreMain.cpp:1015 ]: Passenger core online, PID 25760
+[ N 2022-12-22 16:35:11.7403 25760/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+[ E 2022-12-22 16:35:11.7469 25760/T5 Sec/Crypto.cpp:990 ]: Removing Passenger private key from keychain failed: Write permissions error.. Please remove the private key from the certificate labeled Phusion Passenger Open Source in your keychain.
+App 25776 output: "init"
+App 25810 output: {"filename"=>{"filename"=>"b2fairypcenc.xdelta", "type"=>"application/octet-stream", "name"=>"filename", "tempfile"=>#<Tempfile:/var/folders/th/rnc7s7ts4_13_1w48n1wjfwr0000gn/T/RackMultipart20221222-25810-13pf0yo.xdelta>, "head"=>"Content-Disposition: form-data; name=\"filename\"; filename=\"b2fairypcenc.xdelta\"\r\nContent-Type: application/octet-stream\r\n"}, "rom_base"=>"B2", "rom_name"=>"test2.nds", "password"=>"password"}
+App 25810 output: "xdelta3 -d -s ./base/blank.nds ./base/B2.xdelta ./base/B2.nds"
+App 25810 output: xdelta3: file open failed: read: ./base/B2.xdelta: No such file or directory
+App 25810 output: "xdelta3 -d -s ./base/B2.nds ./xdeltas/test2.xdelta test2.nds"
+App 25810 output: xdelta3: file open failed: read: ./base/B2.nds: No such file or directory
+App 25810 output: Traceback (most recent call last):
+App 25810 output:   File "/Users/andylee/Repos/Pokeweb/python/header_loader.py", line 45, in <module>
+App 25810 output:     with open(f'{rom_name.split("/")[-1]}.nds', 'rb') as f:
+App 25810 output: 
+App 25810 output:        
+App 25810 output:   ^^^^^^^^^^^^^^^^^^
+App 25810 output: ^^^^^^^
+App 25810 output: ^^^^^
+App 25810 output: ^^^^^^
+App 25810 output: ^^^^^^
+App 25810 output: ^^
+App 25810 output: FileNotFoundError: [Errno 2] No such file or directory: 'test2.nds'
+App 25810 output: nil
+App 25810 output: 2022-12-22 16:48:23 - Errno::ENOENT - No such file or directory @ rb_sysopen - /json/headers/headers.json:
+App 25810 output: 	/Users/andylee/Repos/Pokeweb/models/header.rb:5:in `initialize'
+App 25810 output: 	/Users/andylee/Repos/Pokeweb/models/header.rb:5:in `open'
+App 25810 output: 	/Users/andylee/Repos/Pokeweb/models/header.rb:5:in `get_all'
+App 25810 output: 	/Users/andylee/Repos/Pokeweb/routes.rb:361:in `block in <class:MyApp>'
+App 25810 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.1.0/lib/sinatra/base.rb:1675:in `call'
+App 25810 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.1.0/lib/sinatra/base.rb:1675:in `block in compile!'
+App 25810 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.1.0/lib/sinatra/base.rb:1013:in `block (3 levels) in route!'
+App 25810 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.1.0/lib/sinatra/base.rb:1032:in `route_eval'
+App 25810 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.1.0/lib/sinatra/base.rb:1013:in `block (2 levels) in route!'
+App 25810 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.1.0/lib/sinatra/base.rb:1061:in `block in process_route'
+App 25810 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.1.0/lib/sinatra/base.rb:1059:in `catch'
+App 25810 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.1.0/lib/sinatra/base.rb:1059:in `process_route'
+App 25810 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.1.0/lib/sinatra/base.rb:1011:in `block in route!'
+App 25810 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.1.0/lib/sinatra/base.rb:1008:in `each'
+App 25810 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.1.0/lib/sinatra/base.rb:1008:in `route!'
+App 25810 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.1.0/lib/sinatra/base.rb:1129:in `block in dispatch!'
+App 25810 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.1.0/lib/sinatra/base.rb:1101:in `block in invoke'
+App 25810 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.1.0/lib/sinatra/base.rb:1101:in `catch'
+App 25810 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.1.0/lib/sinatra/base.rb:1101:in `invoke'
+App 25810 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.1.0/lib/sinatra/base.rb:1124:in `dispatch!'
+App 25810 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.1.0/lib/sinatra/base.rb:939:in `block in call!'
+App 25810 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.1.0/lib/sinatra/base.rb:1101:in `block in invoke'
+App 25810 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.1.0/lib/sinatra/base.rb:1101:in `catch'
+App 25810 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.1.0/lib/sinatra/base.rb:1101:in `invoke'
+App 25810 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.1.0/lib/sinatra/base.rb:939:in `call!'
+App 25810 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.1.0/lib/sinatra/base.rb:929:in `call'
+App 25810 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-2.1.0/lib/rack/protection/xss_header.rb:18:in `call'
+App 25810 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-2.1.0/lib/rack/protection/path_traversal.rb:16:in `call'
+App 25810 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-2.1.0/lib/rack/protection/json_csrf.rb:26:in `call'
+App 25810 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-2.1.0/lib/rack/protection/base.rb:50:in `call'
+App 25810 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-2.1.0/lib/rack/protection/base.rb:50:in `call'
+App 25810 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-2.1.0/lib/rack/protection/frame_options.rb:31:in `call'
+App 25810 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.3/lib/rack/null_logger.rb:11:in `call'
+App 25810 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.3/lib/rack/head.rb:12:in `call'
+App 25810 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.1.0/lib/sinatra/show_exceptions.rb:22:in `call'
+App 25810 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.1.0/lib/sinatra/base.rb:216:in `call'
+App 25810 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.1.0/lib/sinatra/base.rb:1991:in `call'
+App 25810 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.1.0/lib/sinatra/base.rb:1542:in `block in call'
+App 25810 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.1.0/lib/sinatra/base.rb:1769:in `synchronize'
+App 25810 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.1.0/lib/sinatra/base.rb:1542:in `call'
+App 25810 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/rack/thread_handler_extension.rb:107:in `process_request'
+App 25810 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+App 25810 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+App 25810 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler.rb:419:in `block (3 levels) in start_threads'
+App 25810 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+App 25810 output: creating project folders
+App 25810 output: Traceback (most recent call last):
+App 25810 output:   File "/Users/andylee/Repos/Pokeweb/python/rom_loader.py", line 31, in <module>
+App 25810 output:     with open(f'{rom_name}/session_settings.json', "r") as outfile:  
+App 25810 output:          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+App 25810 output: ^^^^^^
+App 25810 output: ^^^^
+App 25810 output: ^^^
+App 25810 output: ^^^
+App 25810 output: FileNotFoundError
+App 25810 output: : [Errno 2] No such file or directory: 'projects/test2/session_settings.json'
+
+[ N 2022-12-22 16:48:33.2655 25760/T8 age/Cor/CoreMain.cpp:671 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2022-12-22 16:48:33.2657 25760/T1 age/Cor/CoreMain.cpp:1246 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2022-12-22 16:48:33.2667 25760/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 25810, application /Users/andylee/Repos/pokeweb (development)
+[ N 2022-12-22 16:48:33.2674 25760/Tb Ser/Server.h:901 ]: [ServerThr.2] Freed 0 spare client objects
+[ N 2022-12-22 16:48:33.2674 25760/Tq Ser/Server.h:901 ]: [ServerThr.10] Freed 0 spare client objects
+[ N 2022-12-22 16:48:33.2674 25760/Tc Ser/Server.h:901 ]: [ServerThr.3] Freed 0 spare client objects
+[ N 2022-12-22 16:48:33.2674 25760/Tl Ser/Server.h:901 ]: [ServerThr.7] Freed 0 spare client objects
+[ N 2022-12-22 16:48:33.2674 25760/Tg Ser/Server.h:901 ]: [ServerThr.5] Freed 0 spare client objects
+[ N 2022-12-22 16:48:33.2674 25760/Ti Ser/Server.h:901 ]: [ServerThr.6] Freed 0 spare client objects
+[ N 2022-12-22 16:48:33.2676 25760/Tc Ser/Server.h:558 ]: [ServerThr.3] Shutdown finished
+[ N 2022-12-22 16:48:33.2674 25760/Tm Ser/Server.h:901 ]: [ServerThr.8] Freed 0 spare client objects
+[ N 2022-12-22 16:48:33.2674 25760/Ts Ser/Server.h:901 ]: [ServerThr.11] Freed 0 spare client objects
+[ N 2022-12-22 16:48:33.2677 25760/Ti Ser/Server.h:558 ]: [ServerThr.6] Shutdown finished
+[ N 2022-12-22 16:48:33.2677 25760/Ts Ser/Server.h:558 ]: [ServerThr.11] Shutdown finished
+[ N 2022-12-22 16:48:33.2677 25760/Tw Ser/Server.h:901 ]: [ApiServer] Freed 0 spare client objects
+[ N 2022-12-22 16:48:33.2676 25760/Tl Ser/Server.h:558 ]: [ServerThr.7] Shutdown finished
+[ N 2022-12-22 16:48:33.2677 25760/Tw Ser/Server.h:558 ]: [ApiServer] Shutdown finished
+[ N 2022-12-22 16:48:33.2675 25760/Tq Ser/Server.h:558 ]: [ServerThr.10] Shutdown finished
+[ N 2022-12-22 16:48:33.2675 25760/Tu Ser/Server.h:901 ]: [ServerThr.12] Freed 0 spare client objects
+[ N 2022-12-22 16:48:33.2675 25760/Tb Ser/Server.h:558 ]: [ServerThr.2] Shutdown finished
+[ N 2022-12-22 16:48:33.2674 25760/To Ser/Server.h:901 ]: [ServerThr.9] Freed 0 spare client objects
+[ N 2022-12-22 16:48:33.2674 25760/Te Ser/Server.h:901 ]: [ServerThr.4] Freed 0 spare client objects
+[ N 2022-12-22 16:48:33.2676 25760/Tg Ser/Server.h:558 ]: [ServerThr.5] Shutdown finished
+[ N 2022-12-22 16:48:33.2677 25760/Tm Ser/Server.h:558 ]: [ServerThr.8] Shutdown finished
+[ N 2022-12-22 16:48:33.2678 25760/Tu Ser/Server.h:558 ]: [ServerThr.12] Shutdown finished
+[ N 2022-12-22 16:48:33.2674 25760/T8 Ser/Server.h:901 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2022-12-22 16:48:33.2679 25760/Te Ser/Server.h:558 ]: [ServerThr.4] Shutdown finished
+[ N 2022-12-22 16:48:33.2678 25760/To Ser/Server.h:558 ]: [ServerThr.9] Shutdown finished
+[ N 2022-12-22 16:48:33.2679 25760/T8 Ser/Server.h:558 ]: [ServerThr.1] Shutdown finished
+[ N 2022-12-22 16:48:33.2680 25760/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 25810, application /Users/andylee/Repos/pokeweb (development)
+[ N 2022-12-22 16:48:34.9991 25760/T1 age/Cor/CoreMain.cpp:1325 ]: Passenger core shutdown finished
