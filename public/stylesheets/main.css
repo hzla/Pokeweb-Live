@@ -12,6 +12,38 @@
     box-shadow: 10px 0px 10px 0 rgb(0 0 0 / 15%);
 }
 
+.text-page-container {
+    padding: 40px 20px;
+}
+
+.page-title {
+    color:  #f2f2f2;
+    width:  100%;
+    text-align: center;
+    font-size: 48px;
+    border-bottom:  2px solid #f2f2f2;
+    padding:  4px 0px;
+}
+
+.page-subtitle {
+    color:  #f2f2f2;
+    width:  100%;
+    text-align: center;
+    font-size: 48px;
+    border-bottom: 1px solid #f2f2f2;
+    padding:  2px 0px;
+}
+
+.text-section {
+    color:  #f2f2f2;
+    font-size:  24px;
+    margin: 20px 40px;
+}
+
+.text-section a {
+    color: #eb2d77;
+}
+
 .pokemon-filter > form > input, .pokemon-filter > form > select  {
     height: 30px;
     border-radius: 5px;

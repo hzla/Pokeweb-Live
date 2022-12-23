@@ -225,3 +225,53 @@ App 25810 output: : [Errno 2] No such file or directory: 'projects/test2/session
 [ N 2022-12-22 16:48:33.2679 25760/T8 Ser/Server.h:558 ]: [ServerThr.1] Shutdown finished
 [ N 2022-12-22 16:48:33.2680 25760/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 25810, application /Users/andylee/Repos/pokeweb (development)
 [ N 2022-12-22 16:48:34.9991 25760/T1 age/Cor/CoreMain.cpp:1325 ]: Passenger core shutdown finished
+[ N 2022-12-22 22:58:11.7345 28040/T1 age/Wat/WatchdogMain.cpp:1377 ]: Starting Passenger watchdog...
+[ N 2022-12-22 22:58:11.7637 28042/T1 age/Cor/CoreMain.cpp:1340 ]: Starting Passenger core...
+[ N 2022-12-22 22:58:11.7644 28042/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ N 2022-12-22 22:58:11.8050 28042/T1 age/Cor/CoreMain.cpp:1015 ]: Passenger core online, PID 28042
+[ N 2022-12-22 22:58:14.6636 28042/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+[ E 2022-12-22 22:58:14.6694 28042/T5 Sec/Crypto.cpp:990 ]: Removing Passenger private key from keychain failed: Write permissions error.. Please remove the private key from the certificate labeled Phusion Passenger Open Source in your keychain.
+App 28060 output: "init"
+App 28093 output: nil
+App 28093 output: nil
+App 28093 output: nil
+App 28093 output: nil
+App 28093 output: nil
+App 28093 output: nil
+App 28093 output: nil
+App 28093 output: nil
+App 28093 output: nil
+App 28093 output: nil
+App 28093 output: nil
+
+[ N 2022-12-22 23:21:25.0531 28042/T8 age/Cor/CoreMain.cpp:671 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2022-12-22 23:21:25.0531 28042/T1 age/Cor/CoreMain.cpp:1246 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2022-12-22 23:21:25.0532 28042/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 28093, application /Users/andylee/Repos/pokeweb (development)
+[ N 2022-12-22 23:21:25.0535 28042/T8 Ser/Server.h:901 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2022-12-22 23:21:25.0536 28042/Tq Ser/Server.h:901 ]: [ServerThr.10] Freed 0 spare client objects
+[ N 2022-12-22 23:21:25.0535 28042/Te Ser/Server.h:901 ]: [ServerThr.4] Freed 0 spare client objects
+[ N 2022-12-22 23:21:25.0535 28042/Ta Ser/Server.h:901 ]: [ServerThr.2] Freed 0 spare client objects
+[ N 2022-12-22 23:21:25.0535 28042/Tk Ser/Server.h:901 ]: [ServerThr.7] Freed 0 spare client objects
+[ N 2022-12-22 23:21:25.0536 28042/Tq Ser/Server.h:558 ]: [ServerThr.10] Shutdown finished
+[ N 2022-12-22 23:21:25.0536 28042/Ti Ser/Server.h:901 ]: [ServerThr.6] Freed 0 spare client objects
+[ N 2022-12-22 23:21:25.0536 28042/Tu Ser/Server.h:901 ]: [ServerThr.12] Freed 0 spare client objects
+[ N 2022-12-22 23:21:25.0536 28042/Tm Ser/Server.h:901 ]: [ServerThr.8] Freed 0 spare client objects
+[ N 2022-12-22 23:21:25.0535 28042/Tg Ser/Server.h:901 ]: [ServerThr.5] Freed 0 spare client objects
+[ N 2022-12-22 23:21:25.0537 28042/Tu Ser/Server.h:558 ]: [ServerThr.12] Shutdown finished
+[ N 2022-12-22 23:21:25.0537 28042/Tk Ser/Server.h:558 ]: [ServerThr.7] Shutdown finished
+[ N 2022-12-22 23:21:25.0536 28042/To Ser/Server.h:901 ]: [ServerThr.9] Freed 0 spare client objects
+[ N 2022-12-22 23:21:25.0538 28042/Tg Ser/Server.h:558 ]: [ServerThr.5] Shutdown finished
+[ N 2022-12-22 23:21:25.0535 28042/Ts Ser/Server.h:901 ]: [ServerThr.11] Freed 0 spare client objects
+[ N 2022-12-22 23:21:25.0538 28042/Tm Ser/Server.h:558 ]: [ServerThr.8] Shutdown finished
+[ N 2022-12-22 23:21:25.0536 28042/T8 Ser/Server.h:558 ]: [ServerThr.1] Shutdown finished
+[ N 2022-12-22 23:21:25.0537 28042/Te Ser/Server.h:558 ]: [ServerThr.4] Shutdown finished
+[ N 2022-12-22 23:21:25.0537 28042/Ti Ser/Server.h:558 ]: [ServerThr.6] Shutdown finished
+[ N 2022-12-22 23:21:25.0535 28042/Tc Ser/Server.h:901 ]: [ServerThr.3] Freed 0 spare client objects
+[ N 2022-12-22 23:21:25.0539 28042/Ts Ser/Server.h:558 ]: [ServerThr.11] Shutdown finished
+[ N 2022-12-22 23:21:25.0538 28042/To Ser/Server.h:558 ]: [ServerThr.9] Shutdown finished
+[ N 2022-12-22 23:21:25.0540 28042/Tc Ser/Server.h:558 ]: [ServerThr.3] Shutdown finished
+[ N 2022-12-22 23:21:25.0537 28042/Ta Ser/Server.h:558 ]: [ServerThr.2] Shutdown finished
+[ N 2022-12-22 23:21:25.0542 28042/Tw Ser/Server.h:901 ]: [ApiServer] Freed 0 spare client objects
+[ N 2022-12-22 23:21:25.0542 28042/Tw Ser/Server.h:558 ]: [ApiServer] Shutdown finished
+[ N 2022-12-22 23:21:25.0542 28042/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 28093, application /Users/andylee/Repos/pokeweb (development)
+[ N 2022-12-22 23:21:26.1396 28042/T1 age/Cor/CoreMain.cpp:1325 ]: Passenger core shutdown finished
