@@ -180,7 +180,7 @@ class MyApp < Sinatra::Base
 		p "generating xdelta"
 
 		p "xdelta3 -e -s ./base/#{base}.nds ./exports/#{rom_name}.nds ./exports/#{rom_name}_edited.xdelta"
-		system "xdelta3 -e -s -f ./base/#{base}.nds ./exports/#{rom_name}.nds ./exports/#{rom_name}_edited.xdelta"
+		system "xdelta3 -e -s ./base/#{base}.nds ./exports/#{rom_name}.nds ./exports/#{rom_name}_edited.xdelta"
 
 		#delete uploaded rom
 		system "rm -rf #{rom_name}.nds"
