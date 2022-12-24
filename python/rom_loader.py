@@ -114,8 +114,6 @@ BW2_MSG_BANKS = [[488, "moves"],
 NARCS = []
 MSG_BANKS = []
 
-
-
 ################### EXTRACT RELEVANT NARCS AND ARM9 #######################
 
 if narc_info["base_rom"] == "BW":
