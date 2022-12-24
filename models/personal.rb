@@ -197,7 +197,7 @@ class Personal
 
 	def self.misc_integer_fields
 		# title to display, field_name in json
-		[["Catch Rate", "catchrate"],["Exp Yield", "base_exp"],["Gender", "gender"],["Hatch Rate", "hatch_cycle"],["Happiness", "base_happy"], ["# of Forms", "num_forms"], ["Form Personal ID", "form_id", "int-65535"], ["Form Sprite Offset", "form", "int-65535", "iv-label"], ["Form Sprite IDs", "form_sprites", "array" ]]
+		[["Catch Rate", "catchrate"],["Exp Yield", "base_exp"],["Gender", "gender"],["Hatch Rate", "hatch_cycle"],["Happiness", "base_happy"], ["# of Forms", "num_forms"]]
 	end
 
 	def self.text_fields

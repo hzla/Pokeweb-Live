@@ -137,6 +137,7 @@ $(document).ready(function() {
     $(document).on('submit', '#rom-form', function(e){
     	
     	var rom_name = $('#rom-name').val()
+    	var file_name = $('#xdelta').val()
 
     	if (rom_name.slice(-4) != ".nds" ){
     		e.preventDefault()
@@ -145,10 +146,21 @@ $(document).ready(function() {
     		return 
     	}
 
+    	if (hasWhiteSpace(rom_name) || hasWhiteSpace(file_name)) {
+    		e.preventDefault()
+    		$('#rom-name').css('border', '1px solid red')
+    		alert("rom name and xdelta file cannot contain spaces")
+    		return
+    	}
+
+ 
+
+
+
+
+
+
     	rom_name = rom_name.slice(0,-4)
-
-
-
 
 
     	var project_names = []
