@@ -186,6 +186,14 @@ $(document).ready(function() {
         // });
     })
 
+
+	$(document).on('change', '#xdelta', function() {
+		if(this.files[0].size > 50000000){
+	       alert("This file is too big, Make sure this is an xdelta between the rom you want to edit and the original base rom and NOT an xdelta between the rom you want to edit and a blank rom. Join DS Hacking Discord https://discord.gg/zAtqJDW2jC for more info");
+	       this.value = "";
+	    };
+	})
+
     $(document).on('click', '#randomize', function(e){
         if (confirm('Randomization is irreversible and will take 4-5 minutes. Are you sure?')) {
         	window.location.href = '/randomize'
@@ -216,6 +224,19 @@ $(document).ready(function() {
     $(document).on('click', '.small-filters button', function(){
     	$(this).toggleClass('-active')
     	filter()
+    })
+
+    $(document).on('click', '#header', function(){
+    	if (screen.width <= 1180) {
+    		$('.header-item').toggle()
+    		$('.header-item.-active').show()
+    	}
+    	
+    })
+
+    $(document).on('swipeup', '#header', function(){
+    	$('.header-item').hide()
+    	$('.header-item.-active').show()
     })
     $(document).on('click', '#search-text-btn', function(){	
     	filter()

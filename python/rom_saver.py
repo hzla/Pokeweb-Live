@@ -44,6 +44,10 @@ try:
 	with open(f'{sys.argv[1]}/session_settings.json', "r") as outfile:  
 		settings = json.load(outfile)
 		edited = settings["edited"] if "edited" in settings else []
+		
+		#run text and script exporters if true
+		if settings["enable_single_npc_dbl_battles"] == True:
+			edited.append("text")
 
 
 		if settings["output_overworlds"] == False:

@@ -182,9 +182,18 @@ class MyApp < Sinatra::Base
 		system "xdelta3 -d -s ./base/blank.nds ./base/#{base}.xdelta ./base/#{base}.nds"
 
 		# create uploaded rom
-		p "creating edited rom"
-		p "xdelta3 -d -s ./base/#{base}.nds ./xdeltas/#{rom_name}.xdelta #{rom_name}.nds"
-		system "xdelta3 -d -s ./base/#{base}.nds ./xdeltas/#{rom_name}.xdelta #{rom_name}.nds"
+
+		if File.size("./xdeltas/#{rom_name}.xdelta") > 50000000
+			# When user chooses to load from base rom, xdelta file will be large
+			p "uploaded rom is base rom"
+			p "cp ./base/#{base}.nds ./#{rom_name}.nds"
+			system "cp ./base/#{base}.nds ./#{rom_name}.nds"
+		else
+			p "creating edited rom"
+			p "xdelta3 -d -s ./base/#{base}.nds ./xdeltas/#{rom_name}.xdelta #{rom_name}.nds"
+			system "xdelta3 -d -s ./base/#{base}.nds ./xdeltas/#{rom_name}.xdelta #{rom_name}.nds"
+		end
+		
 
 		begin
 			p "creating edited rom"
@@ -221,8 +230,7 @@ class MyApp < Sinatra::Base
 	########################################## PERSONAL EDITOR ROUTES ####################
 
 	get '/personal' do
-
-
+		redirect '/' if !$rom_name
 		@poke_data = Personal.poke_data
 		@moves = Move.get_all
 		@move_names = Move.get_names_from @moves
@@ -273,6 +281,12 @@ class MyApp < Sinatra::Base
 		@taken = Personal.unavailable_sprite_indexes
 
 		erb :sprites
+	end
+
+	post '/delete' do 
+		narc_name = params['data']['narc']
+		created = Object.const_get(narc_name.capitalize).delete params["data"]
+		return 200
 	end
 
 
@@ -331,6 +345,7 @@ class MyApp < Sinatra::Base
 	########################################## MOVE EDITOR ROUTES ####################
 
 	get '/moves' do 	
+		redirect '/' if !$rom_name
 		@moves = Move.get_all
 		@move_names = Move.get_names_from @moves
 
@@ -338,6 +353,7 @@ class MyApp < Sinatra::Base
 	end
 
 	get '/tms' do 	
+		redirect '/' if !$rom_name
 		@moves = Move.get_all
 		@tm_moves = Tm.get_tms_from @moves
 		@move_names = Move.get_names_from @moves
@@ -349,10 +365,10 @@ class MyApp < Sinatra::Base
 	####################### Texts ###########################
 
 	get '/story_texts/text/:id' do 
-
+		redirect '/' if !$rom_name
 		bank = "story_texts"
 		n = params[:id]
-		command = "tools/beatertext/BeaterText -d #{$rom_name}/#{bank}/#{n}.bin #{$rom_name}/#{bank}/#{n}.txt"
+		command = "dotnet tools/beatertext/BeaterText.dll -d #{$rom_name}/#{bank}/#{n}.bin #{$rom_name}/#{bank}/#{n}.txt"
 		system command
 
 		texts = File.open("#{$rom_name}/#{bank}/#{n}.txt").read()
@@ -365,10 +381,10 @@ class MyApp < Sinatra::Base
 	end
 
 	get '/message_texts/text/:id' do 
-
+		redirect '/' if !$rom_name
 		bank = "message_texts"
 		n = params[:id]
-		command = "tools/beatertext/BeaterText -d #{$rom_name}/#{bank}/#{n}.bin #{$rom_name}/#{bank}/#{n}.txt"
+		command = "dotnet tools/beatertext/BeaterText.dll -d #{$rom_name}/#{bank}/#{n}.bin #{$rom_name}/#{bank}/#{n}.txt"
 		system command
 
 		texts = File.open("#{$rom_name}/#{bank}/#{n}.txt").read()
@@ -381,9 +397,17 @@ class MyApp < Sinatra::Base
 	end
 
 	post '/texts/:id' do 
+		
 		bank = params["bank"]
 
 		Text.edit_bank params["narc"], params["id"], params["bank"]
+
+		edited_narcs = SessionSettings.get "edited"
+	  if !edited_narcs
+	  	SessionSettings.set "edited", ["text"]
+	  else
+	  	SessionSettings.set "edited", edited_narcs.push("text").uniq
+	  end
 		return 200
 	end
 
@@ -392,6 +416,7 @@ class MyApp < Sinatra::Base
 
 	get '/headers' do 
 		p $rom_name
+		redirect '/' if !$rom_name
 		@header_data = Header.get_all
 		@location_names = Header.location_names
 
@@ -401,6 +426,7 @@ class MyApp < Sinatra::Base
 	####################### ENCOUNTERS ###########################
 
 	get '/encounters' do 
+		redirect '/' if !$rom_name
 		@encounters = Encounter.get_all
 		@location_names = Header.location_names
 
@@ -416,6 +442,8 @@ class MyApp < Sinatra::Base
 	####################### TRAINERS ###########################
 
 	get '/trainers' do 
+		redirect '/' if !$rom_name
+
 		@trainers = Trdata.get_all
 		@trainer_poks = Trpok.get_all
 		@move_names = Move.get_names_from Move.get_all
@@ -494,6 +522,7 @@ class MyApp < Sinatra::Base
 	####################################### ITEMS ###############
 
 	get '/items' do
+		redirect '/' if !$rom_name
 		@items = Item.get_all
 
 		erb :items
@@ -502,15 +531,23 @@ class MyApp < Sinatra::Base
 	####################################### MARTS ###############
 
 	get '/marts' do
+		redirect '/' if !$rom_name
 		@marts = Mart.get_all
 
 		erb :marts
 	end
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> prod
 	####################################### TEXTS ###############
 
 
 	get '/story_texts' do 
+		redirect '/' if !$rom_name
+
 		@narc_name = 'story_texts'
 		@texts = Text.get_all @narc_name
 		@limit = 0
@@ -519,6 +556,8 @@ class MyApp < Sinatra::Base
 	end
 
 	get '/story_texts/search' do 
+		redirect '/' if !$rom_name
+
 		@terms = params[:terms]
 		@narc_name = 'story_texts'
 		@texts = Text.search @narc_name, @terms, params[:ignore_case]
@@ -527,10 +566,16 @@ class MyApp < Sinatra::Base
 		erb :texts
 
 	end
+<<<<<<< HEAD
+=======
+
+>>>>>>> prod
 
 	####################################### GROTTOS ###############
 
 	get '/grottos' do
+		redirect '/' if !$rom_name
+
 		@grottos = Grotto.get_all
 		@odds = Grotto.odds_data["readable"]
 
@@ -547,6 +592,8 @@ class MyApp < Sinatra::Base
 
 
 	get '/info_texts' do 
+		redirect '/' if !$rom_name
+
 		@narc_name = 'message_texts'
 		@texts = Text.get_all @narc_name
 		@limit = 0
@@ -624,6 +671,8 @@ class MyApp < Sinatra::Base
 
 
 	get '/scripts/:id' do 
+		redirect '/' if !$rom_name
+
 		base_rom = SessionSettings.base_rom 
 		id = params[:id]
 
@@ -663,7 +712,8 @@ class MyApp < Sinatra::Base
 	end
 
 	get '/overworlds/:id' do 
-
+		redirect '/' if !$rom_name
+		
 		if !SessionSettings.get("cords_found")
 			MapMatrix.output_cords
 			SessionSettings.set("cords_found", true)
@@ -705,13 +755,13 @@ class MyApp < Sinatra::Base
 	# end
 
 
-	get '/settings/set' do 
-		field = params["field"]
-		current_value = SessionSettings.get(field)
+	# get '/settings/set' do 
+	# 	field = params["field"]
+	# 	current_value = SessionSettings.get(field)
 
-		SessionSettings.set field, !current_value
-		return [SessionSettings.get(field).to_s].to_json
-	end
+	# 	SessionSettings.set field, !current_value
+	# 	return [SessionSettings.get(field).to_s].to_json
+	# end
 
 end
 

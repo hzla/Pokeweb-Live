@@ -83,7 +83,7 @@ class Text
 			f.puts "END_MSG"
 		end
 
-		command = "tools/beatertext/BeaterText -m #{$rom_name}/#{narc}/#{bank_id}_edited.txt #{$rom_name}/#{narc}/#{bank_id}.bin"
+		command = "dotnet tools/beatertext/BeaterText.dll -m #{$rom_name}/#{narc}/#{bank_id}_edited.txt #{$rom_name}/#{narc}/#{bank_id}.bin"
 		pid = spawn command
 		Process.detach(pid)
 
