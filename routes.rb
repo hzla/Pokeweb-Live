@@ -263,6 +263,12 @@ class MyApp < Sinatra::Base
 		erb :sprites
 	end
 
+	post '/delete' do 
+		narc_name = params['data']['narc']
+		created = Object.const_get(narc_name.capitalize).delete params["data"]
+		return 200
+	end
+
 
 	# called by ajax when user makes an edit
 	post '/update' do 

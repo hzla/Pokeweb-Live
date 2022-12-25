@@ -2657,3 +2657,336 @@ App 59165 output: "projects/White2Deluxe"
 App 59165 output: "projects/White2Deluxe"
 App 59165 output: "projects/White2Deluxe"
 App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: {"file_name"=>"1", "field"=>"ability_1", "value"=>"Flash Fire", "narc"=>"personal"}
+App 59165 output: {"file_name"=>"1", "field"=>"ability_1", "value"=>"Flash Fire", "narc"=>"personal"}
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: {"file_name"=>"1", "field"=>"ability_1", "value"=>"Sand Veil", "narc"=>"personal"}
+App 59165 output: {"file_name"=>"1", "field"=>"ability_1", "value"=>"Sand Veil", "narc"=>"personal"}
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: nil
+App 59165 output: nil
+App 59165 output: nil
+App 59165 output: nil
+App 59165 output: nil
+App 59165 output: nil
+App 59165 output: nil
+App 59165 output: nil
+App 59165 output: nil
+App 59165 output: nil
+App 59165 output: nil
+App 59165 output: nil
+App 59165 output: nil
+App 59165 output: nil
+App 59165 output: nil
+App 59165 output: nil
+App 59165 output: {"rom"=>"projects/White2Deluxe", "password"=>"White2Deluxe"}
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "creating base rom"
+App 59165 output: "xdelta3 -d -s ./base/blank.nds ./base/W2.xdelta ./base/W2.nds"
+App 59165 output: "creating edited rom"
+App 59165 output: "xdelta3 -d -s ./base/W2.nds ./xdeltas/White2Deluxe.xdelta White2Deluxe.nds"
+App 59165 output: "creating edited rom"
+App 59165 output: "edited rom created"
+App 59165 output: "generating xdelta"
+App 59165 output: "xdelta3 -e -s ./base/W2.nds ./exports/White2Deluxe.nds ./exports/White2Deluxe_edited.xdelta"
+App 59165 output: "deleting base rom"
+App 59165 output: "deleting uploaded rom"
+App 59165 output: "deleting edited rom"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: {"file_name"=>"3", "field"=>"location_name", "value"=>"Black City", "narc"=>"header"}
+App 59165 output: {"file_name"=>"3", "field"=>"location_name", "value"=>"Black City", "narc"=>"header"}
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: {"file_name"=>"3", "field"=>"location_name", "value"=>"Black City", "narc"=>"header"}
+App 59165 output: {"file_name"=>"3", "field"=>"location_name", "value"=>"Black City", "narc"=>"header"}
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: {"file_name"=>"2", "field"=>"has_moves", "value"=>"1", "narc"=>"trdata", "int"=>"true"}
+App 59165 output: {"file_name"=>"2", "field"=>"has_moves", "value"=>"1", "narc"=>"trdata", "int"=>"true"}
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: {"file_name"=>"2", "field"=>"has_moves", "value"=>"0", "narc"=>"trdata", "int"=>"true"}
+App 59165 output: {"file_name"=>"2", "field"=>"has_moves", "value"=>"0", "narc"=>"trdata", "int"=>"true"}
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: {"file_name"=>"1", "field"=>"location_name", "value"=>"Black City", "narc"=>"header"}
+App 59165 output: {"file_name"=>"1", "field"=>"location_name", "value"=>"Black City", "narc"=>"header"}
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: {"file_name"=>"1", "field"=>"location_name", "value"=>"Black City", "narc"=>"header"}
+App 59165 output: {"file_name"=>"1", "field"=>"location_name", "value"=>"Black City", "narc"=>"header"}
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+App 59165 output: "projects/White2Deluxe"
+
+[ N 2022-12-25 03:23:55.6724 59116/T8 age/Cor/CoreMain.cpp:671 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2022-12-25 03:23:55.6724 59116/T1 age/Cor/CoreMain.cpp:1246 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2022-12-25 03:23:55.6725 59116/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 59165, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2022-12-25 03:23:55.6731 59116/Tf Ser/Server.h:901 ]: [ServerThr.4] Freed 0 spare client objects
+[ N 2022-12-25 03:23:55.6731 59116/T8 Ser/Server.h:901 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2022-12-25 03:23:55.6731 59116/Tc Ser/Server.h:901 ]: [ServerThr.3] Freed 0 spare client objects
+[ N 2022-12-25 03:23:55.6731 59116/To Ser/Server.h:901 ]: [ServerThr.9] Freed 0 spare client objects
+[ N 2022-12-25 03:23:55.6733 59116/Tf Ser/Server.h:558 ]: [ServerThr.4] Shutdown finished
+[ N 2022-12-25 03:23:55.6731 59116/Tk Ser/Server.h:901 ]: [ServerThr.7] Freed 0 spare client objects
+[ N 2022-12-25 03:23:55.6731 59116/Tm Ser/Server.h:901 ]: [ServerThr.8] Freed 0 spare client objects
+[ N 2022-12-25 03:23:55.6731 59116/Ta Ser/Server.h:901 ]: [ServerThr.2] Freed 0 spare client objects
+[ N 2022-12-25 03:23:55.6734 59116/Tm Ser/Server.h:558 ]: [ServerThr.8] Shutdown finished
+[ N 2022-12-25 03:23:55.6734 59116/To Ser/Server.h:558 ]: [ServerThr.9] Shutdown finished
+[ N 2022-12-25 03:23:55.6731 59116/Tg Ser/Server.h:901 ]: [ServerThr.5] Freed 0 spare client objects
+[ N 2022-12-25 03:23:55.6731 59116/Ti Ser/Server.h:901 ]: [ServerThr.6] Freed 0 spare client objects
+[ N 2022-12-25 03:23:55.6732 59116/Tu Ser/Server.h:901 ]: [ServerThr.12] Freed 0 spare client objects
+[ N 2022-12-25 03:23:55.6735 59116/Tw Ser/Server.h:901 ]: [ApiServer] Freed 0 spare client objects
+[ N 2022-12-25 03:23:55.6731 59116/Tq Ser/Server.h:901 ]: [ServerThr.10] Freed 0 spare client objects
+[ N 2022-12-25 03:23:55.6734 59116/T8 Ser/Server.h:558 ]: [ServerThr.1] Shutdown finished
+[ N 2022-12-25 03:23:55.6732 59116/Ts Ser/Server.h:901 ]: [ServerThr.11] Freed 0 spare client objects
+[ N 2022-12-25 03:23:55.6734 59116/Tc Ser/Server.h:558 ]: [ServerThr.3] Shutdown finished
+[ N 2022-12-25 03:23:55.6734 59116/Tk Ser/Server.h:558 ]: [ServerThr.7] Shutdown finished
+[ N 2022-12-25 03:23:55.6735 59116/Tw Ser/Server.h:558 ]: [ApiServer] Shutdown finished
+[ N 2022-12-25 03:23:55.6734 59116/Ta Ser/Server.h:558 ]: [ServerThr.2] Shutdown finished
+[ N 2022-12-25 03:23:55.6736 59116/Tq Ser/Server.h:558 ]: [ServerThr.10] Shutdown finished
+[ N 2022-12-25 03:23:55.6735 59116/Tu Ser/Server.h:558 ]: [ServerThr.12] Shutdown finished
+[ N 2022-12-25 03:23:55.6736 59116/Ts Ser/Server.h:558 ]: [ServerThr.11] Shutdown finished
+[ N 2022-12-25 03:23:55.6735 59116/Ti Ser/Server.h:558 ]: [ServerThr.6] Shutdown finished
+[ N 2022-12-25 03:23:55.6735 59116/Tg Ser/Server.h:558 ]: [ServerThr.5] Shutdown finished
+[ N 2022-12-25 03:23:55.6739 59116/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 59165, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2022-12-25 03:23:56.7784 59116/T1 age/Cor/CoreMain.cpp:1325 ]: Passenger core shutdown finished
+[ N 2022-12-25 03:24:14.9828 62221/T1 age/Wat/WatchdogMain.cpp:1377 ]: Starting Passenger watchdog...
+[ N 2022-12-25 03:24:15.0138 62223/T1 age/Cor/CoreMain.cpp:1340 ]: Starting Passenger core...
+[ N 2022-12-25 03:24:15.0142 62223/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ N 2022-12-25 03:24:15.0496 62223/T1 age/Cor/CoreMain.cpp:1015 ]: Passenger core online, PID 62223
+[ N 2022-12-25 03:24:17.8476 62223/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+[ E 2022-12-25 03:24:17.8537 62223/T5 Sec/Crypto.cpp:990 ]: Removing Passenger private key from keychain failed: Write permissions error.. Please remove the private key from the certificate labeled Phusion Passenger Open Source in your keychain.
+App 62240 output: "init"
+App 62274 output: nil
+App 62274 output: nil
+App 62274 output: nil
+App 62274 output: {"rom"=>"projects/White2Deluxe", "password"=>"White2Deluxe"}
+App 62274 output: "projects/White2Deluxe"
+App 62274 output: "projects/White2Deluxe"
+App 62274 output: "projects/White2Deluxe"
+App 62274 output: "projects/White2Deluxe"
+
+[ N 2022-12-25 03:28:40.8567 62223/T8 age/Cor/CoreMain.cpp:671 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2022-12-25 03:28:40.8568 62223/T1 age/Cor/CoreMain.cpp:1246 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2022-12-25 03:28:40.8568 62223/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 62274, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2022-12-25 03:28:40.8572 62223/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 62282, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2022-12-25 03:28:40.8573 62223/Ta Ser/Server.h:901 ]: [ServerThr.2] Freed 0 spare client objects
+[ N 2022-12-25 03:28:40.8573 62223/To Ser/Server.h:901 ]: [ServerThr.9] Freed 0 spare client objects
+[ N 2022-12-25 03:28:40.8574 62223/Tq Ser/Server.h:901 ]: [ServerThr.10] Freed 0 spare client objects
+[ N 2022-12-25 03:28:40.8574 62223/Tu Ser/Server.h:901 ]: [ServerThr.12] Freed 0 spare client objects
+[ N 2022-12-25 03:28:40.8573 62223/Tf Ser/Server.h:901 ]: [ServerThr.4] Freed 0 spare client objects
+[ N 2022-12-25 03:28:40.8575 62223/Tq Ser/Server.h:558 ]: [ServerThr.10] Shutdown finished
+[ N 2022-12-25 03:28:40.8574 62223/Tc Ser/Server.h:901 ]: [ServerThr.3] Freed 0 spare client objects
+[ N 2022-12-25 03:28:40.8573 62223/T8 Ser/Server.h:901 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2022-12-25 03:28:40.8574 62223/To Ser/Server.h:558 ]: [ServerThr.9] Shutdown finished
+[ N 2022-12-25 03:28:40.8574 62223/Ti Ser/Server.h:901 ]: [ServerThr.6] Freed 0 spare client objects
+[ N 2022-12-25 03:28:40.8574 62223/Tk Ser/Server.h:901 ]: [ServerThr.7] Freed 0 spare client objects
+[ N 2022-12-25 03:28:40.8576 62223/Tw Ser/Server.h:901 ]: [ApiServer] Freed 0 spare client objects
+[ N 2022-12-25 03:28:40.8576 62223/T8 Ser/Server.h:558 ]: [ServerThr.1] Shutdown finished
+[ N 2022-12-25 03:28:40.8574 62223/Tm Ser/Server.h:901 ]: [ServerThr.8] Freed 0 spare client objects
+[ N 2022-12-25 03:28:40.8574 62223/Ts Ser/Server.h:901 ]: [ServerThr.11] Freed 0 spare client objects
+[ N 2022-12-25 03:28:40.8574 62223/Ta Ser/Server.h:558 ]: [ServerThr.2] Shutdown finished
+[ N 2022-12-25 03:28:40.8575 62223/Tf Ser/Server.h:558 ]: [ServerThr.4] Shutdown finished
+[ N 2022-12-25 03:28:40.8577 62223/Ts Ser/Server.h:558 ]: [ServerThr.11] Shutdown finished
+[ N 2022-12-25 03:28:40.8576 62223/Tk Ser/Server.h:558 ]: [ServerThr.7] Shutdown finished
+[ N 2022-12-25 03:28:40.8574 62223/Tu Ser/Server.h:558 ]: [ServerThr.12] Shutdown finished
+[ N 2022-12-25 03:28:40.8577 62223/Tm Ser/Server.h:558 ]: [ServerThr.8] Shutdown finished
+[ N 2022-12-25 03:28:40.8577 62223/Tw Ser/Server.h:558 ]: [ApiServer] Shutdown finished
+[ N 2022-12-25 03:28:40.8573 62223/Th Ser/Server.h:901 ]: [ServerThr.5] Freed 0 spare client objects
+[ N 2022-12-25 03:28:40.8576 62223/Ti Ser/Server.h:558 ]: [ServerThr.6] Shutdown finished
+[ N 2022-12-25 03:28:40.8576 62223/Tc Ser/Server.h:558 ]: [ServerThr.3] Shutdown finished
+[ N 2022-12-25 03:28:40.8579 62223/Th Ser/Server.h:558 ]: [ServerThr.5] Shutdown finished
+[ N 2022-12-25 03:28:40.8580 62223/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 62274, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2022-12-25 03:28:40.8580 62223/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 62282, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2022-12-25 03:28:41.9261 62223/T1 age/Cor/CoreMain.cpp:1325 ]: Passenger core shutdown finished
+[ N 2022-12-25 03:28:42.2300 62431/T1 age/Wat/WatchdogMain.cpp:1377 ]: Starting Passenger watchdog...
+[ N 2022-12-25 03:28:42.2625 62433/T1 age/Cor/CoreMain.cpp:1340 ]: Starting Passenger core...
+[ N 2022-12-25 03:28:42.2629 62433/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ N 2022-12-25 03:28:42.3072 62433/T1 age/Cor/CoreMain.cpp:1015 ]: Passenger core online, PID 62433
+[ N 2022-12-25 03:28:45.0953 62433/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+[ E 2022-12-25 03:28:45.1014 62433/T5 Sec/Crypto.cpp:990 ]: Removing Passenger private key from keychain failed: Write permissions error.. Please remove the private key from the certificate labeled Phusion Passenger Open Source in your keychain.
+App 62449 output: "init"
+App 62482 output: nil
+App 62482 output: nil
+App 62482 output: nil
+App 62482 output: nil
+App 62482 output: {"rom"=>"projects/White2Deluxe", "password"=>"White2Deluxe"}
+App 62482 output: "projects/White2Deluxe"
+App 62482 output: "projects/White2Deluxe"
+App 62482 output: "projects/White2Deluxe"
+App 62482 output: "projects/White2Deluxe"
+
+[ N 2022-12-25 03:29:11.6200 62433/T8 age/Cor/CoreMain.cpp:671 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2022-12-25 03:29:11.6201 62433/T1 age/Cor/CoreMain.cpp:1246 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2022-12-25 03:29:11.6201 62433/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 62482, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2022-12-25 03:29:11.6204 62433/T8 Ser/Server.h:901 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2022-12-25 03:29:11.6204 62433/Tm Ser/Server.h:901 ]: [ServerThr.8] Freed 0 spare client objects
+[ N 2022-12-25 03:29:11.6204 62433/T8 Ser/Server.h:558 ]: [ServerThr.1] Shutdown finished
+[ N 2022-12-25 03:29:11.6204 62433/Tg Ser/Server.h:901 ]: [ServerThr.5] Freed 0 spare client objects
+[ N 2022-12-25 03:29:11.6204 62433/Te Ser/Server.h:901 ]: [ServerThr.4] Freed 0 spare client objects
+[ N 2022-12-25 03:29:11.6205 62433/Tq Ser/Server.h:901 ]: [ServerThr.10] Freed 0 spare client objects
+[ N 2022-12-25 03:29:11.6204 62433/Ts Ser/Server.h:901 ]: [ServerThr.11] Freed 0 spare client objects
+[ N 2022-12-25 03:29:11.6204 62433/Tb Ser/Server.h:901 ]: [ServerThr.2] Freed 0 spare client objects
+[ N 2022-12-25 03:29:11.6204 62433/Tk Ser/Server.h:901 ]: [ServerThr.7] Freed 0 spare client objects
+[ N 2022-12-25 03:29:11.6204 62433/Tc Ser/Server.h:901 ]: [ServerThr.3] Freed 0 spare client objects
+[ N 2022-12-25 03:29:11.6204 62433/Tm Ser/Server.h:558 ]: [ServerThr.8] Shutdown finished
+[ N 2022-12-25 03:29:11.6206 62433/Tk Ser/Server.h:558 ]: [ServerThr.7] Shutdown finished
+[ N 2022-12-25 03:29:11.6205 62433/To Ser/Server.h:901 ]: [ServerThr.9] Freed 0 spare client objects
+[ N 2022-12-25 03:29:11.6205 62433/Te Ser/Server.h:558 ]: [ServerThr.4] Shutdown finished
+[ N 2022-12-25 03:29:11.6207 62433/To Ser/Server.h:558 ]: [ServerThr.9] Shutdown finished
+[ N 2022-12-25 03:29:11.6205 62433/Tg Ser/Server.h:558 ]: [ServerThr.5] Shutdown finished
+[ N 2022-12-25 03:29:11.6204 62433/Ti Ser/Server.h:901 ]: [ServerThr.6] Freed 0 spare client objects
+[ N 2022-12-25 03:29:11.6204 62433/Tu Ser/Server.h:901 ]: [ServerThr.12] Freed 0 spare client objects
+[ N 2022-12-25 03:29:11.6205 62433/Ts Ser/Server.h:558 ]: [ServerThr.11] Shutdown finished
+[ N 2022-12-25 03:29:11.6208 62433/Ti Ser/Server.h:558 ]: [ServerThr.6] Shutdown finished
+[ N 2022-12-25 03:29:11.6206 62433/Tb Ser/Server.h:558 ]: [ServerThr.2] Shutdown finished
+[ N 2022-12-25 03:29:11.6208 62433/Tu Ser/Server.h:558 ]: [ServerThr.12] Shutdown finished
+[ N 2022-12-25 03:29:11.6205 62433/Tq Ser/Server.h:558 ]: [ServerThr.10] Shutdown finished
+[ N 2022-12-25 03:29:11.6207 62433/Tc Ser/Server.h:558 ]: [ServerThr.3] Shutdown finished
+[ N 2022-12-25 03:29:11.6206 62433/Tw Ser/Server.h:901 ]: [ApiServer] Freed 0 spare client objects
+[ N 2022-12-25 03:29:11.6209 62433/Tw Ser/Server.h:558 ]: [ApiServer] Shutdown finished
+[ N 2022-12-25 03:29:11.6209 62433/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 62482, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2022-12-25 03:29:12.6857 62433/T1 age/Cor/CoreMain.cpp:1325 ]: Passenger core shutdown finished

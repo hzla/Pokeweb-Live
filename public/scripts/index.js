@@ -217,6 +217,16 @@ $(document).ready(function() {
     	$(this).toggleClass('-active')
     	filter()
     })
+
+    $(document).on('click', '#header', function(){
+    	$('.header-item').toggle()
+    	$('.header-item.-active').show()
+    })
+
+    $(document).on('swipeup', '#header', function(){
+    	$('.header-item').hide()
+    	$('.header-item.-active').show()
+    })
     $(document).on('click', '#search-text-btn', function(){	
     	filter()
     })
