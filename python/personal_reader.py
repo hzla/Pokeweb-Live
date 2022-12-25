@@ -8,7 +8,7 @@ import tools
 def output_personal_json(narc, rom_name):
 	tools.output_json(narc, "personal", to_readable, rom_name)
 
-def to_readable(raw, file_name):
+def to_readable(raw, file_name, base=5):
 	readable = copy.deepcopy(raw)
 
 	readable["index"] = file_name
@@ -40,9 +40,11 @@ def to_readable(raw, file_name):
 
 	readable["type_2"] = rom_data.TYPES[raw["type_2"]]
 
+
 	readable["item_1"] = rom_data.ITEMS[raw["item_1"]]
 	readable["item_2"] = rom_data.ITEMS[raw["item_2"]]
-	readable["item_3"] = rom_data.ITEMS[raw["item_3"]]
+	
+
 
 	readable["exp_rate"] = rom_data.GROWTHS[raw["exp_rate"]]
 
@@ -51,9 +53,6 @@ def to_readable(raw, file_name):
 
 	readable["ability_1"] = rom_data.ABILITIES[raw["ability_1"]]
 	readable["ability_2"] = rom_data.ABILITIES[raw["ability_2"]]
-	readable["ability_3"] = rom_data.ABILITIES[raw["ability_3"]]
-
-	readable["form_sprites"] = "Default"
 
 	binary_ev = bin(raw["evs"])[2:].zfill(16) 
 	index = 16
@@ -63,6 +62,12 @@ def to_readable(raw, file_name):
 		amount = int(binary_ev[index-2:index],2)
 		readable[ev] = amount
 		index -= 2
+
+	# convert gen5 specific fields
+	if base == 5:
+		readable["item_3"] = rom_data.ITEMS[raw["item_3"]]
+		readable["ability_3"] = rom_data.ABILITIES[raw["ability_3"]]
+		readable["form_sprites"] = "Default"
 
 	return readable
 

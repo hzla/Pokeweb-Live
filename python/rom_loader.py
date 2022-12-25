@@ -12,6 +12,7 @@ import sys
 from multiprocessing import Pool
 import subprocess
 from arm9_reader import output_tms_json
+import hgss_header_reader
 
 from pathlib import Path
 import shutil
@@ -106,9 +107,15 @@ BW2_MSG_BANKS = [[488, "moves"],
 [382, "tr_names"],
 [64, "items"]]
 
-
-
-
+HGSS_NARCS = [['a/0/3/7', "encounters"],
+['a/0/0/2', 'personal'],
+['a/0/3/3', 'learnsets'],
+['a/0/1/1', 'moves'],
+['a/0/3/4', 'evolutions'],
+['a/0/5/5', 'trdata'],
+['a/0/5/6', 'trpok'],
+['a/0/2/8', 'hidden_abilities']] 
+# ha in file index 7
 
 
 NARCS = []
@@ -119,12 +126,11 @@ MSG_BANKS = []
 if narc_info["base_rom"] == "BW":
 	MSG_BANKS = BW_MSG_BANKS
 	NARCS = BW_NARCS
+elif narc_info["base_rom"] == "HGSS":
+	NARCS = HGSS_NARCS
 else:
 	MSG_BANKS = BW2_MSG_BANKS
 	NARCS = BW2_NARCS
-
-if expand_sprites:
-	NARCS.append(["a/0/0/4", "sprites"])
 
 print("extracting narcs")
 
@@ -174,47 +180,49 @@ for narc in NARCS:
 		f.write(file)
 
 
-arm9 = bytearray(open(f'{rom_name}/arm9.bin', "rb").read())
+if narc_info["base_rom"] != "HGSS":
 
-overlay36 = rom.loadArm9Overlays([36])[36]
-overlay16 = rom.loadArm9Overlays([16])[16]
+	arm9 = bytearray(open(f'{rom_name}/arm9.bin', "rb").read())
 
-with open(f'{rom_name}/overlay36.bin', 'wb') as f:
-	f.write(overlay36.data)
+	overlay36 = rom.loadArm9Overlays([36])[36]
+	overlay16 = rom.loadArm9Overlays([16])[16]
 
-with open(f'{rom_name}/overlay16.bin', 'wb') as f:
-	f.write(overlay16.data)
+	with open(f'{rom_name}/overlay36.bin', 'wb') as f:
+		f.write(overlay36.data)
 
-B2_SWARM_OFFSET = 0x00050bfc
-B2_GROTTO_ODDS_OFFSET = 0x00055218
-W2_GROTTO_ODDS_OFFSET = 0x00055218 - 12
+	with open(f'{rom_name}/overlay16.bin', 'wb') as f:
+		f.write(overlay16.data)
 
-if narc_info["base_version"] == "B2":
-	GROTTO_ODDS_OFFSET = B2_GROTTO_ODDS_OFFSET
-else:
-	GROTTO_ODDS_OFFSET = W2_GROTTO_ODDS_OFFSET
+	B2_SWARM_OFFSET = 0x00050bfc
+	B2_GROTTO_ODDS_OFFSET = 0x00055218
+	W2_GROTTO_ODDS_OFFSET = 0x00055218 - 12
 
-################### EXTRACT RELEVANT TEXTS ##################
-print("parsing texts")
+	if narc_info["base_version"] == "B2":
+		GROTTO_ODDS_OFFSET = B2_GROTTO_ODDS_OFFSET
+	else:
+		GROTTO_ODDS_OFFSET = W2_GROTTO_ODDS_OFFSET
 
-msg_file_id = narc_info['message_texts']
+	################### EXTRACT RELEVANT TEXTS ##################
+	print("parsing texts")
+
+	msg_file_id = narc_info['message_texts']
 
 
-with open(f'{rom_name}/message_texts/texts.json', 'r') as f:
-	messages = json.load(f)
-	
-	for msg_bank in MSG_BANKS:
-		text = messages[msg_bank[0]]
+	with open(f'{rom_name}/message_texts/texts.json', 'r') as f:
+		messages = json.load(f)
+		
+		for msg_bank in MSG_BANKS:
+			text = messages[msg_bank[0]]
 
-		with open(f'{rom_name}/texts/{msg_bank[1]}.txt', 'w+') as outfile:
-			for idx, line in enumerate(text):
-				try:
-					line[1] = line[1].replace("―", "").replace("⑮", " F").replace("⑭", " M").replace("⒆⒇", "PkMn").replace("é", "e").encode("ascii", "ignore").decode()
-					outfile.write(line[1] + "\n")
-				except:
-					print(line[1])
-					# code.interact(local=dict(globals(), **locals()))
-					outfile.write(f"Entry {idx}" + "\n")
+			with open(f'{rom_name}/texts/{msg_bank[1]}.txt', 'w+') as outfile:
+				for idx, line in enumerate(text):
+					try:
+						line[1] = line[1].replace("―", "").replace("⑮", " F").replace("⑭", " M").replace("⒆⒇", "PkMn").replace("é", "e").encode("ascii", "ignore").decode()
+						outfile.write(line[1] + "\n")
+					except:
+						print(line[1])
+						# code.interact(local=dict(globals(), **locals()))
+						outfile.write(f"Entry {idx}" + "\n")
 
 	
 
@@ -235,8 +243,9 @@ with open(f'{rom_name}/session_settings.json', "w+") as outfile:
 	json.dump(settings, outfile, indent=4) 
 
 
-with open(f'{rom_name}/grotto_odds.bin', 'wb') as f:
-	f.write(overlay36.data[GROTTO_ODDS_OFFSET:(GROTTO_ODDS_OFFSET + 200)])
+if narc_info["base_rom"] != "HGSS":
+	with open(f'{rom_name}/grotto_odds.bin', 'wb') as f:
+		f.write(overlay36.data[GROTTO_ODDS_OFFSET:(GROTTO_ODDS_OFFSET + 200)])
 
 # code.interact(local=dict(globals(), **locals()))
 
@@ -326,15 +335,20 @@ if narc_info["base_rom"] == "BW2":
 #############################################################
 ####################CONVERT TO JSON #########################
 
+if narc_info["base_rom"] == "hg":
+	hgss_header_reader.output_headers_json(arm9)
+
+
 try:
 	subprocess.run(['python3', 'python/parallel.py', rom_name], check = True)
 except:
 	subprocess.run(['python', 'python/parallel.py', rom_name], check = True)
 
+
 output_tms_json(arm9, rom_name)
-
-
 subprocess.run(['rm', '-rf', sys.argv[1]], check = True)
+
+
 
 
 

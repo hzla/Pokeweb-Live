@@ -16,7 +16,7 @@ import tools
 def output_trdata_json(narc, rom_name):
 	tools.output_json(narc, "trdata", to_readable, rom_name)
 
-def to_readable(raw, file_name):
+def to_readable(raw, file_name, base=5):
 	readable = copy.deepcopy(raw)
 	
 	readable["class"] = rom_data.TRAINER_CLASSES[raw["class"]] 
@@ -33,7 +33,11 @@ def to_readable(raw, file_name):
 		readable[f'item_{n}'] = rom_data.ITEMS[raw[f'item_{n}']]
 
 
-	index = 2
+	if base == 4:
+		index = 8 
+	else:
+		index = 2
+
 	props = bin(raw["template"])[2:].zfill(index) 
 	
 	for prop in rom_data.TEMPLATE_FLAGS:

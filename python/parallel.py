@@ -49,6 +49,8 @@ narcs_to_output = ["trdata", "personal", "learnsets", "moves", "encounters", "it
 # narcs_to_output = ["overworlds"]
 if narc_info["base_rom"] == "BW2":
 	narcs_to_output += ["grottos", "marts", "grotto_odds"]
+elif narc_info["base_rom"] == "HGSS":
+	narcs_to_output = ["personal", "learnsets", "moves", "evolutions", "trdata", "encounters", "hidden_abilities"]
 
 
 rom_name = narc_info["rom_name"]

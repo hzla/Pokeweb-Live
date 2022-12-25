@@ -29,16 +29,22 @@ def set_global_vars(rom_name):
 
 	TM_FORMAT = []
 
-	TM_OFFSETS = {"B": 0x9aaa0, "W": 0x9aab8, "B2": 0x8cc84, "W2": 0x8ccb0 }
+	TM_OFFSETS = {"B": 0x9aaa0, "W": 0x9aab8, "B2": 0x8cc84, "W2": 0x8ccb0, "HG": 0x1000cc }
 
 	TM_OFFSET = TM_OFFSETS[BASE_VERSION]
 
-	for n in range(1, 93):
-		TM_FORMAT.append([2, f'tm_{n}'])
-	for n in range(1, 7):
-		TM_FORMAT.append([2, f'hm_{n}'])
-	for n in range(93, 96):
-		TM_FORMAT.append([2, f'tm_{n}'])
+	if BASE_VERSION == "HG":
+		for n in range(1, 93):
+			TM_FORMAT.append([2, f'tm_{n}'])
+		for n in range(1, 9):
+			TM_FORMAT.append([2, f'hm_{n}'])
+	else:
+		for n in range(1, 93):
+			TM_FORMAT.append([2, f'tm_{n}'])
+		for n in range(1, 7):
+			TM_FORMAT.append([2, f'hm_{n}'])
+		for n in range(93, 96):
+			TM_FORMAT.append([2, f'tm_{n}'])
 
 
 #################################################################

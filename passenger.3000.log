@@ -401,3 +401,206 @@ App 32514 output: [Errno 2] No such file or directory: 'projects/testtest/sessio
 [ N 2022-12-23 23:27:01.7807 32463/Tw Ser/Server.h:558 ]: [ApiServer] Shutdown finished
 [ N 2022-12-23 23:27:01.7815 32463/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 32514, application /Users/andylee/Repos/pokeweb (development)
 [ N 2022-12-23 23:27:02.9551 32463/T1 age/Cor/CoreMain.cpp:1325 ]: Passenger core shutdown finished
+[ N 2022-12-24 14:20:06.4726 35688/T1 age/Wat/WatchdogMain.cpp:1377 ]: Starting Passenger watchdog...
+[ N 2022-12-24 14:20:06.5056 35690/T1 age/Cor/CoreMain.cpp:1340 ]: Starting Passenger core...
+[ N 2022-12-24 14:20:06.5068 35690/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ N 2022-12-24 14:20:06.5487 35690/T1 age/Cor/CoreMain.cpp:1015 ]: Passenger core online, PID 35690
+[ N 2022-12-24 14:20:09.5740 35690/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+[ E 2022-12-24 14:20:09.5813 35690/T5 Sec/Crypto.cpp:990 ]: Removing Passenger private key from keychain failed: Write permissions error.. Please remove the private key from the certificate labeled Phusion Passenger Open Source in your keychain.
+App 35707 output: "init"
+App 35740 output: nil
+App 35740 output: nil
+App 35740 output: nil
+App 35740 output: nil
+App 35740 output: {"filename"=>{"filename"=>"hg-engine.xdelta", "type"=>"application/octet-stream", "name"=>"filename", "tempfile"=>#<Tempfile:/var/folders/th/rnc7s7ts4_13_1w48n1wjfwr0000gn/T/RackMultipart20221224-35740-1ponwd6.xdelta>, "head"=>"Content-Disposition: form-data; name=\"filename\"; filename=\"hg-engine.xdelta\"\r\nContent-Type: application/octet-stream\r\n"}, "rom_base"=>"HG", "rom_name"=>"hge.nds", "password"=>"hge"}
+App 35740 output: "xdelta3 -d -s ./base/blank.nds ./base/HG.xdelta ./base/HG.nds"
+App 35740 output: "xdelta3 -d -s ./base/HG.nds ./xdeltas/hge.xdelta hge.nds"
+App 35740 output: decompressing arm9
+App 35740 output: Traceback (most recent call last):
+App 35740 output:   File "/Users/andylee/Repos/Pokeweb/python/header_loader.py", line 54, in <module>
+App 35740 output:     narc_info["base_version"] = version_identifier[arm9_sample][0]
+App 35740 output: 
+App 35740 output:   
+App 35740 output:       
+App 35740 output:       
+App 35740 output:         
+App 35740 output:          
+App 35740 output:  ~~~~~
+App 35740 output: ~~~~~
+App 35740 output: ~~~~~~~
+App 35740 output: ~^^^^^
+App 35740 output: ^^^^^^^
+App 35740 output: ^
+App 35740 output: KeyError
+App 35740 output: : 12770
+App 35740 output: nil
+App 35740 output: nil
+App 35740 output: 2022-12-24 14:22:03 - Errno::ENOENT - No such file or directory @ rb_sysopen - /json/headers/headers.json:
+App 35740 output: 	/Users/andylee/Repos/Pokeweb/models/header.rb:5:in `initialize'
+App 35740 output: 	/Users/andylee/Repos/Pokeweb/models/header.rb:5:in `open'
+App 35740 output: 	/Users/andylee/Repos/Pokeweb/models/header.rb:5:in `get_all'
+App 35740 output: 	/Users/andylee/Repos/Pokeweb/routes.rb:362:in `block in <class:MyApp>'
+App 35740 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1686:in `call'
+App 35740 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1686:in `block in compile!'
+App 35740 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1023:in `block (3 levels) in route!'
+App 35740 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1042:in `route_eval'
+App 35740 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1023:in `block (2 levels) in route!'
+App 35740 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1071:in `block in process_route'
+App 35740 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1069:in `catch'
+App 35740 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1069:in `process_route'
+App 35740 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1021:in `block in route!'
+App 35740 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1018:in `each'
+App 35740 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1018:in `route!'
+App 35740 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1140:in `block in dispatch!'
+App 35740 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1112:in `block in invoke'
+App 35740 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1112:in `catch'
+App 35740 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1112:in `invoke'
+App 35740 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1135:in `dispatch!'
+App 35740 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:949:in `block in call!'
+App 35740 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1112:in `block in invoke'
+App 35740 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1112:in `catch'
+App 35740 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1112:in `invoke'
+App 35740 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:949:in `call!'
+App 35740 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:938:in `call'
+App 35740 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-2.2.1/lib/rack/protection/xss_header.rb:18:in `call'
+App 35740 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-2.2.1/lib/rack/protection/path_traversal.rb:16:in `call'
+App 35740 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-2.2.1/lib/rack/protection/json_csrf.rb:26:in `call'
+App 35740 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-2.2.1/lib/rack/protection/base.rb:50:in `call'
+App 35740 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-2.2.1/lib/rack/protection/base.rb:50:in `call'
+App 35740 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-2.2.1/lib/rack/protection/frame_options.rb:31:in `call'
+App 35740 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/null_logger.rb:11:in `call'
+App 35740 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/head.rb:12:in `call'
+App 35740 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/show_exceptions.rb:22:in `call'
+App 35740 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:218:in `call'
+App 35740 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1993:in `call'
+App 35740 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1553:in `block in call'
+App 35740 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1769:in `synchronize'
+App 35740 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1553:in `call'
+App 35740 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:266:in `context'
+App 35740 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:260:in `call'
+App 35740 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/rack/thread_handler_extension.rb:107:in `process_request'
+App 35740 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+App 35740 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+App 35740 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler.rb:419:in `block (3 levels) in start_threads'
+App 35740 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+App 35740 output: creating project folders
+App 35740 output: Traceback (most recent call last):
+App 35740 output:   File "/Users/andylee/Repos/Pokeweb/python/rom_loader.py", line 31, in <module>
+App 35740 output:     with open(f'{rom_name}/session_settings.json', "r") as outfile:  
+App 35740 output: 
+App 35740 output:    
+App 35740 output:      
+App 35740 output:  ^^
+App 35740 output: ^^^
+App 35740 output: ^^^
+App 35740 output: ^^^
+App 35740 output: ^^^
+App 35740 output: ^^^
+App 35740 output: ^^^
+App 35740 output: ^^
+App 35740 output: ^^^
+App 35740 output: ^^^^
+App 35740 output: ^^^^
+App 35740 output: ^^^^^
+App 35740 output: ^^^^
+App 35740 output: ^^^^
+App 35740 output: 
+App 35740 output: FileNotFoundError
+App 35740 output: : [Errno 2] No such file or directory: 'projects/hge/session_settings.json'
+App 35740 output: nil
+App 35740 output: {"filename"=>{"filename"=>"hg-engine.xdelta", "type"=>"application/octet-stream", "name"=>"filename", "tempfile"=>#<Tempfile:/var/folders/th/rnc7s7ts4_13_1w48n1wjfwr0000gn/T/RackMultipart20221224-35740-xsc4v7.xdelta>, "head"=>"Content-Disposition: form-data; name=\"filename\"; filename=\"hg-engine.xdelta\"\r\nContent-Type: application/octet-stream\r\n"}, "rom_base"=>"HG", "rom_name"=>"hge.nds", "password"=>"hge"}
+App 35740 output: "xdelta3 -d -s ./base/blank.nds ./base/HG.xdelta ./base/HG.nds"
+App 35740 output: "xdelta3 -d -s ./base/HG.nds ./xdeltas/hge.xdelta hge.nds"
+App 35740 output: xdelta3: to overwrite output file specify -f: hge.nds
+App 35740 output: decompressing arm9
+App 35740 output: {'rom_name': 'projects/hge', 'pw': 'TDJmemFVbDJJRnVFMU9UbnM5Rmlkdz09LS1WZkJGamFHb094ZDJBSUFyUStNN21nPT0=--ffeba4ac744787ca95e75302a04e5950a70fbddd', 'base_version': 'HG', 'base_rom': 'HGSS'}
+App 35740 output: Traceback (most recent call last):
+App 35740 output:   File "/Users/andylee/Repos/Pokeweb/python/header_loader.py", line 135, in <module>
+App 35740 output:     headers_narc_data = ndspy.narc.NARC(rom.files[narc_info["headers"]])
+App 35740 output:  
+App 35740 output:        
+App 35740 output:       
+App 35740 output:      
+App 35740 output:      
+App 35740 output:      
+App 35740 output:    
+App 35740 output:  
+App 35740 output:                  ~
+App 35740 output: ~~~~~~~
+App 35740 output: ~^^
+App 35740 output: ^^^^^^
+App 35740 output: ^^^
+App 35740 output: KeyError: 'headers'
+App 35740 output: nil
+App 35740 output: nil
+App 35740 output: 2022-12-24 14:27:49 - Errno::ENOENT - No such file or directory @ rb_sysopen - /json/headers/headers.json:
+App 35740 output: 	/Users/andylee/Repos/Pokeweb/models/header.rb:5:in `initialize'
+App 35740 output: 	/Users/andylee/Repos/Pokeweb/models/header.rb:5:in `open'
+App 35740 output: 	/Users/andylee/Repos/Pokeweb/models/header.rb:5:in `get_all'
+App 35740 output: 	/Users/andylee/Repos/Pokeweb/routes.rb:362:in `block in <class:MyApp>'
+App 35740 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1686:in `call'
+App 35740 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1686:in `block in compile!'
+App 35740 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1023:in `block (3 levels) in route!'
+App 35740 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1042:in `route_eval'
+App 35740 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1023:in `block (2 levels) in route!'
+App 35740 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1071:in `block in process_route'
+App 35740 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1069:in `catch'
+App 35740 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1069:in `process_route'
+App 35740 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1021:in `block in route!'
+App 35740 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1018:in `each'
+App 35740 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1018:in `route!'
+App 35740 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1140:in `block in dispatch!'
+App 35740 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1112:in `block in invoke'
+App 35740 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1112:in `catch'
+App 35740 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1112:in `invoke'
+App 35740 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1135:in `dispatch!'
+App 35740 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:949:in `block in call!'
+App 35740 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1112:in `block in invoke'
+App 35740 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1112:in `catch'
+App 35740 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1112:in `invoke'
+App 35740 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:949:in `call!'
+App 35740 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:938:in `call'
+App 35740 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-2.2.1/lib/rack/protection/xss_header.rb:18:in `call'
+App 35740 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-2.2.1/lib/rack/protection/path_traversal.rb:16:in `call'
+App 35740 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-2.2.1/lib/rack/protection/json_csrf.rb:26:in `call'
+App 35740 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-2.2.1/lib/rack/protection/base.rb:50:in `call'
+App 35740 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-2.2.1/lib/rack/protection/base.rb:50:in `call'
+App 35740 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-2.2.1/lib/rack/protection/frame_options.rb:31:in `call'
+App 35740 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/null_logger.rb:11:in `call'
+App 35740 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/head.rb:12:in `call'
+App 35740 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/show_exceptions.rb:22:in `call'
+App 35740 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:218:in `call'
+App 35740 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1993:in `call'
+App 35740 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1553:in `block in call'
+App 35740 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1769:in `synchronize'
+App 35740 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1553:in `call'
+App 35740 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:266:in `context'
+App 35740 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:260:in `call'
+App 35740 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/rack/thread_handler_extension.rb:107:in `process_request'
+App 35740 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+App 35740 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+App 35740 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler.rb:419:in `block (3 levels) in start_threads'
+App 35740 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+App 35740 output: creating project folders
+App 35740 output: 
+App 35740 output: projects/hge/json/moves
+App 35740 output: 
+App 35740 output: extracting narcs
+App 35740 output: Traceback (most recent call last):
+App 35740 output:   File "/Users/andylee/Repos/Pokeweb/python/rom_loader.py", line 137, in <module>
+App 35740 output:     
+App 35740 output: file_id = rom.filenames[narc[0]]
+App 35740 output:   
+App 35740 output:       
+App 35740 output:     
+App 35740 output:   ~~
+App 35740 output: ~~~~
+App 35740 output: ~~~~~~
+App 35740 output: ~^^^^
+App 35740 output: ^^^^
+App 35740 output: ^
+App 35740 output:   File "/Users/andylee/.pyenv/versions/3.11.1/lib/python3.11/site-packages/ndspy/fnt.py", line 71, in __getitem__
+App 35740 output:     
+App 35740 output: raise KeyError(f'Unknown key: {key}')
+App 35740 output: KeyError: 
+App 35740 output: 'Unknown key: a/2/8/2'

@@ -6,10 +6,10 @@ import rom_data
 def output_evolutions_json(narc, rom_name):
 	tools.output_json(narc, "evolutions", to_readable, rom_name)
 
-def to_readable(raw, file_name):
+def to_readable(raw, file_name, evo_count=7):
 	readable = copy.deepcopy(raw)
 
-	for n in range(0,7):
+	for n in range(0, evo_count):
 		readable[f'method_{n}'] = rom_data.METHODS[raw[f'method_{n}']]
 		readable[f'target_{n}'] = rom_data.POKEDEX[raw[f'target_{n}']]
 

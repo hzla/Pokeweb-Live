@@ -376,6 +376,202 @@ def set_global_vars(rom_name):
 	NARC_FORMATS["trdata"] = TRDATA_NARC_FORMAT
 
 
+##################################################################################################
+##################################################################################################
+##################################################################################################
+##################################### GEN 4 ##################################################
+
+
+def set_hgss_global_vars(rom_name, expanded=False):
+	global LOCATIONS, ROM_NAME, NARC_FORMATS, POKEDEX, METHODS, ITEMS, MOVES, GROTTO_NAMES, HEADER_LENGTH, MART_LOCATIONS, TYPES, CATEGORIES, EFFECT_CATEGORIES, EFFECTS, STATUSES, TARGETS, STATS, PROPERTIES, RESULT_EFFECTS, EGG_GROUPS, GROWTHS, ABILITIES, TRAINER_CLASSES, BATTLE_TYPES, TRAINER_NAMES, AIS, TEMPLATE_FLAGS, ANIMATION_ID, B_ANIMATION_ID
+
+	with open(f'{rom_name}/session_settings.json', "r") as outfile:  
+		settings = json.load(outfile) 
+		ROM_NAME = settings['rom_name']
+		BASE_ROM = settings['base_rom']
+
+
+	TYPES = ["Normal", "Fighting", "Flying", "Poison", "Ground", "Rock", "Bug", "Ghost", "Steel","Mystery", "Fire", "Water","Grass","Electric","Psychic","Ice","Dragon","Dark"]
+	EGG_GROUPS = ["~","Monster","Water 1","Bug","Flying","Field","Fairy","Grass","Human-Like","Water 3","Mineral","Amorphous","Water 2","Ditto","Dragon","Undiscovered"];
+	GROWTHS = ["Medium Fast","Erratic","Fluctuating","Medium Slow","Fast","Slow","Medium Fast","Medium Fast"]
+	ABILITIES = open(f'texts/abilities.txt', "r").read().splitlines() 
+	ITEMS = open(f'texts/items.txt', mode="r").read().splitlines()
+	POKEDEX = open(f'texts/pokedex.txt', "r").read().splitlines()
+
+	MOVES = open(f'texts/moves.txt', mode="r").read().splitlines()
+	for i,move in enumerate(MOVES):
+		MOVES[i] = re.sub(r'[^A-Za-z0-9 \-]+', '', move)
+
+	CATEGORIES = ["Physical","Special","Status"]
+
+	EFFECT_CATEGORIES = ["No Special Effect", "Status Inflicting","Target Stat Changing","Healing","Chance to Inflict Status","Raising Target's Stat along Attack", "Lowering Target's Stat along Attack","Raise user stats","Lifesteal","OHKO","Weather","Safeguard", "Force Switch Out", "Unique Effect"]
+
+	EFFECTS = open(f'texts/effects.txt', "r").read().splitlines() 
+
+	STATUSES = ["None","Visible","Temporary","Infatuation", "Trapped"]
+
+	TARGETS = ["Selected", "Depends", "Random", "Both", "Foes And Ally", "User", "User Side", "Active Field", "Opponents_Field", "Ally", "Acupressure", "Me First"]
+
+	STATS = ["None", "Attack", "Defense", "Special Attack", "Special Defense", "Speed", "Accuracy", "Evasion", "All"]
+
+	PROPERTIES = ["contact","blocked_by_protect","reflected_by_magic_coat","stolen_by_snatch","copied_by_mirror_move","kings_rock","keep_hp_bar","hide_shadow"]
+
+	RESULT_EFFECTS = open(f'Reference_Files/result_effects.txt', "r").read().splitlines()
+
+	METHODS = open(f'texts/evo_methods.txt', mode="r").read().splitlines()
+
+	TEMPLATE_FLAGS =["has_moves", "has_items", "set_abilities", "set_ball", "set_iv_ev", "set_nature", "shiny_lock", "additional_flags"]
+
+	TRAINER_CLASSES = open(f'texts/tr_classes_hgss.txt', "r").read().splitlines()
+	TRAINER_NAMES = open(f'texts/tr_names_hgss.txt', "r").read().splitlines()
+
+	LOCATIONS = open(f'texts/locations_hgss.txt', mode="r" ,encoding='utf-8').read().splitlines()
+	BATTLE_TYPES = ["Singles", "Doubles"]
+
+	AIS = ["Prioritize Effectiveness",
+	"Evaluate Attacks",
+	"Expert",
+	"Prioritize Status",
+	"Risky Attacks",
+	"Prioritize Damage",
+	"Partner",
+	"Double Battle",
+	"Prioritize Healing",
+	"Utilize Weather",
+	"Harassment",
+	"Roaming Pokemon",
+	"Safari Zone",
+	"Catching Demo"]
+
+	NARC_FORMATS = {}
+
+################## ENCOUNTERS ################################
+
+	ENCOUNTER_NARC_FORMAT = [
+	[1, "walking_rate"],
+	[1, "surf_rate"],
+	[1, "rock_smash_rate"],
+	[1, "old_rod_rate"],
+	[1, "good_rod_rate"],
+	[1, "super_rod_rate"],
+	[2, "padding"]]
+
+	for n in range(0,12):
+		ENCOUNTER_NARC_FORMAT.append([1, f'walking_{n}_level'])
+
+	for time in ["morning", "day", "night"]:
+		for n in range(0,12):
+			ENCOUNTER_NARC_FORMAT.append([2, f'{time}_{n}_species_id'])
+
+	for region in ["hoenn", "sinnoh"]:
+		for n in range(0,2):
+			ENCOUNTER_NARC_FORMAT.append([2, f'{region}_{n}_species_id'])
+
+	method_counts = [5,2,5,5,5]
+	for idx, method in enumerate(["surf", "rock_smash", "old_rod", "good_rod", "super_rod"]):
+		for n in range(0, method_counts[idx]):
+			ENCOUNTER_NARC_FORMAT.append([1, f'{method}_{n}_min_lvl'])
+			ENCOUNTER_NARC_FORMAT.append([1, f'{method}_{n}_max_lvl'])
+			ENCOUNTER_NARC_FORMAT.append([2, f'{method}_{n}_species_id'])
+
+	NARC_FORMATS["encounters"] = ENCOUNTER_NARC_FORMAT
+
+
+################## EVOLUTIONS ################################
+
+
+	EVO_NARC_FORMAT = []
+	evo_count = 7
+	if expanded:
+		evo_count += 2 
+
+	for n in range(0, evo_count):
+		EVO_NARC_FORMAT.append([2, f'method_{n}'])
+		EVO_NARC_FORMAT.append([2, f'param_{n}'])
+		EVO_NARC_FORMAT.append([2, f'target_{n}'])
+
+	NARC_FORMATS["evolutions"] = EVO_NARC_FORMAT
+
+
+################## LEARNSETS ################################
+
+	LEARNSET_NARC_FORMAT = []
+
+	for n in range(20):
+		LEARNSET_NARC_FORMAT.append([2, f'move_id_{n}'])
+		LEARNSET_NARC_FORMAT.append([2, f'lvl_learned_{n}'])
+
+	NARC_FORMATS["learnsets"] = LEARNSET_NARC_FORMAT
+
+
+################## MOVES ################################
+
+	MOVE_NARC_FORMAT = [
+	[2, "effect"],
+	[1, "category"],
+	[1, "power"],
+	[1, 'type'],
+	[1, "accuracy"],
+	[1, "pp"],
+	[1, "effect_chance"],
+	[2, "target"],
+	[1, "priority"],
+	[1, "properties"],
+	[1, "contest_effect"],
+	[1, "contest_type"]]
+
+
+	NARC_FORMATS["moves"] = MOVE_NARC_FORMAT
+
+################## PERSONAL ################################
+
+	PERSONAL_NARC_FORMAT = [[1, "base_hp"],
+	[1,	"base_atk"],
+	[1,	"base_def"],
+	[1,	"base_speed"],
+	[1,	"base_spatk"],
+	[1,	"base_spdef"],
+	[1,	"type_1"],
+	[1,	"type_2"],
+	[1,	"catchrate"],
+	[1,	"base_exp"],
+	[2,	"evs"],
+	[2,	"item_1"],
+	[2,	"item_2"],
+	[1,	"gender"],
+	[1,	"hatch_cycle"],
+	[1,	"base_happy"],
+	[1,	"exp_rate"],
+	[1,	"egg_group_1"],
+	[1,	"egg_group_2"],
+	[1,	"ability_1"],
+	[1,	"ability_2"],
+	[1,	"flee"],
+	[3,	"color"],
+	[4, "tm_1-32"],
+	[4, "tm_33-64"],
+	[4, "tm_65-95+hm_1"],
+	[4, "hm_2-6"]]
+
+
+	NARC_FORMATS["personal"] = PERSONAL_NARC_FORMAT
+
+
+################## TRAINERS ################################
+
+	TRDATA_NARC_FORMAT = [[1, "template"],
+	[1, "class"],
+	[1, "battle_type"],
+	[1, "num_pokemon"],
+	[2, "item_1"],
+	[2, "item_2"],
+	[2, "item_3"],
+	[2, "item_4"],
+	[4, "ai"],
+	[1, "battle_type_2"]
+
+	NARC_FORMATS["trdata"] = TRDATA_NARC_FORMAT
+
 
 
 

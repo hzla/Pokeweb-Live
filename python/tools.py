@@ -16,11 +16,18 @@ from trpok_reader import output_trpok_json
 ################ STANDARD FUNCTIONS FOR MULTI FILE STATIC FORMAT NARCS ###################
 
 def output_narc(narc_name, rom, rom_name):
-	rom_data.set_global_vars(rom_name)
+	
 
 	with open(f'{rom_name}/session_settings.json', "r") as outfile:  
 		settings = json.load(outfile) 
 		NARC_FILE_ID = settings[narc_name]
+		BASE_ROM = settings["base_rom"]
+
+	if BASE_ROM == "HG" or BASE_ROM == "SS" or BASE_ROM == "HG-Engine":
+		rom_data.set_hgss_global_vars(rom_name)
+	else:
+		rom_data.set_global_vars(rom_name)
+
 
 	json_files = os.listdir(f'{rom_data.ROM_NAME}/json/{narc_name}')
 	
