@@ -77,11 +77,11 @@ class Move < Pokenarc
 	end
 
 	def self.effect_fields
-		[{ "field_name" => "effect_category", "label" => "Effect Category", "autofill" => "effect_cats"},
-			{ "field_name" => "result_effect", "label" => "Add. Effects", "autofill" => "result_effects"},
-			{ "field_name" => "effect_chance", "label" => "Add. Effect Proc %", "type" => "int-100"},
-			{ "field_name" => "status", "label" => "Status Type", "autofill" => "status_types"},
+		[	{ "field_name" => "effect_chance", "label" => "Add. Effect Proc %", "type" => "int-100"},
 			{ "field_name" => "target", "label" => "Target", "autofill"=> "targets"},
+			{ "field_name" => "effect_category", "label" => "Effect Category", "autofill" => "effect_cats"},
+			{ "field_name" => "result_effect", "label" => "Add. Effects", "autofill" => "result_effects"},	
+			{ "field_name" => "status", "label" => "Status Type", "autofill" => "status_types"},
 			{ "field_name" => "min_turns", "label" => "Min Effect Turns", "type"=> "int-255"},
 			{ "field_name" => "max_turns", "label" => "Max Effect Turns", "type"=> "int-255"},
 			{ "field_name" => "min_hits", "label" => "Min Hits", "type"=> "int-255"},

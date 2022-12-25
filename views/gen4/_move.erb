@@ -28,7 +28,7 @@
 	
 	<div class="expanded-card-content expanded-move">
 		<div class="expanded-left">
-			<% Move.effect_fields.each do |misc| %>
+			<% Move.effect_fields[0..1].each do |misc| %>
 				<div class="expanded-field">
 					<div class="expanded-field-name"><%= misc["label"] %></div>
 					<div <%= autofill misc %> data-narc="move" data-type="<%= misc['type'] %>" data-field-name="<%= misc['field_name'] %>" class="expanded-field-value" contenteditable="true" data-autofill="<%= misc['autofill'] %>"><%= move[misc["field_name"]] %></div>
@@ -39,7 +39,7 @@
 
 		</div>
 		<div class="expanded-right">				
-			<% Move.misc_int_fields.each do |misc_int| %>
+			<% Move.misc_int_fields[0..1].each do |misc_int| %>
 				<div class="expanded-field">
 					<div class="expanded-field-name"><%= misc_int["label"] %></div>
 					<div data-narc="move" data-type="<%= misc_int['type'] %>" data-field-name="<%= misc_int['field_name'] %>" class="expanded-field-value ev-field" contenteditable="true"><%= move[misc_int["field_name"]] %></div>
@@ -47,7 +47,8 @@
 			<% end %>
 		</div>
 		<div class="expanded-row expanded-move-props" data-narc="move">
-			<% Move.props.each do |prop| %>
+			<!-- TODO add kings rock, shadow, hp bar -->
+			<% Move.props[0..4].each do |prop| %>
 				<% prop_active = (move[prop] == 1 ? '-active' : '') %>
 				<%= svg("svgs/#{prop}".to_sym, "move-prop svg #{prop_active}", ["field-name", prop], "<div  class='prop-info'>#{prop.gsub("_", " ").titleize}</div>") %>
 			<% end %>		

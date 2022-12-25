@@ -333,10 +333,6 @@ if narc_info["base_rom"] == "BW2":
 #############################################################
 ####################CONVERT TO JSON #########################
 
-if narc_info["base_rom"] == "hg":
-	hgss_header_reader.output_headers_json(arm9)
-
-
 try:
 	subprocess.run(['python3', 'python/parallel.py', rom_name], check = True)
 except:

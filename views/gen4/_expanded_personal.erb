@@ -75,7 +75,7 @@
 					<div class="evo-label">Evolves to</div>
 					<%= field "target_#{n}", 'evo-value', {value: evo["target_#{n}"].name_titleize,  narc: "evolution", autofill: "pokemon_names"} %>
 				</div>
-				<div class="expanded-field">
+				<div class="expanded-field evo-last">
 					<div class="evo-label">Form</div>
 					<%= field "target_form_#{n}", 'evo-value', {value: evo["target_form_#{n}"],  narc: "evolution", type: "int-31"} %>
 				</div>

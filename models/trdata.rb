@@ -185,9 +185,11 @@ class Trdata < Pokenarc
 			names = JSON.parse(File.open(file_name, "r"){|f| f.read})[190]
 
 			# File.open('Reference_Files/trainer_names.txt', "r").read.split("\n")
-		else
+		elsif SessionSettings.base_rom == "BW2"
 			file_name = "#{$rom_name}/message_texts/texts.json"
 			names = JSON.parse(File.open(file_name, "r"){|f| f.read})[382]
+		else
+			File.open("#{$rom_name}/texts/tr_names.txt", "r").read.split("\n")
 		end
 	end
 

@@ -34,9 +34,9 @@
 				<div class="hdr-id"><%= n %></div>
 				<%= field 'location_name', 'hdr-location', {value: @header_data[n.to_s]["location_name"],  narc: "header", autofill: "location_names"} %>
 
-				<%= field 'matrix', 'hdr-matrix', {value: @header_data[n.to_s]["matrix"],  narc: "header", type: "int-65535"} %>
+				<%= field 'matrix', 'hdr-matrix', {value: @header_data[n.to_s]["matrix_id"],  narc: "header", type: "int-65535"} %>
 
-				<%= field 'script', 'hdr-script', {value: @header_data[n.to_s]["script"],  narc: "header", type: "int-65535"} %>
+				<%= field 'script', 'hdr-script', {value: @header_data[n.to_s]["script_id"],  narc: "header", type: "int-65535"} %>
 
 				<%= field 'text_bank', 'hdr-texts', {value: @header_data[n.to_s]["text_bank"],  narc: "header", type: "int-65535"} %>
 
@@ -45,7 +45,7 @@
 				<%= svg "svgs/misc_data", 'move-info expand-action expand-header svg no-fill', ["expand", "header"] %>
 			</div>
 			<div class="expanded-card-content expanded-header">
-				<% Header.expanded_fields.each do |col| %>
+				<% Header.hgss_expanded_fields.each do |col| %>
 					<div class="expanded-left" %>
 						
 						<% col.each do |field_name| %>

@@ -43,7 +43,7 @@
 <div class="pokemon-list" id="personals">
 	<% @pokemons.each do |pok|  %>
 		<% if pok %>
-			<%= erb :'_personal', :layout => false, :locals => { :pok => pok } %>
+			<%= erb :'gen4/_personal', :layout => false, :locals => { :pok => pok } %>
 		<% end %>
 	<% end %>
 </div>

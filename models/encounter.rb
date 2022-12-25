@@ -4,7 +4,11 @@ class Encounter < Pokenarc
 	def self.get_all
 		@@narc_name = "encounters"
 		data = super
-		expand_encounter_info(data, Header.get_all)
+		if $subdir == "gen4/"
+			hgss_expand_encounter_info(data)
+		else
+			expand_encounter_info(data, Header.get_all)
+		end
 
 	end
 
@@ -81,6 +85,29 @@ class Encounter < Pokenarc
 	end
 
 
+	def self.hgss_expand_encounter_info(encounter_data)
+		encounter_count = encounter_data.length
+
+		encounter_data.each_with_index do |enc, i|
+			wilds = []
+			
+			hgss_grass_fields.each do |enc_type|
+				(0..11).each do |n|
+					wilds << enc["#{enc_type}_#{n}_species_id"].gsub(/[^0-9A-Za-z\-]/, '').name_titleize
+				end
+			end
+			extra_fields.each_with_index do |enc_type, j|
+				(0..extra_field_counts[j] - 1).each do |n|
+					wilds << enc["#{enc_type}_#{n}_species_id"].gsub(/[^0-9A-Za-z\-]/, '').name_titleize
+				end
+			end
+
+			encounter_data[i]["wilds"] = wilds.reject(&:empty?).uniq
+			encounter_data[i]["wilds"].delete("-----")
+		end
+		encounter_data
+	end
+
 	def self.expand_encounter_info(encounter_data, header_data)
 		header_count = header_data["count"]
 		encounter_count = encounter_data.length
@@ -139,7 +166,29 @@ class Encounter < Pokenarc
 		[60, 30, 5, 4, 1][n]
 	end
 
+	def self.extra_percent_for(n)
+		[60, 30, 5, 4, 1][n]
+	end
+
 	def self.output_documentation
 	end
+
+	def self.hgss_grass_fields
+		["morning", "day", "night"]
+	end
+
+	def self.hgss_water_fields
+		["surf", "surf_special", "super_rod" , "super_rod_special"]
+	end
+
+	def self.extra_fields
+		["surf", "rock_smash", "old_rod", "good_rod", "super_rod", "hoenn", "sinnoh"]
+	end
+
+	def self.extra_field_counts
+		[5,2,5,5,5,2,2]
+	end
+
+
 end
 

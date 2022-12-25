@@ -11,6 +11,7 @@ import msg_reader2
 from header_reader import output_headers_json
 from msg_reader2 import output_texts
 from msg_reader2 import output_scripts
+import hgss_header_reader
 
 
 # code.interact(local=dict(globals(), **locals()))
@@ -134,6 +135,8 @@ with open(f'{rom_name}/session_settings.json', "w") as outfile:
 if narc_info["base_rom"] != "HGSS":
 	headers_narc_data = ndspy.narc.NARC(rom.files[narc_info["headers"]])
 	output_headers_json(headers_narc_data, rom_name)
+else:
+	hgss_header_reader.output_headers_json(arm9, rom_name)
 
 
 

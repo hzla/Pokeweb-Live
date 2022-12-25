@@ -75,6 +75,16 @@ class Header
 		[col_1,col_2,col_3]
 	end
 
+	def self.hgss_expanded_fields
+		col_1 = [[65535, "events_id"], [255, "area_data"], [65535, "map_info"]]
+		col_2 = [[65536, "script_header_id" ],[255, "map_name_textbox_id"], [65535, "music_day"], [65535,"music_night"] ]
+		col_3 = [[255, "weather"],[255, "camera"],[255, "follow_mode"],[255, "permissions"]]
+		[col_1,col_2,col_3]
+	end
+
 
 end
+
+
+
 

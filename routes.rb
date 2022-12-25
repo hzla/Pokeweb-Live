@@ -24,8 +24,6 @@ Dir["models/*.rb"].each {|file| require_relative file}
 p "init"
 
 
-
-
 class MyApp < Sinatra::Base
 	before do
 		# $rom_name = "projects/white2"
@@ -133,6 +131,16 @@ class MyApp < Sinatra::Base
 				command = "#{py} python/rom_loader.py #{params['rom_name']}"
 				pid = spawn command
 				Process.detach(pid)
+				system "cp -r ./texts/. ./projects/#{rom_name}/texts"
+				
+				# use vanilla textfiles for gen4
+				if ["HG", "SS", "PL"].include? base
+					["tr_classes", "tr_names", "locations"].each do |text|
+						system "mv ./projects/#{rom_name}/texts/#{text}_hgss.txt ./projects/#{rom_name}/texts/#{text}.txt "
+					end
+				end
+
+				
 			rescue
 				py = "python"
 				retry
@@ -413,9 +421,9 @@ class MyApp < Sinatra::Base
 		@move_names = Move.get_names_from Move.get_all
 
 
-		@offsets = JSON.parse(File.open("#{$rom_name}/texts/trtexts_offsets.json", "r"){|f| f.read})
-		@text_table = JSON.parse(File.open("#{$rom_name}/texts/trtexts.json", "r"){|f| f.read})
-		@text_bank = JSON.parse(File.open("#{$rom_name}/message_texts/texts.json", "r"){|f| f.read})[381]
+		# @offsets = JSON.parse(File.open("#{$rom_name}/texts/trtexts_offsets.json", "r"){|f| f.read})
+		# @text_table = JSON.parse(File.open("#{$rom_name}/texts/trtexts.json", "r"){|f| f.read})
+		# @text_bank = JSON.parse(File.open("#{$rom_name}/message_texts/texts.json", "r"){|f| f.read})[381]
 
 		@text_types = Trdata.text_types
 

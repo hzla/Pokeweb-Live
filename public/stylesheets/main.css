@@ -882,7 +882,7 @@ div.-active svg * {
 }
 
 [contenteditable]:hover {
-    border: 1px solid #44475a;
+    border: 1px solid #bd93f9;
     box-sizing: border-box;
     cursor: pointer;
 }
@@ -1125,9 +1125,10 @@ div.-active svg * {
     width: 33.33%;
 }
 
-.expanded-evos .expanded-field:nth-child(3n) {
+.expanded-evos .expanded-field.evo-last {
     margin-bottom: 20px;
 }
+
 
 .expanded-evos .expanded-field:last-child {
     margin-bottom: 0px;
