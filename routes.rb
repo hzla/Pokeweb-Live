@@ -372,6 +372,13 @@ class MyApp < Sinatra::Base
 		bank = params["bank"]
 
 		Text.edit_bank params["narc"], params["id"], params["bank"]
+
+		edited_narcs = SessionSettings.get "edited"
+	  if !edited_narcs
+	  	SessionSettings.set "edited", ["text"]
+	  else
+	  	SessionSettings.set "edited", edited_narcs.push("text").uniq
+	  end
 		return 200
 	end
 
