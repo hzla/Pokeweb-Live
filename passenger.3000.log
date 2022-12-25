@@ -2489,3 +2489,18 @@ App 48186 output: "projects/white"
 [ N 2022-12-24 21:47:42.6994 48136/Tw Ser/Server.h:558 ]: [ApiServer] Shutdown finished
 [ N 2022-12-24 21:47:42.7002 48136/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 48186, application /Users/andylee/Repos/Pokeweb (development)
 [ N 2022-12-24 21:47:44.2247 48136/T1 age/Cor/CoreMain.cpp:1325 ]: Passenger core shutdown finished
+2022/12/25 01:05:50 [emerg] 57698#0: bind() to 0.0.0.0:3000 failed (48: Address already in use)
+2022/12/25 01:05:50 [emerg] 57698#0: bind() to 0.0.0.0:3000 failed (48: Address already in use)
+2022/12/25 01:05:50 [emerg] 57698#0: bind() to 0.0.0.0:3000 failed (48: Address already in use)
+2022/12/25 01:05:50 [emerg] 57698#0: bind() to 0.0.0.0:3000 failed (48: Address already in use)
+2022/12/25 01:05:50 [emerg] 57698#0: bind() to 0.0.0.0:3000 failed (48: Address already in use)
+2022/12/25 01:05:50 [emerg] 57698#0: still could not bind()
+[ N 2022-12-25 01:07:40.5910 57762/T1 age/Wat/WatchdogMain.cpp:1377 ]: Starting Passenger watchdog...
+[ N 2022-12-25 01:07:40.6166 57764/T1 age/Cor/CoreMain.cpp:1340 ]: Starting Passenger core...
+[ N 2022-12-25 01:07:40.6169 57764/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ N 2022-12-25 01:07:40.6464 57764/T1 age/Cor/CoreMain.cpp:1015 ]: Passenger core online, PID 57764
+[ N 2022-12-25 01:07:43.4477 57764/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+[ E 2022-12-25 01:07:43.4539 57764/T5 Sec/Crypto.cpp:990 ]: Removing Passenger private key from keychain failed: Write permissions error.. Please remove the private key from the certificate labeled Phusion Passenger Open Source in your keychain.
+App 57780 output: "init"
+App 57813 output: nil
+App 57813 output: nil
