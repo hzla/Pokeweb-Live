@@ -170,9 +170,18 @@ class MyApp < Sinatra::Base
 		system "xdelta3 -d -s ./base/blank.nds ./base/#{base}.xdelta ./base/#{base}.nds"
 
 		# create uploaded rom
-		p "creating edited rom"
-		p "xdelta3 -d -s ./base/#{base}.nds ./xdeltas/#{rom_name}.xdelta #{rom_name}.nds"
-		system "xdelta3 -d -s ./base/#{base}.nds ./xdeltas/#{rom_name}.xdelta #{rom_name}.nds"
+
+		if File.size('./xdeltas/#{rom_name}.xdelta') > 50000000
+			# When user chooses to load from base rom, xdelta file will be large
+			p "uploaded rom is base rom"
+			p "mv ./base/#{base}.nds #{rom_name}.nds"
+			system "mv ./base/#{base}.nds #{rom_name}.nds"
+		else
+			p "creating edited rom"
+			p "xdelta3 -d -s ./base/#{base}.nds ./xdeltas/#{rom_name}.xdelta #{rom_name}.nds"
+			system "xdelta3 -d -s ./base/#{base}.nds ./xdeltas/#{rom_name}.xdelta #{rom_name}.nds"
+		end
+		
 
 		begin
 			p "creating edited rom"
