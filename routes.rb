@@ -340,7 +340,7 @@ class MyApp < Sinatra::Base
 
 		bank = "story_texts"
 		n = params[:id]
-		command = "tools/beatertext/BeaterText -d #{$rom_name}/#{bank}/#{n}.bin #{$rom_name}/#{bank}/#{n}.txt"
+		command = "dotnet tools/beatertext/BeaterText.dll -d #{$rom_name}/#{bank}/#{n}.bin #{$rom_name}/#{bank}/#{n}.txt"
 		system command
 
 		texts = File.open("#{$rom_name}/#{bank}/#{n}.txt").read()
@@ -356,7 +356,7 @@ class MyApp < Sinatra::Base
 
 		bank = "message_texts"
 		n = params[:id]
-		command = "tools/beatertext/BeaterText -d #{$rom_name}/#{bank}/#{n}.bin #{$rom_name}/#{bank}/#{n}.txt"
+		command = "dotnet tools/beatertext/BeaterText.dll -d #{$rom_name}/#{bank}/#{n}.bin #{$rom_name}/#{bank}/#{n}.txt"
 		system command
 
 		texts = File.open("#{$rom_name}/#{bank}/#{n}.txt").read()
