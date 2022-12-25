@@ -11,19 +11,18 @@ from math import floor
 import rom_data
 
 from trpok_reader import output_trpok_json
+import hgss_trpok_reader
 
 
 ################ STANDARD FUNCTIONS FOR MULTI FILE STATIC FORMAT NARCS ###################
 
 def output_narc(narc_name, rom, rom_name):
-	
-
 	with open(f'{rom_name}/session_settings.json', "r") as outfile:  
 		settings = json.load(outfile) 
 		NARC_FILE_ID = settings[narc_name]
 		BASE_ROM = settings["base_rom"]
 
-	if BASE_ROM == "HG" or BASE_ROM == "SS" or BASE_ROM == "HG-Engine":
+	if BASE_ROM == "HGSS":
 		rom_data.set_hgss_global_vars(rom_name)
 	else:
 		rom_data.set_global_vars(rom_name)
@@ -89,8 +88,17 @@ def write_readable_to_raw(file_name, narc_name, to_raw):
 	with open(json_file_path, "w", encoding='ISO8859-1') as outfile: 
 		json.dump(json_data, outfile)
 
-def output_json(narc, narc_name, to_readable, rom_name):
-	rom_data.set_global_vars(rom_name)
+def output_json(narc, narc_name, to_readable, rom_name, base=5):
+	with open(f'{rom_name}/session_settings.json', "r") as outfile:  
+		settings = json.load(outfile) 
+		BASE_ROM = settings["base_rom"]
+
+	if BASE_ROM == "HGSS":
+		rom_data.set_hgss_global_vars(rom_name)
+		base = 4
+	else:
+		rom_data.set_global_vars(rom_name)
+
 	narc_format = rom_data.NARC_FORMATS[narc_name]
 	data_index = 0
 
@@ -103,9 +111,12 @@ def output_json(narc, narc_name, to_readable, rom_name):
 		data_index += 1
 
 	if narc_name == "trdata":
-		output_trpok_json(TRPOK_INFO, rom_name)
+		if BASE_ROM == "HGSS":
+			hgss_trpok_reader.output_trpok_json(TRPOK_INFO, rom_name)
+		else:
+			output_trpok_json(TRPOK_INFO, rom_name)
 
-def read_narc_data(data, narc_format, file_name, narc_name, rom_name, to_readable):
+def read_narc_data(data, narc_format, file_name, narc_name, rom_name, to_readable, base=5):
 	stream = io.BytesIO(data)
 	file = {"raw": {}, "readable": {} }
 	

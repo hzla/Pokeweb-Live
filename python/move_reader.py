@@ -70,7 +70,7 @@ def to_readable(raw, file_name, base=5):
 	
 	if base == 4:
 		index = 8
-	else
+	else:
 		index = 14
 
 	binary_props = bin(raw["properties"])[2:].zfill(index) 

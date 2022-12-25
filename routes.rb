@@ -27,9 +27,6 @@ p "init"
 
 
 class MyApp < Sinatra::Base
-  
-
-
 	before do
 		# $rom_name = "projects/white2"
 		$rom_name = session[:rom_name]
@@ -39,6 +36,13 @@ class MyApp < Sinatra::Base
 		@rom_name = $rom_name.split("/")[1]
 		tabs = ['headers', 'personal', 'trainers', 'encounters', 'moves', 'items', 'marts', 'grottos']
 		
+		if SessionSettings.base_rom == "HGSS"
+			$gen = 4
+			$subdir = "gen4/"
+		else
+			$gen = 5
+			$subdir = ""
+		end
 
 		if SessionSettings.base_rom == "BW"
 			tabs.delete('marts')
@@ -50,7 +54,6 @@ class MyApp < Sinatra::Base
 		if tab_name
 			@title = "- #{tab_name.capitalize}"
 		end
-
 	end
 
 	############# ROM EDITOR ROUTES ###########################
@@ -90,7 +93,7 @@ class MyApp < Sinatra::Base
 		  f.puts "#{Time.now}: Loaded Project : #{project}"
 		end
 
-		redirect '/headers'
+		redirect $subdir + '/headers'
 	end
 
 	# only ever called with ajax
@@ -142,7 +145,7 @@ class MyApp < Sinatra::Base
 		  f.puts "#{Time.now}: Loaded Rom : #{params['rom_name']}"
 		end
 
-	  	redirect '/headers'
+	  	redirect($subdir + '/headers')
 	end
 
 	get '/rom/save' do
@@ -216,7 +219,7 @@ class MyApp < Sinatra::Base
 
 		
 
-		erb :personal
+		erb(($subdir + "personal").to_sym)
 	end
 
 	get '/expanded_personal/:id' do 
@@ -229,7 +232,7 @@ class MyApp < Sinatra::Base
 
 		pok["learnset"] = expand_learnset_data moves, pok["learnset"]
 
-		erb :'_expanded_personal', :layout => false, :locals => { :pok => pok, :tm_names => tm_names, :tutor_moves => tutor_moves, :evolutions => evolutions }
+		erb ($subdir + "_expanded_personal").to_sym, :layout => false, :locals => { :pok => pok, :tm_names => tm_names, :tutor_moves => tutor_moves, :evolutions => evolutions }
 
 	end
 
@@ -245,7 +248,7 @@ class MyApp < Sinatra::Base
 		end
 
 		@pokemons = @poke_data[11..-1]
-		erb :personal_partial, layout: false
+		erb ($subdir + "personal_partial").to_sym, layout: false
 	end
 
 	get '/personal/taken_sprite_indexes' do
@@ -305,7 +308,7 @@ class MyApp < Sinatra::Base
 		@moves = Move.get_all
 		@move_names = Move.get_names_from @moves
 
-		erb :moves
+		erb ($subdir + "moves").to_sym
 	end
 
 	get '/tms' do 	
@@ -366,7 +369,7 @@ class MyApp < Sinatra::Base
 		@header_data = Header.get_all
 		@location_names = Header.location_names
 
-		erb :headers
+		erb ($subdir + "headers").to_sym
 	end
 
 	####################### ENCOUNTERS ###########################
@@ -375,7 +378,7 @@ class MyApp < Sinatra::Base
 		@encounters = Encounter.get_all
 		@location_names = Header.location_names
 
-		erb :encounters
+		erb ($subdir + "encounters").to_sym
 	end
 
 	post '/encounter_season_copy' do 
@@ -402,7 +405,7 @@ class MyApp < Sinatra::Base
 		@class_names = Trdata.class_names
 		
 		
-		erb :trainers
+		erb ($subdir + "trainers").to_sym
 	end
 
 	get '/trainers/:trainer_id/:pok_id/natures/:desired_iv' do 
@@ -473,15 +476,6 @@ class MyApp < Sinatra::Base
 		erb :marts
 	end
 
-	####################################### GROTTOS ###############
-
-	get '/grottos' do
-		@grottos = Grotto.get_all
-		@odds = Grotto.odds_data["readable"]
-
-		erb :grottos
-	end
-
 	####################################### TEXTS ###############
 
 
@@ -501,64 +495,6 @@ class MyApp < Sinatra::Base
 
 		erb :texts
 
-	end
-	########################################## MOVE EDITOR ROUTES ####################
-
-	get '/moves' do 	
-		@moves = Move.get_all
-		
-		@poke_data = Personal.poke_data
-		@move_names = Move.get_names_from @moves
-
-		erb :moves
-	end
-
-	get '/tms' do 	
-		@moves = Move.get_all
-		@tm_moves = Tm.get_tms_from @moves
-		@move_names = Move.get_names_from @moves
-
-		erb :tms
-	end
-
-	####################### HEADERS ###########################
-
-	get '/headers' do 
-		@header_data = Header.get_all
-		@location_names = Header.location_names
-
-		erb :headers
-	end
-
-	####################### ENCOUNTERS ###########################
-
-	get '/encounters' do 
-		@encounters = Encounter.get_all
-		@location_names = Header.location_names
-
-		erb :encounters
-	end
-
-	post '/encounter_season_copy' do 
-		Encounter.copy_season_to_all params["data"]["id"], params["data"]["season"]
-		p params
-		"200 OK"
-	end
-
-	####################################### ITEMS ###############
-
-	get '/items' do
-		@items = Item.get_all
-
-		erb :items
-	end
-
-	####################################### MARTS ###############
-
-	get '/marts' do
-		@marts = Mart.get_all
-
-		erb :marts
 	end
 
 	####################################### GROTTOS ###############
@@ -607,9 +543,6 @@ class MyApp < Sinatra::Base
 		@logs = open('logs.txt', 'a+') do |f|
 		 	f.read.split("\n")
 		end
-
-
-
 		erb :logs
 
 	end
@@ -734,11 +667,11 @@ class MyApp < Sinatra::Base
 
 	##### SETTINGS ########
 
-	get '/settings' do 
-		system "open -a TextEdit #{$rom_name}/session_settings.json"
-		system "start notepad   #{$rom_name}/session_settings.json"
-		return 200
-	end
+	# get '/settings' do 
+	# 	system "open -a TextEdit #{$rom_name}/session_settings.json"
+	# 	system "start notepad   #{$rom_name}/session_settings.json"
+	# 	return 200
+	# end
 
 
 	get '/settings/set' do 

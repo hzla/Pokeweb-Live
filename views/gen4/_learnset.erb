@@ -1,0 +1,18 @@
+<% learnset.each do |move| %>
+	<div class="expanded-field multi">
+		<div data-require="move-name" data-narc="learnset" data-field-name="lvl_learned_<%= move["index"] %>" data-type="int-100" class="move-level" contenteditable="true"><%= move["lvl_learned"] %></div>
+		<div data-require="move-level" data-autocomplete-spy data-autofill="move_names" class="move-name" contenteditable="true" data-narc="learnset" data-field-name="move_id_<%= move["index"] %>"><%= move["move_name"].titleize %></div>
+		<div class="move-type">
+			<button class="btn -<%= move["type"].downcase %> -active" type="button"><%= move["type"] && move["type"][0..2] %></button>
+		</div>
+		<div class="move-cat">
+			<% if move['category'] %> 
+				<%= img "move-#{move['category'].downcase}.png" %>
+			<% else %>
+				<img src="" alt="" style="display: none;">
+			<% end %>
+		</div>
+		<div class="move-power"><%= move["power"] %></div>
+		<div class="move-accuracy"><%= move["accuracy"] %></div>
+	</div>
+<% end %>

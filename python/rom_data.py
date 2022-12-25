@@ -568,7 +568,7 @@ def set_hgss_global_vars(rom_name, expanded=False):
 	[2, "item_3"],
 	[2, "item_4"],
 	[4, "ai"],
-	[1, "battle_type_2"]
+	[1, "battle_type_2"]]
 
 	NARC_FORMATS["trdata"] = TRDATA_NARC_FORMAT
 

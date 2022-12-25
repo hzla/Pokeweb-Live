@@ -604,3 +604,748 @@ App 35740 output:
 App 35740 output: raise KeyError(f'Unknown key: {key}')
 App 35740 output: KeyError: 
 App 35740 output: 'Unknown key: a/2/8/2'
+[ N 2022-12-24 18:51:11.9338 42557/T1 age/Wat/WatchdogMain.cpp:1377 ]: Starting Passenger watchdog...
+[ N 2022-12-24 18:51:11.9658 42559/T1 age/Cor/CoreMain.cpp:1340 ]: Starting Passenger core...
+[ N 2022-12-24 18:51:11.9662 42559/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ N 2022-12-24 18:51:12.0000 42559/T1 age/Cor/CoreMain.cpp:1015 ]: Passenger core online, PID 42559
+[ N 2022-12-24 18:51:14.8289 42559/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+[ E 2022-12-24 18:51:14.8351 42559/T5 Sec/Crypto.cpp:990 ]: Removing Passenger private key from keychain failed: Write permissions error.. Please remove the private key from the certificate labeled Phusion Passenger Open Source in your keychain.
+App 42575 output: "init"
+App 42608 output: nil
+App 42608 output: nil
+App 42608 output: nil
+App 42608 output: {"filename"=>{"filename"=>"hg-engine.xdelta", "type"=>"application/octet-stream", "name"=>"filename", "tempfile"=>#<Tempfile:/var/folders/th/rnc7s7ts4_13_1w48n1wjfwr0000gn/T/RackMultipart20221224-42608-1p8e9dm.xdelta>, "head"=>"Content-Disposition: form-data; name=\"filename\"; filename=\"hg-engine.xdelta\"\r\nContent-Type: application/octet-stream\r\n"}, "rom_base"=>"HG", "rom_name"=>"hg-engine.nds", "password"=>"hg-engine"}
+App 42608 output: "xdelta3 -d -s ./base/blank.nds ./base/HG.xdelta ./base/HG.nds"
+App 42608 output: "xdelta3 -d -s ./base/HG.nds ./xdeltas/hg-engine.xdelta hg-engine.nds"
+App 42608 output: decompressing arm9
+App 42608 output: {'rom_name': 'projects/hg-engine', 'pw': 'VVZuUkpyYzNDM0pMcU55YUlxLzBWcWVMU3BLenNjV2hNQ0ZQYS91YytaMD0tLVdIR0tkb3BJejhHMzRsa1dBVDhOSXc9PQ==--6de99c2f054d607dabea55462187a982a68234b9', 'base_version': 'HG', 'base_rom': 'HGSS'}
+App 42608 output: 2022-12-24 18:51:44 - NoMethodError - undefined method `+' for nil:NilClass:
+App 42608 output: 	/Users/andylee/Repos/Pokeweb/routes.rb:148:in `block in <class:MyApp>'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1686:in `call'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1686:in `block in compile!'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1023:in `block (3 levels) in route!'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1042:in `route_eval'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1023:in `block (2 levels) in route!'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1071:in `block in process_route'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1069:in `catch'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1069:in `process_route'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1021:in `block in route!'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1018:in `each'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1018:in `route!'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1140:in `block in dispatch!'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1112:in `block in invoke'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1112:in `catch'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1112:in `invoke'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1135:in `dispatch!'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:949:in `block in call!'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1112:in `block in invoke'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1112:in `catch'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1112:in `invoke'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:949:in `call!'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:938:in `call'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-2.2.1/lib/rack/protection/xss_header.rb:18:in `call'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-2.2.1/lib/rack/protection/path_traversal.rb:16:in `call'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-2.2.1/lib/rack/protection/json_csrf.rb:26:in `call'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-2.2.1/lib/rack/protection/base.rb:50:in `call'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-2.2.1/lib/rack/protection/base.rb:50:in `call'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-2.2.1/lib/rack/protection/frame_options.rb:31:in `call'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/null_logger.rb:11:in `call'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/head.rb:12:in `call'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/show_exceptions.rb:22:in `call'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:218:in `call'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1993:in `call'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1553:in `block in call'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1769:in `synchronize'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1553:in `call'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:266:in `context'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:260:in `call'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/rack/thread_handler_extension.rb:107:in `process_request'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:157:in `accept_and_process_next_request'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler.rb:419:in `block (3 levels) in start_threads'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+App 42608 output: creating project folders
+App 42608 output: projects/hg-engine/json/moves
+App 42608 output: 
+App 42608 output: extracting narcs
+App 42608 output: Traceback (most recent call last):
+App 42608 output:   File "/Users/andylee/Repos/Pokeweb/python/parallel.py", line 5, in <module>
+App 42608 output:     import rom_data
+App 42608 output: 
+App 42608 output:   File "/Users/andylee/Repos/Pokeweb/python/rom_data.py", line 562
+App 42608 output:     TRDATA_NARC_FORMAT = [[1, "template"],
+App 42608 output:              
+App 42608 output:             ^
+App 42608 output: 
+App 42608 output: SyntaxError: 
+App 42608 output: '[' was never closed
+App 42608 output: Traceback (most recent call last):
+App 42608 output:   File "/Users/andylee/Repos/Pokeweb/python/parallel.py", line 5, in <module>
+App 42608 output:     import rom_data
+App 42608 output:   File "/Users/andylee/Repos/Pokeweb/python/rom_data.py", line 562
+App 42608 output:     TRDATA_NARC_FORMAT = [[1, "template"],
+App 42608 output:             
+App 42608 output:             
+App 42608 output:  ^
+App 42608 output: SyntaxError: '[' was never closed
+App 42608 output: Traceback (most recent call last):
+App 42608 output:   File "/Users/andylee/Repos/Pokeweb/python/rom_loader.py", line 343, in <module>
+App 42608 output:     subprocess.run(['python3', 'python/parallel.py', rom_name], check = True)
+App 42608 output: 
+App 42608 output:   File "/Users/andylee/.pyenv/versions/3.11.1/lib/python3.11/subprocess.py", line 571, in run
+App 42608 output:     
+App 42608 output: raise CalledProcessError(retcode, process.args,
+App 42608 output: subprocess.CalledProcessError
+App 42608 output: : Command '['python3', 'python/parallel.py', 'projects/hg-engine']' returned non-zero exit status 1.
+App 42608 output: 
+App 42608 output: During handling of the above exception, another exception occurred:
+App 42608 output: 
+App 42608 output: Traceback (most recent call last):
+App 42608 output:   File "/Users/andylee/Repos/Pokeweb/python/rom_loader.py", line 345, in <module>
+App 42608 output:     
+App 42608 output: subprocess.run(['python', 'python/parallel.py', rom_name], check = True)
+App 42608 output:   File "/Users/andylee/.pyenv/versions/3.11.1/lib/python3.11/subprocess.py", line 571, in run
+App 42608 output:     
+App 42608 output: raise CalledProcessError(retcode, process.args,
+App 42608 output: subprocess.CalledProcessError: Command '['python', 'python/parallel.py', 'projects/hg-engine']' returned non-zero exit status 1.
+App 42608 output: nil
+App 42608 output: {"filename"=>{"filename"=>"hg-engine.xdelta", "type"=>"application/octet-stream", "name"=>"filename", "tempfile"=>#<Tempfile:/var/folders/th/rnc7s7ts4_13_1w48n1wjfwr0000gn/T/RackMultipart20221224-42608-1cihrmk.xdelta>, "head"=>"Content-Disposition: form-data; name=\"filename\"; filename=\"hg-engine.xdelta\"\r\nContent-Type: application/octet-stream\r\n"}, "rom_base"=>"HG", "rom_name"=>"hg-engine.nds", "password"=>"hg-engine"}
+App 42608 output: "xdelta3 -d -s ./base/blank.nds ./base/HG.xdelta ./base/HG.nds"
+App 42608 output: "xdelta3 -d -s ./base/HG.nds ./xdeltas/hg-engine.xdelta hg-engine.nds"
+App 42608 output: xdelta3: to overwrite output file specify -f: hg-engine.nds
+App 42608 output: decompressing arm9
+App 42608 output: {'rom_name': 'projects/hg-engine', 'pw': 'b1R2THF1MVZ6RlI0dVprN3B6d0VHazVvUWJzSUE0WGpicmpmbGpLMU9GYz0tLUVhQlRKcEZpWW0wRHZxYU1Xb3BKUkE9PQ==--4b2f3da5af3a33840278cf4541c381ca117e6a4c', 'base_version': 'HG', 'base_rom': 'HGSS'}
+App 42608 output: 2022-12-24 18:52:18 - NoMethodError - undefined method `+' for nil:NilClass:
+App 42608 output: 	/Users/andylee/Repos/Pokeweb/routes.rb:148:in `block in <class:MyApp>'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1686:in `call'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1686:in `block in compile!'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1023:in `block (3 levels) in route!'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1042:in `route_eval'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1023:in `block (2 levels) in route!'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1071:in `block in process_route'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1069:in `catch'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1069:in `process_route'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1021:in `block in route!'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1018:in `each'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1018:in `route!'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1140:in `block in dispatch!'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1112:in `block in invoke'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1112:in `catch'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1112:in `invoke'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1135:in `dispatch!'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:949:in `block in call!'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1112:in `block in invoke'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1112:in `catch'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1112:in `invoke'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:949:in `call!'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:938:in `call'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-2.2.1/lib/rack/protection/xss_header.rb:18:in `call'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-2.2.1/lib/rack/protection/path_traversal.rb:16:in `call'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-2.2.1/lib/rack/protection/json_csrf.rb:26:in `call'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-2.2.1/lib/rack/protection/base.rb:50:in `call'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-2.2.1/lib/rack/protection/base.rb:50:in `call'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-2.2.1/lib/rack/protection/frame_options.rb:31:in `call'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/null_logger.rb:11:in `call'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/head.rb:12:in `call'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/show_exceptions.rb:22:in `call'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:218:in `call'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1993:in `call'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1553:in `block in call'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1769:in `synchronize'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1553:in `call'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:266:in `context'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:260:in `call'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/rack/thread_handler_extension.rb:107:in `process_request'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:157:in `accept_and_process_next_request'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler.rb:419:in `block (3 levels) in start_threads'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+App 42608 output: creating project folders
+App 42608 output: projects/hg-engine/json/moves
+App 42608 output: extracting narcs
+App 42608 output: Traceback (most recent call last):
+App 42608 output:   File "/Users/andylee/Repos/Pokeweb/python/parallel.py", line 10, in <module>
+App 42608 output:     
+App 42608 output: from move_reader import output_moves_json
+App 42608 output:   File "/Users/andylee/Repos/Pokeweb/python/move_reader.py", line 73
+App 42608 output:     else
+App 42608 output:        
+App 42608 output:  ^
+App 42608 output: SyntaxError: expected ':'
+App 42608 output: Traceback (most recent call last):
+App 42608 output:   File "/Users/andylee/Repos/Pokeweb/python/parallel.py", line 10, in <module>
+App 42608 output:     from move_reader import output_moves_json
+App 42608 output:   File "/Users/andylee/Repos/Pokeweb/python/move_reader.py", line 73
+App 42608 output:     else
+App 42608 output:         ^
+App 42608 output: SyntaxError: expected ':'
+App 42608 output: Traceback (most recent call last):
+App 42608 output:   File "/Users/andylee/Repos/Pokeweb/python/rom_loader.py", line 343, in <module>
+App 42608 output:     subprocess.run(['python3', 'python/parallel.py', rom_name], check = True)
+App 42608 output: 
+App 42608 output:   File "/Users/andylee/.pyenv/versions/3.11.1/lib/python3.11/subprocess.py", line 571, in run
+App 42608 output:     
+App 42608 output: raise CalledProcessError(retcode, process.args,
+App 42608 output: subprocess
+App 42608 output: .CalledProcessError
+App 42608 output: : Command '['python3', 'python/parallel.py', 'projects/hg-engine']' returned non-zero exit status 1.
+App 42608 output: 
+App 42608 output: 
+App 42608 output: During handling of the above exception, another exception occurred:
+App 42608 output: 
+App 42608 output: Traceback (most recent call last):
+App 42608 output:   File "/Users/andylee/Repos/Pokeweb/python/rom_loader.py", line 345, in <module>
+App 42608 output:     subprocess.run(['python', 'python/parallel.py', rom_name], check = True)
+App 42608 output: 
+App 42608 output:   File "/Users/andylee/.pyenv/versions/3.11.1/lib/python3.11/subprocess.py", line 571, in run
+App 42608 output:     raise CalledProcessError(retcode, process.args,
+App 42608 output: subprocess.CalledProcessError: Command '['python', 'python/parallel.py', 'projects/hg-engine']' returned non-zero exit status 1.
+App 42608 output: 
+App 42608 output: nil
+App 42608 output: {"filename"=>{"filename"=>"hg-engine.xdelta", "type"=>"application/octet-stream", "name"=>"filename", "tempfile"=>#<Tempfile:/var/folders/th/rnc7s7ts4_13_1w48n1wjfwr0000gn/T/RackMultipart20221224-42608-v8assz.xdelta>, "head"=>"Content-Disposition: form-data; name=\"filename\"; filename=\"hg-engine.xdelta\"\r\nContent-Type: application/octet-stream\r\n"}, "rom_base"=>"HG", "rom_name"=>"hg-engine.nds", "password"=>"asdf"}
+App 42608 output: "xdelta3 -d -s ./base/blank.nds ./base/HG.xdelta ./base/HG.nds"
+App 42608 output: "xdelta3 -d -s ./base/HG.nds ./xdeltas/hg-engine.xdelta hg-engine.nds"
+App 42608 output: xdelta3: to overwrite output file specify -f: hg-engine.nds
+App 42608 output: decompressing arm9
+App 42608 output: {'rom_name': 'projects/hg-engine', 'pw': 'RUlFbTdJUUhvZnh2QnBTbTlYZHZiQT09LS1UWlAzK0M3blEwNmI1RGdtZ3F5VUF3PT0=--94faee709471105103db56a83e455b43681f8990', 'base_version': 'HG', 'base_rom': 'HGSS'}
+App 42608 output: 2022-12-24 18:52:46 - NoMethodError - undefined method `+' for nil:NilClass:
+App 42608 output: 	/Users/andylee/Repos/Pokeweb/routes.rb:148:in `block in <class:MyApp>'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1686:in `call'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1686:in `block in compile!'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1023:in `block (3 levels) in route!'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1042:in `route_eval'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1023:in `block (2 levels) in route!'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1071:in `block in process_route'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1069:in `catch'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1069:in `process_route'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1021:in `block in route!'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1018:in `each'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1018:in `route!'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1140:in `block in dispatch!'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1112:in `block in invoke'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1112:in `catch'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1112:in `invoke'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1135:in `dispatch!'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:949:in `block in call!'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1112:in `block in invoke'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1112:in `catch'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1112:in `invoke'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:949:in `call!'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:938:in `call'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-2.2.1/lib/rack/protection/xss_header.rb:18:in `call'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-2.2.1/lib/rack/protection/path_traversal.rb:16:in `call'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-2.2.1/lib/rack/protection/json_csrf.rb:26:in `call'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-2.2.1/lib/rack/protection/base.rb:50:in `call'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-2.2.1/lib/rack/protection/base.rb:50:in `call'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-2.2.1/lib/rack/protection/frame_options.rb:31:in `call'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/null_logger.rb:11:in `call'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/head.rb:12:in `call'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/show_exceptions.rb:22:in `call'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:218:in `call'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1993:in `call'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1553:in `block in call'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1769:in `synchronize'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1553:in `call'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:266:in `context'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:260:in `call'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/rack/thread_handler_extension.rb:107:in `process_request'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:157:in `accept_and_process_next_request'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler.rb:419:in `block (3 levels) in start_threads'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+App 42608 output: creating project folders
+App 42608 output: projects/hg-engine/json/moves
+App 42608 output: extracting narcs
+App 42608 output: settings up processing pools
+App 42608 output: outputing narcs
+App 42608 output: multiprocessing.pool.
+App 42608 output: RemoteTraceback
+App 42608 output: : 
+App 42608 output: 
+App 42608 output: """
+App 42608 output: Traceback (most recent call last):
+App 42608 output:   File "/Users/andylee/.pyenv/versions/3.11.1/lib/python3.11/multiprocessing/pool.py", line 125, in worker
+App 42608 output:     result = (True, func(*args, **kwds))
+App 42608 output:                     ^^^^^^^^^^^^^^^^^^^
+App 42608 output:   File "/Users/andylee/.pyenv/versions/3.11.1/lib/python3.11/multiprocessing/pool.py", line 48, in mapstar
+App 42608 output:     return list(map(*args))
+App 42608 output:            ^^^^^^^^^^^^^^^^
+App 42608 output:   File "/Users/andylee/Repos/Pokeweb/python/parallel.py", line 34, in output
+App 42608 output:     eval(f'output_{narc}_json')(narc_data, rom_name)
+App 42608 output:   File "/Users/andylee/Repos/Pokeweb/python/learnset_reader.py", line 10, in output_learnsets_json
+App 42608 output:     tools.output_json(narc, "learnsets", to_readable, rom_name)
+App 42608 output:   File "/Users/andylee/Repos/Pokeweb/python/tools.py", line 91, in output_json
+App 42608 output:     rom_data.set_global_vars(rom_name)
+App 42608 output:   File "/Users/andylee/Repos/Pokeweb/python/rom_data.py", line 18, in set_global_vars
+App 42608 output:     ANIMATION_ID = settings["move_animations"]
+App 42608 output:                    ~~~~~~~~^^^^^^^^^^^^^^^^^^^
+App 42608 output: KeyError: 'move_animations'
+App 42608 output: """
+App 42608 output: 
+App 42608 output: The above exception was the direct cause of the following exception:
+App 42608 output: 
+App 42608 output: Traceback (most recent call last):
+App 42608 output:   File "/Users/andylee/Repos/Pokeweb/python/parallel.py", line 69, in <module>
+App 42608 output:     
+App 42608 output: pool.map(output, narcs_to_output)
+App 42608 output:   File "/Users/andylee/.pyenv/versions/3.11.1/lib/python3.11/multiprocessing/pool.py", line 367, in map
+App 42608 output:     
+App 42608 output: return self._map_async(func, iterable, mapstar, chunksize).get()
+App 42608 output:  
+App 42608 output:           ^^^^^^^^
+App 42608 output: ^^^^^^
+App 42608 output: ^^^^^^
+App 42608 output: ^^^^^^
+App 42608 output: ^^^^^^^
+App 42608 output: ^^^^^^^
+App 42608 output: ^^^^^^
+App 42608 output: ^^^^^^^
+App 42608 output: ^^^^
+App 42608 output:   File "/Users/andylee/.pyenv/versions/3.11.1/lib/python3.11/multiprocessing/pool.py", line 774, in get
+App 42608 output:     raise self._value
+App 42608 output: 
+App 42608 output: KeyError: 'move_animations'
+App 42608 output: settings up processing pools
+App 42608 output: outputing narcs
+App 42608 output: multiprocessing.pool.
+App 42608 output: RemoteTraceback
+App 42608 output: : 
+App 42608 output: 
+App 42608 output: """
+App 42608 output: Traceback (most recent call last):
+App 42608 output:   File "/Users/andylee/.pyenv/versions/3.11.1/lib/python3.11/multiprocessing/pool.py", line 125, in worker
+App 42608 output:     result = (True, func(*args, **kwds))
+App 42608 output:                     ^^^^^^^^^^^^^^^^^^^
+App 42608 output:   File "/Users/andylee/.pyenv/versions/3.11.1/lib/python3.11/multiprocessing/pool.py", line 48, in mapstar
+App 42608 output:     return list(map(*args))
+App 42608 output:            ^^^^^^^^^^^^^^^^
+App 42608 output:   File "/Users/andylee/Repos/Pokeweb/python/parallel.py", line 28, in output
+App 42608 output:     narc_data = ndspy.narc.NARC.fromFile(file_name)
+App 42608 output:                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+App 42608 output:   File "/Users/andylee/.pyenv/versions/3.11.1/lib/python3.11/site-packages/ndspy/narc.py", line 104, in fromFile
+App 42608 output:     with open(filePath, 'rb') as f:
+App 42608 output:          ^^^^^^^^^^^^^^^^^^^^
+App 42608 output: FileNotFoundError: [Errno 2] No such file or directory: 'projects/hg-engine/narcs/learnsets-163.narc'
+App 42608 output: """
+App 42608 output: 
+App 42608 output: 
+App 42608 output: The above exception was the direct cause of the following exception:
+App 42608 output: 
+App 42608 output: Traceback (most recent call last):
+App 42608 output:   File "/Users/andylee/Repos/Pokeweb/python/parallel.py", line 69, in <module>
+App 42608 output:     
+App 42608 output: pool.map(output, narcs_to_output)
+App 42608 output:   File "/Users/andylee/.pyenv/versions/3.11.1/lib/python3.11/multiprocessing/pool.py", line 367, in map
+App 42608 output:     
+App 42608 output: return self._map_async(func, iterable, mapstar, chunksize).get()
+App 42608 output:  
+App 42608 output:           ^^^
+App 42608 output: ^^^^^^^^^^^
+App 42608 output: ^^^^^^
+App 42608 output: ^^^^^^^
+App 42608 output: ^^^^^^
+App 42608 output: ^^^^^^
+App 42608 output: ^^^^^^^
+App 42608 output: ^^^^^^
+App 42608 output: ^^^^^
+App 42608 output:   File "/Users/andylee/.pyenv/versions/3.11.1/lib/python3.11/multiprocessing/pool.py", line 774, in get
+App 42608 output:     
+App 42608 output: raise self._value
+App 42608 output: FileNotFoundError: [Errno 2] No such file or directory: 'projects/hg-engine/narcs/learnsets-163.narc'
+App 42608 output: 
+App 42608 output: Traceback (most recent call last):
+App 42608 output:   File "/Users/andylee/Repos/Pokeweb/python/rom_loader.py", line 343, in <module>
+App 42608 output:     subprocess.run(['python3', 'python/parallel.py', rom_name], check = True)
+App 42608 output:   File "/Users/andylee/.pyenv/versions/3.11.1/lib/python3.11/subprocess.py", line 571, in run
+App 42608 output:     raise CalledProcessError(retcode, process.args,
+App 42608 output: subprocess.CalledProcessError: 
+App 42608 output: Command '['python3', 'python/parallel.py', 'projects/hg-engine']' returned non-zero exit status 1.
+App 42608 output: 
+App 42608 output: During handling of the above exception, another exception occurred:
+App 42608 output: 
+App 42608 output: Traceback (most recent call last):
+App 42608 output:   File "/Users/andylee/Repos/Pokeweb/python/rom_loader.py", line 345, in <module>
+App 42608 output:     subprocess.run(['python', 'python/parallel.py', rom_name], check = True)
+App 42608 output:   File "/Users/andylee/.pyenv/versions/3.11.1/lib/python3.11/subprocess.py", line 571, in run
+App 42608 output:     raise CalledProcessError(retcode, process.args,
+App 42608 output: subprocess
+App 42608 output: .CalledProcessError: Command '['python', 'python/parallel.py', 'projects/hg-engine']' returned non-zero exit status 1.
+App 42608 output: nil
+App 42608 output: {"filename"=>{"filename"=>"hg-engine.xdelta", "type"=>"application/octet-stream", "name"=>"filename", "tempfile"=>#<Tempfile:/var/folders/th/rnc7s7ts4_13_1w48n1wjfwr0000gn/T/RackMultipart20221224-42608-pzvb3u.xdelta>, "head"=>"Content-Disposition: form-data; name=\"filename\"; filename=\"hg-engine.xdelta\"\r\nContent-Type: application/octet-stream\r\n"}, "rom_base"=>"HG", "rom_name"=>"hg-engine.nds", "password"=>"asdf"}
+App 42608 output: "xdelta3 -d -s ./base/blank.nds ./base/HG.xdelta ./base/HG.nds"
+App 42608 output: "xdelta3 -d -s ./base/HG.nds ./xdeltas/hg-engine.xdelta hg-engine.nds"
+App 42608 output: xdelta3: to overwrite output file specify -f: hg-engine.nds
+App 42608 output: decompressing arm9
+App 42608 output: {'rom_name': 'projects/hg-engine', 'pw': 'WjJVV2VybWZaTmU5ZXNiTUhrTVZjdz09LS1QUllrb0hrWXBYSHJhZHJqWGlaK0x3PT0=--b88f637c5bba4dbe9441ca7d7efc6860c6921caa', 'base_version': 'HG', 'base_rom': 'HGSS'}
+App 42608 output: 2022-12-24 19:00:17 - NoMethodError - undefined method `+' for nil:NilClass:
+App 42608 output: 	/Users/andylee/Repos/Pokeweb/routes.rb:148:in `block in <class:MyApp>'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1686:in `call'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1686:in `block in compile!'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1023:in `block (3 levels) in route!'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1042:in `route_eval'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1023:in `block (2 levels) in route!'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1071:in `block in process_route'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1069:in `catch'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1069:in `process_route'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1021:in `block in route!'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1018:in `each'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1018:in `route!'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1140:in `block in dispatch!'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1112:in `block in invoke'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1112:in `catch'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1112:in `invoke'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1135:in `dispatch!'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:949:in `block in call!'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1112:in `block in invoke'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1112:in `catch'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1112:in `invoke'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:949:in `call!'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:938:in `call'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-2.2.1/lib/rack/protection/xss_header.rb:18:in `call'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-2.2.1/lib/rack/protection/path_traversal.rb:16:in `call'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-2.2.1/lib/rack/protection/json_csrf.rb:26:in `call'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-2.2.1/lib/rack/protection/base.rb:50:in `call'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-2.2.1/lib/rack/protection/base.rb:50:in `call'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-2.2.1/lib/rack/protection/frame_options.rb:31:in `call'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/null_logger.rb:11:in `call'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/head.rb:12:in `call'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/show_exceptions.rb:22:in `call'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:218:in `call'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1993:in `call'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1553:in `block in call'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1769:in `synchronize'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1553:in `call'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:266:in `context'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:260:in `call'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/rack/thread_handler_extension.rb:107:in `process_request'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:157:in `accept_and_process_next_request'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler.rb:419:in `block (3 levels) in start_threads'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+App 42608 output: creating project folders
+App 42608 output: projects/hg-engine/json/moves
+App 42608 output: extracting narcs
+App 42608 output: settings up processing pools
+App 42608 output: outputing narcs
+App 42608 output: multiprocessing.pool
+App 42608 output: .RemoteTraceback: 
+App 42608 output: """
+App 42608 output: Traceback (most recent call last):
+App 42608 output:   File "/Users/andylee/.pyenv/versions/3.11.1/lib/python3.11/multiprocessing/pool.py", line 125, in worker
+App 42608 output:     result = (True, func(*args, **kwds))
+App 42608 output:                     ^^^^^^^^^^^^^^^^^^^
+App 42608 output:   File "/Users/andylee/.pyenv/versions/3.11.1/lib/python3.11/multiprocessing/pool.py", line 48, in mapstar
+App 42608 output:     return list(map(*args))
+App 42608 output:            ^^^^^^^^^^^^^^^^
+App 42608 output:   File "/Users/andylee/Repos/Pokeweb/python/parallel.py", line 34, in output
+App 42608 output:     eval(f'output_{narc}_json')(narc_data, rom_name)
+App 42608 output:   File "/Users/andylee/Repos/Pokeweb/python/trdata_reader.py", line 17, in output_trdata_json
+App 42608 output:     tools.output_json(narc, "trdata", to_readable, rom_name)
+App 42608 output:   File "/Users/andylee/Repos/Pokeweb/python/tools.py", line 97, in output_json
+App 42608 output:     rom_data.set_hgss_global_vars(rom_name)
+App 42608 output:   File "/Users/andylee/Repos/Pokeweb/python/rom_data.py", line 421, in set_hgss_global_vars
+App 42608 output:     METHODS = open(f'texts/evo_methods.txt', mode="r").read().splitlines()
+App 42608 output:               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+App 42608 output: FileNotFoundError: [Errno 2] No such file or directory: 'texts/evo_methods.txt'
+App 42608 output: """
+App 42608 output: 
+App 42608 output: 
+App 42608 output: The above exception was the direct cause of the following exception:
+App 42608 output: 
+App 42608 output: Traceback (most recent call last):
+App 42608 output:   File "/Users/andylee/Repos/Pokeweb/python/parallel.py", line 69, in <module>
+App 42608 output:     pool.map(output, narcs_to_output)
+App 42608 output:   File "/Users/andylee/.pyenv/versions/3.11.1/lib/python3.11/multiprocessing/pool.py", line 367, in map
+App 42608 output:     return self._map_async(func, iterable, mapstar, chunksize).get()
+App 42608 output: 
+App 42608 output:       
+App 42608 output:      ^^^^^
+App 42608 output: ^^^^
+App 42608 output: ^^^^^
+App 42608 output: ^^^^^^
+App 42608 output: ^^^^^^
+App 42608 output: ^^^^^^
+App 42608 output: ^^^^^^
+App 42608 output: ^^^^^^
+App 42608 output: ^^^^^^
+App 42608 output: ^^^^^
+App 42608 output: ^^
+App 42608 output:   File "/Users/andylee/.pyenv/versions/3.11.1/lib/python3.11/multiprocessing/pool.py", line 774, in get
+App 42608 output:     raise self._value
+App 42608 output: FileNotFoundError: [Errno 2] No such file or directory: 'texts/evo_methods.txt'
+App 42608 output: settings up processing pools
+App 42608 output: outputing narcs
+App 42608 output: multiprocessing.pool
+App 42608 output: .
+App 42608 output: RemoteTraceback
+App 42608 output: : 
+App 42608 output: 
+App 42608 output: """
+App 42608 output: Traceback (most recent call last):
+App 42608 output:   File "/Users/andylee/.pyenv/versions/3.11.1/lib/python3.11/multiprocessing/pool.py", line 125, in worker
+App 42608 output:     result = (True, func(*args, **kwds))
+App 42608 output:                     ^^^^^^^^^^^^^^^^^^^
+App 42608 output:   File "/Users/andylee/.pyenv/versions/3.11.1/lib/python3.11/multiprocessing/pool.py", line 48, in mapstar
+App 42608 output:     return list(map(*args))
+App 42608 output:            ^^^^^^^^^^^^^^^^
+App 42608 output:   File "/Users/andylee/Repos/Pokeweb/python/parallel.py", line 28, in output
+App 42608 output:     narc_data = ndspy.narc.NARC.fromFile(file_name)
+App 42608 output:                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+App 42608 output:   File "/Users/andylee/.pyenv/versions/3.11.1/lib/python3.11/site-packages/ndspy/narc.py", line 104, in fromFile
+App 42608 output:     with open(filePath, 'rb') as f:
+App 42608 output:          ^^^^^^^^^^^^^^^^^^^^
+App 42608 output: FileNotFoundError: [Errno 2] No such file or directory: 'projects/hg-engine/narcs/personal-132.narc'
+App 42608 output: """
+App 42608 output: 
+App 42608 output: 
+App 42608 output: The above exception was the direct cause of the following exception:
+App 42608 output: 
+App 42608 output: Traceback (most recent call last):
+App 42608 output:   File "/Users/andylee/Repos/Pokeweb/python/parallel.py", line 69, in <module>
+App 42608 output:     
+App 42608 output: pool.map(output, narcs_to_output)
+App 42608 output:   File "/Users/andylee/.pyenv/versions/3.11.1/lib/python3.11/multiprocessing/pool.py", line 367, in map
+App 42608 output:     return self._map_async(func, iterable, mapstar, chunksize).get()
+App 42608 output: 
+App 42608 output:  
+App 42608 output:           ^^^^^^^^^^
+App 42608 output: ^^^^^^^^^^
+App 42608 output: ^^^^^
+App 42608 output: ^
+App 42608 output: ^^^^^^
+App 42608 output: ^^^^
+App 42608 output: ^
+App 42608 output: ^^^^^^
+App 42608 output: ^^^^^
+App 42608 output: ^
+App 42608 output: ^^
+App 42608 output: ^^^^^^
+App 42608 output: 
+App 42608 output:   File "/Users/andylee/.pyenv/versions/3.11.1/lib/python3.11/multiprocessing/pool.py", line 774, in get
+App 42608 output:     
+App 42608 output: raise self._value
+App 42608 output: FileNotFoundError
+App 42608 output: : [Errno 2] No such file or directory: 'projects/hg-engine/narcs/personal-132.narc'
+App 42608 output: Traceback (most recent call last):
+App 42608 output:   File "/Users/andylee/Repos/Pokeweb/python/rom_loader.py", line 343, in <module>
+App 42608 output:     subprocess.run(['python3', 'python/parallel.py', rom_name], check = True)
+App 42608 output: 
+App 42608 output:   File "/Users/andylee/.pyenv/versions/3.11.1/lib/python3.11/subprocess.py", line 571, in run
+App 42608 output:     raise CalledProcessError(retcode, process.args,
+App 42608 output: 
+App 42608 output: subprocess.CalledProcessError
+App 42608 output: : Command '['python3', 'python/parallel.py', 'projects/hg-engine']' returned non-zero exit status 1.
+App 42608 output: 
+App 42608 output: During handling of the above exception, another exception occurred:
+App 42608 output: 
+App 42608 output: Traceback (most recent call last):
+App 42608 output:   File "/Users/andylee/Repos/Pokeweb/python/rom_loader.py", line 345, in <module>
+App 42608 output:     subprocess.run(['python', 'python/parallel.py', rom_name], check = True)
+App 42608 output:   File "/Users/andylee/.pyenv/versions/3.11.1/lib/python3.11/subprocess.py", line 571, in run
+App 42608 output:     raise CalledProcessError(retcode, process.args,
+App 42608 output: 
+App 42608 output: subprocess.CalledProcessError
+App 42608 output: : Command '['python', 'python/parallel.py', 'projects/hg-engine']' returned non-zero exit status 1.
+App 42608 output: nil
+App 42608 output: {"filename"=>{"filename"=>"hg-engine.xdelta", "type"=>"application/octet-stream", "name"=>"filename", "tempfile"=>#<Tempfile:/var/folders/th/rnc7s7ts4_13_1w48n1wjfwr0000gn/T/RackMultipart20221224-42608-cvi413.xdelta>, "head"=>"Content-Disposition: form-data; name=\"filename\"; filename=\"hg-engine.xdelta\"\r\nContent-Type: application/octet-stream\r\n"}, "rom_base"=>"HG", "rom_name"=>"hg-engine.nds", "password"=>"asdf"}
+App 42608 output: "xdelta3 -d -s ./base/blank.nds ./base/HG.xdelta ./base/HG.nds"
+App 42608 output: "xdelta3 -d -s ./base/HG.nds ./xdeltas/hg-engine.xdelta hg-engine.nds"
+App 42608 output: xdelta3: to overwrite output file specify -f: hg-engine.nds
+App 42608 output: decompressing arm9
+App 42608 output: 
+App 42608 output: {'rom_name': 'projects/hg-engine', 'pw': 'dFExUHRtLytrakkvdFhXMUhZNGJVQT09LS1sVUxRc2wxMDBSV2p1NlJHeGdockNBPT0=--13467efd958d0921f8f95abe3fe1bad1885008b4', 'base_version': 'HG', 'base_rom': 'HGSS'}
+App 42608 output: 2022-12-24 19:01:13 - NoMethodError - undefined method `+' for nil:NilClass:
+App 42608 output: 	/Users/andylee/Repos/Pokeweb/routes.rb:148:in `block in <class:MyApp>'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1686:in `call'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1686:in `block in compile!'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1023:in `block (3 levels) in route!'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1042:in `route_eval'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1023:in `block (2 levels) in route!'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1071:in `block in process_route'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1069:in `catch'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1069:in `process_route'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1021:in `block in route!'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1018:in `each'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1018:in `route!'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1140:in `block in dispatch!'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1112:in `block in invoke'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1112:in `catch'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1112:in `invoke'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1135:in `dispatch!'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:949:in `block in call!'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1112:in `block in invoke'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1112:in `catch'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1112:in `invoke'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:949:in `call!'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:938:in `call'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-2.2.1/lib/rack/protection/xss_header.rb:18:in `call'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-2.2.1/lib/rack/protection/path_traversal.rb:16:in `call'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-2.2.1/lib/rack/protection/json_csrf.rb:26:in `call'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-2.2.1/lib/rack/protection/base.rb:50:in `call'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-2.2.1/lib/rack/protection/base.rb:50:in `call'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-2.2.1/lib/rack/protection/frame_options.rb:31:in `call'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/null_logger.rb:11:in `call'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/head.rb:12:in `call'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/show_exceptions.rb:22:in `call'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:218:in `call'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1993:in `call'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1553:in `block in call'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1769:in `synchronize'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-2.2.1/lib/sinatra/base.rb:1553:in `call'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:266:in `context'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:260:in `call'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/rack/thread_handler_extension.rb:107:in `process_request'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:157:in `accept_and_process_next_request'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler.rb:419:in `block (3 levels) in start_threads'
+App 42608 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+App 42608 output: creating project folders
+App 42608 output: projects/hg-engine/json/moves
+App 42608 output: extracting narcs
+App 42608 output: settings up processing pools
+App 42608 output: outputing narcs
+App 42608 output: 
+App 42608 output: learnsets
+App 42608 output: multiprocessing.pool.RemoteTraceback: 
+App 42608 output: """
+App 42608 output: Traceback (most recent call last):
+App 42608 output:   File "/Users/andylee/.pyenv/versions/3.11.1/lib/python3.11/multiprocessing/pool.py", line 125, in worker
+App 42608 output:     result = (True, func(*args, **kwds))
+App 42608 output:                     ^^^^^^^^^^^^^^^^^^^
+App 42608 output:   File "/Users/andylee/.pyenv/versions/3.11.1/lib/python3.11/multiprocessing/pool.py", line 48, in mapstar
+App 42608 output:     return list(map(*args))
+App 42608 output:            ^^^^^^^^^^^^^^^^
+App 42608 output:   File "/Users/andylee/Repos/Pokeweb/python/parallel.py", line 34, in output
+App 42608 output:     eval(f'output_{narc}_json')(narc_data, rom_name)
+App 42608 output:   File "/Users/andylee/Repos/Pokeweb/python/move_reader.py", line 9, in output_moves_json
+App 42608 output:     tools.output_json(narc, "moves", to_readable, rom_name)
+App 42608 output:   File "/Users/andylee/Repos/Pokeweb/python/tools.py", line 109, in output_json
+App 42608 output:     read_narc_data(data, narc_format, data_name, narc_name, rom_data.ROM_NAME, to_readable)
+App 42608 output:   File "/Users/andylee/Repos/Pokeweb/python/tools.py", line 141, in read_narc_data
+App 42608 output:     file["readable"] = to_readable(file["raw"], file_name)
+App 42608 output:                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+App 42608 output:   File "/Users/andylee/Repos/Pokeweb/python/move_reader.py", line 29, in to_readable
+App 42608 output:     readable["effect_category"] = rom_data.EFFECT_CATEGORIES[raw["effect_category"]]
+App 42608 output:                                                              ~~~^^^^^^^^^^^^^^^^^^^
+App 42608 output: KeyError: 'effect_category'
+App 42608 output: """
+App 42608 output: 
+App 42608 output: The above exception was the direct cause of the following exception:
+App 42608 output: 
+App 42608 output: Traceback (most recent call last):
+App 42608 output:   File "/Users/andylee/Repos/Pokeweb/python/parallel.py", line 69, in <module>
+App 42608 output:     pool.map(output, narcs_to_output)
+App 42608 output:   File "/Users/andylee/.pyenv/versions/3.11.1/lib/python3.11/multiprocessing/pool.py", line 367, in map
+App 42608 output:     
+App 42608 output: return self._map_async(func, iterable, mapstar, chunksize).get()
+App 42608 output:       
+App 42608 output:      ^^^^^^^^^
+App 42608 output: ^^^^^^^
+App 42608 output: ^^^^^^
+App 42608 output: ^^^^^^
+App 42608 output: ^^^^^^
+App 42608 output: ^^^^^^
+App 42608 output: ^^^^^
+App 42608 output: ^^^^^^
+App 42608 output: ^^^^^
+App 42608 output: ^
+App 42608 output:   File "/Users/andylee/.pyenv/versions/3.11.1/lib/python3.11/multiprocessing/pool.py", line 774, in get
+App 42608 output:     raise self._value
+App 42608 output: KeyError: 'effect_category'
+App 42608 output: settings up processing pools
+App 42608 output: outputing narcs
+App 42608 output: multiprocessing.pool
+App 42608 output: .
+App 42608 output: RemoteTraceback
+App 42608 output: : 
+App 42608 output: """
+App 42608 output: Traceback (most recent call last):
+App 42608 output:   File "/Users/andylee/.pyenv/versions/3.11.1/lib/python3.11/multiprocessing/pool.py", line 125, in worker
+App 42608 output:     result = (True, func(*args, **kwds))
+App 42608 output:                     ^^^^^^^^^^^^^^^^^^^
+App 42608 output:   File "/Users/andylee/.pyenv/versions/3.11.1/lib/python3.11/multiprocessing/pool.py", line 48, in mapstar
+App 42608 output:     return list(map(*args))
+App 42608 output:            ^^^^^^^^^^^^^^^^
+App 42608 output:   File "/Users/andylee/Repos/Pokeweb/python/parallel.py", line 28, in output
+App 42608 output:     narc_data = ndspy.narc.NARC.fromFile(file_name)
+App 42608 output:                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+App 42608 output:   File "/Users/andylee/.pyenv/versions/3.11.1/lib/python3.11/site-packages/ndspy/narc.py", line 104, in fromFile
+App 42608 output:     with open(filePath, 'rb') as f:
+App 42608 output:          ^^^^^^^^^^^^^^^^^^^^
+App 42608 output: FileNotFoundError: [Errno 2] No such file or directory: 'projects/hg-engine/narcs/personal-132.narc'
+App 42608 output: """
+App 42608 output: 
+App 42608 output: The above exception was the direct cause of the following exception:
+App 42608 output: 
+App 42608 output: Traceback (most recent call last):
+App 42608 output:   File "/Users/andylee/Repos/Pokeweb/python/parallel.py", line 69, in <module>
+App 42608 output:     pool.map(output, narcs_to_output)
+App 42608 output:   File "/Users/andylee/.pyenv/versions/3.11.1/lib/python3.11/multiprocessing/pool.py", line 367, in map
+App 42608 output:     return self._map_async(func, iterable, mapstar, chunksize).get()
+App 42608 output:  
+App 42608 output:           ^
+App 42608 output: ^^^^^^^
+App 42608 output: ^^^^^^^
+App 42608 output: ^^^^^^^
+App 42608 output: ^^^^^^
+App 42608 output: ^^^^^^
+App 42608 output: ^^^^^^
+App 42608 output: ^^^^^^
+App 42608 output: ^^^^^^
+App 42608 output: ^^^^^
+App 42608 output:   File "/Users/andylee/.pyenv/versions/3.11.1/lib/python3.11/multiprocessing/pool.py", line 774, in get
+App 42608 output:     
+App 42608 output: raise self._value
+App 42608 output: FileNotFoundError: 
+App 42608 output: [Errno 2] No such file or directory: 'projects/hg-engine/narcs/personal-132.narc'
+App 42608 output: Traceback (most recent call last):
+App 42608 output:   File "/Users/andylee/Repos/Pokeweb/python/rom_loader.py", line 343, in <module>
+App 42608 output:     
+App 42608 output: subprocess.run(['python3', 'python/parallel.py', rom_name], check = True)
+App 42608 output:   File "/Users/andylee/.pyenv/versions/3.11.1/lib/python3.11/subprocess.py", line 571, in run
+App 42608 output:     raise CalledProcessError(retcode, process.args,
+App 42608 output: 
+App 42608 output: subprocess.CalledProcessError
+App 42608 output: : Command '['python3', 'python/parallel.py', 'projects/hg-engine']' returned non-zero exit status 1.
+App 42608 output: 
+App 42608 output: During handling of the above exception, another exception occurred:
+App 42608 output: 
+App 42608 output: Traceback (most recent call last):
+App 42608 output:   File "/Users/andylee/Repos/Pokeweb/python/rom_loader.py", line 345, in <module>
+App 42608 output:     subprocess.run(['python', 'python/parallel.py', rom_name], check = True)
+App 42608 output:   File "/Users/andylee/.pyenv/versions/3.11.1/lib/python3.11/subprocess.py", line 571, in run
+App 42608 output:     raise CalledProcessError(retcode, process.args,
+App 42608 output: subprocess.CalledProcessError: Command '['python', 'python/parallel.py', 'projects/hg-engine']' returned non-zero exit status 1.
+App 42608 output: 
+
+[ N 2022-12-24 19:07:22.5255 42559/T8 age/Cor/CoreMain.cpp:671 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2022-12-24 19:07:22.5256 42559/T1 age/Cor/CoreMain.cpp:1246 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2022-12-24 19:07:22.5256 42559/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 42608, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2022-12-24 19:07:22.5260 42559/Tg Ser/Server.h:901 ]: [ServerThr.5] Freed 0 spare client objects
+[ N 2022-12-24 19:07:22.5262 42559/Tu Ser/Server.h:901 ]: [ServerThr.12] Freed 0 spare client objects
+[ N 2022-12-24 19:07:22.5262 42559/To Ser/Server.h:901 ]: [ServerThr.9] Freed 0 spare client objects
+[ N 2022-12-24 19:07:22.5262 42559/Tk Ser/Server.h:901 ]: [ServerThr.7] Freed 0 spare client objects
+[ N 2022-12-24 19:07:22.5262 42559/Tc Ser/Server.h:901 ]: [ServerThr.3] Freed 0 spare client objects
+[ N 2022-12-24 19:07:22.5262 42559/Te Ser/Server.h:901 ]: [ServerThr.4] Freed 0 spare client objects
+[ N 2022-12-24 19:07:22.5262 42559/Tq Ser/Server.h:901 ]: [ServerThr.10] Freed 0 spare client objects
+[ N 2022-12-24 19:07:22.5263 42559/Ts Ser/Server.h:901 ]: [ServerThr.11] Freed 0 spare client objects
+[ N 2022-12-24 19:07:22.5263 42559/Tg Ser/Server.h:558 ]: [ServerThr.5] Shutdown finished
+[ N 2022-12-24 19:07:22.5265 42559/Ts Ser/Server.h:558 ]: [ServerThr.11] Shutdown finished
+[ N 2022-12-24 19:07:22.5265 42559/Tc Ser/Server.h:558 ]: [ServerThr.3] Shutdown finished
+[ N 2022-12-24 19:07:22.5262 42559/Ta Ser/Server.h:901 ]: [ServerThr.2] Freed 0 spare client objects
+[ N 2022-12-24 19:07:22.5263 42559/Tm Ser/Server.h:901 ]: [ServerThr.8] Freed 0 spare client objects
+[ N 2022-12-24 19:07:22.5263 42559/Tu Ser/Server.h:558 ]: [ServerThr.12] Shutdown finished
+[ N 2022-12-24 19:07:22.5266 42559/Ta Ser/Server.h:558 ]: [ServerThr.2] Shutdown finished
+[ N 2022-12-24 19:07:22.5264 42559/Tk Ser/Server.h:558 ]: [ServerThr.7] Shutdown finished
+[ N 2022-12-24 19:07:22.5265 42559/Te Ser/Server.h:558 ]: [ServerThr.4] Shutdown finished
+[ N 2022-12-24 19:07:22.5260 42559/T8 Ser/Server.h:901 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2022-12-24 19:07:22.5263 42559/Ti Ser/Server.h:901 ]: [ServerThr.6] Freed 0 spare client objects
+[ N 2022-12-24 19:07:22.5266 42559/Tm Ser/Server.h:558 ]: [ServerThr.8] Shutdown finished
+[ N 2022-12-24 19:07:22.5263 42559/To Ser/Server.h:558 ]: [ServerThr.9] Shutdown finished
+[ N 2022-12-24 19:07:22.5267 42559/Ti Ser/Server.h:558 ]: [ServerThr.6] Shutdown finished
+[ N 2022-12-24 19:07:22.5265 42559/Tw Ser/Server.h:901 ]: [ApiServer] Freed 0 spare client objects
+[ N 2022-12-24 19:07:22.5264 42559/Tq Ser/Server.h:558 ]: [ServerThr.10] Shutdown finished
+[ N 2022-12-24 19:07:22.5267 42559/T8 Ser/Server.h:558 ]: [ServerThr.1] Shutdown finished
+[ N 2022-12-24 19:07:22.5268 42559/Tw Ser/Server.h:558 ]: [ApiServer] Shutdown finished
+[ N 2022-12-24 19:07:22.5269 42559/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 42608, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2022-12-24 19:07:23.6069 42559/T1 age/Cor/CoreMain.cpp:1325 ]: Passenger core shutdown finished

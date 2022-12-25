@@ -1,0 +1,27 @@
+None
+Max Happiness
+Level During Day
+Level During Night
+Level Requirement
+Trading
+Trade with Held Item
+Item Use
+Level Requirement + Atk Stat Greater Than Def
+Level Requirement + Atk Stat Equal To Def
+Level Requirement + Atk Stat Less Than Def
+Level Requirement + PID Greater Than 5
+Level Requirement + PID Less Than 5
+Level Requirement (Ninjask)
+Level Requirement + Empty Party Slot/Pokeball
+Max Beauty
+Item Use + Male
+Item Use + Female
+Item Use + Day
+Item Use + Night
+After Learning Specific Move
+Level With Party Member
+Level Requirement + Male
+Level Requirement + Female
+Level Up in Electric Field
+Level Up by Moss Rock
+Level Up by Icy Stone
