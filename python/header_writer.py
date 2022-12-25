@@ -145,7 +145,7 @@ def write_bytes(stream, n, data):
 # ############### If run with arguments #############
 
 if len(sys.argv) > 2 and sys.argv[1] == "update":
-
+	set_global_vars(sys.argv[3])
 	file_names = sys.argv[2].split(",")
 	 
 	for file_name in file_names:

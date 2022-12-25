@@ -1523,3 +1523,913 @@ App 45065 output: overworlds
 App 45065 output: maps
 App 45065 output: "projects/b2_fairies"
 App 45065 output: nil
+
+[ N 2022-12-24 20:08:44.8897 45016/T8 age/Cor/CoreMain.cpp:671 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2022-12-24 20:08:44.8898 45016/T1 age/Cor/CoreMain.cpp:1246 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2022-12-24 20:08:44.8898 45016/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 45065, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2022-12-24 20:08:44.8904 45016/Tp Ser/Server.h:901 ]: [ServerThr.9] Freed 0 spare client objects
+[ N 2022-12-24 20:08:44.8905 45016/Tf Ser/Server.h:901 ]: [ServerThr.4] Freed 0 spare client objects
+[ N 2022-12-24 20:08:44.8905 45016/T8 Ser/Server.h:901 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2022-12-24 20:08:44.8905 45016/Tb Ser/Server.h:901 ]: [ServerThr.2] Freed 0 spare client objects
+[ N 2022-12-24 20:08:44.8904 45016/Ti Ser/Server.h:901 ]: [ServerThr.6] Freed 0 spare client objects
+[ N 2022-12-24 20:08:44.8905 45016/Tk Ser/Server.h:901 ]: [ServerThr.7] Freed 0 spare client objects
+[ N 2022-12-24 20:08:44.8906 45016/Tf Ser/Server.h:558 ]: [ServerThr.4] Shutdown finished
+[ N 2022-12-24 20:08:44.8906 45016/Tw Ser/Server.h:901 ]: [ApiServer] Freed 0 spare client objects
+[ N 2022-12-24 20:08:44.8907 45016/Tb Ser/Server.h:558 ]: [ServerThr.2] Shutdown finished
+[ N 2022-12-24 20:08:44.8905 45016/Ts Ser/Server.h:901 ]: [ServerThr.11] Freed 0 spare client objects
+[ N 2022-12-24 20:08:44.8905 45016/Tv Ser/Server.h:901 ]: [ServerThr.12] Freed 0 spare client objects
+[ N 2022-12-24 20:08:44.8908 45016/Ts Ser/Server.h:558 ]: [ServerThr.11] Shutdown finished
+[ N 2022-12-24 20:08:44.8908 45016/Tv Ser/Server.h:558 ]: [ServerThr.12] Shutdown finished
+[ N 2022-12-24 20:08:44.8905 45016/Th Ser/Server.h:901 ]: [ServerThr.5] Freed 0 spare client objects
+[ N 2022-12-24 20:08:44.8905 45016/Tm Ser/Server.h:901 ]: [ServerThr.8] Freed 0 spare client objects
+[ N 2022-12-24 20:08:44.8909 45016/Th Ser/Server.h:558 ]: [ServerThr.5] Shutdown finished
+[ N 2022-12-24 20:08:44.8906 45016/T8 Ser/Server.h:558 ]: [ServerThr.1] Shutdown finished
+[ N 2022-12-24 20:08:44.8907 45016/Tw Ser/Server.h:558 ]: [ApiServer] Shutdown finished
+[ N 2022-12-24 20:08:44.8905 45016/Tp Ser/Server.h:558 ]: [ServerThr.9] Shutdown finished
+[ N 2022-12-24 20:08:44.8907 45016/Tk Ser/Server.h:558 ]: [ServerThr.7] Shutdown finished
+[ N 2022-12-24 20:08:44.8906 45016/Ti Ser/Server.h:558 ]: [ServerThr.6] Shutdown finished
+[ N 2022-12-24 20:08:44.8905 45016/Tq Ser/Server.h:901 ]: [ServerThr.10] Freed 0 spare client objects
+[ N 2022-12-24 20:08:44.8905 45016/Tc Ser/Server.h:901 ]: [ServerThr.3] Freed 0 spare client objects
+[ N 2022-12-24 20:08:44.8909 45016/Tm Ser/Server.h:558 ]: [ServerThr.8] Shutdown finished
+[ N 2022-12-24 20:08:44.8910 45016/Tq Ser/Server.h:558 ]: [ServerThr.10] Shutdown finished
+[ N 2022-12-24 20:08:44.8911 45016/Tc Ser/Server.h:558 ]: [ServerThr.3] Shutdown finished
+[ N 2022-12-24 20:08:44.8912 45016/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 45065, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2022-12-24 20:08:45.9787 45016/T1 age/Cor/CoreMain.cpp:1325 ]: Passenger core shutdown finished
+[ N 2022-12-24 20:09:34.3792 45883/T1 age/Wat/WatchdogMain.cpp:1377 ]: Starting Passenger watchdog...
+[ N 2022-12-24 20:09:34.4087 45885/T1 age/Cor/CoreMain.cpp:1340 ]: Starting Passenger core...
+[ N 2022-12-24 20:09:34.4089 45885/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ N 2022-12-24 20:09:34.4438 45885/T1 age/Cor/CoreMain.cpp:1015 ]: Passenger core online, PID 45885
+[ N 2022-12-24 20:09:37.3482 45885/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+[ E 2022-12-24 20:09:37.3545 45885/T5 Sec/Crypto.cpp:990 ]: Removing Passenger private key from keychain failed: Write permissions error.. Please remove the private key from the certificate labeled Phusion Passenger Open Source in your keychain.
+App 45902 output: "init"
+App 45935 output: nil
+App 45935 output: nil
+App 45935 output: nil
+App 45935 output: {"rom"=>"projects/WhiteDeluxe", "password"=>"WhiteDeluxe"}
+App 45935 output: "projects/WhiteDeluxe"
+App 45935 output: "projects/WhiteDeluxe"
+App 45935 output: "projects/WhiteDeluxe"
+App 45935 output: {"file_name"=>"1", "field"=>"location_name", "value"=>"Black City", "narc"=>"header"}
+App 45935 output: {"file_name"=>"1", "field"=>"location_name", "value"=>"Black City", "narc"=>"header"}
+App 45935 output: Traceback (most recent call last):
+App 45935 output:   File "/Users/andylee/Repos/Pokeweb/python/header_writer.py", line 152, in <module>
+App 45935 output:     write_readable_to_raw(int(file_name), sys.argv[3])
+App 45935 output: 
+App 45935 output:   File "/Users/andylee/Repos/Pokeweb/python/header_writer.py", line 126, in write_readable_to_raw
+App 45935 output:     
+App 45935 output: modified = to_raw(to_modify)
+App 45935 output:        
+App 45935 output:        
+App 45935 output:  ^^^
+App 45935 output: ^^^^^^^^^^^^^^
+App 45935 output:   File "/Users/andylee/Repos/Pokeweb/python/header_writer.py", line 135, in to_raw
+App 45935 output:     raw["location_name_id"] = LOCATIONS.index(readable["location_name"])
+App 45935 output:          
+App 45935 output:               
+App 45935 output:        ^^^^^^^^^
+App 45935 output: NameError: name 'LOCATIONS' is not defined
+App 45935 output: 
+App 45935 output: "projects/WhiteDeluxe"
+App 45935 output: {"file_name"=>"1", "field"=>"location_name", "value"=>"Black City", "narc"=>"header"}
+App 45935 output: {"file_name"=>"1", "field"=>"location_name", "value"=>"Black City", "narc"=>"header"}
+App 45935 output: Traceback (most recent call last):
+App 45935 output:   File "/Users/andylee/Repos/Pokeweb/python/header_writer.py", line 152, in <module>
+App 45935 output:     write_readable_to_raw(int(file_name), sys.argv[3])
+App 45935 output:   File "/Users/andylee/Repos/Pokeweb/python/header_writer.py", line 126, in write_readable_to_raw
+App 45935 output:     modified = to_raw(to_modify)
+App 45935 output:     
+App 45935 output:            ^^^^^^^^^^^^^^
+App 45935 output: ^^^
+App 45935 output:   File "/Users/andylee/Repos/Pokeweb/python/header_writer.py", line 135, in to_raw
+App 45935 output:     raw["location_name_id"] = LOCATIONS.index(readable["location_name"])
+App 45935 output:           
+App 45935 output:                     ^^^^
+App 45935 output: ^^^^^
+App 45935 output: NameError: name 'LOCATIONS' is not defined
+App 45935 output: 
+App 45935 output: "projects/WhiteDeluxe"
+App 45935 output: {"file_name"=>"1", "field"=>"location_name", "value"=>"Black City", "narc"=>"header"}
+App 45935 output: {"file_name"=>"1", "field"=>"location_name", "value"=>"Black City", "narc"=>"header"}
+App 45935 output: "projects/WhiteDeluxe"
+App 45935 output: {"file_name"=>"1", "field"=>"location_name", "value"=>"Faraway place", "narc"=>"header"}
+App 45935 output: {"file_name"=>"1", "field"=>"location_name", "value"=>"Faraway place", "narc"=>"header"}
+App 45935 output: "projects/WhiteDeluxe"
+App 45935 output: "projects/WhiteDeluxe"
+
+[ N 2022-12-24 20:12:48.8658 45885/T8 age/Cor/CoreMain.cpp:671 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2022-12-24 20:12:48.8658 45885/T1 age/Cor/CoreMain.cpp:1246 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2022-12-24 20:12:48.8658 45885/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 45935, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2022-12-24 20:12:48.8663 45885/Tc Ser/Server.h:901 ]: [ServerThr.3] Freed 0 spare client objects
+[ N 2022-12-24 20:12:48.8664 45885/Tk Ser/Server.h:901 ]: [ServerThr.7] Freed 0 spare client objects
+[ N 2022-12-24 20:12:48.8663 45885/Te Ser/Server.h:901 ]: [ServerThr.4] Freed 0 spare client objects
+[ N 2022-12-24 20:12:48.8664 45885/Tg Ser/Server.h:901 ]: [ServerThr.5] Freed 0 spare client objects
+[ N 2022-12-24 20:12:48.8664 45885/T8 Ser/Server.h:901 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2022-12-24 20:12:48.8664 45885/Ti Ser/Server.h:901 ]: [ServerThr.6] Freed 0 spare client objects
+[ N 2022-12-24 20:12:48.8665 45885/Tm Ser/Server.h:901 ]: [ServerThr.8] Freed 0 spare client objects
+[ N 2022-12-24 20:12:48.8665 45885/Ts Ser/Server.h:901 ]: [ServerThr.11] Freed 0 spare client objects
+[ N 2022-12-24 20:12:48.8665 45885/To Ser/Server.h:901 ]: [ServerThr.9] Freed 0 spare client objects
+[ N 2022-12-24 20:12:48.8667 45885/Ti Ser/Server.h:558 ]: [ServerThr.6] Shutdown finished
+[ N 2022-12-24 20:12:48.8667 45885/Tm Ser/Server.h:558 ]: [ServerThr.8] Shutdown finished
+[ N 2022-12-24 20:12:48.8666 45885/Tg Ser/Server.h:558 ]: [ServerThr.5] Shutdown finished
+[ N 2022-12-24 20:12:48.8665 45885/Tc Ser/Server.h:558 ]: [ServerThr.3] Shutdown finished
+[ N 2022-12-24 20:12:48.8666 45885/Te Ser/Server.h:558 ]: [ServerThr.4] Shutdown finished
+[ N 2022-12-24 20:12:48.8665 45885/Tk Ser/Server.h:558 ]: [ServerThr.7] Shutdown finished
+[ N 2022-12-24 20:12:48.8667 45885/Tw Ser/Server.h:901 ]: [ApiServer] Freed 0 spare client objects
+[ N 2022-12-24 20:12:48.8665 45885/Tu Ser/Server.h:901 ]: [ServerThr.12] Freed 0 spare client objects
+[ N 2022-12-24 20:12:48.8665 45885/Tq Ser/Server.h:901 ]: [ServerThr.10] Freed 0 spare client objects
+[ N 2022-12-24 20:12:48.8669 45885/Tu Ser/Server.h:558 ]: [ServerThr.12] Shutdown finished
+[ N 2022-12-24 20:12:48.8667 45885/To Ser/Server.h:558 ]: [ServerThr.9] Shutdown finished
+[ N 2022-12-24 20:12:48.8666 45885/T8 Ser/Server.h:558 ]: [ServerThr.1] Shutdown finished
+[ N 2022-12-24 20:12:48.8667 45885/Ts Ser/Server.h:558 ]: [ServerThr.11] Shutdown finished
+[ N 2022-12-24 20:12:48.8664 45885/Ta Ser/Server.h:901 ]: [ServerThr.2] Freed 0 spare client objects
+[ N 2022-12-24 20:12:48.8669 45885/Tw Ser/Server.h:558 ]: [ApiServer] Shutdown finished
+[ N 2022-12-24 20:12:48.8669 45885/Tq Ser/Server.h:558 ]: [ServerThr.10] Shutdown finished
+[ N 2022-12-24 20:12:48.8670 45885/Ta Ser/Server.h:558 ]: [ServerThr.2] Shutdown finished
+[ N 2022-12-24 20:12:48.8671 45885/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 45935, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2022-12-24 20:12:49.9226 45885/T1 age/Cor/CoreMain.cpp:1325 ]: Passenger core shutdown finished
+[ N 2022-12-24 20:12:52.6705 46104/T1 age/Wat/WatchdogMain.cpp:1377 ]: Starting Passenger watchdog...
+[ N 2022-12-24 20:12:52.6962 46106/T1 age/Cor/CoreMain.cpp:1340 ]: Starting Passenger core...
+[ N 2022-12-24 20:12:52.6964 46106/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ N 2022-12-24 20:12:52.7266 46106/T1 age/Cor/CoreMain.cpp:1015 ]: Passenger core online, PID 46106
+[ N 2022-12-24 20:12:55.5130 46106/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+[ E 2022-12-24 20:12:55.5183 46106/T5 Sec/Crypto.cpp:990 ]: Removing Passenger private key from keychain failed: Write permissions error.. Please remove the private key from the certificate labeled Phusion Passenger Open Source in your keychain.
+App 46122 output: "init"
+App 46155 output: nil
+App 46155 output: nil
+App 46155 output: nil
+App 46155 output: nil
+App 46155 output: {"rom"=>"projects/WhiteDeluxe", "password"=>"WhiteDeluxe"}
+App 46155 output: "projects/WhiteDeluxe"
+App 46155 output: "projects/WhiteDeluxe"
+App 46155 output: "projects/WhiteDeluxe"
+App 46155 output: {"file_name"=>"1", "field"=>"location_name", "value"=>"Faraway place", "narc"=>"header"}
+App 46155 output: {"file_name"=>"1", "field"=>"location_name", "value"=>"Faraway place", "narc"=>"header"}
+App 46155 output: "projects/WhiteDeluxe"
+App 46155 output: {"file_name"=>"1", "field"=>"location_name", "value"=>"Faraway place", "narc"=>"header"}
+App 46155 output: {"file_name"=>"1", "field"=>"location_name", "value"=>"Faraway place", "narc"=>"header"}
+App 46155 output: "projects/WhiteDeluxe"
+App 46155 output: {"file_name"=>"18", "field"=>"location_name", "value"=>"Nacrene City", "narc"=>"header"}
+App 46155 output: {"file_name"=>"18", "field"=>"location_name", "value"=>"Nacrene City", "narc"=>"header"}
+App 46155 output: "projects/WhiteDeluxe"
+App 46155 output: {"file_name"=>"18", "field"=>"location_name", "value"=>"Nacrene City", "narc"=>"header"}
+App 46155 output: {"file_name"=>"18", "field"=>"location_name", "value"=>"Nacrene City", "narc"=>"header"}
+App 46155 output: "projects/WhiteDeluxe"
+App 46155 output: {"file_name"=>"18", "field"=>"location_name", "value"=>"Nacrene City", "narc"=>"header"}
+App 46155 output: {"file_name"=>"18", "field"=>"location_name", "value"=>"Nacrene City", "narc"=>"header"}
+
+[ N 2022-12-24 20:14:43.4573 46106/T8 age/Cor/CoreMain.cpp:671 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2022-12-24 20:14:43.4573 46106/T1 age/Cor/CoreMain.cpp:1246 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2022-12-24 20:14:43.4574 46106/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 46155, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2022-12-24 20:14:43.4580 46106/T8 Ser/Server.h:901 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2022-12-24 20:14:43.4580 46106/Tq Ser/Server.h:901 ]: [ServerThr.10] Freed 0 spare client objects
+[ N 2022-12-24 20:14:43.4580 46106/Ts Ser/Server.h:901 ]: [ServerThr.11] Freed 0 spare client objects
+[ N 2022-12-24 20:14:43.4580 46106/Tc Ser/Server.h:901 ]: [ServerThr.3] Freed 0 spare client objects
+[ N 2022-12-24 20:14:43.4580 46106/To Ser/Server.h:901 ]: [ServerThr.9] Freed 0 spare client objects
+[ N 2022-12-24 20:14:43.4580 46106/Tk Ser/Server.h:901 ]: [ServerThr.7] Freed 0 spare client objects
+[ N 2022-12-24 20:14:43.4580 46106/Ta Ser/Server.h:901 ]: [ServerThr.2] Freed 0 spare client objects
+[ N 2022-12-24 20:14:43.4580 46106/Tg Ser/Server.h:901 ]: [ServerThr.5] Freed 0 spare client objects
+[ N 2022-12-24 20:14:43.4582 46106/Tk Ser/Server.h:558 ]: [ServerThr.7] Shutdown finished
+[ N 2022-12-24 20:14:43.4582 46106/Ta Ser/Server.h:558 ]: [ServerThr.2] Shutdown finished
+[ N 2022-12-24 20:14:43.4581 46106/T8 Ser/Server.h:558 ]: [ServerThr.1] Shutdown finished
+[ N 2022-12-24 20:14:43.4582 46106/Tx Ser/Server.h:901 ]: [ApiServer] Freed 0 spare client objects
+[ N 2022-12-24 20:14:43.4582 46106/To Ser/Server.h:558 ]: [ServerThr.9] Shutdown finished
+[ N 2022-12-24 20:14:43.4580 46106/Tm Ser/Server.h:901 ]: [ServerThr.8] Freed 0 spare client objects
+[ N 2022-12-24 20:14:43.4580 46106/Tu Ser/Server.h:901 ]: [ServerThr.12] Freed 0 spare client objects
+[ N 2022-12-24 20:14:43.4584 46106/Tm Ser/Server.h:558 ]: [ServerThr.8] Shutdown finished
+[ N 2022-12-24 20:14:43.4581 46106/Ts Ser/Server.h:558 ]: [ServerThr.11] Shutdown finished
+[ N 2022-12-24 20:14:43.4580 46106/Ti Ser/Server.h:901 ]: [ServerThr.6] Freed 0 spare client objects
+[ N 2022-12-24 20:14:43.4583 46106/Tg Ser/Server.h:558 ]: [ServerThr.5] Shutdown finished
+[ N 2022-12-24 20:14:43.4580 46106/Te Ser/Server.h:901 ]: [ServerThr.4] Freed 0 spare client objects
+[ N 2022-12-24 20:14:43.4581 46106/Tq Ser/Server.h:558 ]: [ServerThr.10] Shutdown finished
+[ N 2022-12-24 20:14:43.4583 46106/Tx Ser/Server.h:558 ]: [ApiServer] Shutdown finished
+[ N 2022-12-24 20:14:43.4585 46106/Ti Ser/Server.h:558 ]: [ServerThr.6] Shutdown finished
+[ N 2022-12-24 20:14:43.4582 46106/Tc Ser/Server.h:558 ]: [ServerThr.3] Shutdown finished
+[ N 2022-12-24 20:14:43.4585 46106/Te Ser/Server.h:558 ]: [ServerThr.4] Shutdown finished
+[ N 2022-12-24 20:14:43.4584 46106/Tu Ser/Server.h:558 ]: [ServerThr.12] Shutdown finished
+[ N 2022-12-24 20:14:43.4587 46106/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 46155, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2022-12-24 20:14:44.5592 46106/T1 age/Cor/CoreMain.cpp:1325 ]: Passenger core shutdown finished
+[ N 2022-12-24 20:14:44.6076 46288/T1 age/Wat/WatchdogMain.cpp:1377 ]: Starting Passenger watchdog...
+[ N 2022-12-24 20:14:44.6426 46295/T1 age/Cor/CoreMain.cpp:1340 ]: Starting Passenger core...
+[ N 2022-12-24 20:14:44.6430 46295/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ N 2022-12-24 20:14:44.6863 46295/T1 age/Cor/CoreMain.cpp:1015 ]: Passenger core online, PID 46295
+[ N 2022-12-24 20:14:47.4693 46295/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+[ E 2022-12-24 20:14:47.4751 46295/T5 Sec/Crypto.cpp:990 ]: Removing Passenger private key from keychain failed: Write permissions error.. Please remove the private key from the certificate labeled Phusion Passenger Open Source in your keychain.
+App 46312 output: "init"
+App 46345 output: nil
+App 46345 output: nil
+App 46345 output: nil
+App 46345 output: 2022-12-24 20:14:47 - Errno::ENOENT - No such file or directory @ rb_sysopen - /json/headers/headers.json:
+App 46345 output: 	/Users/andylee/Repos/Pokeweb/models/header.rb:5:in `initialize'
+App 46345 output: 	/Users/andylee/Repos/Pokeweb/models/header.rb:5:in `open'
+App 46345 output: 	/Users/andylee/Repos/Pokeweb/models/header.rb:5:in `get_all'
+App 46345 output: 	/Users/andylee/Repos/Pokeweb/routes.rb:381:in `block in <class:MyApp>'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1696:in `call'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1696:in `block in compile!'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1009:in `block (3 levels) in route!'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1027:in `route_eval'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1009:in `block (2 levels) in route!'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1058:in `block in process_route'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1056:in `catch'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1056:in `process_route'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1007:in `block in route!'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1004:in `each'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1004:in `route!'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1128:in `block in dispatch!'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `catch'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `invoke'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1123:in `dispatch!'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:939:in `block in call!'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `catch'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `invoke'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:939:in `call!'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:928:in `call'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/xss_header.rb:20:in `call'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/path_traversal.rb:18:in `call'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/json_csrf.rb:28:in `call'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/base.rb:53:in `call'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/base.rb:53:in `call'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/frame_options.rb:33:in `call'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/null_logger.rb:11:in `call'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/head.rb:12:in `call'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/show_exceptions.rb:23:in `call'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:219:in `call'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:2007:in `call'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1566:in `block in call'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1782:in `synchronize'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1566:in `call'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:266:in `context'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:260:in `call'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:266:in `context'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:260:in `call'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/rack/thread_handler_extension.rb:107:in `process_request'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler.rb:419:in `block (3 levels) in start_threads'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+App 46345 output: nil
+App 46345 output: nil
+App 46345 output: {"rom"=>"projects/WhiteDeluxe", "password"=>"WhiteDeluxe"}
+App 46345 output: "projects/WhiteDeluxe"
+App 46345 output: "projects/WhiteDeluxe"
+App 46345 output: "projects/WhiteDeluxe"
+App 46345 output: {"file_name"=>"1", "field"=>"location_name", "value"=>"Faraway place", "narc"=>"header"}
+App 46345 output: {"file_name"=>"1", "field"=>"location_name", "value"=>"Faraway place", "narc"=>"header"}
+App 46345 output: 2022-12-24 20:14:59 - NameError - undefined local variable or method `edited_narcs' for #<MyApp:0x00007febd28a2260>:
+App 46345 output: 	/Users/andylee/Repos/Pokeweb/routes.rb:305:in `block (2 levels) in <class:MyApp>'
+App 46345 output: 	/Users/andylee/Repos/Pokeweb/routes.rb:302:in `open'
+App 46345 output: 	/Users/andylee/Repos/Pokeweb/routes.rb:302:in `block in <class:MyApp>'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1696:in `call'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1696:in `block in compile!'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1009:in `block (3 levels) in route!'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1027:in `route_eval'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1009:in `block (2 levels) in route!'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1058:in `block in process_route'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1056:in `catch'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1056:in `process_route'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1007:in `block in route!'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1004:in `each'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1004:in `route!'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1128:in `block in dispatch!'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `catch'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `invoke'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1123:in `dispatch!'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:939:in `block in call!'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `catch'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `invoke'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:939:in `call!'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:928:in `call'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/xss_header.rb:20:in `call'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/path_traversal.rb:18:in `call'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/json_csrf.rb:28:in `call'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/base.rb:53:in `call'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/base.rb:53:in `call'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/frame_options.rb:33:in `call'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/null_logger.rb:11:in `call'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/head.rb:12:in `call'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/show_exceptions.rb:23:in `call'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:219:in `call'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:2007:in `call'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1566:in `block in call'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1782:in `synchronize'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1566:in `call'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:266:in `context'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:260:in `call'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:266:in `context'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:260:in `call'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/rack/thread_handler_extension.rb:107:in `process_request'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:157:in `accept_and_process_next_request'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler.rb:419:in `block (3 levels) in start_threads'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+App 46345 output: "projects/WhiteDeluxe"
+App 46345 output: {"file_name"=>"1", "field"=>"location_name", "value"=>"Faraway place", "narc"=>"header"}
+App 46345 output: {"file_name"=>"1", "field"=>"location_name", "value"=>"Faraway place", "narc"=>"header"}
+App 46345 output: 2022-12-24 20:14:59 - NameError - undefined local variable or method `edited_narcs' for #<MyApp:0x00007febd2a1ca28>:
+App 46345 output: 	/Users/andylee/Repos/Pokeweb/routes.rb:305:in `block (2 levels) in <class:MyApp>'
+App 46345 output: 	/Users/andylee/Repos/Pokeweb/routes.rb:302:in `open'
+App 46345 output: 	/Users/andylee/Repos/Pokeweb/routes.rb:302:in `block in <class:MyApp>'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1696:in `call'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1696:in `block in compile!'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1009:in `block (3 levels) in route!'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1027:in `route_eval'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1009:in `block (2 levels) in route!'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1058:in `block in process_route'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1056:in `catch'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1056:in `process_route'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1007:in `block in route!'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1004:in `each'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1004:in `route!'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1128:in `block in dispatch!'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `catch'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `invoke'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1123:in `dispatch!'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:939:in `block in call!'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `catch'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `invoke'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:939:in `call!'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:928:in `call'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/xss_header.rb:20:in `call'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/path_traversal.rb:18:in `call'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/json_csrf.rb:28:in `call'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/base.rb:53:in `call'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/base.rb:53:in `call'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/frame_options.rb:33:in `call'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/null_logger.rb:11:in `call'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/head.rb:12:in `call'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/show_exceptions.rb:23:in `call'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:219:in `call'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:2007:in `call'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1566:in `block in call'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1782:in `synchronize'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1566:in `call'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:266:in `context'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:260:in `call'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:266:in `context'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:260:in `call'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/rack/thread_handler_extension.rb:107:in `process_request'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:157:in `accept_and_process_next_request'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler.rb:419:in `block (3 levels) in start_threads'
+App 46345 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+
+[ N 2022-12-24 20:15:34.0398 46295/T8 age/Cor/CoreMain.cpp:671 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2022-12-24 20:15:34.0399 46295/T1 age/Cor/CoreMain.cpp:1246 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2022-12-24 20:15:34.0399 46295/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 46345, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2022-12-24 20:15:34.0402 46295/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 46353, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2022-12-24 20:15:34.0403 46295/T8 Ser/Server.h:901 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2022-12-24 20:15:34.0404 46295/To Ser/Server.h:901 ]: [ServerThr.9] Freed 0 spare client objects
+[ N 2022-12-24 20:15:34.0404 46295/Tu Ser/Server.h:901 ]: [ServerThr.12] Freed 0 spare client objects
+[ N 2022-12-24 20:15:34.0404 46295/To Ser/Server.h:558 ]: [ServerThr.9] Shutdown finished
+[ N 2022-12-24 20:15:34.0404 46295/Ti Ser/Server.h:901 ]: [ServerThr.6] Freed 0 spare client objects
+[ N 2022-12-24 20:15:34.0403 46295/Tg Ser/Server.h:901 ]: [ServerThr.5] Freed 0 spare client objects
+[ N 2022-12-24 20:15:34.0405 46295/Ti Ser/Server.h:558 ]: [ServerThr.6] Shutdown finished
+[ N 2022-12-24 20:15:34.0404 46295/T8 Ser/Server.h:558 ]: [ServerThr.1] Shutdown finished
+[ N 2022-12-24 20:15:34.0404 46295/Tq Ser/Server.h:901 ]: [ServerThr.10] Freed 0 spare client objects
+[ N 2022-12-24 20:15:34.0403 46295/Tk Ser/Server.h:901 ]: [ServerThr.7] Freed 0 spare client objects
+[ N 2022-12-24 20:15:34.0405 46295/Tw Ser/Server.h:901 ]: [ApiServer] Freed 0 spare client objects
+[ N 2022-12-24 20:15:34.0403 46295/Tm Ser/Server.h:901 ]: [ServerThr.8] Freed 0 spare client objects
+[ N 2022-12-24 20:15:34.0406 46295/Tq Ser/Server.h:558 ]: [ServerThr.10] Shutdown finished
+[ N 2022-12-24 20:15:34.0403 46295/Tc Ser/Server.h:901 ]: [ServerThr.3] Freed 0 spare client objects
+[ N 2022-12-24 20:15:34.0404 46295/Tu Ser/Server.h:558 ]: [ServerThr.12] Shutdown finished
+[ N 2022-12-24 20:15:34.0403 46295/Ta Ser/Server.h:901 ]: [ServerThr.2] Freed 0 spare client objects
+[ N 2022-12-24 20:15:34.0404 46295/Ts Ser/Server.h:901 ]: [ServerThr.11] Freed 0 spare client objects
+[ N 2022-12-24 20:15:34.0406 46295/Tg Ser/Server.h:558 ]: [ServerThr.5] Shutdown finished
+[ N 2022-12-24 20:15:34.0408 46295/Ta Ser/Server.h:558 ]: [ServerThr.2] Shutdown finished
+[ N 2022-12-24 20:15:34.0404 46295/Te Ser/Server.h:901 ]: [ServerThr.4] Freed 0 spare client objects
+[ N 2022-12-24 20:15:34.0406 46295/Tw Ser/Server.h:558 ]: [ApiServer] Shutdown finished
+[ N 2022-12-24 20:15:34.0409 46295/Te Ser/Server.h:558 ]: [ServerThr.4] Shutdown finished
+[ N 2022-12-24 20:15:34.0407 46295/Tc Ser/Server.h:558 ]: [ServerThr.3] Shutdown finished
+[ N 2022-12-24 20:15:34.0407 46295/Tm Ser/Server.h:558 ]: [ServerThr.8] Shutdown finished
+[ N 2022-12-24 20:15:34.0406 46295/Tk Ser/Server.h:558 ]: [ServerThr.7] Shutdown finished
+[ N 2022-12-24 20:15:34.0408 46295/Ts Ser/Server.h:558 ]: [ServerThr.11] Shutdown finished
+[ N 2022-12-24 20:15:34.0410 46295/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 46345, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2022-12-24 20:15:34.0411 46295/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 46353, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2022-12-24 20:15:35.1326 46295/T1 age/Cor/CoreMain.cpp:1325 ]: Passenger core shutdown finished
+[ N 2022-12-24 20:15:35.1557 46415/T1 age/Wat/WatchdogMain.cpp:1377 ]: Starting Passenger watchdog...
+[ N 2022-12-24 20:15:35.1936 46422/T1 age/Cor/CoreMain.cpp:1340 ]: Starting Passenger core...
+[ N 2022-12-24 20:15:35.1940 46422/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ N 2022-12-24 20:15:35.2368 46422/T1 age/Cor/CoreMain.cpp:1015 ]: Passenger core online, PID 46422
+[ N 2022-12-24 20:15:38.0268 46422/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+[ E 2022-12-24 20:15:38.0321 46422/T5 Sec/Crypto.cpp:990 ]: Removing Passenger private key from keychain failed: Write permissions error.. Please remove the private key from the certificate labeled Phusion Passenger Open Source in your keychain.
+App 46438 output: "init"
+App 46471 output: nil
+App 46471 output: nil
+App 46471 output: nil
+App 46471 output: nil
+App 46471 output: {"rom"=>"projects/WhiteDeluxe", "password"=>"WhiteDeluxe"}
+App 46471 output: "projects/WhiteDeluxe"
+App 46471 output: "projects/WhiteDeluxe"
+App 46471 output: "projects/WhiteDeluxe"
+App 46471 output: {"file_name"=>"1", "field"=>"location_name", "value"=>"Faraway place", "narc"=>"header"}
+App 46471 output: {"file_name"=>"1", "field"=>"location_name", "value"=>"Faraway place", "narc"=>"header"}
+App 46471 output: "projects/WhiteDeluxe"
+App 46471 output: {"file_name"=>"1", "field"=>"location_name", "value"=>"Faraway place", "narc"=>"header"}
+App 46471 output: {"file_name"=>"1", "field"=>"location_name", "value"=>"Faraway place", "narc"=>"header"}
+App 46471 output: "projects/WhiteDeluxe"
+App 46471 output: "projects/WhiteDeluxe"
+App 46471 output: "projects/WhiteDeluxe"
+App 46471 output: {"file_name"=>"1", "field"=>"ability_1", "value"=>"Overgrow", "narc"=>"personal"}
+App 46471 output: {"file_name"=>"1", "field"=>"ability_1", "value"=>"Overgrow", "narc"=>"personal"}
+App 46471 output: "projects/WhiteDeluxe"
+App 46471 output: {"file_name"=>"1", "field"=>"ability_1", "value"=>"Overgrow", "narc"=>"personal"}
+App 46471 output: {"file_name"=>"1", "field"=>"ability_1", "value"=>"Overgrow", "narc"=>"personal"}
+App 46471 output: "projects/WhiteDeluxe"
+App 46471 output: "projects/WhiteDeluxe"
+App 46471 output: {"file_name"=>"1", "field"=>"move_id_0", "value"=>"Tackle", "narc"=>"learnset"}
+App 46471 output: "all"
+App 46471 output: "move_id_0"
+App 46471 output: {"file_name"=>"1", "field"=>"move_id_0", "value"=>"Tackle", "narc"=>"learnset"}
+App 46471 output: "projects/WhiteDeluxe"
+App 46471 output: {"file_name"=>"1", "field"=>"move_id_0", "value"=>"Tackle", "narc"=>"learnset"}
+App 46471 output: "all"
+App 46471 output: "move_id_0"
+App 46471 output: {"file_name"=>"1", "field"=>"move_id_0", "value"=>"Tackle", "narc"=>"learnset"}
+App 46471 output: "projects/WhiteDeluxe"
+App 46471 output: {"file_name"=>"1", "field"=>"param_0", "value"=>"16", "narc"=>"evolution", "int"=>"true"}
+App 46471 output: {"file_name"=>"1", "field"=>"param_0", "value"=>"16", "narc"=>"evolution", "int"=>"true"}
+App 46471 output: "projects/WhiteDeluxe"
+App 46471 output: {"file_name"=>"1", "field"=>"param_0", "value"=>"16", "narc"=>"evolution", "int"=>"true"}
+App 46471 output: {"file_name"=>"1", "field"=>"param_0", "value"=>"16", "narc"=>"evolution", "int"=>"true"}
+App 46471 output: "projects/WhiteDeluxe"
+App 46471 output: "projects/WhiteDeluxe"
+App 46471 output: {"file_name"=>"1", "field"=>"battle_type_1", "value"=>"Singles", "narc"=>"trdata"}
+App 46471 output: {"file_name"=>"1", "field"=>"battle_type_1", "value"=>"Singles", "narc"=>"trdata"}
+App 46471 output: "projects/WhiteDeluxe"
+App 46471 output: {"file_name"=>"1", "field"=>"battle_type_1", "value"=>"Singles", "narc"=>"trdata"}
+App 46471 output: {"file_name"=>"1", "field"=>"battle_type_1", "value"=>"Singles", "narc"=>"trdata"}
+App 46471 output: "projects/WhiteDeluxe"
+App 46471 output: {"file_name"=>"1", "field"=>"species_id_0", "value"=>"Blitzle", "narc"=>"trpok"}
+App 46471 output: {"file_name"=>"1", "field"=>"species_id_0", "value"=>"Blitzle", "narc"=>"trpok"}
+App 46471 output: ["species", "move"]
+App 46471 output: "species_id_0"
+App 46471 output: {"file_name"=>"1", "field"=>"species_id_0", "value"=>"Blitzle", "narc"=>"trpok"}
+App 46471 output: "projects/WhiteDeluxe"
+App 46471 output: {"file_name"=>"1", "field"=>"species_id_0", "value"=>"Blitzle", "narc"=>"trpok"}
+App 46471 output: {"file_name"=>"1", "field"=>"species_id_0", "value"=>"Blitzle", "narc"=>"trpok"}
+App 46471 output: ["species", "move"]
+App 46471 output: "species_id_0"
+App 46471 output: {"file_name"=>"1", "field"=>"species_id_0", "value"=>"Blitzle", "narc"=>"trpok"}
+App 46471 output: "projects/WhiteDeluxe"
+App 46471 output: "projects/WhiteDeluxe"
+App 46471 output: {"file_name"=>"0", "field"=>"spring_grass_slot_0_min_level", "value"=>"0", "narc"=>"encounter", "int"=>"true"}
+App 46471 output: {"file_name"=>"0", "field"=>"spring_grass_slot_0_min_level", "value"=>"0", "narc"=>"encounter", "int"=>"true"}
+App 46471 output: "projects/WhiteDeluxe"
+App 46471 output: "projects/WhiteDeluxe"
+App 46471 output: {"file_name"=>"1", "field"=>"effect", "value"=>"None", "narc"=>"move"}
+App 46471 output: {"file_name"=>"1", "field"=>"effect", "value"=>"None", "narc"=>"move"}
+App 46471 output: 1
+App 46471 output: 
+App 46471 output: no exp
+App 46471 output: 1
+App 46471 output: "projects/WhiteDeluxe"
+App 46471 output: {"file_name"=>"1", "field"=>"effect", "value"=>"None", "narc"=>"move"}
+App 46471 output: {"file_name"=>"1", "field"=>"effect", "value"=>"None", "narc"=>"move"}
+App 46471 output: 1
+App 46471 output: no exp
+App 46471 output: 1
+App 46471 output: "projects/WhiteDeluxe"
+App 46471 output: "projects/WhiteDeluxe"
+App 46471 output: {"file_name"=>"1", "field"=>"market_value", "value"=>"0", "narc"=>"item", "int"=>"true"}
+App 46471 output: {"file_name"=>"1", "field"=>"market_value", "value"=>"0", "narc"=>"item", "int"=>"true"}
+App 46471 output: "projects/WhiteDeluxe"
+App 46471 output: "projects/WhiteDeluxe"
+App 46471 output: {"file_name"=>"1", "field"=>"item_0", "value"=>"Poke Ball", "narc"=>"mart"}
+App 46471 output: {"file_name"=>"1", "field"=>"item_0", "value"=>"Poke Ball", "narc"=>"mart"}
+App 46471 output: "projects/WhiteDeluxe"
+App 46471 output: {"file_name"=>"1", "field"=>"item_0", "value"=>"Poke Ball", "narc"=>"mart"}
+App 46471 output: {"file_name"=>"1", "field"=>"item_0", "value"=>"Poke Ball", "narc"=>"mart"}
+App 46471 output: "projects/WhiteDeluxe"
+App 46471 output: "projects/WhiteDeluxe"
+App 46471 output: {"file_name"=>"0", "field"=>"black_common_min_lvl_0", "value"=>"10", "narc"=>"grotto", "int"=>"true"}
+App 46471 output: {"file_name"=>"0", "field"=>"black_common_min_lvl_0", "value"=>"10", "narc"=>"grotto", "int"=>"true"}
+App 46471 output: "/////////"
+App 46471 output: {"file_name"=>"0", "field"=>"black_common_min_lvl_0", "value"=>"10", "narc"=>"grotto", "int"=>"true"}
+App 46471 output: "projects/WhiteDeluxe"
+App 46471 output: "projects/WhiteDeluxe"
+App 46471 output: "projects/WhiteDeluxe"
+App 46471 output: 2
+App 46471 output: {"maps"=>[[827, [0, 0, 32, 32]]], "translate"=>[0, 0]}
+App 46471 output: "projects/WhiteDeluxe"
+App 46471 output: {"file_name"=>"1", "field"=>"npc_7_overworld_sprite", "value"=>"48", "narc"=>"overworld", "int"=>"true"}
+App 46471 output: {"file_name"=>"1", "field"=>"npc_7_overworld_sprite", "value"=>"48", "narc"=>"overworld", "int"=>"true"}
+App 46471 output: "projects/WhiteDeluxe"
+[ N 2022-12-24 20:20:38.5206 46422/T4 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 46479, application /Users/andylee/Repos/Pokeweb (development)
+App 46471 output: "projects/WhiteDeluxe"
+App 46471 output: nil
+App 46471 output: nil
+App 46471 output: {"rom"=>"projects/WhiteDeluxe", "password"=>"WhiteDeluxe"}
+App 46471 output: "projects/WhiteDeluxe"
+App 46471 output: "projects/WhiteDeluxe"
+App 46471 output: "projects/WhiteDeluxe"
+App 46471 output: "creating base rom"
+App 46471 output: "xdelta3 -d -s ./base/blank.nds ./base/W2.xdelta ./base/W2.nds"
+App 46471 output: "creating edited rom"
+App 46471 output: "xdelta3 -d -s ./base/W2.nds ./xdeltas/WhiteDeluxe.xdelta WhiteDeluxe.nds"
+App 46471 output: xdelta3: file open failed: read: ./xdeltas/WhiteDeluxe.xdelta: No such file or directory
+App 46471 output: "creating edited rom"
+App 46471 output:   File "/Users/andylee/Repos/Pokeweb/python/rom_saver.py", line 46
+App 46471 output:     
+App 46471 output: edited = "edited" in settings ? settings["edited"] : []
+App 46471 output:                                   ^
+App 46471 output: SyntaxError: invalid syntax
+App 46471 output: "edited rom created"
+App 46471 output: "generating xdelta"
+App 46471 output: "xdelta3 -e -s ./base/W2.nds ./exports/WhiteDeluxe.nds ./exports/WhiteDeluxe_edited.xdelta"
+App 46471 output: xdelta3: file open failed: read: ./exports/WhiteDeluxe.nds: No such file or directory
+App 46471 output: "deleting base rom"
+App 46471 output: "deleting uploaded rom"
+App 46471 output: "deleting edited rom"
+App 46471 output: "projects/WhiteDeluxe"
+App 46471 output: rm: exports/*
+App 46471 output: : No such file or directory
+App 46471 output: "creating base rom"
+App 46471 output: "xdelta3 -d -s ./base/blank.nds ./base/W2.xdelta ./base/W2.nds"
+App 46471 output: "creating edited rom"
+App 46471 output: "xdelta3 -d -s ./base/W2.nds ./xdeltas/WhiteDeluxe.xdelta WhiteDeluxe.nds"
+App 46471 output: xdelta3: file open failed: read: ./xdeltas/WhiteDeluxe.xdelta: No such file or directory
+App 46471 output: "creating edited rom"
+App 46471 output:   File "/Users/andylee/Repos/Pokeweb/python/rom_saver.py", line 46
+App 46471 output:     edited = "edited" in settings ? settings["edited"] : []
+App 46471 output:                     
+App 46471 output:               ^
+App 46471 output: SyntaxError: invalid syntax
+App 46471 output: "edited rom created"
+App 46471 output: "generating xdelta"
+App 46471 output: "xdelta3 -e -s ./base/W2.nds ./exports/WhiteDeluxe.nds ./exports/WhiteDeluxe_edited.xdelta"
+App 46471 output: xdelta3: file open failed: read: ./exports/WhiteDeluxe.nds: No such file or directory
+App 46471 output: "deleting base rom"
+App 46471 output: "deleting uploaded rom"
+App 46471 output: "deleting edited rom"
+App 46471 output: "projects/WhiteDeluxe"
+App 46471 output: rm: exports/*
+App 46471 output: : No such file or directory
+App 46471 output: "creating base rom"
+App 46471 output: "xdelta3 -d -s ./base/blank.nds ./base/W2.xdelta ./base/W2.nds"
+App 46471 output: "creating edited rom"
+App 46471 output: "xdelta3 -d -s ./base/W2.nds ./xdeltas/WhiteDeluxe.xdelta WhiteDeluxe.nds"
+App 46471 output: xdelta3: file open failed: read: ./xdeltas/WhiteDeluxe.xdelta: No such file or directory
+App 46471 output: "creating edited rom"
+App 46471 output:   File "/Users/andylee/Repos/Pokeweb/python/rom_saver.py", line 46
+App 46471 output:     edited = "edited" in settings ? settings["edited"] : []
+App 46471 output:                        
+App 46471 output:            ^
+App 46471 output: SyntaxError: invalid syntax
+App 46471 output: "edited rom created"
+App 46471 output: "generating xdelta"
+App 46471 output: "xdelta3 -e -s ./base/W2.nds ./exports/WhiteDeluxe.nds ./exports/WhiteDeluxe_edited.xdelta"
+App 46471 output: xdelta3: file open failed: read: ./exports/WhiteDeluxe.nds: No such file or directory
+App 46471 output: "deleting base rom"
+App 46471 output: "deleting uploaded rom"
+App 46471 output: "deleting edited rom"
+App 46471 output: "projects/WhiteDeluxe"
+App 46471 output: "projects/WhiteDeluxe"
+App 46471 output: "projects/WhiteDeluxe"
+App 46471 output: rm: exports/*
+App 46471 output: : No such file or directory
+App 46471 output: "creating base rom"
+App 46471 output: "xdelta3 -d -s ./base/blank.nds ./base/W2.xdelta ./base/W2.nds"
+App 46471 output: "creating edited rom"
+App 46471 output: "xdelta3 -d -s ./base/W2.nds ./xdeltas/WhiteDeluxe.xdelta WhiteDeluxe.nds"
+App 46471 output: xdelta3: file open failed: read: ./xdeltas/WhiteDeluxe.xdelta: No such file or directory
+App 46471 output: "creating edited rom"
+App 46471 output:   File "/Users/andylee/Repos/Pokeweb/python/rom_saver.py", line 46
+App 46471 output:     edited = ("edited" in settings) ? settings["edited"] : []
+App 46471 output:                                     ^
+App 46471 output: SyntaxError: invalid syntax
+App 46471 output: "edited rom created"
+App 46471 output: "generating xdelta"
+App 46471 output: "xdelta3 -e -s ./base/W2.nds ./exports/WhiteDeluxe.nds ./exports/WhiteDeluxe_edited.xdelta"
+App 46471 output: xdelta3: file open failed: read: ./exports/WhiteDeluxe.nds: No such file or directory
+App 46471 output: "deleting base rom"
+App 46471 output: "deleting uploaded rom"
+App 46471 output: "deleting edited rom"
+App 46471 output: "projects/WhiteDeluxe"
+App 46471 output: rm: exports/*
+App 46471 output: : No such file or directory
+App 46471 output: "creating base rom"
+App 46471 output: "xdelta3 -d -s ./base/blank.nds ./base/W2.xdelta ./base/W2.nds"
+App 46471 output: "creating edited rom"
+App 46471 output: "xdelta3 -d -s ./base/W2.nds ./xdeltas/WhiteDeluxe.xdelta WhiteDeluxe.nds"
+App 46471 output: xdelta3: file open failed: read: ./xdeltas/WhiteDeluxe.xdelta: No such file or directory
+App 46471 output: "creating edited rom"
+App 46471 output:   File "/Users/andylee/Repos/Pokeweb/python/rom_saver.py", line 46
+App 46471 output:     edited = ("edited" in settings) ? settings["edited"] : []
+App 46471 output:                                     ^
+App 46471 output: SyntaxError
+App 46471 output: : invalid syntax
+App 46471 output: "edited rom created"
+App 46471 output: "generating xdelta"
+App 46471 output: "xdelta3 -e -s ./base/W2.nds ./exports/WhiteDeluxe.nds ./exports/WhiteDeluxe_edited.xdelta"
+App 46471 output: xdelta3: file open failed: read: ./exports/WhiteDeluxe.nds: No such file or directory
+App 46471 output: "deleting base rom"
+App 46471 output: "deleting uploaded rom"
+App 46471 output: "deleting edited rom"
+App 46471 output: "projects/WhiteDeluxe"
+App 46471 output: rm: exports/*
+App 46471 output: : No such file or directory
+App 46471 output: "creating base rom"
+App 46471 output: "xdelta3 -d -s ./base/blank.nds ./base/W2.xdelta ./base/W2.nds"
+App 46471 output: "creating edited rom"
+App 46471 output: "xdelta3 -d -s ./base/W2.nds ./xdeltas/WhiteDeluxe.xdelta WhiteDeluxe.nds"
+App 46471 output: xdelta3: file open failed: read: ./xdeltas/WhiteDeluxe.xdelta: No such file or directory
+App 46471 output: "creating edited rom"
+App 46471 output:   File "/Users/andylee/Repos/Pokeweb/python/rom_saver.py", line 46
+App 46471 output:     edited = ("edited" in settings) ? settings["edited"] : []
+App 46471 output:      
+App 46471 output:                                ^
+App 46471 output: SyntaxError: invalid syntax
+App 46471 output: "edited rom created"
+App 46471 output: "generating xdelta"
+App 46471 output: "xdelta3 -e -s ./base/W2.nds ./exports/WhiteDeluxe.nds ./exports/WhiteDeluxe_edited.xdelta"
+App 46471 output: xdelta3: file open failed: read: ./exports/WhiteDeluxe.nds: No such file or directory
+App 46471 output: "deleting base rom"
+App 46471 output: "deleting uploaded rom"
+App 46471 output: "deleting edited rom"
+App 46471 output: "projects/WhiteDeluxe"
+App 46471 output: rm: exports/*
+App 46471 output: : No such file or directory
+App 46471 output: "creating base rom"
+App 46471 output: "xdelta3 -d -s ./base/blank.nds ./base/W2.xdelta ./base/W2.nds"
+App 46471 output: "creating edited rom"
+App 46471 output: "xdelta3 -d -s ./base/W2.nds ./xdeltas/WhiteDeluxe.xdelta WhiteDeluxe.nds"
+App 46471 output: xdelta3: file open failed: read: ./xdeltas/WhiteDeluxe.xdelta: No such file or directory
+App 46471 output: "creating edited rom"
+App 46471 output: "edited rom created"
+App 46471 output: "generating xdelta"
+App 46471 output: "xdelta3 -e -s ./base/W2.nds ./exports/WhiteDeluxe.nds ./exports/WhiteDeluxe_edited.xdelta"
+App 46471 output: xdelta3: file open failed: read: ./exports/WhiteDeluxe.nds: No such file or directory
+App 46471 output: "deleting base rom"
+App 46471 output: "deleting uploaded rom"
+App 46471 output: "deleting edited rom"
+App 46471 output: "projects/WhiteDeluxe"
+App 46471 output: rm: 
+App 46471 output: exports/*: No such file or directory
+App 46471 output: "creating base rom"
+App 46471 output: "xdelta3 -d -s ./base/blank.nds ./base/W2.xdelta ./base/W2.nds"
+App 46471 output: "creating edited rom"
+App 46471 output: "xdelta3 -d -s ./base/W2.nds ./xdeltas/WhiteDeluxe.xdelta WhiteDeluxe.nds"
+App 46471 output: xdelta3: file open failed: read: ./xdeltas/WhiteDeluxe.xdelta: No such file or directory
+App 46471 output: "creating edited rom"
+App 46471 output: "edited rom created"
+App 46471 output: "generating xdelta"
+App 46471 output: "xdelta3 -e -s ./base/W2.nds ./exports/WhiteDeluxe.nds ./exports/WhiteDeluxe_edited.xdelta"
+App 46471 output: xdelta3: file open failed: read: ./exports/WhiteDeluxe.nds: No such file or directory
+App 46471 output: "deleting base rom"
+App 46471 output: "deleting uploaded rom"
+App 46471 output: "deleting edited rom"
+App 46471 output: "projects/WhiteDeluxe"
+App 46471 output: rm: exports/*: No such file or directory
+App 46471 output: "creating base rom"
+App 46471 output: "xdelta3 -d -s ./base/blank.nds ./base/W2.xdelta ./base/W2.nds"
+App 46471 output: "creating edited rom"
+App 46471 output: "xdelta3 -d -s ./base/W2.nds ./xdeltas/WhiteDeluxe.xdelta WhiteDeluxe.nds"
+App 46471 output: xdelta3: file open failed: read: ./xdeltas/WhiteDeluxe.xdelta: No such file or directory
+App 46471 output: "creating edited rom"
+App 46471 output: "edited rom created"
+App 46471 output: "generating xdelta"
+App 46471 output: "xdelta3 -e -s ./base/W2.nds ./exports/WhiteDeluxe.nds ./exports/WhiteDeluxe_edited.xdelta"
+App 46471 output: xdelta3: file open failed: read: ./exports/WhiteDeluxe.nds: No such file or directory
+App 46471 output: "deleting base rom"
+App 46471 output: "deleting uploaded rom"
+App 46471 output: "deleting edited rom"
+App 46471 output: "projects/WhiteDeluxe"
+App 46471 output: rm: exports/*: No such file or directory
+App 46471 output: "creating base rom"
+App 46471 output: "xdelta3 -d -s ./base/blank.nds ./base/W2.xdelta ./base/W2.nds"
+App 46471 output: "creating edited rom"
+App 46471 output: "xdelta3 -d -s ./base/W2.nds ./xdeltas/WhiteDeluxe.xdelta WhiteDeluxe.nds"
+App 46471 output: xdelta3: file open failed: read: ./xdeltas/WhiteDeluxe.xdelta: No such file or directory
+App 46471 output: "creating edited rom"
+App 46471 output: "edited rom created"
+App 46471 output: "generating xdelta"
+App 46471 output: "xdelta3 -e -s ./base/W2.nds ./exports/WhiteDeluxe.nds ./exports/WhiteDeluxe_edited.xdelta"
+App 46471 output: xdelta3: file open failed: read: ./exports/WhiteDeluxe.nds: No such file or directory
+App 46471 output: "deleting base rom"
+App 46471 output: "deleting uploaded rom"
+App 46471 output: "deleting edited rom"
+App 46471 output: "projects/WhiteDeluxe"
+App 46471 output: rm: exports/*: 
+App 46471 output: No such file or directory
+App 46471 output: "creating base rom"
+App 46471 output: "xdelta3 -d -s ./base/blank.nds ./base/W2.xdelta ./base/W2.nds"
+App 46471 output: "creating edited rom"
+App 46471 output: "xdelta3 -d -s ./base/W2.nds ./xdeltas/WhiteDeluxe.xdelta WhiteDeluxe.nds"
+App 46471 output: xdelta3: file open failed: read: ./xdeltas/WhiteDeluxe.xdelta: No such file or directory
+App 46471 output: "creating edited rom"
+App 46471 output: "edited rom created"
+App 46471 output: "generating xdelta"
+App 46471 output: "xdelta3 -e -s ./base/W2.nds ./exports/WhiteDeluxe.nds ./exports/WhiteDeluxe_edited.xdelta"
+App 46471 output: xdelta3: file open failed: read: ./exports/WhiteDeluxe.nds: No such file or directory
+App 46471 output: "deleting base rom"
+App 46471 output: "deleting uploaded rom"
+App 46471 output: "deleting edited rom"
+
+[ N 2022-12-24 20:31:14.8190 46422/T8 age/Cor/CoreMain.cpp:671 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2022-12-24 20:31:14.8190 46422/T1 age/Cor/CoreMain.cpp:1246 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2022-12-24 20:31:14.8190 46422/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 46471, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2022-12-24 20:31:14.8197 46422/Td Ser/Server.h:901 ]: [ServerThr.3] Freed 0 spare client objects
+[ N 2022-12-24 20:31:14.8197 46422/Tg Ser/Server.h:901 ]: [ServerThr.5] Freed 0 spare client objects
+[ N 2022-12-24 20:31:14.8197 46422/Ta Ser/Server.h:901 ]: [ServerThr.2] Freed 0 spare client objects
+[ N 2022-12-24 20:31:14.8197 46422/T8 Ser/Server.h:901 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2022-12-24 20:31:14.8198 46422/Tg Ser/Server.h:558 ]: [ServerThr.5] Shutdown finished
+[ N 2022-12-24 20:31:14.8198 46422/Tq Ser/Server.h:901 ]: [ServerThr.10] Freed 0 spare client objects
+[ N 2022-12-24 20:31:14.8197 46422/Tk Ser/Server.h:901 ]: [ServerThr.7] Freed 0 spare client objects
+[ N 2022-12-24 20:31:14.8197 46422/Te Ser/Server.h:901 ]: [ServerThr.4] Freed 0 spare client objects
+[ N 2022-12-24 20:31:14.8198 46422/Ti Ser/Server.h:901 ]: [ServerThr.6] Freed 0 spare client objects
+[ N 2022-12-24 20:31:14.8198 46422/Ts Ser/Server.h:901 ]: [ServerThr.11] Freed 0 spare client objects
+[ N 2022-12-24 20:31:14.8200 46422/Tw Ser/Server.h:901 ]: [ApiServer] Freed 0 spare client objects
+[ N 2022-12-24 20:31:14.8198 46422/Td Ser/Server.h:558 ]: [ServerThr.3] Shutdown finished
+[ N 2022-12-24 20:31:14.8199 46422/T8 Ser/Server.h:558 ]: [ServerThr.1] Shutdown finished
+[ N 2022-12-24 20:31:14.8200 46422/Tk Ser/Server.h:558 ]: [ServerThr.7] Shutdown finished
+[ N 2022-12-24 20:31:14.8197 46422/Tm Ser/Server.h:901 ]: [ServerThr.8] Freed 0 spare client objects
+[ N 2022-12-24 20:31:14.8198 46422/Tu Ser/Server.h:901 ]: [ServerThr.12] Freed 0 spare client objects
+[ N 2022-12-24 20:31:14.8200 46422/Ti Ser/Server.h:558 ]: [ServerThr.6] Shutdown finished
+[ N 2022-12-24 20:31:14.8200 46422/Te Ser/Server.h:558 ]: [ServerThr.4] Shutdown finished
+[ N 2022-12-24 20:31:14.8202 46422/Tu Ser/Server.h:558 ]: [ServerThr.12] Shutdown finished
+[ N 2022-12-24 20:31:14.8201 46422/Tw Ser/Server.h:558 ]: [ApiServer] Shutdown finished
+[ N 2022-12-24 20:31:14.8200 46422/Tq Ser/Server.h:558 ]: [ServerThr.10] Shutdown finished
+[ N 2022-12-24 20:31:14.8201 46422/Ts Ser/Server.h:558 ]: [ServerThr.11] Shutdown finished
+[ N 2022-12-24 20:31:14.8202 46422/Tm Ser/Server.h:558 ]: [ServerThr.8] Shutdown finished
+[ N 2022-12-24 20:31:14.8199 46422/Ta Ser/Server.h:558 ]: [ServerThr.2] Shutdown finished
+[ N 2022-12-24 20:31:14.8198 46422/To Ser/Server.h:901 ]: [ServerThr.9] Freed 0 spare client objects
+[ N 2022-12-24 20:31:14.8204 46422/To Ser/Server.h:558 ]: [ServerThr.9] Shutdown finished
+[ N 2022-12-24 20:31:14.8204 46422/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 46471, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2022-12-24 20:31:15.9134 46422/T1 age/Cor/CoreMain.cpp:1325 ]: Passenger core shutdown finished
+[ N 2022-12-24 20:31:16.1733 47488/T1 age/Wat/WatchdogMain.cpp:1377 ]: Starting Passenger watchdog...
+[ N 2022-12-24 20:31:16.2035 47490/T1 age/Cor/CoreMain.cpp:1340 ]: Starting Passenger core...
+[ N 2022-12-24 20:31:16.2039 47490/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ N 2022-12-24 20:31:16.2415 47490/T1 age/Cor/CoreMain.cpp:1015 ]: Passenger core online, PID 47490
+[ N 2022-12-24 20:31:19.0486 47490/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+[ E 2022-12-24 20:31:19.0553 47490/T5 Sec/Crypto.cpp:990 ]: Removing Passenger private key from keychain failed: Write permissions error.. Please remove the private key from the certificate labeled Phusion Passenger Open Source in your keychain.
+App 47506 output: "init"
+App 47539 output: nil
+App 47539 output: nil
+App 47539 output: nil
+App 47539 output: {"rom_base"=>"W2", "rom_name"=>"White2Deluxe.nds", "password"=>"White2Deluxe"}
+App 47539 output: "projects/White2Deluxe"
+App 47539 output: "projects/White2Deluxe"
+App 47539 output: "projects/White2Deluxe"
+App 47539 output: rm: 
+App 47539 output: exports/*: No such file or directory
+App 47539 output: "creating base rom"
+App 47539 output: "xdelta3 -d -s ./base/blank.nds ./base/W2.xdelta ./base/W2.nds"
+App 47539 output: "creating edited rom"
+App 47539 output: "xdelta3 -d -s ./base/W2.nds ./xdeltas/White2Deluxe.xdelta White2Deluxe.nds"
+App 47539 output: "creating edited rom"
+App 47539 output: "edited rom created"
+App 47539 output: "generating xdelta"
+App 47539 output: "xdelta3 -e -s ./base/W2.nds ./exports/White2Deluxe.nds ./exports/White2Deluxe_edited.xdelta"
+App 47539 output: "deleting base rom"
+App 47539 output: "deleting uploaded rom"
+App 47539 output: "deleting edited rom"
+
+[ N 2022-12-24 20:34:16.6733 47490/T8 age/Cor/CoreMain.cpp:671 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2022-12-24 20:34:16.6733 47490/T1 age/Cor/CoreMain.cpp:1246 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2022-12-24 20:34:16.6734 47490/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 47539, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2022-12-24 20:34:16.6739 47490/Tc Ser/Server.h:901 ]: [ServerThr.3] Freed 0 spare client objects
+[ N 2022-12-24 20:34:16.6740 47490/To Ser/Server.h:901 ]: [ServerThr.9] Freed 0 spare client objects
+[ N 2022-12-24 20:34:16.6738 47490/T8 Ser/Server.h:901 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2022-12-24 20:34:16.6739 47490/Tb Ser/Server.h:901 ]: [ServerThr.2] Freed 0 spare client objects
+[ N 2022-12-24 20:34:16.6740 47490/Tg Ser/Server.h:901 ]: [ServerThr.5] Freed 0 spare client objects
+[ N 2022-12-24 20:34:16.6740 47490/Tk Ser/Server.h:901 ]: [ServerThr.7] Freed 0 spare client objects
+[ N 2022-12-24 20:34:16.6740 47490/Ti Ser/Server.h:901 ]: [ServerThr.6] Freed 0 spare client objects
+[ N 2022-12-24 20:34:16.6741 47490/T8 Ser/Server.h:558 ]: [ServerThr.1] Shutdown finished
+[ N 2022-12-24 20:34:16.6742 47490/Ti Ser/Server.h:558 ]: [ServerThr.6] Shutdown finished
+[ N 2022-12-24 20:34:16.6740 47490/Ts Ser/Server.h:901 ]: [ServerThr.11] Freed 0 spare client objects
+[ N 2022-12-24 20:34:16.6740 47490/Te Ser/Server.h:901 ]: [ServerThr.4] Freed 0 spare client objects
+[ N 2022-12-24 20:34:16.6740 47490/Tc Ser/Server.h:558 ]: [ServerThr.3] Shutdown finished
+[ N 2022-12-24 20:34:16.6740 47490/Tm Ser/Server.h:901 ]: [ServerThr.8] Freed 0 spare client objects
+[ N 2022-12-24 20:34:16.6740 47490/Tq Ser/Server.h:901 ]: [ServerThr.10] Freed 0 spare client objects
+[ N 2022-12-24 20:34:16.6741 47490/Tb Ser/Server.h:558 ]: [ServerThr.2] Shutdown finished
+[ N 2022-12-24 20:34:16.6742 47490/Tw Ser/Server.h:901 ]: [ApiServer] Freed 0 spare client objects
+[ N 2022-12-24 20:34:16.6744 47490/Tq Ser/Server.h:558 ]: [ServerThr.10] Shutdown finished
+[ N 2022-12-24 20:34:16.6744 47490/Tw Ser/Server.h:558 ]: [ApiServer] Shutdown finished
+[ N 2022-12-24 20:34:16.6742 47490/Tg Ser/Server.h:558 ]: [ServerThr.5] Shutdown finished
+[ N 2022-12-24 20:34:16.6741 47490/Tk Ser/Server.h:558 ]: [ServerThr.7] Shutdown finished
+[ N 2022-12-24 20:34:16.6740 47490/To Ser/Server.h:558 ]: [ServerThr.9] Shutdown finished
+[ N 2022-12-24 20:34:16.6743 47490/Tm Ser/Server.h:558 ]: [ServerThr.8] Shutdown finished
+[ N 2022-12-24 20:34:16.6740 47490/Tu Ser/Server.h:901 ]: [ServerThr.12] Freed 0 spare client objects
+[ N 2022-12-24 20:34:16.6746 47490/Tu Ser/Server.h:558 ]: [ServerThr.12] Shutdown finished
+[ N 2022-12-24 20:34:16.6743 47490/Te Ser/Server.h:558 ]: [ServerThr.4] Shutdown finished
+[ N 2022-12-24 20:34:16.6743 47490/Ts Ser/Server.h:558 ]: [ServerThr.11] Shutdown finished
+[ N 2022-12-24 20:34:16.6746 47490/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 47539, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2022-12-24 20:34:17.7299 47490/T1 age/Cor/CoreMain.cpp:1325 ]: Passenger core shutdown finished
+[ N 2022-12-24 20:34:18.1214 47692/T1 age/Wat/WatchdogMain.cpp:1377 ]: Starting Passenger watchdog...
+[ N 2022-12-24 20:34:18.1509 47694/T1 age/Cor/CoreMain.cpp:1340 ]: Starting Passenger core...
+[ N 2022-12-24 20:34:18.1513 47694/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ N 2022-12-24 20:34:18.1831 47694/T1 age/Cor/CoreMain.cpp:1015 ]: Passenger core online, PID 47694
+[ N 2022-12-24 20:34:20.9781 47694/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+[ E 2022-12-24 20:34:20.9856 47694/T5 Sec/Crypto.cpp:990 ]: Removing Passenger private key from keychain failed: Write permissions error.. Please remove the private key from the certificate labeled Phusion Passenger Open Source in your keychain.
+App 47711 output: "init"
+App 47744 output: nil
+App 47744 output: nil
+App 47744 output: nil
+App 47744 output: nil
+App 47744 output: {"rom"=>"projects/White2Deluxe", "password"=>"White2Deluxe"}
+App 47744 output: "projects/White2Deluxe"
+App 47744 output: "projects/White2Deluxe"
+App 47744 output: "projects/White2Deluxe"
+App 47744 output: "creating base rom"
+App 47744 output: "xdelta3 -d -s ./base/blank.nds ./base/W2.xdelta ./base/W2.nds"
+App 47744 output: "creating edited rom"
+App 47744 output: "xdelta3 -d -s ./base/W2.nds ./xdeltas/White2Deluxe.xdelta White2Deluxe.nds"
+App 47744 output: "creating edited rom"
+App 47744 output: "edited rom created"
+App 47744 output: "generating xdelta"
+App 47744 output: "xdelta3 -e -s ./base/W2.nds ./exports/White2Deluxe.nds ./exports/White2Deluxe_edited.xdelta"
+App 47744 output: "deleting base rom"
+App 47744 output: "deleting uploaded rom"
+App 47744 output: "deleting edited rom"
+App 47744 output: "projects/White2Deluxe"
+App 47744 output: "projects/White2Deluxe"
+App 47744 output: "projects/White2Deluxe"
+App 47744 output: {"file_name"=>"1", "field"=>"ability_1", "value"=>"Overgrow", "narc"=>"personal"}
+App 47744 output: {"file_name"=>"1", "field"=>"ability_1", "value"=>"Overgrow", "narc"=>"personal"}
+App 47744 output: "projects/White2Deluxe"
+App 47744 output: {"file_name"=>"1", "field"=>"ability_1", "value"=>"Flash Fire", "narc"=>"personal"}
+App 47744 output: {"file_name"=>"1", "field"=>"ability_1", "value"=>"Flash Fire", "narc"=>"personal"}
+App 47744 output: "projects/White2Deluxe"
+App 47744 output: "creating base rom"
+App 47744 output: "xdelta3 -d -s ./base/blank.nds ./base/W2.xdelta ./base/W2.nds"
+App 47744 output: "creating edited rom"
+App 47744 output: "xdelta3 -d -s ./base/W2.nds ./xdeltas/White2Deluxe.xdelta White2Deluxe.nds"
+App 47744 output: "creating edited rom"
+App 47744 output: "edited rom created"
+App 47744 output: "generating xdelta"
+App 47744 output: "xdelta3 -e -s ./base/W2.nds ./exports/White2Deluxe.nds ./exports/White2Deluxe_edited.xdelta"
+App 47744 output: "deleting base rom"
+App 47744 output: "deleting uploaded rom"
+App 47744 output: "deleting edited rom"
+App 47744 output: "projects/White2Deluxe"
+App 47744 output: nil
+App 47744 output: nil
+App 47744 output: {"filename"=>{"filename"=>"White2Deluxe_edited.xdelta", "type"=>"application/octet-stream", "name"=>"filename", "tempfile"=>#<Tempfile:/var/folders/th/rnc7s7ts4_13_1w48n1wjfwr0000gn/T/RackMultipart20221224-47744-13vyt9w.xdelta>, "head"=>"Content-Disposition: form-data; name=\"filename\"; filename=\"White2Deluxe_edited.xdelta\"\r\nContent-Type: application/octet-stream\r\n"}, "rom_base"=>"W2", "rom_name"=>"White2Edited.nds", "password"=>"White2Edited"}
+App 47744 output: "xdelta3 -d -s ./base/blank.nds ./base/W2.xdelta ./base/W2.nds"
+App 47744 output: "xdelta3 -d -s ./base/W2.nds ./xdeltas/White2Edited.xdelta White2Edited.nds"
+App 47744 output: decompressing arm9
+App 47744 output: outputting texts
+App 47744 output: outputting texts
+App 47744 output: outputting scripts
+App 47744 output: 
+App 47744 output: {'rom_name': 'projects/White2Edited', 'pw': 'bXRLeEk0U2duNFNkTU5ndjdUMU9wd0hhelphaDFXb3ExdmUrRDJ5MEhsdz0tLU9YcDhjOFpvSU9qVW13ck5XMTlIdmc9PQ==--2984acbd91b4f5a144765a0d7bc4f3e09ff27e6c', 'base_version': 'W2', 'base_rom': 'BW2', 'headers': 359, 'message_texts': 349, 'story_texts': 350, 'scripts': 403}
+App 47744 output: "projects/White2Edited"
+App 47744 output: "projects/White2Edited"
+App 47744 output: creating project folders
+App 47744 output: projects/White2Edited/json/moves
+App 47744 output: 
+App 47744 output: extracting narcs
+App 47744 output: parsing texts
+App 47744 output: settings up processing pools
+App 47744 output: outputing narcs
+App 47744 output: marts
+App 47744 output: grottos
+App 47744 output: grotto_odds
+App 47744 output: matrix
+App 47744 output: moves
+App 47744 output: 
+App 47744 output: evolutions
+App 47744 output: items
+App 47744 output: learnsets
+App 47744 output: 
+App 47744 output: personal
+App 47744 output: trpok
+App 47744 output: trdata
+App 47744 output: encounters
+App 47744 output: "projects/White2Edited"
+App 47744 output: overworlds
+App 47744 output: "projects/White2Edited"
+App 47744 output: maps
+
+[ N 2022-12-24 20:36:15.0778 47694/T8 age/Cor/CoreMain.cpp:671 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2022-12-24 20:36:15.0779 47694/T1 age/Cor/CoreMain.cpp:1246 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2022-12-24 20:36:15.0779 47694/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 47744, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2022-12-24 20:36:15.0782 47694/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 47752, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2022-12-24 20:36:15.0783 47694/T8 Ser/Server.h:901 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2022-12-24 20:36:15.0784 47694/Tg Ser/Server.h:901 ]: [ServerThr.5] Freed 0 spare client objects
+[ N 2022-12-24 20:36:15.0784 47694/Tm Ser/Server.h:901 ]: [ServerThr.8] Freed 0 spare client objects
+[ N 2022-12-24 20:36:15.0783 47694/Te Ser/Server.h:901 ]: [ServerThr.4] Freed 0 spare client objects
+[ N 2022-12-24 20:36:15.0784 47694/Tg Ser/Server.h:558 ]: [ServerThr.5] Shutdown finished
+[ N 2022-12-24 20:36:15.0784 47694/Tk Ser/Server.h:901 ]: [ServerThr.7] Freed 0 spare client objects
+[ N 2022-12-24 20:36:15.0785 47694/Tm Ser/Server.h:558 ]: [ServerThr.8] Shutdown finished
+[ N 2022-12-24 20:36:15.0784 47694/To Ser/Server.h:901 ]: [ServerThr.9] Freed 0 spare client objects
+[ N 2022-12-24 20:36:15.0785 47694/Tw Ser/Server.h:901 ]: [ApiServer] Freed 0 spare client objects
+[ N 2022-12-24 20:36:15.0785 47694/Tk Ser/Server.h:558 ]: [ServerThr.7] Shutdown finished
+[ N 2022-12-24 20:36:15.0786 47694/Tw Ser/Server.h:558 ]: [ApiServer] Shutdown finished
+[ N 2022-12-24 20:36:15.0783 47694/Ta Ser/Server.h:901 ]: [ServerThr.2] Freed 0 spare client objects
+[ N 2022-12-24 20:36:15.0785 47694/Te Ser/Server.h:558 ]: [ServerThr.4] Shutdown finished
+[ N 2022-12-24 20:36:15.0784 47694/T8 Ser/Server.h:558 ]: [ServerThr.1] Shutdown finished
+[ N 2022-12-24 20:36:15.0784 47694/Ti Ser/Server.h:901 ]: [ServerThr.6] Freed 0 spare client objects
+[ N 2022-12-24 20:36:15.0784 47694/Ts Ser/Server.h:901 ]: [ServerThr.11] Freed 0 spare client objects
+[ N 2022-12-24 20:36:15.0784 47694/Tq Ser/Server.h:901 ]: [ServerThr.10] Freed 0 spare client objects
+[ N 2022-12-24 20:36:15.0787 47694/Ts Ser/Server.h:558 ]: [ServerThr.11] Shutdown finished
+[ N 2022-12-24 20:36:15.0787 47694/Ti Ser/Server.h:558 ]: [ServerThr.6] Shutdown finished
+[ N 2022-12-24 20:36:15.0786 47694/Ta Ser/Server.h:558 ]: [ServerThr.2] Shutdown finished
+[ N 2022-12-24 20:36:15.0784 47694/Tv Ser/Server.h:901 ]: [ServerThr.12] Freed 0 spare client objects
+[ N 2022-12-24 20:36:15.0786 47694/To Ser/Server.h:558 ]: [ServerThr.9] Shutdown finished
+[ N 2022-12-24 20:36:15.0787 47694/Tq Ser/Server.h:558 ]: [ServerThr.10] Shutdown finished
+[ N 2022-12-24 20:36:15.0788 47694/Tv Ser/Server.h:558 ]: [ServerThr.12] Shutdown finished
+[ N 2022-12-24 20:36:15.0783 47694/Tc Ser/Server.h:901 ]: [ServerThr.3] Freed 0 spare client objects
+[ N 2022-12-24 20:36:15.0788 47694/Tc Ser/Server.h:558 ]: [ServerThr.3] Shutdown finished
+[ N 2022-12-24 20:36:15.0789 47694/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 47744, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2022-12-24 20:36:15.0790 47694/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 47752, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2022-12-24 20:36:16.1550 47694/T1 age/Cor/CoreMain.cpp:1325 ]: Passenger core shutdown finished

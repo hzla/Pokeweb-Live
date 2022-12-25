@@ -138,6 +138,7 @@ class MyApp < Sinatra::Base
 			# load base rom template folders
 			system "mkdir projects/#{rom_name}"
 			system "cp -r templates/#{base}/. projects/#{rom_name}"
+			system "cp ./base/#{base}.xdelta ./xdeltas/#{rom_name}.xdelta"
 
 			$rom_name = "projects/#{rom_name}"
 			session[:rom_name] = $rom_name
@@ -161,7 +162,7 @@ class MyApp < Sinatra::Base
 
 		#clear exports 
 
-		system "rm exports/*"
+		system "rm -rf exports/*"
 
 		# create base rom
 		p "creating base rom"
@@ -301,6 +302,14 @@ class MyApp < Sinatra::Base
 
 		open('logs.txt', 'a') do |f|
 		  f.puts "#{Time.now}: Project: #{$rom_name} Updated #{narc_name} File #{params['data']['file_name']} #{params['data']['field']} to #{params['data']['value']} "
+		
+		  edited_narcs = SessionSettings.get "edited"
+		  if !edited_narcs
+		  	SessionSettings.set "edited", [narc_name]
+		  else
+		  	SessionSettings.set "edited", edited_narcs.push(narc_name).uniq
+		  end
+
 		end
 
 		return 200
@@ -457,9 +466,14 @@ class MyApp < Sinatra::Base
 		end
 
 		open('logs.txt', 'a') do |f|
-
 		  f.puts "#{Time.now}: Project: #{$rom_name} Batch Updated #{narc_name} Files #{params['data']['field']} to #{params['data']['value']} "
+		  edited_narcs = SessionSettings.get "edited"
 
+		  if !edited_narcs
+		  	SessionSettings.set "edited", [narc_name]
+		  else
+		  	SessionSettings.set "edited", edited_narcs.push(narc_name).uniq
+		  end
 		end
 
 		return 200
