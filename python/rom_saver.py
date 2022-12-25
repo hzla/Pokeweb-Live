@@ -42,7 +42,9 @@ try:
 	settings = {}
 	file_ids = {}
 	with open(f'{sys.argv[1]}/session_settings.json', "r") as outfile:  
-		settings = json.load(outfile) 
+		settings = json.load(outfile)
+		edited = settings["edited"] if "edited" in settings else []
+
 
 		if settings["output_overworlds"] == False:
 			narcs.remove("overworld")
@@ -51,6 +53,9 @@ try:
 			import mart_writer
 			import grotto_writer
 			narcs += bw_narcs
+
+		#only output edited narcs
+		narcs = list(set(narcs) | set(edited))
 
 
 		if settings["output_arm9"] == True:

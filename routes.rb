@@ -105,42 +105,51 @@ class MyApp < Sinatra::Base
 		p params
 		py = "python3"
 		pw = Cipher.encrypt params['password']
-
 		base = params["rom_base"]
-		file = params["filename"]["tempfile"]
 		rom_name = params['rom_name'].split(".")[0]
 
-		File.open("./xdeltas/#{rom_name}.xdelta", 'wb') do |f|
-	    	f.write(file.read)
-	  	end
 
+		# load from xdelta
+		if params["filename"]
+			file = params["filename"]["tempfile"]
+			File.open("./xdeltas/#{rom_name}.xdelta", 'wb') do |f|
+		    	f.write(file.read)
+		  	end
+		  	
+			# create base rom
+			p "xdelta3 -d -s ./base/blank.nds ./base/#{base}.xdelta ./base/#{base}.nds"
+			system "xdelta3 -d -s ./base/blank.nds ./base/#{base}.xdelta ./base/#{base}.nds"
 
-		# create base rom
-		p "xdelta3 -d -s ./base/blank.nds ./base/#{base}.xdelta ./base/#{base}.nds"
-		system "xdelta3 -d -s ./base/blank.nds ./base/#{base}.xdelta ./base/#{base}.nds"
+			# create uploaded rom
+			p "xdelta3 -d -s ./base/#{base}.nds ./xdeltas/#{rom_name}.xdelta #{rom_name}.nds"
+			system "xdelta3 -d -s ./base/#{base}.nds ./xdeltas/#{rom_name}.xdelta #{rom_name}.nds"
 
-		# create uploaded rom
-		p "xdelta3 -d -s ./base/#{base}.nds ./xdeltas/#{rom_name}.xdelta #{rom_name}.nds"
-		system "xdelta3 -d -s ./base/#{base}.nds ./xdeltas/#{rom_name}.xdelta #{rom_name}.nds"
+			# delete base rom
+			system "rm -rf ./base/#{base}.nds"
 
+			begin
+				system "#{py} python/header_loader.py #{params['rom_name']} #{pw}"
+				session[:rom_name] = "projects/#{params['rom_name'].split(".")[0]}"
+				command = "#{py} python/rom_loader.py #{params['rom_name']}"
+				pid = spawn command
+				Process.detach(pid)
+			rescue
+				py = "python"
+				retry
+			end
+		else
+			# load base rom template folders
+			system "mkdir projects/#{rom_name}"
+			system "cp -r templates/#{base}/. projects/#{rom_name}"
+			system "cp ./base/#{base}.xdelta ./xdeltas/#{rom_name}.xdelta"
 
-		# delete base rom
-		system "rm -rf ./base/#{base}.nds"
-
-
-		begin
-			system "#{py} python/header_loader.py #{params['rom_name']} #{pw}"
-			session[:rom_name] = "projects/#{params['rom_name'].split(".")[0]}"
-			command = "#{py} python/rom_loader.py #{params['rom_name']}"
-			pid = spawn command
-			Process.detach(pid)
-		rescue
-			py = "python"
-			retry
+			$rom_name = "projects/#{rom_name}"
+			session[:rom_name] = $rom_name
+			SessionSettings.set "pw", pw
+			SessionSettings.set "rom_name", $rom_name
 		end
 
-		
-
+	
 		open('logs.txt', 'a') do |f|
 		  f.puts "#{Time.now}: Loaded Rom : #{params['rom_name']}"
 		end
@@ -155,8 +164,9 @@ class MyApp < Sinatra::Base
 		rom_name = $rom_name.split("/")[1]
 
 
-		#clear exports
-		system "rm exports/*"
+		#clear exports 
+		system "rm -rf exports/*"
+
 
 		# create base rom
 		p "creating base rom"
@@ -296,6 +306,14 @@ class MyApp < Sinatra::Base
 
 		open('logs.txt', 'a') do |f|
 		  f.puts "#{Time.now}: Project: #{$rom_name} Updated #{narc_name} File #{params['data']['file_name']} #{params['data']['field']} to #{params['data']['value']} "
+		
+		  edited_narcs = SessionSettings.get "edited"
+		  if !edited_narcs
+		  	SessionSettings.set "edited", [narc_name]
+		  else
+		  	SessionSettings.set "edited", edited_narcs.push(narc_name).uniq
+		  end
+
 		end
 
 		return 200
@@ -452,9 +470,14 @@ class MyApp < Sinatra::Base
 		end
 
 		open('logs.txt', 'a') do |f|
-
 		  f.puts "#{Time.now}: Project: #{$rom_name} Batch Updated #{narc_name} Files #{params['data']['field']} to #{params['data']['value']} "
+		  edited_narcs = SessionSettings.get "edited"
 
+		  if !edited_narcs
+		  	SessionSettings.set "edited", [narc_name]
+		  else
+		  	SessionSettings.set "edited", edited_narcs.push(narc_name).uniq
+		  end
 		end
 
 		return 200

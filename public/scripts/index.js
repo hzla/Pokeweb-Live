@@ -153,12 +153,12 @@ $(document).ready(function() {
     		return
     	}
 
- 
-
-
-
-
-
+    	if (file_name == "") {	
+    		if (!confirm("No xdelta detected, load the default base rom?")) {
+    			e.preventDefault()
+    			return false
+    		}
+    	}
 
     	rom_name = rom_name.slice(0,-4)
 

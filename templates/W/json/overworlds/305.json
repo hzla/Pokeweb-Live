@@ -1,0 +1,38 @@
+{
+    "raw": {
+        "file_length": 24,
+        "furniture_count": 1,
+        "npc_count": 0,
+        "warp_count": 0,
+        "trigger_count": 0,
+        "furniture_0_script_id": 8029,
+        "furniture_0_unknown_1": 2,
+        "furniture_0_unknown_2": 4,
+        "furniture_0_unknown_3": 0,
+        "furniture_0_x_cord": 157,
+        "furniture_0_x_cord_padding": 0,
+        "furniture_0_y_cord": 404,
+        "furniture_0_y_cord_padding": 0,
+        "furniture_0_z_cord": 0,
+        "footer": 0,
+        "footer_length": 4
+    },
+    "readable": {
+        "file_length": 24,
+        "furniture_count": 1,
+        "npc_count": 0,
+        "warp_count": 0,
+        "trigger_count": 0,
+        "furniture_0_script_id": 8029,
+        "furniture_0_unknown_1": 2,
+        "furniture_0_unknown_2": 4,
+        "furniture_0_unknown_3": 0,
+        "furniture_0_x_cord": 157,
+        "furniture_0_x_cord_padding": 0,
+        "furniture_0_y_cord": 404,
+        "furniture_0_y_cord_padding": 0,
+        "furniture_0_z_cord": 0,
+        "footer": 0,
+        "footer_length": 4
+    }
+}
