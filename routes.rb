@@ -151,6 +151,10 @@ class MyApp < Sinatra::Base
 		base = SessionSettings.get "base_version"
 		rom_name = $rom_name.split("/")[1]
 
+		#clear exports 
+
+		system "rm exports/*"
+
 		# create base rom
 		p "creating base rom"
 		p "xdelta3 -d -s ./base/blank.nds ./base/#{base}.xdelta ./base/#{base}.nds"
