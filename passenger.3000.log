@@ -3597,3 +3597,36 @@ App 64656 output: "projects/b3test"
 [ N 2022-12-25 13:41:40.6503 64606/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 64656, application /Users/andylee/Repos/Pokeweb (development)
 [ N 2022-12-25 13:41:40.6503 64606/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 64664, application /Users/andylee/Repos/Pokeweb (development)
 [ N 2022-12-25 13:41:41.7417 64606/T1 age/Cor/CoreMain.cpp:1325 ]: Passenger core shutdown finished
+[ N 2022-12-25 13:48:52.2269 65025/T1 age/Wat/WatchdogMain.cpp:1377 ]: Starting Passenger watchdog...
+[ N 2022-12-25 13:48:52.2581 65027/T1 age/Cor/CoreMain.cpp:1340 ]: Starting Passenger core...
+[ N 2022-12-25 13:48:52.2584 65027/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ N 2022-12-25 13:48:52.2903 65027/T1 age/Cor/CoreMain.cpp:1015 ]: Passenger core online, PID 65027
+[ N 2022-12-25 13:48:55.0925 65027/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+[ E 2022-12-25 13:48:55.0993 65027/T5 Sec/Crypto.cpp:990 ]: Removing Passenger private key from keychain failed: Write permissions error.. Please remove the private key from the certificate labeled Phusion Passenger Open Source in your keychain.
+App 65043 output: "init"
+App 65076 output: nil
+App 65076 output: nil
+App 65076 output: nil
+App 65076 output: nil
+App 65076 output: {"rom"=>"projects/b3test", "password"=>"b3test"}
+App 65076 output: "projects/b3test"
+App 65076 output: "projects/b3test"
+App 65076 output: "projects/b3test"
+App 65076 output: "projects/b3test"
+App 65076 output: "projects/b3test"
+App 65076 output: "projects/b3test"
+App 65076 output: "projects/b3test"
+App 65076 output: "projects/b3test"
+App 65076 output: "projects/b3test"
+App 65076 output: "projects/b3test"
+App 65076 output: "projects/b3test"
+App 65076 output: "projects/b3test"
+[ N 2022-12-25 13:54:09.0983 65027/T4 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 65091, application /Users/andylee/Repos/Pokeweb (development)
+App 65076 output: "projects/b3test"
+App 65076 output: nil
+App 65076 output: nil
+App 65076 output: nil
+App 65076 output: nil
+App 65076 output: nil
+App 65076 output: nil
+App 65076 output: nil
