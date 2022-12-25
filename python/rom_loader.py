@@ -179,11 +179,9 @@ for narc in NARCS:
 	with open(f'{rom_name}/narcs/{narc[1]}-{file_id}.narc', 'wb') as f:
 		f.write(file)
 
+arm9 = bytearray(open(f'{rom_name}/arm9.bin', "rb").read())
 
 if narc_info["base_rom"] != "HGSS":
-
-	arm9 = bytearray(open(f'{rom_name}/arm9.bin', "rb").read())
-
 	overlay36 = rom.loadArm9Overlays([36])[36]
 	overlay16 = rom.loadArm9Overlays([16])[16]
 

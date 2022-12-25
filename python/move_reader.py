@@ -58,14 +58,19 @@ def to_readable(raw, file_name, base=5):
 			readable[hit] = amount
 			index -= 4
 
+		readable["status"] = rom_data.STATUSES[raw["status"]]
+
+		# targets in gen4 are flags
+		readable["target"] = rom_data.TARGETS[raw["target"]]
+
 
 
 	readable["type"] = rom_data.TYPES[raw["type"]]
 	readable["category"] = rom_data.CATEGORIES[raw["category"]]
 
 	readable["effect"] = rom_data.EFFECTS[raw["effect"]]
-	readable["status"] = rom_data.STATUSES[raw["status"]]
-	readable["target"] = rom_data.TARGETS[raw["target"]]
+	
+	
 
 	
 	if base == 4:

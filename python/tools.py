@@ -107,7 +107,7 @@ def output_json(narc, narc_name, to_readable, rom_name, base=5):
 
 	for data in narc.files:
 		data_name = data_index
-		read_narc_data(data, narc_format, data_name, narc_name, rom_data.ROM_NAME, to_readable)
+		read_narc_data(data, narc_format, data_name, narc_name, rom_data.ROM_NAME, to_readable, base)
 		data_index += 1
 
 	if narc_name == "trdata":
@@ -125,7 +125,7 @@ def read_narc_data(data, narc_format, file_name, narc_name, rom_name, to_readabl
 		file["raw"][entry[1]] = read_bytes(stream, entry[0])
 
 		
-		if narc_name == "encounters":
+		if narc_name == "encounters" and base == 5:
 			#copy data from spring section if not present in current season
 			if file["raw"][entry[1]] == 0 and "spring" not in entry[1]:
 				spring_data = "spring_" + "_".join(entry[1].split("_")[1:])
@@ -139,11 +139,11 @@ def read_narc_data(data, narc_format, file_name, narc_name, rom_name, to_readabl
 			"nothin"
 
 	#CONVERT TO READABLE FORMAT USING CONSTANTS/TEXT BANKS
-	file["readable"] = to_readable(file["raw"], file_name)
+	file["readable"] = to_readable(file["raw"], file_name, base)
 
 	# save trdata format for trpok reader
 	if narc_name == "trdata":
-		TRPOK_INFO.append([file["raw"]["template"], file["raw"]["num_pokemon"]])
+		TRPOK_INFO.append([file["raw"]["template"], file["raw"]["num_pokemon"], file["readable"]])
 	
 	#OUTPUT TO JSON
 	if not os.path.exists(f'{rom_name}/json/{narc_name}'):

@@ -19,6 +19,7 @@ from mart_reader import output_marts_json
 from overworld_reader import output_overworlds_json
 from map_reader import output_maps_json
 from matrix_reader import output_matrix_json
+from hidden_ability_reader import output_hidden_abilities_json
 
 
 def output(narc):	

@@ -26,8 +26,11 @@ def to_readable(raw, file_name, base=5):
 	if file_name < len(rom_data.TRAINER_NAMES):
 		readable["name"] = rom_data.TRAINER_NAMES[file_name]
 
-	readable["reward_item"] = rom_data.ITEMS[raw["reward_item"]]
-	readable["battle_type_1"] = rom_data.BATTLE_TYPES[raw["battle_type_1"]]
+	if base == 5:
+		readable["reward_item"] = rom_data.ITEMS[raw["reward_item"]]
+		readable["battle_type_1"] = rom_data.BATTLE_TYPES[raw["battle_type_1"]]
+	else:
+		readable["battle_type"] = rom_data.BATTLE_TYPES[raw["battle_type"]]
 
 	for n in range(1, 5):
 		readable[f'item_{n}'] = rom_data.ITEMS[raw[f'item_{n}']]

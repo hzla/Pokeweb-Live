@@ -93,7 +93,7 @@ class MyApp < Sinatra::Base
 		  f.puts "#{Time.now}: Loaded Project : #{project}"
 		end
 
-		redirect $subdir + '/headers'
+		redirect '/headers'
 	end
 
 	# only ever called with ajax
@@ -145,7 +145,7 @@ class MyApp < Sinatra::Base
 		  f.puts "#{Time.now}: Loaded Rom : #{params['rom_name']}"
 		end
 
-	  	redirect($subdir + '/headers')
+	  	redirect('/headers')
 	end
 
 	get '/rom/save' do

@@ -22,7 +22,11 @@ def set_global_vars(rom_name):
 		BASE_ROM = settings['base_rom']
 		BASE_VERSION = settings['base_version']
 
-	MOVES = open(f'{ROM_NAME}/texts/moves.txt', mode="r").read().splitlines()
+	
+	if BASE_ROM == "HGSS":
+		MOVES = open(f'texts/moves.txt', mode="r").read().splitlines()
+	else:
+		MOVES = open(f'{ROM_NAME}/texts/moves.txt', mode="r").read().splitlines()
 
 	for i,move in enumerate(MOVES):
 		MOVES[i] = re.sub(r'[^A-Za-z0-9 \-]+', '', move)
@@ -33,7 +37,8 @@ def set_global_vars(rom_name):
 
 	TM_OFFSET = TM_OFFSETS[BASE_VERSION]
 
-	if BASE_VERSION == "HG":
+
+	if BASE_ROM == "HGSS":
 		for n in range(1, 93):
 			TM_FORMAT.append([2, f'tm_{n}'])
 		for n in range(1, 9):
@@ -57,7 +62,6 @@ def output_tms_json(arm9, rom_name):
 	folder_name = "arm9"
 
 	arm9 = arm9[TM_OFFSET:TM_OFFSET + 204]
-
 	read_data(arm9, TM_FORMAT, data_name, folder_name)
 	data_index += 1
 
@@ -85,6 +89,7 @@ def read_data(data, narc_format, file_name, folder_name):
 
 	#CONVERT TO READABLE FORMAT USING CONSTANTS/TEXT BANKS
 	json_data["readable"] = to_readable(json_data["raw"], file_name)
+
 	
 	#OUTPUT TO JSON
 	if not os.path.exists(f'{ROM_NAME}/json/{folder_name}'):
@@ -97,12 +102,18 @@ def read_data(data, narc_format, file_name, folder_name):
 def to_readable(raw, file_name=""):
 	readable = copy.deepcopy(raw)
 
-	for n in range(1, 93):
-		readable[f'tm_{n}'] = MOVES[raw[f'tm_{n}']]
-	for n in range(1, 7):
-		readable[f'hm_{n}'] = MOVES[raw[f'hm_{n}']]
-	for n in range(93, 96):
-		readable[f'tm_{n}'] = MOVES[raw[f'tm_{n}']]
+	if BASE_ROM == "HGSS":
+		for n in range(1, 93):
+			readable[f'tm_{n}'] = MOVES[raw[f'tm_{n}']]
+		for n in range(1, 9):
+			readable[f'hm_{n}'] = MOVES[raw[f'hm_{n}']]
+	else:
+		for n in range(1, 93):
+			readable[f'tm_{n}'] = MOVES[raw[f'tm_{n}']]
+		for n in range(1, 7):
+			readable[f'hm_{n}'] = MOVES[raw[f'hm_{n}']]
+		for n in range(93, 96):
+			readable[f'tm_{n}'] = MOVES[raw[f'tm_{n}']]
 	
 	return readable
 
