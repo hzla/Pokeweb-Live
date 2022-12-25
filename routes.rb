@@ -218,8 +218,7 @@ class MyApp < Sinatra::Base
 	########################################## PERSONAL EDITOR ROUTES ####################
 
 	get '/personal' do
-
-
+		redirect '/' if !$rom_name
 		@poke_data = Personal.poke_data
 		@moves = Move.get_all
 		@move_names = Move.get_names_from @moves
@@ -334,6 +333,7 @@ class MyApp < Sinatra::Base
 	########################################## MOVE EDITOR ROUTES ####################
 
 	get '/moves' do 	
+		redirect '/' if !$rom_name
 		@moves = Move.get_all
 		@move_names = Move.get_names_from @moves
 
@@ -341,6 +341,7 @@ class MyApp < Sinatra::Base
 	end
 
 	get '/tms' do 	
+		redirect '/' if !$rom_name
 		@moves = Move.get_all
 		@tm_moves = Tm.get_tms_from @moves
 		@move_names = Move.get_names_from @moves
@@ -352,7 +353,7 @@ class MyApp < Sinatra::Base
 	####################### Texts ###########################
 
 	get '/story_texts/text/:id' do 
-
+		redirect '/' if !$rom_name
 		bank = "story_texts"
 		n = params[:id]
 		command = "dotnet tools/beatertext/BeaterText.dll -d #{$rom_name}/#{bank}/#{n}.bin #{$rom_name}/#{bank}/#{n}.txt"
@@ -368,7 +369,7 @@ class MyApp < Sinatra::Base
 	end
 
 	get '/message_texts/text/:id' do 
-
+		redirect '/' if !$rom_name
 		bank = "message_texts"
 		n = params[:id]
 		command = "dotnet tools/beatertext/BeaterText.dll -d #{$rom_name}/#{bank}/#{n}.bin #{$rom_name}/#{bank}/#{n}.txt"
@@ -384,6 +385,7 @@ class MyApp < Sinatra::Base
 	end
 
 	post '/texts/:id' do 
+		
 		bank = params["bank"]
 
 		Text.edit_bank params["narc"], params["id"], params["bank"]
@@ -402,6 +404,7 @@ class MyApp < Sinatra::Base
 
 	get '/headers' do 
 		p $rom_name
+		redirect '/' if !$rom_name
 		@header_data = Header.get_all
 		@location_names = Header.location_names
 
@@ -411,6 +414,7 @@ class MyApp < Sinatra::Base
 	####################### ENCOUNTERS ###########################
 
 	get '/encounters' do 
+		redirect '/' if !$rom_name
 		@encounters = Encounter.get_all
 		@location_names = Header.location_names
 
@@ -426,6 +430,8 @@ class MyApp < Sinatra::Base
 	####################### TRAINERS ###########################
 
 	get '/trainers' do 
+		redirect '/' if !$rom_name
+
 		@trainers = Trdata.get_all
 		@trainer_poks = Trpok.get_all
 		@move_names = Move.get_names_from Move.get_all
@@ -504,6 +510,7 @@ class MyApp < Sinatra::Base
 	####################################### ITEMS ###############
 
 	get '/items' do
+		redirect '/' if !$rom_name
 		@items = Item.get_all
 
 		erb :items
@@ -512,24 +519,20 @@ class MyApp < Sinatra::Base
 	####################################### MARTS ###############
 
 	get '/marts' do
+		redirect '/' if !$rom_name
 		@marts = Mart.get_all
 
 		erb :marts
 	end
 
-	####################################### GROTTOS ###############
 
-	get '/grottos' do
-		@grottos = Grotto.get_all
-		@odds = Grotto.odds_data["readable"]
-
-		erb :grottos
-	end
 
 	####################################### TEXTS ###############
 
 
 	get '/story_texts' do 
+		redirect '/' if !$rom_name
+
 		@narc_name = 'story_texts'
 		@texts = Text.get_all @narc_name
 		@limit = 0
@@ -538,6 +541,8 @@ class MyApp < Sinatra::Base
 	end
 
 	get '/story_texts/search' do 
+		redirect '/' if !$rom_name
+
 		@terms = params[:terms]
 		@narc_name = 'story_texts'
 		@texts = Text.search @narc_name, @terms, params[:ignore_case]
@@ -546,68 +551,13 @@ class MyApp < Sinatra::Base
 		erb :texts
 
 	end
-	########################################## MOVE EDITOR ROUTES ####################
 
-	get '/moves' do 	
-		@moves = Move.get_all
-		
-		@poke_data = Personal.poke_data
-		@move_names = Move.get_names_from @moves
-
-		erb :moves
-	end
-
-	get '/tms' do 	
-		@moves = Move.get_all
-		@tm_moves = Tm.get_tms_from @moves
-		@move_names = Move.get_names_from @moves
-
-		erb :tms
-	end
-
-	####################### HEADERS ###########################
-
-	get '/headers' do 
-		@header_data = Header.get_all
-		@location_names = Header.location_names
-
-		erb :headers
-	end
-
-	####################### ENCOUNTERS ###########################
-
-	get '/encounters' do 
-		@encounters = Encounter.get_all
-		@location_names = Header.location_names
-
-		erb :encounters
-	end
-
-	post '/encounter_season_copy' do 
-		Encounter.copy_season_to_all params["data"]["id"], params["data"]["season"]
-		p params
-		"200 OK"
-	end
-
-	####################################### ITEMS ###############
-
-	get '/items' do
-		@items = Item.get_all
-
-		erb :items
-	end
-
-	####################################### MARTS ###############
-
-	get '/marts' do
-		@marts = Mart.get_all
-
-		erb :marts
-	end
 
 	####################################### GROTTOS ###############
 
 	get '/grottos' do
+		redirect '/' if !$rom_name
+
 		@grottos = Grotto.get_all
 		@odds = Grotto.odds_data["readable"]
 
@@ -624,6 +574,8 @@ class MyApp < Sinatra::Base
 
 
 	get '/info_texts' do 
+		redirect '/' if !$rom_name
+
 		@narc_name = 'message_texts'
 		@texts = Text.get_all @narc_name
 		@limit = 0
@@ -704,6 +656,8 @@ class MyApp < Sinatra::Base
 
 
 	get '/scripts/:id' do 
+		redirect '/' if !$rom_name
+
 		base_rom = SessionSettings.base_rom 
 		id = params[:id]
 
@@ -743,7 +697,8 @@ class MyApp < Sinatra::Base
 	end
 
 	get '/overworlds/:id' do 
-
+		redirect '/' if !$rom_name
+		
 		if !SessionSettings.get("cords_found")
 			MapMatrix.output_cords
 			SessionSettings.set("cords_found", true)
@@ -778,20 +733,20 @@ class MyApp < Sinatra::Base
 
 	##### SETTINGS ########
 
-	get '/settings' do 
-		system "open -a TextEdit #{$rom_name}/session_settings.json"
-		system "start notepad   #{$rom_name}/session_settings.json"
-		return 200
-	end
+	# get '/settings' do 
+	# 	system "open -a TextEdit #{$rom_name}/session_settings.json"
+	# 	system "start notepad   #{$rom_name}/session_settings.json"
+	# 	return 200
+	# end
 
 
-	get '/settings/set' do 
-		field = params["field"]
-		current_value = SessionSettings.get(field)
+	# get '/settings/set' do 
+	# 	field = params["field"]
+	# 	current_value = SessionSettings.get(field)
 
-		SessionSettings.set field, !current_value
-		return [SessionSettings.get(field).to_s].to_json
-	end
+	# 	SessionSettings.set field, !current_value
+	# 	return [SessionSettings.get(field).to_s].to_json
+	# end
 
 end
 
