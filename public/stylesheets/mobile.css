@@ -76,6 +76,7 @@
   .field-header .expanded-field-main div {
     text-overflow: clip;
     overflow:  hidden;
+    /*width:  auto;*/
   }
 
   .expanded-field  {
@@ -90,6 +91,11 @@
     width:  200px;
   }
 
+  .filterable .pokemon-card__info {
+    margin-left:  0px;
+    flex:  0 0 180px;
+  }
+
   .pokemon-card__table {
     margin-top:  30px;
   }
@@ -98,23 +104,19 @@
     flex-wrap:  wrap;
   }
   .expanded-left, .expanded-mid, .expanded-right {
-    width:  100vw;
-  }
-
-  .expanded-item .expanded-left, .expanded-evos .expanded-left {
-    width:  100vw;
-  }
-
-  .expanded-learnset .expanded-left, .expanded-pok .expanded-left {
-    width:  100vw;
+    width:  100% !important;
   }
 
   #personals .move-cat, #personals .move-power, #personals .move-accuracy {
     display: none;
   }
 
-  #trainers .field-header {
+  #trainers .field-header, #encounters .field-header, #moves .field-header {
     display: none;
+  }
+
+  #encounters .multi.field-header {
+    display: flex;
   }
 
   .expanded-field-main {
@@ -126,6 +128,41 @@
     bottom: 0;
   }
 
+  .encounter-wilds {
+    width:  100vw;
+    margin:  0;
+  }
+
+  .wild {
+    width:  20vw;
+  }
+
+  .move-info.expand-action {
+    bottom:  initial;
+    top:  0;
+  }
+
+  #encounters .expanded-card-content {
+    margin-top:  60px;
+  }
+
+  #encounters .expanded-tab-icons {
+    bottom:  -50px;
+    left:  calc(50vw - 100px);
+  }
+
+  .item-name, .item-value {
+    width:  80px;
+  }
+
+  .expand-item, .expand-mart, .expand-grotto {
+    left:  80px;
+  }
+
+  .mart-inv {
+    width:  100%;
+    margin-top:  20px;
+  }
 
 
 
