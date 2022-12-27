@@ -158,7 +158,13 @@ def to_raw(readable, template):
 	while n < readable["count"]:
 		if f'species_id_{n}' in raw:	
 
-			raw[f'species_id_{n}'] = POKEDEX.index(readable[f'species_id_{n}'])
+			
+			if readable[f'species_id_{n}'] == "-":
+				raw[f'species_id_{n}'] = 0
+			else:
+				raw[f'species_id_{n}'] = POKEDEX.index(readable[f'species_id_{n}'])
+
+
 
 			raw[f'ability_{n}'] = int(readable[f'ability_{n}']) * 16
 
