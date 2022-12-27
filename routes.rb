@@ -39,10 +39,14 @@ class MyApp < Sinatra::Base
 		@rom_name = $rom_name.split("/")[1]
 		tabs = ['headers', 'personal', 'trainers', 'encounters', 'moves', 'items', 'marts', 'grottos', 'story_texts', 'info_texts']
 		
-
-		if SessionSettings.base_rom == "BW"
-			tabs.delete('marts')
-			tabs.delete('grottos')
+		begin
+			if SessionSettings.base_rom == "BW"
+				tabs.delete('marts')
+				tabs.delete('grottos')
+			end
+		rescue
+			$rom_name = nil
+			redirect '/?rom_load_failed=true'
 		end
 
 		tab_name = request.path_info.split('/')[1]
