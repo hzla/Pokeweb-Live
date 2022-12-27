@@ -159,7 +159,7 @@ def to_raw(readable, template):
 		if f'species_id_{n}' in raw:	
 
 			
-			if readable[f'species_id_{n}'] == "-":
+			if readable[f'species_id_{n}'].strip() == "-":
 				raw[f'species_id_{n}'] = 0
 			else:
 				raw[f'species_id_{n}'] = POKEDEX.index(readable[f'species_id_{n}'])
