@@ -1,7 +1,7 @@
 *.rbc
 /.config
 *.nds
-session_settings.json
+/session_settings.json
 /exports
 /xdeltas
 logs.txt
