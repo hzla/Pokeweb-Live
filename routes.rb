@@ -45,6 +45,7 @@ class MyApp < Sinatra::Base
 				tabs.delete('grottos')
 			end
 		rescue
+			session[:rom_name] = nil
 			$rom_name = nil
 			redirect '/?rom_load_failed=true'
 		end
