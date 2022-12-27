@@ -171,18 +171,18 @@ def to_raw(readable, template):
 			raw[f'ability_{n}'] += GENDERS.index(readable[f'gender_{n}'])
 
 
-			if template == 1 or template == 3:
-				for m in range(1,5):
-					if f'move_{m}_{n}' in readable:
-						raw[f'move_{m}_{n}'] = MOVES.index(readable[f'move_{m}_{n}'])
-					else: 
-						raw[f'move_{m}_{n}'] = 0
 
-			if template > 1:
-				if f'item_id_{n}' in readable:
-					raw[f'item_id_{n}'] = ITEMS.index(readable[f'item_id_{n}'].replace("Ã\x83Â©","é").replace('Ã©', 'é'))
-				else:
-					raw[f'item_id_{n}'] = 0
+			for m in range(1,5):
+				if f'move_{m}_{n}' in readable:
+					raw[f'move_{m}_{n}'] = MOVES.index(readable[f'move_{m}_{n}'])
+				else: 
+					raw[f'move_{m}_{n}'] = 0
+
+
+			if f'item_id_{n}' in readable:
+				raw[f'item_id_{n}'] = ITEMS.index(readable[f'item_id_{n}'].replace("Ã\x83Â©","é").replace('Ã©', 'é'))
+			else:
+				raw[f'item_id_{n}'] = 0
 
 			n += 1
 
