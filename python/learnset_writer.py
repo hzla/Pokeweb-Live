@@ -15,7 +15,12 @@ def write_readable_to_raw(file_name, narc_name="learnsets"):
 def to_raw(readable):
 	raw = copy.deepcopy(readable)
 
-	for n in range(25):
+	if rom_data.BASE_ROM == "HGSS" or rom_data.BASE_ROM == "PL":
+		max_moves = 20
+	else:
+		max_moves = 25
+
+	for n in range(max_moves):
 		if f'move_id_{n}' in readable:
 			
 			if readable[f'move_id_{n}'] == "-":

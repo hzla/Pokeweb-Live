@@ -29,9 +29,9 @@ def write_readable_to_raw(file_name):
 		new_raw_data = to_raw(personal_data["readable"])
 		personal_data["raw"] = new_raw_data
 
-		if personal_data["raw"]["form_sprites"] != "Default" and personal_data["raw"]["form"] != 0:
-			print("updating sprites")
-			sprite_writer.write_sprite_to_index(personal_data["raw"]["form_sprites"], personal_data["raw"]["form"])
+		# if personal_data["raw"]["form_sprites"] != "Default" and personal_data["raw"]["form"] != 0:
+		# 	print("updating sprites")
+		# 	sprite_writer.write_sprite_to_index(personal_data["raw"]["form_sprites"], personal_data["raw"]["form"])
 
 	with open(f'{rom_data.ROM_NAME}/json/personal/{file_name}.json', "w", encoding='ISO8859-1') as outfile: 
 		json.dump(personal_data, outfile)
@@ -47,15 +47,15 @@ def to_raw(readable):
 
 	item_1 = readable["item_1"].encode("latin_1").decode("utf_8").replace("Ã\x83Â©","é").replace('Ã©', 'é')
 	item_2 = readable["item_2"].encode("latin_1").decode("utf_8").replace("Ã\x83Â©","é").replace('Ã©', 'é')
-	item_3 = readable["item_3"].encode("latin_1").decode("utf_8").replace("Ã\x83Â©","é").replace('Ã©', 'é')
+	
 
 	readable["item_1"] = item_1
 	readable["item_2"] = item_2
-	readable["item_3"] = item_3
+	
 
 	raw["item_1"] = rom_data.ITEMS.index(item_1)
 	raw["item_2"] = rom_data.ITEMS.index(item_2)
-	raw["item_3"] = rom_data.ITEMS.index(item_3)
+	
 
 	raw["exp_rate"] = rom_data.GROWTHS.index(raw["exp_rate"])
 
@@ -65,7 +65,7 @@ def to_raw(readable):
 	# abilities are stored uppercase in text bank
 	raw["ability_1"] = rom_data.ABILITIES.index(raw["ability_1"].upper())
 	raw["ability_2"] = rom_data.ABILITIES.index(raw["ability_2"].upper())
-	raw["ability_3"] = rom_data.ABILITIES.index(raw["ability_3"].upper())
+	
 
 	bin_ev = "0000"
 
@@ -76,6 +76,13 @@ def to_raw(readable):
 		bin_ev += bin(int(readable[ev]))[2:].zfill(2)
 
 	raw["evs"] = int(bin_ev, 2)
+
+	if rom_data.BASE_ROM != "HGSS":
+		item_3 = readable["item_3"].encode("latin_1").decode("utf_8").replace("Ã\x83Â©","é").replace('Ã©', 'é')
+		readable["item_3"] = item_3
+		raw["item_3"] = rom_data.ITEMS.index(item_3)
+		raw["ability_3"] = rom_data.ABILITIES.index(raw["ability_3"].upper())
+
 	
 	#TODO CHECK FOR DIGLET DUGTRIO FOR 13TH BIT
 	return raw

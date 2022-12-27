@@ -18,7 +18,7 @@ def set_global_vars(rom_name):
 	with open(f'{rom_name}/session_settings.json', "r") as outfile:  
 		settings = json.load(outfile) 
 		ROM_NAME = settings['rom_name']
-		NARC_FILE_ID = settings["headers"]
+		NARC_FILE_ID = settings["headers"] if "headers" in settings else None
 		BASE_ROM = settings["base_rom"]
 
 	LOCATIONS = open(f'{ROM_NAME}/texts/locations.txt', mode="r").read().splitlines()

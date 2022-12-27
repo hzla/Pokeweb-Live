@@ -537,11 +537,7 @@ class MyApp < Sinatra::Base
 		erb :marts
 	end
 
-<<<<<<< HEAD
-=======
 
-
->>>>>>> prod
 	####################################### TEXTS ###############
 
 
@@ -566,10 +562,7 @@ class MyApp < Sinatra::Base
 		erb :texts
 
 	end
-<<<<<<< HEAD
-=======
 
->>>>>>> prod
 
 	####################################### GROTTOS ###############
 
