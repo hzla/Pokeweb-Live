@@ -38,7 +38,7 @@ def to_raw(readable):
 	
 	for prop in rom_data.AIS:
 		binary_props += bin(readable[prop])[2:].zfill(1)
-	raw["ais"] = int(binary_props, 2)
+	raw["ai"] = int(binary_props, 2)
 
 	return raw
 	
