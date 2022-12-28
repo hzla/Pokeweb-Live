@@ -14,7 +14,7 @@ if ENV["DEVMODE"] == "TRUE"
 	require 'benchmark'
 end
 
-enable :sessions
+enable :sessions #unless ENV['RACK_ENV'] == 'test'
 Dotenv.load
 
 
@@ -33,9 +33,16 @@ class MyApp < Sinatra::Base
 	before do
 		# $rom_name = "projects/white2"
 		$rom_name = session[:rom_name]
-		p $rom_name
+
+		if ENV['RACK_ENV'] == 'test'
+			
+			$rom_name = RomInfo.testrom
+		end
+
+
 		$fairy = SessionSettings.fairy?
-		return if !$rom_name
+		return if !$rom_name or $rom_name == ""
+
 		@rom_name = $rom_name.split("/")[1]
 		tabs = ['headers', 'personal', 'trainers', 'encounters', 'moves', 'items', 'marts', 'grottos', 'story_texts', 'info_texts']
 		
@@ -61,7 +68,9 @@ class MyApp < Sinatra::Base
 	############# ROM EDITOR ROUTES ###########################
 
 	get '/' do
-		if session[:rom_name]
+		
+		if $rom_name
+			p "redirecting..."
 			redirect "/headers"
 		else
 			@roms = Dir["*.nds"]
@@ -73,6 +82,7 @@ class MyApp < Sinatra::Base
 
 	get '/rom/new' do 
 		session[:rom_name] = nil
+		$rom_name =  nil
 		return (redirect '/') 
 	end
 
@@ -409,6 +419,7 @@ class MyApp < Sinatra::Base
 
 	get '/headers' do 
 		p $rom_name
+		p "romname? ^"
 		redirect '/' if !$rom_name
 		@header_data = Header.get_all
 		@location_names = Header.location_names
