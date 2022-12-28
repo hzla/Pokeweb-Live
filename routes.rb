@@ -41,6 +41,7 @@ class MyApp < Sinatra::Base
 
 
 		$fairy = SessionSettings.fairy?
+
 		return if !$rom_name or $rom_name == ""
 
 		@rom_name = $rom_name.split("/")[1]
@@ -418,8 +419,6 @@ class MyApp < Sinatra::Base
 	####################### HEADERS ###########################
 
 	get '/headers' do 
-		p $rom_name
-		p "romname? ^"
 		redirect '/' if !$rom_name
 		@header_data = Header.get_all
 		@location_names = Header.location_names

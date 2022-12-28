@@ -3648,3 +3648,280 @@ App 65076 output: nil
 2022/12/27 15:25:13 [emerg] 36858#0: bind() to 0.0.0.0:3000 failed (48: Address already in use)
 2022/12/27 15:25:13 [emerg] 36858#0: bind() to 0.0.0.0:3000 failed (48: Address already in use)
 2022/12/27 15:25:13 [emerg] 36858#0: still could not bind()
+[ N 2022-12-27 18:30:13.6219 40566/T1 age/Wat/WatchdogMain.cpp:1377 ]: Starting Passenger watchdog...
+[ N 2022-12-27 18:30:13.6577 40568/T1 age/Cor/CoreMain.cpp:1340 ]: Starting Passenger core...
+[ N 2022-12-27 18:30:13.6587 40568/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ N 2022-12-27 18:30:13.7044 40568/T1 age/Cor/CoreMain.cpp:1015 ]: Passenger core online, PID 40568
+App 40584 output: "init"
+[ N 2022-12-27 18:30:21.5180 40568/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+[ E 2022-12-27 18:30:21.5315 40568/T5 Sec/Crypto.cpp:990 ]: Removing Passenger private key from keychain failed: Write permissions error.. Please remove the private key from the certificate labeled Phusion Passenger Open Source in your keychain.
+App 40617 output: {"rom"=>"projects/b3test", "password"=>"b3test"}
+App 40617 output: 2022-12-27 18:30:32 - ArgumentError - Secret should not be nil.:
+App 40617 output: 	/Library/Ruby/Gems/2.6.0/gems/activesupport-6.1.7/lib/active_support/message_verifier.rb:107:in `initialize'
+App 40617 output: 	/Library/Ruby/Gems/2.6.0/gems/activesupport-6.1.7/lib/active_support/messages/rotator.rb:7:in `initialize'
+App 40617 output: 	/Library/Ruby/Gems/2.6.0/gems/activesupport-6.1.7/lib/active_support/message_encryptor.rb:220:in `new'
+App 40617 output: 	/Library/Ruby/Gems/2.6.0/gems/activesupport-6.1.7/lib/active_support/message_encryptor.rb:220:in `resolve_verifier'
+App 40617 output: 	/Library/Ruby/Gems/2.6.0/gems/activesupport-6.1.7/lib/active_support/message_encryptor.rb:141:in `initialize'
+App 40617 output: 	/Library/Ruby/Gems/2.6.0/gems/activesupport-6.1.7/lib/active_support/messages/rotator.rb:7:in `initialize'
+App 40617 output: 	/Users/andylee/Repos/Pokeweb/models/cipher.rb:14:in `new'
+App 40617 output: 	/Users/andylee/Repos/Pokeweb/models/cipher.rb:14:in `auth?'
+App 40617 output: 	/Users/andylee/Repos/Pokeweb/routes.rb:97:in `block in <class:MyApp>'
+App 40617 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1696:in `call'
+App 40617 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1696:in `block in compile!'
+App 40617 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1009:in `block (3 levels) in route!'
+App 40617 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1027:in `route_eval'
+App 40617 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1009:in `block (2 levels) in route!'
+App 40617 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1058:in `block in process_route'
+App 40617 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1056:in `catch'
+App 40617 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1056:in `process_route'
+App 40617 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1007:in `block in route!'
+App 40617 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1004:in `each'
+App 40617 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1004:in `route!'
+App 40617 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1128:in `block in dispatch!'
+App 40617 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `catch'
+App 40617 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `invoke'
+App 40617 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1123:in `dispatch!'
+App 40617 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:939:in `block in call!'
+App 40617 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `catch'
+App 40617 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `invoke'
+App 40617 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:939:in `call!'
+App 40617 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:928:in `call'
+App 40617 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/xss_header.rb:20:in `call'
+App 40617 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/path_traversal.rb:18:in `call'
+App 40617 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/json_csrf.rb:28:in `call'
+App 40617 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/base.rb:53:in `call'
+App 40617 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/base.rb:53:in `call'
+App 40617 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/frame_options.rb:33:in `call'
+App 40617 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/null_logger.rb:11:in `call'
+App 40617 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/head.rb:12:in `call'
+App 40617 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/show_exceptions.rb:23:in `call'
+App 40617 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:219:in `call'
+App 40617 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:2007:in `call'
+App 40617 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1566:in `block in call'
+App 40617 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1782:in `synchronize'
+App 40617 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1566:in `call'
+App 40617 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:266:in `context'
+App 40617 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:260:in `call'
+App 40617 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/rack/thread_handler_extension.rb:107:in `process_request'
+App 40617 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+App 40617 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+App 40617 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler.rb:419:in `block (3 levels) in start_threads'
+App 40617 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+
+[ N 2022-12-27 18:31:32.8928 40568/T8 age/Cor/CoreMain.cpp:671 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2022-12-27 18:31:32.8928 40568/T1 age/Cor/CoreMain.cpp:1246 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2022-12-27 18:31:32.8929 40568/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 40617, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2022-12-27 18:31:32.8938 40568/Ta Ser/Server.h:901 ]: [ServerThr.2] Freed 0 spare client objects
+[ N 2022-12-27 18:31:32.8938 40568/Te Ser/Server.h:901 ]: [ServerThr.4] Freed 0 spare client objects
+[ N 2022-12-27 18:31:32.8937 40568/Tu Ser/Server.h:901 ]: [ServerThr.12] Freed 0 spare client objects
+[ N 2022-12-27 18:31:32.8942 40568/Ta Ser/Server.h:558 ]: [ServerThr.2] Shutdown finished
+[ N 2022-12-27 18:31:32.8942 40568/Tu Ser/Server.h:558 ]: [ServerThr.12] Shutdown finished
+[ N 2022-12-27 18:31:32.8937 40568/To Ser/Server.h:901 ]: [ServerThr.9] Freed 0 spare client objects
+[ N 2022-12-27 18:31:32.8938 40568/Tk Ser/Server.h:901 ]: [ServerThr.7] Freed 0 spare client objects
+[ N 2022-12-27 18:31:32.8942 40568/Te Ser/Server.h:558 ]: [ServerThr.4] Shutdown finished
+[ N 2022-12-27 18:31:32.8943 40568/Tk Ser/Server.h:558 ]: [ServerThr.7] Shutdown finished
+[ N 2022-12-27 18:31:32.8938 40568/Tn Ser/Server.h:901 ]: [ServerThr.8] Freed 0 spare client objects
+[ N 2022-12-27 18:31:32.8938 40568/Ts Ser/Server.h:901 ]: [ServerThr.11] Freed 0 spare client objects
+[ N 2022-12-27 18:31:32.8937 40568/Td Ser/Server.h:901 ]: [ServerThr.3] Freed 0 spare client objects
+[ N 2022-12-27 18:31:32.8938 40568/T8 Ser/Server.h:901 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2022-12-27 18:31:32.8937 40568/Tr Ser/Server.h:901 ]: [ServerThr.10] Freed 0 spare client objects
+[ N 2022-12-27 18:31:32.8938 40568/Ti Ser/Server.h:901 ]: [ServerThr.6] Freed 0 spare client objects
+[ N 2022-12-27 18:31:32.8943 40568/To Ser/Server.h:558 ]: [ServerThr.9] Shutdown finished
+[ N 2022-12-27 18:31:32.8944 40568/Ti Ser/Server.h:558 ]: [ServerThr.6] Shutdown finished
+[ N 2022-12-27 18:31:32.8938 40568/Tg Ser/Server.h:901 ]: [ServerThr.5] Freed 0 spare client objects
+[ N 2022-12-27 18:31:32.8943 40568/Tn Ser/Server.h:558 ]: [ServerThr.8] Shutdown finished
+[ N 2022-12-27 18:31:32.8944 40568/Tr Ser/Server.h:558 ]: [ServerThr.10] Shutdown finished
+[ N 2022-12-27 18:31:32.8945 40568/Tg Ser/Server.h:558 ]: [ServerThr.5] Shutdown finished
+[ N 2022-12-27 18:31:32.8944 40568/T8 Ser/Server.h:558 ]: [ServerThr.1] Shutdown finished
+[ N 2022-12-27 18:31:32.8943 40568/Ts Ser/Server.h:558 ]: [ServerThr.11] Shutdown finished
+[ N 2022-12-27 18:31:32.8944 40568/Td Ser/Server.h:558 ]: [ServerThr.3] Shutdown finished
+[ N 2022-12-27 18:31:32.8947 40568/Tw Ser/Server.h:901 ]: [ApiServer] Freed 0 spare client objects
+[ N 2022-12-27 18:31:32.8950 40568/Tw Ser/Server.h:558 ]: [ApiServer] Shutdown finished
+[ N 2022-12-27 18:31:32.8959 40568/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 40617, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2022-12-27 18:31:33.9963 40669/T1 age/Wat/WatchdogMain.cpp:1377 ]: Starting Passenger watchdog...
+[ N 2022-12-27 18:31:34.0249 40671/T1 age/Cor/CoreMain.cpp:1340 ]: Starting Passenger core...
+[ N 2022-12-27 18:31:34.0253 40671/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ N 2022-12-27 18:31:34.0594 40671/T1 age/Cor/CoreMain.cpp:1015 ]: Passenger core online, PID 40671
+[ N 2022-12-27 18:31:34.1010 40568/T1 age/Cor/CoreMain.cpp:1325 ]: Passenger core shutdown finished
+[ N 2022-12-27 18:31:36.8849 40671/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+[ E 2022-12-27 18:31:36.8910 40671/T5 Sec/Crypto.cpp:990 ]: Removing Passenger private key from keychain failed: Write permissions error.. Please remove the private key from the certificate labeled Phusion Passenger Open Source in your keychain.
+App 40693 output: "init"
+App 40726 output: {"rom"=>"projects/b3test", "password"=>"b3test"}
+App 40726 output: {"file_name"=>"1", "field"=>"type_1", "value"=>"GRASS", "narc"=>"personal"}
+App 40726 output: {"file_name"=>"1", "field"=>"type_1", "value"=>"GRASS", "narc"=>"personal"}
+App 40726 output: {"file_name"=>"1", "field"=>"type_1", "value"=>"GRASS", "narc"=>"personal"}
+App 40726 output: {"file_name"=>"1", "field"=>"type_1", "value"=>"GRASS", "narc"=>"personal"}
+App 40726 output: {"file_name"=>"1", "field"=>"type_2", "value"=>"POISON", "narc"=>"personal"}
+App 40726 output: {"file_name"=>"1", "field"=>"type_2", "value"=>"POISON", "narc"=>"personal"}
+
+[ N 2022-12-27 18:33:25.8379 40671/T8 age/Cor/CoreMain.cpp:671 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2022-12-27 18:33:25.8379 40671/T1 age/Cor/CoreMain.cpp:1246 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2022-12-27 18:33:25.8380 40671/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 40726, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2022-12-27 18:33:25.8382 40671/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 40735, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2022-12-27 18:33:25.8383 40671/Ta Ser/Server.h:901 ]: [ServerThr.2] Freed 0 spare client objects
+[ N 2022-12-27 18:33:25.8383 40671/Tg Ser/Server.h:901 ]: [ServerThr.5] Freed 0 spare client objects
+[ N 2022-12-27 18:33:25.8384 40671/Tu Ser/Server.h:901 ]: [ServerThr.12] Freed 0 spare client objects
+[ N 2022-12-27 18:33:25.8384 40671/Tn Ser/Server.h:901 ]: [ServerThr.8] Freed 0 spare client objects
+[ N 2022-12-27 18:33:25.8384 40671/To Ser/Server.h:901 ]: [ServerThr.9] Freed 0 spare client objects
+[ N 2022-12-27 18:33:25.8385 40671/Tg Ser/Server.h:558 ]: [ServerThr.5] Shutdown finished
+[ N 2022-12-27 18:33:25.8383 40671/Te Ser/Server.h:901 ]: [ServerThr.4] Freed 0 spare client objects
+[ N 2022-12-27 18:33:25.8383 40671/Ti Ser/Server.h:901 ]: [ServerThr.6] Freed 0 spare client objects
+[ N 2022-12-27 18:33:25.8384 40671/Ts Ser/Server.h:901 ]: [ServerThr.11] Freed 0 spare client objects
+[ N 2022-12-27 18:33:25.8385 40671/Te Ser/Server.h:558 ]: [ServerThr.4] Shutdown finished
+[ N 2022-12-27 18:33:25.8386 40671/Ts Ser/Server.h:558 ]: [ServerThr.11] Shutdown finished
+[ N 2022-12-27 18:33:25.8385 40671/Ti Ser/Server.h:558 ]: [ServerThr.6] Shutdown finished
+[ N 2022-12-27 18:33:25.8385 40671/Tn Ser/Server.h:558 ]: [ServerThr.8] Shutdown finished
+[ N 2022-12-27 18:33:25.8383 40671/Tc Ser/Server.h:901 ]: [ServerThr.3] Freed 0 spare client objects
+[ N 2022-12-27 18:33:25.8385 40671/To Ser/Server.h:558 ]: [ServerThr.9] Shutdown finished
+[ N 2022-12-27 18:33:25.8383 40671/T8 Ser/Server.h:901 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2022-12-27 18:33:25.8384 40671/Ta Ser/Server.h:558 ]: [ServerThr.2] Shutdown finished
+[ N 2022-12-27 18:33:25.8387 40671/T8 Ser/Server.h:558 ]: [ServerThr.1] Shutdown finished
+[ N 2022-12-27 18:33:25.8384 40671/Tq Ser/Server.h:901 ]: [ServerThr.10] Freed 0 spare client objects
+[ N 2022-12-27 18:33:25.8387 40671/Tc Ser/Server.h:558 ]: [ServerThr.3] Shutdown finished
+[ N 2022-12-27 18:33:25.8386 40671/Tw Ser/Server.h:901 ]: [ApiServer] Freed 0 spare client objects
+[ N 2022-12-27 18:33:25.8387 40671/Tq Ser/Server.h:558 ]: [ServerThr.10] Shutdown finished
+[ N 2022-12-27 18:33:25.8384 40671/Tu Ser/Server.h:558 ]: [ServerThr.12] Shutdown finished
+[ N 2022-12-27 18:33:25.8388 40671/Tw Ser/Server.h:558 ]: [ApiServer] Shutdown finished
+[ N 2022-12-27 18:33:25.8384 40671/Tk Ser/Server.h:901 ]: [ServerThr.7] Freed 0 spare client objects
+[ N 2022-12-27 18:33:25.8388 40671/Tk Ser/Server.h:558 ]: [ServerThr.7] Shutdown finished
+[ N 2022-12-27 18:33:25.8389 40671/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 40726, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2022-12-27 18:33:25.8389 40671/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 40735, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2022-12-27 18:33:26.9979 40671/T1 age/Cor/CoreMain.cpp:1325 ]: Passenger core shutdown finished
+[ N 2022-12-27 18:33:27.1461 40844/T1 age/Wat/WatchdogMain.cpp:1377 ]: Starting Passenger watchdog...
+[ N 2022-12-27 18:33:27.1744 40846/T1 age/Cor/CoreMain.cpp:1340 ]: Starting Passenger core...
+[ N 2022-12-27 18:33:27.1747 40846/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ N 2022-12-27 18:33:27.2078 40846/T1 age/Cor/CoreMain.cpp:1015 ]: Passenger core online, PID 40846
+[ N 2022-12-27 18:33:30.1260 40846/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+[ E 2022-12-27 18:33:30.1322 40846/T5 Sec/Crypto.cpp:990 ]: Removing Passenger private key from keychain failed: Write permissions error.. Please remove the private key from the certificate labeled Phusion Passenger Open Source in your keychain.
+App 40862 output: "init"
+App 40895 output: 2022-12-27 19:17:03 - Errno::ENOENT - No such file or directory @ rb_sysopen - /session_settings.json:
+App 40895 output: 	/Users/andylee/Repos/Pokeweb/models/rom_info.rb:21:in `initialize'
+App 40895 output: 	/Users/andylee/Repos/Pokeweb/models/rom_info.rb:21:in `open'
+App 40895 output: 	/Users/andylee/Repos/Pokeweb/models/rom_info.rb:21:in `original_move_count'
+App 40895 output: 	/Users/andylee/Repos/Pokeweb/models/move.rb:14:in `get_all'
+App 40895 output: 	/Users/andylee/Repos/Pokeweb/routes.rb:256:in `block in <class:MyApp>'
+App 40895 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1696:in `call'
+App 40895 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1696:in `block in compile!'
+App 40895 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1009:in `block (3 levels) in route!'
+App 40895 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1027:in `route_eval'
+App 40895 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1009:in `block (2 levels) in route!'
+App 40895 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1058:in `block in process_route'
+App 40895 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1056:in `catch'
+App 40895 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1056:in `process_route'
+App 40895 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1007:in `block in route!'
+App 40895 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1004:in `each'
+App 40895 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1004:in `route!'
+App 40895 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1128:in `block in dispatch!'
+App 40895 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `catch'
+App 40895 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `invoke'
+App 40895 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1123:in `dispatch!'
+App 40895 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:939:in `block in call!'
+App 40895 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `catch'
+App 40895 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `invoke'
+App 40895 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:939:in `call!'
+App 40895 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:928:in `call'
+App 40895 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/xss_header.rb:20:in `call'
+App 40895 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/path_traversal.rb:18:in `call'
+App 40895 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/json_csrf.rb:28:in `call'
+App 40895 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/base.rb:53:in `call'
+App 40895 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/base.rb:53:in `call'
+App 40895 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/frame_options.rb:33:in `call'
+App 40895 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/null_logger.rb:11:in `call'
+App 40895 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/head.rb:12:in `call'
+App 40895 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/show_exceptions.rb:23:in `call'
+App 40895 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:219:in `call'
+App 40895 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:2007:in `call'
+App 40895 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1566:in `block in call'
+App 40895 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1782:in `synchronize'
+App 40895 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1566:in `call'
+App 40895 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:266:in `context'
+App 40895 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:260:in `call'
+App 40895 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:266:in `context'
+App 40895 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:260:in `call'
+App 40895 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/rack/thread_handler_extension.rb:107:in `process_request'
+App 40895 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+App 40895 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+App 40895 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler.rb:419:in `block (3 levels) in start_threads'
+App 40895 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+App 40895 output: {"rom"=>"projects/b3test", "password"=>"b3test"}
+App 40895 output: {"file_name"=>"1", "field"=>"move_id_15", "value"=>"Hyper Beam", "narc"=>"learnset"}
+App 40895 output: "all"
+App 40895 output: "move_id_15"
+App 40895 output: {"file_name"=>"1", "field"=>"move_id_15", "value"=>"Hyper Beam", "narc"=>"learnset"}
+App 40895 output: {"file_name"=>"1", "field"=>"lvl_learned_15", "value"=>"45", "narc"=>"learnset", "int"=>"true"}
+App 40895 output: {"file_name"=>"1", "field"=>"lvl_learned_15", "value"=>"45", "narc"=>"learnset", "int"=>"true"}
+App 40895 output: {"file_name"=>"1", "field"=>"move_id_15", "value"=>"Hyper Beam", "narc"=>"learnset"}
+App 40895 output: "all"
+App 40895 output: "move_id_15"
+App 40895 output: {"file_name"=>"1", "field"=>"move_id_15", "value"=>"Hyper Beam", "narc"=>"learnset"}
+App 40895 output: {"file_name"=>"1", "field"=>"move_id_15", "value"=>"Hyper Beam", "narc"=>"learnset"}
+App 40895 output: "all"
+App 40895 output: "move_id_15"
+App 40895 output: {"file_name"=>"1", "field"=>"move_id_15", "value"=>"Hyper Beam", "narc"=>"learnset"}
+App 40895 output: {"file_name"=>"1", "field"=>"lvl_learned_15", "value"=>"45", "narc"=>"learnset", "int"=>"true"}
+App 40895 output: {"file_name"=>"1", "field"=>"lvl_learned_15", "value"=>"45", "narc"=>"learnset", "int"=>"true"}
+App 40895 output: {"file_name"=>"1", "field"=>"move_id_14", "value"=>"Solarbeam", "narc"=>"learnset"}
+App 40895 output: "all"
+App 40895 output: "move_id_14"
+App 40895 output: {"file_name"=>"1", "field"=>"move_id_14", "value"=>"Solarbeam", "narc"=>"learnset"}
+App 40895 output: {"file_name"=>"1", "field"=>"lvl_learned_14", "value"=>"50", "narc"=>"learnset", "int"=>"true"}
+App 40895 output: {"file_name"=>"1", "field"=>"lvl_learned_14", "value"=>"50", "narc"=>"learnset", "int"=>"true"}
+App 40895 output: {"file_name"=>"1", "field"=>"move_id_16", "value"=>"Dark Pulse", "narc"=>"learnset"}
+App 40895 output: "all"
+App 40895 output: "move_id_16"
+App 40895 output: {"file_name"=>"1", "field"=>"move_id_16", "value"=>"Dark Pulse", "narc"=>"learnset"}
+App 40895 output: {"file_name"=>"1", "field"=>"lvl_learned_16", "value"=>"51", "narc"=>"learnset", "int"=>"true"}
+App 40895 output: {"file_name"=>"1", "field"=>"lvl_learned_16", "value"=>"51", "narc"=>"learnset", "int"=>"true"}
+App 40895 output: {"file_name"=>"1", "field"=>"move_id_15", "value"=>"Hyper Beam", "narc"=>"learnset"}
+App 40895 output: "all"
+App 40895 output: "move_id_15"
+App 40895 output: {"file_name"=>"1", "field"=>"move_id_15", "value"=>"Hyper Beam", "narc"=>"learnset"}
+App 40895 output: {"file_name"=>"1", "field"=>"move_id_14", "value"=>"Solarbeam", "narc"=>"learnset"}
+App 40895 output: "all"
+App 40895 output: "move_id_14"
+App 40895 output: {"file_name"=>"1", "field"=>"move_id_14", "value"=>"Solarbeam", "narc"=>"learnset"}
+App 40895 output: {"file_name"=>"1", "field"=>"move_id_16", "value"=>"Dark Pulse", "narc"=>"learnset"}
+App 40895 output: "all"
+App 40895 output: "move_id_16"
+App 40895 output: {"file_name"=>"1", "field"=>"move_id_16", "value"=>"Dark Pulse", "narc"=>"learnset"}
+App 40895 output: "redirecting..."
+App 40895 output: {"file_name"=>"1", "field"=>"ability_3", "value"=>"Chlorophyll", "narc"=>"personal"}
+App 40895 output: {"file_name"=>"1", "field"=>"ability_3", "value"=>"Chlorophyll", "narc"=>"personal"}
+App 40895 output: {"file_name"=>"1", "field"=>"ability_3", "value"=>"Chlorophyll", "narc"=>"personal"}
+App 40895 output: {"file_name"=>"1", "field"=>"ability_3", "value"=>"Chlorophyll", "narc"=>"personal"}
+App 40895 output: {"file_name"=>"1", "field"=>"ability_1", "value"=>"Overgrow", "narc"=>"personal"}
+App 40895 output: {"file_name"=>"1", "field"=>"ability_1", "value"=>"Overgrow", "narc"=>"personal"}
+App 40895 output: {"file_name"=>"1", "field"=>"base_speed", "value"=>"45", "narc"=>"personal", "int"=>"true"}
+App 40895 output: {"file_name"=>"1", "field"=>"base_speed", "value"=>"45", "narc"=>"personal", "int"=>"true"}
+
+[ N 2022-12-28 11:30:40.4449 40846/T8 age/Cor/CoreMain.cpp:671 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2022-12-28 11:30:40.4458 40846/T1 age/Cor/CoreMain.cpp:1246 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2022-12-28 11:30:40.4459 40846/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 40895, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2022-12-28 11:30:40.4467 40846/Tm Ser/Server.h:901 ]: [ServerThr.8] Freed 0 spare client objects
+[ N 2022-12-28 11:30:40.4467 40846/T8 Ser/Server.h:901 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2022-12-28 11:30:40.4467 40846/To Ser/Server.h:901 ]: [ServerThr.9] Freed 0 spare client objects
+[ N 2022-12-28 11:30:40.4467 40846/Tq Ser/Server.h:901 ]: [ServerThr.10] Freed 0 spare client objects
+[ N 2022-12-28 11:30:40.4467 40846/Te Ser/Server.h:901 ]: [ServerThr.4] Freed 0 spare client objects
+[ N 2022-12-28 11:30:40.4467 40846/Tb Ser/Server.h:901 ]: [ServerThr.2] Freed 0 spare client objects
+[ N 2022-12-28 11:30:40.4467 40846/Tu Ser/Server.h:901 ]: [ServerThr.12] Freed 0 spare client objects
+[ N 2022-12-28 11:30:40.4467 40846/Ts Ser/Server.h:901 ]: [ServerThr.11] Freed 0 spare client objects
+[ N 2022-12-28 11:30:40.4470 40846/Tq Ser/Server.h:558 ]: [ServerThr.10] Shutdown finished
+[ N 2022-12-28 11:30:40.4470 40846/To Ser/Server.h:558 ]: [ServerThr.9] Shutdown finished
+[ N 2022-12-28 11:30:40.4471 40846/Tu Ser/Server.h:558 ]: [ServerThr.12] Shutdown finished
+[ N 2022-12-28 11:30:40.4471 40846/Ts Ser/Server.h:558 ]: [ServerThr.11] Shutdown finished
+[ N 2022-12-28 11:30:40.4471 40846/Tb Ser/Server.h:558 ]: [ServerThr.2] Shutdown finished
+[ N 2022-12-28 11:30:40.4471 40846/Te Ser/Server.h:558 ]: [ServerThr.4] Shutdown finished
+[ N 2022-12-28 11:30:40.4473 40846/Tk Ser/Server.h:901 ]: [ServerThr.7] Freed 0 spare client objects
+[ N 2022-12-28 11:30:40.4473 40846/Tk Ser/Server.h:558 ]: [ServerThr.7] Shutdown finished
+[ N 2022-12-28 11:30:40.4482 40846/Tc Ser/Server.h:901 ]: [ServerThr.3] Freed 0 spare client objects
+[ N 2022-12-28 11:30:40.4484 40846/Tc Ser/Server.h:558 ]: [ServerThr.3] Shutdown finished
+[ N 2022-12-28 11:30:40.4486 40846/Tg Ser/Server.h:901 ]: [ServerThr.5] Freed 0 spare client objects
+[ N 2022-12-28 11:30:40.4486 40846/T8 Ser/Server.h:558 ]: [ServerThr.1] Shutdown finished
+[ N 2022-12-28 11:30:40.4487 40846/Tj Ser/Server.h:901 ]: [ServerThr.6] Freed 0 spare client objects
+[ N 2022-12-28 11:30:40.4487 40846/Tm Ser/Server.h:558 ]: [ServerThr.8] Shutdown finished
+[ N 2022-12-28 11:30:40.4489 40846/Tg Ser/Server.h:558 ]: [ServerThr.5] Shutdown finished
+[ N 2022-12-28 11:30:40.4489 40846/Tj Ser/Server.h:558 ]: [ServerThr.6] Shutdown finished
+[ N 2022-12-28 11:30:40.4492 40846/Tx Ser/Server.h:901 ]: [ApiServer] Freed 0 spare client objects
+[ N 2022-12-28 11:30:40.4492 40846/Tx Ser/Server.h:558 ]: [ApiServer] Shutdown finished
+[ N 2022-12-28 11:30:40.4538 40846/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 40895, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2022-12-28 11:30:41.7733 40846/T1 age/Cor/CoreMain.cpp:1325 ]: Passenger core shutdown finished

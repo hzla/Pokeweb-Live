@@ -73,12 +73,6 @@ class Personal
 		poks = poke_data[1..-1]
 
 		showdown = {}
-
-
-		
-
-
-
 		poks.each do |pok|
 			next if !pok
 			showdown_name = pok["name"].name_titleize
