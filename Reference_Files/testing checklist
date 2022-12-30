@@ -1,0 +1,21 @@
+testing checklist
+
+a rom can load from base
+a rom can load from xdelta
+a project can load
+every page loads
+
+every edit can be made and will show up
+
+invalid edits can't be sent in ui
+valid edits are sent
+
+a rom can export
+a rom can export with any edit
+
+
+
+
+BUGS FOUND
+
+settings a evo method before correct param type is set will cause error

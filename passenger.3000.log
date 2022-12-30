@@ -3925,3 +3925,486 @@ App 40895 output: {"file_name"=>"1", "field"=>"base_speed", "value"=>"45", "narc
 [ N 2022-12-28 11:30:40.4492 40846/Tx Ser/Server.h:558 ]: [ApiServer] Shutdown finished
 [ N 2022-12-28 11:30:40.4538 40846/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 40895, application /Users/andylee/Repos/Pokeweb (development)
 [ N 2022-12-28 11:30:41.7733 40846/T1 age/Cor/CoreMain.cpp:1325 ]: Passenger core shutdown finished
+[ N 2022-12-28 19:27:57.2478 57363/T1 age/Wat/WatchdogMain.cpp:1377 ]: Starting Passenger watchdog...
+[ N 2022-12-28 19:27:57.2825 57365/T1 age/Cor/CoreMain.cpp:1340 ]: Starting Passenger core...
+[ N 2022-12-28 19:27:57.2832 57365/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ N 2022-12-28 19:27:57.3288 57365/T1 age/Cor/CoreMain.cpp:1015 ]: Passenger core online, PID 57365
+[ N 2022-12-28 19:28:00.1459 57365/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+[ E 2022-12-28 19:28:00.1522 57365/T5 Sec/Crypto.cpp:990 ]: Removing Passenger private key from keychain failed: Write permissions error.. Please remove the private key from the certificate labeled Phusion Passenger Open Source in your keychain.
+App 57381 output: "init"
+App 57415 output: {"rom"=>"projects/b3test", "password"=>"b3test"}
+App 57415 output: 2022-12-28 19:28:16 - ArgumentError - Secret should not be nil.:
+App 57415 output: 	/Library/Ruby/Gems/2.6.0/gems/activesupport-6.1.7/lib/active_support/message_verifier.rb:107:in `initialize'
+App 57415 output: 	/Library/Ruby/Gems/2.6.0/gems/activesupport-6.1.7/lib/active_support/messages/rotator.rb:7:in `initialize'
+App 57415 output: 	/Library/Ruby/Gems/2.6.0/gems/activesupport-6.1.7/lib/active_support/message_encryptor.rb:220:in `new'
+App 57415 output: 	/Library/Ruby/Gems/2.6.0/gems/activesupport-6.1.7/lib/active_support/message_encryptor.rb:220:in `resolve_verifier'
+App 57415 output: 	/Library/Ruby/Gems/2.6.0/gems/activesupport-6.1.7/lib/active_support/message_encryptor.rb:141:in `initialize'
+App 57415 output: 	/Library/Ruby/Gems/2.6.0/gems/activesupport-6.1.7/lib/active_support/messages/rotator.rb:7:in `initialize'
+App 57415 output: 	/Users/andylee/Repos/Pokeweb/models/cipher.rb:14:in `new'
+App 57415 output: 	/Users/andylee/Repos/Pokeweb/models/cipher.rb:14:in `auth?'
+App 57415 output: 	/Users/andylee/Repos/Pokeweb/routes.rb:97:in `block in <class:MyApp>'
+App 57415 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1696:in `call'
+App 57415 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1696:in `block in compile!'
+App 57415 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1009:in `block (3 levels) in route!'
+App 57415 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1027:in `route_eval'
+App 57415 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1009:in `block (2 levels) in route!'
+App 57415 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1058:in `block in process_route'
+App 57415 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1056:in `catch'
+App 57415 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1056:in `process_route'
+App 57415 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1007:in `block in route!'
+App 57415 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1004:in `each'
+App 57415 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1004:in `route!'
+App 57415 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1128:in `block in dispatch!'
+App 57415 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `catch'
+App 57415 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `invoke'
+App 57415 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1123:in `dispatch!'
+App 57415 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:939:in `block in call!'
+App 57415 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `catch'
+App 57415 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `invoke'
+App 57415 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:939:in `call!'
+App 57415 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:928:in `call'
+App 57415 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/xss_header.rb:20:in `call'
+App 57415 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/path_traversal.rb:18:in `call'
+App 57415 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/json_csrf.rb:28:in `call'
+App 57415 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/base.rb:53:in `call'
+App 57415 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/base.rb:53:in `call'
+App 57415 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/frame_options.rb:33:in `call'
+App 57415 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/null_logger.rb:11:in `call'
+App 57415 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/head.rb:12:in `call'
+App 57415 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/show_exceptions.rb:23:in `call'
+App 57415 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:219:in `call'
+App 57415 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:2007:in `call'
+App 57415 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1566:in `block in call'
+App 57415 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1782:in `synchronize'
+App 57415 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1566:in `call'
+App 57415 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:266:in `context'
+App 57415 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:260:in `call'
+App 57415 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/rack/thread_handler_extension.rb:107:in `process_request'
+App 57415 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+App 57415 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+App 57415 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler.rb:419:in `block (3 levels) in start_threads'
+App 57415 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+
+[ N 2022-12-28 19:29:15.4375 57365/T8 age/Cor/CoreMain.cpp:671 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2022-12-28 19:29:15.4375 57365/T1 age/Cor/CoreMain.cpp:1246 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2022-12-28 19:29:15.4376 57365/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 57415, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2022-12-28 19:29:15.4381 57365/Tj Ser/Server.h:901 ]: [ServerThr.6] Freed 0 spare client objects
+[ N 2022-12-28 19:29:15.4382 57365/Tk Ser/Server.h:901 ]: [ServerThr.7] Freed 0 spare client objects
+[ N 2022-12-28 19:29:15.4381 57365/Tg Ser/Server.h:901 ]: [ServerThr.5] Freed 0 spare client objects
+[ N 2022-12-28 19:29:15.4382 57365/Ta Ser/Server.h:901 ]: [ServerThr.2] Freed 0 spare client objects
+[ N 2022-12-28 19:29:15.4383 57365/Tg Ser/Server.h:558 ]: [ServerThr.5] Shutdown finished
+[ N 2022-12-28 19:29:15.4382 57365/Te Ser/Server.h:901 ]: [ServerThr.4] Freed 0 spare client objects
+[ N 2022-12-28 19:29:15.4382 57365/To Ser/Server.h:901 ]: [ServerThr.9] Freed 0 spare client objects
+[ N 2022-12-28 19:29:15.4382 57365/Tc Ser/Server.h:901 ]: [ServerThr.3] Freed 0 spare client objects
+[ N 2022-12-28 19:29:15.4384 57365/Te Ser/Server.h:558 ]: [ServerThr.4] Shutdown finished
+[ N 2022-12-28 19:29:15.4380 57365/T8 Ser/Server.h:901 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2022-12-28 19:29:15.4384 57365/Tc Ser/Server.h:558 ]: [ServerThr.3] Shutdown finished
+[ N 2022-12-28 19:29:15.4382 57365/Tj Ser/Server.h:558 ]: [ServerThr.6] Shutdown finished
+[ N 2022-12-28 19:29:15.4383 57365/Tu Ser/Server.h:901 ]: [ServerThr.12] Freed 0 spare client objects
+[ N 2022-12-28 19:29:15.4382 57365/Tn Ser/Server.h:901 ]: [ServerThr.8] Freed 0 spare client objects
+[ N 2022-12-28 19:29:15.4386 57365/Tu Ser/Server.h:558 ]: [ServerThr.12] Shutdown finished
+[ N 2022-12-28 19:29:15.4382 57365/Tq Ser/Server.h:901 ]: [ServerThr.10] Freed 0 spare client objects
+[ N 2022-12-28 19:29:15.4386 57365/T8 Ser/Server.h:558 ]: [ServerThr.1] Shutdown finished
+[ N 2022-12-28 19:29:15.4384 57365/Ta Ser/Server.h:558 ]: [ServerThr.2] Shutdown finished
+[ N 2022-12-28 19:29:15.4384 57365/To Ser/Server.h:558 ]: [ServerThr.9] Shutdown finished
+[ N 2022-12-28 19:29:15.4383 57365/Tk Ser/Server.h:558 ]: [ServerThr.7] Shutdown finished
+[ N 2022-12-28 19:29:15.4382 57365/Ts Ser/Server.h:901 ]: [ServerThr.11] Freed 0 spare client objects
+[ N 2022-12-28 19:29:15.4386 57365/Tn Ser/Server.h:558 ]: [ServerThr.8] Shutdown finished
+[ N 2022-12-28 19:29:15.4387 57365/Ts Ser/Server.h:558 ]: [ServerThr.11] Shutdown finished
+[ N 2022-12-28 19:29:15.4386 57365/Tq Ser/Server.h:558 ]: [ServerThr.10] Shutdown finished
+[ N 2022-12-28 19:29:15.4388 57365/Tw Ser/Server.h:901 ]: [ApiServer] Freed 0 spare client objects
+[ N 2022-12-28 19:29:15.4388 57365/Tw Ser/Server.h:558 ]: [ApiServer] Shutdown finished
+[ N 2022-12-28 19:29:15.4389 57365/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 57415, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2022-12-28 19:29:16.5395 57365/T1 age/Cor/CoreMain.cpp:1325 ]: Passenger core shutdown finished
+[ N 2022-12-28 19:29:16.6207 57469/T1 age/Wat/WatchdogMain.cpp:1377 ]: Starting Passenger watchdog...
+[ N 2022-12-28 19:29:16.6527 57471/T1 age/Cor/CoreMain.cpp:1340 ]: Starting Passenger core...
+[ N 2022-12-28 19:29:16.6533 57471/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ N 2022-12-28 19:29:16.6937 57471/T1 age/Cor/CoreMain.cpp:1015 ]: Passenger core online, PID 57471
+[ N 2022-12-28 19:29:19.4740 57471/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+[ E 2022-12-28 19:29:19.4797 57471/T5 Sec/Crypto.cpp:990 ]: Removing Passenger private key from keychain failed: Write permissions error.. Please remove the private key from the certificate labeled Phusion Passenger Open Source in your keychain.
+App 57488 output: "init"
+App 57521 output: {"rom"=>"projects/b3test", "password"=>"b3test"}
+App 57521 output: {"file_name"=>"1", "field"=>"move_id_0", "value"=>"Tackle", "narc"=>"learnset"}
+App 57521 output: "all"
+App 57521 output: "move_id_0"
+App 57521 output: {"file_name"=>"1", "field"=>"move_id_0", "value"=>"Tackle", "narc"=>"learnset"}
+App 57521 output: {"file_name"=>"1", "field"=>"move_id_0", "value"=>"Tackle", "narc"=>"learnset"}
+App 57521 output: "all"
+App 57521 output: "move_id_0"
+App 57521 output: {"file_name"=>"1", "field"=>"move_id_0", "value"=>"Tackle", "narc"=>"learnset"}
+App 57521 output: {"file_name"=>"1", "field"=>"move_id_0", "value"=>"Tackle", "narc"=>"learnset"}
+App 57521 output: "all"
+App 57521 output: "move_id_0"
+App 57521 output: {"file_name"=>"1", "field"=>"move_id_0", "value"=>"Tackle", "narc"=>"learnset"}
+[ N 2022-12-28 19:34:19.9881 57471/T4 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 57529, application /Users/andylee/Repos/Pokeweb (development)
+App 57521 output: {"file_name"=>"1", "field"=>"lvl_learned_4", "value"=>"13", "narc"=>"learnset", "int"=>"true"}
+App 57521 output: {"file_name"=>"1", "field"=>"lvl_learned_4", "value"=>"13", "narc"=>"learnset", "int"=>"true"}
+App 57521 output: {"file_name"=>"1", "field"=>"tms", "value"=>["1", "0", "0", "0", "0", "1", "0", "0", "1", "1", "1", "0", "0", "0", "0", "1", "1", "0", "0", "1", "1", "1", "0", "0", "0", "0", "1", "0", "0", "0", "0", "1", "0", "0", "0", "1", "0", "0", "0", "0", "0", "1", "0", "1", "1", "0", "0", "1", "1", "0", "0", "0", "1", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "1", "0", "0", "0", "0", "1", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "1", "1", "0", "0", "1", "0", "0", "0", "1", "0", "1", "0", "0", "1", "0", "0"], "narc"=>"personal"}
+App 57521 output: {"file_name"=>"1", "field"=>"tms", "value"=>["1", "0", "0", "0", "0", "1", "0", "0", "1", "1", "1", "0", "0", "0", "0", "1", "1", "0", "0", "1", "1", "1", "0", "0", "0", "0", "1", "0", "0", "0", "0", "1", "0", "0", "0", "1", "0", "0", "0", "0", "0", "1", "0", "1", "1", "0", "0", "1", "1", "0", "0", "0", "1", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "1", "0", "0", "0", "0", "1", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "1", "1", "0", "0", "1", "0", "0", "0", "1", "0", "1", "0", "0", "1", "0", "0"], "narc"=>"personal"}
+App 57521 output: {"file_name"=>"1", "field"=>"method_0", "value"=>"Level Requirement", "narc"=>"evolution"}
+App 57521 output: {"file_name"=>"1", "field"=>"method_0", "value"=>"Level Requirement", "narc"=>"evolution"}
+App 57521 output: {"file_name"=>"1", "field"=>"method_0", "value"=>"Trade with Held Item", "narc"=>"evolution"}
+App 57521 output: {"file_name"=>"1", "field"=>"method_0", "value"=>"Trade with Held Item", "narc"=>"evolution"}
+App 57521 output: Traceback (most recent call last):
+App 57521 output:   File "/Users/andylee/Repos/Pokeweb/python/evolution_writer.py", line 46, in <module>
+App 57521 output:     write_readable_to_raw(int(file_name))
+App 57521 output: 
+App 57521 output:   File "/Users/andylee/Repos/Pokeweb/python/evolution_writer.py", line 14, in write_readable_to_raw
+App 57521 output:     
+App 57521 output: tools.write_readable_to_raw(file_name, narc_name, to_raw)
+App 57521 output:   File "/Users/andylee/Repos/Pokeweb/python/tools.py", line 83, in write_readable_to_raw
+App 57521 output:     new_raw_data = to_raw(json_data["readable"])
+App 57521 output: 
+App 57521 output:  
+App 57521 output:                
+App 57521 output:    ^^^^^^
+App 57521 output: ^^^^^^
+App 57521 output: ^^^^^^^
+App 57521 output: ^^^^^^
+App 57521 output: ^^^^
+App 57521 output:   File "/Users/andylee/Repos/Pokeweb/python/evolution_writer.py", line 29, in to_raw
+App 57521 output:     raw[f'param_{n}'] = rom_data.ITEMS.index(raw[f'param_{n}'].replace("Ã\x83Â©","é").replace('Ã©', 'é'))
+App 57521 output:  
+App 57521 output:         
+App 57521 output:       
+App 57521 output:     
+App 57521 output:    
+App 57521 output:       
+App 57521 output:       
+App 57521 output:       
+App 57521 output:      ^
+App 57521 output: ^^^^^^
+App 57521 output: ^^^^^
+App 57521 output: ^^^^^^^
+App 57521 output: ^^^^^^
+App 57521 output: 
+App 57521 output: AttributeError
+App 57521 output: : 'int' object has no attribute 'replace'
+App 57521 output: 
+App 57521 output: {"file_name"=>"1", "field"=>"method_0", "value"=>"Trade with Held Item", "narc"=>"evolution"}
+App 57521 output: {"file_name"=>"1", "field"=>"method_0", "value"=>"Trade with Held Item", "narc"=>"evolution"}
+App 57521 output: Traceback (most recent call last):
+App 57521 output:   File "/Users/andylee/Repos/Pokeweb/python/evolution_writer.py", line 46, in <module>
+App 57521 output:     write_readable_to_raw(int(file_name))
+App 57521 output:   File "/Users/andylee/Repos/Pokeweb/python/evolution_writer.py", line 14, in write_readable_to_raw
+App 57521 output:     tools.write_readable_to_raw(file_name, narc_name, to_raw)
+App 57521 output:   File "/Users/andylee/Repos/Pokeweb/python/tools.py", line 83, in write_readable_to_raw
+App 57521 output:     new_raw_data = to_raw(json_data["readable"])
+App 57521 output: 
+App 57521 output:        
+App 57521 output:      
+App 57521 output:     
+App 57521 output:    ^
+App 57521 output: ^^^^
+App 57521 output: ^^^^
+App 57521 output: ^^^^
+App 57521 output: ^^^^^^
+App 57521 output: ^^^^^
+App 57521 output: ^^^^^
+App 57521 output: 
+App 57521 output:   File "/Users/andylee/Repos/Pokeweb/python/evolution_writer.py", line 29, in to_raw
+App 57521 output:     raw[f'param_{n}'] = rom_data.ITEMS.index(raw[f'param_{n}'].replace("Ã\x83Â©","é").replace('Ã©', 'é'))
+App 57521 output: 
+App 57521 output:                
+App 57521 output:                        
+App 57521 output:       
+App 57521 output:  ^^^^^
+App 57521 output: ^^^^^^^
+App 57521 output: ^^^^^^^^^
+App 57521 output: ^^^^
+App 57521 output: AttributeError: 
+App 57521 output: 'int' object has no attribute 'replace'
+App 57521 output: 
+App 57521 output: {"file_name"=>"1", "field"=>"method_0", "value"=>"Trade with Held Item", "narc"=>"evolution"}
+App 57521 output: {"file_name"=>"1", "field"=>"method_0", "value"=>"Trade with Held Item", "narc"=>"evolution"}
+App 57521 output: Traceback (most recent call last):
+App 57521 output:   File "/Users/andylee/Repos/Pokeweb/python/evolution_writer.py", line 46, in <module>
+App 57521 output:     write_readable_to_raw(int(file_name))
+App 57521 output:   File "/Users/andylee/Repos/Pokeweb/python/evolution_writer.py", line 14, in write_readable_to_raw
+App 57521 output:     tools.write_readable_to_raw(file_name, narc_name, to_raw)
+App 57521 output:   File "/Users/andylee/Repos/Pokeweb/python/tools.py", line 83, in write_readable_to_raw
+App 57521 output:     new_raw_data = to_raw(json_data["readable"])
+App 57521 output: 
+App 57521 output:   
+App 57521 output:                  ^^^^^^^^^^^^^^^^^^^^
+App 57521 output: ^^^^^^^
+App 57521 output: ^^
+App 57521 output:   File "/Users/andylee/Repos/Pokeweb/python/evolution_writer.py", line 29, in to_raw
+App 57521 output:     
+App 57521 output: raw[f'param_{n}'] = rom_data.ITEMS.index(raw[f'param_{n}'].replace("Ã\x83Â©","é").replace('Ã©', 'é'))
+App 57521 output:  
+App 57521 output:              
+App 57521 output:      
+App 57521 output:      
+App 57521 output:     
+App 57521 output:       
+App 57521 output:       
+App 57521 output:      ^
+App 57521 output: ^^^^^^
+App 57521 output: ^^^^
+App 57521 output: ^^^^
+App 57521 output: ^^^^^
+App 57521 output: ^^^^^
+App 57521 output: AttributeError: 
+App 57521 output: 'int' object has no attribute 'replace'
+App 57521 output: 
+App 57521 output: {"file_name"=>"1", "field"=>"method_0", "value"=>"Level Requirement", "narc"=>"evolution"}
+App 57521 output: {"file_name"=>"1", "field"=>"method_0", "value"=>"Level Requirement", "narc"=>"evolution"}
+App 57521 output: {"file_name"=>"1", "field"=>"method_0", "value"=>"Trade with Held Item", "narc"=>"evolution"}
+App 57521 output: {"file_name"=>"1", "field"=>"method_0", "value"=>"Trade with Held Item", "narc"=>"evolution"}
+App 57521 output: Traceback (most recent call last):
+App 57521 output:   File "/Users/andylee/Repos/Pokeweb/python/evolution_writer.py", line 46, in <module>
+App 57521 output:     write_readable_to_raw(int(file_name))
+App 57521 output:   File "/Users/andylee/Repos/Pokeweb/python/evolution_writer.py", line 14, in write_readable_to_raw
+App 57521 output:     
+App 57521 output: tools.write_readable_to_raw(file_name, narc_name, to_raw)
+App 57521 output:   File "/Users/andylee/Repos/Pokeweb/python/tools.py", line 83, in write_readable_to_raw
+App 57521 output:     
+App 57521 output: new_raw_data = to_raw(json_data["readable"])
+App 57521 output:  
+App 57521 output:                
+App 57521 output:    ^^
+App 57521 output: ^^^^^
+App 57521 output: ^^^^^^
+App 57521 output: ^^^^^^^
+App 57521 output: ^^^^^^
+App 57521 output: ^^^
+App 57521 output:   File "/Users/andylee/Repos/Pokeweb/python/evolution_writer.py", line 29, in to_raw
+App 57521 output:     
+App 57521 output: raw[f'param_{n}'] = rom_data.ITEMS.index(raw[f'param_{n}'].replace("Ã\x83Â©","é").replace('Ã©', 'é'))
+App 57521 output:   
+App 57521 output:        
+App 57521 output:         
+App 57521 output:          
+App 57521 output:       
+App 57521 output:       
+App 57521 output:       
+App 57521 output:  ^^^^^
+App 57521 output: ^^^^^^
+App 57521 output: ^^^^^^
+App 57521 output: ^^^^^^
+App 57521 output: ^^
+App 57521 output: AttributeError: 'int' object has no attribute 'replace'
+App 57521 output: 
+App 57521 output: {"file_name"=>"1", "field"=>"param_0", "value"=>"16", "narc"=>"evolution", "int"=>"true"}
+App 57521 output: {"file_name"=>"1", "field"=>"param_0", "value"=>"16", "narc"=>"evolution", "int"=>"true"}
+App 57521 output: Traceback (most recent call last):
+App 57521 output:   File "/Users/andylee/Repos/Pokeweb/python/evolution_writer.py", line 46, in <module>
+App 57521 output:     write_readable_to_raw(int(file_name))
+App 57521 output:   File "/Users/andylee/Repos/Pokeweb/python/evolution_writer.py", line 14, in write_readable_to_raw
+App 57521 output:     tools.write_readable_to_raw(file_name, narc_name, to_raw)
+App 57521 output:   File "/Users/andylee/Repos/Pokeweb/python/tools.py", line 83, in write_readable_to_raw
+App 57521 output:     new_raw_data = to_raw(json_data["readable"])
+App 57521 output: 
+App 57521 output:      
+App 57521 output:               ^^^^^^^^
+App 57521 output: ^^^^^^^^^^^^
+App 57521 output: ^^^^^^^^^
+App 57521 output:   File "/Users/andylee/Repos/Pokeweb/python/evolution_writer.py", line 29, in to_raw
+App 57521 output:     raw[f'param_{n}'] = rom_data.ITEMS.index(raw[f'param_{n}'].replace("Ã\x83Â©","é").replace('Ã©', 'é'))
+App 57521 output:  
+App 57521 output:        
+App 57521 output:       
+App 57521 output:         
+App 57521 output:       
+App 57521 output:       
+App 57521 output:       
+App 57521 output:      ^^
+App 57521 output: ^^^^^^
+App 57521 output: ^^^^^^
+App 57521 output: ^^^^
+App 57521 output: ^^^
+App 57521 output: ^
+App 57521 output: ^
+App 57521 output: ^^
+App 57521 output: AttributeError: 
+App 57521 output: 'int' object has no attribute 'replace'
+App 57521 output: 
+App 57521 output: {"file_name"=>"1", "field"=>"param_0", "value"=>"Master Ball", "narc"=>"evolution"}
+App 57521 output: {"file_name"=>"1", "field"=>"param_0", "value"=>"Master Ball", "narc"=>"evolution"}
+App 57521 output: {"file_name"=>"1", "field"=>"method_0", "value"=>"Trade with Held Item", "narc"=>"evolution"}
+App 57521 output: {"file_name"=>"1", "field"=>"method_0", "value"=>"Trade with Held Item", "narc"=>"evolution"}
+App 57521 output: {"file_name"=>"1", "field"=>"param_0", "value"=>"20", "narc"=>"evolution", "int"=>"true"}
+App 57521 output: {"file_name"=>"1", "field"=>"param_0", "value"=>"20", "narc"=>"evolution", "int"=>"true"}
+App 57521 output: Traceback (most recent call last):
+App 57521 output:   File "/Users/andylee/Repos/Pokeweb/python/evolution_writer.py", line 46, in <module>
+App 57521 output:     write_readable_to_raw(int(file_name))
+App 57521 output:   File "/Users/andylee/Repos/Pokeweb/python/evolution_writer.py", line 14, in write_readable_to_raw
+App 57521 output:     
+App 57521 output: tools.write_readable_to_raw(file_name, narc_name, to_raw)
+App 57521 output:   File "/Users/andylee/Repos/Pokeweb/python/tools.py", line 83, in write_readable_to_raw
+App 57521 output:     new_raw_data = to_raw(json_data["readable"])
+App 57521 output:                    ^^^^
+App 57521 output: ^^^^^^^^
+App 57521 output: ^^^^^^
+App 57521 output: ^^^^^^^
+App 57521 output: ^^^^
+App 57521 output:   File "/Users/andylee/Repos/Pokeweb/python/evolution_writer.py", line 29, in to_raw
+App 57521 output:     
+App 57521 output: raw[f'param_{n}'] = rom_data.ITEMS.index(raw[f'param_{n}'].replace("Ã\x83Â©","é").replace('Ã©', 'é'))
+App 57521 output:    
+App 57521 output:            
+App 57521 output:       
+App 57521 output:       
+App 57521 output:      
+App 57521 output:       
+App 57521 output:       
+App 57521 output:   ^^^^
+App 57521 output: ^^^^^
+App 57521 output: ^^^^^^^
+App 57521 output: ^^^^^^
+App 57521 output: ^^^
+App 57521 output: AttributeError: 'int' object has no attribute 'replace'
+App 57521 output: 
+App 57521 output: {"file_name"=>"1", "field"=>"method_0", "value"=>"Level During Night", "narc"=>"evolution"}
+App 57521 output: {"file_name"=>"1", "field"=>"method_0", "value"=>"Level During Night", "narc"=>"evolution"}
+App 57521 output: {"file_name"=>"1", "field"=>"param_0", "value"=>"20", "narc"=>"evolution", "int"=>"true"}
+App 57521 output: {"file_name"=>"1", "field"=>"param_0", "value"=>"20", "narc"=>"evolution", "int"=>"true"}
+App 57521 output: {"file_name"=>"1", "field"=>"target_0", "value"=>"Ivysaur", "narc"=>"evolution"}
+App 57521 output: {"file_name"=>"1", "field"=>"target_0", "value"=>"Ivysaur", "narc"=>"evolution"}
+App 57521 output: {"file_name"=>"1", "field"=>"target_0", "value"=>"Ivysaur", "narc"=>"evolution"}
+App 57521 output: {"file_name"=>"1", "field"=>"target_0", "value"=>"Ivysaur", "narc"=>"evolution"}
+App 57521 output: {"file_name"=>"1", "field"=>"location_name", "value"=>"Black City", "narc"=>"header"}
+App 57521 output: {"file_name"=>"1", "field"=>"location_name", "value"=>"Black City", "narc"=>"header"}
+App 57521 output: {"file_name"=>"1", "field"=>"location_name", "value"=>"Black City", "narc"=>"header"}
+App 57521 output: {"file_name"=>"1", "field"=>"location_name", "value"=>"Black City", "narc"=>"header"}
+App 57521 output: {"file_name"=>"1", "field"=>"Risky Attacks", "value"=>"1", "narc"=>"trdata", "int"=>"true"}
+App 57521 output: {"file_name"=>"1", "field"=>"Risky Attacks", "value"=>"1", "narc"=>"trdata", "int"=>"true"}
+App 57521 output: {"file_name"=>"1", "field"=>"Risky Attacks", "value"=>"0", "narc"=>"trdata", "int"=>"true"}
+App 57521 output: {"file_name"=>"1", "field"=>"Risky Attacks", "value"=>"0", "narc"=>"trdata", "int"=>"true"}
+App 57521 output: {"file_name"=>"1", "field"=>"item_1", "value"=>"None", "narc"=>"trdata"}
+App 57521 output: {"file_name"=>"1", "field"=>"item_1", "value"=>"None", "narc"=>"trdata"}
+App 57521 output: {"file_name"=>"1", "field"=>"item_1", "value"=>"Master Ball", "narc"=>"trdata"}
+App 57521 output: {"file_name"=>"1", "field"=>"item_1", "value"=>"Master Ball", "narc"=>"trdata"}
+App 57521 output: {"file_name"=>"1", "field"=>"Prioritize Damage", "value"=>"1", "narc"=>"trdata", "int"=>"true"}
+App 57521 output: {"file_name"=>"1", "field"=>"Prioritize Damage", "value"=>"1", "narc"=>"trdata", "int"=>"true"}
+App 57521 output: {"file_name"=>"1", "field"=>"has_items", "value"=>"1", "narc"=>"trdata", "int"=>"true"}
+App 57521 output: {"file_name"=>"1", "field"=>"has_items", "value"=>"1", "narc"=>"trdata", "int"=>"true"}
+App 57521 output: {"file_name"=>"1", "field"=>"has_items", "value"=>"0", "narc"=>"trdata", "int"=>"true"}
+App 57521 output: {"file_name"=>"1", "field"=>"has_items", "value"=>"0", "narc"=>"trdata", "int"=>"true"}
+App 57521 output: {"file_name"=>"1", "field"=>"move_1_0", "value"=>"Roar", "narc"=>"trpok"}
+App 57521 output: {"file_name"=>"1", "field"=>"move_1_0", "value"=>"Roar", "narc"=>"trpok"}
+App 57521 output: ["species", "move"]
+App 57521 output: "move_1_0"
+App 57521 output: {"file_name"=>"1", "field"=>"move_1_0", "value"=>"Roar", "narc"=>"trpok"}
+App 57521 output: {"file_name"=>"1", "field"=>"move_1_0", "value"=>"Roar", "narc"=>"trpok"}
+App 57521 output: {"file_name"=>"1", "field"=>"move_1_0", "value"=>"Roar", "narc"=>"trpok"}
+App 57521 output: ["species", "move"]
+App 57521 output: "move_1_0"
+App 57521 output: {"file_name"=>"1", "field"=>"move_1_0", "value"=>"Roar", "narc"=>"trpok"}
+App 57521 output: {"file_name"=>"1", "field"=>"item_1", "value"=>"Master Ball", "narc"=>"trdata"}
+App 57521 output: {"file_name"=>"1", "field"=>"item_1", "value"=>"Master Ball", "narc"=>"trdata"}
+App 57521 output: {"file_name"=>"1", "field"=>"item_id_0", "value"=>"Leftovers", "narc"=>"trpok"}
+App 57521 output: {"file_name"=>"1", "field"=>"item_id_0", "value"=>"Leftovers", "narc"=>"trpok"}
+App 57521 output: {"file_name"=>"1", "field"=>"item_id_0", "value"=>"Leftovers", "narc"=>"trpok"}
+App 57521 output: {"file_name"=>"1", "field"=>"has_items", "value"=>"1", "narc"=>"trdata", "int"=>"true"}
+App 57521 output: {"file_name"=>"1", "field"=>"has_items", "value"=>"1", "narc"=>"trdata", "int"=>"true"}
+App 57521 output: {"file_name"=>"2", "field"=>"spring_grass_slot_0", "value"=>"Palpitoad", "narc"=>"encounter"}
+App 57521 output: "all"
+App 57521 output: "spring_grass_slot_0"
+App 57521 output: {"file_name"=>"2", "field"=>"spring_grass_slot_0", "value"=>"Palpitoad", "narc"=>"encounter"}
+App 57521 output: {"file_name"=>"2", "field"=>"spring_grass_slot_0", "value"=>"Palpitoad", "narc"=>"encounter"}
+App 57521 output: "all"
+App 57521 output: "spring_grass_slot_0"
+App 57521 output: {"file_name"=>"2", "field"=>"spring_grass_slot_0", "value"=>"Palpitoad", "narc"=>"encounter"}
+App 57521 output: {"file_name"=>"2", "field"=>"spring_grass_slot_0_form", "value"=>"0", "narc"=>"encounter", "int"=>"true"}
+App 57521 output: {"file_name"=>"2", "field"=>"spring_grass_slot_0_form", "value"=>"0", "narc"=>"encounter", "int"=>"true"}
+App 57521 output: {"file_name"=>"2", "field"=>"spring_grass_slot_11", "value"=>"Karrablast", "narc"=>"encounter"}
+App 57521 output: "all"
+App 57521 output: "spring_grass_slot_11"
+App 57521 output: {"file_name"=>"2", "field"=>"spring_grass_slot_11", "value"=>"Karrablast", "narc"=>"encounter"}
+App 57521 output: {"file_name"=>"2", "field"=>"spring_grass_slot_11", "value"=>"Karrablast", "narc"=>"encounter"}
+App 57521 output: "all"
+App 57521 output: "spring_grass_slot_11"
+App 57521 output: {"file_name"=>"2", "field"=>"spring_grass_slot_11", "value"=>"Karrablast", "narc"=>"encounter"}
+App 57521 output: {"file_name"=>"2", "field"=>"spring_grass_slot_10_min_level", "value"=>"57", "narc"=>"encounter", "int"=>"true"}
+App 57521 output: {"file_name"=>"2", "field"=>"spring_grass_slot_10_min_level", "value"=>"57", "narc"=>"encounter", "int"=>"true"}
+App 57521 output: {"file_name"=>"0", "field"=>"category", "value"=>"special", "narc"=>"move"}
+App 57521 output: {"file_name"=>"0", "field"=>"category", "value"=>"special", "narc"=>"move"}
+App 57521 output: 0
+App 57521 output: no exp
+App 57521 output: 0
+App 57521 output: "redirecting..."
+App 57521 output: 1228
+App 57521 output: {"maps"=>[[821, [0, 0, 32, 32]], [822, [0, 32, 32, 32]]], "translate"=>[0, 0]}
+App 57521 output: "redirecting..."
+App 57521 output: {"file_name"=>"1", "field"=>"move_id_0", "value"=>"Tackle", "narc"=>"learnset"}
+App 57521 output: "all"
+App 57521 output: "move_id_0"
+App 57521 output: {"file_name"=>"1", "field"=>"move_id_0", "value"=>"Tackle", "narc"=>"learnset"}
+App 57521 output: {"file_name"=>"1", "field"=>"move_id_0", "value"=>"-----", "narc"=>"learnset"}
+App 57521 output: "all"
+App 57521 output: "move_id_0"
+App 57521 output: {"file_name"=>"1", "field"=>"move_id_0", "value"=>"-----", "narc"=>"learnset"}
+
+[ N 2022-12-29 16:00:40.7188 57471/T8 age/Cor/CoreMain.cpp:671 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2022-12-29 16:00:40.7191 57471/T1 age/Cor/CoreMain.cpp:1246 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2022-12-29 16:00:40.7191 57471/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 57521, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2022-12-29 16:00:40.7199 57471/T8 Ser/Server.h:901 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2022-12-29 16:00:40.7200 57471/Tc Ser/Server.h:901 ]: [ServerThr.3] Freed 0 spare client objects
+[ N 2022-12-29 16:00:40.7199 57471/Ta Ser/Server.h:901 ]: [ServerThr.2] Freed 0 spare client objects
+[ N 2022-12-29 16:00:40.7200 57471/Tk Ser/Server.h:901 ]: [ServerThr.7] Freed 0 spare client objects
+[ N 2022-12-29 16:00:40.7201 57471/Te Ser/Server.h:901 ]: [ServerThr.4] Freed 0 spare client objects
+[ N 2022-12-29 16:00:40.7202 57471/Ti Ser/Server.h:901 ]: [ServerThr.6] Freed 0 spare client objects
+[ N 2022-12-29 16:00:40.7201 57471/To Ser/Server.h:901 ]: [ServerThr.9] Freed 0 spare client objects
+[ N 2022-12-29 16:00:40.7203 57471/Ta Ser/Server.h:558 ]: [ServerThr.2] Shutdown finished
+[ N 2022-12-29 16:00:40.7202 57471/Tm Ser/Server.h:901 ]: [ServerThr.8] Freed 0 spare client objects
+[ N 2022-12-29 16:00:40.7202 57471/Tq Ser/Server.h:901 ]: [ServerThr.10] Freed 0 spare client objects
+[ N 2022-12-29 16:00:40.7202 57471/Tg Ser/Server.h:901 ]: [ServerThr.5] Freed 0 spare client objects
+[ N 2022-12-29 16:00:40.7202 57471/Tt Ser/Server.h:901 ]: [ServerThr.11] Freed 0 spare client objects
+[ N 2022-12-29 16:00:40.7202 57471/Tu Ser/Server.h:901 ]: [ServerThr.12] Freed 0 spare client objects
+[ N 2022-12-29 16:00:40.7206 57471/Tk Ser/Server.h:558 ]: [ServerThr.7] Shutdown finished
+[ N 2022-12-29 16:00:40.7206 57471/Te Ser/Server.h:558 ]: [ServerThr.4] Shutdown finished
+[ N 2022-12-29 16:00:40.7207 57471/T8 Ser/Server.h:558 ]: [ServerThr.1] Shutdown finished
+[ N 2022-12-29 16:00:40.7207 57471/Tu Ser/Server.h:558 ]: [ServerThr.12] Shutdown finished
+[ N 2022-12-29 16:00:40.7207 57471/Tg Ser/Server.h:558 ]: [ServerThr.5] Shutdown finished
+[ N 2022-12-29 16:00:40.7206 57471/Tq Ser/Server.h:558 ]: [ServerThr.10] Shutdown finished
+[ N 2022-12-29 16:00:40.7206 57471/Tc Ser/Server.h:558 ]: [ServerThr.3] Shutdown finished
+[ N 2022-12-29 16:00:40.7207 57471/Ti Ser/Server.h:558 ]: [ServerThr.6] Shutdown finished
+[ N 2022-12-29 16:00:40.7207 57471/To Ser/Server.h:558 ]: [ServerThr.9] Shutdown finished
+[ N 2022-12-29 16:00:40.7207 57471/Tm Ser/Server.h:558 ]: [ServerThr.8] Shutdown finished
+[ N 2022-12-29 16:00:40.7209 57471/Tw Ser/Server.h:901 ]: [ApiServer] Freed 0 spare client objects
+[ N 2022-12-29 16:00:40.7207 57471/Tt Ser/Server.h:558 ]: [ServerThr.11] Shutdown finished
+[ N 2022-12-29 16:00:40.7210 57471/Tw Ser/Server.h:558 ]: [ApiServer] Shutdown finished
+[ N 2022-12-29 16:00:40.7218 57471/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 57521, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2022-12-29 16:00:41.9318 84105/T1 age/Wat/WatchdogMain.cpp:1377 ]: Starting Passenger watchdog...
+[ N 2022-12-29 16:00:41.9597 84107/T1 age/Cor/CoreMain.cpp:1340 ]: Starting Passenger core...
+[ N 2022-12-29 16:00:41.9599 84107/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ N 2022-12-29 16:00:41.9960 84107/T1 age/Cor/CoreMain.cpp:1015 ]: Passenger core online, PID 84107
+[ N 2022-12-29 16:00:42.2387 57471/T1 age/Cor/CoreMain.cpp:1325 ]: Passenger core shutdown finished
+App 84128 output: "init"
+[ N 2022-12-29 16:00:49.9936 84107/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+[ E 2022-12-29 16:00:50.0088 84107/T5 Sec/Crypto.cpp:990 ]: Removing Passenger private key from keychain failed: Write permissions error.. Please remove the private key from the certificate labeled Phusion Passenger Open Source in your keychain.
+App 84161 output: {"rom_base"=>"B2", "rom_name"=>"b3test.nds", "password"=>"b3test"}
+
+[ N 2022-12-29 16:18:57.1667 84107/T8 age/Cor/CoreMain.cpp:671 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2022-12-29 16:18:57.1668 84107/T1 age/Cor/CoreMain.cpp:1246 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2022-12-29 16:18:57.1668 84107/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 84161, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2022-12-29 16:18:57.1673 84107/Ta Ser/Server.h:901 ]: [ServerThr.2] Freed 0 spare client objects
+[ N 2022-12-29 16:18:57.1674 84107/To Ser/Server.h:901 ]: [ServerThr.9] Freed 0 spare client objects
+[ N 2022-12-29 16:18:57.1673 84107/T8 Ser/Server.h:901 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2022-12-29 16:18:57.1674 84107/Tg Ser/Server.h:901 ]: [ServerThr.5] Freed 0 spare client objects
+[ N 2022-12-29 16:18:57.1674 84107/Te Ser/Server.h:901 ]: [ServerThr.4] Freed 0 spare client objects
+[ N 2022-12-29 16:18:57.1674 84107/Tm Ser/Server.h:901 ]: [ServerThr.8] Freed 0 spare client objects
+[ N 2022-12-29 16:18:57.1674 84107/Ta Ser/Server.h:558 ]: [ServerThr.2] Shutdown finished
+[ N 2022-12-29 16:18:57.1676 84107/Tm Ser/Server.h:558 ]: [ServerThr.8] Shutdown finished
+[ N 2022-12-29 16:18:57.1674 84107/Tk Ser/Server.h:901 ]: [ServerThr.7] Freed 0 spare client objects
+[ N 2022-12-29 16:18:57.1674 84107/Ts Ser/Server.h:901 ]: [ServerThr.11] Freed 0 spare client objects
+[ N 2022-12-29 16:18:57.1674 84107/Td Ser/Server.h:901 ]: [ServerThr.3] Freed 0 spare client objects
+[ N 2022-12-29 16:18:57.1674 84107/Ti Ser/Server.h:901 ]: [ServerThr.6] Freed 0 spare client objects
+[ N 2022-12-29 16:18:57.1675 84107/Tg Ser/Server.h:558 ]: [ServerThr.5] Shutdown finished
+[ N 2022-12-29 16:18:57.1676 84107/Te Ser/Server.h:558 ]: [ServerThr.4] Shutdown finished
+[ N 2022-12-29 16:18:57.1675 84107/Tw Ser/Server.h:901 ]: [ApiServer] Freed 0 spare client objects
+[ N 2022-12-29 16:18:57.1675 84107/T8 Ser/Server.h:558 ]: [ServerThr.1] Shutdown finished
+[ N 2022-12-29 16:18:57.1674 84107/Tr Ser/Server.h:901 ]: [ServerThr.10] Freed 0 spare client objects
+[ N 2022-12-29 16:18:57.1677 84107/Td Ser/Server.h:558 ]: [ServerThr.3] Shutdown finished
+[ N 2022-12-29 16:18:57.1676 84107/Tk Ser/Server.h:558 ]: [ServerThr.7] Shutdown finished
+[ N 2022-12-29 16:18:57.1674 84107/To Ser/Server.h:558 ]: [ServerThr.9] Shutdown finished
+[ N 2022-12-29 16:18:57.1674 84107/Tu Ser/Server.h:901 ]: [ServerThr.12] Freed 0 spare client objects
+[ N 2022-12-29 16:18:57.1677 84107/Ti Ser/Server.h:558 ]: [ServerThr.6] Shutdown finished
+[ N 2022-12-29 16:18:57.1679 84107/Tu Ser/Server.h:558 ]: [ServerThr.12] Shutdown finished
+[ N 2022-12-29 16:18:57.1676 84107/Ts Ser/Server.h:558 ]: [ServerThr.11] Shutdown finished
+[ N 2022-12-29 16:18:57.1678 84107/Tw Ser/Server.h:558 ]: [ApiServer] Shutdown finished
+[ N 2022-12-29 16:18:57.1678 84107/Tr Ser/Server.h:558 ]: [ServerThr.10] Shutdown finished
+[ N 2022-12-29 16:18:57.1680 84107/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 84161, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2022-12-29 16:18:58.2841 84107/T1 age/Cor/CoreMain.cpp:1325 ]: Passenger core shutdown finished
