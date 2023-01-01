@@ -5317,3 +5317,875 @@ App 85863 output: 626
 App 85863 output: {"maps"=>[[100, [576, 416, 32, 32]], [99, [608, 416, 32, 32]]], "translate"=>[576, 416], "headers"=>[395, 396]}
 App 85863 output: 130
 App 85863 output: {"maps"=>[[827, [0, 0, 32, 32]]], "translate"=>[0, 0]}
+App 85863 output: "redirecting..."
+[ N 2023-01-01 11:04:17.4797 85813/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+[ E 2023-01-01 11:04:17.4890 85813/T5 Sec/Crypto.cpp:990 ]: Removing Passenger private key from keychain failed: Write permissions error.. Please remove the private key from the certificate labeled Phusion Passenger Open Source in your keychain.
+App 85863 output: "redirecting..."
+App 85863 output: {"file_name"=>"1", "field"=>"param_0", "value"=>"16", "narc"=>"evolution", "int"=>"true"}
+App 85863 output: {"file_name"=>"1", "field"=>"param_0", "value"=>"16", "narc"=>"evolution", "int"=>"true"}
+App 85863 output: {"file_name"=>"1", "field"=>"param_0", "value"=>"16", "narc"=>"evolution", "int"=>"true"}
+App 85863 output: {"file_name"=>"1", "field"=>"param_0", "value"=>"16", "narc"=>"evolution", "int"=>"true"}
+App 85863 output: {"file_name"=>"1", "field"=>"param_0", "value"=>"16", "narc"=>"evolution", "int"=>"true"}
+App 85863 output: {"file_name"=>"1", "field"=>"param_0", "value"=>"16", "narc"=>"evolution", "int"=>"true"}
+App 85863 output: {"file_name"=>"1", "field"=>"param_0", "value"=>"16", "narc"=>"evolution", "int"=>"true"}
+App 85863 output: {"file_name"=>"1", "field"=>"param_0", "value"=>"16", "narc"=>"evolution", "int"=>"true"}
+App 85863 output: {"file_name"=>"1", "field"=>"method_0", "value"=>"Level Requirement", "narc"=>"evolution"}
+App 85863 output: {"file_name"=>"1", "field"=>"method_0", "value"=>"Level Requirement", "narc"=>"evolution"}
+App 85863 output: {"file_name"=>"1", "field"=>"param_0", "value"=>"16", "narc"=>"evolution", "int"=>"true"}
+App 85863 output: {"file_name"=>"1", "field"=>"param_0", "value"=>"16", "narc"=>"evolution", "int"=>"true"}
+App 85863 output: {"file_name"=>"1", "field"=>"param_0", "value"=>"16", "narc"=>"evolution", "int"=>"true"}
+App 85863 output: {"file_name"=>"1", "field"=>"param_0", "value"=>"16", "narc"=>"evolution", "int"=>"true"}
+App 85863 output: {"file_name"=>"1", "field"=>"param_0", "value"=>"16", "narc"=>"evolution", "int"=>"true"}
+App 85863 output: {"file_name"=>"1", "field"=>"param_0", "value"=>"16", "narc"=>"evolution", "int"=>"true"}
+App 85863 output: {"file_name"=>"1", "field"=>"param_0", "value"=>"16", "narc"=>"evolution", "int"=>"true"}
+App 85863 output: {"file_name"=>"1", "field"=>"param_0", "value"=>"16", "narc"=>"evolution", "int"=>"true"}
+App 85863 output: {"file_name"=>"1", "field"=>"param_0", "value"=>"16", "narc"=>"evolution", "int"=>"true"}
+App 85863 output: {"file_name"=>"1", "field"=>"param_0", "value"=>"16", "narc"=>"evolution", "int"=>"true"}
+App 85863 output: {"file_name"=>"1", "field"=>"param_0", "value"=>"16", "narc"=>"evolution", "int"=>"true"}
+App 85863 output: {"file_name"=>"1", "field"=>"param_0", "value"=>"16", "narc"=>"evolution", "int"=>"true"}
+App 85863 output: {"file_name"=>"1", "field"=>"method_0", "value"=>"Level Requirement", "narc"=>"evolution"}
+App 85863 output: {"file_name"=>"1", "field"=>"method_0", "value"=>"Level Requirement", "narc"=>"evolution"}
+App 85863 output: {"file_name"=>"1", "field"=>"param_0", "value"=>"16", "narc"=>"evolution", "int"=>"true"}
+App 85863 output: {"file_name"=>"1", "field"=>"param_0", "value"=>"16", "narc"=>"evolution", "int"=>"true"}
+App 85863 output: {"file_name"=>"1", "field"=>"param_0", "value"=>"16", "narc"=>"evolution", "int"=>"true"}
+App 85863 output: {"file_name"=>"1", "field"=>"param_0", "value"=>"16", "narc"=>"evolution", "int"=>"true"}
+App 85863 output: {"file_name"=>"1", "field"=>"method_3", "value"=>"None", "narc"=>"evolution"}
+App 85863 output: {"file_name"=>"1", "field"=>"method_3", "value"=>"None", "narc"=>"evolution"}
+App 85863 output: {"file_name"=>"1", "field"=>"method_3", "value"=>"None", "narc"=>"evolution"}
+App 85863 output: {"file_name"=>"1", "field"=>"method_3", "value"=>"None", "narc"=>"evolution"}
+App 85863 output: {"file_name"=>"1", "field"=>"param_0", "value"=>"20", "narc"=>"evolution", "int"=>"true"}
+App 85863 output: {"file_name"=>"1", "field"=>"param_0", "value"=>"20", "narc"=>"evolution", "int"=>"true"}
+App 85863 output: {"file_name"=>"1", "field"=>"method_0", "value"=>"Level Requirement", "narc"=>"evolution"}
+App 85863 output: {"file_name"=>"1", "field"=>"method_0", "value"=>"Level Requirement", "narc"=>"evolution"}
+App 85863 output: {"file_name"=>"1", "field"=>"method_0", "value"=>"Item Use", "narc"=>"evolution"}
+App 85863 output: {"file_name"=>"1", "field"=>"method_0", "value"=>"Item Use", "narc"=>"evolution"}
+App 85863 output: Traceback (most recent call last):
+App 85863 output:   File "/Users/andylee/Repos/Pokeweb/python/evolution_writer.py", line 46, in <module>
+App 85863 output:     write_readable_to_raw(int(file_name))
+App 85863 output: 
+App 85863 output:   File "/Users/andylee/Repos/Pokeweb/python/evolution_writer.py", line 14, in write_readable_to_raw
+App 85863 output:     tools.write_readable_to_raw(file_name, narc_name, to_raw)
+App 85863 output:   File "/Users/andylee/Repos/Pokeweb/python/tools.py", line 83, in write_readable_to_raw
+App 85863 output:     
+App 85863 output: new_raw_data = to_raw(json_data["readable"])
+App 85863 output:   
+App 85863 output:          
+App 85863 output:        
+App 85863 output:  ^^^^^
+App 85863 output: ^^^^^^^
+App 85863 output: ^^^^^^^
+App 85863 output: ^^^^^^
+App 85863 output: ^^^^
+App 85863 output:   File "/Users/andylee/Repos/Pokeweb/python/evolution_writer.py", line 29, in to_raw
+App 85863 output:     raw[f'param_{n}'] = rom_data.ITEMS.index(raw[f'param_{n}'].replace("Ã\x83Â©","é").replace('Ã©', 'é'))
+App 85863 output: 
+App 85863 output:                             
+App 85863 output:                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+App 85863 output: AttributeError: 'int' object has no attribute 'replace'
+App 85863 output: {"file_name"=>"1", "field"=>"param_0", "value"=>"20", "narc"=>"evolution", "int"=>"true"}
+App 85863 output: {"file_name"=>"1", "field"=>"param_0", "value"=>"20", "narc"=>"evolution", "int"=>"true"}
+App 85863 output: Traceback (most recent call last):
+App 85863 output:   File "/Users/andylee/Repos/Pokeweb/python/evolution_writer.py", line 46, in <module>
+App 85863 output:     write_readable_to_raw(int(file_name))
+App 85863 output:   File "/Users/andylee/Repos/Pokeweb/python/evolution_writer.py", line 14, in write_readable_to_raw
+App 85863 output:     tools.write_readable_to_raw(file_name, narc_name, to_raw)
+App 85863 output:   File "/Users/andylee/Repos/Pokeweb/python/tools.py", line 83, in write_readable_to_raw
+App 85863 output:     new_raw_data = to_raw(json_data["readable"])
+App 85863 output:                  
+App 85863 output:   ^^^
+App 85863 output: ^^^^^
+App 85863 output: ^^^^^
+App 85863 output: ^^^^^
+App 85863 output: ^^^^^^
+App 85863 output: ^^^^^
+App 85863 output: 
+App 85863 output:   File "/Users/andylee/Repos/Pokeweb/python/evolution_writer.py", line 29, in to_raw
+App 85863 output:     raw[f'param_{n}'] = rom_data.ITEMS.index(raw[f'param_{n}'].replace("Ã\x83Â©","é").replace('Ã©', 'é'))
+App 85863 output:                     
+App 85863 output:        
+App 85863 output:      
+App 85863 output:       
+App 85863 output:      
+App 85863 output:   ^^^^
+App 85863 output: ^^^^^
+App 85863 output: ^^^^^^
+App 85863 output: ^^^^^
+App 85863 output: ^^^^^
+App 85863 output: AttributeError: 
+App 85863 output: 'int' object has no attribute 'replace'
+App 85863 output: 
+App 85863 output: {"file_name"=>"1", "field"=>"param_0", "value"=>"20", "narc"=>"evolution", "int"=>"true"}
+App 85863 output: {"file_name"=>"1", "field"=>"param_0", "value"=>"20", "narc"=>"evolution", "int"=>"true"}
+App 85863 output: Traceback (most recent call last):
+App 85863 output:   File "/Users/andylee/Repos/Pokeweb/python/evolution_writer.py", line 46, in <module>
+App 85863 output:     write_readable_to_raw(int(file_name))
+App 85863 output: 
+App 85863 output:   File "/Users/andylee/Repos/Pokeweb/python/evolution_writer.py", line 14, in write_readable_to_raw
+App 85863 output:     tools.write_readable_to_raw(file_name, narc_name, to_raw)
+App 85863 output: 
+App 85863 output:   File "/Users/andylee/Repos/Pokeweb/python/tools.py", line 83, in write_readable_to_raw
+App 85863 output:     new_raw_data = to_raw(json_data["readable"])
+App 85863 output: 
+App 85863 output:  
+App 85863 output:        
+App 85863 output:       
+App 85863 output:      
+App 85863 output: ^^^^^^
+App 85863 output: ^^^^^
+App 85863 output: ^^^^^^
+App 85863 output: ^^^^^
+App 85863 output: ^^^^^^
+App 85863 output: ^
+App 85863 output:   File "/Users/andylee/Repos/Pokeweb/python/evolution_writer.py", line 29, in to_raw
+App 85863 output:     
+App 85863 output: raw[f'param_{n}'] = rom_data.ITEMS.index(raw[f'param_{n}'].replace("Ã\x83Â©","é").replace('Ã©', 'é'))
+App 85863 output:   
+App 85863 output:        
+App 85863 output:       
+App 85863 output:      
+App 85863 output:      
+App 85863 output:       
+App 85863 output:      
+App 85863 output:       
+App 85863 output:    ^^
+App 85863 output: ^^^^^
+App 85863 output: ^^^^^^
+App 85863 output: ^^^^^
+App 85863 output: ^^^^^^
+App 85863 output: ^
+App 85863 output: AttributeError
+App 85863 output: : 'int' object has no attribute 'replace'
+App 85863 output: 
+App 85863 output: {"file_name"=>"1", "field"=>"param_0", "value"=>"20", "narc"=>"evolution", "int"=>"true"}
+App 85863 output: {"file_name"=>"1", "field"=>"param_0", "value"=>"20", "narc"=>"evolution", "int"=>"true"}
+App 85863 output: Traceback (most recent call last):
+App 85863 output:   File "/Users/andylee/Repos/Pokeweb/python/evolution_writer.py", line 46, in <module>
+App 85863 output:     write_readable_to_raw(int(file_name))
+App 85863 output:   File "/Users/andylee/Repos/Pokeweb/python/evolution_writer.py", line 14, in write_readable_to_raw
+App 85863 output:     
+App 85863 output: tools.write_readable_to_raw(file_name, narc_name, to_raw)
+App 85863 output:   File "/Users/andylee/Repos/Pokeweb/python/tools.py", line 83, in write_readable_to_raw
+App 85863 output:     new_raw_data = to_raw(json_data["readable"])
+App 85863 output:       
+App 85863 output:              ^
+App 85863 output: ^^^^^^^
+App 85863 output: ^^^^^^
+App 85863 output: ^^^^^^
+App 85863 output: ^^^^^^
+App 85863 output: ^^^
+App 85863 output:   File "/Users/andylee/Repos/Pokeweb/python/evolution_writer.py", line 29, in to_raw
+App 85863 output:     raw[f'param_{n}'] = rom_data.ITEMS.index(raw[f'param_{n}'].replace("Ã\x83Â©","é").replace('Ã©', 'é'))
+App 85863 output:               
+App 85863 output:        
+App 85863 output:       
+App 85863 output:       
+App 85863 output:      
+App 85863 output:       
+App 85863 output:  ^^^^^
+App 85863 output: ^^^^^^
+App 85863 output: ^^^^^
+App 85863 output: ^^^^^^
+App 85863 output: ^^^
+App 85863 output: AttributeError: 'int' object has no attribute 'replace'
+App 85863 output: 
+App 85863 output: {"file_name"=>"1", "field"=>"method_0", "value"=>"Item Use", "narc"=>"evolution"}
+App 85863 output: {"file_name"=>"1", "field"=>"method_0", "value"=>"Item Use", "narc"=>"evolution"}
+App 85863 output: Traceback (most recent call last):
+App 85863 output:   File "/Users/andylee/Repos/Pokeweb/python/evolution_writer.py", line 46, in <module>
+App 85863 output:     write_readable_to_raw(int(file_name))
+App 85863 output: 
+App 85863 output:   File "/Users/andylee/Repos/Pokeweb/python/evolution_writer.py", line 14, in write_readable_to_raw
+App 85863 output:     tools.write_readable_to_raw(file_name, narc_name, to_raw)
+App 85863 output:   File "/Users/andylee/Repos/Pokeweb/python/tools.py", line 83, in write_readable_to_raw
+App 85863 output:     new_raw_data = to_raw(json_data["readable"])
+App 85863 output:       
+App 85863 output:        
+App 85863 output:       
+App 85863 output: ^^^^^^
+App 85863 output: ^^^^^
+App 85863 output: ^^^^^^
+App 85863 output: ^^^^^^
+App 85863 output: ^^^^^^
+App 85863 output: 
+App 85863 output:   File "/Users/andylee/Repos/Pokeweb/python/evolution_writer.py", line 29, in to_raw
+App 85863 output:     raw[f'param_{n}'] = rom_data.ITEMS.index(raw[f'param_{n}'].replace("Ã\x83Â©","é").replace('Ã©', 'é'))
+App 85863 output:  
+App 85863 output:                         
+App 85863 output:       
+App 85863 output:       
+App 85863 output:      
+App 85863 output:    ^^^
+App 85863 output: ^^^^^^
+App 85863 output: ^^^^^
+App 85863 output: ^^^^^^
+App 85863 output: ^^^^^
+App 85863 output: AttributeError: 
+App 85863 output: 'int' object has no attribute 'replace'
+App 85863 output: 
+App 85863 output: {"file_name"=>"1", "field"=>"method_0", "value"=>"Item Use", "narc"=>"evolution"}
+App 85863 output: {"file_name"=>"1", "field"=>"method_0", "value"=>"Item Use", "narc"=>"evolution"}
+App 85863 output: Traceback (most recent call last):
+App 85863 output:   File "/Users/andylee/Repos/Pokeweb/python/evolution_writer.py", line 46, in <module>
+App 85863 output:     write_readable_to_raw(int(file_name))
+App 85863 output:   File "/Users/andylee/Repos/Pokeweb/python/evolution_writer.py", line 14, in write_readable_to_raw
+App 85863 output:     tools.write_readable_to_raw(file_name, narc_name, to_raw)
+App 85863 output: 
+App 85863 output:   File "/Users/andylee/Repos/Pokeweb/python/tools.py", line 83, in write_readable_to_raw
+App 85863 output:     new_raw_data = to_raw(json_data["readable"])
+App 85863 output:                   
+App 85863 output:  ^^^^^^^^^^^
+App 85863 output: ^^^^^^
+App 85863 output: ^^^^^
+App 85863 output: ^^^^^^
+App 85863 output: ^
+App 85863 output:   File "/Users/andylee/Repos/Pokeweb/python/evolution_writer.py", line 29, in to_raw
+App 85863 output:     
+App 85863 output: raw[f'param_{n}'] = rom_data.ITEMS.index(raw[f'param_{n}'].replace("Ã\x83Â©","é").replace('Ã©', 'é'))
+App 85863 output: 
+App 85863 output:      
+App 85863 output:    
+App 85863 output:  
+App 85863 output:  
+App 85863 output:    
+App 85863 output:   
+App 85863 output:     
+App 85863 output:     
+App 85863 output:    
+App 85863 output:      
+App 85863 output:      
+App 85863 output:      
+App 85863 output:     ^^
+App 85863 output: ^^^^^
+App 85863 output: ^^^^^
+App 85863 output: ^^^^^^
+App 85863 output: ^^^^^^^
+App 85863 output: 
+App 85863 output: AttributeError
+App 85863 output: : 'int' object has no attribute 'replace'
+App 85863 output: 
+App 85863 output: {"file_name"=>"1", "field"=>"param_0", "value"=>"20", "narc"=>"evolution", "int"=>"true"}
+App 85863 output: {"file_name"=>"1", "field"=>"param_0", "value"=>"20", "narc"=>"evolution", "int"=>"true"}
+App 85863 output: Traceback (most recent call last):
+App 85863 output:   File "/Users/andylee/Repos/Pokeweb/python/evolution_writer.py", line 46, in <module>
+App 85863 output:     write_readable_to_raw(int(file_name))
+App 85863 output: 
+App 85863 output:   File "/Users/andylee/Repos/Pokeweb/python/evolution_writer.py", line 14, in write_readable_to_raw
+App 85863 output:     tools.write_readable_to_raw(file_name, narc_name, to_raw)
+App 85863 output:   File "/Users/andylee/Repos/Pokeweb/python/tools.py", line 83, in write_readable_to_raw
+App 85863 output:     new_raw_data = to_raw(json_data["readable"])
+App 85863 output: 
+App 85863 output:       
+App 85863 output:       
+App 85863 output:      
+App 85863 output:   ^^^^
+App 85863 output: ^^^^^
+App 85863 output: ^^^^^^
+App 85863 output: ^^^^^^
+App 85863 output: ^^^^^
+App 85863 output: ^^^
+App 85863 output:   File "/Users/andylee/Repos/Pokeweb/python/evolution_writer.py", line 29, in to_raw
+App 85863 output:     raw[f'param_{n}'] = rom_data.ITEMS.index(raw[f'param_{n}'].replace("Ã\x83Â©","é").replace('Ã©', 'é'))
+App 85863 output:     
+App 85863 output:        
+App 85863 output:      
+App 85863 output:       
+App 85863 output:        
+App 85863 output:      
+App 85863 output:       
+App 85863 output:      
+App 85863 output: ^^^^^^
+App 85863 output: ^^^^^
+App 85863 output: ^^^^^^
+App 85863 output: ^^^^^
+App 85863 output: ^^^
+App 85863 output: AttributeError: 'int' object has no attribute 'replace'
+App 85863 output: 
+App 85863 output: {"file_name"=>"1", "field"=>"param_0", "value"=>"20", "narc"=>"evolution", "int"=>"true"}
+App 85863 output: {"file_name"=>"1", "field"=>"param_0", "value"=>"20", "narc"=>"evolution", "int"=>"true"}
+App 85863 output: Traceback (most recent call last):
+App 85863 output:   File "/Users/andylee/Repos/Pokeweb/python/evolution_writer.py", line 46, in <module>
+App 85863 output:     write_readable_to_raw(int(file_name))
+App 85863 output:   File "/Users/andylee/Repos/Pokeweb/python/evolution_writer.py", line 14, in write_readable_to_raw
+App 85863 output:     tools.write_readable_to_raw(file_name, narc_name, to_raw)
+App 85863 output:   File "/Users/andylee/Repos/Pokeweb/python/tools.py", line 83, in write_readable_to_raw
+App 85863 output:     new_raw_data = to_raw(json_data["readable"])
+App 85863 output:    
+App 85863 output:        
+App 85863 output:       
+App 85863 output:    ^^
+App 85863 output: ^^^^^^
+App 85863 output: ^^^^^^
+App 85863 output: ^^^^^^
+App 85863 output: ^^^^^
+App 85863 output: ^^^^
+App 85863 output:   File "/Users/andylee/Repos/Pokeweb/python/evolution_writer.py", line 29, in to_raw
+App 85863 output:     raw[f'param_{n}'] = rom_data.ITEMS.index(raw[f'param_{n}'].replace("Ã\x83Â©","é").replace('Ã©', 'é'))
+App 85863 output: 
+App 85863 output:    
+App 85863 output:                    
+App 85863 output:       
+App 85863 output:       
+App 85863 output:       
+App 85863 output:      ^
+App 85863 output: ^^^^^^
+App 85863 output: ^^^^^^
+App 85863 output: ^^^^^
+App 85863 output: ^^^^^^
+App 85863 output: ^
+App 85863 output: AttributeError: 'int' object has no attribute 'replace'
+App 85863 output: 
+App 85863 output: {"file_name"=>"1", "field"=>"method_0", "value"=>"Item Use", "narc"=>"evolution"}
+App 85863 output: {"file_name"=>"1", "field"=>"method_0", "value"=>"Item Use", "narc"=>"evolution"}
+App 85863 output: Traceback (most recent call last):
+App 85863 output:   File "/Users/andylee/Repos/Pokeweb/python/evolution_writer.py", line 46, in <module>
+App 85863 output:     write_readable_to_raw(int(file_name))
+App 85863 output: 
+App 85863 output:   File "/Users/andylee/Repos/Pokeweb/python/evolution_writer.py", line 14, in write_readable_to_raw
+App 85863 output:     tools.write_readable_to_raw(file_name, narc_name, to_raw)
+App 85863 output: 
+App 85863 output:   File "/Users/andylee/Repos/Pokeweb/python/tools.py", line 83, in write_readable_to_raw
+App 85863 output:     
+App 85863 output: new_raw_data = to_raw(json_data["readable"])
+App 85863 output:      
+App 85863 output:    
+App 85863 output:     
+App 85863 output:        ^^^^^
+App 85863 output: ^^^^^
+App 85863 output: ^^^^^^^^^^^
+App 85863 output: ^^^^^^^^
+App 85863 output: 
+App 85863 output:   File "/Users/andylee/Repos/Pokeweb/python/evolution_writer.py", line 29, in to_raw
+App 85863 output:     
+App 85863 output: raw[f'param_{n}'] = rom_data.ITEMS.index(raw[f'param_{n}'].replace("Ã\x83Â©","é").replace('Ã©', 'é'))
+App 85863 output:   
+App 85863 output:               
+App 85863 output:         
+App 85863 output:     
+App 85863 output:    
+App 85863 output:     
+App 85863 output:           ^^^^^^^
+App 85863 output: ^^^^^^^^^^^^^^^^^^
+App 85863 output: AttributeError: 'int' object has no attribute 'replace'
+App 85863 output: 
+App 85863 output: {"file_name"=>"1", "field"=>"method_0", "value"=>"Level Requirement + Male", "narc"=>"evolution"}
+App 85863 output: {"file_name"=>"1", "field"=>"method_0", "value"=>"Level Requirement + Male", "narc"=>"evolution"}
+App 85863 output: {"file_name"=>"1", "field"=>"param_0", "value"=>"20", "narc"=>"evolution", "int"=>"true"}
+App 85863 output: {"file_name"=>"1", "field"=>"param_0", "value"=>"20", "narc"=>"evolution", "int"=>"true"}
+App 85863 output: {"file_name"=>"1", "field"=>"param_0", "value"=>"20", "narc"=>"evolution", "int"=>"true"}
+App 85863 output: {"file_name"=>"1", "field"=>"param_0", "value"=>"20", "narc"=>"evolution", "int"=>"true"}
+App 85863 output: {"file_name"=>"1", "field"=>"method_3", "value"=>"None", "narc"=>"evolution"}
+App 85863 output: {"file_name"=>"1", "field"=>"method_3", "value"=>"None", "narc"=>"evolution"}
+App 85863 output: {"file_name"=>"1", "field"=>"method_3", "value"=>"None", "narc"=>"evolution"}
+App 85863 output: {"file_name"=>"1", "field"=>"method_3", "value"=>"None", "narc"=>"evolution"}
+App 85863 output: {"file_name"=>"1", "field"=>"param_0", "value"=>"20", "narc"=>"evolution", "int"=>"true"}
+App 85863 output: {"file_name"=>"1", "field"=>"param_0", "value"=>"20", "narc"=>"evolution", "int"=>"true"}
+App 85863 output: {"file_name"=>"1", "field"=>"method_0", "value"=>"Level Requirement + Male", "narc"=>"evolution"}
+App 85863 output: {"file_name"=>"1", "field"=>"method_0", "value"=>"Level Requirement + Male", "narc"=>"evolution"}
+App 85863 output: {"file_name"=>"1", "field"=>"ability_3", "value"=>"Chlorophyll", "narc"=>"personal"}
+App 85863 output: {"file_name"=>"1", "field"=>"ability_3", "value"=>"Chlorophyll", "narc"=>"personal"}
+App 85863 output: {"file_name"=>"1", "field"=>"base_spdef", "value"=>"65", "narc"=>"personal", "int"=>"true"}
+App 85863 output: {"file_name"=>"1", "field"=>"base_spdef", "value"=>"65", "narc"=>"personal", "int"=>"true"}
+App 85863 output: {"file_name"=>"1", "field"=>"method_0", "value"=>"Item Use", "narc"=>"evolution"}
+App 85863 output: {"file_name"=>"1", "field"=>"method_0", "value"=>"Item Use", "narc"=>"evolution"}
+App 85863 output: Traceback (most recent call last):
+App 85863 output:   File "/Users/andylee/Repos/Pokeweb/python/evolution_writer.py", line 46, in <module>
+App 85863 output:     
+App 85863 output: write_readable_to_raw(int(file_name))
+App 85863 output:   File "/Users/andylee/Repos/Pokeweb/python/evolution_writer.py", line 14, in write_readable_to_raw
+App 85863 output:     tools.write_readable_to_raw(file_name, narc_name, to_raw)
+App 85863 output: 
+App 85863 output:   File "/Users/andylee/Repos/Pokeweb/python/tools.py", line 83, in write_readable_to_raw
+App 85863 output:     new_raw_data = to_raw(json_data["readable"])
+App 85863 output: 
+App 85863 output:        
+App 85863 output:         
+App 85863 output:     ^^^
+App 85863 output: ^^^^
+App 85863 output: ^^^^^^
+App 85863 output: ^^^^^
+App 85863 output: ^^^^^^
+App 85863 output: ^^^^^
+App 85863 output:   File "/Users/andylee/Repos/Pokeweb/python/evolution_writer.py", line 29, in to_raw
+App 85863 output:     
+App 85863 output: raw[f'param_{n}'] = rom_data.ITEMS.index(raw[f'param_{n}'].replace("Ã\x83Â©","é").replace('Ã©', 'é'))
+App 85863 output:   
+App 85863 output:           
+App 85863 output:       
+App 85863 output:     
+App 85863 output:      
+App 85863 output:       
+App 85863 output:        
+App 85863 output:      ^
+App 85863 output: ^^^^
+App 85863 output: ^^^
+App 85863 output: ^^^
+App 85863 output: ^^^^
+App 85863 output: ^^^^
+App 85863 output: ^^^^^^
+App 85863 output: 
+App 85863 output: AttributeError: 'int' object has no attribute 'replace'
+App 85863 output: 
+App 85863 output: {"file_name"=>"1", "field"=>"param_0", "value"=>"Master Ball", "narc"=>"evolution", "int"=>"false"}
+App 85863 output: {"file_name"=>"1", "field"=>"param_0", "value"=>"Master Ball", "narc"=>"evolution", "int"=>"false"}
+App 85863 output: Traceback (most recent call last):
+App 85863 output:   File "/Users/andylee/Repos/Pokeweb/python/evolution_writer.py", line 46, in <module>
+App 85863 output:     write_readable_to_raw(int(file_name))
+App 85863 output: 
+App 85863 output:   File "/Users/andylee/Repos/Pokeweb/python/evolution_writer.py", line 14, in write_readable_to_raw
+App 85863 output:     
+App 85863 output: tools.write_readable_to_raw(file_name, narc_name, to_raw)
+App 85863 output:   File "/Users/andylee/Repos/Pokeweb/python/tools.py", line 83, in write_readable_to_raw
+App 85863 output:     new_raw_data = to_raw(json_data["readable"])
+App 85863 output: 
+App 85863 output:                    
+App 85863 output: ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+App 85863 output: ^
+App 85863 output:   File "/Users/andylee/Repos/Pokeweb/python/evolution_writer.py", line 29, in to_raw
+App 85863 output:     raw[f'param_{n}'] = rom_data.ITEMS.index(raw[f'param_{n}'].replace("Ã\x83Â©","é").replace('Ã©', 'é'))
+App 85863 output:     
+App 85863 output:       
+App 85863 output:       
+App 85863 output:      
+App 85863 output:       
+App 85863 output:      
+App 85863 output:       
+App 85863 output:      
+App 85863 output:   ^^^^
+App 85863 output: ^^^^^
+App 85863 output: ^^^^^^
+App 85863 output: ^^^^^^
+App 85863 output: ^^^^
+App 85863 output: AttributeError: 'int' object has no attribute 'replace'
+App 85863 output: 
+App 85863 output: {"file_name"=>"1", "field"=>"method_0", "value"=>"Level Requirement", "narc"=>"evolution"}
+App 85863 output: {"file_name"=>"1", "field"=>"method_0", "value"=>"Level Requirement", "narc"=>"evolution"}
+App 85863 output: {"file_name"=>"1", "field"=>"param_0", "value"=>"16", "narc"=>"evolution", "int"=>"true"}
+App 85863 output: {"file_name"=>"1", "field"=>"param_0", "value"=>"16", "narc"=>"evolution", "int"=>"true"}
+App 85863 output: "creating base rom"
+App 85863 output: "xdelta3 -d -s ./base/blank.nds ./base/B2.xdelta ./base/B2.nds"
+App 85863 output: 2023-01-01 11:41:24 - Errno::ENOENT - No such file or directory @ rb_file_s_size - ./xdeltas/b3test.xdelta:
+App 85863 output: 	/Users/andylee/Repos/Pokeweb/routes.rb:190:in `size'
+App 85863 output: 	/Users/andylee/Repos/Pokeweb/routes.rb:190:in `block in <class:MyApp>'
+App 85863 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1696:in `call'
+App 85863 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1696:in `block in compile!'
+App 85863 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1009:in `block (3 levels) in route!'
+App 85863 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1027:in `route_eval'
+App 85863 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1009:in `block (2 levels) in route!'
+App 85863 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1058:in `block in process_route'
+App 85863 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1056:in `catch'
+App 85863 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1056:in `process_route'
+App 85863 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1007:in `block in route!'
+App 85863 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1004:in `each'
+App 85863 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1004:in `route!'
+App 85863 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1128:in `block in dispatch!'
+App 85863 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `catch'
+App 85863 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `invoke'
+App 85863 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1123:in `dispatch!'
+App 85863 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:939:in `block in call!'
+App 85863 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `catch'
+App 85863 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `invoke'
+App 85863 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:939:in `call!'
+App 85863 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:928:in `call'
+App 85863 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/xss_header.rb:20:in `call'
+App 85863 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/path_traversal.rb:18:in `call'
+App 85863 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/json_csrf.rb:28:in `call'
+App 85863 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/base.rb:53:in `call'
+App 85863 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/base.rb:53:in `call'
+App 85863 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/frame_options.rb:33:in `call'
+App 85863 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/null_logger.rb:11:in `call'
+App 85863 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/head.rb:12:in `call'
+App 85863 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/show_exceptions.rb:23:in `call'
+App 85863 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:219:in `call'
+App 85863 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:2007:in `call'
+App 85863 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1566:in `block in call'
+App 85863 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1782:in `synchronize'
+App 85863 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1566:in `call'
+App 85863 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:266:in `context'
+App 85863 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:260:in `call'
+App 85863 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:266:in `context'
+App 85863 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:260:in `call'
+App 85863 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/rack/thread_handler_extension.rb:107:in `process_request'
+App 85863 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+App 85863 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+App 85863 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler.rb:419:in `block (3 levels) in start_threads'
+App 85863 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+
+[ N 2023-01-01 11:42:38.1455 85813/T8 age/Cor/CoreMain.cpp:671 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2023-01-01 11:42:38.1456 85813/T1 age/Cor/CoreMain.cpp:1246 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2023-01-01 11:42:38.1460 85813/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 85863, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2023-01-01 11:42:38.1470 85813/Tt Ser/Server.h:901 ]: [ServerThr.11] Freed 0 spare client objects
+[ N 2023-01-01 11:42:38.1469 85813/Te Ser/Server.h:901 ]: [ServerThr.4] Freed 0 spare client objects
+[ N 2023-01-01 11:42:38.1470 85813/Tm Ser/Server.h:901 ]: [ServerThr.8] Freed 0 spare client objects
+[ N 2023-01-01 11:42:38.1470 85813/Tk Ser/Server.h:901 ]: [ServerThr.7] Freed 0 spare client objects
+[ N 2023-01-01 11:42:38.1470 85813/Ta Ser/Server.h:901 ]: [ServerThr.2] Freed 0 spare client objects
+[ N 2023-01-01 11:42:38.1469 85813/Tr Ser/Server.h:901 ]: [ServerThr.10] Freed 0 spare client objects
+[ N 2023-01-01 11:42:38.1470 85813/Ti Ser/Server.h:901 ]: [ServerThr.6] Freed 0 spare client objects
+[ N 2023-01-01 11:42:38.1474 85813/Tm Ser/Server.h:558 ]: [ServerThr.8] Shutdown finished
+[ N 2023-01-01 11:42:38.1470 85813/T8 Ser/Server.h:901 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2023-01-01 11:42:38.1470 85813/To Ser/Server.h:901 ]: [ServerThr.9] Freed 0 spare client objects
+[ N 2023-01-01 11:42:38.1469 85813/Tc Ser/Server.h:901 ]: [ServerThr.3] Freed 0 spare client objects
+[ N 2023-01-01 11:42:38.1470 85813/Tu Ser/Server.h:901 ]: [ServerThr.12] Freed 0 spare client objects
+[ N 2023-01-01 11:42:38.1475 85813/Tc Ser/Server.h:558 ]: [ServerThr.3] Shutdown finished
+[ N 2023-01-01 11:42:38.1475 85813/Ta Ser/Server.h:558 ]: [ServerThr.2] Shutdown finished
+[ N 2023-01-01 11:42:38.1476 85813/Tu Ser/Server.h:558 ]: [ServerThr.12] Shutdown finished
+[ N 2023-01-01 11:42:38.1470 85813/Tg Ser/Server.h:901 ]: [ServerThr.5] Freed 0 spare client objects
+[ N 2023-01-01 11:42:38.1475 85813/Ti Ser/Server.h:558 ]: [ServerThr.6] Shutdown finished
+[ N 2023-01-01 11:42:38.1475 85813/Tr Ser/Server.h:558 ]: [ServerThr.10] Shutdown finished
+[ N 2023-01-01 11:42:38.1474 85813/Tt Ser/Server.h:558 ]: [ServerThr.11] Shutdown finished
+[ N 2023-01-01 11:42:38.1475 85813/T8 Ser/Server.h:558 ]: [ServerThr.1] Shutdown finished
+[ N 2023-01-01 11:42:38.1475 85813/Tk Ser/Server.h:558 ]: [ServerThr.7] Shutdown finished
+[ N 2023-01-01 11:42:38.1475 85813/To Ser/Server.h:558 ]: [ServerThr.9] Shutdown finished
+[ N 2023-01-01 11:42:38.1473 85813/Te Ser/Server.h:558 ]: [ServerThr.4] Shutdown finished
+[ N 2023-01-01 11:42:38.1476 85813/Tg Ser/Server.h:558 ]: [ServerThr.5] Shutdown finished
+[ N 2023-01-01 11:42:38.1479 85813/Tw Ser/Server.h:901 ]: [ApiServer] Freed 0 spare client objects
+[ N 2023-01-01 11:42:38.1482 85813/Tw Ser/Server.h:558 ]: [ApiServer] Shutdown finished
+[ N 2023-01-01 11:42:38.1496 85813/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 85863, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2023-01-01 11:42:39.2208 85813/T1 age/Cor/CoreMain.cpp:1325 ]: Passenger core shutdown finished
+[ N 2023-01-01 11:42:39.6583 58592/T1 age/Wat/WatchdogMain.cpp:1377 ]: Starting Passenger watchdog...
+[ N 2023-01-01 11:42:39.6922 58594/T1 age/Cor/CoreMain.cpp:1340 ]: Starting Passenger core...
+[ N 2023-01-01 11:42:39.6926 58594/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ N 2023-01-01 11:42:39.7361 58594/T1 age/Cor/CoreMain.cpp:1015 ]: Passenger core online, PID 58594
+[ N 2023-01-01 11:42:42.5397 58594/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+[ E 2023-01-01 11:42:42.5463 58594/T5 Sec/Crypto.cpp:990 ]: Removing Passenger private key from keychain failed: Write permissions error.. Please remove the private key from the certificate labeled Phusion Passenger Open Source in your keychain.
+App 58612 output: "init"
+App 58645 output: {"rom_base"=>"B2", "rom_name"=>"b3test.nds", "password"=>"b3test"}
+App 58645 output: {"rom_name"=>"projects/b3test"}
+App 58645 output: 2023-01-01 11:43:12 - Errno::ENOENT - No such file or directory @ rb_sysopen - /session_settings.json:
+App 58645 output: 	/Users/andylee/Repos/Pokeweb/models/rom_info.rb:21:in `initialize'
+App 58645 output: 	/Users/andylee/Repos/Pokeweb/models/rom_info.rb:21:in `open'
+App 58645 output: 	/Users/andylee/Repos/Pokeweb/models/rom_info.rb:21:in `original_move_count'
+App 58645 output: 	/Users/andylee/Repos/Pokeweb/models/move.rb:14:in `get_all'
+App 58645 output: 	/Users/andylee/Repos/Pokeweb/routes.rb:253:in `block in <class:MyApp>'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1696:in `call'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1696:in `block in compile!'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1009:in `block (3 levels) in route!'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1027:in `route_eval'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1009:in `block (2 levels) in route!'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1058:in `block in process_route'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1056:in `catch'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1056:in `process_route'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1007:in `block in route!'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1004:in `each'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1004:in `route!'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1128:in `block in dispatch!'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `catch'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `invoke'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1123:in `dispatch!'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:939:in `block in call!'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `catch'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `invoke'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:939:in `call!'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:928:in `call'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/xss_header.rb:20:in `call'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/path_traversal.rb:18:in `call'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/json_csrf.rb:28:in `call'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/base.rb:53:in `call'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/base.rb:53:in `call'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/frame_options.rb:33:in `call'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/null_logger.rb:11:in `call'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/head.rb:12:in `call'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/show_exceptions.rb:23:in `call'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:219:in `call'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:2007:in `call'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1566:in `block in call'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1782:in `synchronize'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1566:in `call'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:266:in `context'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:260:in `call'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:266:in `context'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:260:in `call'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/rack/thread_handler_extension.rb:107:in `process_request'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler.rb:419:in `block (3 levels) in start_threads'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+App 58645 output: 2023-01-01 11:43:17 - Errno::ENOENT - No such file or directory @ rb_sysopen - /session_settings.json:
+App 58645 output: 	/Users/andylee/Repos/Pokeweb/models/rom_info.rb:21:in `initialize'
+App 58645 output: 	/Users/andylee/Repos/Pokeweb/models/rom_info.rb:21:in `open'
+App 58645 output: 	/Users/andylee/Repos/Pokeweb/models/rom_info.rb:21:in `original_move_count'
+App 58645 output: 	/Users/andylee/Repos/Pokeweb/models/move.rb:14:in `get_all'
+App 58645 output: 	/Users/andylee/Repos/Pokeweb/routes.rb:253:in `block in <class:MyApp>'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1696:in `call'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1696:in `block in compile!'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1009:in `block (3 levels) in route!'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1027:in `route_eval'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1009:in `block (2 levels) in route!'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1058:in `block in process_route'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1056:in `catch'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1056:in `process_route'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1007:in `block in route!'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1004:in `each'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1004:in `route!'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1128:in `block in dispatch!'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `catch'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `invoke'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1123:in `dispatch!'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:939:in `block in call!'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `catch'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `invoke'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:939:in `call!'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:928:in `call'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/xss_header.rb:20:in `call'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/path_traversal.rb:18:in `call'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/json_csrf.rb:28:in `call'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/base.rb:53:in `call'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/base.rb:53:in `call'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/frame_options.rb:33:in `call'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/null_logger.rb:11:in `call'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/head.rb:12:in `call'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/show_exceptions.rb:23:in `call'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:219:in `call'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:2007:in `call'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1566:in `block in call'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1782:in `synchronize'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1566:in `call'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:266:in `context'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:260:in `call'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:266:in `context'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:260:in `call'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/rack/thread_handler_extension.rb:107:in `process_request'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler.rb:419:in `block (3 levels) in start_threads'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+App 58645 output: 2023-01-01 11:43:19 - Errno::ENOENT - No such file or directory @ rb_sysopen - /session_settings.json:
+App 58645 output: 	/Users/andylee/Repos/Pokeweb/models/rom_info.rb:21:in `initialize'
+App 58645 output: 	/Users/andylee/Repos/Pokeweb/models/rom_info.rb:21:in `open'
+App 58645 output: 	/Users/andylee/Repos/Pokeweb/models/rom_info.rb:21:in `original_move_count'
+App 58645 output: 	/Users/andylee/Repos/Pokeweb/models/move.rb:14:in `get_all'
+App 58645 output: 	/Users/andylee/Repos/Pokeweb/routes.rb:253:in `block in <class:MyApp>'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1696:in `call'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1696:in `block in compile!'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1009:in `block (3 levels) in route!'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1027:in `route_eval'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1009:in `block (2 levels) in route!'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1058:in `block in process_route'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1056:in `catch'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1056:in `process_route'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1007:in `block in route!'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1004:in `each'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1004:in `route!'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1128:in `block in dispatch!'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `catch'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `invoke'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1123:in `dispatch!'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:939:in `block in call!'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `catch'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `invoke'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:939:in `call!'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:928:in `call'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/xss_header.rb:20:in `call'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/path_traversal.rb:18:in `call'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/json_csrf.rb:28:in `call'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/base.rb:53:in `call'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/base.rb:53:in `call'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/frame_options.rb:33:in `call'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/null_logger.rb:11:in `call'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/head.rb:12:in `call'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/show_exceptions.rb:23:in `call'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:219:in `call'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:2007:in `call'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1566:in `block in call'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1782:in `synchronize'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1566:in `call'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:266:in `context'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:260:in `call'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:266:in `context'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:260:in `call'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/rack/thread_handler_extension.rb:107:in `process_request'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler.rb:419:in `block (3 levels) in start_threads'
+App 58645 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+App 58645 output: {"rom"=>"projects/b3test", "password"=>"b3test"}
+App 58645 output: {"rom"=>"projects/b3test", "password"=>"b3test"}
+App 58645 output: {"rom"=>"projects/b3test", "password"=>"B3TEST"}
+App 58645 output: {"rom"=>"projects/b3test", "password"=>"B3TEST"}
+App 58645 output: {"rom_base"=>"B2", "rom_name"=>"B4TEST.nds", "password"=>"b4test"}
+App 58645 output: {"rom_name"=>"projects/B4TEST"}
+
+[ N 2023-01-01 11:46:14.3624 58594/T8 age/Cor/CoreMain.cpp:671 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2023-01-01 11:46:14.3625 58594/T1 age/Cor/CoreMain.cpp:1246 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2023-01-01 11:46:14.3626 58594/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 58645, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2023-01-01 11:46:14.3633 58594/Tc Ser/Server.h:901 ]: [ServerThr.3] Freed 0 spare client objects
+[ N 2023-01-01 11:46:14.3634 58594/Tk Ser/Server.h:901 ]: [ServerThr.7] Freed 0 spare client objects
+[ N 2023-01-01 11:46:14.3634 58594/Tm Ser/Server.h:901 ]: [ServerThr.8] Freed 0 spare client objects
+[ N 2023-01-01 11:46:14.3635 58594/Te Ser/Server.h:901 ]: [ServerThr.4] Freed 0 spare client objects
+[ N 2023-01-01 11:46:14.3635 58594/Ta Ser/Server.h:901 ]: [ServerThr.2] Freed 0 spare client objects
+[ N 2023-01-01 11:46:14.3635 58594/Te Ser/Server.h:558 ]: [ServerThr.4] Shutdown finished
+[ N 2023-01-01 11:46:14.3634 58594/Tc Ser/Server.h:558 ]: [ServerThr.3] Shutdown finished
+[ N 2023-01-01 11:46:14.3634 58594/Tg Ser/Server.h:901 ]: [ServerThr.5] Freed 0 spare client objects
+[ N 2023-01-01 11:46:14.3635 58594/To Ser/Server.h:901 ]: [ServerThr.9] Freed 0 spare client objects
+[ N 2023-01-01 11:46:14.3635 58594/Tk Ser/Server.h:558 ]: [ServerThr.7] Shutdown finished
+[ N 2023-01-01 11:46:14.3635 58594/Ti Ser/Server.h:901 ]: [ServerThr.6] Freed 0 spare client objects
+[ N 2023-01-01 11:46:14.3635 58594/Tv Ser/Server.h:901 ]: [ServerThr.12] Freed 0 spare client objects
+[ N 2023-01-01 11:46:14.3635 58594/Tr Ser/Server.h:901 ]: [ServerThr.10] Freed 0 spare client objects
+[ N 2023-01-01 11:46:14.3637 58594/Tw Ser/Server.h:901 ]: [ApiServer] Freed 0 spare client objects
+[ N 2023-01-01 11:46:14.3638 58594/Ti Ser/Server.h:558 ]: [ServerThr.6] Shutdown finished
+[ N 2023-01-01 11:46:14.3638 58594/Tr Ser/Server.h:558 ]: [ServerThr.10] Shutdown finished
+[ N 2023-01-01 11:46:14.3638 58594/Tv Ser/Server.h:558 ]: [ServerThr.12] Shutdown finished
+[ N 2023-01-01 11:46:14.3638 58594/Tw Ser/Server.h:558 ]: [ApiServer] Shutdown finished
+[ N 2023-01-01 11:46:14.3635 58594/Ts Ser/Server.h:901 ]: [ServerThr.11] Freed 0 spare client objects
+[ N 2023-01-01 11:46:14.3635 58594/Tm Ser/Server.h:558 ]: [ServerThr.8] Shutdown finished
+[ N 2023-01-01 11:46:14.3636 58594/Ta Ser/Server.h:558 ]: [ServerThr.2] Shutdown finished
+[ N 2023-01-01 11:46:14.3635 58594/T8 Ser/Server.h:901 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2023-01-01 11:46:14.3637 58594/Tg Ser/Server.h:558 ]: [ServerThr.5] Shutdown finished
+[ N 2023-01-01 11:46:14.3637 58594/To Ser/Server.h:558 ]: [ServerThr.9] Shutdown finished
+[ N 2023-01-01 11:46:14.3639 58594/Ts Ser/Server.h:558 ]: [ServerThr.11] Shutdown finished
+[ N 2023-01-01 11:46:14.3640 58594/T8 Ser/Server.h:558 ]: [ServerThr.1] Shutdown finished
+[ N 2023-01-01 11:46:14.3641 58594/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 58645, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2023-01-01 11:46:15.4744 58594/T1 age/Cor/CoreMain.cpp:1325 ]: Passenger core shutdown finished
+[ N 2023-01-01 11:46:15.8673 58961/T1 age/Wat/WatchdogMain.cpp:1377 ]: Starting Passenger watchdog...
+[ N 2023-01-01 11:46:15.9028 58963/T1 age/Cor/CoreMain.cpp:1340 ]: Starting Passenger core...
+[ N 2023-01-01 11:46:15.9032 58963/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ N 2023-01-01 11:46:15.9490 58963/T1 age/Cor/CoreMain.cpp:1015 ]: Passenger core online, PID 58963
+[ N 2023-01-01 11:46:18.7065 58963/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+[ E 2023-01-01 11:46:18.7125 58963/T5 Sec/Crypto.cpp:990 ]: Removing Passenger private key from keychain failed: Write permissions error.. Please remove the private key from the certificate labeled Phusion Passenger Open Source in your keychain.
+App 58979 output: "init"
+App 59012 output: {"rom"=>"projects/b3test", "password"=>"b3test"}
+App 59012 output: {"file_name"=>"1", "field"=>"method_0", "value"=>"Level Requirement", "narc"=>"evolution"}
+App 59012 output: {"file_name"=>"1", "field"=>"method_0", "value"=>"Level Requirement", "narc"=>"evolution"}
+App 59012 output: {"file_name"=>"1", "field"=>"method_0", "value"=>"Level Requirement", "narc"=>"evolution"}
+App 59012 output: {"file_name"=>"1", "field"=>"method_0", "value"=>"Level Requirement", "narc"=>"evolution"}
+App 59012 output: {"file_name"=>"1", "field"=>"param_0", "value"=>"16", "narc"=>"evolution", "int"=>"true"}
+App 59012 output: {"file_name"=>"1", "field"=>"param_0", "value"=>"16", "narc"=>"evolution", "int"=>"true"}
+App 59012 output: "creating base rom"
+App 59012 output: "xdelta3 -d -s ./base/blank.nds ./base/B2.xdelta ./base/B2.nds"
+App 59012 output: xdelta3: to overwrite output file specify -f: ./base/B2.nds
+App 59012 output: "uploaded rom is base rom"
+App 59012 output: "cp ./base/B2.nds ./b3test.nds"
+App 59012 output: "creating edited rom"
+App 59012 output: "edited rom created"
+App 59012 output: "generating xdelta"
+App 59012 output: "xdelta3 -e -s ./base/B2.nds ./exports/b3test.nds ./exports/b3test_edited.xdelta"
+App 59012 output: "deleting base rom"
+App 59012 output: "deleting uploaded rom"
+App 59012 output: "deleting edited rom"
+
+[ N 2023-01-01 11:49:20.5070 58963/T8 age/Cor/CoreMain.cpp:671 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2023-01-01 11:49:20.5071 58963/T1 age/Cor/CoreMain.cpp:1246 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2023-01-01 11:49:20.5071 58963/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 59012, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2023-01-01 11:49:20.5076 58963/Tc Ser/Server.h:901 ]: [ServerThr.3] Freed 0 spare client objects
+[ N 2023-01-01 11:49:20.5077 58963/Ti Ser/Server.h:901 ]: [ServerThr.6] Freed 0 spare client objects
+[ N 2023-01-01 11:49:20.5078 58963/Tc Ser/Server.h:558 ]: [ServerThr.3] Shutdown finished
+[ N 2023-01-01 11:49:20.5077 58963/Tl Ser/Server.h:901 ]: [ServerThr.7] Freed 0 spare client objects
+[ N 2023-01-01 11:49:20.5078 58963/Ti Ser/Server.h:558 ]: [ServerThr.6] Shutdown finished
+[ N 2023-01-01 11:49:20.5078 58963/Ta Ser/Server.h:901 ]: [ServerThr.2] Freed 0 spare client objects
+[ N 2023-01-01 11:49:20.5078 58963/Te Ser/Server.h:901 ]: [ServerThr.4] Freed 0 spare client objects
+[ N 2023-01-01 11:49:20.5078 58963/Tm Ser/Server.h:901 ]: [ServerThr.8] Freed 0 spare client objects
+[ N 2023-01-01 11:49:20.5079 58963/Tw Ser/Server.h:901 ]: [ApiServer] Freed 0 spare client objects
+[ N 2023-01-01 11:49:20.5078 58963/Ts Ser/Server.h:901 ]: [ServerThr.11] Freed 0 spare client objects
+[ N 2023-01-01 11:49:20.5078 58963/To Ser/Server.h:901 ]: [ServerThr.9] Freed 0 spare client objects
+[ N 2023-01-01 11:49:20.5080 58963/Ts Ser/Server.h:558 ]: [ServerThr.11] Shutdown finished
+[ N 2023-01-01 11:49:20.5078 58963/T8 Ser/Server.h:901 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2023-01-01 11:49:20.5079 58963/Tl Ser/Server.h:558 ]: [ServerThr.7] Shutdown finished
+[ N 2023-01-01 11:49:20.5079 58963/Ta Ser/Server.h:558 ]: [ServerThr.2] Shutdown finished
+[ N 2023-01-01 11:49:20.5078 58963/Tq Ser/Server.h:901 ]: [ServerThr.10] Freed 0 spare client objects
+[ N 2023-01-01 11:49:20.5080 58963/Te Ser/Server.h:558 ]: [ServerThr.4] Shutdown finished
+[ N 2023-01-01 11:49:20.5078 58963/Tu Ser/Server.h:901 ]: [ServerThr.12] Freed 0 spare client objects
+[ N 2023-01-01 11:49:20.5080 58963/Tm Ser/Server.h:558 ]: [ServerThr.8] Shutdown finished
+[ N 2023-01-01 11:49:20.5082 58963/Tu Ser/Server.h:558 ]: [ServerThr.12] Shutdown finished
+[ N 2023-01-01 11:49:20.5080 58963/Tw Ser/Server.h:558 ]: [ApiServer] Shutdown finished
+[ N 2023-01-01 11:49:20.5081 58963/To Ser/Server.h:558 ]: [ServerThr.9] Shutdown finished
+[ N 2023-01-01 11:49:20.5078 58963/Tg Ser/Server.h:901 ]: [ServerThr.5] Freed 0 spare client objects
+[ N 2023-01-01 11:49:20.5082 58963/Tq Ser/Server.h:558 ]: [ServerThr.10] Shutdown finished
+[ N 2023-01-01 11:49:20.5083 58963/Tg Ser/Server.h:558 ]: [ServerThr.5] Shutdown finished
+[ N 2023-01-01 11:49:20.5081 58963/T8 Ser/Server.h:558 ]: [ServerThr.1] Shutdown finished
+[ N 2023-01-01 11:49:20.5084 58963/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 59012, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2023-01-01 11:49:21.5514 58963/T1 age/Cor/CoreMain.cpp:1325 ]: Passenger core shutdown finished
+[ N 2023-01-01 11:49:22.0303 59172/T1 age/Wat/WatchdogMain.cpp:1377 ]: Starting Passenger watchdog...
+[ N 2023-01-01 11:49:22.0635 59174/T1 age/Cor/CoreMain.cpp:1340 ]: Starting Passenger core...
+[ N 2023-01-01 11:49:22.0639 59174/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ N 2023-01-01 11:49:22.0994 59174/T1 age/Cor/CoreMain.cpp:1015 ]: Passenger core online, PID 59174
+[ N 2023-01-01 11:49:24.8612 59174/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+[ E 2023-01-01 11:49:24.8670 59174/T5 Sec/Crypto.cpp:990 ]: Removing Passenger private key from keychain failed: Write permissions error.. Please remove the private key from the certificate labeled Phusion Passenger Open Source in your keychain.
+App 59191 output: "init"
+App 59224 output: {"rom"=>"projects/b3test", "password"=>"b3test"}
+App 59224 output: "test"
+
+[ N 2023-01-01 11:52:14.8143 59174/T8 age/Cor/CoreMain.cpp:671 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2023-01-01 11:52:14.8144 59174/T1 age/Cor/CoreMain.cpp:1246 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2023-01-01 11:52:14.8144 59174/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 59224, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2023-01-01 11:52:14.8148 59174/T8 Ser/Server.h:901 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2023-01-01 11:52:14.8149 59174/Ta Ser/Server.h:901 ]: [ServerThr.2] Freed 0 spare client objects
+[ N 2023-01-01 11:52:14.8150 59174/Tu Ser/Server.h:901 ]: [ServerThr.12] Freed 0 spare client objects
+[ N 2023-01-01 11:52:14.8149 59174/Te Ser/Server.h:901 ]: [ServerThr.4] Freed 0 spare client objects
+[ N 2023-01-01 11:52:14.8149 59174/Tj Ser/Server.h:901 ]: [ServerThr.6] Freed 0 spare client objects
+[ N 2023-01-01 11:52:14.8150 59174/Tq Ser/Server.h:901 ]: [ServerThr.10] Freed 0 spare client objects
+[ N 2023-01-01 11:52:14.8149 59174/Tk Ser/Server.h:901 ]: [ServerThr.7] Freed 0 spare client objects
+[ N 2023-01-01 11:52:14.8151 59174/Tw Ser/Server.h:901 ]: [ApiServer] Freed 0 spare client objects
+[ N 2023-01-01 11:52:14.8152 59174/Tk Ser/Server.h:558 ]: [ServerThr.7] Shutdown finished
+[ N 2023-01-01 11:52:14.8150 59174/Tg Ser/Server.h:901 ]: [ServerThr.5] Freed 0 spare client objects
+[ N 2023-01-01 11:52:14.8152 59174/Tw Ser/Server.h:558 ]: [ApiServer] Shutdown finished
+[ N 2023-01-01 11:52:14.8151 59174/Tq Ser/Server.h:558 ]: [ServerThr.10] Shutdown finished
+[ N 2023-01-01 11:52:14.8151 59174/Tj Ser/Server.h:558 ]: [ServerThr.6] Shutdown finished
+[ N 2023-01-01 11:52:14.8150 59174/Tu Ser/Server.h:558 ]: [ServerThr.12] Shutdown finished
+[ N 2023-01-01 11:52:14.8150 59174/Ts Ser/Server.h:901 ]: [ServerThr.11] Freed 0 spare client objects
+[ N 2023-01-01 11:52:14.8150 59174/Tm Ser/Server.h:901 ]: [ServerThr.8] Freed 0 spare client objects
+[ N 2023-01-01 11:52:14.8153 59174/Ts Ser/Server.h:558 ]: [ServerThr.11] Shutdown finished
+[ N 2023-01-01 11:52:14.8150 59174/To Ser/Server.h:901 ]: [ServerThr.9] Freed 0 spare client objects
+[ N 2023-01-01 11:52:14.8151 59174/Ta Ser/Server.h:558 ]: [ServerThr.2] Shutdown finished
+[ N 2023-01-01 11:52:14.8151 59174/Te Ser/Server.h:558 ]: [ServerThr.4] Shutdown finished
+[ N 2023-01-01 11:52:14.8150 59174/T8 Ser/Server.h:558 ]: [ServerThr.1] Shutdown finished
+[ N 2023-01-01 11:52:14.8153 59174/Tg Ser/Server.h:558 ]: [ServerThr.5] Shutdown finished
+[ N 2023-01-01 11:52:14.8150 59174/Tc Ser/Server.h:901 ]: [ServerThr.3] Freed 0 spare client objects
+[ N 2023-01-01 11:52:14.8155 59174/Tc Ser/Server.h:558 ]: [ServerThr.3] Shutdown finished
+[ N 2023-01-01 11:52:14.8154 59174/To Ser/Server.h:558 ]: [ServerThr.9] Shutdown finished
+[ N 2023-01-01 11:52:14.8154 59174/Tm Ser/Server.h:558 ]: [ServerThr.8] Shutdown finished
+[ N 2023-01-01 11:52:14.8156 59174/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 59224, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2023-01-01 11:52:15.8607 59174/T1 age/Cor/CoreMain.cpp:1325 ]: Passenger core shutdown finished
+[ N 2023-01-01 11:52:16.0072 59323/T1 age/Wat/WatchdogMain.cpp:1377 ]: Starting Passenger watchdog...
+[ N 2023-01-01 11:52:16.0366 59325/T1 age/Cor/CoreMain.cpp:1340 ]: Starting Passenger core...
+[ N 2023-01-01 11:52:16.0369 59325/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ N 2023-01-01 11:52:16.0815 59325/T1 age/Cor/CoreMain.cpp:1015 ]: Passenger core online, PID 59325
+[ N 2023-01-01 11:52:18.8286 59325/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+[ E 2023-01-01 11:52:18.8339 59325/T5 Sec/Crypto.cpp:990 ]: Removing Passenger private key from keychain failed: Write permissions error.. Please remove the private key from the certificate labeled Phusion Passenger Open Source in your keychain.
+App 59342 output: "init"
+App 59375 output: {"rom"=>"projects/b3test", "password"=>"B3TEST"}
+App 59375 output: {"rom"=>"projects/b3test", "password"=>"b3test"}
+App 59375 output: "test"
+
+[ N 2023-01-01 11:55:01.5966 59325/T8 age/Cor/CoreMain.cpp:671 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2023-01-01 11:55:01.5966 59325/T1 age/Cor/CoreMain.cpp:1246 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2023-01-01 11:55:01.5967 59325/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 59375, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2023-01-01 11:55:01.5970 59325/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 59383, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2023-01-01 11:55:01.5971 59325/T8 Ser/Server.h:901 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2023-01-01 11:55:01.5972 59325/Te Ser/Server.h:901 ]: [ServerThr.4] Freed 0 spare client objects
+[ N 2023-01-01 11:55:01.5972 59325/Ts Ser/Server.h:901 ]: [ServerThr.11] Freed 0 spare client objects
+[ N 2023-01-01 11:55:01.5972 59325/Ta Ser/Server.h:901 ]: [ServerThr.2] Freed 0 spare client objects
+[ N 2023-01-01 11:55:01.5972 59325/To Ser/Server.h:901 ]: [ServerThr.9] Freed 0 spare client objects
+[ N 2023-01-01 11:55:01.5973 59325/Ta Ser/Server.h:558 ]: [ServerThr.2] Shutdown finished
+[ N 2023-01-01 11:55:01.5972 59325/Td Ser/Server.h:901 ]: [ServerThr.3] Freed 0 spare client objects
+[ N 2023-01-01 11:55:01.5972 59325/Ti Ser/Server.h:901 ]: [ServerThr.6] Freed 0 spare client objects
+[ N 2023-01-01 11:55:01.5972 59325/Tg Ser/Server.h:901 ]: [ServerThr.5] Freed 0 spare client objects
+[ N 2023-01-01 11:55:01.5972 59325/Tk Ser/Server.h:901 ]: [ServerThr.7] Freed 0 spare client objects
+[ N 2023-01-01 11:55:01.5972 59325/Tq Ser/Server.h:901 ]: [ServerThr.10] Freed 0 spare client objects
+[ N 2023-01-01 11:55:01.5974 59325/Ti Ser/Server.h:558 ]: [ServerThr.6] Shutdown finished
+[ N 2023-01-01 11:55:01.5972 59325/Tm Ser/Server.h:901 ]: [ServerThr.8] Freed 0 spare client objects
+[ N 2023-01-01 11:55:01.5972 59325/T8 Ser/Server.h:558 ]: [ServerThr.1] Shutdown finished
+[ N 2023-01-01 11:55:01.5972 59325/Tu Ser/Server.h:901 ]: [ServerThr.12] Freed 0 spare client objects
+[ N 2023-01-01 11:55:01.5974 59325/Tw Ser/Server.h:901 ]: [ApiServer] Freed 0 spare client objects
+[ N 2023-01-01 11:55:01.5976 59325/Tu Ser/Server.h:558 ]: [ServerThr.12] Shutdown finished
+[ N 2023-01-01 11:55:01.5974 59325/Tg Ser/Server.h:558 ]: [ServerThr.5] Shutdown finished
+[ N 2023-01-01 11:55:01.5973 59325/To Ser/Server.h:558 ]: [ServerThr.9] Shutdown finished
+[ N 2023-01-01 11:55:01.5973 59325/Te Ser/Server.h:558 ]: [ServerThr.4] Shutdown finished
+[ N 2023-01-01 11:55:01.5974 59325/Td Ser/Server.h:558 ]: [ServerThr.3] Shutdown finished
+[ N 2023-01-01 11:55:01.5973 59325/Ts Ser/Server.h:558 ]: [ServerThr.11] Shutdown finished
+[ N 2023-01-01 11:55:01.5974 59325/Tk Ser/Server.h:558 ]: [ServerThr.7] Shutdown finished
+[ N 2023-01-01 11:55:01.5974 59325/Tq Ser/Server.h:558 ]: [ServerThr.10] Shutdown finished
+[ N 2023-01-01 11:55:01.5975 59325/Tm Ser/Server.h:558 ]: [ServerThr.8] Shutdown finished
+[ N 2023-01-01 11:55:01.5976 59325/Tw Ser/Server.h:558 ]: [ApiServer] Shutdown finished
+[ N 2023-01-01 11:55:01.5978 59325/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 59375, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2023-01-01 11:55:01.5979 59325/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 59383, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2023-01-01 11:55:02.6597 59325/T1 age/Cor/CoreMain.cpp:1325 ]: Passenger core shutdown finished
+[ N 2023-01-01 11:55:03.1847 59484/T1 age/Wat/WatchdogMain.cpp:1377 ]: Starting Passenger watchdog...
+[ N 2023-01-01 11:55:03.2151 59486/T1 age/Cor/CoreMain.cpp:1340 ]: Starting Passenger core...
+[ N 2023-01-01 11:55:03.2155 59486/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ N 2023-01-01 11:55:03.2518 59486/T1 age/Cor/CoreMain.cpp:1015 ]: Passenger core online, PID 59486
+App 59502 output: "init"
+[ N 2023-01-01 11:55:06.5659 59486/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+[ E 2023-01-01 11:55:06.5731 59486/T5 Sec/Crypto.cpp:990 ]: Removing Passenger private key from keychain failed: Write permissions error.. Please remove the private key from the certificate labeled Phusion Passenger Open Source in your keychain.
+App 59535 output: {"rom"=>"projects/b3test", "password"=>"B3TEST"}
+App 59535 output: {"rom"=>"projects/b3test", "password"=>"b3test"}
+App 59535 output: "development"
+App 59535 output: "development"

@@ -14,7 +14,7 @@
 	}
 
 	// load rest of pokemon (11 to end)
-	
+	<% p ENV['RACK_ENV'] %>
 	<% if ENV['RACK_ENV'] != 'test' %>
 		$( document ).ready(function() {
 			$('#wait-loading').show()

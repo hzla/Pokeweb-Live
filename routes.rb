@@ -32,9 +32,9 @@ class MyApp < Sinatra::Base
 		# $rom_name = "projects/white2"
 		$rom_name = session[:rom_name]
 
-		if ENV['RACK_ENV'] == 'test'
-			$rom_name = ENV['ROM']
-		end
+		# if ENV['RACK_ENV'] == 'test'
+		# 	$rom_name = ENV['ROM']
+		# end
 
 
 		$fairy = SessionSettings.fairy?

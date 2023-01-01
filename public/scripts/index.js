@@ -705,18 +705,37 @@ $(document).ready(function() {
 					valid_fields = autofills[$(this).attr('data-autofill')]
 					
 					if ($(this).attr('data-autofill') == "evo_params") {
-					  	valid_fields = autofills["pokemon_names"].concat(autofills["items"]).concat(autofills["move_names"]).concat(Array.from(Array(101).keys()))
-
+					  	
+					  	var method = $(this).parents('.expanded-field').prev().find('.evo-value').text().toLowerCase()
+					  	console.log(method)
+					  	
 					  	if (!isNaN(value)) {
 					  		data["int"] = true
 					  	}
 
+					  	if (method.includes("item")) {
+					  		valid_fields = autofills["items"]
+					  		data["int"] = false
+					  	} else if (method.includes("move")) {
+					  		valid_fields = autofills["move_names"]
+					  		data["int"] = false
+					  	} else if (method.includes("member")) {
+					  		valid_fields = autofills["pokemon_names"]
+					  		data["int"] = false
+					  	} else {
+					  		valid_fields = Array.from(Array(256).keys())
+					  	}
 					 }
 
 
 					valid_fields = JSON.stringify(valid_fields)
-
-					if (!valid_fields.includes(value) || value == "-" || value == "") {
+					if (data["int"]) {
+						value_to_check = value
+					} else {
+						value_to_check = `"${value}"`
+					}
+					
+					if (!valid_fields.includes(value_to_check) || value == "-" || value == "") {
 						
 						
 						$(this).css('border', '1px solid red')

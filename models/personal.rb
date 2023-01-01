@@ -67,7 +67,7 @@ class Personal
 			data[667]["name"] = "Meloetta-Pirouette"
 		end
 
-		if ENV['RACK_ENV'] = 'test'
+		if ENV['RACK_ENV'] == 'test'
 			limit = 9
 		end
 
