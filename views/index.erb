@@ -3,12 +3,12 @@
 
 	<form id="rom-form" action="/extract" method="POST" enctype="multipart/form-data">
 		<div class="filter-title">Upload xdelta</div>
-		<input type="file" id="xdelta" name="filename"></input>
+		<input type="file" id="xdelta" name="filename" label="Upload xdelta"></input>
 
 		<div class="filter-title">Set Base Rom</div>
 		<select name="rom_base" id="base-select" required>
 			<% ["B", "W", "B2", "W2"].each do |rom| %>
-			    <option value="<%= rom %>"><%= rom %></option>
+			    <option value="<%= rom %>" name="<%= rom %>"><%= rom %></option>
 		    <% end %>
 		</select>
 
@@ -27,7 +27,7 @@
 		<div class="filter-title">Select Existing Project</div>
 		<select name="rom" id="project-select">
 			<% @projects.each do |rom| %>
-			    <option value="<%= rom %>"><%= rom.split("/")[-1] %></option>
+			    <option value="<%= rom %>" name="<%= rom %>"><%= rom.split("/")[-1] %></option>
 		    <% end %>
 		</select>	
 		<div class="filter-title">Password</div>

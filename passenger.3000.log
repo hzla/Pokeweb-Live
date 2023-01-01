@@ -4408,3 +4408,912 @@ App 84161 output: {"rom_base"=>"B2", "rom_name"=>"b3test.nds", "password"=>"b3te
 [ N 2022-12-29 16:18:57.1678 84107/Tr Ser/Server.h:558 ]: [ServerThr.10] Shutdown finished
 [ N 2022-12-29 16:18:57.1680 84107/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 84161, application /Users/andylee/Repos/Pokeweb (development)
 [ N 2022-12-29 16:18:58.2841 84107/T1 age/Cor/CoreMain.cpp:1325 ]: Passenger core shutdown finished
+[ N 2022-12-29 23:07:29.3930 85708/T1 age/Wat/WatchdogMain.cpp:1377 ]: Starting Passenger watchdog...
+[ N 2022-12-29 23:07:29.4261 85710/T1 age/Cor/CoreMain.cpp:1340 ]: Starting Passenger core...
+[ N 2022-12-29 23:07:29.4273 85710/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ N 2022-12-29 23:07:29.4752 85710/T1 age/Cor/CoreMain.cpp:1015 ]: Passenger core online, PID 85710
+[ N 2022-12-29 23:07:32.3231 85710/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+[ E 2022-12-29 23:07:32.3301 85710/T5 Sec/Crypto.cpp:990 ]: Removing Passenger private key from keychain failed: Write permissions error.. Please remove the private key from the certificate labeled Phusion Passenger Open Source in your keychain.
+App 85726 output: "init"
+App 85760 output: {"rom"=>"projects/b3test", "password"=>"b3test"}
+App 85760 output: 2022-12-29 23:07:39 - ArgumentError - Secret should not be nil.:
+App 85760 output: 	/Library/Ruby/Gems/2.6.0/gems/activesupport-6.1.7/lib/active_support/message_verifier.rb:107:in `initialize'
+App 85760 output: 	/Library/Ruby/Gems/2.6.0/gems/activesupport-6.1.7/lib/active_support/messages/rotator.rb:7:in `initialize'
+App 85760 output: 	/Library/Ruby/Gems/2.6.0/gems/activesupport-6.1.7/lib/active_support/message_encryptor.rb:220:in `new'
+App 85760 output: 	/Library/Ruby/Gems/2.6.0/gems/activesupport-6.1.7/lib/active_support/message_encryptor.rb:220:in `resolve_verifier'
+App 85760 output: 	/Library/Ruby/Gems/2.6.0/gems/activesupport-6.1.7/lib/active_support/message_encryptor.rb:141:in `initialize'
+App 85760 output: 	/Library/Ruby/Gems/2.6.0/gems/activesupport-6.1.7/lib/active_support/messages/rotator.rb:7:in `initialize'
+App 85760 output: 	/Users/andylee/Repos/Pokeweb/models/cipher.rb:14:in `new'
+App 85760 output: 	/Users/andylee/Repos/Pokeweb/models/cipher.rb:14:in `auth?'
+App 85760 output: 	/Users/andylee/Repos/Pokeweb/routes.rb:97:in `block in <class:MyApp>'
+App 85760 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1696:in `call'
+App 85760 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1696:in `block in compile!'
+App 85760 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1009:in `block (3 levels) in route!'
+App 85760 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1027:in `route_eval'
+App 85760 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1009:in `block (2 levels) in route!'
+App 85760 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1058:in `block in process_route'
+App 85760 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1056:in `catch'
+App 85760 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1056:in `process_route'
+App 85760 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1007:in `block in route!'
+App 85760 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1004:in `each'
+App 85760 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1004:in `route!'
+App 85760 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1128:in `block in dispatch!'
+App 85760 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `catch'
+App 85760 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `invoke'
+App 85760 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1123:in `dispatch!'
+App 85760 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:939:in `block in call!'
+App 85760 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `catch'
+App 85760 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `invoke'
+App 85760 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:939:in `call!'
+App 85760 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:928:in `call'
+App 85760 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/xss_header.rb:20:in `call'
+App 85760 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/path_traversal.rb:18:in `call'
+App 85760 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/json_csrf.rb:28:in `call'
+App 85760 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/base.rb:53:in `call'
+App 85760 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/base.rb:53:in `call'
+App 85760 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/frame_options.rb:33:in `call'
+App 85760 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/null_logger.rb:11:in `call'
+App 85760 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/head.rb:12:in `call'
+App 85760 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/show_exceptions.rb:23:in `call'
+App 85760 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:219:in `call'
+App 85760 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:2007:in `call'
+App 85760 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1566:in `block in call'
+App 85760 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1782:in `synchronize'
+App 85760 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1566:in `call'
+App 85760 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:266:in `context'
+App 85760 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:260:in `call'
+App 85760 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/rack/thread_handler_extension.rb:107:in `process_request'
+App 85760 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+App 85760 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+App 85760 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler.rb:419:in `block (3 levels) in start_threads'
+App 85760 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+
+[ N 2022-12-29 23:08:22.9243 85710/T9 age/Cor/CoreMain.cpp:671 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2022-12-29 23:08:22.9243 85710/T1 age/Cor/CoreMain.cpp:1246 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2022-12-29 23:08:22.9244 85710/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 85760, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2022-12-29 23:08:22.9248 85710/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 85768, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2022-12-29 23:08:22.9249 85710/T9 Ser/Server.h:901 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2022-12-29 23:08:22.9250 85710/Tk Ser/Server.h:901 ]: [ServerThr.7] Freed 0 spare client objects
+[ N 2022-12-29 23:08:22.9250 85710/To Ser/Server.h:901 ]: [ServerThr.9] Freed 0 spare client objects
+[ N 2022-12-29 23:08:22.9250 85710/Tk Ser/Server.h:558 ]: [ServerThr.7] Shutdown finished
+[ N 2022-12-29 23:08:22.9250 85710/Tq Ser/Server.h:901 ]: [ServerThr.10] Freed 0 spare client objects
+[ N 2022-12-29 23:08:22.9250 85710/Te Ser/Server.h:901 ]: [ServerThr.4] Freed 0 spare client objects
+[ N 2022-12-29 23:08:22.9250 85710/Tm Ser/Server.h:901 ]: [ServerThr.8] Freed 0 spare client objects
+[ N 2022-12-29 23:08:22.9250 85710/Ti Ser/Server.h:901 ]: [ServerThr.6] Freed 0 spare client objects
+[ N 2022-12-29 23:08:22.9250 85710/Ta Ser/Server.h:901 ]: [ServerThr.2] Freed 0 spare client objects
+[ N 2022-12-29 23:08:22.9250 85710/Ts Ser/Server.h:901 ]: [ServerThr.11] Freed 0 spare client objects
+[ N 2022-12-29 23:08:22.9250 85710/Th Ser/Server.h:901 ]: [ServerThr.5] Freed 0 spare client objects
+[ N 2022-12-29 23:08:22.9253 85710/Ts Ser/Server.h:558 ]: [ServerThr.11] Shutdown finished
+[ N 2022-12-29 23:08:22.9253 85710/Th Ser/Server.h:558 ]: [ServerThr.5] Shutdown finished
+[ N 2022-12-29 23:08:22.9253 85710/Ta Ser/Server.h:558 ]: [ServerThr.2] Shutdown finished
+[ N 2022-12-29 23:08:22.9249 85710/Tc Ser/Server.h:901 ]: [ServerThr.3] Freed 0 spare client objects
+[ N 2022-12-29 23:08:22.9250 85710/To Ser/Server.h:558 ]: [ServerThr.9] Shutdown finished
+[ N 2022-12-29 23:08:22.9250 85710/Tu Ser/Server.h:901 ]: [ServerThr.12] Freed 0 spare client objects
+[ N 2022-12-29 23:08:22.9250 85710/T9 Ser/Server.h:558 ]: [ServerThr.1] Shutdown finished
+[ N 2022-12-29 23:08:22.9252 85710/Tm Ser/Server.h:558 ]: [ServerThr.8] Shutdown finished
+[ N 2022-12-29 23:08:22.9255 85710/Tu Ser/Server.h:558 ]: [ServerThr.12] Shutdown finished
+[ N 2022-12-29 23:08:22.9252 85710/Te Ser/Server.h:558 ]: [ServerThr.4] Shutdown finished
+[ N 2022-12-29 23:08:22.9251 85710/Tq Ser/Server.h:558 ]: [ServerThr.10] Shutdown finished
+[ N 2022-12-29 23:08:22.9255 85710/Tc Ser/Server.h:558 ]: [ServerThr.3] Shutdown finished
+[ N 2022-12-29 23:08:22.9252 85710/Tw Ser/Server.h:901 ]: [ApiServer] Freed 0 spare client objects
+[ N 2022-12-29 23:08:22.9252 85710/Ti Ser/Server.h:558 ]: [ServerThr.6] Shutdown finished
+[ N 2022-12-29 23:08:22.9257 85710/Tw Ser/Server.h:558 ]: [ApiServer] Shutdown finished
+[ N 2022-12-29 23:08:22.9265 85710/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 85760, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2022-12-29 23:08:22.9268 85710/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 85768, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2022-12-29 23:08:24.0157 85710/T1 age/Cor/CoreMain.cpp:1325 ]: Passenger core shutdown finished
+[ N 2022-12-29 23:08:24.1473 85811/T1 age/Wat/WatchdogMain.cpp:1377 ]: Starting Passenger watchdog...
+[ N 2022-12-29 23:08:24.1856 85813/T1 age/Cor/CoreMain.cpp:1340 ]: Starting Passenger core...
+[ N 2022-12-29 23:08:24.1861 85813/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ N 2022-12-29 23:08:24.2230 85813/T1 age/Cor/CoreMain.cpp:1015 ]: Passenger core online, PID 85813
+[ N 2022-12-29 23:08:27.0332 85813/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+[ E 2022-12-29 23:08:27.0427 85813/T5 Sec/Crypto.cpp:990 ]: Removing Passenger private key from keychain failed: Write permissions error.. Please remove the private key from the certificate labeled Phusion Passenger Open Source in your keychain.
+App 85830 output: "init"
+App 85863 output: {"rom"=>"projects/b3test", "password"=>"b3test"}
+App 85863 output: {"file_name"=>"0", "field"=>"item_1", "value"=>"None", "narc"=>"trdata"}
+App 85863 output: {"file_name"=>"0", "field"=>"item_1", "value"=>"None", "narc"=>"trdata"}
+App 85863 output: {"file_name"=>"0", "field"=>"item_1", "value"=>"None", "narc"=>"trdata"}
+App 85863 output: {"file_name"=>"0", "field"=>"item_1", "value"=>"None", "narc"=>"trdata"}
+[ N 2022-12-29 23:13:27.7676 85813/T4 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 85871, application /Users/andylee/Repos/Pokeweb (development)
+App 85863 output: "redirecting..."
+App 85863 output: {"file_name"=>"0", "field"=>"power", "value"=>"0", "narc"=>"move", "int"=>"true"}
+App 85863 output: {"file_name"=>"0", "field"=>"power", "value"=>"0", "narc"=>"move", "int"=>"true"}
+App 85863 output: 0
+App 85863 output: no exp
+App 85863 output: 0
+App 85863 output: 58
+App 85863 output: 58
+App 85863 output: 58
+App 85863 output: 90
+App 85863 output: 90
+App 85863 output: 162
+App 85863 output: 162
+App 85863 output: 162
+App 85863 output: 162
+App 85863 output: 162
+App 85863 output: 162
+App 85863 output: 162
+App 85863 output: 162
+App 85863 output: 162
+App 85863 output: 162
+App 85863 output: 164
+App 85863 output: 164
+App 85863 output: 164
+App 85863 output: 164
+App 85863 output: 164
+App 85863 output: 164
+App 85863 output: 164
+App 85863 output: 164
+App 85863 output: 164
+App 85863 output: 164
+App 85863 output: 166
+App 85863 output: 166
+App 85863 output: 166
+App 85863 output: 166
+App 85863 output: 166
+App 85863 output: 166
+App 85863 output: 166
+App 85863 output: 166
+App 85863 output: 166
+App 85863 output: 166
+App 85863 output: 172
+App 85863 output: 172
+App 85863 output: 172
+App 85863 output: 172
+App 85863 output: 172
+App 85863 output: 172
+App 85863 output: 172
+App 85863 output: 172
+App 85863 output: 172
+App 85863 output: 172
+App 85863 output: 174
+App 85863 output: 174
+App 85863 output: 174
+App 85863 output: 174
+App 85863 output: 174
+App 85863 output: 174
+App 85863 output: 174
+App 85863 output: 174
+App 85863 output: 174
+App 85863 output: 174
+App 85863 output: 216
+App 85863 output: 216
+App 85863 output: 216
+App 85863 output: 216
+App 85863 output: 216
+App 85863 output: 226
+App 85863 output: 946
+App 85863 output: 946
+App 85863 output: 946
+App 85863 output: 946
+App 85863 output: 946
+App 85863 output: 946
+App 85863 output: 304
+App 85863 output: 304
+App 85863 output: 304
+App 85863 output: 306
+App 85863 output: 306
+App 85863 output: 306
+App 85863 output: 306
+App 85863 output: 308
+App 85863 output: 308
+App 85863 output: 308
+App 85863 output: 308
+App 85863 output: 308
+App 85863 output: 308
+App 85863 output: 310
+App 85863 output: 310
+App 85863 output: 310
+App 85863 output: 310
+App 85863 output: 310
+App 85863 output: 310
+App 85863 output: 310
+App 85863 output: 310
+App 85863 output: 310
+App 85863 output: 310
+App 85863 output: 310
+App 85863 output: 310
+App 85863 output: 310
+App 85863 output: 310
+App 85863 output: 310
+App 85863 output: 310
+App 85863 output: 310
+App 85863 output: 310
+App 85863 output: 316
+App 85863 output: 316
+App 85863 output: 316
+App 85863 output: 316
+App 85863 output: 316
+App 85863 output: 316
+App 85863 output: 316
+App 85863 output: 316
+App 85863 output: 316
+App 85863 output: 320
+App 85863 output: 322
+App 85863 output: 322
+App 85863 output: 390
+App 85863 output: 390
+App 85863 output: 390
+App 85863 output: 390
+App 85863 output: 390
+App 85863 output: 390
+App 85863 output: 392
+App 85863 output: 392
+App 85863 output: 392
+App 85863 output: 394
+App 85863 output: 394
+App 85863 output: 394
+App 85863 output: 394
+App 85863 output: 398
+App 85863 output: 398
+App 85863 output: 398
+App 85863 output: 398
+App 85863 output: 400
+App 85863 output: 400
+App 85863 output: 400
+App 85863 output: 402
+App 85863 output: 402
+App 85863 output: 402
+App 85863 output: 402
+App 85863 output: 404
+App 85863 output: 404
+App 85863 output: 990
+App 85863 output: 990
+App 85863 output: 990
+App 85863 output: 990
+App 85863 output: 990
+App 85863 output: 990
+App 85863 output: 990
+App 85863 output: 480
+App 85863 output: 480
+App 85863 output: 480
+App 85863 output: 480
+App 85863 output: 480
+App 85863 output: 480
+App 85863 output: 890
+App 85863 output: 890
+App 85863 output: 890
+App 85863 output: 914
+App 85863 output: 914
+App 85863 output: 914
+App 85863 output: 922
+App 85863 output: 922
+App 85863 output: 1064
+App 85863 output: 1066
+App 85863 output: 1066
+App 85863 output: 1066
+App 85863 output: 1066
+App 85863 output: 1066
+App 85863 output: 1066
+App 85863 output: 1066
+App 85863 output: 1066
+App 85863 output: 1066
+App 85863 output: 1066
+App 85863 output: 1076
+App 85863 output: 1078
+App 85863 output: 1078
+App 85863 output: 1078
+App 85863 output: 1078
+App 85863 output: 1078
+App 85863 output: 1078
+App 85863 output: 1078
+App 85863 output: 1078
+App 85863 output: 1078
+App 85863 output: 1078
+App 85863 output: 1140
+App 85863 output: 1142
+App 85863 output: 1174
+App 85863 output: 1174
+App 85863 output: 1174
+App 85863 output: 1174
+App 85863 output: 1174
+App 85863 output: 1174
+App 85863 output: 1176
+App 85863 output: 1176
+App 85863 output: 1176
+App 85863 output: 1178
+App 85863 output: 1178
+App 85863 output: 1178
+App 85863 output: 1178
+App 85863 output: 1178
+App 85863 output: 1178
+App 85863 output: 1180
+App 85863 output: 1180
+App 85863 output: 1180
+App 85863 output: 1180
+App 85863 output: 1180
+App 85863 output: 1180
+App 85863 output: 1180
+App 85863 output: 1184
+App 85863 output: 1184
+App 85863 output: 1184
+App 85863 output: 1184
+App 85863 output: 1184
+App 85863 output: 1184
+App 85863 output: 1186
+App 85863 output: 1188
+App 85863 output: 1188
+App 85863 output: 1188
+App 85863 output: 1188
+App 85863 output: 1188
+App 85863 output: 1188
+App 85863 output: 1190
+App 85863 output: 1190
+App 85863 output: 1190
+App 85863 output: 1190
+App 85863 output: 1190
+App 85863 output: 1108
+App 85863 output: 1108
+App 85863 output: 1116
+App 85863 output: 1116
+App 85863 output: 1116
+App 85863 output: 1116
+App 85863 output: 1118
+App 85863 output: 1118
+App 85863 output: 1122
+App 85863 output: 1122
+App 85863 output: 1122
+App 85863 output: 1122
+App 85863 output: 1128
+App 85863 output: 1128
+App 85863 output: 1128
+App 85863 output: 1128
+App 85863 output: 1128
+App 85863 output: 1128
+App 85863 output: 1128
+App 85863 output: 1128
+App 85863 output: 1128
+App 85863 output: 1150
+App 85863 output: 1150
+App 85863 output: 1154
+App 85863 output: 1154
+App 85863 output: 1156
+App 85863 output: 1006
+App 85863 output: 1006
+App 85863 output: 1006
+App 85863 output: 1008
+App 85863 output: 1008
+App 85863 output: 1008
+App 85863 output: 1008
+App 85863 output: 1010
+App 85863 output: 1010
+App 85863 output: 1010
+App 85863 output: 1012
+App 85863 output: 1012
+App 85863 output: 1014
+App 85863 output: 1014
+App 85863 output: 1014
+App 85863 output: 1016
+App 85863 output: 1016
+App 85863 output: 1016
+App 85863 output: 1016
+App 85863 output: 1030
+App 85863 output: 1030
+App 85863 output: 1030
+App 85863 output: 1030
+App 85863 output: 1032
+App 85863 output: 1032
+App 85863 output: 510
+App 85863 output: 510
+App 85863 output: 510
+App 85863 output: 510
+App 85863 output: 510
+App 85863 output: 510
+App 85863 output: 510
+App 85863 output: 634
+App 85863 output: 634
+App 85863 output: 634
+App 85863 output: 634
+App 85863 output: 634
+App 85863 output: 634
+App 85863 output: 638
+App 85863 output: 638
+App 85863 output: 638
+App 85863 output: 638
+App 85863 output: 638
+App 85863 output: 638
+App 85863 output: 642
+App 85863 output: 642
+App 85863 output: 642
+App 85863 output: 642
+App 85863 output: 642
+App 85863 output: 642
+App 85863 output: 642
+App 85863 output: 642
+App 85863 output: 642
+App 85863 output: 642
+App 85863 output: 642
+App 85863 output: 648
+App 85863 output: 648
+App 85863 output: 650
+App 85863 output: 650
+App 85863 output: 650
+App 85863 output: 650
+App 85863 output: 652
+App 85863 output: 652
+App 85863 output: 652
+App 85863 output: 652
+App 85863 output: 652
+App 85863 output: 652
+App 85863 output: 652
+App 85863 output: 652
+App 85863 output: 652
+App 85863 output: 652
+App 85863 output: 652
+App 85863 output: 652
+App 85863 output: 1102
+App 85863 output: 1102
+App 85863 output: 1102
+App 85863 output: 1102
+App 85863 output: 1102
+App 85863 output: 1102
+App 85863 output: 1102
+App 85863 output: 1102
+App 85863 output: 1102
+App 85863 output: 1102
+App 85863 output: 1102
+App 85863 output: 1102
+App 85863 output: 658
+App 85863 output: 658
+App 85863 output: 658
+App 85863 output: 658
+App 85863 output: 658
+App 85863 output: 658
+App 85863 output: 662
+App 85863 output: 662
+App 85863 output: 662
+App 85863 output: 662
+App 85863 output: 662
+App 85863 output: 662
+App 85863 output: 662
+App 85863 output: 662
+App 85863 output: 666
+App 85863 output: 666
+App 85863 output: 668
+App 85863 output: 668
+App 85863 output: 674
+App 85863 output: 674
+App 85863 output: 674
+App 85863 output: 674
+App 85863 output: 674
+App 85863 output: 674
+App 85863 output: 674
+App 85863 output: 674
+App 85863 output: 674
+App 85863 output: 674
+App 85863 output: 678
+App 85863 output: 678
+App 85863 output: 680
+App 85863 output: 680
+App 85863 output: 680
+App 85863 output: 680
+App 85863 output: 682
+App 85863 output: 682
+App 85863 output: 682
+App 85863 output: 690
+App 85863 output: 690
+App 85863 output: 690
+App 85863 output: 690
+App 85863 output: 690
+App 85863 output: 692
+App 85863 output: 692
+App 85863 output: 692
+App 85863 output: 692
+App 85863 output: 696
+App 85863 output: 696
+App 85863 output: 696
+App 85863 output: 696
+App 85863 output: 696
+App 85863 output: 696
+App 85863 output: 700
+App 85863 output: 700
+App 85863 output: 730
+App 85863 output: 730
+App 85863 output: 730
+App 85863 output: 736
+App 85863 output: 736
+App 85863 output: 736
+App 85863 output: 736
+App 85863 output: 740
+App 85863 output: 740
+App 85863 output: 740
+App 85863 output: 740
+App 85863 output: 740
+App 85863 output: 740
+App 85863 output: 740
+App 85863 output: 740
+App 85863 output: 740
+App 85863 output: 740
+App 85863 output: 740
+App 85863 output: 748
+App 85863 output: 748
+App 85863 output: 748
+App 85863 output: 748
+App 85863 output: 748
+App 85863 output: 748
+App 85863 output: 748
+App 85863 output: 748
+App 85863 output: 752
+App 85863 output: 752
+App 85863 output: 752
+App 85863 output: 752
+App 85863 output: 752
+App 85863 output: 756
+App 85863 output: 756
+App 85863 output: 756
+App 85863 output: 756
+App 85863 output: 756
+App 85863 output: 766
+App 85863 output: 766
+App 85863 output: 766
+App 85863 output: 766
+App 85863 output: 766
+App 85863 output: 766
+App 85863 output: 766
+App 85863 output: 770
+App 85863 output: 770
+App 85863 output: 770
+App 85863 output: 770
+App 85863 output: 774
+App 85863 output: 774
+App 85863 output: 774
+App 85863 output: 774
+App 85863 output: 774
+App 85863 output: 774
+App 85863 output: 774
+App 85863 output: 892
+App 85863 output: 892
+App 85863 output: 892
+App 85863 output: 892
+App 85863 output: 892
+App 85863 output: 892
+App 85863 output: 892
+App 85863 output: 892
+App 85863 output: 892
+App 85863 output: 892
+App 85863 output: 892
+App 85863 output: 892
+App 85863 output: 948
+App 85863 output: 948
+App 85863 output: 948
+App 85863 output: 948
+App 85863 output: 948
+App 85863 output: 948
+App 85863 output: 950
+App 85863 output: 950
+App 85863 output: 950
+App 85863 output: 950
+App 85863 output: 950
+App 85863 output: 950
+App 85863 output: 950
+App 85863 output: 950
+App 85863 output: 950
+App 85863 output: 950
+App 85863 output: 950
+App 85863 output: 950
+App 85863 output: 846
+App 85863 output: 846
+App 85863 output: 846
+App 85863 output: 846
+App 85863 output: 846
+App 85863 output: 846
+App 85863 output: 926
+App 85863 output: 926
+App 85863 output: 926
+App 85863 output: 926
+App 85863 output: 926
+App 85863 output: 926
+App 85863 output: 926
+App 85863 output: {"rom"=>"projects/b3test", "password"=>"b3test"}
+App 85863 output: {"file_name"=>"1", "field"=>"location_name", "value"=>"Black City", "narc"=>"header"}
+App 85863 output: {"file_name"=>"1", "field"=>"location_name", "value"=>"Black City", "narc"=>"header"}
+App 85863 output: {"file_name"=>"1", "field"=>"location_name", "value"=>"Black City", "narc"=>"header"}
+App 85863 output: {"file_name"=>"1", "field"=>"location_name", "value"=>"Black City", "narc"=>"header"}
+App 85863 output: {"rom_base"=>"B2", "rom_name"=>"testblack2.nds", "password"=>"testblack2"}
+App 85863 output: "redirecting..."
+App 85863 output: {"rom"=>"projects/b3test", "password"=>"b3test"}
+App 85863 output: {"file_name"=>"1", "field"=>"location_name", "value"=>"Black City", "narc"=>"header"}
+App 85863 output: {"file_name"=>"1", "field"=>"location_name", "value"=>"Black City", "narc"=>"header"}
+App 85863 output: {"file_name"=>"1", "field"=>"location_name", "value"=>"Black City", "narc"=>"header"}
+App 85863 output: {"file_name"=>"1", "field"=>"location_name", "value"=>"Black City", "narc"=>"header"}
+App 85863 output: {"file_name"=>"1", "field"=>"matrix_id", "value"=>"357", "narc"=>"header", "int"=>"true"}
+App 85863 output: {"file_name"=>"1", "field"=>"matrix_id", "value"=>"357", "narc"=>"header", "int"=>"true"}
+App 85863 output: {"file_name"=>"1", "field"=>"matrix_id", "value"=>"358", "narc"=>"header", "int"=>"true"}
+App 85863 output: {"file_name"=>"1", "field"=>"matrix_id", "value"=>"358", "narc"=>"header", "int"=>"true"}
+App 85863 output: {"file_name"=>"1", "field"=>"matrix_id", "value"=>"358", "narc"=>"header", "int"=>"true"}
+App 85863 output: {"file_name"=>"1", "field"=>"matrix_id", "value"=>"358", "narc"=>"header", "int"=>"true"}
+App 85863 output: {"file_name"=>"1", "field"=>"ability_1", "value"=>"Overgrow", "narc"=>"personal"}
+App 85863 output: {"file_name"=>"1", "field"=>"ability_1", "value"=>"Overgrow", "narc"=>"personal"}
+App 85863 output: {"file_name"=>"1", "field"=>"ability_1", "value"=>"Overgrow", "narc"=>"personal"}
+App 85863 output: {"file_name"=>"1", "field"=>"ability_1", "value"=>"Overgrow", "narc"=>"personal"}
+App 85863 output: {"file_name"=>"0", "field"=>"battle_type_1", "value"=>"Singles", "narc"=>"trdata"}
+App 85863 output: {"file_name"=>"0", "field"=>"battle_type_1", "value"=>"Singles", "narc"=>"trdata"}
+App 85863 output: {"file_name"=>"0", "field"=>"battle_type_1", "value"=>"Singles", "narc"=>"trdata"}
+App 85863 output: {"file_name"=>"0", "field"=>"battle_type_1", "value"=>"Singles", "narc"=>"trdata"}
+App 85863 output: {"file_name"=>"0", "field"=>"has_moves", "value"=>"1", "narc"=>"trdata", "int"=>"true"}
+App 85863 output: {"file_name"=>"0", "field"=>"has_moves", "value"=>"1", "narc"=>"trdata", "int"=>"true"}
+App 85863 output: {"file_name"=>"0", "field"=>"has_moves", "value"=>"0", "narc"=>"trdata", "int"=>"true"}
+App 85863 output: {"file_name"=>"0", "field"=>"has_moves", "value"=>"0", "narc"=>"trdata", "int"=>"true"}
+App 85863 output: {"file_name"=>"1", "field"=>"has_moves", "value"=>"1", "narc"=>"trdata", "int"=>"true"}
+App 85863 output: {"file_name"=>"1", "field"=>"has_moves", "value"=>"1", "narc"=>"trdata", "int"=>"true"}
+App 85863 output: "creating base rom"
+App 85863 output: "xdelta3 -d -s ./base/blank.nds ./base/B2.xdelta ./base/B2.nds"
+App 85863 output: "uploaded rom is base rom"
+App 85863 output: "cp ./base/B2.nds ./b3test.nds"
+App 85863 output: "creating edited rom"
+App 85863 output: "edited rom created"
+App 85863 output: "generating xdelta"
+App 85863 output: "xdelta3 -e -s ./base/B2.nds ./exports/b3test.nds ./exports/b3test_edited.xdelta"
+App 85863 output: "deleting base rom"
+App 85863 output: "deleting uploaded rom"
+App 85863 output: "deleting edited rom"
+App 85863 output: {"file_name"=>"0", "field"=>"item_1", "value"=>"None", "narc"=>"trdata"}
+App 85863 output: {"file_name"=>"0", "field"=>"item_1", "value"=>"None", "narc"=>"trdata"}
+App 85863 output: {"file_name"=>"0", "field"=>"item_1", "value"=>"Full Restore", "narc"=>"trdata"}
+App 85863 output: {"file_name"=>"0", "field"=>"item_1", "value"=>"Full Restore", "narc"=>"trdata"}
+App 85863 output: {"file_name"=>"0", "field"=>"item_1", "value"=>"Full Restore", "narc"=>"trdata"}
+App 85863 output: {"file_name"=>"0", "field"=>"item_1", "value"=>"Full Restore", "narc"=>"trdata"}
+App 85863 output: {"file_name"=>"0", "field"=>"item_1", "value"=>"Full Restore", "narc"=>"trdata"}
+App 85863 output: {"file_name"=>"0", "field"=>"item_1", "value"=>"Full Restore", "narc"=>"trdata"}
+App 85863 output: {"file_name"=>"0", "field"=>"item_1", "value"=>"Full Restore", "narc"=>"trdata"}
+App 85863 output: {"file_name"=>"0", "field"=>"item_1", "value"=>"Full Restore", "narc"=>"trdata"}
+App 85863 output: {"file_name"=>"1", "field"=>"species_id_0", "value"=>"Blitzle", "narc"=>"trpok"}
+App 85863 output: {"file_name"=>"1", "field"=>"species_id_0", "value"=>"Blitzle", "narc"=>"trpok"}
+App 85863 output: ["species", "move"]
+App 85863 output: "species_id_0"
+App 85863 output: {"file_name"=>"1", "field"=>"species_id_0", "value"=>"Blitzle", "narc"=>"trpok"}
+App 85863 output: {"file_name"=>"1", "field"=>"species_id_0", "value"=>"Blitzle", "narc"=>"trpok"}
+App 85863 output: {"file_name"=>"1", "field"=>"species_id_0", "value"=>"Blitzle", "narc"=>"trpok"}
+App 85863 output: ["species", "move"]
+App 85863 output: "species_id_0"
+App 85863 output: {"file_name"=>"1", "field"=>"species_id_0", "value"=>"Blitzle", "narc"=>"trpok"}
+App 85863 output: {"file_name"=>"0", "field"=>"spring_grass_slot_0_min_level", "value"=>"0", "narc"=>"encounter", "int"=>"true"}
+App 85863 output: {"file_name"=>"0", "field"=>"spring_grass_slot_0_min_level", "value"=>"0", "narc"=>"encounter", "int"=>"true"}
+App 85863 output: {"file_name"=>"0", "field"=>"spring_grass_slot_0_min_level", "value"=>"0", "narc"=>"encounter", "int"=>"true"}
+App 85863 output: {"file_name"=>"0", "field"=>"spring_grass_slot_0_min_level", "value"=>"0", "narc"=>"encounter", "int"=>"true"}
+App 85863 output: {"file_name"=>"0", "field"=>"battle_type_1", "value"=>"Singles", "narc"=>"trdata"}
+App 85863 output: {"file_name"=>"0", "field"=>"battle_type_1", "value"=>"Singles", "narc"=>"trdata"}
+App 85863 output: {"file_name"=>"0", "field"=>"battle_type_1", "value"=>"Singles", "narc"=>"trdata"}
+App 85863 output: {"file_name"=>"0", "field"=>"battle_type_1", "value"=>"Singles", "narc"=>"trdata"}
+App 85863 output: {"file_name"=>"0", "field"=>"battle_type_1", "value"=>"Triples", "narc"=>"trdata"}
+App 85863 output: {"file_name"=>"0", "field"=>"battle_type_1", "value"=>"Triples", "narc"=>"trdata"}
+App 85863 output: {"file_name"=>"0", "field"=>"power", "value"=>"0", "narc"=>"move", "int"=>"true"}
+App 85863 output: {"file_name"=>"0", "field"=>"power", "value"=>"0", "narc"=>"move", "int"=>"true"}
+App 85863 output: 0
+App 85863 output: no exp
+App 85863 output: 0
+App 85863 output: {"file_name"=>"0", "field"=>"power", "value"=>"0", "narc"=>"move", "int"=>"true"}
+App 85863 output: {"file_name"=>"0", "field"=>"power", "value"=>"0", "narc"=>"move", "int"=>"true"}
+App 85863 output: 0
+App 85863 output: no exp
+App 85863 output: 0
+App 85863 output: {"file_name"=>"0", "field"=>"effect", "value"=>"ra", "narc"=>"move"}
+App 85863 output: {"file_name"=>"0", "field"=>"effect", "value"=>"ra", "narc"=>"move"}
+App 85863 output: Traceback (most recent call last):
+App 85863 output:   File "/Users/andylee/Repos/Pokeweb/python/move_writer.py", line 116, in <module>
+App 85863 output:     write_readable_to_raw(int(file_name))
+App 85863 output: 
+App 85863 output:   File "/Users/andylee/Repos/Pokeweb/python/move_writer.py", line 27, in write_readable_to_raw
+App 85863 output:     tools.write_readable_to_raw(file_name, narc_name, to_raw)
+App 85863 output: 
+App 85863 output:   File "/Users/andylee/Repos/Pokeweb/python/tools.py", line 83, in write_readable_to_raw
+App 85863 output:     new_raw_data = to_raw(json_data["readable"])
+App 85863 output:                    
+App 85863 output: ^^^^^^^
+App 85863 output: ^^^^^^
+App 85863 output: ^^^^^
+App 85863 output: ^^^^^^
+App 85863 output: ^^^^^
+App 85863 output: 
+App 85863 output:   File "/Users/andylee/Repos/Pokeweb/python/move_writer.py", line 47, in to_raw
+App 85863 output:     raw["effect"] = rom_data.EFFECTS.index(raw["effect"])
+App 85863 output:     
+App 85863 output:                 ^^^^^^^^^^^^
+App 85863 output: ^^^^^
+App 85863 output: ^^^^
+App 85863 output: ^^^
+App 85863 output: ^^^^
+App 85863 output: ^^^^^
+App 85863 output: ^^^^
+App 85863 output: ValueError
+App 85863 output: : 'ra' is not in list
+App 85863 output: {"file_name"=>"0", "field"=>"effect", "value"=>"ra", "narc"=>"move"}
+App 85863 output: {"file_name"=>"0", "field"=>"effect", "value"=>"ra", "narc"=>"move"}
+App 85863 output: Traceback (most recent call last):
+App 85863 output:   File "/Users/andylee/Repos/Pokeweb/python/move_writer.py", line 116, in <module>
+App 85863 output:     write_readable_to_raw(int(file_name))
+App 85863 output:   File "/Users/andylee/Repos/Pokeweb/python/move_writer.py", line 27, in write_readable_to_raw
+App 85863 output:     tools.write_readable_to_raw(file_name, narc_name, to_raw)
+App 85863 output: 
+App 85863 output:   File "/Users/andylee/Repos/Pokeweb/python/tools.py", line 83, in write_readable_to_raw
+App 85863 output:     new_raw_data = to_raw(json_data["readable"])
+App 85863 output:  
+App 85863 output:                   ^^^^^^^
+App 85863 output: ^
+App 85863 output: ^
+App 85863 output: ^^^^^^^^^^^^^^
+App 85863 output: ^^^^^^
+App 85863 output: 
+App 85863 output:   File "/Users/andylee/Repos/Pokeweb/python/move_writer.py", line 47, in to_raw
+App 85863 output:     
+App 85863 output: raw["effect"] = rom_data.EFFECTS.index(raw["effect"])
+App 85863 output:  
+App 85863 output:             
+App 85863 output:        ^^
+App 85863 output: ^^^^^^^
+App 85863 output: ^^^^^
+App 85863 output: ^^^^^^
+App 85863 output: ^^^^^
+App 85863 output: ^^^^^^
+App 85863 output: ^^^^^
+App 85863 output: ^
+App 85863 output: ValueError: 'ra' is not in list
+App 85863 output: {"file_name"=>"0", "field"=>"effect", "value"=>"ra", "narc"=>"move"}
+App 85863 output: {"file_name"=>"0", "field"=>"effect", "value"=>"ra", "narc"=>"move"}
+App 85863 output: Traceback (most recent call last):
+App 85863 output:   File "/Users/andylee/Repos/Pokeweb/python/move_writer.py", line 116, in <module>
+App 85863 output:     write_readable_to_raw(int(file_name))
+App 85863 output:   File "/Users/andylee/Repos/Pokeweb/python/move_writer.py", line 27, in write_readable_to_raw
+App 85863 output:     
+App 85863 output: tools.write_readable_to_raw(file_name, narc_name, to_raw)
+App 85863 output:   File "/Users/andylee/Repos/Pokeweb/python/tools.py", line 83, in write_readable_to_raw
+App 85863 output:     new_raw_data = to_raw(json_data["readable"])
+App 85863 output:                
+App 85863 output:     ^^
+App 85863 output: ^^^^^^
+App 85863 output: ^^^^^
+App 85863 output: ^^^^^^
+App 85863 output: ^^^^^
+App 85863 output: ^^^^^
+App 85863 output:   File "/Users/andylee/Repos/Pokeweb/python/move_writer.py", line 47, in to_raw
+App 85863 output:     raw["effect"] = rom_data.EFFECTS.index(raw["effect"])
+App 85863 output:                  
+App 85863 output:    ^^^
+App 85863 output: ^^
+App 85863 output: ^^^^
+App 85863 output: ^^^^^^^^^^^^^^^^^
+App 85863 output: ^^^^^^^
+App 85863 output: ^^^^
+App 85863 output: ValueError: 
+App 85863 output: 'ra' is not in list
+App 85863 output: {"file_name"=>"0", "field"=>"effect_category", "value"=>"No Special Effect", "narc"=>"move"}
+App 85863 output: {"file_name"=>"0", "field"=>"effect_category", "value"=>"No Special Effect", "narc"=>"move"}
+App 85863 output: Traceback (most recent call last):
+App 85863 output:   File "/Users/andylee/Repos/Pokeweb/python/move_writer.py", line 116, in <module>
+App 85863 output:     write_readable_to_raw(int(file_name))
+App 85863 output:   File "/Users/andylee/Repos/Pokeweb/python/move_writer.py", line 27, in write_readable_to_raw
+App 85863 output:     tools.write_readable_to_raw(file_name, narc_name, to_raw)
+App 85863 output: 
+App 85863 output:   File "/Users/andylee/Repos/Pokeweb/python/tools.py", line 83, in write_readable_to_raw
+App 85863 output:     new_raw_data = to_raw(json_data["readable"])
+App 85863 output:     
+App 85863 output:                ^^^^^^^^^^^^
+App 85863 output: ^^^^^^^^^^
+App 85863 output: ^^^^^^
+App 85863 output: ^
+App 85863 output:   File "/Users/andylee/Repos/Pokeweb/python/move_writer.py", line 47, in to_raw
+App 85863 output:     raw["effect"] = rom_data.EFFECTS.index(raw["effect"])
+App 85863 output:            
+App 85863 output:        
+App 85863 output:   ^^^^
+App 85863 output: ^^^^^^^
+App 85863 output: ^^^^^^
+App 85863 output: ^^^^^^
+App 85863 output: ^^^^^^
+App 85863 output: ^^^^^
+App 85863 output: ^^^
+App 85863 output: ValueError: 'ra' is not in list
+App 85863 output: {"file_name"=>"0", "field"=>"effect_category", "value"=>"Raise user stats", "narc"=>"move"}
+App 85863 output: {"file_name"=>"0", "field"=>"effect_category", "value"=>"Raise user stats", "narc"=>"move"}
+App 85863 output: Traceback (most recent call last):
+App 85863 output:   File "/Users/andylee/Repos/Pokeweb/python/move_writer.py", line 116, in <module>
+App 85863 output:     
+App 85863 output: write_readable_to_raw(int(file_name))
+App 85863 output:   File "/Users/andylee/Repos/Pokeweb/python/move_writer.py", line 27, in write_readable_to_raw
+App 85863 output:     tools.write_readable_to_raw(file_name, narc_name, to_raw)
+App 85863 output:   File "/Users/andylee/Repos/Pokeweb/python/tools.py", line 83, in write_readable_to_raw
+App 85863 output:     new_raw_data = to_raw(json_data["readable"])
+App 85863 output:         
+App 85863 output:       
+App 85863 output:      
+App 85863 output: ^^^^^
+App 85863 output: ^^^^^
+App 85863 output: ^^^^^^^^^^^^^^^^
+App 85863 output: ^^^
+App 85863 output:   File "/Users/andylee/Repos/Pokeweb/python/move_writer.py", line 47, in to_raw
+App 85863 output:     
+App 85863 output: raw["effect"] = rom_data.EFFECTS.index(raw["effect"])
+App 85863 output:  
+App 85863 output:                    ^^^^^^^^^
+App 85863 output: ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+App 85863 output: ValueError: 
+App 85863 output: 'ra' is not in list
+App 85863 output: {"file_name"=>"0", "field"=>"effect_category", "value"=>"Raise user stats", "narc"=>"move"}
+App 85863 output: {"file_name"=>"0", "field"=>"effect_category", "value"=>"Raise user stats", "narc"=>"move"}
+App 85863 output: Traceback (most recent call last):
+App 85863 output:   File "/Users/andylee/Repos/Pokeweb/python/move_writer.py", line 116, in <module>
+App 85863 output:     write_readable_to_raw(int(file_name))
+App 85863 output:   File "/Users/andylee/Repos/Pokeweb/python/move_writer.py", line 27, in write_readable_to_raw
+App 85863 output:     tools.write_readable_to_raw(file_name, narc_name, to_raw)
+App 85863 output: 
+App 85863 output:   File "/Users/andylee/Repos/Pokeweb/python/tools.py", line 83, in write_readable_to_raw
+App 85863 output:     
+App 85863 output: new_raw_data = to_raw(json_data["readable"])
+App 85863 output:                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+App 85863 output:   File "/Users/andylee/Repos/Pokeweb/python/move_writer.py", line 47, in to_raw
+App 85863 output:     raw["effect"] = rom_data.EFFECTS.index(raw["effect"])
+App 85863 output:                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+App 85863 output: ValueError: 'ra' is not in list
+App 85863 output: {"file_name"=>"0", "field"=>"effect_category", "value"=>"Raise user stats", "narc"=>"move"}
+App 85863 output: {"file_name"=>"0", "field"=>"effect_category", "value"=>"Raise user stats", "narc"=>"move"}
+App 85863 output: Traceback (most recent call last):
+App 85863 output:   File "/Users/andylee/Repos/Pokeweb/python/move_writer.py", line 116, in <module>
+App 85863 output:     write_readable_to_raw(int(file_name))
+App 85863 output:   File "/Users/andylee/Repos/Pokeweb/python/move_writer.py", line 27, in write_readable_to_raw
+App 85863 output:     tools.write_readable_to_raw(file_name, narc_name, to_raw)
+App 85863 output:   File "/Users/andylee/Repos/Pokeweb/python/tools.py", line 83, in write_readable_to_raw
+App 85863 output:     new_raw_data = to_raw(json_data["readable"])
+App 85863 output:    
+App 85863 output:        
+App 85863 output:       
+App 85863 output:    ^^
+App 85863 output: ^^^^^
+App 85863 output: ^^^^^
+App 85863 output: ^^^^^^
+App 85863 output: ^^
+App 85863 output: ^
+App 85863 output: ^^^^^^^^
+App 85863 output:   File "/Users/andylee/Repos/Pokeweb/python/move_writer.py", line 47, in to_raw
+App 85863 output:     raw["effect"] = rom_data.EFFECTS.index(raw["effect"])
+App 85863 output: 
+App 85863 output:  
+App 85863 output:                    ^^^
+App 85863 output: ^^^^^^^^
+App 85863 output: ^^^^^^
+App 85863 output: ^^^^^^
+App 85863 output: ^^^^^^
+App 85863 output: ^^^^^
+App 85863 output: ^^^
+App 85863 output: ValueError: 'ra' is not in list
+App 85863 output: 
+App 85863 output: {"file_name"=>"0", "field"=>"market_value", "value"=>"0", "narc"=>"item", "int"=>"true"}
+App 85863 output: {"file_name"=>"0", "field"=>"market_value", "value"=>"0", "narc"=>"item", "int"=>"true"}
+App 85863 output: {"file_name"=>"0", "field"=>"market_value", "value"=>"0", "narc"=>"item", "int"=>"true"}
+App 85863 output: {"file_name"=>"0", "field"=>"market_value", "value"=>"0", "narc"=>"item", "int"=>"true"}
+App 85863 output: {"file_name"=>"0", "field"=>"market_value", "value"=>"0", "narc"=>"item", "int"=>"true"}
+App 85863 output: {"file_name"=>"0", "field"=>"market_value", "value"=>"0", "narc"=>"item", "int"=>"true"}
+App 85863 output: {"file_name"=>"0", "field"=>"item_0", "value"=>"Poke Ball", "narc"=>"mart"}
+App 85863 output: {"file_name"=>"0", "field"=>"item_0", "value"=>"Poke Ball", "narc"=>"mart"}
+App 85863 output: {"file_name"=>"0", "field"=>"item_0", "value"=>"Poke Ball", "narc"=>"mart"}
+App 85863 output: {"file_name"=>"0", "field"=>"item_0", "value"=>"Poke Ball", "narc"=>"mart"}
+App 85863 output: {"file_name"=>"0", "field"=>"black_common_pok_0", "value"=>"Marill", "narc"=>"grotto"}
+App 85863 output: {"file_name"=>"0", "field"=>"black_common_pok_0", "value"=>"Marill", "narc"=>"grotto"}
+App 85863 output: "/////////"
+App 85863 output: ["pok"]
+App 85863 output: "black_common_pok_0"
+App 85863 output: {"file_name"=>"0", "field"=>"black_common_pok_0", "value"=>"Marill", "narc"=>"grotto"}
+App 85863 output: {"file_name"=>"0", "field"=>"black_common_pok_0", "value"=>"Marill", "narc"=>"grotto"}
+App 85863 output: {"file_name"=>"0", "field"=>"black_common_pok_0", "value"=>"Marill", "narc"=>"grotto"}
+App 85863 output: "/////////"
+App 85863 output: ["pok"]
+App 85863 output: "black_common_pok_0"
+App 85863 output: {"file_name"=>"0", "field"=>"black_common_pok_0", "value"=>"Marill", "narc"=>"grotto"}
+App 85863 output: {"file_name"=>"0", "field"=>"normal_common_item_0", "value"=>"Poke Ball", "narc"=>"grotto"}
+App 85863 output: {"file_name"=>"0", "field"=>"normal_common_item_0", "value"=>"Poke Ball", "narc"=>"grotto"}
+App 85863 output: "/////////"
+App 85863 output: {"file_name"=>"0", "field"=>"normal_common_item_0", "value"=>"Poke Ball", "narc"=>"grotto"}
+App 85863 output: {"file_name"=>"0", "field"=>"normal_common_item_0", "value"=>"Poke Ball", "narc"=>"grotto"}
+App 85863 output: {"file_name"=>"0", "field"=>"normal_common_item_0", "value"=>"Poke Ball", "narc"=>"grotto"}
+App 85863 output: "/////////"
+App 85863 output: {"file_name"=>"0", "field"=>"normal_common_item_0", "value"=>"Poke Ball", "narc"=>"grotto"}
+App 85863 output: {"file_name"=>"0", "field"=>"normal_common_item_0", "value"=>"Poke Ball", "narc"=>"grotto"}
+App 85863 output: {"file_name"=>"0", "field"=>"normal_common_item_0", "value"=>"Poke Ball", "narc"=>"grotto"}
+App 85863 output: "/////////"
+App 85863 output: {"file_name"=>"0", "field"=>"normal_common_item_0", "value"=>"Poke Ball", "narc"=>"grotto"}
+App 85863 output: 0
+App 85863 output: {"maps"=>[[771, [0, 0, 32, 32]]], "translate"=>[0, 0]}
+App 85863 output: 130
+App 85863 output: {"maps"=>[[827, [0, 0, 32, 32]]], "translate"=>[0, 0]}
+App 85863 output: 626
+App 85863 output: {"maps"=>[[100, [576, 416, 32, 32]], [99, [608, 416, 32, 32]]], "translate"=>[576, 416], "headers"=>[395, 396]}
+App 85863 output: 130
+App 85863 output: {"maps"=>[[827, [0, 0, 32, 32]]], "translate"=>[0, 0]}

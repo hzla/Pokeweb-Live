@@ -14,14 +14,19 @@
 	}
 
 	// load rest of pokemon (11 to end)
-	$( document ).ready(function() {
-		$('#wait-loading').show()
-		$.get(window.location.href + "/collection", function(data){
-			$('.pokemon-list').append(data)
-			$('#wait-loading').hide()
-			$(":not(.log-text)[contenteditable='true']").contextMenu(editable_menu)
-		})
-	})	
+	
+	<% if ENV['RACK_ENV'] != 'test' %>
+		$( document ).ready(function() {
+			$('#wait-loading').show()
+			$.get(window.location.href + "/collection", function(data){
+				$('.pokemon-list').append(data)
+				$('#wait-loading').hide()
+				$(":not(.log-text)[contenteditable='true']").contextMenu(editable_menu)
+			})
+		})	
+	<%	end %>
+
+	
 </script>
 
 <div class="pokemon-filter">	
@@ -38,6 +43,10 @@
 		<% RomInfo.types.each do |type| %>
 			<button class="btn -default btn-5 -<%= type.downcase %>" data-ptype="<%= type.downcase %>" type="button"><%= type.upcase[0..2] %></button>
 		<% end %>
+	</div>
+	<br>
+	<div class="small-filters">
+		Tip: You can right click a value to apply to all 
 	</div>
 </div>
 

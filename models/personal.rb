@@ -1,6 +1,6 @@
 class Personal
 
-	def self.poke_data directory=nil
+	def self.poke_data directory=nil, limit=-1
 		directory = $rom_name if !directory
 
 		files = Dir["#{directory}/json/personal/*.json"]
@@ -66,7 +66,12 @@ class Personal
 			data[666]["name"] = "Darmanitan-Zen"
 			data[667]["name"] = "Meloetta-Pirouette"
 		end
-		data
+
+		if ENV['RACK_ENV'] = 'test'
+			limit = 9
+		end
+
+		data[0..limit]
 	end
 
 	def self.export_showdown

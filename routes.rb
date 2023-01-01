@@ -28,15 +28,12 @@ p "init"
 
 class MyApp < Sinatra::Base
   
-
-
 	before do
 		# $rom_name = "projects/white2"
 		$rom_name = session[:rom_name]
 
 		if ENV['RACK_ENV'] == 'test'
-			
-			$rom_name = RomInfo.testrom
+			$rom_name = ENV['ROM']
 		end
 
 
@@ -69,7 +66,6 @@ class MyApp < Sinatra::Base
 	############# ROM EDITOR ROUTES ###########################
 
 	get '/' do
-		
 		if $rom_name
 			p "redirecting..."
 			redirect "/headers"
@@ -109,7 +105,7 @@ class MyApp < Sinatra::Base
 		redirect '/headers'
 	end
 
-	# only ever called with ajax
+
 	post '/extract' do 
 
 		# params['rom_name'] = params['rom_name']
@@ -167,6 +163,7 @@ class MyApp < Sinatra::Base
 		  f.puts "#{Time.now}: Loaded Rom : #{params['rom_name']}"
 		end
 
+		p session
 	  	redirect '/headers'
 	end
 

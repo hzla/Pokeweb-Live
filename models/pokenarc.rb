@@ -11,7 +11,7 @@ class Pokenarc
 		end
 	end
 
-	def self.get_all use_raw=false
+	def self.get_all use_raw=false, limit=-1
 		collection = []
 		files = Dir["#{$rom_name}/json/#{@@narc_name}/*.json"]
 		file_count = files.length

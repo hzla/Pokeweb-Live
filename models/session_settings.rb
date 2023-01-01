@@ -40,6 +40,8 @@ class SessionSettings
 	end
 
 	def self.base_rom
+		return nil if !File.exist?("#{$rom_name}/session_settings.json")
+
 		settings = File.open("#{$rom_name}/session_settings.json", "r") do |f|
 			f.read
 		end
