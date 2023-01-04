@@ -759,13 +759,13 @@ class MyApp < Sinatra::Base
 	# end
 
 
-	# get '/settings/set' do 
-	# 	field = params["field"]
-	# 	current_value = SessionSettings.get(field)
+	get '/settings/set' do 
+		field = params["field"]
+		current_value = SessionSettings.get(field)
 
-	# 	SessionSettings.set field, !current_value
-	# 	return [SessionSettings.get(field).to_s].to_json
-	# end
+		SessionSettings.set field, !current_value
+		return [SessionSettings.get(field).to_s].to_json
+	end
 
 end
 
