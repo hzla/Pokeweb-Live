@@ -39,8 +39,8 @@ def output_narc(narc_name, rom, rom_name):
 	for f in json_files:
 		file_name = int(f.split(".")[0])
 
-		if rom_data.BASE_ROM == "BW2" and narc_name == "moves" and (file_name == 561 or file_name == 562):
-			continue
+		# if rom_data.BASE_ROM == "BW2" and narc_name == "moves" and (file_name == 561 or file_name == 562):
+		# 	continue
 
 		try:
 			write_narc_data(file_name, rom_data.NARC_FORMATS[narc_name], narc, narc_name, NARC_FILE_ID)

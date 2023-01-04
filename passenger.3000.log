@@ -9575,3 +9575,211 @@ App 49890 output: "all"
 App 49890 output: "winter_grass_slot_3"
 App 49890 output: {"file_name"=>"1", "field"=>"winter_grass_slot_3", "value"=>"Bulbasaur", "narc"=>"encounter"}
 App 49890 output: {"data"=>{"season"=>"winter", "id"=>"1"}}
+[ N 2023-01-04 14:37:24.4075 49841/T4 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 68937, application /Users/andylee/Repos/Pokeweb (development)
+App 49890 output: {"rom"=>"projects/b10test", "password"=>"b10test"}
+App 49890 output: {"rom_base"=>"B2", "rom_name"=>"b2test.nds", "password"=>"b2test"}
+App 49890 output: {"rom_name"=>"projects/b2test"}
+App 49890 output: "python python/expansions/move_expander.py b2test"
+App 49890 output: "creating base rom"
+App 49890 output: "xdelta3 -d -s ./base/blank.nds ./base/B2.xdelta ./base/B2.nds"
+App 49890 output: "uploaded rom is base rom"
+App 49890 output: "cp ./base/B2.nds ./b2test.nds"
+App 49890 output: "creating edited rom"
+App 49890 output: "edited rom created"
+App 49890 output: "generating xdelta"
+App 49890 output: "xdelta3 -e -s ./base/B2.nds ./exports/b2test.nds ./exports/b2test_edited.xdelta"
+App 49890 output: "deleting base rom"
+App 49890 output: "deleting uploaded rom"
+App 49890 output: "deleting edited rom"
+App 49890 output: {"filename"=>{"filename"=>"b2test_edited.xdelta", "type"=>"application/octet-stream", "name"=>"filename", "tempfile"=>#<Tempfile:/var/folders/th/rnc7s7ts4_13_1w48n1wjfwr0000gn/T/RackMultipart20230104-49890-1vj575m.xdelta>, "head"=>"Content-Disposition: form-data; name=\"filename\"; filename=\"b2test_edited.xdelta\"\r\nContent-Type: application/octet-stream\r\n"}, "rom_base"=>"B2", "rom_name"=>"b3test.nds", "password"=>"b3test"}
+App 49890 output: "xdelta3 -d -s ./base/blank.nds ./base/B2.xdelta ./base/B2.nds"
+App 49890 output: "xdelta3 -d -s ./base/B2.nds ./xdeltas/b3test.xdelta b3test.nds"
+App 49890 output: decompressing arm9
+App 49890 output: outputting texts
+App 49890 output: outputting texts
+App 49890 output: outputting scripts
+App 49890 output: {'rom_name': 'projects/b3test', 'pw': 'TUV6V05CVGwydGNOQmJFbmsrZmcvT1IxMW5zaUN4eXQyNVZMUDBDU1VGWT0tLUkzdERNUVh5K0kyTU82RGQzVkQ4Z1E9PQ==--ba73de28e5cf08816ef1fc8acd86c169c7192e59', 'base_version': 'B2', 'base_rom': 'BW2', 'headers': 359, 'message_texts': 349, 'story_texts': 350, 'scripts': 403}
+App 49890 output: {"rom_name"=>"projects/b3test"}
+App 49890 output: creating project folders
+App 49890 output: projects/b3test/json/moves
+App 49890 output: extracting narcs
+App 49890 output: parsing texts
+App 49890 output: settings up processing pools
+App 49890 output: outputing narcs
+App 49890 output: grottos
+App 49890 output: grotto_odds
+App 49890 output: 
+App 49890 output: marts
+App 49890 output: matrix
+App 49890 output: items
+App 49890 output: evolutions
+App 49890 output: learnsets
+App 49890 output: personal
+App 49890 output: moves
+App 49890 output: trpok
+App 49890 output: trdata
+App 49890 output: overworlds
+App 49890 output: encounters
+App 49890 output: maps
+App 49890 output: "creating base rom"
+App 49890 output: "xdelta3 -d -s ./base/blank.nds ./base/B2.xdelta ./base/B2.nds"
+App 49890 output: "creating edited rom"
+App 49890 output: "xdelta3 -d -s ./base/B2.nds ./xdeltas/b3test.xdelta b3test.nds"
+App 49890 output: "creating edited rom"
+App 49890 output: "edited rom created"
+App 49890 output: "generating xdelta"
+App 49890 output: "xdelta3 -e -s ./base/B2.nds ./exports/b3test.nds ./exports/b3test_edited.xdelta"
+App 49890 output: "deleting base rom"
+App 49890 output: "deleting uploaded rom"
+App 49890 output: "deleting edited rom"
+App 49890 output: {"filename"=>{"filename"=>"b3test_edited1.xdelta", "type"=>"application/octet-stream", "name"=>"filename", "tempfile"=>#<Tempfile:/var/folders/th/rnc7s7ts4_13_1w48n1wjfwr0000gn/T/RackMultipart20230104-49890-qakafi.xdelta>, "head"=>"Content-Disposition: form-data; name=\"filename\"; filename=\"b3test_edited1.xdelta\"\r\nContent-Type: application/octet-stream\r\n"}, "rom_base"=>"B2", "rom_name"=>"b4test.nds", "password"=>"b4test"}
+App 49890 output: "xdelta3 -d -s ./base/blank.nds ./base/B2.xdelta ./base/B2.nds"
+App 49890 output: "xdelta3 -d -s ./base/B2.nds ./xdeltas/b4test.xdelta b4test.nds"
+App 49890 output: decompressing arm9
+App 49890 output: outputting texts
+App 49890 output: outputting texts
+App 49890 output: outputting scripts
+App 49890 output: {'rom_name': 'projects/b4test', 'pw': 'eFZpUjBBLzQ4THpjSm4weDBuVC9PNWtibWQvMDVDSmJvSjVEa0ZHb0duaz0tLXQ5Q2I4T1RRR3gwVXJSelU4cXQrQ3c9PQ==--6c24b47d99e1d0b7eb53b8c260efaca151350619', 'base_version': 'B2', 'base_rom': 'BW2', 'headers': 359, 'message_texts': 349, 'story_texts': 350, 'scripts': 403}
+App 49890 output: {"rom_name"=>"projects/b4test"}
+App 49890 output: creating project folders
+App 49890 output: projects/b4test/json/moves
+App 49890 output: extracting narcs
+App 49890 output: parsing texts
+App 49890 output: settings up processing pools
+App 49890 output: outputing narcs
+App 49890 output: grottos
+App 49890 output: grotto_odds
+App 49890 output: 
+App 49890 output: marts
+App 49890 output: matrix
+App 49890 output: evolutions
+App 49890 output: items
+App 49890 output: 
+App 49890 output: learnsets
+App 49890 output: personal
+App 49890 output: 
+App 49890 output: moves
+App 49890 output: trpok
+App 49890 output: trdata
+App 49890 output: overworlds
+App 49890 output: encounters
+App 49890 output: maps
+App 49890 output: {"rom"=>"projects/b2test", "password"=>"b2test"}
+App 49890 output: {"rom"=>"projects/b3test", "password"=>"b3test"}
+App 49890 output: "redirecting..."
+App 49890 output: {"rom"=>"projects/b2test", "password"=>"b2test"}
+App 49890 output: "python python/expansions/move_expander.py b2test"
+App 49890 output: "creating base rom"
+App 49890 output: "xdelta3 -d -s ./base/blank.nds ./base/B2.xdelta ./base/B2.nds"
+App 49890 output: "uploaded rom is base rom"
+App 49890 output: "cp ./base/B2.nds ./b2test.nds"
+App 49890 output: "creating edited rom"
+App 49890 output: "edited rom created"
+App 49890 output: "generating xdelta"
+App 49890 output: "xdelta3 -e -s ./base/B2.nds ./exports/b2test.nds ./exports/b2test_edited.xdelta"
+App 49890 output: "deleting base rom"
+App 49890 output: "deleting uploaded rom"
+App 49890 output: "deleting edited rom"
+App 49890 output: {"file_name"=>"1002", "field"=>"effect", "value"=>"None", "narc"=>"move"}
+App 49890 output: {"file_name"=>"1002", "field"=>"effect", "value"=>"None", "narc"=>"move"}
+App 49890 output: {"file_name"=>"1002", "field"=>"effect", "value"=>"None", "narc"=>"move"}
+App 49890 output: {"file_name"=>"1002", "field"=>"effect", "value"=>"None", "narc"=>"move"}
+App 49890 output: "creating base rom"
+App 49890 output: "xdelta3 -d -s ./base/blank.nds ./base/B2.xdelta ./base/B2.nds"
+App 49890 output: "uploaded rom is base rom"
+App 49890 output: "cp ./base/B2.nds ./b2test.nds"
+App 49890 output: "creating edited rom"
+App 49890 output: "edited rom created"
+App 49890 output: "generating xdelta"
+App 49890 output: "xdelta3 -e -s ./base/B2.nds ./exports/b2test.nds ./exports/b2test_edited.xdelta"
+App 49890 output: "deleting base rom"
+App 49890 output: "deleting uploaded rom"
+App 49890 output: "deleting edited rom"
+App 49890 output: {"file_name"=>"1004", "field"=>"animation", "value"=>"533", "narc"=>"move", "int"=>"true"}
+App 49890 output: {"file_name"=>"1004", "field"=>"animation", "value"=>"533", "narc"=>"move", "int"=>"true"}
+App 49890 output: 533
+App 49890 output: 454
+App 49890 output: "creating base rom"
+App 49890 output: "xdelta3 -d -s ./base/blank.nds ./base/B2.xdelta ./base/B2.nds"
+App 49890 output: "uploaded rom is base rom"
+App 49890 output: "cp ./base/B2.nds ./b2test.nds"
+App 49890 output: "creating edited rom"
+App 49890 output: "edited rom created"
+App 49890 output: "generating xdelta"
+App 49890 output: "xdelta3 -e -s ./base/B2.nds ./exports/b2test.nds ./exports/b2test_edited.xdelta"
+App 49890 output: "deleting base rom"
+App 49890 output: "deleting uploaded rom"
+App 49890 output: "deleting edited rom"
+App 49890 output: {"file_name"=>"1004", "field"=>"animation", "value"=>"533", "narc"=>"move", "int"=>"true"}
+App 49890 output: {"file_name"=>"1004", "field"=>"animation", "value"=>"533", "narc"=>"move", "int"=>"true"}
+App 49890 output: 533
+App 49890 output: 454
+App 49890 output: "creating base rom"
+App 49890 output: "xdelta3 -d -s ./base/blank.nds ./base/B2.xdelta ./base/B2.nds"
+App 49890 output: "uploaded rom is base rom"
+App 49890 output: "cp ./base/B2.nds ./b2test.nds"
+App 49890 output: "creating edited rom"
+App 49890 output: "edited rom created"
+App 49890 output: "generating xdelta"
+App 49890 output: "xdelta3 -e -s ./base/B2.nds ./exports/b2test.nds ./exports/b2test_edited.xdelta"
+App 49890 output: "deleting base rom"
+App 49890 output: "deleting uploaded rom"
+App 49890 output: "deleting edited rom"
+App 49890 output: {"filename"=>{"filename"=>"b2test4.xdelta", "type"=>"application/octet-stream", "name"=>"filename", "tempfile"=>#<Tempfile:/var/folders/th/rnc7s7ts4_13_1w48n1wjfwr0000gn/T/RackMultipart20230104-49890-y5ju8i.xdelta>, "head"=>"Content-Disposition: form-data; name=\"filename\"; filename=\"b2test4.xdelta\"\r\nContent-Type: application/octet-stream\r\n"}, "rom_base"=>"B2", "rom_name"=>"b6test.nds", "password"=>"b6test"}
+App 49890 output: "xdelta3 -d -s ./base/blank.nds ./base/B2.xdelta ./base/B2.nds"
+App 49890 output: "xdelta3 -d -s ./base/B2.nds ./xdeltas/b6test.xdelta b6test.nds"
+App 49890 output: decompressing arm9
+App 49890 output: outputting texts
+App 49890 output: outputting texts
+App 49890 output: outputting scripts
+App 49890 output: {'rom_name': 'projects/b6test', 'pw': 'NUd4dGhGWVNrelVySE1vNVNzNTJsaEpMRWVZZUYzSXQ4cy9taUFBYXpzST0tLU9hcjdtcWg2bWhqbWtXV1N4WlB4N0E9PQ==--44e20da164f5c637ee0b561f801df3797ff32704', 'base_version': 'B2', 'base_rom': 'BW2', 'headers': 359, 'message_texts': 349, 'story_texts': 350, 'scripts': 403}
+App 49890 output: {"rom_name"=>"projects/b6test"}
+App 49890 output: creating project folders
+App 49890 output: 
+App 49890 output: projects/b6test/json/moves
+App 49890 output: extracting narcs
+App 49890 output: 
+App 49890 output: parsing texts
+App 49890 output: settings up processing pools
+App 49890 output: outputing narcs
+App 49890 output: grottos
+App 49890 output: grotto_odds
+App 49890 output: marts
+App 49890 output: matrix
+App 49890 output: items
+App 49890 output: evolutions
+App 49890 output: 
+App 49890 output: learnsets
+App 49890 output: personal
+App 49890 output: moves
+App 49890 output: trpok
+App 49890 output: trdata
+App 49890 output: overworlds
+App 49890 output: encounters
+App 49890 output: maps
+App 49890 output: "creating base rom"
+App 49890 output: "xdelta3 -d -s ./base/blank.nds ./base/B2.xdelta ./base/B2.nds"
+App 49890 output: "creating edited rom"
+App 49890 output: "xdelta3 -d -s ./base/B2.nds ./xdeltas/b6test.xdelta b6test.nds"
+App 49890 output: "creating edited rom"
+App 49890 output: "edited rom created"
+App 49890 output: "generating xdelta"
+App 49890 output: "xdelta3 -e -s ./base/B2.nds ./exports/b6test.nds ./exports/b6test_edited.xdelta"
+App 49890 output: "deleting base rom"
+App 49890 output: "deleting uploaded rom"
+App 49890 output: "deleting edited rom"
+App 49890 output: {"file_name"=>"1004", "field"=>"animation", "value"=>"348", "narc"=>"move", "int"=>"true"}
+App 49890 output: {"file_name"=>"1004", "field"=>"animation", "value"=>"348", "narc"=>"move", "int"=>"true"}
+App 49890 output: 348
+App 49890 output: 454
+App 49890 output: "creating base rom"
+App 49890 output: "xdelta3 -d -s ./base/blank.nds ./base/B2.xdelta ./base/B2.nds"
+App 49890 output: "creating edited rom"
+App 49890 output: "xdelta3 -d -s ./base/B2.nds ./xdeltas/b6test.xdelta b6test.nds"
+App 49890 output: "creating edited rom"
+App 49890 output: "edited rom created"
+App 49890 output: "generating xdelta"
+App 49890 output: "xdelta3 -e -s ./base/B2.nds ./exports/b6test.nds ./exports/b6test_edited.xdelta"
+App 49890 output: "deleting base rom"
+App 49890 output: "deleting uploaded rom"
+App 49890 output: "deleting edited rom"

@@ -102,7 +102,7 @@ def to_raw(readable):
 			b_animations = ndspy.narc.NARC.fromFile(b_animations_file_path)
 			# code.interact(local=dict(globals(), **locals()))
 			if rom_data.BASE_ROM == "BW2":
-				offset = 563
+				offset = 561
 			else:
 				offset = 561
 			try:
