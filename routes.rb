@@ -355,8 +355,8 @@ class MyApp < Sinatra::Base
 
 	get '/moves/expand' do 
 		rom = $rom_name.split("/")[1]
-		p "python python/expansions/move_expander.py #{rom}"
-		`python python/expansions/move_expander.py #{rom}`
+		p "python3 python/expansions/move_expander.py #{rom}"
+		`python3 python/expansions/move_expander.py #{rom}`
 		redirect '/moves'
 	end
 
