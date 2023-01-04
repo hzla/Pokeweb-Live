@@ -72,14 +72,13 @@ $(document).ready(function() {
 	      	var data = {}
 	      	data["season"] = current_season
 	      	data["id"] = current_encounter
-	      	if (confirm(`Copy ${current_season} to other seasons in enc file ${current_encounter} ?`)){
+	      	if (confirm(`Copy ${current_season} to other seasons in enc file ${current_encounter}? Changes will not be reflected in ui until page is refreshed`)){
 
 				$.post( "/encounter_season_copy", {"data": data }, function( e ) {     
 						
 	        
 
 		        });
-		        location.reload();
 			} 
 
 			
@@ -1038,7 +1037,7 @@ $(document).ready(function() {
 		
 		$.each(unique_encs, function(i,v) {
 			if (v != "") {
-				var sprite = "<div class='wild'><img src='/images/pokesprite/" + v + ".png'></div>"
+				var sprite = "<div class='wild'><img src='/images/pokesprite/" + v.toLowerCase() + ".png'></div>"
 				card.find(".encounter-wilds, .grotto-wilds").append(sprite)
 			}		
 		})

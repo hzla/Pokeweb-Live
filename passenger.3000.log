@@ -9551,3 +9551,27 @@ App 49890 output: "deleting base rom"
 App 49890 output: "deleting uploaded rom"
 App 49890 output: "deleting edited rom"
 App 49890 output: "python python/expansions/move_expander.py blacktest"
+App 49890 output: {"rom"=>"projects/blacktest", "password"=>"blacktest"}
+App 49890 output: {"data"=>{"season"=>"spring", "id"=>"1"}}
+App 68904 output: "init"
+App 49890 output: {"file_name"=>"1", "field"=>"summer_grass_slot_0", "value"=>"Mewtwo", "narc"=>"encounter"}
+App 49890 output: "all"
+App 49890 output: "summer_grass_slot_0"
+App 49890 output: {"file_name"=>"1", "field"=>"summer_grass_slot_0", "value"=>"Mewtwo", "narc"=>"encounter"}
+App 49890 output: {"data"=>{"season"=>"summer", "id"=>"1"}}
+App 49890 output: {"rom"=>"projects/blacktest", "password"=>"blacktest"}
+App 49890 output: {"file_name"=>"1", "field"=>"spring_grass_slot_1", "value"=>"Mew", "narc"=>"encounter"}
+App 49890 output: "all"
+App 49890 output: "spring_grass_slot_1"
+App 49890 output: {"file_name"=>"1", "field"=>"spring_grass_slot_1", "value"=>"Mew", "narc"=>"encounter"}
+App 49890 output: {"data"=>{"season"=>"spring", "id"=>"1"}}
+App 49890 output: {"file_name"=>"1", "field"=>"summer_grass_slot_2", "value"=>"Nidoking", "narc"=>"encounter"}
+App 49890 output: "all"
+App 49890 output: "summer_grass_slot_2"
+App 49890 output: {"file_name"=>"1", "field"=>"summer_grass_slot_2", "value"=>"Nidoking", "narc"=>"encounter"}
+App 49890 output: {"data"=>{"season"=>"summer", "id"=>"1"}}
+App 49890 output: {"file_name"=>"1", "field"=>"winter_grass_slot_3", "value"=>"Bulbasaur", "narc"=>"encounter"}
+App 49890 output: "all"
+App 49890 output: "winter_grass_slot_3"
+App 49890 output: {"file_name"=>"1", "field"=>"winter_grass_slot_3", "value"=>"Bulbasaur", "narc"=>"encounter"}
+App 49890 output: {"data"=>{"season"=>"winter", "id"=>"1"}}
