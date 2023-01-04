@@ -219,7 +219,7 @@ class MyApp < Sinatra::Base
 		p "deleting uploaded rom"
 
 		#delete editted rom
-		system "rm -rf ./exports/#{rom_name}_edited.nds"
+		# system "rm -rf ./exports/#{rom_name}_edited.nds"
 		p "deleting edited rom"
 
 
@@ -351,6 +351,13 @@ class MyApp < Sinatra::Base
 		@move_names = Move.get_names_from @moves
 
 		erb :moves
+	end
+
+	get '/moves/expand' do 
+		rom = $rom_name.split("/")[1]
+		p "python python/expansions/move_expander.py #{rom}"
+		`python python/expansions/move_expander.py #{rom}`
+		redirect '/moves'
 	end
 
 	get '/tms' do 	

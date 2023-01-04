@@ -14,6 +14,9 @@ from trpok_reader import output_trpok_json
 
 
 ################ STANDARD FUNCTIONS FOR MULTI FILE STATIC FORMAT NARCS ###################
+def json_id(obj):
+	return int(obj.split(".")[0])
+
 
 def output_narc(narc_name, rom, rom_name):
 	rom_data.set_global_vars(rom_name)
@@ -23,6 +26,8 @@ def output_narc(narc_name, rom, rom_name):
 		NARC_FILE_ID = settings[narc_name]
 
 	json_files = os.listdir(f'{rom_data.ROM_NAME}/json/{narc_name}')
+
+	json_files.sort(key=json_id)
 	
 	# ndspy copy of narcfile to edit
 	narc = ndspy.narc.NARC(rom.files[NARC_FILE_ID])
@@ -33,9 +38,17 @@ def output_narc(narc_name, rom, rom_name):
 
 	for f in json_files:
 		file_name = int(f.split(".")[0])
-		write_narc_data(file_name, rom_data.NARC_FORMATS[narc_name], narc, narc_name, NARC_FILE_ID)
+
+		if rom_data.BASE_ROM == "BW2" and narc_name == "moves" and (file_name == 561 or file_name == 562):
+			continue
+
+		try:
+			write_narc_data(file_name, rom_data.NARC_FORMATS[narc_name], narc, narc_name, NARC_FILE_ID)
+		except ValueError:
+			continue
 	
 	rom.files[NARC_FILE_ID] = narc.save()
+
 	print("narc saved")
 
 	return rom
@@ -60,9 +73,10 @@ def write_narc_data(file_name, narc_format, narc, narc_name, narc_file_id):
 			write_bytes(stream, 2, 65535) 
 	
 	if file_name >= len(narc.files):
+		print(file_name)
 		narc_entry_data = bytearray()
 		narc_entry_data[0:len(stream)] = stream
-		narc.files.append(narc_entry_data)
+		narc.files.append(stream)
 	else:
 		narc_entry_data = bytearray(narc.files[file_name])
 		narc_entry_data[0:len(stream)] = stream
@@ -70,6 +84,8 @@ def write_narc_data(file_name, narc_format, narc, narc_name, narc_file_id):
 			narc.files[file_name] = narc_entry_data
 		else:
 			narc.files[file_name] = stream
+
+
 
 def write_readable_to_raw(file_name, narc_name, to_raw):
 	data = {}
@@ -81,6 +97,7 @@ def write_readable_to_raw(file_name, narc_name, to_raw):
 		if json_data["readable"] is None:
 			return
 		new_raw_data = to_raw(json_data["readable"])
+		# print(new_raw_data)
 		json_data["raw"] = new_raw_data
 
 	with open(json_file_path, "w", encoding='ISO8859-1') as outfile: 

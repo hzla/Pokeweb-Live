@@ -1,0 +1,339 @@
+The user dives down onto the target from the sky.\nThis move is Fighting and Flying type simultaneously.
+Using a pulled-up mat as a shield, the user protects itself and its allies from damaging moves. This does not stop status moves.
+The user lets out a damaging belch at the target.\nThe user must eat a held Berry to use this move.
+This move can’t be used. It’s recommended that this\nmove is forgotten. Once forgotten, this move can’t\nbe remembered.
+The user weaves a sticky net around the opposing team,\nwhich lowers their Speed stats upon switching into battle.
+When the user knocks out a target with this move, the\nuser’s Attack stat is boosted drastically.
+The user vanishes somewhere, then strikes the target on\nthe next turn. This move hits even if the target protects\nitself.
+The user takes the target trick-or-treating. This adds\nGhost type to the target’s type.
+Letting out a noble roar, the user intimidates the target\nand lowers the target’s Attack and Sp. Atk stats.
+This move can’t be used. It’s recommended that this\nmove is forgotten. Once forgotten, this move can’t\nbe remembered.
+The user attacks everything around it. The user’s HP is\nrestored by half the damage taken by those hit.
+The user puts a forest curse on the target. This adds\nGrass type to the target’s type.
+The user stirs up a violent petal blizzard and damages\neverything around it.
+The user rapidly cools the target. This may also leave\nthe target frozen. This move is super effective on\nWater types.
+Letting out a charming cry, the user does emotional\ndamage to opposing Pokémon. This attack never misses.
+With a parting threat, the user lowers the target’s Attack\nand Sp. Atk stats. Then it switches places with a party\nPokémon in waiting.
+All stat changes affecting the target turn topsy-turvy\nand become the opposite of what they were.
+The user steals the target’s HP with a kiss. The user’s HP\nis restored by over half the damage taken by the target.
+This move can’t be used. It’s recommended that this\nmove is forgotten. Once forgotten, this move can’t\nbe remembered.
+This move can’t be used. It’s recommended that this\nmove is forgotten. Once forgotten, this move can’t\nbe remembered.
+The user turns the ground into Grassy Terrain for five\nturns. This restores the HP of Pokémon on the ground a\nlittle every turn and powers up Grass-type moves.
+This protects Pokémon on the ground from status\nconditions and halves damage from Dragon-type\nmoves for five turns.
+If the target is electrified before it uses a move, the\ntarget’s move becomes Electric type for that turn.
+The user attacks by playing rough with the target.\nThis may also lower the target’s Attack stat.
+The user attacks by stirring up a fairy wind to strike\nthe target.
+Borrowing the power of the moon, the user attacks\nthe target. This may also lower the target’s Sp. Atk stat.
+The user attacks everything around it with the destructive\npower of a terrible explosive sound.
+By locking down the battlefield, the user keeps all\nPokémon from fleeing during the next turn.
+The user takes a defensive stance while it protects itself\nfrom damage. This also lowers the Attack stat of any\nattacker that makes direct contact.
+The user and the target become friends, and the target\nloses its will to fight. This lowers the target’s Attack stat.
+The user tells the target a secret, and the target loses\nits ability to concentrate. This lowers the target’s\nSp. Atk stat.
+The user whips up a storm of diamonds to damage\nopposing Pokémon. This may also sharply boost the\nuser’s Defense stat.
+The user immerses the target in superheated steam.\nThis may also leave the target with a burn.
+Using a hyperspace hole, the user appears right next to\nthe target and strikes. This attack can hit a target using a\nmove such as Protect or Detect.
+The user hits the target with throwing stars two to five\ntimes in a row. This move always goes first.
+The user attacks by breathing a special, hot fire.\nThis also lowers the target’s Sp. Atk stat.
+In addition to protecting the user from attacks, this move\nalso damages any attacker that makes direct contact.
+The user boosts the Sp. Def stat of an ally Pokémon\nby using a mysterious aroma.
+The user’s body generates an eerie impulse. Exposing\nthe target to it harshly lowers the target’s Sp. Atk stat.
+This move can’t be used. It’s recommended that this\nmove is forgotten. Once forgotten, this move can’t\nbe remembered.
+This move can’t be used. It’s recommended that this\nmove is forgotten. Once forgotten, this move can’t\nbe remembered.
+The user absorbs energy on the first turn, then sharply\nboosts its Sp. Atk, Sp. Def, and Speed stats on the\nnext turn.
+The user manipulates magnetic fields, which boosts\nthe Defense and Sp. Def stats of ally Pokémon with\nthe Plus Ability or the Minus Ability.
+Using Happy Hour doubles the amount of prize money\nreceived after battle.
+The user turns the ground into Electric Terrain for five\nturns, powering up Electric-type moves. Pokémon on\nthe ground can no longer fall asleep.
+The user damages opposing Pokémon by emitting a\npowerful flash.
+The Pokémon congratulates you on your special day!
+The user and an ally hold hands. This makes them\nvery happy.
+The user stares at the target with its baby-doll eyes,\nwhich lowers the target’s Attack stat. This move always\ngoes first.
+The user attacks by nuzzling its electrified cheeks against\nthe target. This also leaves the target with paralysis.
+The user holds back when it attacks, and the target is left\nwith at least 1 HP.
+The target is infested and attacked for four to five turns.\nThe target can’t flee during this time.
+This move can’t be used. It’s recommended that this\nmove is forgotten. Once forgotten, this move can’t\nbe remembered.
+The user absorbs the target’s HP. The user’s HP is\nrestored by over half the damage taken by the target.
+This move can hit opposing Pokémon that are in the air.\nThose Pokémon will be knocked down to the ground.
+The user attacks with a wave that crawls along the\nground. Those it hits can’t flee from battle.
+The user gathers the energy of the land and focuses\nthat power on opposing Pokémon to inflict damage.
+Drawing power from the Eternal Flower, the user\nfires a powerful beam of light. This also damages\nthe user terribly.
+The user attacks opposing Pokémon with countless\nbeams of light that glow a deep and brilliant blue.
+The user attacks opposing Pokémon by manifesting\nthe power of the land in fearsome blades of stone.
+The user attacks the target by dropping out of the sky\nat high speed. This also lowers the user’s Defense and\nSp. Def stats.
+Using its many arms, the user unleashes a barrage of\nattacks that ignore the effects of moves like Protect\nand Detect. This also lowers the user’s Defense stat.
+This move can’t be used. It’s recommended that this\nmove is forgotten. Once forgotten, this move can’t\nbe remembered.
+This move can’t be used. It’s recommended that this\nmove is forgotten. Once forgotten, this move can’t\nbe remembered.
+This move can’t be used. It’s recommended that this\nmove is forgotten. Once forgotten, this move can’t\nbe remembered.
+This move can’t be used. It’s recommended that this\nmove is forgotten. Once forgotten, this move can’t\nbe remembered.
+This move can’t be used. It’s recommended that this\nmove is forgotten. Once forgotten, this move can’t\nbe remembered.
+This move can’t be used. It’s recommended that this\nmove is forgotten. Once forgotten, this move can’t\nbe remembered.
+This move can’t be used. It’s recommended that this\nmove is forgotten. Once forgotten, this move can’t\nbe remembered.
+This move can’t be used. It’s recommended that this\nmove is forgotten. Once forgotten, this move can’t\nbe remembered.
+This move can’t be used. It’s recommended that this\nmove is forgotten. Once forgotten, this move can’t\nbe remembered.
+This move can’t be used. It’s recommended that this\nmove is forgotten. Once forgotten, this move can’t\nbe remembered.
+This move can’t be used. It’s recommended that this\nmove is forgotten. Once forgotten, this move can’t\nbe remembered.
+This move can’t be used. It’s recommended that this\nmove is forgotten. Once forgotten, this move can’t\nbe remembered.
+This move can’t be used. It’s recommended that this\nmove is forgotten. Once forgotten, this move can’t\nbe remembered.
+This move can’t be used. It’s recommended that this\nmove is forgotten. Once forgotten, this move can’t\nbe remembered.
+This move can’t be used. It’s recommended that this\nmove is forgotten. Once forgotten, this move can’t\nbe remembered.
+This move can’t be used. It’s recommended that this\nmove is forgotten. Once forgotten, this move can’t\nbe remembered.
+This move can’t be used. It’s recommended that this\nmove is forgotten. Once forgotten, this move can’t\nbe remembered.
+This move can’t be used. It’s recommended that this\nmove is forgotten. Once forgotten, this move can’t\nbe remembered.
+This move can’t be used. It’s recommended that this\nmove is forgotten. Once forgotten, this move can’t\nbe remembered.
+This move can’t be used. It’s recommended that this\nmove is forgotten. Once forgotten, this move can’t\nbe remembered.
+This move can’t be used. It’s recommended that this\nmove is forgotten. Once forgotten, this move can’t\nbe remembered.
+This move can’t be used. It’s recommended that this\nmove is forgotten. Once forgotten, this move can’t\nbe remembered.
+This move can’t be used. It’s recommended that this\nmove is forgotten. Once forgotten, this move can’t\nbe remembered.
+This move can’t be used. It’s recommended that this\nmove is forgotten. Once forgotten, this move can’t\nbe remembered.
+This move can’t be used. It’s recommended that this\nmove is forgotten. Once forgotten, this move can’t\nbe remembered.
+This move can’t be used. It’s recommended that this\nmove is forgotten. Once forgotten, this move can’t\nbe remembered.
+This move can’t be used. It’s recommended that this\nmove is forgotten. Once forgotten, this move can’t\nbe remembered.
+This move can’t be used. It’s recommended that this\nmove is forgotten. Once forgotten, this move can’t\nbe remembered.
+This move can’t be used. It’s recommended that this\nmove is forgotten. Once forgotten, this move can’t\nbe remembered.
+This move can’t be used. It’s recommended that this\nmove is forgotten. Once forgotten, this move can’t\nbe remembered.
+This move can’t be used. It’s recommended that this\nmove is forgotten. Once forgotten, this move can’t\nbe remembered.
+This move can’t be used. It’s recommended that this\nmove is forgotten. Once forgotten, this move can’t\nbe remembered.
+This move can’t be used. It’s recommended that this\nmove is forgotten. Once forgotten, this move can’t\nbe remembered.
+This move can’t be used. It’s recommended that this\nmove is forgotten. Once forgotten, this move can’t\nbe remembered.
+This move can’t be used. It’s recommended that this\nmove is forgotten. Once forgotten, this move can’t\nbe remembered.
+This move can’t be used. It’s recommended that this\nmove is forgotten. Once forgotten, this move can’t\nbe remembered.
+This move can’t be used. It’s recommended that this\nmove is forgotten. Once forgotten, this move can’t\nbe remembered.
+The user restores its own HP by up to half its max HP.\nIt regains more HP in a sandstorm.
+Although this move has great power, it works only on\nthe first turn each time the user enters battle.
+In addition to protecting the user from attacks, this move\nalso poisons any attacker that makes direct contact.
+The user attacks while simultaneously stitching the\ntarget’s shadow to the ground to prevent the target\nfrom fleeing.
+The user swings both arms and hits the target.\nThe target’s stat changes don’t affect the damage\ninflicted by this move.
+The user bursts into song, emitting many bubbles.\nAny Pokémon suffering from a burn will be cured\nby the touch of these bubbles.
+The user swings its strong, heavy fist at the target to\ninflict damage. This also lowers the user’s Speed stat.
+The user restores the target’s HP by up to half its\nmax HP. More HP is restored when the ground is\nGrassy Terrain.
+The user fiercely attacks the target using its entire body.
+The user restores its own HP by the same amount as\nthe target’s Attack stat. It then lowers the target’s\nAttack stat.
+The user gathers light on the first turn, then fills a blade\nwith the light’s energy and attacks on the next turn.
+The user attacks by pelting the target with leaves.
+This move can’t be used. It’s recommended that this\nmove is forgotten. Once forgotten, this move can’t\nbe remembered.
+The user shoots poisonous threads to poison the target\nand lower the target’s Speed stat.
+This move can’t be used. It’s recommended that this\nmove is forgotten. Once forgotten, this move can’t\nbe remembered.
+This move can’t be used. It’s recommended that this\nmove is forgotten. Once forgotten, this move can’t\nbe remembered.
+The user attacks the target’s throat, and the resultant\nsuffering prevents the target from using sound-based\nmoves for two turns.
+The user attacks the enemy with a pollen puff that\nexplodes. If the target is an ally, it gives the ally a\npollen puff that restores its HP instead.
+The user entangles the target with its anchor chain while\nattacking. The target becomes unable to flee.
+This protects Pokémon on the ground from priority\nmoves and powers up Psychic-type moves for five turns.
+The user makes a lunge at the target, attacking with\nfull force. This also lowers the target’s Attack stat.
+The user strikes the target with a burning lash. This also\nlowers the target’s Defense stat.
+The user boasts its strength and attacks the target.\nThe more the user’s stats are boosted, the greater the\nmove’s power.
+To inflict massive damage, the user burns itself out.\nAfter using this move, the user will no longer be\nFire type.
+The user exchanges Speed stats with the target.
+The user stabs the target with a sharp horn. This attack\nnever misses.
+The user cures the target’s status condition. If the move\nsucceeds, it also restores the user’s own HP.
+The user attacks the target by dancing with all its might.\nThis move becomes the same type as the user’s type.
+If the Pokémon damaged by this move have already\nused their moves that turn, this move eliminates the\neffects of those Pokémon’s Abilities.
+The user lands an intense kick of tropical origins on\nthe target. This also lowers the target’s Attack stat.
+The user instructs the target to reuse the move last used\nby the target.
+The user first heats up its beak, and then it attacks the\ntarget. Making direct contact with the user while it’s\nheating up its beak results in a burn.
+The user rubs the scales on its entire body and makes\na huge noise to attack opposing Pokémon. The user’s\nDefense stat is lowered after the attack.
+This move can’t be used. It’s recommended that this\nmove is forgotten. Once forgotten, this move can’t\nbe remembered.
+The user swings its body around violently to inflict\ndamage on everything in its vicinity.
+This move reduces damage from physical and special\nmoves for five turns. This can be used only when it is\nsnowing.
+This move can’t be used. It’s recommended that this\nmove is forgotten. Once forgotten, this move can’t\nbe remembered.
+This move can’t be used. It’s recommended that this\nmove is forgotten. Once forgotten, this move can’t\nbe remembered.
+This move can’t be used. It’s recommended that this\nmove is forgotten. Once forgotten, this move can’t\nbe remembered.
+This move can’t be used. It’s recommended that this\nmove is forgotten. Once forgotten, this move can’t\nbe remembered.
+This move can’t be used. It’s recommended that this\nmove is forgotten. Once forgotten, this move can’t\nbe remembered.
+This move can’t be used. It’s recommended that this\nmove is forgotten. Once forgotten, this move can’t\nbe remembered.
+This move can’t be used. It’s recommended that this\nmove is forgotten. Once forgotten, this move can’t\nbe remembered.
+This move can’t be used. It’s recommended that this\nmove is forgotten. Once forgotten, this move can’t\nbe remembered.
+This move can’t be used. It’s recommended that this\nmove is forgotten. Once forgotten, this move can’t\nbe remembered.
+The user sets a shell trap. If the user is hit by a physical\nmove, the trap will explode and inflict damage on\nopposing Pokémon.
+The user unleashes a strong beam. The recoil from this\nmove harshly lowers the user’s Sp. Atk stat.
+The user attacks by biting the target with its psychic\ncapabilities. This move can also break barriers, such as\nLight Screen and Reflect.
+Driven by frustration, the user attacks the target.\nThis move’s power is doubled if the user’s previous\nmove failed.
+The user attacks by beating the target with a bone\nthat contains a spirit. This may also lower the target’s\nDefense stat.
+The user smashes into the target at high speed.\nThis move always goes first.
+The user slams into the target using a full-force blast of\nwater. This may also lower the target’s Defense stat.
+The user shoots powerful lasers using the power of\na prism. The user can’t move on the next turn.
+The user hides in the target’s shadow, steals the target’s\nstat boosts, and then attacks.
+The user slams into the target with the force of a meteor.\nThis move can be used on the target regardless of\nits Ability.
+The user emits a sinister ray to attack the target.\nThis move can be used on the target regardless of\nits Ability.
+The user gets teary-eyed to make the target lose its\ncombative spirit. This lowers the target’s Attack and\nSp. Atk stats.
+The user crashes into the target, delivering a powerful\nelectric shock. This may also make the target flinch.
+The user hits the target with the full wrath of nature.\nThis cuts the target’s HP in half.
+Cloaking itself in powerful energy, the user slams into\nthe target to inflict damage. This move’s type changes\ndepending on the kind of memory disc held by the user.
+This move can’t be used. It’s recommended that this\nmove is forgotten. Once forgotten, this move can’t\nbe remembered.
+The user attacks everything around it by causing its own\nhead to explode. This also damages the user.
+The user attacks with electrically charged fists. This move\nchanges Normal-type moves to Electric-type moves.
+The user attacks the target with a pillar of light. This\nmove inflicts damage using the Attack or Sp. Atk stat—\nwhichever is higher for the user.
+This move can’t be used. It’s recommended that this\nmove is forgotten. Once forgotten, this move can’t\nbe remembered.
+This move can’t be used. It’s recommended that this\nmove is forgotten. Once forgotten, this move can’t\nbe remembered.
+This move can’t be used. It’s recommended that this\nmove is forgotten. Once forgotten, this move can’t\nbe remembered.
+This move can’t be used. It’s recommended that this\nmove is forgotten. Once forgotten, this move can’t\nbe remembered.
+This move can’t be used. It’s recommended that this\nmove is forgotten. Once forgotten, this move can’t\nbe remembered.
+This move can’t be used. It’s recommended that this\nmove is forgotten. Once forgotten, this move can’t\nbe remembered.
+This move can’t be used. It’s recommended that this\nmove is forgotten. Once forgotten, this move can’t\nbe remembered.
+This move can’t be used. It’s recommended that this\nmove is forgotten. Once forgotten, this move can’t\nbe remembered.
+This move can’t be used. It’s recommended that this\nmove is forgotten. Once forgotten, this move can’t\nbe remembered.
+This move can’t be used. It’s recommended that this\nmove is forgotten. Once forgotten, this move can’t\nbe remembered.
+This move can’t be used. It’s recommended that this\nmove is forgotten. Once forgotten, this move can’t\nbe remembered.
+This move can’t be used. It’s recommended that this\nmove is forgotten. Once forgotten, this move can’t\nbe remembered.
+This move can’t be used. It’s recommended that this\nmove is forgotten. Once forgotten, this move can’t\nbe remembered.
+This move can’t be used. It’s recommended that this\nmove is forgotten. Once forgotten, this move can’t\nbe remembered.
+This move can’t be used. It’s recommended that this\nmove is forgotten. Once forgotten, this move can’t\nbe remembered.
+This move can’t be used. It’s recommended that this\nmove is forgotten. Once forgotten, this move can’t\nbe remembered.
+This move can’t be used. It’s recommended that this\nmove is forgotten. Once forgotten, this move can’t\nbe remembered.
+This move can’t be used. It’s recommended that this\nmove is forgotten. Once forgotten, this move can’t\nbe remembered.
+This move can’t be used. It’s recommended that this\nmove is forgotten. Once forgotten, this move can’t\nbe remembered.
+The user uses the hex nut in its chest as an axis to spin,\nstriking the target with its arms twice in a row. This may\nalso make the target flinch.
+This move enables the user to protect itself from\nall attacks. Its chance of failing rises if it is used\nin succession.
+The user condenses energy within its body and unleashes\nthat energy from its core to inflict damage.
+The user ignores the effects of opposing Pokémon’s\nmoves and Abilities that draw in moves, allowing this\nmove to hit the chosen target.
+This move prevents the user and the target from\nswitching out until either of them faints. The effect\ngoes away if either of the Pokémon leaves the field.
+The user eats its held Berry, then sharply boosts its\nDefense stat.
+This move boosts all the user’s stats but prevents\nthe user from switching out or fleeing.
+The user pours sticky tar over the target, lowering the\ntarget’s Speed stat. The target becomes weaker to\nFire-type moves.
+The user scatters a cloud of magic powder that changes\nthe target’s type to Psychic.
+The user attacks twice using Dreepy. If there are two\nopposing Pokémon, this move hits each of them once.
+The user has teatime with all the Pokémon currently in\nthe battle. Each Pokémon eats its held Berry.
+The user locks the target in and prevents it from fleeing.\nThis move also lowers the target’s Defense and Sp. Def\nevery turn.
+The user stabs the target with its electrified beak.\nThis move’s power is doubled if the user moves\nbefore the target.
+The user rends the target with its hard gills. This move’s\npower is doubled if the user moves before the target.
+With its mysterious power, the user swaps the effects on\neither side of the field.
+This is a Fire-type attack Dynamax Pokémon use.\nThe user intensifies the sun for five turns.
+This is a Bug-type attack Dynamax Pokémon use.\nThis lowers the target’s Sp. Atk stat.
+This is an Electric-type attack Dynamax Pokémon use.\nThe user turns the ground into Electric Terrain for\nfive turns.
+This is a Normal-type attack Dynamax Pokémon use.\nThis lowers the target’s Speed stat.
+This is a Fighting-type attack Dynamax Pokémon use.\nThis boosts ally Pokémon’s Attack stats.
+This is a Ghost-type attack Dynamax Pokémon use.\nThis lowers the target’s Defense stat.
+This is an Ice-type attack Dynamax Pokémon use.\nThe user summons a snowstorm lasting five turns.
+This is a Poison-type attack Dynamax Pokémon use.\nThis boosts ally Pokémon’s Sp. Atk stats.
+This is a Water-type attack Dynamax Pokémon use.\nThe user summons a heavy rain that falls for five turns.
+This is a Flying-type attack Dynamax Pokémon use.\nThis boosts ally Pokémon’s Speed stats.
+This is a Fairy-type attack Dynamax Pokémon use.\nThe user turns the ground into Misty Terrain for\nfive turns.
+This is a Dragon-type attack Dynamax Pokémon use.\nThis lowers the target’s Attack stat.
+This is a Psychic-type attack Dynamax Pokémon use.\nThe user turns the ground into Psychic Terrain for\nfive turns.
+This is a Rock-type attack Dynamax Pokémon use.\nThe user summons a sandstorm lasting five turns.
+This is a Ground-type attack Dynamax Pokémon use.\nThis boosts ally Pokémon’s Sp. Def stats.
+This is a Dark-type attack Dynamax Pokémon use.\nThis lowers the target’s Sp. Def stat.
+This is a Grass-type attack Dynamax Pokémon use.\nThe user turns the ground into Grassy Terrain for\nfive turns.
+This is a Steel-type attack Dynamax Pokémon use.\nThis boosts ally Pokémon’s Defense stats.
+The user boosts all its stats by using some of its own HP.
+The user attacks by slamming its body into the target.\nThe higher the user’s Defense stat, the greater the\ndamage this move deals.
+The user sharply boosts the target’s Attack and Sp. Atk\nstats by decorating the target.
+The user plays its drum, controlling the drum’s roots\nto attack the target. This also lowers the target’s\nSpeed stat.
+The user snares the target in a snap trap that inflicts\ndamage for four to five turns.
+The user attacks by igniting a small stone and launching\nit as a fiery ball at the target. This may also leave the\ntarget with a burn.
+The user wields a large, powerful sword using its whole\nbody and cuts the target in a vigorous attack.
+The user’s body becomes a firm shield and slams into\nthe target fiercely.
+Morpeko attacks and boosts its Speed stat with the\nenergy stored in its cheeks. This move’s type changes\ndepending on the user’s form.
+The user swings its tough tail wildly and attacks opposing\nPokémon. This also lowers their Attack stats.
+The user attacks the target by poking it with a sharply\npointed branch.
+The user attacks opposing Pokémon by twanging a guitar\nor bass guitar, causing a huge echo and strong vibration.
+The user attacks the target with an acidic liquid created\nfrom tart apples. This also lowers the target’s\nSp. Def stat.
+The user inflicts damage by dropping an apple from\nhigh above. This also lowers the target’s Defense stat.
+The user attacks the target with so much force that it\ncould break the target’s spirit. This also lowers the\ntarget’s Sp. Atk stat.
+The user attacks the target by emitting steam. This may\nalso confuse the target.
+The user scatters mysterious water around and restores\nthe HP of itself and its ally Pokémon currently in\nthe battle.
+This move enables the user to protect itself from all\nattacks. Its chance of failing rises if used in succession.\nDirect contact harshly lowers the attacker’s Defense stat.
+The user pretends to bow its head, but then it stabs the\ntarget with its disheveled hair. This attack never misses.
+The user attacks wildly with its thick leek. The user can’t\nmove on the next turn, because the force of this move\nmakes it stagger.
+This move can’t be used. It’s recommended that this\nmove is forgotten. Once forgotten, this move can’t\nbe remembered.
+The user fires a beam of steel that it collected from its\nentire body. This also damages the user.
+The user attacks the target with its psychic power.\nWhen the ground is Psychic Terrain, this move’s power\nis boosted and it damages all opposing Pokémon.
+The user attacks while destroying the terrain. This move\nfails if the ground hasn’t turned into a terrain.
+The user attacks by shooting scales two to five times\nin a row. This move boosts the user’s Speed stat but\nlowers its Defense stat.
+The user gathers energy from space and boosts its\nSp. Atk stat on the first turn, then attacks on the\nnext turn.
+This move is either physical or special—whichever will\ninflict more damage. This may also poison the target.
+The user attacks everything around it and faints upon\nusing this move. This move’s power is boosted on\nMisty Terrain.
+Gliding on the ground, the user attacks the target.\nThis move always goes first on Grassy Terrain.
+The user attacks with electricity rising from the ground.\nThis move’s power is doubled if the target is on\nElectric Terrain.
+The user utilizes the energy of the terrain to attack.\nThis move’s type and power change depending on\nthe terrain at the time the move is used.
+The user skitters behind the target to attack. This also\nlowers the target’s Sp. Atk stat.
+The user attacks with energy from jealousy. This leaves\nall opposing Pokémon that have had their stats boosted\nduring the turn with a burn.
+The user lashes out to vent its frustration toward the\ntarget. This move’s power is doubled if the user’s stats\nwere lowered during this turn.
+The user attacks by controlling the target’s item.\nThis move fails if the target isn’t holding an item.
+The user surrounds everything around it with highly\nacidic gas and melts away items held by other Pokémon.
+The user properly coaches its ally Pokémon, boosting\ntheir Attack and Defense stats.
+After making its attack, the user rushes back to switch\nplaces with a party Pokémon in waiting.
+A consecutive three-kick attack that becomes more\npowerful with each successful hit.
+The user slams the target with its wings to inflict damage.\nThe target is hit twice in a row.
+The user throws scorching sand at the target to attack.\nThis may also leave the target with a burn.
+The user becomes one with the jungle, restoring HP and\ncuring status conditions for itself and its ally Pokémon\ncurrently in the battle.
+The user, having mastered the Dark style, strikes the\ntarget with a fierce blow. This move always lands\na critical hit.
+The user, having mastered the Water style, strikes the\ntarget with a flowing motion three times in a row. This\nmove always lands a critical hit.
+The user traps the target inside a cage of sparking\nelectricity that inflicts damage for four to five turns.
+Converting its life-force into power, the user attacks\nopposing Pokémon. The lower the user’s HP, the lower\nthe move’s power.
+The user shoots its psychic power from its eyes to attack.\nThis may also leave the target frozen.
+The user transforms its wrath into a fire-like aura to\nattack. This may also make opposing Pokémon flinch.
+The user overwhelms the target with lightning-like\nmovement before delivering a kick. This also lowers\nthe target’s Defense stat.
+The user attacks by hurling a blizzard-cloaked icicle\nlance at opposing Pokémon.
+The user attacks by sending a frightful amount of small\nghosts at opposing Pokémon.
+The user attacks with its tremendous psychic power.\nThis also drains 3 PP from the move last used by the\ntarget.
+The user lashes out at the target with ruinous claws,\naiming to land a critical hit. This may also leave the\ntarget poisoned, paralyzed, or asleep.
+Cloaking itself in psychic energy, the user slams into\nthe target. This also boosts the user’s Defense stat.
+The user swaps its Attack and Defense stats.
+The user swings its stone axes at the target, aiming to\nland a critical hit. Stone splinters left behind by this\nattack float around the target.
+The user attacks by wrapping opposing Pokémon in\nfierce winds brimming with love and hate. This may also\nlower their Attack stats.
+The user attacks by emitting a mysterious power.\nThis also boosts the user’s Sp. Atk stat.
+The user rampages around spewing flames for two to\nthree turns. The user then becomes confused.
+The user shrouds itself in water and slams into the target\nwith its whole body to inflict damage. This also damages\nthe user quite a lot.
+The user launches its amassed chlorophyll to inflict\ndamage on the target. This also damages the user.
+The user hurls giant chunks of ice at the target to inflict\ndamage. This may also make the target flinch.
+The user performs an intense dance to usher in victory,\nboosting its Attack, Defense, and Speed stats.
+The user smashes into the target in a full-body tackle.\nThis also lowers the user’s Defense and Sp. Def stats.
+The user launches countless toxic barbs to inflict\ndamage. This may also poison the target. This move’s\npower is doubled if the target is already poisoned.
+The user slashes the target with aura-enriched wings.\nThis also boosts the user’s Speed stat. This move has\na heightened chance of landing a critical hit.
+The user attacks the target with spine-chilling resentment.\nThis also lowers the target’s Attack stat.
+The user makes its skin as hard as an iron shield, sharply\nboosting its Defense stat.
+The user kicks, then fires three arrows. This move has a\nheightened chance of landing a critical hit and may also\nlower the target’s Defense stat or make it flinch.
+The user attacks with myriad fireballs. This may also\nleave the target with a burn. This move’s power is\ndoubled if the target has a status condition.
+The user slashes its shell blade at the target, aiming to\nland a critical hit. Shell splinters left behind by this attack\nremain scattered under the target as spikes.
+The user attacks with savagely cold winds that cause\nboth body and spirit to tremble. This may also lower the\nSpeed stats of opposing Pokémon.
+The user summons a thunderous tempest and savagely\nattacks with lightning and wind. This may also leave\nopposing Pokémon with paralysis.
+The user attacks by wrapping opposing Pokémon in\nfierce winds and searingly hot sand. This may also leave\nthem with a burn.
+The user receives a blessing from the crescent moon,\nrestoring HP and curing status conditions for itself and\nits ally Pokémon currently in the battle.
+The user lifts its spirits, curing its own status conditions\nand boosting its Sp. Atk and Sp. Def stats.
+If the user has Terastallized, it unleashes energy of its\nTera Type. This move inflicts damage using the Attack or\nSp. Atk stat—whichever is higher for the user.
+The user spins a silken trap, protecting itself from\ndamage while lowering the Speed stat of any attacker\nthat makes direct contact.
+The user attacks by kicking up into the air and slamming\nits heel down upon the target. This may also confuse the\ntarget. If it misses, the user takes damage instead.
+The user attacks to avenge its allies. The more defeated\nallies there are in the user’s party, the greater the move’s\npower.
+The user attacks by unleashing a peculiar light that even\naffects the mind. This also harshly lowers the target’s\nSp. Def stat.
+The user attacks with elegant poise. If the user has a\nTatsugiri in its mouth, this move boosts one of the user’s\nstats based on the Tatsugiri’s form.
+The user summons a torrent around its fist and punches\nat blinding speed. This move always goes first.
+The user emits an incredibly spicy extract, sharply\nboosting the target’s Attack stat and harshly lowering\nthe target’s Defense stat.
+The user spins furiously by straining its legs, inflicting\ndamage on the target. This also harshly lowers the user’s\nSpeed stat.
+The user’s fellows gather in droves to perform a combo\nattack that hits the target one to ten times in a row.
+The user covers its feet in thin ice and twirls around,\nslamming into the target. This move’s spinning motion\nalso destroys the terrain.
+The user throws its entire body into a reckless charge.\nAttacks from opposing Pokémon during the next turn\ncannot miss and will inflict double damage.
+The user bestows a loving blessing, reviving a party\nPokémon that has fainted and restoring half that\nPokémon’s max HP.
+The user salt cures the target, inflicting damage every\nturn. Steel and Water types are more strongly affected\nby this move.
+The user performs a perfectly timed triple dive, hitting\nthe target with splashes of water three times in a row.
+The user performs a spin attack that can also eliminate\nthe effects of such moves as Bind, Wrap, and Leech\nSeed. This also poisons opposing Pokémon.
+The user captures the very essence of the target in a\nsketch. This changes the Abilities of the user and its ally\nPokémon to that of the target.
+The user sharply boosts its Attack, Sp. Atk, and Speed\nstats by using its own HP.
+The user slashes at the target after kowtowing to make\nthe target let down its guard. This attack never misses.
+The user throws a rigged bouquet of flowers at the\ntarget. This attack never misses and always lands a\ncritical hit.
+The user blows out raging flames as if singing a song,\nscorching the target. This also boosts the user’s\nSp. Atk stat.
+The user toys with the target and attacks it using\nlight and fluid dance steps. This also boosts the\nuser’s Speed stat.
+The user performs a tackle like a raging bull. This move’s\ntype depends on the user’s form. It can also break\nbarriers, such as Light Screen and Reflect.
+The user attacks by throwing out a mass of coins. This\nalso lowers the user’s Sp. Atk stat. Money is earned after\nthe battle.
+The user summons a ruinous disaster. This cuts the\ntarget’s HP in half.
+The user transforms and crashes to the ground, causing\na massive prehistoric explosion. This move’s power is\nboosted more than usual if it’s a supereffective hit.
+The user races forward at ultrafast speeds, piercing its\ntarget with futuristic electricity. This move’s power is\nboosted more than usual if it’s a supereffective hit.
+The user creates a substitute for itself using its own HP\nbefore switching places with a party Pokémon in waiting.
+The user tells a chillingly bad joke before switching\nplaces with a party Pokémon in waiting. This summons a\nsnowstorm lasting five turns.
+The user tidies up and removes the effects of Spikes,\nStealth Rock, Sticky Web, Toxic Spikes, and Substitute.\nThis also boosts the user’s Attack and Speed stats.
+The user summons a snowstorm lasting five turns.\nThis boosts the Defense stats of Ice types.
+The user attacks by pouncing on the target. This also\nlowers the target’s Speed stat.
+The user attacks suddenly as if leaping out from tall\ngrass. The user’s nimble footwork boosts its Speed stat.
+The user attacks the target by showering it with water\nthat’s so cold it saps the target’s power. This also lowers\nthe target’s Attack stat.
+The user spins the pointed part of its body at high speed\nto pierce the target. This attack can hit a target using a\nmove such as Protect or Detect.
+The user shoots mystical beams from its eyes to inflict\ndamage. The target is hit twice in a row.
+The user converts its rage into energy to attack. The\nmore times the user has been hit by attacks, the greater\nthe move’s power.
+The user shoots its own armor out as blazing projectiles.\nThis also lowers the user’s Defense and Sp. Def stats.
+The user focuses its bitter feelings toward the world of\nthe living into a slashing attack. The user’s HP is restored\nby up to half the damage taken by the target.
+The user discharges all the electricity from its body to\nperform a high-damage attack. After using this move,\nthe user will no longer be Electric type.
+The user swings its whole body around to attack with its\nhuge hammer. This move can’t be used twice in a row.
+The user retaliates with much greater force against\nthe opponent that last inflicted damage on it.
+The user expels pressurized water to cut at the target like\na blade. This move has a heightened chance of landing a\ncritical hit.
+-\n-\n-
+-\n-\n-
+-\n-\n-
+-\n-\n-
+-\n-\n-

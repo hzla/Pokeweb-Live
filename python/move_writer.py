@@ -18,17 +18,21 @@ def output_narc(rom, rom_name):
 
 		for ani in ["move_animations", "battle_animations"]:
 			narc_id = settings[ani]
-			narcfile_path = narcfile_path = f'{rom_name}/narcs/{ani}-{narc_id}.narc'
+			narcfile_path = f'{rom_name}/narcs/{ani}-{narc_id}.narc'
 			rom.files[narc_id] = ndspy.narc.NARC.fromFile(narcfile_path).save()
+			print(len(ndspy.narc.NARC.fromFile(narcfile_path).files))
+			print("length")
+
 
 	return tools.output_narc("moves", rom, rom_name)
 
-def write_readable_to_raw(file_name, narc_name="moves"):
+def write_readable_to_raw(file_name, narc_name="moves", skip_ani=False):
 	tools.write_readable_to_raw(file_name, narc_name, to_raw)
 
 
 def to_raw(readable):
 	raw = copy.deepcopy(readable)
+
 
 	raw["type"] = rom_data.TYPES.index(readable["type"].lower().capitalize())
 
@@ -85,24 +89,34 @@ def to_raw(readable):
 	b_animations_file_path = f'{rom_data.ROM_NAME}/narcs/battle_animations-{rom_data.B_ANIMATION_ID}.narc'
 
 	# for non expanded moves
-	print(readable["index"])
-	if readable["index"] < 673:
-		print("no exp")
-		animations = ndspy.narc.NARC.fromFile(animations_file_path)
-		print(readable["index"])
-		animations.files[readable["index"]] = animations.files[readable["animation"]]
-		# code.interact(local=dict(globals(), **locals()))
-		with open(animations_file_path, 'wb') as f:
-			f.write(animations.save())
+	if readable["animation"] != 0:
 
-	else: # for expanded moves
-		print("exp")
-		animations = ndspy.narc.NARC.fromFile(animations_file_path)
-		b_animations = ndspy.narc.NARC.fromFile(b_animations_file_path)
-		# code.interact(local=dict(globals(), **locals()))
-		b_animations.files[readable["index"] - 561] = animations.files[readable["animation"]]
-		with open(b_animations_file_path, 'wb') as f:
-			f.write(b_animations.save())
+		if readable["index"] < 673:
+			animations = ndspy.narc.NARC.fromFile(animations_file_path)
+			animations.files[readable["index"]] = animations.files[readable["animation"]]
+			# code.interact(local=dict(globals(), **locals()))
+			with open(animations_file_path, 'wb') as f:
+				f.write(animations.save())
+		else: # for expanded moves
+			animations = ndspy.narc.NARC.fromFile(animations_file_path)
+			b_animations = ndspy.narc.NARC.fromFile(b_animations_file_path)
+			# code.interact(local=dict(globals(), **locals()))
+			if rom_data.BASE_ROM == "BW2":
+				offset = 563
+			else:
+				offset = 561
+			try:
+				b_animations.files[readable["index"] - offset] = animations.files[readable["animation"]]
+				print(readable["animation"])
+			except:
+				print("animation out of bounds")
+				b_animations.files[readable["index"] - offset] = animations.files[1]
+			
+			print(len(b_animations.files))
+			with open(b_animations_file_path, 'wb') as f:
+				f.write(b_animations.save())
+
+
 
 	return raw
 	
