@@ -24,7 +24,8 @@ BASE_ROM = ""
 BASE_VERSION = ""
 
 def set_global_vars(rom_name):
-	
+	global TM_FORMAT, TM_OFFSET, MOVES
+
 	with open(f'{rom_name}/session_settings.json', "r") as outfile:  
 		settings = json.load(outfile) 
 		ROM_NAME = settings['rom_name']
@@ -119,6 +120,7 @@ def write_bytes(stream, n, data):
 ################ If run with arguments #############
 
 if len(sys.argv) > 2 and sys.argv[1] == "update":
+	set_global_vars(sys.argv[3])
 	write_readable_to_raw(sys.argv[3])
 	
 

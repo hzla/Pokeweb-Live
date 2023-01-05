@@ -9823,3 +9823,319 @@ App 49890 output: "deleting edited rom"
 [ E 2023-01-04 15:25:56.2771 71411/T5 Sec/Crypto.cpp:990 ]: Removing Passenger private key from keychain failed: Write permissions error.. Please remove the private key from the certificate labeled Phusion Passenger Open Source in your keychain.
 App 71427 output: "init"
 App 71460 output: {"rom"=>"projects/b6test", "password"=>"b6test"}
+[ N 2023-01-04 15:30:56.9842 71411/T4 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 71468, application /Users/andylee/Repos/Pokeweb (development)
+App 71460 output: "development"
+App 71460 output: {"file_name"=>"1", "field"=>"type_2", "value"=>"FAIRY", "narc"=>"personal"}
+App 71460 output: {"file_name"=>"1", "field"=>"type_2", "value"=>"FAIRY", "narc"=>"personal"}
+App 71460 output: {"file_name"=>"1", "field"=>"type_2", "value"=>"POISON", "narc"=>"personal"}
+App 71460 output: {"file_name"=>"1", "field"=>"type_2", "value"=>"POISON", "narc"=>"personal"}
+App 71460 output: {"file_name"=>"1", "field"=>"ability_3", "value"=>"Chlorophyll", "narc"=>"personal"}
+App 71460 output: {"file_name"=>"1", "field"=>"ability_3", "value"=>"Chlorophyll", "narc"=>"personal"}
+App 71460 output: "redirecting..."
+App 71460 output: "creating base rom"
+App 71460 output: "xdelta3 -d -s ./base/blank.nds ./base/B2.xdelta ./base/B2.nds"
+App 71460 output: "creating edited rom"
+App 71460 output: "xdelta3 -d -s ./base/B2.nds ./xdeltas/b6test.xdelta b6test.nds"
+App 71460 output: "creating edited rom"
+App 71460 output: "edited rom created"
+App 71460 output: "generating xdelta"
+App 71460 output: "xdelta3 -e -s ./base/B2.nds ./exports/b6test.nds ./exports/b6test_edited.xdelta"
+App 71460 output: xdelta3: file open failed: read: ./exports/b6test.nds: No such file or directory
+App 71460 output: "deleting base rom"
+App 71460 output: "deleting uploaded rom"
+App 71460 output: "deleting edited rom"
+App 71460 output: "creating base rom"
+App 71460 output: "xdelta3 -d -s ./base/blank.nds ./base/B2.xdelta ./base/B2.nds"
+App 71460 output: "creating edited rom"
+App 71460 output: "xdelta3 -d -s ./base/B2.nds ./xdeltas/b6test.xdelta b6test.nds"
+App 71460 output: "creating edited rom"
+App 71460 output: "edited rom created"
+App 71460 output: "generating xdelta"
+App 71460 output: "xdelta3 -e -s ./base/B2.nds ./exports/b6test.nds ./exports/b6test_edited.xdelta"
+App 71460 output: xdelta3: file open failed: read: ./exports/b6test.nds: No such file or directory
+App 71460 output: "deleting base rom"
+App 71460 output: "deleting uploaded rom"
+App 71460 output: "deleting edited rom"
+App 71460 output: "creating base rom"
+App 71460 output: "xdelta3 -d -s ./base/blank.nds ./base/B2.xdelta ./base/B2.nds"
+App 71460 output: "creating edited rom"
+App 71460 output: "xdelta3 -d -s ./base/B2.nds ./xdeltas/b6test.xdelta b6test.nds"
+App 71460 output: "creating edited rom"
+App 71460 output: "edited rom created"
+App 71460 output: "generating xdelta"
+App 71460 output: "xdelta3 -e -s ./base/B2.nds ./exports/b6test.nds ./exports/b6test_edited.xdelta"
+App 71460 output: xdelta3: file open failed: read: ./exports/b6test.nds: No such file or directory
+App 71460 output: "deleting base rom"
+App 71460 output: "deleting uploaded rom"
+App 71460 output: "deleting edited rom"
+
+[ N 2023-01-04 21:13:44.5522 71411/T8 age/Cor/CoreMain.cpp:671 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2023-01-04 21:13:44.5522 71411/T1 age/Cor/CoreMain.cpp:1246 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2023-01-04 21:13:44.5523 71411/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 71460, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2023-01-04 21:13:44.5526 71411/T8 Ser/Server.h:901 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2023-01-04 21:13:44.5526 71411/Tg Ser/Server.h:901 ]: [ServerThr.5] Freed 0 spare client objects
+[ N 2023-01-04 21:13:44.5526 71411/Ts Ser/Server.h:901 ]: [ServerThr.11] Freed 0 spare client objects
+[ N 2023-01-04 21:13:44.5526 71411/Tc Ser/Server.h:901 ]: [ServerThr.3] Freed 0 spare client objects
+[ N 2023-01-04 21:13:44.5526 71411/Ti Ser/Server.h:901 ]: [ServerThr.6] Freed 0 spare client objects
+[ N 2023-01-04 21:13:44.5526 71411/Ta Ser/Server.h:901 ]: [ServerThr.2] Freed 0 spare client objects
+[ N 2023-01-04 21:13:44.5526 71411/Tr Ser/Server.h:901 ]: [ServerThr.10] Freed 0 spare client objects
+[ N 2023-01-04 21:13:44.5526 71411/Tu Ser/Server.h:901 ]: [ServerThr.12] Freed 0 spare client objects
+[ N 2023-01-04 21:13:44.5526 71411/Tm Ser/Server.h:901 ]: [ServerThr.8] Freed 0 spare client objects
+[ N 2023-01-04 21:13:44.5526 71411/Tk Ser/Server.h:901 ]: [ServerThr.7] Freed 0 spare client objects
+[ N 2023-01-04 21:13:44.5528 71411/Ta Ser/Server.h:558 ]: [ServerThr.2] Shutdown finished
+[ N 2023-01-04 21:13:44.5527 71411/T8 Ser/Server.h:558 ]: [ServerThr.1] Shutdown finished
+[ N 2023-01-04 21:13:44.5526 71411/To Ser/Server.h:901 ]: [ServerThr.9] Freed 0 spare client objects
+[ N 2023-01-04 21:13:44.5527 71411/Tg Ser/Server.h:558 ]: [ServerThr.5] Shutdown finished
+[ N 2023-01-04 21:13:44.5530 71411/To Ser/Server.h:558 ]: [ServerThr.9] Shutdown finished
+[ N 2023-01-04 21:13:44.5528 71411/Tx Ser/Server.h:901 ]: [ApiServer] Freed 0 spare client objects
+[ N 2023-01-04 21:13:44.5526 71411/Te Ser/Server.h:901 ]: [ServerThr.4] Freed 0 spare client objects
+[ N 2023-01-04 21:13:44.5530 71411/Tx Ser/Server.h:558 ]: [ApiServer] Shutdown finished
+[ N 2023-01-04 21:13:44.5529 71411/Tk Ser/Server.h:558 ]: [ServerThr.7] Shutdown finished
+[ N 2023-01-04 21:13:44.5528 71411/Tr Ser/Server.h:558 ]: [ServerThr.10] Shutdown finished
+[ N 2023-01-04 21:13:44.5529 71411/Tu Ser/Server.h:558 ]: [ServerThr.12] Shutdown finished
+[ N 2023-01-04 21:13:44.5527 71411/Ts Ser/Server.h:558 ]: [ServerThr.11] Shutdown finished
+[ N 2023-01-04 21:13:44.5528 71411/Tc Ser/Server.h:558 ]: [ServerThr.3] Shutdown finished
+[ N 2023-01-04 21:13:44.5529 71411/Tm Ser/Server.h:558 ]: [ServerThr.8] Shutdown finished
+[ N 2023-01-04 21:13:44.5531 71411/Te Ser/Server.h:558 ]: [ServerThr.4] Shutdown finished
+[ N 2023-01-04 21:13:44.5528 71411/Ti Ser/Server.h:558 ]: [ServerThr.6] Shutdown finished
+[ N 2023-01-04 21:13:44.5533 71411/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 71460, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2023-01-04 21:13:45.6652 71411/T1 age/Cor/CoreMain.cpp:1325 ]: Passenger core shutdown finished
+[ N 2023-01-04 21:20:00.3437 81070/T1 age/Wat/WatchdogMain.cpp:1377 ]: Starting Passenger watchdog...
+[ N 2023-01-04 21:20:00.3722 81072/T1 age/Cor/CoreMain.cpp:1340 ]: Starting Passenger core...
+[ N 2023-01-04 21:20:00.3728 81072/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ N 2023-01-04 21:20:00.4147 81072/T1 age/Cor/CoreMain.cpp:1015 ]: Passenger core online, PID 81072
+[ N 2023-01-04 21:20:03.2854 81072/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+[ E 2023-01-04 21:20:03.2916 81072/T5 Sec/Crypto.cpp:990 ]: Removing Passenger private key from keychain failed: Write permissions error.. Please remove the private key from the certificate labeled Phusion Passenger Open Source in your keychain.
+App 81089 output: "init"
+App 81122 output: {"rom"=>"projects/b6test", "password"=>"b6test"}
+App 81122 output: {"file_name"=>"tms", "field"=>"tm_27", "value"=>"Return", "narc"=>"tm"}
+App 81122 output: {"file_name"=>"tms", "field"=>"tm_27", "value"=>"Return", "narc"=>"tm"}
+App 81122 output: Traceback (most recent call last):
+App 81122 output:   File "/Users/andylee/Repos/Pokeweb/python/tm_writer.py", line 123, in <module>
+App 81122 output:     
+App 81122 output: write_readable_to_raw(sys.argv[3])
+App 81122 output:   File "/Users/andylee/Repos/Pokeweb/python/tm_writer.py", line 97, in write_readable_to_raw
+App 81122 output:     new_raw_data = to_raw(narc_data["readable"])
+App 81122 output: 
+App 81122 output:              
+App 81122 output:       ^^^^^^^^
+App 81122 output: ^^^^^^
+App 81122 output: ^^^^^^
+App 81122 output: ^^^^^^^^^
+App 81122 output:   File "/Users/andylee/Repos/Pokeweb/python/tm_writer.py", line 107, in to_raw
+App 81122 output:     
+App 81122 output: raw[f'tm_{n}'] = MOVES.index(readable[f'tm_{n}'])
+App 81122 output:   
+App 81122 output:       
+App 81122 output:        
+App 81122 output:      
+App 81122 output:  ^^^^^
+App 81122 output: NameError: name 'MOVES' is not defined
+App 81122 output: 
+App 81122 output: {"file_name"=>"tms", "field"=>"tm_27", "value"=>"Bolt Strike", "narc"=>"tm"}
+App 81122 output: {"file_name"=>"tms", "field"=>"tm_27", "value"=>"Bolt Strike", "narc"=>"tm"}
+App 81122 output: Traceback (most recent call last):
+App 81122 output:   File "/Users/andylee/Repos/Pokeweb/python/tm_writer.py", line 123, in <module>
+App 81122 output:     write_readable_to_raw(sys.argv[3])
+App 81122 output: 
+App 81122 output:   File "/Users/andylee/Repos/Pokeweb/python/tm_writer.py", line 97, in write_readable_to_raw
+App 81122 output:     new_raw_data = to_raw(narc_data["readable"])
+App 81122 output: 
+App 81122 output:       
+App 81122 output:              ^^^^^^^^^^^^^^^^^
+App 81122 output: ^^^^^^^^
+App 81122 output: ^^^^
+App 81122 output:   File "/Users/andylee/Repos/Pokeweb/python/tm_writer.py", line 107, in to_raw
+App 81122 output:     raw[f'tm_{n}'] = MOVES.index(readable[f'tm_{n}'])
+App 81122 output:  
+App 81122 output:                     ^^^^^
+App 81122 output: NameError: 
+App 81122 output: name 'MOVES' is not defined
+App 81122 output: {"file_name"=>"tms", "field"=>"tm_27", "value"=>"Return", "narc"=>"tm"}
+App 81122 output: {"file_name"=>"tms", "field"=>"tm_27", "value"=>"Return", "narc"=>"tm"}
+App 81122 output: Traceback (most recent call last):
+App 81122 output:   File "/Users/andylee/Repos/Pokeweb/python/tm_writer.py", line 123, in <module>
+App 81122 output:     write_readable_to_raw(sys.argv[3])
+App 81122 output: 
+App 81122 output:   File "/Users/andylee/Repos/Pokeweb/python/tm_writer.py", line 97, in write_readable_to_raw
+App 81122 output:     new_raw_data = to_raw(narc_data["readable"])
+App 81122 output: 
+App 81122 output:           
+App 81122 output:          ^^^^^^^
+App 81122 output: ^^^^^^^
+App 81122 output: ^^^^^^^^
+App 81122 output: ^^^^^^^
+App 81122 output: 
+App 81122 output:   File "/Users/andylee/Repos/Pokeweb/python/tm_writer.py", line 107, in to_raw
+App 81122 output:     raw[f'tm_{n}'] = MOVES.index(readable[f'tm_{n}'])
+App 81122 output:     
+App 81122 output:       
+App 81122 output:       
+App 81122 output:      
+App 81122 output: ^^^^^
+App 81122 output: 
+App 81122 output: NameError: 
+App 81122 output: name 'MOVES' is not defined
+App 81122 output: 
+App 81122 output: {"file_name"=>"tms", "field"=>"tm_27", "value"=>"Bolt Strike", "narc"=>"tm"}
+App 81122 output: {"file_name"=>"tms", "field"=>"tm_27", "value"=>"Bolt Strike", "narc"=>"tm"}
+App 81122 output: Traceback (most recent call last):
+App 81122 output:   File "/Users/andylee/Repos/Pokeweb/python/tm_writer.py", line 123, in <module>
+App 81122 output:     
+App 81122 output: write_readable_to_raw(sys.argv[3])
+App 81122 output:   File "/Users/andylee/Repos/Pokeweb/python/tm_writer.py", line 97, in write_readable_to_raw
+App 81122 output:     
+App 81122 output: new_raw_data = to_raw(narc_data["readable"])
+App 81122 output:   
+App 81122 output:       
+App 81122 output:       
+App 81122 output:      ^
+App 81122 output: ^^^^^^^^
+App 81122 output: ^^^^^
+App 81122 output: ^^^^^^
+App 81122 output: ^^^^^^^^^
+App 81122 output: 
+App 81122 output:   File "/Users/andylee/Repos/Pokeweb/python/tm_writer.py", line 107, in to_raw
+App 81122 output:     raw[f'tm_{n}'] = MOVES.index(readable[f'tm_{n}'])
+App 81122 output: 
+App 81122 output:            
+App 81122 output:      
+App 81122 output:    
+App 81122 output:   ^^^
+App 81122 output: ^^
+App 81122 output: NameError
+App 81122 output: : name 'MOVES' is not defined
+App 81122 output: 
+App 81122 output: {"file_name"=>"tms", "field"=>"tm_27", "value"=>"Bolt Strike", "narc"=>"tm"}
+App 81122 output: {"file_name"=>"tms", "field"=>"tm_27", "value"=>"Bolt Strike", "narc"=>"tm"}
+App 81122 output: Traceback (most recent call last):
+App 81122 output:   File "/Users/andylee/Repos/Pokeweb/python/tm_writer.py", line 123, in <module>
+App 81122 output:     write_readable_to_raw(sys.argv[3])
+App 81122 output:   File "/Users/andylee/Repos/Pokeweb/python/tm_writer.py", line 97, in write_readable_to_raw
+App 81122 output:     new_raw_data = to_raw(narc_data["readable"])
+App 81122 output: 
+App 81122 output:                  
+App 81122 output:   ^^^^^^^^^^^^^^
+App 81122 output: ^^^^^^
+App 81122 output: ^^^^^^
+App 81122 output: ^^^
+App 81122 output:   File "/Users/andylee/Repos/Pokeweb/python/tm_writer.py", line 107, in to_raw
+App 81122 output:     raw[f'tm_{n}'] = MOVES.index(readable[f'tm_{n}'])
+App 81122 output:                 
+App 81122 output:      ^^^^^
+App 81122 output: NameError: name 'MOVES' is not defined
+App 81122 output: 
+App 81122 output: {"file_name"=>"tms", "field"=>"tm_27", "value"=>"Bolt Strike", "narc"=>"tm"}
+App 81122 output: {"file_name"=>"tms", "field"=>"tm_27", "value"=>"Bolt Strike", "narc"=>"tm"}
+App 81122 output: Traceback (most recent call last):
+App 81122 output:   File "/Users/andylee/Repos/Pokeweb/python/tm_writer.py", line 123, in <module>
+App 81122 output:     set_global_vars()
+App 81122 output: TypeError: 
+App 81122 output: set_global_vars() missing 1 required positional argument: 'rom_name'
+App 81122 output: {"file_name"=>"tms", "field"=>"tm_27", "value"=>"Bolt Strike", "narc"=>"tm"}
+App 81122 output: {"file_name"=>"tms", "field"=>"tm_27", "value"=>"Bolt Strike", "narc"=>"tm"}
+App 81122 output: "creating base rom"
+App 81122 output: "xdelta3 -d -s ./base/blank.nds ./base/B2.xdelta ./base/B2.nds"
+App 81122 output: "creating edited rom"
+App 81122 output: "xdelta3 -d -s ./base/B2.nds ./xdeltas/b6test.xdelta b6test.nds"
+App 81122 output: xdelta3: to overwrite output file specify -f: b6test.nds
+App 81122 output: "creating edited rom"
+App 81122 output: "edited rom created"
+App 81122 output: "generating xdelta"
+App 81122 output: "xdelta3 -e -s ./base/B2.nds ./exports/b6test.nds ./exports/b6test_edited.xdelta"
+App 81122 output: xdelta3: file open failed: read: ./exports/b6test.nds: No such file or directory
+App 81122 output: "deleting base rom"
+App 81122 output: "deleting uploaded rom"
+App 81122 output: "deleting edited rom"
+App 81122 output: "creating base rom"
+App 81122 output: "xdelta3 -d -s ./base/blank.nds ./base/B2.xdelta ./base/B2.nds"
+App 81122 output: "creating edited rom"
+App 81122 output: "xdelta3 -d -s ./base/B2.nds ./xdeltas/b6test.xdelta b6test.nds"
+App 81122 output: "creating edited rom"
+App 81122 output: "edited rom created"
+App 81122 output: "generating xdelta"
+App 81122 output: "xdelta3 -e -s ./base/B2.nds ./exports/b6test.nds ./exports/b6test_edited.xdelta"
+App 81122 output: xdelta3: file open failed: read: ./exports/b6test.nds: No such file or directory
+App 81122 output: "deleting base rom"
+App 81122 output: "deleting uploaded rom"
+App 81122 output: "deleting edited rom"
+
+[ N 2023-01-04 21:23:03.0894 81072/T8 age/Cor/CoreMain.cpp:671 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2023-01-04 21:23:03.0895 81072/T1 age/Cor/CoreMain.cpp:1246 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2023-01-04 21:23:03.0895 81072/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 81122, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2023-01-04 21:23:03.0901 81072/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 81130, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2023-01-04 21:23:03.0903 81072/T8 Ser/Server.h:901 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2023-01-04 21:23:03.0903 81072/Tf Ser/Server.h:901 ]: [ServerThr.4] Freed 0 spare client objects
+[ N 2023-01-04 21:23:03.0902 81072/To Ser/Server.h:901 ]: [ServerThr.9] Freed 0 spare client objects
+[ N 2023-01-04 21:23:03.0903 81072/Tc Ser/Server.h:901 ]: [ServerThr.3] Freed 0 spare client objects
+[ N 2023-01-04 21:23:03.0907 81072/Tf Ser/Server.h:558 ]: [ServerThr.4] Shutdown finished
+[ N 2023-01-04 21:23:03.0902 81072/Ta Ser/Server.h:901 ]: [ServerThr.2] Freed 0 spare client objects
+[ N 2023-01-04 21:23:03.0907 81072/To Ser/Server.h:558 ]: [ServerThr.9] Shutdown finished
+[ N 2023-01-04 21:23:03.0903 81072/Tk Ser/Server.h:901 ]: [ServerThr.7] Freed 0 spare client objects
+[ N 2023-01-04 21:23:03.0908 81072/Ta Ser/Server.h:558 ]: [ServerThr.2] Shutdown finished
+[ N 2023-01-04 21:23:03.0903 81072/Ts Ser/Server.h:901 ]: [ServerThr.11] Freed 0 spare client objects
+[ N 2023-01-04 21:23:03.0902 81072/Tg Ser/Server.h:901 ]: [ServerThr.5] Freed 0 spare client objects
+[ N 2023-01-04 21:23:03.0908 81072/Ts Ser/Server.h:558 ]: [ServerThr.11] Shutdown finished
+[ N 2023-01-04 21:23:03.0906 81072/T8 Ser/Server.h:558 ]: [ServerThr.1] Shutdown finished
+[ N 2023-01-04 21:23:03.0909 81072/Tg Ser/Server.h:558 ]: [ServerThr.5] Shutdown finished
+[ N 2023-01-04 21:23:03.0902 81072/Tq Ser/Server.h:901 ]: [ServerThr.10] Freed 0 spare client objects
+[ N 2023-01-04 21:23:03.0902 81072/Tm Ser/Server.h:901 ]: [ServerThr.8] Freed 0 spare client objects
+[ N 2023-01-04 21:23:03.0903 81072/Ti Ser/Server.h:901 ]: [ServerThr.6] Freed 0 spare client objects
+[ N 2023-01-04 21:23:03.0909 81072/Tm Ser/Server.h:558 ]: [ServerThr.8] Shutdown finished
+[ N 2023-01-04 21:23:03.0902 81072/Tu Ser/Server.h:901 ]: [ServerThr.12] Freed 0 spare client objects
+[ N 2023-01-04 21:23:03.0907 81072/Tc Ser/Server.h:558 ]: [ServerThr.3] Shutdown finished
+[ N 2023-01-04 21:23:03.0908 81072/Tk Ser/Server.h:558 ]: [ServerThr.7] Shutdown finished
+[ N 2023-01-04 21:23:03.0909 81072/Tq Ser/Server.h:558 ]: [ServerThr.10] Shutdown finished
+[ N 2023-01-04 21:23:03.0910 81072/Tu Ser/Server.h:558 ]: [ServerThr.12] Shutdown finished
+[ N 2023-01-04 21:23:03.0910 81072/Ti Ser/Server.h:558 ]: [ServerThr.6] Shutdown finished
+[ N 2023-01-04 21:23:03.0911 81072/Tw Ser/Server.h:901 ]: [ApiServer] Freed 0 spare client objects
+[ N 2023-01-04 21:23:03.0914 81072/Tw Ser/Server.h:558 ]: [ApiServer] Shutdown finished
+[ N 2023-01-04 21:23:03.0923 81072/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 81122, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2023-01-04 21:23:03.0923 81072/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 81130, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2023-01-04 21:23:04.1912 81072/T1 age/Cor/CoreMain.cpp:1325 ]: Passenger core shutdown finished
+[ N 2023-01-04 21:28:24.4815 81535/T1 age/Wat/WatchdogMain.cpp:1377 ]: Starting Passenger watchdog...
+[ N 2023-01-04 21:28:24.5075 81537/T1 age/Cor/CoreMain.cpp:1340 ]: Starting Passenger core...
+[ N 2023-01-04 21:28:24.5078 81537/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ N 2023-01-04 21:28:24.5371 81537/T1 age/Cor/CoreMain.cpp:1015 ]: Passenger core online, PID 81537
+[ N 2023-01-04 21:28:27.3185 81537/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+[ E 2023-01-04 21:28:27.3249 81537/T5 Sec/Crypto.cpp:990 ]: Removing Passenger private key from keychain failed: Write permissions error.. Please remove the private key from the certificate labeled Phusion Passenger Open Source in your keychain.
+App 81553 output: "init"
+App 81586 output: {"rom"=>"projects/b6test", "password"=>"b6test"}
+App 81586 output: "creating base rom"
+App 81586 output: "xdelta3 -d -s ./base/blank.nds ./base/B2.xdelta ./base/B2.nds"
+App 81586 output: "creating edited rom"
+App 81586 output: "xdelta3 -d -s ./base/B2.nds ./xdeltas/b6test.xdelta b6test.nds"
+App 81586 output: xdelta3: to overwrite output file specify -f: b6test.nds
+App 81586 output: "creating edited rom"
+App 81586 output: "edited rom created"
+App 81586 output: "generating xdelta"
+App 81586 output: "xdelta3 -e -s ./base/B2.nds ./exports/b6test.nds ./exports/b6test_edited.xdelta"
+App 81586 output: "deleting base rom"
+App 81586 output: "deleting uploaded rom"
+App 81586 output: "deleting edited rom"
+App 81586 output: "creating base rom"
+App 81586 output: "xdelta3 -d -s ./base/blank.nds ./base/B2.xdelta ./base/B2.nds"
+App 81586 output: "creating edited rom"
+App 81586 output: "xdelta3 -d -s ./base/B2.nds ./xdeltas/b6test.xdelta b6test.nds"
+App 81586 output: "creating edited rom"
+App 81586 output: "edited rom created"
+App 81586 output: "generating xdelta"
+App 81586 output: "xdelta3 -e -s ./base/B2.nds ./exports/b6test.nds ./exports/b6test_edited.xdelta"
+App 81586 output: "deleting base rom"
+App 81586 output: "deleting uploaded rom"
+App 81586 output: "deleting edited rom"
+App 81586 output: {"file_name"=>"tms", "field"=>"tm_21", "value"=>"Frustration", "narc"=>"tm"}
+App 81586 output: {"file_name"=>"tms", "field"=>"tm_21", "value"=>"Frustration", "narc"=>"tm"}
+App 81586 output: {"file_name"=>"tms", "field"=>"tm_21", "value"=>"Sacred Fire", "narc"=>"tm"}
+App 81586 output: {"file_name"=>"tms", "field"=>"tm_21", "value"=>"Sacred Fire", "narc"=>"tm"}
+App 81586 output: "creating base rom"
+App 81586 output: "xdelta3 -d -s ./base/blank.nds ./base/B2.xdelta ./base/B2.nds"
+App 81586 output: "creating edited rom"
+App 81586 output: "xdelta3 -d -s ./base/B2.nds ./xdeltas/b6test.xdelta b6test.nds"
+App 81586 output: "creating edited rom"
+App 81586 output: "edited rom created"
+App 81586 output: "generating xdelta"
+App 81586 output: "xdelta3 -e -s ./base/B2.nds ./exports/b6test.nds ./exports/b6test_edited.xdelta"
+App 81586 output: "deleting base rom"
+App 81586 output: "deleting uploaded rom"
+App 81586 output: "deleting edited rom"

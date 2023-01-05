@@ -63,7 +63,7 @@ try:
 
 
 		if settings["output_arm9"] == True:
-			tm_writer.output_arm9()
+			tm_writer.output_arm9(rom_name)
 			mutable_rom = bytearray(data)
 			arm9_offset = 16384 #0x4000
 
@@ -80,7 +80,7 @@ try:
 			#update rom in memory
 			rom = ndspy.rom.NintendoDSRom(mutable_rom)
 
-			if settings["base_rom"] == "BW2":
+			if settings["base_rom"] == "BW24":
 
 				grotto_odds = 0
 				grotto_odds = open(f'{rom_name}/grotto_odds.bin','rb').read()
@@ -93,7 +93,7 @@ try:
 				B2_GROTTO_ODDS_OFFSET = 0x00055218
 				W2_GROTTO_ODDS_OFFSET = 0x00055218 - 12
 
-				if narc_info["base_version"] == "B2":
+				if settings["base_version"] == "B2":
 					GROTTO_ODDS_OFFSET = B2_GROTTO_ODDS_OFFSET
 				else:
 					GROTTO_ODDS_OFFSET = W2_GROTTO_ODDS_OFFSET
@@ -109,6 +109,7 @@ try:
 				rom.files[36] = overlay36.save(compress=True)
 		
 		for narc in narcs:
+			if narc == "tm": continue
 			rom = eval(f'{narc}_writer.output_narc(rom, rom_name)')
 
 				

@@ -42,7 +42,7 @@ class MyApp < Sinatra::Base
 		return if !$rom_name or $rom_name == ""
 
 		@rom_name = $rom_name.split("/")[1]
-		tabs = ['headers', 'personal', 'trainers', 'encounters', 'moves', 'items', 'marts', 'grottos', 'story_texts', 'info_texts']
+		tabs = ['headers', 'personal', 'trainers', 'encounters', 'moves', 'items', 'tms','marts', 'grottos', 'story_texts', 'info_texts']
 		
 		begin
 			if SessionSettings.base_rom == "BW"
