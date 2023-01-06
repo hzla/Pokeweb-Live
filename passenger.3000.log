@@ -10139,3 +10139,3079 @@ App 81586 output: "xdelta3 -e -s ./base/B2.nds ./exports/b6test.nds ./exports/b6
 App 81586 output: "deleting base rom"
 App 81586 output: "deleting uploaded rom"
 App 81586 output: "deleting edited rom"
+App 81586 output: "redirecting..."
+App 81586 output: "creating base rom"
+App 81586 output: "xdelta3 -d -s ./base/blank.nds ./base/B2.xdelta ./base/B2.nds"
+App 81586 output: "creating edited rom"
+App 81586 output: "xdelta3 -d -s ./base/B2.nds ./xdeltas/b6test.xdelta b6test.nds"
+App 81586 output: "creating edited rom"
+App 81586 output: "edited rom created"
+App 81586 output: "generating xdelta"
+App 81586 output: "xdelta3 -e -s ./base/B2.nds ./exports/b6test.nds ./exports/b6test_edited.xdelta"
+App 81586 output: "deleting base rom"
+App 81586 output: "deleting uploaded rom"
+App 81586 output: "deleting edited rom"
+App 81586 output: "pokedex"
+App 81586 output: 2023-01-05 22:46:36 - NoMethodError - undefined method `[]' for nil:NilClass:
+App 81586 output: 	/Users/andylee/Repos/Pokeweb/models/action.rb:161:in `block (2 levels) in output_moves'
+App 81586 output: 	/Users/andylee/Repos/Pokeweb/models/action.rb:158:in `each'
+App 81586 output: 	/Users/andylee/Repos/Pokeweb/models/action.rb:158:in `each_with_index'
+App 81586 output: 	/Users/andylee/Repos/Pokeweb/models/action.rb:158:in `block in output_moves'
+App 81586 output: 	/Users/andylee/Repos/Pokeweb/models/action.rb:157:in `open'
+App 81586 output: 	/Users/andylee/Repos/Pokeweb/models/action.rb:157:in `output_moves'
+App 81586 output: 	/Users/andylee/Repos/Pokeweb/models/action.rb:50:in `docs'
+App 81586 output: 	/Users/andylee/Repos/Pokeweb/routes.rb:646:in `block in <class:MyApp>'
+App 81586 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1696:in `call'
+App 81586 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1696:in `block in compile!'
+App 81586 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1009:in `block (3 levels) in route!'
+App 81586 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1027:in `route_eval'
+App 81586 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1009:in `block (2 levels) in route!'
+App 81586 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1058:in `block in process_route'
+App 81586 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1056:in `catch'
+App 81586 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1056:in `process_route'
+App 81586 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1007:in `block in route!'
+App 81586 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1004:in `each'
+App 81586 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1004:in `route!'
+App 81586 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1128:in `block in dispatch!'
+App 81586 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `catch'
+App 81586 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `invoke'
+App 81586 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1123:in `dispatch!'
+App 81586 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:939:in `block in call!'
+App 81586 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `catch'
+App 81586 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `invoke'
+App 81586 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:939:in `call!'
+App 81586 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:928:in `call'
+App 81586 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/xss_header.rb:20:in `call'
+App 81586 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/path_traversal.rb:18:in `call'
+App 81586 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/json_csrf.rb:28:in `call'
+App 81586 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/base.rb:53:in `call'
+App 81586 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/base.rb:53:in `call'
+App 81586 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/frame_options.rb:33:in `call'
+App 81586 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/null_logger.rb:11:in `call'
+App 81586 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/head.rb:12:in `call'
+App 81586 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/show_exceptions.rb:23:in `call'
+App 81586 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:219:in `call'
+App 81586 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:2007:in `call'
+App 81586 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1566:in `block in call'
+App 81586 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1782:in `synchronize'
+App 81586 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1566:in `call'
+App 81586 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:266:in `context'
+App 81586 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:260:in `call'
+App 81586 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:266:in `context'
+App 81586 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:260:in `call'
+App 81586 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/rack/thread_handler_extension.rb:107:in `process_request'
+App 81586 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+App 81586 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+App 81586 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler.rb:419:in `block (3 levels) in start_threads'
+App 81586 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+
+[ N 2023-01-05 22:46:45.8740 81537/T8 age/Cor/CoreMain.cpp:671 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2023-01-05 22:46:45.8741 81537/T1 age/Cor/CoreMain.cpp:1246 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2023-01-05 22:46:45.8744 81537/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 81586, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2023-01-05 22:46:45.8758 81537/Ta Ser/Server.h:901 ]: [ServerThr.2] Freed 0 spare client objects
+[ N 2023-01-05 22:46:45.8759 81537/To Ser/Server.h:901 ]: [ServerThr.9] Freed 0 spare client objects
+[ N 2023-01-05 22:46:45.8759 81537/Ti Ser/Server.h:901 ]: [ServerThr.6] Freed 0 spare client objects
+[ N 2023-01-05 22:46:45.8758 81537/Tk Ser/Server.h:901 ]: [ServerThr.7] Freed 0 spare client objects
+[ N 2023-01-05 22:46:45.8762 81537/Ta Ser/Server.h:558 ]: [ServerThr.2] Shutdown finished
+[ N 2023-01-05 22:46:45.8759 81537/Tu Ser/Server.h:901 ]: [ServerThr.12] Freed 0 spare client objects
+[ N 2023-01-05 22:46:45.8758 81537/Tm Ser/Server.h:901 ]: [ServerThr.8] Freed 0 spare client objects
+[ N 2023-01-05 22:46:45.8763 81537/Tk Ser/Server.h:558 ]: [ServerThr.7] Shutdown finished
+[ N 2023-01-05 22:46:45.8764 81537/Tu Ser/Server.h:558 ]: [ServerThr.12] Shutdown finished
+[ N 2023-01-05 22:46:45.8762 81537/To Ser/Server.h:558 ]: [ServerThr.9] Shutdown finished
+[ N 2023-01-05 22:46:45.8759 81537/Tc Ser/Server.h:901 ]: [ServerThr.3] Freed 0 spare client objects
+[ N 2023-01-05 22:46:45.8763 81537/Ti Ser/Server.h:558 ]: [ServerThr.6] Shutdown finished
+[ N 2023-01-05 22:46:45.8758 81537/T8 Ser/Server.h:901 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2023-01-05 22:46:45.8759 81537/Te Ser/Server.h:901 ]: [ServerThr.4] Freed 0 spare client objects
+[ N 2023-01-05 22:46:45.8759 81537/Tq Ser/Server.h:901 ]: [ServerThr.10] Freed 0 spare client objects
+[ N 2023-01-05 22:46:45.8759 81537/Tg Ser/Server.h:901 ]: [ServerThr.5] Freed 0 spare client objects
+[ N 2023-01-05 22:46:45.8765 81537/T8 Ser/Server.h:558 ]: [ServerThr.1] Shutdown finished
+[ N 2023-01-05 22:46:45.8765 81537/Te Ser/Server.h:558 ]: [ServerThr.4] Shutdown finished
+[ N 2023-01-05 22:46:45.8765 81537/Tc Ser/Server.h:558 ]: [ServerThr.3] Shutdown finished
+[ N 2023-01-05 22:46:45.8765 81537/Tq Ser/Server.h:558 ]: [ServerThr.10] Shutdown finished
+[ N 2023-01-05 22:46:45.8764 81537/Tm Ser/Server.h:558 ]: [ServerThr.8] Shutdown finished
+[ N 2023-01-05 22:46:45.8759 81537/Ts Ser/Server.h:901 ]: [ServerThr.11] Freed 0 spare client objects
+[ N 2023-01-05 22:46:45.8765 81537/Tg Ser/Server.h:558 ]: [ServerThr.5] Shutdown finished
+[ N 2023-01-05 22:46:45.8766 81537/Ts Ser/Server.h:558 ]: [ServerThr.11] Shutdown finished
+[ N 2023-01-05 22:46:45.8767 81537/Tw Ser/Server.h:901 ]: [ApiServer] Freed 0 spare client objects
+[ N 2023-01-05 22:46:45.8767 81537/Tw Ser/Server.h:558 ]: [ApiServer] Shutdown finished
+[ N 2023-01-05 22:46:45.8781 81537/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 81586, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2023-01-05 22:46:47.1017 81537/T1 age/Cor/CoreMain.cpp:1325 ]: Passenger core shutdown finished
+[ N 2023-01-05 22:46:47.2384 13273/T1 age/Wat/WatchdogMain.cpp:1377 ]: Starting Passenger watchdog...
+[ N 2023-01-05 22:46:47.2642 13275/T1 age/Cor/CoreMain.cpp:1340 ]: Starting Passenger core...
+[ N 2023-01-05 22:46:47.2645 13275/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ N 2023-01-05 22:46:47.2980 13275/T1 age/Cor/CoreMain.cpp:1015 ]: Passenger core online, PID 13275
+[ N 2023-01-05 22:46:50.1741 13275/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+[ E 2023-01-05 22:46:50.1797 13275/T5 Sec/Crypto.cpp:990 ]: Removing Passenger private key from keychain failed: Write permissions error.. Please remove the private key from the certificate labeled Phusion Passenger Open Source in your keychain.
+App 13291 output: "init"
+App 13324 output: 2023-01-05 22:46:52 - NoMethodError - undefined method `[]=' for nil:NilClass:
+App 13324 output: 	/Users/andylee/Repos/Pokeweb/models/personal.rb:21:in `poke_data'
+App 13324 output: 	/Users/andylee/Repos/Pokeweb/models/action.rb:191:in `output_pokedex'
+App 13324 output: 	/Users/andylee/Repos/Pokeweb/models/action.rb:49:in `docs'
+App 13324 output: 	/Users/andylee/Repos/Pokeweb/routes.rb:646:in `block in <class:MyApp>'
+App 13324 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1696:in `call'
+App 13324 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1696:in `block in compile!'
+App 13324 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1009:in `block (3 levels) in route!'
+App 13324 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1027:in `route_eval'
+App 13324 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1009:in `block (2 levels) in route!'
+App 13324 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1058:in `block in process_route'
+App 13324 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1056:in `catch'
+App 13324 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1056:in `process_route'
+App 13324 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1007:in `block in route!'
+App 13324 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1004:in `each'
+App 13324 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1004:in `route!'
+App 13324 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1128:in `block in dispatch!'
+App 13324 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `catch'
+App 13324 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `invoke'
+App 13324 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1123:in `dispatch!'
+App 13324 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:939:in `block in call!'
+App 13324 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `catch'
+App 13324 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `invoke'
+App 13324 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:939:in `call!'
+App 13324 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:928:in `call'
+App 13324 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/xss_header.rb:20:in `call'
+App 13324 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/path_traversal.rb:18:in `call'
+App 13324 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/json_csrf.rb:28:in `call'
+App 13324 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/base.rb:53:in `call'
+App 13324 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/base.rb:53:in `call'
+App 13324 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/frame_options.rb:33:in `call'
+App 13324 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/null_logger.rb:11:in `call'
+App 13324 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/head.rb:12:in `call'
+App 13324 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/show_exceptions.rb:23:in `call'
+App 13324 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:219:in `call'
+App 13324 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:2007:in `call'
+App 13324 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1566:in `block in call'
+App 13324 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1782:in `synchronize'
+App 13324 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1566:in `call'
+App 13324 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:266:in `context'
+App 13324 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:260:in `call'
+App 13324 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:266:in `context'
+App 13324 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:260:in `call'
+App 13324 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/rack/thread_handler_extension.rb:107:in `process_request'
+App 13324 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+App 13324 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+App 13324 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler.rb:419:in `block (3 levels) in start_threads'
+App 13324 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+App 13324 output: {"rom"=>"projects/b6test", "password"=>"b6test"}
+App 13324 output: "pokedex"
+App 13324 output: "moves"
+App 13324 output: "encounter"
+App 13324 output: 58
+App 13324 output: 58
+App 13324 output: 58
+App 13324 output: 90
+App 13324 output: 90
+App 13324 output: 162
+App 13324 output: 162
+App 13324 output: 162
+App 13324 output: 162
+App 13324 output: 162
+App 13324 output: 162
+App 13324 output: 162
+App 13324 output: 162
+App 13324 output: 162
+App 13324 output: 162
+App 13324 output: 164
+App 13324 output: 164
+App 13324 output: 164
+App 13324 output: 164
+App 13324 output: 164
+App 13324 output: 164
+App 13324 output: 164
+App 13324 output: 164
+App 13324 output: 164
+App 13324 output: 164
+App 13324 output: 166
+App 13324 output: 166
+App 13324 output: 166
+App 13324 output: 166
+App 13324 output: 166
+App 13324 output: 166
+App 13324 output: 166
+App 13324 output: 166
+App 13324 output: 166
+App 13324 output: 166
+App 13324 output: 172
+App 13324 output: 172
+App 13324 output: 172
+App 13324 output: 172
+App 13324 output: 172
+App 13324 output: 172
+App 13324 output: 172
+App 13324 output: 172
+App 13324 output: 172
+App 13324 output: 172
+App 13324 output: 174
+App 13324 output: 174
+App 13324 output: 174
+App 13324 output: 174
+App 13324 output: 174
+App 13324 output: 174
+App 13324 output: 174
+App 13324 output: 174
+App 13324 output: 174
+App 13324 output: 174
+App 13324 output: 216
+App 13324 output: 216
+App 13324 output: 216
+App 13324 output: 216
+App 13324 output: 216
+App 13324 output: 226
+App 13324 output: 946
+App 13324 output: 946
+App 13324 output: 946
+App 13324 output: 946
+App 13324 output: 946
+App 13324 output: 946
+App 13324 output: 304
+App 13324 output: 304
+App 13324 output: 304
+App 13324 output: 306
+App 13324 output: 306
+App 13324 output: 306
+App 13324 output: 306
+App 13324 output: 308
+App 13324 output: 308
+App 13324 output: 308
+App 13324 output: 308
+App 13324 output: 308
+App 13324 output: 308
+App 13324 output: 310
+App 13324 output: 310
+App 13324 output: 310
+App 13324 output: 310
+App 13324 output: 310
+App 13324 output: 310
+App 13324 output: 310
+App 13324 output: 310
+App 13324 output: 310
+App 13324 output: 310
+App 13324 output: 310
+App 13324 output: 310
+App 13324 output: 310
+App 13324 output: 310
+App 13324 output: 310
+App 13324 output: 310
+App 13324 output: 310
+App 13324 output: 310
+App 13324 output: 316
+App 13324 output: 316
+App 13324 output: 316
+App 13324 output: 316
+App 13324 output: 316
+App 13324 output: 316
+App 13324 output: 316
+App 13324 output: 316
+App 13324 output: 316
+App 13324 output: 320
+App 13324 output: 322
+App 13324 output: 322
+App 13324 output: 390
+App 13324 output: 390
+App 13324 output: 390
+App 13324 output: 390
+App 13324 output: 390
+App 13324 output: 390
+App 13324 output: 392
+App 13324 output: 392
+App 13324 output: 392
+App 13324 output: 394
+App 13324 output: 394
+App 13324 output: 394
+App 13324 output: 394
+App 13324 output: 398
+App 13324 output: 398
+App 13324 output: 398
+App 13324 output: 398
+App 13324 output: 400
+App 13324 output: 400
+App 13324 output: 400
+App 13324 output: 402
+App 13324 output: 402
+App 13324 output: 402
+App 13324 output: 402
+App 13324 output: 404
+App 13324 output: 404
+App 13324 output: 990
+App 13324 output: 990
+App 13324 output: 990
+App 13324 output: 990
+App 13324 output: 990
+App 13324 output: 990
+App 13324 output: 990
+App 13324 output: 480
+App 13324 output: 480
+App 13324 output: 480
+App 13324 output: 480
+App 13324 output: 480
+App 13324 output: 480
+App 13324 output: 890
+App 13324 output: 890
+App 13324 output: 890
+App 13324 output: 914
+App 13324 output: 914
+App 13324 output: 914
+App 13324 output: 922
+App 13324 output: 922
+App 13324 output: 1064
+App 13324 output: 1066
+App 13324 output: 1066
+App 13324 output: 1066
+App 13324 output: 1066
+App 13324 output: 1066
+App 13324 output: 1066
+App 13324 output: 1066
+App 13324 output: 1066
+App 13324 output: 1066
+App 13324 output: 1066
+App 13324 output: 1076
+App 13324 output: 1078
+App 13324 output: 1078
+App 13324 output: 1078
+App 13324 output: 1078
+App 13324 output: 1078
+App 13324 output: 1078
+App 13324 output: 1078
+App 13324 output: 1078
+App 13324 output: 1078
+App 13324 output: 1078
+App 13324 output: 1140
+App 13324 output: 1142
+App 13324 output: 1174
+App 13324 output: 1174
+App 13324 output: 1174
+App 13324 output: 1174
+App 13324 output: 1174
+App 13324 output: 1174
+App 13324 output: 1176
+App 13324 output: 1176
+App 13324 output: 1176
+App 13324 output: 1178
+App 13324 output: 1178
+App 13324 output: 1178
+App 13324 output: 1178
+App 13324 output: 1178
+App 13324 output: 1178
+App 13324 output: 1180
+App 13324 output: 1180
+App 13324 output: 1180
+App 13324 output: 1180
+App 13324 output: 1180
+App 13324 output: 1180
+App 13324 output: 1180
+App 13324 output: 1184
+App 13324 output: 1184
+App 13324 output: 1184
+App 13324 output: 1184
+App 13324 output: 1184
+App 13324 output: 1184
+App 13324 output: 1186
+App 13324 output: 1188
+App 13324 output: 1188
+App 13324 output: 1188
+App 13324 output: 1188
+App 13324 output: 1188
+App 13324 output: 1188
+App 13324 output: 1190
+App 13324 output: 1190
+App 13324 output: 1190
+App 13324 output: 1190
+App 13324 output: 1190
+App 13324 output: 1108
+App 13324 output: 1108
+App 13324 output: 1116
+App 13324 output: 1116
+App 13324 output: 1116
+App 13324 output: 1116
+App 13324 output: 1118
+App 13324 output: 1118
+App 13324 output: 1122
+App 13324 output: 1122
+App 13324 output: 1122
+App 13324 output: 1122
+App 13324 output: 1128
+App 13324 output: 1128
+App 13324 output: 1128
+App 13324 output: 1128
+App 13324 output: 1128
+App 13324 output: 1128
+App 13324 output: 1128
+App 13324 output: 1128
+App 13324 output: 1128
+App 13324 output: 1150
+App 13324 output: 1150
+App 13324 output: 1154
+App 13324 output: 1154
+App 13324 output: 1156
+App 13324 output: 1006
+App 13324 output: 1006
+App 13324 output: 1006
+App 13324 output: 1008
+App 13324 output: 1008
+App 13324 output: 1008
+App 13324 output: 1008
+App 13324 output: 1010
+App 13324 output: 1010
+App 13324 output: 1010
+App 13324 output: 1012
+App 13324 output: 1012
+App 13324 output: 1014
+App 13324 output: 1014
+App 13324 output: 1014
+App 13324 output: 1016
+App 13324 output: 1016
+App 13324 output: 1016
+App 13324 output: 1016
+App 13324 output: 1030
+App 13324 output: 1030
+App 13324 output: 1030
+App 13324 output: 1030
+App 13324 output: 1032
+App 13324 output: 1032
+App 13324 output: 510
+App 13324 output: 510
+App 13324 output: 510
+App 13324 output: 510
+App 13324 output: 510
+App 13324 output: 510
+App 13324 output: 510
+App 13324 output: 634
+App 13324 output: 634
+App 13324 output: 634
+App 13324 output: 634
+App 13324 output: 634
+App 13324 output: 634
+App 13324 output: 638
+App 13324 output: 638
+App 13324 output: 638
+App 13324 output: 638
+App 13324 output: 638
+App 13324 output: 638
+App 13324 output: 642
+App 13324 output: 642
+App 13324 output: 642
+App 13324 output: 642
+App 13324 output: 642
+App 13324 output: 642
+App 13324 output: 642
+App 13324 output: 642
+App 13324 output: 642
+App 13324 output: 642
+App 13324 output: 642
+App 13324 output: 648
+App 13324 output: 648
+App 13324 output: 650
+App 13324 output: 650
+App 13324 output: 650
+App 13324 output: 650
+App 13324 output: 652
+App 13324 output: 652
+App 13324 output: 652
+App 13324 output: 652
+App 13324 output: 652
+App 13324 output: 652
+App 13324 output: 652
+App 13324 output: 652
+App 13324 output: 652
+App 13324 output: 652
+App 13324 output: 652
+App 13324 output: 652
+App 13324 output: 1102
+App 13324 output: 1102
+App 13324 output: 1102
+App 13324 output: 1102
+App 13324 output: 1102
+App 13324 output: 1102
+App 13324 output: 1102
+App 13324 output: 1102
+App 13324 output: 1102
+App 13324 output: 1102
+App 13324 output: 1102
+App 13324 output: 1102
+App 13324 output: 658
+App 13324 output: 658
+App 13324 output: 658
+App 13324 output: 658
+App 13324 output: 658
+App 13324 output: 658
+App 13324 output: 662
+App 13324 output: 662
+App 13324 output: 662
+App 13324 output: 662
+App 13324 output: 662
+App 13324 output: 662
+App 13324 output: 662
+App 13324 output: 662
+App 13324 output: 666
+App 13324 output: 666
+App 13324 output: 668
+App 13324 output: 668
+App 13324 output: 674
+App 13324 output: 674
+App 13324 output: 674
+App 13324 output: 674
+App 13324 output: 674
+App 13324 output: 674
+App 13324 output: 674
+App 13324 output: 674
+App 13324 output: 674
+App 13324 output: 674
+App 13324 output: 678
+App 13324 output: 678
+App 13324 output: 680
+App 13324 output: 680
+App 13324 output: 680
+App 13324 output: 680
+App 13324 output: 682
+App 13324 output: 682
+App 13324 output: 682
+App 13324 output: 690
+App 13324 output: 690
+App 13324 output: 690
+App 13324 output: 690
+App 13324 output: 690
+App 13324 output: 692
+App 13324 output: 692
+App 13324 output: 692
+App 13324 output: 692
+App 13324 output: 696
+App 13324 output: 696
+App 13324 output: 696
+App 13324 output: 696
+App 13324 output: 696
+App 13324 output: 696
+App 13324 output: 700
+App 13324 output: 700
+App 13324 output: 730
+App 13324 output: 730
+App 13324 output: 730
+App 13324 output: 736
+App 13324 output: 736
+App 13324 output: 736
+App 13324 output: 736
+App 13324 output: 740
+App 13324 output: 740
+App 13324 output: 740
+App 13324 output: 740
+App 13324 output: 740
+App 13324 output: 740
+App 13324 output: 740
+App 13324 output: 740
+App 13324 output: 740
+App 13324 output: 740
+App 13324 output: 740
+App 13324 output: 748
+App 13324 output: 748
+App 13324 output: 748
+App 13324 output: 748
+App 13324 output: 748
+App 13324 output: 748
+App 13324 output: 748
+App 13324 output: 748
+App 13324 output: 752
+App 13324 output: 752
+App 13324 output: 752
+App 13324 output: 752
+App 13324 output: 752
+App 13324 output: 756
+App 13324 output: 756
+App 13324 output: 756
+App 13324 output: 756
+App 13324 output: 756
+App 13324 output: 766
+App 13324 output: 766
+App 13324 output: 766
+App 13324 output: 766
+App 13324 output: 766
+App 13324 output: 766
+App 13324 output: 766
+App 13324 output: 770
+App 13324 output: 770
+App 13324 output: 770
+App 13324 output: 770
+App 13324 output: 774
+App 13324 output: 774
+App 13324 output: 774
+App 13324 output: 774
+App 13324 output: 774
+App 13324 output: 774
+App 13324 output: 774
+App 13324 output: 892
+App 13324 output: 892
+App 13324 output: 892
+App 13324 output: 892
+App 13324 output: 892
+App 13324 output: 892
+App 13324 output: 892
+App 13324 output: 892
+App 13324 output: 892
+App 13324 output: 892
+App 13324 output: 892
+App 13324 output: 892
+App 13324 output: 948
+App 13324 output: 948
+App 13324 output: 948
+App 13324 output: 948
+App 13324 output: 948
+App 13324 output: 948
+App 13324 output: 950
+App 13324 output: 950
+App 13324 output: 950
+App 13324 output: 950
+App 13324 output: 950
+App 13324 output: 950
+App 13324 output: 950
+App 13324 output: 950
+App 13324 output: 950
+App 13324 output: 950
+App 13324 output: 950
+App 13324 output: 950
+App 13324 output: 846
+App 13324 output: 846
+App 13324 output: 846
+App 13324 output: 846
+App 13324 output: 846
+App 13324 output: 846
+App 13324 output: 926
+App 13324 output: 926
+App 13324 output: 926
+App 13324 output: 926
+App 13324 output: 926
+App 13324 output: 926
+App 13324 output: 926
+App 13324 output: 814
+App 13324 output: 424
+App 13324 output: "trainers"
+
+[ N 2023-01-05 22:50:12.0757 13275/T8 age/Cor/CoreMain.cpp:671 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2023-01-05 22:50:12.0758 13275/T1 age/Cor/CoreMain.cpp:1246 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2023-01-05 22:50:12.0758 13275/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 13324, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2023-01-05 22:50:12.0762 13275/T8 Ser/Server.h:901 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2023-01-05 22:50:12.0763 13275/Tk Ser/Server.h:901 ]: [ServerThr.7] Freed 0 spare client objects
+[ N 2023-01-05 22:50:12.0763 13275/Ts Ser/Server.h:901 ]: [ServerThr.11] Freed 0 spare client objects
+[ N 2023-01-05 22:50:12.0763 13275/Th Ser/Server.h:901 ]: [ServerThr.5] Freed 0 spare client objects
+[ N 2023-01-05 22:50:12.0763 13275/Tr Ser/Server.h:901 ]: [ServerThr.10] Freed 0 spare client objects
+[ N 2023-01-05 22:50:12.0763 13275/To Ser/Server.h:901 ]: [ServerThr.9] Freed 0 spare client objects
+[ N 2023-01-05 22:50:12.0762 13275/Ta Ser/Server.h:901 ]: [ServerThr.2] Freed 0 spare client objects
+[ N 2023-01-05 22:50:12.0763 13275/Te Ser/Server.h:901 ]: [ServerThr.4] Freed 0 spare client objects
+[ N 2023-01-05 22:50:12.0763 13275/Tm Ser/Server.h:901 ]: [ServerThr.8] Freed 0 spare client objects
+[ N 2023-01-05 22:50:12.0762 13275/Ti Ser/Server.h:901 ]: [ServerThr.6] Freed 0 spare client objects
+[ N 2023-01-05 22:50:12.0765 13275/Tw Ser/Server.h:901 ]: [ApiServer] Freed 0 spare client objects
+[ N 2023-01-05 22:50:12.0763 13275/Tc Ser/Server.h:901 ]: [ServerThr.3] Freed 0 spare client objects
+[ N 2023-01-05 22:50:12.0763 13275/Tu Ser/Server.h:901 ]: [ServerThr.12] Freed 0 spare client objects
+[ N 2023-01-05 22:50:12.0765 13275/Ti Ser/Server.h:558 ]: [ServerThr.6] Shutdown finished
+[ N 2023-01-05 22:50:12.0766 13275/Tc Ser/Server.h:558 ]: [ServerThr.3] Shutdown finished
+[ N 2023-01-05 22:50:12.0764 13275/Te Ser/Server.h:558 ]: [ServerThr.4] Shutdown finished
+[ N 2023-01-05 22:50:12.0764 13275/Th Ser/Server.h:558 ]: [ServerThr.5] Shutdown finished
+[ N 2023-01-05 22:50:12.0766 13275/Tu Ser/Server.h:558 ]: [ServerThr.12] Shutdown finished
+[ N 2023-01-05 22:50:12.0763 13275/Tk Ser/Server.h:558 ]: [ServerThr.7] Shutdown finished
+[ N 2023-01-05 22:50:12.0763 13275/Ts Ser/Server.h:558 ]: [ServerThr.11] Shutdown finished
+[ N 2023-01-05 22:50:12.0764 13275/Ta Ser/Server.h:558 ]: [ServerThr.2] Shutdown finished
+[ N 2023-01-05 22:50:12.0765 13275/Tm Ser/Server.h:558 ]: [ServerThr.8] Shutdown finished
+[ N 2023-01-05 22:50:12.0764 13275/Tr Ser/Server.h:558 ]: [ServerThr.10] Shutdown finished
+[ N 2023-01-05 22:50:12.0764 13275/To Ser/Server.h:558 ]: [ServerThr.9] Shutdown finished
+[ N 2023-01-05 22:50:12.0765 13275/Tw Ser/Server.h:558 ]: [ApiServer] Shutdown finished
+[ N 2023-01-05 22:50:12.0763 13275/T8 Ser/Server.h:558 ]: [ServerThr.1] Shutdown finished
+[ N 2023-01-05 22:50:12.0768 13275/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 13324, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2023-01-05 22:50:13.1371 13275/T1 age/Cor/CoreMain.cpp:1325 ]: Passenger core shutdown finished
+[ N 2023-01-05 22:50:13.6499 13459/T1 age/Wat/WatchdogMain.cpp:1377 ]: Starting Passenger watchdog...
+[ N 2023-01-05 22:50:13.6742 13461/T1 age/Cor/CoreMain.cpp:1340 ]: Starting Passenger core...
+[ N 2023-01-05 22:50:13.6746 13461/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ N 2023-01-05 22:50:13.7070 13461/T1 age/Cor/CoreMain.cpp:1015 ]: Passenger core online, PID 13461
+App 13472 output: "init"
+[ N 2023-01-05 22:50:16.5148 13461/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+[ E 2023-01-05 22:50:16.5213 13461/T5 Sec/Crypto.cpp:990 ]: Removing Passenger private key from keychain failed: Write permissions error.. Please remove the private key from the certificate labeled Phusion Passenger Open Source in your keychain.
+App 13510 output: {"rom"=>"projects/b6test", "password"=>"b6test"}
+App 13510 output: 2023-01-05 22:50:28 - NameError - undefined local variable or method `rom_name' for Action:Class:
+App 13510 output: 	/Users/andylee/Repos/Pokeweb/models/action.rb:196:in `output_pokedex'
+App 13510 output: 	/Users/andylee/Repos/Pokeweb/models/action.rb:49:in `docs'
+App 13510 output: 	/Users/andylee/Repos/Pokeweb/routes.rb:646:in `block in <class:MyApp>'
+App 13510 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1696:in `call'
+App 13510 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1696:in `block in compile!'
+App 13510 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1009:in `block (3 levels) in route!'
+App 13510 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1027:in `route_eval'
+App 13510 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1009:in `block (2 levels) in route!'
+App 13510 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1058:in `block in process_route'
+App 13510 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1056:in `catch'
+App 13510 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1056:in `process_route'
+App 13510 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1007:in `block in route!'
+App 13510 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1004:in `each'
+App 13510 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1004:in `route!'
+App 13510 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1128:in `block in dispatch!'
+App 13510 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `catch'
+App 13510 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `invoke'
+App 13510 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1123:in `dispatch!'
+App 13510 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:939:in `block in call!'
+App 13510 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `catch'
+App 13510 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `invoke'
+App 13510 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:939:in `call!'
+App 13510 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:928:in `call'
+App 13510 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/xss_header.rb:20:in `call'
+App 13510 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/path_traversal.rb:18:in `call'
+App 13510 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/json_csrf.rb:28:in `call'
+App 13510 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/base.rb:53:in `call'
+App 13510 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/base.rb:53:in `call'
+App 13510 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/frame_options.rb:33:in `call'
+App 13510 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/null_logger.rb:11:in `call'
+App 13510 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/head.rb:12:in `call'
+App 13510 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/show_exceptions.rb:23:in `call'
+App 13510 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:219:in `call'
+App 13510 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:2007:in `call'
+App 13510 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1566:in `block in call'
+App 13510 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1782:in `synchronize'
+App 13510 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1566:in `call'
+App 13510 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:266:in `context'
+App 13510 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:260:in `call'
+App 13510 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:266:in `context'
+App 13510 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:260:in `call'
+App 13510 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/rack/thread_handler_extension.rb:107:in `process_request'
+App 13510 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+App 13510 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+App 13510 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler.rb:419:in `block (3 levels) in start_threads'
+App 13510 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+
+[ N 2023-01-05 22:50:48.5909 13461/T9 age/Cor/CoreMain.cpp:671 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2023-01-05 22:50:48.5909 13461/T1 age/Cor/CoreMain.cpp:1246 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2023-01-05 22:50:48.5909 13461/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 13510, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2023-01-05 22:50:48.5914 13461/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 13518, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2023-01-05 22:50:48.5915 13461/Tc Ser/Server.h:901 ]: [ServerThr.3] Freed 0 spare client objects
+[ N 2023-01-05 22:50:48.5916 13461/Tm Ser/Server.h:901 ]: [ServerThr.8] Freed 0 spare client objects
+[ N 2023-01-05 22:50:48.5916 13461/Tc Ser/Server.h:558 ]: [ServerThr.3] Shutdown finished
+[ N 2023-01-05 22:50:48.5916 13461/To Ser/Server.h:901 ]: [ServerThr.9] Freed 0 spare client objects
+[ N 2023-01-05 22:50:48.5916 13461/Tm Ser/Server.h:558 ]: [ServerThr.8] Shutdown finished
+[ N 2023-01-05 22:50:48.5915 13461/Te Ser/Server.h:901 ]: [ServerThr.4] Freed 0 spare client objects
+[ N 2023-01-05 22:50:48.5915 13461/Ta Ser/Server.h:901 ]: [ServerThr.2] Freed 0 spare client objects
+[ N 2023-01-05 22:50:48.5916 13461/Tu Ser/Server.h:901 ]: [ServerThr.12] Freed 0 spare client objects
+[ N 2023-01-05 22:50:48.5916 13461/Ts Ser/Server.h:901 ]: [ServerThr.11] Freed 0 spare client objects
+[ N 2023-01-05 22:50:48.5918 13461/Tw Ser/Server.h:901 ]: [ApiServer] Freed 0 spare client objects
+[ N 2023-01-05 22:50:48.5915 13461/Tk Ser/Server.h:901 ]: [ServerThr.7] Freed 0 spare client objects
+[ N 2023-01-05 22:50:48.5918 13461/Te Ser/Server.h:558 ]: [ServerThr.4] Shutdown finished
+[ N 2023-01-05 22:50:48.5918 13461/Ts Ser/Server.h:558 ]: [ServerThr.11] Shutdown finished
+[ N 2023-01-05 22:50:48.5915 13461/Tg Ser/Server.h:901 ]: [ServerThr.5] Freed 0 spare client objects
+[ N 2023-01-05 22:50:48.5915 13461/T9 Ser/Server.h:901 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2023-01-05 22:50:48.5916 13461/Ti Ser/Server.h:901 ]: [ServerThr.6] Freed 0 spare client objects
+[ N 2023-01-05 22:50:48.5918 13461/Tu Ser/Server.h:558 ]: [ServerThr.12] Shutdown finished
+[ N 2023-01-05 22:50:48.5920 13461/Ti Ser/Server.h:558 ]: [ServerThr.6] Shutdown finished
+[ N 2023-01-05 22:50:48.5919 13461/Tg Ser/Server.h:558 ]: [ServerThr.5] Shutdown finished
+[ N 2023-01-05 22:50:48.5918 13461/Tk Ser/Server.h:558 ]: [ServerThr.7] Shutdown finished
+[ N 2023-01-05 22:50:48.5918 13461/Tw Ser/Server.h:558 ]: [ApiServer] Shutdown finished
+[ N 2023-01-05 22:50:48.5917 13461/To Ser/Server.h:558 ]: [ServerThr.9] Shutdown finished
+[ N 2023-01-05 22:50:48.5916 13461/Tq Ser/Server.h:901 ]: [ServerThr.10] Freed 0 spare client objects
+[ N 2023-01-05 22:50:48.5919 13461/T9 Ser/Server.h:558 ]: [ServerThr.1] Shutdown finished
+[ N 2023-01-05 22:50:48.5921 13461/Tq Ser/Server.h:558 ]: [ServerThr.10] Shutdown finished
+[ N 2023-01-05 22:50:48.5918 13461/Ta Ser/Server.h:558 ]: [ServerThr.2] Shutdown finished
+[ N 2023-01-05 22:50:48.5922 13461/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 13510, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2023-01-05 22:50:48.5923 13461/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 13518, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2023-01-05 22:50:49.8146 13553/T1 age/Wat/WatchdogMain.cpp:1377 ]: Starting Passenger watchdog...
+[ N 2023-01-05 22:50:49.8386 13555/T1 age/Cor/CoreMain.cpp:1340 ]: Starting Passenger core...
+[ N 2023-01-05 22:50:49.8388 13555/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ N 2023-01-05 22:50:49.8669 13555/T1 age/Cor/CoreMain.cpp:1015 ]: Passenger core online, PID 13555
+[ N 2023-01-05 22:50:50.0853 13461/T1 age/Cor/CoreMain.cpp:1325 ]: Passenger core shutdown finished
+[ N 2023-01-05 22:50:52.7032 13555/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+[ E 2023-01-05 22:50:52.7140 13555/T5 Sec/Crypto.cpp:990 ]: Removing Passenger private key from keychain failed: Write permissions error.. Please remove the private key from the certificate labeled Phusion Passenger Open Source in your keychain.
+App 13576 output: "init"
+App 13610 output: {"rom"=>"projects/b6test", "password"=>"b6test"}
+App 13610 output: 2023-01-05 22:51:01 - Errno::ENOENT - No such file or directory @ rb_sysopen - public/projects/b6test_pokedex.txt:
+App 13610 output: 	/Users/andylee/Repos/Pokeweb/models/action.rb:196:in `initialize'
+App 13610 output: 	/Users/andylee/Repos/Pokeweb/models/action.rb:196:in `open'
+App 13610 output: 	/Users/andylee/Repos/Pokeweb/models/action.rb:196:in `output_pokedex'
+App 13610 output: 	/Users/andylee/Repos/Pokeweb/models/action.rb:49:in `docs'
+App 13610 output: 	/Users/andylee/Repos/Pokeweb/routes.rb:646:in `block in <class:MyApp>'
+App 13610 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1696:in `call'
+App 13610 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1696:in `block in compile!'
+App 13610 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1009:in `block (3 levels) in route!'
+App 13610 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1027:in `route_eval'
+App 13610 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1009:in `block (2 levels) in route!'
+App 13610 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1058:in `block in process_route'
+App 13610 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1056:in `catch'
+App 13610 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1056:in `process_route'
+App 13610 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1007:in `block in route!'
+App 13610 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1004:in `each'
+App 13610 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1004:in `route!'
+App 13610 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1128:in `block in dispatch!'
+App 13610 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `catch'
+App 13610 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `invoke'
+App 13610 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1123:in `dispatch!'
+App 13610 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:939:in `block in call!'
+App 13610 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `catch'
+App 13610 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `invoke'
+App 13610 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:939:in `call!'
+App 13610 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:928:in `call'
+App 13610 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/xss_header.rb:20:in `call'
+App 13610 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/path_traversal.rb:18:in `call'
+App 13610 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/json_csrf.rb:28:in `call'
+App 13610 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/base.rb:53:in `call'
+App 13610 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/base.rb:53:in `call'
+App 13610 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/frame_options.rb:33:in `call'
+App 13610 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/null_logger.rb:11:in `call'
+App 13610 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/head.rb:12:in `call'
+App 13610 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/show_exceptions.rb:23:in `call'
+App 13610 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:219:in `call'
+App 13610 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:2007:in `call'
+App 13610 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1566:in `block in call'
+App 13610 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1782:in `synchronize'
+App 13610 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1566:in `call'
+App 13610 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:266:in `context'
+App 13610 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:260:in `call'
+App 13610 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:266:in `context'
+App 13610 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:260:in `call'
+App 13610 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/rack/thread_handler_extension.rb:107:in `process_request'
+App 13610 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+App 13610 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+App 13610 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler.rb:419:in `block (3 levels) in start_threads'
+App 13610 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+
+[ N 2023-01-05 22:52:55.1784 13555/T8 age/Cor/CoreMain.cpp:671 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2023-01-05 22:52:55.1784 13555/T1 age/Cor/CoreMain.cpp:1246 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2023-01-05 22:52:55.1786 13555/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 13610, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2023-01-05 22:52:55.1795 13555/T8 Ser/Server.h:901 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2023-01-05 22:52:55.1795 13555/Tq Ser/Server.h:901 ]: [ServerThr.10] Freed 0 spare client objects
+[ N 2023-01-05 22:52:55.1795 13555/Tm Ser/Server.h:901 ]: [ServerThr.8] Freed 0 spare client objects
+[ N 2023-01-05 22:52:55.1795 13555/Te Ser/Server.h:901 ]: [ServerThr.4] Freed 0 spare client objects
+[ N 2023-01-05 22:52:55.1795 13555/Tc Ser/Server.h:901 ]: [ServerThr.3] Freed 0 spare client objects
+[ N 2023-01-05 22:52:55.1796 13555/Te Ser/Server.h:558 ]: [ServerThr.4] Shutdown finished
+[ N 2023-01-05 22:52:55.1795 13555/Tg Ser/Server.h:901 ]: [ServerThr.5] Freed 0 spare client objects
+[ N 2023-01-05 22:52:55.1795 13555/Tk Ser/Server.h:901 ]: [ServerThr.7] Freed 0 spare client objects
+[ N 2023-01-05 22:52:55.1797 13555/Tc Ser/Server.h:558 ]: [ServerThr.3] Shutdown finished
+[ N 2023-01-05 22:52:55.1796 13555/T8 Ser/Server.h:558 ]: [ServerThr.1] Shutdown finished
+[ N 2023-01-05 22:52:55.1796 13555/Tu Ser/Server.h:901 ]: [ServerThr.12] Freed 0 spare client objects
+[ N 2023-01-05 22:52:55.1796 13555/Tq Ser/Server.h:558 ]: [ServerThr.10] Shutdown finished
+[ N 2023-01-05 22:52:55.1796 13555/Tm Ser/Server.h:558 ]: [ServerThr.8] Shutdown finished
+[ N 2023-01-05 22:52:55.1796 13555/Ts Ser/Server.h:901 ]: [ServerThr.11] Freed 0 spare client objects
+[ N 2023-01-05 22:52:55.1795 13555/Ta Ser/Server.h:901 ]: [ServerThr.2] Freed 0 spare client objects
+[ N 2023-01-05 22:52:55.1798 13555/Tu Ser/Server.h:558 ]: [ServerThr.12] Shutdown finished
+[ N 2023-01-05 22:52:55.1795 13555/To Ser/Server.h:901 ]: [ServerThr.9] Freed 0 spare client objects
+[ N 2023-01-05 22:52:55.1798 13555/Tg Ser/Server.h:558 ]: [ServerThr.5] Shutdown finished
+[ N 2023-01-05 22:52:55.1799 13555/Ts Ser/Server.h:558 ]: [ServerThr.11] Shutdown finished
+[ N 2023-01-05 22:52:55.1797 13555/Tk Ser/Server.h:558 ]: [ServerThr.7] Shutdown finished
+[ N 2023-01-05 22:52:55.1798 13555/Tw Ser/Server.h:901 ]: [ApiServer] Freed 0 spare client objects
+[ N 2023-01-05 22:52:55.1800 13555/To Ser/Server.h:558 ]: [ServerThr.9] Shutdown finished
+[ N 2023-01-05 22:52:55.1795 13555/Ti Ser/Server.h:901 ]: [ServerThr.6] Freed 0 spare client objects
+[ N 2023-01-05 22:52:55.1800 13555/Ta Ser/Server.h:558 ]: [ServerThr.2] Shutdown finished
+[ N 2023-01-05 22:52:55.1801 13555/Ti Ser/Server.h:558 ]: [ServerThr.6] Shutdown finished
+[ N 2023-01-05 22:52:55.1801 13555/Tw Ser/Server.h:558 ]: [ApiServer] Shutdown finished
+[ N 2023-01-05 22:52:55.1803 13555/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 13610, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2023-01-05 22:52:56.3241 13555/T1 age/Cor/CoreMain.cpp:1325 ]: Passenger core shutdown finished
+[ N 2023-01-05 22:52:56.4944 13688/T1 age/Wat/WatchdogMain.cpp:1377 ]: Starting Passenger watchdog...
+[ N 2023-01-05 22:52:56.5253 13690/T1 age/Cor/CoreMain.cpp:1340 ]: Starting Passenger core...
+[ N 2023-01-05 22:52:56.5259 13690/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ N 2023-01-05 22:52:56.5611 13690/T1 age/Cor/CoreMain.cpp:1015 ]: Passenger core online, PID 13690
+[ N 2023-01-05 22:52:59.4792 13690/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+[ E 2023-01-05 22:52:59.4848 13690/T5 Sec/Crypto.cpp:990 ]: Removing Passenger private key from keychain failed: Write permissions error.. Please remove the private key from the certificate labeled Phusion Passenger Open Source in your keychain.
+App 13706 output: "init"
+App 13739 output: {"rom"=>"projects/b6test", "password"=>"b6test"}
+App 13739 output: 2023-01-05 22:53:22 - NameError - undefined local variable or method `rom_name' for Action:Class:
+App 13739 output: 	/Users/andylee/Repos/Pokeweb/models/action.rb:196:in `output_pokedex'
+App 13739 output: 	/Users/andylee/Repos/Pokeweb/models/action.rb:49:in `docs'
+App 13739 output: 	/Users/andylee/Repos/Pokeweb/routes.rb:646:in `block in <class:MyApp>'
+App 13739 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1696:in `call'
+App 13739 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1696:in `block in compile!'
+App 13739 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1009:in `block (3 levels) in route!'
+App 13739 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1027:in `route_eval'
+App 13739 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1009:in `block (2 levels) in route!'
+App 13739 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1058:in `block in process_route'
+App 13739 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1056:in `catch'
+App 13739 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1056:in `process_route'
+App 13739 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1007:in `block in route!'
+App 13739 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1004:in `each'
+App 13739 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1004:in `route!'
+App 13739 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1128:in `block in dispatch!'
+App 13739 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `catch'
+App 13739 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `invoke'
+App 13739 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1123:in `dispatch!'
+App 13739 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:939:in `block in call!'
+App 13739 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `catch'
+App 13739 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `invoke'
+App 13739 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:939:in `call!'
+App 13739 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:928:in `call'
+App 13739 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/xss_header.rb:20:in `call'
+App 13739 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/path_traversal.rb:18:in `call'
+App 13739 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/json_csrf.rb:28:in `call'
+App 13739 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/base.rb:53:in `call'
+App 13739 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/base.rb:53:in `call'
+App 13739 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/frame_options.rb:33:in `call'
+App 13739 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/null_logger.rb:11:in `call'
+App 13739 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/head.rb:12:in `call'
+App 13739 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/show_exceptions.rb:23:in `call'
+App 13739 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:219:in `call'
+App 13739 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:2007:in `call'
+App 13739 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1566:in `block in call'
+App 13739 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1782:in `synchronize'
+App 13739 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1566:in `call'
+App 13739 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:266:in `context'
+App 13739 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:260:in `call'
+App 13739 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:266:in `context'
+App 13739 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:260:in `call'
+App 13739 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/rack/thread_handler_extension.rb:107:in `process_request'
+App 13739 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+App 13739 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+App 13739 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler.rb:419:in `block (3 levels) in start_threads'
+App 13739 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+App 13739 output: "redirecting..."
+
+[ N 2023-01-05 22:55:06.5035 13690/T8 age/Cor/CoreMain.cpp:671 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2023-01-05 22:55:06.5036 13690/T1 age/Cor/CoreMain.cpp:1246 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2023-01-05 22:55:06.5037 13690/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 13739, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2023-01-05 22:55:06.5040 13690/Tc Ser/Server.h:901 ]: [ServerThr.3] Freed 0 spare client objects
+[ N 2023-01-05 22:55:06.5040 13690/Tg Ser/Server.h:901 ]: [ServerThr.5] Freed 0 spare client objects
+[ N 2023-01-05 22:55:06.5041 13690/Ti Ser/Server.h:901 ]: [ServerThr.6] Freed 0 spare client objects
+[ N 2023-01-05 22:55:06.5040 13690/To Ser/Server.h:901 ]: [ServerThr.9] Freed 0 spare client objects
+[ N 2023-01-05 22:55:06.5040 13690/Tq Ser/Server.h:901 ]: [ServerThr.10] Freed 0 spare client objects
+[ N 2023-01-05 22:55:06.5041 13690/Tk Ser/Server.h:901 ]: [ServerThr.7] Freed 0 spare client objects
+[ N 2023-01-05 22:55:06.5041 13690/Ta Ser/Server.h:901 ]: [ServerThr.2] Freed 0 spare client objects
+[ N 2023-01-05 22:55:06.5040 13690/T8 Ser/Server.h:901 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2023-01-05 22:55:06.5041 13690/Ts Ser/Server.h:901 ]: [ServerThr.11] Freed 0 spare client objects
+[ N 2023-01-05 22:55:06.5040 13690/Tm Ser/Server.h:901 ]: [ServerThr.8] Freed 0 spare client objects
+[ N 2023-01-05 22:55:06.5044 13690/T8 Ser/Server.h:558 ]: [ServerThr.1] Shutdown finished
+[ N 2023-01-05 22:55:06.5043 13690/Tw Ser/Server.h:901 ]: [ApiServer] Freed 0 spare client objects
+[ N 2023-01-05 22:55:06.5041 13690/Tu Ser/Server.h:901 ]: [ServerThr.12] Freed 0 spare client objects
+[ N 2023-01-05 22:55:06.5045 13690/Tw Ser/Server.h:558 ]: [ApiServer] Shutdown finished
+[ N 2023-01-05 22:55:06.5041 13690/Te Ser/Server.h:901 ]: [ServerThr.4] Freed 0 spare client objects
+[ N 2023-01-05 22:55:06.5042 13690/Ti Ser/Server.h:558 ]: [ServerThr.6] Shutdown finished
+[ N 2023-01-05 22:55:06.5042 13690/Tg Ser/Server.h:558 ]: [ServerThr.5] Shutdown finished
+[ N 2023-01-05 22:55:06.5044 13690/Tm Ser/Server.h:558 ]: [ServerThr.8] Shutdown finished
+[ N 2023-01-05 22:55:06.5046 13690/Te Ser/Server.h:558 ]: [ServerThr.4] Shutdown finished
+[ N 2023-01-05 22:55:06.5043 13690/Tk Ser/Server.h:558 ]: [ServerThr.7] Shutdown finished
+[ N 2023-01-05 22:55:06.5042 13690/To Ser/Server.h:558 ]: [ServerThr.9] Shutdown finished
+[ N 2023-01-05 22:55:06.5044 13690/Ts Ser/Server.h:558 ]: [ServerThr.11] Shutdown finished
+[ N 2023-01-05 22:55:06.5042 13690/Tc Ser/Server.h:558 ]: [ServerThr.3] Shutdown finished
+[ N 2023-01-05 22:55:06.5043 13690/Tq Ser/Server.h:558 ]: [ServerThr.10] Shutdown finished
+[ N 2023-01-05 22:55:06.5045 13690/Tu Ser/Server.h:558 ]: [ServerThr.12] Shutdown finished
+[ N 2023-01-05 22:55:06.5043 13690/Ta Ser/Server.h:558 ]: [ServerThr.2] Shutdown finished
+[ N 2023-01-05 22:55:06.5049 13690/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 13739, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2023-01-05 22:55:07.6393 13690/T1 age/Cor/CoreMain.cpp:1325 ]: Passenger core shutdown finished
+[ N 2023-01-05 22:55:07.7854 13824/T1 age/Wat/WatchdogMain.cpp:1377 ]: Starting Passenger watchdog...
+[ N 2023-01-05 22:55:07.8155 13826/T1 age/Cor/CoreMain.cpp:1340 ]: Starting Passenger core...
+[ N 2023-01-05 22:55:07.8159 13826/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ N 2023-01-05 22:55:07.8518 13826/T1 age/Cor/CoreMain.cpp:1015 ]: Passenger core online, PID 13826
+App 13837 output: "init"
+[ N 2023-01-05 22:55:10.6827 13826/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+[ E 2023-01-05 22:55:10.6894 13826/T5 Sec/Crypto.cpp:990 ]: Removing Passenger private key from keychain failed: Write permissions error.. Please remove the private key from the certificate labeled Phusion Passenger Open Source in your keychain.
+App 13870 output: {"rom"=>"projects/b6test", "password"=>"b6test"}
+App 13870 output: "pokedex"
+App 13870 output: 2023-01-05 22:55:17 - Errno::ENOENT - No such file or directory @ rb_sysopen - "public/#{$rom_name.split("/")[1]}_moves.txt":
+App 13870 output: 	/Users/andylee/Repos/Pokeweb/models/action.rb:157:in `initialize'
+App 13870 output: 	/Users/andylee/Repos/Pokeweb/models/action.rb:157:in `open'
+App 13870 output: 	/Users/andylee/Repos/Pokeweb/models/action.rb:157:in `output_moves'
+App 13870 output: 	/Users/andylee/Repos/Pokeweb/models/action.rb:50:in `docs'
+App 13870 output: 	/Users/andylee/Repos/Pokeweb/routes.rb:646:in `block in <class:MyApp>'
+App 13870 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1696:in `call'
+App 13870 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1696:in `block in compile!'
+App 13870 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1009:in `block (3 levels) in route!'
+App 13870 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1027:in `route_eval'
+App 13870 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1009:in `block (2 levels) in route!'
+App 13870 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1058:in `block in process_route'
+App 13870 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1056:in `catch'
+App 13870 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1056:in `process_route'
+App 13870 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1007:in `block in route!'
+App 13870 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1004:in `each'
+App 13870 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1004:in `route!'
+App 13870 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1128:in `block in dispatch!'
+App 13870 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `catch'
+App 13870 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `invoke'
+App 13870 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1123:in `dispatch!'
+App 13870 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:939:in `block in call!'
+App 13870 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `catch'
+App 13870 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `invoke'
+App 13870 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:939:in `call!'
+App 13870 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:928:in `call'
+App 13870 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/xss_header.rb:20:in `call'
+App 13870 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/path_traversal.rb:18:in `call'
+App 13870 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/json_csrf.rb:28:in `call'
+App 13870 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/base.rb:53:in `call'
+App 13870 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/base.rb:53:in `call'
+App 13870 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/frame_options.rb:33:in `call'
+App 13870 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/null_logger.rb:11:in `call'
+App 13870 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/head.rb:12:in `call'
+App 13870 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/show_exceptions.rb:23:in `call'
+App 13870 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:219:in `call'
+App 13870 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:2007:in `call'
+App 13870 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1566:in `block in call'
+App 13870 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1782:in `synchronize'
+App 13870 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1566:in `call'
+App 13870 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:266:in `context'
+App 13870 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:260:in `call'
+App 13870 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:266:in `context'
+App 13870 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:260:in `call'
+App 13870 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/rack/thread_handler_extension.rb:107:in `process_request'
+App 13870 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+App 13870 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+App 13870 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler.rb:419:in `block (3 levels) in start_threads'
+App 13870 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+
+[ N 2023-01-05 22:55:55.3863 13826/T8 age/Cor/CoreMain.cpp:671 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2023-01-05 22:55:55.3863 13826/T1 age/Cor/CoreMain.cpp:1246 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2023-01-05 22:55:55.3863 13826/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 13870, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2023-01-05 22:55:55.3871 13826/Te Ser/Server.h:901 ]: [ServerThr.4] Freed 0 spare client objects
+[ N 2023-01-05 22:55:55.3871 13826/Ta Ser/Server.h:901 ]: [ServerThr.2] Freed 0 spare client objects
+[ N 2023-01-05 22:55:55.3871 13826/Te Ser/Server.h:558 ]: [ServerThr.4] Shutdown finished
+[ N 2023-01-05 22:55:55.3871 13826/Tc Ser/Server.h:901 ]: [ServerThr.3] Freed 0 spare client objects
+[ N 2023-01-05 22:55:55.3871 13826/Ti Ser/Server.h:901 ]: [ServerThr.6] Freed 0 spare client objects
+[ N 2023-01-05 22:55:55.3872 13826/Tc Ser/Server.h:558 ]: [ServerThr.3] Shutdown finished
+[ N 2023-01-05 22:55:55.3871 13826/Ts Ser/Server.h:901 ]: [ServerThr.11] Freed 0 spare client objects
+[ N 2023-01-05 22:55:55.3871 13826/Tg Ser/Server.h:901 ]: [ServerThr.5] Freed 0 spare client objects
+[ N 2023-01-05 22:55:55.3873 13826/Ts Ser/Server.h:558 ]: [ServerThr.11] Shutdown finished
+[ N 2023-01-05 22:55:55.3871 13826/Tq Ser/Server.h:901 ]: [ServerThr.10] Freed 0 spare client objects
+[ N 2023-01-05 22:55:55.3872 13826/Ta Ser/Server.h:558 ]: [ServerThr.2] Shutdown finished
+[ N 2023-01-05 22:55:55.3874 13826/Tq Ser/Server.h:558 ]: [ServerThr.10] Shutdown finished
+[ N 2023-01-05 22:55:55.3873 13826/Tw Ser/Server.h:901 ]: [ApiServer] Freed 0 spare client objects
+[ N 2023-01-05 22:55:55.3871 13826/Tk Ser/Server.h:901 ]: [ServerThr.7] Freed 0 spare client objects
+[ N 2023-01-05 22:55:55.3871 13826/Tv Ser/Server.h:901 ]: [ServerThr.12] Freed 0 spare client objects
+[ N 2023-01-05 22:55:55.3871 13826/Tn Ser/Server.h:901 ]: [ServerThr.8] Freed 0 spare client objects
+[ N 2023-01-05 22:55:55.3871 13826/T8 Ser/Server.h:901 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2023-01-05 22:55:55.3871 13826/To Ser/Server.h:901 ]: [ServerThr.9] Freed 0 spare client objects
+[ N 2023-01-05 22:55:55.3875 13826/T8 Ser/Server.h:558 ]: [ServerThr.1] Shutdown finished
+[ N 2023-01-05 22:55:55.3876 13826/To Ser/Server.h:558 ]: [ServerThr.9] Shutdown finished
+[ N 2023-01-05 22:55:55.3873 13826/Ti Ser/Server.h:558 ]: [ServerThr.6] Shutdown finished
+[ N 2023-01-05 22:55:55.3874 13826/Tw Ser/Server.h:558 ]: [ApiServer] Shutdown finished
+[ N 2023-01-05 22:55:55.3875 13826/Tk Ser/Server.h:558 ]: [ServerThr.7] Shutdown finished
+[ N 2023-01-05 22:55:55.3873 13826/Tg Ser/Server.h:558 ]: [ServerThr.5] Shutdown finished
+[ N 2023-01-05 22:55:55.3875 13826/Tv Ser/Server.h:558 ]: [ServerThr.12] Shutdown finished
+[ N 2023-01-05 22:55:55.3875 13826/Tn Ser/Server.h:558 ]: [ServerThr.8] Shutdown finished
+[ N 2023-01-05 22:55:55.3878 13826/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 13870, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2023-01-05 22:55:56.4829 13826/T1 age/Cor/CoreMain.cpp:1325 ]: Passenger core shutdown finished
+[ N 2023-01-05 22:55:56.5865 13920/T1 age/Wat/WatchdogMain.cpp:1377 ]: Starting Passenger watchdog...
+[ N 2023-01-05 22:55:56.6265 13922/T1 age/Cor/CoreMain.cpp:1340 ]: Starting Passenger core...
+[ N 2023-01-05 22:55:56.6269 13922/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ N 2023-01-05 22:55:56.6663 13922/T1 age/Cor/CoreMain.cpp:1015 ]: Passenger core online, PID 13922
+App 13938 output: "init"
+[ N 2023-01-05 22:56:00.2245 13922/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+[ E 2023-01-05 22:56:00.2304 13922/T5 Sec/Crypto.cpp:990 ]: Removing Passenger private key from keychain failed: Write permissions error.. Please remove the private key from the certificate labeled Phusion Passenger Open Source in your keychain.
+App 13971 output: {"rom"=>"projects/b6test", "password"=>"b6test"}
+App 13971 output: "pokedex"
+App 13971 output: "moves"
+App 13971 output: "encounter"
+App 13971 output: 58
+App 13971 output: 58
+App 13971 output: 58
+App 13971 output: 90
+App 13971 output: 90
+App 13971 output: 162
+App 13971 output: 162
+App 13971 output: 162
+App 13971 output: 162
+App 13971 output: 162
+App 13971 output: 162
+App 13971 output: 162
+App 13971 output: 162
+App 13971 output: 162
+App 13971 output: 162
+App 13971 output: 164
+App 13971 output: 164
+App 13971 output: 164
+App 13971 output: 164
+App 13971 output: 164
+App 13971 output: 164
+App 13971 output: 164
+App 13971 output: 164
+App 13971 output: 164
+App 13971 output: 164
+App 13971 output: 166
+App 13971 output: 166
+App 13971 output: 166
+App 13971 output: 166
+App 13971 output: 166
+App 13971 output: 166
+App 13971 output: 166
+App 13971 output: 166
+App 13971 output: 166
+App 13971 output: 166
+App 13971 output: 172
+App 13971 output: 172
+App 13971 output: 172
+App 13971 output: 172
+App 13971 output: 172
+App 13971 output: 172
+App 13971 output: 172
+App 13971 output: 172
+App 13971 output: 172
+App 13971 output: 172
+App 13971 output: 174
+App 13971 output: 174
+App 13971 output: 174
+App 13971 output: 174
+App 13971 output: 174
+App 13971 output: 174
+App 13971 output: 174
+App 13971 output: 174
+App 13971 output: 174
+App 13971 output: 174
+App 13971 output: 216
+App 13971 output: 216
+App 13971 output: 216
+App 13971 output: 216
+App 13971 output: 216
+App 13971 output: 226
+App 13971 output: 946
+App 13971 output: 946
+App 13971 output: 946
+App 13971 output: 946
+App 13971 output: 946
+App 13971 output: 946
+App 13971 output: 304
+App 13971 output: 304
+App 13971 output: 304
+App 13971 output: 306
+App 13971 output: 306
+App 13971 output: 306
+App 13971 output: 306
+App 13971 output: 308
+App 13971 output: 308
+App 13971 output: 308
+App 13971 output: 308
+App 13971 output: 308
+App 13971 output: 308
+App 13971 output: 310
+App 13971 output: 310
+App 13971 output: 310
+App 13971 output: 310
+App 13971 output: 310
+App 13971 output: 310
+App 13971 output: 310
+App 13971 output: 310
+App 13971 output: 310
+App 13971 output: 310
+App 13971 output: 310
+App 13971 output: 310
+App 13971 output: 310
+App 13971 output: 310
+App 13971 output: 310
+App 13971 output: 310
+App 13971 output: 310
+App 13971 output: 310
+App 13971 output: 316
+App 13971 output: 316
+App 13971 output: 316
+App 13971 output: 316
+App 13971 output: 316
+App 13971 output: 316
+App 13971 output: 316
+App 13971 output: 316
+App 13971 output: 316
+App 13971 output: 320
+App 13971 output: 322
+App 13971 output: 322
+App 13971 output: 390
+App 13971 output: 390
+App 13971 output: 390
+App 13971 output: 390
+App 13971 output: 390
+App 13971 output: 390
+App 13971 output: 392
+App 13971 output: 392
+App 13971 output: 392
+App 13971 output: 394
+App 13971 output: 394
+App 13971 output: 394
+App 13971 output: 394
+App 13971 output: 398
+App 13971 output: 398
+App 13971 output: 398
+App 13971 output: 398
+App 13971 output: 400
+App 13971 output: 400
+App 13971 output: 400
+App 13971 output: 402
+App 13971 output: 402
+App 13971 output: 402
+App 13971 output: 402
+App 13971 output: 404
+App 13971 output: 404
+App 13971 output: 990
+App 13971 output: 990
+App 13971 output: 990
+App 13971 output: 990
+App 13971 output: 990
+App 13971 output: 990
+App 13971 output: 990
+App 13971 output: 480
+App 13971 output: 480
+App 13971 output: 480
+App 13971 output: 480
+App 13971 output: 480
+App 13971 output: 480
+App 13971 output: 890
+App 13971 output: 890
+App 13971 output: 890
+App 13971 output: 914
+App 13971 output: 914
+App 13971 output: 914
+App 13971 output: 922
+App 13971 output: 922
+App 13971 output: 1064
+App 13971 output: 1066
+App 13971 output: 1066
+App 13971 output: 1066
+App 13971 output: 1066
+App 13971 output: 1066
+App 13971 output: 1066
+App 13971 output: 1066
+App 13971 output: 1066
+App 13971 output: 1066
+App 13971 output: 1066
+App 13971 output: 1076
+App 13971 output: 1078
+App 13971 output: 1078
+App 13971 output: 1078
+App 13971 output: 1078
+App 13971 output: 1078
+App 13971 output: 1078
+App 13971 output: 1078
+App 13971 output: 1078
+App 13971 output: 1078
+App 13971 output: 1078
+App 13971 output: 1140
+App 13971 output: 1142
+App 13971 output: 1174
+App 13971 output: 1174
+App 13971 output: 1174
+App 13971 output: 1174
+App 13971 output: 1174
+App 13971 output: 1174
+App 13971 output: 1176
+App 13971 output: 1176
+App 13971 output: 1176
+App 13971 output: 1178
+App 13971 output: 1178
+App 13971 output: 1178
+App 13971 output: 1178
+App 13971 output: 1178
+App 13971 output: 1178
+App 13971 output: 1180
+App 13971 output: 1180
+App 13971 output: 1180
+App 13971 output: 1180
+App 13971 output: 1180
+App 13971 output: 1180
+App 13971 output: 1180
+App 13971 output: 1184
+App 13971 output: 1184
+App 13971 output: 1184
+App 13971 output: 1184
+App 13971 output: 1184
+App 13971 output: 1184
+App 13971 output: 1186
+App 13971 output: 1188
+App 13971 output: 1188
+App 13971 output: 1188
+App 13971 output: 1188
+App 13971 output: 1188
+App 13971 output: 1188
+App 13971 output: 1190
+App 13971 output: 1190
+App 13971 output: 1190
+App 13971 output: 1190
+App 13971 output: 1190
+App 13971 output: 1108
+App 13971 output: 1108
+App 13971 output: 1116
+App 13971 output: 1116
+App 13971 output: 1116
+App 13971 output: 1116
+App 13971 output: 1118
+App 13971 output: 1118
+App 13971 output: 1122
+App 13971 output: 1122
+App 13971 output: 1122
+App 13971 output: 1122
+App 13971 output: 1128
+App 13971 output: 1128
+App 13971 output: 1128
+App 13971 output: 1128
+App 13971 output: 1128
+App 13971 output: 1128
+App 13971 output: 1128
+App 13971 output: 1128
+App 13971 output: 1128
+App 13971 output: 1150
+App 13971 output: 1150
+App 13971 output: 1154
+App 13971 output: 1154
+App 13971 output: 1156
+App 13971 output: 1006
+App 13971 output: 1006
+App 13971 output: 1006
+App 13971 output: 1008
+App 13971 output: 1008
+App 13971 output: 1008
+App 13971 output: 1008
+App 13971 output: 1010
+App 13971 output: 1010
+App 13971 output: 1010
+App 13971 output: 1012
+App 13971 output: 1012
+App 13971 output: 1014
+App 13971 output: 1014
+App 13971 output: 1014
+App 13971 output: 1016
+App 13971 output: 1016
+App 13971 output: 1016
+App 13971 output: 1016
+App 13971 output: 1030
+App 13971 output: 1030
+App 13971 output: 1030
+App 13971 output: 1030
+App 13971 output: 1032
+App 13971 output: 1032
+App 13971 output: 510
+App 13971 output: 510
+App 13971 output: 510
+App 13971 output: 510
+App 13971 output: 510
+App 13971 output: 510
+App 13971 output: 510
+App 13971 output: 634
+App 13971 output: 634
+App 13971 output: 634
+App 13971 output: 634
+App 13971 output: 634
+App 13971 output: 634
+App 13971 output: 638
+App 13971 output: 638
+App 13971 output: 638
+App 13971 output: 638
+App 13971 output: 638
+App 13971 output: 638
+App 13971 output: 642
+App 13971 output: 642
+App 13971 output: 642
+App 13971 output: 642
+App 13971 output: 642
+App 13971 output: 642
+App 13971 output: 642
+App 13971 output: 642
+App 13971 output: 642
+App 13971 output: 642
+App 13971 output: 642
+App 13971 output: 648
+App 13971 output: 648
+App 13971 output: 650
+App 13971 output: 650
+App 13971 output: 650
+App 13971 output: 650
+App 13971 output: 652
+App 13971 output: 652
+App 13971 output: 652
+App 13971 output: 652
+App 13971 output: 652
+App 13971 output: 652
+App 13971 output: 652
+App 13971 output: 652
+App 13971 output: 652
+App 13971 output: 652
+App 13971 output: 652
+App 13971 output: 652
+App 13971 output: 1102
+App 13971 output: 1102
+App 13971 output: 1102
+App 13971 output: 1102
+App 13971 output: 1102
+App 13971 output: 1102
+App 13971 output: 1102
+App 13971 output: 1102
+App 13971 output: 1102
+App 13971 output: 1102
+App 13971 output: 1102
+App 13971 output: 1102
+App 13971 output: 658
+App 13971 output: 658
+App 13971 output: 658
+App 13971 output: 658
+App 13971 output: 658
+App 13971 output: 658
+App 13971 output: 662
+App 13971 output: 662
+App 13971 output: 662
+App 13971 output: 662
+App 13971 output: 662
+App 13971 output: 662
+App 13971 output: 662
+App 13971 output: 662
+App 13971 output: 666
+App 13971 output: 666
+App 13971 output: 668
+App 13971 output: 668
+App 13971 output: 674
+App 13971 output: 674
+App 13971 output: 674
+App 13971 output: 674
+App 13971 output: 674
+App 13971 output: 674
+App 13971 output: 674
+App 13971 output: 674
+App 13971 output: 674
+App 13971 output: 674
+App 13971 output: 678
+App 13971 output: 678
+App 13971 output: 680
+App 13971 output: 680
+App 13971 output: 680
+App 13971 output: 680
+App 13971 output: 682
+App 13971 output: 682
+App 13971 output: 682
+App 13971 output: 690
+App 13971 output: 690
+App 13971 output: 690
+App 13971 output: 690
+App 13971 output: 690
+App 13971 output: 692
+App 13971 output: 692
+App 13971 output: 692
+App 13971 output: 692
+App 13971 output: 696
+App 13971 output: 696
+App 13971 output: 696
+App 13971 output: 696
+App 13971 output: 696
+App 13971 output: 696
+App 13971 output: 700
+App 13971 output: 700
+App 13971 output: 730
+App 13971 output: 730
+App 13971 output: 730
+App 13971 output: 736
+App 13971 output: 736
+App 13971 output: 736
+App 13971 output: 736
+App 13971 output: 740
+App 13971 output: 740
+App 13971 output: 740
+App 13971 output: 740
+App 13971 output: 740
+App 13971 output: 740
+App 13971 output: 740
+App 13971 output: 740
+App 13971 output: 740
+App 13971 output: 740
+App 13971 output: 740
+App 13971 output: 748
+App 13971 output: 748
+App 13971 output: 748
+App 13971 output: 748
+App 13971 output: 748
+App 13971 output: 748
+App 13971 output: 748
+App 13971 output: 748
+App 13971 output: 752
+App 13971 output: 752
+App 13971 output: 752
+App 13971 output: 752
+App 13971 output: 752
+App 13971 output: 756
+App 13971 output: 756
+App 13971 output: 756
+App 13971 output: 756
+App 13971 output: 756
+App 13971 output: 766
+App 13971 output: 766
+App 13971 output: 766
+App 13971 output: 766
+App 13971 output: 766
+App 13971 output: 766
+App 13971 output: 766
+App 13971 output: 770
+App 13971 output: 770
+App 13971 output: 770
+App 13971 output: 770
+App 13971 output: 774
+App 13971 output: 774
+App 13971 output: 774
+App 13971 output: 774
+App 13971 output: 774
+App 13971 output: 774
+App 13971 output: 774
+App 13971 output: 892
+App 13971 output: 892
+App 13971 output: 892
+App 13971 output: 892
+App 13971 output: 892
+App 13971 output: 892
+App 13971 output: 892
+App 13971 output: 892
+App 13971 output: 892
+App 13971 output: 892
+App 13971 output: 892
+App 13971 output: 892
+App 13971 output: 948
+App 13971 output: 948
+App 13971 output: 948
+App 13971 output: 948
+App 13971 output: 948
+App 13971 output: 948
+App 13971 output: 950
+App 13971 output: 950
+App 13971 output: 950
+App 13971 output: 950
+App 13971 output: 950
+App 13971 output: 950
+App 13971 output: 950
+App 13971 output: 950
+App 13971 output: 950
+App 13971 output: 950
+App 13971 output: 950
+App 13971 output: 950
+App 13971 output: 846
+App 13971 output: 846
+App 13971 output: 846
+App 13971 output: 846
+App 13971 output: 846
+App 13971 output: 846
+App 13971 output: 926
+App 13971 output: 926
+App 13971 output: 926
+App 13971 output: 926
+App 13971 output: 926
+App 13971 output: 926
+App 13971 output: 926
+App 13971 output: 814
+App 13971 output: 424
+App 13971 output: "trainers"
+
+[ N 2023-01-05 22:58:25.7348 13922/T8 age/Cor/CoreMain.cpp:671 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2023-01-05 22:58:25.7349 13922/T1 age/Cor/CoreMain.cpp:1246 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2023-01-05 22:58:25.7350 13922/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 13971, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2023-01-05 22:58:25.7352 13922/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 13979, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2023-01-05 22:58:25.7355 13922/T8 Ser/Server.h:901 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2023-01-05 22:58:25.7355 13922/Tl Ser/Server.h:901 ]: [ServerThr.7] Freed 0 spare client objects
+[ N 2023-01-05 22:58:25.7356 13922/Tu Ser/Server.h:901 ]: [ServerThr.12] Freed 0 spare client objects
+[ N 2023-01-05 22:58:25.7356 13922/Tg Ser/Server.h:901 ]: [ServerThr.5] Freed 0 spare client objects
+[ N 2023-01-05 22:58:25.7356 13922/Tl Ser/Server.h:558 ]: [ServerThr.7] Shutdown finished
+[ N 2023-01-05 22:58:25.7356 13922/To Ser/Server.h:901 ]: [ServerThr.9] Freed 0 spare client objects
+[ N 2023-01-05 22:58:25.7355 13922/Ta Ser/Server.h:901 ]: [ServerThr.2] Freed 0 spare client objects
+[ N 2023-01-05 22:58:25.7355 13922/Tc Ser/Server.h:901 ]: [ServerThr.3] Freed 0 spare client objects
+[ N 2023-01-05 22:58:25.7355 13922/Tm Ser/Server.h:901 ]: [ServerThr.8] Freed 0 spare client objects
+[ N 2023-01-05 22:58:25.7355 13922/Te Ser/Server.h:901 ]: [ServerThr.4] Freed 0 spare client objects
+[ N 2023-01-05 22:58:25.7356 13922/Ts Ser/Server.h:901 ]: [ServerThr.11] Freed 0 spare client objects
+[ N 2023-01-05 22:58:25.7358 13922/Tw Ser/Server.h:901 ]: [ApiServer] Freed 0 spare client objects
+[ N 2023-01-05 22:58:25.7358 13922/Te Ser/Server.h:558 ]: [ServerThr.4] Shutdown finished
+[ N 2023-01-05 22:58:25.7356 13922/Tq Ser/Server.h:901 ]: [ServerThr.10] Freed 0 spare client objects
+[ N 2023-01-05 22:58:25.7356 13922/Tu Ser/Server.h:558 ]: [ServerThr.12] Shutdown finished
+[ N 2023-01-05 22:58:25.7359 13922/Tq Ser/Server.h:558 ]: [ServerThr.10] Shutdown finished
+[ N 2023-01-05 22:58:25.7356 13922/T8 Ser/Server.h:558 ]: [ServerThr.1] Shutdown finished
+[ N 2023-01-05 22:58:25.7358 13922/Tm Ser/Server.h:558 ]: [ServerThr.8] Shutdown finished
+[ N 2023-01-05 22:58:25.7357 13922/Tg Ser/Server.h:558 ]: [ServerThr.5] Shutdown finished
+[ N 2023-01-05 22:58:25.7357 13922/To Ser/Server.h:558 ]: [ServerThr.9] Shutdown finished
+[ N 2023-01-05 22:58:25.7355 13922/Ti Ser/Server.h:901 ]: [ServerThr.6] Freed 0 spare client objects
+[ N 2023-01-05 22:58:25.7357 13922/Ta Ser/Server.h:558 ]: [ServerThr.2] Shutdown finished
+[ N 2023-01-05 22:58:25.7358 13922/Tc Ser/Server.h:558 ]: [ServerThr.3] Shutdown finished
+[ N 2023-01-05 22:58:25.7358 13922/Tw Ser/Server.h:558 ]: [ApiServer] Shutdown finished
+[ N 2023-01-05 22:58:25.7361 13922/Ti Ser/Server.h:558 ]: [ServerThr.6] Shutdown finished
+[ N 2023-01-05 22:58:25.7358 13922/Ts Ser/Server.h:558 ]: [ServerThr.11] Shutdown finished
+[ N 2023-01-05 22:58:25.7362 13922/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 13971, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2023-01-05 22:58:25.7362 13922/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 13979, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2023-01-05 22:58:27.1224 14079/T1 age/Wat/WatchdogMain.cpp:1377 ]: Starting Passenger watchdog...
+[ N 2023-01-05 22:58:27.1553 14081/T1 age/Cor/CoreMain.cpp:1340 ]: Starting Passenger core...
+[ N 2023-01-05 22:58:27.1557 14081/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ N 2023-01-05 22:58:27.1917 14081/T1 age/Cor/CoreMain.cpp:1015 ]: Passenger core online, PID 14081
+[ N 2023-01-05 22:58:27.4760 13922/T1 age/Cor/CoreMain.cpp:1325 ]: Passenger core shutdown finished
+[ N 2023-01-05 22:58:29.9869 14081/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+[ E 2023-01-05 22:58:29.9928 14081/T5 Sec/Crypto.cpp:990 ]: Removing Passenger private key from keychain failed: Write permissions error.. Please remove the private key from the certificate labeled Phusion Passenger Open Source in your keychain.
+App 14102 output: "init"
+App 14135 output: {"rom"=>"projects/b6test", "password"=>"b6test"}
+App 14135 output: "pokedex"
+App 14135 output: "moves"
+App 14135 output: "encounter"
+App 14135 output: 58
+App 14135 output: 58
+App 14135 output: 58
+App 14135 output: 90
+App 14135 output: 90
+App 14135 output: 162
+App 14135 output: 162
+App 14135 output: 162
+App 14135 output: 162
+App 14135 output: 162
+App 14135 output: 162
+App 14135 output: 162
+App 14135 output: 162
+App 14135 output: 162
+App 14135 output: 162
+App 14135 output: 164
+App 14135 output: 164
+App 14135 output: 164
+App 14135 output: 164
+App 14135 output: 164
+App 14135 output: 164
+App 14135 output: 164
+App 14135 output: 164
+App 14135 output: 164
+App 14135 output: 164
+App 14135 output: 166
+App 14135 output: 166
+App 14135 output: 166
+App 14135 output: 166
+App 14135 output: 166
+App 14135 output: 166
+App 14135 output: 166
+App 14135 output: 166
+App 14135 output: 166
+App 14135 output: 166
+App 14135 output: 172
+App 14135 output: 172
+App 14135 output: 172
+App 14135 output: 172
+App 14135 output: 172
+App 14135 output: 172
+App 14135 output: 172
+App 14135 output: 172
+App 14135 output: 172
+App 14135 output: 172
+App 14135 output: 174
+App 14135 output: 174
+App 14135 output: 174
+App 14135 output: 174
+App 14135 output: 174
+App 14135 output: 174
+App 14135 output: 174
+App 14135 output: 174
+App 14135 output: 174
+App 14135 output: 174
+App 14135 output: 216
+App 14135 output: 216
+App 14135 output: 216
+App 14135 output: 216
+App 14135 output: 216
+App 14135 output: 226
+App 14135 output: 946
+App 14135 output: 946
+App 14135 output: 946
+App 14135 output: 946
+App 14135 output: 946
+App 14135 output: 946
+App 14135 output: 304
+App 14135 output: 304
+App 14135 output: 304
+App 14135 output: 306
+App 14135 output: 306
+App 14135 output: 306
+App 14135 output: 306
+App 14135 output: 308
+App 14135 output: 308
+App 14135 output: 308
+App 14135 output: 308
+App 14135 output: 308
+App 14135 output: 308
+App 14135 output: 310
+App 14135 output: 310
+App 14135 output: 310
+App 14135 output: 310
+App 14135 output: 310
+App 14135 output: 310
+App 14135 output: 310
+App 14135 output: 310
+App 14135 output: 310
+App 14135 output: 310
+App 14135 output: 310
+App 14135 output: 310
+App 14135 output: 310
+App 14135 output: 310
+App 14135 output: 310
+App 14135 output: 310
+App 14135 output: 310
+App 14135 output: 310
+App 14135 output: 316
+App 14135 output: 316
+App 14135 output: 316
+App 14135 output: 316
+App 14135 output: 316
+App 14135 output: 316
+App 14135 output: 316
+App 14135 output: 316
+App 14135 output: 316
+App 14135 output: 320
+App 14135 output: 322
+App 14135 output: 322
+App 14135 output: 390
+App 14135 output: 390
+App 14135 output: 390
+App 14135 output: 390
+App 14135 output: 390
+App 14135 output: 390
+App 14135 output: 392
+App 14135 output: 392
+App 14135 output: 392
+App 14135 output: 394
+App 14135 output: 394
+App 14135 output: 394
+App 14135 output: 394
+App 14135 output: 398
+App 14135 output: 398
+App 14135 output: 398
+App 14135 output: 398
+App 14135 output: 400
+App 14135 output: 400
+App 14135 output: 400
+App 14135 output: 402
+App 14135 output: 402
+App 14135 output: 402
+App 14135 output: 402
+App 14135 output: 404
+App 14135 output: 404
+App 14135 output: 990
+App 14135 output: 990
+App 14135 output: 990
+App 14135 output: 990
+App 14135 output: 990
+App 14135 output: 990
+App 14135 output: 990
+App 14135 output: 480
+App 14135 output: 480
+App 14135 output: 480
+App 14135 output: 480
+App 14135 output: 480
+App 14135 output: 480
+App 14135 output: 890
+App 14135 output: 890
+App 14135 output: 890
+App 14135 output: 914
+App 14135 output: 914
+App 14135 output: 914
+App 14135 output: 922
+App 14135 output: 922
+App 14135 output: 1064
+App 14135 output: 1066
+App 14135 output: 1066
+App 14135 output: 1066
+App 14135 output: 1066
+App 14135 output: 1066
+App 14135 output: 1066
+App 14135 output: 1066
+App 14135 output: 1066
+App 14135 output: 1066
+App 14135 output: 1066
+App 14135 output: 1076
+App 14135 output: 1078
+App 14135 output: 1078
+App 14135 output: 1078
+App 14135 output: 1078
+App 14135 output: 1078
+App 14135 output: 1078
+App 14135 output: 1078
+App 14135 output: 1078
+App 14135 output: 1078
+App 14135 output: 1078
+App 14135 output: 1140
+App 14135 output: 1142
+App 14135 output: 1174
+App 14135 output: 1174
+App 14135 output: 1174
+App 14135 output: 1174
+App 14135 output: 1174
+App 14135 output: 1174
+App 14135 output: 1176
+App 14135 output: 1176
+App 14135 output: 1176
+App 14135 output: 1178
+App 14135 output: 1178
+App 14135 output: 1178
+App 14135 output: 1178
+App 14135 output: 1178
+App 14135 output: 1178
+App 14135 output: 1180
+App 14135 output: 1180
+App 14135 output: 1180
+App 14135 output: 1180
+App 14135 output: 1180
+App 14135 output: 1180
+App 14135 output: 1180
+App 14135 output: 1184
+App 14135 output: 1184
+App 14135 output: 1184
+App 14135 output: 1184
+App 14135 output: 1184
+App 14135 output: 1184
+App 14135 output: 1186
+App 14135 output: 1188
+App 14135 output: 1188
+App 14135 output: 1188
+App 14135 output: 1188
+App 14135 output: 1188
+App 14135 output: 1188
+App 14135 output: 1190
+App 14135 output: 1190
+App 14135 output: 1190
+App 14135 output: 1190
+App 14135 output: 1190
+App 14135 output: 1108
+App 14135 output: 1108
+App 14135 output: 1116
+App 14135 output: 1116
+App 14135 output: 1116
+App 14135 output: 1116
+App 14135 output: 1118
+App 14135 output: 1118
+App 14135 output: 1122
+App 14135 output: 1122
+App 14135 output: 1122
+App 14135 output: 1122
+App 14135 output: 1128
+App 14135 output: 1128
+App 14135 output: 1128
+App 14135 output: 1128
+App 14135 output: 1128
+App 14135 output: 1128
+App 14135 output: 1128
+App 14135 output: 1128
+App 14135 output: 1128
+App 14135 output: 1150
+App 14135 output: 1150
+App 14135 output: 1154
+App 14135 output: 1154
+App 14135 output: 1156
+App 14135 output: 1006
+App 14135 output: 1006
+App 14135 output: 1006
+App 14135 output: 1008
+App 14135 output: 1008
+App 14135 output: 1008
+App 14135 output: 1008
+App 14135 output: 1010
+App 14135 output: 1010
+App 14135 output: 1010
+App 14135 output: 1012
+App 14135 output: 1012
+App 14135 output: 1014
+App 14135 output: 1014
+App 14135 output: 1014
+App 14135 output: 1016
+App 14135 output: 1016
+App 14135 output: 1016
+App 14135 output: 1016
+App 14135 output: 1030
+App 14135 output: 1030
+App 14135 output: 1030
+App 14135 output: 1030
+App 14135 output: 1032
+App 14135 output: 1032
+App 14135 output: 510
+App 14135 output: 510
+App 14135 output: 510
+App 14135 output: 510
+App 14135 output: 510
+App 14135 output: 510
+App 14135 output: 510
+App 14135 output: 634
+App 14135 output: 634
+App 14135 output: 634
+App 14135 output: 634
+App 14135 output: 634
+App 14135 output: 634
+App 14135 output: 638
+App 14135 output: 638
+App 14135 output: 638
+App 14135 output: 638
+App 14135 output: 638
+App 14135 output: 638
+App 14135 output: 642
+App 14135 output: 642
+App 14135 output: 642
+App 14135 output: 642
+App 14135 output: 642
+App 14135 output: 642
+App 14135 output: 642
+App 14135 output: 642
+App 14135 output: 642
+App 14135 output: 642
+App 14135 output: 642
+App 14135 output: 648
+App 14135 output: 648
+App 14135 output: 650
+App 14135 output: 650
+App 14135 output: 650
+App 14135 output: 650
+App 14135 output: 652
+App 14135 output: 652
+App 14135 output: 652
+App 14135 output: 652
+App 14135 output: 652
+App 14135 output: 652
+App 14135 output: 652
+App 14135 output: 652
+App 14135 output: 652
+App 14135 output: 652
+App 14135 output: 652
+App 14135 output: 652
+App 14135 output: 1102
+App 14135 output: 1102
+App 14135 output: 1102
+App 14135 output: 1102
+App 14135 output: 1102
+App 14135 output: 1102
+App 14135 output: 1102
+App 14135 output: 1102
+App 14135 output: 1102
+App 14135 output: 1102
+App 14135 output: 1102
+App 14135 output: 1102
+App 14135 output: 658
+App 14135 output: 658
+App 14135 output: 658
+App 14135 output: 658
+App 14135 output: 658
+App 14135 output: 658
+App 14135 output: 662
+App 14135 output: 662
+App 14135 output: 662
+App 14135 output: 662
+App 14135 output: 662
+App 14135 output: 662
+App 14135 output: 662
+App 14135 output: 662
+App 14135 output: 666
+App 14135 output: 666
+App 14135 output: 668
+App 14135 output: 668
+App 14135 output: 674
+App 14135 output: 674
+App 14135 output: 674
+App 14135 output: 674
+App 14135 output: 674
+App 14135 output: 674
+App 14135 output: 674
+App 14135 output: 674
+App 14135 output: 674
+App 14135 output: 674
+App 14135 output: 678
+App 14135 output: 678
+App 14135 output: 680
+App 14135 output: 680
+App 14135 output: 680
+App 14135 output: 680
+App 14135 output: 682
+App 14135 output: 682
+App 14135 output: 682
+App 14135 output: 690
+App 14135 output: 690
+App 14135 output: 690
+App 14135 output: 690
+App 14135 output: 690
+App 14135 output: 692
+App 14135 output: 692
+App 14135 output: 692
+App 14135 output: 692
+App 14135 output: 696
+App 14135 output: 696
+App 14135 output: 696
+App 14135 output: 696
+App 14135 output: 696
+App 14135 output: 696
+App 14135 output: 700
+App 14135 output: 700
+App 14135 output: 730
+App 14135 output: 730
+App 14135 output: 730
+App 14135 output: 736
+App 14135 output: 736
+App 14135 output: 736
+App 14135 output: 736
+App 14135 output: 740
+App 14135 output: 740
+App 14135 output: 740
+App 14135 output: 740
+App 14135 output: 740
+App 14135 output: 740
+App 14135 output: 740
+App 14135 output: 740
+App 14135 output: 740
+App 14135 output: 740
+App 14135 output: 740
+App 14135 output: 748
+App 14135 output: 748
+App 14135 output: 748
+App 14135 output: 748
+App 14135 output: 748
+App 14135 output: 748
+App 14135 output: 748
+App 14135 output: 748
+App 14135 output: 752
+App 14135 output: 752
+App 14135 output: 752
+App 14135 output: 752
+App 14135 output: 752
+App 14135 output: 756
+App 14135 output: 756
+App 14135 output: 756
+App 14135 output: 756
+App 14135 output: 756
+App 14135 output: 766
+App 14135 output: 766
+App 14135 output: 766
+App 14135 output: 766
+App 14135 output: 766
+App 14135 output: 766
+App 14135 output: 766
+App 14135 output: 770
+App 14135 output: 770
+App 14135 output: 770
+App 14135 output: 770
+App 14135 output: 774
+App 14135 output: 774
+App 14135 output: 774
+App 14135 output: 774
+App 14135 output: 774
+App 14135 output: 774
+App 14135 output: 774
+App 14135 output: 892
+App 14135 output: 892
+App 14135 output: 892
+App 14135 output: 892
+App 14135 output: 892
+App 14135 output: 892
+App 14135 output: 892
+App 14135 output: 892
+App 14135 output: 892
+App 14135 output: 892
+App 14135 output: 892
+App 14135 output: 892
+App 14135 output: 948
+App 14135 output: 948
+App 14135 output: 948
+App 14135 output: 948
+App 14135 output: 948
+App 14135 output: 948
+App 14135 output: 950
+App 14135 output: 950
+App 14135 output: 950
+App 14135 output: 950
+App 14135 output: 950
+App 14135 output: 950
+App 14135 output: 950
+App 14135 output: 950
+App 14135 output: 950
+App 14135 output: 950
+App 14135 output: 950
+App 14135 output: 950
+App 14135 output: 846
+App 14135 output: 846
+App 14135 output: 846
+App 14135 output: 846
+App 14135 output: 846
+App 14135 output: 846
+App 14135 output: 926
+App 14135 output: 926
+App 14135 output: 926
+App 14135 output: 926
+App 14135 output: 926
+App 14135 output: 926
+App 14135 output: 926
+App 14135 output: 814
+App 14135 output: 424
+App 14135 output: "trainers"
+App 14135 output: "pokedex"
+App 14135 output: "moves"
+App 14135 output: "encounter"
+App 14135 output: 58
+App 14135 output: 58
+App 14135 output: 58
+App 14135 output: 90
+App 14135 output: 90
+App 14135 output: 162
+App 14135 output: 162
+App 14135 output: 162
+App 14135 output: 162
+App 14135 output: 162
+App 14135 output: 162
+App 14135 output: 162
+App 14135 output: 162
+App 14135 output: 162
+App 14135 output: 162
+App 14135 output: 164
+App 14135 output: 164
+App 14135 output: 164
+App 14135 output: 164
+App 14135 output: 164
+App 14135 output: 164
+App 14135 output: 164
+App 14135 output: 164
+App 14135 output: 164
+App 14135 output: 164
+App 14135 output: 166
+App 14135 output: 166
+App 14135 output: 166
+App 14135 output: 166
+App 14135 output: 166
+App 14135 output: 166
+App 14135 output: 166
+App 14135 output: 166
+App 14135 output: 166
+App 14135 output: 166
+App 14135 output: 172
+App 14135 output: 172
+App 14135 output: 172
+App 14135 output: 172
+App 14135 output: 172
+App 14135 output: 172
+App 14135 output: 172
+App 14135 output: 172
+App 14135 output: 172
+App 14135 output: 172
+App 14135 output: 174
+App 14135 output: 174
+App 14135 output: 174
+App 14135 output: 174
+App 14135 output: 174
+App 14135 output: 174
+App 14135 output: 174
+App 14135 output: 174
+App 14135 output: 174
+App 14135 output: 174
+App 14135 output: 216
+App 14135 output: 216
+App 14135 output: 216
+App 14135 output: 216
+App 14135 output: 216
+App 14135 output: 226
+App 14135 output: 946
+App 14135 output: 946
+App 14135 output: 946
+App 14135 output: 946
+App 14135 output: 946
+App 14135 output: 946
+App 14135 output: 304
+App 14135 output: 304
+App 14135 output: 304
+App 14135 output: 306
+App 14135 output: 306
+App 14135 output: 306
+App 14135 output: 306
+App 14135 output: 308
+App 14135 output: 308
+App 14135 output: 308
+App 14135 output: 308
+App 14135 output: 308
+App 14135 output: 308
+App 14135 output: 310
+App 14135 output: 310
+App 14135 output: 310
+App 14135 output: 310
+App 14135 output: 310
+App 14135 output: 310
+App 14135 output: 310
+App 14135 output: 310
+App 14135 output: 310
+App 14135 output: 310
+App 14135 output: 310
+App 14135 output: 310
+App 14135 output: 310
+App 14135 output: 310
+App 14135 output: 310
+App 14135 output: 310
+App 14135 output: 310
+App 14135 output: 310
+App 14135 output: 316
+App 14135 output: 316
+App 14135 output: 316
+App 14135 output: 316
+App 14135 output: 316
+App 14135 output: 316
+App 14135 output: 316
+App 14135 output: 316
+App 14135 output: 316
+App 14135 output: 320
+App 14135 output: 322
+App 14135 output: 322
+App 14135 output: 390
+App 14135 output: 390
+App 14135 output: 390
+App 14135 output: 390
+App 14135 output: 390
+App 14135 output: 390
+App 14135 output: 392
+App 14135 output: 392
+App 14135 output: 392
+App 14135 output: 394
+App 14135 output: 394
+App 14135 output: 394
+App 14135 output: 394
+App 14135 output: 398
+App 14135 output: 398
+App 14135 output: 398
+App 14135 output: 398
+App 14135 output: 400
+App 14135 output: 400
+App 14135 output: 400
+App 14135 output: 402
+App 14135 output: 402
+App 14135 output: 402
+App 14135 output: 402
+App 14135 output: 404
+App 14135 output: 404
+App 14135 output: 990
+App 14135 output: 990
+App 14135 output: 990
+App 14135 output: 990
+App 14135 output: 990
+App 14135 output: 990
+App 14135 output: 990
+App 14135 output: 480
+App 14135 output: 480
+App 14135 output: 480
+App 14135 output: 480
+App 14135 output: 480
+App 14135 output: 480
+App 14135 output: 890
+App 14135 output: 890
+App 14135 output: 890
+App 14135 output: 914
+App 14135 output: 914
+App 14135 output: 914
+App 14135 output: 922
+App 14135 output: 922
+App 14135 output: 1064
+App 14135 output: 1066
+App 14135 output: 1066
+App 14135 output: 1066
+App 14135 output: 1066
+App 14135 output: 1066
+App 14135 output: 1066
+App 14135 output: 1066
+App 14135 output: 1066
+App 14135 output: 1066
+App 14135 output: 1066
+App 14135 output: 1076
+App 14135 output: 1078
+App 14135 output: 1078
+App 14135 output: 1078
+App 14135 output: 1078
+App 14135 output: 1078
+App 14135 output: 1078
+App 14135 output: 1078
+App 14135 output: 1078
+App 14135 output: 1078
+App 14135 output: 1078
+App 14135 output: 1140
+App 14135 output: 1142
+App 14135 output: 1174
+App 14135 output: 1174
+App 14135 output: 1174
+App 14135 output: 1174
+App 14135 output: 1174
+App 14135 output: 1174
+App 14135 output: 1176
+App 14135 output: 1176
+App 14135 output: 1176
+App 14135 output: 1178
+App 14135 output: 1178
+App 14135 output: 1178
+App 14135 output: 1178
+App 14135 output: 1178
+App 14135 output: 1178
+App 14135 output: 1180
+App 14135 output: 1180
+App 14135 output: 1180
+App 14135 output: 1180
+App 14135 output: 1180
+App 14135 output: 1180
+App 14135 output: 1180
+App 14135 output: 1184
+App 14135 output: 1184
+App 14135 output: 1184
+App 14135 output: 1184
+App 14135 output: 1184
+App 14135 output: 1184
+App 14135 output: 1186
+App 14135 output: 1188
+App 14135 output: 1188
+App 14135 output: 1188
+App 14135 output: 1188
+App 14135 output: 1188
+App 14135 output: 1188
+App 14135 output: 1190
+App 14135 output: 1190
+App 14135 output: 1190
+App 14135 output: 1190
+App 14135 output: 1190
+App 14135 output: 1108
+App 14135 output: 1108
+App 14135 output: 1116
+App 14135 output: 1116
+App 14135 output: 1116
+App 14135 output: 1116
+App 14135 output: 1118
+App 14135 output: 1118
+App 14135 output: 1122
+App 14135 output: 1122
+App 14135 output: 1122
+App 14135 output: 1122
+App 14135 output: 1128
+App 14135 output: 1128
+App 14135 output: 1128
+App 14135 output: 1128
+App 14135 output: 1128
+App 14135 output: 1128
+App 14135 output: 1128
+App 14135 output: 1128
+App 14135 output: 1128
+App 14135 output: 1150
+App 14135 output: 1150
+App 14135 output: 1154
+App 14135 output: 1154
+App 14135 output: 1156
+App 14135 output: 1006
+App 14135 output: 1006
+App 14135 output: 1006
+App 14135 output: 1008
+App 14135 output: 1008
+App 14135 output: 1008
+App 14135 output: 1008
+App 14135 output: 1010
+App 14135 output: 1010
+App 14135 output: 1010
+App 14135 output: 1012
+App 14135 output: 1012
+App 14135 output: 1014
+App 14135 output: 1014
+App 14135 output: 1014
+App 14135 output: 1016
+App 14135 output: 1016
+App 14135 output: 1016
+App 14135 output: 1016
+App 14135 output: 1030
+App 14135 output: 1030
+App 14135 output: 1030
+App 14135 output: 1030
+App 14135 output: 1032
+App 14135 output: 1032
+App 14135 output: 510
+App 14135 output: 510
+App 14135 output: 510
+App 14135 output: 510
+App 14135 output: 510
+App 14135 output: 510
+App 14135 output: 510
+App 14135 output: 634
+App 14135 output: 634
+App 14135 output: 634
+App 14135 output: 634
+App 14135 output: 634
+App 14135 output: 634
+App 14135 output: 638
+App 14135 output: 638
+App 14135 output: 638
+App 14135 output: 638
+App 14135 output: 638
+App 14135 output: 638
+App 14135 output: 642
+App 14135 output: 642
+App 14135 output: 642
+App 14135 output: 642
+App 14135 output: 642
+App 14135 output: 642
+App 14135 output: 642
+App 14135 output: 642
+App 14135 output: 642
+App 14135 output: 642
+App 14135 output: 642
+App 14135 output: 648
+App 14135 output: 648
+App 14135 output: 650
+App 14135 output: 650
+App 14135 output: 650
+App 14135 output: 650
+App 14135 output: 652
+App 14135 output: 652
+App 14135 output: 652
+App 14135 output: 652
+App 14135 output: 652
+App 14135 output: 652
+App 14135 output: 652
+App 14135 output: 652
+App 14135 output: 652
+App 14135 output: 652
+App 14135 output: 652
+App 14135 output: 652
+App 14135 output: 1102
+App 14135 output: 1102
+App 14135 output: 1102
+App 14135 output: 1102
+App 14135 output: 1102
+App 14135 output: 1102
+App 14135 output: 1102
+App 14135 output: 1102
+App 14135 output: 1102
+App 14135 output: 1102
+App 14135 output: 1102
+App 14135 output: 1102
+App 14135 output: 658
+App 14135 output: 658
+App 14135 output: 658
+App 14135 output: 658
+App 14135 output: 658
+App 14135 output: 658
+App 14135 output: 662
+App 14135 output: 662
+App 14135 output: 662
+App 14135 output: 662
+App 14135 output: 662
+App 14135 output: 662
+App 14135 output: 662
+App 14135 output: 662
+App 14135 output: 666
+App 14135 output: 666
+App 14135 output: 668
+App 14135 output: 668
+App 14135 output: 674
+App 14135 output: 674
+App 14135 output: 674
+App 14135 output: 674
+App 14135 output: 674
+App 14135 output: 674
+App 14135 output: 674
+App 14135 output: 674
+App 14135 output: 674
+App 14135 output: 674
+App 14135 output: 678
+App 14135 output: 678
+App 14135 output: 680
+App 14135 output: 680
+App 14135 output: 680
+App 14135 output: 680
+App 14135 output: 682
+App 14135 output: 682
+App 14135 output: 682
+App 14135 output: 690
+App 14135 output: 690
+App 14135 output: 690
+App 14135 output: 690
+App 14135 output: 690
+App 14135 output: 692
+App 14135 output: 692
+App 14135 output: 692
+App 14135 output: 692
+App 14135 output: 696
+App 14135 output: 696
+App 14135 output: 696
+App 14135 output: 696
+App 14135 output: 696
+App 14135 output: 696
+App 14135 output: 700
+App 14135 output: 700
+App 14135 output: 730
+App 14135 output: 730
+App 14135 output: 730
+App 14135 output: 736
+App 14135 output: 736
+App 14135 output: 736
+App 14135 output: 736
+App 14135 output: 740
+App 14135 output: 740
+App 14135 output: 740
+App 14135 output: 740
+App 14135 output: 740
+App 14135 output: 740
+App 14135 output: 740
+App 14135 output: 740
+App 14135 output: 740
+App 14135 output: 740
+App 14135 output: 740
+App 14135 output: 748
+App 14135 output: 748
+App 14135 output: 748
+App 14135 output: 748
+App 14135 output: 748
+App 14135 output: 748
+App 14135 output: 748
+App 14135 output: 748
+App 14135 output: 752
+App 14135 output: 752
+App 14135 output: 752
+App 14135 output: 752
+App 14135 output: 752
+App 14135 output: 756
+App 14135 output: 756
+App 14135 output: 756
+App 14135 output: 756
+App 14135 output: 756
+App 14135 output: 766
+App 14135 output: 766
+App 14135 output: 766
+App 14135 output: 766
+App 14135 output: 766
+App 14135 output: 766
+App 14135 output: 766
+App 14135 output: 770
+App 14135 output: 770
+App 14135 output: 770
+App 14135 output: 770
+App 14135 output: 774
+App 14135 output: 774
+App 14135 output: 774
+App 14135 output: 774
+App 14135 output: 774
+App 14135 output: 774
+App 14135 output: 774
+App 14135 output: 892
+App 14135 output: 892
+App 14135 output: 892
+App 14135 output: 892
+App 14135 output: 892
+App 14135 output: 892
+App 14135 output: 892
+App 14135 output: 892
+App 14135 output: 892
+App 14135 output: 892
+App 14135 output: 892
+App 14135 output: 892
+App 14135 output: 948
+App 14135 output: 948
+App 14135 output: 948
+App 14135 output: 948
+App 14135 output: 948
+App 14135 output: 948
+App 14135 output: 950
+App 14135 output: 950
+App 14135 output: 950
+App 14135 output: 950
+App 14135 output: 950
+App 14135 output: 950
+App 14135 output: 950
+App 14135 output: 950
+App 14135 output: 950
+App 14135 output: 950
+App 14135 output: 950
+App 14135 output: 950
+App 14135 output: 846
+App 14135 output: 846
+App 14135 output: 846
+App 14135 output: 846
+App 14135 output: 846
+App 14135 output: 846
+App 14135 output: 926
+App 14135 output: 926
+App 14135 output: 926
+App 14135 output: 926
+App 14135 output: 926
+App 14135 output: 926
+App 14135 output: 926
+App 14135 output: 814
+App 14135 output: 424
+App 14135 output: "trainers"
+
+[ N 2023-01-05 23:03:10.5613 14081/T8 age/Cor/CoreMain.cpp:671 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2023-01-05 23:03:10.5613 14081/T1 age/Cor/CoreMain.cpp:1246 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2023-01-05 23:03:10.5614 14081/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 14135, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2023-01-05 23:03:10.5620 14081/Tk Ser/Server.h:901 ]: [ServerThr.7] Freed 0 spare client objects
+[ N 2023-01-05 23:03:10.5620 14081/Ti Ser/Server.h:901 ]: [ServerThr.6] Freed 0 spare client objects
+[ N 2023-01-05 23:03:10.5619 14081/Tc Ser/Server.h:901 ]: [ServerThr.3] Freed 0 spare client objects
+[ N 2023-01-05 23:03:10.5621 14081/Tn Ser/Server.h:901 ]: [ServerThr.8] Freed 0 spare client objects
+[ N 2023-01-05 23:03:10.5620 14081/Ta Ser/Server.h:901 ]: [ServerThr.2] Freed 0 spare client objects
+[ N 2023-01-05 23:03:10.5620 14081/To Ser/Server.h:901 ]: [ServerThr.9] Freed 0 spare client objects
+[ N 2023-01-05 23:03:10.5620 14081/Tg Ser/Server.h:901 ]: [ServerThr.5] Freed 0 spare client objects
+[ N 2023-01-05 23:03:10.5619 14081/T8 Ser/Server.h:901 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2023-01-05 23:03:10.5620 14081/Tq Ser/Server.h:901 ]: [ServerThr.10] Freed 0 spare client objects
+[ N 2023-01-05 23:03:10.5622 14081/Tg Ser/Server.h:558 ]: [ServerThr.5] Shutdown finished
+[ N 2023-01-05 23:03:10.5623 14081/Tq Ser/Server.h:558 ]: [ServerThr.10] Shutdown finished
+[ N 2023-01-05 23:03:10.5621 14081/Ti Ser/Server.h:558 ]: [ServerThr.6] Shutdown finished
+[ N 2023-01-05 23:03:10.5621 14081/Tk Ser/Server.h:558 ]: [ServerThr.7] Shutdown finished
+[ N 2023-01-05 23:03:10.5622 14081/T8 Ser/Server.h:558 ]: [ServerThr.1] Shutdown finished
+[ N 2023-01-05 23:03:10.5622 14081/To Ser/Server.h:558 ]: [ServerThr.9] Shutdown finished
+[ N 2023-01-05 23:03:10.5620 14081/Te Ser/Server.h:901 ]: [ServerThr.4] Freed 0 spare client objects
+[ N 2023-01-05 23:03:10.5621 14081/Tu Ser/Server.h:901 ]: [ServerThr.12] Freed 0 spare client objects
+[ N 2023-01-05 23:03:10.5621 14081/Tc Ser/Server.h:558 ]: [ServerThr.3] Shutdown finished
+[ N 2023-01-05 23:03:10.5621 14081/Ts Ser/Server.h:901 ]: [ServerThr.11] Freed 0 spare client objects
+[ N 2023-01-05 23:03:10.5622 14081/Ta Ser/Server.h:558 ]: [ServerThr.2] Shutdown finished
+[ N 2023-01-05 23:03:10.5624 14081/Tu Ser/Server.h:558 ]: [ServerThr.12] Shutdown finished
+[ N 2023-01-05 23:03:10.5622 14081/Tw Ser/Server.h:901 ]: [ApiServer] Freed 0 spare client objects
+[ N 2023-01-05 23:03:10.5621 14081/Tn Ser/Server.h:558 ]: [ServerThr.8] Shutdown finished
+[ N 2023-01-05 23:03:10.5625 14081/Te Ser/Server.h:558 ]: [ServerThr.4] Shutdown finished
+[ N 2023-01-05 23:03:10.5625 14081/Ts Ser/Server.h:558 ]: [ServerThr.11] Shutdown finished
+[ N 2023-01-05 23:03:10.5625 14081/Tw Ser/Server.h:558 ]: [ApiServer] Shutdown finished
+[ N 2023-01-05 23:03:10.5626 14081/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 14135, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2023-01-05 23:03:11.5972 14081/T1 age/Cor/CoreMain.cpp:1325 ]: Passenger core shutdown finished
+[ N 2023-01-05 23:03:12.4701 14308/T1 age/Wat/WatchdogMain.cpp:1377 ]: Starting Passenger watchdog...
+[ N 2023-01-05 23:03:12.5085 14310/T1 age/Cor/CoreMain.cpp:1340 ]: Starting Passenger core...
+[ N 2023-01-05 23:03:12.5089 14310/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ N 2023-01-05 23:03:12.5517 14310/T1 age/Cor/CoreMain.cpp:1015 ]: Passenger core online, PID 14310
+[ N 2023-01-05 23:03:15.3178 14310/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+[ E 2023-01-05 23:03:15.3229 14310/T5 Sec/Crypto.cpp:990 ]: Removing Passenger private key from keychain failed: Write permissions error.. Please remove the private key from the certificate labeled Phusion Passenger Open Source in your keychain.
+App 14328 output: "init"
+App 14361 output: {"rom"=>"projects/b6test", "password"=>"b6test"}
+App 14361 output: "pokedex"
+App 14361 output: "moves"
+App 14361 output: "encounter"
+App 14361 output: 58
+App 14361 output: 58
+App 14361 output: 58
+App 14361 output: 90
+App 14361 output: 90
+App 14361 output: 162
+App 14361 output: 162
+App 14361 output: 162
+App 14361 output: 162
+App 14361 output: 162
+App 14361 output: 162
+App 14361 output: 162
+App 14361 output: 162
+App 14361 output: 162
+App 14361 output: 162
+App 14361 output: 164
+App 14361 output: 164
+App 14361 output: 164
+App 14361 output: 164
+App 14361 output: 164
+App 14361 output: 164
+App 14361 output: 164
+App 14361 output: 164
+App 14361 output: 164
+App 14361 output: 164
+App 14361 output: 166
+App 14361 output: 166
+App 14361 output: 166
+App 14361 output: 166
+App 14361 output: 166
+App 14361 output: 166
+App 14361 output: 166
+App 14361 output: 166
+App 14361 output: 166
+App 14361 output: 166
+App 14361 output: 172
+App 14361 output: 172
+App 14361 output: 172
+App 14361 output: 172
+App 14361 output: 172
+App 14361 output: 172
+App 14361 output: 172
+App 14361 output: 172
+App 14361 output: 172
+App 14361 output: 172
+App 14361 output: 174
+App 14361 output: 174
+App 14361 output: 174
+App 14361 output: 174
+App 14361 output: 174
+App 14361 output: 174
+App 14361 output: 174
+App 14361 output: 174
+App 14361 output: 174
+App 14361 output: 174
+App 14361 output: 216
+App 14361 output: 216
+App 14361 output: 216
+App 14361 output: 216
+App 14361 output: 216
+App 14361 output: 226
+App 14361 output: 946
+App 14361 output: 946
+App 14361 output: 946
+App 14361 output: 946
+App 14361 output: 946
+App 14361 output: 946
+App 14361 output: 304
+App 14361 output: 304
+App 14361 output: 304
+App 14361 output: 306
+App 14361 output: 306
+App 14361 output: 306
+App 14361 output: 306
+App 14361 output: 308
+App 14361 output: 308
+App 14361 output: 308
+App 14361 output: 308
+App 14361 output: 308
+App 14361 output: 308
+App 14361 output: 310
+App 14361 output: 310
+App 14361 output: 310
+App 14361 output: 310
+App 14361 output: 310
+App 14361 output: 310
+App 14361 output: 310
+App 14361 output: 310
+App 14361 output: 310
+App 14361 output: 310
+App 14361 output: 310
+App 14361 output: 310
+App 14361 output: 310
+App 14361 output: 310
+App 14361 output: 310
+App 14361 output: 310
+App 14361 output: 310
+App 14361 output: 310
+App 14361 output: 316
+App 14361 output: 316
+App 14361 output: 316
+App 14361 output: 316
+App 14361 output: 316
+App 14361 output: 316
+App 14361 output: 316
+App 14361 output: 316
+App 14361 output: 316
+App 14361 output: 320
+App 14361 output: 322
+App 14361 output: 322
+App 14361 output: 390
+App 14361 output: 390
+App 14361 output: 390
+App 14361 output: 390
+App 14361 output: 390
+App 14361 output: 390
+App 14361 output: 392
+App 14361 output: 392
+App 14361 output: 392
+App 14361 output: 394
+App 14361 output: 394
+App 14361 output: 394
+App 14361 output: 394
+App 14361 output: 398
+App 14361 output: 398
+App 14361 output: 398
+App 14361 output: 398
+App 14361 output: 400
+App 14361 output: 400
+App 14361 output: 400
+App 14361 output: 402
+App 14361 output: 402
+App 14361 output: 402
+App 14361 output: 402
+App 14361 output: 404
+App 14361 output: 404
+App 14361 output: 990
+App 14361 output: 990
+App 14361 output: 990
+App 14361 output: 990
+App 14361 output: 990
+App 14361 output: 990
+App 14361 output: 990
+App 14361 output: 480
+App 14361 output: 480
+App 14361 output: 480
+App 14361 output: 480
+App 14361 output: 480
+App 14361 output: 480
+App 14361 output: 890
+App 14361 output: 890
+App 14361 output: 890
+App 14361 output: 914
+App 14361 output: 914
+App 14361 output: 914
+App 14361 output: 922
+App 14361 output: 922
+App 14361 output: 1064
+App 14361 output: 1066
+App 14361 output: 1066
+App 14361 output: 1066
+App 14361 output: 1066
+App 14361 output: 1066
+App 14361 output: 1066
+App 14361 output: 1066
+App 14361 output: 1066
+App 14361 output: 1066
+App 14361 output: 1066
+App 14361 output: 1076
+App 14361 output: 1078
+App 14361 output: 1078
+App 14361 output: 1078
+App 14361 output: 1078
+App 14361 output: 1078
+App 14361 output: 1078
+App 14361 output: 1078
+App 14361 output: 1078
+App 14361 output: 1078
+App 14361 output: 1078
+App 14361 output: 1140
+App 14361 output: 1142
+App 14361 output: 1174
+App 14361 output: 1174
+App 14361 output: 1174
+App 14361 output: 1174
+App 14361 output: 1174
+App 14361 output: 1174
+App 14361 output: 1176
+App 14361 output: 1176
+App 14361 output: 1176
+App 14361 output: 1178
+App 14361 output: 1178
+App 14361 output: 1178
+App 14361 output: 1178
+App 14361 output: 1178
+App 14361 output: 1178
+App 14361 output: 1180
+App 14361 output: 1180
+App 14361 output: 1180
+App 14361 output: 1180
+App 14361 output: 1180
+App 14361 output: 1180
+App 14361 output: 1180
+App 14361 output: 1184
+App 14361 output: 1184
+App 14361 output: 1184
+App 14361 output: 1184
+App 14361 output: 1184
+App 14361 output: 1184
+App 14361 output: 1186
+App 14361 output: 1188
+App 14361 output: 1188
+App 14361 output: 1188
+App 14361 output: 1188
+App 14361 output: 1188
+App 14361 output: 1188
+App 14361 output: 1190
+App 14361 output: 1190
+App 14361 output: 1190
+App 14361 output: 1190
+App 14361 output: 1190
+App 14361 output: 1108
+App 14361 output: 1108
+App 14361 output: 1116
+App 14361 output: 1116
+App 14361 output: 1116
+App 14361 output: 1116
+App 14361 output: 1118
+App 14361 output: 1118
+App 14361 output: 1122
+App 14361 output: 1122
+App 14361 output: 1122
+App 14361 output: 1122
+App 14361 output: 1128
+App 14361 output: 1128
+App 14361 output: 1128
+App 14361 output: 1128
+App 14361 output: 1128
+App 14361 output: 1128
+App 14361 output: 1128
+App 14361 output: 1128
+App 14361 output: 1128
+App 14361 output: 1150
+App 14361 output: 1150
+App 14361 output: 1154
+App 14361 output: 1154
+App 14361 output: 1156
+App 14361 output: 1006
+App 14361 output: 1006
+App 14361 output: 1006
+App 14361 output: 1008
+App 14361 output: 1008
+App 14361 output: 1008
+App 14361 output: 1008
+App 14361 output: 1010
+App 14361 output: 1010
+App 14361 output: 1010
+App 14361 output: 1012
+App 14361 output: 1012
+App 14361 output: 1014
+App 14361 output: 1014
+App 14361 output: 1014
+App 14361 output: 1016
+App 14361 output: 1016
+App 14361 output: 1016
+App 14361 output: 1016
+App 14361 output: 1030
+App 14361 output: 1030
+App 14361 output: 1030
+App 14361 output: 1030
+App 14361 output: 1032
+App 14361 output: 1032
+App 14361 output: 510
+App 14361 output: 510
+App 14361 output: 510
+App 14361 output: 510
+App 14361 output: 510
+App 14361 output: 510
+App 14361 output: 510
+App 14361 output: 634
+App 14361 output: 634
+App 14361 output: 634
+App 14361 output: 634
+App 14361 output: 634
+App 14361 output: 634
+App 14361 output: 638
+App 14361 output: 638
+App 14361 output: 638
+App 14361 output: 638
+App 14361 output: 638
+App 14361 output: 638
+App 14361 output: 642
+App 14361 output: 642
+App 14361 output: 642
+App 14361 output: 642
+App 14361 output: 642
+App 14361 output: 642
+App 14361 output: 642
+App 14361 output: 642
+App 14361 output: 642
+App 14361 output: 642
+App 14361 output: 642
+App 14361 output: 648
+App 14361 output: 648
+App 14361 output: 650
+App 14361 output: 650
+App 14361 output: 650
+App 14361 output: 650
+App 14361 output: 652
+App 14361 output: 652
+App 14361 output: 652
+App 14361 output: 652
+App 14361 output: 652
+App 14361 output: 652
+App 14361 output: 652
+App 14361 output: 652
+App 14361 output: 652
+App 14361 output: 652
+App 14361 output: 652
+App 14361 output: 652
+App 14361 output: 1102
+App 14361 output: 1102
+App 14361 output: 1102
+App 14361 output: 1102
+App 14361 output: 1102
+App 14361 output: 1102
+App 14361 output: 1102
+App 14361 output: 1102
+App 14361 output: 1102
+App 14361 output: 1102
+App 14361 output: 1102
+App 14361 output: 1102
+App 14361 output: 658
+App 14361 output: 658
+App 14361 output: 658
+App 14361 output: 658
+App 14361 output: 658
+App 14361 output: 658
+App 14361 output: 662
+App 14361 output: 662
+App 14361 output: 662
+App 14361 output: 662
+App 14361 output: 662
+App 14361 output: 662
+App 14361 output: 662
+App 14361 output: 662
+App 14361 output: 666
+App 14361 output: 666
+App 14361 output: 668
+App 14361 output: 668
+App 14361 output: 674
+App 14361 output: 674
+App 14361 output: 674
+App 14361 output: 674
+App 14361 output: 674
+App 14361 output: 674
+App 14361 output: 674
+App 14361 output: 674
+App 14361 output: 674
+App 14361 output: 674
+App 14361 output: 678
+App 14361 output: 678
+App 14361 output: 680
+App 14361 output: 680
+App 14361 output: 680
+App 14361 output: 680
+App 14361 output: 682
+App 14361 output: 682
+App 14361 output: 682
+App 14361 output: 690
+App 14361 output: 690
+App 14361 output: 690
+App 14361 output: 690
+App 14361 output: 690
+App 14361 output: 692
+App 14361 output: 692
+App 14361 output: 692
+App 14361 output: 692
+App 14361 output: 696
+App 14361 output: 696
+App 14361 output: 696
+App 14361 output: 696
+App 14361 output: 696
+App 14361 output: 696
+App 14361 output: 700
+App 14361 output: 700
+App 14361 output: 730
+App 14361 output: 730
+App 14361 output: 730
+App 14361 output: 736
+App 14361 output: 736
+App 14361 output: 736
+App 14361 output: 736
+App 14361 output: 740
+App 14361 output: 740
+App 14361 output: 740
+App 14361 output: 740
+App 14361 output: 740
+App 14361 output: 740
+App 14361 output: 740
+App 14361 output: 740
+App 14361 output: 740
+App 14361 output: 740
+App 14361 output: 740
+App 14361 output: 748
+App 14361 output: 748
+App 14361 output: 748
+App 14361 output: 748
+App 14361 output: 748
+App 14361 output: 748
+App 14361 output: 748
+App 14361 output: 748
+App 14361 output: 752
+App 14361 output: 752
+App 14361 output: 752
+App 14361 output: 752
+App 14361 output: 752
+App 14361 output: 756
+App 14361 output: 756
+App 14361 output: 756
+App 14361 output: 756
+App 14361 output: 756
+App 14361 output: 766
+App 14361 output: 766
+App 14361 output: 766
+App 14361 output: 766
+App 14361 output: 766
+App 14361 output: 766
+App 14361 output: 766
+App 14361 output: 770
+App 14361 output: 770
+App 14361 output: 770
+App 14361 output: 770
+App 14361 output: 774
+App 14361 output: 774
+App 14361 output: 774
+App 14361 output: 774
+App 14361 output: 774
+App 14361 output: 774
+App 14361 output: 774
+App 14361 output: 892
+App 14361 output: 892
+App 14361 output: 892
+App 14361 output: 892
+App 14361 output: 892
+App 14361 output: 892
+App 14361 output: 892
+App 14361 output: 892
+App 14361 output: 892
+App 14361 output: 892
+App 14361 output: 892
+App 14361 output: 892
+App 14361 output: 948
+App 14361 output: 948
+App 14361 output: 948
+App 14361 output: 948
+App 14361 output: 948
+App 14361 output: 948
+App 14361 output: 950
+App 14361 output: 950
+App 14361 output: 950
+App 14361 output: 950
+App 14361 output: 950
+App 14361 output: 950
+App 14361 output: 950
+App 14361 output: 950
+App 14361 output: 950
+App 14361 output: 950
+App 14361 output: 950
+App 14361 output: 950
+App 14361 output: 846
+App 14361 output: 846
+App 14361 output: 846
+App 14361 output: 846
+App 14361 output: 846
+App 14361 output: 846
+App 14361 output: 926
+App 14361 output: 926
+App 14361 output: 926
+App 14361 output: 926
+App 14361 output: 926
+App 14361 output: 926
+App 14361 output: 926
+App 14361 output: 814
+App 14361 output: 424
+App 14361 output: "trainers"

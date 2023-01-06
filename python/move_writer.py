@@ -7,6 +7,7 @@ import sys
 import rom_data
 import tools
 import json
+import subprocess
 
 # code.interact(local=dict(globals(), **locals()))
 
@@ -20,11 +21,27 @@ def output_narc(rom, rom_name):
 			narc_id = settings[ani]
 			narcfile_path = f'{rom_name}/narcs/{ani}-{narc_id}.narc'
 			rom.files[narc_id] = ndspy.narc.NARC.fromFile(narcfile_path).save()
-			print(len(ndspy.narc.NARC.fromFile(narcfile_path).files))
-			print("length")
+
 
 
 	return tools.output_narc("moves", rom, rom_name)
+
+def decompile_script(rom_name, move_id):
+	with open(f'{rom_name}/session_settings.json', "r") as outfile:  
+		settings = json.load(outfile) 
+		narc_id = settings["move_animations"]
+		narcfile_path = f'{rom_name}/narcs/{ani}-{narc_id}.narc'
+		narc = ndspy.narc.NARC.fromFile(narcfile_path)
+		script = narc.files[move_id]
+
+		f = open(f"{rom_name}/move_scripts/{move_id}.bin", "wb")
+		f.write(script)
+		f.close()
+
+		subprocess.run(["python3", "python/MovScrCMDDecompiler.py", f"{rom_name}/move_scripts/{move_id}.bin"], check=True)
+
+
+
 
 def write_readable_to_raw(file_name, narc_name="moves", skip_ani=False):
 	tools.write_readable_to_raw(file_name, narc_name, to_raw)

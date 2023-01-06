@@ -644,8 +644,7 @@ class MyApp < Sinatra::Base
 
 	get '/export_docs' do 
 		Action.docs
-
-		redirect '/headers'
+		redirect "/#{$rom_name.split("/")[1]}_pokedex.txt"
 	end
 
 	get '/publish_calc' do 

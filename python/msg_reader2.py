@@ -273,6 +273,13 @@ def output_scripts(folder, narc):
     for n, message in enumerate(narc.files):   
         with open(f'{folder}/{n}.bin', "wb") as binary_file:
             binary_file.write(message)
+
+def output_move_scripts(folder, narc):
+    print("outputting scripts")
+    
+    for n, message in enumerate(narc.files):   
+        with open(f'{folder}/{n}.bin', "wb") as binary_file:
+            binary_file.write(message)
         
 
 

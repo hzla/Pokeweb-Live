@@ -98,7 +98,7 @@ class Action
 		
 		p trainers.length
 		nol = 0
-		open('documentation/trainers.txt', 'w') do |f|
+		open("public/#{$rom_name.split("/")[1]}_trainers.txt", 'w') do |f|
 			last_location = ""
 			trainers.each do |tr|
 				next if tr.empty?
@@ -154,25 +154,29 @@ class Action
 		moves = Move.get_all
 		vanilla_moves = Move.get_all "documentation/vanilla"
 		
-		open('documentation/moves.txt', 'w') do |f|
+		open("public/#{$rom_name.split("/")[1]}_moves.txt", 'w') do |f|
 			moves.each_with_index do |move, i|
-				if move != vanilla_moves[i]
+				if move != vanilla_moves[i] or i > 559
 					move = move[1]
-					vanilla_move = vanilla_moves[i][1]
+					
+
+					vanilla_move = vanilla_moves[i][1] if i < 560
 
 					f.puts "==================="
 					f.puts move["name"].move_titleize
 					f.puts "==================="
 
-					
-					f.puts "(Old)"
-					f.puts "#{vanilla_move["power"]}  BP || #{vanilla_move["accuracy"]} ACC || #{vanilla_move["category"]} || #{vanilla_move["type"]} || #{vanilla_move["pp"]} PP"
+					if i < 560
+						f.puts "(Old)"
+						f.puts "#{vanilla_move["power"]}  BP || #{vanilla_move["accuracy"]} ACC || #{vanilla_move["category"]} || #{vanilla_move["type"]} || #{vanilla_move["pp"]} PP"
 
-					f.puts "Effect: #{vanilla_move["effect"]}"
-					f.puts
+						f.puts "Effect: #{vanilla_move["effect"]}"
+						f.puts
+						f.puts "(New)"
+					end
 
 		
-					f.puts "(New)"
+					
 					f.puts "#{move["power"]}  BP || #{move["accuracy"]} ACC || #{move["category"]} || #{move["type"]} || #{move["pp"]} PP"
 
 					f.puts "Effect: #{move["effect"]}"
@@ -188,8 +192,14 @@ class Action
 		vanilla_poks = Personal.poke_data "documentation/vanilla"
 		evolutions = Evolution.get_all
 
+		rom_name = $rom_name.split("/")[1]
 
-		open('documentation/pokedex.txt', 'w') do |f|
+		open("public/#{rom_name}_pokedex.txt", 'w') do |f|
+		  	f.puts "Pokedex: /#{rom_name}_pokedex.txt"
+		  	f.puts "Moves: /#{rom_name}_moves.txt"
+		  	f.puts "Encounters: /#{rom_name}_enc.txt"
+		  	f.puts "Trainers: /#{rom_name}_trainers.txt"	
+
 		  	poks.each_with_index do |pok, i|
 		  		next if i == 0
 
@@ -256,7 +266,7 @@ class Action
 	def self.output_encs
 		encs = Encounter.level_sorted
 
-		open('documentation/encounters.txt', 'w') do |f|
+		open("public/#{$rom_name.split("/")[1]}_enc.txt", 'w') do |f|
 			encs.each do |enc|
 				if enc["locations"] and !enc["locations"].empty?
 					f.puts "=================="

@@ -11,6 +11,7 @@ import msg_reader2
 from header_reader import output_headers_json
 from msg_reader2 import output_texts
 from msg_reader2 import output_scripts
+from msg_reader2 import output_move_scripts
 
 
 # code.interact(local=dict(globals(), **locals()))
@@ -26,7 +27,7 @@ pw = sys.argv[2]
 if not os.path.exists(f'{rom_name}'):
     os.makedirs(f'{rom_name}')
 
-for folder in ["narcs", "texts", "json", "message_texts", "story_texts", "scripts"]:
+for folder in ["narcs", "texts", "json", "message_texts", "story_texts", "scripts", "move_scripts"]:
 	if not os.path.exists(f'{rom_name}/{folder}'):
 		os.makedirs(f'{rom_name}/{folder}')
 
