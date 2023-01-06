@@ -490,6 +490,7 @@ class Trpok < Pokenarc
 			end
 			
 			pok_id = raw["species_id_#{i}"]
+			next if !pok_id
 			file_path = "#{$rom_name}/json/personal/#{pok_id}.json"
 			personal = JSON.parse(File.open(file_path, "r"){|f| f.read})["readable"]
 			

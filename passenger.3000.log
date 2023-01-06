@@ -13215,3 +13215,4 @@ App 14361 output: 926
 App 14361 output: 814
 App 14361 output: 424
 App 14361 output: "trainers"
+[ N 2023-01-05 23:08:15.5780 14310/T4 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 14371, application /Users/andylee/Repos/Pokeweb (development)
