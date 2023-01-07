@@ -31,7 +31,7 @@ class MyApp < Sinatra::Base
 	before do
 		
 		$rom_name = session[:rom_name]
-		$rom_name = "projects/b6test"
+		# $rom_name = "projects/b6test"
 
 		# if ENV['RACK_ENV'] == 'test'
 		# 	$rom_name = ENV['ROM']
@@ -316,6 +316,8 @@ class MyApp < Sinatra::Base
 		p params['data']
 		
 		py = "python3"
+
+
 
 		begin
 			retries ||= 0

@@ -626,9 +626,15 @@ $(document).ready(function() {
 		console.log(entry)
 		var index = entry.attr('data-index')
 		var file = entry.find('.move-script')[0].files[0]
+		var ani = entry.find("[data-field-name='animation']").text()
 
 		if (!file) {
 			alert("no file uploaded")
+			return
+		}
+
+		if (ani != "0") {
+			alert("animation must first be set to 0")
 			return
 		}
 		

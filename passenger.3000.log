@@ -13922,3 +13922,109 @@ App 29791 output: {"file_name"=>"735", "field"=>"animation", "value"=>"1", "narc
 App 29791 output: {"file_name"=>"735", "field"=>"animation", "value"=>"1", "narc"=>"move", "int"=>"true"}
 App 29791 output: 1
 App 29791 output: 454
+App 29791 output: {"file"=>{"filename"=>"move_script_1.txt", "type"=>"text/plain", "name"=>"file", "tempfile"=>#<Tempfile:/var/folders/th/rnc7s7ts4_13_1w48n1wjfwr0000gn/T/RackMultipart20230106-29791-frti94.txt>, "head"=>"Content-Disposition: form-data; name=\"file\"; filename=\"move_script_1.txt\"\r\nContent-Type: text/plain\r\n"}, "id"=>"1"}
+App 29791 output: {"file"=>{"filename"=>"move_script_94.txt", "type"=>"text/plain", "name"=>"file", "tempfile"=>#<Tempfile:/var/folders/th/rnc7s7ts4_13_1w48n1wjfwr0000gn/T/RackMultipart20230106-29791-ivwosw.txt>, "head"=>"Content-Disposition: form-data; name=\"file\"; filename=\"move_script_94.txt\"\r\nContent-Type: text/plain\r\n"}, "id"=>"1004"}
+App 29791 output: {"file_name"=>"533", "field"=>"animation", "value"=>"533", "narc"=>"move", "int"=>"true"}
+App 29791 output: {"file_name"=>"533", "field"=>"animation", "value"=>"533", "narc"=>"move", "int"=>"true"}
+App 29791 output: {"file"=>{"filename"=>"move_script_94 (1).txt", "type"=>"text/plain", "name"=>"file", "tempfile"=>#<Tempfile:/var/folders/th/rnc7s7ts4_13_1w48n1wjfwr0000gn/T/RackMultipart20230106-29791-xe1bom.txt>, "head"=>"Content-Disposition: form-data; name=\"file\"; filename=\"move_script_94 (1).txt\"\r\nContent-Type: text/plain\r\n"}, "id"=>"1004"}
+App 29791 output: {"file_name"=>"1004", "field"=>"animation", "value"=>"533", "narc"=>"move", "int"=>"true"}
+App 29791 output: {"file_name"=>"1004", "field"=>"animation", "value"=>"533", "narc"=>"move", "int"=>"true"}
+App 29791 output: 533
+App 29791 output: 454
+App 29791 output: {"file"=>{"filename"=>"move_script_1004 (1).txt", "type"=>"text/plain", "name"=>"file", "tempfile"=>#<Tempfile:/var/folders/th/rnc7s7ts4_13_1w48n1wjfwr0000gn/T/RackMultipart20230106-29791-vrq5gx.txt>, "head"=>"Content-Disposition: form-data; name=\"file\"; filename=\"move_script_1004 (1).txt\"\r\nContent-Type: text/plain\r\n"}, "id"=>"1004"}
+App 29791 output: "creating base rom"
+App 29791 output: "xdelta3 -d -s ./base/blank.nds ./base/B2.xdelta ./base/B2.nds"
+App 29791 output: "creating edited rom"
+App 29791 output: "xdelta3 -d -s ./base/B2.nds ./xdeltas/b6test.xdelta b6test.nds"
+App 29791 output: "creating edited rom"
+App 29791 output: "edited rom created"
+App 29791 output: "generating xdelta"
+App 29791 output: "xdelta3 -e -s ./base/B2.nds ./exports/b6test.nds ./exports/b6test_edited.xdelta"
+App 29791 output: "deleting base rom"
+App 29791 output: "deleting uploaded rom"
+App 29791 output: "deleting edited rom"
+App 29791 output: {"file_name"=>"1004", "field"=>"animation", "value"=>"126", "narc"=>"move", "int"=>"true"}
+App 29791 output: {"file_name"=>"1004", "field"=>"animation", "value"=>"126", "narc"=>"move", "int"=>"true"}
+App 29791 output: 126
+App 29791 output: 454
+App 29791 output: "creating base rom"
+App 29791 output: "xdelta3 -d -s ./base/blank.nds ./base/B2.xdelta ./base/B2.nds"
+App 29791 output: "creating edited rom"
+App 29791 output: "xdelta3 -d -s ./base/B2.nds ./xdeltas/b6test.xdelta b6test.nds"
+App 29791 output: "creating edited rom"
+App 29791 output: "edited rom created"
+App 29791 output: "generating xdelta"
+App 29791 output: "xdelta3 -e -s ./base/B2.nds ./exports/b6test.nds ./exports/b6test_edited.xdelta"
+App 29791 output: "deleting base rom"
+App 29791 output: "deleting uploaded rom"
+App 29791 output: "deleting edited rom"
+App 29791 output: {"file"=>{"filename"=>"move_script_1004 (3).txt", "type"=>"text/plain", "name"=>"file", "tempfile"=>#<Tempfile:/var/folders/th/rnc7s7ts4_13_1w48n1wjfwr0000gn/T/RackMultipart20230106-29791-2bpqmc.txt>, "head"=>"Content-Disposition: form-data; name=\"file\"; filename=\"move_script_1004 (3).txt\"\r\nContent-Type: text/plain\r\n"}, "id"=>"1004"}
+App 29791 output: "creating base rom"
+App 29791 output: "xdelta3 -d -s ./base/blank.nds ./base/B2.xdelta ./base/B2.nds"
+App 29791 output: "creating edited rom"
+App 29791 output: "xdelta3 -d -s ./base/B2.nds ./xdeltas/b6test.xdelta b6test.nds"
+App 29791 output: "creating edited rom"
+App 29791 output: "edited rom created"
+App 29791 output: "generating xdelta"
+App 29791 output: "xdelta3 -e -s ./base/B2.nds ./exports/b6test.nds ./exports/b6test_edited.xdelta"
+App 29791 output: "deleting base rom"
+App 29791 output: "deleting uploaded rom"
+App 29791 output: "deleting edited rom"
+App 29791 output: {"file_name"=>"1004", "field"=>"effect", "value"=>"None", "narc"=>"move"}
+App 29791 output: {"file_name"=>"1004", "field"=>"effect", "value"=>"None", "narc"=>"move"}
+App 29791 output: 126
+App 29791 output: 454
+App 29791 output: {"file_name"=>"1004", "field"=>"effect", "value"=>"Damages target; heals user up to 50% of damage dealt", "narc"=>"move"}
+App 29791 output: {"file_name"=>"1004", "field"=>"effect", "value"=>"Damages target; heals user up to 50% of damage dealt", "narc"=>"move"}
+App 29791 output: 126
+App 29791 output: 454
+App 29791 output: {"file_name"=>"1004", "field"=>"recoil", "value"=>"206", "narc"=>"move", "int"=>"true"}
+App 29791 output: {"file_name"=>"1004", "field"=>"recoil", "value"=>"206", "narc"=>"move", "int"=>"true"}
+App 29791 output: 126
+App 29791 output: 454
+App 29791 output: {"file_name"=>"1004", "field"=>"effect_category", "value"=>"No Special Effect", "narc"=>"move"}
+App 29791 output: {"file_name"=>"1004", "field"=>"effect_category", "value"=>"No Special Effect", "narc"=>"move"}
+App 29791 output: 126
+App 29791 output: 454
+App 29791 output: {"file_name"=>"1004", "field"=>"effect_category", "value"=>"Lifesteal", "narc"=>"move"}
+App 29791 output: {"file_name"=>"1004", "field"=>"effect_category", "value"=>"Lifesteal", "narc"=>"move"}
+App 29791 output: 126
+App 29791 output: 454
+App 29791 output: "creating base rom"
+App 29791 output: "xdelta3 -d -s ./base/blank.nds ./base/B2.xdelta ./base/B2.nds"
+App 29791 output: "creating edited rom"
+App 29791 output: "xdelta3 -d -s ./base/B2.nds ./xdeltas/b6test.xdelta b6test.nds"
+App 29791 output: "creating edited rom"
+App 29791 output: "edited rom created"
+App 29791 output: "generating xdelta"
+App 29791 output: "xdelta3 -e -s ./base/B2.nds ./exports/b6test.nds ./exports/b6test_edited.xdelta"
+App 29791 output: "deleting base rom"
+App 29791 output: "deleting uploaded rom"
+App 29791 output: "deleting edited rom"
+App 29791 output: {"file"=>{"filename"=>"move_script_1004 (3).txt", "type"=>"text/plain", "name"=>"file", "tempfile"=>#<Tempfile:/var/folders/th/rnc7s7ts4_13_1w48n1wjfwr0000gn/T/RackMultipart20230106-29791-11qwoe2.txt>, "head"=>"Content-Disposition: form-data; name=\"file\"; filename=\"move_script_1004 (3).txt\"\r\nContent-Type: text/plain\r\n"}, "id"=>"1004"}
+App 29791 output: "creating base rom"
+App 29791 output: "xdelta3 -d -s ./base/blank.nds ./base/B2.xdelta ./base/B2.nds"
+App 29791 output: "creating edited rom"
+App 29791 output: "xdelta3 -d -s ./base/B2.nds ./xdeltas/b6test.xdelta b6test.nds"
+App 29791 output: "creating edited rom"
+App 29791 output: "edited rom created"
+App 29791 output: "generating xdelta"
+App 29791 output: "xdelta3 -e -s ./base/B2.nds ./exports/b6test.nds ./exports/b6test_edited.xdelta"
+App 29791 output: "deleting base rom"
+App 29791 output: "deleting uploaded rom"
+App 29791 output: "deleting edited rom"
+App 29791 output: {"file_name"=>"956", "field"=>"animation", "value"=>"2", "narc"=>"move", "int"=>"true"}
+App 29791 output: {"file_name"=>"956", "field"=>"animation", "value"=>"2", "narc"=>"move", "int"=>"true"}
+App 29791 output: 2
+App 29791 output: 454
+App 29791 output: {"file_name"=>"1004", "field"=>"animation", "value"=>"126", "narc"=>"move", "int"=>"true"}
+App 29791 output: {"file_name"=>"1004", "field"=>"animation", "value"=>"126", "narc"=>"move", "int"=>"true"}
+App 29791 output: 126
+App 29791 output: 454
+App 29791 output: {"file_name"=>"1004", "field"=>"animation", "value"=>"0", "narc"=>"move", "int"=>"true"}
+App 29791 output: {"file_name"=>"1004", "field"=>"animation", "value"=>"0", "narc"=>"move", "int"=>"true"}
+App 29791 output: {"file_name"=>"1004", "field"=>"animation", "value"=>"126", "narc"=>"move", "int"=>"true"}
+App 29791 output: {"file_name"=>"1004", "field"=>"animation", "value"=>"126", "narc"=>"move", "int"=>"true"}
+App 29791 output: 126
+App 29791 output: 454
+App 29791 output: {"file"=>{"filename"=>"move_script_1004.txt", "type"=>"text/plain", "name"=>"file", "tempfile"=>#<Tempfile:/var/folders/th/rnc7s7ts4_13_1w48n1wjfwr0000gn/T/RackMultipart20230106-29791-i1m1d6.txt>, "head"=>"Content-Disposition: form-data; name=\"file\"; filename=\"move_script_1004.txt\"\r\nContent-Type: text/plain\r\n"}, "id"=>"533"}
