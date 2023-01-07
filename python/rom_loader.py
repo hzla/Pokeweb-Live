@@ -250,8 +250,8 @@ except:
 
 output_tms_json(arm9, rom_name)
 
-
-subprocess.run(['rm', '-rf', sys.argv[1]], check = True)
+if sys.argv[2] != "offline":
+	subprocess.run(['rm', '-rf', sys.argv[1]], check = True)
 
 
 

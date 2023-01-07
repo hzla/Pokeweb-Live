@@ -31,6 +31,8 @@ class MyApp < Sinatra::Base
 	before do
 		
 		$rom_name = session[:rom_name]
+		$mode = ENV["MODE"]
+		$offline = ($mode == "offline")
 		# $rom_name = "projects/b6test"
 
 		# if ENV['RACK_ENV'] == 'test'
@@ -90,13 +92,13 @@ class MyApp < Sinatra::Base
 		p params
 		project = params["rom"]
 
+		if !$offline
 
-		if !Cipher.auth?(project, pw) 
-			redirect '/?wrong_password=true'
+			if  !Cipher.auth?(project, pw)
+				redirect '/?wrong_password=true'
+			end
 		end
 
-
-		SessionSettings.load_project project
 		session[:rom_name] = project
 
 		open('logs.txt', 'a') do |f|
@@ -104,6 +106,29 @@ class MyApp < Sinatra::Base
 		end
 
 		redirect '/headers'
+	end
+
+	post '/extract_rom' do 
+		py = "python3"
+
+		begin
+			system "#{py} python/header_loader.py #{params['rom_name']} offline"
+			session[:rom_name] = "projects/#{params['rom_name'].split(".")[0]}"
+			command = "#{py} python/rom_loader.py #{params['rom_name']} offline"
+			pid = spawn command
+			Process.detach(pid)
+		rescue
+			py = "python"
+			retry
+		end
+		
+
+		open('logs.txt', 'a') do |f|
+		  f.puts "#{Time.now}: Loaded Rom : #{params['rom_name']}"
+		end
+
+		content_type :json
+	  	return { url: "/headers" }.to_json
 	end
 
 
@@ -114,11 +139,13 @@ class MyApp < Sinatra::Base
 
 		p params
 		py = "python3"
-		pw = Cipher.encrypt params['password']
+		
 		base = params["rom_base"]
 		rom_name = params['rom_name'].split(".")[0]
 
 
+
+		pw = Cipher.encrypt params['password']
 		# load from xdelta
 		if params["filename"]
 			file = params["filename"]["tempfile"]
@@ -174,26 +201,29 @@ class MyApp < Sinatra::Base
 		base = SessionSettings.get "base_version"
 		rom_name = $rom_name.split("/")[1]
 
+		
+		if !$offline 
 		#clear exports 
 
-		system "rm -rf exports/*"
+			system "rm -rf exports/*"
 
-		# create base rom
-		p "creating base rom"
-		p "xdelta3 -d -s ./base/blank.nds ./base/#{base}.xdelta ./base/#{base}.nds"
-		system "xdelta3 -d -s ./base/blank.nds ./base/#{base}.xdelta ./base/#{base}.nds"
+			# create base rom
+			p "creating base rom"
+			p "xdelta3 -d -s ./base/blank.nds ./base/#{base}.xdelta ./base/#{base}.nds"
+			system "xdelta3 -d -s ./base/blank.nds ./base/#{base}.xdelta ./base/#{base}.nds"
 
-		# create uploaded rom
+			# create uploaded rom
 
-		if File.size("./xdeltas/#{rom_name}.xdelta") > 50000000
-			# When user chooses to load from base rom, xdelta file will be large
-			p "uploaded rom is base rom"
-			p "cp ./base/#{base}.nds ./#{rom_name}.nds"
-			system "cp ./base/#{base}.nds ./#{rom_name}.nds"
-		else
-			p "creating edited rom"
-			p "xdelta3 -d -s ./base/#{base}.nds ./xdeltas/#{rom_name}.xdelta #{rom_name}.nds"
-			system "xdelta3 -d -s ./base/#{base}.nds ./xdeltas/#{rom_name}.xdelta #{rom_name}.nds"
+			if File.size("./xdeltas/#{rom_name}.xdelta") > 50000000
+				# When user chooses to load from base rom, xdelta file will be large
+				p "uploaded rom is base rom"
+				p "cp ./base/#{base}.nds ./#{rom_name}.nds"
+				system "cp ./base/#{base}.nds ./#{rom_name}.nds"
+			else
+				p "creating edited rom"
+				p "xdelta3 -d -s ./base/#{base}.nds ./xdeltas/#{rom_name}.xdelta #{rom_name}.nds"
+				system "xdelta3 -d -s ./base/#{base}.nds ./xdeltas/#{rom_name}.xdelta #{rom_name}.nds"
+			end
 		end
 		
 
@@ -206,25 +236,29 @@ class MyApp < Sinatra::Base
 			retry
 		end
 
-		p "generating xdelta"
 
-		p "xdelta3 -e -s ./base/#{base}.nds ./exports/#{rom_name}.nds ./exports/#{rom_name}_edited.xdelta"
-		system "xdelta3 -e -s ./base/#{base}.nds ./exports/#{rom_name}.nds ./exports/#{rom_name}_edited.xdelta"
+		if !$offline
+			p "generating xdelta"
 
-		#delete base rom
-		system "rm -rf ./base/#{base}.nds"
-		p "deleting base rom"
+			p "xdelta3 -e -s ./base/#{base}.nds ./exports/#{rom_name}.nds ./exports/#{rom_name}_edited.xdelta"
+			system "xdelta3 -e -s ./base/#{base}.nds ./exports/#{rom_name}.nds ./exports/#{rom_name}_edited.xdelta"
 
-		#delete uploaded rom
-		system "rm -rf #{rom_name}.nds"
-		p "deleting uploaded rom"
+			#delete base rom
+			system "rm -rf ./base/#{base}.nds"
+			p "deleting base rom"
 
-		#delete editted rom
-		# system "rm -rf ./exports/#{rom_name}_edited.nds"
-		p "deleting edited rom"
+			#delete uploaded rom
+			system "rm -rf #{rom_name}.nds"
+			p "deleting uploaded rom"
+
+			#delete editted rom
+			# system "rm -rf ./exports/#{rom_name}_edited.nds"
+			p "deleting edited rom"
 
 
-		send_file "./exports/#{rom_name}_edited.xdelta", :filename => "#{rom_name}_edited.xdelta" , :type => 'Application/octet-stream'
+			send_file "./exports/#{rom_name}_edited.xdelta", :filename => "#{rom_name}_edited.xdelta" , :type => 'Application/octet-stream'
+		end
+		"Rom Saved in /exports"
 	end
 
 
@@ -778,11 +812,11 @@ class MyApp < Sinatra::Base
 
 	##### SETTINGS ########
 
-	# get '/settings' do 
-	# 	system "open -a TextEdit #{$rom_name}/session_settings.json"
-	# 	system "start notepad   #{$rom_name}/session_settings.json"
-	# 	return 200
-	# end
+	get '/settings' do 
+		system "open -a TextEdit #{$rom_name}/session_settings.json"
+		system "start notepad   #{$rom_name}/session_settings.json"
+		return 200
+	end
 
 
 	get '/settings/set' do 

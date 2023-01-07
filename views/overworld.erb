@@ -28,11 +28,13 @@
 		<div class="ow-btn" id="del-npc" data-npc-index>Del Selected NPC</div>
 	</div>
 
-	<!-- <div class="sidebar-btns">
-		<div class="ow-btn script-btn" id="open-script" href="/scripts/<%= @script %>">Open Script</div>
-		<div class="ow-btn script-btn" id="save-script" href="/scripts/<%= @script %>/save">Apply Script</div>
-	</div>	
- -->
+	<% if $offline %>
+		<div class="sidebar-btns">
+			<div class="ow-btn script-btn" id="open-script" href="/scripts/<%= @script %>">Open Script</div>
+			<div class="ow-btn script-btn" id="save-script" href="/scripts/<%= @script %>/save">Apply Script</div>
+		</div>
+	<% end %>	
+
 	<div class="sidebar-btns">
 		<a class="ow-btn" href="/story_texts/text/<%= @text %>" target="_blank">Open Text <%= @text %></a>
 		<a class="ow-btn" href="https://github.com/hzla/Pokeweb/wiki/Editors#overworlds" target="_blank">Instructions</a>
