@@ -328,6 +328,10 @@ class MyApp < Sinatra::Base
 
 	# called by ajax when user makes an edit
 	post '/update' do 
+		if !$rom_name
+			return {url: '/'}.to_json
+		end
+
 		narc_name = params['data']['narc']
 		
 		if params['data']['narc_const']

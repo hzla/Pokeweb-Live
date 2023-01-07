@@ -851,6 +851,11 @@ $(document).ready(function() {
 		while (edit_in_progress == false) {
 			edit_in_progress = true	
 			$.post( "/update", {"data": data }, function( e ) {     
+	          console.log(JSON.parse(e)["url"])
+	          if (JSON.parse(e)["url"] == "/") {
+	          	location.href = "/"
+	          	return
+	          }
 	          console.log('upload successful')
 	          
 	          edit_in_progress = false

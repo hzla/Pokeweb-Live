@@ -15071,3 +15071,1305 @@ App 39396 output: overworlds
 App 39396 output: maps
 App 39396 output: "creating edited rom"
 App 39396 output: "edited rom created"
+[ N 2023-01-06 20:48:23.4323 39347/T4 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 39404, application /Users/andylee/Repos/Pokeweb (development)
+App 39396 output: {"rom"=>"projects/b6test", "password"=>"b6test"}
+App 39396 output: {"file_name"=>"98", "field"=>"animation", "value"=>"0", "narc"=>"move", "int"=>"true"}
+App 39396 output: {"file_name"=>"98", "field"=>"animation", "value"=>"0", "narc"=>"move", "int"=>"true"}
+App 39396 output: {"file"=>{"filename"=>"1.txt", "type"=>"text/plain", "name"=>"file", "tempfile"=>#<Tempfile:/var/folders/th/rnc7s7ts4_13_1w48n1wjfwr0000gn/T/RackMultipart20230107-39396-1lovfc6.txt>, "head"=>"Content-Disposition: form-data; name=\"file\"; filename=\"1.txt\"\r\nContent-Type: text/plain\r\n"}, "id"=>"98"}
+App 39396 output: "creating edited rom"
+App 39396 output: "edited rom created"
+App 39396 output: {"file_name"=>"1004", "field"=>"animation", "value"=>"0", "narc"=>"move", "int"=>"true"}
+App 39396 output: {"file_name"=>"1004", "field"=>"animation", "value"=>"0", "narc"=>"move", "int"=>"true"}
+App 39396 output: {"file"=>{"filename"=>"1.txt", "type"=>"text/plain", "name"=>"file", "tempfile"=>#<Tempfile:/var/folders/th/rnc7s7ts4_13_1w48n1wjfwr0000gn/T/RackMultipart20230107-39396-6i284m.txt>, "head"=>"Content-Disposition: form-data; name=\"file\"; filename=\"1.txt\"\r\nContent-Type: text/plain\r\n"}, "id"=>"1004"}
+App 39396 output: "creating edited rom"
+App 39396 output: "edited rom created"
+App 39396 output: {"file_name"=>"1004", "field"=>"animation", "value"=>"0", "narc"=>"move", "int"=>"true"}
+App 39396 output: {"file_name"=>"1004", "field"=>"animation", "value"=>"0", "narc"=>"move", "int"=>"true"}
+App 39396 output: {"file"=>{"filename"=>"1.txt", "type"=>"text/plain", "name"=>"file", "tempfile"=>#<Tempfile:/var/folders/th/rnc7s7ts4_13_1w48n1wjfwr0000gn/T/RackMultipart20230107-39396-1v6aoxq.txt>, "head"=>"Content-Disposition: form-data; name=\"file\"; filename=\"1.txt\"\r\nContent-Type: text/plain\r\n"}, "id"=>"1004"}
+App 39396 output: "creating edited rom"
+App 39396 output: "edited rom created"
+App 39396 output: {"file_name"=>"1004", "field"=>"animation", "value"=>"0", "narc"=>"move", "int"=>"true"}
+App 39396 output: {"file_name"=>"1004", "field"=>"animation", "value"=>"0", "narc"=>"move", "int"=>"true"}
+App 39396 output: {"file"=>{"filename"=>"1.txt", "type"=>"text/plain", "name"=>"file", "tempfile"=>#<Tempfile:/var/folders/th/rnc7s7ts4_13_1w48n1wjfwr0000gn/T/RackMultipart20230107-39396-1plrlfq.txt>, "head"=>"Content-Disposition: form-data; name=\"file\"; filename=\"1.txt\"\r\nContent-Type: text/plain\r\n"}, "id"=>"1004"}
+App 39396 output: "creating edited rom"
+App 39396 output: "edited rom created"
+App 39396 output: {"file_name"=>"1004", "field"=>"animation", "value"=>"0", "narc"=>"move", "int"=>"true"}
+App 39396 output: {"file_name"=>"1004", "field"=>"animation", "value"=>"0", "narc"=>"move", "int"=>"true"}
+App 39396 output: {"file"=>{"filename"=>"1.txt", "type"=>"text/plain", "name"=>"file", "tempfile"=>#<Tempfile:/var/folders/th/rnc7s7ts4_13_1w48n1wjfwr0000gn/T/RackMultipart20230107-39396-1gkys6s.txt>, "head"=>"Content-Disposition: form-data; name=\"file\"; filename=\"1.txt\"\r\nContent-Type: text/plain\r\n"}, "id"=>"1004"}
+App 39396 output: "creating edited rom"
+App 39396 output: "edited rom created"
+App 39396 output: "creating edited rom"
+App 39396 output: "edited rom created"
+
+[ N 2023-01-07 13:42:40.4291 39347/T8 age/Cor/CoreMain.cpp:671 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2023-01-07 13:42:40.4292 39347/T1 age/Cor/CoreMain.cpp:1246 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2023-01-07 13:42:40.4292 39347/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 39396, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2023-01-07 13:42:40.4296 39347/Ti Ser/Server.h:901 ]: [ServerThr.6] Freed 0 spare client objects
+[ N 2023-01-07 13:42:40.4297 39347/Tf Ser/Server.h:901 ]: [ServerThr.4] Freed 0 spare client objects
+[ N 2023-01-07 13:42:40.4296 39347/Tm Ser/Server.h:901 ]: [ServerThr.8] Freed 0 spare client objects
+[ N 2023-01-07 13:42:40.4296 39347/T8 Ser/Server.h:901 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2023-01-07 13:42:40.4297 39347/To Ser/Server.h:901 ]: [ServerThr.9] Freed 0 spare client objects
+[ N 2023-01-07 13:42:40.4298 39347/Tf Ser/Server.h:558 ]: [ServerThr.4] Shutdown finished
+[ N 2023-01-07 13:42:40.4298 39347/T8 Ser/Server.h:558 ]: [ServerThr.1] Shutdown finished
+[ N 2023-01-07 13:42:40.4298 39347/Ti Ser/Server.h:558 ]: [ServerThr.6] Shutdown finished
+[ N 2023-01-07 13:42:40.4297 39347/Tk Ser/Server.h:901 ]: [ServerThr.7] Freed 0 spare client objects
+[ N 2023-01-07 13:42:40.4298 39347/Tq Ser/Server.h:901 ]: [ServerThr.10] Freed 0 spare client objects
+[ N 2023-01-07 13:42:40.4296 39347/Ta Ser/Server.h:901 ]: [ServerThr.2] Freed 0 spare client objects
+[ N 2023-01-07 13:42:40.4298 39347/Tm Ser/Server.h:558 ]: [ServerThr.8] Shutdown finished
+[ N 2023-01-07 13:42:40.4297 39347/Tg Ser/Server.h:901 ]: [ServerThr.5] Freed 0 spare client objects
+[ N 2023-01-07 13:42:40.4297 39347/Tc Ser/Server.h:901 ]: [ServerThr.3] Freed 0 spare client objects
+[ N 2023-01-07 13:42:40.4300 39347/Ta Ser/Server.h:558 ]: [ServerThr.2] Shutdown finished
+[ N 2023-01-07 13:42:40.4298 39347/Ts Ser/Server.h:901 ]: [ServerThr.11] Freed 0 spare client objects
+[ N 2023-01-07 13:42:40.4300 39347/Tw Ser/Server.h:901 ]: [ApiServer] Freed 0 spare client objects
+[ N 2023-01-07 13:42:40.4298 39347/Tu Ser/Server.h:901 ]: [ServerThr.12] Freed 0 spare client objects
+[ N 2023-01-07 13:42:40.4301 39347/Tw Ser/Server.h:558 ]: [ApiServer] Shutdown finished
+[ N 2023-01-07 13:42:40.4301 39347/Ts Ser/Server.h:558 ]: [ServerThr.11] Shutdown finished
+[ N 2023-01-07 13:42:40.4300 39347/Tk Ser/Server.h:558 ]: [ServerThr.7] Shutdown finished
+[ N 2023-01-07 13:42:40.4301 39347/Tg Ser/Server.h:558 ]: [ServerThr.5] Shutdown finished
+[ N 2023-01-07 13:42:40.4302 39347/Tu Ser/Server.h:558 ]: [ServerThr.12] Shutdown finished
+[ N 2023-01-07 13:42:40.4299 39347/To Ser/Server.h:558 ]: [ServerThr.9] Shutdown finished
+[ N 2023-01-07 13:42:40.4300 39347/Tq Ser/Server.h:558 ]: [ServerThr.10] Shutdown finished
+[ N 2023-01-07 13:42:40.4301 39347/Tc Ser/Server.h:558 ]: [ServerThr.3] Shutdown finished
+[ N 2023-01-07 13:42:40.4303 39347/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 39396, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2023-01-07 13:42:41.6120 39347/T1 age/Cor/CoreMain.cpp:1325 ]: Passenger core shutdown finished
+[ N 2023-01-07 13:42:42.1352 61862/T1 age/Wat/WatchdogMain.cpp:1377 ]: Starting Passenger watchdog...
+[ N 2023-01-07 13:42:42.1701 61864/T1 age/Cor/CoreMain.cpp:1340 ]: Starting Passenger core...
+[ N 2023-01-07 13:42:42.1705 61864/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ N 2023-01-07 13:42:42.2080 61864/T1 age/Cor/CoreMain.cpp:1015 ]: Passenger core online, PID 61864
+[ N 2023-01-07 13:42:44.9970 61864/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+[ E 2023-01-07 13:42:45.0060 61864/T5 Sec/Crypto.cpp:990 ]: Removing Passenger private key from keychain failed: Write permissions error.. Please remove the private key from the certificate labeled Phusion Passenger Open Source in your keychain.
+App 61880 output: "init"
+
+[ N 2023-01-07 13:43:09.3490 61864/T8 age/Cor/CoreMain.cpp:671 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2023-01-07 13:43:09.3491 61864/T1 age/Cor/CoreMain.cpp:1246 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2023-01-07 13:43:09.3491 61864/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 61913, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2023-01-07 13:43:09.3496 61864/Ta Ser/Server.h:901 ]: [ServerThr.2] Freed 0 spare client objects
+[ N 2023-01-07 13:43:09.3496 61864/Ts Ser/Server.h:901 ]: [ServerThr.11] Freed 0 spare client objects
+[ N 2023-01-07 13:43:09.3496 61864/Tq Ser/Server.h:901 ]: [ServerThr.10] Freed 0 spare client objects
+[ N 2023-01-07 13:43:09.3496 61864/T8 Ser/Server.h:901 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2023-01-07 13:43:09.3497 61864/Ts Ser/Server.h:558 ]: [ServerThr.11] Shutdown finished
+[ N 2023-01-07 13:43:09.3496 61864/Tg Ser/Server.h:901 ]: [ServerThr.5] Freed 0 spare client objects
+[ N 2023-01-07 13:43:09.3496 61864/Tu Ser/Server.h:901 ]: [ServerThr.12] Freed 0 spare client objects
+[ N 2023-01-07 13:43:09.3496 61864/Ta Ser/Server.h:558 ]: [ServerThr.2] Shutdown finished
+[ N 2023-01-07 13:43:09.3498 61864/Tu Ser/Server.h:558 ]: [ServerThr.12] Shutdown finished
+[ N 2023-01-07 13:43:09.3496 61864/Tc Ser/Server.h:901 ]: [ServerThr.3] Freed 0 spare client objects
+[ N 2023-01-07 13:43:09.3497 61864/Tq Ser/Server.h:558 ]: [ServerThr.10] Shutdown finished
+[ N 2023-01-07 13:43:09.3496 61864/To Ser/Server.h:901 ]: [ServerThr.9] Freed 0 spare client objects
+[ N 2023-01-07 13:43:09.3496 61864/Tk Ser/Server.h:901 ]: [ServerThr.7] Freed 0 spare client objects
+[ N 2023-01-07 13:43:09.3496 61864/Te Ser/Server.h:901 ]: [ServerThr.4] Freed 0 spare client objects
+[ N 2023-01-07 13:43:09.3498 61864/Tg Ser/Server.h:558 ]: [ServerThr.5] Shutdown finished
+[ N 2023-01-07 13:43:09.3496 61864/Tm Ser/Server.h:901 ]: [ServerThr.8] Freed 0 spare client objects
+[ N 2023-01-07 13:43:09.3498 61864/Tx Ser/Server.h:901 ]: [ApiServer] Freed 0 spare client objects
+[ N 2023-01-07 13:43:09.3498 61864/T8 Ser/Server.h:558 ]: [ServerThr.1] Shutdown finished
+[ N 2023-01-07 13:43:09.3500 61864/Tx Ser/Server.h:558 ]: [ApiServer] Shutdown finished
+[ N 2023-01-07 13:43:09.3496 61864/Ti Ser/Server.h:901 ]: [ServerThr.6] Freed 0 spare client objects
+[ N 2023-01-07 13:43:09.3499 61864/To Ser/Server.h:558 ]: [ServerThr.9] Shutdown finished
+[ N 2023-01-07 13:43:09.3499 61864/Tk Ser/Server.h:558 ]: [ServerThr.7] Shutdown finished
+[ N 2023-01-07 13:43:09.3498 61864/Tc Ser/Server.h:558 ]: [ServerThr.3] Shutdown finished
+[ N 2023-01-07 13:43:09.3499 61864/Te Ser/Server.h:558 ]: [ServerThr.4] Shutdown finished
+[ N 2023-01-07 13:43:09.3500 61864/Tm Ser/Server.h:558 ]: [ServerThr.8] Shutdown finished
+[ N 2023-01-07 13:43:09.3501 61864/Ti Ser/Server.h:558 ]: [ServerThr.6] Shutdown finished
+[ N 2023-01-07 13:43:09.3502 61864/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 61913, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2023-01-07 13:43:10.3746 61864/T1 age/Cor/CoreMain.cpp:1325 ]: Passenger core shutdown finished
+[ N 2023-01-07 13:43:10.6060 61945/T1 age/Wat/WatchdogMain.cpp:1377 ]: Starting Passenger watchdog...
+[ N 2023-01-07 13:43:10.6453 61947/T1 age/Cor/CoreMain.cpp:1340 ]: Starting Passenger core...
+[ N 2023-01-07 13:43:10.6460 61947/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ N 2023-01-07 13:43:10.6874 61947/T1 age/Cor/CoreMain.cpp:1015 ]: Passenger core online, PID 61947
+App 61958 output: "init"
+[ N 2023-01-07 13:43:13.4469 61947/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+[ E 2023-01-07 13:43:13.4531 61947/T5 Sec/Crypto.cpp:990 ]: Removing Passenger private key from keychain failed: Write permissions error.. Please remove the private key from the certificate labeled Phusion Passenger Open Source in your keychain.
+App 61996 output: {"rom"=>"projects/b6test", "password"=>""}
+App 61996 output: 2023-01-07 13:43:26 - NoMethodError - undefined method `range' for #<MyApp:0x00007fef5d892c78>
+App 61996 output: Did you mean?  rand:
+App 61996 output: 	/Users/andylee/Repos/Pokeweb/routes.rb:395:in `block in <class:MyApp>'
+App 61996 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1696:in `call'
+App 61996 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1696:in `block in compile!'
+App 61996 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1009:in `block (3 levels) in route!'
+App 61996 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1027:in `route_eval'
+App 61996 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1009:in `block (2 levels) in route!'
+App 61996 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1058:in `block in process_route'
+App 61996 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1056:in `catch'
+App 61996 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1056:in `process_route'
+App 61996 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1007:in `block in route!'
+App 61996 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1004:in `each'
+App 61996 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1004:in `route!'
+App 61996 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1128:in `block in dispatch!'
+App 61996 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `catch'
+App 61996 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `invoke'
+App 61996 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1123:in `dispatch!'
+App 61996 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:939:in `block in call!'
+App 61996 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `catch'
+App 61996 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `invoke'
+App 61996 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:939:in `call!'
+App 61996 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:928:in `call'
+App 61996 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/xss_header.rb:20:in `call'
+App 61996 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/path_traversal.rb:18:in `call'
+App 61996 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/json_csrf.rb:28:in `call'
+App 61996 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/base.rb:53:in `call'
+App 61996 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/base.rb:53:in `call'
+App 61996 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/frame_options.rb:33:in `call'
+App 61996 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/null_logger.rb:11:in `call'
+App 61996 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/head.rb:12:in `call'
+App 61996 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/show_exceptions.rb:23:in `call'
+App 61996 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:219:in `call'
+App 61996 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:2007:in `call'
+App 61996 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1566:in `block in call'
+App 61996 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1782:in `synchronize'
+App 61996 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1566:in `call'
+App 61996 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:266:in `context'
+App 61996 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:260:in `call'
+App 61996 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:266:in `context'
+App 61996 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:260:in `call'
+App 61996 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/rack/thread_handler_extension.rb:107:in `process_request'
+App 61996 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+App 61996 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+App 61996 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler.rb:419:in `block (3 levels) in start_threads'
+App 61996 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+
+[ N 2023-01-07 13:43:41.8316 61947/T9 age/Cor/CoreMain.cpp:671 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2023-01-07 13:43:41.8317 61947/T1 age/Cor/CoreMain.cpp:1246 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2023-01-07 13:43:41.8317 61947/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 61996, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2023-01-07 13:43:41.8319 61947/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 62004, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2023-01-07 13:43:41.8322 61947/T9 Ser/Server.h:901 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2023-01-07 13:43:41.8322 61947/Tg Ser/Server.h:901 ]: [ServerThr.5] Freed 0 spare client objects
+[ N 2023-01-07 13:43:41.8322 61947/T9 Ser/Server.h:558 ]: [ServerThr.1] Shutdown finished
+[ N 2023-01-07 13:43:41.8322 61947/Ts Ser/Server.h:901 ]: [ServerThr.11] Freed 0 spare client objects
+[ N 2023-01-07 13:43:41.8322 61947/Tb Ser/Server.h:901 ]: [ServerThr.2] Freed 0 spare client objects
+[ N 2023-01-07 13:43:41.8322 61947/Ti Ser/Server.h:901 ]: [ServerThr.6] Freed 0 spare client objects
+[ N 2023-01-07 13:43:41.8322 61947/Te Ser/Server.h:901 ]: [ServerThr.4] Freed 0 spare client objects
+[ N 2023-01-07 13:43:41.8324 61947/Ti Ser/Server.h:558 ]: [ServerThr.6] Shutdown finished
+[ N 2023-01-07 13:43:41.8324 61947/Tw Ser/Server.h:901 ]: [ApiServer] Freed 0 spare client objects
+[ N 2023-01-07 13:43:41.8322 61947/To Ser/Server.h:901 ]: [ServerThr.9] Freed 0 spare client objects
+[ N 2023-01-07 13:43:41.8323 61947/Tb Ser/Server.h:558 ]: [ServerThr.2] Shutdown finished
+[ N 2023-01-07 13:43:41.8323 61947/Ts Ser/Server.h:558 ]: [ServerThr.11] Shutdown finished
+[ N 2023-01-07 13:43:41.8322 61947/Td Ser/Server.h:901 ]: [ServerThr.3] Freed 0 spare client objects
+[ N 2023-01-07 13:43:41.8324 61947/Te Ser/Server.h:558 ]: [ServerThr.4] Shutdown finished
+[ N 2023-01-07 13:43:41.8322 61947/Tq Ser/Server.h:901 ]: [ServerThr.10] Freed 0 spare client objects
+[ N 2023-01-07 13:43:41.8326 61947/Td Ser/Server.h:558 ]: [ServerThr.3] Shutdown finished
+[ N 2023-01-07 13:43:41.8322 61947/Tk Ser/Server.h:901 ]: [ServerThr.7] Freed 0 spare client objects
+[ N 2023-01-07 13:43:41.8325 61947/To Ser/Server.h:558 ]: [ServerThr.9] Shutdown finished
+[ N 2023-01-07 13:43:41.8324 61947/Tw Ser/Server.h:558 ]: [ApiServer] Shutdown finished
+[ N 2023-01-07 13:43:41.8323 61947/Tg Ser/Server.h:558 ]: [ServerThr.5] Shutdown finished
+[ N 2023-01-07 13:43:41.8322 61947/Tv Ser/Server.h:901 ]: [ServerThr.12] Freed 0 spare client objects
+[ N 2023-01-07 13:43:41.8326 61947/Tq Ser/Server.h:558 ]: [ServerThr.10] Shutdown finished
+[ N 2023-01-07 13:43:41.8322 61947/Tm Ser/Server.h:901 ]: [ServerThr.8] Freed 0 spare client objects
+[ N 2023-01-07 13:43:41.8326 61947/Tk Ser/Server.h:558 ]: [ServerThr.7] Shutdown finished
+[ N 2023-01-07 13:43:41.8327 61947/Tv Ser/Server.h:558 ]: [ServerThr.12] Shutdown finished
+[ N 2023-01-07 13:43:41.8327 61947/Tm Ser/Server.h:558 ]: [ServerThr.8] Shutdown finished
+[ N 2023-01-07 13:43:41.8328 61947/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 61996, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2023-01-07 13:43:41.8329 61947/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 62004, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2023-01-07 13:43:42.9049 61947/T1 age/Cor/CoreMain.cpp:1325 ]: Passenger core shutdown finished
+[ N 2023-01-07 13:43:44.5809 62043/T1 age/Wat/WatchdogMain.cpp:1377 ]: Starting Passenger watchdog...
+[ N 2023-01-07 13:43:44.6062 62045/T1 age/Cor/CoreMain.cpp:1340 ]: Starting Passenger core...
+[ N 2023-01-07 13:43:44.6064 62045/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ N 2023-01-07 13:43:44.6397 62045/T1 age/Cor/CoreMain.cpp:1015 ]: Passenger core online, PID 62045
+[ N 2023-01-07 13:43:47.4075 62045/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+[ E 2023-01-07 13:43:47.4134 62045/T5 Sec/Crypto.cpp:990 ]: Removing Passenger private key from keychain failed: Write permissions error.. Please remove the private key from the certificate labeled Phusion Passenger Open Source in your keychain.
+App 62061 output: "init"
+App 62094 output: {"rom"=>"projects/b6test", "password"=>""}
+App 62094 output: 1
+App 62094 output: 2
+App 62094 output: 3
+App 62094 output: 4
+App 62094 output: 5
+App 62094 output: 6
+App 62094 output: 7
+App 62094 output: 8
+App 62094 output: 9
+App 62094 output: 10
+App 62094 output: 11
+App 62094 output: 12
+App 62094 output: 13
+App 62094 output: 14
+App 62094 output: 15
+App 62094 output: 16
+App 62094 output: 17
+App 62094 output: 18
+App 62094 output: 19
+App 62094 output: 20
+App 62094 output: 21
+App 62094 output: 22
+App 62094 output: 23
+App 62094 output: 24
+App 62094 output: 25
+App 62094 output: 26
+App 62094 output: 27
+App 62094 output: 28
+App 62094 output: 29
+App 62094 output: 30
+App 62094 output: 31
+App 62094 output: 32
+App 62094 output: 33
+App 62094 output: 34
+App 62094 output: 35
+App 62094 output: 36
+App 62094 output: 37
+App 62094 output: 38
+App 62094 output: 39
+App 62094 output: 40
+App 62094 output: 41
+App 62094 output: 42
+App 62094 output: 43
+App 62094 output: 44
+App 62094 output: 45
+App 62094 output: 46
+App 62094 output: 47
+App 62094 output: 48
+App 62094 output: 49
+App 62094 output: 50
+App 62094 output: 51
+App 62094 output: 52
+App 62094 output: 53
+App 62094 output: 54
+App 62094 output: 55
+App 62094 output: 56
+App 62094 output: 57
+App 62094 output: 58
+App 62094 output: 59
+App 62094 output: 60
+App 62094 output: 61
+App 62094 output: 62
+App 62094 output: 63
+App 62094 output: 64
+App 62094 output: 65
+App 62094 output: 66
+App 62094 output: 67
+App 62094 output: 68
+App 62094 output: 69
+App 62094 output: 70
+App 62094 output: 71
+App 62094 output: 72
+App 62094 output: 73
+App 62094 output: 74
+App 62094 output: 75
+App 62094 output: 76
+App 62094 output: 77
+App 62094 output: 78
+App 62094 output: 79
+App 62094 output: 80
+App 62094 output: 81
+App 62094 output: 82
+App 62094 output: 83
+App 62094 output: 84
+App 62094 output: 85
+App 62094 output: 86
+App 62094 output: 87
+App 62094 output: 88
+App 62094 output: 89
+App 62094 output: 90
+App 62094 output: 91
+App 62094 output: 92
+App 62094 output: 93
+App 62094 output: 94
+App 62094 output: 95
+App 62094 output: 96
+App 62094 output: 97
+App 62094 output: 98
+App 62094 output: 99
+App 62094 output: 100
+App 62094 output: 101
+App 62094 output: 102
+App 62094 output: 103
+App 62094 output: 104
+App 62094 output: 105
+App 62094 output: 106
+App 62094 output: 107
+App 62094 output: 108
+App 62094 output: 109
+App 62094 output: 110
+App 62094 output: 111
+App 62094 output: 112
+App 62094 output: 113
+App 62094 output: 114
+App 62094 output: 115
+App 62094 output: 116
+App 62094 output: 117
+App 62094 output: Traceback (most recent call last):
+App 62094 output:   File "/Users/andylee/Repos/Pokeweb/python/MovScrCMDDecompiler.py", line 56, in <module>
+App 62094 output:     CommandIndex = unpack('<H', SCRIPT.read(0x2))[0]
+App 62094 output: 
+App 62094 output:      
+App 62094 output:              
+App 62094 output:  ^^^^^^
+App 62094 output: ^^^^^^
+App 62094 output: ^^^^^^
+App 62094 output: ^^^^^^
+App 62094 output: ^^^^^
+App 62094 output: ^
+App 62094 output: struct
+App 62094 output: .error: unpack requires a buffer of 2 bytes
+App 62094 output: Traceback (most recent call last):
+App 62094 output:   File "/Users/andylee/Repos/Pokeweb/python/move_writer.py", line 186, in <module>
+App 62094 output:     decompile_script(sys.argv[3], int(file_name))
+App 62094 output:   File "/Users/andylee/Repos/Pokeweb/python/move_writer.py", line 48, in decompile_script
+App 62094 output:     subprocess.run(["python3", "python/MovScrCMDDecompiler.py", f"{rom_name}/move_scripts/{move_id}.bin", '>', f"{rom_name}/move_scripts/{move_id}.txt"], check=True)
+App 62094 output:   File "/Users/andylee/.pyenv/versions/3.11.1/lib/python3.11/subprocess.py", line 571, in run
+App 62094 output:     
+App 62094 output: raise CalledProcessError(retcode, process.args,
+App 62094 output: subprocess.CalledProcessError: Command '['python3', 'python/MovScrCMDDecompiler.py', 'projects/b6test/move_scripts/117.bin', '>', 'projects/b6test/move_scripts/117.txt']' returned non-zero exit status 1.
+App 62094 output: 118
+App 62094 output: 119
+App 62094 output: 120
+App 62094 output: 121
+App 62094 output: 122
+App 62094 output: 123
+App 62094 output: 124
+App 62094 output: 125
+App 62094 output: 126
+App 62094 output: 127
+App 62094 output: 128
+App 62094 output: 129
+App 62094 output: 130
+App 62094 output: 131
+App 62094 output: 132
+App 62094 output: 133
+App 62094 output: 134
+App 62094 output: 135
+App 62094 output: 136
+App 62094 output: 137
+App 62094 output: 138
+App 62094 output: 139
+App 62094 output: 140
+App 62094 output: 141
+App 62094 output: 142
+App 62094 output: 143
+App 62094 output: 144
+App 62094 output: 145
+App 62094 output: 146
+App 62094 output: 147
+App 62094 output: 148
+App 62094 output: 149
+App 62094 output: 150
+App 62094 output: 151
+App 62094 output: 152
+App 62094 output: 153
+App 62094 output: 154
+App 62094 output: 155
+App 62094 output: 156
+App 62094 output: 157
+App 62094 output: 158
+App 62094 output: 159
+App 62094 output: 160
+App 62094 output: 161
+App 62094 output: 162
+App 62094 output: 163
+App 62094 output: 164
+App 62094 output: 165
+App 62094 output: 166
+App 62094 output: 167
+App 62094 output: 168
+App 62094 output: 169
+App 62094 output: 170
+App 62094 output: 171
+App 62094 output: 172
+App 62094 output: 173
+App 62094 output: 174
+App 62094 output: 175
+App 62094 output: 176
+App 62094 output: 177
+App 62094 output: 178
+App 62094 output: 179
+App 62094 output: 180
+App 62094 output: 181
+App 62094 output: 182
+App 62094 output: 183
+App 62094 output: 184
+App 62094 output: 185
+App 62094 output: 186
+App 62094 output: 187
+App 62094 output: 188
+App 62094 output: 189
+App 62094 output: 190
+App 62094 output: 191
+App 62094 output: 192
+App 62094 output: 193
+App 62094 output: 194
+App 62094 output: 195
+App 62094 output: 196
+App 62094 output: 197
+App 62094 output: 198
+App 62094 output: 199
+App 62094 output: 200
+App 62094 output: 201
+App 62094 output: 202
+App 62094 output: 203
+App 62094 output: 204
+App 62094 output: 205
+App 62094 output: 206
+App 62094 output: 207
+App 62094 output: 208
+App 62094 output: 209
+App 62094 output: 210
+App 62094 output: 211
+App 62094 output: 212
+App 62094 output: 213
+App 62094 output: 214
+App 62094 output: 215
+App 62094 output: 216
+App 62094 output: 217
+App 62094 output: 218
+App 62094 output: 219
+App 62094 output: 220
+App 62094 output: 221
+App 62094 output: 222
+App 62094 output: 223
+App 62094 output: 224
+App 62094 output: 225
+App 62094 output: 226
+App 62094 output: 227
+App 62094 output: 228
+App 62094 output: 229
+App 62094 output: 230
+App 62094 output: 231
+App 62094 output: 232
+App 62094 output: 233
+App 62094 output: 234
+App 62094 output: 235
+App 62094 output: 236
+App 62094 output: 237
+App 62094 output: 238
+App 62094 output: 239
+App 62094 output: 240
+App 62094 output: 241
+App 62094 output: 242
+App 62094 output: 243
+App 62094 output: 244
+App 62094 output: 245
+App 62094 output: 246
+App 62094 output: 247
+App 62094 output: 248
+App 62094 output: 249
+App 62094 output: 250
+App 62094 output: 251
+App 62094 output: 252
+App 62094 output: 253
+App 62094 output: 254
+App 62094 output: 255
+App 62094 output: 256
+App 62094 output: 257
+App 62094 output: 258
+App 62094 output: 259
+App 62094 output: 260
+App 62094 output: 261
+App 62094 output: 262
+App 62094 output: 263
+App 62094 output: 264
+App 62094 output: 265
+App 62094 output: 266
+App 62094 output: 267
+App 62094 output: 268
+App 62094 output: 269
+App 62094 output: 270
+App 62094 output: 271
+App 62094 output: 272
+App 62094 output: 273
+App 62094 output: 274
+App 62094 output: 275
+App 62094 output: 276
+App 62094 output: 277
+App 62094 output: 278
+App 62094 output: 279
+App 62094 output: 280
+App 62094 output: 281
+App 62094 output: 282
+App 62094 output: 283
+App 62094 output: 284
+App 62094 output: 285
+App 62094 output: 286
+App 62094 output: 287
+App 62094 output: 288
+App 62094 output: 289
+App 62094 output: 290
+App 62094 output: Traceback (most recent call last):
+App 62094 output:   File "/Users/andylee/Repos/Pokeweb/python/MovScrCMDDecompiler.py", line 56, in <module>
+App 62094 output:     CommandIndex = unpack('<H', SCRIPT.read(0x2))[0]
+App 62094 output:                    ^^^^^^^^^^^^^^^^^^^
+App 62094 output: ^^^^^^^
+App 62094 output: ^^^^
+App 62094 output: struct.error
+App 62094 output: : unpack requires a buffer of 2 bytes
+App 62094 output: Traceback (most recent call last):
+App 62094 output:   File "/Users/andylee/Repos/Pokeweb/python/move_writer.py", line 186, in <module>
+App 62094 output:     decompile_script(sys.argv[3], int(file_name))
+App 62094 output: 
+App 62094 output:   File "/Users/andylee/Repos/Pokeweb/python/move_writer.py", line 48, in decompile_script
+App 62094 output:     
+App 62094 output: subprocess.run(["python3", "python/MovScrCMDDecompiler.py", f"{rom_name}/move_scripts/{move_id}.bin", '>', f"{rom_name}/move_scripts/{move_id}.txt"], check=True)
+App 62094 output:   File "/Users/andylee/.pyenv/versions/3.11.1/lib/python3.11/subprocess.py", line 571, in run
+App 62094 output:     raise CalledProcessError(retcode, process.args,
+App 62094 output: subprocess.CalledProcessError
+App 62094 output: : Command '['python3', 'python/MovScrCMDDecompiler.py', 'projects/b6test/move_scripts/290.bin', '>', 'projects/b6test/move_scripts/290.txt']' returned non-zero exit status 1.
+App 62094 output: 291
+App 62094 output: 292
+App 62094 output: 293
+App 62094 output: 294
+App 62094 output: 295
+App 62094 output: 296
+App 62094 output: 297
+App 62094 output: 298
+App 62094 output: 299
+App 62094 output: 300
+App 62094 output: 301
+App 62094 output: 302
+App 62094 output: 303
+App 62094 output: 304
+App 62094 output: 305
+App 62094 output: 306
+App 62094 output: 307
+App 62094 output: 308
+App 62094 output: 309
+App 62094 output: 310
+App 62094 output: 311
+App 62094 output: 312
+App 62094 output: 313
+App 62094 output: 314
+App 62094 output: 315
+App 62094 output: 316
+App 62094 output: 317
+App 62094 output: 318
+App 62094 output: 319
+App 62094 output: 320
+App 62094 output: 321
+App 62094 output: 322
+App 62094 output: 323
+App 62094 output: 324
+App 62094 output: 325
+App 62094 output: 326
+App 62094 output: 327
+App 62094 output: 328
+App 62094 output: 329
+App 62094 output: 330
+App 62094 output: 331
+App 62094 output: 332
+App 62094 output: 333
+App 62094 output: 334
+App 62094 output: 335
+App 62094 output: 336
+App 62094 output: 337
+App 62094 output: 338
+App 62094 output: 339
+App 62094 output: 340
+App 62094 output: 341
+App 62094 output: 342
+App 62094 output: 343
+App 62094 output: 344
+App 62094 output: 345
+App 62094 output: 346
+App 62094 output: 347
+App 62094 output: 348
+App 62094 output: 349
+App 62094 output: 350
+App 62094 output: 351
+App 62094 output: 352
+App 62094 output: 353
+App 62094 output: 354
+App 62094 output: 355
+App 62094 output: 356
+App 62094 output: 357
+App 62094 output: 358
+App 62094 output: 359
+App 62094 output: 360
+App 62094 output: 361
+App 62094 output: 362
+App 62094 output: 363
+App 62094 output: 364
+App 62094 output: 365
+App 62094 output: 366
+App 62094 output: 367
+App 62094 output: 368
+App 62094 output: 369
+App 62094 output: 370
+App 62094 output: 371
+App 62094 output: 372
+App 62094 output: 373
+App 62094 output: 374
+App 62094 output: 375
+App 62094 output: 376
+App 62094 output: 377
+App 62094 output: 378
+App 62094 output: 379
+App 62094 output: 380
+App 62094 output: 381
+App 62094 output: 382
+App 62094 output: 383
+App 62094 output: 384
+App 62094 output: 385
+App 62094 output: 386
+App 62094 output: 387
+App 62094 output: 388
+App 62094 output: 389
+App 62094 output: 390
+App 62094 output: 391
+App 62094 output: 392
+App 62094 output: 393
+App 62094 output: 394
+App 62094 output: 395
+App 62094 output: 396
+App 62094 output: 397
+App 62094 output: 398
+App 62094 output: 399
+App 62094 output: 400
+App 62094 output: 401
+App 62094 output: 402
+App 62094 output: 403
+App 62094 output: 404
+App 62094 output: 405
+App 62094 output: 406
+App 62094 output: 407
+App 62094 output: 408
+App 62094 output: 409
+App 62094 output: 410
+App 62094 output: 411
+App 62094 output: 412
+App 62094 output: 413
+App 62094 output: 414
+App 62094 output: 415
+App 62094 output: 416
+App 62094 output: 417
+App 62094 output: 418
+App 62094 output: 419
+App 62094 output: 420
+App 62094 output: 421
+App 62094 output: 422
+App 62094 output: 423
+App 62094 output: 424
+App 62094 output: 425
+App 62094 output: 426
+App 62094 output: 427
+App 62094 output: 428
+App 62094 output: 429
+App 62094 output: 430
+App 62094 output: 431
+App 62094 output: 432
+App 62094 output: 433
+App 62094 output: 434
+App 62094 output: 435
+App 62094 output: 436
+App 62094 output: 437
+App 62094 output: 438
+App 62094 output: 439
+App 62094 output: 440
+App 62094 output: 441
+App 62094 output: 442
+App 62094 output: 443
+App 62094 output: 444
+App 62094 output: 445
+App 62094 output: 446
+App 62094 output: 447
+App 62094 output: 448
+App 62094 output: 449
+App 62094 output: 450
+App 62094 output: 451
+App 62094 output: 452
+App 62094 output: 453
+App 62094 output: 454
+App 62094 output: 455
+App 62094 output: 456
+App 62094 output: 457
+App 62094 output: 458
+App 62094 output: 459
+App 62094 output: 460
+App 62094 output: 461
+App 62094 output: 462
+App 62094 output: 463
+App 62094 output: Traceback (most recent call last):
+App 62094 output:   File "/Users/andylee/Repos/Pokeweb/python/MovScrCMDDecompiler.py", line 57, in <module>
+App 62094 output:     CommandData = CommandSet[CommandIndex]
+App 62094 output:                 
+App 62094 output:   ~~~~~
+App 62094 output: ~~~~~^
+App 62094 output: ^^^^^
+App 62094 output: ^^^^^
+App 62094 output: ^^^
+App 62094 output: KeyError: 6144
+App 62094 output: Traceback (most recent call last):
+App 62094 output:   File "/Users/andylee/Repos/Pokeweb/python/move_writer.py", line 186, in <module>
+App 62094 output:     decompile_script(sys.argv[3], int(file_name))
+App 62094 output: 
+App 62094 output:   File "/Users/andylee/Repos/Pokeweb/python/move_writer.py", line 48, in decompile_script
+App 62094 output:     subprocess.run(["python3", "python/MovScrCMDDecompiler.py", f"{rom_name}/move_scripts/{move_id}.bin", '>', f"{rom_name}/move_scripts/{move_id}.txt"], check=True)
+App 62094 output:   File "/Users/andylee/.pyenv/versions/3.11.1/lib/python3.11/subprocess.py", line 571, in run
+App 62094 output:     raise CalledProcessError(retcode, process.args,
+App 62094 output: 
+App 62094 output: subprocess.CalledProcessError
+App 62094 output: : Command '['python3', 'python/MovScrCMDDecompiler.py', 'projects/b6test/move_scripts/463.bin', '>', 'projects/b6test/move_scripts/463.txt']' returned non-zero exit status 1.
+App 62094 output: 464
+App 62094 output: 465
+App 62094 output: 466
+App 62094 output: 467
+App 62094 output: 468
+App 62094 output: 469
+App 62094 output: 470
+App 62094 output: 471
+App 62094 output: 472
+App 62094 output: 473
+App 62094 output: 474
+App 62094 output: 475
+App 62094 output: 476
+App 62094 output: 477
+App 62094 output: 478
+App 62094 output: 479
+App 62094 output: 480
+App 62094 output: 481
+App 62094 output: 482
+App 62094 output: 483
+App 62094 output: 484
+App 62094 output: 485
+App 62094 output: 486
+App 62094 output: 487
+App 62094 output: 488
+App 62094 output: 489
+App 62094 output: 490
+App 62094 output: 491
+App 62094 output: 492
+App 62094 output: 493
+App 62094 output: 494
+App 62094 output: 495
+App 62094 output: 496
+App 62094 output: 497
+App 62094 output: 498
+App 62094 output: 499
+App 62094 output: 500
+App 62094 output: 501
+App 62094 output: 502
+App 62094 output: 503
+App 62094 output: 504
+App 62094 output: 505
+App 62094 output: 506
+App 62094 output: 507
+App 62094 output: 508
+App 62094 output: 509
+App 62094 output: 510
+App 62094 output: 511
+App 62094 output: 512
+App 62094 output: 513
+App 62094 output: 514
+App 62094 output: 515
+App 62094 output: 516
+App 62094 output: 517
+App 62094 output: 518
+App 62094 output: 519
+App 62094 output: 520
+App 62094 output: 521
+App 62094 output: 522
+App 62094 output: 523
+App 62094 output: 524
+App 62094 output: 525
+App 62094 output: 526
+App 62094 output: 527
+App 62094 output: 528
+App 62094 output: 529
+App 62094 output: 530
+App 62094 output: 531
+App 62094 output: 532
+App 62094 output: 533
+App 62094 output: 534
+App 62094 output: 535
+App 62094 output: 536
+App 62094 output: 537
+App 62094 output: 538
+App 62094 output: 539
+App 62094 output: 540
+App 62094 output: 541
+App 62094 output: 542
+App 62094 output: 543
+App 62094 output: 544
+App 62094 output: 545
+App 62094 output: 546
+App 62094 output: 547
+App 62094 output: 548
+App 62094 output: 549
+App 62094 output: 550
+App 62094 output: 551
+App 62094 output: 552
+App 62094 output: 553
+App 62094 output: 554
+App 62094 output: 555
+App 62094 output: 556
+App 62094 output: 557
+App 62094 output: 558
+App 62094 output: 559
+
+[ N 2023-01-07 13:55:44.5861 62045/T8 age/Cor/CoreMain.cpp:671 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2023-01-07 13:55:44.5861 62045/T1 age/Cor/CoreMain.cpp:1246 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2023-01-07 13:55:44.5862 62045/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 62094, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2023-01-07 13:55:44.5867 62045/Tl Ser/Server.h:901 ]: [ServerThr.7] Freed 0 spare client objects
+[ N 2023-01-07 13:55:44.5866 62045/Ta Ser/Server.h:901 ]: [ServerThr.2] Freed 0 spare client objects
+[ N 2023-01-07 13:55:44.5868 62045/Tn Ser/Server.h:901 ]: [ServerThr.8] Freed 0 spare client objects
+[ N 2023-01-07 13:55:44.5868 62045/Tl Ser/Server.h:558 ]: [ServerThr.7] Shutdown finished
+[ N 2023-01-07 13:55:44.5868 62045/Tu Ser/Server.h:901 ]: [ServerThr.12] Freed 0 spare client objects
+[ N 2023-01-07 13:55:44.5869 62045/Tu Ser/Server.h:558 ]: [ServerThr.12] Shutdown finished
+[ N 2023-01-07 13:55:44.5868 62045/Tq Ser/Server.h:901 ]: [ServerThr.10] Freed 0 spare client objects
+[ N 2023-01-07 13:55:44.5866 62045/T8 Ser/Server.h:901 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2023-01-07 13:55:44.5870 62045/Tw Ser/Server.h:901 ]: [ApiServer] Freed 0 spare client objects
+[ N 2023-01-07 13:55:44.5868 62045/To Ser/Server.h:901 ]: [ServerThr.9] Freed 0 spare client objects
+[ N 2023-01-07 13:55:44.5871 62045/T8 Ser/Server.h:558 ]: [ServerThr.1] Shutdown finished
+[ N 2023-01-07 13:55:44.5870 62045/Tw Ser/Server.h:558 ]: [ApiServer] Shutdown finished
+[ N 2023-01-07 13:55:44.5867 62045/Tg Ser/Server.h:901 ]: [ServerThr.5] Freed 0 spare client objects
+[ N 2023-01-07 13:55:44.5868 62045/Te Ser/Server.h:901 ]: [ServerThr.4] Freed 0 spare client objects
+[ N 2023-01-07 13:55:44.5869 62045/Ta Ser/Server.h:558 ]: [ServerThr.2] Shutdown finished
+[ N 2023-01-07 13:55:44.5868 62045/Ts Ser/Server.h:901 ]: [ServerThr.11] Freed 0 spare client objects
+[ N 2023-01-07 13:55:44.5868 62045/Tc Ser/Server.h:901 ]: [ServerThr.3] Freed 0 spare client objects
+[ N 2023-01-07 13:55:44.5869 62045/Tn Ser/Server.h:558 ]: [ServerThr.8] Shutdown finished
+[ N 2023-01-07 13:55:44.5866 62045/Ti Ser/Server.h:901 ]: [ServerThr.6] Freed 0 spare client objects
+[ N 2023-01-07 13:55:44.5870 62045/Tq Ser/Server.h:558 ]: [ServerThr.10] Shutdown finished
+[ N 2023-01-07 13:55:44.5871 62045/To Ser/Server.h:558 ]: [ServerThr.9] Shutdown finished
+[ N 2023-01-07 13:55:44.5872 62045/Ts Ser/Server.h:558 ]: [ServerThr.11] Shutdown finished
+[ N 2023-01-07 13:55:44.5872 62045/Te Ser/Server.h:558 ]: [ServerThr.4] Shutdown finished
+[ N 2023-01-07 13:55:44.5872 62045/Tg Ser/Server.h:558 ]: [ServerThr.5] Shutdown finished
+[ N 2023-01-07 13:55:44.5873 62045/Tc Ser/Server.h:558 ]: [ServerThr.3] Shutdown finished
+[ N 2023-01-07 13:55:44.5873 62045/Ti Ser/Server.h:558 ]: [ServerThr.6] Shutdown finished
+[ N 2023-01-07 13:55:44.5875 62045/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 62094, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2023-01-07 13:55:45.6496 62045/T1 age/Cor/CoreMain.cpp:1325 ]: Passenger core shutdown finished
+[ N 2023-01-07 13:55:46.0805 71051/T1 age/Wat/WatchdogMain.cpp:1377 ]: Starting Passenger watchdog...
+[ N 2023-01-07 13:55:46.1123 71053/T1 age/Cor/CoreMain.cpp:1340 ]: Starting Passenger core...
+[ N 2023-01-07 13:55:46.1127 71053/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ N 2023-01-07 13:55:46.1479 71053/T1 age/Cor/CoreMain.cpp:1015 ]: Passenger core online, PID 71053
+[ N 2023-01-07 13:55:48.9207 71053/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+[ E 2023-01-07 13:55:48.9271 71053/T5 Sec/Crypto.cpp:990 ]: Removing Passenger private key from keychain failed: Write permissions error.. Please remove the private key from the certificate labeled Phusion Passenger Open Source in your keychain.
+App 71069 output: "init"
+App 71102 output: {"rom"=>"projects/b6test", "password"=>""}
+
+[ N 2023-01-07 14:21:31.2091 71053/T8 age/Cor/CoreMain.cpp:671 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2023-01-07 14:21:31.2092 71053/T1 age/Cor/CoreMain.cpp:1246 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2023-01-07 14:21:31.2093 71053/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 71102, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2023-01-07 14:21:31.2097 71053/Tm Ser/Server.h:901 ]: [ServerThr.8] Freed 0 spare client objects
+[ N 2023-01-07 14:21:31.2098 71053/Tc Ser/Server.h:901 ]: [ServerThr.3] Freed 0 spare client objects
+[ N 2023-01-07 14:21:31.2098 71053/Tg Ser/Server.h:901 ]: [ServerThr.5] Freed 0 spare client objects
+[ N 2023-01-07 14:21:31.2097 71053/Te Ser/Server.h:901 ]: [ServerThr.4] Freed 0 spare client objects
+[ N 2023-01-07 14:21:31.2098 71053/To Ser/Server.h:901 ]: [ServerThr.9] Freed 0 spare client objects
+[ N 2023-01-07 14:21:31.2099 71053/Tg Ser/Server.h:558 ]: [ServerThr.5] Shutdown finished
+[ N 2023-01-07 14:21:31.2098 71053/Tc Ser/Server.h:558 ]: [ServerThr.3] Shutdown finished
+[ N 2023-01-07 14:21:31.2099 71053/To Ser/Server.h:558 ]: [ServerThr.9] Shutdown finished
+[ N 2023-01-07 14:21:31.2097 71053/Ta Ser/Server.h:901 ]: [ServerThr.2] Freed 0 spare client objects
+[ N 2023-01-07 14:21:31.2098 71053/Ti Ser/Server.h:901 ]: [ServerThr.6] Freed 0 spare client objects
+[ N 2023-01-07 14:21:31.2098 71053/Tu Ser/Server.h:901 ]: [ServerThr.12] Freed 0 spare client objects
+[ N 2023-01-07 14:21:31.2100 71053/Ti Ser/Server.h:558 ]: [ServerThr.6] Shutdown finished
+[ N 2023-01-07 14:21:31.2100 71053/Ta Ser/Server.h:558 ]: [ServerThr.2] Shutdown finished
+[ N 2023-01-07 14:21:31.2097 71053/Ts Ser/Server.h:901 ]: [ServerThr.11] Freed 0 spare client objects
+[ N 2023-01-07 14:21:31.2099 71053/Te Ser/Server.h:558 ]: [ServerThr.4] Shutdown finished
+[ N 2023-01-07 14:21:31.2098 71053/Tq Ser/Server.h:901 ]: [ServerThr.10] Freed 0 spare client objects
+[ N 2023-01-07 14:21:31.2097 71053/T8 Ser/Server.h:901 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2023-01-07 14:21:31.2100 71053/Tx Ser/Server.h:901 ]: [ApiServer] Freed 0 spare client objects
+[ N 2023-01-07 14:21:31.2101 71053/Tu Ser/Server.h:558 ]: [ServerThr.12] Shutdown finished
+[ N 2023-01-07 14:21:31.2098 71053/Tm Ser/Server.h:558 ]: [ServerThr.8] Shutdown finished
+[ N 2023-01-07 14:21:31.2101 71053/Ts Ser/Server.h:558 ]: [ServerThr.11] Shutdown finished
+[ N 2023-01-07 14:21:31.2097 71053/Tk Ser/Server.h:901 ]: [ServerThr.7] Freed 0 spare client objects
+[ N 2023-01-07 14:21:31.2102 71053/Tq Ser/Server.h:558 ]: [ServerThr.10] Shutdown finished
+[ N 2023-01-07 14:21:31.2102 71053/Tx Ser/Server.h:558 ]: [ApiServer] Shutdown finished
+[ N 2023-01-07 14:21:31.2103 71053/Tk Ser/Server.h:558 ]: [ServerThr.7] Shutdown finished
+[ N 2023-01-07 14:21:31.2102 71053/T8 Ser/Server.h:558 ]: [ServerThr.1] Shutdown finished
+[ N 2023-01-07 14:21:31.2104 71053/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 71102, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2023-01-07 14:21:32.2872 71053/T1 age/Cor/CoreMain.cpp:1325 ]: Passenger core shutdown finished
+[ N 2023-01-07 14:21:32.6899 71954/T1 age/Wat/WatchdogMain.cpp:1377 ]: Starting Passenger watchdog...
+[ N 2023-01-07 14:21:32.7173 71956/T1 age/Cor/CoreMain.cpp:1340 ]: Starting Passenger core...
+[ N 2023-01-07 14:21:32.7178 71956/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ N 2023-01-07 14:21:32.7543 71956/T1 age/Cor/CoreMain.cpp:1015 ]: Passenger core online, PID 71956
+[ N 2023-01-07 14:21:35.5176 71956/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+[ E 2023-01-07 14:21:35.5226 71956/T5 Sec/Crypto.cpp:990 ]: Removing Passenger private key from keychain failed: Write permissions error.. Please remove the private key from the certificate labeled Phusion Passenger Open Source in your keychain.
+App 71972 output: "init"
+App 72005 output: {"rom"=>"projects/b6test", "password"=>""}
+
+[ N 2023-01-07 15:04:12.4176 71956/T9 age/Cor/CoreMain.cpp:671 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2023-01-07 15:04:12.4176 71956/T1 age/Cor/CoreMain.cpp:1246 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2023-01-07 15:04:12.4177 71956/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 72005, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2023-01-07 15:04:12.4183 71956/T9 Ser/Server.h:901 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2023-01-07 15:04:12.4183 71956/Ti Ser/Server.h:901 ]: [ServerThr.6] Freed 0 spare client objects
+[ N 2023-01-07 15:04:12.4183 71956/Tg Ser/Server.h:901 ]: [ServerThr.5] Freed 0 spare client objects
+[ N 2023-01-07 15:04:12.4184 71956/Tu Ser/Server.h:901 ]: [ServerThr.12] Freed 0 spare client objects
+[ N 2023-01-07 15:04:12.4184 71956/Tg Ser/Server.h:558 ]: [ServerThr.5] Shutdown finished
+[ N 2023-01-07 15:04:12.4184 71956/Ti Ser/Server.h:558 ]: [ServerThr.6] Shutdown finished
+[ N 2023-01-07 15:04:12.4184 71956/To Ser/Server.h:901 ]: [ServerThr.9] Freed 0 spare client objects
+[ N 2023-01-07 15:04:12.4184 71956/Tq Ser/Server.h:901 ]: [ServerThr.10] Freed 0 spare client objects
+[ N 2023-01-07 15:04:12.4183 71956/Tn Ser/Server.h:901 ]: [ServerThr.8] Freed 0 spare client objects
+[ N 2023-01-07 15:04:12.4183 71956/Tf Ser/Server.h:901 ]: [ServerThr.4] Freed 0 spare client objects
+[ N 2023-01-07 15:04:12.4186 71956/Tn Ser/Server.h:558 ]: [ServerThr.8] Shutdown finished
+[ N 2023-01-07 15:04:12.4186 71956/Tq Ser/Server.h:558 ]: [ServerThr.10] Shutdown finished
+[ N 2023-01-07 15:04:12.4183 71956/Ta Ser/Server.h:901 ]: [ServerThr.2] Freed 0 spare client objects
+[ N 2023-01-07 15:04:12.4184 71956/Tk Ser/Server.h:901 ]: [ServerThr.7] Freed 0 spare client objects
+[ N 2023-01-07 15:04:12.4187 71956/Tf Ser/Server.h:558 ]: [ServerThr.4] Shutdown finished
+[ N 2023-01-07 15:04:12.4184 71956/Tc Ser/Server.h:901 ]: [ServerThr.3] Freed 0 spare client objects
+[ N 2023-01-07 15:04:12.4185 71956/Tw Ser/Server.h:901 ]: [ApiServer] Freed 0 spare client objects
+[ N 2023-01-07 15:04:12.4184 71956/Ts Ser/Server.h:901 ]: [ServerThr.11] Freed 0 spare client objects
+[ N 2023-01-07 15:04:12.4188 71956/Tw Ser/Server.h:558 ]: [ApiServer] Shutdown finished
+[ N 2023-01-07 15:04:12.4188 71956/Ts Ser/Server.h:558 ]: [ServerThr.11] Shutdown finished
+[ N 2023-01-07 15:04:12.4184 71956/T9 Ser/Server.h:558 ]: [ServerThr.1] Shutdown finished
+[ N 2023-01-07 15:04:12.4185 71956/Tu Ser/Server.h:558 ]: [ServerThr.12] Shutdown finished
+[ N 2023-01-07 15:04:12.4185 71956/To Ser/Server.h:558 ]: [ServerThr.9] Shutdown finished
+[ N 2023-01-07 15:04:12.4187 71956/Tk Ser/Server.h:558 ]: [ServerThr.7] Shutdown finished
+[ N 2023-01-07 15:04:12.4187 71956/Ta Ser/Server.h:558 ]: [ServerThr.2] Shutdown finished
+[ N 2023-01-07 15:04:12.4188 71956/Tc Ser/Server.h:558 ]: [ServerThr.3] Shutdown finished
+[ N 2023-01-07 15:04:12.4190 71956/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 72005, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2023-01-07 15:04:13.4795 71956/T1 age/Cor/CoreMain.cpp:1325 ]: Passenger core shutdown finished
+[ N 2023-01-07 15:04:13.9479 73382/T1 age/Wat/WatchdogMain.cpp:1377 ]: Starting Passenger watchdog...
+[ N 2023-01-07 15:04:13.9779 73384/T1 age/Cor/CoreMain.cpp:1340 ]: Starting Passenger core...
+[ N 2023-01-07 15:04:13.9782 73384/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ N 2023-01-07 15:04:14.0144 73384/T1 age/Cor/CoreMain.cpp:1015 ]: Passenger core online, PID 73384
+[ N 2023-01-07 15:04:16.8215 73384/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+[ E 2023-01-07 15:04:16.8275 73384/T5 Sec/Crypto.cpp:990 ]: Removing Passenger private key from keychain failed: Write permissions error.. Please remove the private key from the certificate labeled Phusion Passenger Open Source in your keychain.
+App 73402 output: "init"
+App 73435 output: {"rom"=>"projects/b6test", "password"=>""}
+
+[ N 2023-01-07 15:04:35.3667 73384/T8 age/Cor/CoreMain.cpp:671 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2023-01-07 15:04:35.3668 73384/T1 age/Cor/CoreMain.cpp:1246 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2023-01-07 15:04:35.3668 73384/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 73435, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2023-01-07 15:04:35.3672 73384/Tg Ser/Server.h:901 ]: [ServerThr.5] Freed 0 spare client objects
+[ N 2023-01-07 15:04:35.3673 73384/Tk Ser/Server.h:901 ]: [ServerThr.7] Freed 0 spare client objects
+[ N 2023-01-07 15:04:35.3674 73384/Tm Ser/Server.h:901 ]: [ServerThr.8] Freed 0 spare client objects
+[ N 2023-01-07 15:04:35.3674 73384/Tg Ser/Server.h:558 ]: [ServerThr.5] Shutdown finished
+[ N 2023-01-07 15:04:35.3674 73384/Tm Ser/Server.h:558 ]: [ServerThr.8] Shutdown finished
+[ N 2023-01-07 15:04:35.3673 73384/Td Ser/Server.h:901 ]: [ServerThr.3] Freed 0 spare client objects
+[ N 2023-01-07 15:04:35.3673 73384/Tb Ser/Server.h:901 ]: [ServerThr.2] Freed 0 spare client objects
+[ N 2023-01-07 15:04:35.3673 73384/Ti Ser/Server.h:901 ]: [ServerThr.6] Freed 0 spare client objects
+[ N 2023-01-07 15:04:35.3673 73384/T8 Ser/Server.h:901 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2023-01-07 15:04:35.3674 73384/Te Ser/Server.h:901 ]: [ServerThr.4] Freed 0 spare client objects
+[ N 2023-01-07 15:04:35.3674 73384/Ts Ser/Server.h:901 ]: [ServerThr.11] Freed 0 spare client objects
+[ N 2023-01-07 15:04:35.3674 73384/Tk Ser/Server.h:558 ]: [ServerThr.7] Shutdown finished
+[ N 2023-01-07 15:04:35.3673 73384/To Ser/Server.h:901 ]: [ServerThr.9] Freed 0 spare client objects
+[ N 2023-01-07 15:04:35.3675 73384/Td Ser/Server.h:558 ]: [ServerThr.3] Shutdown finished
+[ N 2023-01-07 15:04:35.3674 73384/Tu Ser/Server.h:901 ]: [ServerThr.12] Freed 0 spare client objects
+[ N 2023-01-07 15:04:35.3677 73384/Tb Ser/Server.h:558 ]: [ServerThr.2] Shutdown finished
+[ N 2023-01-07 15:04:35.3679 73384/Tu Ser/Server.h:558 ]: [ServerThr.12] Shutdown finished
+[ N 2023-01-07 15:04:35.3674 73384/Tq Ser/Server.h:901 ]: [ServerThr.10] Freed 0 spare client objects
+[ N 2023-01-07 15:04:35.3677 73384/Ti Ser/Server.h:558 ]: [ServerThr.6] Shutdown finished
+[ N 2023-01-07 15:04:35.3680 73384/Tq Ser/Server.h:558 ]: [ServerThr.10] Shutdown finished
+[ N 2023-01-07 15:04:35.3678 73384/Ts Ser/Server.h:558 ]: [ServerThr.11] Shutdown finished
+[ N 2023-01-07 15:04:35.3675 73384/Tw Ser/Server.h:901 ]: [ApiServer] Freed 0 spare client objects
+[ N 2023-01-07 15:04:35.3678 73384/T8 Ser/Server.h:558 ]: [ServerThr.1] Shutdown finished
+[ N 2023-01-07 15:04:35.3679 73384/To Ser/Server.h:558 ]: [ServerThr.9] Shutdown finished
+[ N 2023-01-07 15:04:35.3678 73384/Te Ser/Server.h:558 ]: [ServerThr.4] Shutdown finished
+[ N 2023-01-07 15:04:35.3680 73384/Tw Ser/Server.h:558 ]: [ApiServer] Shutdown finished
+[ N 2023-01-07 15:04:35.3681 73384/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 73435, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2023-01-07 15:04:36.4237 73384/T1 age/Cor/CoreMain.cpp:1325 ]: Passenger core shutdown finished
+[ N 2023-01-07 15:04:36.5107 73476/T1 age/Wat/WatchdogMain.cpp:1377 ]: Starting Passenger watchdog...
+[ N 2023-01-07 15:04:36.5446 73478/T1 age/Cor/CoreMain.cpp:1340 ]: Starting Passenger core...
+[ N 2023-01-07 15:04:36.5449 73478/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ N 2023-01-07 15:04:36.5845 73478/T1 age/Cor/CoreMain.cpp:1015 ]: Passenger core online, PID 73478
+[ N 2023-01-07 15:04:39.3678 73478/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+[ E 2023-01-07 15:04:39.3731 73478/T5 Sec/Crypto.cpp:990 ]: Removing Passenger private key from keychain failed: Write permissions error.. Please remove the private key from the certificate labeled Phusion Passenger Open Source in your keychain.
+App 73494 output: "init"
+App 73527 output: {"rom"=>"projects/bb2redux", "password"=>""}
+
+[ N 2023-01-07 15:05:05.2077 73478/T8 age/Cor/CoreMain.cpp:671 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2023-01-07 15:05:05.2081 73478/T1 age/Cor/CoreMain.cpp:1246 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2023-01-07 15:05:05.2082 73478/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 73527, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2023-01-07 15:05:05.2093 73478/T8 Ser/Server.h:901 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2023-01-07 15:05:05.2093 73478/Ta Ser/Server.h:901 ]: [ServerThr.2] Freed 0 spare client objects
+[ N 2023-01-07 15:05:05.2093 73478/Te Ser/Server.h:901 ]: [ServerThr.4] Freed 0 spare client objects
+[ N 2023-01-07 15:05:05.2094 73478/Tm Ser/Server.h:901 ]: [ServerThr.8] Freed 0 spare client objects
+[ N 2023-01-07 15:05:05.2094 73478/Tq Ser/Server.h:901 ]: [ServerThr.10] Freed 0 spare client objects
+[ N 2023-01-07 15:05:05.2095 73478/Te Ser/Server.h:558 ]: [ServerThr.4] Shutdown finished
+[ N 2023-01-07 15:05:05.2095 73478/Tq Ser/Server.h:558 ]: [ServerThr.10] Shutdown finished
+[ N 2023-01-07 15:05:05.2094 73478/T8 Ser/Server.h:558 ]: [ServerThr.1] Shutdown finished
+[ N 2023-01-07 15:05:05.2093 73478/Td Ser/Server.h:901 ]: [ServerThr.3] Freed 0 spare client objects
+[ N 2023-01-07 15:05:05.2094 73478/Ti Ser/Server.h:901 ]: [ServerThr.6] Freed 0 spare client objects
+[ N 2023-01-07 15:05:05.2096 73478/Td Ser/Server.h:558 ]: [ServerThr.3] Shutdown finished
+[ N 2023-01-07 15:05:05.2095 73478/To Ser/Server.h:901 ]: [ServerThr.9] Freed 0 spare client objects
+[ N 2023-01-07 15:05:05.2096 73478/Tw Ser/Server.h:901 ]: [ApiServer] Freed 0 spare client objects
+[ N 2023-01-07 15:05:05.2097 73478/To Ser/Server.h:558 ]: [ServerThr.9] Shutdown finished
+[ N 2023-01-07 15:05:05.2097 73478/Tw Ser/Server.h:558 ]: [ApiServer] Shutdown finished
+[ N 2023-01-07 15:05:05.2095 73478/Ta Ser/Server.h:558 ]: [ServerThr.2] Shutdown finished
+[ N 2023-01-07 15:05:05.2095 73478/Tk Ser/Server.h:901 ]: [ServerThr.7] Freed 0 spare client objects
+[ N 2023-01-07 15:05:05.2095 73478/Ts Ser/Server.h:901 ]: [ServerThr.11] Freed 0 spare client objects
+[ N 2023-01-07 15:05:05.2098 73478/Tk Ser/Server.h:558 ]: [ServerThr.7] Shutdown finished
+[ N 2023-01-07 15:05:05.2095 73478/Tm Ser/Server.h:558 ]: [ServerThr.8] Shutdown finished
+[ N 2023-01-07 15:05:05.2094 73478/Tg Ser/Server.h:901 ]: [ServerThr.5] Freed 0 spare client objects
+[ N 2023-01-07 15:05:05.2096 73478/Ti Ser/Server.h:558 ]: [ServerThr.6] Shutdown finished
+[ N 2023-01-07 15:05:05.2095 73478/Tu Ser/Server.h:901 ]: [ServerThr.12] Freed 0 spare client objects
+[ N 2023-01-07 15:05:05.2098 73478/Ts Ser/Server.h:558 ]: [ServerThr.11] Shutdown finished
+[ N 2023-01-07 15:05:05.2099 73478/Tg Ser/Server.h:558 ]: [ServerThr.5] Shutdown finished
+[ N 2023-01-07 15:05:05.2099 73478/Tu Ser/Server.h:558 ]: [ServerThr.12] Shutdown finished
+[ N 2023-01-07 15:05:05.2100 73478/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 73527, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2023-01-07 15:05:06.2370 73478/T1 age/Cor/CoreMain.cpp:1325 ]: Passenger core shutdown finished
+[ N 2023-01-07 15:05:06.3867 73565/T1 age/Wat/WatchdogMain.cpp:1377 ]: Starting Passenger watchdog...
+[ N 2023-01-07 15:05:06.4185 73567/T1 age/Cor/CoreMain.cpp:1340 ]: Starting Passenger core...
+[ N 2023-01-07 15:05:06.4189 73567/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ N 2023-01-07 15:05:06.4544 73567/T1 age/Cor/CoreMain.cpp:1015 ]: Passenger core online, PID 73567
+App 73578 output: "init"
+[ N 2023-01-07 15:05:09.2338 73567/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+[ E 2023-01-07 15:05:09.2422 73567/T5 Sec/Crypto.cpp:990 ]: Removing Passenger private key from keychain failed: Write permissions error.. Please remove the private key from the certificate labeled Phusion Passenger Open Source in your keychain.
+
+[ N 2023-01-07 15:06:02.7073 73567/T9 age/Cor/CoreMain.cpp:671 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2023-01-07 15:06:02.7074 73567/T1 age/Cor/CoreMain.cpp:1246 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2023-01-07 15:06:02.7075 73567/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 73616, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2023-01-07 15:06:02.7082 73567/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 73624, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2023-01-07 15:06:02.7084 73567/Ta Ser/Server.h:901 ]: [ServerThr.2] Freed 0 spare client objects
+[ N 2023-01-07 15:06:02.7084 73567/T9 Ser/Server.h:901 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2023-01-07 15:06:02.7084 73567/Tm Ser/Server.h:901 ]: [ServerThr.8] Freed 0 spare client objects
+[ N 2023-01-07 15:06:02.7084 73567/Tk Ser/Server.h:901 ]: [ServerThr.7] Freed 0 spare client objects
+[ N 2023-01-07 15:06:02.7085 73567/Tu Ser/Server.h:901 ]: [ServerThr.12] Freed 0 spare client objects
+[ N 2023-01-07 15:06:02.7085 73567/Tg Ser/Server.h:901 ]: [ServerThr.5] Freed 0 spare client objects
+[ N 2023-01-07 15:06:02.7085 73567/Tq Ser/Server.h:901 ]: [ServerThr.10] Freed 0 spare client objects
+[ N 2023-01-07 15:06:02.7084 73567/Tc Ser/Server.h:901 ]: [ServerThr.3] Freed 0 spare client objects
+[ N 2023-01-07 15:06:02.7086 73567/Tq Ser/Server.h:558 ]: [ServerThr.10] Shutdown finished
+[ N 2023-01-07 15:06:02.7085 73567/Ta Ser/Server.h:558 ]: [ServerThr.2] Shutdown finished
+[ N 2023-01-07 15:06:02.7086 73567/Tg Ser/Server.h:558 ]: [ServerThr.5] Shutdown finished
+[ N 2023-01-07 15:06:02.7085 73567/Tt Ser/Server.h:901 ]: [ServerThr.11] Freed 0 spare client objects
+[ N 2023-01-07 15:06:02.7086 73567/Tc Ser/Server.h:558 ]: [ServerThr.3] Shutdown finished
+[ N 2023-01-07 15:06:02.7087 73567/Tt Ser/Server.h:558 ]: [ServerThr.11] Shutdown finished
+[ N 2023-01-07 15:06:02.7086 73567/Tw Ser/Server.h:901 ]: [ApiServer] Freed 0 spare client objects
+[ N 2023-01-07 15:06:02.7085 73567/T9 Ser/Server.h:558 ]: [ServerThr.1] Shutdown finished
+[ N 2023-01-07 15:06:02.7085 73567/Tm Ser/Server.h:558 ]: [ServerThr.8] Shutdown finished
+[ N 2023-01-07 15:06:02.7084 73567/To Ser/Server.h:901 ]: [ServerThr.9] Freed 0 spare client objects
+[ N 2023-01-07 15:06:02.7084 73567/Te Ser/Server.h:901 ]: [ServerThr.4] Freed 0 spare client objects
+[ N 2023-01-07 15:06:02.7085 73567/Tk Ser/Server.h:558 ]: [ServerThr.7] Shutdown finished
+[ N 2023-01-07 15:06:02.7088 73567/Tw Ser/Server.h:558 ]: [ApiServer] Shutdown finished
+[ N 2023-01-07 15:06:02.7088 73567/To Ser/Server.h:558 ]: [ServerThr.9] Shutdown finished
+[ N 2023-01-07 15:06:02.7084 73567/Ti Ser/Server.h:901 ]: [ServerThr.6] Freed 0 spare client objects
+[ N 2023-01-07 15:06:02.7089 73567/Ti Ser/Server.h:558 ]: [ServerThr.6] Shutdown finished
+[ N 2023-01-07 15:06:02.7089 73567/Te Ser/Server.h:558 ]: [ServerThr.4] Shutdown finished
+[ N 2023-01-07 15:06:02.7085 73567/Tu Ser/Server.h:558 ]: [ServerThr.12] Shutdown finished
+[ N 2023-01-07 15:06:02.7090 73567/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 73616, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2023-01-07 15:06:02.7091 73567/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 73624, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2023-01-07 15:06:04.0082 73668/T1 age/Wat/WatchdogMain.cpp:1377 ]: Starting Passenger watchdog...
+[ N 2023-01-07 15:06:04.0358 73670/T1 age/Cor/CoreMain.cpp:1340 ]: Starting Passenger core...
+[ N 2023-01-07 15:06:04.0361 73670/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ N 2023-01-07 15:06:04.0654 73670/T1 age/Cor/CoreMain.cpp:1015 ]: Passenger core online, PID 73670
+[ E 2023-01-07 15:06:04.6382 73567/T1 age/Cor/TelemetryCollector.h:628 ]: Error from anonymous telemetry server: response status not supported: 503
+[ N 2023-01-07 15:06:04.7938 73567/T1 age/Cor/CoreMain.cpp:1325 ]: Passenger core shutdown finished
+App 73691 output: "init"
+[ E 2023-01-07 15:06:09.4729 73670/T5 age/Cor/SecurityUpdateChecker.h:507 ]: Security update check failed: server temporarily unavailable, try again later (next check in 24 hours)
+[ E 2023-01-07 15:06:09.4812 73670/T5 Sec/Crypto.cpp:990 ]: Removing Passenger private key from keychain failed: Write permissions error.. Please remove the private key from the certificate labeled Phusion Passenger Open Source in your keychain.
+App 73724 output: {"rom"=>"projects/bb2redux", "password"=>""}
+
+[ N 2023-01-07 15:06:35.9104 73670/T9 age/Cor/CoreMain.cpp:671 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2023-01-07 15:06:35.9105 73670/T1 age/Cor/CoreMain.cpp:1246 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2023-01-07 15:06:35.9105 73670/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 73724, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2023-01-07 15:06:35.9107 73670/Tl Ser/Server.h:901 ]: [ServerThr.7] Freed 0 spare client objects
+[ N 2023-01-07 15:06:35.9107 73670/T9 Ser/Server.h:901 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2023-01-07 15:06:35.9108 73670/To Ser/Server.h:901 ]: [ServerThr.9] Freed 0 spare client objects
+[ N 2023-01-07 15:06:35.9108 73670/Ts Ser/Server.h:901 ]: [ServerThr.11] Freed 0 spare client objects
+[ N 2023-01-07 15:06:35.9107 73670/Tg Ser/Server.h:901 ]: [ServerThr.5] Freed 0 spare client objects
+[ N 2023-01-07 15:06:35.9109 73670/T9 Ser/Server.h:558 ]: [ServerThr.1] Shutdown finished
+[ N 2023-01-07 15:06:35.9107 73670/Ta Ser/Server.h:901 ]: [ServerThr.2] Freed 0 spare client objects
+[ N 2023-01-07 15:06:35.9107 73670/Tc Ser/Server.h:901 ]: [ServerThr.3] Freed 0 spare client objects
+[ N 2023-01-07 15:06:35.9107 73670/Tf Ser/Server.h:901 ]: [ServerThr.4] Freed 0 spare client objects
+[ N 2023-01-07 15:06:35.9108 73670/Tq Ser/Server.h:901 ]: [ServerThr.10] Freed 0 spare client objects
+[ N 2023-01-07 15:06:35.9108 73670/To Ser/Server.h:558 ]: [ServerThr.9] Shutdown finished
+[ N 2023-01-07 15:06:35.9108 73670/Tm Ser/Server.h:901 ]: [ServerThr.8] Freed 0 spare client objects
+[ N 2023-01-07 15:06:35.9109 73670/Tg Ser/Server.h:558 ]: [ServerThr.5] Shutdown finished
+[ N 2023-01-07 15:06:35.9110 73670/Tc Ser/Server.h:558 ]: [ServerThr.3] Shutdown finished
+[ N 2023-01-07 15:06:35.9109 73670/Tx Ser/Server.h:901 ]: [ApiServer] Freed 0 spare client objects
+[ N 2023-01-07 15:06:35.9108 73670/Tl Ser/Server.h:558 ]: [ServerThr.7] Shutdown finished
+[ N 2023-01-07 15:06:35.9108 73670/Ti Ser/Server.h:901 ]: [ServerThr.6] Freed 0 spare client objects
+[ N 2023-01-07 15:06:35.9110 73670/Ta Ser/Server.h:558 ]: [ServerThr.2] Shutdown finished
+[ N 2023-01-07 15:06:35.9110 73670/Tq Ser/Server.h:558 ]: [ServerThr.10] Shutdown finished
+[ N 2023-01-07 15:06:35.9110 73670/Tf Ser/Server.h:558 ]: [ServerThr.4] Shutdown finished
+[ N 2023-01-07 15:06:35.9111 73670/Tm Ser/Server.h:558 ]: [ServerThr.8] Shutdown finished
+[ N 2023-01-07 15:06:35.9111 73670/Tx Ser/Server.h:558 ]: [ApiServer] Shutdown finished
+[ N 2023-01-07 15:06:35.9109 73670/Ts Ser/Server.h:558 ]: [ServerThr.11] Shutdown finished
+[ N 2023-01-07 15:06:35.9111 73670/Ti Ser/Server.h:558 ]: [ServerThr.6] Shutdown finished
+[ N 2023-01-07 15:06:35.9108 73670/Tu Ser/Server.h:901 ]: [ServerThr.12] Freed 0 spare client objects
+[ N 2023-01-07 15:06:35.9113 73670/Tu Ser/Server.h:558 ]: [ServerThr.12] Shutdown finished
+[ N 2023-01-07 15:06:35.9114 73670/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 73724, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2023-01-07 15:06:36.9524 73670/T1 age/Cor/CoreMain.cpp:1325 ]: Passenger core shutdown finished
+[ N 2023-01-07 15:06:37.1752 73761/T1 age/Wat/WatchdogMain.cpp:1377 ]: Starting Passenger watchdog...
+[ N 2023-01-07 15:06:37.2075 73763/T1 age/Cor/CoreMain.cpp:1340 ]: Starting Passenger core...
+[ N 2023-01-07 15:06:37.2079 73763/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ N 2023-01-07 15:06:37.2456 73763/T1 age/Cor/CoreMain.cpp:1015 ]: Passenger core online, PID 73763
+App 73774 output: "init"
+[ N 2023-01-07 15:06:40.0177 73763/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+[ E 2023-01-07 15:06:40.0245 73763/T5 Sec/Crypto.cpp:990 ]: Removing Passenger private key from keychain failed: Write permissions error.. Please remove the private key from the certificate labeled Phusion Passenger Open Source in your keychain.
+App 73811 output: {"rom"=>"projects/bb2redux", "password"=>""}
+
+[ N 2023-01-07 15:07:41.3047 73763/T8 age/Cor/CoreMain.cpp:671 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2023-01-07 15:07:41.3048 73763/T1 age/Cor/CoreMain.cpp:1246 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2023-01-07 15:07:41.3048 73763/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 73811, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2023-01-07 15:07:41.3051 73763/T8 Ser/Server.h:901 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2023-01-07 15:07:41.3051 73763/Tg Ser/Server.h:901 ]: [ServerThr.5] Freed 0 spare client objects
+[ N 2023-01-07 15:07:41.3051 73763/Ta Ser/Server.h:901 ]: [ServerThr.2] Freed 0 spare client objects
+[ N 2023-01-07 15:07:41.3051 73763/Tq Ser/Server.h:901 ]: [ServerThr.10] Freed 0 spare client objects
+[ N 2023-01-07 15:07:41.3052 73763/Tv Ser/Server.h:901 ]: [ServerThr.12] Freed 0 spare client objects
+[ N 2023-01-07 15:07:41.3052 73763/Tg Ser/Server.h:558 ]: [ServerThr.5] Shutdown finished
+[ N 2023-01-07 15:07:41.3052 73763/Tv Ser/Server.h:558 ]: [ServerThr.12] Shutdown finished
+[ N 2023-01-07 15:07:41.3051 73763/To Ser/Server.h:901 ]: [ServerThr.9] Freed 0 spare client objects
+[ N 2023-01-07 15:07:41.3053 73763/Tw Ser/Server.h:901 ]: [ApiServer] Freed 0 spare client objects
+[ N 2023-01-07 15:07:41.3052 73763/T8 Ser/Server.h:558 ]: [ServerThr.1] Shutdown finished
+[ N 2023-01-07 15:07:41.3053 73763/To Ser/Server.h:558 ]: [ServerThr.9] Shutdown finished
+[ N 2023-01-07 15:07:41.3051 73763/Tm Ser/Server.h:901 ]: [ServerThr.8] Freed 0 spare client objects
+[ N 2023-01-07 15:07:41.3051 73763/Te Ser/Server.h:901 ]: [ServerThr.4] Freed 0 spare client objects
+[ N 2023-01-07 15:07:41.3051 73763/Tk Ser/Server.h:901 ]: [ServerThr.7] Freed 0 spare client objects
+[ N 2023-01-07 15:07:41.3051 73763/Tc Ser/Server.h:901 ]: [ServerThr.3] Freed 0 spare client objects
+[ N 2023-01-07 15:07:41.3054 73763/Te Ser/Server.h:558 ]: [ServerThr.4] Shutdown finished
+[ N 2023-01-07 15:07:41.3052 73763/Tq Ser/Server.h:558 ]: [ServerThr.10] Shutdown finished
+[ N 2023-01-07 15:07:41.3053 73763/Tw Ser/Server.h:558 ]: [ApiServer] Shutdown finished
+[ N 2023-01-07 15:07:41.3052 73763/Ta Ser/Server.h:558 ]: [ServerThr.2] Shutdown finished
+[ N 2023-01-07 15:07:41.3051 73763/Ts Ser/Server.h:901 ]: [ServerThr.11] Freed 0 spare client objects
+[ N 2023-01-07 15:07:41.3054 73763/Tm Ser/Server.h:558 ]: [ServerThr.8] Shutdown finished
+[ N 2023-01-07 15:07:41.3056 73763/Ts Ser/Server.h:558 ]: [ServerThr.11] Shutdown finished
+[ N 2023-01-07 15:07:41.3054 73763/Tk Ser/Server.h:558 ]: [ServerThr.7] Shutdown finished
+[ N 2023-01-07 15:07:41.3051 73763/Ti Ser/Server.h:901 ]: [ServerThr.6] Freed 0 spare client objects
+[ N 2023-01-07 15:07:41.3056 73763/Ti Ser/Server.h:558 ]: [ServerThr.6] Shutdown finished
+[ N 2023-01-07 15:07:41.3055 73763/Tc Ser/Server.h:558 ]: [ServerThr.3] Shutdown finished
+[ N 2023-01-07 15:07:41.3057 73763/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 73811, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2023-01-07 15:07:42.3404 73763/T1 age/Cor/CoreMain.cpp:1325 ]: Passenger core shutdown finished
+[ N 2023-01-07 15:07:42.4950 73874/T1 age/Wat/WatchdogMain.cpp:1377 ]: Starting Passenger watchdog...
+[ N 2023-01-07 15:07:42.5244 73876/T1 age/Cor/CoreMain.cpp:1340 ]: Starting Passenger core...
+[ N 2023-01-07 15:07:42.5247 73876/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ N 2023-01-07 15:07:42.5600 73876/T1 age/Cor/CoreMain.cpp:1015 ]: Passenger core online, PID 73876
+App 73887 output: "init"
+[ N 2023-01-07 15:07:45.3557 73876/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+[ E 2023-01-07 15:07:45.3635 73876/T5 Sec/Crypto.cpp:990 ]: Removing Passenger private key from keychain failed: Write permissions error.. Please remove the private key from the certificate labeled Phusion Passenger Open Source in your keychain.
+App 73925 output: {"rom"=>"projects/bb2redux", "password"=>""}
+
+[ N 2023-01-07 15:08:10.5092 73876/T8 age/Cor/CoreMain.cpp:671 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2023-01-07 15:08:10.5093 73876/T1 age/Cor/CoreMain.cpp:1246 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2023-01-07 15:08:10.5093 73876/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 73925, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2023-01-07 15:08:10.5097 73876/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 73933, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2023-01-07 15:08:10.5098 73876/T8 Ser/Server.h:901 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2023-01-07 15:08:10.5098 73876/Ti Ser/Server.h:901 ]: [ServerThr.6] Freed 0 spare client objects
+[ N 2023-01-07 15:08:10.5098 73876/Tg Ser/Server.h:901 ]: [ServerThr.5] Freed 0 spare client objects
+[ N 2023-01-07 15:08:10.5098 73876/Tc Ser/Server.h:901 ]: [ServerThr.3] Freed 0 spare client objects
+[ N 2023-01-07 15:08:10.5099 73876/T8 Ser/Server.h:558 ]: [ServerThr.1] Shutdown finished
+[ N 2023-01-07 15:08:10.5098 73876/Tk Ser/Server.h:901 ]: [ServerThr.7] Freed 0 spare client objects
+[ N 2023-01-07 15:08:10.5098 73876/Ta Ser/Server.h:901 ]: [ServerThr.2] Freed 0 spare client objects
+[ N 2023-01-07 15:08:10.5100 73876/Tk Ser/Server.h:558 ]: [ServerThr.7] Shutdown finished
+[ N 2023-01-07 15:08:10.5098 73876/Tu Ser/Server.h:901 ]: [ServerThr.12] Freed 0 spare client objects
+[ N 2023-01-07 15:08:10.5100 73876/Tw Ser/Server.h:901 ]: [ApiServer] Freed 0 spare client objects
+[ N 2023-01-07 15:08:10.5098 73876/Te Ser/Server.h:901 ]: [ServerThr.4] Freed 0 spare client objects
+[ N 2023-01-07 15:08:10.5101 73876/Tu Ser/Server.h:558 ]: [ServerThr.12] Shutdown finished
+[ N 2023-01-07 15:08:10.5100 73876/Ta Ser/Server.h:558 ]: [ServerThr.2] Shutdown finished
+[ N 2023-01-07 15:08:10.5098 73876/Tm Ser/Server.h:901 ]: [ServerThr.8] Freed 0 spare client objects
+[ N 2023-01-07 15:08:10.5098 73876/Tt Ser/Server.h:901 ]: [ServerThr.11] Freed 0 spare client objects
+[ N 2023-01-07 15:08:10.5098 73876/To Ser/Server.h:901 ]: [ServerThr.9] Freed 0 spare client objects
+[ N 2023-01-07 15:08:10.5102 73876/Tt Ser/Server.h:558 ]: [ServerThr.11] Shutdown finished
+[ N 2023-01-07 15:08:10.5101 73876/Tw Ser/Server.h:558 ]: [ApiServer] Shutdown finished
+[ N 2023-01-07 15:08:10.5099 73876/Tc Ser/Server.h:558 ]: [ServerThr.3] Shutdown finished
+[ N 2023-01-07 15:08:10.5099 73876/Ti Ser/Server.h:558 ]: [ServerThr.6] Shutdown finished
+[ N 2023-01-07 15:08:10.5101 73876/Te Ser/Server.h:558 ]: [ServerThr.4] Shutdown finished
+[ N 2023-01-07 15:08:10.5099 73876/Tq Ser/Server.h:901 ]: [ServerThr.10] Freed 0 spare client objects
+[ N 2023-01-07 15:08:10.5099 73876/Tg Ser/Server.h:558 ]: [ServerThr.5] Shutdown finished
+[ N 2023-01-07 15:08:10.5102 73876/To Ser/Server.h:558 ]: [ServerThr.9] Shutdown finished
+[ N 2023-01-07 15:08:10.5102 73876/Tm Ser/Server.h:558 ]: [ServerThr.8] Shutdown finished
+[ N 2023-01-07 15:08:10.5103 73876/Tq Ser/Server.h:558 ]: [ServerThr.10] Shutdown finished
+[ N 2023-01-07 15:08:10.5105 73876/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 73925, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2023-01-07 15:08:10.5106 73876/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 73933, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2023-01-07 15:08:11.5531 73876/T1 age/Cor/CoreMain.cpp:1325 ]: Passenger core shutdown finished
+[ N 2023-01-07 15:08:11.5989 73966/T1 age/Wat/WatchdogMain.cpp:1377 ]: Starting Passenger watchdog...
+[ N 2023-01-07 15:08:11.6401 73973/T1 age/Cor/CoreMain.cpp:1340 ]: Starting Passenger core...
+[ N 2023-01-07 15:08:11.6405 73973/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ N 2023-01-07 15:08:11.6831 73973/T1 age/Cor/CoreMain.cpp:1015 ]: Passenger core online, PID 73973
+App 73984 output: "init"
+[ N 2023-01-07 15:08:14.4364 73973/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+[ E 2023-01-07 15:08:14.4424 73973/T5 Sec/Crypto.cpp:990 ]: Removing Passenger private key from keychain failed: Write permissions error.. Please remove the private key from the certificate labeled Phusion Passenger Open Source in your keychain.
+App 74019 output: {"rom"=>"projects/bb2redux", "password"=>""}
+
+[ N 2023-01-07 15:09:20.6628 73973/T8 age/Cor/CoreMain.cpp:671 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2023-01-07 15:09:20.6629 73973/T1 age/Cor/CoreMain.cpp:1246 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2023-01-07 15:09:20.6629 73973/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 74019, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2023-01-07 15:09:20.6634 73973/T8 Ser/Server.h:901 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2023-01-07 15:09:20.6634 73973/Te Ser/Server.h:901 ]: [ServerThr.4] Freed 0 spare client objects
+[ N 2023-01-07 15:09:20.6634 73973/Ti Ser/Server.h:901 ]: [ServerThr.6] Freed 0 spare client objects
+[ N 2023-01-07 15:09:20.6635 73973/Tu Ser/Server.h:901 ]: [ServerThr.12] Freed 0 spare client objects
+[ N 2023-01-07 15:09:20.6634 73973/Tk Ser/Server.h:901 ]: [ServerThr.7] Freed 0 spare client objects
+[ N 2023-01-07 15:09:20.6635 73973/Ts Ser/Server.h:901 ]: [ServerThr.11] Freed 0 spare client objects
+[ N 2023-01-07 15:09:20.6634 73973/Tq Ser/Server.h:901 ]: [ServerThr.10] Freed 0 spare client objects
+[ N 2023-01-07 15:09:20.6636 73973/Tk Ser/Server.h:558 ]: [ServerThr.7] Shutdown finished
+[ N 2023-01-07 15:09:20.6636 73973/Ts Ser/Server.h:558 ]: [ServerThr.11] Shutdown finished
+[ N 2023-01-07 15:09:20.6636 73973/Ti Ser/Server.h:558 ]: [ServerThr.6] Shutdown finished
+[ N 2023-01-07 15:09:20.6634 73973/To Ser/Server.h:901 ]: [ServerThr.9] Freed 0 spare client objects
+[ N 2023-01-07 15:09:20.6634 73973/Ta Ser/Server.h:901 ]: [ServerThr.2] Freed 0 spare client objects
+[ N 2023-01-07 15:09:20.6637 73973/To Ser/Server.h:558 ]: [ServerThr.9] Shutdown finished
+[ N 2023-01-07 15:09:20.6634 73973/Tn Ser/Server.h:901 ]: [ServerThr.8] Freed 0 spare client objects
+[ N 2023-01-07 15:09:20.6635 73973/Te Ser/Server.h:558 ]: [ServerThr.4] Shutdown finished
+[ N 2023-01-07 15:09:20.6638 73973/Tn Ser/Server.h:558 ]: [ServerThr.8] Shutdown finished
+[ N 2023-01-07 15:09:20.6634 73973/T8 Ser/Server.h:558 ]: [ServerThr.1] Shutdown finished
+[ N 2023-01-07 15:09:20.6634 73973/Tg Ser/Server.h:901 ]: [ServerThr.5] Freed 0 spare client objects
+[ N 2023-01-07 15:09:20.6635 73973/Tu Ser/Server.h:558 ]: [ServerThr.12] Shutdown finished
+[ N 2023-01-07 15:09:20.6636 73973/Tq Ser/Server.h:558 ]: [ServerThr.10] Shutdown finished
+[ N 2023-01-07 15:09:20.6638 73973/Ta Ser/Server.h:558 ]: [ServerThr.2] Shutdown finished
+[ N 2023-01-07 15:09:20.6634 73973/Td Ser/Server.h:901 ]: [ServerThr.3] Freed 0 spare client objects
+[ N 2023-01-07 15:09:20.6638 73973/Tw Ser/Server.h:901 ]: [ApiServer] Freed 0 spare client objects
+[ N 2023-01-07 15:09:20.6639 73973/Tg Ser/Server.h:558 ]: [ServerThr.5] Shutdown finished
+[ N 2023-01-07 15:09:20.6640 73973/Tw Ser/Server.h:558 ]: [ApiServer] Shutdown finished
+[ N 2023-01-07 15:09:20.6640 73973/Td Ser/Server.h:558 ]: [ServerThr.3] Shutdown finished
+[ N 2023-01-07 15:09:20.6641 73973/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 74019, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2023-01-07 15:09:21.7067 73973/T1 age/Cor/CoreMain.cpp:1325 ]: Passenger core shutdown finished
+[ N 2023-01-07 15:09:22.9538 74089/T1 age/Wat/WatchdogMain.cpp:1377 ]: Starting Passenger watchdog...
+[ N 2023-01-07 15:09:22.9864 74091/T1 age/Cor/CoreMain.cpp:1340 ]: Starting Passenger core...
+[ N 2023-01-07 15:09:22.9868 74091/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ N 2023-01-07 15:09:23.0229 74091/T1 age/Cor/CoreMain.cpp:1015 ]: Passenger core online, PID 74091
+App 74102 output: "init"
+[ N 2023-01-07 15:09:25.7879 74091/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+[ E 2023-01-07 15:09:25.7942 74091/T5 Sec/Crypto.cpp:990 ]: Removing Passenger private key from keychain failed: Write permissions error.. Please remove the private key from the certificate labeled Phusion Passenger Open Source in your keychain.
+
+[ N 2023-01-07 15:09:43.9196 74091/T8 age/Cor/CoreMain.cpp:671 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2023-01-07 15:09:43.9197 74091/T1 age/Cor/CoreMain.cpp:1246 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2023-01-07 15:09:43.9197 74091/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 74140, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2023-01-07 15:09:43.9201 74091/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 74148, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2023-01-07 15:09:43.9203 74091/T8 Ser/Server.h:901 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2023-01-07 15:09:43.9203 74091/To Ser/Server.h:901 ]: [ServerThr.9] Freed 0 spare client objects
+[ N 2023-01-07 15:09:43.9203 74091/Tg Ser/Server.h:901 ]: [ServerThr.5] Freed 0 spare client objects
+[ N 2023-01-07 15:09:43.9204 74091/Tf Ser/Server.h:901 ]: [ServerThr.4] Freed 0 spare client objects
+[ N 2023-01-07 15:09:43.9205 74091/Tg Ser/Server.h:558 ]: [ServerThr.5] Shutdown finished
+[ N 2023-01-07 15:09:43.9203 74091/Ta Ser/Server.h:901 ]: [ServerThr.2] Freed 0 spare client objects
+[ N 2023-01-07 15:09:43.9205 74091/Tf Ser/Server.h:558 ]: [ServerThr.4] Shutdown finished
+[ N 2023-01-07 15:09:43.9203 74091/Tc Ser/Server.h:901 ]: [ServerThr.3] Freed 0 spare client objects
+[ N 2023-01-07 15:09:43.9203 74091/Ti Ser/Server.h:901 ]: [ServerThr.6] Freed 0 spare client objects
+[ N 2023-01-07 15:09:43.9206 74091/Tc Ser/Server.h:558 ]: [ServerThr.3] Shutdown finished
+[ N 2023-01-07 15:09:43.9204 74091/Tt Ser/Server.h:901 ]: [ServerThr.11] Freed 0 spare client objects
+[ N 2023-01-07 15:09:43.9205 74091/Tw Ser/Server.h:901 ]: [ApiServer] Freed 0 spare client objects
+[ N 2023-01-07 15:09:43.9204 74091/Tu Ser/Server.h:901 ]: [ServerThr.12] Freed 0 spare client objects
+[ N 2023-01-07 15:09:43.9204 74091/T8 Ser/Server.h:558 ]: [ServerThr.1] Shutdown finished
+[ N 2023-01-07 15:09:43.9207 74091/Tt Ser/Server.h:558 ]: [ServerThr.11] Shutdown finished
+[ N 2023-01-07 15:09:43.9203 74091/Tk Ser/Server.h:901 ]: [ServerThr.7] Freed 0 spare client objects
+[ N 2023-01-07 15:09:43.9206 74091/Ta Ser/Server.h:558 ]: [ServerThr.2] Shutdown finished
+[ N 2023-01-07 15:09:43.9206 74091/Ti Ser/Server.h:558 ]: [ServerThr.6] Shutdown finished
+[ N 2023-01-07 15:09:43.9203 74091/Tq Ser/Server.h:901 ]: [ServerThr.10] Freed 0 spare client objects
+[ N 2023-01-07 15:09:43.9207 74091/Tw Ser/Server.h:558 ]: [ApiServer] Shutdown finished
+[ N 2023-01-07 15:09:43.9204 74091/To Ser/Server.h:558 ]: [ServerThr.9] Shutdown finished
+[ N 2023-01-07 15:09:43.9208 74091/Tk Ser/Server.h:558 ]: [ServerThr.7] Shutdown finished
+[ N 2023-01-07 15:09:43.9207 74091/Tu Ser/Server.h:558 ]: [ServerThr.12] Shutdown finished
+[ N 2023-01-07 15:09:43.9204 74091/Tm Ser/Server.h:901 ]: [ServerThr.8] Freed 0 spare client objects
+[ N 2023-01-07 15:09:43.9210 74091/Tm Ser/Server.h:558 ]: [ServerThr.8] Shutdown finished
+[ N 2023-01-07 15:09:43.9209 74091/Tq Ser/Server.h:558 ]: [ServerThr.10] Shutdown finished
+[ N 2023-01-07 15:09:43.9210 74091/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 74140, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2023-01-07 15:09:43.9211 74091/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 74148, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2023-01-07 15:09:44.9578 74091/T1 age/Cor/CoreMain.cpp:1325 ]: Passenger core shutdown finished
+[ N 2023-01-07 15:09:45.0256 74179/T1 age/Wat/WatchdogMain.cpp:1377 ]: Starting Passenger watchdog...
+[ N 2023-01-07 15:09:45.0555 74181/T1 age/Cor/CoreMain.cpp:1340 ]: Starting Passenger core...
+[ N 2023-01-07 15:09:45.0562 74181/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ N 2023-01-07 15:09:45.0931 74181/T1 age/Cor/CoreMain.cpp:1015 ]: Passenger core online, PID 74181
+App 74192 output: "init"
+[ N 2023-01-07 15:09:47.8517 74181/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+[ E 2023-01-07 15:09:47.8583 74181/T5 Sec/Crypto.cpp:990 ]: Removing Passenger private key from keychain failed: Write permissions error.. Please remove the private key from the certificate labeled Phusion Passenger Open Source in your keychain.
+App 74225 output: {"rom"=>"projects/bb2redux", "password"=>""}
+
+[ N 2023-01-07 15:09:50.7739 74181/T8 age/Cor/CoreMain.cpp:671 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2023-01-07 15:09:50.7740 74181/T1 age/Cor/CoreMain.cpp:1246 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2023-01-07 15:09:50.7740 74181/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 74225, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2023-01-07 15:09:50.7742 74181/T8 Ser/Server.h:901 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2023-01-07 15:09:50.7742 74181/Tc Ser/Server.h:901 ]: [ServerThr.3] Freed 0 spare client objects
+[ N 2023-01-07 15:09:50.7742 74181/Tb Ser/Server.h:901 ]: [ServerThr.2] Freed 0 spare client objects
+[ N 2023-01-07 15:09:50.7743 74181/Tc Ser/Server.h:558 ]: [ServerThr.3] Shutdown finished
+[ N 2023-01-07 15:09:50.7742 74181/Ti Ser/Server.h:901 ]: [ServerThr.6] Freed 0 spare client objects
+[ N 2023-01-07 15:09:50.7743 74181/To Ser/Server.h:901 ]: [ServerThr.9] Freed 0 spare client objects
+[ N 2023-01-07 15:09:50.7743 74181/Tk Ser/Server.h:901 ]: [ServerThr.7] Freed 0 spare client objects
+[ N 2023-01-07 15:09:50.7743 74181/T8 Ser/Server.h:558 ]: [ServerThr.1] Shutdown finished
+[ N 2023-01-07 15:09:50.7743 74181/Tt Ser/Server.h:901 ]: [ServerThr.11] Freed 0 spare client objects
+[ N 2023-01-07 15:09:50.7743 74181/Tm Ser/Server.h:901 ]: [ServerThr.8] Freed 0 spare client objects
+[ N 2023-01-07 15:09:50.7742 74181/Tg Ser/Server.h:901 ]: [ServerThr.5] Freed 0 spare client objects
+[ N 2023-01-07 15:09:50.7743 74181/Tq Ser/Server.h:901 ]: [ServerThr.10] Freed 0 spare client objects
+[ N 2023-01-07 15:09:50.7744 74181/Tb Ser/Server.h:558 ]: [ServerThr.2] Shutdown finished
+[ N 2023-01-07 15:09:50.7744 74181/Ti Ser/Server.h:558 ]: [ServerThr.6] Shutdown finished
+[ N 2023-01-07 15:09:50.7745 74181/Tw Ser/Server.h:901 ]: [ApiServer] Freed 0 spare client objects
+[ N 2023-01-07 15:09:50.7744 74181/Tk Ser/Server.h:558 ]: [ServerThr.7] Shutdown finished
+[ N 2023-01-07 15:09:50.7742 74181/Te Ser/Server.h:901 ]: [ServerThr.4] Freed 0 spare client objects
+[ N 2023-01-07 15:09:50.7743 74181/Tu Ser/Server.h:901 ]: [ServerThr.12] Freed 0 spare client objects
+[ N 2023-01-07 15:09:50.7746 74181/Tq Ser/Server.h:558 ]: [ServerThr.10] Shutdown finished
+[ N 2023-01-07 15:09:50.7745 74181/Tm Ser/Server.h:558 ]: [ServerThr.8] Shutdown finished
+[ N 2023-01-07 15:09:50.7744 74181/To Ser/Server.h:558 ]: [ServerThr.9] Shutdown finished
+[ N 2023-01-07 15:09:50.7746 74181/Tg Ser/Server.h:558 ]: [ServerThr.5] Shutdown finished
+[ N 2023-01-07 15:09:50.7747 74181/Te Ser/Server.h:558 ]: [ServerThr.4] Shutdown finished
+[ N 2023-01-07 15:09:50.7745 74181/Tt Ser/Server.h:558 ]: [ServerThr.11] Shutdown finished
+[ N 2023-01-07 15:09:50.7747 74181/Tu Ser/Server.h:558 ]: [ServerThr.12] Shutdown finished
+[ N 2023-01-07 15:09:50.7747 74181/Tw Ser/Server.h:558 ]: [ApiServer] Shutdown finished
+[ N 2023-01-07 15:09:50.7750 74181/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 74225, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2023-01-07 15:09:51.8167 74181/T1 age/Cor/CoreMain.cpp:1325 ]: Passenger core shutdown finished
+[ N 2023-01-07 15:09:52.6834 74258/T1 age/Wat/WatchdogMain.cpp:1377 ]: Starting Passenger watchdog...
+[ N 2023-01-07 15:09:52.7093 74260/T1 age/Cor/CoreMain.cpp:1340 ]: Starting Passenger core...
+[ N 2023-01-07 15:09:52.7096 74260/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ N 2023-01-07 15:09:52.7397 74260/T1 age/Cor/CoreMain.cpp:1015 ]: Passenger core online, PID 74260
+[ N 2023-01-07 15:09:55.6114 74260/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+[ E 2023-01-07 15:09:55.6171 74260/T5 Sec/Crypto.cpp:990 ]: Removing Passenger private key from keychain failed: Write permissions error.. Please remove the private key from the certificate labeled Phusion Passenger Open Source in your keychain.
+App 74276 output: "init"
