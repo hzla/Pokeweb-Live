@@ -44,4 +44,6 @@ MODE=offline
 
 the server can then be started with `bundle exec passenger start`
 
+To use the move animation editor, binutils must be installed. https://developer.arm.com/downloads/-/gnu-rm
+
 Pokeweb is released under the [MIT License](https://opensource.org/licenses/MIT).
