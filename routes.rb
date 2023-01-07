@@ -29,8 +29,9 @@ p "init"
 class MyApp < Sinatra::Base
   
 	before do
-		# $rom_name = "projects/white2"
+		
 		$rom_name = session[:rom_name]
+		$rom_name = "projects/b6test"
 
 		# if ENV['RACK_ENV'] == 'test'
 		# 	$rom_name = ENV['ROM']
@@ -351,6 +352,30 @@ class MyApp < Sinatra::Base
 		@move_names = Move.get_names_from @moves
 
 		erb :moves
+	end
+
+	get '/moves/:id/script' do 
+		id = params[:id]
+		`python3 python/move_writer.py decompile #{id} #{$rom_name} > #{$rom_name}/move_scripts/#{id}.txt`
+
+		@script = File.open("#{$rom_name}/move_scripts/#{id}.txt", "r").readlines
+
+		send_file "#{$rom_name}/move_scripts/#{id}.txt", :filename => "move_script_#{id}.txt" , :type => 'Application/octet-stream'
+	end
+
+	post '/moves/:id/script' do 
+		p params
+		file = params["file"]["tempfile"]
+		id = params[:id]
+
+		File.open("#{$rom_name}/move_scripts/#{id}.txt", 'w') do |f|
+	    	f.write(file.read)
+	  	end
+
+	  	`python3 python/move_writer.py compile #{id} #{$rom_name}`
+
+	  	return {response: 200}.to_json
+		  	
 	end
 
 	get '/moves/expand' do 

@@ -27,18 +27,52 @@ def output_narc(rom, rom_name):
 	return tools.output_narc("moves", rom, rom_name)
 
 def decompile_script(rom_name, move_id):
+	if move_id > 559:
+		ani = "battle_animations"
+		offset = 561
+	else:
+		ani = "move_animations"
+		offset = 0
+
 	with open(f'{rom_name}/session_settings.json', "r") as outfile:  
 		settings = json.load(outfile) 
-		narc_id = settings["move_animations"]
+		narc_id = settings[ani]
 		narcfile_path = f'{rom_name}/narcs/{ani}-{narc_id}.narc'
 		narc = ndspy.narc.NARC.fromFile(narcfile_path)
-		script = narc.files[move_id]
+		script = narc.files[move_id - offset]
 
 		f = open(f"{rom_name}/move_scripts/{move_id}.bin", "wb")
 		f.write(script)
 		f.close()
 
-		subprocess.run(["python3", "python/MovScrCMDDecompiler.py", f"{rom_name}/move_scripts/{move_id}.bin"], check=True)
+		subprocess.run(["python3", "python/MovScrCMDDecompiler.py", f"{rom_name}/move_scripts/{move_id}.bin", '>', f"{rom_name}/move_scripts/{move_id}.txt"], check=True)
+
+def compile_script(rom_name, move_id):
+	if move_id > 559:
+		ani = "battle_animations"
+		offset = 561
+	else:
+		ani = "move_animations"
+		offset = 0
+	# arm-none-eabi-as <decompiled> -o tmp.elf && arm-none-eabi-objcopy -O binary tmp.elf <output>
+	subprocess.run(["arm-none-eabi-as", f"{rom_name}/move_scripts/{move_id}.txt", "-o", "tmp.elf"], check=True)
+	subprocess.run(["arm-none-eabi-objcopy", "-O", 'binary', 'tmp.elf', f"{rom_name}/move_scripts/{move_id}.bin"], check=True)
+
+	with open(f'{rom_name}/session_settings.json', "r") as outfile:  
+		settings = json.load(outfile) 
+		narc_id = settings[ani]
+		narcfile_path = f'{rom_name}/narcs/{ani}-{narc_id}.narc'
+		narc = ndspy.narc.NARC.fromFile(narcfile_path)
+		
+		narc.files[move_id - offset] = open(f"{rom_name}/move_scripts/{move_id}.bin", "rb").read()
+
+
+		f = open(narcfile_path, "wb")
+		f.write(narc.save())
+		f.close()
+
+
+
 
 
 
@@ -139,11 +173,20 @@ def to_raw(readable):
 	
 ################ If run with arguments #############
 
-if len(sys.argv) > 2 and sys.argv[1] == "update":
+if len(sys.argv) > 2:
 	rom_data.set_global_vars(sys.argv[3])
 	file_names = sys.argv[2].split(",")
 	 
-	for file_name in file_names:
-		write_readable_to_raw(int(file_name))
-	
+
+	if sys.argv[1] == "update": 
+		for file_name in file_names:
+			write_readable_to_raw(int(file_name))
+	elif sys.argv[1] == "decompile":
+		for file_name in file_names:
+			decompile_script(sys.argv[3], int(file_name))
+	else: #compile
+		for file_name in file_names:
+			compile_script(sys.argv[3], int(file_name))
+
+
 

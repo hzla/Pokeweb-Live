@@ -16,6 +16,26 @@
     padding: 40px 20px;
 }
 
+.editable-doc {
+    background: #f2f2f2;
+    color: black !important;
+    white-space: pre-wrap;
+    line-height: 10px;
+    margin: 40px;
+    cursor:  text !important;
+    width: calc(82vw - 80px);
+    height:  100%;
+}
+
+.clickable-label {
+    color:  #1abc9c;
+    cursor:  pointer !important;
+}
+
+.editable-doc > p {
+    margin:  0;
+}
+
 .page-title {
     color:  #f2f2f2;
     width:  100%;

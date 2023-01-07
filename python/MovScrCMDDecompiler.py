@@ -33,6 +33,9 @@ with open('B2W2_MOVSCRCMD.s', 'w') as MOVSCRCMD_INC:
     MOVSCRCMD_INC.close()
 
 
+lines = []
+
+
 with open(argv[1], 'rb') as SCRIPT:
     Addresses = []
     Count = unpack('<L', SCRIPT.read(0x4))[0]

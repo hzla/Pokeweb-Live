@@ -50,6 +50,16 @@
 					<div data-narc="move" data-type="<%= misc_int['type'] %>" data-field-name="<%= misc_int['field_name'] %>" class="expanded-field-value ev-field" contenteditable="true"><%= move[misc_int["field_name"]] %></div>
 				</div>
 			<% end %>
+
+			<div class="expanded-field clickable-label">
+				<a href="/moves/<%= move['index'] %>/script"><div class="expanded-field-name">Download Script</div></a>
+			</div>
+			<div class="expanded-field">
+				<input type="file" class="move-script" name="filename" label="Upload script"></input>
+			</div>
+			<div class="expanded-field">
+				<div class="expanded-field-name clickable-label upload-script">Save Uploaded Script</div>
+			</div>
 		</div>
 		<div class="expanded-row expanded-move-props" data-narc="move">
 			<% Move.props.each do |prop| %>

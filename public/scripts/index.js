@@ -88,7 +88,7 @@ $(document).ready(function() {
 	];
 
 	$(".season-icon").contextMenu(copy_menu)
-	$(":not(.log-text)[contenteditable='true']").contextMenu(editable_menu)
+	$(":not(.log-text, .editable-doc)[contenteditable='true']").contextMenu(editable_menu)
 	console.log("menu ready")
 
 	get_offset = function(height, direction) {
@@ -618,10 +618,35 @@ $(document).ready(function() {
 	/////////////////////////////// DATA UPLOAD ON EDIT ///////////////////////////////
 
 	
+	$(document).on('click', '.upload-script',  function() {
+		
+
+
+		var entry = $(this).parents('.filterable')
+		console.log(entry)
+		var index = entry.attr('data-index')
+		var file = entry.find('.move-script')[0].files[0]
+
+		if (!file) {
+			alert("no file uploaded")
+			return
+		}
+		
+		let formData = new FormData();           
+	    formData.append("file", file);
+	    fetch(`/moves/${index}/script`, {
+	      method: "POST", 
+	      body: formData
+	    }); 
+	    alert("Script Uploaded")
+
+
+	})
+
+
 	$(document).on('mousedown',"[contenteditable='true']", function(e){
 		current_edit = $(this)
 		initial_value = $(this).text()
-		console.log(initial_value)
 
 	} )
 
@@ -664,7 +689,7 @@ $(document).ready(function() {
 
 
 
-	$(document).on('focusout', ":not(.text-line)[contenteditable='true']", function(){
+	$(document).on('focusout', ":not(.text-line, .editable-doc)[contenteditable='true']", function(){
 		var input = $(this)
 		var card = input.parents('.filterable')
 
@@ -849,7 +874,7 @@ $(document).ready(function() {
 	})
 
 	//high light text on click
-	$(document).on('click', ":not(.log-text)[contenteditable='true']", function(e){
+	$(document).on('click', ":not(.log-text, .editable-doc)[contenteditable='true']", function(e){
 		$(this).selectText()
 	})
 
