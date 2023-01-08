@@ -29,9 +29,9 @@ Offline Installation is same as default pokeweb except you must also install pyy
 
 `bundle install`
 
-`sudo python -m pip install ndspy`
+`python -m pip install ndspy`
 
-`sudo python -m pip install pyyaml`
+`python -m pip install pyyaml`
 
 afterwards, create a file in the root folder with the name `.env`
 
