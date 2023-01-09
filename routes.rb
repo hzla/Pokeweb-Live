@@ -111,6 +111,7 @@ class MyApp < Sinatra::Base
 	post '/extract_rom' do 
 		py = "python3"
 
+		p "offline"
 		begin
 			system "#{py} python/header_loader.py #{params['rom_name']} offline"
 			session[:rom_name] = "projects/#{params['rom_name'].split(".")[0]}"
@@ -133,7 +134,7 @@ class MyApp < Sinatra::Base
 
 
 	post '/extract' do 
-
+		p "vanilla"
 		# params['rom_name'] = params['rom_name']
 		# p params['rom_name']
 

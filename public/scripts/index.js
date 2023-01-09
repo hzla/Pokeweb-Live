@@ -132,13 +132,17 @@ $(document).ready(function() {
 ///////////////////// EVENT BINDINGS //////////////////////////
     
     //////////////// Rom Buttons //////////////////
+  if ($('#offline').length > 0) {   
     $(document).on('click', '#load-rom', function(){
-        var rom_name = $('#rom-select').val()
-        $(this).text('loading...')
-        $.post( "extract_rom?rom_name=" + rom_name , {rom_name: rom_name }, function( data ) {
-          window.location.href = data["url"]
-        });
+
+        	console.log($('#xdelta').length)
+        	var rom_name = $('#rom-select').val()
+	        $(this).text('loading...')
+	        $.post( "extract_rom?rom_name=" + rom_name , {rom_name: rom_name }, function( data ) {
+	          window.location.href = data["url"]
+	        });     
     })
+   }
     $(document).on('submit', '#rom-form', function(e){
     	
     	var rom_name = $('#rom-name').val()

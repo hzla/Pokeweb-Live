@@ -2,7 +2,7 @@
 <div class="pokemon-filter">	
 
 	<% if $offline %>
-		<div class="filter-title">Select Rom</div>
+		<div class="filter-title" id="offline">Select Rom</div>
 		<select name="rom" id="rom-select">
 			<% @roms.each do |rom| %>
 			    <option value="<%= rom %>"><%= rom %></option>
