@@ -25,13 +25,13 @@ You can join this Pokemon DS Rom Hacking discord server for updates as well as g
 
 ## Installation 
 
-Offline Installation is same as default pokeweb except you must also install pyyaml after installing python.
+Offline Installation is same as default pokeweb except you must also install pyyaml after installing python. Additionaly, if you are on windows, make sure your ruby installation comes with the devkit. https://rubyinstaller.org/downloads/ 
 
 `bundle install`
 
-`sudo python -m pip install ndspy`
+`python -m pip install ndspy`
 
-`sudo python -m pip install pyyaml`
+`python -m pip install pyyaml`
 
 afterwards, create a file in the root folder with the name `.env`
 
@@ -43,5 +43,7 @@ MODE=offline
 ```
 
 the server can then be started with `bundle exec passenger start`
+
+To use the move animation editor, binutils must be installed. https://developer.arm.com/downloads/-/gnu-rm
 
 Pokeweb is released under the [MIT License](https://opensource.org/licenses/MIT).
