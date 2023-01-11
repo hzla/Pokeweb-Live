@@ -381,7 +381,7 @@ class MyApp < Sinatra::Base
 
 		end
 
-		return 200
+		return {url: '200 OK'}.to_json
 	end
 
 

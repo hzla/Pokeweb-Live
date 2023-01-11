@@ -17764,3 +17764,4 @@ App 87783 output: "/////////"
 App 87783 output: ["pok"]
 App 87783 output: "black_common_pok_0"
 App 87783 output: {"file_name"=>"0", "field"=>"black_common_pok_0", "value"=>"Marill", "narc"=>"grotto"}
+[ N 2023-01-11 13:52:12.3945 87732/T4 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 87791, application /Users/andylee/Repos/Pokeweb (development)
