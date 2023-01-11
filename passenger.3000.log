@@ -17750,3 +17750,17 @@ App 19484 output:   File "/Users/andylee/.pyenv/versions/3.11.1/lib/python3.11/s
 App 19484 output:     raise CalledProcessError(retcode, process.args,
 App 19484 output: subprocess.CalledProcessError: 
 App 19484 output: Command '['python3', 'python/MovScrCMDDecompiler.py', 'projects/b2test/move_scripts/463.bin', '>', 'projects/b2test/move_scripts/463.txt']' returned non-zero exit status 1.
+[ N 2023-01-11 13:47:08.8585 87730/T1 age/Wat/WatchdogMain.cpp:1377 ]: Starting Passenger watchdog...
+[ N 2023-01-11 13:47:08.9015 87732/T1 age/Cor/CoreMain.cpp:1340 ]: Starting Passenger core...
+[ N 2023-01-11 13:47:08.9024 87732/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ N 2023-01-11 13:47:08.9646 87732/T1 age/Cor/CoreMain.cpp:1015 ]: Passenger core online, PID 87732
+App 87744 output: "init"
+[ N 2023-01-11 13:47:12.1371 87732/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+[ E 2023-01-11 13:47:12.1443 87732/T5 Sec/Crypto.cpp:990 ]: Removing Passenger private key from keychain failed: Write permissions error.. Please remove the private key from the certificate labeled Phusion Passenger Open Source in your keychain.
+App 87783 output: {"rom"=>"projects/b6test", "password"=>"b6test"}
+App 87783 output: {"file_name"=>"0", "field"=>"black_common_pok_0", "value"=>"Marill", "narc"=>"grotto"}
+App 87783 output: {"file_name"=>"0", "field"=>"black_common_pok_0", "value"=>"Marill", "narc"=>"grotto"}
+App 87783 output: "/////////"
+App 87783 output: ["pok"]
+App 87783 output: "black_common_pok_0"
+App 87783 output: {"file_name"=>"0", "field"=>"black_common_pok_0", "value"=>"Marill", "narc"=>"grotto"}

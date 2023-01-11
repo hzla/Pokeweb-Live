@@ -13,8 +13,6 @@ class Cipher
 		key = ENV["KEY"]
 		crypt = ActiveSupport::MessageEncryptor.new(key)
 
-		
-
 		rom_pw = SessionSettings.get "pw", rom_name
 		decrypted = crypt.decrypt_and_verify(rom_pw)
 		# binding.pry

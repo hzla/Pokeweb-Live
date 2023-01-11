@@ -43,7 +43,7 @@
 				<div class="grotto-wilds" >
 					<% Grotto.wilds(grotto).each do |wild| %>
 						<div class="wild">
-							<%= img "pokesprite/#{wild}.png" %>
+							<%= img "pokesprite/#{wild.downcase}.png" %>
 						</div>
 					<% end %>	
 				</div>
