@@ -49,22 +49,26 @@ class Personal
 			data[707]["name"] = "Thundurus-Therian"
 			data[708]["name"] = "Landorus-Therian"
 		else
-			data[650]["name"] = "Deoxys-Attack"
-			data[651]["name"] = "Deoxys-Defense"
-			data[652]["name"] = "Deoxys-Speed"
-			data[655]["name"] = "Shaymin-Sky"	
-			data[656]["name"] = "Giratina-Origin"
-			data[657]["name"] = "Rotom-Heat"
-			data[658]["name"] = "Rotom-Wash"
-			data[659]["name"] = "Rotom-Frost"
-			data[660]["name"] = "Rotom-Fan"
-			data[661]["name"] = "Rotom-Mow"
-			data[662]["name"] = "Castform-Sunny"
-			data[663]["name"] = "Castform-Rainy"
-			data[664]["name"] = "Castform-Snowy"
-			data[665]["name"] = "Basculin-Blue-Striped"
-			data[666]["name"] = "Darmanitan-Zen"
-			data[667]["name"] = "Meloetta-Pirouette"
+			begin
+				data[650]["name"] = "Deoxys-Attack"
+				data[651]["name"] = "Deoxys-Defense"
+				data[652]["name"] = "Deoxys-Speed"
+				data[655]["name"] = "Shaymin-Sky"	
+				data[656]["name"] = "Giratina-Origin"
+				data[657]["name"] = "Rotom-Heat"
+				data[658]["name"] = "Rotom-Wash"
+				data[659]["name"] = "Rotom-Frost"
+				data[660]["name"] = "Rotom-Fan"
+				data[661]["name"] = "Rotom-Mow"
+				data[662]["name"] = "Castform-Sunny"
+				data[663]["name"] = "Castform-Rainy"
+				data[664]["name"] = "Castform-Snowy"
+				data[665]["name"] = "Basculin-Blue-Striped"
+				data[666]["name"] = "Darmanitan-Zen"
+				data[667]["name"] = "Meloetta-Pirouette"
+			rescue NoMethodError 
+				
+			end
 		end
 		data
 	end

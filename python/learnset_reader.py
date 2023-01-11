@@ -18,9 +18,14 @@ def to_readable(raw, file_name, base=5):
 	if base == 4:
 		max_moves = 20
 
+	
+
 	for n in range(max_moves):
 		if f'move_id_{n}' in readable:
-			readable[f'move_id_{n}'] = rom_data.MOVES[raw[f'move_id_{n}']]
+			try:
+				readable[f'move_id_{n}'] = rom_data.MOVES[raw[f'move_id_{n}']]
+			except:
+				code.interact(local=dict(globals(), **locals()))
 			readable[f'move_id_{n}_index'] = raw[f'move_id_{n}']
 	return readable
 

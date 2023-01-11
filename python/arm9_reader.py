@@ -33,7 +33,7 @@ def set_global_vars(rom_name):
 
 	TM_FORMAT = []
 
-	TM_OFFSETS = {"B": 0x9aaa0, "W": 0x9aab8, "B2": 0x8cc84, "W2": 0x8ccb0, "HG": 0x1000cc }
+	TM_OFFSETS = {"B": 0x9aaa0, "W": 0x9aab8, "B2": 0x8cc84, "W2": 0x8ccb0, "HG": 0x1000cc, "SS": 0x1000cc }
 
 	TM_OFFSET = TM_OFFSETS[BASE_VERSION]
 

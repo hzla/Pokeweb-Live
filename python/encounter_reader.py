@@ -10,7 +10,8 @@ def output_encounters_json(narc, rom_name):
 
 def to_readable(raw, file_name, gen=5):
 	readable = copy.deepcopy(raw)
-	
+	readable["index"] = file_name
+
 	if gen == 5:
 		for season in ["spring", "summer", "fall", "winter"]:
 

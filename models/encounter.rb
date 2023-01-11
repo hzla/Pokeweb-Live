@@ -5,7 +5,7 @@ class Encounter < Pokenarc
 		@@narc_name = "encounters"
 		data = super
 		if $subdir == "gen4/"
-			hgss_expand_encounter_info(data)
+			hgss_expand_encounter_info(data, Header.get_all)
 		else
 			expand_encounter_info(data, Header.get_all)
 		end
@@ -56,10 +56,37 @@ class Encounter < Pokenarc
 		max
 	end
 
-	def self.level_sorted
+	def self.g4_get_max_level id
+		enc =  get_data("#{$rom_name}/json/encounters/#{id}.json")
+		max = 0
+
+		(0..11).each do |n|
+			if enc["walking_#{n}_level"] > max
+				max = enc["walking_#{n}_level"]
+			end
+		end
+
+		return max if max != 0
+
+		(0..4).each do |n|
+			if enc["surf_#{n}_max_lvl"] > max
+				max = enc["surf_#{n}_max_lvl"]
+			end
+		end
+		max
+	end
+
+
+
+
+	def self.level_sorted gen=5
 		data = get_all
 		get_all.sort_by do |enc|
-			get_max_level(enc["index"])
+			if gen == 5
+				get_max_level(enc["index"])
+			else
+				g4_get_max_level(enc["index"])
+			end
 		end
 	end
 
@@ -85,8 +112,23 @@ class Encounter < Pokenarc
 	end
 
 
-	def self.hgss_expand_encounter_info(encounter_data)
+	def self.hgss_expand_encounter_info(encounter_data, header_data)
 		encounter_count = encounter_data.length
+		header_count = header_data["count"]
+
+
+		(1..539).each do |n|
+			header = header_data[n.to_s]
+			encounter_id = header["encounter"]
+
+			if encounter_id <= encounter_count
+				if encounter_data[encounter_id]["locations"]
+					encounter_data[encounter_id]["locations"].push("#{header["location_name"]} (#{n})")
+				else
+					encounter_data[encounter_id]["locations"] = ["#{header["location_name"]} (#{n})"]
+				end
+			end
+		end
 
 		encounter_data.each_with_index do |enc, i|
 			wilds = []

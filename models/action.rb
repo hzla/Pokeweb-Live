@@ -45,9 +45,9 @@ class Action
   	payload
   end
 
-	def self.docs
-		output_pokedex
-		output_moves
+	def self.docs gen=5
+		output_pokedex gen
+		output_moves gen
 		output_encs
 		Trdata.get_locations
 		output_trainers
@@ -84,8 +84,8 @@ class Action
 
 	end
 
-	def self.output_trainers
-		trainers = Trpok.export_all_showdown false
+	def self.output_trainers gen=5
+		trainers = Trpok.export_all_showdown false, gen
 
 		trainers = trainers.sort_by do |tr|
 			max_lvl = 0
@@ -123,7 +123,7 @@ class Action
 				f.puts "#{trname} #{tr_info["tr_id"]} (#{tr_info['battle_type']}) (#{tr_info["reward_item"]})" 
 				f.puts
 				
-				tr.each do |pok|
+				tr.each_with_index do |pok, i|
 					pok = pok.to_a
 					pok_data = pok[0][1].to_a[0][1]
 
@@ -131,8 +131,13 @@ class Action
 					lvl = "Lv.#{pok_data["level"]}".ljust(6)
 					item = "#{pok_data["item"]}".ljust(14)
 					ability = pok_data["ability"].ljust(14)
-					nature = "#{pok_data["nature"]}".ljust(8)
+					nature = "#{pok_data["nature"]}".ljust(18)
 					moves = pok_data["moves"].join(", ")
+
+					p moves
+					if moves.gsub(",", "").strip == ""
+						moves = Trpok.fill_lvl_up_moves(pok_data["level"], tr_info["tr_id"], i, false).join(", ") 
+					end
 					
 					entry = "#{pok_name} #{lvl} @#{item} #{ability} #{nature} #{moves}"
 
@@ -149,10 +154,10 @@ class Action
 	end
 
 
-	
-	def self.output_moves
+	def self.output_moves gen=5
 		moves = Move.get_all
-		vanilla_moves = Move.get_all "documentation/vanilla"
+		folder = gen == 5 ? "" : "g4"
+		vanilla_moves = Move.get_all "documentation/#{folder}vanilla"
 		
 		open('documentation/moves.txt', 'w') do |f|
 			moves.each_with_index do |move, i|
@@ -183,7 +188,7 @@ class Action
 		p "moves"
 	end
 
-	def self.output_pokedex
+	def self.output_pokedex gen=5
 		poks = Personal.poke_data
 		vanilla_poks = Personal.poke_data "documentation/vanilla"
 		evolutions = Evolution.get_all
@@ -206,11 +211,11 @@ class Action
 			  		end
 			  		f.puts
 
-			  		if format_abilities(pok) != format_abilities(vanilla_poks[i])
-			  			f.puts "Old: " + format_abilities(vanilla_poks[i])
-			  			f.puts "New: " + format_abilities(pok)
+			  		if format_abilities(pok, gen) != format_abilities(vanilla_poks[i], gen)
+			  			f.puts "Old: " + format_abilities(vanilla_poks[i], gen)
+			  			f.puts "New: " + format_abilities(pok, gen)
 			  		else
-			  			f.puts format_abilities(pok)
+			  			f.puts format_abilities(pok, gen)
 			  		end
 			  		
 			  		formatted_stats = format_stats(pok)
@@ -229,7 +234,7 @@ class Action
 			  		evo = evolutions[i]
 
 			  		(0..6).each do |n|
-			  			if evo["target_#{n}"].gsub("―","") != "" 
+			  			if evo["target_#{n}"].gsub("―","").gsub("-","") != "" 
 			  				target = evo["target_#{n}"]
 			  				meth = evo["method_#{n}"]
 			  				param = evo["param_#{n}"]
@@ -253,8 +258,146 @@ class Action
 		p "pokedex"	
 	end
 
-	def self.output_encs
-		encs = Encounter.level_sorted
+	def self.g4_output_encs 
+		encs = Encounter.level_sorted 4
+
+
+		open('documentation/encounters.txt', 'w') do |f|
+			encs.each do |enc|
+				if enc["locations"] and !enc["locations"].empty?
+					f.puts "=================="
+					f.puts enc["locations"].join(" / ").gsub(/\(.*\)/, "")
+					f.puts "=================="
+					f.puts
+
+					######## GRASS ######################
+					header = []
+					slot_types = [false, false, false]
+					rows = []
+					types = ["morning_", "day_", "night_"]
+					grass_rates = [20,20,10,10,10,10,5,5,4,4,1,1]
+
+
+					if enc["walking_rate"] != 0
+						header << 'Morning' << 'Lvl' << '%' << '  '
+						slot_types[0] = true
+					end
+					if enc["walking_rate"] != 0
+						header << 'Day' << 'Lvl' << '%' << '  '
+						slot_types[1] = true
+					end
+					if enc["walking_rate"] != 0
+						header << 'Night' << 'Lvl' << '%' 
+						slot_types[2] = true
+					end
+					header.pop if header.length == 4
+
+					(0..11).each do |n|
+						row = []
+						(0..2).each do |m|
+							if slot_types[m]
+								row << enc["#{types[m]}#{n}_species_id"].name_titleize
+								row << enc["walking_#{n}_level"]
+								row << grass_rates[n]
+								row << '  ' if m != 2
+							end
+						end
+						row.pop if row.length == 4
+						rows << row
+					end
+
+					if !header.empty?
+						table = Terminal::Table.new :title => "Grass", :headings => header, :rows => rows
+						f.puts table
+					end
+
+
+					########### WATER ##########
+
+					header = []
+					slot_types = [false, false, false, false]
+					rows = []
+					types = ["surf", "old_rod", "good_rod", "super_rod"]
+					slot_names = ["Surf", "Old Rod", "G Rod", "S Rod"]
+					water_rates = [60,30,5,4,1]
+
+
+					types.each_with_index do |slot_type, i|
+						if enc["surf_rate"] != 0
+		
+							header << slot_names[i] << 'Min' << 'Max' << '%'
+		
+							slot_types[i] = true
+						end
+					end
+
+
+					(0..4).each do |n|
+						row = []
+						(0..3).each do |m|
+							if slot_types[m]
+								row << enc["#{types[m]}_#{n}_species_id"].name_titleize
+								row << enc["#{types[m]}_#{n}_min_lvl"]
+								row << enc["#{types[m]}_#{n}_max_lvl"]
+								row << water_rates[n]
+							end
+						end
+						rows << row
+					end
+					
+					if !header.empty?
+						table = Terminal::Table.new :title => "Water", :headings => header, :rows => rows
+						f.puts table
+					end
+					f.puts
+
+
+
+					######## Special ######################
+					header = []
+					slot_types = [false, false, false]
+					rows = []
+					types = ["hoenn_", "sinnoh_", "rock_smash_"]
+
+
+
+					if enc["walking_rate"] != 0
+						header << 'Hoenn' << '  '
+						slot_types[0] = true
+					end
+					if enc["walking_rate"] != 0
+						header << 'Sinnoh' << '  '
+						slot_types[1] = true
+					end
+					if enc["rock_smash_rate"] != 0
+						header << 'Rock Smash'  
+						slot_types[2] = true
+					end
+					header.pop if header.length == 2
+
+					(0..1).each do |n|
+						row = []
+						(0..2).each do |m|
+							if slot_types[m]
+								row << enc["#{types[m]}#{n}_species_id"].name_titleize
+								row << '  ' if m != 2
+							end
+						end
+						row.pop if row.length == 2
+						rows << row
+					end
+
+					if !header.empty?
+						table = Terminal::Table.new :title => "Special", :headings => header, :rows => rows
+						f.puts table
+					end
+				end
+			end
+		end
+	end
+
+	def self.output_encs gen=5
+		encs = Encounter.level_sorted 
 
 		open('documentation/encounters.txt', 'w') do |f|
 			encs.each do |enc|
@@ -364,8 +507,12 @@ class Action
 		formatted += "(#{bst}) BST"   
 	end
 
-	def self.format_abilities pok
-		[pok["ability_1"].gsub("-","").strip, pok["ability_2"].gsub("-","").strip, pok["ability_3"].gsub("-","").strip].join(" / ").name_titleize
+	def self.format_abilities pok, gen=5
+		if gen == 5
+			[pok["ability_1"].gsub("-","").strip, pok["ability_2"].gsub("-","").strip, pok["ability_3"].gsub("-","").strip].join(" / ").name_titleize
+		else
+			[pok["ability_1"].gsub("-","").strip, pok["ability_2"].gsub("-","").strip].join(" / ").name_titleize
+		end
 	end
 
 	def self.format_types pok

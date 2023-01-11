@@ -52,6 +52,8 @@ if narc_info["base_rom"] == "BW2":
 	narcs_to_output += ["grottos", "marts", "grotto_odds"]
 elif narc_info["base_rom"] == "HGSS":
 	narcs_to_output = ["personal", "learnsets", "moves", "evolutions", "trdata", "encounters", "hidden_abilities"]
+	if narc_info["base_version"] == "SS":
+		narcs_to_output.remove("hidden_abilities")
 
 
 rom_name = narc_info["rom_name"]

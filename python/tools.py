@@ -106,6 +106,7 @@ def output_json(narc, narc_name, to_readable, rom_name, base=5):
 	TRPOK_INFO = []
 
 	for data in narc.files:
+		print(len(narc.files))
 		data_name = data_index
 		read_narc_data(data, narc_format, data_name, narc_name, rom_data.ROM_NAME, to_readable, base)
 		data_index += 1
@@ -120,10 +121,13 @@ def read_narc_data(data, narc_format, file_name, narc_name, rom_name, to_readabl
 	stream = io.BytesIO(data)
 	file = {"raw": {}, "readable": {} }
 	
+	if narc_name == "learnsets":
+		print(data)
+
+
 	#USE THE FORMAT LIST TO PARSE BYTES
 	for entry in narc_format: 
 		file["raw"][entry[1]] = read_bytes(stream, entry[0])
-
 		
 		if narc_name == "encounters" and base == 5:
 			#copy data from spring section if not present in current season
@@ -135,6 +139,11 @@ def read_narc_data(data, narc_format, file_name, narc_name, rom_name, to_readabl
 			if file["raw"][entry[1]] == 65535:
 				file["raw"].pop(entry[1])
 				break
+
+			if rom_data.BASE_VERSION == "SS":
+				ls_id = int(entry[1].split("_")[2])
+				file["raw"][f"lvl_learned_{ls_id}"] = (file["raw"][entry[1]] >> 9) & 0x7F
+				file["raw"][entry[1]] = file["raw"][entry[1]] & 0x1FF 		
 		else:
 			"nothin"
 

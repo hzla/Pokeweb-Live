@@ -99,7 +99,7 @@ class Trpok < Pokenarc
 		poks
 	end
 
-	def self.fill_lvl_up_moves lvl, trainer, pok_index
+	def self.fill_lvl_up_moves lvl, trainer, pok_index, apply=true
 
 		file_path = "#{$rom_name}/json/trpok/#{trainer}.json"
 		trpok = JSON.parse(File.open(file_path, "r"){|f| f.read})
@@ -127,7 +127,9 @@ class Trpok < Pokenarc
 			trpok["readable"]["move_#{i + 1}_#{pok_index}"] = move[1]
 		end
 
-		File.open(file_path, "w") { |f| f.write trpok.to_json }
+		if apply
+			File.open(file_path, "w") { |f| f.write trpok.to_json}
+		end
 		
 		moves.map {|m| m[1].name_titleize}
 
@@ -303,15 +305,58 @@ class Trpok < Pokenarc
 		end
 
 		poks_array
-
-
-		
 	end
 
+	def self.g4_get_nature_for(file_name, sub_index, desired_iv=255)
+		file_path = "#{$rom_name}/json/trpok/#{file_name}.json"
+		trpok = JSON.parse(File.open(file_path, "r"){|f| f.read})
+		ability_slot = trpok["readable"]["ability_#{sub_index}"]
+		trpok = trpok["raw"]
+
+		file_path = "#{$rom_name}/json/trdata/#{file_name}.json"
+		trdata = JSON.parse(File.open(file_path, "r"){|f| f.read})["raw"]
 
 
+		pok_id = trpok["species_id_#{sub_index}"]
+
+		file_path = "#{$rom_name}/json/personal/#{pok_id}.json"
+		personal = JSON.parse(File.open(file_path, "r"){|f| f.read})["readable"]
+
+		trainer_id = file_name.to_i
+		trainer_class = trdata["class"]
+		difficulty = trpok["ivs_#{sub_index}"]
+		level = trpok["level_#{sub_index}"]
+		ability = ability_slot
+		species = pok_id
+
+		male = prng(level, species, difficulty, trainer_id, trainer_class, "male", ability)
+		female = prng(level, species, difficulty, trainer_id, trainer_class, "female", ability)
+
+		"♂#{male} ♀#{female}"
+	end
+
+	def self.prng level, species, difficulty, trainer_id, trainer_class, gender, ability
+		seed = (level + species + difficulty + trainer_id).to_s(16)
+
+		trainer_class.times do 
+			seed = seed.to_i 16
+			result = 0x41C64E6D * seed + 0x00006073
+			seed = result.to_s(16)[-8..-1]
+		end
+		result = seed[0...-4]
+
+		mid_bytes = result[-4..-1]
+		low_bytes = gender == "male" ? "88" : "78"
+		high_bytes = "00"
+
+		pid =  high_bytes + mid_bytes + low_bytes
+
+		ab = ability > 0 ? 1 : 0
 
 
+		nature_id = (pid.to_i(16).to_s[-2..-1].to_i + ab) % 25
+		RomInfo.natures[nature_id]
+	end
 
 
 	def self.convert_pid_to_nature pid, natures
@@ -358,7 +403,7 @@ class Trpok < Pokenarc
 	end
 
 
-	def self.export_all_showdown use_format=true
+	def self.export_all_showdown use_format=true, gen=5
 		data = []
 		sets = {}
 		@@tr_name_counts = {}
@@ -380,15 +425,14 @@ class Trpok < Pokenarc
 				end
 			rescue
 				break
-				# binding.pry
+				binding.pry
 			end
 			
 			# 
+			battle_field = gen == 5 ? '_1' : '' 
 
-			
-			if (settings["ai_values"] == "all" or settings["ai_values"].include?(ai)) && settings["has_moves"].include?(trdata["has_moves"]) && settings["has_items"].include?(trdata["has_items"]) && settings["battle_types"].include?(trdata["battle_type_1"])
-
-				data << export_showdown(n, trdata, settings["min_ivs"], rival_count)
+			if (settings["ai_values"] == "all" or settings["ai_values"].include?(ai)) && settings["has_moves"].include?(trdata["has_moves"]) && settings["has_items"].include?(trdata["has_items"]) && settings["battle_types"].include?(trdata["battle_type#{battle_field}"])
+				data << export_showdown(n, trdata, settings["min_ivs"], rival_count, gen)
 			end
 
 		end
@@ -449,7 +493,7 @@ class Trpok < Pokenarc
 		formatted
 	end
 
-	def self.export_showdown tr_id, trdata, min_ivs, rival_set=0
+	def self.export_showdown tr_id, trdata, min_ivs, rival_set=0, gen=5
 
 		file_path = "#{$rom_name}/json/trpok/#{tr_id}.json"
 		raw = JSON.parse(File.open(file_path, "r"){|f| f.read})["raw"]
@@ -493,25 +537,37 @@ class Trpok < Pokenarc
 			file_path = "#{$rom_name}/json/personal/#{pok_id}.json"
 			personal = JSON.parse(File.open(file_path, "r"){|f| f.read})["readable"]
 			
-			form = poks["form_#{i}"]
+			if gen == 5
 
-			if form > 0 && !(["Deerling","Sawsbuck","Gastrodon","Shellos","Arceus"].include?(species))
-				species_name = species
-				begin
-					species += "-#{RomInfo.form_info[species_name][form - 1]}"
-				rescue
-				
+				form = poks["form_#{i}"]
+
+				if form > 0 && !(["Deerling","Sawsbuck","Gastrodon","Shellos","Arceus"].include?(species))
+					species_name = species
+					begin
+						species += "-#{RomInfo.form_info[species_name][form - 1]}"
+					rescue
+					
+					end
 				end
 			end
 
 			ability_id = poks["ability_#{i}"]
 
-			ability_id += 1 if ability_id < 1
+			if gen == 5
+				ability_id += 1 if ability_id < 1
+			else
+				ability_id = poks["ability_#{i}"] == 0 ? 1 : 2
+			end
+			
 			ability = personal["ability_#{ability_id}"]
 
 			item = poks["item_id_#{i}"]
 
-			nature = get_nature_for(tr_id, i, poks["ivs_#{i}"])
+			if gen == 5
+				nature = get_nature_for(tr_id, i, poks["ivs_#{i}"])
+			else
+				nature = g4_get_nature_for(tr_id, i, poks["ivs_#{i}"])
+			end
 
 			moves = []
 			(1..4).each do |n|
@@ -526,8 +582,18 @@ class Trpok < Pokenarc
 
 			pok[species][tr_name]["level"] = level
 			pok[species][tr_name]["tr_id"] = tr_id
-			pok[species][tr_name]["battle_type"] = trdata["battle_type_1"]
-			pok[species][tr_name]["reward_item"] = trdata["reward_item"]
+			
+
+			if gen == 5
+				pok[species][tr_name]["battle_type"] = trdata["battle_type_1"]
+				pok[species][tr_name]["reward_item"] = trdata["reward_item"]
+				pok[species][tr_name]["form"] = form
+			else
+				pok[species][tr_name]["battle_type"] = trdata["battle_type"]
+				pok[species][tr_name]["reward_item"] = ""
+				pok[species][tr_name]["form"] = ""
+			end
+			
 			pok[species][tr_name]["item"] = item.titleize
 			pok[species][tr_name]["nature"] = nature
 			pok[species][tr_name]["moves"] = moves
@@ -537,7 +603,7 @@ class Trpok < Pokenarc
 
 
 
-			pok[species][tr_name]["form"] = form
+			
 			pok[species][tr_name]["evs"] = {"df" => 0}
 
 			poks_array << pok
