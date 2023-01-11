@@ -17010,3 +17010,743 @@ App 95627 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_suppo
 App 95627 output: "vanilla"
 App 95627 output: {"rom_base"=>"B2", "rom_name"=>"asdfasdf.nds", "password"=>"asdfasdf"}
 App 95627 output: {"rom_name"=>"projects/asdfasdf"}
+2023/01/09 17:08:52 [emerg] 13086#0: bind() to 0.0.0.0:3000 failed (48: Address already in use)
+2023/01/09 17:08:52 [emerg] 13086#0: bind() to 0.0.0.0:3000 failed (48: Address already in use)
+2023/01/09 17:08:52 [emerg] 13086#0: bind() to 0.0.0.0:3000 failed (48: Address already in use)
+2023/01/09 17:08:52 [emerg] 13086#0: bind() to 0.0.0.0:3000 failed (48: Address already in use)
+2023/01/09 17:08:52 [emerg] 13086#0: bind() to 0.0.0.0:3000 failed (48: Address already in use)
+2023/01/09 17:08:52 [emerg] 13086#0: still could not bind()
+2023/01/09 17:09:37 [emerg] 13113#0: bind() to 0.0.0.0:3000 failed (48: Address already in use)
+2023/01/09 17:09:37 [emerg] 13113#0: bind() to 0.0.0.0:3000 failed (48: Address already in use)
+2023/01/09 17:09:37 [emerg] 13113#0: bind() to 0.0.0.0:3000 failed (48: Address already in use)
+2023/01/09 17:09:37 [emerg] 13113#0: bind() to 0.0.0.0:3000 failed (48: Address already in use)
+2023/01/09 17:09:37 [emerg] 13113#0: bind() to 0.0.0.0:3000 failed (48: Address already in use)
+2023/01/09 17:09:37 [emerg] 13113#0: still could not bind()
+[ N 2023-01-09 17:09:56.4147 13135/T1 age/Wat/WatchdogMain.cpp:1377 ]: Starting Passenger watchdog...
+[ N 2023-01-09 17:09:56.4397 13137/T1 age/Cor/CoreMain.cpp:1340 ]: Starting Passenger core...
+[ N 2023-01-09 17:09:56.4401 13137/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ N 2023-01-09 17:09:56.4756 13137/T1 age/Cor/CoreMain.cpp:1015 ]: Passenger core online, PID 13137
+[ N 2023-01-09 17:09:59.3089 13137/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+[ E 2023-01-09 17:09:59.3152 13137/T5 Sec/Crypto.cpp:990 ]: Removing Passenger private key from keychain failed: Write permissions error.. Please remove the private key from the certificate labeled Phusion Passenger Open Source in your keychain.
+App 13154 output: "init"
+App 13187 output: {"rom"=>"projects/b6test", "password"=>""}
+[ N 2023-01-09 17:15:00.1072 13137/T4 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 13195, application /Users/andylee/Repos/Pokeweb (development)
+App 13187 output: "redirecting..."
+App 13187 output: {"file_name"=>"4", "field"=>"animation", "value"=>"0", "narc"=>"move", "int"=>"true"}
+App 13187 output: {"file_name"=>"4", "field"=>"animation", "value"=>"0", "narc"=>"move", "int"=>"true"}
+App 13187 output: "redirecting..."
+App 13187 output: {"rom"=>"projects/b2test", "password"=>""}
+
+[ N 2023-01-09 20:38:09.7158 13137/T8 age/Cor/CoreMain.cpp:671 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2023-01-09 20:38:09.7158 13137/T1 age/Cor/CoreMain.cpp:1246 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2023-01-09 20:38:09.7159 13137/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 13187, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2023-01-09 20:38:09.7165 13137/Ta Ser/Server.h:901 ]: [ServerThr.2] Freed 0 spare client objects
+[ N 2023-01-09 20:38:09.7165 13137/Tm Ser/Server.h:901 ]: [ServerThr.8] Freed 0 spare client objects
+[ N 2023-01-09 20:38:09.7165 13137/To Ser/Server.h:901 ]: [ServerThr.9] Freed 0 spare client objects
+[ N 2023-01-09 20:38:09.7165 13137/Th Ser/Server.h:901 ]: [ServerThr.5] Freed 0 spare client objects
+[ N 2023-01-09 20:38:09.7165 13137/Td Ser/Server.h:901 ]: [ServerThr.3] Freed 0 spare client objects
+[ N 2023-01-09 20:38:09.7166 13137/Tr Ser/Server.h:901 ]: [ServerThr.10] Freed 0 spare client objects
+[ N 2023-01-09 20:38:09.7165 13137/Ti Ser/Server.h:901 ]: [ServerThr.6] Freed 0 spare client objects
+[ N 2023-01-09 20:38:09.7167 13137/Td Ser/Server.h:558 ]: [ServerThr.3] Shutdown finished
+[ N 2023-01-09 20:38:09.7167 13137/Tr Ser/Server.h:558 ]: [ServerThr.10] Shutdown finished
+[ N 2023-01-09 20:38:09.7167 13137/Tw Ser/Server.h:901 ]: [ApiServer] Freed 0 spare client objects
+[ N 2023-01-09 20:38:09.7165 13137/Tk Ser/Server.h:901 ]: [ServerThr.7] Freed 0 spare client objects
+[ N 2023-01-09 20:38:09.7166 13137/Ta Ser/Server.h:558 ]: [ServerThr.2] Shutdown finished
+[ N 2023-01-09 20:38:09.7165 13137/Te Ser/Server.h:901 ]: [ServerThr.4] Freed 0 spare client objects
+[ N 2023-01-09 20:38:09.7165 13137/T8 Ser/Server.h:901 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2023-01-09 20:38:09.7168 13137/Tk Ser/Server.h:558 ]: [ServerThr.7] Shutdown finished
+[ N 2023-01-09 20:38:09.7168 13137/Te Ser/Server.h:558 ]: [ServerThr.4] Shutdown finished
+[ N 2023-01-09 20:38:09.7168 13137/T8 Ser/Server.h:558 ]: [ServerThr.1] Shutdown finished
+[ N 2023-01-09 20:38:09.7166 13137/Ts Ser/Server.h:901 ]: [ServerThr.11] Freed 0 spare client objects
+[ N 2023-01-09 20:38:09.7166 13137/To Ser/Server.h:558 ]: [ServerThr.9] Shutdown finished
+[ N 2023-01-09 20:38:09.7168 13137/Tw Ser/Server.h:558 ]: [ApiServer] Shutdown finished
+[ N 2023-01-09 20:38:09.7166 13137/Tu Ser/Server.h:901 ]: [ServerThr.12] Freed 0 spare client objects
+[ N 2023-01-09 20:38:09.7167 13137/Ti Ser/Server.h:558 ]: [ServerThr.6] Shutdown finished
+[ N 2023-01-09 20:38:09.7167 13137/Th Ser/Server.h:558 ]: [ServerThr.5] Shutdown finished
+[ N 2023-01-09 20:38:09.7166 13137/Tm Ser/Server.h:558 ]: [ServerThr.8] Shutdown finished
+[ N 2023-01-09 20:38:09.7169 13137/Ts Ser/Server.h:558 ]: [ServerThr.11] Shutdown finished
+[ N 2023-01-09 20:38:09.7169 13137/Tu Ser/Server.h:558 ]: [ServerThr.12] Shutdown finished
+[ N 2023-01-09 20:38:09.7170 13137/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 13187, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2023-01-09 20:38:10.7820 13137/T1 age/Cor/CoreMain.cpp:1325 ]: Passenger core shutdown finished
+[ N 2023-01-09 20:38:11.3293 19438/T1 age/Wat/WatchdogMain.cpp:1377 ]: Starting Passenger watchdog...
+[ N 2023-01-09 20:38:11.3590 19440/T1 age/Cor/CoreMain.cpp:1340 ]: Starting Passenger core...
+[ N 2023-01-09 20:38:11.3595 19440/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ N 2023-01-09 20:38:11.4023 19440/T1 age/Cor/CoreMain.cpp:1015 ]: Passenger core online, PID 19440
+App 19451 output: "init"
+[ N 2023-01-09 20:38:14.2028 19440/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+[ E 2023-01-09 20:38:14.2095 19440/T5 Sec/Crypto.cpp:990 ]: Removing Passenger private key from keychain failed: Write permissions error.. Please remove the private key from the certificate labeled Phusion Passenger Open Source in your keychain.
+App 19484 output: {"rom"=>"projects/b2test", "password"=>""}
+App 19484 output: sh: projects/b2test/move_scripts/1.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/2.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/3.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/4.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/5.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/6.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/7.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/8.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/9.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/10.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/11.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/12.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/13.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/14.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/15.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/16.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/17.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/18.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/19.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/20.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/21.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/22.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/23.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/24.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/25.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/26.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/27.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/28.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/29.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/30.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/31.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/32.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/33.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/34.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/35.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/36.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/37.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/38.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/39.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/40.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/41.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/42.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/43.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/44.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/45.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/46.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/47.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/48.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/49.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/50.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/51.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/52.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/53.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/54.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/55.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/56.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/57.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/58.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/59.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/60.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/61.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/62.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/63.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/64.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/65.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/66.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/67.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/68.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/69.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/70.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/71.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/72.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/73.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/74.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/75.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/76.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/77.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/78.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/79.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/80.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/81.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/82.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/83.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/84.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/85.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/86.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/87.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/88.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/89.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/90.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/91.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/92.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/93.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/94.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/95.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/96.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/97.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/98.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/99.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/100.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/101.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/102.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/103.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/104.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/105.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/106.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/107.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/108.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/109.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/110.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/111.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/112.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/113.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/114.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/115.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/116.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/117.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/118.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/119.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/120.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/121.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/122.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/123.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/124.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/125.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/126.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/127.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/128.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/129.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/130.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/131.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/132.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/133.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/134.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/135.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/136.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/137.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/138.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/139.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/140.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/141.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/142.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/143.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/144.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/145.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/146.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/147.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/148.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/149.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/150.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/151.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/152.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/153.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/154.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/155.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/156.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/157.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/158.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/159.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/160.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/161.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/162.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/163.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/164.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/165.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/166.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/167.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/168.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/169.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/170.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/171.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/172.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/173.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/174.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/175.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/176.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/177.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/178.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/179.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/180.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/181.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/182.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/183.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/184.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/185.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/186.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/187.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/188.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/189.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/190.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/191.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/192.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/193.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/194.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/195.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/196.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/197.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/198.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/199.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/200.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/201.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/202.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/203.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/204.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/205.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/206.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/207.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/208.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/209.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/210.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/211.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/212.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/213.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/214.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/215.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/216.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/217.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/218.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/219.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/220.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/221.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/222.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/223.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/224.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/225.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/226.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/227.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/228.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/229.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/230.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/231.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/232.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/233.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/234.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/235.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/236.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/237.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/238.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/239.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/240.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/241.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/242.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/243.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/244.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/245.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/246.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/247.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/248.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/249.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/250.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/251.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/252.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/253.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/254.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/255.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/256.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/257.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/258.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/259.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/260.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/261.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/262.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/263.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/264.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/265.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/266.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/267.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/268.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/269.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/270.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/271.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/272.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/273.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/274.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/275.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/276.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/277.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/278.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/279.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/280.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/281.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/282.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/283.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/284.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/285.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/286.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/287.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/288.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/289.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/290.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/291.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/292.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/293.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/294.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/295.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/296.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/297.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/298.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/299.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/300.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/301.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/302.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/303.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/304.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/305.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/306.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/307.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/308.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/309.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/310.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/311.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/312.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/313.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/314.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/315.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/316.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/317.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/318.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/319.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/320.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/321.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/322.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/323.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/324.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/325.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/326.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/327.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/328.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/329.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/330.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/331.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/332.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/333.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/334.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/335.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/336.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/337.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/338.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/339.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/340.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/341.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/342.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/343.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/344.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/345.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/346.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/347.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/348.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/349.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/350.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/351.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/352.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/353.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/354.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/355.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/356.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/357.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/358.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/359.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/360.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/361.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/362.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/363.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/364.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/365.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/366.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/367.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/368.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/369.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/370.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/371.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/372.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/373.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/374.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/375.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/376.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/377.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/378.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/379.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/380.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/381.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/382.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/383.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/384.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/385.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/386.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/387.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/388.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/389.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/390.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/391.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/392.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/393.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/394.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/395.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/396.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/397.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/398.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/399.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/400.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/401.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/402.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/403.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/404.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/405.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/406.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/407.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/408.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/409.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/410.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/411.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/412.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/413.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/414.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/415.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/416.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/417.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/418.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/419.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/420.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/421.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/422.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/423.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/424.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/425.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/426.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/427.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/428.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/429.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/430.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/431.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/432.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/433.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/434.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/435.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/436.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/437.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/438.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/439.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/440.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/441.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/442.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/443.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/444.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/445.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/446.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/447.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/448.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/449.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/450.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/451.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/452.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/453.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/454.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/455.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/456.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/457.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/458.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/459.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/460.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/461.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/462.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/463.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/464.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/465.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/466.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/467.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/468.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/469.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/470.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/471.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/472.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/473.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/474.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/475.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/476.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/477.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/478.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/479.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/480.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/481.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/482.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/483.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/484.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/485.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/486.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/487.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/488.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/489.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/490.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/491.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/492.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/493.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/494.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/495.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/496.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/497.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/498.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/499.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/500.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/501.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/502.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/503.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/504.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/505.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/506.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/507.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/508.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/509.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/510.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/511.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/512.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/513.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/514.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/515.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/516.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/517.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/518.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/519.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/520.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/521.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/522.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/523.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/524.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/525.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/526.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/527.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/528.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/529.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/530.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/531.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/532.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/533.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/534.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/535.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/536.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/537.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/538.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/539.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/540.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/541.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/542.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/543.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/544.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/545.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/546.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/547.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/548.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/549.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/550.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/551.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/552.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/553.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/554.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/555.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/556.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/557.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/558.txt: No such file or directory
+App 19484 output: sh: projects/b2test/move_scripts/559.txt: No such file or directory
+App 19484 output: 2023-01-09 20:38:27 - Errno::ENOENT - No such file or directory @ rb_sysopen - projects/b2test/move_scripts/1.txt:
+App 19484 output: 	/Users/andylee/Repos/Pokeweb/routes.rb:403:in `initialize'
+App 19484 output: 	/Users/andylee/Repos/Pokeweb/routes.rb:403:in `open'
+App 19484 output: 	/Users/andylee/Repos/Pokeweb/routes.rb:403:in `block in <class:MyApp>'
+App 19484 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1696:in `call'
+App 19484 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1696:in `block in compile!'
+App 19484 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1009:in `block (3 levels) in route!'
+App 19484 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1027:in `route_eval'
+App 19484 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1009:in `block (2 levels) in route!'
+App 19484 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1058:in `block in process_route'
+App 19484 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1056:in `catch'
+App 19484 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1056:in `process_route'
+App 19484 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1007:in `block in route!'
+App 19484 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1004:in `each'
+App 19484 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1004:in `route!'
+App 19484 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1128:in `block in dispatch!'
+App 19484 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `catch'
+App 19484 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `invoke'
+App 19484 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1123:in `dispatch!'
+App 19484 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:939:in `block in call!'
+App 19484 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `catch'
+App 19484 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `invoke'
+App 19484 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:939:in `call!'
+App 19484 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:928:in `call'
+App 19484 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/xss_header.rb:20:in `call'
+App 19484 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/path_traversal.rb:18:in `call'
+App 19484 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/json_csrf.rb:28:in `call'
+App 19484 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/base.rb:53:in `call'
+App 19484 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/base.rb:53:in `call'
+App 19484 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/frame_options.rb:33:in `call'
+App 19484 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/null_logger.rb:11:in `call'
+App 19484 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/head.rb:12:in `call'
+App 19484 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/show_exceptions.rb:23:in `call'
+App 19484 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:219:in `call'
+App 19484 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:2007:in `call'
+App 19484 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1566:in `block in call'
+App 19484 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1782:in `synchronize'
+App 19484 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1566:in `call'
+App 19484 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:266:in `context'
+App 19484 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:260:in `call'
+App 19484 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:266:in `context'
+App 19484 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:260:in `call'
+App 19484 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/rack/thread_handler_extension.rb:107:in `process_request'
+App 19484 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+App 19484 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+App 19484 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler.rb:419:in `block (3 levels) in start_threads'
+App 19484 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+App 19484 output: Traceback (most recent call last):
+App 19484 output:   File "/Users/andylee/Repos/Pokeweb/python/MovScrCMDDecompiler.py", line 56, in <module>
+App 19484 output:     CommandIndex = unpack('<H', SCRIPT.read(0x2))[0]
+App 19484 output:          
+App 19484 output:         
+App 19484 output:   ^^^
+App 19484 output: ^^^^
+App 19484 output: ^^^^^
+App 19484 output: ^^^^^
+App 19484 output: ^^^^
+App 19484 output: ^^^^^
+App 19484 output: ^^^^
+App 19484 output: 
+App 19484 output: struct.
+App 19484 output: error: unpack requires a buffer of 2 bytes
+App 19484 output: Traceback (most recent call last):
+App 19484 output:   File "/Users/andylee/Repos/Pokeweb/python/move_writer.py", line 186, in <module>
+App 19484 output:     decompile_script(sys.argv[3], int(file_name))
+App 19484 output:   File "/Users/andylee/Repos/Pokeweb/python/move_writer.py", line 48, in decompile_script
+App 19484 output:     subprocess.run(["python3", "python/MovScrCMDDecompiler.py", f"{rom_name}/move_scripts/{move_id}.bin", '>', f"{rom_name}/move_scripts/{move_id}.txt"], check=True)
+App 19484 output:   File "/Users/andylee/.pyenv/versions/3.11.1/lib/python3.11/subprocess.py", line 571, in run
+App 19484 output:     raise CalledProcessError(retcode, process.args,
+App 19484 output: subprocess.CalledProcessError
+App 19484 output: : Command '['python3', 'python/MovScrCMDDecompiler.py', 'projects/b2test/move_scripts/117.bin', '>', 'projects/b2test/move_scripts/117.txt']' returned non-zero exit status 1.
+App 19484 output: Traceback (most recent call last):
+App 19484 output:   File "/Users/andylee/Repos/Pokeweb/python/MovScrCMDDecompiler.py", line 56, in <module>
+App 19484 output:     CommandIndex = unpack('<H', SCRIPT.read(0x2))[0]
+App 19484 output:               
+App 19484 output:      ^
+App 19484 output: ^^^^^^
+App 19484 output: ^^^^^
+App 19484 output: ^^^^^^
+App 19484 output: ^^^^^
+App 19484 output: ^^^^^
+App 19484 output: ^^
+App 19484 output: struct.error
+App 19484 output: : unpack requires a buffer of 2 bytes
+App 19484 output: Traceback (most recent call last):
+App 19484 output:   File "/Users/andylee/Repos/Pokeweb/python/move_writer.py", line 186, in <module>
+App 19484 output:     decompile_script(sys.argv[3], int(file_name))
+App 19484 output: 
+App 19484 output:   File "/Users/andylee/Repos/Pokeweb/python/move_writer.py", line 48, in decompile_script
+App 19484 output:     subprocess.run(["python3", "python/MovScrCMDDecompiler.py", f"{rom_name}/move_scripts/{move_id}.bin", '>', f"{rom_name}/move_scripts/{move_id}.txt"], check=True)
+App 19484 output:   File "/Users/andylee/.pyenv/versions/3.11.1/lib/python3.11/subprocess.py", line 571, in run
+App 19484 output:     raise CalledProcessError(retcode, process.args,
+App 19484 output: subprocess.CalledProcessError: Command '['python3', 'python/MovScrCMDDecompiler.py', 'projects/b2test/move_scripts/290.bin', '>', 'projects/b2test/move_scripts/290.txt']' returned non-zero exit status 1.
+App 19484 output: Traceback (most recent call last):
+App 19484 output:   File "/Users/andylee/Repos/Pokeweb/python/MovScrCMDDecompiler.py", line 57, in <module>
+App 19484 output:     CommandData = CommandSet[CommandIndex]
+App 19484 output:  
+App 19484 output:         
+App 19484 output:       
+App 19484 output:    ~~
+App 19484 output: ~~~~~
+App 19484 output: ~~~^^
+App 19484 output: ^^^^^
+App 19484 output: ^^^^^
+App 19484 output: ^^
+App 19484 output: KeyError: 6144
+App 19484 output: Traceback (most recent call last):
+App 19484 output:   File "/Users/andylee/Repos/Pokeweb/python/move_writer.py", line 186, in <module>
+App 19484 output:     decompile_script(sys.argv[3], int(file_name))
+App 19484 output:   File "/Users/andylee/Repos/Pokeweb/python/move_writer.py", line 48, in decompile_script
+App 19484 output:     subprocess.run(["python3", "python/MovScrCMDDecompiler.py", f"{rom_name}/move_scripts/{move_id}.bin", '>', f"{rom_name}/move_scripts/{move_id}.txt"], check=True)
+App 19484 output:   File "/Users/andylee/.pyenv/versions/3.11.1/lib/python3.11/subprocess.py", line 571, in run
+App 19484 output:     raise CalledProcessError(retcode, process.args,
+App 19484 output: subprocess.CalledProcessError: 
+App 19484 output: Command '['python3', 'python/MovScrCMDDecompiler.py', 'projects/b2test/move_scripts/463.bin', '>', 'projects/b2test/move_scripts/463.txt']' returned non-zero exit status 1.

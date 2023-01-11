@@ -19,6 +19,41 @@ class Move < Pokenarc
 		moves
 	end
 
+	def self.info
+		$rom_name = 'projects/b2test'
+		moves = get_all
+		cmds = {}
+		(1..559).each do |id|
+			
+			begin
+				file = File.open("projects/b2test/move_scripts/#{id}.txt").readlines
+			rescue
+				next 
+			end
+			p id
+			mv_name = moves[id][1]["name"]
+
+			file.each_with_index do |line, i|
+				cmd = line.match(/CMD_\S+/)
+				if cmd
+					cmd_id = "CMD_" + cmd[0].split("_")[1]
+					cmds[cmd_id] ||= {}
+					cmds[cmd_id][mv_name] ||= {}
+					cmds[cmd_id][mv_name]["Line #{i}"] = line.strip
+				end
+			end
+		end
+
+		File.write("Reference_Files/move_anim_info.json", JSON.pretty_generate(cmds))
+	end
+
+# cmds = {}
+
+# for file in files:
+# 	for line in file:
+# 		cmd = line.match(cmd_regex)
+# 		cmd_id = line.split(" ")[0].split("_")[1]
+# 		cmds[cmd_id][file] += line
 
 
 	def self.export_showdown

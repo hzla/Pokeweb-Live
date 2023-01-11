@@ -397,8 +397,10 @@ class MyApp < Sinatra::Base
 
 	get '/moves/:id/script' do 
 		id = params[:id]
-		`python3 python/move_writer.py decompile #{id} #{$rom_name} > #{$rom_name}/move_scripts/#{id}.txt`
-
+		# (1..559).each do |id|
+		# 	p id
+			`python3 python/move_writer.py decompile #{id} #{$rom_name} > #{$rom_name}/move_scripts/#{id}.txt`
+		# end
 		@script = File.open("#{$rom_name}/move_scripts/#{id}.txt", "r").readlines
 
 		send_file "#{$rom_name}/move_scripts/#{id}.txt", :filename => "move_script_#{id}.txt" , :type => 'Application/octet-stream'
