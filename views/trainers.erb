@@ -19,15 +19,18 @@
 	<button class="btn -default" id="search-text-btn" type="button">Search</button>
 
 	<br>
-	<% if SessionSettings.get "pastebin" %>	
-		
 
-		<div class="filter-title"><a href="<%= "https://hzla.github.io/Dynamic-Calc/?data=#{SessionSettings.get("pastebin")}&gen=5" %>">Public Calculator</a></div>
-	<% end %>	
 
 	<div class="sidebar-btns">
 		<div class="ow-btn settings-toggle" data-field="enable_single_npc_dbl_battles">Toggle Single NPC Double Battles</div>
 	</div>	
+
+	<% if SessionSettings.base_rom == "BW2" %>
+
+		<div class="small-filters">
+			<a href="/trainers/expand" onclick="return confirm('This will permanently add 10 trainers to your project. Please make sure you have a backup before proceeding. Proceed?')"><button class="btn">Add 10 Trainer Slots</button></a>
+		</div>
+	<% end %>
 </div>
 <div id="texts" data-narc="message_texts"></div>
 <div class="pokemon-list spreadsheet" id="trainers">

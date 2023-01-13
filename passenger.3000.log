@@ -21289,3 +21289,2021 @@ App 25680 output: ["0_2329", "Marvelous! I shall believe in my Pokémon!", 61085
 App 25680 output: "updateing"
 App 25680 output: {"file_name"=>"bank_381", "field"=>"text_20_entry_0_2328", "value"=>"If-if I'd believed more, could I have drawn\\nout my Pokémon's power?", "narc"=>"message_texts", "narc_const"=>"trdata", "trtext"=>"true"}
 App 25680 output: "python3 python/text_writer.py update bank_381 projects/b6test"
+App 25680 output: "offline"
+App 25680 output: decompressing arm9
+App 25680 output: outputting texts
+App 25680 output: outputting texts
+App 25680 output: 
+App 25680 output: outputting scripts
+App 25680 output: {'rom_name': 'projects/b6test', 'pw': 'offline', 'base_version': 'B2', 'base_rom': 'BW2', 'headers': 359, 'message_texts': 349, 'story_texts': 350, 'scripts': 403}
+App 25680 output: creating project folders
+App 25680 output: projects/b6test/json/moves
+App 25680 output: extracting narcs
+App 25680 output: parsing texts
+App 25680 output: settings up processing pools
+App 25680 output: outputing narcs
+App 25680 output: grottos
+App 25680 output: grotto_odds
+App 25680 output: 
+App 25680 output: marts
+App 25680 output: matrix
+App 25680 output: items
+App 25680 output: evolutions
+App 25680 output: learnsets
+App 25680 output: personal
+App 25680 output: moves
+App 25680 output: trpok
+App 25680 output: trdata
+App 25680 output: overworlds
+App 25680 output: encounters
+App 25680 output: maps
+App 25680 output: "offline"
+App 25680 output: decompressing arm9
+App 25680 output: outputting texts
+App 25680 output: outputting texts
+App 25680 output: outputting scripts
+App 25680 output: {'rom_name': 'projects/b6test', 'pw': 'offline', 'base_version': 'B2', 'base_rom': 'BW2', 'headers': 359, 'message_texts': 349, 'story_texts': 350, 'scripts': 403}
+App 25680 output: creating project folders
+App 25680 output: projects/b6test/json/moves
+App 25680 output: extracting narcs
+App 25680 output: parsing texts
+App 25680 output: settings up processing pools
+App 25680 output: outputing narcs
+App 25680 output: grottos
+App 25680 output: 
+App 25680 output: grotto_odds
+App 25680 output: marts
+App 25680 output: matrix
+App 25680 output: items
+App 25680 output: evolutions
+App 25680 output: learnsets
+App 25680 output: personal
+App 25680 output: moves
+App 25680 output: trpok
+App 25680 output: 
+App 25680 output: trdata
+App 25680 output: overworlds
+App 25680 output: encounters
+App 25680 output: maps
+App 25680 output: "offline"
+App 25680 output: decompressing arm9
+App 25680 output: outputting texts
+App 25680 output: outputting texts
+App 25680 output: outputting scripts
+App 25680 output: {'rom_name': 'projects/b6test', 'pw': 'offline', 'base_version': 'B2', 'base_rom': 'BW2', 'headers': 359, 'message_texts': 349, 'story_texts': 350, 'scripts': 403}
+App 25680 output: creating project folders
+App 25680 output: projects/b6test/json/moves
+App 25680 output: extracting narcs
+App 25680 output: parsing texts
+App 25680 output: settings up processing pools
+App 25680 output: outputing narcs
+App 25680 output: 
+App 25680 output: grottos
+App 25680 output: grotto_odds
+App 25680 output: marts
+App 25680 output: matrix
+App 25680 output: items
+App 25680 output: evolutions
+App 25680 output: personal
+App 25680 output: learnsets
+App 25680 output: moves
+App 25680 output: trpok
+App 25680 output: trdata
+App 25680 output: overworlds
+App 25680 output: encounters
+App 25680 output: maps
+App 33866 output: "init"
+[ N 2023-01-12 21:10:06.7079 25625/T4 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 25680, application /Users/andylee/Repos/Pokeweb (development)
+App 33899 output: "offline"
+App 33899 output: decompressing arm9
+App 33899 output: outputting texts
+App 33899 output: outputting texts
+App 33899 output: outputting scripts
+App 33899 output: {'rom_name': 'projects/b6test', 'pw': 'offline', 'base_version': 'B2', 'base_rom': 'BW2', 'headers': 359, 'message_texts': 349, 'story_texts': 350, 'scripts': 403}
+App 33899 output: creating project folders
+App 33899 output: projects/b6test/json/moves
+App 33899 output: extracting narcs
+App 33899 output: parsing texts
+App 33899 output: settings up processing pools
+App 33899 output: outputing narcs
+App 33899 output: grottos
+App 33899 output: 
+App 33899 output: grotto_odds
+App 33899 output: marts
+App 33899 output: 
+App 33899 output: matrix
+App 33899 output: evolutions
+App 33899 output: items
+App 33899 output: learnsets
+App 33899 output: personal
+App 33899 output: trpok
+App 33899 output: trdata
+App 33899 output: moves
+App 33899 output: overworlds
+App 33899 output: encounters
+App 33899 output: 
+App 33899 output: maps
+
+[ N 2023-01-12 21:22:48.7051 25625/T9 age/Cor/CoreMain.cpp:671 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2023-01-12 21:22:48.7052 25625/T1 age/Cor/CoreMain.cpp:1246 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2023-01-12 21:22:48.7052 25625/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 33899, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2023-01-12 21:22:48.7058 25625/Tc Ser/Server.h:901 ]: [ServerThr.3] Freed 0 spare client objects
+[ N 2023-01-12 21:22:48.7058 25625/Ta Ser/Server.h:901 ]: [ServerThr.2] Freed 0 spare client objects
+[ N 2023-01-12 21:22:48.7058 25625/T9 Ser/Server.h:901 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2023-01-12 21:22:48.7058 25625/Te Ser/Server.h:901 ]: [ServerThr.4] Freed 0 spare client objects
+[ N 2023-01-12 21:22:48.7060 25625/Tk Ser/Server.h:901 ]: [ServerThr.7] Freed 0 spare client objects
+[ N 2023-01-12 21:22:48.7059 25625/To Ser/Server.h:901 ]: [ServerThr.9] Freed 0 spare client objects
+[ N 2023-01-12 21:22:48.7060 25625/Tu Ser/Server.h:901 ]: [ServerThr.12] Freed 0 spare client objects
+[ N 2023-01-12 21:22:48.7060 25625/Tq Ser/Server.h:901 ]: [ServerThr.10] Freed 0 spare client objects
+[ N 2023-01-12 21:22:48.7059 25625/Tn Ser/Server.h:901 ]: [ServerThr.8] Freed 0 spare client objects
+[ N 2023-01-12 21:22:48.7063 25625/Tk Ser/Server.h:558 ]: [ServerThr.7] Shutdown finished
+[ N 2023-01-12 21:22:48.7063 25625/Tu Ser/Server.h:558 ]: [ServerThr.12] Shutdown finished
+[ N 2023-01-12 21:22:48.7060 25625/Tj Ser/Server.h:901 ]: [ServerThr.6] Freed 0 spare client objects
+[ N 2023-01-12 21:22:48.7060 25625/Tc Ser/Server.h:558 ]: [ServerThr.3] Shutdown finished
+[ N 2023-01-12 21:22:48.7061 25625/T9 Ser/Server.h:558 ]: [ServerThr.1] Shutdown finished
+[ N 2023-01-12 21:22:48.7060 25625/Ts Ser/Server.h:901 ]: [ServerThr.11] Freed 0 spare client objects
+[ N 2023-01-12 21:22:48.7063 25625/Tn Ser/Server.h:558 ]: [ServerThr.8] Shutdown finished
+[ N 2023-01-12 21:22:48.7063 25625/Tq Ser/Server.h:558 ]: [ServerThr.10] Shutdown finished
+[ N 2023-01-12 21:22:48.7065 25625/Ts Ser/Server.h:558 ]: [ServerThr.11] Shutdown finished
+[ N 2023-01-12 21:22:48.7063 25625/To Ser/Server.h:558 ]: [ServerThr.9] Shutdown finished
+[ N 2023-01-12 21:22:48.7064 25625/Tj Ser/Server.h:558 ]: [ServerThr.6] Shutdown finished
+[ N 2023-01-12 21:22:48.7062 25625/Te Ser/Server.h:558 ]: [ServerThr.4] Shutdown finished
+[ N 2023-01-12 21:22:48.7060 25625/Tg Ser/Server.h:901 ]: [ServerThr.5] Freed 0 spare client objects
+[ N 2023-01-12 21:22:48.7064 25625/Tw Ser/Server.h:901 ]: [ApiServer] Freed 0 spare client objects
+[ N 2023-01-12 21:22:48.7066 25625/Tw Ser/Server.h:558 ]: [ApiServer] Shutdown finished
+[ N 2023-01-12 21:22:48.7066 25625/Tg Ser/Server.h:558 ]: [ServerThr.5] Shutdown finished
+[ N 2023-01-12 21:22:48.7061 25625/Ta Ser/Server.h:558 ]: [ServerThr.2] Shutdown finished
+[ N 2023-01-12 21:22:48.7069 25625/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 33899, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2023-01-12 21:22:49.7800 25625/T1 age/Cor/CoreMain.cpp:1325 ]: Passenger core shutdown finished
+[ N 2023-01-12 21:22:50.0807 34518/T1 age/Wat/WatchdogMain.cpp:1377 ]: Starting Passenger watchdog...
+[ N 2023-01-12 21:22:50.1117 34520/T1 age/Cor/CoreMain.cpp:1340 ]: Starting Passenger core...
+[ N 2023-01-12 21:22:50.1120 34520/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ N 2023-01-12 21:22:50.1507 34520/T1 age/Cor/CoreMain.cpp:1015 ]: Passenger core online, PID 34520
+[ N 2023-01-12 21:22:52.9634 34520/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+[ E 2023-01-12 21:22:52.9698 34520/T5 Sec/Crypto.cpp:990 ]: Removing Passenger private key from keychain failed: Write permissions error.. Please remove the private key from the certificate labeled Phusion Passenger Open Source in your keychain.
+App 34536 output: "init"
+App 34569 output: "offline"
+App 34569 output: decompressing arm9
+App 34569 output: outputting texts
+App 34569 output: outputting texts
+App 34569 output: outputting scripts
+App 34569 output: {'rom_name': 'projects/b6test', 'pw': 'offline', 'base_version': 'B2', 'base_rom': 'BW2', 'headers': 359, 'message_texts': 349, 'story_texts': 350, 'scripts': 403}
+App 34569 output: creating project folders
+App 34569 output: projects/b6test/json/moves
+App 34569 output: extracting narcs
+App 34569 output: parsing texts
+App 34569 output: settings up processing pools
+App 34569 output: outputing narcs
+App 34569 output: grottos
+App 34569 output: grotto_odds
+App 34569 output: marts
+App 34569 output: matrix
+App 34569 output: items
+App 34569 output: evolutions
+App 34569 output: learnsets
+App 34569 output: personal
+App 34569 output: moves
+App 34569 output: trpok
+App 34569 output: 
+App 34569 output: trdata
+App 34569 output: overworlds
+App 34569 output: encounters
+App 34569 output: maps
+
+[ N 2023-01-12 21:24:12.0371 34520/T8 age/Cor/CoreMain.cpp:671 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2023-01-12 21:24:12.0372 34520/T1 age/Cor/CoreMain.cpp:1246 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2023-01-12 21:24:12.0372 34520/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 34569, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2023-01-12 21:24:12.0376 34520/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 34579, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2023-01-12 21:24:12.0377 34520/Tc Ser/Server.h:901 ]: [ServerThr.3] Freed 0 spare client objects
+[ N 2023-01-12 21:24:12.0377 34520/Tq Ser/Server.h:901 ]: [ServerThr.10] Freed 0 spare client objects
+[ N 2023-01-12 21:24:12.0377 34520/T8 Ser/Server.h:901 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2023-01-12 21:24:12.0377 34520/To Ser/Server.h:901 ]: [ServerThr.9] Freed 0 spare client objects
+[ N 2023-01-12 21:24:12.0378 34520/Tc Ser/Server.h:558 ]: [ServerThr.3] Shutdown finished
+[ N 2023-01-12 21:24:12.0377 34520/Te Ser/Server.h:901 ]: [ServerThr.4] Freed 0 spare client objects
+[ N 2023-01-12 21:24:12.0377 34520/Ti Ser/Server.h:901 ]: [ServerThr.6] Freed 0 spare client objects
+[ N 2023-01-12 21:24:12.0377 34520/Ts Ser/Server.h:901 ]: [ServerThr.11] Freed 0 spare client objects
+[ N 2023-01-12 21:24:12.0377 34520/Tk Ser/Server.h:901 ]: [ServerThr.7] Freed 0 spare client objects
+[ N 2023-01-12 21:24:12.0377 34520/Tv Ser/Server.h:901 ]: [ServerThr.12] Freed 0 spare client objects
+[ N 2023-01-12 21:24:12.0380 34520/Tk Ser/Server.h:558 ]: [ServerThr.7] Shutdown finished
+[ N 2023-01-12 21:24:12.0378 34520/T8 Ser/Server.h:558 ]: [ServerThr.1] Shutdown finished
+[ N 2023-01-12 21:24:12.0378 34520/Tq Ser/Server.h:558 ]: [ServerThr.10] Shutdown finished
+[ N 2023-01-12 21:24:12.0378 34520/To Ser/Server.h:558 ]: [ServerThr.9] Shutdown finished
+[ N 2023-01-12 21:24:12.0377 34520/Ta Ser/Server.h:901 ]: [ServerThr.2] Freed 0 spare client objects
+[ N 2023-01-12 21:24:12.0377 34520/Tm Ser/Server.h:901 ]: [ServerThr.8] Freed 0 spare client objects
+[ N 2023-01-12 21:24:12.0377 34520/Tg Ser/Server.h:901 ]: [ServerThr.5] Freed 0 spare client objects
+[ N 2023-01-12 21:24:12.0379 34520/Te Ser/Server.h:558 ]: [ServerThr.4] Shutdown finished
+[ N 2023-01-12 21:24:12.0379 34520/Ts Ser/Server.h:558 ]: [ServerThr.11] Shutdown finished
+[ N 2023-01-12 21:24:12.0380 34520/Tv Ser/Server.h:558 ]: [ServerThr.12] Shutdown finished
+[ N 2023-01-12 21:24:12.0379 34520/Tx Ser/Server.h:901 ]: [ApiServer] Freed 0 spare client objects
+[ N 2023-01-12 21:24:12.0379 34520/Ti Ser/Server.h:558 ]: [ServerThr.6] Shutdown finished
+[ N 2023-01-12 21:24:12.0381 34520/Tm Ser/Server.h:558 ]: [ServerThr.8] Shutdown finished
+[ N 2023-01-12 21:24:12.0382 34520/Ta Ser/Server.h:558 ]: [ServerThr.2] Shutdown finished
+[ N 2023-01-12 21:24:12.0382 34520/Tg Ser/Server.h:558 ]: [ServerThr.5] Shutdown finished
+[ N 2023-01-12 21:24:12.0382 34520/Tx Ser/Server.h:558 ]: [ApiServer] Shutdown finished
+[ N 2023-01-12 21:24:12.0383 34520/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 34569, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2023-01-12 21:24:12.0384 34520/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 34579, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2023-01-12 21:24:13.0938 34520/T1 age/Cor/CoreMain.cpp:1325 ]: Passenger core shutdown finished
+[ N 2023-01-12 21:24:13.3831 34731/T1 age/Wat/WatchdogMain.cpp:1377 ]: Starting Passenger watchdog...
+[ N 2023-01-12 21:24:13.4169 34733/T1 age/Cor/CoreMain.cpp:1340 ]: Starting Passenger core...
+[ N 2023-01-12 21:24:13.4173 34733/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ N 2023-01-12 21:24:13.4587 34733/T1 age/Cor/CoreMain.cpp:1015 ]: Passenger core online, PID 34733
+[ N 2023-01-12 21:24:16.2378 34733/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+[ E 2023-01-12 21:24:16.2432 34733/T5 Sec/Crypto.cpp:990 ]: Removing Passenger private key from keychain failed: Write permissions error.. Please remove the private key from the certificate labeled Phusion Passenger Open Source in your keychain.
+App 34744 output: "init"
+App 34782 output: "offline"
+App 34782 output: decompressing arm9
+App 34782 output: outputting texts
+App 34782 output: outputting texts
+App 34782 output: outputting scripts
+App 34782 output: {'rom_name': 'projects/b6test', 'pw': 'offline', 'base_version': 'B2', 'base_rom': 'BW2', 'headers': 359, 'message_texts': 349, 'story_texts': 350, 'scripts': 403}
+App 34782 output: 
+App 34782 output: creating project folders
+App 34782 output: 
+App 34782 output: projects/b6test/json/moves
+App 34782 output: extracting narcs
+App 34782 output: 
+App 34782 output: parsing texts
+App 34782 output: settings up processing pools
+App 34782 output: outputing narcs
+App 34782 output: 
+App 34782 output: grottos
+App 34782 output: grotto_odds
+App 34782 output: 
+App 34782 output: marts
+App 34782 output: matrix
+App 34782 output: items
+App 34782 output: evolutions
+App 34782 output: learnsets
+App 34782 output: personal
+App 34782 output: moves
+App 34782 output: trpok
+App 34782 output: trdata
+App 34782 output: overworlds
+App 34782 output: encounters
+App 34782 output: maps
+
+[ N 2023-01-12 21:28:51.2404 34733/T9 age/Cor/CoreMain.cpp:671 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2023-01-12 21:28:51.2405 34733/T1 age/Cor/CoreMain.cpp:1246 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2023-01-12 21:28:51.2405 34733/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 34782, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2023-01-12 21:28:51.2409 34733/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 34791, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2023-01-12 21:28:51.2410 34733/T9 Ser/Server.h:901 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2023-01-12 21:28:51.2410 34733/Tf Ser/Server.h:901 ]: [ServerThr.4] Freed 0 spare client objects
+[ N 2023-01-12 21:28:51.2410 34733/Ts Ser/Server.h:901 ]: [ServerThr.11] Freed 0 spare client objects
+[ N 2023-01-12 21:28:51.2411 34733/Tf Ser/Server.h:558 ]: [ServerThr.4] Shutdown finished
+[ N 2023-01-12 21:28:51.2411 34733/Ts Ser/Server.h:558 ]: [ServerThr.11] Shutdown finished
+[ N 2023-01-12 21:28:51.2410 34733/Tn Ser/Server.h:901 ]: [ServerThr.8] Freed 0 spare client objects
+[ N 2023-01-12 21:28:51.2410 34733/Tj Ser/Server.h:901 ]: [ServerThr.6] Freed 0 spare client objects
+[ N 2023-01-12 21:28:51.2410 34733/Tc Ser/Server.h:901 ]: [ServerThr.3] Freed 0 spare client objects
+[ N 2023-01-12 21:28:51.2410 34733/Tb Ser/Server.h:901 ]: [ServerThr.2] Freed 0 spare client objects
+[ N 2023-01-12 21:28:51.2410 34733/Tr Ser/Server.h:901 ]: [ServerThr.10] Freed 0 spare client objects
+[ N 2023-01-12 21:28:51.2412 34733/Tb Ser/Server.h:558 ]: [ServerThr.2] Shutdown finished
+[ N 2023-01-12 21:28:51.2410 34733/To Ser/Server.h:901 ]: [ServerThr.9] Freed 0 spare client objects
+[ N 2023-01-12 21:28:51.2411 34733/Tu Ser/Server.h:901 ]: [ServerThr.12] Freed 0 spare client objects
+[ N 2023-01-12 21:28:51.2410 34733/Tg Ser/Server.h:901 ]: [ServerThr.5] Freed 0 spare client objects
+[ N 2023-01-12 21:28:51.2412 34733/Tc Ser/Server.h:558 ]: [ServerThr.3] Shutdown finished
+[ N 2023-01-12 21:28:51.2411 34733/T9 Ser/Server.h:558 ]: [ServerThr.1] Shutdown finished
+[ N 2023-01-12 21:28:51.2411 34733/Tl Ser/Server.h:901 ]: [ServerThr.7] Freed 0 spare client objects
+[ N 2023-01-12 21:28:51.2412 34733/Tn Ser/Server.h:558 ]: [ServerThr.8] Shutdown finished
+[ N 2023-01-12 21:28:51.2414 34733/Tg Ser/Server.h:558 ]: [ServerThr.5] Shutdown finished
+[ N 2023-01-12 21:28:51.2413 34733/Tw Ser/Server.h:901 ]: [ApiServer] Freed 0 spare client objects
+[ N 2023-01-12 21:28:51.2413 34733/Tu Ser/Server.h:558 ]: [ServerThr.12] Shutdown finished
+[ N 2023-01-12 21:28:51.2413 34733/To Ser/Server.h:558 ]: [ServerThr.9] Shutdown finished
+[ N 2023-01-12 21:28:51.2413 34733/Tr Ser/Server.h:558 ]: [ServerThr.10] Shutdown finished
+[ N 2023-01-12 21:28:51.2414 34733/Tl Ser/Server.h:558 ]: [ServerThr.7] Shutdown finished
+[ N 2023-01-12 21:28:51.2415 34733/Tw Ser/Server.h:558 ]: [ApiServer] Shutdown finished
+[ N 2023-01-12 21:28:51.2412 34733/Tj Ser/Server.h:558 ]: [ServerThr.6] Shutdown finished
+[ N 2023-01-12 21:28:51.2416 34733/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 34782, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2023-01-12 21:28:51.2417 34733/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 34791, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2023-01-12 21:28:52.3020 34733/T1 age/Cor/CoreMain.cpp:1325 ]: Passenger core shutdown finished
+[ N 2023-01-12 21:28:52.6291 35085/T1 age/Wat/WatchdogMain.cpp:1377 ]: Starting Passenger watchdog...
+[ N 2023-01-12 21:28:52.6655 35087/T1 age/Cor/CoreMain.cpp:1340 ]: Starting Passenger core...
+[ N 2023-01-12 21:28:52.6660 35087/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ N 2023-01-12 21:28:52.7074 35087/T1 age/Cor/CoreMain.cpp:1015 ]: Passenger core online, PID 35087
+App 35104 output: Error: The application encountered the following error: /Users/andylee/Repos/Pokeweb/routes.rb:429: unknown regexp option - t
+App 35104 output: /Users/andylee/Repos/Pokeweb/routes.rb:429: syntax error, unexpected tSTRING_BEG, expecting end
+App 35104 output: 	get '/tms' do 	
+App 35104 output: 	         ^
+App 35104 output: /Users/andylee/Repos/Pokeweb/routes.rb:441: syntax error, unexpected tSTRING_BEG, expecting end
+App 35104 output: 	get '/story_texts/text/:id' do 
+App 35104 output: 	                          ^
+App 35104 output: /Users/andylee/Repos/Pokeweb/routes.rb:457: syntax error, unexpected tSTRING_BEG, expecting end
+App 35104 output: 	get '/message_texts/text/:id' do 
+App 35104 output: 	                            ^
+App 35104 output: /Users/andylee/Repos/Pokeweb/routes.rb:473: syntax error, unexpected tSTRING_BEG, expecting end
+App 35104 output: 	post '/texts/:id' do 
+App 35104 output: 	                ^
+App 35104 output: /Users/andylee/Repos/Pokeweb/routes.rb:491: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+App 35104 output: 	get '/headers' do 
+App 35104 output: 	             ^
+App 35104 output: /Users/andylee/Repos/Pokeweb/routes.rb:501: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+App 35104 output: 	get '/encounters' do 
+App 35104 output: 	                ^
+App 35104 output: /Users/andylee/Repos/Pokeweb/routes.rb:509: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+App 35104 output: 	post '/encounter_season_copy' do 
+App 35104 output: 	                            ^
+App 35104 output: /Users/andylee/Repos/Pokeweb/routes.rb:517: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+App 35104 output: 	get '/trainers' do 
+App 35104 output: 	              ^
+App 35104 output: /Users/andylee/Repos/Pokeweb/routes.rb:543: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+App 35104 output: 	get '/trainers/expand' do 
+App 35104 output: 	                     ^
+App 35104 output: /Users/andylee/Repos/Pokeweb/routes.rb:547: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+App 35104 output: 		redirect '/trainers'
+App 35104 output: 		                   ^
+App 35104 output: /Users/andylee/Repos/Pokeweb/routes.rb:550: syntax error, unexpected tSTRING_BEG, expecting end
+App 35104 output: ...id/:pok_id/natures/:desired_iv' do 
+App 35104 output: ...                              ^
+App 35104 output: /Users/andylee/Repos/Pokeweb/routes.rb:556: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+App 35104 output: 	post '/create' do
+App 35104 output: 	             ^
+App 35104 output: /Users/andylee/Repos/Pokeweb/routes.rb:557: syntax error, unexpected tIDENTIFIER, expecting end
+App 35104 output: 		narc_name = params['data']['narc']
+App 35104 output: 		                    ^~~~
+App 35104 output: /Users/andylee/Repos/Pokeweb/routes.rb:557: syntax error, unexpected tIDENTIFIER, expecting end
+App 35104 output: ...arc_name = params['data']['narc']
+App 35104 output: ...                           ^~~~
+App 35104 output: /Users/andylee/Repos/Pokeweb/routes.rb:561: syntax error, unexpected tIDENTIFIER, expecting end
+App 35104 output: 		open('logs.txt', 'a') do |f|
+App 35104 output: 		      ^~~~
+App 35104 output: /Users/andylee/Repos/Pokeweb/routes.rb:561: syntax error, unexpected tIDENTIFIER, expecting end
+App 35104 output: 		open('logs.txt', 'a') do |f|
+App 35104 output: 		                  ^
+App 35104 output: /Users/andylee/Repos/Pokeweb/routes.rb:562: syntax error, unexpected tIDENTIFIER, expecting end
+App 35104 output: ...me} Trainer File #{params['data']['file_name']} created new ...
+App 35104 output: ...                           ^~~~
+App 35104 output: /Users/andylee/Repos/Pokeweb/routes.rb:562: syntax error, unexpected tIDENTIFIER, expecting end
+App 35104 output: ...ile #{params['data']['file_name']} created new trainer pok"
+App 35104 output: ...                      ^~~~~~~~~
+App 35104 output: /Users/andylee/Repos/Pokeweb/routes.rb:565: syntax error, unexpected tIDENTIFIER, expecting end
+App 35104 output: ...}_index".to_sym => params['data']['sub_index'], :show => "sh...
+App 35104 output: ...                           ^~~~
+App 35104 output: /Users/andylee/Repos/Pokeweb/routes.rb:565: syntax error, unexpected tIDENTIFIER, expecting end
+App 35104 output: ...ym => params['data']['sub_index'], :show => "show-flex", :do...
+App 35104 output: ...                      ^~~~~~~~~
+App 35104 output: /Users/andylee/Repos/Pokeweb/routes.rb:568: syntax error, unexpected tSTRING_BEG, expecting end
+App 35104 output: ...oks/moves/:trpok_id/:pok_index' do 
+App 35104 output: ...                              ^
+App 35104 output: /Users/andylee/Repos/Pokeweb/routes.rb:577: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+App 35104 output: 	post '/batch_update' do 
+App 35104 output: 	                   ^
+App 35104 output: /Users/andylee/Repos/Pokeweb/routes.rb:578: syntax error, unexpected tIDENTIFIER, expecting end
+App 35104 output: 		narc_name = params['data']['narc']
+App 35104 output: 		                    ^~~~
+App 35104 output: /Users/andylee/Repos/Pokeweb/routes.rb:578: syntax error, unexpected tIDENTIFIER, expecting end
+App 35104 output: ...arc_name = params['data']['narc']
+App 35104 output: ...                           ^~~~
+App 35104 output: /Users/andylee/Repos/Pokeweb/routes.rb:585: syntax error, unexpected tIDENTIFIER, expecting end
+App 35104 output: ...writer.py update #{params['data']['file_names'].join(',')} "
+App 35104 output: ...                           ^~~~
+App 35104 output: /Users/andylee/Repos/Pokeweb/routes.rb:585: syntax error, unexpected tIDENTIFIER, expecting end
+App 35104 output: ...te #{params['data']['file_names'].join(',')} "
+App 35104 output: ...                     ^~~~~~~~~~
+App 35104 output: /Users/andylee/Repos/Pokeweb/routes.rb:593: syntax error, unexpected tIDENTIFIER, expecting end
+App 35104 output: 		open('logs.txt', 'a') do |f|
+App 35104 output: 		      ^~~~
+App 35104 output: /Users/andylee/Repos/Pokeweb/routes.rb:593: syntax error, unexpected tIDENTIFIER, expecting end
+App 35104 output: 		open('logs.txt', 'a') do |f|
+App 35104 output: 		                  ^
+App 35104 output: /Users/andylee/Repos/Pokeweb/routes.rb:594: syntax error, unexpected tIDENTIFIER, expecting end
+App 35104 output: ...narc_name} Files #{params['data']['field']} to #{params['dat...
+App 35104 output: ...                           ^~~~
+App 35104 output: /Users/andylee/Repos/Pokeweb/routes.rb:594: syntax error, unexpected tIDENTIFIER, expecting end
+App 35104 output: ...} Files #{params['data']['field']} to #{params['data']['valu...
+App 35104 output: ...                          ^~~~~
+App 35104 output: /Users/andylee/Repos/Pokeweb/routes.rb:594: syntax error, unexpected tIDENTIFIER, expecting end
+App 35104 output: ...a']['field']} to #{params['data']['value']} "
+App 35104 output: ...                           ^~~~
+App 35104 output: /Users/andylee/Repos/Pokeweb/routes.rb:594: syntax error, unexpected tIDENTIFIER, expecting end
+App 35104 output: ...d']} to #{params['data']['value']} "
+App 35104 output: ...                          ^~~~~
+App 35104 output: /Users/andylee/Repos/Pokeweb/routes.rb:609: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+App 35104 output: 	get '/items' do
+App 35104 output: 	           ^
+App 35104 output: /Users/andylee/Repos/Pokeweb/routes.rb:618: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+App 35104 output: 	get '/marts' do
+App 35104 output: 	           ^
+App 35104 output: /Users/andylee/Repos/Pokeweb/routes.rb:630: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+App 35104 output: 	get '/story_texts' do 
+App 35104 output: 	                 ^
+App 35104 output: /Users/andylee/Repos/Pokeweb/routes.rb:633: syntax error, unexpected tIDENTIFIER, expecting end
+App 35104 output: 		@narc_name = 'story_texts'
+App 35104 output: 		              ^~~~~~~~~~~
+App 35104 output: /Users/andylee/Repos/Pokeweb/routes.rb:640: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+App 35104 output: 	get '/story_texts/search' do 
+App 35104 output: 	                        ^
+App 35104 output: /Users/andylee/Repos/Pokeweb/routes.rb:644: syntax error, unexpected tIDENTIFIER, expecting end
+App 35104 output: 		@narc_name = 'story_texts'
+App 35104 output: 		              ^~~~~~~~~~~
+App 35104 output: /Users/andylee/Repos/Pokeweb/routes.rb:655: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+App 35104 output: 	get '/grottos' do
+App 35104 output: 	             ^
+App 35104 output: /Users/andylee/Repos/Pokeweb/routes.rb:664: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+App 35104 output: 	get '/grotto_odds' do 
+App 35104 output: 	                 ^
+App 35104 output: /Users/andylee/Repos/Pokeweb/routes.rb:673: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+App 35104 output: 	get '/info_texts' do 
+App 35104 output: 	                ^
+App 35104 output: /Users/andylee/Repos/Pokeweb/routes.rb:676: syntax error, unexpected tIDENTIFIER, expecting end
+App 35104 output: 		@narc_name = 'message_texts'
+App 35104 output: 		              ^~~~~~~~~~~~~
+App 35104 output: /Users/andylee/Repos/Pokeweb/routes.rb:683: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+App 35104 output: 	get '/info_texts/search' do 
+App 35104 output: 	                       ^
+App 35104 output: /Users/andylee/Repos/Pokeweb/routes.rb:685: syntax error, unexpected tIDENTIFIER, expecting end
+App 35104 output: 		@narc_name = 'message_texts'
+App 35104 output: 		              ^~~~~~~~~~~~~
+App 35104 output: /Users/andylee/Repos/Pokeweb/routes.rb:692: syntax error, unexpected tSTRING_BEG, expecting end
+App 35104 output: ...et '/texts/:narc_name/:bank_id' do 
+App 35104 output: ...                              ^
+App 35104 output: /Users/andylee/Repos/Pokeweb/routes.rb:699: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+App 35104 output: 	get '/logs' do
+App 35104 output: 	          ^
+App 35104 output: /Users/andylee/Repos/Pokeweb/routes.rb:700: syntax error, unexpected tIDENTIFIER, expecting end
+App 35104 output: 		@logs = open('logs.txt', 'a+') do |f|
+App 35104 output: 		              ^~~~
+App 35104 output: /Users/andylee/Repos/Pokeweb/routes.rb:700: syntax error, unexpected tIDENTIFIER, expecting end
+App 35104 output: 		@logs = open('logs.txt', 'a+') do |f|
+App 35104 output: 		                          ^
+App 35104 output: /Users/andylee/Repos/Pokeweb/routes.rb:710: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+App 35104 output: 	get '/export_showdown' do 
+App 35104 output: 	                     ^
+App 35104 output: /Users/andylee/Repos/Pokeweb/routes.rb:720: syntax error, unexpected tIDENTIFIER, expecting end
+App 35104 output: ...	redirect '/dist/index.html?gen=5'
+App 35104 output: ...	
+App 35104 output:                            ^~~
+App 35104 output: /Users/andylee/Repos/Pokeweb/routes.rb:720: syntax error, unexpected tSTRING_BEG, expecting end
+App 35104 output: ...direct '/dist/index.html?gen=5'
+App 35104 output: ...                              ^
+App 35104 output: /Users/andylee/Repos/Pokeweb/routes.rb:723: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+App 35104 output: 	get '/export_docs' do 
+App 35104 output: 	                 ^
+App 35104 output: /Users/andylee/Repos/Pokeweb/routes.rb:728: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+App 35104 output: 	get '/publish_calc' do 
+App 35104 output: 	                  ^
+App 35104 output: /Users/andylee/Repos/Pokeweb/routes.rb:744: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+App 35104 output: 	get '/randomize' do 
+App 35104 output: 	               ^
+App 35104 output: /Users/andylee/Repos/Pokeweb/routes.rb:754: syntax error, unexpected tSTRING_BEG, expecting end
+App 35104 output: 	get '/scripts/:id' do 
+App 35104 output: 	                 ^
+App 35104 output: /Users/andylee/Repos/Pokeweb/routes.rb:768: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+App 35104 output: 	get '/scripts/:id/save' do 
+App 35104 output: 	                      ^
+App 35104 output: /Users/andylee/Repos/Pokeweb/routes.rb:779: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+App 35104 output: 	get '/overworlds/:id/box' do 
+App 35104 output: 	                        ^
+App 35104 output: /Users/andylee/Repos/Pokeweb/routes.rb:792: syntax error, unexpected tIDENTIFIER, expecting end
+App 35104 output: 		erb :'_overworld', :layout => false, :locals ...
+App 35104 output: 		      ^~~~~~~~~~
+App 35104 output: /Users/andylee/Repos/Pokeweb/routes.rb:795: syntax error, unexpected tSTRING_BEG, expecting end
+App 35104 output: 	get '/overworlds/:id' do 
+App 35104 output: 	                    ^
+App 35104 output: /Users/andylee/Repos/Pokeweb/routes.rb:819: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+App 35104 output: 	put '/overworlds/:id/npc' do 
+App 35104 output: 	                        ^
+App 35104 output: /Users/andylee/Repos/Pokeweb/routes.rb:825: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+App 35104 output: 	delete '/overworlds/:id/npc' do
+App 35104 output: 	                           ^
+App 35104 output: /Users/andylee/Repos/Pokeweb/routes.rb:832: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+App 35104 output: 	get '/settings' do 
+App 35104 output: 	              ^
+App 35104 output: /Users/andylee/Repos/Pokeweb/routes.rb:839: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+App 35104 output: 	get '/settings/set' do 
+App 35104 output: 	                  ^
+App 35104 output: /Users/andylee/Repos/Pokeweb/routes.rb:848: unterminated string meets end of file
+App 35104 output: /Users/andylee/Repos/Pokeweb/routes.rb:848: syntax error, unexpected end-of-input, expecting end (SyntaxError)
+App 35104 output:     config.ru:1:in `require'
+App 35104 output:     config.ru:1:in `block in <main>'
+App 35104 output:     /Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/builder.rb:125:in `instance_eval'
+App 35104 output:     /Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/builder.rb:125:in `initialize'
+App 35104 output:     config.ru:1:in `new'
+App 35104 output:     config.ru:1:in `<main>'
+App 35104 output:     /Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/helper-scripts/rack-preloader.rb:101:in `eval'
+App 35104 output:     /Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/helper-scripts/rack-preloader.rb:101:in `preload_app'
+App 35104 output:     /Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/helper-scripts/rack-preloader.rb:189:in `block in <module:App>'
+App 35104 output:     /Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/loader_shared_helpers.rb:397:in `run_block_and_record_step_progress'
+App 35104 output:     /Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/helper-scripts/rack-preloader.rb:188:in `<module:App>'
+App 35104 output:     /Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/helper-scripts/rack-preloader.rb:30:in `<module:PhusionPassenger>'
+App 35104 output:     /Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/helper-scripts/rack-preloader.rb:29:in `<main>'
+[ E 2023-01-12 21:28:55.4740 35087/Tz age/Cor/App/Implementation.cpp:221 ]: Could not spawn process for application /Users/andylee/Repos/Pokeweb: The application encountered the following error: /Users/andylee/Repos/Pokeweb/routes.rb:429: unknown regexp option - t
+/Users/andylee/Repos/Pokeweb/routes.rb:429: syntax error, unexpected tSTRING_BEG, expecting end
+	get '/tms' do 	
+	         ^
+/Users/andylee/Repos/Pokeweb/routes.rb:441: syntax error, unexpected tSTRING_BEG, expecting end
+	get '/story_texts/text/:id' do 
+	                          ^
+/Users/andylee/Repos/Pokeweb/routes.rb:457: syntax error, unexpected tSTRING_BEG, expecting end
+	get '/message_texts/text/:id' do 
+	                            ^
+/Users/andylee/Repos/Pokeweb/routes.rb:473: syntax error, unexpected tSTRING_BEG, expecting end
+	post '/texts/:id' do 
+	                ^
+/Users/andylee/Repos/Pokeweb/routes.rb:491: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+	get '/headers' do 
+	             ^
+/Users/andylee/Repos/Pokeweb/routes.rb:501: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+	get '/encounters' do 
+	                ^
+/Users/andylee/Repos/Pokeweb/routes.rb:509: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+	post '/encounter_season_copy' do 
+	                            ^
+/Users/andylee/Repos/Pokeweb/routes.rb:517: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+	get '/trainers' do 
+	              ^
+/Users/andylee/Repos/Pokeweb/routes.rb:543: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+	get '/trainers/expand' do 
+	                     ^
+/Users/andylee/Repos/Pokeweb/routes.rb:547: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+		redirect '/trainers'
+		                   ^
+/Users/andylee/Repos/Pokeweb/routes.rb:550: syntax error, unexpected tSTRING_BEG, expecting end
+...id/:pok_id/natures/:desired_iv' do 
+...                              ^
+/Users/andylee/Repos/Pokeweb/routes.rb:556: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+	post '/create' do
+	             ^
+/Users/andylee/Repos/Pokeweb/routes.rb:557: syntax error, unexpected tIDENTIFIER, expecting end
+		narc_name = params['data']['narc']
+		                    ^~~~
+/Users/andylee/Repos/Pokeweb/routes.rb:557: syntax error, unexpected tIDENTIFIER, expecting end
+...arc_name = params['data']['narc']
+...                           ^~~~
+/Users/andylee/Repos/Pokeweb/routes.rb:561: syntax error, unexpected tIDENTIFIER, expecting end
+		open('logs.txt', 'a') do |f|
+		      ^~~~
+/Users/andylee/Repos/Pokeweb/routes.rb:561: syntax error, unexpected tIDENTIFIER, expecting end
+		open('logs.txt', 'a') do |f|
+		                  ^
+/Users/andylee/Repos/Pokeweb/routes.rb:562: syntax error, unexpected tIDENTIFIER, expecting end
+...me} Trainer File #{params['data']['file_name']} created new ...
+...                           ^~~~
+/Users/andylee/Repos/Pokeweb/routes.rb:562: syntax error, unexpected tIDENTIFIER, expecting end
+...ile #{params['data']['file_name']} created new trainer pok"
+...                      ^~~~~~~~~
+/Users/andylee/Repos/Pokeweb/routes.rb:565: syntax error, unexpected tIDENTIFIER, expecting end
+...}_index".to_sym => params['data']['sub_index'], :show => "sh...
+...                           ^~~~
+/Users/andylee/Repos/Pokeweb/routes.rb:565: syntax error, unexpected tIDENTIFIER, expecting end
+...ym => params['data']['sub_index'], :show => "show-flex", :do...
+...                      ^~~~~~~~~
+/Users/andylee/Repos/Pokeweb/routes.rb:568: syntax error, unexpected tSTRING_BEG, expecting end
+...oks/moves/:trpok_id/:pok_index' do 
+...                              ^
+/Users/andylee/Repos/Pokeweb/routes.rb:577: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+	post '/batch_update' do 
+	                   ^
+/Users/andylee/Repos/Pokeweb/routes.rb:578: syntax error, unexpected tIDENTIFIER, expecting end
+		narc_name = params['data']['narc']
+		                    ^~~~
+/Users/andylee/Repos/Pokeweb/routes.rb:578: syntax error, unexpected tIDENTIFIER, expecting end
+...arc_name = params['data']['narc']
+...                           ^~~~
+/Users/andylee/Repos/Pokeweb/routes.rb:585: syntax error, unexpected tIDENTIFIER, expecting end
+...writer.py update #{params['data']['file_names'].join(',')} "
+...                           ^~~~
+/Users/andylee/Repos/Pokeweb/routes.rb:585: syntax error, unexpected tIDENTIFIER, expecting end
+...te #{params['data']['file_names'].join(',')} "
+...                     ^~~~~~~~~~
+/Users/andylee/Repos/Pokeweb/routes.rb:593: syntax error, unexpected tIDENTIFIER, expecting end
+		open('logs.txt', 'a') do |f|
+		      ^~~~
+/Users/andylee/Repos/Pokeweb/routes.rb:593: syntax error, unexpected tIDENTIFIER, expecting end
+		open('logs.txt', 'a') do |f|
+		                  ^
+/Users/andylee/Repos/Pokeweb/routes.rb:594: syntax error, unexpected tIDENTIFIER, expecting end
+...narc_name} Files #{params['data']['field']} to #{params['dat...
+...                           ^~~~
+/Users/andylee/Repos/Pokeweb/routes.rb:594: syntax error, unexpected tIDENTIFIER, expecting end
+...} Files #{params['data']['field']} to #{params['data']['valu...
+...                          ^~~~~
+/Users/andylee/Repos/Pokeweb/routes.rb:594: syntax error, unexpected tIDENTIFIER, expecting end
+...a']['field']} to #{params['data']['value']} "
+...                           ^~~~
+/Users/andylee/Repos/Pokeweb/routes.rb:594: syntax error, unexpected tIDENTIFIER, expecting end
+...d']} to #{params['data']['value']} "
+...                          ^~~~~
+/Users/andylee/Repos/Pokeweb/routes.rb:609: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+	get '/items' do
+	           ^
+/Users/andylee/Repos/Pokeweb/routes.rb:618: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+	get '/marts' do
+	           ^
+/Users/andylee/Repos/Pokeweb/routes.rb:630: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+	get '/story_texts' do 
+	                 ^
+/Users/andylee/Repos/Pokeweb/routes.rb:633: syntax error, unexpected tIDENTIFIER, expecting end
+		@narc_name = 'story_texts'
+		              ^~~~~~~~~~~
+/Users/andylee/Repos/Pokeweb/routes.rb:640: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+	get '/story_texts/search' do 
+	                        ^
+/Users/andylee/Repos/Pokeweb/routes.rb:644: syntax error, unexpected tIDENTIFIER, expecting end
+		@narc_name = 'story_texts'
+		              ^~~~~~~~~~~
+/Users/andylee/Repos/Pokeweb/routes.rb:655: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+	get '/grottos' do
+	             ^
+/Users/andylee/Repos/Pokeweb/routes.rb:664: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+	get '/grotto_odds' do 
+	                 ^
+/Users/andylee/Repos/Pokeweb/routes.rb:673: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+	get '/info_texts' do 
+	                ^
+/Users/andylee/Repos/Pokeweb/routes.rb:676: syntax error, unexpected tIDENTIFIER, expecting end
+		@narc_name = 'message_texts'
+		              ^~~~~~~~~~~~~
+/Users/andylee/Repos/Pokeweb/routes.rb:683: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+	get '/info_texts/search' do 
+	                       ^
+/Users/andylee/Repos/Pokeweb/routes.rb:685: syntax error, unexpected tIDENTIFIER, expecting end
+		@narc_name = 'message_texts'
+		              ^~~~~~~~~~~~~
+/Users/andylee/Repos/Pokeweb/routes.rb:692: syntax error, unexpected tSTRING_BEG, expecting end
+...et '/texts/:narc_name/:bank_id' do 
+...                              ^
+/Users/andylee/Repos/Pokeweb/routes.rb:699: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+	get '/logs' do
+	          ^
+/Users/andylee/Repos/Pokeweb/routes.rb:700: syntax error, unexpected tIDENTIFIER, expecting end
+		@logs = open('logs.txt', 'a+') do |f|
+		              ^~~~
+/Users/andylee/Repos/Pokeweb/routes.rb:700: syntax error, unexpected tIDENTIFIER, expecting end
+		@logs = open('logs.txt', 'a+') do |f|
+		                          ^
+/Users/andylee/Repos/Pokeweb/routes.rb:710: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+	get '/export_showdown' do 
+	                     ^
+/Users/andylee/Repos/Pokeweb/routes.rb:720: syntax error, unexpected tIDENTIFIER, expecting end
+...	redirect '/dist/index.html?gen=5'
+...	                           ^~~
+/Users/andylee/Repos/Pokeweb/routes.rb:720: syntax error, unexpected tSTRING_BEG, expecting end
+...direct '/dist/index.html?gen=5'
+...                              ^
+/Users/andylee/Repos/Pokeweb/routes.rb:723: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+	get '/export_docs' do 
+	                 ^
+/Users/andylee/Repos/Pokeweb/routes.rb:728: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+	get '/publish_calc' do 
+	                  ^
+/Users/andylee/Repos/Pokeweb/routes.rb:744: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+	get '/randomize' do 
+	               ^
+/Users/andylee/Repos/Pokeweb/routes.rb:754: syntax error, unexpected tSTRING_BEG, expecting end
+	get '/scripts/:id' do 
+	                 ^
+/Users/andylee/Repos/Pokeweb/routes.rb:768: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+	get '/scripts/:id/save' do 
+	                      ^
+/Users/andylee/Repos/Pokeweb/routes.rb:779: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+	get '/overworlds/:id/box' do 
+	                        ^
+/Users/andylee/Repos/Pokeweb/routes.rb:792: syntax error, unexpected tIDENTIFIER, expecting end
+		erb :'_overworld', :layout => false, :locals ...
+		      ^~~~~~~~~~
+/Users/andylee/Repos/Pokeweb/routes.rb:795: syntax error, unexpected tSTRING_BEG, expecting end
+	get '/overworlds/:id' do 
+	                    ^
+/Users/andylee/Repos/Pokeweb/routes.rb:819: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+	put '/overworlds/:id/npc' do 
+	                        ^
+/Users/andylee/Repos/Pokeweb/routes.rb:825: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+	delete '/overworlds/:id/npc' do
+	                           ^
+/Users/andylee/Repos/Pokeweb/routes.rb:832: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+	get '/settings' do 
+	              ^
+/Users/andylee/Repos/Pokeweb/routes.rb:839: syntax error, unexpected tSTRING_BEG, expecting do or '{' or '('
+	get '/settings/set' do 
+	                  ^
+/Users/andylee/Repos/Pokeweb/routes.rb:848: unterminated string meets end of file
+/Users/andylee/Repos/Pokeweb/routes.rb:848: syntax error, unexpected end-of-input, expecting end (SyntaxError)
+  Error ID: 11ae394a
+  Error details saved to: /var/folders/th/rnc7s7ts4_13_1w48n1wjfwr0000gn/T//passenger-error-lTM5qi.html
+
+[ E 2023-01-12 21:28:55.4843 35087/Ta age/Cor/Con/CheckoutSession.cpp:283 ]: [Client 2-1] Cannot checkout session because a spawning error occurred. The identifier of the error is 11ae394a. Please see earlier logs for details about the error.
+[ E 2023-01-12 21:28:55.4843 35087/T8 age/Cor/Con/CheckoutSession.cpp:283 ]: [Client 1-1] Cannot checkout session because a spawning error occurred. The identifier of the error is 11ae394a. Please see earlier logs for details about the error.
+[ N 2023-01-12 21:28:55.4976 35087/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+[ E 2023-01-12 21:28:55.5039 35087/T5 Sec/Crypto.cpp:990 ]: Removing Passenger private key from keychain failed: Write permissions error.. Please remove the private key from the certificate labeled Phusion Passenger Open Source in your keychain.
+
+[ N 2023-01-12 21:30:14.4534 35087/T8 age/Cor/CoreMain.cpp:671 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2023-01-12 21:30:14.4535 35087/T1 age/Cor/CoreMain.cpp:1246 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2023-01-12 21:30:14.4535 35087/T8 Ser/Server.h:901 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2023-01-12 21:30:14.4536 35087/Te Ser/Server.h:901 ]: [ServerThr.4] Freed 0 spare client objects
+[ N 2023-01-12 21:30:14.4536 35087/Tm Ser/Server.h:901 ]: [ServerThr.8] Freed 0 spare client objects
+[ N 2023-01-12 21:30:14.4536 35087/Tg Ser/Server.h:901 ]: [ServerThr.5] Freed 0 spare client objects
+[ N 2023-01-12 21:30:14.4535 35087/Ta Ser/Server.h:901 ]: [ServerThr.2] Freed 0 spare client objects
+[ N 2023-01-12 21:30:14.4537 35087/Tg Ser/Server.h:558 ]: [ServerThr.5] Shutdown finished
+[ N 2023-01-12 21:30:14.4536 35087/To Ser/Server.h:901 ]: [ServerThr.9] Freed 0 spare client objects
+[ N 2023-01-12 21:30:14.4536 35087/Tc Ser/Server.h:901 ]: [ServerThr.3] Freed 0 spare client objects
+[ N 2023-01-12 21:30:14.4536 35087/Te Ser/Server.h:558 ]: [ServerThr.4] Shutdown finished
+[ N 2023-01-12 21:30:14.4536 35087/Tm Ser/Server.h:558 ]: [ServerThr.8] Shutdown finished
+[ N 2023-01-12 21:30:14.4538 35087/Tc Ser/Server.h:558 ]: [ServerThr.3] Shutdown finished
+[ N 2023-01-12 21:30:14.4537 35087/Tw Ser/Server.h:901 ]: [ApiServer] Freed 0 spare client objects
+[ N 2023-01-12 21:30:14.4536 35087/T8 Ser/Server.h:558 ]: [ServerThr.1] Shutdown finished
+[ N 2023-01-12 21:30:14.4536 35087/Tu Ser/Server.h:901 ]: [ServerThr.12] Freed 0 spare client objects
+[ N 2023-01-12 21:30:14.4539 35087/Tw Ser/Server.h:558 ]: [ApiServer] Shutdown finished
+[ N 2023-01-12 21:30:14.4539 35087/Tu Ser/Server.h:558 ]: [ServerThr.12] Shutdown finished
+[ N 2023-01-12 21:30:14.4537 35087/Ta Ser/Server.h:558 ]: [ServerThr.2] Shutdown finished
+[ N 2023-01-12 21:30:14.4536 35087/Tq Ser/Server.h:901 ]: [ServerThr.10] Freed 0 spare client objects
+[ N 2023-01-12 21:30:14.4536 35087/Tk Ser/Server.h:901 ]: [ServerThr.7] Freed 0 spare client objects
+[ N 2023-01-12 21:30:14.4536 35087/Ti Ser/Server.h:901 ]: [ServerThr.6] Freed 0 spare client objects
+[ N 2023-01-12 21:30:14.4536 35087/Ts Ser/Server.h:901 ]: [ServerThr.11] Freed 0 spare client objects
+[ N 2023-01-12 21:30:14.4540 35087/Ti Ser/Server.h:558 ]: [ServerThr.6] Shutdown finished
+[ N 2023-01-12 21:30:14.4540 35087/Tq Ser/Server.h:558 ]: [ServerThr.10] Shutdown finished
+[ N 2023-01-12 21:30:14.4537 35087/To Ser/Server.h:558 ]: [ServerThr.9] Shutdown finished
+[ N 2023-01-12 21:30:14.4540 35087/Ts Ser/Server.h:558 ]: [ServerThr.11] Shutdown finished
+[ N 2023-01-12 21:30:14.4540 35087/Tk Ser/Server.h:558 ]: [ServerThr.7] Shutdown finished
+[ N 2023-01-12 21:30:15.2938 35087/T1 age/Cor/CoreMain.cpp:1325 ]: Passenger core shutdown finished
+[ N 2023-01-12 21:30:15.8214 35157/T1 age/Wat/WatchdogMain.cpp:1377 ]: Starting Passenger watchdog...
+[ N 2023-01-12 21:30:15.8604 35159/T1 age/Cor/CoreMain.cpp:1340 ]: Starting Passenger core...
+[ N 2023-01-12 21:30:15.8609 35159/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ N 2023-01-12 21:30:15.9054 35159/T1 age/Cor/CoreMain.cpp:1015 ]: Passenger core online, PID 35159
+[ N 2023-01-12 21:30:18.6523 35159/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+[ E 2023-01-12 21:30:18.6578 35159/T5 Sec/Crypto.cpp:990 ]: Removing Passenger private key from keychain failed: Write permissions error.. Please remove the private key from the certificate labeled Phusion Passenger Open Source in your keychain.
+App 35175 output: "init"
+
+[ N 2023-01-12 21:30:53.2115 35159/T8 age/Cor/CoreMain.cpp:671 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2023-01-12 21:30:53.2115 35159/T1 age/Cor/CoreMain.cpp:1246 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2023-01-12 21:30:53.2116 35159/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 35208, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2023-01-12 21:30:53.2119 35159/T8 Ser/Server.h:901 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2023-01-12 21:30:53.2119 35159/Tc Ser/Server.h:901 ]: [ServerThr.3] Freed 0 spare client objects
+[ N 2023-01-12 21:30:53.2120 35159/T8 Ser/Server.h:558 ]: [ServerThr.1] Shutdown finished
+[ N 2023-01-12 21:30:53.2120 35159/Tq Ser/Server.h:901 ]: [ServerThr.10] Freed 0 spare client objects
+[ N 2023-01-12 21:30:53.2120 35159/Ti Ser/Server.h:901 ]: [ServerThr.6] Freed 0 spare client objects
+[ N 2023-01-12 21:30:53.2120 35159/Tm Ser/Server.h:901 ]: [ServerThr.8] Freed 0 spare client objects
+[ N 2023-01-12 21:30:53.2121 35159/Ti Ser/Server.h:558 ]: [ServerThr.6] Shutdown finished
+[ N 2023-01-12 21:30:53.2119 35159/Tf Ser/Server.h:901 ]: [ServerThr.4] Freed 0 spare client objects
+[ N 2023-01-12 21:30:53.2120 35159/Tp Ser/Server.h:901 ]: [ServerThr.9] Freed 0 spare client objects
+[ N 2023-01-12 21:30:53.2120 35159/Tv Ser/Server.h:901 ]: [ServerThr.12] Freed 0 spare client objects
+[ N 2023-01-12 21:30:53.2119 35159/Ta Ser/Server.h:901 ]: [ServerThr.2] Freed 0 spare client objects
+[ N 2023-01-12 21:30:53.2120 35159/Tg Ser/Server.h:901 ]: [ServerThr.5] Freed 0 spare client objects
+[ N 2023-01-12 21:30:53.2120 35159/Tc Ser/Server.h:558 ]: [ServerThr.3] Shutdown finished
+[ N 2023-01-12 21:30:53.2120 35159/Tq Ser/Server.h:558 ]: [ServerThr.10] Shutdown finished
+[ N 2023-01-12 21:30:53.2122 35159/Tf Ser/Server.h:558 ]: [ServerThr.4] Shutdown finished
+[ N 2023-01-12 21:30:53.2120 35159/Ts Ser/Server.h:901 ]: [ServerThr.11] Freed 0 spare client objects
+[ N 2023-01-12 21:30:53.2119 35159/Tk Ser/Server.h:901 ]: [ServerThr.7] Freed 0 spare client objects
+[ N 2023-01-12 21:30:53.2121 35159/Tw Ser/Server.h:901 ]: [ApiServer] Freed 0 spare client objects
+[ N 2023-01-12 21:30:53.2121 35159/Tm Ser/Server.h:558 ]: [ServerThr.8] Shutdown finished
+[ N 2023-01-12 21:30:53.2123 35159/Tg Ser/Server.h:558 ]: [ServerThr.5] Shutdown finished
+[ N 2023-01-12 21:30:53.2122 35159/Ta Ser/Server.h:558 ]: [ServerThr.2] Shutdown finished
+[ N 2023-01-12 21:30:53.2124 35159/Ts Ser/Server.h:558 ]: [ServerThr.11] Shutdown finished
+[ N 2023-01-12 21:30:53.2122 35159/Tv Ser/Server.h:558 ]: [ServerThr.12] Shutdown finished
+[ N 2023-01-12 21:30:53.2122 35159/Tp Ser/Server.h:558 ]: [ServerThr.9] Shutdown finished
+[ N 2023-01-12 21:30:53.2124 35159/Tw Ser/Server.h:558 ]: [ApiServer] Shutdown finished
+[ N 2023-01-12 21:30:53.2124 35159/Tk Ser/Server.h:558 ]: [ServerThr.7] Shutdown finished
+[ N 2023-01-12 21:30:53.2126 35159/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 35208, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2023-01-12 21:30:54.2595 35159/T1 age/Cor/CoreMain.cpp:1325 ]: Passenger core shutdown finished
+[ N 2023-01-12 21:30:54.5211 35245/T1 age/Wat/WatchdogMain.cpp:1377 ]: Starting Passenger watchdog...
+[ N 2023-01-12 21:30:54.5641 35247/T1 age/Cor/CoreMain.cpp:1340 ]: Starting Passenger core...
+[ N 2023-01-12 21:30:54.5646 35247/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ N 2023-01-12 21:30:54.6102 35247/T1 age/Cor/CoreMain.cpp:1015 ]: Passenger core online, PID 35247
+[ N 2023-01-12 21:30:57.3832 35247/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+[ E 2023-01-12 21:30:57.3895 35247/T5 Sec/Crypto.cpp:990 ]: Removing Passenger private key from keychain failed: Write permissions error.. Please remove the private key from the certificate labeled Phusion Passenger Open Source in your keychain.
+App 35264 output: "init"
+App 35297 output: "offline"
+App 35297 output: decompressing arm9
+App 35297 output: outputting texts
+App 35297 output: outputting texts
+App 35297 output: outputting scripts
+App 35297 output: {'rom_name': 'projects/b6test', 'pw': 'offline', 'base_version': 'B2', 'base_rom': 'BW2', 'headers': 359, 'message_texts': 349, 'story_texts': 350, 'scripts': 403}
+App 35297 output: creating project folders
+App 35297 output: projects/b6test/json/moves
+App 35297 output: extracting narcs
+App 35297 output: 
+App 35297 output: parsing texts
+App 35297 output: settings up processing pools
+App 35297 output: outputing narcs
+App 35297 output: grottos
+App 35297 output: grotto_odds
+App 35297 output: 
+App 35297 output: marts
+App 35297 output: matrix
+App 35297 output: items
+App 35297 output: evolutions
+App 35297 output: learnsets
+App 35297 output: personal
+App 35297 output: moves
+App 35297 output: trpok
+App 35297 output: trdata
+App 35297 output: overworlds
+App 35297 output: encounters
+App 35297 output: maps
+App 35297 output: ["0_0c", "--", 60678]
+App 35297 output: ["0_1c", "Elena", 13727]
+App 35297 output: ["0_2c", "Dan", 57440]
+App 35297 output: ["0_3c", "Aspen", 53358]
+App 35297 output: ["0_5c", "N", 63980]
+App 35297 output: ["0_6c", "N", 39202]
+App 35297 output: ["0_7c", "Matthew", 45168]
+App 35297 output: ["0_8c", "Bobby", 58229]
+App 35297 output: ["0_9c", "John", 45277]
+App 35297 output: ["0_10c", "Trisha", 29228]
+App 35297 output: ["0_11c", "Lou", 43893]
+App 35297 output: ["0_12c", "Olwen", 10517]
+App 35297 output: ["0_13c", "Tony", 63100]
+App 35297 output: ["0_14c", "Roberto", 7974]
+App 35297 output: ["0_15c", "Fletcher", 21284]
+App 35297 output: ["0_16c", "Abe", 36310]
+App 35297 output: ["0_17c", "Kevin", 15388]
+App 35297 output: ["0_18c", "Devon", 2436]
+App 35297 output: ["0_19c", "Chaz", 55019]
+App 35297 output: ["0_20c", "Fredric", 8861]
+App 35297 output: ["0_21c", "Hawk & Dar", 30435]
+App 35297 output: ["0_22c", "Joe & Ross", 18078]
+App 35297 output: ["0_23c", "Masa & Yas", 5689]
+App 35297 output: ["0_24c", "Kay & Ali", 58835]
+App 35297 output: ["0_25c", "Ami & Eira", 46446]
+App 35297 output: ["0_26c", "Bob", 20632]
+App 35297 output: ["0_27c", "Alain", 21034]
+App 35297 output: ["0_28c", "Heidi", 12178]
+App 35297 output: ["0_29c", "Alex", 64761]
+App 35297 output: ["0_30c", "Connor", 21262]
+App 35297 output: ["0_31c", "Mariana", 48716]
+App 35297 output: ["0_32c", "Henry", 25905]
+App 35297 output: ["0_33c", "Sibyl", 12953]
+App 35297 output: ["0_34c", "Brad", 1]
+App 35297 output: ["0_35c", "Elizandra", 53690]
+App 35297 output: ["0_36c", "Cassandra", 41301]
+App 35297 output: ["0_37c", "Robert", 49603]
+App 35297 output: ["0_38c", "Shauntal", 26641]
+App 35297 output: ["0_39c", "Marshal", 38976]
+App 35297 output: ["0_40c", "Grimsley", 7160]
+App 35297 output: ["0_41c", "Caitlin", 61117]
+App 35297 output: ["0_42c", "Shaun", 35647]
+App 35297 output: ["0_43c", "Lucca", 22695]
+App 35297 output: ["0_44c", "Shel", 9743]
+App 35297 output: ["0_45c", "Austin", 39863]
+App 35297 output: ["0_46c", "Martin", 1782]
+App 35297 output: ["0_47c", "Persephone", 36156]
+App 35297 output: ["0_48c", "Mari", 27566]
+App 35297 output: ["0_49c", "Elena", 14614]
+App 35297 output: ["0_50c", "Elena", 1662]
+App 35297 output: ["0_51c", "Elena", 54245]
+App 35297 output: ["0_52c", "Aspen", 41293]
+App 35297 output: ["0_53c", "Todd", 32437]
+App 35297 output: ["0_54c", "Alex", 19485]
+App 35297 output: ["0_55c", "Alex", 6533]
+App 35297 output: ["0_56c", "Alex", 59116]
+App 35297 output: ["0_57c", "Connor", 41637]
+App 35297 output: ["0_58c", "Marco", 33212]
+App 35297 output: ["0_59c", "Tony", 24356]
+App 35297 output: ["0_60c", "Tony", 11404]
+App 35297 output: ["0_61c", "Tony", 63987]
+App 35297 output: ["0_62c", "Roberto", 15070]
+App 35297 output: ["0_63c", "Jonah", 38083]
+App 35297 output: ["0_64c", "Dan", 27717]
+App 35297 output: ["0_65c", "Dan", 26610]
+App 35297 output: ["0_66c", "Dan", 24991]
+App 35297 output: ["0_67c", "Bob", 23372]
+App 35297 output: ["0_68c", "Lamarcus", 62121]
+App 35297 output: ["0_69c", "Bobby", 30002]
+App 35297 output: ["0_70c", "Bobby", 17050]
+App 35297 output: ["0_71c", "Bobby", 4098]
+App 35297 output: ["0_72c", "John", 60777]
+App 35297 output: ["0_73c", "Hawk & Dar", 41845]
+App 35297 output: ["0_74c", "Hawk & Dar", 29456]
+App 35297 output: ["0_75c", "Joe & Ross", 17067]
+App 35297 output: ["0_76c", "Joe & Ross", 4678]
+App 35297 output: ["0_77c", "Masa & Yas", 57824]
+App 35297 output: ["0_78c", "Masa & Yas", 45467]
+App 35297 output: ["0_79c", "Les & Web", 33078]
+App 35297 output: ["0_80c", "Alf & Fred", 20689]
+App 35297 output: ["0_81c", "Kay & Ali", 8300]
+App 35297 output: ["0_82c", "Kay & Ali", 61446]
+App 35297 output: ["0_83c", "Ami & Eira", 49057]
+App 35297 output: ["0_84c", "Ami & Eira", 36700]
+App 35297 output: ["0_85c", "Cam & Abby", 24311]
+App 35297 output: ["0_86c", "Ai & Ciel", 11922]
+App 35297 output: ["0_87c", "Kat & Phae", 65068]
+App 35297 output: ["0_88c", "Dana", 58342]
+App 35297 output: ["0_89c", "Alan", 45390]
+App 35297 output: ["0_90c", "Sally", 36534]
+App 35297 output: ["0_91c", "Lucille", 57586]
+App 35297 output: ["0_92c", "Charlie", 19505]
+App 35297 output: ["0_93c", "Arlen", 63213]
+App 35297 output: ["0_94c", "Sayuri", 8878]
+App 35297 output: ["0_95c", "Owen", 37309]
+App 35297 output: ["0_96c", "Brooke", 31019]
+App 35297 output: ["0_97c", "Clint", 15501]
+App 35297 output: ["0_98c", "Bonita", 20392]
+App 35297 output: ["0_99c", "Simon", 55132]
+App 35297 output: ["0_100c", "Blythe", 9765]
+App 35297 output: ["0_101c", "Sophie", 37219]
+App 35297 output: ["0_102c", "Anthony", 31906]
+App 35297 output: ["0_103c", "Emilia", 59360]
+App 35297 output: ["0_104c", "Renaud", 21279]
+App 35297 output: ["0_105c", "Lao", 30457]
+App 35297 output: ["0_106c", "Janie", 34099]
+App 35297 output: ["0_107c", "Colin", 21147]
+App 35297 output: ["0_108c", "Darcy", 8195]
+App 35297 output: ["0_109c", "Leonard", 60247]
+App 35297 output: ["0_110c", "Tyler", 51922]
+App 35297 output: ["0_111c", "Lilly", 38970]
+App 35297 output: ["0_112c", "Leah", 26018]
+App 35297 output: ["0_113c", "Nelson", 38993]
+App 35297 output: ["0_114c", "Wren", 114]
+App 35297 output: ["0_115c", "Caleb", 56793]
+App 35297 output: ["0_116c", "Patty", 43841]
+App 35297 output: ["0_117c", "Alexander", 21233]
+App 35297 output: ["0_118c", "Jules", 17937]
+App 35297 output: ["0_119c", "Kirsten", 39880]
+App 35297 output: ["0_120c", "Gerard", 1799]
+App 35297 output: ["0_121c", "Madhu", 48712]
+App 35297 output: ["0_122c", "Josh", 35760]
+App 35297 output: ["0_123c", "Davey", 22808]
+App 35297 output: ["0_124c", "Boris", 9856]
+App 35297 output: ["0_125c", "Charley", 40767]
+App 35297 output: ["0_126c", "Pierre", 2686]
+App 35297 output: ["0_127c", "Jeff", 40631]
+App 35297 output: ["0_128c", "Alica", 27679]
+App 35297 output: ["0_129c", "Gwyneth", 52281]
+App 35297 output: ["0_130c", "Russel", 14200]
+App 35297 output: ["0_131c", "Mia", 55946]
+App 35297 output: ["0_132c", "Evan", 41406]
+App 35297 output: ["0_133c", "Angi", 32550]
+App 35297 output: ["0_134c", "Miguel", 25714]
+App 35297 output: ["0_135c", "Dudley", 53168]
+App 35297 output: ["0_136c", "Andy", 59229]
+App 35297 output: ["0_137c", "Winter", 42541]
+App 35297 output: ["0_138c", "Dirk", 33325]
+App 35297 output: ["0_139c", "Aurora", 64682]
+App 35297 output: ["0_140c", "Morimoto", 16203]
+App 35297 output: ["0_141c", "Tanya", 64100]
+App 35297 output: ["0_142c", "Murphy", 15974]
+App 35297 output: ["0_143c", "Shauntal", 19749]
+App 35297 output: ["0_144c", "Marshal", 5347]
+App 35297 output: ["0_145c", "Grimsley", 268]
+App 35297 output: ["0_146c", "Caitlin", 27488]
+App 35297 output: ["0_147c", "Lina", 56019]
+App 35297 output: ["0_148c", "Colette", 16861]
+App 35297 output: ["0_149c", "Flynn", 30115]
+App 35297 output: ["0_150c", "Winslow", 6234]
+App 35297 output: ["0_151c", "Ewing", 4211]
+App 35297 output: ["0_152c", "Chase", 60890]
+App 35297 output: ["0_153c", "Elesa", 47938]
+App 35297 output: ["0_154c", "Burgh", 34986]
+App 35297 output: ["0_155c", "Skyla", 22034]
+App 35297 output: ["0_156c", "Cheren", 7121]
+App 35297 output: ["0_157c", "Roxie", 61665]
+App 35297 output: ["0_158c", "Clay", 52809]
+App 35297 output: ["0_159c", "Drayden", 56716]
+App 35297 output: ["0_160c", "Marlon", 18635]
+App 35297 output: ["0_161c", "Rival", 13953]
+App 35297 output: ["0_162c", "Rival", 1001]
+App 35297 output: ["0_163c", "Rival", 53584]
+App 35297 output: ["0_164c", "Terrell", 30149]
+App 35297 output: ["0_165c", "Isabel", 57603]
+App 35297 output: ["0_166c", "Rival", 18824]
+App 35297 output: ["0_167c", "Rival", 5872]
+App 35297 output: ["0_168c", "Rival", 58455]
+App 35297 output: ["0_169c", "Seymour", 36349]
+App 35297 output: ["0_170c", "Cassie", 31036]
+App 35297 output: ["0_171c", "Pedro", 23695]
+App 35297 output: ["0_172c", "Serena", 20409]
+App 35297 output: ["0_173c", "Albert", 47863]
+App 35297 output: ["0_174c", "Lin", 55448]
+App 35297 output: ["0_175c", "Lia & Lily", 23844]
+App 35297 output: ["0_176c", "Kimya", 28566]
+App 35297 output: ["0_177c", "Stonewall", 64633]
+App 35297 output: ["0_178c", "Nicky", 2662]
+App 35297 output: ["0_179c", "Billy Jo", 62325]
+App 35297 output: ["0_180c", "Kenny", 42293]
+App 35297 output: ["0_181c", "Molly", 29341]
+App 35297 output: ["0_182c", "Orville", 42]
+App 35297 output: ["0_183c", "Abigail", 60264]
+App 35297 output: ["0_184c", "Abed", 60116]
+App 35297 output: ["0_185c", "Brent", 47164]
+App 35297 output: ["0_186c", "Bess", 34212]
+App 35297 output: ["0_187c", "Carleigh", 49940]
+App 35297 output: ["0_188c", "Carlen", 929]
+App 35297 output: ["0_189c", "Daneil", 61151]
+App 35297 output: ["0_190c", "Danelle", 23070]
+App 35297 output: ["0_191c", "Elie", 39083]
+App 35297 output: ["0_192c", "Ellas", 26131]
+App 35297 output: ["0_193c", "Frederick", 63078]
+App 35297 output: ["0_194c", "Freira", 1816]
+App 35297 output: ["0_195c", "Gail", 56906]
+App 35297 output: ["0_196c", "Gaius", 43954]
+App 35297 output: ["0_197c", "Harmon", 51411]
+App 35297 output: ["0_198c", "Harmony", 13330]
+App 35297 output: ["0_199c", "Iria", 5098]
+App 35297 output: ["0_200c", "Ira", 15402]
+App 35297 output: ["0_201c", "Benga", 48825]
+App 35297 output: ["0_202c", "Benga", 35873]
+App 35297 output: ["0_203c", "Isaac", 22921]
+App 35297 output: ["0_204c", "Mitchell", 48201]
+App 35297 output: ["0_205c", "Nathan", 41671]
+App 35297 output: ["0_206c", "Jerome", 3590]
+App 35297 output: ["0_207c", "Nikola", 63812]
+App 35297 output: ["0_208c", "Fleming", 25731]
+App 35297 output: ["0_209c", "Ampère", 53185]
+App 35297 output: ["0_210c", "Hubert", 15104]
+App 35297 output: ["0_211c", "Andrew", 42558]
+App 35297 output: ["0_212c", "Braven", 4477]
+App 35297 output: ["0_213c", "Clifford", 58847]
+App 35297 output: ["0_214c", "Dell", 19711]
+App 35297 output: ["0_215c", "Neagle", 54072]
+App 35297 output: ["0_216c", "Joey", 59342]
+App 35297 output: ["0_217c", "Silvester", 28010]
+App 35297 output: ["0_218c", "Stanley", 5364]
+App 35297 output: ["0_219c", "Zeke", 20486]
+App 35297 output: ["0_220c", "Rob & Sal", 56410]
+App 35297 output: ["0_221c", "Keenan", 54959]
+App 35297 output: ["0_222c", "Roland", 16878]
+App 35297 output: ["0_223c", "Rachel", 44332]
+App 35297 output: ["0_224c", "Norbert", 6251]
+App 35297 output: ["0_225c", "Sachiko", 33705]
+App 35297 output: ["0_226c", "Tara & Val", 47643]
+App 35297 output: ["0_227c", "Bob", 39784]
+App 35297 output: ["0_228c", "Jonah", 43180]
+App 35297 output: ["0_229c", "Bob", 36546]
+App 35297 output: ["0_230c", "Jonah", 17276]
+App 35297 output: ["0_231c", "Jonah", 4324]
+App 35297 output: ["0_232c", "Connor", 29279]
+App 35297 output: ["0_233c", "Todd", 48051]
+App 35297 output: ["0_234c", "Connor", 18652]
+App 35297 output: ["0_235c", "Todd", 22147]
+App 35297 output: ["0_236c", "Todd", 9195]
+App 35297 output: ["0_237c", "Roberto", 35479]
+App 35297 output: ["0_238c", "Marco", 52922]
+App 35297 output: ["0_239c", "Roberto", 57620]
+App 35297 output: ["0_240c", "Marco", 27018]
+App 35297 output: ["0_241c", "Marco", 14066]
+App 35297 output: ["0_242c", "John", 1114]
+App 35297 output: ["0_243c", "Lamarcus", 28788]
+App 35297 output: ["0_244c", "John", 44841]
+App 35297 output: ["0_245c", "Lamarcus", 9311]
+App 35297 output: ["0_246c", "Lamarcus", 32338]
+App 35297 output: ["0_247c", "Aspen", 5985]
+App 35297 output: ["0_248c", "Mari", 58568]
+App 35297 output: ["0_249c", "Aspen", 45616]
+App 35297 output: ["0_250c", "Mari", 36760]
+App 35297 output: ["0_251c", "Mari", 23808]
+App 35297 output: ["0_252c", "Ava & Aya", 53332]
+App 35297 output: ["0_253c", "Jenn", 63439]
+App 35297 output: ["0_254c", "Horton", 10686]
+App 35297 output: ["0_255c", "Brian", 37535]
+App 35297 output: ["0_256c", "Preston", 59]
+App 35297 output: ["0_257c", "Stu & Art", 56954]
+App 35297 output: ["0_258c", "Ivan", 2775]
+App 35297 output: ["0_259c", "Blossom", 49654]
+App 35297 output: ["0_260c", "Hector", 11573]
+App 35297 output: ["0_261c", "Krissa", 39027]
+App 35297 output: ["0_262c", "Hank", 16502]
+App 35297 output: ["0_263c", "Jacques", 61168]
+App 35297 output: ["0_264c", "Marissa", 23087]
+App 35297 output: ["0_265c", "Alvin", 47277]
+App 35297 output: ["0_266c", "Mara", 34325]
+App 35297 output: ["0_267c", "Nicole", 39914]
+App 35297 output: ["0_268c", "Tihana", 1833]
+App 35297 output: ["0_269c", "Flo", 40905]
+App 35297 output: ["0_270c", "Cody", 52148]
+App 35297 output: ["0_271c", "Hollie", 51428]
+App 35297 output: ["0_272c", "Greg", 26244]
+App 35297 output: ["0_273c", "Chrissy", 40801]
+App 35297 output: ["0_274c", "Sola & Ana", 43010]
+App 35297 output: ["0_275c", "Pat", 31703]
+App 35297 output: ["0_276c", "Ian", 30084]
+App 35297 output: ["0_277c", "Sheldon", 52315]
+App 35297 output: ["0_278c", "Marian", 14234]
+App 35297 output: ["0_279c", "Kipp", 5211]
+App 35297 output: ["0_280c", "Junko", 57794]
+App 35297 output: ["0_281c", "Jay", 22501]
+App 35297 output: ["0_282c", "Glinda", 25748]
+App 35297 output: ["0_283c", "Sid", 19263]
+App 35297 output: ["0_284c", "Sinclair", 55433]
+App 35297 output: ["0_285c", "Reece", 62665]
+App 35297 output: ["0_286c", "Jones", 49713]
+App 35297 output: ["0_287c", "Damon", 40857]
+App 35297 output: ["0_288c", "Leroy", 27905]
+App 35297 output: ["0_289c", "Vince", 14953]
+App 35297 output: ["0_290c", "Laura", 2001]
+App 35297 output: ["0_291c", "Cleo & Rio", 29098]
+App 35297 output: ["0_292c", "Richard", 5381]
+App 35297 output: ["0_293c", "Lois", 28680]
+App 35297 output: ["0_294c", "Daryl", 19824]
+App 35297 output: ["0_295c", "Dianne", 54976]
+App 35297 output: ["0_296c", "Irene", 59455]
+App 35297 output: ["0_297c", "Serenity", 27117]
+App 35297 output: ["0_298c", "Forrest", 6268]
+App 35297 output: ["0_299c", "Galen", 20599]
+App 35297 output: ["0_300c", "Jeriel", 28409]
+App 35297 output: ["0_301c", "Azra", 64326]
+App 35297 output: ["0_302c", "Marcus", 17782]
+App 35297 output: ["0_303c", "Magnolia", 34213]
+App 35297 output: ["0_304c", "Thalia", 7155]
+App 35297 output: ["0_305c", "Crofton", 34609]
+App 35297 output: ["0_306c", "Myra", 3662]
+App 35297 output: ["0_307c", "Lowell", 56750]
+App 35297 output: ["0_308c", "Kyle", 43293]
+App 35297 output: ["0_309c", "Kaoru", 30341]
+App 35297 output: ["0_310c", "Harold", 8042]
+App 35297 output: ["0_311c", "Desiree", 35496]
+App 35297 output: ["0_312c", "Kenzo", 61116]
+App 35297 output: ["0_313c", "Summer", 57637]
+App 35297 output: ["0_314c", "Matt", 35212]
+App 35297 output: ["0_315c", "Bart", 22260]
+App 35297 output: ["0_316c", "Tim", 33931]
+App 35297 output: ["0_317c", "Arissa", 36383]
+App 35297 output: ["0_318c", "Mitzi", 53035]
+App 35297 output: ["0_319c", "Maynard", 58524]
+App 35297 output: ["0_320c", "Pasqual", 20443]
+App 35297 output: ["0_321c", "Tibor", 14179]
+App 35297 output: ["0_322c", "Niel", 1227]
+App 35297 output: ["0_323c", "Tavarius", 36020]
+App 35297 output: ["0_324c", "Noel", 44954]
+App 35297 output: ["0_325c", "Friedrich", 1274]
+App 35297 output: ["0_326c", "Kenneth", 21330]
+App 35297 output: ["0_327c", "Braid", 6098]
+App 35297 output: ["0_328c", "Jim & Cas", 29642]
+App 35297 output: ["0_329c", "Chance", 38157]
+App 35297 output: ["0_330c", "Reese", 32777]
+App 35297 output: ["0_331c", "Phillip", 60298]
+App 35297 output: ["0_332c", "Elron", 10969]
+App 35297 output: ["0_333c", "Addison", 49671]
+App 35297 output: ["0_334c", "Justin", 11590]
+App 35297 output: ["0_335c", "Chris", 37648]
+App 35297 output: ["0_336c", "Karl", 24696]
+App 35297 output: ["0_337c", "Shannon", 61185]
+App 35297 output: ["0_338c", "Gough", 2888]
+App 35297 output: ["0_339c", "Charles", 50558]
+App 35297 output: ["0_340c", "Charles", 12477]
+App 35297 output: ["0_341c", "Iris", 29567]
+App 35297 output: ["0_342c", "Grunt", 16615]
+App 35297 output: ["0_343c", "Grunt", 7759]
+App 35297 output: ["0_344c", "Colress", 23991]
+App 35297 output: ["0_345c", "Ghetsis", 51445]
+App 35297 output: ["0_346c", "Rood", 34438]
+App 35297 output: ["0_347c", "Zinzolin", 64404]
+App 35297 output: ["0_348c", "Shadow", 2737]
+App 35297 output: ["0_349c", "Dean", 65213]
+App 35297 output: ["0_350c", "Doyle", 52261]
+App 35297 output: ["0_351c", "Melina", 52332]
+App 35297 output: ["0_352c", "Enzio", 26357]
+App 35297 output: ["0_353c", "Jeanne", 41705]
+App 35297 output: ["0_354c", "Santino", 3624]
+App 35297 output: ["0_355c", "Sable", 57132]
+App 35297 output: ["0_356c", "Grunt", 44180]
+App 35297 output: ["0_357c", "Nishino", 53219]
+App 35297 output: ["0_358c", "Colress", 15138]
+App 35297 output: ["0_359c", "Grunt", 5324]
+App 35297 output: ["0_360c", "Nate", 57907]
+App 35297 output: ["0_361c", "Nate", 49051]
+App 35297 output: ["0_362c", "Nate", 36099]
+App 35297 output: ["0_363c", "Rosa", 23147]
+App 35297 output: ["0_364c", "Rosa", 10195]
+App 35297 output: ["0_365c", "Rosa", 62778]
+App 35297 output: ["0_366c", "Charles", 5398]
+App 35297 output: ["0_367c", "Charles", 32852]
+App 35297 output: ["0_368c", "Rival", 28018]
+App 35297 output: ["0_369c", "Rival", 15066]
+App 35297 output: ["0_370c", "Rival", 2114]
+App 35297 output: ["0_371c", "Cheren", 44366]
+App 35297 output: ["0_372c", "Grunt", 41745]
+App 35297 output: ["0_373c", "Grunt", 28793]
+App 35297 output: ["0_374c", "Grunt", 19937]
+App 35297 output: ["0_375c", "Grunt", 6985]
+App 35297 output: ["0_376c", "Grunt", 59568]
+App 35297 output: ["0_377c", "Grunt", 46616]
+App 35297 output: ["0_378c", "Rival", 33664]
+App 35297 output: ["0_379c", "Rival", 20712]
+App 35297 output: ["0_380c", "Rival", 11856]
+App 35297 output: ["0_381c", "Lucius", 56767]
+App 35297 output: ["0_382c", "Jerry", 51487]
+App 35297 output: ["0_383c", "Rhona", 38535]
+App 35297 output: ["0_384c", "Ron", 60541]
+App 35297 output: ["0_385c", "Denae", 12631]
+App 35297 output: ["0_386c", "Leaf", 3775]
+App 35297 output: ["0_387c", "Naoko", 56358]
+App 35297 output: ["0_388c", "Bret", 43406]
+App 35297 output: ["0_389c", "Malory", 47027]
+App 35297 output: ["0_390c", "Boone", 17502]
+App 35297 output: ["0_391c", "Lynette", 36400]
+App 35297 output: ["0_392c", "Petey", 61229]
+App 35297 output: ["0_393c", "Edgar", 48277]
+App 35297 output: ["0_394c", "Marsha", 20460]
+App 35297 output: ["0_395c", "Autumn", 47914]
+App 35297 output: ["0_396c", "Buster", 9833]
+App 35297 output: ["0_397c", "Eva", 40518]
+App 35297 output: ["0_398c", "Tyrone", 31974]
+App 35297 output: ["0_399c", "Bruce", 40196]
+App 35297 output: ["0_400c", "Mack", 27244]
+App 35297 output: ["0_401c", "Jimmy", 14292]
+App 35297 output: ["0_402c", "Mali", 1340]
+App 35297 output: ["0_403c", "Oriana", 38174]
+App 35297 output: ["0_404c", "Rayne", 40971]
+App 35297 output: ["0_405c", "Shane", 32115]
+App 35297 output: ["0_406c", "Jill", 19163]
+App 35297 output: ["0_407c", "Mikey", 6211]
+App 35297 output: ["0_408c", "Henrietta", 21963]
+App 35297 output: ["0_409c", "Rick", 45842]
+App 35297 output: ["0_410c", "Audra", 32890]
+App 35297 output: ["0_411c", "Sean", 24034]
+App 35297 output: ["0_412c", "Cheyenne", 53898]
+App 35297 output: ["0_413c", "Lydon", 63665]
+App 35297 output: ["0_414c", "Bucky", 50713]
+App 35297 output: ["0_415c", "Wright", 39948]
+App 35297 output: ["0_416c", "Jeffery", 1867]
+App 35297 output: ["0_417c", "Ruth", 15953]
+App 35297 output: ["0_418c", "Dara", 3001]
+App 35297 output: ["0_419c", "Stephen", 51462]
+App 35297 output: ["0_420c", "Vincent", 13381]
+App 35297 output: ["0_421c", "Chester", 40835]
+App 35297 output: ["0_422c", "Maya", 16728]
+App 35297 output: ["0_423c", "Gina", 7872]
+App 35297 output: ["0_424c", "Zachary", 24895]
+App 35297 output: ["0_425c", "Wendy", 47503]
+App 35297 output: ["0_426c", "Grunt", 34551]
+App 35297 output: ["0_427c", "Grunt", 21599]
+App 35297 output: ["0_428c", "Grunt", 8647]
+App 35297 output: ["0_429c", "Grunt", 65326]
+App 35297 output: ["0_430c", "Grunt", 52374]
+App 35297 output: ["0_431c", "Grunt", 39422]
+App 35297 output: ["0_432c", "Grunt", 26470]
+App 35297 output: ["0_433c", "Grunt", 13518]
+App 35297 output: ["0_434c", "Grunt", 566]
+App 35297 output: ["0_435c", "Grunt", 57245]
+App 35297 output: ["0_436c", "Grunt", 44293]
+App 35297 output: ["0_437c", "Grunt", 31341]
+App 35297 output: ["0_438c", "Grunt", 18389]
+App 35297 output: ["0_439c", "Grunt", 5437]
+App 35297 output: ["0_440c", "Grunt", 58020]
+App 35297 output: ["0_441c", "Grunt", 45068]
+App 35297 output: ["0_442c", "Grunt", 36212]
+App 35297 output: ["0_443c", "Grunt", 23260]
+App 35297 output: ["0_444c", "Grunt", 10308]
+App 35297 output: ["0_445c", "Grunt", 62891]
+App 35297 output: ["0_446c", "Grunt", 49939]
+App 35297 output: ["0_447c", "Grunt", 36987]
+App 35297 output: ["0_448c", "Grunt", 28131]
+App 35297 output: ["0_449c", "Grunt", 15179]
+App 35297 output: ["0_450c", "Grunt", 2227]
+App 35297 output: ["0_451c", "Grunt", 54810]
+App 35297 output: ["0_452c", "Grunt", 41858]
+App 35297 output: ["0_453c", "Grunt", 28906]
+App 35297 output: ["0_454c", "Grunt", 20050]
+App 35297 output: ["0_455c", "Alberta", 56784]
+App 35297 output: ["0_456c", "Cynthia", 18703]
+App 35297 output: ["0_457c", "Jan", 14033]
+App 35297 output: ["0_458c", "Ilse", 33777]
+App 35297 output: ["0_459c", "Lana", 20825]
+App 35297 output: ["0_460c", "Tammy", 11969]
+App 35297 output: ["0_461c", "Felix", 64552]
+App 35297 output: ["0_462c", "Brady", 51600]
+App 35297 output: ["0_463c", "Clarke", 47044]
+App 35297 output: ["0_464c", "Caroline", 6169]
+App 35297 output: ["0_465c", "Zack", 12744]
+App 35297 output: ["0_466c", "Scott", 3888]
+App 35297 output: ["0_467c", "Adelaide", 9719]
+App 35297 output: ["0_468c", "Jeremiah", 32746]
+App 35297 output: ["0_469c", "Drago", 30567]
+App 35297 output: ["0_470c", "Tia", 59545]
+App 35297 output: ["0_471c", "Rich", 4663]
+App 35297 output: ["0_472c", "Maki", 61342]
+App 35297 output: ["0_473c", "Johan", 48390]
+App 35297 output: ["0_474c", "Mikiko", 21364]
+App 35297 output: ["0_475c", "Don", 51962]
+App 35297 output: ["0_476c", "Doug", 9534]
+App 35297 output: ["0_477c", "Luke", 62117]
+App 35297 output: ["0_478c", "Brenda", 110]
+App 35297 output: ["0_479c", "Juliet", 60332]
+App 35297 output: ["0_480c", "Grant", 27357]
+App 35297 output: ["0_481c", "Benjamin", 4430]
+App 35297 output: ["0_482c", "Tiffany", 11624]
+App 35297 output: ["0_483c", "Lena", 54036]
+App 35297 output: ["0_484c", "Steve", 41084]
+App 35297 output: ["0_485c", "Tom", 36796]
+App 35297 output: ["0_486c", "Miki", 19276]
+App 35297 output: ["0_487c", "Teppei", 50592]
+App 35297 output: ["0_488c", "Manuel", 12511]
+App 35297 output: ["0_489c", "Morgann", 39965]
+App 35297 output: ["0_490c", "Herman", 1884]
+App 35297 output: ["0_491c", "Paul", 24147]
+App 35297 output: ["0_492c", "Cliff", 11195]
+App 35297 output: ["0_493c", "Dusty", 63778]
+App 35297 output: ["0_494c", "Chili", 50826]
+App 35297 output: ["0_495c", "Cress", 37874]
+App 35297 output: ["0_496c", "Cilan", 24922]
+App 35297 output: ["0_497c", "Zinzolin", 45199]
+App 35297 output: ["0_498c", "Shadow", 24912]
+App 35297 output: ["0_499c", "Shadow", 52366]
+App 35297 output: ["0_500c", "Grunt", 42745]
+App 35297 output: ["0_501c", "Clemens", 41739]
+App 35297 output: ["0_502c", "Warren", 3658]
+App 35297 output: ["0_503c", "Neil", 7985]
+App 35297 output: ["0_504c", "Jariel", 25799]
+App 35297 output: ["0_505c", "Janna", 47616]
+App 35297 output: ["0_506c", "Leo", 4333]
+App 35297 output: ["0_507c", "Brand", 21712]
+App 35297 output: ["0_508c", "Maxwell", 4545]
+App 35297 output: ["0_509c", "Katie", 65439]
+App 35297 output: ["0_510c", "Dua", 63904]
+App 35297 output: ["0_511c", "Perry", 39535]
+App 35297 output: ["0_512c", "Low", 60666]
+App 35297 output: ["0_513c", "Kiyo", 13631]
+App 35297 output: ["0_514c", "Kumiko", 5432]
+App 35297 output: ["0_515c", "Lewis", 53262]
+App 35297 output: ["0_516c", "Lewis", 44406]
+App 35297 output: ["0_517c", "Eliza", 31454]
+App 35297 output: ["0_518c", "Eliza", 18502]
+App 35297 output: ["0_519c", "Ray", 49845]
+App 35297 output: ["0_520c", "Cora", 58133]
+App 35297 output: ["0_521c", "Jared", 45181]
+App 35297 output: ["0_522c", "Markus", 28460]
+App 35297 output: ["0_523c", "Corey", 23373]
+App 35297 output: ["0_524c", "Chan", 10421]
+App 35297 output: ["0_525c", "Cairn", 63004]
+App 35297 output: ["0_526c", "Gus", 39024]
+App 35297 output: ["0_527c", "Victor", 34660]
+App 35297 output: ["0_528c", "Patton", 29347]
+App 35297 output: ["0_529c", "Ryan", 15292]
+App 35297 output: ["0_530c", "Hunter", 18720]
+App 35297 output: ["0_531c", "Wade", 54923]
+App 35297 output: ["0_532c", "Zach", 41971]
+App 35297 output: ["0_533c", "Julia", 29019]
+App 35297 output: ["0_534c", "Carter", 30234]
+App 35297 output: ["0_535c", "Chloris", 57688]
+App 35297 output: ["0_536c", "Iris", 59794]
+App 35297 output: ["0_537c", "Anna", 46842]
+App 35297 output: ["0_538c", "Beverly", 8980]
+App 35297 output: ["0_539c", "Otto", 20938]
+App 35297 output: ["0_540c", "Jeremy", 31121]
+App 35297 output: ["0_541c", "Ronald", 58575]
+App 35297 output: ["0_542c", "Lumi", 51713]
+App 35297 output: ["0_543c", "Briana", 47948]
+App 35297 output: ["0_544c", "Louis", 25809]
+App 35297 output: ["0_545c", "Vicki", 12857]
+App 35297 output: ["0_546c", "Corky", 4001]
+App 35297 output: ["0_547c", "Shaye", 56584]
+App 35297 output: ["0_548c", "Mary", 43632]
+App 35297 output: ["0_549c", "Jude", 30680]
+App 35297 output: ["0_550c", "Georgia", 10754]
+App 35297 output: ["0_551c", "Daniel", 38208]
+App 35297 output: ["0_552c", "Grace", 57359]
+App 35297 output: ["0_553c", "Micki", 48503]
+App 35297 output: ["0_554c", "Joyce", 35551]
+App 35297 output: ["0_555c", "Bryce", 22599]
+App 35297 output: ["0_556c", "Sarah", 9647]
+App 35297 output: ["0_557c", "Jaye", 62230]
+App 35297 output: ["0_558c", "Lurleen", 1014]
+App 35297 output: ["0_559c", "Wes", 54204]
+App 35297 output: ["0_560c", "Rae & Ula", 40150]
+App 35297 output: ["0_561c", "Tobias", 50609]
+App 35297 output: ["0_562c", "Keith", 1566]
+App 35297 output: ["0_563c", "Kendall", 39982]
+App 35297 output: ["0_564c", "Randall", 1901]
+App 35297 output: ["0_565c", "Annie", 32341]
+App 35297 output: ["0_566c", "Eileen", 24042]
+App 35297 output: ["0_567c", "Terrance", 18758]
+App 35297 output: ["0_568c", "Lumina", 13415]
+App 35297 output: ["0_569c", "Tully", 46068]
+App 35297 output: ["0_570c", "Ena", 36907]
+App 35297 output: ["0_571c", "Astor", 24260]
+App 35297 output: ["0_572c", "Mai", 34181]
+App 35297 output: ["0_573c", "Ingrid", 52383]
+App 35297 output: ["0_574c", "Tyra", 50939]
+App 35297 output: ["0_575c", "Ryder", 37987]
+App 35297 output: ["0_576c", "Eustace", 3675]
+App 35297 output: ["0_577c", "Arnold", 63897]
+App 35297 output: ["0_578c", "Parker", 25816]
+App 35297 output: ["0_579c", "Elaine", 53270]
+App 35297 output: ["0_580c", "Rocky", 42858]
+App 35297 output: ["0_581c", "Colress", 42643]
+App 35297 output: ["0_582c", "Alder", 16954]
+App 35297 output: ["0_583c", "Shadow", 64784]
+App 35297 output: ["0_584c", "Zinzolin", 17019]
+App 35297 output: ["0_585c", "Grunt", 47729]
+App 35297 output: ["0_586c", "Grunt", 34777]
+App 35297 output: ["0_587c", "Grunt", 21825]
+App 35297 output: ["0_588c", "Rival", 8873]
+App 35297 output: ["0_589c", "Rival", 61456]
+App 35297 output: ["0_590c", "Rival", 52600]
+App 35297 output: ["0_591c", "Nishino", 55044]
+App 35297 output: ["0_592c", "Morimoto", 4634]
+App 35297 output: ["0_593c", "Keita", 13744]
+App 35297 output: ["0_594c", "Billy", 792]
+App 35297 output: ["0_595c", "Alia", 53375]
+App 35297 output: ["0_596c", "Jamie", 44519]
+App 35297 output: ["0_597c", "Al", 61289]
+App 35297 output: ["0_598c", "Beckett", 17850]
+App 35297 output: ["0_599c", "Shelly", 45304]
+App 35297 output: ["0_600c", "Cathy", 58246]
+App 35297 output: ["0_601c", "Logan", 45294]
+App 35297 output: ["0_602c", "Webster", 29364]
+App 35297 output: ["0_603c", "Shanta", 56818]
+App 35297 output: ["0_604c", "Sterling", 18826]
+App 35297 output: ["0_605c", "Portia", 46191]
+App 35297 output: ["0_606c", "Caroll", 8110]
+App 35297 output: ["0_607c", "Martell", 35564]
+App 35297 output: ["0_608c", "Elmer", 28357]
+App 35297 output: ["0_609c", "Chalina", 57705]
+App 35297 output: ["0_610c", "Pierce", 19624]
+App 35297 output: ["0_611c", "Chandra", 47078]
+App 35297 output: ["0_612c", "Hugo", 42084]
+App 35297 output: ["0_613c", "Mae", 36409]
+App 35297 output: ["0_614c", "Claude", 31138]
+App 35297 output: ["0_615c", "Cecile", 58592]
+App 35297 output: ["0_616c", "    ", 59907]
+App 35297 output: ["0_617c", "    ", 46955]
+App 35297 output: ["0_618c", "    ", 34003]
+App 35297 output: ["0_619c", "    ", 21051]
+App 35297 output: ["0_620c", "    ", 12195]
+App 35297 output: ["0_621c", "Rolan", 64778]
+App 35297 output: ["0_622c", "Abe", 22862]
+App 35297 output: ["0_623c", "Chaz", 38874]
+App 35297 output: ["0_624c", "Mariana", 10771]
+App 35297 output: ["0_625c", "Henry", 12970]
+App 35297 output: ["0_626c", "Sibyl", 18]
+App 35297 output: ["0_627c", "Brad", 56697]
+App 35297 output: ["0_628c", "Elizandra", 50005]
+App 35297 output: ["0_629c", "Cassandra", 37616]
+App 35297 output: ["0_630c", "Robert", 11658]
+App 35297 output: ["0_631c", "Tanya", 4889]
+App 35297 output: ["0_632c", "Cheren", 1031]
+App 35297 output: ["0_633c", "Keston", 61253]
+App 35297 output: ["0_634c", "Millie", 23172]
+App 35297 output: ["0_635c", "Kelsey", 50626]
+App 35297 output: ["0_636c", "Kathrine", 34825]
+App 35297 output: ["0_637c", "Kentaro", 39999]
+App 35297 output: ["0_638c", "Lee", 63517]
+App 35297 output: ["0_639c", "Ralph", 40535]
+App 35297 output: ["0_640c", "Dwayne", 24059]
+App 35297 output: ["0_641c", "Melita", 51513]
+App 35297 output: ["0_642c", "Hillary", 13432]
+App 35297 output: ["0_643c", "Sinan", 54262]
+App 35297 output: ["0_644c", "Rosaline", 22440]
+App 35297 output: ["0_645c", "Keita", 32454]
+App 35297 output: ["0_646c", "Nicholas", 2963]
+App 35297 output: ["0_647c", "Ethel", 6550]
+App 35297 output: ["0_648c", "Jojo", 59133]
+App 35297 output: ["0_649c", "José", 46181]
+App 35297 output: ["0_650c", "Samantha", 29536]
+App 35297 output: ["0_651c", "Ally & Amy", 27326]
+App 35297 output: ["0_652c", "Elliot", 25833]
+App 35297 output: ["0_653c", "Lydia", 64004]
+App 35297 output: ["0_654c", "Marie", 51052]
+App 35297 output: ["0_655c", "Talon", 38100]
+App 35297 output: ["0_656c", "Corin", 25148]
+App 35297 output: ["0_657c", "Abraham", 64801]
+App 35297 output: ["0_658c", "Eddie", 3340]
+App 35297 output: ["0_659c", "Elle", 55923]
+App 35297 output: ["0_660c", "Naoise", 16093]
+App 35297 output: ["0_661c", "Rich", 30019]
+App 35297 output: ["0_662c", "Walt", 17067]
+App 35297 output: ["0_663c", "Sam", 25090]
+App 35297 output: ["0_664c", "Tami", 60794]
+App 35297 output: ["0_665c", "Clara", 47842]
+App 35297 output: ["0_666c", "Jaden", 34890]
+App 35297 output: ["0_667c", "Anja", 21938]
+App 35297 output: ["0_668c", "Tommy", 8986]
+App 35297 output: ["0_669c", "Future", 33807]
+App 35297 output: ["0_670c", "Mariah", 28494]
+App 35297 output: ["0_671c", "Kit", 13162]
+App 35297 output: ["0_672c", "Derek", 26809]
+App 35297 output: ["0_673c", "Dixie", 13857]
+App 35297 output: ["0_674c", "Zaiem", 905]
+App 35297 output: ["0_675c", "Maggie", 34694]
+App 35297 output: ["0_676c", "Xiao", 44632]
+App 35297 output: ["0_677c", "Edward", 56835]
+App 35297 output: ["0_678c", "Thomas", 18754]
+App 35297 output: ["0_679c", "Heath", 5776]
+App 35297 output: ["0_680c", "Jebediah", 65016]
+App 35297 output: ["0_681c", "Shelby", 35581]
+App 35297 output: ["0_682c", "Geoff", 36551]
+App 35297 output: ["0_683c", "Belle", 23599]
+App 35297 output: ["0_684c", "Rival", 10647]
+App 35297 output: ["0_685c", "Rival", 63230]
+App 35297 output: ["0_686c", "Rival", 50278]
+App 35297 output: ["0_687c", "Shadow", 36468]
+App 35297 output: ["0_688c", "Shadow", 31155]
+App 35297 output: ["0_689c", "Shadow", 58609]
+App 35297 output: ["0_690c", "Grunt", 2566]
+App 35297 output: ["0_691c", "Britney", 47982]
+App 35297 output: ["0_692c", "Gilligan", 13673]
+App 35297 output: ["0_693c", "Rival", 29245]
+App 35297 output: ["0_694c", "Rival", 20389]
+App 35297 output: ["0_695c", "Rival", 7437]
+App 35297 output: ["0_696c", "Rival", 60020]
+App 35297 output: ["0_697c", "Rival", 47068]
+App 35297 output: ["0_698c", "Rival", 34116]
+App 35297 output: ["0_699c", "Diana", 21164]
+App 35297 output: ["0_700c", "Diana", 8212]
+App 35297 output: ["0_701c", "Rival", 64891]
+App 35297 output: ["0_702c", "Rival", 51939]
+App 35297 output: ["0_703c", "Rival", 38987]
+App 35297 output: ["0_704c", "Zinzolin", 27865]
+App 35297 output: ["0_705c", "Grunt", 13083]
+App 35297 output: ["0_709c", "Cheren", 50643]
+App 35297 output: ["0_710c", "Cheren", 12562]
+App 35297 output: ["0_711c", "Cheren", 40016]
+App 35297 output: ["0_712c", "Rodrigo", 1935]
+App 35297 output: ["0_713c", "Gordon", 62157]
+App 35297 output: ["0_714c", "Andrey", 24076]
+App 35297 output: ["0_715c", "Grigor", 51530]
+App 35297 output: ["0_716c", "Donny", 9873]
+App 35297 output: ["0_717c", "Mathis", 40903]
+App 35297 output: ["0_718c", "Natasha", 2822]
+App 35297 output: ["0_719c", "Nina", 40648]
+App 35297 output: ["0_720c", "Eve", 3462]
+App 35297 output: ["0_721c", "Trish", 14744]
+App 35297 output: ["0_722c", "Jacqueline", 14]
+App 35297 output: ["0_723c", "Layla", 54375]
+App 35297 output: ["0_724c", "Grunt", 41423]
+App 35297 output: ["0_725c", "Carol", 32567]
+App 35297 output: ["0_726c", "Derrick", 25850]
+App 35297 output: ["0_727c", "Lizzy", 6663]
+App 35297 output: ["0_728c", "Amy", 56557]
+App 35297 output: ["0_729c", "Nicolas", 42677]
+App 35297 output: ["0_730c", "Wesley", 4596]
+App 35297 output: ["0_731c", "Alize", 24486]
+App 35297 output: ["0_734c", "Clarence", 63345]
+App 35297 output: ["0_735c", "Jack", 38213]
+App 35297 output: ["0_736c", "Gary", 25261]
+App 35297 output: ["0_737c", "Anders", 32937]
+App 35297 output: ["0_738c", "Daya", 3453]
+App 35297 output: ["0_739c", "William", 55078]
+App 35297 output: ["0_740c", "Rita", 43084]
+App 35297 output: ["0_741c", "Olesia", 44451]
+App 35297 output: ["0_742c", "Nandor", 6370]
+App 35297 output: ["0_743c", "Athena", 33824]
+App 35297 output: ["0_744c", "Franklin", 31483]
+App 35297 output: ["0_745c", "Masahiro", 54510]
+App 35297 output: ["0_746c", "Waylon", 17884]
+App 35297 output: ["0_747c", "Seymour", 45338]
+App 35297 output: ["0_748c", "Cassie", 7257]
+App 35297 output: ["0_749c", "Seymour", 34711]
+App 35297 output: ["0_750c", "Cassie", 29398]
+App 35297 output: ["0_751c", "Grunt", 39874]
+App 35297 output: ["0_752c", "April", 26922]
+App 35297 output: ["0_753c", "May & Mal", 9325]
+App 35297 output: ["0_754c", "Ricky", 1018]
+App 35297 output: ["0_755c", "Jean-Paul", 50082]
+App 35297 output: ["0_756c", "Tina", 44745]
+App 35297 output: ["0_757c", "Ernest", 57739]
+App 35297 output: ["0_758c", "Eli", 10547]
+App 35297 output: ["0_759c", "Donnaven", 49221]
+App 35297 output: ["0_760c", "Crispin", 9031]
+App 35297 output: ["0_761c", "Joseph", 36485]
+App 35297 output: ["0_762c", "Wain", 36664]
+App 35297 output: ["0_763c", "Grunt", 23712]
+App 35297 output: ["0_764c", "Cheren", 20545]
+App 35297 output: ["0_765c", "Roxie", 63343]
+App 35297 output: ["0_766c", "Burgh", 50391]
+App 35297 output: ["0_767c", "Elesa", 37439]
+App 35297 output: ["0_768c", "Clay", 28583]
+App 35297 output: ["0_769c", "Skyla", 15631]
+App 35297 output: ["0_770c", "Drayden", 21432]
+App 35297 output: ["0_771c", "Marlon", 48886]
+App 35297 output: ["0_772c", "Shauntal", 20905]
+App 35297 output: ["0_773c", "Grimsley", 43932]
+App 35297 output: ["0_774c", "Marshal", 178]
+App 35297 output: ["0_775c", "Caitlin", 60400]
+App 35297 output: ["0_776c", "Iris", 60133]
+App 35297 output: ["0_777c", "Shauntal", 4974]
+App 35297 output: ["0_778c", "Grimsley", 28001]
+App 35297 output: ["0_779c", "Marshal", 39146]
+App 35297 output: ["0_780c", "Caitlin", 1065]
+App 35297 output: ["0_781c", "Iris", 65004]
+App 35297 output: ["0_782c", "N", 21293]
+App 35297 output: ["0_783c", "N", 62050]
+App 35297 output: ["0_784c", "N", 37272]
+App 35297 output: ["0_785c", "N", 12494]
+App 35297 output: ["0_786c", "Ray", 32798]
+App 35297 output: ["0_787c", "Cora", 56923]
+App 35297 output: ["0_788c", "Kiyo", 43971]
+App 35297 output: ["0_789c", "Kumiko", 51547]
+App 35297 output: ["0_790c", "Rosalyn", 13466]
+App 35297 output: ["0_791c", "Ike", 25215]
+App 35297 output: ["0_792c", "Henley", 2839]
+App 35297 output: ["0_793c", "Helia", 48842]
+App 35297 output: ["0_794c", "Rival", 35890]
+App 35297 output: ["0_795c", "Rival", 22938]
+App 35297 output: ["0_796c", "Rival", 9986]
+App 35297 output: ["0_797c", "Grunt", 62569]
+App 35297 output: ["0_798c", "Grunt", 49617]
+App 35297 output: ["0_799c", "Grunt", 40761]
+App 35297 output: ["0_800c", "Grunt", 27809]
+App 35297 output: ["0_801c", "Grunt", 14857]
+App 35297 output: ["0_802c", "Grunt", 1905]
+App 35297 output: ["0_803c", "June", 54488]
+App 35297 output: ["0_804c", "December", 36904]
+App 35297 output: ["0_805c", "Augustin", 59935]
+App 35297 output: ["0_806c", "January", 26754]
+App 35297 output: ["0_807c", "Grunt", 6776]
+App 35297 output: ["0_808c", "Grunt", 59359]
+App 35297 output: ["0_809c", "Grunt", 46407]
+App 35297 output: ["0_810c", "Grunt", 33455]
+App 35297 output: ["0_811c", "Julius", 32954]
+App 35297 output: ["0_812c", "Grunt", 11647]
+App 35297 output: ["0_813c", "Colress", 55095]
+App 35297 output: {"bank"=>{"0"=>["-- "], "1"=>["Elena "], "2"=>["Dan "], "3"=>["Aspen "], "4"=>["Bianca"], "5"=>["N "], "6"=>["N "], "7"=>["Matthew "], "8"=>["Bobby "], "9"=>["John "], "10"=>["Trisha "], "11"=>["Lou "], "12"=>["Olwen "], "13"=>["Tony "], "14"=>["Roberto "], "15"=>["Fletcher "], "16"=>["Abe "], "17"=>["Kevin "], "18"=>["Devon "], "19"=>["Chaz "], "20"=>["Fredric "], "21"=>["Hawk & Dar "], "22"=>["Joe & Ross "], "23"=>["Masa & Yas "], "24"=>["Kay & Ali "], "25"=>["Ami & Eira "], "26"=>["Bob "], "27"=>["Alain "], "28"=>["Heidi "], "29"=>["Alex "], "30"=>["Connor "], "31"=>["Mariana "], "32"=>["Henry "], "33"=>["Sibyl "], "34"=>["Brad "], "35"=>["Elizandra "], "36"=>["Cassandra "], "37"=>["Robert "], "38"=>["Shauntal "], "39"=>["Marshal "], "40"=>["Grimsley "], "41"=>["Caitlin "], "42"=>["Shaun "], "43"=>["Lucca "], "44"=>["Shel "], "45"=>["Austin "], "46"=>["Martin "], "47"=>["Persephone "], "48"=>["Mari "], "49"=>["Elena "], "50"=>["Elena "], "51"=>["Elena "], "52"=>["Aspen "], "53"=>["Todd "], "54"=>["Alex "], "55"=>["Alex "], "56"=>["Alex "], "57"=>["Connor "], "58"=>["Marco "], "59"=>["Tony "], "60"=>["Tony "], "61"=>["Tony "], "62"=>["Roberto "], "63"=>["Jonah "], "64"=>["Dan "], "65"=>["Dan "], "66"=>["Dan "], "67"=>["Bob "], "68"=>["Lamarcus "], "69"=>["Bobby "], "70"=>["Bobby "], "71"=>["Bobby "], "72"=>["John "], "73"=>["Hawk & Dar "], "74"=>["Hawk & Dar "], "75"=>["Joe & Ross "], "76"=>["Joe & Ross "], "77"=>["Masa & Yas "], "78"=>["Masa & Yas "], "79"=>["Les & Web "], "80"=>["Alf & Fred "], "81"=>["Kay & Ali "], "82"=>["Kay & Ali "], "83"=>["Ami & Eira "], "84"=>["Ami & Eira "], "85"=>["Cam & Abby "], "86"=>["Ai & Ciel "], "87"=>["Kat & Phae "], "88"=>["Dana "], "89"=>["Alan "], "90"=>["Sally "], "91"=>["Lucille "], "92"=>["Charlie "], "93"=>["Arlen "], "94"=>["Sayuri "], "95"=>["Owen "], "96"=>["Brooke "], "97"=>["Clint "], "98"=>["Bonita "], "99"=>["Simon "], "100"=>["Blythe "], "101"=>["Sophie "], "102"=>["Anthony "], "103"=>["Emilia "], "104"=>["Renaud "], "105"=>["Lao "], "106"=>["Janie "], "107"=>["Colin "], "108"=>["Darcy "], "109"=>["Leonard "], "110"=>["Tyler "], "111"=>["Lilly "], "112"=>["Leah "], "113"=>["Nelson "], "114"=>["Wren "], "115"=>["Caleb "], "116"=>["Patty "], "117"=>["Alexander "], "118"=>["Jules "], "119"=>["Kirsten "], "120"=>["Gerard "], "121"=>["Madhu "], "122"=>["Josh "], "123"=>["Davey "], "124"=>["Boris "], "125"=>["Charley "], "126"=>["Pierre "], "127"=>["Jeff "], "128"=>["Alica "], "129"=>["Gwyneth "], "130"=>["Russel "], "131"=>["Mia "], "132"=>["Evan "], "133"=>["Angi "], "134"=>["Miguel "], "135"=>["Dudley "], "136"=>["Andy "], "137"=>["Winter "], "138"=>["Dirk "], "139"=>["Aurora "], "140"=>["Morimoto "], "141"=>["Tanya "], "142"=>["Murphy "], "143"=>["Shauntal "], "144"=>["Marshal "], "145"=>["Grimsley "], "146"=>["Caitlin "], "147"=>["Lina "], "148"=>["Colette "], "149"=>["Flynn "], "150"=>["Winslow "], "151"=>["Ewing "], "152"=>["Chase "], "153"=>["Elesa "], "154"=>["Burgh "], "155"=>["Skyla "], "156"=>["Cheren "], "157"=>["Roxie "], "158"=>["Clay "], "159"=>["Drayden "], "160"=>["Marlon "], "161"=>["Rival "], "162"=>["Rival "], "163"=>["Rival "], "164"=>["Terrell "], "165"=>["Isabel "], "166"=>["Rival "], "167"=>["Rival "], "168"=>["Rival "], "169"=>["Seymour "], "170"=>["Cassie "], "171"=>["Pedro "], "172"=>["Serena "], "173"=>["Albert "], "174"=>["Lin "], "175"=>["Lia & Lily "], "176"=>["Kimya "], "177"=>["Stonewall "], "178"=>["Nicky "], "179"=>["Billy Jo "], "180"=>["Kenny "], "181"=>["Molly "], "182"=>["Orville "], "183"=>["Abigail "], "184"=>["Abed "], "185"=>["Brent "], "186"=>["Bess "], "187"=>["Carleigh "], "188"=>["Carlen "], "189"=>["Daneil "], "190"=>["Danelle "], "191"=>["Elie "], "192"=>["Ellas "], "193"=>["Frederick "], "194"=>["Freira "], "195"=>["Gail "], "196"=>["Gaius "], "197"=>["Harmon "], "198"=>["Harmony "], "199"=>["Iria "], "200"=>["Ira "], "201"=>["Benga "], "202"=>["Benga "], "203"=>["Isaac "], "204"=>["Mitchell "], "205"=>["Nathan "], "206"=>["Jerome "], "207"=>["Nikola "], "208"=>["Fleming "], "209"=>["Ampère "], "210"=>["Hubert "], "211"=>["Andrew "], "212"=>["Braven "], "213"=>["Clifford "], "214"=>["Dell "], "215"=>["Neagle "], "216"=>["Joey "], "217"=>["Silvester "], "218"=>["Stanley "], "219"=>["Zeke "], "220"=>["Rob & Sal "], "221"=>["Keenan "], "222"=>["Roland "], "223"=>["Rachel "], "224"=>["Norbert "], "225"=>["Sachiko "], "226"=>["Tara & Val "], "227"=>["Bob "], "228"=>["Jonah "], "229"=>["Bob "], "230"=>["Jonah "], "231"=>["Jonah "], "232"=>["Connor "], "233"=>["Todd "], "234"=>["Connor "], "235"=>["Todd "], "236"=>["Todd "], "237"=>["Roberto "], "238"=>["Marco "], "239"=>["Roberto "], "240"=>["Marco "], "241"=>["Marco "], "242"=>["John "], "243"=>["Lamarcus "], "244"=>["John "], "245"=>["Lamarcus "], "246"=>["Lamarcus "], "247"=>["Aspen "], "248"=>["Mari "], "249"=>["Aspen "], "250"=>["Mari "], "251"=>["Mari "], "252"=>["Ava & Aya "], "253"=>["Jenn "], "254"=>["Horton "], "255"=>["Brian "], "256"=>["Preston "], "257"=>["Stu & Art "], "258"=>["Ivan "], "259"=>["Blossom "], "260"=>["Hector "], "261"=>["Krissa "], "262"=>["Hank "], "263"=>["Jacques "], "264"=>["Marissa "], "265"=>["Alvin "], "266"=>["Mara "], "267"=>["Nicole "], "268"=>["Tihana "], "269"=>["Flo "], "270"=>["Cody "], "271"=>["Hollie "], "272"=>["Greg "], "273"=>["Chrissy "], "274"=>["Sola & Ana "], "275"=>["Pat "], "276"=>["Ian "], "277"=>["Sheldon "], "278"=>["Marian "], "279"=>["Kipp "], "280"=>["Junko "], "281"=>["Jay "], "282"=>["Glinda "], "283"=>["Sid "], "284"=>["Sinclair "], "285"=>["Reece "], "286"=>["Jones "], "287"=>["Damon "], "288"=>["Leroy "], "289"=>["Vince "], "290"=>["Laura "], "291"=>["Cleo & Rio "], "292"=>["Richard "], "293"=>["Lois "], "294"=>["Daryl "], "295"=>["Dianne "], "296"=>["Irene "], "297"=>["Serenity "], "298"=>["Forrest "], "299"=>["Galen "], "300"=>["Jeriel "], "301"=>["Azra "], "302"=>["Marcus "], "303"=>["Magnolia "], "304"=>["Thalia "], "305"=>["Crofton "], "306"=>["Myra "], "307"=>["Lowell "], "308"=>["Kyle "], "309"=>["Kaoru "], "310"=>["Harold "], "311"=>["Desiree "], "312"=>["Kenzo "], "313"=>["Summer "], "314"=>["Matt "], "315"=>["Bart "], "316"=>["Tim "], "317"=>["Arissa "], "318"=>["Mitzi "], "319"=>["Maynard "], "320"=>["Pasqual "], "321"=>["Tibor "], "322"=>["Niel "], "323"=>["Tavarius "], "324"=>["Noel "], "325"=>["Friedrich "], "326"=>["Kenneth "], "327"=>["Braid "], "328"=>["Jim & Cas "], "329"=>["Chance "], "330"=>["Reese "], "331"=>["Phillip "], "332"=>["Elron "], "333"=>["Addison "], "334"=>["Justin "], "335"=>["Chris "], "336"=>["Karl "], "337"=>["Shannon "], "338"=>["Gough "], "339"=>["Charles "], "340"=>["Charles "], "341"=>["Iris "], "342"=>["Grunt "], "343"=>["Grunt "], "344"=>["Colress "], "345"=>["Ghetsis "], "346"=>["Rood "], "347"=>["Zinzolin "], "348"=>["Shadow "], "349"=>["Dean "], "350"=>["Doyle "], "351"=>["Melina "], "352"=>["Enzio "], "353"=>["Jeanne "], "354"=>["Santino "], "355"=>["Sable "], "356"=>["Grunt "], "357"=>["Nishino "], "358"=>["Colress "], "359"=>["Grunt "], "360"=>["Nate "], "361"=>["Nate "], "362"=>["Nate "], "363"=>["Rosa "], "364"=>["Rosa "], "365"=>["Rosa "], "366"=>["Charles "], "367"=>["Charles "], "368"=>["Rival "], "369"=>["Rival "], "370"=>["Rival "], "371"=>["Cheren "], "372"=>["Grunt "], "373"=>["Grunt "], "374"=>["Grunt "], "375"=>["Grunt "], "376"=>["Grunt "], "377"=>["Grunt "], "378"=>["Rival "], "379"=>["Rival "], "380"=>["Rival "], "381"=>["Lucius "], "382"=>["Jerry "], "383"=>["Rhona "], "384"=>["Ron "], "385"=>["Denae "], "386"=>["Leaf "], "387"=>["Naoko "], "388"=>["Bret "], "389"=>["Malory "], "390"=>["Boone "], "391"=>["Lynette "], "392"=>["Petey "], "393"=>["Edgar "], "394"=>["Marsha "], "395"=>["Autumn "], "396"=>["Buster "], "397"=>["Eva "], "398"=>["Tyrone "], "399"=>["Bruce "], "400"=>["Mack "], "401"=>["Jimmy "], "402"=>["Mali "], "403"=>["Oriana "], "404"=>["Rayne "], "405"=>["Shane "], "406"=>["Jill "], "407"=>["Mikey "], "408"=>["Henrietta "], "409"=>["Rick "], "410"=>["Audra "], "411"=>["Sean "], "412"=>["Cheyenne "], "413"=>["Lydon "], "414"=>["Bucky "], "415"=>["Wright "], "416"=>["Jeffery "], "417"=>["Ruth "], "418"=>["Dara "], "419"=>["Stephen "], "420"=>["Vincent "], "4
+App 35297 output: 21"=>["Chester "], "422"=>["Maya "], "423"=>["Gina "], "424"=>["Zachary "], "425"=>["Wendy "], "426"=>["Grunt "], "427"=>["Grunt "], "428"=>["Grunt "], "429"=>["Grunt "], "430"=>["Grunt "], "431"=>["Grunt "], "432"=>["Grunt "], "433"=>["Grunt "], "434"=>["Grunt "], "435"=>["Grunt "], "436"=>["Grunt "], "437"=>["Grunt "], "438"=>["Grunt "], "439"=>["Grunt "], "440"=>["Grunt "], "441"=>["Grunt "], "442"=>["Grunt "], "443"=>["Grunt "], "444"=>["Grunt "], "445"=>["Grunt "], "446"=>["Grunt "], "447"=>["Grunt "], "448"=>["Grunt "], "449"=>["Grunt "], "450"=>["Grunt "], "451"=>["Grunt "], "452"=>["Grunt "], "453"=>["Grunt "], "454"=>["Grunt "], "455"=>["Alberta "], "456"=>["Cynthia "], "457"=>["Jan "], "458"=>["Ilse "], "459"=>["Lana "], "460"=>["Tammy "], "461"=>["Felix "], "462"=>["Brady "], "463"=>["Clarke "], "464"=>["Caroline "], "465"=>["Zack "], "466"=>["Scott "], "467"=>["Adelaide "], "468"=>["Jeremiah "], "469"=>["Drago "], "470"=>["Tia "], "471"=>["Rich "], "472"=>["Maki "], "473"=>["Johan "], "474"=>["Mikiko "], "475"=>["Don "], "476"=>["Doug "], "477"=>["Luke "], "478"=>["Brenda "], "479"=>["Juliet "], "480"=>["Grant "], "481"=>["Benjamin "], "482"=>["Tiffany "], "483"=>["Lena "], "484"=>["Steve "], "485"=>["Tom "], "486"=>["Miki "], "487"=>["Teppei "], "488"=>["Manuel "], "489"=>["Morgann "], "490"=>["Herman "], "491"=>["Paul "], "492"=>["Cliff "], "493"=>["Dusty "], "494"=>["Chili "], "495"=>["Cress "], "496"=>["Cilan "], "497"=>["Zinzolin "], "498"=>["Shadow "], "499"=>["Shadow "], "500"=>["Grunt "], "501"=>["Clemens "], "502"=>["Warren "], "503"=>["Neil "], "504"=>["Jariel "], "505"=>["Janna "], "506"=>["Leo "], "507"=>["Brand "], "508"=>["Maxwell "], "509"=>["Katie "], "510"=>["Dua "], "511"=>["Perry "], "512"=>["Low "], "513"=>["Kiyo "], "514"=>["Kumiko "], "515"=>["Lewis "], "516"=>["Lewis "], "517"=>["Eliza "], "518"=>["Eliza "], "519"=>["Ray "], "520"=>["Cora "], "521"=>["Jared "], "522"=>["Markus "], "523"=>["Corey "], "524"=>["Chan "], "525"=>["Cairn "], "526"=>["Gus "], "527"=>["Victor "], "528"=>["Patton "], "529"=>["Ryan "], "530"=>["Hunter "], "531"=>["Wade "], "532"=>["Zach "], "533"=>["Julia "], "534"=>["Carter "], "535"=>["Chloris "], "536"=>["Iris "], "537"=>["Anna "], "538"=>["Beverly "], "539"=>["Otto "], "540"=>["Jeremy "], "541"=>["Ronald "], "542"=>["Lumi "], "543"=>["Briana "], "544"=>["Louis "], "545"=>["Vicki "], "546"=>["Corky "], "547"=>["Shaye "], "548"=>["Mary "], "549"=>["Jude "], "550"=>["Georgia "], "551"=>["Daniel "], "552"=>["Grace "], "553"=>["Micki "], "554"=>["Joyce "], "555"=>["Bryce "], "556"=>["Sarah "], "557"=>["Jaye "], "558"=>["Lurleen "], "559"=>["Wes "], "560"=>["Rae & Ula "], "561"=>["Tobias "], "562"=>["Keith "], "563"=>["Kendall "], "564"=>["Randall "], "565"=>["Annie "], "566"=>["Eileen "], "567"=>["Terrance "], "568"=>["Lumina "], "569"=>["Tully "], "570"=>["Ena "], "571"=>["Astor "], "572"=>["Mai "], "573"=>["Ingrid "], "574"=>["Tyra "], "575"=>["Ryder "], "576"=>["Eustace "], "577"=>["Arnold "], "578"=>["Parker "], "579"=>["Elaine "], "580"=>["Rocky "], "581"=>["Colress "], "582"=>["Alder "], "583"=>["Shadow "], "584"=>["Zinzolin "], "585"=>["Grunt "], "586"=>["Grunt "], "587"=>["Grunt "], "588"=>["Rival "], "589"=>["Rival "], "590"=>["Rival "], "591"=>["Nishino "], "592"=>["Morimoto "], "593"=>["Keita "], "594"=>["Billy "], "595"=>["Alia "], "596"=>["Jamie "], "597"=>["Al "], "598"=>["Beckett "], "599"=>["Shelly "], "600"=>["Cathy "], "601"=>["Logan "], "602"=>["Webster "], "603"=>["Shanta "], "604"=>["Sterling "], "605"=>["Portia "], "606"=>["Caroll "], "607"=>["Martell "], "608"=>["Elmer "], "609"=>["Chalina "], "610"=>["Pierce "], "611"=>["Chandra "], "612"=>["Hugo "], "613"=>["Mae "], "614"=>["Claude "], "615"=>["Cecile "], "616"=>["     "], "617"=>["     "], "618"=>["     "], "619"=>["     "], "620"=>["     "], "621"=>["Rolan "], "622"=>["Abe "], "623"=>["Chaz "], "624"=>["Mariana "], "625"=>["Henry "], "626"=>["Sibyl "], "627"=>["Brad "], "628"=>["Elizandra "], "629"=>["Cassandra "], "630"=>["Robert "], "631"=>["Tanya "], "632"=>["Cheren "], "633"=>["Keston "], "634"=>["Millie "], "635"=>["Kelsey "], "636"=>["Kathrine "], "637"=>["Kentaro "], "638"=>["Lee "], "639"=>["Ralph "], "640"=>["Dwayne "], "641"=>["Melita "], "642"=>["Hillary "], "643"=>["Sinan "], "644"=>["Rosaline "], "645"=>["Keita "], "646"=>["Nicholas "], "647"=>["Ethel "], "648"=>["Jojo "], "649"=>["José "], "650"=>["Samantha "], "651"=>["Ally & Amy "], "652"=>["Elliot "], "653"=>["Lydia "], "654"=>["Marie "], "655"=>["Talon "], "656"=>["Corin "], "657"=>["Abraham "], "658"=>["Eddie "], "659"=>["Elle "], "660"=>["Naoise "], "661"=>["Rich "], "662"=>["Walt "], "663"=>["Sam "], "664"=>["Tami "], "665"=>["Clara "], "666"=>["Jaden "], "667"=>["Anja "], "668"=>["Tommy "], "669"=>["Future "], "670"=>["Mariah "], "671"=>["Kit "], "672"=>["Derek "], "673"=>["Dixie "], "674"=>["Zaiem "], "675"=>["Maggie "], "676"=>["Xiao "], "677"=>["Edward "], "678"=>["Thomas "], "679"=>["Heath "], "680"=>["Jebediah "], "681"=>["Shelby "], "682"=>["Geoff "], "683"=>["Belle "], "684"=>["Rival "], "685"=>["Rival "], "686"=>["Rival "], "687"=>["Shadow "], "688"=>["Shadow "], "689"=>["Shadow "], "690"=>["Grunt "], "691"=>["Britney "], "692"=>["Gilligan "], "693"=>["Rival "], "694"=>["Rival "], "695"=>["Rival "], "696"=>["Rival "], "697"=>["Rival "], "698"=>["Rival "], "699"=>["Diana "], "700"=>["Diana "], "701"=>["Rival "], "702"=>["Rival "], "703"=>["Rival "], "704"=>["Zinzolin "], "705"=>["Grunt "], "706"=>["Bianca"], "707"=>["Bianca"], "708"=>["Bianca"], "709"=>["Cheren "], "710"=>["Cheren "], "711"=>["Cheren "], "712"=>["Rodrigo "], "713"=>["Gordon "], "714"=>["Andrey "], "715"=>["Grigor "], "716"=>["Donny "], "717"=>["Mathis "], "718"=>["Natasha "], "719"=>["Nina "], "720"=>["Eve "], "721"=>["Trish "], "722"=>["Jacqueline "], "723"=>["Layla "], "724"=>["Grunt "], "725"=>["Carol "], "726"=>["Derrick "], "727"=>["Lizzy "], "728"=>["Amy "], "729"=>["Nicolas "], "730"=>["Wesley "], "731"=>["Alize "], "732"=>["Ingo"], "733"=>["Emmet"], "734"=>["Clarence "], "735"=>["Jack "], "736"=>["Gary "], "737"=>["Anders "], "738"=>["Daya "], "739"=>["William "], "740"=>["Rita "], "741"=>["Olesia "], "742"=>["Nandor "], "743"=>["Athena "], "744"=>["Franklin "], "745"=>["Masahiro "], "746"=>["Waylon "], "747"=>["Seymour "], "748"=>["Cassie "], "749"=>["Seymour "], "750"=>["Cassie "], "751"=>["Grunt "], "752"=>["April "], "753"=>["May & Mal "], "754"=>["Ricky "], "755"=>["Jean-Paul "], "756"=>["Tina "], "757"=>["Ernest "], "758"=>["Eli "], "759"=>["Donnaven "], "760"=>["Crispin "], "761"=>["Joseph "], "762"=>["Wain "], "763"=>["Grunt "], "764"=>["Cheren "], "765"=>["Roxie "], "766"=>["Burgh "], "767"=>["Elesa "], "768"=>["Clay "], "769"=>["Skyla "], "770"=>["Drayden "], "771"=>["Marlon "], "772"=>["Shauntal "], "773"=>["Grimsley "], "774"=>["Marshal "], "775"=>["Caitlin "], "776"=>["Iris "], "777"=>["Shauntal "], "778"=>["Grimsley "], "779"=>["Marshal "], "780"=>["Caitlin "], "781"=>["Iris "], "782"=>["N "], "783"=>["N "], "784"=>["N "], "785"=>["N "], "786"=>["Ray "], "787"=>["Cora "], "788"=>["Kiyo "], "789"=>["Kumiko "], "790"=>["Rosalyn "], "791"=>["Ike "], "792"=>["Henley "], "793"=>["Helia "], "794"=>["Rival "], "795"=>["Rival "], "796"=>["Rival "], "797"=>["Grunt "], "798"=>["Grunt "], "799"=>["Grunt "], "800"=>["Grunt "], "801"=>["Grunt "], "802"=>["Grunt "], "803"=>["June "], "804"=>["December "], "805"=>["Augustin "], "806"=>["January "], "807"=>["Grunt "], "808"=>["Grunt "], "809"=>["Grunt "], "810"=>["Grunt "], "811"=>["Julius "], "812"=>["Grunt "], "813"=>["Colress "], "814"=>["Elon Musk"]}, "narc"=>"message_texts", "id"=>"382"}
+App 35297 output: {"file_name"=>"814", "field"=>"class", "value"=>"PkMn Trainer (0)", "narc"=>"trdata"}
+App 35297 output: {"file_name"=>"814", "field"=>"class", "value"=>"PkMn Trainer (0)", "narc"=>"trdata"}
+App 35297 output: "python3 python/trdata_writer.py update 814 projects/b6test"
+App 35297 output: {"file_name"=>"814", "field"=>"class", "value"=>"Team Plasma (101)", "narc"=>"trdata"}
+App 35297 output: {"file_name"=>"814", "field"=>"class", "value"=>"Team Plasma (101)", "narc"=>"trdata"}
+App 35297 output: "python3 python/trdata_writer.py update 814 projects/b6test"
+App 35297 output: {"file_name"=>"814", "field"=>"species_id_0", "value"=>"Blastoise", "narc"=>"trpok"}
+App 35297 output: {"file_name"=>"814", "field"=>"species_id_0", "value"=>"Blastoise", "narc"=>"trpok"}
+App 35297 output: ["species", "move"]
+App 35297 output: "species_id_0"
+App 35297 output: {"file_name"=>"814", "field"=>"species_id_0", "value"=>"Blastoise", "narc"=>"trpok"}
+App 35297 output: "python3 python/trpok_writer.py update 814 projects/b6test"
+App 35297 output: {"file_name"=>"814", "field"=>"level_0", "value"=>"1", "narc"=>"trpok", "int"=>"true"}
+App 35297 output: {"file_name"=>"814", "field"=>"level_0", "value"=>"1", "narc"=>"trpok", "int"=>"true"}
+App 35297 output: {"file_name"=>"814", "field"=>"level_0", "value"=>"1", "narc"=>"trpok", "int"=>"true"}
+App 35297 output: "python3 python/trpok_writer.py update 814 projects/b6test"
+App 35297 output: {"file_name"=>"814", "field"=>"ability_0", "value"=>"0", "narc"=>"trpok", "int"=>"true"}
+App 35297 output: {"file_name"=>"814", "field"=>"ability_0", "value"=>"0", "narc"=>"trpok", "int"=>"true"}
+App 35297 output: {"file_name"=>"814", "field"=>"ability_0", "value"=>"0", "narc"=>"trpok", "int"=>"true"}
+App 35297 output: "python3 python/trpok_writer.py update 814 projects/b6test"
+App 35297 output: {"file_name"=>"814", "field"=>"gender_0", "value"=>"Default", "narc"=>"trpok"}
+App 35297 output: {"file_name"=>"814", "field"=>"gender_0", "value"=>"Default", "narc"=>"trpok"}
+App 35297 output: {"file_name"=>"814", "field"=>"gender_0", "value"=>"Default", "narc"=>"trpok"}
+App 35297 output: "python3 python/trpok_writer.py update 814 projects/b6test"
+App 35297 output: {"file_name"=>"814", "field"=>"ivs_0", "value"=>"0", "narc"=>"trpok", "int"=>"true"}
+App 35297 output: {"file_name"=>"814", "field"=>"ivs_0", "value"=>"0", "narc"=>"trpok", "int"=>"true"}
+App 35297 output: {"file_name"=>"814", "field"=>"ivs_0", "value"=>"0", "narc"=>"trpok", "int"=>"true"}
+App 35297 output: "python3 python/trpok_writer.py update 814 projects/b6test"
+App 35297 output: {"file_name"=>"814", "field"=>"form_0", "value"=>"0", "narc"=>"trpok", "int"=>"true"}
+App 35297 output: {"file_name"=>"814", "field"=>"form_0", "value"=>"0", "narc"=>"trpok", "int"=>"true"}
+App 35297 output: {"file_name"=>"814", "field"=>"form_0", "value"=>"0", "narc"=>"trpok", "int"=>"true"}
+App 35297 output: "python3 python/trpok_writer.py update 814 projects/b6test"
+App 35297 output: {"file_name"=>"814", "field"=>"text_0_entry_", "value"=>"Trainer 814\\c", "narc"=>"message_texts", "narc_const"=>"trdata", "trtext"=>"true"}
+App 35297 output: ["", "Trainer 814", 0]
+App 35297 output: "updateing"
+App 35297 output: {"file_name"=>"bank_381", "field"=>"text_0_entry_", "value"=>"Trainer 814\\c", "narc"=>"message_texts", "narc_const"=>"trdata", "trtext"=>"true"}
+App 35297 output: "python3 python/text_writer.py update bank_381 projects/b6test"
+App 35297 output: 766
+App 35297 output: {"maps"=>[[44, [448, 416, 32, 32]], [45, [480, 416, 32, 32]]], "translate"=>[448, 416], "headers"=>[391, 392]}
+App 35297 output: {"file_name"=>"552", "field"=>"npc_8_script_id", "value"=>"3814", "narc"=>"overworld", "int"=>"true"}
+App 35297 output: {"file_name"=>"552", "field"=>"npc_8_script_id", "value"=>"3814", "narc"=>"overworld", "int"=>"true"}
+App 35297 output: "python3 python/overworld_writer.py update 552 projects/b6test"
+App 35297 output: "creating edited rom"
+App 35297 output: "edited rom created"
+App 35297 output: {"file_name"=>"823", "field"=>"species_id_0", "value"=>"Mewtwo", "narc"=>"trpok"}
+App 35297 output: {"file_name"=>"823", "field"=>"species_id_0", "value"=>"Mewtwo", "narc"=>"trpok"}
+App 35297 output: ["species", "move"]
+App 35297 output: "species_id_0"
+App 35297 output: {"file_name"=>"823", "field"=>"species_id_0", "value"=>"Mewtwo", "narc"=>"trpok"}
+App 35297 output: "python3 python/trpok_writer.py update 823 projects/b6test"
+App 35297 output: {"file_name"=>"823", "field"=>"level_0", "value"=>"100", "narc"=>"trpok", "int"=>"true"}
+App 35297 output: {"file_name"=>"823", "field"=>"level_0", "value"=>"100", "narc"=>"trpok", "int"=>"true"}
+App 35297 output: {"file_name"=>"823", "field"=>"level_0", "value"=>"100", "narc"=>"trpok", "int"=>"true"}
+App 35297 output: "python3 python/trpok_writer.py update 823 projects/b6test"
+App 35297 output: {"file_name"=>"823", "field"=>"level_0", "value"=>"1", "narc"=>"trpok", "int"=>"true"}
+App 35297 output: {"file_name"=>"823", "field"=>"level_0", "value"=>"1", "narc"=>"trpok", "int"=>"true"}
+App 35297 output: {"file_name"=>"823", "field"=>"level_0", "value"=>"1", "narc"=>"trpok", "int"=>"true"}
+App 35297 output: "python3 python/trpok_writer.py update 823 projects/b6test"
+App 35297 output: {"file_name"=>"823", "field"=>"class", "value"=>"PkMn Trainer (0)", "narc"=>"trdata"}
+App 35297 output: {"file_name"=>"823", "field"=>"class", "value"=>"PkMn Trainer (0)", "narc"=>"trdata"}
+App 35297 output: "python3 python/trdata_writer.py update 823 projects/b6test"
+App 35297 output: {"file_name"=>"823", "field"=>"class", "value"=>"Youngster (2)", "narc"=>"trdata"}
+App 35297 output: {"file_name"=>"823", "field"=>"class", "value"=>"Youngster (2)", "narc"=>"trdata"}
+App 35297 output: "python3 python/trdata_writer.py update 823 projects/b6test"
+App 35297 output: {"bank"=>{"0"=>["-- "], "1"=>["Elena "], "2"=>["Dan "], "3"=>["Aspen "], "4"=>["Bianca"], "5"=>["N "], "6"=>["N "], "7"=>["Matthew "], "8"=>["Bobby "], "9"=>["John "], "10"=>["Trisha "], "11"=>["Lou "], "12"=>["Olwen "], "13"=>["Tony "], "14"=>["Roberto "], "15"=>["Fletcher "], "16"=>["Abe "], "17"=>["Kevin "], "18"=>["Devon "], "19"=>["Chaz "], "20"=>["Fredric "], "21"=>["Hawk & Dar "], "22"=>["Joe & Ross "], "23"=>["Masa & Yas "], "24"=>["Kay & Ali "], "25"=>["Ami & Eira "], "26"=>["Bob "], "27"=>["Alain "], "28"=>["Heidi "], "29"=>["Alex "], "30"=>["Connor "], "31"=>["Mariana "], "32"=>["Henry "], "33"=>["Sibyl "], "34"=>["Brad "], "35"=>["Elizandra "], "36"=>["Cassandra "], "37"=>["Robert "], "38"=>["Shauntal "], "39"=>["Marshal "], "40"=>["Grimsley "], "41"=>["Caitlin "], "42"=>["Shaun "], "43"=>["Lucca "], "44"=>["Shel "], "45"=>["Austin "], "46"=>["Martin "], "47"=>["Persephone "], "48"=>["Mari "], "49"=>["Elena "], "50"=>["Elena "], "51"=>["Elena "], "52"=>["Aspen "], "53"=>["Todd "], "54"=>["Alex "], "55"=>["Alex "], "56"=>["Alex "], "57"=>["Connor "], "58"=>["Marco "], "59"=>["Tony "], "60"=>["Tony "], "61"=>["Tony "], "62"=>["Roberto "], "63"=>["Jonah "], "64"=>["Dan "], "65"=>["Dan "], "66"=>["Dan "], "67"=>["Bob "], "68"=>["Lamarcus "], "69"=>["Bobby "], "70"=>["Bobby "], "71"=>["Bobby "], "72"=>["John "], "73"=>["Hawk & Dar "], "74"=>["Hawk & Dar "], "75"=>["Joe & Ross "], "76"=>["Joe & Ross "], "77"=>["Masa & Yas "], "78"=>["Masa & Yas "], "79"=>["Les & Web "], "80"=>["Alf & Fred "], "81"=>["Kay & Ali "], "82"=>["Kay & Ali "], "83"=>["Ami & Eira "], "84"=>["Ami & Eira "], "85"=>["Cam & Abby "], "86"=>["Ai & Ciel "], "87"=>["Kat & Phae "], "88"=>["Dana "], "89"=>["Alan "], "90"=>["Sally "], "91"=>["Lucille "], "92"=>["Charlie "], "93"=>["Arlen "], "94"=>["Sayuri "], "95"=>["Owen "], "96"=>["Brooke "], "97"=>["Clint "], "98"=>["Bonita "], "99"=>["Simon "], "100"=>["Blythe "], "101"=>["Sophie "], "102"=>["Anthony "], "103"=>["Emilia "], "104"=>["Renaud "], "105"=>["Lao "], "106"=>["Janie "], "107"=>["Colin "], "108"=>["Darcy "], "109"=>["Leonard "], "110"=>["Tyler "], "111"=>["Lilly "], "112"=>["Leah "], "113"=>["Nelson "], "114"=>["Wren "], "115"=>["Caleb "], "116"=>["Patty "], "117"=>["Alexander "], "118"=>["Jules "], "119"=>["Kirsten "], "120"=>["Gerard "], "121"=>["Madhu "], "122"=>["Josh "], "123"=>["Davey "], "124"=>["Boris "], "125"=>["Charley "], "126"=>["Pierre "], "127"=>["Jeff "], "128"=>["Alica "], "129"=>["Gwyneth "], "130"=>["Russel "], "131"=>["Mia "], "132"=>["Evan "], "133"=>["Angi "], "134"=>["Miguel "], "135"=>["Dudley "], "136"=>["Andy "], "137"=>["Winter "], "138"=>["Dirk "], "139"=>["Aurora "], "140"=>["Morimoto "], "141"=>["Tanya "], "142"=>["Murphy "], "143"=>["Shauntal "], "144"=>["Marshal "], "145"=>["Grimsley "], "146"=>["Caitlin "], "147"=>["Lina "], "148"=>["Colette "], "149"=>["Flynn "], "150"=>["Winslow "], "151"=>["Ewing "], "152"=>["Chase "], "153"=>["Elesa "], "154"=>["Burgh "], "155"=>["Skyla "], "156"=>["Cheren "], "157"=>["Roxie "], "158"=>["Clay "], "159"=>["Drayden "], "160"=>["Marlon "], "161"=>["Rival "], "162"=>["Rival "], "163"=>["Rival "], "164"=>["Terrell "], "165"=>["Isabel "], "166"=>["Rival "], "167"=>["Rival "], "168"=>["Rival "], "169"=>["Seymour "], "170"=>["Cassie "], "171"=>["Pedro "], "172"=>["Serena "], "173"=>["Albert "], "174"=>["Lin "], "175"=>["Lia & Lily "], "176"=>["Kimya "], "177"=>["Stonewall "], "178"=>["Nicky "], "179"=>["Billy Jo "], "180"=>["Kenny "], "181"=>["Molly "], "182"=>["Orville "], "183"=>["Abigail "], "184"=>["Abed "], "185"=>["Brent "], "186"=>["Bess "], "187"=>["Carleigh "], "188"=>["Carlen "], "189"=>["Daneil "], "190"=>["Danelle "], "191"=>["Elie "], "192"=>["Ellas "], "193"=>["Frederick "], "194"=>["Freira "], "195"=>["Gail "], "196"=>["Gaius "], "197"=>["Harmon "], "198"=>["Harmony "], "199"=>["Iria "], "200"=>["Ira "], "201"=>["Benga "], "202"=>["Benga "], "203"=>["Isaac "], "204"=>["Mitchell "], "205"=>["Nathan "], "206"=>["Jerome "], "207"=>["Nikola "], "208"=>["Fleming "], "209"=>["Ampère "], "210"=>["Hubert "], "211"=>["Andrew "], "212"=>["Braven "], "213"=>["Clifford "], "214"=>["Dell "], "215"=>["Neagle "], "216"=>["Joey "], "217"=>["Silvester "], "218"=>["Stanley "], "219"=>["Zeke "], "220"=>["Rob & Sal "], "221"=>["Keenan "], "222"=>["Roland "], "223"=>["Rachel "], "224"=>["Norbert "], "225"=>["Sachiko "], "226"=>["Tara & Val "], "227"=>["Bob "], "228"=>["Jonah "], "229"=>["Bob "], "230"=>["Jonah "], "231"=>["Jonah "], "232"=>["Connor "], "233"=>["Todd "], "234"=>["Connor "], "235"=>["Todd "], "236"=>["Todd "], "237"=>["Roberto "], "238"=>["Marco "], "239"=>["Roberto "], "240"=>["Marco "], "241"=>["Marco "], "242"=>["John "], "243"=>["Lamarcus "], "244"=>["John "], "245"=>["Lamarcus "], "246"=>["Lamarcus "], "247"=>["Aspen "], "248"=>["Mari "], "249"=>["Aspen "], "250"=>["Mari "], "251"=>["Mari "], "252"=>["Ava & Aya "], "253"=>["Jenn "], "254"=>["Horton "], "255"=>["Brian "], "256"=>["Preston "], "257"=>["Stu & Art "], "258"=>["Ivan "], "259"=>["Blossom "], "260"=>["Hector "], "261"=>["Krissa "], "262"=>["Hank "], "263"=>["Jacques "], "264"=>["Marissa "], "265"=>["Alvin "], "266"=>["Mara "], "267"=>["Nicole "], "268"=>["Tihana "], "269"=>["Flo "], "270"=>["Cody "], "271"=>["Hollie "], "272"=>["Greg "], "273"=>["Chrissy "], "274"=>["Sola & Ana "], "275"=>["Pat "], "276"=>["Ian "], "277"=>["Sheldon "], "278"=>["Marian "], "279"=>["Kipp "], "280"=>["Junko "], "281"=>["Jay "], "282"=>["Glinda "], "283"=>["Sid "], "284"=>["Sinclair "], "285"=>["Reece "], "286"=>["Jones "], "287"=>["Damon "], "288"=>["Leroy "], "289"=>["Vince "], "290"=>["Laura "], "291"=>["Cleo & Rio "], "292"=>["Richard "], "293"=>["Lois "], "294"=>["Daryl "], "295"=>["Dianne "], "296"=>["Irene "], "297"=>["Serenity "], "298"=>["Forrest "], "299"=>["Galen "], "300"=>["Jeriel "], "301"=>["Azra "], "302"=>["Marcus "], "303"=>["Magnolia "], "304"=>["Thalia "], "305"=>["Crofton "], "306"=>["Myra "], "307"=>["Lowell "], "308"=>["Kyle "], "309"=>["Kaoru "], "310"=>["Harold "], "311"=>["Desiree "], "312"=>["Kenzo "], "313"=>["Summer "], "314"=>["Matt "], "315"=>["Bart "], "316"=>["Tim "], "317"=>["Arissa "], "318"=>["Mitzi "], "319"=>["Maynard "], "320"=>["Pasqual "], "321"=>["Tibor "], "322"=>["Niel "], "323"=>["Tavarius "], "324"=>["Noel "], "325"=>["Friedrich "], "326"=>["Kenneth "], "327"=>["Braid "], "328"=>["Jim & Cas "], "329"=>["Chance "], "330"=>["Reese "], "331"=>["Phillip "], "332"=>["Elron "], "333"=>["Addison "], "334"=>["Justin "], "335"=>["Chris "], "336"=>["Karl "], "337"=>["Shannon "], "338"=>["Gough "], "339"=>["Charles "], "340"=>["Charles "], "341"=>["Iris "], "342"=>["Grunt "], "343"=>["Grunt "], "344"=>["Colress "], "345"=>["Ghetsis "], "346"=>["Rood "], "347"=>["Zinzolin "], "348"=>["Shadow "], "349"=>["Dean "], "350"=>["Doyle "], "351"=>["Melina "], "352"=>["Enzio "], "353"=>["Jeanne "], "354"=>["Santino "], "355"=>["Sable "], "356"=>["Grunt "], "357"=>["Nishino "], "358"=>["Colress "], "359"=>["Grunt "], "360"=>["Nate "], "361"=>["Nate "], "362"=>["Nate "], "363"=>["Rosa "], "364"=>["Rosa "], "365"=>["Rosa "], "366"=>["Charles "], "367"=>["Charles "], "368"=>["Rival "], "369"=>["Rival "], "370"=>["Rival "], "371"=>["Cheren "], "372"=>["Grunt "], "373"=>["Grunt "], "374"=>["Grunt "], "375"=>["Grunt "], "376"=>["Grunt "], "377"=>["Grunt "], "378"=>["Rival "], "379"=>["Rival "], "380"=>["Rival "], "381"=>["Lucius "], "382"=>["Jerry "], "383"=>["Rhona "], "384"=>["Ron "], "385"=>["Denae "], "386"=>["Leaf "], "387"=>["Naoko "], "388"=>["Bret "], "389"=>["Malory "], "390"=>["Boone "], "391"=>["Lynette "], "392"=>["Petey "], "393"=>["Edgar "], "394"=>["Marsha "], "395"=>["Autumn "], "396"=>["Buster "], "397"=>["Eva "], "398"=>["Tyrone "], "399"=>["Bruce "], "400"=>["Mack "], "401"=>["Jimmy "], "402"=>["Mali "], "403"=>["Oriana "], "404"=>["Rayne "], "405"=>["Shane "], "406"=>["Jill "], "407"=>["Mikey "], "408"=>["Henrietta "], "409"=>["Rick "], "410"=>["Audra "], "411"=>["Sean "], "412"=>["Cheyenne "], "413"=>["Lydon "], "414"=>["Bucky "], "415"=>["Wright "], "416"=>["Jeffery "], "417"=>["Ruth "], "418"=>["Dara "], "419"=>["Stephen "], "420"=>["Vincent "], "4
+App 35297 output: 21"=>["Chester "], "422"=>["Maya "], "423"=>["Gina "], "424"=>["Zachary "], "425"=>["Wendy "], "426"=>["Grunt "], "427"=>["Grunt "], "428"=>["Grunt "], "429"=>["Grunt "], "430"=>["Grunt "], "431"=>["Grunt "], "432"=>["Grunt "], "433"=>["Grunt "], "434"=>["Grunt "], "435"=>["Grunt "], "436"=>["Grunt "], "437"=>["Grunt "], "438"=>["Grunt "], "439"=>["Grunt "], "440"=>["Grunt "], "441"=>["Grunt "], "442"=>["Grunt "], "443"=>["Grunt "], "444"=>["Grunt "], "445"=>["Grunt "], "446"=>["Grunt "], "447"=>["Grunt "], "448"=>["Grunt "], "449"=>["Grunt "], "450"=>["Grunt "], "451"=>["Grunt "], "452"=>["Grunt "], "453"=>["Grunt "], "454"=>["Grunt "], "455"=>["Alberta "], "456"=>["Cynthia "], "457"=>["Jan "], "458"=>["Ilse "], "459"=>["Lana "], "460"=>["Tammy "], "461"=>["Felix "], "462"=>["Brady "], "463"=>["Clarke "], "464"=>["Caroline "], "465"=>["Zack "], "466"=>["Scott "], "467"=>["Adelaide "], "468"=>["Jeremiah "], "469"=>["Drago "], "470"=>["Tia "], "471"=>["Rich "], "472"=>["Maki "], "473"=>["Johan "], "474"=>["Mikiko "], "475"=>["Don "], "476"=>["Doug "], "477"=>["Luke "], "478"=>["Brenda "], "479"=>["Juliet "], "480"=>["Grant "], "481"=>["Benjamin "], "482"=>["Tiffany "], "483"=>["Lena "], "484"=>["Steve "], "485"=>["Tom "], "486"=>["Miki "], "487"=>["Teppei "], "488"=>["Manuel "], "489"=>["Morgann "], "490"=>["Herman "], "491"=>["Paul "], "492"=>["Cliff "], "493"=>["Dusty "], "494"=>["Chili "], "495"=>["Cress "], "496"=>["Cilan "], "497"=>["Zinzolin "], "498"=>["Shadow "], "499"=>["Shadow "], "500"=>["Grunt "], "501"=>["Clemens "], "502"=>["Warren "], "503"=>["Neil "], "504"=>["Jariel "], "505"=>["Janna "], "506"=>["Leo "], "507"=>["Brand "], "508"=>["Maxwell "], "509"=>["Katie "], "510"=>["Dua "], "511"=>["Perry "], "512"=>["Low "], "513"=>["Kiyo "], "514"=>["Kumiko "], "515"=>["Lewis "], "516"=>["Lewis "], "517"=>["Eliza "], "518"=>["Eliza "], "519"=>["Ray "], "520"=>["Cora "], "521"=>["Jared "], "522"=>["Markus "], "523"=>["Corey "], "524"=>["Chan "], "525"=>["Cairn "], "526"=>["Gus "], "527"=>["Victor "], "528"=>["Patton "], "529"=>["Ryan "], "530"=>["Hunter "], "531"=>["Wade "], "532"=>["Zach "], "533"=>["Julia "], "534"=>["Carter "], "535"=>["Chloris "], "536"=>["Iris "], "537"=>["Anna "], "538"=>["Beverly "], "539"=>["Otto "], "540"=>["Jeremy "], "541"=>["Ronald "], "542"=>["Lumi "], "543"=>["Briana "], "544"=>["Louis "], "545"=>["Vicki "], "546"=>["Corky "], "547"=>["Shaye "], "548"=>["Mary "], "549"=>["Jude "], "550"=>["Georgia "], "551"=>["Daniel "], "552"=>["Grace "], "553"=>["Micki "], "554"=>["Joyce "], "555"=>["Bryce "], "556"=>["Sarah "], "557"=>["Jaye "], "558"=>["Lurleen "], "559"=>["Wes "], "560"=>["Rae & Ula "], "561"=>["Tobias "], "562"=>["Keith "], "563"=>["Kendall "], "564"=>["Randall "], "565"=>["Annie "], "566"=>["Eileen "], "567"=>["Terrance "], "568"=>["Lumina "], "569"=>["Tully "], "570"=>["Ena "], "571"=>["Astor "], "572"=>["Mai "], "573"=>["Ingrid "], "574"=>["Tyra "], "575"=>["Ryder "], "576"=>["Eustace "], "577"=>["Arnold "], "578"=>["Parker "], "579"=>["Elaine "], "580"=>["Rocky "], "581"=>["Colress "], "582"=>["Alder "], "583"=>["Shadow "], "584"=>["Zinzolin "], "585"=>["Grunt "], "586"=>["Grunt "], "587"=>["Grunt "], "588"=>["Rival "], "589"=>["Rival "], "590"=>["Rival "], "591"=>["Nishino "], "592"=>["Morimoto "], "593"=>["Keita "], "594"=>["Billy "], "595"=>["Alia "], "596"=>["Jamie "], "597"=>["Al "], "598"=>["Beckett "], "599"=>["Shelly "], "600"=>["Cathy "], "601"=>["Logan "], "602"=>["Webster "], "603"=>["Shanta "], "604"=>["Sterling "], "605"=>["Portia "], "606"=>["Caroll "], "607"=>["Martell "], "608"=>["Elmer "], "609"=>["Chalina "], "610"=>["Pierce "], "611"=>["Chandra "], "612"=>["Hugo "], "613"=>["Mae "], "614"=>["Claude "], "615"=>["Cecile "], "616"=>["     "], "617"=>["     "], "618"=>["     "], "619"=>["     "], "620"=>["     "], "621"=>["Rolan "], "622"=>["Abe "], "623"=>["Chaz "], "624"=>["Mariana "], "625"=>["Henry "], "626"=>["Sibyl "], "627"=>["Brad "], "628"=>["Elizandra "], "629"=>["Cassandra "], "630"=>["Robert "], "631"=>["Tanya "], "632"=>["Cheren "], "633"=>["Keston "], "634"=>["Millie "], "635"=>["Kelsey "], "636"=>["Kathrine "], "637"=>["Kentaro "], "638"=>["Lee "], "639"=>["Ralph "], "640"=>["Dwayne "], "641"=>["Melita "], "642"=>["Hillary "], "643"=>["Sinan "], "644"=>["Rosaline "], "645"=>["Keita "], "646"=>["Nicholas "], "647"=>["Ethel "], "648"=>["Jojo "], "649"=>["José "], "650"=>["Samantha "], "651"=>["Ally & Amy "], "652"=>["Elliot "], "653"=>["Lydia "], "654"=>["Marie "], "655"=>["Talon "], "656"=>["Corin "], "657"=>["Abraham "], "658"=>["Eddie "], "659"=>["Elle "], "660"=>["Naoise "], "661"=>["Rich "], "662"=>["Walt "], "663"=>["Sam "], "664"=>["Tami "], "665"=>["Clara "], "666"=>["Jaden "], "667"=>["Anja "], "668"=>["Tommy "], "669"=>["Future "], "670"=>["Mariah "], "671"=>["Kit "], "672"=>["Derek "], "673"=>["Dixie "], "674"=>["Zaiem "], "675"=>["Maggie "], "676"=>["Xiao "], "677"=>["Edward "], "678"=>["Thomas "], "679"=>["Heath "], "680"=>["Jebediah "], "681"=>["Shelby "], "682"=>["Geoff "], "683"=>["Belle "], "684"=>["Rival "], "685"=>["Rival "], "686"=>["Rival "], "687"=>["Shadow "], "688"=>["Shadow "], "689"=>["Shadow "], "690"=>["Grunt "], "691"=>["Britney "], "692"=>["Gilligan "], "693"=>["Rival "], "694"=>["Rival "], "695"=>["Rival "], "696"=>["Rival "], "697"=>["Rival "], "698"=>["Rival "], "699"=>["Diana "], "700"=>["Diana "], "701"=>["Rival "], "702"=>["Rival "], "703"=>["Rival "], "704"=>["Zinzolin "], "705"=>["Grunt "], "706"=>["Bianca"], "707"=>["Bianca"], "708"=>["Bianca"], "709"=>["Cheren "], "710"=>["Cheren "], "711"=>["Cheren "], "712"=>["Rodrigo "], "713"=>["Gordon "], "714"=>["Andrey "], "715"=>["Grigor "], "716"=>["Donny "], "717"=>["Mathis "], "718"=>["Natasha "], "719"=>["Nina "], "720"=>["Eve "], "721"=>["Trish "], "722"=>["Jacqueline "], "723"=>["Layla "], "724"=>["Grunt "], "725"=>["Carol "], "726"=>["Derrick "], "727"=>["Lizzy "], "728"=>["Amy "], "729"=>["Nicolas "], "730"=>["Wesley "], "731"=>["Alize "], "732"=>["Ingo"], "733"=>["Emmet"], "734"=>["Clarence "], "735"=>["Jack "], "736"=>["Gary "], "737"=>["Anders "], "738"=>["Daya "], "739"=>["William "], "740"=>["Rita "], "741"=>["Olesia "], "742"=>["Nandor "], "743"=>["Athena "], "744"=>["Franklin "], "745"=>["Masahiro "], "746"=>["Waylon "], "747"=>["Seymour "], "748"=>["Cassie "], "749"=>["Seymour "], "750"=>["Cassie "], "751"=>["Grunt "], "752"=>["April "], "753"=>["May & Mal "], "754"=>["Ricky "], "755"=>["Jean-Paul "], "756"=>["Tina "], "757"=>["Ernest "], "758"=>["Eli "], "759"=>["Donnaven "], "760"=>["Crispin "], "761"=>["Joseph "], "762"=>["Wain "], "763"=>["Grunt "], "764"=>["Cheren "], "765"=>["Roxie "], "766"=>["Burgh "], "767"=>["Elesa "], "768"=>["Clay "], "769"=>["Skyla "], "770"=>["Drayden "], "771"=>["Marlon "], "772"=>["Shauntal "], "773"=>["Grimsley "], "774"=>["Marshal "], "775"=>["Caitlin "], "776"=>["Iris "], "777"=>["Shauntal "], "778"=>["Grimsley "], "779"=>["Marshal "], "780"=>["Caitlin "], "781"=>["Iris "], "782"=>["N "], "783"=>["N "], "784"=>["N "], "785"=>["N "], "786"=>["Ray "], "787"=>["Cora "], "788"=>["Kiyo "], "789"=>["Kumiko "], "790"=>["Rosalyn "], "791"=>["Ike "], "792"=>["Henley "], "793"=>["Helia "], "794"=>["Rival "], "795"=>["Rival "], "796"=>["Rival "], "797"=>["Grunt "], "798"=>["Grunt "], "799"=>["Grunt "], "800"=>["Grunt "], "801"=>["Grunt "], "802"=>["Grunt "], "803"=>["June "], "804"=>["December "], "805"=>["Augustin "], "806"=>["January "], "807"=>["Grunt "], "808"=>["Grunt "], "809"=>["Grunt "], "810"=>["Grunt "], "811"=>["Julius "], "812"=>["Grunt "], "813"=>["Colress "], "814"=>["Elon Musk"], "823"=>["Putin"]}, "narc"=>"message_texts", "id"=>"382"}
+App 35297 output: 766
+App 35297 output: {"maps"=>[[44, [448, 416, 32, 32]], [45, [480, 416, 32, 32]]], "translate"=>[448, 416], "headers"=>[391, 392]}
+App 35297 output: {"file_name"=>"552", "field"=>"npc_8_script_id", "value"=>"3814", "narc"=>"overworld", "int"=>"true"}
+App 35297 output: {"file_name"=>"552", "field"=>"npc_8_script_id", "value"=>"3814", "narc"=>"overworld", "int"=>"true"}
+App 35297 output: "python3 python/overworld_writer.py update 552 projects/b6test"
+App 35297 output: {"file_name"=>"552", "field"=>"npc_8_script_id", "value"=>"3823", "narc"=>"overworld", "int"=>"true"}
+App 35297 output: {"file_name"=>"552", "field"=>"npc_8_script_id", "value"=>"3823", "narc"=>"overworld", "int"=>"true"}
+App 35297 output: "python3 python/overworld_writer.py update 552 projects/b6test"
+App 35297 output: "creating edited rom"
+App 35297 output: "edited rom created"
+App 35297 output: {"file_name"=>"823", "field"=>"text_0_entry_", "value"=>"Trainer 823\\r", "narc"=>"message_texts", "narc_const"=>"trdata", "trtext"=>"true"}
+App 35297 output: ["", "Trainer 823", 0]
+App 35297 output: "updateing"
+App 35297 output: {"file_name"=>"bank_381", "field"=>"text_0_entry_", "value"=>"Trainer 823\\r", "narc"=>"message_texts", "narc_const"=>"trdata", "trtext"=>"true"}
+App 35297 output: "python3 python/text_writer.py update bank_381 projects/b6test"
+App 35297 output: {"file_name"=>"823", "field"=>"text_0_entry_", "value"=>"Trainer 823\\r", "narc"=>"message_texts", "narc_const"=>"trdata", "trtext"=>"true"}
+App 35297 output: ["", "Trainer 823", 0]
+App 35297 output: "updateing"
+App 35297 output: {"file_name"=>"bank_381", "field"=>"text_0_entry_", "value"=>"Trainer 823\\r", "narc"=>"message_texts", "narc_const"=>"trdata", "trtext"=>"true"}
+App 35297 output: "python3 python/text_writer.py update bank_381 projects/b6test"
+App 35297 output: {"file_name"=>"814", "field"=>"text_1_entry_2327", "value"=>"I lost!", "narc"=>"message_texts", "narc_const"=>"trdata", "trtext"=>"true"}
+App 35297 output: nil
+App 35297 output: 2023-01-12 21:49:42 - NoMethodError - undefined method `gsub' for nil:NilClass:
+App 35297 output: 	/Users/andylee/Repos/Pokeweb/models/text.rb:53:in `block in insert_text'
+App 35297 output: 	/Users/andylee/Repos/Pokeweb/models/text.rb:51:in `each'
+App 35297 output: 	/Users/andylee/Repos/Pokeweb/models/text.rb:51:in `insert_text'
+App 35297 output: 	/Users/andylee/Repos/Pokeweb/models/trdata.rb:102:in `update_text'
+App 35297 output: 	/Users/andylee/Repos/Pokeweb/models/trdata.rb:8:in `write_data'
+App 35297 output: 	/Users/andylee/Repos/Pokeweb/routes.rb:344:in `block in <class:MyApp>'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1696:in `call'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1696:in `block in compile!'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1009:in `block (3 levels) in route!'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1027:in `route_eval'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1009:in `block (2 levels) in route!'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1058:in `block in process_route'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1056:in `catch'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1056:in `process_route'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1007:in `block in route!'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1004:in `each'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1004:in `route!'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1128:in `block in dispatch!'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `catch'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `invoke'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1123:in `dispatch!'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:939:in `block in call!'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `catch'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `invoke'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:939:in `call!'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:928:in `call'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/xss_header.rb:20:in `call'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/path_traversal.rb:18:in `call'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/json_csrf.rb:28:in `call'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/base.rb:53:in `call'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/base.rb:53:in `call'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/frame_options.rb:33:in `call'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/null_logger.rb:11:in `call'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/head.rb:12:in `call'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/show_exceptions.rb:23:in `call'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:219:in `call'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:2007:in `call'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1566:in `block in call'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1782:in `synchronize'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1566:in `call'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:266:in `context'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:260:in `call'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:266:in `context'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:260:in `call'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/rack/thread_handler_extension.rb:107:in `process_request'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:157:in `accept_and_process_next_request'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler.rb:419:in `block (3 levels) in start_threads'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+App 35297 output: {"file_name"=>"814", "field"=>"text_2_entry_2328", "value"=>"Field Loss", "narc"=>"message_texts", "narc_const"=>"trdata", "trtext"=>"true"}
+App 35297 output: nil
+App 35297 output: 2023-01-12 21:49:48 - NoMethodError - undefined method `gsub' for nil:NilClass:
+App 35297 output: 	/Users/andylee/Repos/Pokeweb/models/text.rb:53:in `block in insert_text'
+App 35297 output: 	/Users/andylee/Repos/Pokeweb/models/text.rb:51:in `each'
+App 35297 output: 	/Users/andylee/Repos/Pokeweb/models/text.rb:51:in `insert_text'
+App 35297 output: 	/Users/andylee/Repos/Pokeweb/models/trdata.rb:102:in `update_text'
+App 35297 output: 	/Users/andylee/Repos/Pokeweb/models/trdata.rb:8:in `write_data'
+App 35297 output: 	/Users/andylee/Repos/Pokeweb/routes.rb:344:in `block in <class:MyApp>'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1696:in `call'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1696:in `block in compile!'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1009:in `block (3 levels) in route!'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1027:in `route_eval'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1009:in `block (2 levels) in route!'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1058:in `block in process_route'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1056:in `catch'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1056:in `process_route'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1007:in `block in route!'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1004:in `each'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1004:in `route!'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1128:in `block in dispatch!'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `catch'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `invoke'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1123:in `dispatch!'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:939:in `block in call!'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `catch'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `invoke'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:939:in `call!'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:928:in `call'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/xss_header.rb:20:in `call'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/path_traversal.rb:18:in `call'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/json_csrf.rb:28:in `call'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/base.rb:53:in `call'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/base.rb:53:in `call'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/frame_options.rb:33:in `call'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/null_logger.rb:11:in `call'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/head.rb:12:in `call'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/show_exceptions.rb:23:in `call'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:219:in `call'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:2007:in `call'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1566:in `block in call'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1782:in `synchronize'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1566:in `call'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:266:in `context'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:260:in `call'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:266:in `context'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:260:in `call'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/rack/thread_handler_extension.rb:107:in `process_request'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:157:in `accept_and_process_next_request'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler.rb:419:in `block (3 levels) in start_threads'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+App 35297 output: {"file_name"=>"814", "field"=>"text_17_entry_2329", "value"=>"Uh oh", "narc"=>"message_texts", "narc_const"=>"trdata", "trtext"=>"true"}
+App 35297 output: nil
+App 35297 output: 2023-01-12 21:49:53 - NoMethodError - undefined method `gsub' for nil:NilClass:
+App 35297 output: 	/Users/andylee/Repos/Pokeweb/models/text.rb:53:in `block in insert_text'
+App 35297 output: 	/Users/andylee/Repos/Pokeweb/models/text.rb:51:in `each'
+App 35297 output: 	/Users/andylee/Repos/Pokeweb/models/text.rb:51:in `insert_text'
+App 35297 output: 	/Users/andylee/Repos/Pokeweb/models/trdata.rb:102:in `update_text'
+App 35297 output: 	/Users/andylee/Repos/Pokeweb/models/trdata.rb:8:in `write_data'
+App 35297 output: 	/Users/andylee/Repos/Pokeweb/routes.rb:344:in `block in <class:MyApp>'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1696:in `call'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1696:in `block in compile!'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1009:in `block (3 levels) in route!'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1027:in `route_eval'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1009:in `block (2 levels) in route!'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1058:in `block in process_route'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1056:in `catch'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1056:in `process_route'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1007:in `block in route!'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1004:in `each'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1004:in `route!'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1128:in `block in dispatch!'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `catch'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `invoke'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1123:in `dispatch!'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:939:in `block in call!'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `catch'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `invoke'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:939:in `call!'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:928:in `call'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/xss_header.rb:20:in `call'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/path_traversal.rb:18:in `call'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/json_csrf.rb:28:in `call'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/base.rb:53:in `call'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/base.rb:53:in `call'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/frame_options.rb:33:in `call'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/null_logger.rb:11:in `call'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/head.rb:12:in `call'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/show_exceptions.rb:23:in `call'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:219:in `call'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:2007:in `call'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1566:in `block in call'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1782:in `synchronize'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1566:in `call'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:266:in `context'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:260:in `call'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:266:in `context'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:260:in `call'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/rack/thread_handler_extension.rb:107:in `process_request'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:157:in `accept_and_process_next_request'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler.rb:419:in `block (3 levels) in start_threads'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+App 35297 output: {"file_name"=>"814", "field"=>"text_19_entry_2330", "value"=>"Last pok!", "narc"=>"message_texts", "narc_const"=>"trdata", "trtext"=>"true"}
+App 35297 output: nil
+App 35297 output: 2023-01-12 21:49:58 - NoMethodError - undefined method `gsub' for nil:NilClass:
+App 35297 output: 	/Users/andylee/Repos/Pokeweb/models/text.rb:53:in `block in insert_text'
+App 35297 output: 	/Users/andylee/Repos/Pokeweb/models/text.rb:51:in `each'
+App 35297 output: 	/Users/andylee/Repos/Pokeweb/models/text.rb:51:in `insert_text'
+App 35297 output: 	/Users/andylee/Repos/Pokeweb/models/trdata.rb:102:in `update_text'
+App 35297 output: 	/Users/andylee/Repos/Pokeweb/models/trdata.rb:8:in `write_data'
+App 35297 output: 	/Users/andylee/Repos/Pokeweb/routes.rb:344:in `block in <class:MyApp>'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1696:in `call'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1696:in `block in compile!'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1009:in `block (3 levels) in route!'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1027:in `route_eval'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1009:in `block (2 levels) in route!'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1058:in `block in process_route'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1056:in `catch'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1056:in `process_route'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1007:in `block in route!'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1004:in `each'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1004:in `route!'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1128:in `block in dispatch!'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `catch'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `invoke'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1123:in `dispatch!'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:939:in `block in call!'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `catch'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `invoke'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:939:in `call!'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:928:in `call'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/xss_header.rb:20:in `call'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/path_traversal.rb:18:in `call'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/json_csrf.rb:28:in `call'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/base.rb:53:in `call'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/base.rb:53:in `call'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/frame_options.rb:33:in `call'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/null_logger.rb:11:in `call'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/head.rb:12:in `call'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/show_exceptions.rb:23:in `call'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:219:in `call'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:2007:in `call'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1566:in `block in call'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1782:in `synchronize'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1566:in `call'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:266:in `context'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:260:in `call'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:266:in `context'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:260:in `call'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/rack/thread_handler_extension.rb:107:in `process_request'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:157:in `accept_and_process_next_request'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler.rb:419:in `block (3 levels) in start_threads'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+App 35297 output: {"file_name"=>"814", "field"=>"species_id_1", "value"=>"Mewtwo", "narc"=>"trpok"}
+App 35297 output: {"file_name"=>"814", "field"=>"species_id_1", "value"=>"Mewtwo", "narc"=>"trpok"}
+App 35297 output: ["species", "move"]
+App 35297 output: "species_id_1"
+App 35297 output: {"file_name"=>"814", "field"=>"species_id_1", "value"=>"Mewtwo", "narc"=>"trpok"}
+App 35297 output: "python3 python/trpok_writer.py update 814 projects/b6test"
+App 35297 output: {"file_name"=>"814", "field"=>"level_1", "value"=>"40", "narc"=>"trpok", "int"=>"true"}
+App 35297 output: {"file_name"=>"814", "field"=>"level_1", "value"=>"40", "narc"=>"trpok", "int"=>"true"}
+App 35297 output: {"file_name"=>"814", "field"=>"level_1", "value"=>"40", "narc"=>"trpok", "int"=>"true"}
+App 35297 output: "python3 python/trpok_writer.py update 814 projects/b6test"
+App 35297 output: "creating edited rom"
+App 35297 output: "edited rom created"
+App 35297 output: 766
+App 35297 output: {"maps"=>[[44, [448, 416, 32, 32]], [45, [480, 416, 32, 32]]], "translate"=>[448, 416], "headers"=>[391, 392]}
+App 35297 output: {"file_name"=>"552", "field"=>"npc_8_script_id", "value"=>"3814", "narc"=>"overworld", "int"=>"true"}
+App 35297 output: {"file_name"=>"552", "field"=>"npc_8_script_id", "value"=>"3814", "narc"=>"overworld", "int"=>"true"}
+App 35297 output: "python3 python/overworld_writer.py update 552 projects/b6test"
+App 35297 output: "creating edited rom"
+App 35297 output: "edited rom created"
+App 35297 output: {"file_name"=>"814", "field"=>"text_0_entry_", "value"=>"Trainer 814\\r", "narc"=>"message_texts", "narc_const"=>"trdata", "trtext"=>"true"}
+App 35297 output: ["", "Trainer 814", 0]
+App 35297 output: "updateing"
+App 35297 output: {"file_name"=>"bank_381", "field"=>"text_0_entry_", "value"=>"Trainer 814\\r", "narc"=>"message_texts", "narc_const"=>"trdata", "trtext"=>"true"}
+App 35297 output: "python3 python/text_writer.py update bank_381 projects/b6test"
+App 35297 output: {"file_name"=>"814", "field"=>"text_1_entry_2327", "value"=>"After Loss", "narc"=>"message_texts", "narc_const"=>"trdata", "trtext"=>"true"}
+App 35297 output: ["", "Trainer 815", 0]
+App 35297 output: "updateing"
+App 35297 output: {"file_name"=>"bank_381", "field"=>"text_1_entry_2327", "value"=>"After Loss", "narc"=>"message_texts", "narc_const"=>"trdata", "trtext"=>"true"}
+App 35297 output: "python3 python/text_writer.py update bank_381 projects/b6test"
+App 35297 output: {"file_name"=>"814", "field"=>"text_2_entry_2328", "value"=>"Field After Loss", "narc"=>"message_texts", "narc_const"=>"trdata", "trtext"=>"true"}
+App 35297 output: ["", "Trainer 816", 0]
+App 35297 output: "updateing"
+App 35297 output: {"file_name"=>"bank_381", "field"=>"text_2_entry_2328", "value"=>"Field After Loss", "narc"=>"message_texts", "narc_const"=>"trdata", "trtext"=>"true"}
+App 35297 output: "python3 python/text_writer.py update bank_381 projects/b6test"
+App 35297 output: {"file_name"=>"814", "field"=>"text_17_entry_2329", "value"=>"first hit", "narc"=>"message_texts", "narc_const"=>"trdata", "trtext"=>"true"}
+App 35297 output: ["", "Trainer 817", 0]
+App 35297 output: "updateing"
+App 35297 output: {"file_name"=>"bank_381", "field"=>"text_17_entry_2329", "value"=>"first hit", "narc"=>"message_texts", "narc_const"=>"trdata", "trtext"=>"true"}
+App 35297 output: "python3 python/text_writer.py update bank_381 projects/b6test"
+App 35297 output: {"file_name"=>"814", "field"=>"text_19_entry_2330", "value"=>"last pok", "narc"=>"message_texts", "narc_const"=>"trdata", "trtext"=>"true"}
+App 35297 output: ["", "Trainer 818", 0]
+App 35297 output: "updateing"
+App 35297 output: {"file_name"=>"bank_381", "field"=>"text_19_entry_2330", "value"=>"last pok", "narc"=>"message_texts", "narc_const"=>"trdata", "trtext"=>"true"}
+App 35297 output: "python3 python/text_writer.py update bank_381 projects/b6test"
+App 35297 output: {"file_name"=>"814", "field"=>"text_20_entry_2331", "value"=>"less than 1/2 hp", "narc"=>"message_texts", "narc_const"=>"trdata", "trtext"=>"true"}
+App 35297 output: nil
+App 35297 output: 2023-01-12 21:53:05 - NoMethodError - undefined method `gsub' for nil:NilClass:
+App 35297 output: 	/Users/andylee/Repos/Pokeweb/models/text.rb:53:in `block in insert_text'
+App 35297 output: 	/Users/andylee/Repos/Pokeweb/models/text.rb:51:in `each'
+App 35297 output: 	/Users/andylee/Repos/Pokeweb/models/text.rb:51:in `insert_text'
+App 35297 output: 	/Users/andylee/Repos/Pokeweb/models/trdata.rb:102:in `update_text'
+App 35297 output: 	/Users/andylee/Repos/Pokeweb/models/trdata.rb:8:in `write_data'
+App 35297 output: 	/Users/andylee/Repos/Pokeweb/routes.rb:344:in `block in <class:MyApp>'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1696:in `call'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1696:in `block in compile!'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1009:in `block (3 levels) in route!'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1027:in `route_eval'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1009:in `block (2 levels) in route!'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1058:in `block in process_route'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1056:in `catch'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1056:in `process_route'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1007:in `block in route!'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1004:in `each'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1004:in `route!'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1128:in `block in dispatch!'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `catch'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `invoke'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1123:in `dispatch!'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:939:in `block in call!'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `catch'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `invoke'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:939:in `call!'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:928:in `call'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/xss_header.rb:20:in `call'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/path_traversal.rb:18:in `call'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/json_csrf.rb:28:in `call'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/base.rb:53:in `call'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/base.rb:53:in `call'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/frame_options.rb:33:in `call'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/null_logger.rb:11:in `call'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/head.rb:12:in `call'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/show_exceptions.rb:23:in `call'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:219:in `call'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:2007:in `call'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1566:in `block in call'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1782:in `synchronize'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1566:in `call'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:266:in `context'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:260:in `call'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:266:in `context'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:260:in `call'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/rack/thread_handler_extension.rb:107:in `process_request'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:157:in `accept_and_process_next_request'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler.rb:419:in `block (3 levels) in start_threads'
+App 35297 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+App 35297 output: {"file_name"=>"814", "field"=>"species_id_1", "value"=>"Charizard", "narc"=>"trpok"}
+App 35297 output: {"file_name"=>"814", "field"=>"species_id_1", "value"=>"Charizard", "narc"=>"trpok"}
+App 35297 output: ["species", "move"]
+App 35297 output: "species_id_1"
+App 35297 output: {"file_name"=>"814", "field"=>"species_id_1", "value"=>"Charizard", "narc"=>"trpok"}
+App 35297 output: "python3 python/trpok_writer.py update 814 projects/b6test"
+App 35297 output: {"file_name"=>"814", "field"=>"level_1", "value"=>"50", "narc"=>"trpok", "int"=>"true"}
+App 35297 output: {"file_name"=>"814", "field"=>"level_1", "value"=>"50", "narc"=>"trpok", "int"=>"true"}
+App 35297 output: {"file_name"=>"814", "field"=>"level_1", "value"=>"50", "narc"=>"trpok", "int"=>"true"}
+App 35297 output: "python3 python/trpok_writer.py update 814 projects/b6test"
+App 35297 output: "creating edited rom"
+App 35297 output: "edited rom created"
+App 35297 output: {"rom"=>"projects/b5test", "password"=>""}
+App 35297 output: {"file_name"=>"814", "field"=>"species_id_0", "value"=>"Mewtwo", "narc"=>"trpok"}
+App 35297 output: {"file_name"=>"814", "field"=>"species_id_0", "value"=>"Mewtwo", "narc"=>"trpok"}
+App 35297 output: ["species", "move"]
+App 35297 output: "species_id_0"
+App 35297 output: {"file_name"=>"814", "field"=>"species_id_0", "value"=>"Mewtwo", "narc"=>"trpok"}
+App 35297 output: "python3 python/trpok_writer.py update 814 projects/b5test"

@@ -112,6 +112,7 @@ class MyApp < Sinatra::Base
 		py = "python3"
 
 		p "offline"
+		`rm -rf projects/#{params['rom_name'].split(".")[0]}`
 		begin
 			system "#{py} python/header_loader.py #{params['rom_name']} offline"
 			session[:rom_name] = "projects/#{params['rom_name'].split(".")[0]}"
@@ -542,6 +543,13 @@ class MyApp < Sinatra::Base
 		
 		
 		erb :trainers
+	end
+
+	get '/trainers/expand' do 
+		rom = $rom_name.split("/")[1]
+		"python3 python/expansions/trainer_expander.py #{rom}"
+		`python3 python/expansions/trainer_expander.py #{rom}`
+		redirect '/trainers'
 	end
 
 	get '/trainers/:trainer_id/:pok_id/natures/:desired_iv' do 
