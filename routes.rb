@@ -849,5 +849,12 @@ class MyApp < Sinatra::Base
 		return [SessionSettings.get(field).to_s].to_json
 	end
 
+	get '/rom/delete' do 
+		xdelta_path = "./xdeltas/#{$rom_name.split("/")[1]}.xdelta"
+		`rm -rf #{$rom_name}`
+		`rm -rf #{xdelta_path}`
+		redirect '/rom/new'
+	end
+
 end
 
