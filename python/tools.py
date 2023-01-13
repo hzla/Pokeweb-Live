@@ -32,9 +32,9 @@ def output_narc(narc_name, rom, rom_name):
 	# ndspy copy of narcfile to edit
 	narc = ndspy.narc.NARC(rom.files[NARC_FILE_ID])
 
-	if narc_name == "encounters":
-		while len(narc.files) < 254:
-			narc.files.append(narc.files[0])
+	# if narc_name == "encounters":
+	# 	while len(narc.files) < 254:
+	# 		narc.files.append(narc.files[0])
 
 	for f in json_files:
 		file_name = int(f.split(".")[0])

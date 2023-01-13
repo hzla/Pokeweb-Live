@@ -127,7 +127,11 @@ def to_readable(raw, file_name, template, num_pokemon):
 
 		if template == 1 or template == 3:
 			for m in range(1,5):
-				readable[f'move_{m}_{n}'] = MOVES[raw[f'move_{m}_{n}']]
+				try:
+					readable[f'move_{m}_{n}'] = MOVES[raw[f'move_{m}_{n}']]
+				except:
+					print(file_name)
+					print(raw)
 
 		if template > 1:
 			readable[f'item_id_{n}'] = ITEMS[raw[f'item_id_{n}']]
