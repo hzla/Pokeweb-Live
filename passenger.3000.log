@@ -23307,3 +23307,623 @@ App 35297 output: ["species", "move"]
 App 35297 output: "species_id_0"
 App 35297 output: {"file_name"=>"814", "field"=>"species_id_0", "value"=>"Mewtwo", "narc"=>"trpok"}
 App 35297 output: "python3 python/trpok_writer.py update 814 projects/b5test"
+
+[ N 2023-01-13 00:44:07.3864 35247/T8 age/Cor/CoreMain.cpp:671 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2023-01-13 00:44:07.3865 35247/T1 age/Cor/CoreMain.cpp:1246 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2023-01-13 00:44:07.3865 35247/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 35297, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2023-01-13 00:44:07.3868 35247/T8 Ser/Server.h:901 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2023-01-13 00:44:07.3868 35247/Te Ser/Server.h:901 ]: [ServerThr.4] Freed 0 spare client objects
+[ N 2023-01-13 00:44:07.3869 35247/Tm Ser/Server.h:901 ]: [ServerThr.8] Freed 0 spare client objects
+[ N 2023-01-13 00:44:07.3868 35247/Tc Ser/Server.h:901 ]: [ServerThr.3] Freed 0 spare client objects
+[ N 2023-01-13 00:44:07.3869 35247/T8 Ser/Server.h:558 ]: [ServerThr.1] Shutdown finished
+[ N 2023-01-13 00:44:07.3870 35247/Tm Ser/Server.h:558 ]: [ServerThr.8] Shutdown finished
+[ N 2023-01-13 00:44:07.3869 35247/Tu Ser/Server.h:901 ]: [ServerThr.12] Freed 0 spare client objects
+[ N 2023-01-13 00:44:07.3870 35247/Te Ser/Server.h:558 ]: [ServerThr.4] Shutdown finished
+[ N 2023-01-13 00:44:07.3870 35247/Tc Ser/Server.h:558 ]: [ServerThr.3] Shutdown finished
+[ N 2023-01-13 00:44:07.3868 35247/To Ser/Server.h:901 ]: [ServerThr.9] Freed 0 spare client objects
+[ N 2023-01-13 00:44:07.3868 35247/Tg Ser/Server.h:901 ]: [ServerThr.5] Freed 0 spare client objects
+[ N 2023-01-13 00:44:07.3869 35247/Tq Ser/Server.h:901 ]: [ServerThr.10] Freed 0 spare client objects
+[ N 2023-01-13 00:44:07.3868 35247/Ta Ser/Server.h:901 ]: [ServerThr.2] Freed 0 spare client objects
+[ N 2023-01-13 00:44:07.3869 35247/Ts Ser/Server.h:901 ]: [ServerThr.11] Freed 0 spare client objects
+[ N 2023-01-13 00:44:07.3868 35247/Ti Ser/Server.h:901 ]: [ServerThr.6] Freed 0 spare client objects
+[ N 2023-01-13 00:44:07.3871 35247/Tu Ser/Server.h:558 ]: [ServerThr.12] Shutdown finished
+[ N 2023-01-13 00:44:07.3868 35247/Tk Ser/Server.h:901 ]: [ServerThr.7] Freed 0 spare client objects
+[ N 2023-01-13 00:44:07.3873 35247/Ts Ser/Server.h:558 ]: [ServerThr.11] Shutdown finished
+[ N 2023-01-13 00:44:07.3873 35247/Tw Ser/Server.h:901 ]: [ApiServer] Freed 0 spare client objects
+[ N 2023-01-13 00:44:07.3874 35247/To Ser/Server.h:558 ]: [ServerThr.9] Shutdown finished
+[ N 2023-01-13 00:44:07.3874 35247/Tw Ser/Server.h:558 ]: [ApiServer] Shutdown finished
+[ N 2023-01-13 00:44:07.3875 35247/Tg Ser/Server.h:558 ]: [ServerThr.5] Shutdown finished
+[ N 2023-01-13 00:44:07.3875 35247/Ti Ser/Server.h:558 ]: [ServerThr.6] Shutdown finished
+[ N 2023-01-13 00:44:07.3875 35247/Tq Ser/Server.h:558 ]: [ServerThr.10] Shutdown finished
+[ N 2023-01-13 00:44:07.3875 35247/Ta Ser/Server.h:558 ]: [ServerThr.2] Shutdown finished
+[ N 2023-01-13 00:44:07.3875 35247/Tk Ser/Server.h:558 ]: [ServerThr.7] Shutdown finished
+[ N 2023-01-13 00:44:07.3877 35247/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 35297, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2023-01-13 00:44:08.4464 35247/T1 age/Cor/CoreMain.cpp:1325 ]: Passenger core shutdown finished
+[ N 2023-01-13 00:44:08.9836 41874/T1 age/Wat/WatchdogMain.cpp:1377 ]: Starting Passenger watchdog...
+[ N 2023-01-13 00:44:09.0162 41876/T1 age/Cor/CoreMain.cpp:1340 ]: Starting Passenger core...
+[ N 2023-01-13 00:44:09.0166 41876/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ N 2023-01-13 00:44:09.0541 41876/T1 age/Cor/CoreMain.cpp:1015 ]: Passenger core online, PID 41876
+[ N 2023-01-13 00:44:11.8562 41876/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+[ E 2023-01-13 00:44:11.8635 41876/T5 Sec/Crypto.cpp:990 ]: Removing Passenger private key from keychain failed: Write permissions error.. Please remove the private key from the certificate labeled Phusion Passenger Open Source in your keychain.
+App 41893 output: "init"
+App 41927 output: "vanilla"
+App 41927 output: {"filename"=>{"filename"=>"RoyalBlack2Alpha0308.xdelta", "type"=>"application/octet-stream", "name"=>"filename", "tempfile"=>#<Tempfile:/var/folders/th/rnc7s7ts4_13_1w48n1wjfwr0000gn/T/RackMultipart20230113-41927-3kz84a.xdelta>, "head"=>"Content-Disposition: form-data; name=\"filename\"; filename=\"RoyalBlack2Alpha0308.xdelta\"\r\nContent-Type: application/octet-stream\r\n"}, "rom_base"=>"B2", "rom_name"=>"b12test.nds", "password"=>"b12test.nds"}
+App 41927 output: "xdelta3 -d -s ./base/blank.nds ./base/B2.xdelta ./base/B2.nds"
+App 41927 output: "xdelta3 -d -s ./base/B2.nds ./xdeltas/b12test.xdelta b12test.nds"
+App 41927 output: xdelta3: target window checksum mismatch: XD3_INVALID_INPUT
+App 41927 output: xdelta3: normally this indicates that the source file is incorrect
+App 41927 output: xdelta3: please verify the source file with sha1sum or equivalent
+App 41927 output: Traceback (most recent call last):
+App 41927 output:   File "/Users/andylee/Repos/Pokeweb/python/header_loader.py", line 46, in <module>
+App 41927 output:     with open(f'{rom_name.split("/")[-1]}.nds', 'rb') as f:
+App 41927 output: 
+App 41927 output:  
+App 41927 output:         ^^^^^^^^^^^^^^
+App 41927 output: ^^^^^^^
+App 41927 output: ^^^^^^
+App 41927 output: ^^^^^^
+App 41927 output: ^^^^^^
+App 41927 output: ^
+App 41927 output: ^^^^
+App 41927 output: FileNotFoundError: [Errno 2] No such file or directory: 'b12test.nds'
+App 41927 output: {"rom_name"=>"projects/b12test"}
+App 41927 output: 2023-01-13 00:44:32 - Errno::ENOENT - No such file or directory @ rb_sysopen - projects/b12test/json/headers/headers.json:
+App 41927 output: 	/Users/andylee/Repos/Pokeweb/models/header.rb:5:in `initialize'
+App 41927 output: 	/Users/andylee/Repos/Pokeweb/models/header.rb:5:in `open'
+App 41927 output: 	/Users/andylee/Repos/Pokeweb/models/header.rb:5:in `get_all'
+App 41927 output: 	/Users/andylee/Repos/Pokeweb/routes.rb:498:in `block in <class:MyApp>'
+App 41927 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1696:in `call'
+App 41927 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1696:in `block in compile!'
+App 41927 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1009:in `block (3 levels) in route!'
+App 41927 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1027:in `route_eval'
+App 41927 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1009:in `block (2 levels) in route!'
+App 41927 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1058:in `block in process_route'
+App 41927 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1056:in `catch'
+App 41927 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1056:in `process_route'
+App 41927 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1007:in `block in route!'
+App 41927 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1004:in `each'
+App 41927 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1004:in `route!'
+App 41927 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1128:in `block in dispatch!'
+App 41927 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `catch'
+App 41927 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `invoke'
+App 41927 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1123:in `dispatch!'
+App 41927 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:939:in `block in call!'
+App 41927 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `catch'
+App 41927 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `invoke'
+App 41927 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:939:in `call!'
+App 41927 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:928:in `call'
+App 41927 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/xss_header.rb:20:in `call'
+App 41927 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/path_traversal.rb:18:in `call'
+App 41927 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/json_csrf.rb:28:in `call'
+App 41927 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/base.rb:53:in `call'
+App 41927 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/base.rb:53:in `call'
+App 41927 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/frame_options.rb:33:in `call'
+App 41927 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/null_logger.rb:11:in `call'
+App 41927 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/head.rb:12:in `call'
+App 41927 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/show_exceptions.rb:23:in `call'
+App 41927 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:219:in `call'
+App 41927 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:2007:in `call'
+App 41927 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1566:in `block in call'
+App 41927 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1782:in `synchronize'
+App 41927 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1566:in `call'
+App 41927 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:266:in `context'
+App 41927 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:260:in `call'
+App 41927 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:266:in `context'
+App 41927 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:260:in `call'
+App 41927 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/rack/thread_handler_extension.rb:107:in `process_request'
+App 41927 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+App 41927 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+App 41927 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler.rb:419:in `block (3 levels) in start_threads'
+App 41927 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+App 41927 output: creating project folders
+App 41927 output: Traceback (most recent call last):
+App 41927 output:   File "/Users/andylee/Repos/Pokeweb/python/rom_loader.py", line 31, in <module>
+App 41927 output:     
+App 41927 output: with open(f'{rom_name}/session_settings.json', "r") as outfile:  
+App 41927 output:   
+App 41927 output:        
+App 41927 output: ^^^^^^
+App 41927 output: ^^^^^^
+App 41927 output: ^^^^^^
+App 41927 output: ^^^^^^
+App 41927 output: ^^^^^^
+App 41927 output: ^^^^^^
+App 41927 output: ^^^^^^
+App 41927 output: ^^^
+App 41927 output: ^
+App 41927 output: FileNotFoundError
+App 41927 output: : [Errno 2] No such file or directory: 'projects/b12test/session_settings.json'
+App 41927 output: "redirecting..."
+App 41927 output: 2023-01-13 00:49:10 - Errno::ENOENT - No such file or directory @ rb_sysopen - projects/b12test/json/headers/headers.json:
+App 41927 output: 	/Users/andylee/Repos/Pokeweb/models/header.rb:5:in `initialize'
+App 41927 output: 	/Users/andylee/Repos/Pokeweb/models/header.rb:5:in `open'
+App 41927 output: 	/Users/andylee/Repos/Pokeweb/models/header.rb:5:in `get_all'
+App 41927 output: 	/Users/andylee/Repos/Pokeweb/routes.rb:498:in `block in <class:MyApp>'
+App 41927 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1696:in `call'
+App 41927 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1696:in `block in compile!'
+App 41927 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1009:in `block (3 levels) in route!'
+App 41927 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1027:in `route_eval'
+App 41927 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1009:in `block (2 levels) in route!'
+App 41927 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1058:in `block in process_route'
+App 41927 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1056:in `catch'
+App 41927 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1056:in `process_route'
+App 41927 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1007:in `block in route!'
+App 41927 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1004:in `each'
+App 41927 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1004:in `route!'
+App 41927 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1128:in `block in dispatch!'
+App 41927 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `catch'
+App 41927 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `invoke'
+App 41927 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1123:in `dispatch!'
+App 41927 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:939:in `block in call!'
+App 41927 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `catch'
+App 41927 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `invoke'
+App 41927 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:939:in `call!'
+App 41927 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:928:in `call'
+App 41927 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/xss_header.rb:20:in `call'
+App 41927 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/path_traversal.rb:18:in `call'
+App 41927 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/json_csrf.rb:28:in `call'
+App 41927 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/base.rb:53:in `call'
+App 41927 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/base.rb:53:in `call'
+App 41927 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/frame_options.rb:33:in `call'
+App 41927 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/null_logger.rb:11:in `call'
+App 41927 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/head.rb:12:in `call'
+App 41927 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/show_exceptions.rb:23:in `call'
+App 41927 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:219:in `call'
+App 41927 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:2007:in `call'
+App 41927 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1566:in `block in call'
+App 41927 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1782:in `synchronize'
+App 41927 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1566:in `call'
+App 41927 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:266:in `context'
+App 41927 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:260:in `call'
+App 41927 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:266:in `context'
+App 41927 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:260:in `call'
+App 41927 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/rack/thread_handler_extension.rb:107:in `process_request'
+App 41927 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+App 41927 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+App 41927 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler.rb:419:in `block (3 levels) in start_threads'
+App 41927 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+
+[ N 2023-01-13 00:49:14.0061 41876/T8 age/Cor/CoreMain.cpp:671 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2023-01-13 00:49:14.0062 41876/T1 age/Cor/CoreMain.cpp:1246 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2023-01-13 00:49:14.0062 41876/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 41927, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2023-01-13 00:49:14.0065 41876/T8 Ser/Server.h:901 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2023-01-13 00:49:14.0066 41876/Tm Ser/Server.h:901 ]: [ServerThr.8] Freed 0 spare client objects
+[ N 2023-01-13 00:49:14.0066 41876/Ti Ser/Server.h:901 ]: [ServerThr.6] Freed 0 spare client objects
+[ N 2023-01-13 00:49:14.0066 41876/Ta Ser/Server.h:901 ]: [ServerThr.2] Freed 0 spare client objects
+[ N 2023-01-13 00:49:14.0066 41876/Ts Ser/Server.h:901 ]: [ServerThr.11] Freed 0 spare client objects
+[ N 2023-01-13 00:49:14.0067 41876/Tm Ser/Server.h:558 ]: [ServerThr.8] Shutdown finished
+[ N 2023-01-13 00:49:14.0067 41876/Ta Ser/Server.h:558 ]: [ServerThr.2] Shutdown finished
+[ N 2023-01-13 00:49:14.0066 41876/Tu Ser/Server.h:901 ]: [ServerThr.12] Freed 0 spare client objects
+[ N 2023-01-13 00:49:14.0067 41876/Ti Ser/Server.h:558 ]: [ServerThr.6] Shutdown finished
+[ N 2023-01-13 00:49:14.0066 41876/Tc Ser/Server.h:901 ]: [ServerThr.3] Freed 0 spare client objects
+[ N 2023-01-13 00:49:14.0066 41876/Th Ser/Server.h:901 ]: [ServerThr.5] Freed 0 spare client objects
+[ N 2023-01-13 00:49:14.0068 41876/Tc Ser/Server.h:558 ]: [ServerThr.3] Shutdown finished
+[ N 2023-01-13 00:49:14.0066 41876/Tq Ser/Server.h:901 ]: [ServerThr.10] Freed 0 spare client objects
+[ N 2023-01-13 00:49:14.0066 41876/T8 Ser/Server.h:558 ]: [ServerThr.1] Shutdown finished
+[ N 2023-01-13 00:49:14.0066 41876/Tk Ser/Server.h:901 ]: [ServerThr.7] Freed 0 spare client objects
+[ N 2023-01-13 00:49:14.0069 41876/Th Ser/Server.h:558 ]: [ServerThr.5] Shutdown finished
+[ N 2023-01-13 00:49:14.0066 41876/Tf Ser/Server.h:901 ]: [ServerThr.4] Freed 0 spare client objects
+[ N 2023-01-13 00:49:14.0066 41876/To Ser/Server.h:901 ]: [ServerThr.9] Freed 0 spare client objects
+[ N 2023-01-13 00:49:14.0068 41876/Tw Ser/Server.h:901 ]: [ApiServer] Freed 0 spare client objects
+[ N 2023-01-13 00:49:14.0070 41876/To Ser/Server.h:558 ]: [ServerThr.9] Shutdown finished
+[ N 2023-01-13 00:49:14.0068 41876/Tu Ser/Server.h:558 ]: [ServerThr.12] Shutdown finished
+[ N 2023-01-13 00:49:14.0070 41876/Tf Ser/Server.h:558 ]: [ServerThr.4] Shutdown finished
+[ N 2023-01-13 00:49:14.0069 41876/Tq Ser/Server.h:558 ]: [ServerThr.10] Shutdown finished
+[ N 2023-01-13 00:49:14.0070 41876/Tw Ser/Server.h:558 ]: [ApiServer] Shutdown finished
+[ N 2023-01-13 00:49:14.0070 41876/Tk Ser/Server.h:558 ]: [ServerThr.7] Shutdown finished
+[ N 2023-01-13 00:49:14.0067 41876/Ts Ser/Server.h:558 ]: [ServerThr.11] Shutdown finished
+[ N 2023-01-13 00:49:14.0072 41876/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 41927, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2023-01-13 00:49:15.0478 41876/T1 age/Cor/CoreMain.cpp:1325 ]: Passenger core shutdown finished
+[ N 2023-01-13 00:49:15.3840 42128/T1 age/Wat/WatchdogMain.cpp:1377 ]: Starting Passenger watchdog...
+[ N 2023-01-13 00:49:15.4204 42130/T1 age/Cor/CoreMain.cpp:1340 ]: Starting Passenger core...
+[ N 2023-01-13 00:49:15.4213 42130/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ N 2023-01-13 00:49:15.4616 42130/T1 age/Cor/CoreMain.cpp:1015 ]: Passenger core online, PID 42130
+[ N 2023-01-13 00:49:18.2548 42130/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+[ E 2023-01-13 00:49:18.2616 42130/T5 Sec/Crypto.cpp:990 ]: Removing Passenger private key from keychain failed: Write permissions error.. Please remove the private key from the certificate labeled Phusion Passenger Open Source in your keychain.
+App 42147 output: "init"
+App 42180 output: "offline"
+App 42180 output: decompressing arm9
+App 42180 output: outputting texts
+App 42180 output: outputting texts
+App 42180 output: outputting scripts
+App 42180 output: {'rom_name': 'projects/B3', 'pw': 'offline', 'base_version': 'B2', 'base_rom': 'BW2', 'headers': 361, 'message_texts': 351, 'story_texts': 352, 'scripts': 405}
+App 42180 output: creating project folders
+App 42180 output: projects/B3/json/moves
+App 42180 output: 
+App 42180 output: extracting narcs
+App 42180 output: parsing texts
+App 42180 output: settings up processing pools
+App 42180 output: outputing narcs
+App 42180 output: grottos
+App 42180 output: grotto_odds
+App 42180 output: marts
+App 42180 output: matrix
+App 42180 output: evolutions
+App 42180 output: items
+App 42180 output: learnsets
+App 42180 output: personal
+App 42180 output: 
+App 42180 output: moves
+App 42180 output: trpok
+App 42180 output: trdata
+App 42180 output: overworlds
+App 42180 output: encounters
+App 42180 output: maps
+
+[ N 2023-01-13 00:50:20.1496 42130/T8 age/Cor/CoreMain.cpp:671 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2023-01-13 00:50:20.1497 42130/T1 age/Cor/CoreMain.cpp:1246 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2023-01-13 00:50:20.1497 42130/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 42180, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2023-01-13 00:50:20.1501 42130/Td Ser/Server.h:901 ]: [ServerThr.3] Freed 0 spare client objects
+[ N 2023-01-13 00:50:20.1502 42130/Tk Ser/Server.h:901 ]: [ServerThr.7] Freed 0 spare client objects
+[ N 2023-01-13 00:50:20.1502 42130/Tn Ser/Server.h:901 ]: [ServerThr.8] Freed 0 spare client objects
+[ N 2023-01-13 00:50:20.1502 42130/To Ser/Server.h:901 ]: [ServerThr.9] Freed 0 spare client objects
+[ N 2023-01-13 00:50:20.1501 42130/Te Ser/Server.h:901 ]: [ServerThr.4] Freed 0 spare client objects
+[ N 2023-01-13 00:50:20.1503 42130/To Ser/Server.h:558 ]: [ServerThr.9] Shutdown finished
+[ N 2023-01-13 00:50:20.1502 42130/Ti Ser/Server.h:901 ]: [ServerThr.6] Freed 0 spare client objects
+[ N 2023-01-13 00:50:20.1501 42130/Tg Ser/Server.h:901 ]: [ServerThr.5] Freed 0 spare client objects
+[ N 2023-01-13 00:50:20.1502 42130/Tq Ser/Server.h:901 ]: [ServerThr.10] Freed 0 spare client objects
+[ N 2023-01-13 00:50:20.1501 42130/T8 Ser/Server.h:901 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2023-01-13 00:50:20.1504 42130/Tg Ser/Server.h:558 ]: [ServerThr.5] Shutdown finished
+[ N 2023-01-13 00:50:20.1502 42130/Tk Ser/Server.h:558 ]: [ServerThr.7] Shutdown finished
+[ N 2023-01-13 00:50:20.1501 42130/Ta Ser/Server.h:901 ]: [ServerThr.2] Freed 0 spare client objects
+[ N 2023-01-13 00:50:20.1504 42130/Tw Ser/Server.h:901 ]: [ApiServer] Freed 0 spare client objects
+[ N 2023-01-13 00:50:20.1502 42130/Tn Ser/Server.h:558 ]: [ServerThr.8] Shutdown finished
+[ N 2023-01-13 00:50:20.1502 42130/Tu Ser/Server.h:901 ]: [ServerThr.12] Freed 0 spare client objects
+[ N 2023-01-13 00:50:20.1504 42130/Tq Ser/Server.h:558 ]: [ServerThr.10] Shutdown finished
+[ N 2023-01-13 00:50:20.1505 42130/Ta Ser/Server.h:558 ]: [ServerThr.2] Shutdown finished
+[ N 2023-01-13 00:50:20.1503 42130/Te Ser/Server.h:558 ]: [ServerThr.4] Shutdown finished
+[ N 2023-01-13 00:50:20.1502 42130/Ts Ser/Server.h:901 ]: [ServerThr.11] Freed 0 spare client objects
+[ N 2023-01-13 00:50:20.1504 42130/Ti Ser/Server.h:558 ]: [ServerThr.6] Shutdown finished
+[ N 2023-01-13 00:50:20.1507 42130/Ts Ser/Server.h:558 ]: [ServerThr.11] Shutdown finished
+[ N 2023-01-13 00:50:20.1506 42130/Tu Ser/Server.h:558 ]: [ServerThr.12] Shutdown finished
+[ N 2023-01-13 00:50:20.1505 42130/Tw Ser/Server.h:558 ]: [ApiServer] Shutdown finished
+[ N 2023-01-13 00:50:20.1505 42130/T8 Ser/Server.h:558 ]: [ServerThr.1] Shutdown finished
+[ N 2023-01-13 00:50:20.1502 42130/Td Ser/Server.h:558 ]: [ServerThr.3] Shutdown finished
+[ N 2023-01-13 00:50:20.1508 42130/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 42180, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2023-01-13 00:50:21.2182 42130/T1 age/Cor/CoreMain.cpp:1325 ]: Passenger core shutdown finished
+[ N 2023-01-13 00:50:21.2695 42290/T1 age/Wat/WatchdogMain.cpp:1377 ]: Starting Passenger watchdog...
+[ N 2023-01-13 00:50:21.3009 42297/T1 age/Cor/CoreMain.cpp:1340 ]: Starting Passenger core...
+[ N 2023-01-13 00:50:21.3013 42297/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ N 2023-01-13 00:50:21.3475 42297/T1 age/Cor/CoreMain.cpp:1015 ]: Passenger core online, PID 42297
+[ N 2023-01-13 00:50:24.1036 42297/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+[ E 2023-01-13 00:50:24.1097 42297/T5 Sec/Crypto.cpp:990 ]: Removing Passenger private key from keychain failed: Write permissions error.. Please remove the private key from the certificate labeled Phusion Passenger Open Source in your keychain.
+App 42314 output: "init"
+App 42347 output: "vanilla"
+App 42347 output: {"filename"=>{"filename"=>"test.xdelta", "type"=>"application/octet-stream", "name"=>"filename", "tempfile"=>#<Tempfile:/var/folders/th/rnc7s7ts4_13_1w48n1wjfwr0000gn/T/RackMultipart20230113-42347-1k5z17h.xdelta>, "head"=>"Content-Disposition: form-data; name=\"filename\"; filename=\"test.xdelta\"\r\nContent-Type: application/octet-stream\r\n"}, "rom_base"=>"B2", "rom_name"=>"vir.nds", "password"=>"vir"}
+App 42347 output: "xdelta3 -d -s ./base/blank.nds ./base/B2.xdelta ./base/B2.nds"
+App 42347 output: "xdelta3 -d -s ./base/B2.nds ./xdeltas/vir.xdelta vir.nds"
+App 42347 output: decompressing arm9
+App 42347 output: outputting texts
+App 42347 output: outputting texts
+App 42347 output: outputting scripts
+App 42347 output: {'rom_name': 'projects/vir', 'pw': 'aGZWMnp5WFBqZ1U1WXZHR3Q5U2QvZz09LS1zZkwrcTU1RGxtYkRZRUdOTnpPOC9RPT0=--d267a30897d83cd55dc9591dcf016945d75cd3b1', 'base_version': 'B2', 'base_rom': 'BW2', 'headers': 361, 'message_texts': 351, 'story_texts': 352, 'scripts': 405}
+App 42347 output: {"rom_name"=>"projects/vir"}
+App 42347 output: creating project folders
+App 42347 output: projects/vir/json/moves
+App 42347 output: extracting narcs
+App 42347 output: parsing texts
+App 42347 output: settings up processing pools
+App 42347 output: outputing narcs
+App 42347 output: grottos
+App 42347 output: grotto_odds
+App 42347 output: marts
+App 42347 output: matrix
+App 42347 output: items
+App 42347 output: evolutions
+App 42347 output: learnsets
+App 42347 output: personal
+App 42347 output: moves
+App 42347 output: trpok
+App 42347 output: trdata
+App 42347 output: overworlds
+App 42347 output: encounters
+App 42347 output: maps
+App 42347 output: Traceback (most recent call last):
+App 42347 output:   File "/Users/andylee/Repos/Pokeweb/python/rom_loader.py", line 253, in <module>
+App 42347 output:     if sys.argv[2] != "offline":
+App 42347 output:  
+App 42347 output:       ~~~~~
+App 42347 output: ~~~^^^
+App 42347 output: IndexError
+App 42347 output: : list index out of range
+App 42347 output: 2023-01-13 00:51:08 - NoMethodError - undefined method `/' for nil:NilClass:
+App 42347 output: 	/Users/andylee/Repos/Pokeweb/models/trdata.rb:55:in `get_texts'
+App 42347 output: 	/Users/andylee/Repos/Pokeweb/views/trainers.erb:122:in `block (2 levels) in __tilt_70297705785160'
+App 42347 output: 	/Users/andylee/Repos/Pokeweb/views/trainers.erb:121:in `each'
+App 42347 output: 	/Users/andylee/Repos/Pokeweb/views/trainers.erb:121:in `block in __tilt_70297705785160'
+App 42347 output: 	/Users/andylee/Repos/Pokeweb/views/trainers.erb:49:in `each'
+App 42347 output: 	/Users/andylee/Repos/Pokeweb/views/trainers.erb:49:in `each_with_index'
+App 42347 output: 	/Users/andylee/Repos/Pokeweb/views/trainers.erb:49:in `__tilt_70297705785160'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/tilt-2.0.11/lib/tilt/template.rb:181:in `call'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/tilt-2.0.11/lib/tilt/template.rb:181:in `evaluate'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/tilt-2.0.11/lib/tilt/template.rb:109:in `render'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:842:in `render'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:738:in `erb'
+App 42347 output: 	/Users/andylee/Repos/Pokeweb/routes.rb:545:in `block in <class:MyApp>'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1696:in `call'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1696:in `block in compile!'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1009:in `block (3 levels) in route!'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1027:in `route_eval'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1009:in `block (2 levels) in route!'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1058:in `block in process_route'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1056:in `catch'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1056:in `process_route'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1007:in `block in route!'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1004:in `each'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1004:in `route!'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1128:in `block in dispatch!'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `catch'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `invoke'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1123:in `dispatch!'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:939:in `block in call!'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `catch'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `invoke'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:939:in `call!'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:928:in `call'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/xss_header.rb:20:in `call'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/path_traversal.rb:18:in `call'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/json_csrf.rb:28:in `call'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/base.rb:53:in `call'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/base.rb:53:in `call'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/frame_options.rb:33:in `call'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/null_logger.rb:11:in `call'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/head.rb:12:in `call'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/show_exceptions.rb:23:in `call'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:219:in `call'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:2007:in `call'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1566:in `block in call'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1782:in `synchronize'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1566:in `call'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:266:in `context'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:260:in `call'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:266:in `context'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:260:in `call'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/rack/thread_handler_extension.rb:107:in `process_request'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler.rb:419:in `block (3 levels) in start_threads'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+App 42608 output: "init"
+App 42347 output: {"rom"=>"projects/b6test", "password"=>"b6test"}
+App 42347 output: 2023-01-13 01:01:26 - ActiveSupport::MessageVerifier::InvalidSignature - ActiveSupport::MessageVerifier::InvalidSignature:
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/activesupport-6.1.7/lib/active_support/message_verifier.rb:176:in `verify'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/activesupport-6.1.7/lib/active_support/message_encryptor.rb:154:in `decrypt_and_verify'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/activesupport-6.1.7/lib/active_support/messages/rotator.rb:22:in `decrypt_and_verify'
+App 42347 output: 	/Users/andylee/Repos/Pokeweb/models/cipher.rb:17:in `auth?'
+App 42347 output: 	/Users/andylee/Repos/Pokeweb/routes.rb:97:in `block in <class:MyApp>'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1696:in `call'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1696:in `block in compile!'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1009:in `block (3 levels) in route!'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1027:in `route_eval'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1009:in `block (2 levels) in route!'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1058:in `block in process_route'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1056:in `catch'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1056:in `process_route'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1007:in `block in route!'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1004:in `each'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1004:in `route!'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1128:in `block in dispatch!'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `catch'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `invoke'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1123:in `dispatch!'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:939:in `block in call!'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `catch'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `invoke'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:939:in `call!'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:928:in `call'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/xss_header.rb:20:in `call'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/path_traversal.rb:18:in `call'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/json_csrf.rb:28:in `call'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/base.rb:53:in `call'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/base.rb:53:in `call'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/frame_options.rb:33:in `call'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/null_logger.rb:11:in `call'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/head.rb:12:in `call'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/show_exceptions.rb:23:in `call'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:219:in `call'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:2007:in `call'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1566:in `block in call'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1782:in `synchronize'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1566:in `call'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:266:in `context'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:260:in `call'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:266:in `context'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:260:in `call'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/rack/thread_handler_extension.rb:107:in `process_request'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler.rb:419:in `block (3 levels) in start_threads'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+[ N 2023-01-13 01:01:37.5211 42297/T4 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 42642, application /Users/andylee/Repos/Pokeweb (development)
+App 42347 output: "vanilla"
+App 42347 output: {"filename"=>{"filename"=>"RoyalBlack2Alpha0308.xdelta", "type"=>"application/octet-stream", "name"=>"filename", "tempfile"=>#<Tempfile:/var/folders/th/rnc7s7ts4_13_1w48n1wjfwr0000gn/T/RackMultipart20230113-42347-b2cjvg.xdelta>, "head"=>"Content-Disposition: form-data; name=\"filename\"; filename=\"RoyalBlack2Alpha0308.xdelta\"\r\nContent-Type: application/octet-stream\r\n"}, "rom_base"=>"B2", "rom_name"=>"roy.nds", "password"=>"roy"}
+App 42347 output: "xdelta3 -d -s ./base/blank.nds ./base/B2.xdelta ./base/B2.nds"
+App 42347 output: "xdelta3 -d -s ./base/B2.nds ./xdeltas/roy.xdelta roy.nds"
+App 42347 output: xdelta3: target window checksum mismatch: XD3_INVALID_INPUT
+App 42347 output: xdelta3: normally this indicates that the source file is incorrect
+App 42347 output: xdelta3: please verify the source file with sha1sum or equivalent
+App 42347 output: Traceback (most recent call last):
+App 42347 output:   File "/Users/andylee/Repos/Pokeweb/python/header_loader.py", line 46, in <module>
+App 42347 output:     with open(f'{rom_name.split("/")[-1]}.nds', 'rb') as f:
+App 42347 output:    
+App 42347 output:       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+App 42347 output: ^^^^^^
+App 42347 output: FileNotFoundError: [Errno 2] No such file or directory: 'roy.nds'
+App 42347 output: {"rom_name"=>"projects/roy"}
+App 42347 output: 2023-01-13 01:02:02 - Errno::ENOENT - No such file or directory @ rb_sysopen - projects/roy/json/headers/headers.json:
+App 42347 output: 	/Users/andylee/Repos/Pokeweb/models/header.rb:5:in `initialize'
+App 42347 output: 	/Users/andylee/Repos/Pokeweb/models/header.rb:5:in `open'
+App 42347 output: 	/Users/andylee/Repos/Pokeweb/models/header.rb:5:in `get_all'
+App 42347 output: 	/Users/andylee/Repos/Pokeweb/routes.rb:498:in `block in <class:MyApp>'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1696:in `call'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1696:in `block in compile!'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1009:in `block (3 levels) in route!'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1027:in `route_eval'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1009:in `block (2 levels) in route!'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1058:in `block in process_route'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1056:in `catch'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1056:in `process_route'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1007:in `block in route!'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1004:in `each'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1004:in `route!'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1128:in `block in dispatch!'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `catch'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `invoke'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1123:in `dispatch!'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:939:in `block in call!'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `catch'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `invoke'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:939:in `call!'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:928:in `call'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/xss_header.rb:20:in `call'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/path_traversal.rb:18:in `call'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/json_csrf.rb:28:in `call'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/base.rb:53:in `call'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/base.rb:53:in `call'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/frame_options.rb:33:in `call'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/null_logger.rb:11:in `call'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/head.rb:12:in `call'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/show_exceptions.rb:23:in `call'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:219:in `call'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:2007:in `call'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1566:in `block in call'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1782:in `synchronize'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1566:in `call'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:266:in `context'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:260:in `call'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:266:in `context'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:260:in `call'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/rack/thread_handler_extension.rb:107:in `process_request'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler.rb:419:in `block (3 levels) in start_threads'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+App 42347 output: creating project folders
+App 42347 output: 
+App 42347 output: Traceback (most recent call last):
+App 42347 output:   File "/Users/andylee/Repos/Pokeweb/python/rom_loader.py", line 31, in <module>
+App 42347 output:     with open(f'{rom_name}/session_settings.json', "r") as outfile:  
+App 42347 output:    
+App 42347 output:       ^
+App 42347 output: ^^^^^
+App 42347 output: ^^^^^^
+App 42347 output: ^^^^^^
+App 42347 output: ^^^^^
+App 42347 output: ^^^^^^
+App 42347 output: ^^^^^
+App 42347 output: ^^^^^
+App 42347 output: ^
+App 42347 output: ^^^
+App 42347 output: ^^^
+App 42347 output: FileNotFoundError: 
+App 42347 output: [Errno 2] No such file or directory: 'projects/roy/session_settings.json'
+App 42347 output: "vanilla"
+App 42347 output: {"filename"=>{"filename"=>"test.xdelta", "type"=>"application/octet-stream", "name"=>"filename", "tempfile"=>#<Tempfile:/var/folders/th/rnc7s7ts4_13_1w48n1wjfwr0000gn/T/RackMultipart20230113-42347-7j6ibi.xdelta>, "head"=>"Content-Disposition: form-data; name=\"filename\"; filename=\"test.xdelta\"\r\nContent-Type: application/octet-stream\r\n"}, "rom_base"=>"B2", "rom_name"=>"roy2.nds", "password"=>"roy"}
+App 42347 output: "xdelta3 -d -s ./base/blank.nds ./base/B2.xdelta ./base/B2.nds"
+App 42347 output: "xdelta3 -d -s ./base/B2.nds ./xdeltas/roy2.xdelta roy2.nds"
+App 42347 output: decompressing arm9
+App 42347 output: 
+App 42347 output: outputting texts
+App 42347 output: outputting texts
+App 42347 output: outputting scripts
+App 42347 output: {'rom_name': 'projects/roy2', 'pw': 'NW1mRU5vd1NLNkpiUHBPMkZhaThyUT09LS16NHJJdEo1NlNyME45S1JuUmIrK3pBPT0=--2bc6271648ac90026b7614bae711cc39401c7ebc', 'base_version': 'B2', 'base_rom': 'BW2', 'headers': 361, 'message_texts': 351, 'story_texts': 352, 'scripts': 405}
+App 42347 output: 
+App 42347 output: {"rom_name"=>"projects/roy2"}
+App 42347 output: creating project folders
+App 42347 output: projects/roy2/json/moves
+App 42347 output: extracting narcs
+App 42347 output: parsing texts
+App 42347 output: settings up processing pools
+App 42347 output: outputing narcs
+App 42347 output: grottos
+App 42347 output: grotto_odds
+App 42347 output: marts
+App 42347 output: matrix
+App 42347 output: items
+App 42347 output: evolutions
+App 42347 output: learnsets
+App 42347 output: 
+App 42347 output: personal
+App 42347 output: 
+App 42347 output: moves
+App 42347 output: trpok
+App 42347 output: trdata
+App 42347 output: overworlds
+App 42347 output: encounters
+App 42347 output: maps
+App 42347 output: Traceback (most recent call last):
+App 42347 output:   File "/Users/andylee/Repos/Pokeweb/python/rom_loader.py", line 253, in <module>
+App 42347 output:     if sys.argv[2] != "offline":
+App 42347 output: 
+App 42347 output:        ~~~~~
+App 42347 output: ~~~^^^
+App 42347 output: IndexError: list index out of range
+App 42347 output: 2023-01-13 01:02:47 - NoMethodError - undefined method `/' for nil:NilClass:
+App 42347 output: 	/Users/andylee/Repos/Pokeweb/models/trdata.rb:55:in `get_texts'
+App 42347 output: 	/Users/andylee/Repos/Pokeweb/views/trainers.erb:122:in `block (2 levels) in __tilt_70297705785160'
+App 42347 output: 	/Users/andylee/Repos/Pokeweb/views/trainers.erb:121:in `each'
+App 42347 output: 	/Users/andylee/Repos/Pokeweb/views/trainers.erb:121:in `block in __tilt_70297705785160'
+App 42347 output: 	/Users/andylee/Repos/Pokeweb/views/trainers.erb:49:in `each'
+App 42347 output: 	/Users/andylee/Repos/Pokeweb/views/trainers.erb:49:in `each_with_index'
+App 42347 output: 	/Users/andylee/Repos/Pokeweb/views/trainers.erb:49:in `__tilt_70297705785160'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/tilt-2.0.11/lib/tilt/template.rb:181:in `call'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/tilt-2.0.11/lib/tilt/template.rb:181:in `evaluate'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/tilt-2.0.11/lib/tilt/template.rb:109:in `render'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:842:in `render'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:738:in `erb'
+App 42347 output: 	/Users/andylee/Repos/Pokeweb/routes.rb:545:in `block in <class:MyApp>'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1696:in `call'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1696:in `block in compile!'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1009:in `block (3 levels) in route!'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1027:in `route_eval'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1009:in `block (2 levels) in route!'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1058:in `block in process_route'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1056:in `catch'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1056:in `process_route'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1007:in `block in route!'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1004:in `each'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1004:in `route!'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1128:in `block in dispatch!'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `catch'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `invoke'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1123:in `dispatch!'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:939:in `block in call!'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `catch'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `invoke'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:939:in `call!'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:928:in `call'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/xss_header.rb:20:in `call'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/path_traversal.rb:18:in `call'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/json_csrf.rb:28:in `call'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/base.rb:53:in `call'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/base.rb:53:in `call'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/frame_options.rb:33:in `call'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/null_logger.rb:11:in `call'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/head.rb:12:in `call'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/show_exceptions.rb:23:in `call'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:219:in `call'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:2007:in `call'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1566:in `block in call'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1782:in `synchronize'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1566:in `call'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:266:in `context'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:260:in `call'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:266:in `context'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:260:in `call'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/rack/thread_handler_extension.rb:107:in `process_request'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler.rb:419:in `block (3 levels) in start_threads'
+App 42347 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+App 42347 output: "creating base rom"
+App 42347 output: "xdelta3 -d -s ./base/blank.nds ./base/B2.xdelta ./base/B2.nds"
+App 42347 output: "creating edited rom"
+App 42347 output: "xdelta3 -d -s ./base/B2.nds ./xdeltas/roy2.xdelta roy2.nds"
+App 42347 output: xdelta3: to overwrite output file specify -f: roy2.nds
+App 42347 output: "creating edited rom"
+App 42347 output: "edited rom created"
+App 42347 output: "generating xdelta"
+App 42347 output: "xdelta3 -e -s ./base/B2.nds ./exports/roy2.nds ./exports/roy2_edited.xdelta"
+App 42347 output: "deleting base rom"
+App 42347 output: "deleting uploaded rom"
+App 42347 output: "deleting edited rom"

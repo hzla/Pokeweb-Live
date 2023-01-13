@@ -11,8 +11,22 @@ class RomInfo
         ids = [9,21,42,66,100,110,116,123,399,408,414,426,436,444,455,461,473]
         gyms = [436,455,42,66,100,110,123,473]
         [ids, gyms]
-
     end
+
+    def self.prune
+        projects = Dir['projects/*']
+        projects.each do |pr|
+            p_name = pr.split("/")[1]
+            if !File.exists?("#{pr}/session_settings.json")
+                `rm -rf #{pr}`
+                `rm -rf ./xdeltas/#{p_name}.xdelta`
+                p "#{p_name} deleted"
+            else
+                p "#{p_name} exists"
+            end
+        end
+    end
+
 
     def self.testrom
     end
