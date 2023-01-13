@@ -21188,3 +21188,104 @@ App 25680 output: {"file_name"=>"262", "field"=>"form_1", "value"=>"0", "narc"=>
 App 25680 output: "python3 python/trpok_writer.py update 262 projects/b6test"
 App 25680 output: "creating edited rom"
 App 25680 output: "edited rom created"
+App 25680 output: {"rom"=>"projects/b6test", "password"=>""}
+App 25680 output: 2023-01-12 18:51:04 - NoMethodError - undefined method `/' for nil:NilClass:
+App 25680 output: 	/Users/andylee/Repos/Pokeweb/models/trdata.rb:55:in `get_texts'
+App 25680 output: 	/Users/andylee/Repos/Pokeweb/views/trainers.erb:119:in `block (2 levels) in __tilt_70276097097440'
+App 25680 output: 	/Users/andylee/Repos/Pokeweb/views/trainers.erb:118:in `each'
+App 25680 output: 	/Users/andylee/Repos/Pokeweb/views/trainers.erb:118:in `block in __tilt_70276097097440'
+App 25680 output: 	/Users/andylee/Repos/Pokeweb/views/trainers.erb:46:in `each'
+App 25680 output: 	/Users/andylee/Repos/Pokeweb/views/trainers.erb:46:in `each_with_index'
+App 25680 output: 	/Users/andylee/Repos/Pokeweb/views/trainers.erb:46:in `__tilt_70276097097440'
+App 25680 output: 	/Library/Ruby/Gems/2.6.0/gems/tilt-2.0.11/lib/tilt/template.rb:181:in `call'
+App 25680 output: 	/Library/Ruby/Gems/2.6.0/gems/tilt-2.0.11/lib/tilt/template.rb:181:in `evaluate'
+App 25680 output: 	/Library/Ruby/Gems/2.6.0/gems/tilt-2.0.11/lib/tilt/template.rb:109:in `render'
+App 25680 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:842:in `render'
+App 25680 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:738:in `erb'
+App 25680 output: 	/Users/andylee/Repos/Pokeweb/routes.rb:545:in `block in <class:MyApp>'
+App 25680 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1696:in `call'
+App 25680 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1696:in `block in compile!'
+App 25680 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1009:in `block (3 levels) in route!'
+App 25680 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1027:in `route_eval'
+App 25680 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1009:in `block (2 levels) in route!'
+App 25680 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1058:in `block in process_route'
+App 25680 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1056:in `catch'
+App 25680 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1056:in `process_route'
+App 25680 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1007:in `block in route!'
+App 25680 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1004:in `each'
+App 25680 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1004:in `route!'
+App 25680 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1128:in `block in dispatch!'
+App 25680 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `catch'
+App 25680 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `invoke'
+App 25680 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1123:in `dispatch!'
+App 25680 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:939:in `block in call!'
+App 25680 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `catch'
+App 25680 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `invoke'
+App 25680 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:939:in `call!'
+App 25680 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:928:in `call'
+App 25680 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/xss_header.rb:20:in `call'
+App 25680 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/path_traversal.rb:18:in `call'
+App 25680 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/json_csrf.rb:28:in `call'
+App 25680 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/base.rb:53:in `call'
+App 25680 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/base.rb:53:in `call'
+App 25680 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/frame_options.rb:33:in `call'
+App 25680 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/null_logger.rb:11:in `call'
+App 25680 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/head.rb:12:in `call'
+App 25680 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/show_exceptions.rb:23:in `call'
+App 25680 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:219:in `call'
+App 25680 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:2007:in `call'
+App 25680 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1566:in `block in call'
+App 25680 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1782:in `synchronize'
+App 25680 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1566:in `call'
+App 25680 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:266:in `context'
+App 25680 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:260:in `call'
+App 25680 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:266:in `context'
+App 25680 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:260:in `call'
+App 25680 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/rack/thread_handler_extension.rb:107:in `process_request'
+App 25680 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+App 25680 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+App 25680 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler.rb:419:in `block (3 levels) in start_threads'
+App 25680 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+App 25680 output: {"file_name"=>"814", "field"=>"text_0_entry_2327", "value"=>"EXTRA", "narc"=>"message_texts", "narc_const"=>"trdata", "trtext"=>"true"}
+App 25680 output: nil
+App 25680 output: "Inserted into Bank 381 at index 2327"
+App 25680 output: {"file_name"=>"bank_381", "field"=>"text_0_entry_2327", "value"=>"EXTRA", "narc"=>"message_texts", "narc_const"=>"trdata", "trtext"=>"true"}
+App 25680 output: "python3 python/text_writer.py update bank_381 projects/b6test"
+App 25680 output: {"file_name"=>"814", "field"=>"text_0_entry_2327", "value"=>"", "narc"=>"message_texts", "narc_const"=>"trdata", "trtext"=>"true"}
+App 25680 output: "Deleted from Bank 381 at index 2327"
+App 25680 output: {"file_name"=>"bank_381", "field"=>"text_0_entry_2327", "value"=>"", "narc"=>"message_texts", "narc_const"=>"trdata", "trtext"=>"true"}
+App 25680 output: "python3 python/text_writer.py update bank_381 projects/b6test"
+App 25680 output: {"file_name"=>"814", "field"=>"item_1", "value"=>"Full Restore", "narc"=>"trdata"}
+App 25680 output: {"file_name"=>"814", "field"=>"item_1", "value"=>"Full Restore", "narc"=>"trdata"}
+App 25680 output: "python3 python/trdata_writer.py update 814 projects/b6test"
+App 25680 output: {"file_name"=>"814", "field"=>"item_1", "value"=>"Full Restore", "narc"=>"trdata"}
+App 25680 output: {"file_name"=>"814", "field"=>"item_1", "value"=>"Full Restore", "narc"=>"trdata"}
+App 25680 output: "python3 python/trdata_writer.py update 814 projects/b6test"
+App 25680 output: {"file_name"=>"814", "field"=>"item_1", "value"=>"Full Restore", "narc"=>"trdata"}
+App 25680 output: {"file_name"=>"814", "field"=>"item_1", "value"=>"Full Restore", "narc"=>"trdata"}
+App 25680 output: "python3 python/trdata_writer.py update 814 projects/b6test"
+App 25680 output: {"file_name"=>"814", "field"=>"text_0_entry_2327", "value"=>"EXTRA!!", "narc"=>"message_texts", "narc_const"=>"trdata", "trtext"=>"true"}
+App 25680 output: nil
+App 25680 output: "Inserted into Bank 381 at index 2327"
+App 25680 output: {"file_name"=>"bank_381", "field"=>"text_0_entry_2327", "value"=>"EXTRA!!", "narc"=>"message_texts", "narc_const"=>"trdata", "trtext"=>"true"}
+App 25680 output: "python3 python/text_writer.py update bank_381 projects/b6test"
+App 25680 output: {"file_name"=>"814", "field"=>"text_0_entry_2327", "value"=>"EXTRA!!", "narc"=>"message_texts", "narc_const"=>"trdata", "trtext"=>"true"}
+App 25680 output: ["0_2327", "EXTRA!!"]
+App 25680 output: "updateing"
+App 25680 output: {"file_name"=>"bank_381", "field"=>"text_0_entry_2327", "value"=>"EXTRA!!", "narc"=>"message_texts", "narc_const"=>"trdata", "trtext"=>"true"}
+App 25680 output: "python3 python/text_writer.py update bank_381 projects/b6test"
+App 25680 output: {"file_name"=>"814", "field"=>"text_0_entry_2327", "value"=>"EXTRA!!", "narc"=>"message_texts", "narc_const"=>"trdata", "trtext"=>"true"}
+App 25680 output: ["0_2327", "EXTRA!!"]
+App 25680 output: "updateing"
+App 25680 output: {"file_name"=>"bank_381", "field"=>"text_0_entry_2327", "value"=>"EXTRA!!", "narc"=>"message_texts", "narc_const"=>"trdata", "trtext"=>"true"}
+App 25680 output: "python3 python/text_writer.py update bank_381 projects/b6test"
+App 25680 output: {"file_name"=>"813", "field"=>"text_20_entry_0_2328", "value"=>"If-if I'd believed more, could I have drawn\\nout my Pokémon's power?", "narc"=>"message_texts", "narc_const"=>"trdata", "trtext"=>"true"}
+App 25680 output: nil
+App 25680 output: "Inserted into Bank 381 at index 2328"
+App 25680 output: {"file_name"=>"bank_381", "field"=>"text_20_entry_0_2328", "value"=>"If-if I'd believed more, could I have drawn\\nout my Pokémon's power?", "narc"=>"message_texts", "narc_const"=>"trdata", "trtext"=>"true"}
+App 25680 output: "python3 python/text_writer.py update bank_381 projects/b6test"
+App 25680 output: {"file_name"=>"813", "field"=>"text_20_entry_0_2328", "value"=>"If-if I'd believed more, could I have drawn\\nout my Pokémon's power?", "narc"=>"message_texts", "narc_const"=>"trdata", "trtext"=>"true"}
+App 25680 output: ["0_2329", "Marvelous! I shall believe in my Pokémon!", 61085]
+App 25680 output: "updateing"
+App 25680 output: {"file_name"=>"bank_381", "field"=>"text_20_entry_0_2328", "value"=>"If-if I'd believed more, could I have drawn\\nout my Pokémon's power?", "narc"=>"message_texts", "narc_const"=>"trdata", "trtext"=>"true"}
+App 25680 output: "python3 python/text_writer.py update bank_381 projects/b6test"

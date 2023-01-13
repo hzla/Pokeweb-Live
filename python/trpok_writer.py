@@ -184,7 +184,7 @@ def to_raw(readable, template):
 			else:
 				raw[f'item_id_{n}'] = 0
 
-			n += 1
+		n += 1
 
 	return raw
 	
