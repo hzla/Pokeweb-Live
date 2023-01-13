@@ -742,6 +742,7 @@
       Type: int
 52:
   Name: CMD_34
+  Alias: PlaySound
   Parameters:
     - Name: p0
       Type: int

@@ -126,13 +126,7 @@ $(document).ready(function() {
 	}
 	setTimeout(adjust_directions, 1000)
 
-})
-
-
-///////////////////// EVENT BINDINGS //////////////////////////
-    
-    //////////////// Rom Buttons //////////////////
-  if ($('#offline').length > 0) {   
+	if ($('#offline').length > 0) {   
     $(document).on('click', '#load-rom', function(){
 
         	console.log($('#xdelta').length)
@@ -143,6 +137,14 @@ $(document).ready(function() {
 	        });     
     })
    }
+
+})
+
+
+///////////////////// EVENT BINDINGS //////////////////////////
+    
+    //////////////// Rom Buttons //////////////////
+  
     $(document).on('submit', '#rom-form', function(e){
     	
     	var rom_name = $('#rom-name').val()

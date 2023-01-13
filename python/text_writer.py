@@ -43,6 +43,14 @@ def output_narc(rom, rom_name):
 
         rom.files[NARC_FILE_IDS[narc_name]] = narc.save()
 
+    ######## TRAINER TEXTS #########
+    if BASE_ROM == "BW2":
+        print("trainer txt outputting")
+        for narc_name in ["trtext_table", "trtext_offsets"]:
+            narc_path = f'{ROM_NAME}/narcs/{narc_name}-{NARC_FILE_IDS[narc_name]}.narc'
+            narc = ndspy.narc.NARC.fromFile(narc_path) 
+            rom.files[NARC_FILE_IDS[narc_name]] = narc.save()
+
     ######## SCRIPTS ###########
 
     narc = ndspy.narc.NARC(rom.files[NARC_FILE_IDS["scripts"]])
@@ -65,27 +73,10 @@ def output_narc(rom, rom_name):
     return rom
 
 
-def update_narc(file_name, narc_name):
-    set_global_vars()
-    
-    # retrieve narc and message bank
-    msg_info = file_name.split("_")
-    bank_id = int(msg_info[1])
- 
-    file_name = f'{ROM_NAME}/narcs/{narc_name}-{NARC_FILE_IDS[narc_name]}.narc'
-    narc_data = ndspy.narc.NARC.fromFile(file_name)
-
-    # retrieve updated msg
-    texts = []
-    with open(f'{ROM_NAME}/{narc_name}/texts.json', encoding='utf_8') as outfile:
-        texts = json.load(outfile)
-    message_data = texts[bank_id]
-    narc_data.files[bank_id] = gen5put(message_data)
-
-    with open(file_name, "wb") as outfile:
-        outfile.write(narc_data.save()) 
-
-
+def update_narc(file_name, rom_name, narc_name="message_texts"):
+    set_global_vars(rom_name)
+    bank_id = 381
+  
     if bank_id == 381:
         # update trainer text tables if editing trainer text bank
         file_id = NARC_FILE_IDS['trtext_table']

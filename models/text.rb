@@ -11,6 +11,26 @@ class Text
 		bank = data[bank_id.to_i]
 	end
 
+	def self.write_ppre_bank narc_name="message_texts", bank_id=381
+		bank = get_bank narc_name, bank_id
+		
+		#convert ppre bank to beatertext format
+		formatted_bank = {}
+		bank.each_with_index do |entry, i|
+			formatted_entry = entry[1].gsub('\\r', '\c').split('\\n')
+
+			formatted_entry.each_with_index do |line, i|
+				if i < formatted_entry.length - 1
+					formatted_entry[i] += "\\n"
+				end
+			end
+
+			formatted_bank[i.to_s] = formatted_entry
+		end
+
+		edit_bank narc_name, bank_id, formatted_bank
+	end
+
 	def self.handle_compressed text, bank, msg_id
 		if text.include?("xF100")
 			p bank[msg_id]
@@ -60,7 +80,6 @@ class Text
 	end
 
 	def self.edit_bank narc, bank_id, bank
-
 		open("#{$rom_name}/#{narc}/#{bank_id}_edited.txt", 'w') do |f|
 			n = 0
 			until !bank[n.to_s]
@@ -86,7 +105,6 @@ class Text
 		command = "dotnet tools/beatertext/BeaterText.dll -m #{$rom_name}/#{narc}/#{bank_id}_edited.txt #{$rom_name}/#{narc}/#{bank_id}.bin"
 		pid = spawn command
 		Process.detach(pid)
-
 	end
 
 

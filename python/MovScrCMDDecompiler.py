@@ -12,6 +12,27 @@ with open('tools/movecommands/MOV_SCRCMD.yml', 'r') as DATA:
 
 with open('B2W2_MOVSCRCMD.s', 'w') as MOVSCRCMD_INC:
     for Index, Command in CommandSet.items():
+
+        if "Alias" in Command:
+            MOVSCRCMD_INC.write(f'.macro {Command["Alias"]} ')
+            SpaceCharacter = " " if Command['Parameters'] is not None else ""
+            if Command['Parameters'] is not None:
+                for Parameter in Command['Parameters']:
+                    SpaceCharacter = " " if Command['Parameters'].index(Parameter) != len(Command['Parameters']) - 1 else ""
+                    MOVSCRCMD_INC.write(f'{Parameter["Name"]}{SpaceCharacter}')
+            MOVSCRCMD_INC.write('\n')
+            MOVSCRCMD_INC.write(f'.hword {Index}\n')
+            if Command['Parameters'] is not None:
+                for Parameter in Command['Parameters']:
+                    match Parameter['Type']:
+                        case 'int':
+                            MOVSCRCMD_INC.write(f'.word \{Parameter["Name"]}\n')
+                        case _:
+                            break
+     
+            MOVSCRCMD_INC.write(f'.endm\n')
+            MOVSCRCMD_INC.write(f'\n')
+
         MOVSCRCMD_INC.write(f'.macro {Command["Name"]} ')
         SpaceCharacter = " " if Command['Parameters'] is not None else ""
         if Command['Parameters'] is not None:

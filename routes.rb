@@ -351,6 +351,7 @@ class MyApp < Sinatra::Base
 			narc_name = "text"
 			params['data']['file_name'] = "bank_381"
 			params['data']['narc'] == "message_texts"
+			Text.write_ppre_bank
 		end
 		p params['data']
 		
@@ -361,6 +362,7 @@ class MyApp < Sinatra::Base
 		begin
 			retries ||= 0
 			command = "#{py} python/#{narc_name}_writer.py update #{params['data']['file_name']} #{$rom_name}"
+			p command
 			pid = spawn command
 			Process.detach(pid)
 		rescue
@@ -475,7 +477,7 @@ class MyApp < Sinatra::Base
 	post '/texts/:id' do 
 		
 		bank = params["bank"]
-
+		p params
 		Text.edit_bank params["narc"], params["id"], params["bank"]
 
 		edited_narcs = SessionSettings.get "edited"
@@ -522,6 +524,11 @@ class MyApp < Sinatra::Base
 		@trainers = Trdata.get_all
 		@trainer_poks = Trpok.get_all
 		@move_names = Move.get_names_from Move.get_all
+
+		n = 381
+		bank = "message_texts"
+		command = "dotnet tools/beatertext/BeaterText.dll -d #{$rom_name}/#{bank}/#{n}.bin #{$rom_name}/#{bank}/#{n}.txt"
+		system command
 
 
 		@offsets = JSON.parse(File.open("#{$rom_name}/texts/trtexts_offsets.json", "r"){|f| f.read})

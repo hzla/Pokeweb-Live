@@ -35,9 +35,9 @@ class Trdata < Pokenarc
 		texts[14] = "After Heal"
 		texts[15] = "After Bttl Item"
 		texts[16] = "More Item"
-		texts[17] = "After 1st Hit"
+		texts[17] = "After 1st Hit (Non KO)"
 		texts[19] = "Last Pok"
-		texts[20] = "Less than 1/2 HP"
+		texts[20] = "Last Pok Less than 1/2 HP"
 		texts[24] = "Reject Triple"
 		texts
 	end
