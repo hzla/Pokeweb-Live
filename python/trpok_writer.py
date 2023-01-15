@@ -112,6 +112,9 @@ def write_narc_data(file_name, narc_format, narc, rom_name):
 				if f'{entry[1]}_{n}' in json_data["raw"]:
 					data = json_data["raw"][f'{entry[1]}_{n}']
 					write_bytes(stream, entry[0], data)
+				else:
+					if "padding" in f'{entry[1]}_{n}':
+						write_bytes(stream, 1, 0)
 
 	if file_name >= len(narc.files):
 		# narc_entry_data = bytearray()
