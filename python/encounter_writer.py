@@ -46,7 +46,8 @@ def to_raw(readable):
 				
 				alt_form = f'{season}_{enc_type}_slot_{n}_form' in readable
 				if alt_form:
-					raw[f'{season}_{enc_type}_slot_{n}'] += (int(readable[f'{season}_{enc_type}_slot_{n}_form']) * 2048)
+					if readable[f'{season}_{enc_type}_slot_{n}_form'] is not None:
+						raw[f'{season}_{enc_type}_slot_{n}'] += (int(readable[f'{season}_{enc_type}_slot_{n}_form']) * 2048)
 
 	return raw
 	

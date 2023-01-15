@@ -24810,3 +24810,43 @@ App 27561 output:   File "/Users/andylee/.pyenv/versions/3.11.1/lib/python3.11/s
 App 27561 output:     raise CalledProcessError(retcode, process.args,
 App 27561 output: 
 App 27561 output: subprocess.CalledProcessError: Command '['python', 'python/parallel.py', 'projects/pb9']' returned non-zero exit status 1.
+App 27561 output: "vanilla"
+App 27561 output: {"filename"=>{"filename"=>"pb11.xdelta", "type"=>"application/octet-stream", "name"=>"filename", "tempfile"=>#<Tempfile:/var/folders/th/rnc7s7ts4_13_1w48n1wjfwr0000gn/T/RackMultipart20230115-27561-13rc0xf.xdelta>, "head"=>"Content-Disposition: form-data; name=\"filename\"; filename=\"pb11.xdelta\"\r\nContent-Type: application/octet-stream\r\n"}, "rom_base"=>"B2", "rom_name"=>"pb11.nds", "password"=>"pb"}
+App 27561 output: "xdelta3 -d -s ./base/blank.nds ./base/B2.xdelta ./base/B2.nds"
+App 27561 output: "xdelta3 -d -s ./base/B2.nds ./xdeltas/pb11.xdelta pb11.nds"
+App 27561 output: decompressing arm9
+App 27561 output: outputting texts
+App 27561 output: outputting texts
+App 27561 output: outputting scripts
+App 27561 output: {'rom_name': 'projects/pb11', 'pw': 'ZUdEUVdMekZkUTZIYis0cW9CdXJVUT09LS1YM2xTVytpMFEwaFQxVUpib1RTbW5BPT0=--5ad4e903d4f43f3967348db03fedf4ab786addb8', 'base_version': 'B2', 'base_rom': 'BW2', 'headers': 359, 'message_texts': 349, 'story_texts': 350, 'scripts': 403}
+App 27561 output: {"rom_name"=>"projects/pb11"}
+App 27561 output: creating project folders
+App 27561 output: projects/pb11/json/moves
+App 27561 output: extracting narcs
+App 27561 output: parsing texts
+App 27561 output: settings up processing pools
+App 27561 output: outputing narcs
+App 27561 output: grottos
+App 27561 output: grotto_odds
+App 27561 output: marts
+App 27561 output: matrix
+App 27561 output: moves
+App 27561 output: items
+App 27561 output: evolutions
+App 27561 output: learnsets
+App 27561 output: personal
+App 27561 output: 
+App 27561 output: trpok
+App 27561 output: trdata
+App 27561 output: encounters
+App 27561 output: overworlds
+App 27561 output: maps
+App 27561 output: Traceback (most recent call last):
+App 27561 output:   File "/Users/andylee/Repos/Pokeweb/python/rom_loader.py", line 253, in <module>
+App 27561 output:     if sys.argv[2] != "offline":
+App 27561 output:   
+App 27561 output:      ~~
+App 27561 output: ~~~~~
+App 27561 output: ~^^^
+App 27561 output: IndexError: 
+App 27561 output: list index out of range
