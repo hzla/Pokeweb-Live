@@ -203,6 +203,8 @@ class MyApp < Sinatra::Base
 		base = SessionSettings.get "base_version"
 		rom_name = $rom_name.split("/")[1]
 
+
+
 		
 		if !$offline 
 		#clear exports 
@@ -231,6 +233,8 @@ class MyApp < Sinatra::Base
 
 		begin
 			p "creating edited rom"
+			`#{py} python/trpok_writer.py validate #{$rom_name}`
+			`#{py} python/encounter_writer.py validate #{$rom_name}`
 			save = `#{py} python/rom_saver.py #{$rom_name}`
 			p "edited rom created"
 		rescue
@@ -556,6 +560,11 @@ class MyApp < Sinatra::Base
 		@natures = Trpok.get_nature_info_for params[:trainer_id], params[:pok_id], params[:desired_iv].to_i 
 		@iv = params[:desired_iv]
 		erb :trpok_natures
+	end
+
+	get '/trainers/:id/reset' do 
+		Trdata.reset params[:id]
+		redirect '/trainers'
 	end
 
 	post '/create' do

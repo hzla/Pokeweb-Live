@@ -59,3 +59,11 @@ if len(sys.argv) > 2 and sys.argv[1] == "update":
 	 
 	for file_name in file_names:
 		write_readable_to_raw(int(file_name))
+
+if len(sys.argv) > 2 and sys.argv[1] == "validate":
+	
+	rom_data.set_global_vars(sys.argv[2])
+	file_count = len(os.listdir(f'{sys.argv[2]}/json/encounters'))
+	for file_name in range(0,file_count):
+
+		write_readable_to_raw(int(file_name))

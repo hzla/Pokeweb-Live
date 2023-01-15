@@ -24111,3 +24111,407 @@ App 43971 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_suppo
 [ E 2023-01-13 01:28:09.7380 44065/T5 Sec/Crypto.cpp:990 ]: Removing Passenger private key from keychain failed: Write permissions error.. Please remove the private key from the certificate labeled Phusion Passenger Open Source in your keychain.
 App 44081 output: "init"
 App 44114 output: {"rom"=>"projects/vir", "password"=>"vir"}
+[ N 2023-01-13 19:58:16.3620 68061/T1 age/Wat/WatchdogMain.cpp:1377 ]: Starting Passenger watchdog...
+[ N 2023-01-13 19:58:16.3979 68063/T1 age/Cor/CoreMain.cpp:1340 ]: Starting Passenger core...
+[ N 2023-01-13 19:58:16.3984 68063/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ N 2023-01-13 19:58:16.4418 68063/T1 age/Cor/CoreMain.cpp:1015 ]: Passenger core online, PID 68063
+[ N 2023-01-13 19:58:19.6320 68063/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+[ E 2023-01-13 19:58:19.6399 68063/T5 Sec/Crypto.cpp:990 ]: Removing Passenger private key from keychain failed: Write permissions error.. Please remove the private key from the certificate labeled Phusion Passenger Open Source in your keychain.
+App 68079 output: "init"
+App 68112 output: {"rom"=>"projects/b6test", "password"=>"b6test"}
+App 68112 output: 2023-01-13 19:58:26 - ActiveSupport::MessageVerifier::InvalidSignature - ActiveSupport::MessageVerifier::InvalidSignature:
+App 68112 output: 	/Library/Ruby/Gems/2.6.0/gems/activesupport-6.1.7/lib/active_support/message_verifier.rb:176:in `verify'
+App 68112 output: 	/Library/Ruby/Gems/2.6.0/gems/activesupport-6.1.7/lib/active_support/message_encryptor.rb:154:in `decrypt_and_verify'
+App 68112 output: 	/Library/Ruby/Gems/2.6.0/gems/activesupport-6.1.7/lib/active_support/messages/rotator.rb:22:in `decrypt_and_verify'
+App 68112 output: 	/Users/andylee/Repos/Pokeweb/models/cipher.rb:17:in `auth?'
+App 68112 output: 	/Users/andylee/Repos/Pokeweb/routes.rb:97:in `block in <class:MyApp>'
+App 68112 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1696:in `call'
+App 68112 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1696:in `block in compile!'
+App 68112 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1009:in `block (3 levels) in route!'
+App 68112 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1027:in `route_eval'
+App 68112 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1009:in `block (2 levels) in route!'
+App 68112 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1058:in `block in process_route'
+App 68112 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1056:in `catch'
+App 68112 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1056:in `process_route'
+App 68112 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1007:in `block in route!'
+App 68112 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1004:in `each'
+App 68112 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1004:in `route!'
+App 68112 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1128:in `block in dispatch!'
+App 68112 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `catch'
+App 68112 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `invoke'
+App 68112 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1123:in `dispatch!'
+App 68112 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:939:in `block in call!'
+App 68112 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `catch'
+App 68112 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `invoke'
+App 68112 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:939:in `call!'
+App 68112 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:928:in `call'
+App 68112 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/xss_header.rb:20:in `call'
+App 68112 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/path_traversal.rb:18:in `call'
+App 68112 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/json_csrf.rb:28:in `call'
+App 68112 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/base.rb:53:in `call'
+App 68112 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/base.rb:53:in `call'
+App 68112 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/frame_options.rb:33:in `call'
+App 68112 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/null_logger.rb:11:in `call'
+App 68112 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/head.rb:12:in `call'
+App 68112 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/show_exceptions.rb:23:in `call'
+App 68112 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:219:in `call'
+App 68112 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:2007:in `call'
+App 68112 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1566:in `block in call'
+App 68112 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1782:in `synchronize'
+App 68112 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1566:in `call'
+App 68112 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:266:in `context'
+App 68112 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:260:in `call'
+App 68112 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:266:in `context'
+App 68112 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:260:in `call'
+App 68112 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/rack/thread_handler_extension.rb:107:in `process_request'
+App 68112 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+App 68112 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+App 68112 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler.rb:419:in `block (3 levels) in start_threads'
+App 68112 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+App 68112 output: "vanilla"
+App 68112 output: {"rom_base"=>"B2", "rom_name"=>"b3test.nds", "password"=>"b3test"}
+App 68112 output: {"rom_name"=>"projects/b3test"}
+[ N 2023-01-14 13:43:58.4126 3050/T1 age/Wat/WatchdogMain.cpp:1377 ]: Starting Passenger watchdog...
+[ N 2023-01-14 13:43:58.4459 3052/T1 age/Cor/CoreMain.cpp:1340 ]: Starting Passenger core...
+[ N 2023-01-14 13:43:58.4471 3052/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ N 2023-01-14 13:43:58.4909 3052/T1 age/Cor/CoreMain.cpp:1015 ]: Passenger core online, PID 3052
+[ N 2023-01-14 13:44:01.3005 3052/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+[ E 2023-01-14 13:44:01.3070 3052/T5 Sec/Crypto.cpp:990 ]: Removing Passenger private key from keychain failed: Write permissions error.. Please remove the private key from the certificate labeled Phusion Passenger Open Source in your keychain.
+App 3068 output: "init"
+App 3101 output: {"rom"=>"projects/b2test", "password"=>"b2test"}
+App 3101 output: 2023-01-14 13:44:23 - Errno::ENOENT - No such file or directory @ rb_sysopen - projects/b2test/session_settings.json:
+App 3101 output: 	/Users/andylee/Repos/Pokeweb/models/session_settings.rb:84:in `initialize'
+App 3101 output: 	/Users/andylee/Repos/Pokeweb/models/session_settings.rb:84:in `open'
+App 3101 output: 	/Users/andylee/Repos/Pokeweb/models/session_settings.rb:84:in `get'
+App 3101 output: 	/Users/andylee/Repos/Pokeweb/models/cipher.rb:16:in `auth?'
+App 3101 output: 	/Users/andylee/Repos/Pokeweb/routes.rb:97:in `block in <class:MyApp>'
+App 3101 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1696:in `call'
+App 3101 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1696:in `block in compile!'
+App 3101 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1009:in `block (3 levels) in route!'
+App 3101 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1027:in `route_eval'
+App 3101 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1009:in `block (2 levels) in route!'
+App 3101 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1058:in `block in process_route'
+App 3101 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1056:in `catch'
+App 3101 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1056:in `process_route'
+App 3101 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1007:in `block in route!'
+App 3101 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1004:in `each'
+App 3101 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1004:in `route!'
+App 3101 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1128:in `block in dispatch!'
+App 3101 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `catch'
+App 3101 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `invoke'
+App 3101 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1123:in `dispatch!'
+App 3101 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:939:in `block in call!'
+App 3101 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `catch'
+App 3101 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1099:in `invoke'
+App 3101 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:939:in `call!'
+App 3101 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:928:in `call'
+App 3101 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/xss_header.rb:20:in `call'
+App 3101 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/path_traversal.rb:18:in `call'
+App 3101 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/json_csrf.rb:28:in `call'
+App 3101 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/base.rb:53:in `call'
+App 3101 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/base.rb:53:in `call'
+App 3101 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-protection-3.0.5/lib/rack/protection/frame_options.rb:33:in `call'
+App 3101 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/null_logger.rb:11:in `call'
+App 3101 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/head.rb:12:in `call'
+App 3101 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/show_exceptions.rb:23:in `call'
+App 3101 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:219:in `call'
+App 3101 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:2007:in `call'
+App 3101 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1566:in `block in call'
+App 3101 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1782:in `synchronize'
+App 3101 output: 	/Library/Ruby/Gems/2.6.0/gems/sinatra-3.0.5/lib/sinatra/base.rb:1566:in `call'
+App 3101 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:266:in `context'
+App 3101 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:260:in `call'
+App 3101 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:266:in `context'
+App 3101 output: 	/Library/Ruby/Gems/2.6.0/gems/rack-2.2.4/lib/rack/session/abstract/id.rb:260:in `call'
+App 3101 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/rack/thread_handler_extension.rb:107:in `process_request'
+App 3101 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+App 3101 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+App 3101 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/request_handler.rb:419:in `block (3 levels) in start_threads'
+App 3101 output: 	/Library/Ruby/Gems/2.6.0/gems/passenger-6.0.16/src/ruby_supportlib/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+App 3101 output: {"rom"=>"projects/b3test", "password"=>"b3test"}
+App 3101 output: "development"
+App 3101 output: "vanilla"
+App 3101 output: {"rom_base"=>"B", "rom_name"=>"btest.nds", "password"=>"btest"}
+App 3101 output: {"rom_name"=>"projects/btest"}
+App 3101 output: "development"
+App 3101 output: 124
+App 3101 output: {"maps"=>[[38, [384, 416, 32, 32]], [39, [416, 416, 32, 32]], [40, [384, 448, 32, 32]], [41, [416, 448, 32, 32]]], "translate"=>[384, 416], "headers"=>[389, 390, 418, 419]}
+App 3101 output: 126
+App 3101 output: {"maps"=>[[520, [0, 0, 32, 32]], [549, [32, 0, 32, 32]], [548, [0, 32, 32, 32]], [550, [32, 32, 32, 32]]], "translate"=>[0, 0]}
+App 3101 output: 138
+App 3101 output: {"maps"=>[[575, [0, 0, 32, 32]]], "translate"=>[0, 0]}
+App 3101 output: 124
+App 3101 output: {"maps"=>[[38, [384, 416, 32, 32]], [39, [416, 416, 32, 32]], [40, [384, 448, 32, 32]], [41, [416, 448, 32, 32]]], "translate"=>[384, 416], "headers"=>[389, 390, 418, 419]}
+App 3101 output: 124
+App 3101 output: {"maps"=>[[38, [384, 416, 32, 32]], [39, [416, 416, 32, 32]], [40, [384, 448, 32, 32]], [41, [416, 448, 32, 32]]], "translate"=>[384, 416], "headers"=>[389, 390, 418, 419]}
+App 3101 output: 126
+App 3101 output: {"maps"=>[[520, [0, 0, 32, 32]], [549, [32, 0, 32, 32]], [548, [0, 32, 32, 32]], [550, [32, 32, 32, 32]]], "translate"=>[0, 0]}
+App 3101 output: 128
+App 3101 output: {"maps"=>[[121, [0, 0, 32, 32]], [122, [32, 0, 32, 32]]], "translate"=>[0, 0]}
+App 3101 output: "62"
+App 3101 output: {"file_name"=>"62", "field"=>"npc_13_x_cord", "value"=>"400", "narc"=>"overworld", "int"=>"true"}
+App 3101 output: {"file_name"=>"62", "field"=>"npc_13_x_cord", "value"=>"400", "narc"=>"overworld", "int"=>"true"}
+App 3101 output: "python3 python/overworld_writer.py update 62 projects/btest"
+App 3101 output: {"file_name"=>"62", "field"=>"npc_13_y_cord", "value"=>"440", "narc"=>"overworld", "int"=>"true"}
+App 3101 output: {"file_name"=>"62", "field"=>"npc_13_y_cord", "value"=>"440", "narc"=>"overworld", "int"=>"true"}
+App 3101 output: "python3 python/overworld_writer.py update 62 projects/btest"
+App 3101 output: {"file_name"=>"62", "field"=>"npc_13_x_cord", "value"=>"399", "narc"=>"overworld", "int"=>"true"}
+App 3101 output: {"file_name"=>"62", "field"=>"npc_13_x_cord", "value"=>"399", "narc"=>"overworld", "int"=>"true"}
+App 3101 output: "python3 python/overworld_writer.py update 62 projects/btest"
+App 3101 output: {"file_name"=>"62", "field"=>"npc_13_x_cord", "value"=>"398", "narc"=>"overworld", "int"=>"true"}
+App 3101 output: {"file_name"=>"62", "field"=>"npc_13_x_cord", "value"=>"398", "narc"=>"overworld", "int"=>"true"}
+App 3101 output: "python3 python/overworld_writer.py update 62 projects/btest"
+App 3101 output: {"file_name"=>"62", "field"=>"npc_13_x_cord", "value"=>"397", "narc"=>"overworld", "int"=>"true"}
+App 3101 output: {"file_name"=>"62", "field"=>"npc_13_x_cord", "value"=>"397", "narc"=>"overworld", "int"=>"true"}
+App 3101 output: "python3 python/overworld_writer.py update 62 projects/btest"
+App 3101 output: {"file_name"=>"62", "field"=>"npc_13_overworld_sprite", "value"=>"1", "narc"=>"overworld", "int"=>"true"}
+App 3101 output: {"file_name"=>"62", "field"=>"npc_13_overworld_sprite", "value"=>"1", "narc"=>"overworld", "int"=>"true"}
+App 3101 output: "python3 python/overworld_writer.py update 62 projects/btest"
+App 3101 output: {"file_name"=>"62", "field"=>"npc_13_overworld_sprite", "value"=>"98", "narc"=>"overworld", "int"=>"true"}
+App 3101 output: {"file_name"=>"62", "field"=>"npc_13_overworld_sprite", "value"=>"98", "narc"=>"overworld", "int"=>"true"}
+App 3101 output: "python3 python/overworld_writer.py update 62 projects/btest"
+[ N 2023-01-15 04:31:04.6632 3052/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+[ E 2023-01-15 04:31:04.6701 3052/T5 Sec/Crypto.cpp:990 ]: Removing Passenger private key from keychain failed: Write permissions error.. Please remove the private key from the certificate labeled Phusion Passenger Open Source in your keychain.
+App 3101 output: "vanilla"
+App 3101 output: {"filename"=>{"filename"=>"ProjectBug_edited.xdelta", "type"=>"application/octet-stream", "name"=>"filename", "tempfile"=>#<Tempfile:/var/folders/th/rnc7s7ts4_13_1w48n1wjfwr0000gn/T/RackMultipart20230115-3101-dnfuch.xdelta>, "head"=>"Content-Disposition: form-data; name=\"filename\"; filename=\"ProjectBug_edited.xdelta\"\r\nContent-Type: application/octet-stream\r\n"}, "rom_base"=>"B2", "rom_name"=>"pb6.nds", "password"=>"pb6"}
+App 3101 output: "xdelta3 -d -s ./base/blank.nds ./base/B2.xdelta ./base/B2.nds"
+App 3101 output: "xdelta3 -d -s ./base/B2.nds ./xdeltas/pb6.xdelta pb6.nds"
+App 3101 output: decompressing arm9
+App 3101 output: 
+App 3101 output: outputting texts
+App 3101 output: outputting texts
+App 3101 output: outputting scripts
+App 3101 output: {'rom_name': 'projects/pb6', 'pw': 'ZFNDL2ZNMVJucUhiY095UkFTYTByZz09LS1LQTBBdlBkUVVXNHVEOVpEYTN4WlhRPT0=--3ccc05aeb3fddd739cad6bb9dab59959acc184b5', 'base_version': 'B2', 'base_rom': 'BW2', 'headers': 359, 'message_texts': 349, 'story_texts': 350, 'scripts': 403}
+App 3101 output: {"rom_name"=>"projects/pb6"}
+App 3101 output: creating project folders
+App 3101 output: projects/pb6/json/moves
+App 3101 output: extracting narcs
+App 3101 output: parsing texts
+App 3101 output: settings up processing pools
+App 3101 output: outputing narcs
+App 3101 output: grottos
+App 3101 output: grotto_odds
+App 3101 output: marts
+App 3101 output: matrix
+App 3101 output: moves
+App 3101 output: evolutions
+App 3101 output: items
+App 3101 output: 
+App 3101 output: learnsets
+App 3101 output: personal
+App 3101 output: 157
+App 3101 output: {'ivs_0': 50, 'ability_0': 16, 'level_0': 17, 'padding_0': 0, 'species_id_0': 451, 'form_0': 0, 'item_id_0': 232, 'move_1_0': 184, 'move_2_0': 440, 'move_3_0': 42, 'move_4_0': 228, 'ivs_1': 100, 'ability_1': 0, 'level_1': 17, 'padding_1': 0, 'species_id_1': 269, 'form_1': 0, 'item_id_1': 43, 'move_1_1': 18, 'move_2_1': 92, 'move_3_1': 182, 'move_4_1': 60, 'ivs_2': 100, 'ability_2': 32, 'level_2': 18, 'padding_2': 32, 'species_id_2': 2, 'form_2': 4352, 'item_id_2': 48129, 'move_1_2': 38144, 'move_2_2': 19457, 'move_3_2': 61696, 'move_4_2': 0}
+App 3101 output: 157
+App 3101 output: {'ivs_0': 50, 'ability_0': 16, 'level_0': 17, 'padding_0': 0, 'species_id_0': 451, 'form_0': 0, 'item_id_0': 232, 'move_1_0': 184, 'move_2_0': 440, 'move_3_0': 42, 'move_4_0': 228, 'ivs_1': 100, 'ability_1': 0, 'level_1': 17, 'padding_1': 0, 'species_id_1': 269, 'form_1': 0, 'item_id_1': 43, 'move_1_1': 18, 'move_2_1': 92, 'move_3_1': 182, 'move_4_1': 60, 'ivs_2': 100, 'ability_2': 32, 'level_2': 18, 'padding_2': 32, 'species_id_2': 2, 'form_2': 4352, 'item_id_2': 48129, 'move_1_2': 38144, 'move_2_2': 19457, 'move_3_2': 61696, 'move_4_2': 0}
+App 3101 output: 157
+App 3101 output: {'ivs_0': 50, 'ability_0': 16, 'level_0': 17, 'padding_0': 0, 'species_id_0': 451, 'form_0': 0, 'item_id_0': 232, 'move_1_0': 184, 'move_2_0': 440, 'move_3_0': 42, 'move_4_0': 228, 'ivs_1': 100, 'ability_1': 0, 'level_1': 17, 'padding_1': 0, 'species_id_1': 269, 'form_1': 0, 'item_id_1': 43, 'move_1_1': 18, 'move_2_1': 92, 'move_3_1': 182, 'move_4_1': 60, 'ivs_2': 100, 'ability_2': 32, 'level_2': 18, 'padding_2': 32, 'species_id_2': 2, 'form_2': 4352, 'item_id_2': 48129, 'move_1_2': 38144, 'move_2_2': 19457, 'move_3_2': 61696, 'move_4_2': 0}
+App 3101 output: overworlds
+App 3101 output: encounters
+App 3101 output: maps
+App 3101 output: multiprocessing.pool
+App 3101 output: .RemoteTraceback: 
+App 3101 output: """
+App 3101 output: Traceback (most recent call last):
+App 3101 output:   File "/Users/andylee/.pyenv/versions/3.11.1/lib/python3.11/multiprocessing/pool.py", line 125, in worker
+App 3101 output:     result = (True, func(*args, **kwds))
+App 3101 output:                     ^^^^^^^^^^^^^^^^^^^
+App 3101 output:   File "/Users/andylee/.pyenv/versions/3.11.1/lib/python3.11/multiprocessing/pool.py", line 48, in mapstar
+App 3101 output:     return list(map(*args))
+App 3101 output:            ^^^^^^^^^^^^^^^^
+App 3101 output:   File "/Users/andylee/Repos/Pokeweb/python/parallel.py", line 34, in output
+App 3101 output:     eval(f'output_{narc}_json')(narc_data, rom_name)
+App 3101 output:   File "/Users/andylee/Repos/Pokeweb/python/trdata_reader.py", line 17, in output_trdata_json
+App 3101 output:     tools.output_json(narc, "trdata", to_readable, rom_name)
+App 3101 output:   File "/Users/andylee/Repos/Pokeweb/python/tools.py", line 120, in output_json
+App 3101 output:     output_trpok_json(TRPOK_INFO, rom_name)
+App 3101 output:   File "/Users/andylee/Repos/Pokeweb/python/trpok_reader.py", line 86, in output_trpok_json
+App 3101 output:     read_narc_data(data, narc_format, data_name, "trpok", template, num_pokemon)
+App 3101 output:   File "/Users/andylee/Repos/Pokeweb/python/trpok_reader.py", line 102, in read_narc_data
+App 3101 output:     file["readable"] = to_readable(file["raw"], file_name, template, num_pokemon)
+App 3101 output:                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+App 3101 output:   File "/Users/andylee/Repos/Pokeweb/python/trpok_reader.py", line 137, in to_readable
+App 3101 output:     readable[f'item_id_{n}'] = ITEMS[raw[f'item_id_{n}']]
+App 3101 output:                                ~~~~~^^^^^^^^^^^^^^^^^^^^^
+App 3101 output: IndexError: list index out of range
+App 3101 output: """
+App 3101 output: 
+App 3101 output: The above exception was the direct cause of the following exception:
+App 3101 output: 
+App 3101 output: Traceback (most recent call last):
+App 3101 output:   File "/Users/andylee/Repos/Pokeweb/python/parallel.py", line 67, in <module>
+App 3101 output:     
+App 3101 output: pool.map(output, narcs_to_output)
+App 3101 output:   File "/Users/andylee/.pyenv/versions/3.11.1/lib/python3.11/multiprocessing/pool.py", line 367, in map
+App 3101 output:     return self._map_async(func, iterable, mapstar, chunksize).get()
+App 3101 output: 
+App 3101 output:  
+App 3101 output:        
+App 3101 output:    ^^^
+App 3101 output: ^^^^^
+App 3101 output: ^^^^^^
+App 3101 output: ^^^^^
+App 3101 output: ^^^^^^
+App 3101 output: ^^^^^
+App 3101 output: ^^^^^
+App 3101 output: ^^^^^^
+App 3101 output: ^^^^^
+App 3101 output: ^^^^^^
+App 3101 output: ^^^^^
+App 3101 output: 
+App 3101 output:   File "/Users/andylee/.pyenv/versions/3.11.1/lib/python3.11/multiprocessing/pool.py", line 774, in get
+App 3101 output:     raise self._value
+App 3101 output: 
+App 3101 output: IndexError: list index out of range
+App 3101 output: settings up processing pools
+App 3101 output: outputing narcs
+App 3101 output: grotto_odds
+App 3101 output: multiprocessing.pool
+App 3101 output: .RemoteTraceback: 
+App 3101 output: 
+App 3101 output: """
+App 3101 output: Traceback (most recent call last):
+App 3101 output:   File "/Users/andylee/.pyenv/versions/3.11.1/lib/python3.11/multiprocessing/pool.py", line 125, in worker
+App 3101 output:     result = (True, func(*args, **kwds))
+App 3101 output:                     ^^^^^^^^^^^^^^^^^^^
+App 3101 output:   File "/Users/andylee/.pyenv/versions/3.11.1/lib/python3.11/multiprocessing/pool.py", line 48, in mapstar
+App 3101 output:     return list(map(*args))
+App 3101 output:            ^^^^^^^^^^^^^^^^
+App 3101 output:   File "/Users/andylee/Repos/Pokeweb/python/parallel.py", line 28, in output
+App 3101 output:     narc_data = ndspy.narc.NARC.fromFile(file_name)
+App 3101 output:                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+App 3101 output:   File "/Users/andylee/.pyenv/versions/3.11.1/lib/python3.11/site-packages/ndspy/narc.py", line 104, in fromFile
+App 3101 output:     with open(filePath, 'rb') as f:
+App 3101 output:          ^^^^^^^^^^^^^^^^^^^^
+App 3101 output: FileNotFoundError: [Errno 2] No such file or directory: 'projects/pb6/narcs/trdata-438.narc'
+App 3101 output: """
+App 3101 output: 
+App 3101 output: The above exception was the direct cause of the following exception:
+App 3101 output: 
+App 3101 output: Traceback (most recent call last):
+App 3101 output:   File "/Users/andylee/Repos/Pokeweb/python/parallel.py", line 67, in <module>
+App 3101 output:     pool.map(output, narcs_to_output)
+App 3101 output:   File "/Users/andylee/.pyenv/versions/3.11.1/lib/python3.11/multiprocessing/pool.py", line 367, in map
+App 3101 output:     
+App 3101 output: return self._map_async(func, iterable, mapstar, chunksize).get()
+App 3101 output:  
+App 3101 output:          
+App 3101 output:  ^^^^^^^^^^^^^^^^^^
+App 3101 output: ^^^^^^^^^^^^
+App 3101 output: ^^
+App 3101 output: ^^^^^^^^^^^^^
+App 3101 output: ^^^^^^^
+App 3101 output: ^^^^^
+App 3101 output:   File "/Users/andylee/.pyenv/versions/3.11.1/lib/python3.11/multiprocessing/pool.py", line 774, in get
+App 3101 output:     raise self._value
+App 3101 output: FileNotFoundError: [Errno 2] No such file or directory: 'projects/pb6/narcs/trdata-438.narc'
+App 3101 output: Traceback (most recent call last):
+App 3101 output:   File "/Users/andylee/Repos/Pokeweb/python/rom_loader.py", line 247, in <module>
+App 3101 output:     subprocess.run(['python3', 'python/parallel.py', rom_name], check = True)
+App 3101 output:   File "/Users/andylee/.pyenv/versions/3.11.1/lib/python3.11/subprocess.py", line 571, in run
+App 3101 output:     raise CalledProcessError(retcode, process.args,
+App 3101 output: subprocess.CalledProcessError
+App 3101 output: : Command '['python3', 'python/parallel.py', 'projects/pb6']' returned non-zero exit status 1.
+App 3101 output: 
+App 3101 output: During handling of the above exception, another exception occurred:
+App 3101 output: 
+App 3101 output: Traceback (most recent call last):
+App 3101 output:   File "/Users/andylee/Repos/Pokeweb/python/rom_loader.py", line 249, in <module>
+App 3101 output:     subprocess.run(['python', 'python/parallel.py', rom_name], check = True)
+App 3101 output: 
+App 3101 output:   File "/Users/andylee/.pyenv/versions/3.11.1/lib/python3.11/subprocess.py", line 571, in run
+App 3101 output:     
+App 3101 output: raise CalledProcessError(retcode, process.args,
+App 3101 output: subprocess.CalledProcessError
+App 3101 output: : Command '['python', 'python/parallel.py', 'projects/pb6']' returned non-zero exit status 1.
+App 3101 output: "vanilla"
+App 3101 output: {"filename"=>{"filename"=>"pb4.xdelta", "type"=>"application/octet-stream", "name"=>"filename", "tempfile"=>#<Tempfile:/var/folders/th/rnc7s7ts4_13_1w48n1wjfwr0000gn/T/RackMultipart20230115-3101-1440ro6.xdelta>, "head"=>"Content-Disposition: form-data; name=\"filename\"; filename=\"pb4.xdelta\"\r\nContent-Type: application/octet-stream\r\n"}, "rom_base"=>"B2", "rom_name"=>"pb7.nds", "password"=>"pb"}
+App 3101 output: "xdelta3 -d -s ./base/blank.nds ./base/B2.xdelta ./base/B2.nds"
+App 3101 output: "xdelta3 -d -s ./base/B2.nds ./xdeltas/pb7.xdelta pb7.nds"
+App 3101 output: decompressing arm9
+App 3101 output: outputting texts
+App 3101 output: outputting texts
+App 3101 output: outputting scripts
+App 3101 output: 
+App 3101 output: {'rom_name': 'projects/pb7', 'pw': 'WnZIZjFRc1ZWdHpzT1hDazRPcm5HUT09LS0wTU84T1phNG56cjVXTS9pUy90RHlnPT0=--acbb38a1716ee05c80e34672b0e0519a25c5f2f4', 'base_version': 'B2', 'base_rom': 'BW2', 'headers': 359, 'message_texts': 349, 'story_texts': 350, 'scripts': 403}
+App 3101 output: {"rom_name"=>"projects/pb7"}
+App 3101 output: creating project folders
+App 3101 output: projects/pb7/json/moves
+App 3101 output: extracting narcs
+App 3101 output: parsing texts
+App 3101 output: settings up processing pools
+App 3101 output: outputing narcs
+App 3101 output: grottos
+App 3101 output: marts
+App 3101 output: grotto_odds
+App 3101 output: matrix
+App 3101 output: 
+App 3101 output: moves
+App 3101 output: evolutions
+App 3101 output: items
+App 3101 output: learnsets
+App 3101 output: personal
+App 3101 output: trpok
+App 3101 output: trdata
+App 3101 output: overworlds
+App 3101 output: 
+App 3101 output: encounters
+App 3101 output: maps
+App 3101 output: Traceback (most recent call last):
+App 3101 output:   File "/Users/andylee/Repos/Pokeweb/python/rom_loader.py", line 253, in <module>
+App 3101 output:     if sys.argv[2] != "offline":
+App 3101 output:  
+App 3101 output:       ~~~~~~~~^^^
+App 3101 output: IndexError: list index out of range
+
+[ N 2023-01-15 13:39:55.2842 3052/T8 age/Cor/CoreMain.cpp:671 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2023-01-15 13:39:55.2843 3052/T1 age/Cor/CoreMain.cpp:1246 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2023-01-15 13:39:55.2844 3052/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 3101, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2023-01-15 13:39:55.2848 3052/Tg Ser/Server.h:901 ]: [ServerThr.5] Freed 0 spare client objects
+[ N 2023-01-15 13:39:55.2848 3052/Ts Ser/Server.h:901 ]: [ServerThr.11] Freed 0 spare client objects
+[ N 2023-01-15 13:39:55.2848 3052/Ti Ser/Server.h:901 ]: [ServerThr.6] Freed 0 spare client objects
+[ N 2023-01-15 13:39:55.2848 3052/T8 Ser/Server.h:901 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2023-01-15 13:39:55.2848 3052/Tm Ser/Server.h:901 ]: [ServerThr.8] Freed 0 spare client objects
+[ N 2023-01-15 13:39:55.2848 3052/Td Ser/Server.h:901 ]: [ServerThr.3] Freed 0 spare client objects
+[ N 2023-01-15 13:39:55.2848 3052/To Ser/Server.h:901 ]: [ServerThr.9] Freed 0 spare client objects
+[ N 2023-01-15 13:39:55.2849 3052/Tg Ser/Server.h:558 ]: [ServerThr.5] Shutdown finished
+[ N 2023-01-15 13:39:55.2850 3052/T8 Ser/Server.h:558 ]: [ServerThr.1] Shutdown finished
+[ N 2023-01-15 13:39:55.2848 3052/Tq Ser/Server.h:901 ]: [ServerThr.10] Freed 0 spare client objects
+[ N 2023-01-15 13:39:55.2850 3052/To Ser/Server.h:558 ]: [ServerThr.9] Shutdown finished
+[ N 2023-01-15 13:39:55.2851 3052/Tq Ser/Server.h:558 ]: [ServerThr.10] Shutdown finished
+[ N 2023-01-15 13:39:55.2850 3052/Td Ser/Server.h:558 ]: [ServerThr.3] Shutdown finished
+[ N 2023-01-15 13:39:55.2848 3052/Te Ser/Server.h:901 ]: [ServerThr.4] Freed 0 spare client objects
+[ N 2023-01-15 13:39:55.2848 3052/Tk Ser/Server.h:901 ]: [ServerThr.7] Freed 0 spare client objects
+[ N 2023-01-15 13:39:55.2848 3052/Ta Ser/Server.h:901 ]: [ServerThr.2] Freed 0 spare client objects
+[ N 2023-01-15 13:39:55.2848 3052/Tu Ser/Server.h:901 ]: [ServerThr.12] Freed 0 spare client objects
+[ N 2023-01-15 13:39:55.2850 3052/Ts Ser/Server.h:558 ]: [ServerThr.11] Shutdown finished
+[ N 2023-01-15 13:39:55.2849 3052/Ti Ser/Server.h:558 ]: [ServerThr.6] Shutdown finished
+[ N 2023-01-15 13:39:55.2850 3052/Tm Ser/Server.h:558 ]: [ServerThr.8] Shutdown finished
+[ N 2023-01-15 13:39:55.2852 3052/Te Ser/Server.h:558 ]: [ServerThr.4] Shutdown finished
+[ N 2023-01-15 13:39:55.2852 3052/Ta Ser/Server.h:558 ]: [ServerThr.2] Shutdown finished
+[ N 2023-01-15 13:39:55.2853 3052/Tu Ser/Server.h:558 ]: [ServerThr.12] Shutdown finished
+[ N 2023-01-15 13:39:55.2852 3052/Tk Ser/Server.h:558 ]: [ServerThr.7] Shutdown finished
+[ N 2023-01-15 13:39:55.2857 3052/Tw Ser/Server.h:901 ]: [ApiServer] Freed 0 spare client objects
+[ N 2023-01-15 13:39:55.2857 3052/Tw Ser/Server.h:558 ]: [ApiServer] Shutdown finished
+[ N 2023-01-15 13:39:55.2887 3052/T1 age/Cor/CoreMain.cpp:1147 ]: Checking whether to disconnect long-running connections for process 3101, application /Users/andylee/Repos/Pokeweb (development)
+[ N 2023-01-15 13:39:56.3896 3052/T1 age/Cor/CoreMain.cpp:1325 ]: Passenger core shutdown finished
+[ N 2023-01-15 13:39:57.7399 27509/T1 age/Wat/WatchdogMain.cpp:1377 ]: Starting Passenger watchdog...
+[ N 2023-01-15 13:39:57.7735 27511/T1 age/Cor/CoreMain.cpp:1340 ]: Starting Passenger core...
+[ N 2023-01-15 13:39:57.7739 27511/T1 age/Cor/CoreMain.cpp:256 ]: Passenger core running in multi-application mode.
+[ N 2023-01-15 13:39:57.8125 27511/T1 age/Cor/CoreMain.cpp:1015 ]: Passenger core online, PID 27511
+[ N 2023-01-15 13:40:00.6139 27511/T5 age/Cor/SecurityUpdateChecker.h:519 ]: Security update check: no update found (next check in 24 hours)
+[ E 2023-01-15 13:40:00.6210 27511/T5 Sec/Crypto.cpp:990 ]: Removing Passenger private key from keychain failed: Write permissions error.. Please remove the private key from the certificate labeled Phusion Passenger Open Source in your keychain.
+App 27527 output: "init"
+App 27561 output: {"rom"=>"projects/pb7", "password"=>"pb7"}
+App 27561 output: {"rom"=>"projects/pb7", "password"=>"pb"}
+App 27561 output: "creating base rom"
+App 27561 output: "xdelta3 -d -s ./base/blank.nds ./base/B2.xdelta ./base/B2.nds"
+App 27561 output: "creating edited rom"
+App 27561 output: "xdelta3 -d -s ./base/B2.nds ./xdeltas/pb7.xdelta pb7.nds"
+App 27561 output: xdelta3: to overwrite output file specify -f: pb7.nds
+App 27561 output: "creating edited rom"
+App 27561 output: "edited rom created"
+App 27561 output: "generating xdelta"
+App 27561 output: "xdelta3 -e -s ./base/B2.nds ./exports/pb7.nds ./exports/pb7_edited.xdelta"
+App 27561 output: "deleting base rom"
+App 27561 output: "deleting uploaded rom"
+App 27561 output: "deleting edited rom"

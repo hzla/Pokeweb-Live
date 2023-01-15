@@ -20,6 +20,11 @@ class Trdata < Pokenarc
 		super
 	end
 
+	def self.reset file_name
+		`cp #{$rom_name}/json/trdata/0.json #{$rom_name}/json/trdata/#{file_name}.json`
+		`cp #{$rom_name}/json/trpok/0.json #{$rom_name}/json/trpok/#{file_name}.json`
+	end
+
 	def self.text_types 
 		texts = {}
 		texts[0] = "Pre Bttl"

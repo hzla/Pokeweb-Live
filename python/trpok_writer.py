@@ -202,4 +202,12 @@ if len(sys.argv) > 2 and sys.argv[1] == "update":
 	 
 	for file_name in file_names:
 		write_readable_to_raw(int(file_name), sys.argv[3])
+
+if len(sys.argv) > 2 and sys.argv[1] == "validate":
+	
+	set_global_vars(sys.argv[2])
+	file_count = len(os.listdir(f'{sys.argv[2]}/json/trpok'))
+	for file_name in range(0,file_count):
+
+		write_readable_to_raw(int(file_name), sys.argv[2])
 	
