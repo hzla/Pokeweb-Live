@@ -24515,3 +24515,298 @@ App 27561 output: "xdelta3 -e -s ./base/B2.nds ./exports/pb7.nds ./exports/pb7_e
 App 27561 output: "deleting base rom"
 App 27561 output: "deleting uploaded rom"
 App 27561 output: "deleting edited rom"
+App 27561 output: "vanilla"
+App 27561 output: {"filename"=>{"filename"=>"pb8.xdelta", "type"=>"application/octet-stream", "name"=>"filename", "tempfile"=>#<Tempfile:/var/folders/th/rnc7s7ts4_13_1w48n1wjfwr0000gn/T/RackMultipart20230115-27561-ikm48u.xdelta>, "head"=>"Content-Disposition: form-data; name=\"filename\"; filename=\"pb8.xdelta\"\r\nContent-Type: application/octet-stream\r\n"}, "rom_base"=>"B2", "rom_name"=>"pb8.nds", "password"=>"pb"}
+App 27561 output: "xdelta3 -d -s ./base/blank.nds ./base/B2.xdelta ./base/B2.nds"
+App 27561 output: "xdelta3 -d -s ./base/B2.nds ./xdeltas/pb8.xdelta pb8.nds"
+App 27561 output: decompressing arm9
+App 27561 output: outputting texts
+App 27561 output: outputting texts
+App 27561 output: outputting scripts
+App 27561 output: {'rom_name': 'projects/pb8', 'pw': 'eVcrVnQ2SGVtMDkvSkovUFNJNWN2Zz09LS0wMy8vaHhzVytSaWxWUXFXVWFQNVF3PT0=--04557c9655be240dbda50d27b9b3a97ce68e3868', 'base_version': 'B2', 'base_rom': 'BW2', 'headers': 359, 'message_texts': 349, 'story_texts': 350, 'scripts': 403}
+App 27561 output: {"rom_name"=>"projects/pb8"}
+App 27561 output: creating project folders
+App 27561 output: projects/pb8/json/moves
+App 27561 output: extracting narcs
+App 27561 output: parsing texts
+App 27561 output: settings up processing pools
+App 27561 output: outputing narcs
+App 27561 output: grottos
+App 27561 output: grotto_odds
+App 27561 output: marts
+App 27561 output: matrix
+App 27561 output: moves
+App 27561 output: items
+App 27561 output: evolutions
+App 27561 output: learnsets
+App 27561 output: personal
+App 27561 output: 
+App 27561 output: 158
+App 27561 output: {'ivs_0': 100, 'ability_0': 32, 'level_0': 32, 'padding_0': 0, 'species_id_0': 413, 'form_0': 1, 'item_id_0': 540, 'move_1_0': 350, 'move_2_0': 523, 'move_3_0': 474, 'move_4_0': 283, 'ivs_1': 100, 'ability_1': 0, 'level_1': 32, 'padding_1': 0, 'species_id_1': 329, 'form_1': 0, 'item_id_1': 267, 'move_1_1': 225, 'move_2_1': 341, 'move_3_1': 324, 'move_4_1': 314, 'ivs_2': 100, 'ability_2': 16, 'level_2': 32, 'padding_2': 0, 'species_id_2': 472, 'form_2': 0, 'item_id_2': 158, 'move_1_2': 512, 'move_2_2': 369, 'move_3_2': 210, 'move_4_2': 282, 'ivs_3': 150, 'ability_3': 16, 'level_3': 33, 'padding_3': 127, 'species_id_3': 0, 'form_3': 3840, 'item_id_3': 23297, 'move_1_3': 57344, 'move_2_3': 49665, 'move_3_3': 43009, 'move_4_3': 0}
+App 27561 output: 158
+App 27561 output: {'ivs_0': 100, 'ability_0': 32, 'level_0': 32, 'padding_0': 0, 'species_id_0': 413, 'form_0': 1, 'item_id_0': 540, 'move_1_0': 350, 'move_2_0': 523, 'move_3_0': 474, 'move_4_0': 283, 'ivs_1': 100, 'ability_1': 0, 'level_1': 32, 'padding_1': 0, 'species_id_1': 329, 'form_1': 0, 'item_id_1': 267, 'move_1_1': 225, 'move_2_1': 341, 'move_3_1': 324, 'move_4_1': 314, 'ivs_2': 100, 'ability_2': 16, 'level_2': 32, 'padding_2': 0, 'species_id_2': 472, 'form_2': 0, 'item_id_2': 158, 'move_1_2': 512, 'move_2_2': 369, 'move_3_2': 210, 'move_4_2': 282, 'ivs_3': 150, 'ability_3': 16, 'level_3': 33, 'padding_3': 127, 'species_id_3': 0, 'form_3': 3840, 'item_id_3': 23297, 'move_1_3': 57344, 'move_2_3': 49665, 'move_3_3': 43009, 'move_4_3': 0}
+App 27561 output: 158
+App 27561 output: {'ivs_0': 100, 'ability_0': 32, 'level_0': 32, 'padding_0': 0, 'species_id_0': 413, 'form_0': 1, 'item_id_0': 540, 'move_1_0': 350, 'move_2_0': 523, 'move_3_0': 474, 'move_4_0': 283, 'ivs_1': 100, 'ability_1': 0, 'level_1': 32, 'padding_1': 0, 'species_id_1': 329, 'form_1': 0, 'item_id_1': 267, 'move_1_1': 225, 'move_2_1': 341, 'move_3_1': 324, 'move_4_1': 314, 'ivs_2': 100, 'ability_2': 16, 'level_2': 32, 'padding_2': 0, 'species_id_2': 472, 'form_2': 0, 'item_id_2': 158, 'move_1_2': 512, 'move_2_2': 369, 'move_3_2': 210, 'move_4_2': 282, 'ivs_3': 150, 'ability_3': 16, 'level_3': 33, 'padding_3': 127, 'species_id_3': 0, 'form_3': 3840, 'item_id_3': 23297, 'move_1_3': 57344, 'move_2_3': 49665, 'move_3_3': 43009, 'move_4_3': 0}
+App 27561 output: encounters
+App 27561 output: overworlds
+App 27561 output: maps
+App 27561 output: multiprocessing.pool.
+App 27561 output: RemoteTraceback: 
+App 27561 output: """
+App 27561 output: Traceback (most recent call last):
+App 27561 output:   File "/Users/andylee/.pyenv/versions/3.11.1/lib/python3.11/multiprocessing/pool.py", line 125, in worker
+App 27561 output:     result = (True, func(*args, **kwds))
+App 27561 output:                     ^^^^^^^^^^^^^^^^^^^
+App 27561 output:   File "/Users/andylee/.pyenv/versions/3.11.1/lib/python3.11/multiprocessing/pool.py", line 48, in mapstar
+App 27561 output:     return list(map(*args))
+App 27561 output:            ^^^^^^^^^^^^^^^^
+App 27561 output:   File "/Users/andylee/Repos/Pokeweb/python/parallel.py", line 34, in output
+App 27561 output:     eval(f'output_{narc}_json')(narc_data, rom_name)
+App 27561 output:   File "/Users/andylee/Repos/Pokeweb/python/trdata_reader.py", line 17, in output_trdata_json
+App 27561 output:     tools.output_json(narc, "trdata", to_readable, rom_name)
+App 27561 output:   File "/Users/andylee/Repos/Pokeweb/python/tools.py", line 120, in output_json
+App 27561 output:     output_trpok_json(TRPOK_INFO, rom_name)
+App 27561 output:   File "/Users/andylee/Repos/Pokeweb/python/trpok_reader.py", line 86, in output_trpok_json
+App 27561 output:     read_narc_data(data, narc_format, data_name, "trpok", template, num_pokemon)
+App 27561 output:   File "/Users/andylee/Repos/Pokeweb/python/trpok_reader.py", line 102, in read_narc_data
+App 27561 output:     file["readable"] = to_readable(file["raw"], file_name, template, num_pokemon)
+App 27561 output:                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+App 27561 output:   File "/Users/andylee/Repos/Pokeweb/python/trpok_reader.py", line 137, in to_readable
+App 27561 output:     readable[f'item_id_{n}'] = ITEMS[raw[f'item_id_{n}']]
+App 27561 output:                                ~~~~~^^^^^^^^^^^^^^^^^^^^^
+App 27561 output: IndexError: list index out of range
+App 27561 output: """
+App 27561 output: 
+App 27561 output: The above exception was the direct cause of the following exception:
+App 27561 output: 
+App 27561 output: Traceback (most recent call last):
+App 27561 output:   File "/Users/andylee/Repos/Pokeweb/python/parallel.py", line 67, in <module>
+App 27561 output:     pool.map(output, narcs_to_output)
+App 27561 output:   File "/Users/andylee/.pyenv/versions/3.11.1/lib/python3.11/multiprocessing/pool.py", line 367, in map
+App 27561 output:     return self._map_async(func, iterable, mapstar, chunksize).get()
+App 27561 output: 
+App 27561 output:            ^^^^^^^^^^^^^^^^^^^^^^^
+App 27561 output: ^^^^^^^^^^^^^^^^^^^
+App 27561 output: ^^^^^^^
+App 27561 output: ^^^^^^
+App 27561 output: ^^
+App 27561 output:   File "/Users/andylee/.pyenv/versions/3.11.1/lib/python3.11/multiprocessing/pool.py", line 774, in get
+App 27561 output:     raise self._value
+App 27561 output: 
+App 27561 output: IndexError: list index out of range
+App 27561 output: 
+App 27561 output: settings up processing pools
+App 27561 output: outputing narcs
+App 27561 output: grotto_odds
+App 27561 output: multiprocessing.pool.
+App 27561 output: RemoteTraceback: 
+App 27561 output: 
+App 27561 output: """
+App 27561 output: Traceback (most recent call last):
+App 27561 output:   File "/Users/andylee/.pyenv/versions/3.11.1/lib/python3.11/multiprocessing/pool.py", line 125, in worker
+App 27561 output:     result = (True, func(*args, **kwds))
+App 27561 output:                     ^^^^^^^^^^^^^^^^^^^
+App 27561 output:   File "/Users/andylee/.pyenv/versions/3.11.1/lib/python3.11/multiprocessing/pool.py", line 48, in mapstar
+App 27561 output:     return list(map(*args))
+App 27561 output:            ^^^^^^^^^^^^^^^^
+App 27561 output:   File "/Users/andylee/Repos/Pokeweb/python/parallel.py", line 28, in output
+App 27561 output:     narc_data = ndspy.narc.NARC.fromFile(file_name)
+App 27561 output:                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+App 27561 output:   File "/Users/andylee/.pyenv/versions/3.11.1/lib/python3.11/site-packages/ndspy/narc.py", line 104, in fromFile
+App 27561 output:     with open(filePath, 'rb') as f:
+App 27561 output:          ^^^^^^^^^^^^^^^^^^^^
+App 27561 output: FileNotFoundError: [Errno 2] No such file or directory: 'projects/pb8/narcs/trdata-438.narc'
+App 27561 output: """
+App 27561 output: 
+App 27561 output: 
+App 27561 output: The above exception was the direct cause of the following exception:
+App 27561 output: 
+App 27561 output: Traceback (most recent call last):
+App 27561 output:   File "/Users/andylee/Repos/Pokeweb/python/parallel.py", line 67, in <module>
+App 27561 output:     pool.map(output, narcs_to_output)
+App 27561 output: 
+App 27561 output:   File "/Users/andylee/.pyenv/versions/3.11.1/lib/python3.11/multiprocessing/pool.py", line 367, in map
+App 27561 output:     return self._map_async(func, iterable, mapstar, chunksize).get()
+App 27561 output: 
+App 27561 output:  
+App 27561 output:           ^^
+App 27561 output: ^^^^^^^
+App 27561 output: ^^^^^^
+App 27561 output: ^^^^^^^
+App 27561 output: ^^^^^
+App 27561 output: ^^^^^^
+App 27561 output: ^^^^^^
+App 27561 output: ^^^^^
+App 27561 output: ^^^^^
+App 27561 output: ^^^^^^
+App 27561 output: ^^
+App 27561 output:   File "/Users/andylee/.pyenv/versions/3.11.1/lib/python3.11/multiprocessing/pool.py", line 774, in get
+App 27561 output:     raise self._value
+App 27561 output: 
+App 27561 output: FileNotFoundError: 
+App 27561 output: [Errno 2] No such file or directory: 'projects/pb8/narcs/trdata-438.narc'
+App 27561 output: Traceback (most recent call last):
+App 27561 output:   File "/Users/andylee/Repos/Pokeweb/python/rom_loader.py", line 247, in <module>
+App 27561 output:     subprocess.run(['python3', 'python/parallel.py', rom_name], check = True)
+App 27561 output:   File "/Users/andylee/.pyenv/versions/3.11.1/lib/python3.11/subprocess.py", line 571, in run
+App 27561 output:     raise CalledProcessError(retcode, process.args,
+App 27561 output: subprocess.CalledProcessError
+App 27561 output: : Command '['python3', 'python/parallel.py', 'projects/pb8']' returned non-zero exit status 1.
+App 27561 output: 
+App 27561 output: During handling of the above exception, another exception occurred:
+App 27561 output: 
+App 27561 output: Traceback (most recent call last):
+App 27561 output:   File "/Users/andylee/Repos/Pokeweb/python/rom_loader.py", line 249, in <module>
+App 27561 output:     subprocess.run(['python', 'python/parallel.py', rom_name], check = True)
+App 27561 output:   File "/Users/andylee/.pyenv/versions/3.11.1/lib/python3.11/subprocess.py", line 571, in run
+App 27561 output:     raise CalledProcessError(retcode, process.args,
+App 27561 output: subprocess.CalledProcessError: Command '['python', 'python/parallel.py', 'projects/pb8']' returned non-zero exit status 1.
+App 27561 output: "vanilla"
+App 27561 output: {"filename"=>{"filename"=>"pb8.xdelta", "type"=>"application/octet-stream", "name"=>"filename", "tempfile"=>#<Tempfile:/var/folders/th/rnc7s7ts4_13_1w48n1wjfwr0000gn/T/RackMultipart20230115-27561-3usvlc.xdelta>, "head"=>"Content-Disposition: form-data; name=\"filename\"; filename=\"pb8.xdelta\"\r\nContent-Type: application/octet-stream\r\n"}, "rom_base"=>"B2", "rom_name"=>"pb9.nds", "password"=>"pb"}
+App 27561 output: "xdelta3 -d -s ./base/blank.nds ./base/B2.xdelta ./base/B2.nds"
+App 27561 output: "xdelta3 -d -s ./base/B2.nds ./xdeltas/pb9.xdelta pb9.nds"
+App 27561 output: decompressing arm9
+App 27561 output: outputting texts
+App 27561 output: outputting texts
+App 27561 output: outputting scripts
+App 27561 output: {'rom_name': 'projects/pb9', 'pw': 'Q05zMXE3aUVVYWZseEFBVmt3Z1dvUT09LS1xbzNSc2FiSFk3ZzBkdzg0QzVHY09nPT0=--34d8718e3b65bc9ba88d4136eb19f60f28b797e5', 'base_version': 'B2', 'base_rom': 'BW2', 'headers': 359, 'message_texts': 349, 'story_texts': 350, 'scripts': 403}
+App 27561 output: 
+App 27561 output: {"rom_name"=>"projects/pb9"}
+App 27561 output: creating project folders
+App 27561 output: projects/pb9/json/moves
+App 27561 output: extracting narcs
+App 27561 output: parsing texts
+App 27561 output: settings up processing pools
+App 27561 output: outputing narcs
+App 27561 output: grottos
+App 27561 output: 
+App 27561 output: marts
+App 27561 output: 
+App 27561 output: grotto_odds
+App 27561 output: matrix
+App 27561 output: moves
+App 27561 output: items
+App 27561 output: evolutions
+App 27561 output: learnsets
+App 27561 output: personal
+App 27561 output: 158
+App 27561 output: {'ivs_0': 100, 'ability_0': 32, 'level_0': 32, 'padding_0': 0, 'species_id_0': 413, 'form_0': 1, 'item_id_0': 540, 'move_1_0': 350, 'move_2_0': 523, 'move_3_0': 474, 'move_4_0': 283, 'ivs_1': 100, 'ability_1': 0, 'level_1': 32, 'padding_1': 0, 'species_id_1': 329, 'form_1': 0, 'item_id_1': 267, 'move_1_1': 225, 'move_2_1': 341, 'move_3_1': 324, 'move_4_1': 314, 'ivs_2': 100, 'ability_2': 16, 'level_2': 32, 'padding_2': 0, 'species_id_2': 472, 'form_2': 0, 'item_id_2': 158, 'move_1_2': 512, 'move_2_2': 369, 'move_3_2': 210, 'move_4_2': 282, 'ivs_3': 150, 'ability_3': 16, 'level_3': 33, 'padding_3': 127, 'species_id_3': 0, 'form_3': 3840, 'item_id_3': 23297, 'move_1_3': 57344, 'move_2_3': 49665, 'move_3_3': 43009, 'move_4_3': 0}
+App 27561 output: 158
+App 27561 output: {'ivs_0': 100, 'ability_0': 32, 'level_0': 32, 'padding_0': 0, 'species_id_0': 413, 'form_0': 1, 'item_id_0': 540, 'move_1_0': 350, 'move_2_0': 523, 'move_3_0': 474, 'move_4_0': 283, 'ivs_1': 100, 'ability_1': 0, 'level_1': 32, 'padding_1': 0, 'species_id_1': 329, 'form_1': 0, 'item_id_1': 267, 'move_1_1': 225, 'move_2_1': 341, 'move_3_1': 324, 'move_4_1': 314, 'ivs_2': 100, 'ability_2': 16, 'level_2': 32, 'padding_2': 0, 'species_id_2': 472, 'form_2': 0, 'item_id_2': 158, 'move_1_2': 512, 'move_2_2': 369, 'move_3_2': 210, 'move_4_2': 282, 'ivs_3': 150, 'ability_3': 16, 'level_3': 33, 'padding_3': 127, 'species_id_3': 0, 'form_3': 3840, 'item_id_3': 23297, 'move_1_3': 57344, 'move_2_3': 49665, 'move_3_3': 43009, 'move_4_3': 0}
+App 27561 output: 158
+App 27561 output: {'ivs_0': 100, 'ability_0': 32, 'level_0': 32, 'padding_0': 0, 'species_id_0': 413, 'form_0': 1, 'item_id_0': 540, 'move_1_0': 350, 'move_2_0': 523, 'move_3_0': 474, 'move_4_0': 283, 'ivs_1': 100, 'ability_1': 0, 'level_1': 32, 'padding_1': 0, 'species_id_1': 329, 'form_1': 0, 'item_id_1': 267, 'move_1_1': 225, 'move_2_1': 341, 'move_3_1': 324, 'move_4_1': 314, 'ivs_2': 100, 'ability_2': 16, 'level_2': 32, 'padding_2': 0, 'species_id_2': 472, 'form_2': 0, 'item_id_2': 158, 'move_1_2': 512, 'move_2_2': 369, 'move_3_2': 210, 'move_4_2': 282, 'ivs_3': 150, 'ability_3': 16, 'level_3': 33, 'padding_3': 127, 'species_id_3': 0, 'form_3': 3840, 'item_id_3': 23297, 'move_1_3': 57344, 'move_2_3': 49665, 'move_3_3': 43009, 'move_4_3': 0}
+App 27561 output: encounters
+App 27561 output: overworlds
+App 27561 output: maps
+App 27561 output: multiprocessing.pool.RemoteTraceback: 
+App 27561 output: """
+App 27561 output: Traceback (most recent call last):
+App 27561 output:   File "/Users/andylee/.pyenv/versions/3.11.1/lib/python3.11/multiprocessing/pool.py", line 125, in worker
+App 27561 output:     result = (True, func(*args, **kwds))
+App 27561 output:                     ^^^^^^^^^^^^^^^^^^^
+App 27561 output:   File "/Users/andylee/.pyenv/versions/3.11.1/lib/python3.11/multiprocessing/pool.py", line 48, in mapstar
+App 27561 output:     return list(map(*args))
+App 27561 output:            ^^^^^^^^^^^^^^^^
+App 27561 output:   File "/Users/andylee/Repos/Pokeweb/python/parallel.py", line 34, in output
+App 27561 output:     eval(f'output_{narc}_json')(narc_data, rom_name)
+App 27561 output:   File "/Users/andylee/Repos/Pokeweb/python/trdata_reader.py", line 17, in output_trdata_json
+App 27561 output:     tools.output_json(narc, "trdata", to_readable, rom_name)
+App 27561 output:   File "/Users/andylee/Repos/Pokeweb/python/tools.py", line 120, in output_json
+App 27561 output:     output_trpok_json(TRPOK_INFO, rom_name)
+App 27561 output:   File "/Users/andylee/Repos/Pokeweb/python/trpok_reader.py", line 86, in output_trpok_json
+App 27561 output:     read_narc_data(data, narc_format, data_name, "trpok", template, num_pokemon)
+App 27561 output:   File "/Users/andylee/Repos/Pokeweb/python/trpok_reader.py", line 102, in read_narc_data
+App 27561 output:     file["readable"] = to_readable(file["raw"], file_name, template, num_pokemon)
+App 27561 output:                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+App 27561 output:   File "/Users/andylee/Repos/Pokeweb/python/trpok_reader.py", line 137, in to_readable
+App 27561 output:     readable[f'item_id_{n}'] = ITEMS[raw[f'item_id_{n}']]
+App 27561 output:                                ~~~~~^^^^^^^^^^^^^^^^^^^^^
+App 27561 output: IndexError: list index out of range
+App 27561 output: """
+App 27561 output: 
+App 27561 output: The above exception was the direct cause of the following exception:
+App 27561 output: 
+App 27561 output: Traceback (most recent call last):
+App 27561 output:   File "/Users/andylee/Repos/Pokeweb/python/parallel.py", line 67, in <module>
+App 27561 output:     pool.map(output, narcs_to_output)
+App 27561 output:   File "/Users/andylee/.pyenv/versions/3.11.1/lib/python3.11/multiprocessing/pool.py", line 367, in map
+App 27561 output:     return self._map_async(func, iterable, mapstar, chunksize).get()
+App 27561 output: 
+App 27561 output:        
+App 27561 output:     ^^^^^^^^^^^^^^^^^
+App 27561 output: ^^^^^^^^^^^
+App 27561 output: ^^^^^^
+App 27561 output: ^^^^^^
+App 27561 output: ^^^^^^
+App 27561 output: ^^^^^^
+App 27561 output: ^^^^^
+App 27561 output: 
+App 27561 output:   File "/Users/andylee/.pyenv/versions/3.11.1/lib/python3.11/multiprocessing/pool.py", line 774, in get
+App 27561 output:     raise self._value
+App 27561 output: IndexError: list index out of range
+App 27561 output: settings up processing pools
+App 27561 output: outputing narcs
+App 27561 output: grotto_odds
+App 27561 output: multiprocessing.pool.
+App 27561 output: RemoteTraceback: 
+App 27561 output: 
+App 27561 output: """
+App 27561 output: Traceback (most recent call last):
+App 27561 output:   File "/Users/andylee/.pyenv/versions/3.11.1/lib/python3.11/multiprocessing/pool.py", line 125, in worker
+App 27561 output:     result = (True, func(*args, **kwds))
+App 27561 output:                     ^^^^^^^^^^^^^^^^^^^
+App 27561 output:   File "/Users/andylee/.pyenv/versions/3.11.1/lib/python3.11/multiprocessing/pool.py", line 48, in mapstar
+App 27561 output:     return list(map(*args))
+App 27561 output:            ^^^^^^^^^^^^^^^^
+App 27561 output:   File "/Users/andylee/Repos/Pokeweb/python/parallel.py", line 28, in output
+App 27561 output:     narc_data = ndspy.narc.NARC.fromFile(file_name)
+App 27561 output:                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+App 27561 output:   File "/Users/andylee/.pyenv/versions/3.11.1/lib/python3.11/site-packages/ndspy/narc.py", line 104, in fromFile
+App 27561 output:     with open(filePath, 'rb') as f:
+App 27561 output:          ^^^^^^^^^^^^^^^^^^^^
+App 27561 output: FileNotFoundError: [Errno 2] No such file or directory: 'projects/pb9/narcs/personal-363.narc'
+App 27561 output: """
+App 27561 output: 
+App 27561 output: 
+App 27561 output: The above exception was the direct cause of the following exception:
+App 27561 output: 
+App 27561 output: Traceback (most recent call last):
+App 27561 output:   File "/Users/andylee/Repos/Pokeweb/python/parallel.py", line 67, in <module>
+App 27561 output:     
+App 27561 output: pool.map(output, narcs_to_output)
+App 27561 output:   File "/Users/andylee/.pyenv/versions/3.11.1/lib/python3.11/multiprocessing/pool.py", line 367, in map
+App 27561 output:     
+App 27561 output: return self._map_async(func, iterable, mapstar, chunksize).get()
+App 27561 output:  
+App 27561 output:           ^^^^^^
+App 27561 output: ^^^^^^^
+App 27561 output: ^^^^^^
+App 27561 output: ^^^^^^
+App 27561 output: ^^^^^^^
+App 27561 output: ^^^^^^
+App 27561 output: ^^^^^^
+App 27561 output: ^^^^^^
+App 27561 output: ^^^^^^
+App 27561 output: ^
+App 27561 output:   File "/Users/andylee/.pyenv/versions/3.11.1/lib/python3.11/multiprocessing/pool.py", line 774, in get
+App 27561 output:     raise self._value
+App 27561 output: 
+App 27561 output: FileNotFoundError
+App 27561 output: : [Errno 2] No such file or directory: 'projects/pb9/narcs/personal-363.narc'
+App 27561 output: Traceback (most recent call last):
+App 27561 output:   File "/Users/andylee/Repos/Pokeweb/python/rom_loader.py", line 247, in <module>
+App 27561 output:     subprocess.run(['python3', 'python/parallel.py', rom_name], check = True)
+App 27561 output:   File "/Users/andylee/.pyenv/versions/3.11.1/lib/python3.11/subprocess.py", line 571, in run
+App 27561 output:     raise CalledProcessError(retcode, process.args,
+App 27561 output: subprocess.CalledProcessError
+App 27561 output: : Command '['python3', 'python/parallel.py', 'projects/pb9']' returned non-zero exit status 1.
+App 27561 output: 
+App 27561 output: During handling of the above exception, another exception occurred:
+App 27561 output: 
+App 27561 output: Traceback (most recent call last):
+App 27561 output:   File "/Users/andylee/Repos/Pokeweb/python/rom_loader.py", line 249, in <module>
+App 27561 output:     subprocess.run(['python', 'python/parallel.py', rom_name], check = True)
+App 27561 output:   File "/Users/andylee/.pyenv/versions/3.11.1/lib/python3.11/subprocess.py", line 571, in run
+App 27561 output:     raise CalledProcessError(retcode, process.args,
+App 27561 output: 
+App 27561 output: subprocess.CalledProcessError: Command '['python', 'python/parallel.py', 'projects/pb9']' returned non-zero exit status 1.
