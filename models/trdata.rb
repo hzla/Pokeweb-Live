@@ -17,7 +17,7 @@ class Trdata < Pokenarc
 			"trainer_sprites/#{tr_name.downcase}.png"
 		elsif tr_class[-2] == "_"
 			"trainer_sprites/#{tr_class}.png"
-		elsif g_table[tr_class_id] == "female"
+		elsif g_table[tr_class_id.to_i] == "female"
 			"trainer_sprites/#{tr_class}_f.png"
 		else
 			"trainer_sprites/#{tr_class}.png"
