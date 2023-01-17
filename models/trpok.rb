@@ -344,7 +344,7 @@ class Trpok < Pokenarc
 
 		seed = trainer_id + pok_id + pok_iv + pok_lvl
 
-		trainer_class.times do 
+		trainer_class.to_i.times do 
 			seed = seed * 0x5D588B656C078965 + 0x269EC3
 		end
 
