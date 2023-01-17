@@ -29,16 +29,25 @@ p "init"
 class MyApp < Sinatra::Base
   
 	before do
-		
+
+
+
 		$rom_name = session[:rom_name]
 		$mode = ENV["MODE"]
 		$offline = ($mode == "offline")
-		# $rom_name = "projects/b6test"
+		@pb_proj = ""
+
+		if params["project"]
+			$rom_name = "projects/#{params["project"]}"
+			if !SessionSettings.get("public")
+				$rom_name = nil
+			end
+			@pb_proj = "?project=#{params["project"]}"
+		end
 
 		# if ENV['RACK_ENV'] == 'test'
 		# 	$rom_name = ENV['ROM']
 		# end
-
 
 		$fairy = SessionSettings.fairy?
 
@@ -198,6 +207,7 @@ class MyApp < Sinatra::Base
 	end
 
 	get '/rom/save' do
+		return if SessionSettings.get("public")
 		py = "python3"
 
 		base = SessionSettings.get "base_version"
@@ -326,6 +336,7 @@ class MyApp < Sinatra::Base
 	end
 
 	post '/delete' do 
+		return if SessionSettings.get("public")
 		narc_name = params['data']['narc']
 		created = Object.const_get(narc_name.capitalize).delete params["data"]
 		return 200
@@ -334,6 +345,7 @@ class MyApp < Sinatra::Base
 
 	# called by ajax when user makes an edit
 	post '/update' do 
+		return if SessionSettings.get("public")
 		if !$rom_name
 			return {url: '/'}.to_json
 		end
@@ -480,7 +492,7 @@ class MyApp < Sinatra::Base
 	end
 
 	post '/texts/:id' do 
-		
+		return if SessionSettings.get("public")
 		bank = params["bank"]
 		p params
 		Text.edit_bank params["narc"], params["id"], params["bank"]
@@ -529,6 +541,21 @@ class MyApp < Sinatra::Base
 		@trainers = Trdata.get_all
 		@trainer_poks = Trpok.get_all
 		@move_names = Move.get_names_from Move.get_all
+		@show_doc_view = params["doc_view"] 
+		@show_doc_view = true if SessionSettings.get("public")
+		@gender_table = Trdata.gender_table
+
+		# if @show_doc_view
+		# 	tr_count = -1
+		# 	@trainers = @trainers[1..-1].sort_by do |tr|
+		# 		tr_count += 1
+		# 		@trainer_poks[tr_count]["level_0"] ? @trainer_poks[tr_count]["level_0"] : 101
+		# 	end
+		# 	@trainer_poks = @trainer_poks[1..-1].sort_by do |trpok| 
+		# 		trpok["level_0"] ? trpok["level_0"] : 101
+		# 	end
+		# end
+
 
 		n = 381
 		bank = "message_texts"
@@ -563,6 +590,7 @@ class MyApp < Sinatra::Base
 	end
 
 	get '/trainers/:id/reset' do 
+		return if SessionSettings.get("public")
 		Trdata.reset params[:id]
 		redirect '/trainers'
 	end
@@ -589,6 +617,7 @@ class MyApp < Sinatra::Base
 
 
 	post '/batch_update' do 
+		return if SessionSettings.get("public")
 		narc_name = params['data']['narc']
 		
 		Object.const_get(narc_name.capitalize).write_data params["data"], true
@@ -851,6 +880,7 @@ class MyApp < Sinatra::Base
 
 
 	get '/settings/set' do 
+		return if SessionSettings.get("public")
 		field = params["field"]
 		current_value = SessionSettings.get(field)
 
@@ -859,6 +889,7 @@ class MyApp < Sinatra::Base
 	end
 
 	get '/rom/delete' do 
+		return if SessionSettings.get("public")
 		xdelta_path = "./xdeltas/#{$rom_name.split("/")[1]}.xdelta"
 		`rm -rf #{$rom_name}`
 		`rm -rf #{xdelta_path}`

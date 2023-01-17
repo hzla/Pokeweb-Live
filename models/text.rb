@@ -33,8 +33,7 @@ class Text
 
 	def self.handle_compressed text, bank, msg_id
 		if text.include?("xF100")
-			p bank[msg_id]
-			text = bank[msg_id][1] + "      "
+			text = bank[msg_id][1] + "    "
 		end
 		text
 	end

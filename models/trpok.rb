@@ -95,6 +95,7 @@ class Trpok < Pokenarc
 			if trainer_poks["species_id_#{n}"]
 				poks << trainer_poks["species_id_#{n}"].gsub(". ", "-").downcase
 			end
+			break if poks.length == count
 		end
 		poks
 	end
@@ -105,6 +106,8 @@ class Trpok < Pokenarc
 		trpok = JSON.parse(File.open(file_path, "r"){|f| f.read})
 
 		pok_id = trpok["raw"]["species_id_#{pok_index}"]
+
+		return [] if !pok_id
 
 
 		learnset_path = "#{$rom_name}/json/learnsets/#{pok_id}.json"
@@ -190,6 +193,34 @@ class Trpok < Pokenarc
 		tr_data["readable"]["num_pokemon"] = json_data["readable"]["count"]
 		tr_data["raw"]["num_pokemon"] = json_data["readable"]["count"]
 		File.open(trdata_path, "w") { |f| f.write tr_data.to_json }
+	end
+
+	def self.get_doc_nature(file_name, sub_index, iv, trpok, trdata, personals)
+		ability_slot = trpok["ability_#{sub_index}"]
+
+		file_path = "#{$rom_name}/json/trpok/#{file_name}.json"
+		trpok = JSON.parse(File.open(file_path, "r"){|f| f.read})["raw"]
+
+		pok_id = trpok["species_id_#{sub_index}"]
+
+		return "Unknown" if !pok_id
+		personal = personals[pok_id]
+
+
+
+		trainer_id = file_name.to_i
+		trainer_class = trdata["class_id"]
+		pok_iv = trpok["ivs_#{sub_index}"]
+		pok_lvl = trpok["level_#{sub_index}"]
+		ability_gender = trpok["ability_#{sub_index}"]
+		personal_gender = personal["gender"]
+
+		natures = RomInfo.natures
+
+
+		pid = get_pid(trainer_id, trainer_class, pok_id, iv, pok_lvl, ability_gender, personal_gender, false, ability_slot)
+
+		convert_pid_to_nature(pid, natures)
 	end
 
 
@@ -281,19 +312,18 @@ class Trpok < Pokenarc
 		
 	end
 
-	def self.get_abilities_for tr_id
+	def self.get_abilities_for tr_id, personals
 
 		file_path = "#{$rom_name}/json/trpok/#{tr_id}.json"
-		raw = JSON.parse(File.open(file_path, "r"){|f| f.read})["raw"]
-		poks = JSON.parse(File.open(file_path, "r"){|f| f.read})["readable"]
-
+		trpok = JSON.parse(File.open(file_path, "r"){|f| f.read})
+		raw = trpok["raw"]
+		poks = trpok["readable"]
 
 		poks_array = []
 
 		(0..(poks["count"] - 1)).each do |i|			
 			pok_id = raw["species_id_#{i}"]
-			file_path = "#{$rom_name}/json/personal/#{pok_id}.json"
-			personal = JSON.parse(File.open(file_path, "r"){|f| f.read})["readable"]
+			personal = personals[pok_id]
 
 		
 			ability_id = poks["ability_#{i}"]
@@ -302,16 +332,8 @@ class Trpok < Pokenarc
 			poks_array << ability
 		end
 
-		poks_array
-
-
-		
+		poks_array	
 	end
-
-
-
-
-
 
 
 	def self.convert_pid_to_nature pid, natures

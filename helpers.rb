@@ -66,7 +66,8 @@ class NilClass
 
  	def move_titleize
   	   ""
-  	end
+  end
+
 end
 
 class Integer

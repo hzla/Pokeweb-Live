@@ -24,33 +24,33 @@
 				<div class="header-left">
 
 				
-					<a class="header-item"  href="/headers">
+					<a class="header-item"  href="/headers<%= @pb_proj %>">
 						Headers & Overworlds
 					</a>
-					<a class="header-item"  href="/personal">
+					<a class="header-item"  href="/personal<%= @pb_proj %>">
 						Pokemon
 					</a>
-					<a class="header-item"  href="/trainers">
+					<a class="header-item"  href="/trainers<%= @pb_proj %>">
 						Trainers
 					</a>
-					<a class="header-item"  href="/encounters">
+					<a class="header-item"  href="/encounters<%= @pb_proj %>">
 						Encounters
 					</a>
-					<a class="header-item"  href="/moves">
+					<a class="header-item"  href="/moves<%= @pb_proj %>">
 						Moves
 					</a>
-					<a class="header-item"  href="/items">
+					<a class="header-item"  href="/items<%= @pb_proj %>">
 						Items
 					</a>
 
-					<a class="header-item"  href="/tms">
+					<a class="header-item"  href="/tms<%= @pb_proj %>">
 						TMs
 					</a>
 					<% if SessionSettings.base_rom == "BW2" %>
-						<a class="header-item"  href="/marts">
+						<a class="header-item"  href="/marts<%= @pb_proj %>">
 							Marts
 						</a>
-						<a class="header-item"  href="/grottos">
+						<a class="header-item"  href="/grottos<%= @pb_proj %>">
 							Grottos
 						</a>
 					<% end %>

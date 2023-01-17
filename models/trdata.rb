@@ -10,6 +10,33 @@ class Trdata < Pokenarc
 		super
 	end
 
+	def self.sprite tr_name, tr_class, tr_class_id, g_table
+		tr_class = tr_class.downcase.gsub("  ", " ").gsub(" ", "_").gsub("_m", "")
+		
+		if tr_class.include?("pkmn_trainer") or tr_class.include?("leader") or tr_class.include?("plasma") or tr_class.include?("four") 
+			"trainer_sprites/#{tr_name.downcase}.png"
+		elsif tr_class[-2] == "_"
+			"trainer_sprites/#{tr_class}.png"
+		elsif g_table[tr_class_id] == "female"
+			"trainer_sprites/#{tr_class}_f.png"
+		else
+			"trainer_sprites/#{tr_class}.png"
+		end
+	end
+
+	def self.gender_table
+		genders = File.open("Reference_Files/trainer_genders.txt", "r").readlines
+		genders.map do |line|
+			gender = nil
+			if line[-2] == "1"
+				gender = "female"
+			else
+				gender = "not female"
+			end
+			gender
+		end
+	end
+
 	def self.get_all 
 		@@narc_name = "trdata"
 		super
@@ -52,11 +79,8 @@ class Trdata < Pokenarc
 	end
 
 
-
-
-
-
 	def self.get_texts file_name, offsets, text_table, text_bank
+		return {} if !offsets[file_name]
 		offset = offsets[file_name] / 4
 		text_table = text_table[offset..-1]
 		texts = {}
