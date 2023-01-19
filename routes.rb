@@ -37,7 +37,7 @@ class MyApp < Sinatra::Base
 		$offline = ($mode == "offline")
 		@pb_proj = ""
 
-		if params["project"]
+		if params["project"] && params["project"].length > 0
 			$rom_name = "projects/#{params["project"]}"
 			if !SessionSettings.get("public")
 				$rom_name = nil

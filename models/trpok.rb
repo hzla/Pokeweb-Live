@@ -323,6 +323,10 @@ class Trpok < Pokenarc
 
 		(0..(poks["count"] - 1)).each do |i|			
 			pok_id = raw["species_id_#{i}"]
+			if !pok_id
+				poks_array << "Unknown"
+				next
+			end
 			personal = personals[pok_id]
 
 		
