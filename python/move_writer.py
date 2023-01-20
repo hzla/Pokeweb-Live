@@ -17,6 +17,12 @@ def output_narc(rom, rom_name):
 		settings = json.load(outfile) 
 		ROM_NAME = settings["rom_name"]
 
+		if settings["output_spas"]:
+			narc_id = settings["move_spas"]
+			narcfile_path = f'{rom_name}/narcs/move_spas-{narc_id}.narc'
+			rom.files[narc_id] = ndspy.narc.NARC.fromFile(narcfile_path).save()
+			print("spas saved")
+
 		for ani in ["move_animations", "battle_animations"]:
 			narc_id = settings[ani]
 			narcfile_path = f'{rom_name}/narcs/{ani}-{narc_id}.narc'

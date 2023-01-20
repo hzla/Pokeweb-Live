@@ -2,6 +2,10 @@ import io
 import json
 import sys
 import re
+import os
+import ndspy
+import ndspy.rom
+import ndspy.narc
 
 
 
@@ -249,9 +253,15 @@ def write_spa():
 	with open(f'{sys.argv[2]}/spas/{sys.argv[1]}_edited.spa', 'wb') as f:
 		f.write(stream)
 
+	return stream
+
 					
-def read_spa():
-	data = open(f'{sys.argv[2]}/spas/{sys.argv[1]}.spa', "rb").read()
+def read_spa(data=None, filename=None):
+	print(filename)
+	filename = filename or sys.argv[1]
+	data = data or open(f'{sys.argv[2]}/spas/{filename}.spa', "rb").read()
+	
+
 	stream = io.BytesIO(data)
 	spa = {}
 	spa["particles"] = []
@@ -298,7 +308,7 @@ def read_spa():
 		# Extract Texture data, usually 4096 bytes
 		texture_size = texture["texture_size"]
 		texture_data = stream.read(texture_size)
-		with open(f'{sys.argv[2]}/spas/{sys.argv[1]}_texture_{i}.bin', "wb") as outfile:  
+		with open(f'{sys.argv[2]}/spas/{filename}_texture_{i}.bin', "wb") as outfile:  
 			outfile.write(texture_data)
 
 		# Convert Texture to pixel info
@@ -311,9 +321,15 @@ def read_spa():
 
 		for n in range(texture_size):
 			pixel = read_bytes(stream, 1)
-			parsed_texture.append(TEX_FORMATERS[tex_format](pixel))
 
-		with open(f'{sys.argv[2]}/spas/{sys.argv[1]}_parsed_texture_{i}.json', "w") as outfile:  
+			try:
+				parsed_texture.append(TEX_FORMATERS[tex_format](pixel))
+			except:
+				print(f"File: {filename}, format: {tex_format}")
+				return
+
+
+		with open(f'{sys.argv[2]}/spas/{filename}_parsed_texture_{i}.json', "w") as outfile:  
 			json.dump(parsed_texture, outfile, indent=4) 
 
 		# Parse Pallete
@@ -323,7 +339,7 @@ def read_spa():
 			texture["colors"].append(convert_to_rgb(read_bytes(stream, 2)))
 		spa["textures"].append(texture)
 
-	with open(f'{sys.argv[2]}/spas/{sys.argv[1]}_spa.json', "w") as outfile:  
+	with open(f'{sys.argv[2]}/spas/{filename}_spa.json', "w") as outfile:  
 		json.dump(spa, outfile, indent=4) 
 
 
@@ -341,6 +357,7 @@ def check_flag(n, k):
 		return False
 
 def convert_to_rgb(value):
+	value = int(value)
 	red = value & 0b11111
 	blue = value >> 5 & 0b11111
 	green = value >> 10 & 0b11111
@@ -377,11 +394,31 @@ if __name__ == "__main__":
 	if  sys.argv[1][0:3] == "rgb":
 		print(convert_to_rgb5_int(sys.argv[1]))
 
-	if len(sys.argv) > 3 and sys.argv[3] == "-r":
+	if  sys.argv[1][0:3] == "int":
+		print(convert_to_rgb(sys.argv[1].split("int")[1]))
+
+
+	
+	if len(sys.argv) > 3 and sys.argv[3] == "-r" and sys.argv[1] == "all":
+		os.system(f"mkdir {sys.argv[2]}/spas")
+		narc = ndspy.narc.NARC.fromFile(f"{sys.argv[2]}/narcs/move_spas-353.narc") 
+		for idx, file in enumerate(narc.files):
+			read_spa(file, idx )
+
+	elif len(sys.argv) > 3 and sys.argv[3] == "-r":
 		read_spa()
+	else:
+		"Do Nothing"
+
 
 	if len(sys.argv) > 3 and sys.argv[3] == "-w":
-		write_spa()
+		narc = ndspy.narc.NARC.fromFile(f"{sys.argv[2]}/narcs/move_spas-353.narc") 
+		data = write_spa()
+
+		narc.files[int(sys.argv[1])] = data
+
+		with open(f"{sys.argv[2]}/narcs/move_spas-353.narc", 'wb') as f:
+			f.write(narc.save())
 
 	
 

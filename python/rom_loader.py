@@ -57,6 +57,7 @@ with open(f'expansion_settings.json', "r") as outfile:
 ################# HARDCODED ROM INFO ##############################
 
 BW_NARCS = [["a/0/1/6", "personal"],
+["a/0/0/6", "move_spas"],
 ["a/0/0/8", "maps"],
 ["a/0/0/9", "matrix"], 
 ["a/1/2/5", "overworlds"],
@@ -80,6 +81,7 @@ BW_MSG_BANKS = [[286, "moves"],
 [54, "items"]]
 
 BW2_NARCS = [["a/0/1/6", "personal"],
+["a/0/0/6", "move_spas"],
 ["a/0/0/8", "maps"],
 ["a/0/0/9", "matrix"], 
 ["a/1/2/6", "overworlds"],
@@ -228,6 +230,7 @@ settings["fairy"] = False
 settings["text_editor"] = False
 settings["output_overworlds"] = True
 settings["enable_single_npc_dbl_battles"] = False
+settings["output_spas"] = False
 
 
 
