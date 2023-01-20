@@ -10,8 +10,11 @@
 
 <div class="spa-container" id="overworld">
 
-	
-		<div class="script-btn spa-btn" href="/spas/<%= @id %>/pallete">Open Particle Info</div>
+		<% if !$offline %>
+			<div class="script-btn spa-btn" href="/spas/<%= @id %>/pallete">Open Particle Info</div>
+		<% end %>
+		
+
 		<% @textures.each_with_index do |texture, n| %>
 			<div class="spa-canvas">
 				<% if @colors[n]["format"] == 1 %>
