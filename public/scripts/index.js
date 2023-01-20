@@ -786,6 +786,11 @@ $(document).ready(function() {
 			data["narc"] = $('#texts').attr('data-narc')			
 			data["narc_const"] = "text"
 			data["file_name"] = data["field"]
+			
+			if ($(this).hasClass("pallete-color")) {
+				
+			}
+
 			if ($(this).hasClass('empty-text')) {
 				data['narc_const'] = 'trdata'
 				data['trtext'] = true
@@ -830,9 +835,6 @@ $(document).ready(function() {
 					})
 					$(this).attr('data-field-name', old_field_name)
 				}
-
-
-
 			}
 		}
 		

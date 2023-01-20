@@ -5,6 +5,7 @@
 	box = <%= @box.to_json %>
 </script>
 
+<div id="texts" data-narc="spas"></div>
 
 
 <div class="spa-container" id="overworld">
@@ -29,12 +30,23 @@
 					<% texture.each_with_index do |tile, i| %>
 
 						<div data-index="<%= i %>" class="spa-tile" style="background:<%= @colors[n]["colors"][tile[0]] %>;opacity:<%= tile[1] %>;">
+
 							
 						</div>
 					<% end %>
 				<% end %>
 
 			</div>
+
+			<div class="pallete-canvas">
+				<% @colors[n]["colors"].each_with_index do |color, i| %>
+					<div contenteditable="true" class="pallete-color no-validate" style="background:<%= color %>;" data-color-index="<%= i %>" data-texture-index="<%= n %>" data-field-name="<%= "#{@id}_#{n}_#{i}" %>">
+						<%= color[0] == "#" ? color : color[4..-2] %>
+					</div>
+				<% end %>
+			</div>
+
+
 		<% end %>
 </div>
 

@@ -356,8 +356,17 @@ class MyApp < Sinatra::Base
 			narc_name = params['data']['narc_const']
 		end
 
+		if params['data']['narc'] == 'spas'
+			narc_name = "spa"
+		end
 		p params['data']
+
+
 		Object.const_get(narc_name.capitalize).write_data params["data"]
+
+		if params['data']['narc'] == 'spas'
+			return {url: '200 OK'}.to_json
+		end
 
 		if params['data']['field'].include?('odds') && narc_name == 'grotto'
 			narc_name = 'grotto_odds'

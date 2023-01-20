@@ -1354,13 +1354,37 @@ div.-active svg * {
     background-size: 16px 16px;
 }
 
+.pallete-canvas {
+    display: flex;
+    margin-top: 40px;
+    margin-left:  40px;
+    height:  auto;
+    width:  1024px;
+    flex-wrap:  wrap;
+}
+
+.pallete-color {
+    height:  128px;
+    width:  128px;
+    line-height:  128px;
+    font-size:  20px;
+    color: white;
+    cursor:  pointer;
+    text-align: center;
+}
+
+.pallete-color:hover {
+    background: black !important;
+}
+
+
 .spa-tile {
     width:  16px;
     height:  16px;
 }
 
 .spa-btn {
-        color: #f2f2f2;
+    color: #f2f2f2;
     font-size: 24px;
     z-index: 50;
     cursor: pointer;

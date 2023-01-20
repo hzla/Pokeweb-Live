@@ -257,7 +257,6 @@ def write_spa():
 
 					
 def read_spa(data=None, filename=None):
-	print(filename)
 	filename = filename or sys.argv[1]
 	data = data or open(f'{sys.argv[2]}/spas/{filename}.spa', "rb").read()
 	
@@ -364,6 +363,9 @@ def convert_to_rgb(value):
 	return f"rgb({red*8 },{blue*8 },{green*8 })"
 
 def convert_to_rgb5_int(rgb):
+    if rgb[0] == "#":
+    	rgb = hex_to_rgb(rgb)
+
     colors = re.findall(r'[0-9]+', rgb)
     colors.reverse()
     bin_str = "0"
@@ -379,6 +381,11 @@ def parse_a3i5(value):
 	alpha = (value >> 5 & 0b111) / 7 
 	alpha = str(round(alpha, 2))
 	return [color_index, alpha]
+
+def hex_to_rgb(hex):
+	h = hex.lstrip('#')
+	h = tuple(int(h[i:i+2], 16) for i in (0, 2, 4))
+	return f"rgb{h[0],h[1],h[2]}"
 
 def parse_a5i3(value):
 	color_index = value & 0b111
@@ -406,7 +413,9 @@ if __name__ == "__main__":
 			read_spa(file, idx )
 
 	elif len(sys.argv) > 3 and sys.argv[3] == "-r":
-		read_spa()
+		narc = ndspy.narc.NARC.fromFile(f"{sys.argv[2]}/narcs/move_spas-353.narc") 
+
+		read_spa(narc.files[int(sys.argv[1])])
 	else:
 		"Do Nothing"
 
