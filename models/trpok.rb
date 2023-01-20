@@ -100,7 +100,7 @@ class Trpok < Pokenarc
 		poks
 	end
 
-	def self.fill_lvl_up_moves lvl, trainer, pok_index
+	def self.fill_lvl_up_moves lvl, trainer, pok_index, output_json=true
 
 		file_path = "#{$rom_name}/json/trpok/#{trainer}.json"
 		trpok = JSON.parse(File.open(file_path, "r"){|f| f.read})
@@ -130,7 +130,9 @@ class Trpok < Pokenarc
 			trpok["readable"]["move_#{i + 1}_#{pok_index}"] = move[1]
 		end
 
-		File.open(file_path, "w") { |f| f.write trpok.to_json }
+		if output_json
+			File.open(file_path, "w") { |f| f.write trpok.to_json }
+		end
 		
 		moves.map {|m| m[1].name_titleize}
 

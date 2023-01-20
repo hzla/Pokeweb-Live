@@ -78,7 +78,7 @@
 
 			<% end %>	
 		<% else %>
-			<% moves = Trpok.fill_lvl_up_moves trpok["level_#{trpok_index}"], trdata_index, trpok_index  %>
+			<% moves = Trpok.fill_lvl_up_moves trpok["level_#{trpok_index}"], trdata_index, trpok_index, false  %>
 
 			<% moves.each do |m| %>
 				<div class="trpok-item-info"><%= m %></div>

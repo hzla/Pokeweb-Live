@@ -1,0 +1,41 @@
+
+<script>
+	// json object for filtering
+	overworld = <%= @overworld.to_json %>
+	box = <%= @box.to_json %>
+</script>
+
+
+
+<div class="spa-container" id="overworld">
+
+	
+		<div class="script-btn spa-btn" href="/spas/<%= @id %>/pallete">Open Particle Info</div>
+		<% @textures.each_with_index do |texture, n| %>
+			<div class="spa-canvas">
+				<% if @colors[n]["format"] == 1 %>
+
+					<% texture.each_with_index do |tile, i| %>
+
+						<div data-index="<%= i %>" class="spa-tile" style="background:<%= @colors[n]["colors"][tile[0]] %>;opacity:<%= tile[1] %>;">
+							
+						</div>
+						
+					<% end %>
+				<% end %>
+
+				<% if @colors[n]["format"] == 6 %>
+
+					<% texture.each_with_index do |tile, i| %>
+
+						<div data-index="<%= i %>" class="spa-tile" style="background:<%= @colors[n]["colors"][tile[0]] %>;opacity:<%= tile[1] %>;">
+							
+						</div>
+					<% end %>
+				<% end %>
+
+			</div>
+		<% end %>
+</div>
+
+

@@ -1337,4 +1337,40 @@ div.-active svg * {
     margin-bottom: 20px;
 }
 
+.spa-container {
+    width:  100vw;
+
+}
+
+.spa-canvas {
+    display:  flex;
+    flex-wrap:  wrap;
+    width: 1024px;
+    height:  1024px;
+    margin-top:  40px;
+    margin-left:  40px;
+    background: rgb(108, 122, 137);
+    background-image: linear-gradient(to right, grey 1px, transparent 1px), linear-gradient(to bottom, grey 1px, transparent 1px);
+    background-size: 16px 16px;
+}
+
+.spa-tile {
+    width:  16px;
+    height:  16px;
+}
+
+.spa-btn {
+        color: #f2f2f2;
+    font-size: 24px;
+    z-index: 50;
+    cursor: pointer;
+    height: 80px;
+    margin: 80px;
+    background: #9b59b6;
+    border-radius: 5px;
+    width: 400px;
+    text-align: center;
+    line-height: 80px;
+}
+
 

@@ -896,5 +896,27 @@ class MyApp < Sinatra::Base
 		redirect '/rom/new'
 	end
 
+	########################
+
+
+	get '/spas/:id' do 
+		@colors = JSON.parse(File.open("#{$rom_name}/spas/#{params[:id]}_spa.json").read)["textures"]
+		@textures = []
+		@id = params[:id]
+		parsed_textures = Dir.glob("#{$rom_name}/spas/#{params[:id]}_parsed_texture*.json").sort
+
+		parsed_textures.each do |texture|
+			@textures << JSON.parse(File.open(texture).read)
+		end
+		
+		erb :spa
+	end
+
+	get '/spas/:id/pallete' do
+		system "open -a TextEdit #{$rom_name}/spas/#{params[:id]}_spa.json"
+		system "start notepad #{$rom_name}/spas/#{params[:id]}_spa.json"
+		return 200
+	end
+
 end
 
