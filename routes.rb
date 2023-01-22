@@ -118,7 +118,9 @@ class MyApp < Sinatra::Base
 		py = "python3"
 
 		p "offline"
-		`rm -rf projects/#{params['rom_name'].split(".")[0]}`
+		if Dir.exist?("projects/#{params['rom_name'].split(".")[0]}")
+			`rm -rf projects/#{params['rom_name'].split(".")[0]}`
+		end
 		begin
 			system "#{py} python/header_loader.py #{params['rom_name']} offline"
 			session[:rom_name] = "projects/#{params['rom_name'].split(".")[0]}"
