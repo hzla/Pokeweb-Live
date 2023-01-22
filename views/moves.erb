@@ -39,6 +39,13 @@
 	<div class="sidebar-btns">
 		<div class="ow-btn settings-toggle" data-field="fairy">Toggle Fairy</div>
 	</div>
+
+	<% if SessionSettings.base_rom == "BW2" %>
+		<div class="small-filters">
+			<a href="/moves/effects"><button class="btn">Edit Harcoded Move Effects</button></a>
+		</div>
+
+	<% end %>
 </div>
 
 <div class="pokemon-list pokemon-move-list spreadsheet" id="moves">

@@ -191,6 +191,9 @@ FORMATS["CONVERGENCE"] =  [[4, "convergence_position_x"],
 [2, "convergence_intensity"],
 [2, "convergence_padding"]]
 
+
+RGB_FIELDS = ["base_color", "color_start", "color_end", "child_base_color"]
+
 def parse_a3i5(value):
 	color_index = value & 0b11111
 	alpha = (value >> 5 & 0b111) / 7 
@@ -218,6 +221,9 @@ def write_spa():
 	# Write Particle BLock
 	for particle in spa["particles"]:
 		for entry in PARTICLE_BLOCK:
+			if entry[1] in RGB_FIELDS:
+				particle[entry[1]] = convert_to_rgb5_int(particle[entry[1]])
+
 			write_bytes(stream, entry[0], particle[entry[1]])
 
 
@@ -227,6 +233,9 @@ def write_spa():
 		for flag in FLAG_FORMATS:
 			if check_flag(flags, FORMATS[f"{flag}_FLAG"]):
 				for flag_entry in FORMATS[flag]:
+					if flag_entry[1] in RGB_FIELDS:
+						particle[flag_entry[1]] = convert_to_rgb5_int(particle[flag_entry[1]])
+					
 					write_bytes(stream, flag_entry[0], particle[flag_entry[1]])
 
 
@@ -281,6 +290,9 @@ def read_spa(data=None, filename=None):
 			# print(int.from_bytes(data[stream.tell():stream.tell() + entry[0]], 'little'))
 
 			value = read_bytes(stream, entry[0])
+
+			if entry[1] in RGB_FIELDS:
+				value = convert_to_rgb(value)
 			# print(value)
 			particle[entry[1]] = value
 
@@ -292,6 +304,10 @@ def read_spa(data=None, filename=None):
 			if check_flag(flags, FORMATS[f"{flag}_FLAG"]):
 				for flag_entry in FORMATS[flag]:
 					value = read_bytes(stream, flag_entry[0])
+					
+					if flag_entry[1] in RGB_FIELDS:
+						value = convert_to_rgb(value)
+
 					particle[flag_entry[1]] = value
 
 		spa["particles"].append(particle)

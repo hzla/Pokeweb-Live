@@ -6,5 +6,6 @@ gem "passenger", ">= 5.3.2", require: "phusion_passenger/rack_handler"
 gem 'dotenv'
 gem 'activesupport', '6.1.7'
 gem 'pry'
+gem 'webrick'
 
 

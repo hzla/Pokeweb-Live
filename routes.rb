@@ -19,11 +19,7 @@ Dotenv.load
 
 
 Dir["models/*.rb"].each {|file| require_relative file}
-
-
 p "init"
-
-
 
 
 class MyApp < Sinatra::Base
@@ -36,6 +32,7 @@ class MyApp < Sinatra::Base
 		$mode = ENV["MODE"]
 		$offline = ($mode == "offline")
 		@pb_proj = ""
+		# $rom_name = "projects/pb7"
 
 		if params["project"] && params["project"].length > 0
 			$rom_name = "projects/#{params["project"]}"
@@ -370,6 +367,10 @@ class MyApp < Sinatra::Base
 
 		if params['data']['field'].include?('odds') && narc_name == 'grotto'
 			narc_name = 'grotto_odds'
+		end
+
+		if params['data']['field'].include?('hc_effect') && narc_name == 'move'
+			narc_name = 'move_effects_table'
 		end
 
 
@@ -905,7 +906,7 @@ class MyApp < Sinatra::Base
 		redirect '/rom/new'
 	end
 
-	########################
+	######################## SPA ##########
 
 
 	get '/spas/:id' do 
@@ -927,5 +928,21 @@ class MyApp < Sinatra::Base
 		return 200
 	end
 
+	######################## MOVE EFFECTS ##########
+
+
+	get '/moves/effects' do 
+
+		@effects = Move.effects["readable"]
+		@effect_mappings = Move.effect_mappings
+
+		@moves = Move.get_all
+		@move_names = Move.get_names_from @moves
+
+		erb :move_effects
+	end
+
+
 end
+
 

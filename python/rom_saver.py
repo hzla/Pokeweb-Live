@@ -52,6 +52,9 @@ try:
 
 		if settings["output_overworlds"] == False:
 			narcs.remove("overworld")
+
+		if "move_effects_table" in edited:
+			edited.remove("move_effects_table")
 		
 		if settings["base_rom"] == "BW2":
 			import mart_writer
@@ -80,13 +83,20 @@ try:
 			#update rom in memory
 			rom = ndspy.rom.NintendoDSRom(mutable_rom)
 
-			if settings["base_rom"] == "BW24":
+			
+
+
+
+			if settings["base_rom"] == "BW2":
 
 				grotto_odds = 0
 				grotto_odds = open(f'{rom_name}/grotto_odds.bin','rb').read()
 
-				#load decompressed overlay
+				overlay167_edited = open(f'{rom_name}/overlay167.bin','rb').read()
+
+				#load decompressed overlays
 				overlay36 = rom.loadArm9Overlays([36])[36]
+				overlay167 = rom.loadArm9Overlays([167])[167]
 				
 				#set data
 				overlay36_data = overlay36.data
@@ -98,15 +108,35 @@ try:
 				else:
 					GROTTO_ODDS_OFFSET = W2_GROTTO_ODDS_OFFSET
 
-				
 				# overwrite data with edits
-				overlay36_data[GROTTO_ODDS_OFFSET:(GROTTO_ODDS_OFFSET + 200)] = grotto_odds
+
+				overlay36_data[GROTTO_ODDS_OFFSET:(GROTTO_ODDS_OFFSET + len(grotto_odds))] = grotto_odds
 				
+						
 				#set new data
 				overlay36.data = overlay36_data
+				overlay167.data = overlay167_edited
+
+ 				# update overlay table
+				# code.interact(local=dict(globals(), **locals()))
+
 
 				# recompress and insert
 				rom.files[36] = overlay36.save(compress=True)
+				rom.files[167] = overlay167.save(compress=True)
+
+				print("loading all overlays")
+				# updating overlay table
+				all_overlays = rom.loadArm9Overlays()
+				all_overlays[167].compressedSize = len(rom.files[167])
+				all_overlays[36].compressedSize = len(rom.files[36])
+				rom.arm9OverlayTable = ndspy.code.saveOverlayTable(all_overlays)
+	
+
+				# code.interact(local=dict(globals(), **locals()))
+
+
+
 		
 		for narc in narcs:
 			if narc == "tm": continue

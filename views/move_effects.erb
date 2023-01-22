@@ -1,0 +1,48 @@
+<script>
+	// info for autocomplete
+	autofills = {
+		"move_names": <%= @move_names %>
+	}
+</script>
+<div class="pokemon-filter">	
+	<div class="filter-title">Harcoded Effect Addresses</div>
+	<% @effect_mappings.each do |e, a|  %>
+		<div class="effect-info">
+			<%= "#{e.titleize}: #{a}"%>
+		</div>
+	<% end %>
+</div>
+
+
+
+<div class="pokemon-list pokemon-move-list" id="effects">
+	<div class="expanded-field field-header">
+		<div class="expanded-field-main">
+			<div class="move-name" data-narc="learnset">Name</div>
+
+		</div>
+	</div>
+
+	<% (0..257).each_with_index do |n|  %>	
+	
+		<div class="expanded-field filterable" data-index="effects">
+			<div class="effect-name" data-narc="learnset">
+				<div class="move-name">
+					<div data-autocomplete-spy contenteditable="true" data-narc="move" data-field-name="hc_effect_move_id_<%= n %>"  data-autofill="move_names"><%= @effects["move_id_#{n}"].titleize %></div>
+				</div>
+			</div>
+			<div class="effect-address">
+				<div data-autocomplete-spy contenteditable="true" data-narc="move" data-field-name="hc_effect_address_<%= n %>"  data-type="int-4294967296"><%= @effects["address_#{n}"] %></div>
+			</div>
+		</div>
+	
+	<% end %>
+
+
+</div>
+
+
+
+
+
+

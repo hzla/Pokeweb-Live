@@ -1367,7 +1367,7 @@ div.-active svg * {
     height:  128px;
     width:  128px;
     line-height:  128px;
-    font-size:  20px;
+    font-size:  18px;
     color: white;
     cursor:  pointer;
     text-align: center;
@@ -1397,4 +1397,21 @@ div.-active svg * {
     line-height: 80px;
 }
 
+#effects > .expanded-field, #effects > .field-header > .expanded-field {
+    padding: 10px 20px;
+    justify-content: flex-start;
+}
 
+.effect-name, .effect-address {
+    font-size: 24px;
+    width:  200px;
+}
+
+.effect-info {
+    font-size:  24px;
+    margin-top:  5px;
+}
+
+.effect-info:last-child {
+    margin-bottom:  40px;
+}

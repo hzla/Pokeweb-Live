@@ -180,9 +180,17 @@ arm9 = bytearray(open(f'{rom_name}/arm9.bin', "rb").read())
 
 overlay36 = rom.loadArm9Overlays([36])[36]
 overlay16 = rom.loadArm9Overlays([16])[16]
+overlay167 = rom.loadArm9Overlays([167])[167]
 
 with open(f'{rom_name}/overlay36.bin', 'wb') as f:
 	f.write(overlay36.data)
+
+with open(f'{rom_name}/overlay167.bin', 'wb') as f:
+	f.write(overlay167.data)
+
+
+B2_EFFECT_TABLE_OFFSET = 0X000407F4
+W2_EFFECT_TABLE_OFFSET = 0X000407F4
 
 with open(f'{rom_name}/overlay16.bin', 'wb') as f:
 	f.write(overlay16.data)
@@ -193,8 +201,10 @@ W2_GROTTO_ODDS_OFFSET = 0x00055218 - 12
 
 if narc_info["base_version"] == "B2":
 	GROTTO_ODDS_OFFSET = B2_GROTTO_ODDS_OFFSET
+	EFFECT_TABLE_OFFSET = B2_EFFECT_TABLE_OFFSET
 else:
 	GROTTO_ODDS_OFFSET = W2_GROTTO_ODDS_OFFSET
+	EFFECT_TABLE_OFFSET = W2_EFFECT_TABLE_OFFSET
 
 ################### EXTRACT RELEVANT TEXTS ##################
 print("parsing texts")
@@ -240,6 +250,9 @@ with open(f'{rom_name}/session_settings.json', "w+") as outfile:
 
 with open(f'{rom_name}/grotto_odds.bin', 'wb') as f:
 	f.write(overlay36.data[GROTTO_ODDS_OFFSET:(GROTTO_ODDS_OFFSET + 200)])
+
+with open(f'{rom_name}/move_effects_table.bin', 'wb') as f:
+	f.write(overlay167.data[EFFECT_TABLE_OFFSET:(EFFECT_TABLE_OFFSET + 2064)])
 
 # code.interact(local=dict(globals(), **locals()))
 

@@ -19,6 +19,14 @@ class Move < Pokenarc
 		moves
 	end
 
+	def self.effects
+		JSON.parse(File.open("#{$rom_name}/json/arm9/move_effects_table.json", "r"){|f| f.read})
+	end
+
+	def self.effect_mappings
+		JSON.parse(File.open("#{$rom_name}/json/arm9/effect_mappings.json", "r"){|f| f.read})
+	end
+
 	def self.info
 		$rom_name = 'projects/b2test'
 		moves = get_all
@@ -47,13 +55,7 @@ class Move < Pokenarc
 		File.write("Reference_Files/move_anim_info.json", JSON.pretty_generate(cmds))
 	end
 
-# cmds = {}
 
-# for file in files:
-# 	for line in file:
-# 		cmd = line.match(cmd_regex)
-# 		cmd_id = line.split(" ")[0].split("_")[1]
-# 		cmds[cmd_id][file] += line
 
 
 	def self.export_showdown
@@ -81,6 +83,18 @@ class Move < Pokenarc
 	def self.write_data data, batch=false
 		@@narc_name = "moves"
 		@@upcases = []
+
+		if data["file_name"] == "effects"
+			field = data["field"].split("hc_effect_")[1]
+			move_effects = effects
+
+
+			move_effects["readable"][field] = data["value"].upcase
+
+			File.write("#{$rom_name}/json/arm9/move_effects_table.json", move_effects.to_json)
+			return
+		end
+
 		super
 	end
 

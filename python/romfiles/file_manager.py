@@ -1,29 +1,43 @@
 import ndspy
-import ndspy.rom, ndspy.codeCompression
+import ndspy.rom
 import ndspy.narc
-import code 
-import io
-import codecs
-import os
-import json
 import sys
-import subprocess
-from pathlib import Path
-import shutil
-import csv
-import re
-import copy
-import glob
 
 
-rom_path = sys.argv[1]
-file_path = sys.argv[2]
-if sys.argv[3]:
-	subfile_name = sys.argv[3]
+# EXTRACTING USAGE: python file_manager.py -extract path_to_rom path_to_narcfile_index 
+# EXAMPLE: python file_manager.py -extract my_rom.nds a/0/1/6 1
+# EXAMPLE OUTPUT: Outputs a-0-1-6_1.bin to current directory (personal file for personal)
 
+
+# REPLACING USAGE: python file_manager.py -replace path_to_rom path_to_narc file_index path_to_replacement_file
+# EXAMPLE: python file_manager.py -replace my_rom.nds a/0/1/6 1 1.bin
+# EXAMPLE OUTPUT: Outputs my_rom_edited.nds to current directory
+
+rom_path = sys.argv[2]
+file_path = sys.argv[3]
+subfile_name = int(sys.argv[4])
 
 rom = ndspy.rom.NintendoDSRom.fromFile(rom_path)
+narc = ndspy.narc.NARC(rom.files[rom.filenames[file_path]])
+subfile = narc.files[subfile_name]
 
-code.interact(local=dict(globals(), **locals()))
+if sys.argv[1] == "-extract":
+	with open(f'{file_path.replace("/", "-")}_{subfile_name}.bin', 'wb') as f:
+		f.write(subfile)
+
+if sys.argv[1] == "-replace":
+	input_file = sys.argv[5]
+	narc.files[subfile_name] = open(input_file, "rb").read()
+	rom.files[rom.filenames[file_path]] = narc.save()
+
+	rom.saveToFile(f"{rom_path.split('.')[0]}_edited.nds")
+
+
+
+
+
+
+
+
 
 
