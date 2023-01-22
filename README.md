@@ -41,8 +41,17 @@ and add this to it
 KEY=REPLACE_THIS_WITH_ANY_LONG_STRING_YOU_WANT
 MODE=offline
 ```
+## Starting Server on MACOS or LINUX  
 
-the server can then be started with `bundle exec passenger start`
+the server can then be started with `bundle exec passenger start` and should be serving on localhost:3000
+
+## Starting Server on Windows
+
+Navigate to your python installation where python.exe is located. Should be in C:/. Make a copy of python.exe and rename it python3.exe.
+
+Start the server with `rackup config.ru` and should be serving on localhost:9292
+
+
 
 To use the move animation editor, binutils must be installed. https://developer.arm.com/downloads/-/gnu-rm
 
