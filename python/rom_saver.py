@@ -7,6 +7,7 @@ import codecs
 import os
 import os.path
 from os import path
+from pathlib import Path
 import json
 import sys
 import traceback
@@ -92,7 +93,9 @@ try:
 				grotto_odds = 0
 				grotto_odds = open(f'{rom_name}/grotto_odds.bin','rb').read()
 
-				overlay167_edited = open(f'{rom_name}/overlay167.bin','rb').read()
+
+
+
 
 				#load decompressed overlays
 				overlay36 = rom.loadArm9Overlays([36])[36]
@@ -115,7 +118,12 @@ try:
 						
 				#set new data
 				overlay36.data = overlay36_data
-				overlay167.data = overlay167_edited
+
+				if Path(f'{rom_name}/overlay167.bin').is_file():
+					overlay167_edited = open(f'{rom_name}/overlay167.bin','rb').read()
+					overlay167.data = overlay167_edited
+					rom.files[167] = overlay167.save(compress=True)
+				
 
  				# update overlay table
 				# code.interact(local=dict(globals(), **locals()))
@@ -123,7 +131,7 @@ try:
 
 				# recompress and insert
 				rom.files[36] = overlay36.save(compress=True)
-				rom.files[167] = overlay167.save(compress=True)
+				
 
 				print("loading all overlays")
 				# updating overlay table
