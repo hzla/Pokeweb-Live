@@ -79,9 +79,11 @@ try:
 			arm9 = bytearray(ndspy.codeCompression.compress(edited_arm9_file, isArm9=True))
 
 			#reinsert arm9
+			
 			mutable_rom[arm9_offset:arm9_offset + len(arm9)] = arm9
 
 			#update rom in memory
+			print("updating rom in memory")
 			rom = ndspy.rom.NintendoDSRom(mutable_rom)
 
 			
@@ -89,7 +91,7 @@ try:
 
 
 			if settings["base_rom"] == "BW2":
-
+				print("outputting overlays")
 				grotto_odds = 0
 				grotto_odds = open(f'{rom_name}/grotto_odds.bin','rb').read()
 
@@ -119,6 +121,7 @@ try:
 				#set new data
 				overlay36.data = overlay36_data
 
+				print("checking for overlay167")
 				if Path(f'{rom_name}/overlay167.bin').is_file():
 					overlay167_edited = open(f'{rom_name}/overlay167.bin','rb').read()
 					overlay167.data = overlay167_edited
