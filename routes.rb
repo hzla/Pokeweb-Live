@@ -28,9 +28,14 @@ class MyApp < Sinatra::Base
 
 
 
-		$rom_name = session[:rom_name]
+		
+		
 		$mode = ENV["MODE"]
 		$offline = ($mode == "offline")
+
+		if !$offline
+			$rom_name = session[:rom_name]
+		end
 		@pb_proj = ""
 		# $rom_name = "projects/pb7"
 
@@ -106,6 +111,7 @@ class MyApp < Sinatra::Base
 		end
 
 		session[:rom_name] = project
+		$rom_name = project
 
 		open('logs.txt', 'a') do |f|
 		  f.puts "#{Time.now}: Loaded Project : #{project}"
@@ -124,6 +130,7 @@ class MyApp < Sinatra::Base
 		begin
 			system "#{py} python/header_loader.py #{params['rom_name']} offline"
 			session[:rom_name] = "projects/#{params['rom_name'].split(".")[0]}"
+			$rom_name = "projects/#{params['rom_name'].split(".")[0]}"
 			command = "#{py} python/rom_loader.py #{params['rom_name']} offline"
 			pid = spawn command
 			Process.detach(pid)

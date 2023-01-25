@@ -84,7 +84,7 @@ try:
 
 			#update rom in memory
 			print("updating rom in memory")
-			rom = ndspy.rom.NintendoDSRom(mutable_rom)
+			# rom = ndspy.rom.NintendoDSRom(mutable_rom)
 
 			
 
