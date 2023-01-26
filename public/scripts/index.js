@@ -1114,7 +1114,7 @@ $(document).ready(function() {
 	function updateTrImage(value, card, pok_index) {
 		img_name = value.replace(". ", "-").toLowerCase()
 
-		img_to_update = $(card.find('img')[parseInt(pok_index)])
+		img_to_update = $(card.find('.wild img')[parseInt(pok_index)])
 
 		img_to_update.attr('src', '/images/pokesprite/' + img_name + ".png")
 
