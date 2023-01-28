@@ -555,7 +555,7 @@ $(document).ready(function() {
 	$(document).on('click', '.add-trpok', function(){
 		var card = $(this).parents('.filterable')
 
-		if (card.find('img').length == 6) {
+		if (card.find('.wild').length == 6) {
 			return
 		}
 

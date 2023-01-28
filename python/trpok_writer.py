@@ -159,6 +159,8 @@ def to_raw(readable, template):
 
 	n = 0
 	while n < readable["count"]:
+		if n == 6:
+			print("7th")
 		if f'species_id_{n}' in raw:	
 
 			raw[f"padding_{n}"] = 0
