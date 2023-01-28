@@ -98,6 +98,35 @@ class Personal
 		showdown
 	end
 
+	def self.balance
+
+		(1..708).each do |n|
+			path = "#{$rom_name}/json/personal/#{n}.json"
+			pok = JSON.parse(File.open(path, "r"){|f| f.read})
+
+			bst = 0
+
+			["atk", "def", "speed", "spatk", "spdef", "hp"].each do |stat|
+				val = pok["raw"]["base_#{stat}"]
+				bst += val
+			end
+
+			diff = 600 - bst
+			p "#{n}, diff: #{diff}"
+
+			["atk", "def", "speed", "spatk", "spdef", "hp"].each do |stat|
+				val = pok["raw"]["base_#{stat}"]
+				
+				pok["raw"]["base_#{stat}"] += ((val.to_f / bst) * diff).to_i
+				pok["raw"]["base_#{stat}"] = [255, pok["raw"]["base_#{stat}"]].min
+				pok["readable"]["base_#{stat}"] = pok["raw"]["base_#{stat}"]
+			end
+
+			File.write(path, JSON.dump(pok))
+		end
+	end
+
+
 	def self.unavailable_sprite_indexes
 		personals = poke_data
 		taken_slots = []
