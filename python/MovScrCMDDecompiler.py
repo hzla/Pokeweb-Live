@@ -24,11 +24,11 @@ with open('B2W2_MOVSCRCMD.s', 'w') as MOVSCRCMD_INC:
             MOVSCRCMD_INC.write(f'.hword {Index}\n')
             if Command['Parameters'] is not None:
                 for Parameter in Command['Parameters']:
-                    match Parameter['Type']:
-                        case 'int':
-                            MOVSCRCMD_INC.write(f'.word \{Parameter["Name"]}\n')
-                        case _:
-                            break
+                    if Parameter['Type'] == "int":
+                        MOVSCRCMD_INC.write(f'.word \{Parameter["Name"]}\n')
+                    else:
+                        break
+
      
             MOVSCRCMD_INC.write(f'.endm\n')
             MOVSCRCMD_INC.write(f'\n')
@@ -43,11 +43,10 @@ with open('B2W2_MOVSCRCMD.s', 'w') as MOVSCRCMD_INC:
         MOVSCRCMD_INC.write(f'.hword {Index}\n')
         if Command['Parameters'] is not None:
             for Parameter in Command['Parameters']:
-                match Parameter['Type']:
-                    case 'int':
+                if Parameter['Type'] == "int":
                         MOVSCRCMD_INC.write(f'.word \{Parameter["Name"]}\n')
-                    case _:
-                        break
+                else:
+                    break
         
         MOVSCRCMD_INC.write(f'.endm\n')
         MOVSCRCMD_INC.write(f'\n')
@@ -79,11 +78,10 @@ with open(argv[1], 'rb') as SCRIPT:
             ParameterData = []
             if CommandData['Parameters'] is not None:
                 for Parameter in CommandData['Parameters']:
-                    match Parameter['Type']:
-                        case 'int':
-                            ParameterData.append(unpack('<l', SCRIPT.read(0x4))[0])
-                        case _:
-                            break
+                    if Parameter['Type'] == "int":
+                        ParameterData.append(unpack('<l', SCRIPT.read(0x4))[0])
+                    else:
+                        break
             print(' ' * 4, CommandData["Name"], end=' ')
             print(*ParameterData, sep=', ')
             if 'End' in CommandData.keys():
