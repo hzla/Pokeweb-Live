@@ -409,7 +409,7 @@ class MyApp < Sinatra::Base
 
 		open('logs.txt', 'a') do |f|
 		  f.puts "#{Time.now}: Project: #{$rom_name} Updated #{narc_name} File #{params['data']['file_name']} #{params['data']['field']} to #{params['data']['value']} "
-		
+		  SessionSettings.set "last_edit", Time.now.to_s
 		  edited_narcs = SessionSettings.get "edited"
 		  if !edited_narcs
 		  	SessionSettings.set "edited", [narc_name]

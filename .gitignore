@@ -19,3 +19,4 @@ logs.txt
 .env
 passenger.3000.log
 /public/*.txt
+/public/dist
