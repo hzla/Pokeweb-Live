@@ -546,6 +546,13 @@ class MyApp < Sinatra::Base
 		erb :encounters
 	end
 
+	get '/encounters/expand' do 
+		rom = $rom_name.split("/")[1]
+		p "python3 python/expansions/encounter_expander.py #{rom}"
+		`python3 python/expansions/encounter_expander.py #{rom}`
+		redirect '/encounters'
+	end
+
 	post '/encounter_season_copy' do 
 		Encounter.copy_season_to_all params["data"]["id"], params["data"]["season"]
 		p params
