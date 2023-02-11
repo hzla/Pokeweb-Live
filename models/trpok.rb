@@ -508,7 +508,7 @@ class Trpok < Pokenarc
 			
 			level = poks["level_#{i}"]
 			tr_name = "Lvl #{level} #{trdata["class"].gsub("⒆⒇", "PKMN")} #{trdata["name"]}#{trname_count if show_count } "
-			tr_name += " - #{trdata["location"]}" if trdata["location"]
+			tr_name += " - #{trdata["location"][0]}" if trdata["location"]
 
 
 			
@@ -562,6 +562,7 @@ class Trpok < Pokenarc
 			pok[species][tr_name]["item"] = item.titleize
 			pok[species][tr_name]["nature"] = nature
 			pok[species][tr_name]["moves"] = moves
+			pok[species][tr_name]["sub_index"] = i
 			pok[species][tr_name]["ability"] = ability.titleize.gsub("Lightningrod", "Lightning Rod").gsub("Compoundeyes", "Compound Eyes")
 
 
