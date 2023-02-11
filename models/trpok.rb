@@ -402,6 +402,7 @@ class Trpok < Pokenarc
 				file_path = "#{$rom_name}/json/trdata/#{n}.json"
 				full_trdata = JSON.parse(File.open(file_path, "r"){|f| f.read})
 				trdata = full_trdata["readable"]
+				trdata["class_id"] = full_trdata["raw"]["class"]
 				ai = full_trdata["raw"]["ais"] || full_trdata["raw"]["ai"]
 
 				if trdata["name"].downcase.include?("rival") 
@@ -565,7 +566,7 @@ class Trpok < Pokenarc
 			pok[species][tr_name]["moves"] = moves
 			pok[species][tr_name]["sub_index"] = i
 			pok[species][tr_name]["ability"] = ability.titleize.gsub("Lightningrod", "Lightning Rod").gsub("Compoundeyes", "Compound Eyes")
-
+			pok[species][tr_name]["sprite"] = Trdata.sprite trdata["name"], trdata["class"], trdata["class_id"], gender_table 
 
 
 

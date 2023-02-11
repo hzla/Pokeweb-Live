@@ -78,6 +78,9 @@ try:
 			print ("compressing arm9")
 			arm9 = bytearray(ndspy.codeCompression.compress(edited_arm9_file, isArm9=True))
 
+			with open("compressed_arm9.bin", 'wb') as f:
+				f.write(arm9)
+
 			#reinsert arm9
 			
 			mutable_rom[arm9_offset:arm9_offset + len(arm9)] = arm9
@@ -148,7 +151,7 @@ try:
 
 
 
-		
+		narcs.remove("map")
 		for narc in narcs:
 			if narc == "tm": continue
 			rom = eval(f'{narc}_writer.output_narc(rom, rom_name)')
