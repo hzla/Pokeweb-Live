@@ -76,18 +76,18 @@ try:
 
 			# #compress it
 			print ("compressing arm9")
-			arm9 = bytearray(ndspy.codeCompression.compress(edited_arm9_file, isArm9=True))
+			# arm9 = bytearray(ndspy.codeCompression.compress(edited_arm9_file, isArm9=True))
 
-			with open("compressed_arm9.bin", 'wb') as f:
-				f.write(arm9)
+			# with open("compressed_arm9.bin", 'wb') as f:
+			# 	f.write(arm9)
 
 			#reinsert arm9
 			
-			mutable_rom[arm9_offset:arm9_offset + len(arm9)] = arm9
+			# mutable_rom[arm9_offset:arm9_offset + len(arm9)] = arm9
 
 			#update rom in memory
 			print("updating rom in memory")
-			rom.arm9  = arm9
+			rom.arm9  = edited_arm9_file
 
 			
 
@@ -150,8 +150,8 @@ try:
 				# code.interact(local=dict(globals(), **locals()))
 
 
-
-		narcs.remove("map")
+		if "map" in narcs:
+			narcs.remove("map")
 		for narc in narcs:
 			if narc == "tm": continue
 			rom = eval(f'{narc}_writer.output_narc(rom, rom_name)')
