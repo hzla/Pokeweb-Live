@@ -14,8 +14,7 @@
 
 
 		<form id="rom-form" action="/extract" method="POST" enctype="multipart/form-data">
-			<div class="filter-title">Upload xdelta</div>
-			<input type="file" id="xdelta" name="filename" label="Upload xdelta"></input>
+			
 
 			<div class="filter-title">Set Base Rom</div>
 			<select name="rom_base" id="base-select" required>
@@ -24,11 +23,16 @@
 			    <% end %>
 			</select>
 
+			<div class="filter-title">Upload xdelta (optional)</div>
+			<input type="file" id="xdelta" name="filename" label="Upload xdelta"></input>
+
 			<div class="filter-title">Name Rom (with .nds)</div>
 			<input id="rom-name" type="text" name="rom_name" required></input>
 
 			<div class="filter-title">Set Rom Password</div>
 			<input id="new-rom-pw" type="password" name="password" required></input>
+
+
 
 			<button class="btn -default" id="load-rom" type="submit">Load</button>
 		</form>

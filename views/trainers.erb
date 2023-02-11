@@ -61,7 +61,6 @@
 				<div class="trainer-id"><%= i %></div>
 
 
-
 				<div class="trainer-name"><%= img Trdata.sprite(trainer["name"],trainer['class'],trainer['class_id'], @gender_table) %> <%= trainer["name"] %> <%= trainer["location"] ? "(#{trainer["location"][0]})" : ""  %></div>
 
 				<%= field "class", 'trainer-class', {value: "#{trainer['class']} (#{trainer['class_id']})",  narc: "trdata", autofill: "class_names"} %>		
