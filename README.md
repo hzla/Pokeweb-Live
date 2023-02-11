@@ -25,7 +25,7 @@ You can join this Pokemon DS Rom Hacking discord server for updates as well as g
 
 ## Installation 
 
-Offline Installation is same as default pokeweb except you must also install pyyaml after installing python. Additionaly, if you are on windows, make sure your ruby installation comes with the devkit. https://rubyinstaller.org/downloads/ 
+Offline Installation is same as default pokeweb except you must also install pyyaml after installing python and requires python >= 3.10. Additionaly, if you are on windows, make sure your ruby installation comes with the devkit. https://rubyinstaller.org/downloads/ 
 
 `bundle install`
 
