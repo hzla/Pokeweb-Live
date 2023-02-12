@@ -31,6 +31,7 @@ def output_narc(rom, rom_name):
 
     for narc_name in ["story_texts", "message_texts"]:
         narc = ndspy.narc.NARC(rom.files[NARC_FILE_IDS[narc_name]])
+        narc.endiannessOfBeginning = ">"
 
         texts = os.listdir(f'{ROM_NAME}/{narc_name}')
 
@@ -54,6 +55,7 @@ def output_narc(rom, rom_name):
     ######## SCRIPTS ###########
 
     narc = ndspy.narc.NARC(rom.files[NARC_FILE_IDS["scripts"]])
+    narc.endiannessOfBeginning = ">"
 
     scripts = os.listdir(f'{ROM_NAME}/scripts')
 

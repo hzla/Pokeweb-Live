@@ -100,6 +100,7 @@ def output_narc(rom, rom_name):
 	
 	# ndspy copy of narcfile to edit
 	narc = ndspy.narc.NARC(rom.files[NARC_FILE_ID])
+	narc.endiannessOfBeginning = ">"
 
 	for f in json_files:
 		file_name = int(f.split(".")[0])
@@ -111,6 +112,7 @@ def output_narc(rom, rom_name):
 	####### maps ##########
 	json_files = os.listdir(f'{rom_name}/json/maps')
 	narc = ndspy.narc.NARC(rom.files[MAP_NARC_ID])
+	narc.endiannessOfBeginning = ">"
 
 
 	for f in json_files:

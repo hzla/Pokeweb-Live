@@ -20,13 +20,20 @@ def output_narc(rom, rom_name):
 		if ("output_spas" in settings) and settings["output_spas"]:
 			narc_id = settings["move_spas"]
 			narcfile_path = f'{rom_name}/narcs/move_spas-{narc_id}.narc'
-			rom.files[narc_id] = ndspy.narc.NARC.fromFile(narcfile_path).save()
+			narc = ndspy.narc.NARC.fromFile(narcfile_path)
+			narc.endiannessOfBeginning = ">"
+
+			rom.files[narc_id] = narc.save()
 			print("spas saved")
 
 		for ani in ["move_animations", "battle_animations"]:
 			narc_id = settings[ani]
 			narcfile_path = f'{rom_name}/narcs/{ani}-{narc_id}.narc'
-			rom.files[narc_id] = ndspy.narc.NARC.fromFile(narcfile_path).save()
+
+			narc = ndspy.narc.NARC.fromFile(narcfile_path)
+			narc.endiannessOfBeginning = ">"
+
+			rom.files[narc_id] = narc.save()
 
 
 

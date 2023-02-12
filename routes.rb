@@ -52,7 +52,7 @@ class MyApp < Sinatra::Base
 			$rom_name = session[:rom_name]
 		end
 		@pb_proj = ""
-		# $rom_name = "projects/pb7"
+		# $rom_name = "projects/W2"
 
 		if params["project"] && params["project"].length > 0
 			$rom_name = "projects/#{params["project"]}"
@@ -601,7 +601,10 @@ class MyApp < Sinatra::Base
 		n = 381
 		bank = "message_texts"
 		command = "dotnet tools/beatertext/BeaterText.dll -d #{$rom_name}/#{bank}/#{n}.bin #{$rom_name}/#{bank}/#{n}.txt"
-		system command
+		
+		if SessionSettings.base_rom == "BW2"
+			system command
+		end
 
 
 		@offsets = JSON.parse(File.open("#{$rom_name}/texts/trtexts_offsets.json", "r"){|f| f.read})
@@ -821,7 +824,7 @@ class MyApp < Sinatra::Base
 		data = Action.np_payload
 
 		if false
-			File.write("./public/#{$rom_name.split("/")[1]}_calc.json", data.to_json)
+			File.write("./public/calcs/#{$rom_name.split("/")[1]}_calc.json", data.to_json)
 			redirect "https://hzla.github.io/Dynamic-Calc/?data=Pokeweb-#{$rom_name.split("/")[1]}&gen=5"
 		else
 			return data.to_json

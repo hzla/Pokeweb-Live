@@ -47,6 +47,7 @@ def output_narc(narc_name, rom, rom_name):
 		except ValueError:
 			continue
 	
+	narc.endiannessOfBeginning = ">"
 	rom.files[NARC_FILE_ID] = narc.save()
 
 	print("narc saved")

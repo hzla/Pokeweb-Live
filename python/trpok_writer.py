@@ -78,6 +78,7 @@ def output_narc(rom, rom_name):
 	
 	# ndspy copy of narcfile to edit
 	narc = ndspy.narc.NARC.fromFile(narcfile_path)
+	narc.endiannessOfBeginning = ">"
 
 	for f in json_files:
 		file_name = int(f.split(".")[0])

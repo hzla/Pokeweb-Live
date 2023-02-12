@@ -43,7 +43,7 @@ class Pokenarc
 		file_path = "#{$rom_name}/json/#{@@narc_name}/#{file_name}.json"
 		json_data = JSON.parse(File.open(file_path, "r") {|f| f.read})
 
-		if data["int"]
+		if data["int"] && data["int"] != "false"
 			changed_value = changed_value.to_i
 	
 		elsif @@upcases == "all" || @@upcases.any? {|field| data["field"].include? field } 

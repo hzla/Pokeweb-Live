@@ -25,8 +25,9 @@ def to_raw(readable):
 		else:
 			raw[f'target_{n}'] = 0
 
+
 		if raw[f'method_{n}'] in [6,8,17,18,19,20]:
-			raw[f'param_{n}'] = rom_data.ITEMS.index(raw[f'param_{n}'].replace("Ã\x83Â©","é").replace('Ã©', 'é'))
+			raw[f'param_{n}'] = rom_data.ITEMS.index(readable[f'param_{n}'].replace("Ã\x83Â©","é").replace('Ã©', 'é'))
 		elif raw[f'method_{n}'] == 21:
 			raw[f'param_{n}'] = rom_data.MOVES.index(readable[f'param_{n}'].upper())
 		elif raw[f'method_{n}'] == 22:

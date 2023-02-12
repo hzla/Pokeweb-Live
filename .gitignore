@@ -21,3 +21,4 @@ passenger.3000.log
 /public/*.txt
 /public/dist
 /public/*.json
+/public/calcs
