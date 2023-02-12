@@ -820,7 +820,7 @@ class MyApp < Sinatra::Base
 		
 		data = Action.np_payload
 
-		if true
+		if false
 			File.write("./public/#{$rom_name.split("/")[1]}_calc.json", data.to_json)
 			redirect "https://hzla.github.io/Dynamic-Calc/?data=Pokeweb-#{$rom_name.split("/")[1]}&gen=5"
 		else
