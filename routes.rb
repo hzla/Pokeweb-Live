@@ -26,6 +26,8 @@ p "init"
 class MyApp < Sinatra::Base
 
 	set :bind, '0.0.0.0'
+	set :bind, '0.0.0.0:3000'
+
 	configure do
 	  enable :cross_origin
 	end
@@ -39,7 +41,7 @@ class MyApp < Sinatra::Base
   
 	before do
 
-
+		headers 'Access-Control-Allow-Origin' => '*'
 
 		
 		response.headers['Access-Control-Allow-Origin'] = '*'
