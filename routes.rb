@@ -634,7 +634,7 @@ class MyApp < Sinatra::Base
 	end
 
 	get '/export_docs' do 
-		Action.docs
+		Action.docs $gen
 
 		redirect '/headers'
 	end
@@ -644,9 +644,10 @@ class MyApp < Sinatra::Base
 			Trdata.get_locations
 			SessionSettings.set("tr_locations_found", true)
 		end
+		
 		Move.export_showdown
 		Personal.export_showdown
-		Trpok.export_all_showdown
+		Trpok.export_all_showdown true, $gen
 		
 		data = Action.np_payload
 

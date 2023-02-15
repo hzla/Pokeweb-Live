@@ -190,7 +190,9 @@ class Action
 
 	def self.output_pokedex gen=5
 		poks = Personal.poke_data
-		vanilla_poks = Personal.poke_data "documentation/vanilla"
+		dir = gen == 5 ? "documentation/vanilla" : "documentation/g4vanilla" 
+
+		vanilla_poks = Personal.poke_data dir
 		evolutions = Evolution.get_all
 
 

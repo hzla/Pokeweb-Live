@@ -4,7 +4,7 @@ class Personal
 		directory = $rom_name if !directory
 
 		files = Dir["#{directory}/json/personal/*.json"]
-		file_count = files.length
+		file_count = Dir["#{$rom_name}/json/personal/*.json"].length
 
 		data = []
 

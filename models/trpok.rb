@@ -431,7 +431,9 @@ class Trpok < Pokenarc
 			# 
 			battle_field = gen == 5 ? '_1' : '' 
 
+
 			if (settings["ai_values"] == "all" or settings["ai_values"].include?(ai)) && settings["has_moves"].include?(trdata["has_moves"]) && settings["has_items"].include?(trdata["has_items"]) && settings["battle_types"].include?(trdata["battle_type#{battle_field}"])
+				p "valid"
 				data << export_showdown(n, trdata, settings["min_ivs"], rival_count, gen)
 			end
 
@@ -441,6 +443,7 @@ class Trpok < Pokenarc
 
 		sets["data"] = data.flatten
 		File.write("public/dist/sets.json", JSON.dump(sets))
+		# File.write("public/dist/formatted_sets.json", JSON.dump(sets))
 
 		format_exports(sets)
 	end
@@ -485,7 +488,6 @@ class Trpok < Pokenarc
 		end
 
 		File.write("public/dist/formatted_sets.json", JSON.dump(formatted))
-
 		open("public/dist/js/data/sets/gen5.js", "w") do |f| 
 			f.puts "SETDEX_BW ="
 			f.puts JSON.dump(formatted)
