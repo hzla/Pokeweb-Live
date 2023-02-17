@@ -34,10 +34,10 @@
 </div>
 <div class="expanded-card-content expanded-learnset">
 	<div class="expanded-left">
-		<%= erb :'_learnset', :layout => false, :locals => { :learnset => pok['learnset'][0..11] } %>				
+		<%= erb :'_learnset', :layout => false, :locals => { :learnset => pok['learnset'][0..11], :id => pok["index"] } %>				
 	</div>
 	<div class="expanded-left">
-		<%= erb :'_learnset', :layout => false, :locals => { :learnset => pok['learnset'][12..24] } %>			
+		<%= erb :'_learnset', :layout => false, :locals => { :learnset => pok['learnset'][12..24], :id => pok["index"] } %>			
 	</div>		
 </div>
 <div class="expanded-card-content expanded-tms">

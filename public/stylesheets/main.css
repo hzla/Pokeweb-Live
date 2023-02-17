@@ -366,6 +366,26 @@ table td {
     height: auto;
 }
 
+.del-ls {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    top: 10px;
+    left: 60px;
+    color: white;
+    background: #ff5555;
+    border-radius: 5px;
+    line-height: 40px;
+    font-size: 40px;
+    text-align: center;
+    cursor: pointer;
+    display: none;
+}
+
+.multi:hover > .del-ls {
+    display: block;
+}
+
 .expanded-learnset .expanded-left,.expanded-pok .expanded-left {
     width: 50%;
 }
@@ -1076,6 +1096,10 @@ div.-active svg * {
 
 .tr-label {
     flex-grow: 1
+}
+
+.expanded-field.multi {
+    position: relative;
 }
 
 .expanded-card-content div:not(.multi).expanded-field div:nth-child(2), .expanded-card-subcontent div:not(.multi).expanded-field div:nth-child(2) {

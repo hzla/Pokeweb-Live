@@ -321,6 +321,14 @@ class MyApp < Sinatra::Base
 		erb :personal
 	end
 
+	get '/learnsets/:id/:index/delete' do 
+		redirect '/' if !$rom_name
+
+		Learnset.delete params[:id].to_i, params[:index].to_i
+
+		redirect '/personal'
+	end
+
 	get '/expanded_personal/:id' do 
 		moves = Move.get_all
 		tm_names = Tm.get_names
