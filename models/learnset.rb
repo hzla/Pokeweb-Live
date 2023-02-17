@@ -18,7 +18,15 @@ class Learnset < Pokenarc
 		data["raw"].delete("lvl_learned_#{idx}")
 
 		(idx..23).each do |i|
-			break if !data["readable"]["move_id_#{i + 1}"]  
+			if !data["readable"]["move_id_#{i + 1}"] 
+				
+				data["readable"].delete("move_id_#{i}")
+				data["raw"].delete("move_id_#{i}")
+
+				data["readable"].delete("lvl_learned_#{i}")
+				data["raw"].delete("lvl_learned_#{i}")
+				break
+			end 
 
 
 			data["readable"]["move_id_#{i}"] = data["readable"]["move_id_#{i + 1}"] 
@@ -27,7 +35,7 @@ class Learnset < Pokenarc
 			data["readable"]["lvl_learned_#{i}"] = data["readable"]["lvl_learned_#{i + 1}"] 
 			data["raw"]["lvl_learned_#{i}"] = data["raw"]["lvl_learned_#{i + 1}"] 
 
-			data["readable"]["move_id_#{i}_index"] = data["readable"]["lvl_learned_#{i + 1}"] 
+			data["readable"]["move_id_#{i}_index"] = data["readable"]["move_id_#{i+1}_index"] 
 		end 
 
 		File.open(path, "w") { |f| f.write data.to_json }
