@@ -117,6 +117,16 @@ HGSS_NARCS = [['a/0/3/7', "encounters"],
 ['a/0/2/8', 'hidden_abilities']] 
 # ha in file index 7
 
+PL_NARCS = [
+['poketool/waza/pl_waza_tbl.narc', 'moves'],
+['poketool/personal/pl_personal.narc', 'personal'],
+['poketool/personal/evo.narc', 'evolutions'],
+['fielddata/encountdata/pl_enc_data.narc', 'encounters'],
+['poketool/trainer/trdata.narc', 'trdata'],
+['poketool/personal/wotbl.narc', 'learnsets'],
+['poketool/trainer/trpoke.narc', 'trpok']
+]
+
 
 NARCS = []
 MSG_BANKS = []
