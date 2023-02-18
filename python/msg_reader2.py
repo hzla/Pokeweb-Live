@@ -260,8 +260,13 @@ def output_texts(folder, narc):
         with open(f'{folder}/{n}.bin', "wb") as binary_file:
             binary_file.write(message)
         
-        block = gen5get(message)
+        try: 
+            block = gen5get(message)
+        except:
+            block = [[]]
+        
         texts.append(block)
+
         n += 1
 
     with codecs.open(f'{folder}/texts.json', 'w', encoding='utf_8') as f:

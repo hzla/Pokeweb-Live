@@ -8,11 +8,16 @@ class binaryreader:
         self.ReadUInt32 = self.read32
         self.Seek = self.seek
     def read16(self):
-        ret = self.s[self.ofs]
+        try:
+            ret = self.s[self.ofs]
+        except:
+            ret = '?'
         self.ofs += 1
         return ret
     def read32(self):
+
         ret = self.s[self.ofs] | (self.s[self.ofs+1]<<16)
+
         self.ofs += 2
         return ret
     def seek(self, ofs):
