@@ -33,11 +33,12 @@
 	</div>
 </div>
 <div class="expanded-card-content expanded-learnset">
+	<% p pok['learnset'] %>
 	<div class="expanded-left">
-		<%= erb :'_learnset', :layout => false, :locals => { :learnset => pok['learnset'][0..11] } %>				
+		<%= erb :'gen4/_learnset', :layout => false, :locals => { :learnset => pok['learnset'][0..11] } %>				
 	</div>
 	<div class="expanded-left">
-		<%= erb :'_learnset', :layout => false, :locals => { :learnset => pok['learnset'][12..24] } %>			
+		<%= erb :'gen4/_learnset', :layout => false, :locals => { :learnset => pok['learnset'][12..24] } %>			
 	</div>		
 </div>
 <div class="expanded-card-content expanded-tms">

@@ -138,6 +138,8 @@ if narc_info["base_rom"] == "BW":
 	NARCS = BW_NARCS
 elif narc_info["base_rom"] == "HGSS":
 	NARCS = HGSS_NARCS
+elif narc_info["base_rom"] == "PLAT":
+	NARCS = PL_NARCS
 else:
 	MSG_BANKS = BW2_MSG_BANKS
 	NARCS = BW2_NARCS
@@ -191,7 +193,7 @@ for narc in NARCS:
 
 arm9 = bytearray(open(f'{rom_name}/arm9.bin', "rb").read())
 
-if narc_info["base_rom"] != "HGSS":
+if narc_info["base_rom"] != "HGSS" and narc_info["base_rom"] != "PLAT":
 	overlay36 = rom.loadArm9Overlays([36])[36]
 	overlay16 = rom.loadArm9Overlays([16])[16]
 
@@ -251,7 +253,7 @@ with open(f'{rom_name}/session_settings.json', "w+") as outfile:
 	json.dump(settings, outfile, indent=4) 
 
 
-if narc_info["base_rom"] != "HGSS":
+if narc_info["base_rom"] != "HGSS" and narc_info["base_rom"] != "PLAT":
 	with open(f'{rom_name}/grotto_odds.bin', 'wb') as f:
 		f.write(overlay36.data[GROTTO_ODDS_OFFSET:(GROTTO_ODDS_OFFSET + 200)])
 
@@ -352,6 +354,8 @@ except:
 output_tms_json(arm9, rom_name)
 subprocess.run(['rm', '-rf', sys.argv[1]], check = True)
 
+if narc_info["base_rom"] == "PLAT":
+	subprocess.run(['cp', '-r', './texts', rom_name], check = True)
 
 
 

@@ -53,7 +53,7 @@ arm9 = ndspy.codeCompression.decompress(rom.arm9)
 
 arm9_sample = int.from_bytes(arm9[14:16], 'little')
 print(arm9_sample)
-version_identifier = {15395: ["B2","BW2"], 63038: ["W2","BW2"], 43676: ["B","BW"], 4581: ["W","BW"], 12770: ["HG", "HGSS"], 19091: ["SS","HGSS"]}
+version_identifier = {15395: ["B2","BW2"], 63038: ["W2","BW2"], 43676: ["B","BW"], 4581: ["W","BW"], 12770: ["HG", "HGSS"], 19091: ["SS","HGSS"],36498: ["PL", "PLAT"]}
 
 narc_info["base_version"] = version_identifier[arm9_sample][0]
 narc_info["base_rom"] = version_identifier[arm9_sample][1]
@@ -62,7 +62,7 @@ with open(f'{rom_name}/arm9.bin', 'wb') as f:
 	f.write(arm9)
 
 
-if narc_info["base_rom"] != "HGSS":
+if narc_info["base_rom"] != "HGSS" and narc_info["base_rom"] != "PLAT":
 
 
 	if narc_info["base_rom"] == "BW2":
@@ -133,11 +133,13 @@ with open(f'{rom_name}/session_settings.json', "w") as outfile:
 
 #############################################################
 ################### CONVERT TO JSON #########################
-if narc_info["base_rom"] != "HGSS":
+if narc_info["base_rom"] == "HGSS":
+	hgss_header_reader.output_headers_json(arm9, rom_name)
+elif narc_info["base_rom"] == "PLAT":
+	print ("plat")
+else:
 	headers_narc_data = ndspy.narc.NARC(rom.files[narc_info["headers"]])
 	output_headers_json(headers_narc_data, rom_name)
-else:
-	hgss_header_reader.output_headers_json(arm9, rom_name)
 
 
 

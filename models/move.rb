@@ -22,13 +22,18 @@ class Move < Pokenarc
 
 	def self.export_showdown
 		moves = get_all[1..-1]
-
+		
+		#rp override
+		if $gen = 4
+			move_names = File.read("texts/rp_moves.txt").split("\n")
+		end
+		
 		showdown = {}
-		moves.each do |move|
-			showdown_name = sub_showdown(move[1]["name"].move_titleize)
+		moves.each_with_index do |move, i|
+			showdown_name = move_names[i + 1] #sub_showdown(move[1]["name"].move_titleize)
 
 			showdown[showdown_name] = {}
-			showdown[showdown_name]["type"] = move[1]["type"].titleize
+			showdown[showdown_name]["type"] = move[1]["type"].titleize.gsub("Mystery", "Fairy")
 			showdown[showdown_name]["basePower"] = move[1]["power"]
 			showdown[showdown_name]["category"] = move[1]["category"]
 			if move[1]["min_hits"] && move[1]["min_hits"] > 0

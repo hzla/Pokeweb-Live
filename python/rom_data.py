@@ -16,7 +16,7 @@ def set_global_vars(rom_name):
 		ROM_NAME = settings['rom_name']
 		BASE_ROM = settings['base_rom']
 
-		if BASE_ROM == "HGSS":
+		if BASE_ROM == "HGSS" or BASE_ROM == "PLAT":
 			return set_hgss_global_vars(rom_name)
 
 		ANIMATION_ID = settings["move_animations"]
@@ -387,7 +387,7 @@ def set_global_vars(rom_name):
 
 
 def set_hgss_global_vars(rom_name, expanded=False):
-	global LOCATIONS, BASE_VERSION, BASE_ROM, ROM_NAME, NARC_FORMATS, POKEDEX, METHODS, ITEMS, MOVES, GROTTO_NAMES, HEADER_LENGTH, MART_LOCATIONS, TYPES, CATEGORIES, EFFECT_CATEGORIES, EFFECTS, STATUSES, TARGETS, STATS, PROPERTIES, RESULT_EFFECTS, EGG_GROUPS, GROWTHS, ABILITIES, TRAINER_CLASSES, BATTLE_TYPES, TRAINER_NAMES, AIS, TEMPLATE_FLAGS, ANIMATION_ID, B_ANIMATION_ID
+	global RP_LS, LOCATIONS, BASE_VERSION, BASE_ROM, ROM_NAME, NARC_FORMATS, POKEDEX, METHODS, ITEMS, MOVES, GROTTO_NAMES, HEADER_LENGTH, MART_LOCATIONS, TYPES, CATEGORIES, EFFECT_CATEGORIES, EFFECTS, STATUSES, TARGETS, STATS, PROPERTIES, RESULT_EFFECTS, EGG_GROUPS, GROWTHS, ABILITIES, TRAINER_CLASSES, BATTLE_TYPES, TRAINER_NAMES, AIS, TEMPLATE_FLAGS, ANIMATION_ID, B_ANIMATION_ID
 
 	with open(f'{rom_name}/session_settings.json', "r") as outfile:  
 		settings = json.load(outfile) 
@@ -395,6 +395,7 @@ def set_hgss_global_vars(rom_name, expanded=False):
 		BASE_ROM = settings['base_rom']
 		BASE_VERSION = settings["base_version"]
 
+	RP_LS = open('texts/rp_learnsets.txt').readlines()
 
 	TYPES = ["Normal", "Fighting", "Flying", "Poison", "Ground", "Rock", "Bug", "Ghost", "Steel","Mystery", "Fire", "Water","Grass","Electric","Psychic","Ice","Dragon","Dark"]
 	EGG_GROUPS = ["~","Monster","Water 1","Bug","Flying","Field","Fairy","Grass","Human-Like","Water 3","Mineral","Amorphous","Water 2","Ditto","Dragon","Undiscovered"];

@@ -308,6 +308,11 @@ class Trpok < Pokenarc
 	end
 
 	def self.g4_get_nature_for(file_name, sub_index, desired_iv=255)
+		# p file_name
+		# if file_name.to_i > 1024
+		# 	file_name = file_name % 1024
+		# end
+
 		file_path = "#{$rom_name}/json/trpok/#{file_name}.json"
 		trpok = JSON.parse(File.open(file_path, "r"){|f| f.read})
 		ability_slot = trpok["readable"]["ability_#{sub_index}"]
@@ -319,6 +324,10 @@ class Trpok < Pokenarc
 
 		pok_id = trpok["species_id_#{sub_index}"]
 
+		if pok_id.to_i > 1024
+			pok_id = pok_id % 1024
+		end
+
 		file_path = "#{$rom_name}/json/personal/#{pok_id}.json"
 		personal = JSON.parse(File.open(file_path, "r"){|f| f.read})["readable"]
 
@@ -329,10 +338,34 @@ class Trpok < Pokenarc
 		ability = ability_slot
 		species = pok_id
 
-		male = prng(level, species, difficulty, trainer_id, trainer_class, "male", ability)
-		female = prng(level, species, difficulty, trainer_id, trainer_class, "female", ability)
+		if trainer_class == 0
+			return "Unknown"
+		end
 
-		"♂#{male} ♀#{female}"
+		gender_table = File.read("texts/pl_genders.txt").split("\n")
+		gender = gender_table[trainer_class] == "01" ? "female" : "male"
+
+		if personal["gender"] < 127
+			gender = "female"
+		end
+
+		if personal["gender"] > 127
+			gender = "male"
+		end
+
+		if file_name == 993
+			p gender
+			p trainer_class
+			p gender_table[trainer_class]
+		end
+
+		# prng(77, )
+
+
+		nature = prng(level, species, difficulty, trainer_id, trainer_class, gender, ability)
+		
+
+
 	end
 
 	def self.prng level, species, difficulty, trainer_id, trainer_class, gender, ability
@@ -353,8 +386,9 @@ class Trpok < Pokenarc
 
 		ab = ability > 0 ? 1 : 0
 
+		# add ab if hgss
 
-		nature_id = (pid.to_i(16).to_s[-2..-1].to_i + ab) % 25
+		nature_id = (pid.to_i(16).to_s[-2..-1].to_i) % 25
 		RomInfo.natures[nature_id]
 	end
 
@@ -433,7 +467,6 @@ class Trpok < Pokenarc
 
 
 			if (settings["ai_values"] == "all" or settings["ai_values"].include?(ai)) && settings["has_moves"].include?(trdata["has_moves"]) && settings["has_items"].include?(trdata["has_items"]) && settings["battle_types"].include?(trdata["battle_type#{battle_field}"])
-				p "valid"
 				data << export_showdown(n, trdata, settings["min_ivs"], rival_count, gen)
 			end
 
@@ -496,11 +529,20 @@ class Trpok < Pokenarc
 	end
 
 	def self.export_showdown tr_id, trdata, min_ivs, rival_set=0, gen=5
-
+		if $gen = 4
+			move_names = File.read("texts/rp_moves.txt").split("\n")
+		end
 		file_path = "#{$rom_name}/json/trpok/#{tr_id}.json"
 		raw = JSON.parse(File.open(file_path, "r"){|f| f.read})["raw"]
 		poks = JSON.parse(File.open(file_path, "r"){|f| f.read})["readable"]
 
+		trnames = File.read("#{$rom_name}/texts/tr_names.txt").split("\n")
+		trclasses = File.read("#{$rom_name}/texts/tr_classes.txt").split("\n")
+
+		trdata["class"] = trclasses[tr_id]
+		trdata["name"] = trnames[tr_id]
+
+		trdata["class"] = "" if !trdata["class"]
 
 		trname_info = "#{trdata["class"]} #{trdata["name"]}"
 
@@ -536,6 +578,22 @@ class Trpok < Pokenarc
 			end
 			
 			pok_id = raw["species_id_#{i}"]
+
+			if pok_id >= 1024
+				form = pok_id / 1024
+				pok_id = pok_id % 1024
+
+				if form > 0 && !(["Deerling","Sawsbuck","Gastrodon","Shellos","Arceus"].include?(species))
+					species_name = species
+					begin
+						species += "-#{RomInfo.form_info[species_name][form - 1]}"
+					rescue
+					
+					end
+				end
+				p species
+			end
+
 			file_path = "#{$rom_name}/json/personal/#{pok_id}.json"
 			personal = JSON.parse(File.open(file_path, "r"){|f| f.read})["readable"]
 			
@@ -573,7 +631,11 @@ class Trpok < Pokenarc
 
 			moves = []
 			(1..4).each do |n|
-				moves << sub_showdown(poks["move_#{n}_#{i}"].move_titleize)
+				if raw["move_#{n}_#{i}"]
+					moves << sub_showdown(move_names[raw["move_#{n}_#{i}"]].move_titleize)
+				else
+					moves << ""
+				end
 			end
 
 			pok = {}
@@ -593,12 +655,13 @@ class Trpok < Pokenarc
 			else
 				pok[species][tr_name]["battle_type"] = trdata["battle_type"]
 				pok[species][tr_name]["reward_item"] = ""
-				pok[species][tr_name]["form"] = ""
+				pok[species][tr_name]["form"] = form || ""
 			end
 			
 			pok[species][tr_name]["item"] = item.titleize
 			pok[species][tr_name]["nature"] = nature
 			pok[species][tr_name]["moves"] = moves
+			pok[species][tr_name]["sub_index"] = i
 			pok[species][tr_name]["ability"] = ability.titleize.gsub("Lightningrod", "Lightning Rod").gsub("Compoundeyes", "Compound Eyes")
 
 

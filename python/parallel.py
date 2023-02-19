@@ -50,10 +50,13 @@ narcs_to_output = ["trdata", "personal", "learnsets", "moves", "encounters", "it
 # narcs_to_output = ["overworlds"]
 if narc_info["base_rom"] == "BW2":
 	narcs_to_output += ["grottos", "marts", "grotto_odds"]
-elif narc_info["base_rom"] == "HGSS":
+elif narc_info["base_rom"] == "HGSS" or narc_info["base_rom"] == "PLAT":
 	narcs_to_output = ["personal", "learnsets", "moves", "evolutions", "trdata", "encounters", "hidden_abilities"]
-	if narc_info["base_version"] == "SS":
+	if narc_info["base_version"] == "SS" or narc_info["base_version"] == "PL":
 		narcs_to_output.remove("hidden_abilities")
+
+	if narc_info["base_version"] == "PL":
+		narcs_to_output.remove("encounters")
 
 
 rom_name = narc_info["rom_name"]

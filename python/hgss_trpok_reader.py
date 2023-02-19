@@ -219,6 +219,9 @@ def to_readable(raw, file_name, template, num_pokemon):
 			readable[f'species_id_{n}'] = POKEDEX[base_form_id]
 			readable[f'form_{n}'] = form + 1
 		else:
+			if (raw[f'species_id_{n}'] > 1024):
+				raw[f'species_id_{n}'] -= 1024
+				print(raw[f'species_id_{n}'])
 			readable[f'species_id_{n}'] = POKEDEX[(raw[f'species_id_{n}'])]
 			readable[f'form_{n}'] = 1
 		

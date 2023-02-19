@@ -34,7 +34,7 @@ class MyApp < Sinatra::Base
 		@rom_name = $rom_name.split("/")[1]
 		tabs = ['headers', 'personal', 'trainers', 'encounters', 'moves', 'items', 'marts', 'grottos']
 		
-		if SessionSettings.base_rom == "HGSS"
+		if SessionSettings.base_rom == "HGSS" or SessionSettings.base_rom == "PLAT"
 			$gen = 4
 			$subdir = "gen4/"
 		else
@@ -77,19 +77,19 @@ class MyApp < Sinatra::Base
 		pw = params["password"]
 		p params
 		project = params["rom"]
+		
+
+		# if !Cipher.auth?(project, pw) 
+		# 	redirect '/?wrong_password=true'
+		# end
 
 
-		if !Cipher.auth?(project, pw) 
-			redirect '/?wrong_password=true'
-		end
-
-
-		SessionSettings.load_project project
+		# SessionSettings.load_project project
 		session[:rom_name] = project
 
-		open('logs.txt', 'a') do |f|
-		  f.puts "#{Time.now}: Loaded Project : #{project}"
-		end
+		# open('logs.txt', 'a') do |f|
+		#   f.puts "#{Time.now}: Loaded Project : #{project}"
+		# end
 
 		redirect '/headers'
 	end
@@ -164,7 +164,7 @@ class MyApp < Sinatra::Base
 		  f.puts "#{Time.now}: Loaded Rom : #{params['rom_name']}"
 		end
 
-	  	redirect('/headers')
+	  	redirect('/personal')
 	end
 
 	get '/rom/save' do
@@ -259,7 +259,7 @@ class MyApp < Sinatra::Base
 		pok = Personal.get_data_for "#{$rom_name}/json/personal/#{params[:id]}.json"
 
 		pok["learnset"] = expand_learnset_data moves, pok["learnset"]
-
+		p $subdir
 		erb ($subdir + "_expanded_personal").to_sym, :layout => false, :locals => { :pok => pok, :tm_names => tm_names, :tutor_moves => tutor_moves, :evolutions => evolutions }
 
 	end
@@ -641,7 +641,7 @@ class MyApp < Sinatra::Base
 
 	get '/publish_calc' do 
 		if !SessionSettings.get("tr_locations_found")
-			Trdata.get_locations
+			# Trdata.get_locations
 			SessionSettings.set("tr_locations_found", true)
 		end
 		
@@ -652,7 +652,7 @@ class MyApp < Sinatra::Base
 		data = Action.np_payload
 
 
-		return data.to_json
+		return data.to_json.gsub("\"Mystery\"", "\"Fairy\"")
 	end
 
 

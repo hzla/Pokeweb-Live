@@ -23,7 +23,7 @@ def set_global_vars(rom_name):
 		BASE_VERSION = settings['base_version']
 
 	
-	if BASE_ROM == "HGSS":
+	if BASE_ROM == "HGSS" or BASE_ROM == "PLAT":
 		MOVES = open(f'texts/moves.txt', mode="r").read().splitlines()
 	else:
 		MOVES = open(f'{ROM_NAME}/texts/moves.txt', mode="r").read().splitlines()
@@ -33,12 +33,12 @@ def set_global_vars(rom_name):
 
 	TM_FORMAT = []
 
-	TM_OFFSETS = {"B": 0x9aaa0, "W": 0x9aab8, "B2": 0x8cc84, "W2": 0x8ccb0, "HG": 0x1000cc, "SS": 0x1000cc }
+	TM_OFFSETS = {"B": 0x9aaa0, "W": 0x9aab8, "B2": 0x8cc84, "W2": 0x8ccb0, "HG": 0x1000cc, "SS": 0x1000cc, "PL": 0xF0BFC}
 
 	TM_OFFSET = TM_OFFSETS[BASE_VERSION]
 
 
-	if BASE_ROM == "HGSS":
+	if BASE_ROM == "HGSS" or BASE_ROM == "PLAT":
 		for n in range(1, 93):
 			TM_FORMAT.append([2, f'tm_{n}'])
 		for n in range(1, 9):
@@ -102,7 +102,7 @@ def read_data(data, narc_format, file_name, folder_name):
 def to_readable(raw, file_name=""):
 	readable = copy.deepcopy(raw)
 
-	if BASE_ROM == "HGSS":
+	if BASE_ROM == "HGSS" or BASE_ROM == "PLAT":
 		for n in range(1, 93):
 			readable[f'tm_{n}'] = MOVES[raw[f'tm_{n}']]
 		for n in range(1, 9):

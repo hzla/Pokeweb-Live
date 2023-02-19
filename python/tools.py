@@ -93,7 +93,7 @@ def output_json(narc, narc_name, to_readable, rom_name, base=5):
 		settings = json.load(outfile) 
 		BASE_ROM = settings["base_rom"]
 
-	if BASE_ROM == "HGSS":
+	if BASE_ROM == "HGSS" or BASE_ROM == "PLAT":
 		rom_data.set_hgss_global_vars(rom_name)
 		base = 4
 	else:
@@ -106,13 +106,12 @@ def output_json(narc, narc_name, to_readable, rom_name, base=5):
 	TRPOK_INFO = []
 
 	for data in narc.files:
-		print(len(narc.files))
 		data_name = data_index
 		read_narc_data(data, narc_format, data_name, narc_name, rom_data.ROM_NAME, to_readable, base)
 		data_index += 1
 
 	if narc_name == "trdata":
-		if BASE_ROM == "HGSS":
+		if BASE_ROM == "HGSS" or BASE_ROM == "PLAT":
 			hgss_trpok_reader.output_trpok_json(TRPOK_INFO, rom_name)
 		else:
 			output_trpok_json(TRPOK_INFO, rom_name)
@@ -121,8 +120,6 @@ def read_narc_data(data, narc_format, file_name, narc_name, rom_name, to_readabl
 	stream = io.BytesIO(data)
 	file = {"raw": {}, "readable": {} }
 	
-	if narc_name == "learnsets":
-		print(data)
 
 
 	#USE THE FORMAT LIST TO PARSE BYTES
@@ -140,7 +137,7 @@ def read_narc_data(data, narc_format, file_name, narc_name, rom_name, to_readabl
 				file["raw"].pop(entry[1])
 				break
 
-			if rom_data.BASE_VERSION == "SS":
+			if rom_data.BASE_VERSION == "SS" or rom_data.BASE_VERSION == "PL":
 				ls_id = int(entry[1].split("_")[2])
 				file["raw"][f"lvl_learned_{ls_id}"] = (file["raw"][entry[1]] >> 9) & 0x7F
 				file["raw"][entry[1]] = file["raw"][entry[1]] & 0x1FF 		
