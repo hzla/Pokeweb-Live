@@ -11,6 +11,7 @@ from pathlib import Path
 import json
 import sys
 import traceback
+import gc
 
 import personal_writer
 import learnset_writer
@@ -63,7 +64,7 @@ try:
 			narcs += bw_narcs
 
 		#only output edited narcs
-		narcs = list(set(narcs) | set(edited))
+		narcs = list(set(narcs) & set(edited))
 
 
 		if settings["output_arm9"] == True:
@@ -97,8 +98,6 @@ try:
 				print("outputting overlays")
 				grotto_odds = 0
 				grotto_odds = open(f'{rom_name}/grotto_odds.bin','rb').read()
-
-
 
 
 
@@ -156,6 +155,7 @@ try:
 			if narc == "tm": continue
 			rom = eval(f'{narc}_writer.output_narc(rom, rom_name)')
 
+
 				
 	##### save rom to exports
 	if path.exists(f'exports'):
@@ -165,6 +165,7 @@ try:
 		rom.saveToFile(f"exports/{rom_name.split('/')[1]}.nds")
 
 	print("Save 200 OK")
+	gc.collect()
 except:
 	print("Save Failed")
 	print(traceback.format_exc())
