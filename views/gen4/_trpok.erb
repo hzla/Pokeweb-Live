@@ -1,6 +1,5 @@
 <% if !doc_view %>
 
-
 	<div data-sub-index="<%= trpok_index %>" class="expanded-card-subcontent expanded-pok expanded-pok-<%= trpok_index %> <%= show %>">
 		<div class="expanded-left">
 			<div class="expanded-field">
@@ -117,6 +116,18 @@
 			</div>
 		</div>
 	</div>
+
+		<% if trpok["move_#{1}_#{trpok_index}"] %>
+
+
+		<% else %>
+			<% begin %>
+				<% moves = Trpok.fill_lvl_up_moves trpok["level_#{trpok_index}"], trdata_index, trpok_index  %>
+			<% rescue %>
+				<% p trpok["species_id_#{trpok_index}"] %>
+			<% end %>
+
+		<% end %>
 <% else %>
 	<div class="trainer-doc-item">
 		<%= img "pokesprite/#{sprite[trpok_index]}.png", 'doc-sprite' %>
