@@ -4,7 +4,37 @@ class Learnset < Pokenarc
 	def self.write_data(data, batch=false)
 		@@narc_name = "learnsets"
 		@@upcases = "all"
+		sort_readable data["file_name"].to_i
 		super
+	end
+
+	def self.repair_all 
+		ls_count = Dir["#{$rom_name}/json/learnsets/*.json"].length - 1
+		(1..ls_count).each do |id|
+			sort_readable id
+		end
+		`python3 python/learnset_writer.py update #{(1..ls_count).to_a.join(",")} #{$rom_name}`
+	end
+
+	def self.sort_readable id 
+		path = "#{$rom_name}/json/learnsets/#{id}.json"
+		data = get_data(path, "all")
+		readable = data["readable"]
+
+		sorted = []
+		(0..24).each do |n|
+			break if !readable["lvl_learned_#{n}"]
+			sorted << {"lvl_learned" => readable["lvl_learned_#{n}"], "move_id" => readable["move_id_#{n}"]}
+		end
+
+		sorted.sort_by! {|ls| ls["lvl_learned"]}
+		
+		sorted.each_with_index do |ls, i| 
+			data["readable"]["lvl_learned_#{i}"] = ls["lvl_learned"]
+			data["readable"]["move_id_#{i}"] = ls["move_id"]
+		end
+
+		File.open(path, "w") { |f| f.write data.to_json }
 	end
 
 	def self.delete id, idx
