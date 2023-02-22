@@ -264,8 +264,9 @@ class MyApp < Sinatra::Base
 
 		begin
 			p "creating edited rom"
-			`#{py} python/trpok_writer.py validate #{$rom_name}`
-			`#{py} python/encounter_writer.py validate #{$rom_name}`
+			`#{py} python/trpok_writer.py validate #{$rom_name}`if SessionSettings.get("edited").include? "trpok"
+			`#{py} python/encounter_writer.py validate #{$rom_name}` if SessionSettings.get("edited").include? "encounter"
+			Learnset.repair_all if SessionSettings.get("edited").include? "learnset"
 			save = `#{py} python/rom_saver.py #{$rom_name}`
 			p "edited rom created"
 		rescue

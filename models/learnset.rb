@@ -5,7 +5,6 @@ class Learnset < Pokenarc
 		@@narc_name = "learnsets"
 		@@upcases = "all"
 		super
-		# sort_readable data["file_name"].to_i
 	end
 
 	def self.repair_all 
@@ -13,11 +12,10 @@ class Learnset < Pokenarc
 		(1..ls_count).each do |id|
 			sort_readable id
 		end
-		`python3 python/learnset_writer.py update #{(1..ls_count).to_a.join(",")} #{$rom_name}`
+		`python3 python/learnset_writer.py update all #{$rom_name} #{ls_count}`		
 	end
 
 	def self.sort_readable id 
-		$rom_name = "projects/B"
 		path = "#{$rom_name}/json/learnsets/#{id}.json"
 		data = get_data(path, "all")
 		readable = data["readable"]
@@ -25,24 +23,25 @@ class Learnset < Pokenarc
 		sorted = []
 		(0..24).each do |n|
 			break if !readable["lvl_learned_#{n}"] && !readable["move_id_#{n}"]
+			return if !readable["lvl_learned_#{n}"] or !readable["move_id_#{n}"]
+
 			sorted << {"lvl_learned" => readable["lvl_learned_#{n}"], "move_id" => readable["move_id_#{n}"]}
-			p readable["lvl_learned_#{n}"]
-			p readable["move_id_#{n}"]
+			# p readable["lvl_learned_#{n}"]  
+			# p readable["move_id_#{n}"]
 		end
 
-		p sorted
+
 
 
 		sorted.sort_by! {|ls| ls["lvl_learned"]}
 
-		p sorted
+
 		
 		sorted.each_with_index do |ls, i| 
 			data["readable"]["lvl_learned_#{i}"] = ls["lvl_learned"]
 			data["readable"]["move_id_#{i}"] = ls["move_id"]
 		end
 
-		p data["readable"]
 
 		File.open(path, "w") { |f| f.write data.to_json }
 	end

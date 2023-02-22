@@ -40,6 +40,11 @@ if len(sys.argv) > 2 and sys.argv[1] == "update":
 	rom_data.set_global_vars(sys.argv[3])
 	file_names = sys.argv[2].split(",")
 	 
-	for file_name in file_names:
-		write_readable_to_raw(int(file_name))
+	if sys.argv[2] == "all":
+		for file_name in range(int(sys.argv[4])):
+			write_readable_to_raw(int(file_name))
+	else:
+		for file_name in file_names:
+			print(file_name)
+			write_readable_to_raw(int(file_name))
 	
