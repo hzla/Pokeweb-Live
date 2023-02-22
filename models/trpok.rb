@@ -113,7 +113,9 @@ class Trpok < Pokenarc
 		moves = []
 
 		(0..19).to_a.reverse.each do |n|
-			lvl_learned = learnset["raw"]["lvl_learned_#{n}"]
+			lvl_learned = learnset["readable"]["lvl_learned_#{n}"]
+			p lvl_learned
+			p learnset["readable"]["move_id_#{n}"]
 			if lvl_learned && lvl_learned.to_i <= lvl.to_i
 				moves << [learnset["raw"]["move_id_#{n}"],learnset["readable"]["move_id_#{n}"]]
 			end
@@ -629,10 +631,12 @@ class Trpok < Pokenarc
 				nature = g4_get_nature_for(tr_id, i, poks["ivs_#{i}"])
 			end
 
+			iv = poks["ivs_#{i}"] * 31 / 255
+
 			moves = []
 			(1..4).each do |n|
-				if raw["move_#{n}_#{i}"]
-					moves << sub_showdown(move_names[raw["move_#{n}_#{i}"]].move_titleize)
+				if poks["move_#{n}_#{i}"]
+					moves << sub_showdown(poks["move_#{n}_#{i}"].move_titleize)
 				else
 					moves << ""
 				end
@@ -659,6 +663,7 @@ class Trpok < Pokenarc
 			end
 			
 			pok[species][tr_name]["item"] = item.titleize
+			pok[species][tr_name]["ivs"] = {"hp": iv,"at": iv,"df": iv,"sa": iv,"sd": iv,"sp": iv}
 			pok[species][tr_name]["nature"] = nature
 			pok[species][tr_name]["moves"] = moves
 			pok[species][tr_name]["sub_index"] = i
