@@ -479,11 +479,18 @@ class Trpok < Pokenarc
 		formatted
 	end
 
+	def self.challenge_mode_exempt
+		[825,827,178,179,765,690,847,829,766,754,755,756,831,346,833,366,319,320,321,322,323,324,325,768,868,835,852,291,300,301,845,837,381,382,383,384,385,770,840,841,772,773,774,775,776,844]
+	end
+
 	def self.export_showdown tr_id, trdata, min_ivs, rival_set=0, gender_table
 
 		file_path = "#{$rom_name}/json/trpok/#{tr_id}.json"
 		raw = JSON.parse(File.open(file_path, "r"){|f| f.read})["raw"]
 		poks = JSON.parse(File.open(file_path, "r"){|f| f.read})["readable"]
+
+
+
 
 
 		trname_info = "#{trdata["class"]} #{trdata["name"]}"
@@ -559,6 +566,7 @@ class Trpok < Pokenarc
 			pok[species][tr_name] =  {}
 
 			pok[species][tr_name]["level"] = level
+			pok[species][tr_name]["noCh"] = challenge_mode_exempt.include?(tr_id)
 			pok[species][tr_name]["tr_id"] = tr_id
 			pok[species][tr_name]["ivs"] = {"hp": iv,"at": iv,"df": iv,"sa": iv,"sd": iv,"sp": iv}
 			pok[species][tr_name]["battle_type"] = trdata["battle_type_1"]
