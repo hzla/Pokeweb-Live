@@ -9,6 +9,7 @@ if ENV["DEVMODE"] == "TRUE"
 end
 Dotenv.load
 
+p ARGV
 
 
 run MyApp

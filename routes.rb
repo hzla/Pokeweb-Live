@@ -23,6 +23,7 @@ Dir["models/*.rb"].each {|file| require_relative file}
 p "init"
 
 
+
 class MyApp < Sinatra::Base
 
 	set :bind, '0.0.0.0'
@@ -36,7 +37,7 @@ class MyApp < Sinatra::Base
 	    response.headers["Access-Control-Allow-Headers"] = "Authorization, Content-Type, Accept, X-User-Email, X-Auth-Token"
 	    response.headers["Access-Control-Allow-Origin"] = "*"
 	    200
-	  end
+	end
 
   
 	before do
@@ -142,6 +143,9 @@ class MyApp < Sinatra::Base
 		if Dir.exist?("projects/#{params['rom_name'].split(".")[0]}")
 			`rm -rf projects/#{params['rom_name'].split(".")[0]}`
 		end
+		
+		
+
 		begin
 			system "#{py} python/header_loader.py #{params['rom_name']} offline"
 			session[:rom_name] = "projects/#{params['rom_name'].split(".")[0]}"

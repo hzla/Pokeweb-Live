@@ -545,6 +545,7 @@ class Trpok < Pokenarc
 			item = poks["item_id_#{i}"]
 
 			nature = get_nature_for(tr_id, i, poks["ivs_#{i}"])
+			iv = poks["ivs_#{i}"] * 31 / 255
 
 			moves = []
 			(1..4).each do |n|
@@ -559,6 +560,7 @@ class Trpok < Pokenarc
 
 			pok[species][tr_name]["level"] = level
 			pok[species][tr_name]["tr_id"] = tr_id
+			pok[species][tr_name]["ivs"] = {"hp": iv,"at": iv,"df": iv,"sa": iv,"sd": iv,"sp": iv}
 			pok[species][tr_name]["battle_type"] = trdata["battle_type_1"]
 			pok[species][tr_name]["reward_item"] = trdata["reward_item"]
 			pok[species][tr_name]["item"] = item.titleize
