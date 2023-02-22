@@ -4,8 +4,8 @@ class Learnset < Pokenarc
 	def self.write_data(data, batch=false)
 		@@narc_name = "learnsets"
 		@@upcases = "all"
-		sort_readable data["file_name"].to_i
 		super
+		# sort_readable data["file_name"].to_i
 	end
 
 	def self.repair_all 
@@ -17,22 +17,32 @@ class Learnset < Pokenarc
 	end
 
 	def self.sort_readable id 
+		$rom_name = "projects/B"
 		path = "#{$rom_name}/json/learnsets/#{id}.json"
 		data = get_data(path, "all")
 		readable = data["readable"]
 
 		sorted = []
 		(0..24).each do |n|
-			break if !readable["lvl_learned_#{n}"]
+			break if !readable["lvl_learned_#{n}"] && !readable["move_id_#{n}"]
 			sorted << {"lvl_learned" => readable["lvl_learned_#{n}"], "move_id" => readable["move_id_#{n}"]}
+			p readable["lvl_learned_#{n}"]
+			p readable["move_id_#{n}"]
 		end
 
+		p sorted
+
+
 		sorted.sort_by! {|ls| ls["lvl_learned"]}
+
+		p sorted
 		
 		sorted.each_with_index do |ls, i| 
 			data["readable"]["lvl_learned_#{i}"] = ls["lvl_learned"]
 			data["readable"]["move_id_#{i}"] = ls["move_id"]
 		end
+
+		p data["readable"]
 
 		File.open(path, "w") { |f| f.write data.to_json }
 	end
