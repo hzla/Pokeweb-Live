@@ -530,6 +530,22 @@ class Trpok < Pokenarc
 		formatted
 	end
 
+	def self.rp_replacements
+		replace = {}
+		replace["Barrage"]=  "Draining Kiss"
+		replace["Brine"]=  "Scald"
+		replace["Constrict"]=  "Icicle Crash"
+		replace["Horn Drill"]=  "Drill Run"
+		replace["Lunar Dance"]=  "Moonblast"
+		replace["Luster Purge"]=  "Dazzling Gleam"
+		replace["Mist Ball"]=  "Disarming Voice"
+		replace["Sand Tomb"]=  "Bulldoze"
+		replace["Submission"]=  "Play Rough"
+		replace["Twister"]=  "Hurricane"
+		replace["Volt Tackle"]=  "Wild Charge"
+		replace
+	end
+
 	def self.export_showdown tr_id, trdata, min_ivs, rival_set=0, gen=5
 		if $gen = 4
 			move_names = File.read("texts/rp_moves.txt").split("\n")
@@ -636,7 +652,11 @@ class Trpok < Pokenarc
 			moves = []
 			(1..4).each do |n|
 				if poks["move_#{n}_#{i}"]
-					moves << sub_showdown(poks["move_#{n}_#{i}"].move_titleize)
+					move = sub_showdown(poks["move_#{n}_#{i}"].move_titleize)
+					if rp_replacements[move]
+						move = rp_replacements[move]
+					end
+					moves << move 
 				else
 					moves << ""
 				end
