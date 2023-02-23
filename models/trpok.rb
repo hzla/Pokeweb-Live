@@ -483,6 +483,22 @@ class Trpok < Pokenarc
 		[825,827,178,179,765,690,847,829,766,754,755,756,831,346,833,366,319,320,321,322,323,324,325,768,868,835,852,291,300,301,845,837,381,382,383,384,385,770,840,841,772,773,774,775,776,844]
 	end
 
+	def self.rp_replacemets
+		replace = {}
+		replace["Barrage"]=  "Draining Kiss"
+		replace["Brine"]=  "Scald"
+		replace["Constrict"]=  "Icicle Crash"
+		replace["Horn Drill"]=  "Drill Run"
+		replace["Lunar Dance"]=  "Moonblast"
+		replace["Luster Purge"]=  "Dazzling Gleam"
+		replace["Mist Ball"]=  "Disarming Voice"
+		replace["Sand Tomb"]=  "Bulldoze"
+		replace["Submission"]=  "Play Rough"
+		replace["Twister"]=  "Hurricane"
+		replace["Volt Tackle"]=  "Wild Charge"
+		replace
+	end
+
 	def self.export_showdown tr_id, trdata, min_ivs, rival_set=0, gender_table
 
 		file_path = "#{$rom_name}/json/trpok/#{tr_id}.json"
@@ -556,7 +572,13 @@ class Trpok < Pokenarc
 
 			moves = []
 			(1..4).each do |n|
-				moves << sub_showdown(poks["move_#{n}_#{i}"].move_titleize)
+				move = sub_showdown(poks["move_#{n}_#{i}"].move_titleize)
+				
+				if rp_replacemets[move]
+					move = rp_replacemets[move]
+				end
+
+				moves << move
 			end
 
 			pok = {}
