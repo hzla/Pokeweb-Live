@@ -557,8 +557,13 @@ class Trpok < Pokenarc
 		trnames = File.read("#{$rom_name}/texts/tr_names.txt").split("\n")
 		trclasses = File.read("#{$rom_name}/texts/tr_classes.txt").split("\n")
 
-		trdata["class"] = trclasses[tr_id]
+		trdata["class"] = trclasses[trdata["class_id"]]
 		trdata["name"] = trnames[tr_id]
+
+		# if trdata["name"] == "Zackary"
+		# 	p trdata["class"]
+		# end
+
 
 		trdata["class"] = "" if !trdata["class"]
 
