@@ -675,7 +675,7 @@ class Trpok < Pokenarc
 
 			pok[species][tr_name]["level"] = level
 			pok[species][tr_name]["tr_id"] = tr_id
-			
+			pok[species][tr_name]["ai"] = trdata["ai"]		
 
 			if gen == 5
 				pok[species][tr_name]["battle_type"] = trdata["battle_type_1"]
