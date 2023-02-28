@@ -525,7 +525,7 @@ class Trpok < Pokenarc
 			pok_id = raw["species_id_#{i}"]
 			next if !pok_id
 			next if poks["ivs_#{i}"] < min_ivs
-			species = poks["species_id_#{i}"].downcase.titleize
+			species = poks["species_id_#{i}"].downcase.titleize.gsub("Porygon Z", "Porygon-Z").gsub("Ho Oh","Ho-Oh").gsub("'","’")
 
 			trname_count = @@tr_name_counts[trname_info]
 
@@ -553,6 +553,7 @@ class Trpok < Pokenarc
 
 			if form > 0 && !(["Deerling","Sawsbuck","Gastrodon","Shellos","Arceus"].include?(species))
 				species_name = species
+
 				begin
 					species += "-#{RomInfo.form_info[species_name][form - 1]}"
 				rescue
@@ -574,9 +575,9 @@ class Trpok < Pokenarc
 			(1..4).each do |n|
 				move = sub_showdown(poks["move_#{n}_#{i}"].move_titleize)
 				
-				if rp_replacemets[move]
-					move = rp_replacemets[move]
-				end
+				# if rp_replacemets[move]
+				# 	move = rp_replacemets[move]
+				# end
 
 				moves << move
 			end
@@ -588,6 +589,7 @@ class Trpok < Pokenarc
 			pok[species][tr_name] =  {}
 
 			pok[species][tr_name]["level"] = level
+			pok[species][tr_name]["ai"] = trdata["ai"]
 			pok[species][tr_name]["noCh"] = challenge_mode_exempt.include?(tr_id)
 			pok[species][tr_name]["tr_id"] = tr_id
 			pok[species][tr_name]["ivs"] = {"hp": iv,"at": iv,"df": iv,"sa": iv,"sd": iv,"sp": iv}
@@ -599,9 +601,6 @@ class Trpok < Pokenarc
 			pok[species][tr_name]["sub_index"] = i
 			pok[species][tr_name]["ability"] = ability.titleize.gsub("Lightningrod", "Lightning Rod").gsub("Compoundeyes", "Compound Eyes")
 			pok[species][tr_name]["sprite"] = Trdata.sprite trdata["name"], trdata["class"], trdata["class_id"], gender_table 
-
-
-
 
 			pok[species][tr_name]["form"] = form
 			pok[species][tr_name]["evs"] = {"df" => 0}

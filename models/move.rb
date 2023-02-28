@@ -5,9 +5,13 @@ class Move < Pokenarc
 		moves = {}
 		directory = $rom_name if !directory
 		Dir["#{directory}/json/moves/*.json"].each do |move|
-			move_data = JSON.parse(File.open(move, "r"){|f| f.read})["readable"]
+			all = JSON.parse(File.open(move, "r"){|f| f.read})
+			move_data = all["readable"]
 
+
+			move_data["effect_code"] = all["raw"]["effect"]
 			move_id = move_data["index"]
+
 			moves[move_id] = move_data
 		end
 		moves = moves.to_a.sort_by {|mov| mov[0] }
@@ -69,6 +73,7 @@ class Move < Pokenarc
 			showdown[showdown_name]["type"] = move[1]["type"].titleize
 			showdown[showdown_name]["basePower"] = move[1]["power"]
 			showdown[showdown_name]["category"] = move[1]["category"]
+			showdown[showdown_name]["e_id"] = move[1]["effect_code"]
 			if move[1]["min_hits"] > 0
 				showdown[showdown_name]["multihit"] = [move[1]["min_hits"],move[1]["max_hits"]]
 			end
