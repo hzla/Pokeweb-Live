@@ -25,7 +25,7 @@ You can join this Pokemon DS Rom Hacking discord server for updates as well as g
 
 ## Installation 
 
-If you are not comfortable debugging ruby/python, and working with a console, it is highly recommended you use the live hosted version instead at [fishbowlweb.cloud:3000](https://fishbowlweb.cloud:3000). If you encounter issues running pokeweb locally, be aware that only limited assistance can be provided. 
+If you are not comfortable debugging ruby/python, and working with a console, it is highly recommended you use the live hosted version instead at [fishbowlweb.cloud:3000](http://fishbowlweb.cloud:3000). If you encounter issues running pokeweb locally, be aware that only limited assistance can be provided. 
 
 
 Offline Installation is same as default pokeweb except you must also install pyyaml after installing python and requires python >= 3.10. Additionaly, if you are on windows, make sure your ruby installation comes with the devkit. https://rubyinstaller.org/downloads/ 
