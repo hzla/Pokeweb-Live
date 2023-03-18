@@ -348,11 +348,11 @@ class Trpok < Pokenarc
 		gender = gender_table[trainer_class] == "01" ? "female" : "male"
 
 		if personal["gender"] < 127
-			gender = "male"
+			gender = "female"
 		end
 
 		if personal["gender"] > 127
-			gender = "female"
+			gender = "male"
 		end
 
 		if file_name == 993

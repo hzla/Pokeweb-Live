@@ -104,7 +104,7 @@
 			<% if @trainer_poks[i] %>
 				<% (0.. @trainer_poks[i]["count"] - 1).each do |pok_index| %>
 
-					<%= erb :'gen4/_trpok', :layout => false, :locals => { :trpok => @trainer_poks[i], :trpok_index => pok_index, :show => "", :trdata_index => i, :doc_view => false } %>
+					<%= erb :'gen4/_trpok', :layout => false, :locals => { :trpok => @trainer_poks[i], :trpok_index => pok_index, :show => "", :trdata_index => i, :doc_view => false, :trdata => trainer } %>
 				<% end %>	
 			<% end %>
 
