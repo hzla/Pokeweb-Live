@@ -348,10 +348,14 @@ class Trpok < Pokenarc
 		gender = gender_table[trainer_class] == "01" ? "female" : "male"
 
 		if personal["gender"] < 127
-			gender = "female"
+			gender = "male"
 		end
 
 		if personal["gender"] > 127
+			gender = "female"
+		end
+
+		if personal["gender"] >= 254
 			gender = "male"
 		end
 
@@ -588,7 +592,7 @@ class Trpok < Pokenarc
 			show_count = (trname_count > 1 || trdata["name"] == "Grunt" || trdata["name"] == "Shadow" )
 			
 			level = poks["level_#{i}"]
-			tr_name = "Lvl #{level} #{trdata["class"].gsub("⒆⒇", "PKMN")} #{trdata["name"]}#{trname_count if show_count } "
+			tr_name = "Lvl #{level} #{trdata["class"].gsub("⒆⒇", "PKMN").gsub("[PK][MN]", "Pkmn")} #{trdata["name"]}#{trname_count if show_count } "
 			tr_name += " - #{trdata["location"]}" if trdata["location"]
 
 
