@@ -646,9 +646,9 @@ class MyApp < Sinatra::Base
 		erb :trpok_natures
 	end
 
-	get '/trainers/:id/reset' do 
+	get '/trainers/:to_copy/copy_to/:id' do 
 		return if SessionSettings.get("public")
-		Trdata.reset params[:id]
+		Trdata.reset params[:id], params[:to_copy]
 		redirect '/trainers'
 	end
 

@@ -21,7 +21,17 @@ class Pokenarc
 			rescue
 				break
 			end
-			json = JSON.parse(file)
+			
+			begin
+				json = JSON.parse(file)
+			rescue #fix corrupted trainer data
+				if @@narc_name == "trpok"
+					# binding.pry
+					File.write("#{$rom_name}/json/#{@@narc_name}/#{n}.json", validate_brackets(file))
+					file = validate_brackets(file)
+					json = JSON.parse(file)
+				end
+			end
 			entry = json["readable"]
 			entry = json["raw"] if use_raw
 			entry = json if use_raw == "both"
@@ -75,6 +85,26 @@ class Pokenarc
 			write_data(data)
 		end
 	end
+
+def self.validate_brackets data
+	net_brackets = 1
+	cut_at = -1
+	(1..data.length - 1).each do |n|
+		chr = data[n]
+		if chr == "{"
+			net_brackets += 1
+		end
+		if chr == "}"
+			net_brackets -= 1
+		end
+		if net_brackets == 0
+			cut_at = n
+			break
+		end
+	end
+	data[0..cut_at] 
+end
+
 
 
 end

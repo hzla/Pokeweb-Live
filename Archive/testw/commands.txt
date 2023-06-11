@@ -1,0 +1,8 @@
+
+STARTING POSTGRES:
+brew services start postgresql
+
+
+STOPPING POSTGRES:
+brew services stop postgresql
+

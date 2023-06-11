@@ -1,0 +1,5 @@
+add pnl, win/lose count
+sharpe/sortino
+
+
+uniswap profitable trader/ avg cost basis

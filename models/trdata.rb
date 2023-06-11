@@ -47,9 +47,17 @@ class Trdata < Pokenarc
 		super
 	end
 
-	def self.reset file_name
-		`cp #{$rom_name}/json/trdata/0.json #{$rom_name}/json/trdata/#{file_name}.json`
-		`cp #{$rom_name}/json/trpok/0.json #{$rom_name}/json/trpok/#{file_name}.json`
+$rom_name = "projects/bb2redux"
+file_name = 4
+
+	# have it keep the name
+	def self.reset file_name, to_copy=0
+		tr = get_data("#{$rom_name}/json/trdata/#{file_name}.json")
+		tr_name = tr["name"]
+		tr_class = tr["class_id"]
+		`cp #{$rom_name}/json/trdata/#{to_copy}.json #{$rom_name}/json/trdata/#{file_name}.json`
+		`cp #{$rom_name}/json/trpok/#{to_copy}.json #{$rom_name}/json/trpok/#{file_name}.json`
+		write_data({"field" => "name", "value" => tr_name, "file_name" => file_name})
 	end
 
 	def self.text_types 

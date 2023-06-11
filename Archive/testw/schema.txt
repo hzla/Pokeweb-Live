@@ -1,0 +1,79 @@
+
+Trader
+	-address
+	-pnl
+	-last_trade [INDEX]
+	-first_trade [INDEX]
+	-avg_size [INDEX]
+
+Action
+	-id
+	-trader_id [INDEX]
+	-function_name
+	-function_params
+	-timestamp [INDEX]
+	-pnl_at_timestamp
+	-win_count
+	-trade_count
+
+
+
+(240k traders)
+(728k actions) get from graph
+
+
+
+
+-track trading hours to get likely timezone
+
+
+
+Traders need to be searchable by can pnl by variable time period (last 24h, 7d, 30d, custom time period)
+		filter by win count, min trades, min avg size, min profit percent
+
+Need a fast way to get pnl, win_count, trade_count, and profit percent for any time frame
+
+
+Solution 2
+	Store pnl for every trader at every action taken
+	When user selects timeframe
+	pnl is calculated using two closests actions and adjusting based on price oracle
+
+Price oracle can just get the action closest to the timestamp requested and use price from there
+
+
+
+advanced OI view
+	see what percentage of long/short traders are hisotrically profitable on (x timeframe) (is it the idiots eing long rn or the smart money) ((filter out large wallets like ak))
+
+
+need to know the pnl and position of every trader at any point in time
+	-to be searchable by pnl for any time frame
+
+{
+  trades(where: { account: "0xe8c19db00287e3536075114b2576c70773e039bd" },orderBy: timestamp, orderDirection: asc) {
+    id
+    fee
+    timestamp
+    realisedPnl
+    
+    increaseList {
+      id
+      timestamp
+    }
+    decreaseList {
+      id
+      timestamp
+    }
+    closedPosition {
+      id
+      timestamp
+    }
+    liquidatedPosition {
+      id
+      timestamp
+    }
+  }
+}
+
+If the team doesn't pump every cent of profit made during beta into minting/trading incentives, the launch is gonna be dead on arrival

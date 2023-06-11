@@ -1,0 +1,214 @@
+Ultimate Copytrade app
+
+Core Features:
+	Be able to get the top/bottom traders in a given time frame and display their aggregate and individual positioning (DISP)
+
+	Be able to display a manually selected group of traders
+
+	Be able to weight traders positions manually
+
+	Be able to weight traders by absolute size
+
+	Notifications for big shifts or when a specific trader does a certain action
+
+
+Result:
+
+At any point in time, you should be ablee to obtain a trade recommendation depending on what settings and traders you’ve displayed
+
+	
+Track: kwenta,vela
+
+Chatgpt: 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
+Extract actionable from tweeted price chart
+
+
+
+/// MVP ////
+
+get aggregate positions of tracklist on gmx
+
+
+build tracklist:
+
+filter leaderboard to last month/week
+filter by lifetime profitable
+filter by minimum size
+filter by minimum trades
+filter by profit/volume
+
+
+take profit map gmx
+
+
+nft gated, must use referal cde and must reach top x% profit
+
+
+api for sentiment check for tweet
+
+twit struct
+
+ticker: string
+sentiment: bool
+entry: int
+tp: int
+timetweeted: timestamp
+references: arr
+images: string
+
+
+todos:
+
+
+figure out multicall
+build a subgraph (kwenta historical positions/gmx historical positions, )
+sign in with metamask
+
+store pnl
+get pricefeed
+user timeline for kwenta
+
+
+
+
+
+
+[optimism, graph, quicknode, eth foundation?, airstack for graph queries?, uniswap if you get the dex trading thing working,  ]
+
+
+/// differences from arkham/nansen
+
+
+don't care who a wallet is, or any fancy labels, only care about demonstranted and actionably profitability
+advanced filtering
+
+backtesting
+aggreagate positioning
+alerts
+cheaper
+view trigger orders
+twitter tweet parser, computer vision/chat gpt to extract tweet struct
+
+sharpe ratio/sortino ratio (individual and aggregate)
+
+//if time
+
+automatically generate code for an automated trading bot, that can be run locally
+
+
+
+
+
+//// USER FLOWS
+
+dex copy trading (different because you can't short shitcoins, only useful for recommending when to sell)
+user flow:
+	[1] select coin
+	[2] select which accounts you wish to copy sell
+		-can filter by pnl in other coins (ex. get all successful traders of optimism currently holding arbitrum)
+		-filter by position size
+		-filter by position basis
+		-filter by sharpe/sortino ratio
+		-manually enter
+	[3-1] receive position alerts when selected accounts sell
+	[3-2] see holdings of selected accounts over time
+	identify profitable traders of coin x (set x), identify all coin y holders in set x (set y), copy the aggregate positions of coin y in set y
+
+perp copy trading
+user flow: 
+	[1-1] search for profitable traders
+		can search by pnl by variable time period (last 24h, 7d, 30d, custom time period)
+		filter by win count, min trades, min size, min profit percent
+
+	[1-2] or use a featured list (custom leaderboard, doxxed whales)
+
+	[2] enter their addresses and allocate how much capital/confidence to give each account
+
+	[3] receive a position recommendation based on provided parameters
+
+twitter copy trading (most difficult to implement, will need chatgpt to create tweet struct, and custom cp vision code to parse charts that may have to be individually trained/customized for each twitter account)
+
+flow:
+	[1] enter twitter accounts of you wish to copy trade
+	[2] set allocation/confidence
+	[3] receive a position recommendation based on provided parameters
+
+
+nofications:
+	[0] user can supply address for gmx/kwenta
+	notify if position delta more than x %
+	notify at x time interval
+
+	notification content:
+		new position is x
+		
+		if user has supplied address:
+			your position is x
+			action: sell/buy x amount of token to achieve
+
+
+
+/// monetization
+
+users pay monthly subscription or by trading x volume with referral (gmx,kwenta, other cexes/dexes)
+meta referrals?
+sell private discord access where users can share trades (nft?), or by proving profitability over 30d?
+
+// meme idea
+
+convert trade history to chatgpt prompt and ask it to construct a trader profile and predict current mental state
+
+
+
+to calculate pnl for timeperiod x to y
+
+	first store pnl/curr position at time of every action
+	get first action before time x and with PNL, adjust PNL according to prices at time x to get exact PNL_x
+	get first action before time y with PNL, adjust PNL with exact prices to get PNL_y
+	subtract PNL_y - PNL-x to get pnl for time period
+	will need accurate eth/btc prices for each granular unit of time
+
+
+
+backend 
+	document based database
+
+	store the actions/trade logs of every gmx user
+	
+	every minute, get list of new actions on gmx, for every user action 
+		add it to the user action/trade log list
+	
+	every x seconds, multicall to gmx contract to update all recommended positions
+		notify user via telegram after x second delay based on user tier
+
+	if run into scaling issues, proccess paying users positions first
+
+
+
+
+// misc notes
+
+just enough control that users won't blame the house
+enough randomness and unpredictable reward feedback loop to jack up the dopamine rush, like betting on horses
+
+what users think they're doing:
+	highly informed and calculated trading
+what they're actually doing:
+	horse race betting
+
+// does it work?
+
+by nature, all back tests return positive (if you're selecting winners)
+just tell people it's dependent on selector skill
+
+insipired by diablo3 botting where you set some parameters, select a strategy and just let it run all night
+	in the morning you check the loot collected and tweak the bot and do it all over again
+
+
+
+
+
+
+
+
+

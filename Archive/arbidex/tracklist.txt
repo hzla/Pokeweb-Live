@@ -1,0 +1,76 @@
+0x749f447c2755d63e03e7a70f7bded7c7f5b4b13c // good trader, failing at trying to time bounce 3/10
+0xe8c19db00287e3536075114b2576c70773e039bd // andrew kang gmx/kenta
+0xcd08a60060b6daf5ad5965b14ea2cc37993fffec // ok trader, small size
+0x48202a51c0d5d81b3ebed55016408a0e0a0afaae // ok trader, currently fucking up
+0x6526f030ede4fe6a4d861c7c5823e47022cfb7ba // ok trader, small size
+0xf4e14d778c2dbd6fd1a04f08721941eb3e1c9d6c // good trader vela
+0x62B8e137ee87Ab3CaEB2FEA3B88D04abeA7C5579 // good trader, infrequent
+
+0x8e27d64063d74c7c2f7c8609e5b6d78d03378d23 // kwenta #2
+0xeed09cc4ebf3fa599eb9ffd7a280e7b944b436b7 // kwenta #1
+0x9cbedea359ab1f74585a9e71e556a78c9dcbc640 // kwenta #3
+
+
+for the rest just aggregate top 10 gmx of the week
+
+
+
+
+https://dune.com/queries/1168810 // top gmx traders
+
+
+Reflections: 2023 q1
+
+Pros:
+Caught the move up from 1350
+Caught the move down from 1550
+Caught the move back up from 1550
+Vela farming
+
+Cons:
+Noticed usdc troubles but didn't instantly cash out, could've just closed current positions, and reopened with usdt but was too cheap
+Turbo longed at 1600 only for market to dump (maybe would've been good r/r?)
+
+
+Lessons:
+Be faster to dodge systemic risk as soon as you notice (ust/luna/usdc)
+Don't blind copy trade ak after initial move has played out
+Be more patient to enter 
+faster to get out
+start of alt season, ape with conviction, try not to get shaken out
+end of alt season, stop aping
+
+
+
+accounts = [
+	{
+		address: "0xe8c19db00287e3536075114b2576c70773e039bd", 
+		allo: 60,
+		notes: "Kang"
+	},
+	{
+		address: "0x749f447c2755d63e03e7a70f7bded7c7f5b4b13c", 
+		allo: 5,
+		notes: "GMX Profitable"
+	},
+	{
+		address: "0x48202a51c0d5d81b3ebed55016408a0e0a0afaae",
+		allo: 20,
+		notes: "GMX Profitable"
+	},
+	{
+		address: "0x67f72412a592d066a2e688e62664116deabeab29",
+		allo: 5,
+		notes: "Prev Berry Winner" 
+	},
+	{
+		address: "0x367f7def4c05f4ae7ae47f88e270f8c0c85a9273",
+		allo: 5,
+		notes: "GMX Profitable"
+	},
+	{
+		address: "0xb7a98544083a5f6dd3bcf267aba5a714e3f515f4",
+		allo: 5,
+		notes: "GMX Profitable"
+	}
+]
