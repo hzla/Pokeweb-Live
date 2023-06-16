@@ -1,0 +1,189 @@
+<script>
+	// json object for filtering
+	trainers = <%= @trainers.to_json %>
+
+	trainer_poks = <%= @trainer_poks.to_json %>
+
+	// info for autocomplete
+	autofills = {
+		<% [:items, :pokemon_names, :abilities, :class_names, :battle_types, :genders].each do |info| %>
+			"<%= info.to_s %>": <%= RomInfo.send(info) %>,
+		<% end %>
+		"move_names": <%= @move_names %>
+	}
+</script>
+<% personals = Personal.poke_data %>
+<% show_doc_view = @show_doc_view %>
+
+<% p SessionSettings.get("public") %>
+
+<div class="pokemon-filter">	
+	<div class="filter-title">Search</div>
+	<input class="filter-input" id="search-text"/>
+	<button class="btn -default" id="search-text-btn" type="button">Search</button>
+
+	<br>
+
+	<% if !show_doc_view %>
+		<div class="sidebar-btns">
+			<div class="ow-btn settings-toggle" data-field="enable_single_npc_dbl_battles">Toggle Single NPC Double Battles</div>
+		</div>	
+
+		<% if SessionSettings.base_rom == "BW2" %>
+
+			<div class="small-filters">
+				<a href="/trainers/expand" onclick="return confirm('This will permanently add 10 trainers to your project. Please make sure you have a backup before proceeding. Proceed?')"><button class="btn">Add 10 Trainer Slots</button></a>
+			</div>
+		<% end %>
+
+		<div class="small-filters">
+			<a href="/trainers?doc_view=true"><button class="btn">Doc View</button></a>
+		</div>
+	<% end %>
+</div>
+<div id="texts" data-narc="message_texts"></div>
+<div class="pokemon-list spreadsheet" id="trainers">
+	<div class="expanded-field field-header">
+		<div class="expanded-field-main">
+			<div class="trainer-id">ID</div>
+			<div class="trainer-name">Name</div>
+			<div class="trainer-class">Class</div>
+			<div class="trainer-btype">Battle Type</div>
+			<div class="trainer-moves">Moves</div>
+			<div class="trainer-items">Items</div>
+			<div class="trainer-poks" >Pokemon</div>
+		</div>
+	</div>
+
+	<% @trainers.each_with_index do |trainer, i| %>
+		<div class="expanded-field filterable" data-index="<%= i %>">
+			<div class="expanded-field-main">
+				<div class="trainer-id"><%= i %></div>
+
+
+				<div class="trainer-name"><%= img Trdata.sprite(trainer["name"],trainer['class'],trainer['class_id'], @gender_table) %> <%= trainer["name"] %> <%= trainer["location"] ? "(#{trainer["location"][0]})" : ""  %></div>
+
+				<%= field "class", 'trainer-class', {value: "#{trainer['class']} (#{trainer['class_id']})",  narc: "trdata", autofill: "class_names"} %>		
+
+				<%= field "battle_type_1", 'trainer-btype', {value: trainer["battle_type_1"],  narc: "trdata", autofill: "battle_types"} %>	
+
+				<div class="trainer-moves">
+					<label class="container" data-narc="trdata">
+					  <input class="trainer-tmp-flag has-moves choosable-prop <%= Trdata.has_moves?(trainer) ? '-active' : '' %>" data-field-name="has_moves" type="checkbox" <%= Trdata.has_moves?(trainer) %>>
+					  <span class="checkmark"></span>
+					</label>
+				</div>
+				<div class="trainer-items">
+					<label class="container" data-narc="trdata">
+					  <input class="trainer-tmp-flag has-items choosable-prop <%= Trdata.has_items?(trainer) ? '-active' : '' %>" data-field-name="has_items" type="checkbox" <%= Trdata.has_items?(trainer) %>>
+					  <span class="checkmark"></span>
+					</label>
+				</div>
+
+				<div class="trainer-poks" >
+					<% if !show_doc_view %>
+						<% if @trainer_poks[i] && @trainer_poks[i]["count"] %>
+							<% Trpok.get_poks_for(@trainer_poks[i]["count"] , @trainer_poks[i]).each_with_index do |pok, i| %>
+								<div class="wild">
+									<%= img "pokesprite/#{pok}.png", "", ["show", "pok-#{i}"] %>
+								</div>
+							<% end %>	
+						<% end %>
+					<% end %>
+				</div>
+				<%= svg "svgs/misc_data", 'move-info expand-action expand-trainer svg no-fill', ["expand", "trainer"] %>
+				<% if !show_doc_view %>
+					<%= svg "svgs/add", 'add-trpok svg', ["narc", "trpok"] %>
+				<% end %>
+			</div>
+			
+			<div class="expanded-card-content expanded-trainer">
+				<div class="expanded-left">
+					<% (1..4).each do |n| %>
+						<div class="expanded-field">
+							<div class="expanded-trlabel">Item <%= n %></div>
+							<%= field "item_#{n}", 'tr-item', {value: trainer["item_#{n}"].name_titleize,  narc: "trdata", autofill: "items"} %>	
+						</div>
+					<% end %>
+					<div class="show-bottom">Texts</div>		
+				</div>
+				<div class="expanded-left">
+					<div class="expanded-field">
+						<div class="expanded-trlabel">Money</div>
+						<%= field "money", 'tr-item', {value: trainer["money"],  narc: "trdata", type: "int-255"} %>	
+					</div>
+					<div class="expanded-field">
+						<div class="expanded-trlabel">Reward</div>
+						<%= field "reward_item", 'tr-item', {value: trainer["reward_item"],  narc: "trdata", autofill: "items"} %>
+					</div>
+					<div class="expanded-field">
+						<div class="expanded-trlabel">Heal?</div>
+						<%= field "heal", 'tr-item', {value: trainer["heal"],  narc: "trdata", type: "int-1"} %>	
+					</div>
+				</div>
+				<div class="expanded-right" data-narc="trdata">
+					<% Trdata.ais.each do |ai| %>
+						<div class="choosable-text choosable-prop <%= trainer[ai] >0 ? '-active' : '' %>" data-field-name="<%= ai %>">
+							<%= ai %>
+						</div>
+					<% end %>
+				</div>
+
+				<% if SessionSettings.base_rom == "BW2" %>
+					<div class="expanded-bottom">
+						<% Trdata.text_type_ids.each do |type_id| %>
+							<% texts = Trdata.get_texts(i, @offsets, @text_table, @text_bank) %>
+							<% if i < 814 %>
+								<div class="expanded-field">
+									<div class="expanded-field-main">
+										<div class="msg-id"><%= @text_types[type_id] %></div>
+											
+										<% if texts[type_id] %>
+
+								
+
+											<%= field "text_#{type_id}_entry_#{texts[type_id][0]}", 'log-text no-validate empty-text', {value: texts[type_id][1],  narc: "trdata"} %>
+			
+										<% else %>
+											<%= field "text_#{type_id}_entry_#{(@offsets[i] / 4) + texts.length}", 'log-text no-validate empty-text', {value: "",  narc: "trdata"} %>
+										<% end %>
+									</div>
+								</div>
+							<% end %>	
+						<% end %>
+					</div>
+				<% end %>
+			</div>
+
+
+
+			<% if @trainer_poks[i] %>
+				<% (0.. @trainer_poks[i]["count"] - 1).each do |pok_index| %>
+
+					<%= erb :_trpok, :layout => false, :locals => { :trpok => @trainer_poks[i], :trpok_index => pok_index, :show => "", :trdata_index => i, :doc_view => false } %>
+
+				<% end %>	
+			<% end %>
+
+			
+			<% if show_doc_view %>
+				
+				<div class="expanded-card-content expanded-docs">
+
+					<% (0.. @trainer_poks[i]["count"] - 1).each do |pok_index| %>
+					
+					<%= erb :_trpok, :layout => false, :locals => { :personals => personals, :trdata => trainer, :trpok => @trainer_poks[i], :trpok_index => pok_index, :show => "", :trdata_index => i, :doc_view => true, :sprite => Trpok.get_poks_for(@trainer_poks[i]["count"] , @trainer_poks[i]), :has_moves => Trdata.has_moves?(trainer), :abilities => Trpok.get_abilities_for(i, personals) } %>
+
+					<% end %>	
+					
+				</div>
+			<% end %>
+		</div>
+
+		
+	<% end %>
+	
+</div>
+
+
+

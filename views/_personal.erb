@@ -1,0 +1,47 @@
+<div class="pokemon-card filterable" data-gen="<%= to_gen pok["index"] %>" data-index=<%= pok["index"] %>>
+	<div class="pokemon-card__info">
+		<div class="pokemon-card__header">
+			<div class="pokemon-card__img">
+				<%= img "pokesprite/#{pok["name"].gsub(". ", "-").downcase}.png" %>
+			</div>
+		</div>
+		<div class="pokemon-card__name">#<%= pok["index"] %> <%= pok["name"].titleize %></div>
+		<div class="pokemon-types">
+			<div data-narc="personal" data-autofill="types" data-field-name="type_1" class="pokemon-type -<%= pok["type_1"].downcase %>" contenteditable="true" data-autocomplete-spy><%= pok["type_1"] %></div>
+			<div data-narc="personal" data-autofill="types" data-field-name="type_2" class="pokemon-type -<%= pok["type_2"].downcase %>" contenteditable="true" data-autocomplete-spy><%= pok["type_2"] %></div>
+		</div>
+		<div class="pokemon-card__abilities">
+			<div data-narc="personal" data-autofill="abilities" data-autocomplete-spy data-field-name="ability_1" class="pokemon-card__ability" contenteditable="true"><%= pok["ability_1"].titleize  %></div>
+			<div data-narc="personal" data-autofill="abilities" data-autocomplete-spy data-field-name="ability_2" class="pokemon-card__ability" contenteditable="true"><%= pok["ability_2"].titleize  %></div>
+			<div data-narc="personal" data-autofill="abilities" data-autocomplete-spy data-field-name="ability_3" class="pokemon-card__ability" contenteditable="true"><%= pok["ability_3"].titleize  %></div>
+		</div>
+	</div>
+	<table class="pokemon-card__table" cellspacing="0">
+		<tbody>		
+			<% Personal.base_stat_fields.each do |bs_info| %>
+				<tr>
+					<td>
+						<strong><%= bs_info[0] %></strong>
+					</td>
+					<td data-narc="personal" data-type="int-255" data-field-name="<%= bs_info[1] %>" contenteditable="true"><%= pok[bs_info[1]] %></td>
+					<td>
+						<div class="pokemon-card__graph-wrapper">
+							<div class="pokemon-card__graph -medium" style="width: calc(100% * (<%= pok[bs_info[1]] %> / 255));"></div>
+						</div>
+					</td>
+				</tr>
+			<% end %>
+		</tbody>
+	</table>
+
+
+	<div class="personal-icons">
+		<%= svg 'svgs/moves', "expand-card exp-learnset card-icon expand-action", ["expand", "learnset"]  %>
+		<%= svg 'svgs/tms', "expand-card exp-tms card-icon expand-action", ["expand", "tms"]  %>
+		<%= svg 'svgs/tutors', "expand-card exp-tutors card-icon expand-action", ["expand", "tutors"]  %>
+		<%= svg 'svgs/evo', "expand-card exp-evos card-icon expand-action", ["expand", "evos"]  %>	
+		<%= svg 'svgs/misc_data', "expand-card exp-personal card-icon expand-action", ["expand", "personal"]  %>
+	</div>
+	
+</div>
+

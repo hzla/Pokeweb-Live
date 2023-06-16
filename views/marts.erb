@@ -1,0 +1,56 @@
+
+<script>
+	// json object for filtering
+	marts = <%= @marts.to_json %>
+
+
+	// info for autocomplete
+	autofills = {
+		<% [:items].each do |info| %>
+			"<%= info.to_s %>": <%= RomInfo.send(info) %>,
+		<% end %>
+	}
+</script>
+
+<div class="pokemon-filter">	
+	<div class="filter-title">Search Text</div>
+	<input class="filter-input" id="search-text"/>
+	<button class="btn -default" id="search-text-btn" type="button">Search</button>			
+	
+</div>
+
+<div class="pokemon-list spreadsheet" id="marts">
+	<div class="expanded-field field-header">
+		<div class="expanded-field-main">
+			<div class="mart-id">ID</div>
+			<div class="mart-name">Location/Description</div>
+			<div class="mart-inv">Inventory</div>
+		</div>
+	</div>
+
+	<% @marts.each_with_index do |mart, i| %>
+		<div class="expanded-field filterable" data-index="<%= i %>">
+			<div class="expanded-field-main">
+				<div class="mart-id"><%= i %></div>
+				<div class="mart-name"><%= mart["name"] %></div>
+				<div class="mart-inv">
+					<%= Mart.inventory(mart) %>
+				</div>
+				<%= svg "svgs/misc_data", 'move-info expand-action expand-mart svg no-fill', ["expand", "mart"] %>
+			</div>
+			<div class="expanded-card-content expanded-mart">
+				<% [(0..9), (10..19)].each do |col| %>
+					<div class="expanded-left" %>			
+						<% col.each do |n| %>
+							<div class="expanded-field">
+								<%= field "item_#{n}", "mart-item", {value: mart["item_#{n}"], narc: "mart", autofill: "items"} %>
+							</div>
+						<% end %>
+					</div>
+				<% end %>			
+			</div>
+		</div>
+	<% end %>
+</div>
+
+

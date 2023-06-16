@@ -1,0 +1,60 @@
+<script>
+	// json object for filtering
+	pokemons = <%= @poke_data.to_json %>
+
+	// moves data for populating additonal move info when user makes edits
+	moves = <%= @moves.to_json %>
+
+	// info for autocomplete
+	autofills = {
+		<% [:types, :abilities, :items, :egg_groups, :growth_rates, :evo_methods, :pokemon_names].each do |info| %>
+			"<%= info.to_s %>": <%= RomInfo.send(info) %>,
+		<% end %>
+		"move_names": <%= @move_names %>
+	}
+
+	// load rest of pokemon (11 to end)
+	<% p ENV['RACK_ENV'] %>
+	<% if ENV['RACK_ENV'] != 'test' %>
+		$( document ).ready(function() {
+			$('#wait-loading').show()
+			$.get(window.location.href + "/collection", function(data){
+				$('.pokemon-list').append(data)
+				$('#wait-loading').hide()
+				$(":not(.log-text)[contenteditable='true']").contextMenu(editable_menu)
+			})
+		})	
+	<%	end %>
+
+	
+</script>
+
+<div class="pokemon-filter">	
+	<div class="filter-title">Search Text</div>
+	<input class="filter-input" id="search-text"/>
+	<button class="btn -default" id="search-text-btn" type="button">Search</button>			
+	<div class="filter-title">Generation</div>
+	<div class="small-filters gen-filters">
+		<% (1..5).each do |n| %>
+			<button class="btn -default btn-5" type="button"><%= n %></button>
+		<% end %>
+	</div>
+	<div class="small-filters type-filters">
+		<% RomInfo.types.each do |type| %>
+			<button class="btn -default btn-5 -<%= type.downcase %>" data-ptype="<%= type.downcase %>" type="button"><%= type.upcase[0..2] %></button>
+		<% end %>
+	</div>
+	<br>
+	<div class="small-filters">
+		Tip: You can right click a value to apply to all 
+	</div>
+</div>
+
+<div class="pokemon-list" id="personals">
+	<% @pokemons.each do |pok|  %>
+		<% if pok %>
+			<%= erb :'_personal', :layout => false, :locals => { :pok => pok } %>
+		<% end %>
+	<% end %>
+</div>
+

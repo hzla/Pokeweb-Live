@@ -1,0 +1,20 @@
+{
+    "raw": {
+        "file_length": 0,
+        "furniture_count": 0,
+        "npc_count": 0,
+        "warp_count": 0,
+        "trigger_count": 0,
+        "footer": 0,
+        "footer_length": 0
+    },
+    "readable": {
+        "file_length": 0,
+        "furniture_count": 0,
+        "npc_count": 0,
+        "warp_count": 0,
+        "trigger_count": 0,
+        "footer": 0,
+        "footer_length": 0
+    }
+}

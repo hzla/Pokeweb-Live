@@ -1,0 +1,342 @@
+[
+    {
+        "bg_id": 0,
+        "move": "EXPLOSION",
+        "move_id": 153
+    },
+    {
+        "bg_id": 3,
+        "move": "MEGA KICK",
+        "move_id": 25
+    },
+    {
+        "bg_id": 12,
+        "move": "HEAD CHARGE",
+        "move_id": 543
+    },
+    {
+        "bg_id": 15,
+        "move": "DOUBLE-EDGE",
+        "move_id": 38
+    },
+    {
+        "bg_id": 18,
+        "move": "HYDRO PUMP",
+        "move_id": 56
+    },
+    {
+        "bg_id": 18,
+        "move": "MIST BALL",
+        "move_id": 296
+    },
+    {
+        "bg_id": 21,
+        "move": "GUNK SHOT",
+        "move_id": 441
+    },
+    {
+        "bg_id": 24,
+        "move": "FOCUS BLAST",
+        "move_id": 411
+    },
+    {
+        "bg_id": 27,
+        "move": "AURA SPHERE",
+        "move_id": 396
+    },
+    {
+        "bg_id": 30,
+        "move": "BLIZZARD",
+        "move_id": 59
+    },
+    {
+        "bg_id": 33,
+        "move": "LEAF STORM",
+        "move_id": 437
+    },
+    {
+        "bg_id": 33,
+        "move": "HYPER BEAM",
+        "move_id": 63
+    },
+    {
+        "bg_id": 36,
+        "move": "SMACK DOWN",
+        "move_id": 479
+    },
+    {
+        "bg_id": 36,
+        "move": "SEISMIC TOSS",
+        "move_id": 69
+    },
+    {
+        "bg_id": 39,
+        "move": "THUNDER",
+        "move_id": 87
+    },
+    {
+        "bg_id": 42,
+        "move": "FISSURE",
+        "move_id": 90
+    },
+    {
+        "bg_id": 48,
+        "move": "PSYCHIC",
+        "move_id": 94
+    },
+    {
+        "bg_id": 51,
+        "move": "AGILITY",
+        "move_id": 97
+    },
+    {
+        "bg_id": 54,
+        "move": "SELFDESTRUCT",
+        "move_id": 120
+    },
+    {
+        "bg_id": 60,
+        "move": "SACRED SWORD",
+        "move_id": 533
+    },
+    {
+        "bg_id": 60,
+        "move": "FIRE BLAST",
+        "move_id": 126
+    },
+    {
+        "bg_id": 63,
+        "move": "WATERFALL",
+        "move_id": 127
+    },
+    {
+        "bg_id": 72,
+        "move": "NIGHTMARE",
+        "move_id": 171
+    },
+    {
+        "bg_id": 78,
+        "move": "AEROBLAST",
+        "move_id": 177
+    },
+    {
+        "bg_id": 81,
+        "move": "ZAP CANNON",
+        "move_id": 192
+    },
+    {
+        "bg_id": 93,
+        "move": "OUTRAGE",
+        "move_id": 200
+    },
+    {
+        "bg_id": 99,
+        "move": "SACRED FIRE",
+        "move_id": 221
+    },
+    {
+        "bg_id": 102,
+        "move": "DYNAMICPUNCH",
+        "move_id": 223
+    },
+    {
+        "bg_id": 105,
+        "move": "MEGAHORN",
+        "move_id": 224
+    },
+    {
+        "bg_id": 108,
+        "move": "MOONLIGHT",
+        "move_id": 236
+    },
+    {
+        "bg_id": 111,
+        "move": "EXTREMESPEED",
+        "move_id": 245
+    },
+    {
+        "bg_id": 114,
+        "move": "WHIRLPOOL",
+        "move_id": 250
+    },
+    {
+        "bg_id": 117,
+        "move": "FOCUS PUNCH",
+        "move_id": 264
+    },
+    {
+        "bg_id": 120,
+        "move": "SUPERPOWER",
+        "move_id": 276
+    },
+    {
+        "bg_id": 123,
+        "move": "OVERHEAT",
+        "move_id": 315
+    },
+    {
+        "bg_id": 126,
+        "move": "COSMIC POWER",
+        "move_id": 322
+    },
+    {
+        "bg_id": 126,
+        "move": "WISH",
+        "move_id": 273
+    },
+    {
+        "bg_id": 132,
+        "move": "SKY UPPERCUT",
+        "move_id": 327
+    },
+    {
+        "bg_id": 135,
+        "move": "AERIAL ACE",
+        "move_id": 332
+    },
+    {
+        "bg_id": 138,
+        "move": "FRENZY PLANT",
+        "move_id": 338
+    },
+    {
+        "bg_id": 141,
+        "move": "VOLT TACKLE",
+        "move_id": 344
+    },
+    {
+        "bg_id": 147,
+        "move": "WATER PULSE",
+        "move_id": 352
+    },
+    {
+        "bg_id": 150,
+        "move": "PSYCHO BOOST",
+        "move_id": 354
+    },
+    {
+        "bg_id": 153,
+        "move": "CLOSE COMBAT",
+        "move_id": 370
+    },
+    {
+        "bg_id": 156,
+        "move": "FLARE BLITZ",
+        "move_id": 394
+    },
+    {
+        "bg_id": 159,
+        "move": "HYDRO CANNON",
+        "move_id": 308
+    },
+    {
+        "bg_id": 159,
+        "move": "BRAVE BIRD",
+        "move_id": 413
+    },
+    {
+        "bg_id": 159,
+        "move": "SKY ATTACK",
+        "move_id": 143
+    },
+    {
+        "bg_id": 159,
+        "move": "HURRICANE",
+        "move_id": 542
+    },
+    {
+        "bg_id": 162,
+        "move": "GIGA IMPACT",
+        "move_id": 416
+    },
+    {
+        "bg_id": 165,
+        "move": "TRICK ROOM",
+        "move_id": 433
+    },
+    {
+        "bg_id": 174,
+        "move": "POWER WHIP",
+        "move_id": 438
+    },
+    {
+        "bg_id": 177,
+        "move": "ROCK WRECKER",
+        "move_id": 439
+    },
+    {
+        "bg_id": 180,
+        "move": "HEAD SMASH",
+        "move_id": 457
+    },
+    {
+        "bg_id": 183,
+        "move": "SPACIAL REND",
+        "move_id": 460
+    },
+    {
+        "bg_id": 186,
+        "move": "LUNAR DANCE",
+        "move_id": 461
+    },
+    {
+        "bg_id": 189,
+        "move": "MAGMA STORM",
+        "move_id": 463
+    },
+    {
+        "bg_id": 192,
+        "move": "DARK VOID",
+        "move_id": 464
+    },
+    {
+        "bg_id": 195,
+        "move": "WONDER ROOM",
+        "move_id": 472
+    },
+    {
+        "bg_id": 198,
+        "move": "MAGIC ROOM",
+        "move_id": 478
+    },
+    {
+        "bg_id": 201,
+        "move": "INFERNO",
+        "move_id": 517
+    },
+    {
+        "bg_id": 204,
+        "move": "PSYSTRIKE",
+        "move_id": 540
+    },
+    {
+        "bg_id": 210,
+        "move": "SEARING SHOT",
+        "move_id": 545
+    },
+    {
+        "bg_id": 213,
+        "move": "BOLT STRIKE",
+        "move_id": 550
+    },
+    {
+        "bg_id": 216,
+        "move": "BLUE FLARE",
+        "move_id": 551
+    },
+    {
+        "bg_id": 219,
+        "move": "FREEZE SHOCK",
+        "move_id": 553
+    },
+    {
+        "bg_id": 222,
+        "move": "ICE BURN",
+        "move_id": 554
+    },
+    {
+        "bg_id": 225,
+        "move": "V-CREATE",
+        "move_id": 557
+    }
+]

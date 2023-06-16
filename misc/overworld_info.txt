@@ -1,0 +1,101 @@
+[u]Header (0x08 long)[/u]
+0x00-0x03:	Overworld Data Read Length
+0x04-0x07:	Header Data (Count)
+    0x04:	Furniture
+    0x05:	NPCs/Interactables
+    0x06:	Warps
+    0x07:	Triggers (Floor)
+
+[u]Furniture (0x14 long)
+[/u]    0x00-0x01 - Script Used (???)
+   0x02-0x03 - ???
+   0x04-0x05 - ???
+   0x06-0x0B - X Coordinate
+   0x0C-0x0F - Y Coordinate
+   0x10-0x13 - Z Coordinate (lowest 4 bits for something else), signed!
+
+[u]NPC/Interactable (0x24 long)
+[/u]    0x00-0x01 - Overworld ID
+   0x02-0x03 - Overworld Sprite
+   0x04-0x05 - Movement Permissions
+   0x06-0x07 - Unused / Permission 2
+   0x08-0x09 - Overworld Flag ~ Items (checkflag related. Default 0)
+   0x0A-0x0B - Script Called (Special for Overworld Items)
+   0x0C-0x0D - Face Direction Default
+00 00 = Up
+01 00 = Down 
+02 00 = Left
+03 00 = Right
+   0x0E-0x0F - Sight Range (Eyecatch Leash)
+   0x10-0x11 - ????
+   0x12-0x13 - ????
+   0x14-0x15 - Left/Righ Leash (Deviation)
+   0x16-0x17 - Up/Down Leash (Deviation)
+   0x18-0x19 - ????
+   0x1A-0x1B - ????
+   0x1C-0x1D - X Coordinate (Left/Right)
+   0x1E-0x1F - Y Coordinate (Up  / Down)
+   0x20-0x21 - ????
+   0x22-0x23 - Z Coordinate (Levitation)
+
+[u]Warp (0x14 long)
+[/u]    0x00-0x01 - Map
+   0x02-0x03 - UseWarpCoordinates (From Above Map)
+		essentially chooses which Building/Side
+   0x04 - ??? (1/2/4)
+   0x05 - ??? (1/3/4)
+   0x06-0x09 - Exit X (lowest 4 bits act as directional flags?)
+   0x0A-0x0D - Exit Y (^)
+   0x0E-0x0F - X Extention (how far the warp extends RIGHT)
+   0x10-0x11 - Y Extention (how far the warp extends up/down, unsure)
+   0x12-0x13 - ??? (00)
+
+[u]Trigger (0x16 long)
+[/u]    0x00-0x01 - Entity Number?
+   0x02-0x03 - Constant Value
+   0x04-0x05 - Constant Reference - Apparently, if Ref=Val, trigger.
+   0x06-0x07 - ????
+   0x08-0x09 - ????
+   0x0A-0x0B - X Coordinate (16bit)
+   0x0C-0x0D - Y Coordinate (16bit)
+   0x0E-0x0F - Z Coordinate (16 Bit)
+   0x10-0x11 - ????
+   0x12-0x13 - ????
+   0x14-0x15 - ????
+
+ Extra Stuff (Trigger Related?)
+ 0x06 long
+ 0x00-0x01 - Selects One of something
+ 0x02-0x05 - Does something to it
+
+[u]00 00 00 00 = end of overworld (at the end of every OW file), sometimes 00 00
+[/u]
+for parsing:
+
+Furniture Start (if readbyte(0x04)>0): 		0x08
+NPC Start 	(if readbyte(0x05)>0): 		0x08+readbyte(0x04)*0x14
+Warp Start 	(if readbyte(0x06)>0): 		0x08+readbyte(0x04)*0x14+readbyte(0x05)*0x24
+Trigger Start 	(if readbyte(0x07)>0):		0x08+readbyte(0x04)*0x14+readbyte(0x05)*0x24+readbyte(0x06)*0x14
+Extra/End:					0x08+readbyte(0x04)*0x14+readbyte(0x05)*0x24+readbyte(0x06)*0x14+readbyte(0x07)*0x16
+BW Movement Permissions ~ via Oxnite
+
+	02 00	Looking AROUND (randomly)
+03 00	Walking AROUND randomly till max
+04 00	Looking UP and DOWN
+05 00	Looking LEFT and RIGHT
+06 00	Looking UP and LEFT
+07 00	Looking UP and RIGHT
+08 00	Looking LEFT and DOWN
+09 00	Looking RIGHT and DOWN
+0A 00	Looking UP, DOWN and LEFT (randomly)
+0B 00	Looking UP, DOWN and RIGHT (randomly)
+0C 00	Looking UP, LEFT and RIGHT (randomly)
+0D 00	Looking DOWN, LEFT and RIGHT (randomly)
+0E 00	Looking UP
+0F 00	Looking DOWN
+10 00	Looking LEFT
+11 00	Looking RIGHT
+12 00	Looking UP, LEFT, DOWN, RIGHT (counter-clockwise)
+13 00	Looking UP, RIGHT, DOWN, LEFT (clockwise)
+20 00	Running DOWN till max, RIGHT till max; then returns + repeats
+21 00	Running RIGHT till max, UP till max; then returns + repeats

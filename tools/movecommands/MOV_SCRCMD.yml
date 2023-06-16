@@ -1,0 +1,961 @@
+0:
+  Name: MoveCamera
+  Parameters:
+    - Name: p0
+      Type: int
+    - Name: p1
+      Type: int
+    - Name: p2
+      Type: int
+    - Name: p3
+      Type: int
+    - Name: p4
+      Type: int
+1:
+  Name: CMD_1
+  Parameters:
+    - Name: p0
+      Type: int
+    - Name: p1
+      Type: int
+    - Name: p2
+      Type: int
+    - Name: p3
+      Type: int
+    - Name: p4
+      Type: int
+    - Name: p5
+      Type: int
+    - Name: p6
+      Type: int
+    - Name: p7
+      Type: int
+    - Name: p8
+      Type: int
+    - Name: p9
+      Type: int
+2:
+  Name: CMD_2
+  Parameters:
+    - Name: p0
+      Type: int
+    - Name: p1
+      Type: int
+    - Name: p2
+      Type: int
+    - Name: p3
+      Type: int
+    - Name: p4
+      Type: int
+    - Name: p5
+      Type: int
+3:
+  Name: CMD_3
+  Parameters:
+    - Name: p0
+      Type: int
+    - Name: p1
+      Type: int
+    - Name: p2
+      Type: int
+    - Name: p3
+      Type: int
+    - Name: p4
+      Type: int
+    - Name: p5
+      Type: int
+4:
+  Name: CMD_4
+  Parameters:
+    - Name: p0
+      Type: int
+    - Name: p1
+      Type: int
+5:
+  Name: CMD_5
+  Parameters:
+6:
+  Name: LoadSPA
+  Parameters:
+    - Name: p0
+      Type: int
+7:
+  Name: DoSPAAnimation
+  Parameters:
+    - Name: p0
+      Type: int
+    - Name: p1
+      Type: int
+    - Name: p2
+      Type: int
+    - Name: p3
+      Type: int
+    - Name: p4
+      Type: int
+    - Name: p5
+      Type: int
+    - Name: p6
+      Type: int
+    - Name: p7
+      Type: int
+    - Name: p8
+      Type: int
+    - Name: p9
+      Type: int
+    - Name: p10
+      Type: int
+8:
+  Name: CMD_8
+  Parameters:
+    - Name: p0
+      Type: int
+    - Name: p1
+      Type: int
+    - Name: p2
+      Type: int
+    - Name: p3
+      Type: int
+    - Name: p4
+      Type: int
+    - Name: p5
+      Type: int
+    - Name: p6
+      Type: int
+    - Name: p7
+      Type: int
+    - Name: p8
+      Type: int
+    - Name: p9
+      Type: int
+    - Name: p10
+      Type: int
+    - Name: p11
+      Type: int
+    - Name: p12
+      Type: int
+    - Name: p13
+      Type: int
+    - Name: p14
+      Type: int
+9:
+  Name: CMD_9
+  Parameters:
+    - Name: p0
+      Type: int
+    - Name: p1
+      Type: int
+    - Name: p2
+      Type: int
+    - Name: p3
+      Type: int
+    - Name: p4
+      Type: int
+    - Name: p5
+      Type: int
+    - Name: p6
+      Type: int
+    - Name: p7
+      Type: int
+    - Name: p8
+      Type: int
+    - Name: p9
+      Type: int
+    - Name: p10
+      Type: int
+10:
+  Name: CMD_a
+  Parameters:
+    - Name: p0
+      Type: int
+    - Name: p1
+      Type: int
+    - Name: p2
+      Type: int
+    - Name: p3
+      Type: int
+    - Name: p4
+      Type: int
+    - Name: p5
+      Type: int
+    - Name: p6
+      Type: int
+    - Name: p7
+      Type: int
+    - Name: p8
+      Type: int
+    - Name: p9
+      Type: int
+11:
+  Name: CMD_b
+  Parameters:
+    - Name: p0
+      Type: int
+12:
+  Name: CMD_c
+  Parameters:
+    - Name: p0
+      Type: int
+    - Name: p1
+      Type: int
+    - Name: p2
+      Type: int
+    - Name: p3
+      Type: int
+    - Name: p4
+      Type: int
+    - Name: p5
+      Type: int
+    - Name: p6
+      Type: int
+    - Name: p7
+      Type: int
+    - Name: p8
+      Type: int
+    - Name: p9
+      Type: int
+    - Name: p10
+      Type: int
+13:
+  Name: CMD_d
+  Parameters:
+    - Name: p0
+      Type: int
+    - Name: p1
+      Type: int
+    - Name: p2
+      Type: int
+    - Name: p3
+      Type: int
+    - Name: p4
+      Type: int
+    - Name: p5
+      Type: int
+    - Name: p6
+      Type: int
+    - Name: p7
+      Type: int
+    - Name: p8
+      Type: int
+    - Name: p9
+      Type: int
+    - Name: p10
+      Type: int
+    - Name: p11
+      Type: int
+    - Name: p12
+      Type: int
+14:
+  Name: CMD_e
+  Parameters:
+    - Name: p0
+      Type: int
+    - Name: p1
+      Type: int
+    - Name: p2
+      Type: int
+    - Name: p3
+      Type: int
+    - Name: p4
+      Type: int
+    - Name: p5
+      Type: int
+    - Name: p6
+      Type: int
+    - Name: p7
+      Type: int
+    - Name: p8
+      Type: int
+    - Name: p9
+      Type: int
+    - Name: p10
+      Type: int
+15:
+  Name: CMD_f
+  Parameters:
+    - Name: p0
+      Type: int
+    - Name: p1
+      Type: int
+    - Name: p2
+      Type: int
+    - Name: p3
+      Type: int
+    - Name: p4
+      Type: int
+    - Name: p5
+      Type: int
+    - Name: p6
+      Type: int
+    - Name: p7
+      Type: int
+    - Name: p8
+      Type: int
+    - Name: p9
+      Type: int
+    - Name: p10
+      Type: int
+    - Name: p11
+      Type: int
+    - Name: p12
+      Type: int
+16:
+  Name: CMD_10
+  Parameters:
+    - Name: p0
+      Type: int
+    - Name: p1
+      Type: int
+    - Name: p2
+      Type: int
+    - Name: p3
+      Type: int
+    - Name: p4
+      Type: int
+    - Name: p5
+      Type: int
+    - Name: p6
+      Type: int
+17:
+  Name: CMD_11
+  Parameters:
+    - Name: p0
+      Type: int
+    - Name: p1
+      Type: int
+    - Name: p2
+      Type: int
+    - Name: p3
+      Type: int
+    - Name: p4
+      Type: int
+    - Name: p5
+      Type: int
+    - Name: p6
+      Type: int
+18:
+  Name: CMD_12
+  Parameters:
+    - Name: p0
+      Type: int
+    - Name: p1
+      Type: int
+    - Name: p2
+      Type: int
+    - Name: p3
+      Type: int
+    - Name: p4
+      Type: int
+    - Name: p5
+      Type: int
+    - Name: p6
+      Type: int
+19:
+  Name: CMD_13
+  Parameters:
+    - Name: p0
+      Type: int
+    - Name: p1
+      Type: int
+    - Name: p2
+      Type: int
+    - Name: p3
+      Type: int
+    - Name: p4
+      Type: int
+    - Name: p5
+      Type: int
+    - Name: p6
+      Type: int
+    - Name: p7
+      Type: int
+    - Name: p8
+      Type: int
+20:
+  Name: CMD_14
+  Parameters:
+    - Name: p0
+      Type: int
+    - Name: p1
+      Type: int
+    - Name: p2
+      Type: int
+    - Name: p3
+      Type: int
+    - Name: p4
+      Type: int
+    - Name: p5
+      Type: int
+21:
+  Name: CMD_15
+  Parameters:
+    - Name: p0
+      Type: int
+    - Name: p1
+      Type: int
+    - Name: p2
+      Type: int
+    - Name: p3
+      Type: int
+    - Name: p4
+      Type: int
+    - Name: p5
+      Type: int
+    - Name: p6
+      Type: int
+22:
+  Name: CMD_16
+  Parameters:
+    - Name: p0
+      Type: int
+    - Name: p1
+      Type: int
+    - Name: p2
+      Type: int
+    - Name: p3
+      Type: int
+    - Name: p4
+      Type: int
+    - Name: p5
+      Type: int
+23:
+  Name: CMD_17
+  Parameters:
+    - Name: p0
+      Type: int
+    - Name: p1
+      Type: int
+    - Name: p2
+      Type: int
+    - Name: p3
+      Type: int
+    - Name: p4
+      Type: int
+    - Name: p5
+      Type: int
+24:
+  Name: CMD_18
+  Parameters:
+    - Name: p0
+      Type: int
+    - Name: p1
+      Type: int
+    - Name: p2
+      Type: int
+    - Name: p3
+      Type: int
+    - Name: p4
+      Type: int
+    - Name: p5
+      Type: int
+25:
+  Name: CMD_19
+  Parameters:
+    - Name: p0
+      Type: int
+    - Name: p1
+      Type: int
+    - Name: p2
+      Type: int
+    - Name: p3
+      Type: int
+26:
+  Name: CMD_1a
+  Parameters:
+    - Name: p0
+      Type: int
+    - Name: p1
+      Type: int
+27:
+  Name: CMD_1b
+  Parameters:
+    - Name: p0
+      Type: int
+    - Name: p1
+      Type: int
+    - Name: p2
+      Type: int
+    - Name: p3
+      Type: int
+    - Name: p4
+      Type: int
+28:
+  Name: CMD_1c
+  Parameters:
+    - Name: p0
+      Type: int
+    - Name: p1
+      Type: int
+29:
+  Name: CMD_1d
+  Parameters:
+    - Name: p0
+      Type: int
+    - Name: p1
+      Type: int
+30:
+  Name: CMD_1e
+  Parameters:
+    - Name: p0
+      Type: int
+    - Name: p1
+      Type: int
+    - Name: p2
+      Type: int
+    - Name: p3
+      Type: int
+    - Name: p4
+      Type: int
+    - Name: p5
+      Type: int
+    - Name: p6
+      Type: int
+31:
+  Name: CMD_1f
+  Parameters:
+    - Name: p0
+      Type: int
+32:
+  Name: CMD_20
+  Parameters:
+    - Name: p0
+      Type: int
+    - Name: p1
+      Type: int
+    - Name: p2
+      Type: int
+    - Name: p3
+      Type: int
+    - Name: p4
+      Type: int
+33:
+  Name: CMD_21
+  Parameters:
+    - Name: p0
+      Type: int
+    - Name: p1
+      Type: int
+    - Name: p2
+      Type: int
+    - Name: p3
+      Type: int
+    - Name: p4
+      Type: int
+    - Name: p5
+      Type: int
+    - Name: p6
+      Type: int
+    - Name: p7
+      Type: int
+34:
+  Name: CMD_22
+  Parameters:
+    - Name: p0
+      Type: int
+    - Name: p1
+      Type: int
+35:
+  Name: CMD_23
+  Parameters:
+    - Name: p0
+      Type: int
+36:
+  Name: Background
+  Parameters:
+    - Name: p0
+      Type: int
+37:
+  Name: CMD_25
+  Parameters:
+    - Name: p0
+      Type: int
+    - Name: p1
+      Type: int
+    - Name: p2
+      Type: int
+    - Name: p3
+      Type: int
+    - Name: p4
+      Type: int
+    - Name: p5
+      Type: int
+38:
+  Name: CMD_26
+  Parameters:
+    - Name: p0
+      Type: int
+    - Name: p1
+      Type: int
+    - Name: p2
+      Type: int
+    - Name: p3
+      Type: int
+    - Name: p4
+      Type: int
+    - Name: p5
+      Type: int
+39:
+  Name: CMD_27
+  Parameters:
+    - Name: p0
+      Type: int
+    - Name: p1
+      Type: int
+40:
+  Name: CMD_28
+  Parameters:
+    - Name: p0
+      Type: int
+41:
+  Name: CMD_29
+  Parameters:
+    - Name: p0
+      Type: int
+    - Name: p1
+      Type: int
+    - Name: p2
+      Type: int
+    - Name: p3
+      Type: int
+    - Name: p4
+      Type: int
+    - Name: p5
+      Type: int
+42:
+  Name: CMD_2a
+  Parameters:
+    - Name: p0
+      Type: int
+    - Name: p1
+      Type: int
+    - Name: p2
+      Type: int
+    - Name: p3
+      Type: int
+    - Name: p4
+      Type: int
+43:
+  Name: CMD_2b
+  Parameters:
+    - Name: p0
+      Type: int
+    - Name: p1
+      Type: int
+44:
+  Name: CMD_2c
+  Parameters:
+    - Name: p0
+      Type: int
+    - Name: p1
+      Type: int
+    - Name: p2
+      Type: int
+    - Name: p3
+      Type: int
+    - Name: p4
+      Type: int
+    - Name: p5
+      Type: int
+    - Name: p6
+      Type: int
+45:
+  Name: CMD_2d
+  Parameters:
+    - Name: p0
+      Type: int
+    - Name: p1
+      Type: int
+    - Name: p2
+      Type: int
+    - Name: p3
+      Type: int
+    - Name: p4
+      Type: int
+    - Name: p5
+      Type: int
+    - Name: p6
+      Type: int
+46:
+  Name: CMD_2e
+  Parameters:
+    - Name: p0
+      Type: int
+    - Name: p1
+      Type: int
+    - Name: p2
+      Type: int
+    - Name: p3
+      Type: int
+    - Name: p4
+      Type: int
+    - Name: p5
+      Type: int
+    - Name: p6
+      Type: int
+47:
+  Name: CMD_2f
+  Parameters:
+    - Name: p0
+      Type: int
+    - Name: p1
+      Type: int
+    - Name: p2
+      Type: int
+    - Name: p3
+      Type: int
+    - Name: p4
+      Type: int
+    - Name: p5
+      Type: int
+    - Name: p6
+      Type: int
+48:
+  Name: CMD_30
+  Parameters:
+    - Name: p0
+      Type: int
+    - Name: p1
+      Type: int
+49:
+  Name: CMD_31
+  Parameters:
+    - Name: p0
+      Type: int
+    - Name: p1
+      Type: int
+    - Name: p2
+      Type: int
+    - Name: p3
+      Type: int
+    - Name: p4
+      Type: int
+50:
+  Name: CMD_32
+  Parameters:
+    - Name: p0
+      Type: int
+51:
+  Name: CMD_33
+  Parameters:
+    - Name: p0
+      Type: int
+    - Name: p1
+      Type: int
+52:
+  Name: CMD_34
+  Alias: PlaySound
+  Parameters:
+    - Name: p0
+      Type: int
+    - Name: p1
+      Type: int
+    - Name: p2
+      Type: int
+    - Name: p3
+      Type: int
+    - Name: p4
+      Type: int
+    - Name: p5
+      Type: int
+    - Name: p6
+      Type: int
+    - Name: p7
+      Type: int
+    - Name: p8
+      Type: int
+53:
+  Name: CMD_35
+  Parameters:
+    - Name: p0
+      Type: int
+54:
+  Name: CMD_36
+  Parameters:
+    - Name: p0
+      Type: int
+    - Name: p1
+      Type: int
+    - Name: p2
+      Type: int
+    - Name: p3
+      Type: int
+    - Name: p4
+      Type: int
+    - Name: p5
+      Type: int
+    - Name: p6
+      Type: int
+    - Name: p7
+      Type: int
+55:
+  Name: CMD_37
+  Parameters:
+    - Name: p0
+      Type: int
+    - Name: p1
+      Type: int
+    - Name: p2
+      Type: int
+    - Name: p3
+      Type: int
+    - Name: p4
+      Type: int
+    - Name: p5
+      Type: int
+    - Name: p6
+      Type: int
+    - Name: p7
+      Type: int
+    - Name: p8
+      Type: int
+56:
+  Name: CMD_38
+  Parameters:
+    - Name: p0
+      Type: int
+57:
+  Name: CMD_39
+  Parameters:
+    - Name: p0
+      Type: int
+58:
+  Name: CMD_3a
+  Parameters:
+    - Name: p0
+      Type: int
+59:
+  Name: CMD_3b
+  Parameters:
+    - Name: p0
+      Type: int
+    - Name: p1
+      Type: int
+    - Name: p2
+      Type: int
+    - Name: p3
+      Type: int
+60:
+  Name: CMD_3c
+  Parameters:
+    - Name: p0
+      Type: int
+    - Name: p1
+      Type: int
+    - Name: p2
+      Type: int
+    - Name: p3
+      Type: int
+61:
+  Name: CMD_3d
+  Parameters:
+    - Name: p0
+      Type: int
+    - Name: p1
+      Type: int
+    - Name: p2
+      Type: int
+62:
+  Name: CMD_3e
+  Parameters:
+    - Name: p0
+      Type: int
+63:
+  Name: CMD_3f
+  Parameters:
+    - Name: p0
+      Type: int
+64:
+  Name: CMD_40
+  Parameters:
+    - Name: p0
+      Type: int
+    - Name: p1
+      Type: int
+65:
+  Name: CMD_41
+  Parameters:
+    - Name: p0
+      Type: int
+    - Name: p1
+      Type: int
+    - Name: p2
+      Type: int
+66:
+  Name: CMD_42
+  Parameters:
+67:
+  Name: CMD_43
+  Parameters:
+    - Name: p0
+      Type: int
+    - Name: p1
+      Type: int
+    - Name: p2
+      Type: int
+    - Name: p3
+      Type: int
+    - Name: p4
+      Type: int
+    - Name: p5
+      Type: int
+    - Name: p6
+      Type: int
+68:
+  Name: CMD_44
+  Parameters:
+    - Name: p0
+      Type: int
+69:
+  Name: CMD_45
+  Parameters:
+    - Name: p0
+      Type: int
+    - Name: p1
+      Type: int
+    - Name: p2
+      Type: int
+    - Name: p3
+      Type: int
+    - Name: p4
+      Type: int
+    - Name: p5
+      Type: int
+70:
+  Name: CMD_46
+  Parameters:
+    - Name: p0
+      Type: int
+    - Name: p1
+      Type: int
+    - Name: p2
+      Type: int
+71:
+  Name: CMD_47
+  Parameters:
+72:
+  Name: CMD_48
+  Parameters:
+    - Name: p0
+      Type: int
+73:
+  Name: CMD_49
+  Parameters:
+74:
+  Name: CMD_4a
+  Parameters:
+    - Name: p0
+      Type: int
+75:
+  Name: CMD_4b
+  Parameters:
+    - Name: p0
+      Type: int
+76:
+  Name: CMD_4c
+  Parameters:
+    - Name: p0
+      Type: int
+77:
+  Name: TerminateMoveScript
+  Parameters:
+  End: true
+

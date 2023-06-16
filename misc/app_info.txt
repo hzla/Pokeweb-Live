@@ -1,0 +1,112 @@
+App Info
+
+
+==========================================================
+
+ROM LOADING/NARC EXTRACTION
+
+rom_loader.py extracts rom narcs and converts narcs to json and .txt files
+json, narcs, texts are stored in /ROM_NAME
+
+current rom name is stored in session_settings.json, the prescence of this file is what tells the app you have an in progress project
+
+json files have "raw" and "readable" copies of narc data
+
+"readable" is the "raw" formatted to be presented to the front end, and is what is changed when the user makes edits, along with additional fields like names, ev yields etc.
+
+"raw" is data directly extracted from the narc with no formatting
+
+logic for reading narc data and writing to json in *_reader.py files
+
+===========================================================
+
+PARSING DATA FOR FRONTEND
+
+models/*.rb files access the outputted json files and contain methods that format the data into easily iteratable and acessible formats for views/*.erb files. 
+
+common read/write functions are in Pokenarc.rb
+headers/tms use their own read/write functions because they are one chunk of data instead of multiple files
+
+routes.rb renders erb/html from the json files using the formatted "readable" portion of the json data
+
+===========================================================
+
+USER ACTIONS
+
+when user makes an edit
+
+user edits are sent by ajax/js to ruby endpoints defined in routes.rb 
+
+event bindings, and ajax calls in , and UI update code is in public/scripts/index.js 
+
+example data format sent by ajax:  {file_id: a, field_name: b, value: c, narc_name: d, int: true}
+
+single field updates are sent to POST /update
+
+batch updates are sent to POST /batch_update
+
+both routes call the respective ruby model using the narc_name like so
+	NarcName.write_data data
+this writes data to the readable json portion
+
+a command is then asyncronously sent to the corresponding *_writer.py file to update the raw portion of the json
+
+all validation is done in index.js and text formatting in Pokenarc.write_data using the @@upcase class variable
+
+
+==================================================================
+
+EXPORTING ROM
+
+when user clicks export
+
+narcs in ROM_NAME/narcs are updated with data from ROM_NAME/json by *_writer.py files
+
+rom_saver.py packs each narc and saves a new rom to /exports/ROM_NAME.nds
+
+
+====================================================================
+
+PROJECT MANAGEMENT
+
+when a rom is loaded, a folder named ROM_NAME is created in the project folder where all json, narcs, and texts are extracted to
+
+rom info (file ids, base versions etc) is stored in session_settings.json
+
+clicking New will copy current session_settings.json to the rom project folder and wipe the current settings
+
+user is able to load already extracted Rom projects
+
+loading a rom with the same name as a previous project will overwrite all project data with the rom data
+
+===================================================================
+
+TODOS
+
+write unit/integration tests
+
+write capybara acceptance tests
+
+implement text editor
+
+battle subway editor
+
+pwt editor
+
+implement filter data refresh each time on edit so search bar works on newly changed data
+
+advanced search by specific field
+
+warn user when loading a rom that will overwrite project data
+
+implement user settings page to allow user to choose whether or not to load/save specific narcs/arm9
+(arm9 currently takes around 5 seconds for ndspy to compress)
+
+organise/refactor index.js 
+
+dynamic expansion
+
+show move perms for overworld editor
+
+
+

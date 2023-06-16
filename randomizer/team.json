@@ -1,0 +1,218 @@
+[
+  {
+    "name": "UMBREON",
+    "index": 197,
+    "via_player": 1.0,
+    "via_ai": 1.0,
+    "form": 0,
+    "types": [
+      "Dark",
+      "None"
+    ],
+    "modified_bst": 427.0,
+    "modified_bst_physical": 430.0,
+    "modified_bst_special": 425.0,
+    "can_be_mixed": true,
+    "physical_ok": true,
+    "special_ok": true,
+    "item": "leftovers",
+    "moves": [
+      [
+        "DARK PULSE",
+        399
+      ],
+      [
+        "SLUDGE WAVE",
+        482
+      ],
+      [
+        "PSYCHIC",
+        94
+      ],
+      [
+        "FLAMETHROWER",
+        53
+      ]
+    ]
+  },
+  {
+    "name": "MANDIBUZZ",
+    "index": 630,
+    "via_player": 1.0,
+    "via_ai": 1.0,
+    "form": 0,
+    "types": [
+      "Dark",
+      "Flying"
+    ],
+    "modified_bst": 426.0,
+    "modified_bst_physical": 431.0,
+    "modified_bst_special": 421.0,
+    "can_be_mixed": true,
+    "physical_ok": true,
+    "special_ok": true,
+    "item": "expertbelt",
+    "moves": [
+      [
+        "AIR SLASH",
+        403
+      ],
+      [
+        "DARK PULSE",
+        399
+      ],
+      [
+        "WHIRLWIND",
+        18
+      ],
+      [
+        "FLASH CANNON",
+        430
+      ]
+    ]
+  },
+  {
+    "name": "SCRAFTY",
+    "index": 560,
+    "via_player": 1.0,
+    "via_ai": 1.0,
+    "form": 0,
+    "types": [
+      "Dark",
+      "Fighting"
+    ],
+    "modified_bst": 408.6,
+    "modified_bst_physical": 408.6,
+    "modified_bst_special": 363.6,
+    "can_be_mixed": false,
+    "physical_ok": true,
+    "special_ok": null,
+    "item": "nothing",
+    "moves": [
+      [
+        "SUCKER PUNCH",
+        389
+      ],
+      [
+        "JUMP KICK",
+        26
+      ],
+      [
+        "SWAGGER",
+        207
+      ],
+      [
+        "ZEN HEADBUTT",
+        428
+      ]
+    ]
+  },
+  {
+    "name": "DRAPION",
+    "index": 452,
+    "via_player": 1.0,
+    "via_ai": 1.0,
+    "form": 0,
+    "types": [
+      "Poison",
+      "Dark"
+    ],
+    "modified_bst": 422.0,
+    "modified_bst_physical": 422.0,
+    "modified_bst_special": 392.0,
+    "can_be_mixed": false,
+    "physical_ok": true,
+    "special_ok": null,
+    "item": "blacksludge",
+    "moves": [
+      [
+        "POISON TAIL",
+        342
+      ],
+      [
+        "SUCKER PUNCH",
+        389
+      ],
+      [
+        "SCARY FACE",
+        184
+      ],
+      [
+        "TOXIC SPIKES",
+        390
+      ]
+    ]
+  },
+  {
+    "name": "MANDIBUZZ",
+    "index": 630,
+    "via_player": 1.0,
+    "via_ai": 1.0,
+    "form": 0,
+    "types": [
+      "Dark",
+      "Flying"
+    ],
+    "modified_bst": 426.0,
+    "modified_bst_physical": 431.0,
+    "modified_bst_special": 421.0,
+    "can_be_mixed": true,
+    "physical_ok": true,
+    "special_ok": true,
+    "item": "expertbelt",
+    "moves": [
+      [
+        "AIR SLASH",
+        403
+      ],
+      [
+        "DARK PULSE",
+        399
+      ],
+      [
+        "WHIRLWIND",
+        18
+      ],
+      [
+        "FLASH CANNON",
+        430
+      ]
+    ]
+  },
+  {
+    "name": "KROOKODILE",
+    "index": 553,
+    "via_player": 1.0,
+    "via_ai": 1.0,
+    "form": 0,
+    "types": [
+      "Ground",
+      "Dark"
+    ],
+    "modified_bst": 434.4,
+    "modified_bst_physical": 434.4,
+    "modified_bst_special": 382.4,
+    "can_be_mixed": false,
+    "physical_ok": true,
+    "special_ok": null,
+    "item": "expertbelt",
+    "moves": [
+      [
+        "HORN DRILL",
+        32
+      ],
+      [
+        "SCARY FACE",
+        184
+      ],
+      [
+        "ICICLE CRASH",
+        556
+      ],
+      [
+        "TAKE DOWN",
+        36
+      ]
+    ]
+  }
+]

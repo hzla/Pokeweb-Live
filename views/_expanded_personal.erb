@@ -1,0 +1,91 @@
+<div class="expanded-card-content expanded-personal">
+	<div class="expanded-left">
+		<% Personal.misc_integer_fields.each do |misc| %>
+			<div class="expanded-field">
+			
+			<% if misc[3] %>	
+				<a target="_blank" href="personal/taken_sprite_indexes"><div class="expanded-field-name sp-label"><%= misc[0] %></div></a>
+			<% else %>
+				<div class="expanded-field-name"><%= misc[0] %></div>
+			<% end %>
+				
+
+				<div data-narc="personal" data-type="<%= misc[2] || "int-255" %>" data-field-name="<%= misc[1] %>" class="expanded-field-value" contenteditable="true"><%= pok[misc[1]] %></div>
+			</div>
+		<% end %>
+	
+	</div>
+	<div class="expanded-mid">
+		<% Personal.text_fields.each do |txt_info| %>
+			<div class="expanded-field">
+				<div class="expanded-field-name"><%= txt_info[0] %></div>
+				<div data-narc="personal" data-autocomplete-spy data-field-name="<%= txt_info[1] %>" class="expanded-field-value" contenteditable="true" data-autofill="<%= txt_info[2] %>"><%= pok[txt_info[1]].titleize %></div>
+			</div>
+		<% end %>
+	</div>
+	<div class="expanded-right">				
+		<% Personal.ev_yield_fields.each do |ev_info| %>
+			<div class="expanded-field">
+				<div class="expanded-field-name"><%= ev_info[0] %> EVs</div>
+				<div data-narc="personal" data-type="int-3" data-field-name="<%= ev_info[1] %>" class="expanded-field-value ev-field" contenteditable="true"><%= pok[ev_info[1]] %></div>
+		</div>
+		<% end %>
+	</div>
+</div>
+<div class="expanded-card-content expanded-learnset">
+	<div class="expanded-left">
+		<%= erb :'_learnset', :layout => false, :locals => { :learnset => pok['learnset'][0..11], :id => pok["index"] } %>				
+	</div>
+	<div class="expanded-left">
+		<%= erb :'_learnset', :layout => false, :locals => { :learnset => pok['learnset'][12..24], :id => pok["index"] } %>			
+	</div>		
+</div>
+<div class="expanded-card-content expanded-tms">
+	<% tm_data = Personal.get_tm_list(pok) %>
+	<% tm_data[:tms].each_with_index do |tm, i| %>
+		<div class="cell tm <%= tm == "1" ? '-active' : '' %>" data-field-name="tms" data-narc="personal">
+			TM<%= i + 1 %><br>
+			<%= tm_names[:tm_names][i] %>
+
+		</div>
+	<% end %>
+	<% tm_data[:hms].each_with_index do |hm, i| %>
+		<div class="cell tm <%= hm == "1" ? '-active' : '' %>" data-field-name="tms" data-narc="personal">
+			HM<%= i + 1 %><br>
+			<%= tm_names[:hm_names][i] %>
+		</div>
+	<% end %>
+</div>
+<div class="expanded-card-content expanded-tutors">
+	<% Personal.tutor_names.each do |tutor| %>
+
+		<% Personal.get_tutor_list(pok, tutor, Personal.tutor_moves(tutor).length ).each_with_index do |tutor_move, i| %>
+			<div class="cell tutor-move <%= tutor_move == "1" ? '-active' : '' %>" data-field-name="<%= tutor %>" data-narc="personal">
+				<%= Personal.tutor_moves(tutor)[i] %>
+			</div>
+		<% end %>
+	<% end %>
+			
+</div>
+<div class="expanded-card-content expanded-evos">
+	<% evo = evolutions[pok["index"].to_i] %>
+	
+	<% [(0..2), (3..5), [6]].each do |range| %>
+		<div class="expanded-left">
+			<% range.each do |n| %>
+				<div class="expanded-field">
+					<div class="evo-label">Method</div>
+					<%= field "method_#{n}", 'evo-value', {value: evo["method_#{n}"],  narc: "evolution", autofill: "evo_methods"} %>
+				</div>
+				<div class="expanded-field">
+					<div class="evo-label">Parameter</div>
+					<%= field "param_#{n}", 'evo-value', {value: evo["param_#{n}"],  narc: "evolution", autofill: "evo_params"} %>
+				</div>
+				<div class="expanded-field">
+					<div class="evo-label">Evolves to</div>
+					<%= field "target_#{n}", 'evo-value', {value: evo["target_#{n}"].name_titleize,  narc: "evolution", autofill: "pokemon_names"} %>
+				</div>
+			<% end %>
+		</div>	
+	<% end %>		
+</div>

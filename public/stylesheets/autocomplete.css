@@ -1,0 +1,122 @@
+[data-autocomplete] {
+  position: relative;
+}
+
+[data-autocomplete] .suggestions {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 100%;
+  border: 1px solid #ccc;
+  border-top: 0;
+
+  background: #282a36;
+  z-index: 2;
+  white-space: nowrap;
+  font-size: 13px;
+  font-family: Helvetica, Arial;
+  font-weight: normal;
+  line-height: 18px;
+}
+
+[data-autocomplete] .suggestions > div {
+  padding: 4px 7px;
+  cursor: pointer;
+}
+
+[data-autocomplete] .suggestions > div.highlight,
+[data-autocomplete] .suggestions > div:hover {
+  background: #bd93f9;
+  color: #f2f2f2;
+}
+
+[data-autocomplete] .suggestions > div strong {
+  font-weight: bold;
+}
+
+
+/**/
+
+
+/* Customize the label (the container) */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 40px;
+  width: 40px;
+  background-color: #eee;
+  border-radius: 5px;
+}
+
+.filter-check {
+  height: 40px;
+  padding: 0px;
+}
+
+.filter-label {
+  line-height: 40px;
+}
+
+.filter-check .checkmark {
+  left: initial;
+  right: 0;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #1abc9c;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 14px;
+  top: 5px;
+  width: 10px;
+  height: 20px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}

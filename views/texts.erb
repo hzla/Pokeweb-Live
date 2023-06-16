@@ -1,0 +1,41 @@
+<div class="pokemon-filter">	
+	<div class="filter-title">Search Text</div>
+	<input class="filter-input" id="search-textbanks" value="<%= @terms %>"/>
+
+	<label class="container filter-check">
+		<div class="filter-label">Ignore Case?</div>
+	  	<input class="ignore-case" type="checkbox" >
+	  	<span class="checkmark"></span>
+	</label>
+	<button class="btn -default" id="search-textbanks-btn" type="button">Search</button>				
+</div>
+
+<div class="pokemon-list spreadsheet" id="texts" data-narc="<%= @narc_name %>">
+	<% @texts.each_with_index do |text, i| %>
+		<% if !text.empty? %>
+			<a href="/<%= "#{@narc_name}/text/#{i}" %>" target="_blank" class="expanded-field filterable text-header" data-index="<%= i %>">
+				<div >
+					
+					<div class="expanded-field-main">
+						<div class="log-text">Text Bank <%= i %></div>
+					</div>
+					
+				</div>
+			</a>
+			<div class="text-bank">
+				<% text[0..4].each do |entry| %>
+					<div class="expanded-field filterable">
+						<div class="expanded-field-main">
+								<div class="msg-id">MSG <%= entry[0].split("_")[1] %></div>
+									
+							
+							<div class="log-text"><%= entry[1]  %></div>
+						</div>
+					</div>		
+				<% end %>
+			</div>
+		<% end %>
+
+	<% end %>
+</div>
+

@@ -1,0 +1,90 @@
+<% if !doc_view %>
+
+
+	<div data-sub-index="<%= trpok_index %>" class="expanded-card-subcontent expanded-pok expanded-pok-<%= trpok_index %> <%= show %>">
+		<div class="expanded-left">
+			<div class="expanded-field">
+				<div class="expanded-trlabel">Species</div>
+				<%= field "species_id_#{trpok_index}", 'tr-item trpok-name', {value: trpok["species_id_#{trpok_index}"].name_titleize,  narc: "trpok", autofill: "pokemon_names"} %>	
+			</div>
+			<div class="expanded-field">
+				<div class="expanded-trlabel">Level</div>
+				<%= field "level_#{trpok_index}", 'tr-item trpok-lvl', {value: trpok["level_#{trpok_index}"],  narc: "trpok", type: "int-100"} %>	
+			</div>
+			<div class="expanded-field">
+				<div class="expanded-trlabel">Ability Slot</div>
+				<%= field "ability_#{trpok_index}", 'tr-item', {value: trpok["ability_#{trpok_index}"],  narc: "trpok", type: "int-3"} %>	
+			</div>
+			<div class="expanded-field">
+				<div class="expanded-trlabel">Gender</div>
+				<%= field "gender_#{trpok_index}", 'tr-item', {value: trpok["gender_#{trpok_index}"],  narc: "trpok", autofill: "genders"} %>	
+			</div>
+			<div class="expanded-field">
+				<div class="expanded-trlabel iv-label">IVs
+
+
+
+				</div>
+				<%= field "ivs_#{trpok_index}", 'tr-item', {value: trpok["ivs_#{trpok_index}"],  narc: "trpok", type: "int-255"} %>
+
+			</div>
+			<div class="expanded-field">
+				<div class="expanded-trlabel">Form</div>
+				<%= field "form_#{trpok_index}", 'tr-item', {value: trpok["form_#{trpok_index}"],  narc: "trpok", type: "int-255"} %>	
+			</div>
+		</div>
+
+
+		<div class="expanded-left">
+			<div class="expanded-field">
+				<div class="expanded-trlabel">Held Item</div>
+				<%= field "item_id_#{trpok_index}", 'tr-item', {value: trpok["item_id_#{trpok_index}"].name_titleize,  narc: "trpok", autofill: "items", check: "has-items"} %>	
+			</div>
+			<% (1..4).each do |m| %>
+				<div class="expanded-field">
+					<div class="expanded-trlabel">Move <%= m %></div>
+					<%= field "move_#{m}_#{trpok_index}", 'tr-item trpok-mov', {value: trpok["move_#{m}_#{trpok_index}"].name_titleize || "-",  narc: "trpok", autofill: "move_names", check: "has-moves"} %>	
+				</div>
+			<% end %>	
+
+			<div class="expanded-field btn-field-right multi">
+				<div class=" autofill-btn field-btn" data-narc="trpok">Autofill Moves</div>
+				<div class="delete-trpok del-btn field-btn" data-narc="trpok">Delete</div>
+			</div>
+		</div>
+	</div>
+<% else %>
+	<div class="trainer-doc-item">
+		<%= img "pokesprite/#{sprite[trpok_index]}.png", 'doc-sprite' %>
+		<div class="trpok-item-info">Level <%= trpok["level_#{trpok_index}"] %></div>
+		<div class="trpok-item-info"><%= trpok["item_id_#{trpok_index}"].name_titleize || "----" %></div>
+		<% nature_info = Trpok.get_doc_nature(trdata_index, trpok_index, trpok["ivs_#{trpok_index}"], trpok, trdata, personals) %>
+		
+		<div class="trpok-item-info">
+			<%= nature_info %> 
+		</div> 
+		<div class="trpok-item-info">
+			<%= abilities[trpok_index].move_titleize %>
+		</div> 
+		<br>
+
+
+
+		<% if has_moves %>
+
+			<% (1..4).each do |m| %>
+
+					<div class="trpok-item-info"><%= trpok["move_#{m}_#{trpok_index}"].name_titleize %></div>
+
+			<% end %>	
+		<% else %>
+			<% moves = Trpok.fill_lvl_up_moves trpok["level_#{trpok_index}"], trdata_index, trpok_index, true  %>
+
+			<% moves.each do |m| %>
+				<div class="trpok-item-info"><%= m %></div>
+			<% end %>
+		<% end %>
+	</div>
+
+
+<% end %>

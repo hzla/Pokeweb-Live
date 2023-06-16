@@ -1,0 +1,20 @@
+Floccesy Ranch
+Route 5
+Lostlorn Forest
+Route 6 (Field)
+Route 6 (Cave)
+Route 7
+Route 13 (Stairs Left)
+Route 13 (Stairs Down)
+Route 9
+Giant Chasm 
+Route 22
+Route 23
+Abundant Shrine (Field)
+Abundant Shrine (Pond)
+Pinwheel Forest (Interior)
+Pinwheel Forest (Exterior)
+Route 3 (Daycare)
+Route 3 (Pond)
+Route 2
+Route 18

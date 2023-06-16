@@ -1,0 +1,56 @@
+
+<script>
+	// json object for filtering
+	overworld = <%= @overworld.to_json %>
+	box = <%= @box.to_json %>
+</script>
+
+<div id="texts" data-narc="spas"></div>
+
+
+<div class="spa-container" id="overworld">
+
+		<% if $offline %>
+			<div class="script-btn spa-btn" href="/spas/<%= @id %>/pallete">Open Particle Info</div>
+		<% end %>
+		
+
+		<% @textures.each_with_index do |texture, n| %>
+			<div class="spa-canvas">
+				<% if @colors[n]["format"] == 1 %>
+
+					<% texture.each_with_index do |tile, i| %>
+
+						<div data-index="<%= i %>" class="spa-tile" style="background:<%= @colors[n]["colors"][tile[0]] %>;opacity:<%= tile[1] %>;">
+							
+						</div>
+						
+					<% end %>
+				<% end %>
+
+				<% if @colors[n]["format"] == 6 %>
+
+					<% texture.each_with_index do |tile, i| %>
+
+						<div data-index="<%= i %>" class="spa-tile" style="background:<%= @colors[n]["colors"][tile[0]] %>;opacity:<%= tile[1] %>;">
+
+							
+						</div>
+					<% end %>
+				<% end %>
+
+			</div>
+
+			<div class="pallete-canvas">
+				<% @colors[n]["colors"].each_with_index do |color, i| %>
+					<div contenteditable="true" class="pallete-color no-validate" style="background:<%= color %>;" data-color-index="<%= i %>" data-texture-index="<%= n %>" data-field-name="<%= "#{@id}_#{n}_#{i}" %>">
+						<%= color[0] == "#" ? color : color[4..-2] %>
+					</div>
+				<% end %>
+			</div>
+
+
+		<% end %>
+</div>
+
+

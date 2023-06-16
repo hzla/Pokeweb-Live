@@ -1,0 +1,102 @@
+
+<div class="pokemon-filter">	
+
+	<% if $offline %>
+		<div class="filter-title" id="offline">Select Rom</div>
+		<select name="rom" id="rom-select">
+			<% @roms.each do |rom| %>
+			    <option value="<%= rom %>"><%= rom %></option>
+		    <% end %>
+		</select>		
+		
+		<button class="btn -default" id="load-rom" type="button">Load</button>
+	<% else %>
+
+
+		<form id="rom-form" action="/extract" method="POST" enctype="multipart/form-data">
+			
+
+			<div class="filter-title">Set Base Rom</div>
+			<select name="rom_base" id="base-select" required>
+				<% ["B", "W", "B2", "W2"].each do |rom| %>
+				    <option value="<%= rom %>" name="<%= rom %>"><%= rom %></option>
+			    <% end %>
+			</select>
+
+			<div class="filter-title">Upload xdelta (optional)</div>
+			<input type="file" id="xdelta" name="filename" label="Upload xdelta"></input>
+
+			<div class="filter-title">Name Rom (with .nds)</div>
+			<input id="rom-name" type="text" name="rom_name" required></input>
+
+			<div class="filter-title">Set Rom Password</div>
+			<input id="new-rom-pw" type="password" name="password" required></input>
+
+
+
+			<button class="btn -default" id="load-rom" type="submit">Load</button>
+		</form>
+	<% end %>
+
+	
+	<div class="filter-title"> OR </div>
+	<form action="/load_project" method="GET">
+		<div class="filter-title">Select Existing Project</div>
+		<select name="rom" id="project-select">
+			<% @projects.each do |rom| %>
+			    <option value="<%= rom %>" name="<%= rom %>"><%= rom.split("/")[-1] %></option>
+		    <% end %>
+		</select>	
+		<div class="filter-title">Password</div>
+		<input id="rom-pw" type="password" name="password"></input>	
+		
+		<button class="btn -default" id="load-project" type="submit">Load</button>
+	</form>
+</div>
+
+<div class="pokemon-list">
+	<div class="text-page-container">
+		<h1 class="page-subtitle">Latest Announcements</h1>
+		<p class="text-section">01/13/2023: Added an option to delete project. Please delete your pokeweb project if you no longer have any use for it to help save on server storage.</p>
+		<p class="text-section">01/13/2023: Add Trainer Expansion Button and Text Editor</p>
+		<p class="text-section">01/06/2023: Add Animation Editor</p>
+		<p class="text-section">01/05/2023: Add Move Expansion and Export Documentation. Use export docs sparingly, it's expensive for server.</p>
+
+
+		<br><br>
+
+
+		<h1 class="page-title"> Welcome to Pokeweb!</h1>
+
+		<p class="text-section">Pokeweb is a generation V Rom Editor that supports editing Pokemon stats, learnsets, evolutions, trainers, items, moves, npcs, map permissions, marts and grottos for USA/Europe versions.</p>
+
+		<p class="text-section">For an offline version of Pokeweb that contains additional editors for texts, scripts,custom showdown calculator and documentation exporters, and more go <a href="https://github.com/hzla/pokeweb">here</a></p>
+
+		<p class="text-section">DISCLAIMER: NO ROMS ARE EVER STORED ON POKEWEB and only uploads and downloads of .xdelta files are possible. All edits are done on JSON files created through the manipulation of xdeltas.</p>
+
+		<h2 class="page-subtitle">Getting Started</h1>
+
+		<p class="text-section">
+			To get started, select a base rom, choose a unique name, and set a password. Please do not use passwords that you are using somewhere else. Click load and you will be taken to the editors. Enjoy! 
+
+			<br><br>
+			You can also upload a .xdelta file of between the rom you want to edit and a clean version of the base rom which you have purchased legally. You can download xdeltaUI a tool for making .xdelta files <a href="https://www.romhacking.net/utilities/704/">here</a>.
+			<br><br>
+ 
+			After loading a rom, you can resume your edits in the future by selecting it from the list of projects and entering the password.
+		</p>
+
+		<p class="text-section">
+			If you just want to try out the editor, you can select an example project "black2_fairies" and enter the password "fairy". Note that all project names are public and any project with a known password is editable by anyone.   
+		</p>
+
+		<h2 class="page-subtitle">Exporting your Rom</h1>
+
+		<p class="text-section">
+			To export a rom, click export on the top right. Note this will take a while and may fail depending on how many people are also trying to export. A normal export should take 5-20 seconds. Please do not spam click this as it is very computationally intensive for the low budget server.  
+		</p>
+	</div>
+	
+</div>
+
+

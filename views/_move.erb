@@ -1,0 +1,72 @@
+<div class="expanded-field filterable" data-index="<%= move["index"] %>"  data-move-index="<%= move["index"] %>">
+	
+	<div class="expanded-field-main">
+		<div class="move-name" data-narc="learnset">
+			<%= move["index"] %> - <%= move["name"].titleize %>
+		</div>
+		<div class="move-type">
+			<div data-autocomplete-spy contenteditable="true" data-narc="move" data-field-name="type" class="btn -<%= move["type"].downcase %> -active" type="button" data-autofill="types"><%= move["type"] %></div>
+		</div>
+		<div class="move-cat" data-field-name="category" data-narc="move">
+			<%= img "move-#{move['category'].downcase}.png", "chosen choosable", ["value", move['category'].downcase] %>
+			
+			<% ['Physical', 'Special', 'Status'].each do |cat| %>
+				<% if move['category'] != cat %>
+					<%= img "move-#{cat.downcase}.png", "unchosen choosable", ["value", cat.downcase] %>
+				<% end %>
+			<% end %>
+		</div>
+		<div class="move-effect" data-autocomplete-spy data-autofill="effects" contenteditable="true" data-field-name="effect" data-narc="move"><%= move["effect"] %>
+		</div>
+		<div data-narc="move" class="move-power" data-type="int-255" contenteditable="true" data-field-name="power"><%= move["power"] %>
+		</div>
+		<div data-type="int-101" data-narc="move" class="move-accuracy" contenteditable="true" data-field-name="accuracy"><%= move["accuracy"] %>
+		</div>
+		<%= svg "svgs/misc_data", 'move-info expand-action expand-move svg no-fill', ["expand", "move"] %>
+	</div>
+	
+	
+	<div class="expanded-card-content expanded-move">
+		<div class="expanded-left">
+			<% Move.effect_fields.each do |misc| %>
+				<div class="expanded-field">
+					<div class="expanded-field-name"><%= misc["label"] %></div>
+					<div <%= autofill misc %> data-narc="move" data-type="<%= misc['type'] %>" data-field-name="<%= misc['field_name'] %>" class="expanded-field-value" contenteditable="true" data-autofill="<%= misc['autofill'] %>"><%= move[misc["field_name"]] %></div>
+				</div>
+			<% end %>	
+		</div>
+		<div class="expanded-mid">
+			<% Move.stat_modifier_fields.each do |stat_mod| %>
+				<div class="expanded-field">
+					<div class="expanded-field-name"><%= stat_mod["label"] %></div>
+					<div <%= autofill stat_mod %> data-narc="move" data-autocomplete-spy data-field-name="<%= stat_mod['field_name'] %>" class="expanded-field-value" contenteditable="true" data-type="<%= stat_mod['type'] %>" data-autofill="<%= stat_mod['autofill'] %>"><%= move[stat_mod["field_name"]] %></div>
+				</div>
+			<% end %>
+		</div>
+		<div class="expanded-right">				
+			<% Move.misc_int_fields.each do |misc_int| %>
+				<div class="expanded-field">
+					<div class="expanded-field-name"><%= misc_int["label"] %></div>
+					<div data-narc="move" data-type="<%= misc_int['type'] %>" data-field-name="<%= misc_int['field_name'] %>" class="expanded-field-value ev-field" contenteditable="true"><%= move[misc_int["field_name"]] %></div>
+				</div>
+			<% end %>
+
+			<div class="expanded-field clickable-label">
+				<a href="/moves/<%= move['index'] %>/script"><div class="expanded-field-name">Download Anim Script</div></a>
+			</div>
+			<div class="expanded-field">
+				<input type="file" class="move-script" name="filename" label="Upload script"></input>
+			</div>
+			<div class="expanded-field">
+				<div class="expanded-field-name clickable-label upload-script">Uploaded Anim Script</div>
+			</div>
+		</div>
+		<div class="expanded-row expanded-move-props" data-narc="move">
+			<% Move.props.each do |prop| %>
+				<% prop_active = (move[prop] == 1 ? '-active' : '') %>
+				<%= svg("svgs/#{prop}".to_sym, "move-prop svg #{prop_active}", ["field-name", prop], "<div  class='prop-info'>#{prop.gsub("_", " ").titleize}</div>") %>
+			<% end %>		
+		</div>
+	</div>
+
+</div>

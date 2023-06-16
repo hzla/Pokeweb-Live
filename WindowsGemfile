@@ -1,0 +1,10 @@
+source 'https://rubygems.org'
+
+gem "sinatra", ">= 2.2.3"
+gem 'terminal-table'
+gem 'webrick'
+gem 'dotenv'
+gem 'activesupport', '6.1.7'
+gem 'pry'
+
+

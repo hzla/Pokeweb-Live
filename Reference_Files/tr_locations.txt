@@ -1,0 +1,18 @@
+go thru template
+
+
+First loop thru all trainers, set all thta don't match settings to nil
+
+loop thru template, only add those that aren't nil
+
+
+what's left are trainers with non template ids that match settings
+
+
+get level range of each location in template
+
+check if they have location data
+insert them into template based on their level
+
+
+

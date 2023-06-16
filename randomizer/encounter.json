@@ -1,0 +1,369 @@
+{
+  "upper": [
+    {
+      "name": "MAGMORTAR",
+      "index": 467,
+      "via_player": 1.0,
+      "via_ai": 1.0,
+      "form": 0,
+      "types": [
+        "Fire",
+        "Fire"
+      ],
+      "modified_bst": 434.2,
+      "modified_bst_physical": 399.2,
+      "modified_bst_special": 434.2,
+      "can_be_mixed": false
+    },
+    {
+      "name": "SNORLAX",
+      "index": 143,
+      "via_player": 1.0,
+      "via_ai": 1.0,
+      "form": 0,
+      "types": [
+        "Normal",
+        "Normal"
+      ],
+      "modified_bst": 446.0,
+      "modified_bst_physical": 446.0,
+      "modified_bst_special": 401.0,
+      "can_be_mixed": false
+    },
+    {
+      "name": "HERDIER",
+      "index": 507,
+      "via_player": 1.0,
+      "via_ai": 1.0,
+      "form": 0,
+      "types": [
+        "Normal",
+        "Normal"
+      ],
+      "modified_bst": 445.0,
+      "modified_bst_physical": 321.0,
+      "modified_bst_special": 276.0,
+      "can_be_mixed": false
+    },
+    {
+      "name": "KADABRA",
+      "index": 64,
+      "via_player": 1.0,
+      "via_ai": 1.0,
+      "form": 0,
+      "types": [
+        "Psychic",
+        "Psychic"
+      ],
+      "modified_bst": 446.0,
+      "modified_bst_physical": 281.0,
+      "modified_bst_special": 366.0,
+      "can_be_mixed": false
+    },
+    {
+      "name": "MAGBY",
+      "index": 240,
+      "via_player": 1.0,
+      "via_ai": 1.0,
+      "form": 0,
+      "types": [
+        "Fire",
+        "Fire"
+      ],
+      "modified_bst": 434.2,
+      "modified_bst_physical": 293.2,
+      "modified_bst_special": 288.2,
+      "can_be_mixed": true
+    },
+    {
+      "name": "HERACROSS",
+      "index": 214,
+      "via_player": 1.0,
+      "via_ai": 1.0,
+      "form": 0,
+      "types": [
+        "Bug",
+        "Fighting"
+      ],
+      "modified_bst": 443.0,
+      "modified_bst_physical": 443.0,
+      "modified_bst_special": 358.0,
+      "can_be_mixed": false
+    }
+  ],
+  "mid": [
+    {
+      "name": "ILLUMISE",
+      "index": 314,
+      "via_player": 1.0,
+      "via_ai": 1.0,
+      "form": 0,
+      "types": [
+        "Bug",
+        "Fairy"
+      ],
+      "modified_bst": 421.0,
+      "modified_bst_physical": 367.0,
+      "modified_bst_special": 421.0,
+      "can_be_mixed": false
+    },
+    {
+      "name": "OMASTAR",
+      "index": 139,
+      "via_player": 1.0,
+      "via_ai": 1.0,
+      "form": 0,
+      "types": [
+        "Rock",
+        "Water"
+      ],
+      "modified_bst": 407.0,
+      "modified_bst_physical": 352.0,
+      "modified_bst_special": 407.0,
+      "can_be_mixed": false
+    },
+    {
+      "name": "WARTORTLE",
+      "index": 8,
+      "via_player": 1.0,
+      "via_ai": 1.0,
+      "form": 0,
+      "types": [
+        "Water",
+        "Water"
+      ],
+      "modified_bst": 422.6,
+      "modified_bst_physical": 319.6,
+      "modified_bst_special": 321.6,
+      "can_be_mixed": true
+    },
+    {
+      "name": "JUMPLUFF",
+      "index": 189,
+      "via_player": 1.0,
+      "via_ai": 1.0,
+      "form": 0,
+      "types": [
+        "Grass",
+        "Flying"
+      ],
+      "modified_bst": 414.0,
+      "modified_bst_physical": 394.0,
+      "modified_bst_special": 414.0,
+      "can_be_mixed": false
+    },
+    {
+      "name": "TORCHIC",
+      "index": 255,
+      "via_player": 1.0,
+      "via_ai": 1.0,
+      "form": 0,
+      "types": [
+        "Fire",
+        "Fire"
+      ],
+      "modified_bst": 413.0,
+      "modified_bst_physical": 231.0,
+      "modified_bst_special": 241.0,
+      "can_be_mixed": true
+    },
+    {
+      "name": "XATU",
+      "index": 178,
+      "via_player": 1.0,
+      "via_ai": 1.0,
+      "form": 0,
+      "types": [
+        "Psychic",
+        "Flying"
+      ],
+      "modified_bst": 404.0,
+      "modified_bst_physical": 364.0,
+      "modified_bst_special": 404.0,
+      "can_be_mixed": false
+    },
+    {
+      "name": "CHARMELEON",
+      "index": 5,
+      "via_player": 1.0,
+      "via_ai": 1.0,
+      "form": 0,
+      "types": [
+        "Fire",
+        "Dragon"
+      ],
+      "modified_bst": 420.0,
+      "modified_bst_physical": 316.4,
+      "modified_bst_special": 332.4,
+      "can_be_mixed": false
+    },
+    {
+      "name": "TEDDIURSA",
+      "index": 216,
+      "via_player": 1.0,
+      "via_ai": 1.0,
+      "form": 0,
+      "types": [
+        "Normal",
+        "Ground"
+      ],
+      "modified_bst": 406.0,
+      "modified_bst_physical": 268.0,
+      "modified_bst_special": 238.0,
+      "can_be_mixed": false
+    },
+    {
+      "name": "NOSEPASS",
+      "index": 299,
+      "via_player": 1.0,
+      "via_ai": 1.0,
+      "form": 0,
+      "types": [
+        "Rock",
+        "Rock"
+      ],
+      "modified_bst": 428.0,
+      "modified_bst_physical": 281.0,
+      "modified_bst_special": 301.0,
+      "can_be_mixed": false
+    },
+    {
+      "name": "KINGDRA",
+      "index": 230,
+      "via_player": 1.0,
+      "via_ai": 1.0,
+      "form": 0,
+      "types": [
+        "Water",
+        "Dragon"
+      ],
+      "modified_bst": 424.0,
+      "modified_bst_physical": 424.0,
+      "modified_bst_special": 424.0,
+      "can_be_mixed": true
+    },
+    {
+      "name": "HORSEA",
+      "index": 116,
+      "via_player": 1.0,
+      "via_ai": 1.0,
+      "form": 0,
+      "types": [
+        "Water",
+        "Water"
+      ],
+      "modified_bst": 424.0,
+      "modified_bst_physical": 218.0,
+      "modified_bst_special": 248.0,
+      "can_be_mixed": false
+    },
+    {
+      "name": "VULPIX",
+      "index": 37,
+      "via_player": 1.0,
+      "via_ai": 1.0,
+      "form": 0,
+      "types": [
+        "Fire",
+        "Fire"
+      ],
+      "modified_bst": 417.79999999999995,
+      "modified_bst_physical": 241.0,
+      "modified_bst_special": 250.0,
+      "can_be_mixed": true
+    }
+  ],
+  "low": [
+    {
+      "name": "METAPOD",
+      "index": 11,
+      "via_player": 1.0,
+      "via_ai": 1.0,
+      "form": 0,
+      "types": [
+        "Bug",
+        "Bug"
+      ],
+      "modified_bst": 393.0,
+      "modified_bst_physical": 170.0,
+      "modified_bst_special": 175.0,
+      "can_be_mixed": false
+    },
+    {
+      "name": "SUDOWOODO",
+      "index": 185,
+      "via_player": 1.0,
+      "via_ai": 1.0,
+      "form": 0,
+      "types": [
+        "Rock",
+        "Rock"
+      ],
+      "modified_bst": 401.0,
+      "modified_bst_physical": 401.0,
+      "modified_bst_special": 316.0,
+      "can_be_mixed": false
+    },
+    {
+      "name": "PALPITOAD",
+      "index": 536,
+      "via_player": 1.0,
+      "via_ai": 1.0,
+      "form": 0,
+      "types": [
+        "Water",
+        "Ground"
+      ],
+      "modified_bst": 403.8,
+      "modified_bst_physical": 310.8,
+      "modified_bst_special": 310.8,
+      "can_be_mixed": true
+    },
+    {
+      "name": "POOCHYENA",
+      "index": 261,
+      "via_player": 1.0,
+      "via_ai": 1.0,
+      "form": 0,
+      "types": [
+        "Dark",
+        "Dark"
+      ],
+      "modified_bst": 392.0,
+      "modified_bst_physical": 218.0,
+      "modified_bst_special": 183.0,
+      "can_be_mixed": false
+    },
+    {
+      "name": "MUNNA",
+      "index": 517,
+      "via_player": 1.0,
+      "via_ai": 1.0,
+      "form": 0,
+      "types": [
+        "Psychic",
+        "Fairy"
+      ],
+      "modified_bst": 401.8,
+      "modified_bst_physical": 209.8,
+      "modified_bst_special": 251.8,
+      "can_be_mixed": false
+    },
+    {
+      "name": "PSYDUCK",
+      "index": 54,
+      "via_player": 1.0,
+      "via_ai": 1.0,
+      "form": 0,
+      "types": [
+        "Water",
+        "Water"
+      ],
+      "modified_bst": 396.4,
+      "modified_bst_physical": 246.4,
+      "modified_bst_special": 259.4,
+      "can_be_mixed": false
+    }
+  ],
+  "lvl": 64
+}

@@ -1,0 +1,171 @@
+@media only screen and (max-width: 1180px) {
+
+
+  body {
+    display: flex;
+    flex-wrap:  wrap;
+  }
+  #content-container {
+    display: flex;
+    flex-wrap:  wrap;
+    position:  static;
+  }
+
+  .pokemon-filter {
+    position: static;
+    width:  100%;
+    height:  auto;
+  }
+
+  .pokemon-list {
+    width:  100%;
+    margin: 20px 0px;
+  }
+  
+  .filter-title {
+    font-size:  16px;
+  }
+
+
+  #header {
+    z-index: 50;
+    width:  100%;
+    height:  auto;
+    flex-wrap: wrap;
+    padding:  0px;
+    position: static;
+  }
+
+  .header-left, .header-right {
+    flex-wrap: wrap;
+    text-align: center;
+    width:  100vw;
+    max-width:  100vw;
+  }
+
+  .header-item {
+    font-size:  16px;
+    width: 100%;
+    height: 30px;
+    display:  none;
+    margin:  0 auto;
+
+  }
+
+  .header-item.-active {
+    display: block;
+    width:  auto;
+    margin:  0 auto;
+  }
+
+  .header-left .header-item {
+    margin:  0 auto;
+  }
+
+  .spreadsheet > .expanded-field.field-header {
+    left:  0;
+    position:  static;
+    width:  100%;
+  }
+
+  .expanded-field-main {
+    height: auto;
+    line-height: 100%;
+  }
+
+  .field-header .expanded-field-main div {
+    text-overflow: clip;
+    overflow:  hidden;
+    /*width:  auto;*/
+  }
+
+  .expanded-field  {
+    height:  auto;
+  }
+
+  #headers .expanded-left {
+    width:  100%;
+  }
+
+  .personal-icons {
+    width:  200px;
+  }
+
+  .filterable .pokemon-card__info {
+    margin-left:  0px;
+    flex:  0 0 180px;
+  }
+
+  .pokemon-card__table {
+    margin-top:  30px;
+  }
+
+  .expanded-card-content {
+    flex-wrap:  wrap;
+  }
+  .expanded-left, .expanded-mid, .expanded-right {
+    width:  100% !important;
+  }
+
+  #personals .move-cat, #personals .move-power, #personals .move-accuracy {
+    display: none;
+  }
+
+  #trainers .field-header, #encounters .field-header, #moves .field-header {
+    display: none;
+  }
+
+  #encounters .multi.field-header {
+    display: flex;
+  }
+
+  .expanded-field-main {
+    flex-wrap:  wrap;
+  }
+
+  .add-trpok {
+    right:  0;
+    bottom: 0;
+  }
+
+  .encounter-wilds {
+    width:  100vw;
+    margin:  0;
+  }
+
+  .wild {
+    width:  20vw;
+  }
+
+  .move-info.expand-action {
+    bottom:  initial;
+    top:  0;
+  }
+
+  #encounters .expanded-card-content {
+    margin-top:  60px;
+  }
+
+  #encounters .expanded-tab-icons {
+    bottom:  -50px;
+    left:  calc(50vw - 100px);
+  }
+
+  .item-name, .item-value {
+    width:  80px;
+  }
+
+  .expand-item, .expand-mart, .expand-grotto {
+    left:  80px;
+  }
+
+  .mart-inv {
+    width:  100%;
+    margin-top:  20px;
+  }
+
+
+
+
+
+}

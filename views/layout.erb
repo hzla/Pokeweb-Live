@@ -1,0 +1,106 @@
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+
+	<meta name="theme-color" content="#000000">
+	<title><%= @rom_name || "Pokeweb" %> <%= " #{@title}" %></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="/scripts/autocomplete.js"></script>
+	<script src="/scripts/index.js?v=1.07"></script>
+	<link href="/stylesheets/external.css" rel="stylesheet">
+	<link href="/stylesheets/main.css?v=1.02" rel="stylesheet">
+	<link href="/stylesheets/mobile.css" rel="stylesheet">
+	<link href="/stylesheets/autocomplete.css" rel="stylesheet">
+	<link rel="icon" 
+      type="image/png" 
+      href="/favicon.ico" />
+</head>
+
+	<body>
+		<div id="header">
+			<% if $rom_name %>
+				<div class="header-left">
+
+				
+					<a class="header-item"  href="/headers<%= @pb_proj %>">
+						Headers & Overworlds
+					</a>
+					<a class="header-item"  href="/personal<%= @pb_proj %>">
+						Pokemon
+					</a>
+					<a class="header-item"  href="/trainers<%= @pb_proj %>">
+						Trainers
+					</a>
+					<a class="header-item"  href="/encounters<%= @pb_proj %>">
+						Encounters
+					</a>
+					<a class="header-item"  href="/moves<%= @pb_proj %>">
+						Moves
+					</a>
+					<a class="header-item"  href="/items<%= @pb_proj %>">
+						Items
+					</a>
+
+					<a class="header-item"  href="/tms<%= @pb_proj %>">
+						TMs
+					</a>
+					<% if SessionSettings.base_rom == "BW2" %>
+						<a class="header-item"  href="/marts<%= @pb_proj %>">
+							Marts
+						</a>
+						<a class="header-item"  href="/grottos<%= @pb_proj %>">
+							Grottos
+						</a>
+					<% end %>
+
+					<a class="header-item"  href="/story_texts">
+						Story Text
+					</a>
+					<a class="header-item"  href="/info_texts">
+						Info Text
+					</a>
+					<!-- <a class="header-item"  href="/dist/index.html?gen=5" target="_blank">
+						Calc
+					</a> -->
+					<a class="header-item"  href="https://github.com/hzla/Pokeweb/wiki/Troubleshooting" target="_blank">
+						Help
+					</a>
+					<% if $offline %>
+						<div class="header-item script-btn"  href="/settings" target="_blank">
+							Settings
+						</div>
+					<% end %>
+				</div>
+
+				<div class="header-right">
+					<a class="header-item"  href="/publish_calc" target="_blank">
+						Publish Calc 
+					</a>
+					<a class="header-item"  href="/export_docs" target="_blank">
+						Export Docs
+					</a>
+					<a class="header-item" id="save-rom" href="/rom/save">
+						Export
+					</a>
+					<a class="header-item"  href="/rom/new" id="logout-rom">
+						New
+					</a>
+					<a class="header-item"  onclick="return confirm('PERMANENTLY Delete Project?')"  href="/rom/delete">
+						Delete
+					</a>
+				</div>
+			<% end %>
+		</div>
+		<div id="content-container">
+			<%= yield %>
+		</div>
+		<div id="wait-loading">Loading...</div>
+
+	</body>
+</html>
+
+<script>
+	$($(".header-left .header-item")[<%= @active_header %>]).addClass('-active')
+</script>

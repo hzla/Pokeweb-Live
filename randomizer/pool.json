@@ -1,0 +1,155 @@
+[
+  {
+    "name": "UMBREON",
+    "index": 197,
+    "via_player": 1.0,
+    "via_ai": 1.0,
+    "form": 0,
+    "types": [
+      "Dark",
+      "Dark"
+    ],
+    "modified_bst": 427.0,
+    "modified_bst_physical": 430.0,
+    "modified_bst_special": 425.0,
+    "can_be_mixed": true,
+    "physical_ok": true,
+    "special_ok": true
+  },
+  {
+    "name": "HOUNDOOM",
+    "index": 229,
+    "via_player": 1.0,
+    "via_ai": 1.0,
+    "form": 0,
+    "types": [
+      "Dark",
+      "Fire"
+    ],
+    "modified_bst": 393.0,
+    "modified_bst_physical": 383.0,
+    "modified_bst_special": 403.0,
+    "can_be_mixed": true,
+    "physical_ok": null,
+    "special_ok": true
+  },
+  {
+    "name": "TYRANITAR",
+    "index": 248,
+    "via_player": 1.0,
+    "via_ai": 1.0,
+    "form": 0,
+    "types": [
+      "Rock",
+      "Dark"
+    ],
+    "modified_bst": 475.2,
+    "modified_bst_physical": 475.2,
+    "modified_bst_special": 436.2,
+    "can_be_mixed": false,
+    "physical_ok": null,
+    "special_ok": true
+  },
+  {
+    "name": "DRAPION",
+    "index": 452,
+    "via_player": 1.0,
+    "via_ai": 1.0,
+    "form": 0,
+    "types": [
+      "Poison",
+      "Dark"
+    ],
+    "modified_bst": 422.0,
+    "modified_bst_physical": 422.0,
+    "modified_bst_special": 392.0,
+    "can_be_mixed": false,
+    "physical_ok": true,
+    "special_ok": null
+  },
+  {
+    "name": "KROOKODILE",
+    "index": 553,
+    "via_player": 1.0,
+    "via_ai": 1.0,
+    "form": 0,
+    "types": [
+      "Ground",
+      "Dark"
+    ],
+    "modified_bst": 434.4,
+    "modified_bst_physical": 434.4,
+    "modified_bst_special": 382.4,
+    "can_be_mixed": false,
+    "physical_ok": true,
+    "special_ok": null
+  },
+  {
+    "name": "SCRAFTY",
+    "index": 560,
+    "via_player": 1.0,
+    "via_ai": 1.0,
+    "form": 0,
+    "types": [
+      "Dark",
+      "Fighting"
+    ],
+    "modified_bst": 408.6,
+    "modified_bst_physical": 408.6,
+    "modified_bst_special": 363.6,
+    "can_be_mixed": false,
+    "physical_ok": true,
+    "special_ok": null
+  },
+  {
+    "name": "ZOROARK",
+    "index": 571,
+    "via_player": 1.0,
+    "via_ai": 1.0,
+    "form": 0,
+    "types": [
+      "Dark",
+      "Dark"
+    ],
+    "modified_bst": 394.0,
+    "modified_bst_physical": 387.0,
+    "modified_bst_special": 402.0,
+    "can_be_mixed": true,
+    "physical_ok": null,
+    "special_ok": true
+  },
+  {
+    "name": "BISHARP",
+    "index": 625,
+    "via_player": 1.0,
+    "via_ai": 1.0,
+    "form": 0,
+    "types": [
+      "Dark",
+      "Steel"
+    ],
+    "modified_bst": 410.0,
+    "modified_bst_physical": 410.0,
+    "modified_bst_special": 345.0,
+    "can_be_mixed": false,
+    "physical_ok": true,
+    "special_ok": null
+  },
+  {
+    "name": "MANDIBUZZ",
+    "index": 630,
+    "via_player": 1.0,
+    "via_ai": 1.0,
+    "form": 0,
+    "types": [
+      "Dark",
+      "Flying"
+    ],
+    "modified_bst": 426.0,
+    "modified_bst_physical": 431.0,
+    "modified_bst_special": 421.0,
+    "can_be_mixed": true,
+    "physical_ok": true,
+    "special_ok": true
+  }
+]

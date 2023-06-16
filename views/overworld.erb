@@ -1,0 +1,87 @@
+
+<script>
+	// json object for filtering
+	overworld = <%= @overworld.to_json %>
+	box = <%= @box.to_json %>
+</script>
+
+<div class="pokemon-filter overworld-bar">	
+	<% p @map_data %>
+	
+	<div class="overworld-info filterable" data-index="<%= @index %>">
+		<div class="filter-title"><%= @location %></div>
+		<% Overworld.npc_fields.each do |field| %>
+			<div class="sidebar-row">
+				<div class="sidebar-label"><%= field %></div>
+				<div class="sidebar-val" ></div>
+				<div class="sidebar-val" data-narc="overworld" contenteditable="<%= !(field == "overworld_id") %>" data-field-name="<%= field %>" data-type="int-65535" id="<%= field %>">
+				</div>
+			</div>
+		<% end %>
+	</div>
+
+
+
+
+	<div class="sidebar-btns">
+		<div class="ow-btn" id="add-npc">Add NPC</div>
+		<div class="ow-btn" id="del-npc" data-npc-index>Del Selected NPC</div>
+	</div>
+
+	<% if $offline %>
+		<div class="sidebar-btns">
+			<div class="ow-btn script-btn" id="open-script" href="/scripts/<%= @script %>">Open Script</div>
+			<div class="ow-btn script-btn" id="save-script" href="/scripts/<%= @script %>/save">Apply Script</div>
+		</div>
+	<% end %>	
+
+	<div class="sidebar-btns">
+		<a class="ow-btn" href="/story_texts/text/<%= @text %>" target="_blank">Open Text <%= @text %></a>
+		<a class="ow-btn" href="https://github.com/hzla/Pokeweb/wiki/Editors#overworlds" target="_blank">Instructions</a>
+	</div>
+</div>
+
+<div class="popup-editor field-holder" data-index data-map>
+	<div class="popup-field-row">
+		<div class="popup-field-label">Flag</div>
+		<div class="popup-field" data-field-name="layer_2" data-narc="map" id="tile-flag" contenteditable="true" data-type="int-255">0</div>
+	</div>
+
+	<div class="popup-field-row">
+		<div class="popup-field-label">Movement</div>
+		<div class="popup-field" data-field-name="layer_3" data-narc="map" id="tile-mov" contenteditable="true" data-type="int-255">0</div>
+	</div>
+</div>
+
+<div class="pokemon-list" id="overworld">
+
+	<% @maps.each do |map| %>
+		<div class="overworld-canvas" style='height:<%= map[1][3] * 32 %>px;width:<%= map[1][2] * 32 %>px;left:calc(2vw + <%= (map[1][0] - @tl_x) * 32 %>px);top: <%= (map[1][1] - @tl_y) * 32 + 40 %>px'>
+			<% perms = Map.perms(map[0]) %>
+			<% movements = Map.perms(map[0], 3) %>
+
+			<% perms.each_with_index do |tile, i| %>
+
+				<div class="tile" style='background:<%= Map.color(tile)[0] %>;color:<%= Map.color(tile)[0] %>' title="<%= tile %>: <%= Map.color(tile)[1] %>" data-perm="<%= tile %>" data-map="<%= map[0] %>" data-mov="<%= movements[i] %>" data-index="<%= i %>">
+					<%= tile %> 
+				</div>
+			<% end %>
+
+						
+		</div>
+	<% end %>
+
+	<% (0..Overworld.highest_ow_id(@overworld)).each do |ov_index| %>
+		
+		<% next if !@overworld["npc_#{ov_index}_overworld_id"] %>
+		<div title="npc-<%= ov_index  %>" class="overworld-item" data-id="npc_<%= ov_index  %>_" style='top: <%= (@overworld["npc_#{ov_index}_y_cord"] - @tl_y) * 32 + 40 %>px;
+		left:calc(2vw + <%= (@overworld["npc_#{ov_index}_x_cord"] - @tl_x) * 32%>px)' data-dir="<%= @overworld["npc_#{ov_index}_direction"] %>">
+
+			<%= img "overworlds/#{Overworld.png_id(@overworld["npc_#{ov_index}_overworld_sprite"])}.png", 'overworld-sprite' %>			
+		</div>
+	<% end %>
+
+	
+</div>
+
+

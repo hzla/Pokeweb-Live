@@ -1,0 +1,31 @@
+// Level caps for the base rom gyms/e4
+
+[
+	{
+		"gym": 13
+	},
+	{
+		"gym": 18
+	},
+	{
+		"gym": 24
+	},
+	{
+		"gym": 30
+	},
+	{
+		"gym": 33
+	},
+	{
+		"gym": 39
+	},
+	{
+		"gym": 48
+	},
+	{
+		"gym": 51
+	},
+	{
+		"gym": 59
+	}
+]
