@@ -267,6 +267,7 @@ class MyApp < Sinatra::Base
 		
 
 		begin
+			retries ||= 0
 			p "creating edited rom"
 			`#{py} python/trpok_writer.py validate #{$rom_name}`if SessionSettings.get("edited").include? "trpok"
 			`#{py} python/encounter_writer.py validate #{$rom_name}` if SessionSettings.get("edited").include? "encounter"
@@ -275,7 +276,7 @@ class MyApp < Sinatra::Base
 			p "edited rom created"
 		rescue
 			py = "python"
-			retry
+			retry if (retries += 1) < 2 
 		end
 
 
