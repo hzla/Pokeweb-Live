@@ -47,8 +47,7 @@ class Trdata < Pokenarc
 		super
 	end
 
-$rom_name = "projects/bb2redux"
-file_name = 4
+
 
 	# have it keep the name
 	def self.reset file_name, to_copy=0

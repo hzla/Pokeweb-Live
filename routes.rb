@@ -276,7 +276,7 @@ class MyApp < Sinatra::Base
 			p "edited rom created"
 		rescue
 			py = "python"
-			retry if (retries += 1) < 2 
+			retry if !offline		
 		end
 
 
