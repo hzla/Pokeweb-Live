@@ -441,6 +441,12 @@ table td {
     line-height: 40px;
 }
 
+#narc-paths {
+    color:  #f1f1f1;
+    padding: 40px;
+    
+}
+
 .spreadsheet.settings > .expanded-field.field-header {
     position: static;
     margin-top:  40px;

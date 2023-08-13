@@ -127,16 +127,24 @@ $(document).ready(function() {
 	setTimeout(adjust_directions, 1000)
 
 	if ($('#offline').length > 0) {   
-    $(document).on('click', '#load-rom', function(){
+	    $(document).on('click', '#load-rom', function(){
 
-        	console.log($('#xdelta').length)
-        	var rom_name = $('#rom-select').val()
-	        $(this).text('loading...')
-	        $.post( "extract_rom?rom_name=" + rom_name , {rom_name: rom_name }, function( data ) {
-	          window.location.href = data["url"]
-	        });     
+	        	console.log($('#xdelta').length)
+	        	var rom_name = $('#rom-select').val()
+		        $(this).text('loading...')
+		        $.post( "extract_rom?rom_name=" + rom_name , {rom_name: rom_name }, function( data ) {
+		          window.location.href = data["url"]
+		        });     
+	    })
+    }
+
+    $(document).on('click', '#extract-file', function(){
+
+        	var file_path = $('#file-path').val()
+        	var file_index = $('#file-index').val()
+	        
+	        $.get(`file/${file_path}/${file_index}`)
     })
-   }
 
 })
 
@@ -237,6 +245,8 @@ $(document).ready(function() {
     	}
     	
     })
+
+
 
     $(document).on('swipeup', '#header', function(){
     	$('.header-item').hide()

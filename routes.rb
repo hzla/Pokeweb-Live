@@ -72,7 +72,7 @@ class MyApp < Sinatra::Base
 		return if !$rom_name or $rom_name == ""
 
 		@rom_name = $rom_name.split("/")[1]
-		tabs = ['headers', 'personal', 'trainers', 'encounters', 'moves', 'items', 'tms','marts', 'grottos', 'story_texts', 'info_texts']
+		tabs = ['headers', 'personal', 'trainers', 'encounters', 'moves', 'items', 'tms','marts', 'grottos', 'story_texts', 'info_texts',"files"]
 		
 		begin
 			if SessionSettings.base_rom == "BW"
@@ -105,6 +105,27 @@ class MyApp < Sinatra::Base
 
 			erb :index
 		end
+	end
+
+	get '/files' do 
+		redirect '/' if !$rom_name
+		p "right"
+		erb :files
+	end
+
+
+
+
+	get '/files/:file_path/:file_index' do 
+		redirect '/' if !$rom_name
+		file_path = params["file_path"].split("").join("/")
+		file_index = params["file_index"]
+		rom_name = $rom_name.split("/")[1]
+
+		`python3 python/romfiles/file_manager.py -extract #{rom_name}.nds #{file_path} #{file_index}`
+		
+		file_path = file_path.gsub("/","")
+		send_file "./exports/#{rom_name}_#{file_path}_#{file_index}.bin", :filename => "#{rom_name}_#{file_path}_#{file_index}.bin" , :type => 'Application/octet-stream'
 	end
 
 	get '/rom/new' do 

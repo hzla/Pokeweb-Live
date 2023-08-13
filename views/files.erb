@@ -1,0 +1,380 @@
+<div class="pokemon-filter">	
+	
+	<div class="filter-title">How to Export</div>
+	
+	<div class="small-filters">
+		Type "/" in the url followed by the narc filepath without slashes<br><br>
+		Next add another "/" followed by the file index<br><br>
+		For example to get bulbasaur's file from the personal narc (a/0/1/6):<br><br>
+
+		"/files/a016/1"
+	</div>	
+
+
+
+<!-- 	<div class="filter-title">How to Import</div>
+	
+	<div class="small-filters">
+		Type "/" in the url followed by the narc filepath without slashes<br><br>
+		Next add another "/" followed by the file index<br><br>
+		For example to get bulbasaur's file from the personal narc (a/0/1/6):<br><br>
+
+		"/files/a016/1"
+	</div>	
+
+	<input type="file" id="xdelta" name="filename" label="Upload file"></input> -->
+	
+</div>
+
+<div class="pokemon-list spreadsheet" id="narc-paths">
+/file location/ (iscopy from another game) what it contains<br>
+<br>
+/a/0/0/0 (bw a000) connection strength icons <br>
+/a/0/0/1 (bw a001) unused dev (underground etc) <br>
+/a/0/0/2 ********* text 1<br>
+/a/0/0/3 ********* text 2<br>
+/a/0/0/4 ********* sprites (pokegra)<br>
+/a/0/0/5 ********* basic boxes and arrow<br>
+/a/0/0/6 ********* move effects (waza_particle, maybe others)<br>
+/a/0/0/7 ********* Pokemon icons<br>
+/a/0/0/8 ********* models<br>
+/a/0/0/9 ********* (416 * various, small)<br>
+/a/0/1/0 ********* ?? 1 file ??<br>
+/a/0/1/1 ********* battle backgrounds, generic map textures, battle UI<br>
+/a/0/1/2 ********* zonedata (map association table)<br>
+/a/0/1/3 ********* not a narc, just data (?)<br>
+/a/0/1/4 ********* textures<br>
+/a/0/1/5 ********* (8 * 16 bytes)<br>
+/a/0/1/6 ********* personal.narc (file index information below)<br>
+/a/0/1/7 (dp)----- growtbl<br>
+/a/0/1/8 ********* level up moves<br>
+/a/0/1/9 ********* evolves into<br>
+/a/0/2/0 ********* child pokemon<br>
+/a/0/2/1 (bw a021) moves <br>
+/a/0/2/2 (bw a022) light blue window (communications lost with other player) <br>
+/a/0/2/3 (bw a023) fonts <br>
+/a/0/2/4 ********* item data<br>
+/a/0/2/5 ********* item sprites <br>
+/a/0/2/6 ********* title screen (version, nintendo/pc logo too)<br>
+/a/0/2/7 ********* ui background for something<br>
+/a/0/2/8 (bw a028) trading interface (link?) <br>
+/a/0/2/9 ********* IR/wifi etc interface backgrounds<br>
+/a/0/3/0 ********* overworld hero sprites<br>
+/a/0/3/1 (bw a032) overorld sprites for certain NPCs <br>
+/a/0/3/2 (bw a033) wireless communication interaction & backgrounds <br>
+/a/0/3/3 ********* mystery gift interfaces <br>
+/a/0/3/4 ********* mainmenu continue background and interface<br>
+/a/0/3/5 ********* entralink ui sprites and background<br>
+/a/0/3/6 (bw a037) ?? 1 file ??<br>
+/a/0/3/7 ********* ?? 1 file ??<br>
+/a/0/3/8 ********* more entralink related sprites and backgrounds<br>
+/a/0/3/9 ********* badges<br>
+/a/0/4/0 (bw a041) unused? blank sprites <br>
+/a/0/4/1 (bw a042) ?? 1 file ?? <br>
+/a/0/4/2 (bw a043) shared trainer profile sprites and background <br>
+/a/0/4/3 (bw a044) simple shapes, likely dev & unused<br>
+/a/0/4/4 (bw a045) musical prop sprites<br>
+/a/0/4/5 (bw a046) musical generic sprites/background<br>
+/a/0/4/6 ********* musical in-musical sprites<br>
+/a/0/4/7 ********* ?? 1 file ??<br>
+/a/0/4/8 ********* overworld sprites<br>
+/a/0/4/9 (bw a050) cgear top bar sprites<br>
+/a/0/5/0 (bw a051) single color sprites, unused<br>
+/a/0/5/1 (bw a052) bw1 sprites (copy)<br>
+/a/0/5/2 (bw a053) (19 * various)<br>
+/a/0/5/3 ********* item browsing UI backsplash<br>
+/a/0/5/4 (bw a055) status/type/contact sprites (battle)<br>
+/a/0/5/5 (bw a056) weather particle sprites (effects?)<br>
+/a/0/5/6 ********* in-game scripts<br>
+/a/0/5/7 ********* (25 * various, script related?)<br>
+/a/0/5/8 (bw a059) pal pad entry sprites<br>
+/a/0/5/9 ********* ?? 1 file ??<br>
+/a/0/6/0 ********* (200 * 780 bytes)<br>
+/a/0/6/1 (bw a062) (10 * 780 bytes)<br>
+/a/0/6/2 (bw a063) pal pad background sprites<br>
+/a/0/6/3 ********* trainer sendout pokeball throw sprites<br>
+/a/0/6/4 (bw a065) dev alphanumeric unused<br>
+/a/0/6/5 ********* (601 * various)<br>
+/a/0/6/6 ********* (115 * various)<br>
+/a/0/6/7 (bw a068) dev camera UI tiles<br>
+/a/0/6/8 ********* (58 BTA0's)<br>
+/a/0/6/9 ********* ********* (8 * various)<br>
+/a/0/7/0 ********* start/X menu sprites (save/party etc)<br>
+/a/0/7/1 ********* trainer front sprites (trfgra)<br>
+/a/0/7/2 ********* trainer back sprites (trbgra)<br>
+/a/0/7/3 (bw a074) BMD0 - shadow4_test<br>
+/a/0/7/4 ********* overworld ambient textures (grass+)<br>
+/a/0/7/5 ********* matrixy background and buttons<br>
+/a/0/7/6 (bw a077) musical? background for some window<br>
+/a/0/7/7 ********* pokemon stats summary + ribbons<br>
+/a/0/7/8 ********* (50 * various)<br>
+/a/0/7/9 (bw a080) ?? 1 file ??<br>
+/a/0/8/0 ********* (30 * various)<br>
+/a/0/8/1 (bw a082) (1 * 780 bytes, another 0 byte blank)<br>
+/a/0/8/2 ********* UI tiles, PC box tiles, type sprites<br>
+/a/0/8/3 ********* small shield sprites with numbers<br>
+/a/0/8/4 ********* map layout tiles<br>
+/a/0/8/5 ********* ?? 1 file ??<br>
+/a/0/8/6 ********* ?? 1 file ??<br>
+/a/0/8/7 ********* inventory buttons and icons for item types<br>
+/a/0/8/8 (bw a089) link tiles<br>
+/a/0/8/9 ********* ?? 1 file ??<br>
+/a/0/9/0 ********* ?? 1 file ??<br>
+/a/0/9/1 ********* trainer data<br>
+/a/0/9/2 ********* trainer poke<br>
+/a/0/9/3 (bw a094) musical (?) model and background/stuff<br>
+/a/0/9/4 ********* move backgrounds<br>
+/a/0/9/5 (bw a096) gts search room sprites/etc<br>
+/a/0/9/6 ********* (2 files, large and small)<br>
+/a/0/9/7 ********* (10 files, various)<br>
+/a/0/9/8 ********* item quality boxes, kinda like wondercards<br>
+/a/0/9/9 ********* various backgrounds (large skewed pokeball)<br>
+<br>
+<br>
+==<br>
+<br>
+==<br>
+<br>
+<br>
+/a/1/0/0 ********* pokewood logos and ui backgrounds<br>
+/a/1/0/1 ********* speech bubbles and battle background (black pokeball)<br>
+/a/1/0/2 ********* ?? 1 file ?? 800 bytes<br>
+/a/1/0/3 (bw a102) gts negotiations sprites<br>
+/a/1/0/4 (bw a103) trading sub-animation for pokeball effects<br>
+/a/1/0/5 (bw a104) some kind of red aurora<br>
+/a/1/0/6 ********* (38 * 188)<br>
+/a/1/0/7 (bw a106) jigglypuff singing sprites<br>
+/a/1/0/8 ********* protaganist textures (professor intro)<br>
+/a/1/0/9 ********* (444 * 28 bytes, few bigger)<br>
+/a/1/1/0 ********* (25 * 4 bytes)<br>
+/a/1/1/1 (bw a110) museum's book textures<br>
+/a/1/1/2 (bw a111) sound/song for something musical<br>
+/a/1/1/3 (bw a112) sound/song for something musical<br>
+/a/1/1/4 (bw a113) sound/song for something musical<br>
+/a/1/1/5 (bw a114) sound/song for something musical<br>
+/a/1/1/6 ********* large key item textures (magma stone, mirror, lunar wing), also mugshot backgrounds (fiery/icy winds etc), keldeo form change(281), NPC fly action animations(59,67)<br>
+/a/1/1/7 ********* PC box backgrounds<br>
+/a/1/1/8 ********* (117 * 36 bytes)<br>
+/a/1/1/9 ********* wifi tournament ui backgrounds?<br>
+/a/1/2/0 ********* (9 * various)<br>
+/a/1/2/1 (bw a120) pikachu & pachirisu wallpaper<br>
+/a/1/2/2 ********* breaking box texture<br>
+/a/1/2/3 (bw a122) earth/water/fire mini texture<br>
+/a/1/2/4 (bw a123) copy of bw1 egg moves (/a/1/2/3)<br>
+/a/1/2/5 (bw a124) something with linking and unused stuff<br>
+/a/1/2/6 ********* overworlds (616)<br>
+/a/1/2/7 ********* encounters (135)<br>
+/a/1/2/8 ********* subway texture<br>
+/a/1/2/9 (bw a128) registered item popup overlay<br>
+/a/1/3/0 (bw a129) dev screenshots, useless<br>
+/a/1/3/1 ********* TV gelboard<br>
+/a/1/3/2 ********* xtransciever NPC sprites<br>
+/a/1/3/3 ********* (4 * 40 bytes)<br>
+/a/1/3/4 (bw a133) link sprites, nothing<br>
+/a/1/3/5 ********* cocoon textures<br>
+/a/1/3/6 (bw a136) (31 * 8 byte)<br>
+/a/1/3/7 (bw a137) battle recorder tiles<br>
+/a/1/3/8 ********* clay & protagonist textures<br>
+/a/1/3/9 (bw a139) DS/DSi connectivity screen?<br>
+/a/1/4/0 (bw a140) poketransfer sseq<br>
+/a/1/4/1 (bw a141) PCbox bottom screen layout<br>
+/a/1/4/2 (bw a142) poketransfer textures/tiles<br>
+/a/1/4/3 ********* dream world cutscene stuff<br>
+/a/1/4/4 (bw a144) gts sprites<br>
+/a/1/4/5 (bw a145) wireless connection screen<br>
+/a/1/4/6 (bw a146) (28 bytes * 10 files)<br>
+/a/1/4/7 ********* (varied * 5 files)<br>
+/a/1/4/8 (bw a148) moving car textures<br>
+/a/1/4/9 ********* (1 file, 40 bytes)<br>
+/a/1/5/0 (bw a151) seasons splash<br>
+/a/1/5/1 ********* (3 * various xKB files)<br>
+/a/1/5/2 (bw a153) woody/metal/ice textures<br>
+/a/1/5/3 (bw a155) mail backgrounds<br>
+/a/1/5/4 ********* (48 * 1052 bytes)<br>
+/a/1/5/5 (bw a157) textures gold/blue (insignificant)<br>
+/a/1/5/6 ********* (8 * various <1KB files)<br>
+/a/1/5/7 ********* pokedex tiles<br>
+/a/1/5/8 ********* more overworld sprites, boat textures, cutscene textures, map textures?<br>
+/a/1/5/9 ********* ********* "POCKET MONSTERS BLACK/WHITE VERSION 2" tilemaps (intro cutscene / credits?)<br>
+/a/1/6/0 ********* dragon gym textures<br>
+/a/1/6/1 (bw a163) (7 * 44 bytes)<br>
+/a/1/6/2 ********* bootup credits / unused copyright notice<br>
+/a/1/6/3 ********* (31 * 108 bytes)<br>
+/a/1/6/4 ********* (8 * 36 bytes)<br>
+/a/1/6/5 (bw a167) footprint sprites (cgear?)<br>
+/a/1/6/6 (Pt copy) pl_btdtr (bw a168)<br>
+/a/1/6/7 (Pt copy) pl_btdpm (bw a169)<br>
+/a/1/6/8 ********* professor intro animation<br>
+/a/1/6/9 (bw a171) (14 * various bytes)<br>
+/a/1/7/0 ********* xtransciever ui and static bg<br>
+/a/1/7/1 ********* player interaction sprites<br>
+/a/1/7/2 ********* (25 * 124 bytes)<br>
+/a/1/7/3 ********* (2 * 36 bytes)<br>
+/a/1/7/4 ********* map textures<br>
+/a/1/7/5 ********* more map textures<br>
+/a/1/7/6 ********* (684 * 345 bytes, 01 flags)<br>
+/a/1/7/7 ********* (60 * 64 bytes)<br>
+/a/1/7/8 (bw a181) online win loss messages<br>
+/a/1/7/9 (bw a182) less of ^<br>
+/a/1/8/0 (bw a183) egg_cursor, spiral sphere<br>
+/a/1/8/1 (bw a184) Mixing records screen in Union Room, wireless communications playersprites<br>
+/a/1/8/2 (bw a185) (2 * 8 bytes)<br>
+/a/1/8/3 (bw a186) (6 * 50 bytes, 1 * 80 bytes)<br>
+/a/1/8/4 (bw a187) failed to render, screen images<br>
+/a/1/8/5 (bw a188) vs recorder, battle point<br>
+/a/1/8/6 (bw a189) demo_sinka2, white screen with black topbottom<br>
+/a/1/8/7 (bw a190) water textures<br>
+/a/1/8/8 (bw a191) yellowgreen ui<br>
+/a/1/8/9 ********* more yellowgreen ui, player interactivity sprites<br>
+/a/1/9/0 (bw a193)unity tower<br>
+/a/1/9/1 ********* (685 * 4 bytes) definitely pokemon-related<br>
+/a/1/9/2 (bw a195) itemfinder UI<br>
+/a/1/9/3 ********* https://dl.dropbox.com/u/12206225/anotherunk.png ??<br>
+/a/1/9/4 ********* (Pt copy) wifi_earth<br>
+/a/1/9/5 (bw a198) blueblack HUD<br>
+/a/1/9/6 (bw a199) more interactive UIs similar to above<br>
+/a/1/9/7 (bw a200) saving game notebook animation<br>
+/a/1/9/8 (bw a201) battle institute record paper<br>
+/a/1/9/9 ********* dex complete paper<br>
+<br>
+==<br>
+<br>
+==<br>
+<br>
+/a/2/0/0 ********* (6 * various >1KB files)<br>
+/a/2/0/1 (bw a204) animated pokeball small<br>
+/a/2/0/2 ********* starter sprites<br>
+/a/2/0/3 (bw a206) battle subway map<br>
+/a/2/0/4 ********* out25 bushes and flowers textures<br>
+/a/2/0/5 ********* (5 * various bytes)<br>
+/a/2/0/6 ********* ?? 1 file ??<br>
+/a/2/0/7 ********* rainbow/sparkle textures<br>
+/a/2/0/8 ********* in-pokedex pokemon form viewer data?<br>
+/a/2/0/9 ********* camera click sound..<br>
+/a/2/1/0 (bw a214) some kind of trainer record<br>
+/a/2/1/1 (bw a214) copy of bw1 subpoke (/a/2/1/4)<br>
+/a/2/1/2 (bw a215) copy of bw1 subtr (/a/2/1/5)<br>
+/a/2/1/3 ********* hall of fame sprites<br>
+/a/2/1/4 (bw a218) dream mist poof<br>
+/a/2/1/5 ********* ending picture montage<br>
+/a/2/1/6 (bw a221) (7 * various >1KB).<br>
+/a/2/1/7 (bw a222) car/truck textures<br>
+/a/2/1/8 ********* some UI<br>
+/a/2/1/9 (bw a224) (4 * 36 bytes).<br>
+/a/2/2/0 (bw a225) gamefreak logo movie<br>
+/a/2/2/1 (bw a134) bw1 intro movie (15fps) <br>
+/a/2/2/2 ********* intro movie (seems to be 15fps)<br>
+/a/2/2/3 ********* min pokemon levels (0-649)<br>
+/a/2/2/4 (bw a228) pidove/woobat flying pokemon animation<br>
+/a/2/2/5 ********* (70 * large files) ABT files<br>
+/a/2/2/6 ********* (93 * large files) ABL files<br>
+/a/2/2/7 ********* (86 * 98304 compressed) tutorial screenshots?<br>
+/a/2/2/8 ********* battle_pocket.dat<br>
+/a/2/2/9 ********* small footprints without pallete<br>
+/a/2/3/0 (bw a234) black error message (error has occured?)<br>
+/a/2/3/1 ********* (23 * pallete&?? files)<br>
+/a/2/3/2 ********* test effect textures<br>
+/a/2/3/3 ********* stage (musical?)<br>
+/a/2/3/4 ********* (8 * various <50b files).<br>
+/a/2/3/5 ********* (255 * 12 byte files).<br>
+/a/2/3/6 ********* medal case background<br>
+/a/2/3/7 ********* medal case checkerflag background<br>
+/a/2/3/8 ********* achievement medals<br>
+/a/2/3/9 ********* ?? 1 file ??<br>
+/a/2/4/0 ********* ?? 1 file ??<br>
+/a/2/4/1 ********* ?? 1 file ??<br>
+/a/2/4/2 ********* green&yellow-orange background for something<br>
+/a/2/4/3 ********* score bonus time up tiles (poketransfer?)<br>
+/a/2/4/4 (13 * various files)<br>
+/a/2/4/5 ********* world tournament brackets sprites<br>
+/a/2/4/6 ********* world tournament poster~<br>
+/a/2/4/7 ********* ?? 1 file ??<br>
+/a/2/4/8 ********* (120 * 6 byte files) frontier 1 pokemon allowance?<br>
+/a/2/4/9 ********* (120 * <16 byte files) multiple pokemon, double?<br>
+/a/2/5/0 ********* 1000 files, pokemon sets pretty much filled<br>
+/a/2/5/1 ********* (120 * 6 byte files) ...<br>
+/a/2/5/2 ********* (120 * <16 byte files) ...<br>
+/a/2/5/3 ********* pwtpoke2 - 1000 files, first bunch are for PWT (second set)<br>
+/a/2/5/4 ********* pwttr1, 68 files - world tournament trainer pkm choices 1v1<br>
+/a/2/5/5 ********* pwttr6, 68 files - world tournament trainer pkm choices 6v6<br>
+/a/2/5/6 ********* pwtpoke - world tournament pkm sets (first set)<br>
+/a/2/5/7 ********* 1000 files, pokemon sets pretty much filled ~still diff<br>
+/a/2/5/8 ********* pwt vgc top4 event<br>
+/a/2/5/9 ********* greenblack honeycomb background<br>
+/a/2/6/0 ********* elevator/gate textures<br>
+/a/2/6/1 ********* 1000 files, only 370 with data (pkm sets)<br>
+/a/2/6/2 ********* 661 files, 44/24/10 bytes ~ pkm choices from above sets ^?<br>
+/a/2/6/3 ********* wbt textures (battle tournament)<br>
+/a/2/6/4 ********* homika (roxie)'s gym speaker texture<br>
+/a/2/6/5 ********* world tournament backgrounds<br>
+/a/2/6/6 ********* more world tournament bg<br>
+/a/2/6/7 ********* trainer mugshots<br>
+/a/2/6/8 ********* (117 * various <100b files)<br>
+/a/2/6/9 ********* (41 * 1688 bytes, +1 1536 byte)<br>
+/a/2/7/0 ********* ~new record, timed people interaction? hexagonal background+<br>
+/a/2/7/1 ********* pokewood<br>
+/a/2/7/2 ********* (41 * ~100b files)<br>
+/a/2/7/3 ********* (20 * 220b files) ~ hidden hollows<br>
+/a/2/7/4 ********* pokewood animated cell movies<br>
+/a/2/7/5 ********* (185 * various files)<br>
+/a/2/7/6 ********* shibu/hasu/nami textures (insignificant)<br>
+/a/2/7/7 ********* IR battle tiles<br>
+/a/2/7/8 ********* aku_fire, aku_kage, aku_tume textures (insignificant)<br>
+/a/2/7/9 ********* starry night textures<br>
+/a/2/8/0 ********* shauntal room textures (fires)<br>
+/a/2/8/1 ********* marshal room textures<br>
+/a/2/8/2 ********* (32 * various, 48 0b)<br>
+/a/2/8/3 ********* ?? 1 file ??<br>
+/a/2/8/4 ********* more texture tiles<br>
+/a/2/8/5 ********* c-gear people background<br>
+/a/2/8/6 ********* small insignificant textures<br>
+/a/2/8/7 ********* c-gear textures and default background<br>
+/a/2/8/8 ********* stairwell textures<br>
+/a/2/8/9 ********* (22 * various files) 2-18: lists of pokemon by type~pokedex search by type?<br>
+/a/2/9/0 ********* champion's room textures, and mark-medals?<br>
+/a/2/9/1 ********* trfgra (trainer battle sprites)<br>
+/a/2/9/2 (bw a107) elesa gym textures<br>
+/a/2/9/3 ********* multicolor pokewood logo poster<br>
+/a/2/9/4 ********* pokewood mini posters for each unique character<br>
+/a/2/9/5 ********* textures of water pokemon caricatures<br>
+/a/2/9/6 ********* in-pokedex route encounter lists?<br>
+/a/2/9/7 ********* undersea tunnel overview and poster<br>
+/a/2/9/8 ********* insignificant texture (really not)<br>
+/a/2/9/9 ********* N riding zekrom/reshiram<br>
+<br>
+==<br>
+<br>
+==<br>
+<br>
+/a/3/0/0 ********* weather particles (leaf/flake/flower/leaf)<br>
+/a/3/0/1 ********* regi floor textures<br>
+/a/3/0/2 (bw a016) copy of bw1 personal.narc<br>
+/a/3/0/3 ********* firework texture<br>
+/a/3/0/4 ********* glowing virizion/terrakion/cobalion textures<br>
+/a/3/0/5 ********* 2 effect texture, another 13640b file)<br>
+/a/3/0/6 (bw a219) (copy of bw1 /a/2/1/9) (legendary stone effect & pokeball)<br>
+<br>
+==<br>
+<br>
+big files:<br>
+569 0x10bfba00 0x117b0c84  12276356 [  627] /a/2/2/2  (intro movie)<br>
+349 0x058ab600 0x064cdbdc  12723676 [  480] /a/0/0/2  (text 1)<br>
+568 0x0f95fe00 0x10bfb8fc  19512060 [  670] /a/2/2/1  (bw1 intro)<br>
+361 0x09e5fc00 0x0b15b81c  19905564 [  409] /a/0/1/4  (textures)<br>
+505 0x0d656200 0x0ec001c0  22716352 [  479] /a/1/5/8  (more textures)<br>
+355 0x07a35800 0x09847660  31530592 [ 1065] /a/0/0/8  (models)<br>
+<br>
+these are the only files which differ between b2/w2 (based on the md5sum):<br>
+/a/0/2/6 title screen (version, nintendo/pc logo too)<br>
+/a/0/8/5<br>
+/a/1/2/7 (encounters)<br>
+/a/1/6/0<br>
+/a/1/7/6<br>
+/a/2/2/2 (intro movie)<br>
+/a/2/2/7 help screenshots of some sort<br>
+/a/2/9/6 pokedex -> ingame location<br>
+MAPS had subtle differences between a few of them (between b2 / w2)
+
+</div>
+
+
