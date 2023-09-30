@@ -29,16 +29,29 @@ class RomInfo
 
 
     def self.delete_inactive
+        now = Time.now.to_i
+        threshold = 60 * 60 * 24 * 90 #2 months
+
         projects = Dir['projects/*']
         projects.each do |pr|
             p_name = pr.split("/")[1]
-            if !File.exists?("#{pr}/session_settings.json")
-                `rm -rf #{pr}`
-                `rm -rf ./xdeltas/#{p_name}.xdelta`
-                p "#{p_name} deleted"
-            else
-                p "#{p_name} exists"
+
+            last_edit_string = SessionSettings.get("last_edit", pr)
+
+            p p_name
+            p last_edit_string
+
+            if last_edit_string
+                last_edit = DateTime.parse(SessionSettings.get("last_edit", pr)).strftime('%s').to_i
+                p(now - last_edit)
             end
+
+            if !last_edit_string or (now - last_edit > threshold)
+                p "INACTIVE"
+                # `rm -rf #{pr}`
+                # `rm -rf ./xdeltas/#{p_name}.xdelta`
+            end
+
         end
 
     end

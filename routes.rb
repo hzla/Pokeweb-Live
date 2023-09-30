@@ -6,6 +6,7 @@ require 'net/http'
 require 'dotenv'
 require 'active_support'
 require 'pry'
+require 'date'
 require_relative 'helpers'
 require_relative 'models/pokenarc'
 
