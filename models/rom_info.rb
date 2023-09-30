@@ -53,8 +53,8 @@ class RomInfo
 
                 if !last_edit_string or (now - last_edit > threshold)
                     p "INACTIVE"
-                    # `rm -rf #{pr}`
-                    # `rm -rf ./xdeltas/#{p_name}.xdelta`
+                    `rm -rf #{pr}`
+                    `rm -rf ./xdeltas/#{p_name}.xdelta`
                     inactive += 1
                 else
                     active += 1
