@@ -32,27 +32,39 @@ class RomInfo
         now = Time.now.to_i
         threshold = 60 * 60 * 24 * 90 #2 months
 
+        active = 0
+        inactive = 0
+
         projects = Dir['projects/*']
         projects.each do |pr|
-            p_name = pr.split("/")[1]
+           
+            begin
+                p_name = pr.split("/")[1]
 
-            last_edit_string = SessionSettings.get("last_edit", pr)
+                last_edit_string = SessionSettings.get("last_edit", pr)
 
-            p p_name
-            p last_edit_string
+                p p_name
+                p last_edit_string
 
-            if last_edit_string
-                last_edit = DateTime.parse(SessionSettings.get("last_edit", pr)).strftime('%s').to_i
-                p(now - last_edit)
-            end
+                if last_edit_string
+                    last_edit = DateTime.parse(SessionSettings.get("last_edit", pr)).strftime('%s').to_i
+                    p(now - last_edit)
+                end
 
-            if !last_edit_string or (now - last_edit > threshold)
-                p "INACTIVE"
-                # `rm -rf #{pr}`
-                # `rm -rf ./xdeltas/#{p_name}.xdelta`
+                if !last_edit_string or (now - last_edit > threshold)
+                    p "INACTIVE"
+                    # `rm -rf #{pr}`
+                    # `rm -rf ./xdeltas/#{p_name}.xdelta`
+                    inactive += 1
+                else
+                    active += 1
+                end
+            rescue
+                "error"
             end
 
         end
+        return {active: active, inactive: inactive}
 
     end
 
