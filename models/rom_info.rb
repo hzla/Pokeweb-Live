@@ -27,6 +27,21 @@ class RomInfo
         end
     end
 
+    def self.delete_inactive
+        projects = Dir['projects/*']
+        projects.each do |pr|
+            p_name = pr.split("/")[1]
+            if !File.exists?("#{pr}/session_settings.json")
+                `rm -rf #{pr}`
+                `rm -rf ./xdeltas/#{p_name}.xdelta`
+                p "#{p_name} deleted"
+            else
+                p "#{p_name} exists"
+            end
+        end
+
+    end
+
 
     def self.testrom
     end
