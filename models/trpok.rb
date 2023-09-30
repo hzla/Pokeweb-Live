@@ -483,6 +483,7 @@ class Trpok < Pokenarc
 		[825,827,178,179,765,690,847,829,766,754,755,756,831,346,833,366,319,320,321,322,323,324,325,768,868,835,852,291,300,301,845,837,381,382,383,384,385,770,840,841,772,773,774,775,776,844]
 	end
 
+
 	def self.rp_replacemets
 		replace = {}
 		replace["Barrage"]=  "Draining Kiss"
@@ -498,6 +499,7 @@ class Trpok < Pokenarc
 		replace["Volt Tackle"]=  "Wild Charge"
 		replace
 	end
+
 
 	def self.export_showdown tr_id, trdata, min_ivs, rival_set=0, gender_table
 
@@ -525,7 +527,9 @@ class Trpok < Pokenarc
 			pok_id = raw["species_id_#{i}"]
 			next if !pok_id
 			next if poks["ivs_#{i}"] < min_ivs
+
 			species = poks["species_id_#{i}"].downcase.titleize.gsub("Porygon Z", "Porygon-Z").gsub("Ho Oh","Ho-Oh").gsub("'","’")
+
 
 			trname_count = @@tr_name_counts[trname_info]
 
@@ -573,6 +577,7 @@ class Trpok < Pokenarc
 
 			moves = []
 			(1..4).each do |n|
+
 				move = sub_showdown(poks["move_#{n}_#{i}"].move_titleize)
 				
 				# if rp_replacemets[move]
@@ -580,6 +585,7 @@ class Trpok < Pokenarc
 				# end
 
 				moves << move
+
 			end
 
 			pok = {}
@@ -590,6 +596,7 @@ class Trpok < Pokenarc
 
 			pok[species][tr_name]["level"] = level
 			pok[species][tr_name]["ai"] = trdata["ai"]
+
 			pok[species][tr_name]["noCh"] = challenge_mode_exempt.include?(tr_id)
 			pok[species][tr_name]["tr_id"] = tr_id
 			pok[species][tr_name]["ivs"] = {"hp": iv,"at": iv,"df": iv,"sa": iv,"sd": iv,"sp": iv}
@@ -601,6 +608,8 @@ class Trpok < Pokenarc
 			pok[species][tr_name]["sub_index"] = i
 			pok[species][tr_name]["ability"] = ability.titleize.gsub("Lightningrod", "Lightning Rod").gsub("Compoundeyes", "Compound Eyes")
 			pok[species][tr_name]["sprite"] = Trdata.sprite trdata["name"], trdata["class"], trdata["class_id"], gender_table 
+
+
 
 			pok[species][tr_name]["form"] = form
 			pok[species][tr_name]["evs"] = {"df" => 0}

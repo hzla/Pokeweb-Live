@@ -162,7 +162,10 @@ class MyApp < Sinatra::Base
 
 		p "offline"
 		if Dir.exist?("projects/#{params['rom_name'].split(".")[0]}")
-			`rm -rf projects/#{params['rom_name'].split(".")[0]}`
+			begin
+				`rm -rf projects/#{params['rom_name'].split(".")[0]}`
+			rescue
+			end
 		end
 		
 		

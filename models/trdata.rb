@@ -48,8 +48,6 @@ class Trdata < Pokenarc
 	end
 
 
-
-	# have it keep the name
 	def self.reset file_name, to_copy=0
 		tr = get_data("#{$rom_name}/json/trdata/#{file_name}.json")
 		tr_name = tr["name"]
@@ -58,6 +56,7 @@ class Trdata < Pokenarc
 		`cp #{$rom_name}/json/trpok/#{to_copy}.json #{$rom_name}/json/trpok/#{file_name}.json`
 		write_data({"field" => "name", "value" => tr_name, "file_name" => file_name})
 	end
+
 
 	def self.text_types 
 		texts = {}
@@ -297,9 +296,6 @@ class Trdata < Pokenarc
 				end
 			end
 		end
-
-		
-
 	end
 
 

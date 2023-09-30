@@ -13,6 +13,7 @@ import shutil
 import csv
 import re
 import copy
+import platform
 
 
 # getting the name of the directory
@@ -215,9 +216,25 @@ if True: #len(b_animations.files) < 300:
 
 
 	# # add filler moves to json
+	filler_move = open(f'{rom_name}/json/moves/0.json', 'r').read()
 	for n in range(0, filler_count):
 		idx = 560 + n
-		subprocess.run(['cp', f'{rom_name}/json/moves/0.json', f'{rom_name}/json/moves/{idx}.json' ], check = True)
+
+		with open(f"{rom_name}/json/moves/{idx}.json", "w") as f:
+			f.write(filler_move)
+		
+
+
+
+		# if platform.system() == 'Windows': 
+		# 	print(f'{rom_name}/json/moves/{idx}.json')
+		# 	os.system(f"copy {rom_name}/json/moves/0.json {rom_name}/json/moves/{idx}.json")
+		# 	print(f"copy {rom_name}/json/moves/0.json {rom_name}/json/moves/{idx}.json")
+		# 	print(idx)
+		# else:
+		# 	subprocess.run(['cp', f'{rom_name}/json/moves/0.json', f'{rom_name}/json/moves/{idx}.json' ], check = True)
+		# # os.system(f"cp {rom_name}/json/moves/0.json {rom_name}/json/moves/{idx}.json")
+
 
 	# # expand animations and move files
 
@@ -413,11 +430,19 @@ if True: #len(b_animations.files) < 300:
 
 				if info[5] == "—":
 					info[5] = 0
-				readable["power"] = int(info[5])
+
+				try:
+					readable["power"] = int(info[5])
+				except:
+					readable["power"] = 0
 
 				if info[6] == "—":
 					info[6] = 101
-				readable["accuracy"] = int(info[6])
+				
+				try:
+					readable["accuracy"] = int(info[6])
+				except:
+					info[6] = 101
 
 			full_move = {}
 			full_move["readable"] = readable

@@ -247,7 +247,6 @@ $(document).ready(function() {
     })
 
 
-
     $(document).on('swipeup', '#header', function(){
     	$('.header-item').hide()
     	$('.header-item.-active').show()

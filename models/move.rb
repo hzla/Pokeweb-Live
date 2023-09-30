@@ -5,6 +5,7 @@ class Move < Pokenarc
 		moves = {}
 		directory = $rom_name if !directory
 		Dir["#{directory}/json/moves/*.json"].each do |move|
+
 			all = JSON.parse(File.open(move, "r"){|f| f.read})
 			move_data = all["readable"]
 
