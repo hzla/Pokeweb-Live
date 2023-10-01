@@ -75,7 +75,7 @@
 
 					<% texture.each_with_index do |tile, i| %>
 
-						<div data-index="<%= i %>" class="spa-tile" style="background:<%= @colors[n]["colors"][tile[0]] %>;opacity:<%= tile[1] %>;">
+						<div data-index="<%= i %>" data-pallete-index="<%= tile[0] %>"class="spa-tile" style="background:<%= @colors[n]["colors"][tile[0]] %>;opacity:<%= tile[1] %>;">
 							
 						</div>
 						
@@ -86,7 +86,7 @@
 
 					<% texture.each_with_index do |tile, i| %>
 
-						<div data-index="<%= i %>" class="spa-tile" style="background:<%= @colors[n]["colors"][tile[0]] %>;opacity:<%= tile[1] %>;">
+						<div data-index="<%= i %>" class="spa-tile"  data-pallete-index="<%= tile[0] %>" style="background:<%= @colors[n]["colors"][tile[0]] %>;opacity:<%= tile[1] %>;">
 
 							
 						</div>

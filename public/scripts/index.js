@@ -708,17 +708,17 @@ $(document).ready(function() {
 
 
 	$(document).on('mouseover', ".pallete-color", function() {
-		var color = $(this).attr('style').slice(11,-1)
+		var pallete_index = $(this).attr('data-color-index')
 		var texture = $(this).parent().prev()
 
-		texture.find(`[style*='${color}']`).addClass('highlighted-tile')
+		texture.find(`[data-pallete-index*='${pallete_index}']`).addClass('highlighted-tile')
 	})
 
 	$(document).on('mouseout', ".pallete-color", function() {
-		var color = $(this).attr('style').slice(11,-1)
+		var pallete_index = $(this).attr('data-color-index')
 		var texture = $(this).parent().prev()
 
-		texture.find(`[style*='${color}']`).removeClass('highlighted-tile')
+		texture.find(`[data-pallete-index*='${pallete_index}']`).removeClass('highlighted-tile')
 	})
 
 
