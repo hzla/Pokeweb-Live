@@ -6,6 +6,7 @@ import os
 import ndspy
 import ndspy.rom
 import ndspy.narc
+import code
 
 
 
@@ -423,8 +424,77 @@ if __name__ == "__main__":
 
 	
 	if len(sys.argv) > 3 and sys.argv[3] == "-r" and sys.argv[1] == "all":
-		os.system(f"mkdir {sys.argv[2]}/spas")
+			
+		if sys.argv[2] == "projects/spa_rom":
+			if not os.path.isdir('projects/spa_rom'):
+				os.mkdir("projects/spa_rom")
+				os.mkdir("projects/spa_rom/narcs")
+
+			with open(f'spa_rom.nds', 'rb') as f:
+				data = f.read()
+			rom = ndspy.rom.NintendoDSRom(data)
+
+			# code.interact(local=dict(globals(), **locals()))
+
+			data = rom.files[rom.filenames['a/0/2/9']]
+
+			with open(f'projects/spa_rom/narcs/move_spas-353.narc', 'wb') as f:
+				f.write(data)
+
+
+			dummy_settings = {
+			  "rom_name": "projects/spa_rom",
+			  "pw": "offline",
+			  "base_version": "B2",
+			  "base_rom": "BW2",
+			  "headers": 359,
+			  "message_texts": 349,
+			  "story_texts": 350,
+			  "scripts": 403,
+			  "personal": 363,
+			  "move_spas": 353,
+			  "maps": 355,
+			  "matrix": 356,
+			  "overworlds": 473,
+			  "learnsets": 365,
+			  "evolutions": 366,
+			  "moves": 368,
+			  "items": 371,
+			  "trtext_table": 436,
+			  "trtext_offsets": 437,
+			  "trdata": 438,
+			  "trpok": 439,
+			  "encounters": 474,
+			  "marts": 629,
+			  "mart_counts": 630,
+			  "grottos": 620,
+			  "move_animations": 412,
+			  "battle_animations": 413,
+			  "output_arm9": False,
+			  "fairy": False,
+			  "text_editor": False,
+			  "output_overworlds": True,
+			  "enable_single_npc_dbl_battles": False,
+			  "output_spas": True,
+			  "last_edit": "2023-10-01 00:03:24 -0400",
+			  "edited": [
+			  ],
+			  "original_move_count": 560,
+			  "battle_animation_count": 115
+			}
+
+
+		with open('projects/spa_rom/session_settings.json', 'w') as f:
+			json.dump(dummy_settings, f)
+
+
+		if not os.path.isdir(f"{sys.argv[2]}/spas"):
+			os.mkdir(f"{sys.argv[2]}/spas")
+
+
+
 		narc = ndspy.narc.NARC.fromFile(f"{sys.argv[2]}/narcs/move_spas-353.narc") 
+		# code.interact(local=dict(globals(), **locals()))
 		for idx, file in enumerate(narc.files):
 			read_spa(file, idx )
 

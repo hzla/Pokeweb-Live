@@ -88,7 +88,7 @@ $(document).ready(function() {
 	];
 
 	$(".season-icon").contextMenu(copy_menu)
-	$(":not(.log-text, .editable-doc)[contenteditable='true']").contextMenu(editable_menu)
+	$(":not(.log-text, .editable-doc, .pallete-color, .color-label)[contenteditable='true']").contextMenu(editable_menu)
 	console.log("menu ready")
 
 	get_offset = function(height, direction) {
@@ -707,6 +707,22 @@ $(document).ready(function() {
 	})
 
 
+	$(document).on('mouseover', ".pallete-color", function() {
+		var color = $(this).attr('style').slice(11,-1)
+		var texture = $(this).parent().prev()
+
+		texture.find(`[style*='${color}']`).addClass('highlighted-tile')
+	})
+
+	$(document).on('mouseout', ".pallete-color", function() {
+		var color = $(this).attr('style').slice(11,-1)
+		var texture = $(this).parent().prev()
+
+		texture.find(`[style*='${color}']`).removeClass('highlighted-tile')
+	})
+
+
+
 
 
 	$(document).on('focusout', ":not(.text-line, .editable-doc)[contenteditable='true']", function(){
@@ -794,11 +810,35 @@ $(document).ready(function() {
 		} else {
 			data["narc"] = $('#texts').attr('data-narc')			
 			data["narc_const"] = "text"
-			data["file_name"] = data["field"]
+			
+
+			if (!$(this).hasClass('color-label')) {
+				data["file_name"] = data["field"]
+
+			} else {
+				$(this).next().css('background', $(this).text())
+			}
+			
+
+
 			
 			if ($(this).hasClass("pallete-color")) {
-				
+				var color = $(this).attr('style').slice(11,-1)
+				var texture = $(this).parent().prev()
+
+				var new_color = $(this).text()
+				if (new_color[0] == "#") {
+					texture.find(`[style*='${color}']`).css("background", $(this).text())
+					$(this).css("background", $(this).text())
+				}
+				else {
+					texture.find(`[style*='${color}']`).css("background", `rgb(${$(this).text()})`)
+					$(this).css("background", `rgb(${$(this).text()})`)
+				}
+				$.get(location.href + "/save")
 			}
+
+
 
 			if ($(this).hasClass('empty-text')) {
 				data['narc_const'] = 'trdata'

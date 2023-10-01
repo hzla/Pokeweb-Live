@@ -1,6 +1,11 @@
 
 <div class="pokemon-filter">	
 
+	<% if $edit_mode == "spas" %>
+		<a href="/extract_spas">Extract spas from spa_rom.nds</a>
+	<% end %>
+
+
 	<% if $offline %>
 		<div class="filter-title" id="offline">Select Rom</div>
 		<select name="rom" id="rom-select">

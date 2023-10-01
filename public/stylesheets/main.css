@@ -1370,6 +1370,7 @@ div.-active svg * {
 
 .spa-container {
     width:  100vw;
+    margin-top: 40px;
 
 }
 
@@ -1377,12 +1378,16 @@ div.-active svg * {
     display:  flex;
     flex-wrap:  wrap;
     width: 1024px;
-    height:  1024px;
+    height:  auto;
     margin-top:  40px;
     margin-left:  40px;
     background: rgb(108, 122, 137);
     background-image: linear-gradient(to right, grey 1px, transparent 1px), linear-gradient(to bottom, grey 1px, transparent 1px);
     background-size: 16px 16px;
+}
+
+.spa-canvas:nth-child(3) {
+    margin-top: 120px;
 }
 
 .pallete-canvas {
@@ -1392,6 +1397,7 @@ div.-active svg * {
     height:  auto;
     width:  1024px;
     flex-wrap:  wrap;
+    margin-bottom: 40px;
 }
 
 .pallete-color {
@@ -1428,6 +1434,41 @@ div.-active svg * {
     line-height: 80px;
 }
 
+#open-spa {
+    position: fixed;
+    top: 80px;
+    right: 40px;
+}
+
+#view-spa {
+    position: fixed;
+    top: 320px;
+    right: 40px;
+}
+
+#download-spa {
+   position: fixed;
+    top: 200px;
+    right: 40px; 
+}
+
+
+
+.spa-btn.texture-btn {
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+.texture-btn:last-child {
+    margin-bottom: 80px;
+}
+
+.texture-title {
+    color: #f1f1f1;
+    font-size: 32px;
+    margin: 40px
+}
+
 #effects > .expanded-field, #effects > .field-header > .expanded-field {
     padding: 10px 20px;
     justify-content: flex-start;
@@ -1445,4 +1486,46 @@ div.-active svg * {
 
 .effect-info:last-child {
     margin-bottom:  40px;
+}
+
+.highlighted-tile {
+    background: black !important;
+}
+
+.particle-fields {
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+}
+
+.particle-color-fields {
+    width: 480px;
+}
+
+.particle-misc-fields {
+    width: 480px;
+}
+
+.color-row {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    width:L 100%;
+    margin-left: 40px;
+    color: #f1f1f1;
+    height: 64px;
+    line-height: 64px;
+}
+
+.color-desc {
+
+}
+
+.color-label {
+
+}
+
+.color-value {
+    height: 100%;
+    width: 128px;
 }

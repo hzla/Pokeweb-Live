@@ -8,14 +8,68 @@
 <div id="texts" data-narc="spas"></div>
 
 
-<div class="spa-container" id="overworld">
+<div class="spa-container field-holder" id="overworld" data-index="<%= @id %>">
 
 		<% if $offline %>
-			<div class="script-btn spa-btn" href="/spas/<%= @id %>/pallete">Open Particle Info</div>
+			<div class="script-btn spa-btn" id="open-spa" href="/spas/<%= @id %>/pallete">Open Particle Info</div>
+		<% else %>
+			<div class="script-btn spa-btn" id="open-spa" href="/spas/<%= @id %>/pallete/download">Export Particle Info</div>
+		<% end %>
+
+		<a class="spa-btn" id="download-spa" href="/spas/<%= @id %>/export">Export</a>
+
+		<% if $offline %>
+			<div class="script-btn spa-btn" id="view-spa" href="/spas/<%= @id %>/view">View Edits in NitroEffects</div>
 		<% end %>
 		
+		
+
+		<% @fields.each_with_index do |particle, i|  %>
+			<div class="particle" data-index="<%= i %>">
+				<h2 class="texture-title" >Particle Emitter <%= i %></h2>
+
+				<div class="particle-fields">
+					<div class="particle-color-fields">
+						<div class="color-row">
+							<div class="color-desc">Base Color</div>
+							<div class="color-label no-validate" contenteditable="true" data-field-name="base_color_<%= i %>" data-narc="spas"><%= particle[:base_color] %></div>
+							<div class="color-value" style="background: <%= particle[:base_color]%>"></div>
+						</div>
+
+						<% if particle[:color_start] %>
+							<div class="color-row">
+								<div class="color-desc">Color Start</div>
+								<div class="color-label no-validate" contenteditable="true" data-field-name="color_start_<%= i %>" data-narc="spas"><%= particle[:color_start] %></div>
+								<div class="color-value" style="background: <%= particle[:color_start]%>"></div>
+							</div>
+
+							<div class="color-row">
+								<div class="color-desc">Color End</div>
+								<div class="color-label no-validate" contenteditable="true" data-field-name="color_end_<%= i %>" data-narc="spas"><%= particle[:color_end] %></div>
+								<div class="color-value" style="background: <%= particle[:color_end]%>"></div>
+							</div>
+						<% end %>
+					</div>
+					<div class="particle-misc-fields">
+						<%	 @misc_fields.each do |field| %>
+							<div class="color-row">
+								<div class="color-desc"><%= field[0].to_s %></div>
+								<div class="color-value" contenteditable="true" data-type="int-<%= field[1] %>" data-field-name="<%= field[0].to_s %>_<%= i %>" data-narc="spas"><%= particle[field[0]] %></div>
+							</div>
+						<% end %>
+					</div>
+				</div>
+
+
+
+			</div>
+
+		<% end %>
+
+
 
 		<% @textures.each_with_index do |texture, n| %>
+			<h2 class="texture-title" >Texture <%= n %></h2>
 			<div class="spa-canvas">
 				<% if @colors[n]["format"] == 1 %>
 
@@ -38,7 +92,6 @@
 						</div>
 					<% end %>
 				<% end %>
-
 			</div>
 
 			<div class="pallete-canvas">
@@ -48,6 +101,10 @@
 					</div>
 				<% end %>
 			</div>
+
+
+					
+
 
 
 		<% end %>

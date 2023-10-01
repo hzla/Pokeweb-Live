@@ -48,6 +48,7 @@ class MyApp < Sinatra::Base
 		
 		response.headers['Access-Control-Allow-Origin'] = '*'
 		$mode = ENV["MODE"]
+		$edit_mode = ENV["EDIT_MODE"]
 		$offline = ($mode == "offline")
 
 		if !$offline
@@ -93,6 +94,18 @@ class MyApp < Sinatra::Base
 		end
 
 	end
+
+	
+	################# GENERAL SPA EDITOR ######################
+
+
+	get '/extract_spas' do 
+		`python python/spa_reader.py all projects/spa_rom -r`
+		$rom_name = "projects/spa_rom"
+		redirect '/spas/1'
+	end
+
+
 
 	############# ROM EDITOR ROUTES ###########################
 
@@ -995,6 +1008,9 @@ class MyApp < Sinatra::Base
 		parsed_textures.each do |texture|
 			@textures << JSON.parse(File.open(texture).read)
 		end
+
+		@fields = Spa.get_fields params[:id]
+		@misc_fields =  [[:base_scale, 4294967295 ] , [:base_delay,65535], [:particle_duration,65535], [:air_resistance,255]]
 		
 		erb :spa
 	end
@@ -1002,6 +1018,33 @@ class MyApp < Sinatra::Base
 	get '/spas/:id/pallete' do
 		system "open -a TextEdit #{$rom_name}/spas/#{params[:id]}_spa.json"
 		system "start notepad #{$rom_name}/spas/#{params[:id]}_spa.json"
+		return 200
+	end
+
+	get '/spas/:id/texture/:texture_id' do 
+		# system "open -a TextEdit #{$rom_name}/spas/#{params[:id]}_texture_#{params[:texture_id]}.bin"
+		# system "start notepad #{$rom_name}/spas/#{params[:id]}_texture_#{params[:texture_id]}.bin"
+
+		# send_file  "#{$rom_name}/spas/#{params[:id]}_texture_#{params[:texture_id]}.bin", :filename => "#{$rom_name}/spas/#{params[:id]}_texture_#{params[:texture_id]}.bin" , :type => 'Application/octet-stream'
+
+		`explorer .\#{$rom_name}/spas/#{params[:id]}_texture_#{params[:texture_id]}.bin`
+		p "explorer .\\#{$rom_name}/spas/#{params[:id]}_texture_#{params[:texture_id]}.bin"
+		return 200
+	end
+
+	get '/spas/:id/save' do 
+		`python python/spa_reader.py #{params[:id]} #{$rom_name} -w`
+		return 200
+	end
+
+	get '/spas/:id/export' do 
+		`python python/spa_reader.py #{params[:id]} #{$rom_name} -w`
+		send_file  "#{$rom_name}/spas/#{params[:id]}_edited.spa", :filename => "#{params[:id]}_edited.spa" , :type => 'Application/octet-stream'
+	end
+
+	get '/spas/:id/view' do 
+		`python python/spa_reader.py #{params[:id]} #{$rom_name} -w`
+		`./nitro_effect/NitroEffectMaker.exe ./#{$rom_name}/spas/#{params[:id]}_edited.spa`
 		return 200
 	end
 
