@@ -1529,3 +1529,27 @@ div.-active svg * {
     height: 100%;
     width: 128px;
 }
+
+.dropdown-items {
+    display: flex;
+    flex-direction: column;
+    width: 180px;
+    background: #282a36;
+   
+
+}
+
+.header-dropdown .header-item {
+    width: 100%;
+    background: #282a36;
+    text-align: left;
+    display: none;
+}
+
+.header-dropdown .header-item.dropdown-trigger {
+    display:    block;
+}
+
+.header-dropdown:hover .header-item {
+    display: block;
+}

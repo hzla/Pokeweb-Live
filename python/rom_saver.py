@@ -67,6 +67,23 @@ try:
 		narcs = list(set(narcs) & set(edited))
 
 
+		if settings["starters"] != ["SNIVY", "TEPIG", "OSHAWOTT"]:
+			print("saving starter overlay")
+			#load starter overlay
+			overlay316 = rom.loadArm9Overlays([316])[316]
+
+
+			overlay316_edited = open(f'{rom_name}/overlay316.bin','rb').read()
+			overlay316.data = overlay316_edited
+			rom.files[316] = overlay316.save(compress=True)
+			
+			# recompress and insert
+			rom.files[316] = overlay316.save(compress=True)
+			all_overlays = rom.loadArm9Overlays()
+			all_overlays[316].compressedSize = len(rom.files[316])
+			rom.arm9OverlayTable = ndspy.code.saveOverlayTable(all_overlays)
+
+
 		if settings["output_arm9"] == True:
 			tm_writer.output_arm9(rom_name)
 			mutable_rom = bytearray(data)
@@ -89,6 +106,7 @@ try:
 			#update rom in memory
 			print("updating rom in memory")
 			rom.arm9  = edited_arm9_file
+
 
 			
 
@@ -153,6 +171,9 @@ try:
 			narcs.remove("map")
 		for narc in narcs:
 			if narc == "tm": continue
+			print(f"applying {narc} edits")
+			if narc == "starter":
+				narc = "text"
 			rom = eval(f'{narc}_writer.output_narc(rom, rom_name)')
 
 

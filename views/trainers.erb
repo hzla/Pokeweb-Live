@@ -135,7 +135,6 @@
 					<div class="expanded-bottom">
 						<% Trdata.text_type_ids.each do |type_id| %>
 							<% texts = Trdata.get_texts(i, @offsets, @text_table, @text_bank) %>
-							<% if i < 814 %>
 								<div class="expanded-field">
 									<div class="expanded-field-main">
 										<div class="msg-id"><%= @text_types[type_id] %></div>
@@ -147,11 +146,14 @@
 											<%= field "text_#{type_id}_entry_#{texts[type_id][0]}", 'log-text no-validate empty-text', {value: texts[type_id][1],  narc: "trdata"} %>
 			
 										<% else %>
-											<%= field "text_#{type_id}_entry_#{(@offsets[i] / 4) + texts.length}", 'log-text no-validate empty-text', {value: "",  narc: "trdata"} %>
+											
+											<% if @offsets[i] %>
+												<%= field "text_#{type_id}_entry_#{(@offsets[i] / 4) + texts.length}", 'log-text no-validate empty-text', {value: "",  narc: "trdata"} %>
+											<% end %>
 										<% end %>
 									</div>
 								</div>
-							<% end %>	
+
 						<% end %>
 					</div>
 				<% end %>

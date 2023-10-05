@@ -1,0 +1,50 @@
+
+<script>
+
+
+	// info for autocomplete
+	autofills = {
+		<% [ :pokemon_names].each do |info| %>
+			"<%= info.to_s %>": <%= RomInfo.send(info) %>
+		<% end %>
+	
+	}
+
+
+	
+</script>
+
+<div class="pokemon-filter">	
+	Assumes starters have not been previously edited before by another method.<br>
+	<br>
+	If editing a previously pokeweb editted rom that has modified starters, copy paste the session_settings.json<br>
+	file from the old project to this one
+
+
+</div>
+
+<div class="pokemon-list pokemon-move-list spreadsheet tm-list" id="moves">
+	<div class="expanded-field field-header">
+		<div class="expanded-field-main">
+			
+			<div class="odds-header">Starter 1</div>
+			<div class="odds-header">Starter 2</div>
+			<div class="odds-header">Starter 3</div>
+		</div>
+	</div>
+
+	
+		
+		<div class="expanded-field">	
+			<div class="expanded-field-main">
+	
+
+				<% @starters.each_with_index do |starter, i| %>	
+					<%= field "starter_#{i}", 'species', {value: starter.name_titleize,  narc: "starter", autofill: "pokemon_names"} %>
+				<% end %>
+			</div>
+		</div>
+
+</div>
+
+

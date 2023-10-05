@@ -7,6 +7,13 @@ class RomInfo
 		end
 	end
 
+    def self.raw_pokemon_names
+        file_path = "#{$rom_name}/texts/pokedex.txt"
+        data = File.open(file_path, "r:ISO8859-1").read.split("\n").map do |pok|
+            pok
+        end
+    end
+
     def self.pokemon_center_headers
         ids = [9,21,42,66,100,110,116,123,399,408,414,426,436,444,455,461,473]
         gyms = [436,455,42,66,100,110,123,473]

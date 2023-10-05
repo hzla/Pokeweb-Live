@@ -64,13 +64,20 @@ print(last_trainer_text_count)
 last_offset += (last_trainer_text_count * 4)
 
 
+blank_trdata = open(f'{tr_path}/0.json').read()
+blank_trpok = open(f'{trpok_path}/0.json').read()
 
 
 for n in range(0, expand_trainers):
 	tr_id = n + tr_count
 	
-	subprocess.run(["cp",f'{tr_path}/0.json', f'{tr_path}/{tr_id}.json'], check=True)
-	subprocess.run(["cp",f'{trpok_path}/0.json', f'{trpok_path}/{tr_id}.json'], check=True)
+	with open(f'{tr_path}/{tr_id}.json', "w") as f:
+		f.write(blank_trdata)
+
+	with open(f'{trpok_path}/{tr_id}.json', "w") as f:
+		f.write(blank_trpok)
+
+
 	offsets.append((n + 1) * 4 + last_offset)
 	
 	text_table.append([n + tr_count, 0])

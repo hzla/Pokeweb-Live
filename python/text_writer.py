@@ -9,7 +9,7 @@ import sys
 import os
 
 def set_global_vars(rom_name):
-    global ROM_NAME, NARC_FILE_IDS, REPLACE_TR_SCRIPT, BASE_ROM
+    global ROM_NAME, NARC_FILE_IDS, REPLACE_TR_SCRIPT, BASE_ROM, POKEDEX, STARTERS
     
     NARC_FILE_IDS = {}
     with open(f'{rom_name}/session_settings.json', "r") as outfile:  
@@ -21,7 +21,10 @@ def set_global_vars(rom_name):
         NARC_FILE_IDS["trtext_table"] = settings["trtext_table"]
         NARC_FILE_IDS["trtext_offsets"] = settings["trtext_offsets"]
         NARC_FILE_IDS["scripts"] = settings["scripts"]
+        NARC_FILE_IDS["starter_sprites"] = settings["starter_sprites"]
         REPLACE_TR_SCRIPT = settings["enable_single_npc_dbl_battles"]
+        POKEDEX = open(f'{ROM_NAME}/texts/pokedex.txt', "r").read().splitlines()
+        STARTERS = settings["starters"]
 
 
 def output_narc(rom, rom_name):
@@ -65,6 +68,29 @@ def output_narc(rom, rom_name):
             bank_id = int(file.split(".txt")[0])
             bank_bin = open(f'{ROM_NAME}/scripts/{bank_id}.bin', "rb").read()
             narc.files[bank_id] = bank_bin
+
+        #always apply aspertia city starter script
+        if file == "854.bin" and BASE_ROM == "BW2" and STARTERS != ["SNIVY", "TEPIG", "OSHAWOTT"] :
+            print(STARTERS)
+            bank_id = int(file.split(".bin")[0])
+            bank_bin = open(f'{ROM_NAME}/scripts/{bank_id}.bin', "rb").read()
+            narc.files[bank_id] = bank_bin
+            rom.files[NARC_FILE_IDS["scripts"]] = narc.save()
+
+            starter_sprites = ndspy.narc.NARC(rom.files[NARC_FILE_IDS["starter_sprites"]])
+
+            for idx, starter in enumerate(STARTERS):
+                species_id = POKEDEX.index(starter)
+                print(f"replacing with {[starter, species_id]}")
+                starter_sprites.files[idx + 12] = open(f'base_files/g5sprites/{species_id}_sprite.bin', "rb").read()
+                starter_sprites.files[idx * 2] = open(f'base_files/g5sprites/{species_id}_pallete.rlcn', "rb").read()
+
+
+            rom.files[NARC_FILE_IDS["starter_sprites"]] = starter_sprites.save()
+
+
+
+
 
 
     if REPLACE_TR_SCRIPT and BASE_ROM == "BW2":

@@ -304,18 +304,19 @@ class MyApp < Sinatra::Base
 		end
 		
 
-		begin
+		# begin
 			retries ||= 0
 			p "creating edited rom"
 			`#{py} python/trpok_writer.py validate #{$rom_name}`if SessionSettings.get("edited").include? "trpok"
 			`#{py} python/encounter_writer.py validate #{$rom_name}` if SessionSettings.get("edited").include? "encounter"
 			Learnset.repair_all if SessionSettings.get("edited").include? "learnset"
+			p "#{py} python/rom_saver.py #{$rom_name}"
 			save = `#{py} python/rom_saver.py #{$rom_name}`
 			p "edited rom created"
-		rescue
-			py = "python"
-			retry if !offline		
-		end
+		# rescue
+		# 	py = "python"
+		# 	retry if !$offline		
+		# end
 
 
 		if !$offline
@@ -435,9 +436,11 @@ class MyApp < Sinatra::Base
 		p params['data']
 
 
+
+
 		Object.const_get(narc_name.capitalize).write_data params["data"]
 
-		if params['data']['narc'] == 'spas'
+		if narc_name == 'spas' or narc_name == "starters"
 			return {url: '200 OK'}.to_json
 		end
 
@@ -590,6 +593,15 @@ class MyApp < Sinatra::Base
 	  	SessionSettings.set "edited", edited_narcs.push("text").uniq
 	  end
 		return 200
+	end
+
+	get '/starters' do 
+
+		@starters = SessionSettings.get "starters"
+		# if !SessionSettings.get("date_created")
+		# 	redirect "/headers"
+		# end
+		erb :starters
 	end
 
 

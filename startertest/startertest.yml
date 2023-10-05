@@ -1,0 +1,8 @@
+startertest:
+    - BaseROMCode: IREO
+    - ExecutableFileSystemPath: exefs
+    - ROMFileSystemPath: nitrofs
+    - ProjectROMCode: IREO
+    - ProjectGameTitle: TESTTESTTEST
+    - OverlayModulePath: overlays
+    - NARCsPath: narcs

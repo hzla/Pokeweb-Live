@@ -16,6 +16,10 @@ from arm9_reader import output_tms_json
 from pathlib import Path
 import shutil
 
+import time
+
+
+
 
 
 # code.interact(local=dict(globals(), **locals()))
@@ -98,7 +102,8 @@ BW2_NARCS = [["a/0/1/6", "personal"],
 ["a/2/8/3", "mart_counts"],
 ["a/2/7/3", "grottos"],
 ["a/0/6/5", "move_animations"],
-["a/0/6/6", "battle_animations"]]
+["a/0/6/6", "battle_animations"],
+["a/2/0/2", "starter_sprites"]]
 
 
 BW2_MSG_BANKS = [[488, "moves"],
@@ -181,12 +186,17 @@ arm9 = bytearray(open(f'{rom_name}/arm9.bin', "rb").read())
 overlay36 = rom.loadArm9Overlays([36])[36]
 overlay16 = rom.loadArm9Overlays([16])[16]
 overlay167 = rom.loadArm9Overlays([167])[167]
+overlay316 = rom.loadArm9Overlays([316])[316]
 
 with open(f'{rom_name}/overlay36.bin', 'wb') as f:
 	f.write(overlay36.data)
 
 with open(f'{rom_name}/overlay167.bin', 'wb') as f:
 	f.write(overlay167.data)
+
+if narc_info["base_rom"] == "BW2":
+	with open(f'{rom_name}/overlay316.bin', 'wb') as f:
+		f.write(overlay316.data)
 
 
 B2_EFFECT_TABLE_OFFSET = 0X000407F4
@@ -237,10 +247,12 @@ settings = {}
 settings.update(narc_info)
 settings["output_arm9"] = False
 settings["fairy"] = False
-settings["text_editor"] = False
+settings["text_editor"] = True
 settings["output_overworlds"] = True
+settings["starters"] = ["SNIVY", "TEPIG", "OSHAWOTT"]
 settings["enable_single_npc_dbl_battles"] = False
 settings["output_spas"] = False
+settings["date_created"] = time.time()
 
 
 

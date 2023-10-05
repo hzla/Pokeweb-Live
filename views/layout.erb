@@ -62,20 +62,31 @@
 						Info Text
 					</a>
 
-					<a class="header-item" href="/files">
-						Files
-					</a>
-					<!-- <a class="header-item"  href="/dist/index.html?gen=5" target="_blank">
-						Calc
-					</a> -->
-					<a class="header-item"  href="https://github.com/hzla/Pokeweb/wiki/Troubleshooting" target="_blank">
-						Help
-					</a>
-					<% if $offline %>
-						<div class="header-item script-btn"  href="/settings" target="_blank">
-							Settings
+					
+
+					<div class="header-dropdown">
+						<div class="header-item dropdown-trigger">More Options</div>
+						<div class="dropdown-items">
+							<a class="header-item" href="/starters">
+								Starters
+							</a>
+							<a class="header-item" href="/files">
+								File Manager
+							</a>
+							<a class="header-item"  href="https://github.com/hzla/Pokeweb/wiki/Troubleshooting" target="_blank">
+								Troubleshooting
+							</a>
+							<% if $offline %>
+								<div class="header-item script-btn"  href="/settings" target="_blank">
+									Open Settings
+								</div>
+							<% end %>
 						</div>
-					<% end %>
+						
+						
+					</div>
+
+					
 				</div>
 
 				<div class="header-right">
