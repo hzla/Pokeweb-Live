@@ -135,6 +135,7 @@
 					<div class="expanded-bottom">
 						<% Trdata.text_type_ids.each do |type_id| %>
 							<% texts = Trdata.get_texts(i, @offsets, @text_table, @text_bank) %>
+								<% #binding.pry if i == 815 %>
 								<div class="expanded-field">
 									<div class="expanded-field-main">
 										<div class="msg-id"><%= @text_types[type_id] %></div>

@@ -186,7 +186,9 @@ arm9 = bytearray(open(f'{rom_name}/arm9.bin', "rb").read())
 overlay36 = rom.loadArm9Overlays([36])[36]
 overlay16 = rom.loadArm9Overlays([16])[16]
 overlay167 = rom.loadArm9Overlays([167])[167]
-overlay316 = rom.loadArm9Overlays([316])[316]
+
+
+
 
 with open(f'{rom_name}/overlay36.bin', 'wb') as f:
 	f.write(overlay36.data)
@@ -195,6 +197,7 @@ with open(f'{rom_name}/overlay167.bin', 'wb') as f:
 	f.write(overlay167.data)
 
 if narc_info["base_rom"] == "BW2":
+	overlay316 = rom.loadArm9Overlays([316])[316]
 	with open(f'{rom_name}/overlay316.bin', 'wb') as f:
 		f.write(overlay316.data)
 
