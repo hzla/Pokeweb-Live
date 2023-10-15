@@ -52,8 +52,8 @@ arm9 = ndspy.codeCompression.decompress(rom.arm9)
 arm9_sample = int.from_bytes(arm9[14:16], 'little')
 version_identifier = {15395: ["B2","BW2"], 63038: ["W2","BW2"], 43676: ["B","BW"], 4581: ["W","BW"]}
 
-narc_info["base_version"] = "W2" #version_identifier[arm9_sample][0]
-narc_info["base_rom"] = "BW2" #version_identifier[arm9_sample][1]
+narc_info["base_version"] = version_identifier[arm9_sample][0]
+narc_info["base_rom"] = version_identifier[arm9_sample][1]
 
 with open(f'{rom_name}/arm9.bin', 'wb') as f:
 	f.write(arm9)
