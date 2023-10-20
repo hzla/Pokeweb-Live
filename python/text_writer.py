@@ -21,10 +21,15 @@ def set_global_vars(rom_name):
         NARC_FILE_IDS["trtext_table"] = settings["trtext_table"]
         NARC_FILE_IDS["trtext_offsets"] = settings["trtext_offsets"]
         NARC_FILE_IDS["scripts"] = settings["scripts"]
-        NARC_FILE_IDS["starter_sprites"] = settings["starter_sprites"]
         REPLACE_TR_SCRIPT = settings["enable_single_npc_dbl_battles"]
         POKEDEX = open(f'{ROM_NAME}/texts/pokedex.txt', "r").read().splitlines()
-        STARTERS = settings["starters"]
+        
+        if "starters" in settings:
+            NARC_FILE_IDS["starter_sprites"] = settings["starter_sprites"]
+            STARTERS = settings["starters"]
+        else:
+            STARTERS = ["SNIVY", "TEPIG", "OSHAWOTT"]
+
 
 
 def output_narc(rom, rom_name):

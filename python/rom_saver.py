@@ -101,7 +101,7 @@ try:
 
 			# reinsert arm9
 			
-			mutable_rom[arm9_offset:arm9_offset + len(arm9)] = arm9
+			# mutable_rom[arm9_offset:arm9_offset + len(arm9)] = arm9
 
 			#update rom in memory
 			print("updating rom in memory")
