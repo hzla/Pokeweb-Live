@@ -67,7 +67,7 @@ try:
 		narcs = list(set(narcs) & set(edited))
 
 
-		if settings["starters"] != ["SNIVY", "TEPIG", "OSHAWOTT"]:
+		if "starters" in settings and settings["starters"] != ["SNIVY", "TEPIG", "OSHAWOTT"]:
 			print("saving starter overlay")
 			#load starter overlay
 			overlay316 = rom.loadArm9Overlays([316])[316]
@@ -94,14 +94,14 @@ try:
 
 			# #compress it
 			print ("compressing arm9")
-			# arm9 = bytearray(ndspy.codeCompression.compress(edited_arm9_file, isArm9=True))
+			arm9 = bytearray(ndspy.codeCompression.compress(edited_arm9_file, isArm9=True))
 
-			# with open("compressed_arm9.bin", 'wb') as f:
-			# 	f.write(arm9)
+			with open("compressed_arm9.bin", 'wb') as f:
+				f.write(arm9)
 
-			#reinsert arm9
+			reinsert arm9
 			
-			# mutable_rom[arm9_offset:arm9_offset + len(arm9)] = arm9
+			mutable_rom[arm9_offset:arm9_offset + len(arm9)] = arm9
 
 			#update rom in memory
 			print("updating rom in memory")
