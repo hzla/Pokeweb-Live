@@ -99,7 +99,7 @@ try:
 			with open("compressed_arm9.bin", 'wb') as f:
 				f.write(arm9)
 
-			reinsert arm9
+			# reinsert arm9
 			
 			mutable_rom[arm9_offset:arm9_offset + len(arm9)] = arm9
 
