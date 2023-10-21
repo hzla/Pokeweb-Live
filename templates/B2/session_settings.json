@@ -25,9 +25,16 @@
     "grottos": 620,
     "move_animations": 412,
     "battle_animations": 413,
-    "output_arm9": false,
-    "fairy": false,
-    "text_editor": false,
-    "output_overworlds": true,
+    "starter_sprites": 549,
+    "output_arm9": true,
+      "fairy": false,
+      "text_editor": true,
+      "output_overworlds": true,
+      "starters": [
+        "SNIVY",
+        "TEPIG",
+        "OSHAWOTT"
+      ],
+  
     "enable_single_npc_dbl_battles": false
 }
