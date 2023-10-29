@@ -484,8 +484,8 @@ if __name__ == "__main__":
 			}
 
 
-		with open('projects/spa_rom/session_settings.json', 'w') as f:
-			json.dump(dummy_settings, f)
+			with open('projects/spa_rom/session_settings.json', 'w') as f:
+				json.dump(dummy_settings, f)
 
 
 		if not os.path.isdir(f"{sys.argv[2]}/spas"):
