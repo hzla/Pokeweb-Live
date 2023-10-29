@@ -31,7 +31,7 @@
 .word \p5
 .endm
 
-.macro CMD_3 p0 p1 p2 p3 p4 p5
+.macro ShakeScreen p0 p1 p2 p3 p4 p5
 .hword 3
 .word \p0
 .word \p1
@@ -90,7 +90,7 @@
 .word \p14
 .endm
 
-.macro CMD_9 p0 p1 p2 p3 p4 p5 p6 p7 p8 p9 p10
+.macro DoSPAAnimation2 p0 p1 p2 p3 p4 p5 p6 p7 p8 p9 p10
 .hword 9
 .word \p0
 .word \p1
@@ -124,7 +124,7 @@
 .word \p0
 .endm
 
-.macro CMD_c p0 p1 p2 p3 p4 p5 p6 p7 p8 p9 p10
+.macro DoSPAAnimation3 p0 p1 p2 p3 p4 p5 p6 p7 p8 p9 p10
 .hword 12
 .word \p0
 .word \p1
@@ -210,7 +210,7 @@
 .word \p6
 .endm
 
-.macro CMD_12 p0 p1 p2 p3 p4 p5 p6
+.macro MoveTarget p0 p1 p2 p3 p4 p5 p6
 .hword 18
 .word \p0
 .word \p1
@@ -221,7 +221,7 @@
 .word \p6
 .endm
 
-.macro CMD_13 p0 p1 p2 p3 p4 p5 p6 p7 p8
+.macro MoveUser p0 p1 p2 p3 p4 p5 p6 p7 p8
 .hword 19
 .word \p0
 .word \p1
@@ -244,7 +244,7 @@
 .word \p5
 .endm
 
-.macro CMD_15 p0 p1 p2 p3 p4 p5 p6
+.macro MoveUser2 p0 p1 p2 p3 p4 p5 p6
 .hword 21
 .word \p0
 .word \p1
@@ -299,7 +299,7 @@
 .word \p1
 .endm
 
-.macro CMD_1b p0 p1 p2 p3 p4
+.macro ChangeColor p0 p1 p2 p3 p4
 .hword 27
 .word \p0
 .word \p1
@@ -308,7 +308,7 @@
 .word \p4
 .endm
 
-.macro CMD_1c p0 p1
+.macro ChangeVisibility p0 p1
 .hword 28
 .word \p0
 .word \p1
@@ -368,12 +368,12 @@
 .word \p0
 .endm
 
-.macro Background p0
+.macro LoadBackground p0
 .hword 36
 .word \p0
 .endm
 
-.macro CMD_25 p0 p1 p2 p3 p4 p5
+.macro MoveBackground p0 p1 p2 p3 p4 p5
 .hword 37
 .word \p0
 .word \p1
@@ -383,7 +383,7 @@
 .word \p5
 .endm
 
-.macro CMD_26 p0 p1 p2 p3 p4 p5
+.macro DistortBackground p0 p1 p2 p3 p4 p5
 .hword 38
 .word \p0
 .word \p1
@@ -414,7 +414,7 @@
 .word \p5
 .endm
 
-.macro CMD_2a p0 p1 p2 p3 p4
+.macro ChangeBackgroundColor p0 p1 p2 p3 p4
 .hword 42
 .word \p0
 .word \p1
@@ -423,7 +423,7 @@
 .word \p4
 .endm
 
-.macro CMD_2b p0 p1
+.macro ApplyBackground p0 p1
 .hword 43
 .word \p0
 .word \p1
@@ -512,7 +512,7 @@
 .word \p8
 .endm
 
-.macro CMD_34 p0 p1 p2 p3 p4 p5 p6 p7 p8
+.macro PlaySound p0 p1 p2 p3 p4 p5 p6 p7 p8
 .hword 52
 .word \p0
 .word \p1
@@ -542,7 +542,7 @@
 .word \p7
 .endm
 
-.macro CMD_37 p0 p1 p2 p3 p4 p5 p6 p7 p8
+.macro StopSound p0 p1 p2 p3 p4 p5 p6 p7 p8
 .hword 55
 .word \p0
 .word \p1
@@ -620,7 +620,7 @@
 .hword 66
 .endm
 
-.macro CMD_43 p0 p1 p2 p3 p4 p5 p6
+.macro PlayPokemonCry p0 p1 p2 p3 p4 p5 p6
 .hword 67
 .word \p0
 .word \p1

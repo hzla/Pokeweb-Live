@@ -50,7 +50,7 @@
     - Name: p5
       Type: int
 3:
-  Name: CMD_3
+  Name: ShakeScreen
   Parameters:
     - Name: p0
       Type: int
@@ -138,7 +138,7 @@
     - Name: p14
       Type: int
 9:
-  Name: CMD_9
+  Name: DoSPAAnimation2
   Parameters:
     - Name: p0
       Type: int
@@ -191,7 +191,7 @@
     - Name: p0
       Type: int
 12:
-  Name: CMD_c
+  Name: DoSPAAnimation3
   Parameters:
     - Name: p0
       Type: int
@@ -333,7 +333,7 @@
     - Name: p6
       Type: int
 18:
-  Name: CMD_12
+  Name: MoveTarget
   Parameters:
     - Name: p0
       Type: int
@@ -350,7 +350,7 @@
     - Name: p6
       Type: int
 19:
-  Name: CMD_13
+  Name: MoveUser
   Parameters:
     - Name: p0
       Type: int
@@ -386,7 +386,7 @@
     - Name: p5
       Type: int
 21:
-  Name: CMD_15
+  Name: MoveUser2
   Parameters:
     - Name: p0
       Type: int
@@ -466,7 +466,7 @@
     - Name: p1
       Type: int
 27:
-  Name: CMD_1b
+  Name: ChangeColor
   Parameters:
     - Name: p0
       Type: int
@@ -479,7 +479,7 @@
     - Name: p4
       Type: int
 28:
-  Name: CMD_1c
+  Name: ChangeVisibility
   Parameters:
     - Name: p0
       Type: int
@@ -559,12 +559,12 @@
     - Name: p0
       Type: int
 36:
-  Name: Background
+  Name: LoadBackground
   Parameters:
     - Name: p0
       Type: int
 37:
-  Name: CMD_25
+  Name: MoveBackground
   Parameters:
     - Name: p0
       Type: int
@@ -579,7 +579,7 @@
     - Name: p5
       Type: int
 38:
-  Name: CMD_26
+  Name: DistortBackground
   Parameters:
     - Name: p0
       Type: int
@@ -621,7 +621,7 @@
     - Name: p5
       Type: int
 42:
-  Name: CMD_2a
+  Name: ChangeBackgroundColor
   Parameters:
     - Name: p0
       Type: int
@@ -634,7 +634,7 @@
     - Name: p4
       Type: int
 43:
-  Name: CMD_2b
+  Name: ApplyBackground
   Parameters:
     - Name: p0
       Type: int
@@ -741,7 +741,7 @@
     - Name: p1
       Type: int
 52:
-  Name: CMD_34
+  Name: PlaySound
   Alias: PlaySound
   Parameters:
     - Name: p0
@@ -787,7 +787,7 @@
     - Name: p7
       Type: int
 55:
-  Name: CMD_37
+  Name: StopSound
   Parameters:
     - Name: p0
       Type: int
@@ -883,7 +883,7 @@
   Name: CMD_42
   Parameters:
 67:
-  Name: CMD_43
+  Name: PlayPokemonCry
   Parameters:
     - Name: p0
       Type: int
