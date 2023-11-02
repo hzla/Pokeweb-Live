@@ -24,7 +24,7 @@ def set_global_vars(rom_name):
         REPLACE_TR_SCRIPT = settings["enable_single_npc_dbl_battles"]
         POKEDEX = open(f'{ROM_NAME}/texts/pokedex.txt', "r").read().splitlines()
         
-        if "starters" in settings:
+        if "starters" in settings and BASE_ROM == "BW2" :
             NARC_FILE_IDS["starter_sprites"] = settings["starter_sprites"]
             STARTERS = settings["starters"]
         else:

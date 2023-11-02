@@ -67,7 +67,7 @@ try:
 		narcs = list(set(narcs) & set(edited))
 
 
-		if "starters" in settings and settings["starters"] != ["SNIVY", "TEPIG", "OSHAWOTT"]:
+		if "starters" in settings and settings["starters"] != ["SNIVY", "TEPIG", "OSHAWOTT"] and settings["base_rom"] == "BW2":
 			print("saving starter overlay")
 			#load starter overlay
 			overlay316 = rom.loadArm9Overlays([316])[316]

@@ -7,7 +7,7 @@
 .word \p4
 .endm
 
-.macro CMD_1 p0 p1 p2 p3 p4 p5 p6 p7 p8 p9
+.macro ZoomCamera p0 p1 p2 p3 p4 p5 p6 p7 p8 p9
 .hword 1
 .word \p0
 .word \p1
@@ -547,12 +547,12 @@
 .word \p0
 .endm
 
-.macro CMD_39 p0
+.macro Wait p0
 .hword 57
 .word \p0
 .endm
 
-.macro CMD_3a p0
+.macro ToggleFreezeTarget p0
 .hword 58
 .word \p0
 .endm

@@ -12,7 +12,7 @@
     - Name: p4
       Type: int
 1:
-  Name: CMD_1
+  Name: ZoomCamera
   Parameters:
     - Name: p0
       Type: int
@@ -812,12 +812,12 @@
     - Name: p0
       Type: int
 57:
-  Name: CMD_39
+  Name: Wait
   Parameters:
     - Name: p0
       Type: int
 58:
-  Name: CMD_3a
+  Name: ToggleFreezeTarget
   Parameters:
     - Name: p0
       Type: int
