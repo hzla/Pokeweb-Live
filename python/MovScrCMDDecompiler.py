@@ -2,8 +2,18 @@ from struct import unpack
 from setuptools import Command
 from yaml import dump, load, Loader
 from sys import argv
+import json
 
 AddressesPerEntry = 0xE
+
+move_file_location = argv[2]
+print(move_file_location)
+
+move_data = {}
+with open(move_file_location) as move:
+    move_data = json.load(move)
+    move_data["readable"]["spas"] = [] 
+
 
 CommandSet = None
 with open('tools/movecommands/MOV_SCRCMD.yml', 'r') as DATA:
@@ -84,6 +94,13 @@ with open(argv[1], 'rb') as SCRIPT:
                         break
             print(' ' * 4, CommandData["Name"], end=' ')
             print(*ParameterData, sep=', ')
+
+            if "LoadSPA" in CommandData["Name"]:
+                move_data["readable"]["spas"].append(ParameterData[0]) 
             if 'End' in CommandData.keys():
                 break
         print()
+
+
+with open(move_file_location, "w") as outfile:  
+    json.dump(move_data, outfile)

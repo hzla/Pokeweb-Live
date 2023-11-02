@@ -131,8 +131,9 @@ $(document).ready(function() {
 
 	        	console.log($('#xdelta').length)
 	        	var rom_name = $('#rom-select').val()
+	        	var fairy = $('#fairy-checkbox').is(':checked')
 		        $(this).text('loading...')
-		        $.post( "extract_rom?rom_name=" + rom_name , {rom_name: rom_name }, function( data ) {
+		        $.post( "extract_rom?rom_name=" + rom_name , {rom_name: rom_name, fairy: fairy }, function( data ) {
 		          window.location.href = data["url"]
 		        });     
 	    })

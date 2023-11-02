@@ -182,13 +182,15 @@ class MyApp < Sinatra::Base
 			end
 		end
 		
+		p params
+		fairy = params['fairy']
 		
 
 		begin
 			system "#{py} python/header_loader.py #{params['rom_name']} offline"
 			session[:rom_name] = "projects/#{params['rom_name'].split(".")[0]}"
 			$rom_name = "projects/#{params['rom_name'].split(".")[0]}"
-			command = "#{py} python/rom_loader.py #{params['rom_name']} offline"
+			command = "#{py} python/rom_loader.py #{params['rom_name']} offline #{fairy}"
 			pid = spawn command
 			Process.detach(pid)
 		rescue
@@ -216,6 +218,7 @@ class MyApp < Sinatra::Base
 		
 		base = params["rom_base"]
 		rom_name = params['rom_name'].split(".")[0]
+		fairy = params['fairy']
 
 
 
@@ -241,7 +244,7 @@ class MyApp < Sinatra::Base
 			begin
 				system "#{py} python/header_loader.py #{params['rom_name']} #{pw}"
 				session[:rom_name] = "projects/#{params['rom_name'].split(".")[0]}"
-				command = "#{py} python/rom_loader.py #{params['rom_name']}"
+				command = "#{py} python/rom_loader.py #{params['rom_name']} online #{fairy}"
 				pid = spawn command
 				Process.detach(pid)
 			rescue
@@ -356,6 +359,7 @@ class MyApp < Sinatra::Base
 
 		@poke_data.each do |pok|
 			if pok
+				p pok["index"]
 				pok["learnset"] = expand_learnset_data @moves, pok["learnset"]
 			end # adds addtional move data to learnset data
 		end	
@@ -503,6 +507,11 @@ class MyApp < Sinatra::Base
 		erb :moves
 	end
 
+	get '/moves/extract_spas' do 
+		`python3 python/spa_reader.py all #{$rom_name} -r`
+		redirect '/moves?message=spa_extraction_success'
+	end
+
 	get '/moves/:id/script' do 
 		id = params[:id]
 		# (1..559).each do |id|
@@ -523,6 +532,7 @@ class MyApp < Sinatra::Base
 	    	f.write(file.read)
 	  	end
 
+	  	p "python3 python/move_writer.py compile #{id} #{$rom_name}"
 	  	`python3 python/move_writer.py compile #{id} #{$rom_name}`
 
 	  	return {response: 200}.to_json
@@ -1028,12 +1038,23 @@ class MyApp < Sinatra::Base
 	end
 
 	get '/spas/:id/pallete' do
+		return if !$offline
 		system "open -a TextEdit #{$rom_name}/spas/#{params[:id]}_spa.json"
 		system "start notepad #{$rom_name}/spas/#{params[:id]}_spa.json"
 		return 200
 	end
 
+	get '/spas/:to_copy/copy_to/:id' do 
+		return if SessionSettings.get("public")
+		
+		p "python3 python/spa_reader.py #{params[:to_copy]}-#{params[:id]} #{$rom_name} -copy"
+		`python3 python/spa_reader.py #{params[:to_copy]}-#{params[:id]} #{$rom_name} -copy`
+
+		redirect "spas/#{params[:id]}?message=copy_successful"
+	end
+
 	get '/spas/:id/texture/:texture_id' do 
+		return if !$offline
 		# system "open -a TextEdit #{$rom_name}/spas/#{params[:id]}_texture_#{params[:texture_id]}.bin"
 		# system "start notepad #{$rom_name}/spas/#{params[:id]}_texture_#{params[:texture_id]}.bin"
 
@@ -1055,6 +1076,7 @@ class MyApp < Sinatra::Base
 	end
 
 	get '/spas/:id/view' do 
+		return if !$offline
 		`python python/spa_reader.py #{params[:id]} #{$rom_name} -w`
 		`./nitro_effect/NitroEffectMaker.exe ./#{$rom_name}/spas/#{params[:id]}_edited.spa`
 		return 200

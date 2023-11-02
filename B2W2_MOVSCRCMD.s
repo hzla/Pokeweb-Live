@@ -512,19 +512,6 @@
 .word \p8
 .endm
 
-.macro PlaySound p0 p1 p2 p3 p4 p5 p6 p7 p8
-.hword 52
-.word \p0
-.word \p1
-.word \p2
-.word \p3
-.word \p4
-.word \p5
-.word \p6
-.word \p7
-.word \p8
-.endm
-
 .macro CMD_35 p0
 .hword 53
 .word \p0

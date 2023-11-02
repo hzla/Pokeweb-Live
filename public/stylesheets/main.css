@@ -1553,3 +1553,11 @@ div.-active svg * {
 .header-dropdown:hover .header-item {
     display: block;
 }
+
+.rom-load-option {
+    display: flex;
+}
+
+#fairy-label {
+    margin-right: 20px;
+}

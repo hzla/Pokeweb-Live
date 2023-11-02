@@ -7,7 +7,7 @@ import ndspy
 import ndspy.rom
 import ndspy.narc
 import code
-
+import shutil 
 
 
 ## BEFORE USE: name any files to be opened with extension .spa and place in a folder named "spas"
@@ -380,18 +380,18 @@ def convert_to_rgb(value):
 	return f"rgb({red*8 },{blue*8 },{green*8 })"
 
 def convert_to_rgb5_int(rgb):
-    if rgb[0] == "#":
-    	rgb = hex_to_rgb(rgb)
+	if rgb[0] == "#":
+		rgb = hex_to_rgb(rgb)
 
-    colors = re.findall(r'[0-9]+', rgb)
-    colors.reverse()
-    bin_str = "0"
-    for color in colors:
-    	converted_val = int(int(color) / 8)
-    	bin_str += (bin(converted_val)[2:].zfill(5))
+	colors = re.findall(r'[0-9]+', rgb)
+	colors.reverse()
+	bin_str = "0"
+	for color in colors:
+		converted_val = int(int(color) / 8)
+		bin_str += (bin(converted_val)[2:].zfill(5))
 
-    return int(bin_str,2)
-    
+	return int(bin_str,2)
+	
 
 def parse_a3i5(value):
 	color_index = value & 0b11111
@@ -511,6 +511,44 @@ if __name__ == "__main__":
 		data = write_spa()
 
 		narc.files[int(sys.argv[1])] = data
+
+		with open(f"{sys.argv[2]}/narcs/move_spas-353.narc", 'wb') as f:
+			f.write(narc.save())
+
+
+	if len(sys.argv) > 3 and sys.argv[3] == "-copy":
+		narc = ndspy.narc.NARC.fromFile(f"{sys.argv[2]}/narcs/move_spas-353.narc") 
+		copy_target_index = sys.argv[1].split("-")[0]
+		copy_target = narc.files[int(copy_target_index)]
+		
+		copy_destination_index = sys.argv[1].split("-")[1]
+
+		if copy_destination_index > len(narc.files):
+			copy_destination_index = str(len(narc.files))
+
+		# copy file in the narc
+		narc.files[int(copy_destination_index)] = copy_target
+
+		
+		my_dir = f"{sys.argv[2]}/spas"
+		#delete parsed destination files
+		for fname in os.listdir(my_dir):
+			if fname.startswith(f"{copy_destination_index}_"):
+				print("deleted")
+				print(os.path.join(my_dir, fname))
+				os.remove(os.path.join(my_dir, fname))
+
+		
+		#copy old parsed files to destination
+		for fname in os.listdir(my_dir):
+			if fname.startswith(f"{copy_target_index}_"):
+				new_file_name = fname.replace(f"{copy_target_index}_", f"{copy_destination_index}_")
+				shutil.copyfile(os.path.join(my_dir, fname), os.path.join(my_dir, new_file_name))
+				
+				print(os.path.join(my_dir, fname))
+				print("copied to")
+				print(os.path.join(my_dir, new_file_name))
+
 
 		with open(f"{sys.argv[2]}/narcs/move_spas-353.narc", 'wb') as f:
 			f.write(narc.save())

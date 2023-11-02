@@ -2,5 +2,6 @@
 	"moves": 0,
 	"encounters": 0,
 	"trainers": 0,
-	"alt_form_sprites": false
+	"alt_form_sprites": false,
+	"spas": true
 }

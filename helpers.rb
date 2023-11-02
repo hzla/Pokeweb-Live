@@ -96,6 +96,7 @@ def expand_learnset_data(moves, learnset)
 				begin
 					ls_data[field] = all_move_data[1][field]
 				rescue
+					p learnset["move_id_#{move}"]
 					binding.pry
 				end
 			end

@@ -58,7 +58,7 @@ def decompile_script(rom_name, move_id):
 		f.write(script)
 		f.close()
 
-		subprocess.run(["python3", "python/MovScrCMDDecompiler.py", f"{rom_name}/move_scripts/{move_id}.bin", '>', f"{rom_name}/move_scripts/{move_id}.txt"], check=True)
+		subprocess.run(["python3", "python/MovScrCMDDecompiler.py", f"{rom_name}/move_scripts/{move_id}.bin", f"{rom_name}/json/moves/{move_id}.json" , '>', f"{rom_name}/move_scripts/{move_id}.txt"], check=True)
 
 def compile_script(rom_name, move_id):
 	if move_id > 559:
@@ -68,8 +68,14 @@ def compile_script(rom_name, move_id):
 		ani = "move_animations"
 		offset = 0
 	# arm-none-eabi-as <decompiled> -o tmp.elf && arm-none-eabi-objcopy -O binary tmp.elf <output>
+
+
 	subprocess.run(["arm-none-eabi-as", f"{rom_name}/move_scripts/{move_id}.txt", "-o", "tmp.elf"], check=True)
+
+
 	subprocess.run(["arm-none-eabi-objcopy", "-O", 'binary', 'tmp.elf', f"{rom_name}/move_scripts/{move_id}.bin"], check=True)
+
+
 
 	with open(f'{rom_name}/session_settings.json', "r") as outfile:  
 		settings = json.load(outfile) 

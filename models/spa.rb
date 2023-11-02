@@ -2,6 +2,12 @@
 class Spa
 
 
+	def self.copy_to from, to
+		p "python3 python/spa_reader.py #{from}-#{to} #{$rom_name} -copy"
+		`python3 python/spa_reader.py #{from}-#{to} #{$rom_name} -copy`
+	end
+
+
 
 	def self.write_data data
 		if !data["file_name"].include? "_"

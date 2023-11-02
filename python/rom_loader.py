@@ -55,6 +55,7 @@ with open(f'expansion_settings.json', "r") as outfile:
 	expansion_settings = json.load(outfile) 
 	expand_moves = expansion_settings["moves"]
 	expand_sprites = expansion_settings["alt_form_sprites"]
+	expand_spas = expansion_settings["spas"]
 
 
 
@@ -147,6 +148,15 @@ for narc in NARCS:
 	
 	narc_info[narc[1]] = file_id # store file ID for later
 		
+	# expand .spa particle files
+	if narc[1] == "move_spas" and expand_spas:
+		print("expanding move particles (.spa files)")
+		thunder_punch_particle_copy = parsed_file.files[171]
+		for n in range(100):
+			parsed_file.files.append(thunder_punch_particle_copy)
+		file = parsed_file.save()
+
+
 	# handle trainer text narcs
 	if narc[1] == "trtext_table":
 		data = parsed_file.files[0]
@@ -202,8 +212,12 @@ if narc_info["base_rom"] == "BW2":
 		f.write(overlay316.data)
 
 
-B2_EFFECT_TABLE_OFFSET = 0X000407F4
-W2_EFFECT_TABLE_OFFSET = 0X000407F4
+if sys.argv[3] != "true":
+	B2_EFFECT_TABLE_OFFSET = 0X000407F4
+	W2_EFFECT_TABLE_OFFSET = 0X000407F4
+else:
+	B2_EFFECT_TABLE_OFFSET = 0X00040974
+	W2_EFFECT_TABLE_OFFSET = 0X00040974
 
 with open(f'{rom_name}/overlay16.bin', 'wb') as f:
 	f.write(overlay16.data)
@@ -249,13 +263,21 @@ with open(f'{rom_name}/message_texts/texts.json', 'r') as f:
 settings = {}
 settings.update(narc_info)
 settings["output_arm9"] = False
-settings["fairy"] = False
+
 settings["text_editor"] = True
 settings["output_overworlds"] = True
 settings["starters"] = ["SNIVY", "TEPIG", "OSHAWOTT"]
 settings["enable_single_npc_dbl_battles"] = False
 settings["output_spas"] = False
 settings["date_created"] = time.time()
+
+
+print(sys.argv)
+if sys.argv[3] != "true":
+	settings["fairy"] = False
+else:
+	settings["fairy"] = True
+
 
 
 

@@ -12,7 +12,12 @@
 			<% @roms.each do |rom| %>
 			    <option value="<%= rom %>"><%= rom %></option>
 		    <% end %>
-		</select>		
+		</select>	
+
+		<div class="rom-load-option">
+			<div id="fairy-label">Fairy Rom?</div>
+			<input type="checkbox" id="fairy-checkbox" name="fairy" />	
+		</div>
 		
 		<button class="btn -default" id="load-rom" type="button">Load</button>
 	<% else %>
@@ -30,6 +35,11 @@
 
 			<div class="filter-title">Upload xdelta (optional)</div>
 			<input type="file" id="xdelta" name="filename" label="Upload xdelta"></input>
+
+			<div class="rom-load-option">
+				<div id="fairy-label">Fairy Rom?</div>
+				<input type="checkbox" id="fairy-checkbox" name="fairy" />	
+			</div>
 
 			<div class="filter-title">Name Rom (with .nds)</div>
 			<input id="rom-name" type="text" name="rom_name" required></input>

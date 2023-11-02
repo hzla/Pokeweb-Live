@@ -15,20 +15,25 @@ import re
 
 
 def set_global_vars(rom_name):
-	global ROM_NAME, NARC_FORMAT, BASE_ROM, MOVES, EFFECT_TABLE_OFFSET
+	global ROM_NAME, NARC_FORMAT, BASE_ROM, MOVES, EFFECT_TABLE_OFFSET, FAIRY
 	
 	with open(f'{rom_name}/session_settings.json', "r") as outfile:  
 		settings = json.load(outfile) 
 		ROM_NAME = settings['rom_name']
 		BASE_ROM = settings['base_rom']
 		BASE_VERSION = settings["base_version"]
+		FAIRY = settings["fairy"]
 
 	MOVES = open(f'{ROM_NAME}/texts/moves.txt', mode="r").read().splitlines()
 
 	NARC_FORMAT = []
 
-	B2_EFFECT_TABLE_OFFSET = 0X000407F4
-	W2_EFFECT_TABLE_OFFSET = 0X000407F4
+	if FAIRY:
+		B2_EFFECT_TABLE_OFFSET = 0X00040974
+		W2_EFFECT_TABLE_OFFSET = 0X00040974
+	else:
+		B2_EFFECT_TABLE_OFFSET = 0X000407F4
+		W2_EFFECT_TABLE_OFFSET = 0X000407F4
 
 	if BASE_VERSION == "B2":
 		EFFECT_TABLE_OFFSET = B2_EFFECT_TABLE_OFFSET

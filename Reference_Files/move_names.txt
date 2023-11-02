@@ -8,7 +8,7 @@ Phantom Force
 Trick-or-Treat
 Noble Roar
 Ion Deluge
-Parabolic Charge
+Parabolic Chrge
 Forest’s Curse
 Petal Blizzard
 Freeze-Dry
@@ -42,7 +42,7 @@ Powder
 Geomancy
 Magnetic Flux
 Happy Hour
-Electric Terrain
+Electrc Terrain
 Dazzling Gleam
 Celebrate
 Hold Hands
@@ -57,13 +57,13 @@ Thousand Waves
 Land’s Wrath
 Light of Ruin
 Origin Pulse
-Precipice Blades
+Precipice Blade
 Dragon Ascent
 Hyperspace Fury
 Breakneck Blitz
 Breakneck Blitz
-All-Out Pummeling
-All-Out Pummeling
+All-Out Pummel
+All-Out Pummel
 Supersonic Skystrike
 Supersonic Skystrike
 Acid Downpour
@@ -98,7 +98,7 @@ Twinkle Tackle
 Twinkle Tackle
 Catastropika
 Shore Up
-First Impression
+First Impressn
 Baneful Bunker
 Spirit Shackle
 Darkest Lariat
