@@ -100,7 +100,7 @@ class MyApp < Sinatra::Base
 
 
 	get '/extract_spas' do 
-		`python python/spa_reader.py all projects/spa_rom -r`
+		`python3 python/spa_reader.py all projects/spa_rom -r`
 		$rom_name = "projects/spa_rom"
 		redirect '/spas/1'
 	end
@@ -1066,18 +1066,18 @@ class MyApp < Sinatra::Base
 	end
 
 	get '/spas/:id/save' do 
-		`python python/spa_reader.py #{params[:id]} #{$rom_name} -w`
+		`python3 python/spa_reader.py #{params[:id]} #{$rom_name} -w`
 		return 200
 	end
 
 	get '/spas/:id/export' do 
-		`python python/spa_reader.py #{params[:id]} #{$rom_name} -w`
+		`python3 python/spa_reader.py #{params[:id]} #{$rom_name} -w`
 		send_file  "#{$rom_name}/spas/#{params[:id]}_edited.spa", :filename => "#{params[:id]}_edited.spa" , :type => 'Application/octet-stream'
 	end
 
 	get '/spas/:id/view' do 
 		return if !$offline
-		`python python/spa_reader.py #{params[:id]} #{$rom_name} -w`
+		`python3 python/spa_reader.py #{params[:id]} #{$rom_name} -w`
 		`./nitro_effect/NitroEffectMaker.exe ./#{$rom_name}/spas/#{params[:id]}_edited.spa`
 		return 200
 	end

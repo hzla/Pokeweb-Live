@@ -36,5 +36,8 @@
         "OSHAWOTT"
       ],
   
-    "enable_single_npc_dbl_battles": false
+    "enable_single_npc_dbl_battles": false,
+    "move_spas": 353
 }
+
+
