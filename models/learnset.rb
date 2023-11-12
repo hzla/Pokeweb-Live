@@ -15,6 +15,11 @@ class Learnset < Pokenarc
 		`python3 python/learnset_writer.py update all #{$rom_name} #{ls_count}`		
 	end
 
+	def self.get_all
+		@@narc_name = "learnsets"
+		super
+	end
+
 	def self.sort_readable id 
 		path = "#{$rom_name}/json/learnsets/#{id}.json"
 		data = get_data(path, "all")

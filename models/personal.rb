@@ -77,6 +77,9 @@ class Personal
 	def self.export_showdown
 		poks = poke_data[1..-1]
 
+		learnsets = Learnset.get_all
+		all_tm_names = Tm.get_names
+
 		showdown = {}
 		poks.each do |pok|
 			next if !pok
@@ -89,6 +92,7 @@ class Personal
 			end
 
 			showdown[showdown_name]["bs"] = {"hp"=> pok["base_hp"], "at" => pok["base_atk"], "df" => pok["base_def"], "sa" => pok["base_spatk"], "sd" => pok["base_spdef"], "sp" => pok["base_speed"]}
+			showdown[showdown_name]["learnset_info"] = get_learnset_for pok, all_tm_names
 		end
 		File.write("public/dist/poks.json", JSON.dump(showdown))
 		open("public/dist/poks.js", "w") do |f| 
@@ -96,6 +100,27 @@ class Personal
 			f.puts JSON.dump(showdown)
 		end
 		showdown
+	end
+
+	def self.get_learnset_for pok, all_tm_names
+		ls = pok["learnset"]
+
+		tm_list = get_tm_list(pok)
+		pok_tm_list = get_tm_names tm_list, all_tm_names
+
+
+
+
+		learnset_info = []
+
+		n = 0
+
+		until !ls["lvl_learned_#{n}"] or learnset_info.length == 25
+			learnset_info << [ls["lvl_learned_#{n}"], ls["move_id_#{n}"].move_titleize]
+			n += 1
+		end
+		{learnset: learnset_info, tms: pok_tm_list}
+
 	end
 
 	def self.balance
@@ -249,6 +274,24 @@ class Personal
 		tms = tms_1 + tms_2 + tms_3
 		hms = hms_1 + hms_2
 		{tms: tms.split(""), hms: hms.split("")}
+	end
+
+	def self.get_tm_names(tm_list, all_tm_names)
+		learnset_tms = []
+		tm_list[:tms].each_with_index do |tm, i|
+			if tm == "1"
+				learnset_tms << all_tm_names[:tm_names][i]
+			end
+		end
+
+		tm_list[:hms].each_with_index do |hm, i|
+			if hm == "1"
+				learnset_tms << all_tm_names[:hm_names][i]
+			end
+		end
+
+		learnset_tms
+
 	end
 
 	def self.get_tutor_list(personal_data, field="tutors", length=31)
