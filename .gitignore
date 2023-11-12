@@ -22,3 +22,4 @@ passenger.3000.log
 /public/dist
 /public/*.json
 /public/calcs
+passenger.3000.log
