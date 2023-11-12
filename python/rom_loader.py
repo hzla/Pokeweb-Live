@@ -212,7 +212,7 @@ if narc_info["base_rom"] == "BW2":
 		f.write(overlay316.data)
 
 
-if sys.argv[3] != "true":
+if len(sys.argv) >= 4 and sys.argv[3] != "true":
 	B2_EFFECT_TABLE_OFFSET = 0X000407F4
 	W2_EFFECT_TABLE_OFFSET = 0X000407F4
 else:
@@ -273,7 +273,7 @@ settings["date_created"] = time.time()
 
 
 print(sys.argv)
-if sys.argv[3] != "true":
+if len(sys.argv) >= 4 and sys.argv[3] != "true":
 	settings["fairy"] = False
 else:
 	settings["fairy"] = True
