@@ -48,7 +48,7 @@
 				<div class="trainer-id"><%= i %></div>
 
 				<div class="trainer-name"><%= @names[i] %></div>
-
+				<% p  i %>
 				<%= field "class", 'trainer-class', {value: "#{@class_names[trainer['class_id']]} (#{trainer['class_id']})",  narc: "trdata", autofill: "class_names"} %>		
 
 				<%= field "battle_type_1", 'trainer-btype', {value: trainer["battle_type"],  narc: "trdata", autofill: "battle_types"} %>	

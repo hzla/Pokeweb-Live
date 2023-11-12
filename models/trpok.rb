@@ -315,6 +315,8 @@ class Trpok < Pokenarc
 		# 	file_name = file_name % 1024
 		# end
 
+		$rom_name = "projects/renplat"
+
 		file_path = "#{$rom_name}/json/trpok/#{file_name}.json"
 		trpok = JSON.parse(File.open(file_path, "r"){|f| f.read})
 		ability_slot = trpok["readable"]["ability_#{sub_index}"]
@@ -324,7 +326,7 @@ class Trpok < Pokenarc
 		trdata = JSON.parse(File.open(file_path, "r"){|f| f.read})["raw"]
 
 
-		pok_id = trpok["species_id_#{sub_index}"]
+		pok_id = trpok["species_id_#{sub_index}"].to_i
 
 		if pok_id.to_i > 1024
 			pok_id = pok_id % 1024
@@ -347,17 +349,17 @@ class Trpok < Pokenarc
 		gender_table = File.read("texts/pl_genders.txt").split("\n")
 		gender = gender_table[trainer_class] == "01" ? "female" : "male"
 
-		if personal["gender"] < 127
-			gender = "male"
-		end
+		# if personal["gender"] < 127
+		# 	gender = "male"
+		# end
 
-		if personal["gender"] > 127
-			gender = "female"
-		end
+		# if personal["gender"] > 127
+		# 	gender = "female"
+		# end
 
-		if personal["gender"] >= 254
-			gender = "male"
-		end
+		# if personal["gender"] >= 254
+		# 	gender = "female"
+		# end
 
 		if file_name == 993
 			p gender
@@ -395,6 +397,11 @@ class Trpok < Pokenarc
 		# add ab if hgss
 
 		nature_id = (pid.to_i(16).to_s[-2..-1].to_i) % 25
+
+		# uncomment the next line if hgss
+		# nature_id = ((pid.to_i(16).to_s[-2..-1].to_i) + ab) % 25
+
+
 		RomInfo.natures[nature_id]
 	end
 

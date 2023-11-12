@@ -183,6 +183,9 @@ class MyApp < Sinatra::Base
 		p "xdelta3 -d -s ./base/blank.nds ./base/#{base}.xdelta ./base/#{base}.nds"
 		system "xdelta3 -d -s ./base/blank.nds ./base/#{base}.xdelta ./base/#{base}.nds"
 
+
+		# xdelta3 -d -s ./base/blank.nds ./base/SS.xdelta ./base/SS.nds
+
 		# create uploaded rom
 
 		if File.size("./xdeltas/#{rom_name}.xdelta") > 50000000
@@ -210,6 +213,8 @@ class MyApp < Sinatra::Base
 
 		p "xdelta3 -e -s ./base/#{base}.nds ./exports/#{rom_name}.nds ./exports/#{rom_name}_edited.xdelta"
 		system "xdelta3 -e -s ./base/#{base}.nds ./exports/#{rom_name}.nds ./exports/#{rom_name}_edited.xdelta"
+
+		# xdelta3 -e -s ./base/SS.nds ./SS.nds ./exports/stormsilver.xdelta
 
 		#delete base rom
 		system "rm -rf ./base/#{base}.nds"

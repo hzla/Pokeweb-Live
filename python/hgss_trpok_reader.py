@@ -219,6 +219,7 @@ def to_readable(raw, file_name, template, num_pokemon):
 			base_form_id = raw[f'species_id_{n}'] - (2048 * form)
 
 
+			print(base_form_id)
 			readable[f'species_id_{n}'] = POKEDEX[base_form_id]
 
 			readable[f'form_{n}'] = form + 1
