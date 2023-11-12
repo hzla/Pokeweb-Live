@@ -315,7 +315,7 @@ class Trpok < Pokenarc
 		# 	file_name = file_name % 1024
 		# end
 
-		$rom_name = "projects/renplat"
+		# $rom_name = "projects/renplat"
 
 		file_path = "#{$rom_name}/json/trpok/#{file_name}.json"
 		trpok = JSON.parse(File.open(file_path, "r"){|f| f.read})

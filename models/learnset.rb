@@ -6,4 +6,9 @@ class Learnset < Pokenarc
 		@@upcases = "all"
 		super
 	end
+
+	def self.get_all
+		@@narc_name = "learnsets"
+		super
+	end
 end
