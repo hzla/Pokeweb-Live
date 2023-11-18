@@ -1,18 +1,33 @@
 class Trdata < Pokenarc
 
 
-	def self.write_data data, batch=false
+	def self.write_data data, batch=false, write_to="readable"
 		@@narc_name = "trdata"
 		@@upcases = []
 		if data["field"][0..3] == "text"
 			return update_text(data)
 		end
-		super
+		super(data, batch, write_to)
 	end
 
-	def self.get_all 
+
+	def self.set_all_expert
+		trainers = get_all true
+		trainer_count = trainers.length
+
+		(0..trainer_count - 1).each do |n|
+			["Prioritize Effectiveness", "Evaluate Attacks", "Expert"].each do |flag|
+				updates = {"file_name" => n.to_s, "field" => flag, "value" => 1, "narc" => 'trdata', "int" => true}
+				write_data updates
+			end
+			new_ai = trainers[n]["ais"] | 7
+			write_data({"file_name" => n.to_s, "field" => "ais", "value" => new_ai, "narc" => 'trdata', "int" => true}, false, "raw")
+		end
+	end
+
+	def self.get_all use_raw=false 
 		@@narc_name = "trdata"
-		super
+		super use_raw
 	end
 
 	def self.get_data file_name
