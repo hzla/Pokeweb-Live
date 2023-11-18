@@ -63,7 +63,7 @@ if narc_info["base_rom"] == "BW2":
 	MSG_BANKS = BW2_MSG_BANKS
 else:
 	MSG_BANKS = BW_MSG_BANKS
-	NARCS[3][0] = "a/0/5/7"
+	# NARCS[3][0] = "a/0/5/7"
 
 
 
