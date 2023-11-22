@@ -151,6 +151,20 @@ class Personal
 		end
 	end
 
+def self.scale_exp scale
+
+(1..708).each do |n|
+path = "#{$rom_name}/json/personal/#{n}.json"
+pok = JSON.parse(File.open(path, "r"){|f| f.read})
+val = pok["raw"]["base_exp"]
+
+pok["raw"]["base_exp"] = [(val * scale).to_i, 255].min
+pok["readable"]["base_exp"] = [(val * scale).to_i, 255].min
+
+File.write(path, JSON.dump(pok))
+end
+end
+
 
 	def self.unavailable_sprite_indexes
 		personals = poke_data

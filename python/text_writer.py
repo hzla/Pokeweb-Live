@@ -20,7 +20,7 @@ def set_global_vars(rom_name):
         NARC_FILE_IDS["message_texts"] = settings["message_texts"]
         NARC_FILE_IDS["trtext_table"] = settings["trtext_table"]
         NARC_FILE_IDS["trtext_offsets"] = settings["trtext_offsets"]
-        NARC_FILE_IDS["scripts"] = settings["scripts"]
+        # NARC_FILE_IDS["scripts"] = settings["scripts"]
         REPLACE_TR_SCRIPT = settings["enable_single_npc_dbl_battles"]
         POKEDEX = open(f'{ROM_NAME}/texts/pokedex.txt', "r").read().splitlines()
         
@@ -62,46 +62,46 @@ def output_narc(rom, rom_name):
 
     ######## SCRIPTS ###########
 
-    narc = ndspy.narc.NARC(rom.files[NARC_FILE_IDS["scripts"]])
-    narc.endiannessOfBeginning = ">"
+    # narc = ndspy.narc.NARC(rom.files[NARC_FILE_IDS["scripts"]])
+    # narc.endiannessOfBeginning = ">"
 
-    scripts = os.listdir(f'{ROM_NAME}/scripts')
+    # scripts = os.listdir(f'{ROM_NAME}/scripts')
 
-    for file in scripts:
-        if file.endswith(".txt"):
-            print(f'detected')
-            bank_id = int(file.split(".txt")[0])
-            bank_bin = open(f'{ROM_NAME}/scripts/{bank_id}.bin', "rb").read()
-            narc.files[bank_id] = bank_bin
+    # for file in scripts:
+    #     if file.endswith(".txt"):
+    #         print(f'detected')
+    #         bank_id = int(file.split(".txt")[0])
+    #         bank_bin = open(f'{ROM_NAME}/scripts/{bank_id}.bin', "rb").read()
+    #         narc.files[bank_id] = bank_bin
 
-        #always apply aspertia city starter script
-        if file == "854.bin" and BASE_ROM == "BW2" and STARTERS != ["SNIVY", "TEPIG", "OSHAWOTT"] :
-            print(STARTERS)
-            bank_id = int(file.split(".bin")[0])
-            bank_bin = open(f'{ROM_NAME}/scripts/{bank_id}.bin', "rb").read()
-            narc.files[bank_id] = bank_bin
-            rom.files[NARC_FILE_IDS["scripts"]] = narc.save()
+    #     #always apply aspertia city starter script
+    #     if file == "854.bin" and BASE_ROM == "BW2" and STARTERS != ["SNIVY", "TEPIG", "OSHAWOTT"] :
+    #         print(STARTERS)
+    #         bank_id = int(file.split(".bin")[0])
+    #         bank_bin = open(f'{ROM_NAME}/scripts/{bank_id}.bin', "rb").read()
+    #         narc.files[bank_id] = bank_bin
+    #         rom.files[NARC_FILE_IDS["scripts"]] = narc.save()
 
-            starter_sprites = ndspy.narc.NARC(rom.files[NARC_FILE_IDS["starter_sprites"]])
+    #         starter_sprites = ndspy.narc.NARC(rom.files[NARC_FILE_IDS["starter_sprites"]])
 
-            for idx, starter in enumerate(STARTERS):
-                species_id = POKEDEX.index(starter)
-                print(f"replacing with {[starter, species_id]}")
-                starter_sprites.files[idx + 12] = open(f'base_files/g5sprites/{species_id}_sprite.bin', "rb").read()
-                starter_sprites.files[idx * 2] = open(f'base_files/g5sprites/{species_id}_pallete.rlcn', "rb").read()
-
-
-            rom.files[NARC_FILE_IDS["starter_sprites"]] = starter_sprites.save()
+    #         for idx, starter in enumerate(STARTERS):
+    #             species_id = POKEDEX.index(starter)
+    #             print(f"replacing with {[starter, species_id]}")
+    #             starter_sprites.files[idx + 12] = open(f'base_files/g5sprites/{species_id}_sprite.bin', "rb").read()
+    #             starter_sprites.files[idx * 2] = open(f'base_files/g5sprites/{species_id}_pallete.rlcn', "rb").read()
 
 
+    #         rom.files[NARC_FILE_IDS["starter_sprites"]] = starter_sprites.save()
 
 
 
 
-    if REPLACE_TR_SCRIPT and BASE_ROM == "BW2":
-        bank_bin = open(f'Reference_Files/1239.bin', "rb").read()
-        narc.files[1239] = bank_bin
-        rom.files[NARC_FILE_IDS["scripts"]] = narc.save()
+
+
+    # if REPLACE_TR_SCRIPT and BASE_ROM == "BW2":
+    #     bank_bin = open(f'Reference_Files/1239.bin', "rb").read()
+    #     narc.files[1239] = bank_bin
+    #     rom.files[NARC_FILE_IDS["scripts"]] = narc.save()
 
     return rom
 
