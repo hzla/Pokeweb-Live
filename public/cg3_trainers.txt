@@ -1,0 +1,4704 @@
+PkMn Trainer Bianca 59 (Singles) (None)
+
+Oshawott   Lv.5   @-              Torrent        Lax      , , , 
+---
+
+PkMn Trainer Cheren 53 (Singles) (None)
+
+Tepig      Lv.5   @-              Blaze          Impish   , , , 
+---
+
+PkMn Trainer Bianca2 60 (Singles) (None)
+
+Snivy      Lv.5   @-              Overgrow       Bold     , , , 
+---
+
+PkMn Trainer Cheren3 55 (Singles) (None)
+
+Snivy      Lv.5   @-              Overgrow       Serious  , , , 
+---
+
+PkMn Trainer Cheren2 54 (Singles) (None)
+
+Oshawott   Lv.5   @-              Torrent        Quiet    , , , 
+---
+
+PkMn Trainer Bianca3 61 (Singles) (None)
+
+Tepig      Lv.5   @-              Blaze          Naughty  , , , 
+---
+
+-----------------
+Dreamyard
+-----------------
+
+>>>>>>>>>>>>>>>>
+Youngster Joey 7 (Singles) (None)
+
+Rattata    Lv.8   @-              Hustle         Quiet    Tackle, Bite, , 
+Rattata    Lv.8   @-              Hustle         Quiet    Tackle, Bite, , 
+---
+
+-----------------
+Route 2
+-----------------
+
+>>>>>>>>>>>>>>>>
+Youngster Roland 85 (Singles) (None)
+
+Lillipup   Lv.8   @None           Vital Spirit   Gentle   Tackle, Bite, Work Up, 
+Duskull    Lv.8   @Berry Juice    Levitate       Sassy    Curse, Confuse Ray, Shadow Sneak, 
+---
+
+Youngster Jimmy 1 (Singles) (None)
+
+Patrat     Lv.8   @-              Run Away       Adamant  Tackle, Bite, Leer, 
+Taillow    Lv.8   @-              Guts           Brave    Peck, Focus Energy, Quick Attack, 
+---
+
+PkMn Trainer N 64 (Singles) (None)
+
+Purrloin   Lv.7   @Oran Berry     Prankster      Timid    Fake Out, Thunder Wave, Feint Attack, 
+Scraggy    Lv.8   @Oran Berry     Intimidate     Naive    Fake Out, Work Up, Headbutt, Rock Smash
+---
+
+-----------------
+Dreamyard
+-----------------
+
+>>>>>>>>>>>>>>>>
+Lass Eri 8 (Singles) (None)
+
+Starly     Lv.8   @-              Keen Eye       Sassy    Wing Attack, Growl, Quick Attack, 
+Bidoof     Lv.8   @-              Simple         Jolly    Defense Curl, Tackle, , 
+---
+
+Harlequin 197 (Singles) (None)
+
+Patrat     Lv.10  @-              Run Away       Quirky   , , , 
+---
+
+Subway Boss Ingo 406 (Singles) (None)
+
+Patrat     Lv.10  @-              Run Away       Hardy    , , , 
+---
+
+Team Plasma 4 497 (Singles) (None)
+
+Patrat     Lv.10  @-              Run Away       Serious  , , , 
+---
+
+PkMn Trainer Bianca10 498 (Singles) (None)
+
+Skitty     Lv.9   @None           Normalize      Naive    Fake Out, Charm, Wake-Up Slap, 
+Oshawott   Lv.10  @Oran Berry     Shell Armor    Gentle   Tackle, Tail Whip, Aqua Jet, 
+---
+
+Ace Trainer 3 280 (Singles) (None)
+
+Patrat     Lv.10  @-              Run Away       Modest   , , , 
+---
+
+PkMn Trainer Bianca11 499 (Singles) (None)
+
+Skitty     Lv.9   @None           Normalize      Rash     Fake Out, Charm, Wake-Up Slap, 
+Snivy      Lv.10  @Oran Berry     Overgrow       Quiet    Tackle, Leer, Mega Drain, 
+---
+
+Team Plasma 3 277 (Singles) (None)
+
+Patrat     Lv.10  @-              Run Away       Careful  , , , 
+---
+
+PkMn Trainer Bianca12 500 (Singles) (None)
+
+Skitty     Lv.9   @None           Normalize      Hardy    Fake Out, Charm, Wake-Up Slap, 
+Tepig      Lv.10  @Oran Berry     Blaze          Modest   Tackle, Tail Whip, Flame Charge, 
+---
+
+Worker 2 126 (Singles) (None)
+
+Patrat     Lv.10  @-              Run Away       Quiet    , , , 
+---
+
+PkMn Trainer 2 510 (Singles) (None)
+
+Patrat     Lv.10  @-              Run Away       Impish   , , , 
+---
+
+PkMn Trainer 3 511 (Singles) (None)
+
+Patrat     Lv.10  @-              Run Away       Naughty  , , , 
+---
+
+PkMn Trainer 4 512 (Singles) (None)
+
+Patrat     Lv.10  @-              Run Away       Serious  , , , 
+---
+
+Youngster Kyle 515 (Singles) (None)
+
+Cinccino   Lv.10  @-              Cute Charm     Modest   , , , 
+---
+
+Lass Dye 516 (Singles) (None)
+
+Lilligant  Lv.10  @-              Chlorophyll    Hardy    , , , 
+---
+
+Lass Dye2 517 (Singles) (None)
+
+Whimsicott Lv.10  @-              Prankster      Hasty    , , , 
+---
+
+Ace Trainer 4 521 (Singles) (None)
+
+Patrat     Lv.10  @-              Run Away       Hasty    , , , 
+---
+
+Ace Trainer 5 522 (Singles) (None)
+
+Patrat     Lv.10  @-              Run Away       Gentle   , , , 
+---
+
+Biker 527 (Rotation) (None)
+
+Patrat     Lv.10  @-              Run Away       Careful  , , , 
+---
+
+PkMn Trainer 5 558 (Singles) (None)
+
+Patrat     Lv.10  @-              Run Away       Serious  , , , 
+---
+
+PkMn Trainer 6 559 (Singles) (None)
+
+Patrat     Lv.10  @-              Run Away       Brave    , , , 
+---
+
+Team Plasma 80 (Singles) (None)
+
+Patrat     Lv.10  @-              Run Away       Naive    , , , 
+---
+
+Worker 79 (Singles) (None)
+
+Patrat     Lv.10  @-              Run Away       Quirky   , , , 
+---
+
+PkMn Trainer 7 560 (Singles) (None)
+
+Patrat     Lv.10  @-              Run Away       Quiet    , , , 
+---
+
+Subway Boss Emmet 614 (Singles) (None)
+
+Patrat     Lv.10  @-              Run Away       Impish   , , , 
+---
+
+PkMn Trainer 8 561 (Singles) (None)
+
+Patrat     Lv.10  @-              Run Away       Relaxed  , , , 
+---
+
+-----------------
+Route 2
+-----------------
+
+>>>>>>>>>>>>>>>>
+Lass Mali 2 (Singles) (None)
+
+Smeargle   Lv.10  @None           Moody          Hasty    Spore, Roar of Time, Wish, Memento
+Purrloin   Lv.8   @None           Prankster      Hardy    Assist, , , 
+---
+
+Veteran 562 (Singles) (None)
+
+Patrat     Lv.10  @-              Run Away       Rash     , , , 
+---
+
+Ace Trainer 6 534 (Singles) (None)
+
+Patrat     Lv.10  @-              Run Away       Gentle   , , , 
+---
+
+Clerk  M 282 (Singles) (None)
+
+Patrat     Lv.10  @-              Run Away       Modest   , , , 
+---
+
+Ace Trainer 2 273 (Singles) (None)
+
+Patrat     Lv.10  @-              Run Away       Rash     , , , 
+---
+
+PkMn Trainer 219 (Singles) (None)
+
+Patrat     Lv.10  @-              Run Away       Impish   , , , 
+---
+
+Team Plasma 2 220 (Singles) (None)
+
+Patrat     Lv.10  @-              Run Away       Serious  , , , 
+---
+
+Ace Trainer 268 (Singles) (None)
+
+Patrat     Lv.10  @-              Run Away       Serious  , , , 
+---
+
+Waiter 283 (Singles) (None)
+
+Patrat     Lv.10  @-              Run Away       Gentle   , , , 
+---
+
+Lady 286 (Singles) (None)
+
+Patrat     Lv.10  @-              Run Away       Naive    , , , 
+---
+
+PkMn Trainer Cheren10 287 (Singles) (None)
+
+Tepig      Lv.10  @Oran Berry     Blaze          Jolly    Tackle, Tail Whip, Flame Charge, 
+Psyduck    Lv.9   @None           Swift Swim     Relaxed  Water Gun, Disable, Confusion, 
+---
+
+PkMn Trainer Cheren11 288 (Singles) (None)
+
+Oshawott   Lv.10  @Oran Berry     Shell Armor    Hasty    Tackle, Tail Whip, Aqua Jet, 
+Lotad      Lv.9   @None           Swift Swim     Lonely   Mega Drain, Water Gun, Tickle, 
+---
+
+Twins 204 (Doubles) (None)
+
+Patrat     Lv.10  @-              Run Away       Bashful  , , , 
+Patrat     Lv.10  @-              Run Away       Bashful  , , , 
+---
+
+PkMn Trainer Cheren12 289 (Singles) (None)
+
+Snivy      Lv.10  @Oran Berry     Overgrow       Docile   Tackle, Leer, Mega Drain, 
+Aron       Lv.9   @None           Sturdy         Rash     Metal Claw, Mud-Slap, Harden, 
+---
+
+-----------------
+Striaton City
+-----------------
+
+>>>>>>>>>>>>>>>>
+Waitress Tia 10 (Singles) (None)
+
+Cottonee   Lv.12  @-              Prankster      Hasty    Cotton Guard, Leech Seed, Protect, 
+Cyndaquil  Lv.13  @-              Flash Fire     Mild     Incinerate, Smokescreen, Swift, 
+Panpour    Lv.13  @-              Gluttony       Bold     Water Gun, Yawn, Tackle, 
+---
+
+Team Plasma Grunt29 308 (Singles) (None)
+
+Purrloin   Lv.14  @-              Limber         Gentle   , , , 
+---
+
+Twins Kumi & Amy 18 (Doubles) (None)
+
+Togepi     Lv.14  @-              Serene Grace   Naive    Thunder Wave, Headbutt, Soft-Boiled, 
+Smoochum   Lv.14  @-              Oblivious      Naive    Sweet Kiss, Confusion, Fake Out, 
+---
+
+-----------------
+Route 3
+-----------------
+
+>>>>>>>>>>>>>>>>
+PkMn Breeder Adelaide 20 (Singles) (Oran Berry)
+
+Patrat     Lv.14  @-              Run Away       Bashful  , , , 
+Lillipup   Lv.14  @-              Vital Spirit   Mild     , , , 
+Pidove     Lv.14  @-              Big Pecks      Lax      , , , 
+---
+
+Team Plasma Grunt14 293 (Singles) (None)
+
+Patrat     Lv.14  @-              Run Away       Gentle   , , , 
+---
+
+School Kid Edgar 84 (Singles) (None)
+
+Pidove     Lv.15  @-              Big Pecks      Hardy    , , , 
+Roggenrola Lv.15  @-              Sturdy         Serious  , , , 
+---
+
+School Kid Gina 292 (Singles) (None)
+
+Patrat     Lv.15  @-              Run Away       Calm     , , , 
+Purrloin   Lv.15  @-              Limber         Sassy    , , , 
+---
+
+School Kid Marsha 4 (Singles) (None)
+
+Woobat     Lv.15  @-              Unaware        Adamant  , , , 
+---
+
+Team Plasma Grunt15 294 (Singles) (None)
+
+Drowzee    Lv.16  @Oran Berry     Inner Focus    Serious  Confusion, Hypnosis, Low Sweep, 
+---
+
+Preschooler Wendy 15 (Singles) (None)
+
+Combusken  Lv.16  @Oran Berry     Speed Boost    Gentle   Detect, Double Kick, Incinerate, 
+---
+
+Team Plasma Grunt1 62 (Singles) (None)
+
+Murkrow    Lv.16  @Eviolite       Prankster      Hardy    Tailwind, Quash, Foul Play, 
+---
+
+Team Plasma Grunt2 63 (Singles) (None)
+
+Timburr    Lv.16  @Oran Berry     Iron Fist      Hasty    Bulk Up, Mach Punch, Rock Tomb, Karate Chop
+---
+
+Nursery Aide Autumn 14 (Singles) (None)
+
+Lillipup   Lv.15  @-              Vital Spirit   Impish   , , , 
+Munna      Lv.16  @-              Forewarn       Modest   , , , 
+---
+
+Leader Cress 13 (Singles) (None)
+
+Wingull    Lv.16  @Wide Lens      Drizzle        Timid    Water Gun, Wing Attack, Supersonic, 
+Parasect   Lv.16  @Miracle Seed   Dry Skin       Sassy    Bullet Seed, Bug Bite, Stun Spore, Rock Smash
+Psyduck    Lv.16  @Oran Berry     Swift Swim     Sassy    Water Gun, Confusion, Disable, 
+---
+
+Leader Cilan 12 (Singles) (None)
+
+Exeggcute  Lv.16  @Oran Berry     Harvest        Lax      Stun Spore, Bullet Seed, Confusion, 
+Krabby     Lv.16  @Mystic Water   Shell Armor    Jolly    Aqua Jet, Rock Tomb, X-Scissor, 
+Bayleef    Lv.16  @Oran Berry     Overgrow       Docile   Magical Leaf, Leech Seed, Toxic, Bulldoze
+---
+
+Leader Chili 11 (Singles) (None)
+
+Numel      Lv.16  @Passho Berry   Simple         Hardy    Flame Charge, Rock Tomb, Bulldoze, 
+Shroomish  Lv.16  @Oran Berry     Effect Spore   Calm     Mega Drain, Leech Seed, Protect, Spore
+Darumaka   Lv.16  @Oran Berry     Inner Focus    Hardy    Fire Fang, Work Up, Rock Tomb, Rock Smash
+---
+
+Preschooler Tully 17 (Singles) (None)
+
+Grovyle    Lv.16  @Focus Sash     Unburden       Gentle   Bullet Seed, Aerial Ace, Rock Tomb, 
+---
+
+Preschooler Doyle 16 (Singles) (None)
+
+Marshtomp  Lv.16  @Damp Rock      Damp           Hardy    Rain Dance, Mud Shot, Water Gun, 
+---
+
+PkMn Trainer Cheren5 57 (Singles) (None)
+
+Dewott     Lv.16  @Oran Berry     Shell Armor    Bashful  Aqua Jet, Work Up, Razor Shell, Aerial Ace
+Lotad      Lv.15  @Oran Berry     Swift Swim     Modest   Water Pulse, Mega Drain, Icy Wind, 
+---
+
+PkMn Trainer Cheren6 58 (Singles) (None)
+
+Servine    Lv.16  @Oran Berry     Overgrow       Brave    Glare, Magical Leaf, Twister, Leech Seed
+Aron       Lv.15  @Oran Berry     Sturdy         Impish   Rock Tomb, Metal Claw, Bulldoze, 
+---
+
+School Kid Al 3 (Singles) (None)
+
+Blitzle    Lv.16  @-              Lightning Rod  Careful  , , , 
+---
+
+PkMn Trainer Cheren4 56 (Singles) (None)
+
+Pignite    Lv.16  @Oran Berry     Blaze          Timid    Tackle, Work Up, Flame Charge, Wake-Up Slap
+Psyduck    Lv.15  @Oran Berry     Swift Swim     Relaxed  Water Pulse, Confusion, Yawn, Disable
+---
+
+-----------------
+Liberty Garden
+-----------------
+
+>>>>>>>>>>>>>>>>
+Team Plasma Grunt37 554 (Singles) (None)
+
+Sandile    Lv.17  @-              Intimidate     Naive    , , , 
+Patrat     Lv.17  @-              Run Away       Brave    , , , 
+---
+
+Team Plasma Grunt39 556 (Singles) (None)
+
+Patrat     Lv.17  @-              Run Away       Quirky   , , , 
+Scraggy    Lv.17  @-              Shed Skin      Lonely   , , , 
+---
+
+PkMn Trainer N2 65 (Singles) (None)
+
+Drilbur    Lv.17  @None           Mold Breaker   Timid    Bulldoze, Rapid Spin, Rock Tomb, Sand Attack
+Blitzle    Lv.17  @None           Lightning Rod  Adamant  Spark, Flame Charge, Work Up, Bulldoze
+Audino     Lv.18  @Sitrus Berry   Regenerator    Bold     Wish, Swagger, Thunder Wave, Secret Power
+---
+
+-----------------
+Nacrene City
+-----------------
+
+>>>>>>>>>>>>>>>>
+School Kid Carter 86 (Singles) (None)
+
+Zigzagoon  Lv.18  @Sitrus Berry   Gluttony       Naughty  Covet, Sand Attack, Thief, Flail
+Aipom      Lv.18  @None           Skill Link     Bold     Fake Out, Fury Swipes, Sand Attack, Rock Smash
+---
+
+-----------------
+Liberty Garden
+-----------------
+
+>>>>>>>>>>>>>>>>
+Team Plasma Grunt38 555 (Singles) (None)
+
+Sandile    Lv.18  @-              Intimidate     Serious  , , , 
+---
+
+-----------------
+Pinwheel Forest
+-----------------
+
+>>>>>>>>>>>>>>>>
+Preschooler Juliet 501 (Singles) (None)
+
+Cottonee   Lv.18  @-              Prankster      Timid    , , , 
+Petilil    Lv.18  @-              Chlorophyll    Timid    , , , 
+---
+
+-----------------
+Liberty Garden
+-----------------
+
+>>>>>>>>>>>>>>>>
+Team Plasma Grunt36 553 (Singles) (None)
+
+Patrat     Lv.18  @-              Run Away       Brave    , , , 
+---
+
+Scientist Satomi 88 (Singles) (None)
+
+Herdier    Lv.18  @None           Intimidate     Quirky   Take Down, Bite, Work Up, Aerial Ace
+Togetic    Lv.19  @Eviolite       Hustle         Hasty    Metronome, , , 
+---
+
+School Kid Lydia 87 (Singles) (None)
+
+Teddiursa  Lv.17  @None           Quick Feet     Gentle   Covet, Rock Smash, Aerial Ace, Bulk Up
+Swablu     Lv.18  @Wide Lens      Natural Cure   Naive    Sing, Take Down, Aerial Ace, 
+Snubbull   Lv.19  @None           Intimidate     Docile   Covet, Fire Punch, Bulldoze, Thunder Punch
+---
+
+-----------------
+Castelia City
+-----------------
+
+>>>>>>>>>>>>>>>>
+Clerk  F Alberta 94 (Singles) (None)
+
+Vileplume  Lv.20  @-              Chlorophyll    Calm     Toxic, Acid Spray, Growth, Mega Drain
+Bellossom  Lv.20  @-              Chlorophyll    Naive    Sunny Day, Stun Spore, Growth, Mega Drain
+---
+
+Team Plasma Grunt40 557 (Singles) (None)
+
+Watchog    Lv.20  @-              Illuminate     Bashful  , , , 
+---
+
+Clerk  F Ingrid 93 (Singles) (None)
+
+Herdier    Lv.20  @-              Intimidate     Calm     , , , 
+---
+
+-----------------
+Pinwheel Forest
+-----------------
+
+>>>>>>>>>>>>>>>>
+Nurse Shery 546 (Singles) (None)
+
+Chansey    Lv.20  @Eviolite       Natural Cure   Mild     Soft-Boiled, Toxic, Seismic Toss, Protect
+---
+
+-----------------
+Castelia City
+-----------------
+
+>>>>>>>>>>>>>>>>
+Scientist Randall 113 (Singles) (None)
+
+Magnemite  Lv.20  @-              Magnet Pull    Calm     Thunder Wave, Magnet Bomb, Supersonic, Spark
+Koffing    Lv.19  @-              Levitate       Impish   Flame Burst, Assurance, Smokescreen, Sludge
+---
+
+Scientist Steve 114 (Singles) (None)
+
+Magnemite  Lv.20  @-              Magnet Pull    Quirky   Thunder Wave, Magnet Bomb, Supersonic, Thunder Shock
+---
+
+Scientist Samantha 116 (Singles) (None)
+
+Voltorb    Lv.20  @-              Soundproof     Careful  , , , 
+---
+
+-----------------
+Pinwheel Forest
+-----------------
+
+>>>>>>>>>>>>>>>>
+Preschooler Homer 502 (Singles) (None)
+
+Linoone    Lv.20  @-              Pickup         Rash     , , , 
+---
+
+Youngster Keita 145 (Singles) (None)
+
+Yanma      Lv.20  @-              Speed Boost    Gentle   Detect, Air Cutter, Ancient Power, Sonic Boom
+Tympole    Lv.20  @-              Swift Swim     Bold     , , , 
+Machop     Lv.20  @-              Guts           Lax      , , , 
+---
+
+-----------------
+Castelia City
+-----------------
+
+>>>>>>>>>>>>>>>>
+Clerk  M Clemens 165 (Singles) (None)
+
+Machop     Lv.20  @-              Guts           Mild     , , , 
+---
+
+Clerk  M Warren 166 (Singles) (None)
+
+Meowth     Lv.18  @-              Pickup         Modest   Screech, Fury Swipes, Fake Out, Bite
+Furret     Lv.20  @-              Run Away       Hardy    Knock Off, Fury Swipes, Quick Attack, Defense Curl
+Herdier    Lv.20  @-              Intimidate     Quirky   Work Up, Take Down, Aerial Ace, Bite
+---
+
+Clerk  M Ivan 167 (Singles) (None)
+
+Rufflet    Lv.20  @-              Keen Eye       Bold     , , , 
+---
+
+Clerk  M Wade 170 (Singles) (None)
+
+Charmeleon Lv.20  @-              Blaze          Lax      Dragon Breath, Smokescreen, Incinerate, Thunder Punch
+Croconaw   Lv.20  @-              Torrent        Docile   Scary Face, Bite, Ice Fang, Aqua Jet
+Grovyle    Lv.20  @-              Overgrow       Calm     Pursuit, Rock Tomb, Quick Attack, Bullet Seed
+---
+
+Harlequin Rick 200 (Singles) (None)
+
+Shuckle    Lv.20  @Berry Juice    Sturdy         Quiet    Toxic, Substitute, Sandstorm, Ancient Power
+---
+
+-----------------
+Pinwheel Forest
+-----------------
+
+>>>>>>>>>>>>>>>>
+PkMn Ranger Forrest 26 (Singles) (Chesto Berry)
+
+Herdier    Lv.21  @-              Intimidate     Lax      Work Up, Take Down, Aerial Ace, Bite
+---
+
+Dancer Raymond 601 (Singles) (None)
+
+Pansear    Lv.21  @-              Gluttony       Brave    , , , 
+---
+
+Janitor Geoff 137 (Singles) (None)
+
+Trubbish   Lv.21  @Eviolite       Aftermath      Lax      Thief, Spikes, Acid Spray, Toxic Spikes
+Cinccino   Lv.21  @Wide Lens      Skill Link     Naughty  Tail Slap, Sing, Bullet Seed, Wake-Up Slap
+---
+
+Battle Girl Lee 160 (Singles) (None)
+
+Timburr    Lv.21  @-              Guts           Docile   Wake-Up Slap, Rock Throw, Low Kick, Bide
+Meditite   Lv.21  @-              Pure Power     Hardy    Fake Out, Karate Chop, Detect, Confusion
+---
+
+Dancer Edmond 602 (Singles) (None)
+
+Panpour    Lv.21  @-              Gluttony       Adamant  , , , 
+---
+
+Black Belt Kentaro 111 (Singles) (None)
+
+Timburr    Lv.21  @-              Guts           Brave    , , , 
+Makuhita   Lv.21  @-              Thick Fat      Quiet    , , , 
+---
+
+PkMn Ranger Audra 29 (Singles) (Chesto Berry)
+
+Grotle     Lv.21  @-              Overgrow       Brave    Curse, Razor Leaf, Bulldoze, Mega Drain
+Growlithe  Lv.20  @-              Intimidate     Lax      Flame Wheel, Thunder Fang, Odor Sleuth, Leer
+---
+
+PkMn Ranger Miguel 28 (Singles) (Pecha Berry)
+
+Monferno   Lv.21  @-              Blaze          Serious  Flame Wheel, Fake Out, Mach Punch, Low Sweep
+Basculin   Lv.20  @-              Reckless       Bold     Take Down, Chip Away, Aqua Jet, Bite
+---
+
+Dancer Mickey 600 (Singles) (None)
+
+Pansage    Lv.21  @-              Gluttony       Brave    , , , 
+---
+
+PkMn Ranger Irene 27 (Singles) (Pecha Berry)
+
+Wartortle  Lv.21  @-              Torrent        Docile   Rapid Spin, Bite, Water Pulse, Withdraw
+Roselia    Lv.20  @-              Natural Cure   Mild     Magical Leaf, Leech Seed, Grass Whistle, Growth
+---
+
+School Kid Sammy 30 (Singles) (None)
+
+Mightyena  Lv.22  @-              Intimidate     Relaxed  Thunder Fang, Fire Fang, Bite, Sucker Punch
+---
+
+Twins Mayo & May 32 (Doubles) (None)
+
+Beautifly  Lv.22  @-              Swarm          Impish   Stun Spore, Mega Drain, Silver Wind, Tailwind
+Dustox     Lv.22  @-              Shield Dust    Lonely   Toxic, Venoshock, Silver Wind, Roost
+---
+
+School Kid Millie 31 (Singles) (None)
+
+Tranquill  Lv.21  @-              Rivalry        Lax      Roost, Air Cutter, Quick Attack, Leer
+Liepard    Lv.22  @-              Limber         Jolly    Fake Out, Torment, Assurance, Fury Swipes
+---
+
+Lass Eva 34 (Singles) (None)
+
+Swoobat    Lv.22  @-              Simple         Gentle   Air Cutter, Calm Mind, Confusion, Roost
+Glameow    Lv.20  @-              Limber         Quiet    Fury Swipes, Feint Attack, Hypnosis, Growl
+Furret     Lv.22  @-              Run Away       Timid    Knock Off, Covet, Me First, Quick Attack
+---
+
+Youngster Zachary 144 (Singles) (None)
+
+Herdier    Lv.20  @None           Intimidate     Serious  Take Down, Aerial Ace, Work Up, 
+Whirlipede Lv.22  @Rocky Helmet   Speed Boost    Lax      Rollout, Venoshock, Toxic, Pin Missile
+---
+
+Team Plasma Grunt17 296 (Singles) (None)
+
+Watchog    Lv.22  @-              Illuminate     Hardy    , , , 
+---
+
+Team Plasma Grunt18 297 (Singles) (None)
+
+Watchog    Lv.20  @-              Illuminate     Lonely   Covet, Hypnosis, Crunch, Sand Attack
+Trubbish   Lv.21  @-              Stench         Mild     Sludge, Double Slap, Acid Spray, Toxic Spikes
+Golbat     Lv.22  @-              Inner Focus    Hasty    Confuse Ray, Wing Attack, Bite, Poison Fang
+---
+
+Leader Lenora 21 (Singles) (None)
+
+Ambipom    Lv.19  @Silk Scarf     Technician     Naughty  Fake Out, Beat Up, U-turn, Tail Slap
+Porygon    Lv.19  @Eviolite       Download       Brave    Charge Beam, Tri Attack, Psybeam, Recover
+Sawsbuck   Lv.21  @Normal Gem     Serene Grace   Lonely   Headbutt, Horn Leech, Bounce, Retaliate
+Lopunny    Lv.22  @Eject Button   Limber         Modest   Retaliate, Secret Power, Fake Out, U-turn
+---
+
+Youngster Nicholas 33 (Singles) (None)
+
+Beedrill   Lv.21  @-              Swarm          Quiet    String Shot, Twineedle, Focus Energy, Cross Poison
+Timburr    Lv.22  @-              Guts           Modest   Wake-Up Slap, Rock Throw, Low Kick, Bide
+---
+
+-----------------
+Route 16
+-----------------
+
+>>>>>>>>>>>>>>>>
+Cyclist Krissa 409 (Singles) (None)
+
+Ducklett   Lv.22  @-              Keen Eye       Naive    , , , 
+Liepard    Lv.22  @-              Limber         Bold     , , , 
+---
+
+Cyclist Hector 408 (Singles) (None)
+
+Whirlipede Lv.22  @-              Poison Point   Bold     , , , 
+Whirlipede Lv.22  @-              Poison Point   Bold     , , , 
+---
+
+Team Plasma Grunt35 552 (Singles) (None)
+
+Grimer     Lv.21  @-              Stench         Rash     Sludge, Minimize, Disable, Toxic
+Carvanha   Lv.22  @-              Speed Boost    Impish   Aqua Jet, Snarl, Ice Fang, Bite
+---
+
+Backpacker Peter 442 (Singles) (None)
+
+Scraggy    Lv.23  @-              Shed Skin      Naive    , , , 
+---
+
+Harlequin Kerry 199 (Singles) (None)
+
+Butterfree Lv.23  @-              Compound Eyes  Brave    Psybeam, Silver Wind, Air Cutter, Sleep Powder
+Mothim     Lv.23  @-              Swarm          Naughty  Roost, Air Cutter, Silver Wind, Protect
+---
+
+-----------------
+Castelia City
+-----------------
+
+>>>>>>>>>>>>>>>>
+Harlequin Louis 198 (Singles) (None)
+
+Skorupi    Lv.23  @-              Battle Armor   Impish   Acupressure, Poison Tail, Pin Missile, Knock Off
+Masquerain Lv.23  @-              Intimidate     Hardy    Silver Wind, Water Pulse, Air Cutter, Quick Attack
+---
+
+Harlequin Jack 196 (Singles) (None)
+
+Swadloon   Lv.23  @-              Leaf Guard     Quirky   Protect, Razor Leaf, Bug Bite, String Shot
+Vespiquen  Lv.23  @-              Pressure       Hardy    Power Gem, Aerial Ace, Attack Order, Heal Order
+---
+
+Infielder Alex 191 (Singles) (None)
+
+Pansear    Lv.23  @-              Gluttony       Quirky   , , , 
+Panpour    Lv.23  @-              Gluttony       Quiet    , , , 
+Pansage    Lv.23  @-              Gluttony       Relaxed  , , , 
+---
+
+Team Plasma Grunt16 295 (Singles) (None)
+
+Sandile    Lv.23  @-              Intimidate     Jolly    Embargo, Rock Tomb, Assurance, Bulldoze
+---
+
+-----------------
+Route 16
+-----------------
+
+>>>>>>>>>>>>>>>>
+Backpacker Lora 438 (Singles) (None)
+
+Swadloon   Lv.23  @-              Leaf Guard     Rash     , , , 
+---
+
+Backpacker Stephen 443 (Singles) (None)
+
+Drilbur    Lv.23  @-              Sand Rush      Naive    , , , 
+---
+
+Preschooler Winter 536 (Singles) (None)
+
+Solosis    Lv.24  @-              Overcoat       Brave    , , , 
+---
+
+Rich Boy Martin 284 (Singles) (None)
+
+Tranquill  Lv.24  @-              Big Pecks      Relaxed  , , , 
+---
+
+Policeman Daniel 412 (Singles) (None)
+
+Herdier    Lv.24  @-              Intimidate     Impish   , , , 
+---
+
+Team Plasma Grunt44 610 (Singles) (None)
+
+Liepard    Lv.24  @-              Limber         Lonely   , , , 
+---
+
+Linebacker Dan 6 (Singles) (None)
+
+Darumaka   Lv.24  @-              Hustle         Brave    , , , 
+Timburr    Lv.24  @-              Guts           Calm     , , , 
+---
+
+Waitress Aurora 538 (Singles) (None)
+
+Swadloon   Lv.25  @-              Leaf Guard     Rash     , , , 
+---
+
+Hoopster Bobby 82 (Singles) (None)
+
+Whirlipede Lv.25  @-              Poison Point   Bashful  , , , 
+---
+
+Lass Maya 285 (Singles) (None)
+
+Gothita    Lv.25  @-              Frisk          Modest   , , , 
+---
+
+Smasher Elena 5 (Singles) (None)
+
+Blitzle    Lv.25  @-              Lightning Rod  Calm     , , , 
+---
+
+Hiker Andy 535 (Singles) (None)
+
+Boldore    Lv.25  @-              Sturdy         Jolly    , , , 
+---
+
+Striker Tony 129 (Singles) (None)
+
+Ducklett   Lv.25  @-              Keen Eye       Careful  , , , 
+---
+
+Dancer Dirk 537 (Singles) (None)
+
+Darumaka   Lv.25  @-              Hustle         Quirky   , , , 
+---
+
+Clerk  F Trisha 96 (Singles) (None)
+
+Minccino   Lv.25  @-              Cute Charm     Serious  , , , 
+---
+
+Leader Burgh 22 (Singles) (None)
+
+Dwebble    Lv.27  @Custap Berry   Sturdy         Docile   Stealth Rock, Rock Slide, Bug Bite, Bulldoze
+Yanmega    Lv.27  @Choice Scarf   Tinted Lens    Naughty  Giga Drain, U-turn, Bug Buzz, Air Slash
+Leavanny   Lv.27  @Focus Sash     Swarm          Mild     Razor Leaf, X-Scissor, Swords Dance, Protect
+Heracross  Lv.27  @Flame Orb      Guts           Adamant  Protect, Brick Break, Rock Tomb, Bug Bite
+---
+
+Ace Trainer Austin 281 (Singles) (None)
+
+Swoobat    Lv.27  @-              Unaware        Docile   , , , 
+---
+
+Motorcyclist Charles 506 (Triples) (None)
+
+Basculin   Lv.27  @-              Reckless       Brave    , , , 
+Krokorok   Lv.27  @-              Intimidate     Quiet    , , , 
+Zebstrika  Lv.27  @-              Lightning Rod  Impish   , , , 
+---
+
+PkMn Trainer Bianca14 508 (Singles) (None)
+
+Delcatty   Lv.28  @Silk Scarf     Normalize      Careful  Fake Out, Wake-Up Slap, Sucker Punch, 
+Vaporeon   Lv.28  @Mystic Water   Water Absorb   Rash     Wish, Water Pulse, Aurora Beam, Toxic
+Sandslash  Lv.28  @Salac Berry    Sand Veil      Naughty  Aerial Ace, Swords Dance, Rock Slide, Bulldoze
+Servine    Lv.30  @Focus Sash     Overgrow       Lonely   Protect, Glare, Leech Seed, Leaf Tornado
+---
+
+PkMn Trainer Bianca13 507 (Singles) (None)
+
+Delcatty   Lv.28  @Silk Scarf     Normalize      Quiet    Fake Out, Wake-Up Slap, Sucker Punch, 
+Flareon    Lv.28  @Charcoal       Flash Fire     Hardy    Quick Attack, Flame Charge, Incinerate, Will-O-Wisp
+Lucario    Lv.28  @Focus Sash     Inner Focus    Bold     Bullet Punch, Swords Dance, Brick Break, Rock Tomb
+Dewott     Lv.30  @Normal Gem     Shell Armor    Bold     Retaliate, Aqua Jet, Aerial Ace, Razor Shell
+---
+
+Lass Miki 484 (Singles) (None)
+
+Togekiss   Lv.30  @-              Hustle         Mild     , , , 
+---
+
+Backpacker Herman 480 (Singles) (None)
+
+Porygon-Z  Lv.30  @-              Adaptability   Brave    , , , 
+---
+
+Backpacker Carlos 479 (Singles) (None)
+
+Staraptor  Lv.30  @-              Intimidate     Naive    , , , 
+---
+
+Backpacker Emi 478 (Singles) (None)
+
+Blissey    Lv.30  @-              Natural Cure   Relaxed  , , , 
+---
+
+Backpacker Molly 477 (Singles) (None)
+
+Azumarill  Lv.30  @-              Thick Fat      Naive    , , , 
+---
+
+Youngster Robbie 476 (Singles) (None)
+
+Electivire Lv.30  @-              Motor Drive    Relaxed  , , , 
+---
+
+Roughneck Dave 475 (Singles) (None)
+
+Gengar     Lv.30  @-              Levitate       Brave    , , , 
+---
+
+PkMn Trainer Bianca15 509 (Singles) (None)
+
+Delcatty   Lv.28  @Silk Scarf     Normalize      Naughty  Fake Out, Wake-Up Slap, Sucker Punch, 
+Leafeon    Lv.28  @Focus Sash     Leaf Guard     Rash     Quick Attack, Seed Bomb, Swords Dance, Grass Whistle
+Lucario    Lv.28  @Shuca Berry    Inner Focus    Quiet    Bullet Punch, Swords Dance, Brick Break, Rock Tomb
+Pignite    Lv.30  @Muscle Band    Blaze          Quirky   Grass Knot, Rock Slide, Flame Charge, Arm Thrust
+---
+
+Infielder Alex2 320 (Singles) (None)
+
+Pansage    Lv.31  @-              Gluttony       Quiet    , , , 
+Pansear    Lv.31  @-              Gluttony       Timid    , , , 
+Panpour    Lv.31  @-              Gluttony       Mild     , , , 
+---
+
+Backers Hawk & Dar 172 (Doubles) (None)
+
+Darumaka   Lv.31  @-              Hustle         Bashful  , , , 
+Darumaka   Lv.31  @-              Hustle         Bashful  , , , 
+---
+
+Backers Joe & Ross 173 (Doubles) (None)
+
+Zebstrika  Lv.31  @-              Lightning Rod  Naive    , , , 
+Zebstrika  Lv.31  @-              Lightning Rod  Naive    , , , 
+---
+
+Backers Masa & Yas 174 (Doubles) (None)
+
+Scolipede  Lv.31  @-              Poison Point   Quirky   , , , 
+Scolipede  Lv.31  @-              Poison Point   Quirky   , , , 
+---
+
+Backers Kay & Ali 175 (Doubles) (None)
+
+Ducklett   Lv.31  @-              Keen Eye       Docile   , , , 
+Ducklett   Lv.31  @-              Keen Eye       Docile   , , , 
+---
+
+Backers Ami & Eira 176 (Doubles) (None)
+
+Panpour    Lv.31  @-              Gluttony       Adamant  , , , 
+Pansear    Lv.31  @-              Gluttony       Mild     , , , 
+---
+
+-----------------
+Route 4
+-----------------
+
+>>>>>>>>>>>>>>>>
+Fisherman Hubert 41 (Singles) (None)
+
+Palpitoad  Lv.32  @Rindo Berry    Water Absorb   Impish   Muddy Water, Uproar, Aqua Ring, Mud Shot
+Gastrodon  Lv.32  @Rindo Berry    Sand Force     Bold     Ancient Power, Icy Wind, Muddy Water, Mud Bomb
+---
+
+-----------------
+Route 7
+-----------------
+
+>>>>>>>>>>>>>>>>
+Ace Trainer Elmer 606 (Triples) (None)
+
+Liepard    Lv.32  @-              Limber         Mild     , , , 
+Swoobat    Lv.32  @-              Unaware        Impish   , , , 
+Watchog    Lv.32  @-              Illuminate     Impish   , , , 
+---
+
+-----------------
+Route 4
+-----------------
+
+>>>>>>>>>>>>>>>>
+Parasol Lady April 505 (Singles) (None)
+
+Sandslash  Lv.30  @-              Sand Rush      Modest   Swords Dance, Aerial Ace, Rock Tomb, Bulldoze
+Stoutland  Lv.32  @-              Sand Rush      Bashful  Retaliate, Crunch, Work Up, Take Down
+---
+
+Linebacker Dan2 330 (Singles) (None)
+
+Darumaka   Lv.32  @-              Hustle         Quirky   , , , 
+Gurdurr    Lv.32  @-              Guts           Hardy    , , , 
+---
+
+-----------------
+Desert Resort
+-----------------
+
+>>>>>>>>>>>>>>>>
+Backpacker Liz 238 (Singles) (None)
+
+Shelgon    Lv.32  @Eviolite       Overcoat       Naughty  Dragon Claw, Protect, Rock Slide, Wish
+---
+
+-----------------
+Route 4
+-----------------
+
+>>>>>>>>>>>>>>>>
+Worker Scott 35 (Singles) (None)
+
+Gigalith   Lv.32  @None           Sand Force     Rash     Rock Slide, Stealth Rock, Bulldoze, Iron Defense
+Conkeldurr Lv.32  @None           Iron Fist      Quiet    Knock Off, Mach Punch, Drain Punch, Rock Slide
+---
+
+Worker Gus 291 (Singles) (None)
+
+Golem      Lv.32  @-              Sand Veil      Naive    Self-Destruct, Rock Slide, Bulldoze, Steamroller
+Gurdurr    Lv.32  @-              Guts           Rash     Bulk Up, Chip Away, Wake-Up Slap, Rock Tomb
+Dugtrio    Lv.32  @-              Sand Force     Careful  Aerial Ace, Rock Slide, Sucker Punch, Bulldoze
+---
+
+Backpacker Waylon 39 (Singles) (None)
+
+Sudowoodo  Lv.32  @-              Rock Head      Rash     Head Smash, Wood Hammer, Fire Punch, Double-Edge
+---
+
+Backpacker Anna 156 (Singles) (None)
+
+Gigalith   Lv.32  @-              Sand Force     Lonely   Rock Slide, Bulldoze, Smack Down, Iron Defense
+---
+
+Backpacker Jill 40 (Singles) (None)
+
+Cacturne   Lv.32  @-              Sand Veil      Sassy    Swords Dance, Sucker Punch, Substitute, Needle Arm
+---
+
+Fisherman Andrew 42 (Singles) (None)
+
+Gastrodon  Lv.32  @Rindo Berry    Sand Force     Adamant  Ancient Power, Icy Wind, Muddy Water, Mud Bomb
+Marshtomp  Lv.32  @Rindo Berry    Torrent        Relaxed  Rock Slide, Aqua Tail, Ice Punch, Bulldoze
+Quagsire   Lv.33  @Rindo Berry    Unaware        Lonely   Yawn, Ice Punch, Earthquake, Aqua Tail
+---
+
+Worker Zack 37 (Singles) (None)
+
+Gurdurr    Lv.33  @-              Guts           Timid    , , , 
+---
+
+Striker Tony2 325 (Singles) (None)
+
+Ducklett   Lv.33  @-              Keen Eye       Naughty  , , , 
+---
+
+Hoopster Bobby2 335 (Singles) (None)
+
+Scolipede  Lv.33  @-              Poison Point   Sassy    , , , 
+---
+
+Worker Shelby 36 (Singles) (None)
+
+Machoke    Lv.33  @-              Guts           Naive    Vital Throw, Revenge, Rock Slide, Knock Off
+---
+
+-----------------
+Desert Resort
+-----------------
+
+>>>>>>>>>>>>>>>>
+Doctor Jerry 613 (Singles) (None)
+
+Duosion    Lv.33  @-              Overcoat       Brave    , , , 
+---
+
+Backpacker Elaine 239 (Singles) (None)
+
+Maractus   Lv.33  @-              Water Absorb   Naive    Ingrain, Acupressure, Drain Punch, Needle Arm
+---
+
+Smasher Elena2 315 (Singles) (None)
+
+Zebstrika  Lv.33  @-              Lightning Rod  Lax      , , , 
+---
+
+Backpacker Kelsey 236 (Singles) (None)
+
+Mandibuzz  Lv.34  @-              Overcoat       Adamant  Roost, Aerial Ace, Feint Attack, Flatter
+---
+
+Psychic Low 233 (Singles) (None)
+
+Duosion    Lv.34  @-              Overcoat       Mild     Pain Split, Future Sight, Endeavor, Psyshock
+Musharna   Lv.34  @-              Forewarn       Bold     Future Sight, Dream Eater, Hypnosis, Psychic
+---
+
+-----------------
+Moor of Icirrus
+-----------------
+
+>>>>>>>>>>>>>>>>
+PkMn Ranger Chloris 582 (Singles) (Sitrus Berry)
+
+Alomomola  Lv.34  @None           Healer         Calm     , , , 
+---
+
+PkMn Trainer Cheren15 405 (Singles) (None)
+
+Stunfisk   Lv.32  @Rindo Berry    Sand Veil      Lonely   Stealth Rock, Thunder Wave, Bulldoze, Pain Split
+Mandibuzz  Lv.34  @Rocky Helmet   Overcoat       Docile   Foul Play, Roost, Toxic, U-turn
+Lairon     Lv.34  @Chople Berry   Rock Head      Docile   Autotomize, Head Smash, Iron Head, Bulldoze
+Servine    Lv.34  @Sitrus Berry   Overgrow       Calm     Dragon Breath, Glare, Giga Drain, Leech Seed
+---
+
+PkMn Trainer Cheren14 404 (Singles) (None)
+
+Politoed   Lv.32  @Sitrus Berry   Drizzle        Calm     Scald, Toxic, Perish Song, Whirlpool
+Toxicroak  Lv.33  @Life Orb       Dry Skin       Jolly    Sucker Punch, Poison Jab, Drain Punch, Swords Dance
+Ludicolo   Lv.34  @Focus Sash     Swift Swim     Calm     Fake Out, Scald, Giga Drain, Aurora Beam
+Dewott     Lv.34  @Sitrus Berry   Shell Armor    Hardy    Aqua Jet, Work Up, Razor Shell, Aerial Ace
+---
+
+PkMn Trainer Cheren13 403 (Singles) (None)
+
+Torkoal    Lv.32  @Custap Berry   Drought        Relaxed  Stealth Rock, Heat Wave, Earth Power, Self-Destruct
+Shiftry    Lv.33  @Life Orb       Chlorophyll    Mild     Leaf Blade, Heat Wave, Knock Off, Fake Out
+Golduck    Lv.34  @Focus Sash     Cloud Nine     Naughty  Scald, Psychic, Yawn, Icy Wind
+Pignite    Lv.34  @Sitrus Berry   Blaze          Quiet    Heat Crash, Rock Slide, Flame Charge, Brick Break
+---
+
+-----------------
+Route 4
+-----------------
+
+>>>>>>>>>>>>>>>>
+Backpacker Keane 290 (Singles) (None)
+
+Darumaka   Lv.34  @-              Hustle         Modest   , , , 
+---
+
+-----------------
+Desert Resort
+-----------------
+
+>>>>>>>>>>>>>>>>
+Backpacker Nate 237 (Singles) (None)
+
+Crustle    Lv.34  @-              Sturdy         Adamant  Shell Smash, Rock Slide, Earthquake, X-Scissor
+---
+
+Psychic Cybil 235 (Singles) (None)
+
+Bronzong   Lv.34  @-              Levitate       Jolly    Reflect, Future Sight, Light Screen, Gyro Ball
+---
+
+Scientist Dudley 526 (Singles) (None)
+
+Klink      Lv.34  @-              Plus           Relaxed  , , , 
+Klang      Lv.34  @-              Plus           Sassy    , , , 
+---
+
+PkMn Ranger Jaden 550 (Singles) (Rawst Berry)
+
+Clefable   Lv.32  @Life Orb       Cute Charm     Bold     Flamethrower, Icy Wind, Soft-Boiled, Thunderbolt
+Bastiodon  Lv.34  @None           Sturdy         Modest   Bulldoze, Rock Slide, Iron Head, Iron Defense
+---
+
+-----------------
+Route 4
+-----------------
+
+>>>>>>>>>>>>>>>>
+Backpacker Jerome 153 (Singles) (None)
+
+Gabite     Lv.34  @-              Sand Veil      Adamant  Dragon Claw, Fire Fang, Rock Slide, Bulldoze
+---
+
+Lady Lynette 465 (Singles) (None)
+
+Vileplume  Lv.34  @-              Chlorophyll    Sassy    , , , 
+Bellossom  Lv.34  @-              Chlorophyll    Timid    , , , 
+---
+
+Rich Boy Pierce 466 (Singles) (None)
+
+Ampharos   Lv.35  @-              Static         Naughty  , , , 
+---
+
+-----------------
+Relic Castle
+-----------------
+
+>>>>>>>>>>>>>>>>
+Team Plasma Grunt10 227 (Singles) (None)
+
+Liepard    Lv.35  @None           Limber         Relaxed  , , , 
+---
+
+Psychic Dua 52 (Singles) (None)
+
+Swoobat    Lv.35  @-              Unaware        Gentle   Air Slash, Calm Mind, Psychic, Attract
+Gothorita  Lv.35  @-              Frisk          Serious  Fake Out, Future Sight, Flatter, Psyshock
+---
+
+-----------------
+Desert Resort
+-----------------
+
+>>>>>>>>>>>>>>>>
+PkMn Ranger Mylene 549 (Singles) (Rawst Berry)
+
+Sandslash  Lv.35  @-              Sand Veil      Bold     Rapid Spin, Aerial Ace, Rock Tomb, Earthquake
+---
+
+Team Plasma Grunt13 279 (Singles) (None)
+
+Seviper    Lv.35  @-              Shed Skin      Adamant  Poison Fang, Crunch, Glare, Giga Drain
+Garbodor   Lv.36  @-              Weak Armor     Jolly    Knock Off, Sludge Bomb, Swallow, Stockpile
+---
+
+Psychic Gaven 234 (Singles) (None)
+
+Duosion    Lv.36  @-              Overcoat       Naughty  Pain Split, Future Sight, Endeavor, Psyshock
+Swoobat    Lv.34  @-              Simple         Quirky   Air Slash, Calm Mind, Stored Power, Attract
+---
+
+-----------------
+Relic Castle
+-----------------
+
+>>>>>>>>>>>>>>>>
+Psychic Perry 51 (Singles) (None)
+
+Sigilyph   Lv.36  @-              Wonder Skin    Quirky   Air Slash, Psychic, Reflect, Light Screen
+---
+
+-----------------
+Icirrus City
+-----------------
+
+>>>>>>>>>>>>>>>>
+Black Belt Thomas 217 (Singles) (None)
+
+Rotom-Frost Lv.36  @-              Levitate       Impish   Frost Breath, Blizzard, Thunderbolt, Nasty Plot
+---
+
+Battle Girl Chandra 214 (Singles) (None)
+
+Vanillish  Lv.36  @-              Ice Body       Gentle   , , , 
+---
+
+-----------------
+Nimbasa City
+-----------------
+
+>>>>>>>>>>>>>>>>
+Lady Magnolia 68 (Singles) (None)
+
+Manectric  Lv.37  @-              Static         Docile   Volt Switch, Flamethrower, Grass Knot, Shock Wave
+Ampharos   Lv.38  @-              Static         Quiet    Volt Switch, Shock Wave, Fire Punch, Cotton Spore
+---
+
+Rich Boy Rolan 67 (Singles) (None)
+
+Electrode  Lv.38  @-              Soundproof     Calm     , , , 
+Electrode  Lv.38  @-              Soundproof     Calm     , , , 
+---
+
+Backers Joe & Ross2 341 (Doubles) (None)
+
+Zebstrika  Lv.39  @-              Lightning Rod  Relaxed  , , , 
+Zebstrika  Lv.39  @-              Lightning Rod  Relaxed  , , , 
+---
+
+Backers Masa & Yas2 343 (Doubles) (None)
+
+Scolipede  Lv.39  @-              Poison Point   Calm     , , , 
+Boldore    Lv.39  @-              Sturdy         Jolly    , , , 
+---
+
+-----------------
+Opelucid City
+-----------------
+
+>>>>>>>>>>>>>>>>
+Ace Trainer Lou2 605 (Rotation) (None)
+
+Mienfoo    Lv.39  @-              Inner Focus    Brave    , , , 
+Elgyem     Lv.39  @-              Telepathy      Bold     , , , 
+Pawniard   Lv.39  @-              Defiant        Timid    , , , 
+---
+
+-----------------
+Nimbasa City
+-----------------
+
+>>>>>>>>>>>>>>>>
+Rich Boy Cody 66 (Singles) (None)
+
+Luxray     Lv.39  @-              Intimidate     Impish   Wild Charge, Fire Fang, Crunch, Ice Fang
+---
+
+-----------------
+Opelucid City
+-----------------
+
+>>>>>>>>>>>>>>>>
+Ace Trainer Eileen 513 (Rotation) (None)
+
+Simisage   Lv.39  @-              Gluttony       Gentle   , , , 
+Simisear   Lv.39  @-              Gluttony       Naive    , , , 
+Simipour   Lv.39  @-              Gluttony       Docile   , , , 
+---
+
+Ace Trainer Lou 514 (Triples) (None)
+
+Simisear   Lv.39  @-              Gluttony       Mild     , , , 
+Simipour   Lv.39  @-              Gluttony       Naive    , , , 
+Simisage   Lv.39  @-              Gluttony       Rash     , , , 
+---
+
+Preschooler Billy 402 (Singles) (None)
+
+Clefairy   Lv.39  @Eviolite       Friend Guard   Serious  Follow Me, , , 
+---
+
+Backers Kay & Ali2 347 (Doubles) (None)
+
+Swanna     Lv.39  @-              Keen Eye       Brave    , , , 
+Swanna     Lv.39  @-              Keen Eye       Brave    , , , 
+---
+
+Backers Ami & Eira2 349 (Doubles) (None)
+
+Simipour   Lv.39  @-              Gluttony       Quirky   , , , 
+Simisear   Lv.39  @-              Gluttony       Serious  , , , 
+---
+
+Preschooler Sarah 401 (Singles) (None)
+
+Bibarel    Lv.39  @Sitrus Berry   Moody          Calm     Aqua Tail, Aqua Jet, Yawn, Hyper Fang
+---
+
+Ace Trainer Eileen2 604 (Triples) (None)
+
+Mienfoo    Lv.39  @-              Inner Focus    Docile   , , , 
+Elgyem     Lv.39  @-              Telepathy      Timid    , , , 
+Pawniard   Lv.39  @-              Defiant        Mild     , , , 
+---
+
+Team Plasma N 89 (Singles) (None)
+
+Crustle    Lv.36  @Custap Berry   Sturdy         Docile   Earthquake, Rock Slide, Stealth Rock, X-Scissor
+Darmanitan Lv.37  @Life Orb       Sheer Force    Bold     U-turn, Flare Blitz, Rock Slide, Earthquake
+Krokorok   Lv.37  @Choice Scarf   Intimidate     Hasty    Rock Slide, Earthquake, Crunch, Brick Break
+Sigilyph   Lv.39  @Life Orb       Tinted Lens    Relaxed  Calm Mind, Air Slash, Psychic, Dark Pulse
+---
+
+Backers Hawk & Dar2 339 (Doubles) (None)
+
+Darmanitan Lv.39  @-              Sheer Force    Hasty    , , , 
+Darmanitan Lv.39  @-              Sheer Force    Hasty    , , , 
+---
+
+Infielder Alex3 321 (Singles) (None)
+
+Simipour   Lv.39  @-              Gluttony       Calm     , , , 
+Simisage   Lv.39  @-              Gluttony       Lax      , , , 
+Simisear   Lv.39  @-              Gluttony       Brave    , , , 
+---
+
+-----------------
+Cold Storage
+-----------------
+
+>>>>>>>>>>>>>>>>
+Worker Eddie 77 (Singles) (None)
+
+Beheeyem   Lv.40  @-              Telepathy      Jolly    Psychic, Psych Up, Zen Headbutt, Simple Beam
+Conkeldurr Lv.40  @-              Guts           Calm     Dynamic Punch, Rock Slide, Bulk Up, Chip Away
+---
+
+Smasher Aspen 43 (Singles) (None)
+
+Whimsicott Lv.40  @-              Prankster      Hasty    , , , 
+Lilligant  Lv.40  @-              Chlorophyll    Quirky   , , , 
+---
+
+-----------------
+Route 5
+-----------------
+
+>>>>>>>>>>>>>>>>
+Backpacker Lois 45 (Singles) (None)
+
+Absol      Lv.40  @-              Super Luck     Hasty    Slash, Sucker Punch, Psycho Cut, Swords Dance
+---
+
+Musician Preston 46 (Singles) (None)
+
+Chatot     Lv.40  @-              Keen Eye       Impish   Chatter, Hyper Voice, Roost, Nasty Plot
+Porygon-Z  Lv.40  @-              Adaptability   Careful  Uproar, Tri Attack, , 
+---
+
+Harlequin Paul 48 (Singles) (None)
+
+Mr. Mime   Lv.40  @-              Technician     Hasty    Fake Out, Charge Beam, Psychic, Wake-Up Slap
+Ambipom    Lv.40  @-              Technician     Careful  Fake Out, Arm Thrust, Double Hit, Knock Off
+---
+
+Baker Jenn 50 (Singles) (None)
+
+Simisear   Lv.40  @Salac Berry    Blaze          Naive    Natural Gift, Grass Knot, Flamethrower, Recycle
+Simipour   Lv.40  @Lansat Berry   Torrent        Rash     Natural Gift, Recycle, Scald, Grass Knot
+Simisage   Lv.40  @Starf Berry    Overgrow       Careful  Natural Gift, Recycle, Seed Bomb, Rock Slide
+---
+
+Lady Colette 69 (Singles) (None)
+
+Pachirisu  Lv.40  @-              Volt Absorb    Hardy    Super Fang, Thunder Wave, Sweet Kiss, Shock Wave
+---
+
+-----------------
+Cold Storage
+-----------------
+
+>>>>>>>>>>>>>>>>
+Worker Victor 72 (Singles) (None)
+
+Typhlosion Lv.40  @-              Blaze          Gentle   Flame Charge, Swift, Smokescreen, Flamethrower
+Conkeldurr Lv.40  @-              Guts           Calm     Dynamic Punch, Rock Slide, Bulk Up, Chip Away
+---
+
+Worker Glenn 74 (Singles) (None)
+
+Poliwrath  Lv.40  @-              Water Absorb   Lax      Dynamic Punch, Submission, Double Slap, Hypnosis
+Conkeldurr Lv.40  @-              Guts           Calm     Dynamic Punch, Rock Slide, Bulk Up, Chip Away
+---
+
+Worker Ryan 75 (Singles) (None)
+
+Conkeldurr Lv.40  @-              Guts           Calm     , , , 
+Machamp    Lv.40  @-              Guts           Adamant  , , , 
+Beartic    Lv.40  @-              Snow Cloak     Jolly    , , , 
+---
+
+Worker Patton 76 (Singles) (None)
+
+Beartic    Lv.40  @-              Snow Cloak     Jolly    , , , 
+Machamp    Lv.40  @-              Guts           Adamant  , , , 
+---
+
+Hoopster John 83 (Singles) (None)
+
+Stoutland  Lv.40  @-              Intimidate     Naughty  , , , 
+Boldore    Lv.40  @-              Sturdy         Jolly    , , , 
+---
+
+Youngster Albert 140 (Singles) (None)
+
+Galvantula Lv.40  @-              Compound Eyes  Jolly    Thunder, Bug Buzz, Volt Switch, Energy Ball
+Crustle    Lv.40  @-              Weak Armor     Rash     X-Scissor, Earthquake, Rock Slide, Rock Polish
+---
+
+Youngster Kenneth 141 (Singles) (None)
+
+Accelgor   Lv.40  @-              Hydration      Modest   U-turn, Giga Drain, Bug Buzz, Sludge Bomb
+Escavalier Lv.40  @-              Swarm          Hardy    Pursuit, Iron Head, Drill Run, X-Scissor
+---
+
+Linebacker Bob 177 (Singles) (None)
+
+Sawk       Lv.40  @-              Sturdy         Bashful  , , , 
+Throh      Lv.40  @-              Guts           Quirky   , , , 
+---
+
+Infielder Connor 192 (Singles) (None)
+
+Sandile    Lv.40  @-              Intimidate     Jolly    , , , 
+Unfezant   Lv.40  @-              Big Pecks      Quirky   , , , 
+---
+
+Linebacker Dan3 331 (Singles) (None)
+
+Gurdurr    Lv.40  @-              Guts           Naive    , , , 
+Darmanitan Lv.40  @-              Sheer Force    Calm     , , , 
+---
+
+Clerk  F Britney 461 (Singles) (None)
+
+Jumpluff   Lv.40  @-              Chlorophyll    Impish   , , , 
+---
+
+Clerk  F Piper 462 (Singles) (None)
+
+Victreebel Lv.40  @-              Chlorophyll    Jolly    , , , 
+---
+
+Clerk  M Doug 470 (Singles) (None)
+
+Luxray     Lv.40  @-              Rivalry        Gentle   , , , 
+---
+
+Clerk  M Collin 471 (Singles) (None)
+
+Alakazam   Lv.40  @-              Synchronize    Timid    , , , 
+---
+
+Gentleman Frederic 472 (Singles) (None)
+
+Roserade   Lv.40  @-              Natural Cure   Serious  , , , 
+---
+
+Hiker Gene 485 (Singles) (None)
+
+Aggron     Lv.40  @-              Sturdy         Impish   , , , 
+---
+
+Socialite Grace 488 (Singles) (None)
+
+Salamence  Lv.40  @-              Intimidate     Sassy    , , , 
+---
+
+Nursery Aide Miho 489 (Singles) (None)
+
+Shiftry    Lv.40  @-              Chlorophyll    Calm     , , , 
+---
+
+Motorcyclist Charles2 603 (Rotation) (None)
+
+Krookodile Lv.40  @-              Intimidate     Hardy    , , , 
+Basculin-Blue-Striped Lv.40  @-              Reckless       Quiet    , , , 
+Zebstrika  Lv.40  @-              Lightning Rod  Careful  , , , 
+---
+
+Striker Roberto 130 (Singles) (None)
+
+Liepard    Lv.41  @-              Limber         Naughty  , , , 
+---
+
+Striker Tony3 326 (Singles) (None)
+
+Swanna     Lv.41  @-              Keen Eye       Mild     , , , 
+---
+
+Hoopster Bobby3 336 (Singles) (None)
+
+Scolipede  Lv.41  @-              Poison Point   Hardy    , , , 
+---
+
+-----------------
+Route 5
+-----------------
+
+>>>>>>>>>>>>>>>>
+Dancer Brian 47 (Singles) (None)
+
+Hitmontop  Lv.41  @-              Technician     Careful  Fake Out, Mach Punch, Pursuit, Rock Tomb
+---
+
+Smasher Elena3 316 (Singles) (None)
+
+Zebstrika  Lv.41  @-              Lightning Rod  Quirky   , , , 
+---
+
+Leader Elesa 23 (Singles) (None)
+
+Emolga     Lv.42  @Flying Gem     Static         Docile   Acrobatics, Volt Switch, Thunderbolt, Electro Ball
+Eelektross Lv.42  @Sitrus Berry   Levitate       Timid    Flamethrower, Thunderbolt, Hydro Pump, Giga Drain
+Zebstrika  Lv.42  @Life Orb       Lightning Rod  Gentle   Agility, Volt Switch, Flare Blitz, Wild Charge
+Rotom-Frost Lv.42  @Wide Lens      Levitate       Brave    Frost Breath, Volt Switch, Blizzard, Nasty Plot
+---
+
+-----------------
+Driftveil City
+-----------------
+
+>>>>>>>>>>>>>>>>
+Worker Felix 201 (Singles) (None)
+
+Golem      Lv.42  @-              Rock Head      Jolly    Stealth Rock, Bulldoze, Self-Destruct, Rock Slide
+Gigalith   Lv.42  @-              Sturdy         Bold     Sandstorm, Explosion, Rock Slide, Bulldoze
+---
+
+-----------------
+Cold Storage
+-----------------
+
+>>>>>>>>>>>>>>>>
+Worker Filipe 73 (Singles) (None)
+
+Machamp    Lv.42  @-              Guts           Adamant  , , , 
+---
+
+-----------------
+Route 5
+-----------------
+
+>>>>>>>>>>>>>>>>
+Artist Horton 49 (Singles) (None)
+
+Sigilyph   Lv.42  @-              Wonder Skin    Naughty  , , , 
+---
+
+Team Plasma Grunt3 81 (Singles) (None)
+
+Krookodile Lv.42  @-              Intimidate     Bashful  Earthquake, Rock Slide, Dragon Claw, Crunch
+Skuntank   Lv.42  @-              Aftermath      Modest   Dark Pulse, Flamethrower, Sludge Bomb, Nasty Plot
+---
+
+Backpacker Michael 44 (Singles) (None)
+
+Medicham   Lv.42  @-              Pure Power     Bashful  Bullet Punch, Fake Out, High Jump Kick, Zen Headbutt
+---
+
+-----------------
+Driftveil City
+-----------------
+
+>>>>>>>>>>>>>>>>
+Worker Sterling 202 (Singles) (None)
+
+Pupitar    Lv.42  @-              Shed Skin      Naughty  Rock Slide, Bulldoze, Thrash, Scary Face
+Camerupt   Lv.42  @-              Magma Armor    Brave    Rock Slide, Lava Plume, Amnesia, Take Down
+---
+
+Team Plasma Grunt11 276 (Singles) (None)
+
+Crobat     Lv.42  @-              Inner Focus    Careful  Air Slash, Sludge Bomb, Giga Drain, Heat Wave
+Scrafty    Lv.42  @-              Shed Skin      Gentle   Crunch, Scary Face, High Jump Kick, Chip Away
+---
+
+Team Plasma Grunt12 278 (Singles) (None)
+
+Gengar     Lv.43  @-              Levitate       Sassy    Thunderbolt, Shadow Ball, Psychic, Sludge Bomb
+---
+
+Leader Iris 132 (Singles) (None)
+
+Fraxure    Lv.41  @-              Rivalry        Brave    Dragon Dance, Dragon Rage, Dragon Tail, Assurance
+Druddigon  Lv.41  @-              Rough Skin     Impish   Chip Away, Revenge, Dragon Tail, Night Slash
+Haxorus    Lv.43  @-              Rivalry        Impish   Dragon Dance, Slash, Dragon Tail, Assurance
+---
+
+Clerk  M Isaac 168 (Singles) (None)
+
+Torterra   Lv.42  @-              Overgrow       Docile   Synthesis, Leech Seed, Earthquake, Seed Bomb
+Dugtrio    Lv.42  @-              Sand Veil      Adamant  Dig, Stone Edge, Aerial Ace, Sucker Punch
+Seismitoad Lv.43  @-              Swift Swim     Careful  Rock Slide, Drain Punch, Bulldoze, Muddy Water
+---
+
+Clerk  F Katie 95 (Singles) (None)
+
+Excadrill  Lv.44  @-              Sand Rush      Brave    Iron Head, Earthquake, Horn Drill, Rock Slide
+---
+
+Team Plasma Grunt30 309 (Singles) (None)
+
+Drapion    Lv.44  @Scope Lens     Sniper         Rash     Night Slash, Cross Poison, Brick Break, Aqua Tail
+---
+
+School Kid Silvia 474 (Singles) (None)
+
+Beautifly  Lv.44  @-              Swarm          Naive    , , , 
+Dustox     Lv.44  @-              Shield Dust    Quiet    , , , 
+---
+
+Worker Don 203 (Singles) (None)
+
+Krookodile Lv.45  @-              Intimidate     Quirky   Stone Edge, Dragon Claw, Bulldoze, Crunch
+---
+
+School Kid Leo 473 (Singles) (None)
+
+Pidgeot    Lv.45  @-              Keen Eye       Timid    , , , 
+---
+
+PkMn Trainer Cheren9 92 (Singles) (None)
+
+Aggron     Lv.42  @Custap Berry   Sturdy         Bold     Stealth Rock, Heavy Slam, Rock Slide, Metal Burst
+Chandelure Lv.45  @Choice Scarf   Flash Fire     Timid    Shadow Ball, Flamethrower, Energy Ball, Trick
+Rotom-Fan  Lv.45  @Flying Gem     Levitate       Relaxed  Nasty Plot, Air Slash, Volt Switch, Will-O-Wisp
+Serperior  Lv.45  @Focus Sash     Contrary       Calm     Dragon Pulse, Leaf Storm, Glare, Leech Seed
+---
+
+School Kid Shane 490 (Singles) (None)
+
+Rhyperior  Lv.45  @-              Lightning Rod  Bold     , , , 
+---
+
+PkMn Trainer Cheren7 90 (Singles) (None)
+
+Skarmory   Lv.42  @Rocky Helmet   Sturdy         Lonely   Stealth Rock, Spikes, Whirlwind, Roost
+Gabite     Lv.45  @Yache Berry    Rough Skin     Gentle   Earthquake, Dragon Claw, Swords Dance, Rock Slide
+Golduck    Lv.45  @Focus Sash     Cloud Nine     Sassy    Yawn, Ice Beam, Psychic, Scald
+Emboar     Lv.45  @Sitrus Berry   Blaze          Adamant  Flare Blitz, Superpower, Wild Charge, Sucker Punch
+---
+
+PkMn Trainer Cheren8 91 (Singles) (None)
+
+Pelipper   Lv.42  @Wacan Berry    Drizzle        Gentle   U-turn, Hurricane, Scald, Roost
+Toxicroak  Lv.45  @Life Orb       Dry Skin       Naive    Swords Dance, Poison Jab, Drain Punch, Sucker Punch
+Ludicolo   Lv.45  @Focus Sash     Swift Swim     Jolly    Fake Out, Giga Drain, Scald, Ice Beam
+Samurott   Lv.45  @Sitrus Berry   Shell Armor    Lonely   Razor Shell, Aqua Jet, Aerial Ace, Swords Dance
+---
+
+-----------------
+Route 6
+-----------------
+
+>>>>>>>>>>>>>>>>
+Parasol Lady Nicole 161 (Singles) (None)
+
+Wigglytuff Lv.48  @-              Cute Charm     Naive    Double Slap, Defense Curl, Disable, Sing
+Clefable   Lv.48  @-              Cute Charm     Sassy    Metronome, Minimize, Double Slap, Sing
+Blissey    Lv.48  @-              Natural Cure   Hardy    Light Screen, Egg Bomb, Heal Pulse, Fling
+Togekiss   Lv.48  @-              Hustle         Relaxed  Air Slash, Aura Sphere, Extreme Speed, Sky Attack
+---
+
+-----------------
+Route 7
+-----------------
+
+>>>>>>>>>>>>>>>>
+Ace Trainer Elmer2 607 (Rotation) (None)
+
+Liepard    Lv.50  @-              Limber         Mild     Nasty Plot, Taunt, Dark Pulse, Grass Knot
+Swoobat    Lv.50  @-              Unaware        Impish   Endeavor, Psychic, Future Sight, Air Slash
+Watchog    Lv.50  @-              Illuminate     Impish   Hypnosis, Crunch, Mean Look, Hyper Fang
+---
+
+-----------------
+Celestial Tower
+-----------------
+
+>>>>>>>>>>>>>>>>
+Psychic Doreen 120 (Singles) (None)
+
+Beheeyem   Lv.50  @-              Telepathy      Quirky   , , , 
+Reuniclus  Lv.50  @-              Overcoat       Rash     , , , 
+Sigilyph   Lv.50  @-              Wonder Skin    Brave    , , , 
+---
+
+-----------------
+Chargestone Cave
+-----------------
+
+>>>>>>>>>>>>>>>>
+Team Plasma Grunt31 310 (Singles) (None)
+
+Garbodor   Lv.50  @-              Stench         Quiet    Amnesia, Toxic, Clear Smog, Sludge Bomb
+Bisharp    Lv.50  @-              Defiant        Lonely   Night Slash, Iron Defense, Iron Head, Metal Sound
+---
+
+-----------------
+Celestial Tower
+-----------------
+
+>>>>>>>>>>>>>>>>
+Lass Kara 190 (Singles) (None)
+
+Persian    Lv.50  @-              Limber         Naive    Dark Pulse, Nasty Plot, Hyper Voice, Power Gem
+Gardevoir  Lv.50  @-              Synchronize    Mild     Imprison, Psychic, Calm Mind, Shadow Ball
+---
+
+Pokefan Georgia 139 (Singles) (None)
+
+Leavanny   Lv.50  @-              Swarm          Naive    Leaf Storm, Swords Dance, Leaf Blade, X-Scissor
+---
+
+Leader Clay 24 (Singles) (None)
+
+Hippowdon  Lv.50  @Passho Berry   Sand Stream    Hardy    Stealth Rock, Bulldoze, Slack Off, Toxic
+Gastrodon  Lv.50  @Rindo Berry    Sand Force     Sassy    Muddy Water, Recover, Ice Beam, Earth Power
+Excadrill  Lv.50  @Focus Sash     Sand Rush      Hardy    Rock Slide, Swords Dance, Earthquake, Iron Head
+Garchomp   Lv.50  @Yache Berry    Rough Skin     Naive    Swords Dance, Earthquake, Stone Edge, Dragon Claw
+Nidoking   Lv.50  @Life Orb       Sheer Force    Mild     Sludge Wave, Earth Power, Thunderbolt, Flamethrower
+---
+
+Pokefan Jude 138 (Singles) (None)
+
+Plusle     Lv.50  @-              Plus           Naive    Thunderbolt, Grass Knot, Electroweb, Surf
+Togekiss   Lv.50  @-              Hustle         Adamant  Air Slash, Aura Sphere, Extreme Speed, Soft-Boiled
+---
+
+-----------------
+Chargestone Cave
+-----------------
+
+>>>>>>>>>>>>>>>>
+Hiker Hardy 194 (Singles) (None)
+
+Rampardos  Lv.50  @-              Mold Breaker   Naive    Zen Headbutt, Head Smash, Endeavor, Chip Away
+Throh      Lv.50  @-              Guts           Modest   Superpower, Detect, Endure, Circle Throw
+---
+
+-----------------
+Route 6
+-----------------
+
+>>>>>>>>>>>>>>>>
+PkMn Ranger Shanti 186 (Singles) (Cheri Berry)
+
+Braviary   Lv.50  @-              Sheer Force    Lonely   Roost, Superpower, Brave Bird, Bulk Up
+Sawsbuck   Lv.50  @-              Serene Grace   Docile   Headbutt, Horn Leech, Agility, Thunder Wave
+---
+
+Scientist Marie 469 (Singles) (None)
+
+Magnezone  Lv.50  @-              Magnet Pull    Impish   , , , 
+---
+
+-----------------
+Route 7
+-----------------
+
+>>>>>>>>>>>>>>>>
+PkMn Ranger Pedro 183 (Singles) (Aspear Berry)
+
+Reuniclus  Lv.50  @-              Overcoat       Naughty  Future Sight, Dizzy Punch, Psychic, Pain Split
+Haxorus    Lv.50  @-              Rivalry        Naive    Swords Dance, Dragon Claw, Brick Break, Dragon Dance
+---
+
+Scientist Jacques 468 (Singles) (None)
+
+Nidoqueen  Lv.50  @-              Poison Point   Docile   , , , 
+---
+
+Harlequin Ian 504 (Singles) (None)
+
+Eelektross Lv.50  @None           Levitate       Gentle   Super Fang, Discharge, Gastro Acid, Volt Switch
+Swanna     Lv.50  @None           Keen Eye       Quirky   Hurricane, Scald, Rain Dance, Roost
+Farfetch’d Lv.50  @Flying Gem     Keen Eye       Jolly    Leaf Blade, Knock Off, Feint, Acrobatics
+---
+
+-----------------
+Chargestone Cave
+-----------------
+
+>>>>>>>>>>>>>>>>
+Team Plasma Grunt45 611 (Singles) (None)
+
+Gulpin     Lv.50  @-              Liquid Ooze    Lonely   Gastro Acid, Sludge Bomb, Swallow, Spit Up
+Slugma     Lv.50  @-              Magma Armor    Quiet    Flamethrower, Body Slam, Rock Slide, Lava Plume
+Rhydon     Lv.50  @-              Lightning Rod  Gentle   Drill Run, Hammer Arm, Rock Slide, Chip Away
+---
+
+Team Plasma Grunt22 301 (Singles) (None)
+
+Haxorus    Lv.50  @-              Rivalry        Bashful  Swords Dance, Dragon Claw, Earthquake, Dragon Dance
+Weezing    Lv.50  @-              Levitate       Impish   Sludge Bomb, Pain Split, Toxic, Flamethrower
+---
+
+Team Plasma Grunt21 300 (Singles) (None)
+
+Fearow     Lv.50  @-              Keen Eye       Mild     Drill Peck, Roost, Frustration, Agility
+Excadrill  Lv.50  @-              Sand Rush      Bashful  Sandstorm, Iron Head, Earthquake, Rock Slide
+---
+
+Team Plasma Grunt19 298 (Singles) (None)
+
+Krookodile Lv.50  @-              Intimidate     Modest   Brick Break, Crunch, Stone Edge, Earthquake
+Arbok      Lv.50  @-              Intimidate     Mild     Poison Jab, Crunch, Ice Fang, Glare
+Scrafty    Lv.50  @-              Intimidate     Docile   Facade, Crunch, Scary Face, Drain Punch
+---
+
+Scientist Orville 115 (Singles) (None)
+
+Muk        Lv.51  @-              Stench         Bold     Sludge Wave, Acid Armor, Knock Off, Fire Punch
+---
+
+-----------------
+Route 7
+-----------------
+
+>>>>>>>>>>>>>>>>
+Harlequin Pat 503 (Singles) (None)
+
+Mime Jr.   Lv.52  @-              Soundproof     Modest   , , , 
+Mime Jr.   Lv.52  @-              Soundproof     Modest   , , , 
+---
+
+-----------------
+Route 6
+-----------------
+
+>>>>>>>>>>>>>>>>
+Parasol Lady Tihana 162 (Singles) (None)
+
+Cofagrigus Lv.51  @Focus Sash     Mummy          Lax      Trick Room, Memento, , 
+Jellicent  Lv.52  @None           Water Absorb   Calm     Water Spout, Hydro Pump, Shadow Ball, Recover
+---
+
+-----------------
+Celestial Tower
+-----------------
+
+>>>>>>>>>>>>>>>>
+Psychic Belle 263 (Singles) (None)
+
+Alakazam   Lv.52  @-              Synchronize    Timid    Aura Sphere, Future Sight, Psychic, Calm Mind
+---
+
+Psychic Lin 121 (Singles) (None)
+
+Chandelure Lv.52  @-              Flash Fire     Jolly    Hex, Flame Burst, Confuse Ray, Will-O-Wisp
+Swoobat    Lv.52  @-              Unaware        Calm     Endeavor, Psychic, Future Sight, Air Slash
+---
+
+-----------------
+Route 7
+-----------------
+
+>>>>>>>>>>>>>>>>
+PkMn Ranger Mary 187 (Singles) (Aspear Berry)
+
+Roserade   Lv.51  @-              Technician     Hasty    Sleep Powder, Magical Leaf, Sludge Bomb, Toxic Spikes
+Whiscash   Lv.51  @-              Oblivious      Rash     Ice Beam, Earthquake, Aqua Tail, Dragon Dance
+Unfezant   Lv.52  @-              Big Pecks      Sassy    Focus Energy, Feather Dance, Razor Wind, Air Slash
+---
+
+-----------------
+Chargestone Cave
+-----------------
+
+>>>>>>>>>>>>>>>>
+Team Plasma Grunt32 311 (Singles) (None)
+
+Mismagius  Lv.52  @-              Levitate       Serious  Shadow Ball, Nasty Plot, Will-O-Wisp, Power Gem
+---
+
+Ace Trainer Corky 104 (Singles) (None)
+
+Whimsicott Lv.52  @Focus Sash     Prankster      Lax      Memento, Tailwind, Giga Drain, Leech Seed
+Carracosta Lv.52  @White Herb     Solid Rock     Modest   Rock Slide, Aqua Jet, Shell Smash, Ice Beam
+---
+
+-----------------
+Celestial Tower
+-----------------
+
+>>>>>>>>>>>>>>>>
+Psychic Micki 118 (Singles) (None)
+
+Banette    Lv.52  @-              Insomnia       Naughty  Destiny Bond, Sucker Punch, Shadow Claw, Will-O-Wisp
+Golurk     Lv.52  @-              Iron Fist      Careful  Earthquake, Heavy Slam, Curse, Shadow Punch
+---
+
+-----------------
+Route 6
+-----------------
+
+>>>>>>>>>>>>>>>>
+PkMn Ranger Richard 182 (Singles) (Cheri Berry)
+
+Houndoom   Lv.52  @None           Early Bird     Timid    Flamethrower, Dark Pulse, Nasty Plot, Sludge Bomb
+Drifblim   Lv.52  @Flying Gem     Unburden       Adamant  Acrobatics, Shadow Ball, Destiny Bond, Will-O-Wisp
+---
+
+-----------------
+Chargestone Cave
+-----------------
+
+>>>>>>>>>>>>>>>>
+Scientist Naoko 117 (Singles) (None)
+
+Magnezone  Lv.52  @-              Magnet Pull    Lax      Metal Sound, Flash Cannon, Tri Attack, Thunderbolt
+---
+
+PkMn Trainer Bianca4 491 (Singles) (None)
+
+Delcatty   Lv.53  @Silk Scarf     Normalize      Timid    Fake Out, Last Resort, , 
+Flareon    Lv.53  @Charcoal       Flash Fire     Quiet    Flare Blitz, Double-Edge, Overheat, Will-O-Wisp
+Lucario    Lv.53  @Focus Sash     Steadfast      Serious  Flash Cannon, Aura Sphere, Vacuum Wave, Calm Mind
+Samurott   Lv.53  @Normal Gem     Shell Armor    Quiet    Retaliate, Aqua Tail, X-Scissor, Aqua Jet
+---
+
+Ace Trainer Jared 105 (Singles) (None)
+
+Aerodactyl Lv.53  @Focus Sash     Rock Head      Serious  Brave Bird, Earthquake, Dragon Dance, Rock Slide
+---
+
+Doctor Wayne 150 (Singles) (None)
+
+Audino     Lv.53  @Leftovers      Healer         Brave    Encore, Secret Power, Yawn, Wish
+---
+
+-----------------
+Route 7
+-----------------
+
+>>>>>>>>>>>>>>>>
+Youngster Mikey 142 (Singles) (None)
+
+Armaldo    Lv.52  @-              Battle Armor   Timid    Swords Dance, X-Scissor, Stone Edge, Protect
+Electivire Lv.53  @-              Motor Drive    Jolly    Thunderbolt, Mach Punch, Ice Punch, Focus Blast
+---
+
+Youngster Parker 143 (Singles) (None)
+
+Seismitoad Lv.50  @-              Swift Swim     Timid    Ice Punch, Drain Punch, Waterfall, Power Whip
+Accelgor   Lv.51  @-              Hydration      Rash     Sludge Bomb, Bug Buzz, U-turn, Giga Drain
+Scolipede  Lv.53  @-              Speed Boost    Bashful  Aqua Tail, Poison Jab, X-Scissor, Swords Dance
+---
+
+-----------------
+Chargestone Cave
+-----------------
+
+>>>>>>>>>>>>>>>>
+Team Plasma Grunt20 299 (Singles) (None)
+
+Raticate   Lv.53  @Flame Orb      Guts           Mild     Protect, Bulldoze, Crunch, Facade
+---
+
+-----------------
+Route 6
+-----------------
+
+>>>>>>>>>>>>>>>>
+Scientist Ron 257 (Singles) (None)
+
+Sawsbuck   Lv.53  @-              Chlorophyll    Relaxed  , , , 
+---
+
+Scientist Maria 258 (Singles) (None)
+
+Sawsbuck   Lv.53  @-              Chlorophyll    Lonely   , , , 
+---
+
+-----------------
+Route 7
+-----------------
+
+>>>>>>>>>>>>>>>>
+Backpacker Terrance 154 (Singles) (None)
+
+Magmortar  Lv.53  @-              Flame Body     Modest   Flamethrower, Thunderbolt, Dark Pulse, Aura Sphere
+---
+
+-----------------
+Chargestone Cave
+-----------------
+
+>>>>>>>>>>>>>>>>
+Ace Trainer Allison 101 (Singles) (None)
+
+Politoed   Lv.52  @Sitrus Berry   Drizzle        Lax      Scald, Ice Beam, Toxic, Perish Song
+Ferrothorn Lv.53  @Rocky Helmet   Iron Barbs     Brave    Protect, Leech Seed, Power Whip, Thunder
+---
+
+PkMn Trainer Bianca5 492 (Singles) (None)
+
+Delcatty   Lv.53  @Silk Scarf     Normalize      Mild     Fake Out, Last Resort, , 
+Vaporeon   Lv.53  @Leftovers      Water Absorb   Serious  Wish, Toxic, Scald, Ice Beam
+Flygon     Lv.53  @Yache Berry    Levitate       Lax      Signal Beam, Dragon Pulse, Flamethrower, Earth Power
+Serperior  Lv.53  @Focus Sash     Contrary       Jolly    Leaf Storm, Leech Seed, Glare, Dragon Pulse
+---
+
+PkMn Trainer Bianca6 493 (Singles) (None)
+
+Delcatty   Lv.53  @Silk Scarf     Normalize      Gentle   Fake Out, Last Resort, , 
+Leafeon    Lv.53  @Salac Berry    Leaf Guard     Lonely   Leaf Blade, Swords Dance, Grass Whistle, Natural Gift
+Lucario    Lv.53  @Focus Sash     Steadfast      Careful  Aura Sphere, Calm Mind, Vacuum Wave, Flash Cannon
+Emboar     Lv.53  @Life Orb       Blaze          Hasty    Head Smash, Flare Blitz, Sucker Punch, Hammer Arm
+---
+
+Scientist Ronald 240 (Singles) (None)
+
+Klinklang  Lv.53  @-              Plus           Jolly    , , , 
+---
+
+-----------------
+Route 6
+-----------------
+
+>>>>>>>>>>>>>>>>
+Scientist William 112 (Singles) (None)
+
+Sawsbuck   Lv.53  @-              Chlorophyll    Bashful  , , , 
+---
+
+-----------------
+Celestial Tower
+-----------------
+
+>>>>>>>>>>>>>>>>
+Nurse Sachiko 152 (Singles) (None)
+
+Alomomola  Lv.54  @Leftovers      Healer         Brave    Ice Beam, Rest, Sleep Talk, Brine
+---
+
+-----------------
+Chargestone Cave
+-----------------
+
+>>>>>>>>>>>>>>>>
+Ace Trainer Stella 100 (Singles) (None)
+
+Scizor     Lv.54  @Occa Berry     Technician     Careful  Bullet Punch, Swords Dance, Rock Smash, Bug Bite
+---
+
+-----------------
+Celestial Tower
+-----------------
+
+>>>>>>>>>>>>>>>>
+Ace Trainer Kassandra 264 (Singles) (None)
+
+Tentacruel Lv.53  @Focus Sash     Clear Body     Modest   Scald, Sludge Wave, Mirror Coat, Toxic Spikes
+Nidoqueen  Lv.54  @Life Orb       Sheer Force    Calm     Venoshock, Flamethrower, Ice Beam, Earth Power
+---
+
+-----------------
+Route 7
+-----------------
+
+>>>>>>>>>>>>>>>>
+Backpacker Ruth 155 (Singles) (None)
+
+Miltank    Lv.54  @-              Scrappy        Quiet    Curse, Body Slam, Milk Drink, Zen Headbutt
+---
+
+-----------------
+Mistralton City
+-----------------
+
+>>>>>>>>>>>>>>>>
+Worker Brady 127 (Singles) (None)
+
+Staraptor  Lv.55  @None           Reckless       Lax      Brave Bird, Roost, Close Combat, Double-Edge
+Crobat     Lv.55  @Flying Gem     Inner Focus    Relaxed  Acrobatics, Cross Poison, Leech Life, Roost
+---
+
+Worker Cliff 125 (Singles) (None)
+
+Unfezant   Lv.55  @None           Super Luck     Rash     Air Slash, Heat Wave, Roost, Facade
+Unfezant   Lv.55  @None           Super Luck     Rash     Air Slash, Heat Wave, Roost, Facade
+---
+
+-----------------
+Celestial Tower
+-----------------
+
+>>>>>>>>>>>>>>>>
+Psychic Bryce 119 (Singles) (None)
+
+Claydol    Lv.55  @-              Levitate       Naughty  Stored Power, Rest, Cosmic Power, Rock Polish
+---
+
+Ace Trainer Beckett 269 (Singles) (None)
+
+Lickilicky Lv.55  @Life Orb       Own Tempo      Bold     Flamethrower, Body Slam, Shadow Ball, Thunderbolt
+---
+
+Battle Girl Karenna 481 (Singles) (None)
+
+Slaking    Lv.56  @-              Truant         Brave    , , , 
+---
+
+Team Plasma N2 218 (Singles) (None)
+
+Gigalith   Lv.55  @Custap Berry   Sturdy         Calm     Explosion, Stone Edge, Heavy Slam, Stealth Rock
+Ferrothorn Lv.56  @Rocky Helmet   Iron Barbs     Calm     Leech Seed, Gyro Ball, Power Whip, Protect
+Galvantula Lv.56  @Focus Sash     Compound Eyes  Rash     Volt Switch, Energy Ball, Bug Buzz, Thunder
+Klinklang  Lv.56  @Occa Berry     Clear Body     Naive    Shift Gear, Gear Grind, Superpower, Volt Switch
+---
+
+Black Belt Ryder 467 (Singles) (None)
+
+Machamp    Lv.56  @-              Guts           Impish   , , , 
+---
+
+-----------------
+Mistralton City
+-----------------
+
+>>>>>>>>>>>>>>>>
+Pilot Ted 70 (Singles) (None)
+
+Swellow    Lv.57  @Flame Orb      Guts           Modest   Protect, Facade, Brave Bird, Roost
+---
+
+-----------------
+Route 3
+-----------------
+
+>>>>>>>>>>>>>>>>
+PkMn Breeder Galen 19 (Singles) (Lum Berry)
+
+Simisage   Lv.57  @Petaya Berry   Gluttony       Careful  Leaf Storm, Nasty Plot, Focus Blast, Endeavor
+Simisear   Lv.57  @Petaya Berry   Gluttony       Quirky   Overheat, Nasty Plot, Grass Knot, Focus Blast
+Simipour   Lv.57  @Petaya Berry   Gluttony       Quirky   Hydro Pump, Nasty Plot, Grass Knot, Focus Blast
+---
+
+-----------------
+Mistralton City
+-----------------
+
+>>>>>>>>>>>>>>>>
+Worker Arnold 128 (Singles) (None)
+
+Archeops   Lv.57  @Flying Gem     Defeatist      Hasty    Acrobatics, Stone Edge, Earthquake, Endeavor
+---
+
+Pilot Chase 71 (Singles) (None)
+
+Swellow    Lv.57  @Flame Orb      Guts           Careful  Protect, Facade, Brave Bird, Roost
+---
+
+-----------------
+Wellspring Cave
+-----------------
+
+>>>>>>>>>>>>>>>>
+Black Belt Edward 252 (Singles) (None)
+
+Scrafty    Lv.58  @-              Shed Skin      Quiet    Focus Punch, Rock Climb, Facade, Crunch
+Throh      Lv.58  @-              Guts           Serious  Reversal, Superpower, Detect, Endure
+Sawk       Lv.58  @-              Sturdy         Serious  Reversal, Close Combat, Detect, Endure
+---
+
+-----------------
+P2 Laboratory
+-----------------
+
+>>>>>>>>>>>>>>>>
+Scientist Nathan 421 (Singles) (None)
+
+Weezing    Lv.58  @Normal Gem     Levitate       Jolly    Explosion, Sludge Bomb, Fire Blast, 
+---
+
+-----------------
+Wellspring Cave
+-----------------
+
+>>>>>>>>>>>>>>>>
+Battle Girl Xiao 254 (Singles) (None)
+
+Medicham   Lv.58  @-              Pure Power     Bold     Fake Out, Zen Headbutt, Bullet Punch, Close Combat
+Hitmonchan Lv.59  @-              Keen Eye       Hasty    Close Combat, Ice Punch, Thunder Punch, Fire Punch
+---
+
+-----------------
+Route 17
+-----------------
+
+>>>>>>>>>>>>>>>>
+Fisherman Lydon 432 (Singles) (None)
+
+Sharpedo   Lv.58  @-              Speed Boost    Rash     Crunch, Protect, Waterfall, Close Combat
+Slowbro    Lv.59  @-              Oblivious      Brave    Scald, Psychic, Slack Off, Focus Blast
+---
+
+-----------------
+Route 1
+-----------------
+
+>>>>>>>>>>>>>>>>
+PkMn Ranger Brenda 531 (Singles) (Persim Berry)
+
+Swoobat    Lv.58  @Salac Berry    Simple         Mild     Substitute, Calm Mind, Roost, Stored Power
+Simisear   Lv.58  @Sitrus Berry   Gluttony       Naive    Flamethrower, Grass Knot, Nasty Plot, Yawn
+Scolipede  Lv.59  @Rocky Helmet   Speed Boost    Bashful  Swords Dance, Megahorn, Poison Jab, Rock Slide
+---
+
+PkMn Ranger Claude 532 (Singles) (Persim Berry)
+
+Cinccino   Lv.58  @King's Rock    Skill Link     Timid    Tail Slap, Bullet Seed, Rock Blast, 
+Zebstrika  Lv.58  @Sitrus Berry   Motor Drive    Gentle   Volt Switch, Wild Charge, Flare Blitz, Bulldoze
+Scyther    Lv.59  @Eviolite       Technician     Jolly    Swords Dance, Aerial Ace, Quick Attack, Rock Smash
+---
+
+-----------------
+Route 17
+-----------------
+
+>>>>>>>>>>>>>>>>
+Swimmer  F Caroline 447 (Singles) (None)
+
+Cloyster   Lv.60  @-              Skill Link     Hardy    Icicle Spear, Rock Blast, Shell Smash, Ice Shard
+Milotic    Lv.60  @-              Marvel Scale   Careful  Toxic, Surf, Ice Beam, Recover
+---
+
+-----------------
+Wellspring Cave
+-----------------
+
+>>>>>>>>>>>>>>>>
+Battle Girl Maggie 253 (Singles) (None)
+
+Lucario    Lv.59  @-              Steadfast      Jolly    Close Combat, Bullet Punch, Iron Head, Swords Dance
+Hitmonlee  Lv.60  @-              Limber         Rash     Close Combat, Knock Off, Bulk Up, Blaze Kick
+---
+
+-----------------
+Mistralton Cave
+-----------------
+
+>>>>>>>>>>>>>>>>
+Hiker Hugh 255 (Singles) (None)
+
+Excadrill  Lv.60  @-              Mold Breaker   Timid    Iron Head, Rock Slide, Swords Dance, Earthquake
+Machamp    Lv.60  @-              No Guard       Adamant  Stone Edge, Close Combat, Knock Off, Bulk Up
+---
+
+-----------------
+Route 13
+-----------------
+
+>>>>>>>>>>>>>>>>
+Fisherman Mick 434 (Singles) (None)
+
+Magikarp   Lv.60  @-              Swift Swim     Sassy    , , , 
+Magikarp   Lv.60  @-              Swift Swim     Sassy    , , , 
+Magikarp   Lv.60  @-              Swift Swim     Sassy    , , , 
+Magikarp   Lv.60  @-              Swift Swim     Sassy    , , , 
+Magikarp   Lv.60  @-              Swift Swim     Sassy    , , , 
+Magikarp   Lv.60  @-              Swift Swim     Sassy    , , , 
+---
+
+-----------------
+Twist Mountain
+-----------------
+
+>>>>>>>>>>>>>>>>
+Ace Trainer Caroll 518 (Singles) (None)
+
+Jynx       Lv.60  @-              Oblivious      Brave    Ice Beam, Lovely Kiss, Psychic, Nasty Plot
+Hariyama   Lv.60  @-              Thick Fat      Naughty  Belly Drum, Drain Punch, Bullet Punch, Knock Off
+---
+
+Hiker Darrell 242 (Singles) (None)
+
+Crobat     Lv.58  @-              Inner Focus    Calm     Air Slash, Heat Wave, Sludge Bomb, Giga Drain
+Golem      Lv.59  @-              Sturdy         Mild     Stone Edge, Earthquake, Sucker Punch, Curse
+Machamp    Lv.60  @-              No Guard       Serious  Stone Edge, Close Combat, Knock Off, Bullet Punch
+---
+
+-----------------
+Route 18
+-----------------
+
+>>>>>>>>>>>>>>>>
+Battle Girl Hillary 445 (Singles) (None)
+
+Mienshao   Lv.60  @-              Regenerator    Naughty  Fake Out, U-turn, High Jump Kick, Knock Off
+Primeape   Lv.60  @-              Defiant        Quiet    Close Combat, Bulk Up, U-turn, Thunder Punch
+---
+
+-----------------
+Twist Mountain
+-----------------
+
+>>>>>>>>>>>>>>>>
+Doctor Hank 151 (Singles) (None)
+
+Reuniclus  Lv.60  @-              Overcoat       Brave    Focus Blast, Energy Ball, Psyshock, Psychic
+Musharna   Lv.60  @-              Forewarn       Bold     Hypnosis, Dream Eater, Psychic, Moonlight
+---
+
+Worker Rich 123 (Singles) (None)
+
+Donphan    Lv.60  @-              Sturdy         Serious  Stone Edge, Earthquake, Ice Shard, Rapid Spin
+Magcargo   Lv.60  @-              Flame Body     Bashful  Power Gem, Flamethrower, Earth Power, Shell Smash
+---
+
+Hiker Neil 195 (Singles) (None)
+
+Sandslash  Lv.60  @-              Sand Veil      Lonely   Hone Claws, Stone Edge, Earthquake, Poison Jab
+Camerupt   Lv.60  @-              Solid Rock     Naive    Flamethrower, Earth Power, Ancient Power, Rock Polish
+---
+
+-----------------
+Route 17
+-----------------
+
+>>>>>>>>>>>>>>>>
+Swimmer  M Wright 389 (Singles) (None)
+
+Huntail    Lv.60  @-              Swift Swim     Jolly    Shell Smash, Aqua Tail, Crunch, Ice Fang
+Eelektross Lv.60  @-              Levitate       Naughty  Hydro Pump, Flamethrower, Giga Drain, Thunderbolt
+---
+
+-----------------
+Village Bridge
+-----------------
+
+>>>>>>>>>>>>>>>>
+School Kid Serena 579 (Singles) (None)
+
+Zubat      Lv.60  @-              Inner Focus    Quirky   , , , 
+Poochyena  Lv.60  @-              Run Away       Sassy    , , , 
+Doduo      Lv.60  @-              Run Away       Hardy    , , , 
+Nosepass   Lv.60  @-              Sturdy         Sassy    , , , 
+Slugma     Lv.60  @-              Magma Armor    Gentle   , , , 
+Electrike  Lv.60  @-              Static         Hardy    , , , 
+---
+
+-----------------
+Route 18
+-----------------
+
+>>>>>>>>>>>>>>>>
+Veteran Ray 450 (Singles) (None)
+
+Crawdaunt  Lv.60  @Focus Sash     Adaptability   Jolly    Waterfall, Knock Off, Aqua Jet, Close Combat
+Venusaur   Lv.60  @Focus Sash     Overgrow       Sassy    Giga Drain, Sludge Bomb, Earth Power, Growth
+Darmanitan Lv.60  @Life Orb       Sheer Force    Quiet    Hammer Arm, Flare Blitz, Thrash, Grass Knot
+---
+
+PkMn Breeder Owen 361 (Singles) (None)
+
+Bonsly     Lv.60  @-              Sturdy         Timid    , , , 
+Wooper     Lv.60  @-              Damp           Mild     , , , 
+Munchlax   Lv.60  @-              Pickup         Hasty    , , , 
+Sandshrew  Lv.60  @-              Sand Veil      Mild     , , , 
+Wynaut     Lv.60  @-              Shadow Tag     Quiet    , , , 
+Spoink     Lv.60  @-              Thick Fat      Lax      , , , 
+---
+
+PkMn Breeder Brooke 362 (Singles) (None)
+
+Swinub     Lv.60  @-              Oblivious      Serious  , , , 
+Poliwag    Lv.60  @-              Water Absorb   Adamant  , , , 
+Cleffa     Lv.60  @-              Cute Charm     Calm     , , , 
+Gible      Lv.60  @-              Sand Veil      Modest   , , , 
+Igglybuff  Lv.60  @-              Cute Charm     Docile   , , , 
+Larvitar   Lv.60  @-              Guts           Quirky   , , , 
+---
+
+-----------------
+Route 1
+-----------------
+
+>>>>>>>>>>>>>>>>
+Fisherman Sean 533 (Singles) (None)
+
+Jellicent  Lv.60  @Leftovers      Cursed Body    Bashful  Will-O-Wisp, Recover, Shadow Ball, Hydro Pump
+Jellicent  Lv.60  @Leftovers      Cursed Body    Bashful  Will-O-Wisp, Recover, Shadow Ball, Hydro Pump
+---
+
+-----------------
+Twist Mountain
+-----------------
+
+>>>>>>>>>>>>>>>>
+Hiker Terrell 243 (Singles) (None)
+
+Gigalith   Lv.60  @-              Sturdy         Naive    Stone Edge, Stealth Rock, Heavy Slam, Earthquake
+Steelix    Lv.60  @-              Sturdy         Timid    Gyro Ball, Stone Edge, Earthquake, Curse
+---
+
+-----------------
+Route 17
+-----------------
+
+>>>>>>>>>>>>>>>>
+Swimmer  M Berke 413 (Singles) (None)
+
+Mantine    Lv.60  @-              Swift Swim     Docile   Air Slash, Roost, Hydro Pump, Rain Dance
+Lanturn    Lv.60  @-              Volt Absorb    Naive    Thunder, Hydro Pump, Icy Wind, Thunderbolt
+---
+
+The Riches Draco 520 (Singles) (None)
+
+Buizel     Lv.60  @-              Swift Swim     Quiet    , , , 
+---
+
+-----------------
+Route 18
+-----------------
+
+>>>>>>>>>>>>>>>>
+Hiker Jeremiah 460 (Singles) (None)
+
+Hariyama   Lv.60  @-              Guts           Adamant  Fake Out, Drain Punch, Bullet Punch, Knock Off
+Probopass  Lv.60  @-              Sturdy         Docile   Flash Cannon, Power Gem, Earth Power, Thunderbolt
+---
+
+-----------------
+Route 12
+-----------------
+
+>>>>>>>>>>>>>>>>
+PkMn Breeder Ethel 452 (Singles) (Sitrus Berry)
+
+Shuppet    Lv.61  @-              Insomnia       Lonely   , , , 
+Skitty     Lv.61  @-              Cute Charm     Docile   , , , 
+Snorunt    Lv.61  @-              Inner Focus    Jolly    , , , 
+Cacnea     Lv.61  @-              Sand Veil      Gentle   , , , 
+Phanpy     Lv.61  @-              Pickup         Sassy    , , , 
+---
+
+Ace Trainer Lena 463 (Singles) (None)
+
+Gardevoir  Lv.61  @-              Synchronize    Mild     , , , 
+Gallade    Lv.61  @-              Steadfast      Hardy    , , , 
+---
+
+PkMn Ranger Eliza 486 (Singles) (None)
+
+Flygon     Lv.61  @-              Levitate       Lax      , , , 
+---
+
+Pokefan Darcy 374 (Singles) (None)
+
+Rattata    Lv.61  @-              Run Away       Relaxed  , , , 
+Sentret    Lv.61  @-              Run Away       Docile   , , , 
+Zigzagoon  Lv.61  @-              Pickup         Bold     , , , 
+Bidoof     Lv.61  @-              Simple         Naive    , , , 
+Patrat     Lv.61  @-              Run Away       Calm     , , , 
+---
+
+-----------------
+Abundant Shrine
+-----------------
+
+>>>>>>>>>>>>>>>>
+Youngster Wes 575 (Singles) (None)
+
+Caterpie   Lv.61  @-              Shield Dust    Brave    , , , 
+Spinarak   Lv.61  @-              Swarm          Quirky   , , , 
+Pineco     Lv.61  @-              Sturdy         Naive    , , , 
+Masquerain Lv.61  @-              Intimidate     Docile   , , , 
+Scolipede  Lv.61  @-              Poison Point   Calm     , , , 
+---
+
+PkMn Ranger Ralph 487 (Singles) (None)
+
+Ludicolo   Lv.61  @-              Swift Swim     Docile   , , , 
+---
+
+Leader Skyla 25 (Doubles) (None)
+
+Pelipper   Lv.61  @Wacan Berry    Drizzle        Calm     Hurricane, U-turn, Hydro Pump, Protect
+Murkrow    Lv.61  @Eviolite       Prankster      Rash     Tailwind, Foul Play, Quash, Brave Bird
+Salamence  Lv.61  @Dragon Gem     Intimidate     Jolly    Hydro Pump, Dragon Pulse, Hurricane, Earthquake
+Rotom-Fan  Lv.61  @Leftovers      -              Jolly    Air Slash, Thunder, Will-O-Wisp, Nasty Plot
+Gyarados   Lv.61  @Flying Gem     Moxie          Calm     Waterfall, Earthquake, Dragon Dance, Hurricane
+Togekiss   Lv.61  @Leftovers      Serene Grace   Hardy    Air Slash, Soft-Boiled, Tailwind, Hyper Voice
+---
+
+The Riches Susan 547 (Singles) (None)
+
+Teddiursa  Lv.61  @-              Pickup         Quiet    , , , 
+Lopunny    Lv.61  @-              Cute Charm     Calm     , , , 
+---
+
+-----------------
+Route 17
+-----------------
+
+>>>>>>>>>>>>>>>>
+Swimmer  F Joyce 390 (Singles) (None)
+
+Floatzel   Lv.61  @-              Swift Swim     Bold     Fake Out, Aqua Tail, Ice Fang, Aqua Jet
+---
+
+-----------------
+Twist Mountain
+-----------------
+
+>>>>>>>>>>>>>>>>
+Worker Brand 241 (Singles) (None)
+
+Vigoroth   Lv.62  @-              Vital Spirit   Naive    Sucker Punch, Shadow Claw, Facade, Counter
+Vigoroth   Lv.62  @-              Vital Spirit   Naive    Sucker Punch, Shadow Claw, Facade, Counter
+---
+
+The Riches Clairdonna 524 (Singles) (None)
+
+Bronzor    Lv.62  @-              Levitate       Jolly    , , , 
+Kangaskhan Lv.62  @-              Early Bird     Adamant  , , , 
+Golurk     Lv.62  @-              Iron Fist      Calm     , , , 
+---
+
+Fisherman Devon 149 (Singles) (None)
+
+Finneon    Lv.62  @-              Swift Swim     Brave    , , , 
+Gorebyss   Lv.62  @-              Swift Swim     Timid    , , , 
+Huntail    Lv.62  @-              Swift Swim     Careful  , , , 
+Lumineon   Lv.62  @-              Swift Swim     Naive    , , , 
+---
+
+-----------------
+Route 14
+-----------------
+
+>>>>>>>>>>>>>>>>
+Fisherman Sid 431 (Singles) (None)
+
+Barboach   Lv.62  @-              Oblivious      Calm     , , , 
+Corphish   Lv.62  @-              Hyper Cutter   Bold     , , , 
+Carvanha   Lv.62  @-              Rough Skin     Quiet    , , , 
+Whiscash   Lv.62  @-              Oblivious      Bashful  , , , 
+---
+
+Team Plasma Grunt41 597 (Singles) (None)
+
+Liepard    Lv.62  @-              Limber         Lonely   , , , 
+Liepard    Lv.62  @-              Limber         Lonely   , , , 
+Garbodor   Lv.62  @-              Stench         Modest   , , , 
+---
+
+-----------------
+Village Bridge
+-----------------
+
+>>>>>>>>>>>>>>>>
+Scientist Shannon 580 (Singles) (None)
+
+Amoonguss  Lv.62  @-              Effect Spore   Quiet    , , , 
+Ekans      Lv.62  @-              Intimidate     Brave    , , , 
+Grimer     Lv.62  @-              Stench         Hasty    , , , 
+Seviper    Lv.62  @-              Shed Skin      Docile   , , , 
+---
+
+Clerk  M Nelson 379 (Singles) (None)
+
+Yanmega    Lv.62  @-              Speed Boost    Modest   , , , 
+Ledian     Lv.62  @-              Swarm          Lax      , , , 
+Kricketune Lv.62  @-              Swarm          Relaxed  , , , 
+Scizor     Lv.62  @-              Swarm          Adamant  , , , 
+Scolipede  Lv.62  @-              Poison Point   Timid    , , , 
+---
+
+-----------------
+Route 15
+-----------------
+
+>>>>>>>>>>>>>>>>
+Pokefan Elliot 429 (Singles) (None)
+
+Gulpin     Lv.62  @-              Liquid Ooze    Naive    , , , 
+Swablu     Lv.62  @-              Natural Cure   Lax      , , , 
+Spheal     Lv.62  @-              Thick Fat      Quirky   , , , 
+Drifloon   Lv.62  @-              Aftermath      Bold     , , , 
+---
+
+Ace Trainer Vincent 464 (Singles) (None)
+
+Magmortar  Lv.62  @-              Flame Body     Quiet    , , , 
+---
+
+Hiker Russel 398 (Singles) (None)
+
+Geodude    Lv.63  @-              Rock Head      Adamant  , , , 
+Graveler   Lv.63  @-              Rock Head      Sassy    , , , 
+Golem      Lv.63  @-              Rock Head      Modest   , , , 
+---
+
+Team Plasma Grunt43 599 (Singles) (None)
+
+Watchog    Lv.63  @-              Illuminate     Modest   , , , 
+Scrafty    Lv.63  @-              Shed Skin      Quiet    , , , 
+---
+
+The Riches Zillion 525 (Singles) (None)
+
+Shuckle    Lv.63  @-              Sturdy         Impish   , , , 
+Lickilicky Lv.63  @-              Own Tempo      Relaxed  , , , 
+Krookodile Lv.63  @-              Intimidate     Hardy    , , , 
+Politoed   Lv.63  @-              Water Absorb   Mild     , , , 
+---
+
+PkMn Trainer Cheren16 539 (Singles) (None)
+
+Skarmory   Lv.63  @Rocky Helmet   Sturdy         Jolly    Stealth Rock, Spikes, Whirlwind, Roost
+Garchomp   Lv.63  @Yache Berry    Rough Skin     Naughty  Earthquake, Stone Edge, Dragon Claw, Swords Dance
+Starmie    Lv.63  @Focus Sash     Natural Cure   Hasty    Psychic, Scald, Thunderbolt, Ice Beam
+Ferrothorn Lv.63  @Leftovers      Iron Barbs     Quirky   Leech Seed, Gyro Ball, Power Whip, Protect
+Emboar     Lv.63  @Life Orb       Reckless       Adamant  Flare Blitz, Close Combat, Wild Charge, Sucker Punch
+---
+
+PkMn Trainer Cheren17 540 (Singles) (None)
+
+Pelipper   Lv.63  @Wacan Berry    Drizzle        Rash     Hurricane, Hydro Pump, U-turn, Roost
+Toxicroak  Lv.63  @Life Orb       Dry Skin       Hardy    Drain Punch, Poison Jab, Swords Dance, Sucker Punch
+Ludicolo   Lv.63  @Focus Sash     Swift Swim     Quirky   Fake Out, Giga Drain, Hydro Pump, Ice Beam
+Dragonite  Lv.63  @Lum Berry      Multiscale     Quiet    Hurricane, Aqua Tail, Extreme Speed, Dragon Dance
+Samurott   Lv.63  @Water Gem      Shell Armor    Serious  Aqua Tail, Swords Dance, Megahorn, Aqua Jet
+---
+
+PkMn Trainer Cheren18 541 (Singles) (None)
+
+Aggron     Lv.63  @Custap Berry   Sturdy         Quiet    Stealth Rock, Stone Edge, Heavy Slam, Metal Burst
+Chandelure Lv.63  @Choice Scarf   Flash Fire     Gentle   Flamethrower, Shadow Ball, Energy Ball, Trick
+Salamence  Lv.63  @Yache Berry    Moxie          Quiet    Dragon Dance, Earthquake, Outrage, Rock Slide
+Snorlax    Lv.63  @Leftovers      Immunity       Serious  Curse, Rest, Shadow Claw, Body Slam
+Serperior  Lv.63  @Focus Sash     Contrary       Relaxed  Glare, Leaf Storm, Draco Meteor, Leech Seed
+---
+
+-----------------
+Twist Mountain
+-----------------
+
+>>>>>>>>>>>>>>>>
+Worker Rob 122 (Singles) (None)
+
+Tangrowth  Lv.63  @-              Leaf Guard     Bashful  Earthquake, Power Whip, Knock Off, Poison Jab
+---
+
+Lady Elizandra 209 (Singles) (None)
+
+Meowth     Lv.63  @-              Pickup         Calm     , , , 
+Vulpix     Lv.63  @-              Flash Fire     Lonely   , , , 
+Eevee      Lv.63  @-              Run Away       Hasty    , , , 
+---
+
+Gentleman Robert 211 (Singles) (None)
+
+Houndour   Lv.63  @-              Early Bird     Quirky   , , , 
+Noctowl    Lv.63  @-              Insomnia       Bashful  , , , 
+Houndoom   Lv.63  @-              Early Bird     Relaxed  , , , 
+---
+
+-----------------
+Icirrus City
+-----------------
+
+>>>>>>>>>>>>>>>>
+Battle Girl Mikiko 213 (Singles) (None)
+
+Beartic    Lv.63  @-              Snow Cloak     Lax      Superpower, Icicle Crash, Aqua Jet, Bulk Up
+Dewgong    Lv.63  @-              Thick Fat      Quiet    Ice Beam, Surf, Rest, Sleep Talk
+---
+
+Roughneck Fletcher 136 (Singles) (None)
+
+Mightyena  Lv.63  @-              Intimidate     Careful  , , , 
+Skuntank   Lv.63  @-              Stench         Lax      , , , 
+Crawdaunt  Lv.63  @-              Hyper Cutter   Sassy    , , , 
+---
+
+Black Belt Grant 215 (Singles) (None)
+
+Glalie     Lv.63  @-              Moody          Lax      Ice Beam, Earthquake, Ice Shard, Frost Breath
+Beartic    Lv.63  @-              Snow Cloak     Quirky   Thrash, Superpower, Icicle Crash, Rest
+---
+
+-----------------
+Route 13
+-----------------
+
+>>>>>>>>>>>>>>>>
+Parasol Lady Laura 446 (Singles) (None)
+
+Surskit    Lv.63  @-              Swift Swim     Gentle   , , , 
+Goldeen    Lv.63  @-              Swift Swim     Naughty  , , , 
+Seaking    Lv.63  @-              Swift Swim     Serious  , , , 
+---
+
+Lass Dana 354 (Singles) (Ultra Ball)
+
+Misdreavus Lv.63  @-              Levitate       Lonely   , , , 
+Pachirisu  Lv.63  @-              Run Away       Hasty    , , , 
+Delcatty   Lv.63  @-              Cute Charm     Impish   , , , 
+---
+
+School Kid Alan 355 (Singles) (None)
+
+Seadra     Lv.63  @-              Poison Point   Naughty  , , , 
+Pupitar    Lv.63  @-              Shed Skin      Adamant  , , , 
+Dragonair  Lv.63  @-              Shed Skin      Mild     , , , 
+---
+
+School Kid Sally 356 (Singles) (None)
+
+Dunsparce  Lv.63  @-              Serene Grace   Sassy    , , , 
+Delibird   Lv.63  @-              Vital Spirit   Timid    , , , 
+Luvdisc    Lv.63  @-              Swift Swim     Naughty  , , , 
+---
+
+-----------------
+Route 18
+-----------------
+
+>>>>>>>>>>>>>>>>
+Backpacker Sam 441 (Singles) (None)
+
+Zangoose   Lv.63  @Toxic Orb      Toxic Boost    Modest   Protect, Facade, Shadow Claw, Close Combat
+---
+
+Backpacker Kumiko 439 (Singles) (None)
+
+Emolga     Lv.63  @-              Static         Careful  , , , 
+---
+
+-----------------
+Nimbasa City
+-----------------
+
+>>>>>>>>>>>>>>>>
+Waiter Clint 363 (Singles) (Fresh Water)
+
+Clamperl   Lv.63  @-              Shell Armor    Lonely   , , , 
+Glameow    Lv.63  @-              Limber         Docile   , , , 
+Unfezant   Lv.63  @-              Big Pecks      Relaxed  , , , 
+---
+
+-----------------
+Route 12
+-----------------
+
+>>>>>>>>>>>>>>>>
+PkMn Breeder Eustace 451 (Singles) (Sitrus Berry)
+
+Makuhita   Lv.63  @-              Thick Fat      Quirky   , , , 
+Tyrogue    Lv.63  @-              Guts           Timid    , , , 
+Riolu      Lv.63  @-              Steadfast      Gentle   , , , 
+---
+
+-----------------
+Abundant Shrine
+-----------------
+
+>>>>>>>>>>>>>>>>
+Lass Lurleen 581 (Singles) (None)
+
+Horsea     Lv.63  @-              Swift Swim     Jolly    , , , 
+Sunkern    Lv.63  @-              Chlorophyll    Relaxed  , , , 
+Ponyta     Lv.63  @-              Run Away       Calm     , , , 
+---
+
+-----------------
+Route 13
+-----------------
+
+>>>>>>>>>>>>>>>>
+Fisherman Pete 435 (Singles) (None)
+
+Feebas     Lv.63  @-              Swift Swim     Adamant  , , , 
+Remoraid   Lv.63  @-              Hustle         Brave    , , , 
+Kingler    Lv.63  @-              Hyper Cutter   Quirky   , , , 
+---
+
+Fisherman Jones 433 (Singles) (None)
+
+Tentacool  Lv.63  @-              Clear Body     Docile   , , , 
+Qwilfish   Lv.63  @-              Poison Point   Docile   , , , 
+Tentacruel Lv.63  @-              Clear Body     Bashful  , , , 
+---
+
+Pilot Leonard 375 (Singles) (None)
+
+Hoothoot   Lv.63  @-              Insomnia       Impish   , , , 
+Swellow    Lv.63  @-              Guts           Careful  , , , 
+Unfezant   Lv.63  @-              Big Pecks      Impish   , , , 
+---
+
+-----------------
+Challenger's Cave
+-----------------
+
+>>>>>>>>>>>>>>>>
+Veteran Shaun 259 (Singles) (None)
+
+Gyarados   Lv.62  @-              Intimidate     Brave    Waterfall, Stone Edge, Blizzard, Fire Blast
+Excadrill  Lv.62  @-              Sand Rush      Relaxed  Drill Run, Rock Slide, Sludge Bomb, Toxic
+Crobat     Lv.62  @-              Inner Focus    Sassy    Air Slash, Poison Fang, U-turn, Return
+Druddigon  Lv.62  @-              Rough Skin     Quirky   Outrage, Night Slash, Surf, Flamethrower
+Gigalith   Lv.62  @-              Sturdy         Gentle   Stone Edge, Earthquake, Flash Cannon, Return
+Snorlax    Lv.63  @-              Immunity       Hardy    Heavy Slam, Body Slam, Wild Charge, Crunch
+---
+
+Clerk  F Wren 380 (Singles) (None)
+
+Cherubi    Lv.63  @-              Chlorophyll    Brave    , , , 
+Sunflora   Lv.63  @-              Chlorophyll    Careful  , , , 
+Cherrim    Lv.63  @-              Flower Gift    Gentle   , , , 
+---
+
+Youngster Abe 146 (Singles) (None)
+
+Spearow    Lv.63  @-              Keen Eye       Hardy    , , , 
+Linoone    Lv.63  @-              Pickup         Lonely   , , , 
+Fearow     Lv.63  @-              Keen Eye       Naughty  , , , 
+---
+
+Youngster Kevin 147 (Singles) (Ultra Ball)
+
+Venonat    Lv.63  @-              Compound Eyes  Modest   , , , 
+Raticate   Lv.63  @-              Run Away       Serious  , , , 
+Venomoth   Lv.63  @-              Shield Dust    Rash     , , , 
+---
+
+-----------------
+Route 13
+-----------------
+
+>>>>>>>>>>>>>>>>
+Youngster Astor 430 (Singles) (None)
+
+Nincada    Lv.63  @-              Compound Eyes  Naughty  , , , 
+Metapod    Lv.63  @-              Shed Skin      Naughty  , , , 
+Mothim     Lv.63  @-              Swarm          Brave    , , , 
+---
+
+-----------------
+Challenger's Cave
+-----------------
+
+>>>>>>>>>>>>>>>>
+Ace Trainer Terry 262 (Singles) (None)
+
+Dratini    Lv.63  @-              Shed Skin      Jolly    , , , 
+Scyther    Lv.63  @-              Swarm          Naive    , , , 
+Sudowoodo  Lv.63  @-              Sturdy         Lax      , , , 
+Manectric  Lv.63  @-              Static         Sassy    , , , 
+---
+
+-----------------
+Route 12
+-----------------
+
+>>>>>>>>>>>>>>>>
+School Kid Jem 427 (Singles) (None)
+
+Weedle     Lv.63  @-              Shield Dust    Naive    , , , 
+Kakuna     Lv.63  @-              Shed Skin      Quirky   , , , 
+Beedrill   Lv.63  @-              Swarm          Lax      , , , 
+---
+
+-----------------
+Dreamyard
+-----------------
+
+>>>>>>>>>>>>>>>>
+Psychic Tommy 424 (Singles) (None)
+
+Beldum     Lv.63  @-              Clear Body     Modest   , , , 
+Metang     Lv.63  @-              Clear Body     Hasty    , , , 
+Beheeyem   Lv.63  @-              Telepathy      Relaxed  , , , 
+Reuniclus  Lv.63  @-              Overcoat       Naive    , , , 
+---
+
+-----------------
+Abundant Shrine
+-----------------
+
+>>>>>>>>>>>>>>>>
+Youngster Lester 576 (Singles) (None)
+
+Yanma      Lv.63  @-              Speed Boost    Docile   , , , 
+Ledyba     Lv.63  @-              Swarm          Mild     , , , 
+Ninjask    Lv.63  @-              Speed Boost    Timid    , , , 
+---
+
+-----------------
+Dreamyard
+-----------------
+
+>>>>>>>>>>>>>>>>
+Scientist Markus 419 (Singles) (None)
+
+Drowzee    Lv.63  @-              Insomnia       Brave    , , , 
+Musharna   Lv.63  @-              Forewarn       Timid    , , , 
+Hypno      Lv.63  @-              Insomnia       Mild     , , , 
+---
+
+Scientist Chan 418 (Singles) (None)
+
+Poliwhirl  Lv.63  @-              Water Absorb   Hasty    , , , 
+Musharna   Lv.63  @-              Forewarn       Naughty  , , , 
+Parasect   Lv.63  @-              Effect Spore   Naughty  , , , 
+---
+
+-----------------
+Undella Bay
+-----------------
+
+>>>>>>>>>>>>>>>>
+Swimmer  M Bart 569 (Singles) (None)
+
+Staryu     Lv.63  @-              Illuminate     Hardy    , , , 
+Wingull    Lv.63  @-              Keen Eye       Naughty  , , , 
+Jellicent  Lv.63  @-              Water Absorb   Mild     , , , 
+---
+
+-----------------
+Twist Mountain
+-----------------
+
+>>>>>>>>>>>>>>>>
+Ace Trainer Jordan 519 (Singles) (None)
+
+Vanilluxe  Lv.62  @-              Snow Warning   Quirky   Blizzard, Frost Breath, Explosion, Flash Cannon
+Walrein    Lv.62  @-              Ice Body       Naive    Blizzard, Substitute, Toxic, Surf
+Escavalier Lv.63  @-              Overcoat       Docile   Drill Run, Swords Dance, Iron Head, Megahorn
+---
+
+-----------------
+Abundant Shrine
+-----------------
+
+>>>>>>>>>>>>>>>>
+Lass Maki 574 (Singles) (None)
+
+Burmy      Lv.63  @-              Shed Skin      Lonely   , , , 
+Tangela    Lv.63  @-              Chlorophyll    Jolly    , , , 
+Sawsbuck   Lv.63  @-              Chlorophyll    Careful  , , , 
+---
+
+-----------------
+Route 13
+-----------------
+
+>>>>>>>>>>>>>>>>
+Lass Fey 457 (Singles) (None)
+
+Buneary    Lv.63  @-              Run Away       Bold     , , , 
+Shroomish  Lv.63  @-              Effect Spore   Naive    , , , 
+Snubbull   Lv.63  @-              Intimidate     Bashful  , , , 
+---
+
+-----------------
+Undella Bay
+-----------------
+
+>>>>>>>>>>>>>>>>
+Swimmer  F Rebecca 571 (Singles) (None)
+
+Shellder   Lv.63  @-              Shell Armor    Quiet    , , , 
+Chinchou   Lv.63  @-              Volt Absorb    Rash     , , , 
+Jellicent  Lv.63  @-              Water Absorb   Careful  , , , 
+---
+
+-----------------
+Route 14
+-----------------
+
+>>>>>>>>>>>>>>>>
+Hiker Jebediah 458 (Singles) (None)
+
+Hippopotas Lv.63  @-              Sand Stream    Impish   , , , 
+Piloswine  Lv.63  @-              Oblivious      Timid    , , , 
+Probopass  Lv.63  @-              Sturdy         Calm     , , , 
+---
+
+-----------------
+Route 15
+-----------------
+
+>>>>>>>>>>>>>>>>
+Hiker Kit 459 (Singles) (None)
+
+Hippowdon  Lv.63  @-              Sand Stream    Calm     , , , 
+Gligar     Lv.63  @-              Hyper Cutter   Rash     , , , 
+Onix       Lv.63  @-              Rock Head      Rash     , , , 
+---
+
+-----------------
+Undella Bay
+-----------------
+
+>>>>>>>>>>>>>>>>
+Swimmer  M Matt 568 (Singles) (None)
+
+Wailmer    Lv.64  @-              Water Veil     Naughty  , , , 
+Wailmer    Lv.64  @-              Water Veil     Naughty  , , , 
+---
+
+-----------------
+Mistralton Cave
+-----------------
+
+>>>>>>>>>>>>>>>>
+Hiker Clarke 256 (Singles) (None)
+
+Cradily    Lv.64  @Leftovers      Storm Drain    Relaxed  Ingrain, Power Whip, Ancient Power, Recover
+---
+
+-----------------
+Challenger's Cave
+-----------------
+
+>>>>>>>>>>>>>>>>
+Ace Trainer Beverly 261 (Singles) (None)
+
+Furret     Lv.64  @-              Run Away       Modest   , , , 
+Grumpig    Lv.64  @-              Thick Fat      Relaxed  , , , 
+Gabite     Lv.64  @-              Sand Veil      Bold     , , , 
+---
+
+-----------------
+Icirrus City
+-----------------
+
+>>>>>>>>>>>>>>>>
+Battle Girl Miriam 212 (Singles) (None)
+
+Froslass   Lv.64  @-              Cursed Body    Adamant  Ice Beam, Shadow Ball, Psychic, Destiny Bond
+---
+
+Socialite Cassandra 210 (Singles) (None)
+
+Liepard    Lv.64  @-              Limber         Serious  , , , 
+Arbok      Lv.64  @-              Intimidate     Serious  , , , 
+---
+
+Rich Boy Brad 208 (Singles) (None)
+
+Aipom      Lv.64  @-              Run Away       Gentle   , , , 
+Murkrow    Lv.64  @-              Insomnia       Sassy    , , , 
+---
+
+Lass Sibyl 207 (Singles) (None)
+
+Chingling  Lv.64  @-              Levitate       Gentle   , , , 
+Wormadam   Lv.64  @-              Anticipation   Bashful  , , , 
+---
+
+PkMn Ranger Heidi 189 (Singles) (None)
+
+Musharna   Lv.64  @-              Forewarn       Quiet    , , , 
+Drifblim   Lv.64  @-              Aftermath      Adamant  , , , 
+Umbreon    Lv.64  @-              Synchronize    Serious  , , , 
+---
+
+PkMn Ranger Alain 185 (Singles) (None)
+
+Ambipom    Lv.64  @-              Technician     Naive    , , , 
+Carnivine  Lv.64  @-              Levitate       Hardy    , , , 
+Steelix    Lv.64  @-              Rock Head      Quiet    , , , 
+---
+
+Clerk  M Chaz 169 (Singles) (None)
+
+Ariados    Lv.64  @-              Swarm          Relaxed  , , , 
+Floatzel   Lv.64  @-              Swift Swim     Bold     , , , 
+---
+
+Waitress Bonita 364 (Singles) (Fresh Water)
+
+Psyduck    Lv.64  @-              Damp           Modest   , , , 
+Leafeon    Lv.64  @-              Leaf Guard     Bashful  , , , 
+---
+
+Scientist Simon 365 (Singles) (Ether)
+
+Stunky     Lv.64  @-              Stench         Quirky   , , , 
+Muk        Lv.64  @-              Stench         Quiet    , , , 
+---
+
+Scientist Blythe 366 (Singles) (Ether)
+
+Skorupi    Lv.64  @-              Battle Armor   Bold     , , , 
+Swalot     Lv.64  @-              Liquid Ooze    Lax      , , , 
+---
+
+Lady Sophie 367 (Singles) (None)
+
+Illumise   Lv.64  @-              Oblivious      Naive    , , , 
+---
+
+Rich Boy Anthony 368 (Singles) (None)
+
+Volbeat    Lv.64  @-              Illuminate     Naughty  , , , 
+---
+
+Socialite Emilia 369 (Singles) (Big Pearl)
+
+Sableye    Lv.64  @-              Keen Eye       Relaxed  , , , 
+Liepard    Lv.64  @-              Limber         Naive    , , , 
+---
+
+Black Belt Lao 371 (Singles) (None)
+
+Mankey     Lv.64  @-              Vital Spirit   Calm     , , , 
+Heracross  Lv.64  @-              Swarm          Hasty    , , , 
+Conkeldurr Lv.64  @-              Guts           Bashful  , , , 
+---
+
+Pokefan Colin 373 (Singles) (None)
+
+Slowpoke   Lv.64  @-              Oblivious      Lax      , , , 
+Slowbro    Lv.64  @-              Oblivious      Sassy    , , , 
+---
+
+Worker Tyler 376 (Singles) (None)
+
+Mawile     Lv.64  @-              Hyper Cutter   Naughty  , , , 
+Excadrill  Lv.64  @-              Sand Rush      Serious  , , , 
+---
+
+Baker Lilly 377 (Singles) (Moomoo Milk)
+
+Torkoal    Lv.64  @-              White Smoke    Quiet    , , , 
+Miltank    Lv.64  @-              Thick Fat      Quirky   , , , 
+---
+
+Nursery Aide Leah 378 (Singles) (Rare Candy)
+
+Clefairy   Lv.64  @-              Cute Charm     Brave    , , , 
+Clefable   Lv.64  @-              Cute Charm     Jolly    , , , 
+---
+
+Janitor Caleb 381 (Singles) (None)
+
+Koffing    Lv.64  @-              Levitate       Lax      , , , 
+Weezing    Lv.64  @-              Levitate       Bold     , , , 
+---
+
+Psychic Gerard 386 (Singles) (None)
+
+Girafarig  Lv.64  @-              Inner Focus    Bashful  , , , 
+Sigilyph   Lv.64  @-              Wonder Skin    Relaxed  , , , 
+Claydol    Lv.64  @-              Levitate       Impish   , , , 
+---
+
+Depot Agent Josh 388 (Singles) (None)
+
+Diglett    Lv.64  @-              Sand Veil      Relaxed  , , , 
+Dugtrio    Lv.64  @-              Sand Veil      Lax      , , , 
+---
+
+Dancer Davey 391 (Singles) (None)
+
+Mr. Mime   Lv.64  @-              Soundproof     Relaxed  , , , 
+Mr. Mime   Lv.64  @-              Soundproof     Relaxed  , , , 
+---
+
+Musician Boris 392 (Singles) (None)
+
+Chatot     Lv.64  @-              Keen Eye       Naughty  , , , 
+Wigglytuff Lv.64  @-              Cute Charm     Hardy    , , , 
+---
+
+Harlequin Charley 393 (Singles) (None)
+
+Exeggcute  Lv.64  @-              Chlorophyll    Hasty    , , , 
+Electrode  Lv.64  @-              Soundproof     Relaxed  , , , 
+---
+
+Maid Alica 396 (Singles) (None)
+
+Growlithe  Lv.64  @-              Intimidate     Careful  , , , 
+Cinccino   Lv.64  @-              Cute Charm     Relaxed  , , , 
+---
+
+Preschooler Mia 399 (Singles) (None)
+
+Smoochum   Lv.64  @-              Oblivious      Serious  , , , 
+---
+
+Preschooler Evan 400 (Singles) (None)
+
+Mime Jr.   Lv.64  @-              Soundproof     Adamant  , , , 
+---
+
+-----------------
+Route 14
+-----------------
+
+>>>>>>>>>>>>>>>>
+Black Belt Jay 415 (Singles) (None)
+
+Primeape   Lv.64  @-              Vital Spirit   Rash     , , , 
+Scrafty    Lv.64  @-              Shed Skin      Careful  , , , 
+Poliwrath  Lv.64  @-              Water Absorb   Impish   , , , 
+---
+
+-----------------
+Dreamyard
+-----------------
+
+>>>>>>>>>>>>>>>>
+Scientist Kathrine 417 (Singles) (None)
+
+Jigglypuff Lv.64  @-              Cute Charm     Serious  , , , 
+Musharna   Lv.64  @-              Forewarn       Naughty  , , , 
+---
+
+Scientist Luke 420 (Singles) (None)
+
+Musharna   Lv.64  @-              Forewarn       Naughty  , , , 
+Stantler   Lv.64  @-              Intimidate     Timid    , , , 
+---
+
+Psychic Future 422 (Singles) (None)
+
+Natu       Lv.64  @-              Synchronize    Calm     , , , 
+Xatu       Lv.64  @-              Synchronize    Quiet    , , , 
+Banette    Lv.64  @-              Insomnia       Sassy    , , , 
+---
+
+-----------------
+Route 13
+-----------------
+
+>>>>>>>>>>>>>>>>
+Gentleman Yan 425 (Singles) (None)
+
+Farfetch’d Lv.64  @-              Keen Eye       Sassy    , , , 
+Granbull   Lv.64  @-              Intimidate     Hasty    , , , 
+---
+
+Socialite Marian 426 (Singles) (None)
+
+Kricketot  Lv.64  @-              Shed Skin      Hardy    , , , 
+Chimecho   Lv.64  @-              Levitate       Bashful  , , , 
+---
+
+-----------------
+Route 12
+-----------------
+
+>>>>>>>>>>>>>>>>
+School Kid Ann 428 (Singles) (None)
+
+Paras      Lv.64  @-              Effect Spore   Adamant  , , , 
+Wormadam-Sandy Lv.64  @-              Anticipation   Quirky   , , , 
+---
+
+-----------------
+Route 13
+-----------------
+
+>>>>>>>>>>>>>>>>
+Fisherman Vince 436 (Singles) (None)
+
+Krabby     Lv.64  @-              Hyper Cutter   Hasty    , , , 
+Octillery  Lv.64  @-              Suction Cups   Serious  , , , 
+---
+
+-----------------
+Route 15
+-----------------
+
+>>>>>>>>>>>>>>>>
+Battle Girl Susie 444 (Singles) (None)
+
+Meditite   Lv.64  @-              Pure Power     Modest   , , , 
+Medicham   Lv.64  @-              Pure Power     Bashful  , , , 
+Hitmontop  Lv.64  @-              Intimidate     Bold     , , , 
+---
+
+-----------------
+Route 13
+-----------------
+
+>>>>>>>>>>>>>>>>
+Twins Emy & Lin 449 (Doubles) (None)
+
+Plusle     Lv.64  @-              Plus           Quiet    , , , 
+Minun      Lv.64  @-              Minus          Calm     , , , 
+---
+
+-----------------
+Route 11
+-----------------
+
+>>>>>>>>>>>>>>>>
+PkMn Ranger Thalia 453 (Singles) (Leppa Berry)
+
+Rapidash   Lv.64  @-              Run Away       Brave    , , , 
+Cacturne   Lv.64  @-              Sand Veil      Mild     , , , 
+Mantine    Lv.64  @-              Swift Swim     Naive    , , , 
+---
+
+PkMn Ranger Crofton 455 (Singles) (Leppa Berry)
+
+Dewgong    Lv.64  @-              Thick Fat      Lax      , , , 
+Pinsir     Lv.64  @-              Hyper Cutter   Sassy    , , , 
+Pelipper   Lv.64  @-              Keen Eye       Sassy    , , , 
+---
+
+-----------------
+Twist Mountain
+-----------------
+
+>>>>>>>>>>>>>>>>
+Worker Heath 124 (Singles) (None)
+
+Pidgeot    Lv.64  @-              Keen Eye       Calm     Brave Bird, Double-Edge, Steel Wing, Roost
+---
+
+Black Belt Teppei 110 (Singles) (None)
+
+Infernape  Lv.64  @-              Iron Fist      Brave    Fake Out, Close Combat, Fire Punch, Thunder Punch
+---
+
+The Riches Trish 523 (Singles) (None)
+
+Weavile    Lv.64  @-              Pressure       Jolly    , , , 
+Excadrill  Lv.64  @-              Sand Rush      Sassy    , , , 
+Heatmor    Lv.64  @-              Gluttony       Rash     , , , 
+Vespiquen  Lv.64  @-              Pressure       Lax      , , , 
+Kingdra    Lv.64  @-              Swift Swim     Naughty  , , , 
+---
+
+Baker Chris 551 (Singles) (None)
+
+Combee     Lv.64  @-              Honey Gather   Mild     , , , 
+Ursaring   Lv.64  @-              Guts           Naive    , , , 
+---
+
+Worker Matthew 78 (Singles) (None)
+
+Sealeo     Lv.64  @-              Thick Fat      Quirky   , , , 
+Glalie     Lv.64  @-              Inner Focus    Quirky   , , , 
+---
+
+-----------------
+Undella Bay
+-----------------
+
+>>>>>>>>>>>>>>>>
+Swimmer  M Tim 570 (Singles) (None)
+
+Quagsire   Lv.64  @-              Damp           Naughty  , , , 
+Golduck    Lv.64  @-              Damp           Bold     , , , 
+---
+
+Swimmer  F Tyra 572 (Singles) (None)
+
+Seel       Lv.64  @-              Thick Fat      Sassy    , , , 
+Alomomola  Lv.64  @-              Healer         Lax      , , , 
+---
+
+Team Plasma Grunt42 598 (Singles) (None)
+
+Krookodile Lv.64  @-              Intimidate     Lonely   , , , 
+---
+
+School Kid Shaye 529 (Triples) (None)
+
+Reuniclus  Lv.65  @-              Overcoat       Adamant  , , , 
+Cofagrigus Lv.65  @-              Mummy          Naughty  , , , 
+Scrafty    Lv.65  @-              Shed Skin      Hasty    , , , 
+---
+
+-----------------
+Route 13
+-----------------
+
+>>>>>>>>>>>>>>>>
+Black Belt Benjamin 414 (Singles) (None)
+
+Sawk       Lv.65  @-              Sturdy         Bashful  , , , 
+Hitmonlee  Lv.65  @-              Limber         Relaxed  , , , 
+---
+
+Artist Zach 416 (Singles) (None)
+
+Camerupt   Lv.65  @-              Magma Armor    Jolly    , , , 
+---
+
+Ace Trainer Glinda 608 (Triples) (None)
+
+Alomomola  Lv.65  @-              Healer         Calm     , , , 
+Klinklang  Lv.65  @-              Plus           Careful  , , , 
+Beheeyem   Lv.65  @-              Telepathy      Careful  , , , 
+---
+
+-----------------
+Route 15
+-----------------
+
+>>>>>>>>>>>>>>>>
+PkMn Ranger Keith 456 (Singles) (Sitrus Berry)
+
+Marowak    Lv.65  @-              Rock Head      Impish   , , , 
+Exeggutor  Lv.65  @-              Chlorophyll    Careful  , , , 
+---
+
+PkMn Ranger Shelly 454 (Singles) (Sitrus Berry)
+
+Altaria    Lv.65  @-              Natural Cure   Bold     , , , 
+Abomasnow  Lv.65  @-              Snow Warning   Hasty    , , , 
+---
+
+-----------------
+Twist Mountain
+-----------------
+
+>>>>>>>>>>>>>>>>
+Battle Girl Sharon 159 (Singles) (None)
+
+Breloom    Lv.65  @None           Technician     Timid    Mach Punch, Bullet Seed, Spore, Rock Tomb
+---
+
+-----------------
+Dreamyard
+-----------------
+
+>>>>>>>>>>>>>>>>
+Psychic Rudolf 423 (Singles) (None)
+
+Starmie    Lv.65  @-              Illuminate     Mild     , , , 
+Wobbuffet  Lv.65  @-              Shadow Tag     Calm     , , , 
+---
+
+-----------------
+Route 11
+-----------------
+
+>>>>>>>>>>>>>>>>
+Backpacker Corin 437 (Singles) (None)
+
+Snover     Lv.65  @-              Snow Warning   Rash     , , , 
+---
+
+Parasol Lady Gwyneth 397 (Singles) (None)
+
+Castform   Lv.65  @-              Forecast       Adamant  Weather Ball, Sunny Day, Rain Dance, Hail
+---
+
+Policeman Jeff 395 (Singles) (None)
+
+Arcanine   Lv.65  @-              Intimidate     Naive    , , , 
+Mienshao   Lv.65  @-              Inner Focus    Lonely   , , , 
+---
+
+Ace Trainer Glinda2 609 (Rotation) (None)
+
+Alomomola  Lv.65  @-              Healer         Sassy    , , , 
+Klinklang  Lv.65  @-              Plus           Naive    , , , 
+Beheeyem   Lv.65  @-              Telepathy      Hardy    , , , 
+---
+
+Artist Pierre 394 (Singles) (None)
+
+Smeargle   Lv.65  @-              Own Tempo      Timid    Fire Blast, Blizzard, Thunder, Hurricane
+---
+
+Psychic Madhu 387 (Singles) (None)
+
+Mismagius  Lv.65  @-              Levitate       Quirky   , , , 
+Gothitelle Lv.65  @-              Frisk          Calm     , , , 
+---
+
+Nurse Kirsten 385 (Singles) (Full Restore)
+
+Audino     Lv.65  @-              Healer         Rash     , , , 
+---
+
+Doctor Jules 384 (Singles) (Max Revive)
+
+Audino     Lv.65  @-              Healer         Timid    , , , 
+---
+
+Backpacker Talon 440 (Singles) (None)
+
+Croagunk   Lv.65  @-              Anticipation   Brave    , , , 
+---
+
+Backpacker Alexander 383 (Singles) (Max Repel)
+
+Zangoose   Lv.65  @-              Immunity       Modest   , , , 
+---
+
+Backpacker Patty 382 (Singles) (Max Repel)
+
+Flareon    Lv.65  @-              Flash Fire     Lonely   , , , 
+---
+
+-----------------
+Route 12
+-----------------
+
+>>>>>>>>>>>>>>>>
+Backers Fey & Sue 448 (Doubles) (None)
+
+Swoobat    Lv.65  @-              Unaware        Hardy    , , , 
+Swoobat    Lv.65  @-              Unaware        Hardy    , , , 
+---
+
+Gentleman Renaud 370 (Singles) (Nugget)
+
+Slowking   Lv.65  @-              Oblivious      Timid    , , , 
+---
+
+Veteran Sayuri 360 (Singles) (PP Max)
+
+Relicanth  Lv.64  @-              Swift Swim     Hardy    Double-Edge, Ancient Power, Waterfall, Blizzard
+Magcargo   Lv.64  @-              Magma Armor    Hasty    Fire Blast, Stone Edge, Gyro Ball, Earthquake
+Glaceon    Lv.64  @-              Snow Cloak     Quirky   Blizzard, Return, Ice Shard, Shadow Ball
+Dragonite  Lv.65  @-              Inner Focus    Relaxed  Outrage, Wing Attack, Waterfall, Fire Punch
+---
+
+Veteran Arlen 359 (Singles) (PP Max)
+
+Jolteon    Lv.64  @-              Volt Absorb    Modest   Shadow Ball, Return, Pin Missile, Thunder
+Sandslash  Lv.64  @-              Sand Veil      Brave    Slash, Earthquake, Aerial Ace, Toxic
+Skarmory   Lv.64  @-              Keen Eye       Serious  Air Slash, Slash, Night Slash, Steel Wing
+Tyranitar  Lv.65  @-              Sand Stream    Docile   Stone Edge, Payback, Thunderbolt, Ice Beam
+---
+
+-----------------
+Twist Mountain
+-----------------
+
+>>>>>>>>>>>>>>>>
+Worker Cairn 38 (Singles) (None)
+
+Excadrill  Lv.65  @-              Sand Rush      Quirky   Fissure, Drill Run, Rock Slide, Iron Head
+---
+
+Roughneck Johnny 615 (Rotation) (None)
+
+Gothitelle Lv.65  @-              Frisk          Bashful  , , , 
+Krookodile Lv.65  @-              Intimidate     Quiet    , , , 
+Galvantula Lv.65  @-              Compound Eyes  Gentle   , , , 
+---
+
+Ace Trainer Charlie 358 (Singles) (PP Up)
+
+Galvantula Lv.65  @-              Compound Eyes  Naive    , , , 
+Tropius    Lv.65  @-              Chlorophyll    Jolly    , , , 
+Mamoswine  Lv.65  @-              Oblivious      Careful  , , , 
+---
+
+PkMn Trainer Bianca18 596 (Singles) (None)
+
+Stoutland  Lv.63  @None           Intimidate     Adamant  Return, Ice Fang, Surf, Wild Charge
+Simisage   Lv.63  @None           Gluttony       Lonely   Return, Energy Ball, Rock Slide, Brick Break
+Musharna   Lv.63  @None           Forewarn       Hasty    Return, Yawn, Dream Eater, Psychic
+Mienshao   Lv.63  @None           Inner Focus    Brave    Return, Drain Punch, U-turn, Fake Out
+Chandelure Lv.63  @None           Flash Fire     Jolly    Return, Shadow Ball, Psychic, Overheat
+Emboar     Lv.65  @None           Blaze          Bashful  Return, Flare Blitz, Brick Break, Wild Charge
+---
+
+Ace Trainer Lucille 357 (Singles) (PP Up)
+
+Jynx       Lv.65  @-              Oblivious      Naive    , , , 
+Vaporeon   Lv.65  @-              Water Absorb   Hardy    , , , 
+Gliscor    Lv.65  @-              Hyper Cutter   Docile   , , , 
+---
+
+-----------------
+Nimbasa City
+-----------------
+
+>>>>>>>>>>>>>>>>
+Backers Kat & Phae 353 (Doubles) (None)
+
+Stoutland  Lv.65  @-              Intimidate     Jolly    , , , 
+Bouffalant Lv.65  @-              Reckless       Docile   , , , 
+---
+
+Backers Ai & Ciel 352 (Doubles) (None)
+
+Whimsicott Lv.65  @-              Prankster      Modest   , , , 
+Lilligant  Lv.65  @-              Chlorophyll    Lonely   , , , 
+---
+
+PkMn Trainer Bianca17 595 (Singles) (None)
+
+Stoutland  Lv.63  @None           Intimidate     Sassy    Return, Ice Fang, Surf, Wild Charge
+Simipour   Lv.63  @None           Gluttony       Bashful  Return, Surf, Rock Slide, Brick Break
+Musharna   Lv.63  @None           Forewarn       Bold     Return, Yawn, Dream Eater, Psychic
+Mienshao   Lv.63  @None           Inner Focus    Gentle   Return, Drain Punch, U-turn, Fake Out
+Chandelure Lv.63  @None           Flash Fire     Relaxed  Return, Shadow Ball, Psychic, Overheat
+Serperior  Lv.65  @None           Overgrow       Calm     Return, Leaf Storm, Dragon Tail, Coil
+---
+
+Backers Cam & Abby 351 (Doubles) (None)
+
+Sawk       Lv.65  @-              Sturdy         Lonely   , , , 
+Throh      Lv.65  @-              Guts           Lonely   , , , 
+---
+
+Backers Ami & Eira3 350 (Doubles) (None)
+
+Simipour   Lv.65  @-              Gluttony       Hardy    , , , 
+Simisear   Lv.65  @-              Gluttony       Hardy    , , , 
+---
+
+Backers Kay & Ali3 348 (Doubles) (None)
+
+Swanna     Lv.65  @-              Keen Eye       Adamant  , , , 
+Swanna     Lv.65  @-              Keen Eye       Adamant  , , , 
+---
+
+Clerk  M Fredric 171 (Singles) (None)
+
+Persian    Lv.65  @-              Limber         Hasty    , , , 
+Honchkrow  Lv.65  @-              Insomnia       Bold     , , , 
+---
+
+PkMn Trainer Bianca16 594 (Singles) (None)
+
+Stoutland  Lv.63  @None           Intimidate     Mild     Return, Ice Fang, Surf, Wild Charge
+Simisear   Lv.63  @None           Gluttony       Lonely   Return, Flamethrower, Rock Slide, Brick Break
+Musharna   Lv.63  @None           Forewarn       Quirky   Return, Yawn, Dream Eater, Psychic
+Mienshao   Lv.63  @None           Inner Focus    Modest   Return, Drain Punch, U-turn, Fake Out
+Chandelure Lv.63  @None           Flash Fire     Brave    Return, Shadow Ball, Psychic, Overheat
+Samurott   Lv.65  @None           Torrent        Quirky   Return, Aqua Tail, X-Scissor, Aerial Ace
+---
+
+-----------------
+Challenger's Cave
+-----------------
+
+>>>>>>>>>>>>>>>>
+Veteran Julia 260 (Singles) (None)
+
+Wormadam-Trash Lv.64  @-              Anticipation   Timid    Iron Head, Psychic, Struggle Bug, Shadow Ball
+Cloyster   Lv.64  @-              Shell Armor    Careful  Icicle Crash, Poison Jab, Surf, Payback
+Ninetales  Lv.64  @-              Flash Fire     Calm     Fire Blast, Return, Extrasensory, Quick Attack
+Leavanny   Lv.65  @-              Swarm          Naughty  Leaf Blade, X-Scissor, Slash, Aerial Ace
+---
+
+Backpacker Toru 578 (Singles) (None)
+
+Golbat     Lv.65  @-              Inner Focus    Bold     , , , 
+---
+
+-----------------
+Nimbasa City
+-----------------
+
+>>>>>>>>>>>>>>>>
+Backers Alf & Fred 346 (Doubles) (None)
+
+Simisage   Lv.65  @-              Gluttony       Hardy    , , , 
+Bisharp    Lv.65  @-              Defiant        Relaxed  , , , 
+---
+
+-----------------
+Route 14
+-----------------
+
+>>>>>>>>>>>>>>>>
+Backpacker Vicki 577 (Singles) (None)
+
+Numel      Lv.65  @-              Oblivious      Mild     , , , 
+---
+
+-----------------
+Undella Bay
+-----------------
+
+>>>>>>>>>>>>>>>>
+Swimmer  F Larissa 573 (Singles) (None)
+
+Corsola    Lv.65  @-              Hustle         Jolly    , , , 
+---
+
+-----------------
+Icirrus City
+-----------------
+
+>>>>>>>>>>>>>>>>
+Black Belt Kendrew 216 (Singles) (None)
+
+Vanilluxe  Lv.65  @-              Snow Warning   Bold     Blizzard, Flash Cannon, Ice Shard, 
+---
+
+-----------------
+Nimbasa City
+-----------------
+
+>>>>>>>>>>>>>>>>
+Backers Les & Web 345 (Doubles) (None)
+
+Liepard    Lv.65  @-              Limber         Serious  , , , 
+Liepard    Lv.65  @-              Limber         Serious  , , , 
+---
+
+Ace Trainer Mariana 205 (Singles) (None)
+
+Rotom      Lv.65  @-              Levitate       Lax      , , , 
+Butterfree Lv.65  @-              Compound Eyes  Adamant  , , , 
+Alomomola  Lv.65  @-              Healer         Jolly    , , , 
+---
+
+Backers Masa & Yas3 344 (Doubles) (None)
+
+Scolipede  Lv.65  @-              Poison Point   Gentle   , , , 
+Gigalith   Lv.65  @-              Sturdy         Relaxed  , , , 
+---
+
+The Riches Miles 548 (Singles) (None)
+
+Donphan    Lv.65  @-              Sturdy         Docile   , , , 
+Bisharp    Lv.65  @-              Defiant        Adamant  , , , 
+Lanturn    Lv.65  @-              Volt Absorb    Rash     , , , 
+Tangrowth  Lv.65  @-              Chlorophyll    Bold     , , , 
+Braviary   Lv.65  @-              Keen Eye       Hardy    , , , 
+Haxorus    Lv.65  @-              Rivalry        Mild     , , , 
+---
+
+Backers Joe & Ross3 342 (Doubles) (None)
+
+Jellicent  Lv.65  @-              Water Absorb   Jolly    , , , 
+Zebstrika  Lv.65  @-              Lightning Rod  Impish   , , , 
+---
+
+Maid Tanya 543 (Singles) (None)
+
+Emolga     Lv.65  @-              Static         Sassy    , , , 
+---
+
+Backers Hawk & Dar3 340 (Doubles) (None)
+
+Darmanitan Lv.65  @-              Sheer Force    Serious  , , , 
+Darmanitan Lv.65  @-              Sheer Force    Serious  , , , 
+---
+
+Nursery Aide Briana 530 (Triples) (None)
+
+Vanilluxe  Lv.65  @-              Ice Body       Mild     , , , 
+Cinccino   Lv.65  @-              Cute Charm     Timid    , , , 
+Chandelure Lv.65  @-              Flash Fire     Mild     , , , 
+---
+
+Backpacker Kiyo 528 (Rotation) (None)
+
+Beartic    Lv.65  @-              Snow Cloak     Serious  , , , 
+Excadrill  Lv.65  @-              Sand Rush      Hardy    , , , 
+Heatmor    Lv.65  @-              Gluttony       Serious  , , , 
+---
+
+Battle Girl Janie 372 (Singles) (None)
+
+Hitmonchan Lv.66  @-              Keen Eye       Sassy    , , , 
+---
+
+Linebacker Bob2 333 (Singles) (None)
+
+Sawk       Lv.66  @-              Sturdy         Bold     , , , 
+Throh      Lv.66  @-              Guts           Sassy    , , , 
+Hariyama   Lv.66  @-              Thick Fat      Rash     , , , 
+---
+
+Linebacker Dan4 332 (Singles) (None)
+
+Lickitung  Lv.66  @-              Own Tempo      Lonely   , , , 
+Darmanitan Lv.66  @-              Sheer Force    Hasty    , , , 
+Conkeldurr Lv.66  @-              Guts           Jolly    , , , 
+---
+
+Striker Roberto2 328 (Singles) (None)
+
+Taillow    Lv.66  @-              Guts           Quiet    , , , 
+Sneasel    Lv.66  @-              Inner Focus    Timid    , , , 
+Liepard    Lv.66  @-              Limber         Impish   , , , 
+---
+
+Infielder Alex4 322 (Singles) (None)
+
+Simipour   Lv.66  @-              Gluttony       Brave    , , , 
+Simisage   Lv.66  @-              Gluttony       Brave    , , , 
+Simisear   Lv.66  @-              Gluttony       Lax      , , , 
+---
+
+Ace Trainer Henry 206 (Singles) (None)
+
+Tauros     Lv.66  @-              Intimidate     Mild     , , , 
+Wailord    Lv.66  @-              Water Veil     Quiet    , , , 
+---
+
+Striker Marco 324 (Singles) (None)
+
+Lunatone   Lv.67  @-              Levitate       Hasty    , , , 
+Solrock    Lv.67  @-              Levitate       Quirky   , , , 
+---
+
+Hoopster Bobby4 337 (Singles) (None)
+
+Mantyke    Lv.67  @-              Swift Swim     Careful  , , , 
+Scolipede  Lv.67  @-              Poison Point   Relaxed  , , , 
+---
+
+Smasher Mari 314 (Singles) (None)
+
+Voltorb    Lv.67  @-              Soundproof     Bashful  , , , 
+Jellicent  Lv.67  @-              Water Absorb   Quiet    , , , 
+---
+
+Smasher Aspen2 318 (Singles) (None)
+
+Whimsicott Lv.67  @-              Prankster      Lax      , , , 
+Lilligant  Lv.67  @-              Chlorophyll    Sassy    , , , 
+---
+
+Smasher Elena4 317 (Singles) (None)
+
+Baltoy     Lv.67  @-              Levitate       Bold     , , , 
+Zebstrika  Lv.67  @-              Lightning Rod  Adamant  , , , 
+---
+
+Veteran Rosa 482 (Singles) (None)
+
+Exploud    Lv.67  @-              Soundproof     Quirky   , , , 
+---
+
+Infielder Connor2 323 (Singles) (None)
+
+Unfezant   Lv.67  @-              Big Pecks      Gentle   , , , 
+Krookodile Lv.67  @-              Intimidate     Adamant  , , , 
+---
+
+Veteran Ken 483 (Singles) (None)
+
+Nidoking   Lv.67  @-              Poison Point   Impish   , , , 
+---
+
+Hoopster Lamarcus 334 (Singles) (None)
+
+Masquerain Lv.67  @-              Intimidate     Gentle   , , , 
+Bouffalant Lv.67  @-              Reckless       Brave    , , , 
+---
+
+Infielder Todd 319 (Singles) (None)
+
+Cubone     Lv.67  @-              Rock Head      Lax      , , , 
+Bisharp    Lv.67  @-              Defiant        Serious  , , , 
+---
+
+Striker Tony4 327 (Singles) (None)
+
+Swanna     Lv.67  @-              Keen Eye       Jolly    , , , 
+Kecleon    Lv.67  @-              Color Change   Timid    , , , 
+---
+
+Hoopster John2 338 (Singles) (None)
+
+Stoutland  Lv.67  @-              Intimidate     Sassy    , , , 
+Gigalith   Lv.67  @-              Sturdy         Modest   , , , 
+---
+
+-----------------
+Route 9
+-----------------
+
+>>>>>>>>>>>>>>>>
+Biker Phillip 180 (Singles) (None)
+
+Scrafty    Lv.68  @-              Intimidate     Naive    Drain Punch, Crunch, Head Smash, Facade
+---
+
+Roughneck Reese 135 (Singles) (None)
+
+Garbodor   Lv.68  @-              Stench         Hardy    Drain Punch, Gunk Shot, Seed Bomb, Toxic
+---
+
+-----------------
+Nimbasa City
+-----------------
+
+>>>>>>>>>>>>>>>>
+Linebacker Jonah 329 (Singles) (None)
+
+Forretress Lv.68  @-              Sturdy         Naughty  , , , 
+---
+
+-----------------
+Route 9
+-----------------
+
+>>>>>>>>>>>>>>>>
+Biker Zeke 181 (Singles) (None)
+
+Bisharp    Lv.68  @-              Pressure       Sassy    Knock Off, Iron Head, Swords Dance, Metal Burst
+---
+
+-----------------
+Route 8
+-----------------
+
+>>>>>>>>>>>>>>>>
+PkMn Ranger Lewis 184 (Singles) (Pecha Berry)
+
+Palpitoad  Lv.34  @-              Swift Swim     Hardy    , , , 
+Seismitoad Lv.68  @-              Swift Swim     Gentle   Scald, Earth Power, Sludge Wave, Grass Knot
+---
+
+-----------------
+Dragonspiral Tower
+-----------------
+
+>>>>>>>>>>>>>>>>
+Ace Trainer Jesse 106 (Singles) (None)
+
+Druddigon  Lv.68  @Rocky Helmet   Rough Skin     Hardy    Stealth Rock, Toxic, Dragon Tail, Glare
+Galvantula Lv.68  @Focus Sash     Compound Eyes  Brave    Thunder, Volt Switch, Energy Ball, Bug Buzz
+---
+
+Biker Morgann 544 (Singles) (None)
+
+Bouffalant Lv.68  @-              Reckless       Bashful  Zen Headbutt, Swords Dance, Head Charge, Wild Charge
+---
+
+Biker Jeremy 545 (Singles) (None)
+
+Scrafty    Lv.68  @None           Intimidate     Jolly    Head Smash, Drain Punch, Crunch, Facade
+Arbok      Lv.68  @None           Intimidate     Lax      Poison Jab, Crunch, Ice Fang, Coil
+---
+
+Ace Trainer Jamie 102 (Singles) (None)
+
+Electrode  Lv.67  @Choice Specs   Soundproof     Relaxed  Volt Switch, , , 
+Gliscor    Lv.68  @Flying Gem     Hyper Cutter   Docile   Acrobatics, Swords Dance, U-turn, Earthquake
+Jumpluff   Lv.68  @Flying Gem     Infiltrator    Hardy    Acrobatics, Spore, Sacred Sword, U-turn
+---
+
+-----------------
+Route 8
+-----------------
+
+>>>>>>>>>>>>>>>>
+Fisherman Bruce 148 (Singles) (None)
+
+Milotic    Lv.68  @None           Marvel Scale   Serious  Scald, Recover, Attract, Toxic
+Gyarados   Lv.68  @None           Intimidate     Jolly    Waterfall, Ice Fang, Earthquake, Power Whip
+---
+
+-----------------
+Shopping Mall
+-----------------
+
+>>>>>>>>>>>>>>>>
+Waitress Flo 98 (Singles) (None)
+
+Cinccino   Lv.68  @-              Skill Link     Timid    Tail Slap, Sing, Bullet Seed, Rock Blast
+Lilligant  Lv.68  @-              Chlorophyll    Adamant  Giga Drain, Quiver Dance, Sleep Powder, Leaf Storm
+---
+
+Waiter Bert 97 (Singles) (None)
+
+Furret     Lv.68  @-              Frisk          Quirky   Double-Edge, Hone Claws, Sucker Punch, U-turn
+Chandelure Lv.68  @-              Flash Fire     Sassy    Fire Blast, Shadow Ball, Energy Ball, Psychic
+---
+
+-----------------
+Route 9
+-----------------
+
+>>>>>>>>>>>>>>>>
+Hooligans Jim & Cas 157 (Doubles) (None)
+
+Scrafty    Lv.68  @-              Intimidate     Serious  Fake Out, Rock Slide, Drain Punch, Knock Off
+Krookodile Lv.68  @-              Intimidate     Careful  Dig, Rock Slide, Crunch, Dragon Claw
+---
+
+-----------------
+Route 14
+-----------------
+
+>>>>>>>>>>>>>>>>
+Ace Trainer Junko 410 (Singles) (None)
+
+Purugly    Lv.68  @-              Thick Fat      Rash     , , , 
+Espeon     Lv.68  @-              Synchronize    Careful  , , , 
+Lapras     Lv.68  @-              Water Absorb   Sassy    , , , 
+---
+
+Ace Trainer Kipp 411 (Singles) (None)
+
+Absol      Lv.68  @-              Pressure       Jolly    , , , 
+Dodrio     Lv.68  @-              Run Away       Quirky   , , , 
+Walrein    Lv.68  @-              Thick Fat      Docile   , , , 
+---
+
+-----------------
+Moor of Icirrus
+-----------------
+
+>>>>>>>>>>>>>>>>
+Parasol Lady Mariah 585 (Singles) (None)
+
+Vespiquen  Lv.68  @-              Pressure       Mild     Power Gem, Aerial Ace, Attack Order, Heal Order
+Masquerain Lv.68  @-              Intimidate     Serious  Quiver Dance, Bug Buzz, Hydro Pump, Air Slash
+---
+
+-----------------
+Relic Castle
+-----------------
+
+>>>>>>>>>>>>>>>>
+Team Plasma Grunt6 223 (Singles) (None)
+
+Krookodile Lv.68  @Choice Scarf   Anger Point    Brave    Earthquake, , , 
+---
+
+-----------------
+Dragonspiral Tower
+-----------------
+
+>>>>>>>>>>>>>>>>
+Team Plasma Grunt33 312 (Singles) (None)
+
+Sableye    Lv.68  @Mental Herb    Prankster      Gentle   Will-O-Wisp, Recover, Foul Play, Taunt
+Steelix    Lv.69  @None           Sheer Force    Relaxed  Rock Polish, Stone Edge, Drill Run, Iron Head
+---
+
+Team Plasma Grunt34 313 (Singles) (None)
+
+Garbodor   Lv.68  @None           Weak Armor     Hasty    Drain Punch, Gunk Shot, Seed Bomb, Toxic Spikes
+Tentacruel Lv.69  @Focus Sash     Clear Body     Relaxed  Surf, Venoshock, Mirror Coat, Icy Wind
+---
+
+-----------------
+Relic Castle
+-----------------
+
+>>>>>>>>>>>>>>>>
+Team Plasma Grunt7 224 (Singles) (None)
+
+Heatmor    Lv.69  @-              Gluttony       Docile   Flamethrower, Focus Blast, Giga Drain, Sucker Punch
+Tangrowth  Lv.68  @-              Chlorophyll    Relaxed  Leaf Storm, Giga Drain, Sleep Powder, Sludge Bomb
+---
+
+Team Plasma Grunt4 221 (Singles) (None)
+
+Bouffalant Lv.68  @-              Reckless       Bashful  Head Charge, Wild Charge, Zen Headbutt, Knock Off
+Tauros     Lv.69  @-              Sheer Force    Lonely   Retaliate, Zen Headbutt, Rock Slide, Earthquake
+---
+
+-----------------
+Moor of Icirrus
+-----------------
+
+>>>>>>>>>>>>>>>>
+Fisherman Damon 584 (Singles) (None)
+
+Azumarill  Lv.69  @Sitrus Berry   Huge Power     Bashful  Belly Drum, Aqua Tail, Aqua Jet, Ice Punch
+Qwilfish   Lv.68  @None           Intimidate     Brave    Aqua Jet, Destiny Bond, Poison Jab, Aqua Tail
+---
+
+-----------------
+Dragonspiral Tower
+-----------------
+
+>>>>>>>>>>>>>>>>
+Team Plasma Grunt23 302 (Singles) (None)
+
+Houndoom   Lv.68  @None           Flash Fire     Serious  Flamethrower, Dark Pulse, Sludge Bomb, Nasty Plot
+Crobat     Lv.68  @None           Inner Focus    Lonely   Brave Bird, Cross Poison, Leech Life, Heat Wave
+Torterra   Lv.69  @Yache Berry    Shell Armor    Adamant  Wood Hammer, Earthquake, Stone Edge, Synthesis
+---
+
+-----------------
+Route 8
+-----------------
+
+>>>>>>>>>>>>>>>>
+Parasol Lady Melita 163 (Singles) (None)
+
+Seaking    Lv.69  @-              Swift Swim     Bashful  Waterfall, Drill Run, Megahorn, Poison Jab
+Gastrodon  Lv.68  @-              Storm Drain    Sassy    Scald, Earth Power, Icy Wind, Recover
+---
+
+-----------------
+Relic Castle
+-----------------
+
+>>>>>>>>>>>>>>>>
+Team Plasma Grunt5 222 (Singles) (None)
+
+Aggron     Lv.70  @-              Rock Head      Impish   Head Smash, Autotomize, Iron Head, Earthquake
+Gengar     Lv.68  @-              Levitate       Hasty    Shadow Ball, Focus Blast, Sludge Wave, Nasty Plot
+---
+
+-----------------
+Dragonspiral Tower
+-----------------
+
+>>>>>>>>>>>>>>>>
+Team Plasma Grunt25 304 (Singles) (None)
+
+Bisharp    Lv.70  @Focus Sash     Pressure       Docile   Iron Head, Knock Off, Metal Burst, Swords Dance
+---
+
+Team Plasma Grunt24 303 (Singles) (None)
+
+Braviary   Lv.70  @Fighting Gem   Defiant        Adamant  Bulk Up, Close Combat, Brave Bird, Roost
+---
+
+-----------------
+Relic Castle
+-----------------
+
+>>>>>>>>>>>>>>>>
+Team Plasma Grunt9 226 (Singles) (None)
+
+Weavile    Lv.70  @Focus Sash     Pressure       Gentle   Icicle Crash, Knock Off, Low Kick, Swords Dance
+---
+
+-----------------
+Route 8
+-----------------
+
+>>>>>>>>>>>>>>>>
+PkMn Ranger Annie 188 (Singles) (Pecha Berry)
+
+Gallade    Lv.70  @-              Steadfast      Brave    Swords Dance, Psycho Cut, Close Combat, Night Slash
+---
+
+Leader Brycen 131 (Singles) (None)
+
+Abomasnow  Lv.70  @Focus Sash     Snow Warning   Jolly    Blizzard, Giga Drain, Earthquake, Ice Shard
+Mamoswine  Lv.70  @Choice Scarf   Thick Fat      Mild     Earthquake, Icicle Crash, Stone Edge, Facade
+Weavile    Lv.70  @Life Orb       Pressure       Lax      Knock Off, Icicle Crash, Ice Shard, Low Kick
+Cloyster   Lv.70  @White Herb     Skill Link     Lax      Shell Smash, Icicle Spear, Rock Blast, Razor Shell
+Lapras     Lv.70  @Leftovers      Shell Armor    Hardy    Blizzard, Surf, Thunderbolt, Perish Song
+Cryogonal  Lv.70  @Focus Sash     Levitate       Bold     Blizzard, Nasty Plot, Flash Cannon, Recover
+---
+
+-----------------
+Route 9
+-----------------
+
+>>>>>>>>>>>>>>>>
+Roughneck Chance 134 (Singles) (None)
+
+Muk        Lv.70  @-              Poison Touch   Sassy    Gunk Shot, Ice Punch, Knock Off, Fire Punch
+---
+
+-----------------
+Relic Castle
+-----------------
+
+>>>>>>>>>>>>>>>>
+Team Plasma Grunt8 225 (Singles) (None)
+
+Aerodactyl Lv.70  @Flying Gem     Rock Head      Bold     Head Smash, Brave Bird, Earthquake, Dragon Dance
+---
+
+-----------------
+Shopping Mall
+-----------------
+
+>>>>>>>>>>>>>>>>
+Lady Isabel 107 (Singles) (None)
+
+Stoutland  Lv.70  @-              Scrappy        Brave    Giga Impact, Wild Charge, Aerial Ace, Roar
+---
+
+Rich Boy Manuel 108 (Singles) (None)
+
+Purugly    Lv.70  @-              Defiant        Adamant  Bulldoze, Fake Out, Body Slam, Shadow Claw
+---
+
+Team Plasma Grunt28 307 (Singles) (None)
+
+Breloom    Lv.70  @Toxic Orb      Poison Heal    Gentle   Substitute, Focus Punch, Rock Slide, Spore
+---
+
+Team Plasma Grunt27 306 (Singles) (None)
+
+Durant     Lv.70  @Focus Sash     Hustle         Rash     Hone Claws, Iron Head, X-Scissor, Superpower
+---
+
+-----------------
+Moor of Icirrus
+-----------------
+
+>>>>>>>>>>>>>>>>
+PkMn Ranger Harry 583 (Singles) (Sitrus Berry)
+
+Haxorus    Lv.70  @-              Rivalry        Rash     Outrage, Earthquake, Swords Dance, Superpower
+---
+
+-----------------
+Dragonspiral Tower
+-----------------
+
+>>>>>>>>>>>>>>>>
+Team Plasma Grunt46 612 (Singles) (None)
+
+Honchkrow  Lv.70  @Scope Lens     Super Luck     Mild     Drill Peck, Night Slash, Heat Wave, Sucker Punch
+---
+
+-----------------
+Route 8
+-----------------
+
+>>>>>>>>>>>>>>>>
+Parasol Lady Lumi 164 (Singles) (None)
+
+Kingdra    Lv.71  @-              Swift Swim     Lax      Scald, Hurricane, Dragon Pulse, Ice Beam
+---
+
+-----------------
+Opelucid City
+-----------------
+
+>>>>>>>>>>>>>>>>
+Ace Trainer Jose 271 (Singles) (None)
+
+Dragonair  Lv.75  @-              Shed Skin      Bold     Extreme Speed, Outrage, Dragon Dance, Aqua Tail
+---
+
+Ace Trainer Dara 267 (Singles) (None)
+
+Vibrava    Lv.75  @-              Levitate       Sassy    Dragon Dance, Rock Slide, Outrage, Earthquake
+---
+
+Ace Trainer Tom 272 (Singles) (None)
+
+Fraxure    Lv.75  @-              Rivalry        Sassy    Giga Impact, Outrage, Earthquake, Rock Slide
+---
+
+Ace Trainer Olwen 265 (Singles) (None)
+
+Zweilous   Lv.75  @-              Hustle         Hasty    Crunch, Dragon Rush, Zen Headbutt, Fire Fang
+---
+
+Veteran Hugo 274 (Singles) (None)
+
+Druddigon  Lv.75  @-              Rough Skin     Quirky   Outrage, Superpower, Glare, Earthquake
+---
+
+Ace Trainer Webster 270 (Singles) (None)
+
+Gabite     Lv.75  @-              Rough Skin     Relaxed  Dragon Rush, Earthquake, Rock Slide, Slash
+---
+
+Ace Trainer Clara 266 (Singles) (None)
+
+Shelgon    Lv.75  @-              Rock Head      Rash     , , , 
+---
+
+Veteran Kim 275 (Singles) (None)
+
+Altaria    Lv.75  @-              Natural Cure   Hardy    Earthquake, Dragon Claw, Roost, Dragon Dance
+---
+
+GAME FREAK Morimoto 542 (Singles) (None)
+
+Liepard    Lv.75  @None           Limber         Timid    Sucker Punch, Night Slash, Fake Out, Grass Knot
+Simipour   Lv.75  @Petaya Berry   Gluttony       Sassy    Surf, Payback, Acrobatics, Crunch
+Simisear   Lv.75  @Petaya Berry   Gluttony       Sassy    Flamethrower, Payback, Acrobatics, Crunch
+Simisage   Lv.75  @Petaya Berry   Gluttony       Lax      Energy Ball, Payback, Acrobatics, Crunch
+Swoobat    Lv.75  @None           Unaware        Careful  Psychic, Endeavor, Air Slash, Psyshock
+Zebstrika  Lv.77  @None           Lightning Rod  Sassy    Wild Charge, Pursuit, Giga Impact, Flame Charge
+---
+
+PkMn Trainer Bianca9 496 (Singles) (None)
+
+Delcatty   Lv.78  @Silk Scarf     Normalize      Jolly    Fake Out, Last Resort, , 
+Leafeon    Lv.78  @Watmel Berry   Leaf Guard     Naughty  Swords Dance, Leaf Blade, Retaliate, Natural Gift
+Lucario    Lv.78  @Focus Sash     Steadfast      Lonely   Calm Mind, Aura Sphere, Flash Cannon, Vacuum Wave
+Slowbro    Lv.78  @Leftovers      Oblivious      Gentle   Scald, Psychic, Slack Off, Thunder Wave
+Emboar     Lv.78  @Life Orb       Reckless       Adamant  Flare Blitz, Earthquake, Wild Charge, Sucker Punch
+---
+
+-----------------
+Route 10
+-----------------
+
+>>>>>>>>>>>>>>>>
+Battle Girl Amy 158 (Singles) (None)
+
+Scrafty    Lv.78  @-              Intimidate     Hasty    Bulk Up, Drain Punch, Stone Edge, Facade
+Mienshao   Lv.78  @-              Reckless       Hardy    Acrobatics, Fake Out, High Jump Kick, Knock Off
+---
+
+Black Belt Corey 109 (Singles) (None)
+
+Conkeldurr Lv.78  @Flame Orb      Guts           Quiet    Detect, Drain Punch, Knock Off, Rock Slide
+---
+
+Ace Trainer Johan 103 (Singles) (None)
+
+Magnezone  Lv.78  @Occa Berry     Sturdy         Mild     Charge Beam, Volt Switch, Thunderbolt, Flash Cannon
+Jellicent  Lv.78  @Sitrus Berry   Water Absorb   Sassy    Water Spout, Shadow Ball, Hydro Pump, Will-O-Wisp
+Honchkrow  Lv.78  @Scope Lens     Super Luck     Jolly    Drill Peck, Night Slash, Heat Wave, Sucker Punch
+---
+
+Veteran Karla 179 (Singles) (None)
+
+Vanilluxe  Lv.78  @None           Snow Warning   Bashful  Blizzard, Flash Cannon, Ice Shard, Frost Breath
+Nidoqueen  Lv.78  @Life Orb       Sheer Force    Rash     Sludge Wave, Earth Power, Fire Blast, Blizzard
+Porygon2   Lv.78  @Eviolite       Download       Adamant  Blizzard, Tri Attack, Recover, Psychic
+---
+
+Hiker Bret 193 (Singles) (None)
+
+Hippowdon  Lv.78  @-              Sand Stream    Brave    Earthquake, Ice Fang, Slack Off, Yawn
+Probopass  Lv.78  @-              Sand Force     Calm     Thunderbolt, Earth Power, Power Gem, Flash Cannon
+---
+
+PkMn Trainer Bianca8 495 (Singles) (None)
+
+Delcatty   Lv.78  @Silk Scarf     Normalize      Relaxed  Fake Out, Last Resort, , 
+Vaporeon   Lv.78  @Leftovers      Water Absorb   Adamant  Wish, Toxic, Protect, Scald
+Flygon     Lv.78  @Yache Berry    Levitate       Lonely   Dragon Dance, Earthquake, U-turn, Dragon Claw
+Lucario    Lv.78  @Shuca Berry    Steadfast      Calm     Calm Mind, Flash Cannon, Bullet Punch, Close Combat
+Serperior  Lv.78  @Focus Sash     Contrary       Bold     Leaf Storm, Draco Meteor, Glare, Leech Seed
+---
+
+PkMn Trainer Bianca7 494 (Singles) (None)
+
+Delcatty   Lv.78  @Silk Scarf     Normalize      Brave    Fake Out, Last Resort, , 
+Flareon    Lv.78  @Toxic Orb      Guts           Lax      Protect, Facade, Flame Charge, Flare Blitz
+Lucario    Lv.78  @Salac Berry    Steadfast      Modest   Vacuum Wave, Flash Cannon, Aura Sphere, Calm Mind
+Gengar     Lv.78  @Focus Sash     Levitate       Mild     Sludge Wave, Shadow Ball, Focus Blast, Nasty Plot
+Samurott   Lv.78  @Normal Gem     Shell Armor    Impish   Retaliate, Aqua Tail, Aqua Jet, Megahorn
+---
+
+-----------------
+Victory Road
+-----------------
+
+>>>>>>>>>>>>>>>>
+Veteran Martell 250 (Singles) (None)
+
+Politoed   Lv.80  @Sitrus Berry   Drizzle        Hardy    Whirlpool, Toxic, Earthquake, Perish Song
+Eelektross Lv.80  @Leftovers      Levitate       Careful  Aqua Tail, Wild Charge, Coil, Drain Punch
+Kingdra    Lv.80  @Dragon Gem     Swift Swim     Hasty    Hurricane, Hydro Pump, Dragon Pulse, Ice Beam
+---
+
+Doctor Logan 249 (Singles) (None)
+
+Clefable   Lv.80  @Life Orb       Cute Charm     Serious  Charge Beam, Fire Blast, Icy Wind, Soft-Boiled
+Slowking   Lv.80  @Leftovers      Oblivious      Quirky   Calm Mind, Future Sight, Slack Off, Focus Blast
+---
+
+Black Belt Tyrone 248 (Singles) (None)
+
+Mienshao   Lv.80  @Life Orb       Inner Focus    Serious  Fake Out, U-turn, High Jump Kick, Knock Off
+Heracross  Lv.80  @Salac Berry    Moxie          Gentle   Endure, Reversal, Megahorn, Rock Slide
+Mienshao   Lv.80  @Life Orb       Regenerator    Serious  Fake Out, U-turn, High Jump Kick, Knock Off
+---
+
+Ace Trainer David 247 (Singles) (None)
+
+Torterra   Lv.80  @White Herb     Shell Armor    Serious  Shell Smash, Wood Hammer, Earthquake, Head Smash
+Klinklang  Lv.80  @Steel Gem      Clear Body     Quiet    Shift Gear, Gear Grind, Volt Switch, Wild Charge
+Gyarados   Lv.80  @Wacan Berry    Intimidate     Rash     Waterfall, Power Whip, Earthquake, Dragon Dance
+---
+
+Ace Trainer Dwayne 246 (Singles) (None)
+
+Infernape  Lv.80  @Focus Sash     Blaze          Lax      Stealth Rock, Fire Punch, Close Combat, Thunder Punch
+Tyranitar  Lv.80  @Chople Berry   Sand Stream    Mild     Dragon Tail, Earthquake, Stone Edge, Crunch
+---
+
+Ace Trainer Cathy 245 (Singles) (None)
+
+Rhyperior  Lv.80  @Rindo Berry    Solid Rock     Calm     Stone Edge, Earthquake, Fire Punch, Thunder Punch
+Quagsire   Lv.80  @Rindo Berry    Water Absorb   Careful  Waterfall, Earthquake, Ice Punch, Recover
+---
+
+Ace Trainer Shanta 244 (Singles) (None)
+
+Whimsicott Lv.80  @Focus Sash     Prankster      Timid    Tailwind, Leech Seed, Giga Drain, Memento
+Mamoswine  Lv.80  @Ground Gem     Thick Fat      Naive    Earthquake, Icicle Crash, Stone Edge, Ice Shard
+---
+
+-----------------
+Route 10
+-----------------
+
+>>>>>>>>>>>>>>>>
+Ace Trainer Cheyenne 99 (Singles) (None)
+
+Swoobat    Lv.80  @Focus Sash     Simple         Quiet    Calm Mind, Agility, Stored Power, Roost
+---
+
+Veteran Chester 178 (Singles) (None)
+
+Sceptile   Lv.80  @Focus Sash     Unburden       Hardy    Swords Dance, Leaf Blade, Earthquake, Rock Slide
+---
+
+-----------------
+Victory Road
+-----------------
+
+>>>>>>>>>>>>>>>>
+Veteran Tiffany 251 (Singles) (None)
+
+Ninetales  Lv.80  @Life Orb       Drought        Naughty  Fire Blast, Will-O-Wisp, Nasty Plot, Energy Ball
+Venusaur   Lv.80  @Focus Sash     Chlorophyll    Naughty  Growth, Weather Ball, Giga Drain, Sludge Bomb
+Charizard  Lv.80  @Choice Scarf   Solar Power    Naughty  Fire Blast, Air Slash, Earthquake, Focus Blast
+---
+
+Team Plasma Grunt26 305 (Singles) (None)
+
+Shedinja   Lv.81  @Focus Sash     Wonder Guard   Lonely   Shadow Sneak, Shadow Claw, Leech Life, Endure
+Archeops   Lv.68  @Flying Gem     Defeatist      Timid    Acrobatics, Stone Edge, Earthquake, Heat Wave
+---
+
+Leader Drayden 133 (Singles) (None)
+
+Druddigon  Lv.83  @Rocky Helmet   Rough Skin     Relaxed  Stealth Rock, Glare, Dragon Tail, Superpower
+Metagross  Lv.83  @Salac Berry    Heatproof      Careful  Meteor Mash, Zen Headbutt, Bullet Punch, Whirlwind
+Dragonite  Lv.83  @Lum Berry      Multiscale     Gentle   Extreme Speed, Dragon Dance, Earthquake, Dragon Tail
+Heatran    Lv.83  @Air Balloon    Flash Fire     Naive    Heat Wave, Earth Power, Flash Cannon, Will-O-Wisp
+Hydreigon  Lv.83  @Dragon Gem     Levitate       Hardy    Draco Meteor, Dark Pulse, Flamethrower, Dragon Tail
+Garchomp   Lv.83  @Yache Berry    Rough Skin     Mild     Dragon Tail, Earthquake, Stone Edge, Outrage
+---
+
+PkMn Trainer Cheren20 589 (Singles) (None)
+
+Pelipper   Lv.85  @Wacan Berry    Drizzle        Sassy    Hurricane, Hydro Pump, U-turn, Roost
+Toxicroak  Lv.85  @Life Orb       Dry Skin       Adamant  Poison Jab, Sucker Punch, Drain Punch, Swords Dance
+Ludicolo   Lv.85  @Focus Sash     Swift Swim     Brave    Fake Out, Hydro Pump, Giga Drain, Ice Beam
+Dragonite  Lv.85  @Lum Berry      Multiscale     Calm     Dragon Dance, Extreme Speed, Aqua Tail, Hurricane
+Samurott   Lv.85  @Focus Sash     Shell Armor    Hardy    Aqua Tail, Aqua Jet, Megahorn, Swords Dance
+---
+
+PkMn Trainer Cheren21 590 (Singles) (None)
+
+Aggron     Lv.85  @Custap Berry   Sturdy         Calm     Stealth Rock, Heavy Slam, Stone Edge, Metal Burst
+Chandelure Lv.85  @Choice Scarf   Flash Fire     Quirky   Shadow Ball, Fire Blast, Energy Ball, Trick
+Salamence  Lv.85  @Yache Berry    Moxie          Docile   Dragon Dance, Outrage, Earthquake, Rock Slide
+Snorlax    Lv.85  @Leftovers      Immunity       Modest   Shadow Claw, Body Slam, Rest, Curse
+Serperior  Lv.85  @Focus Sash     Contrary       Lax      Leaf Storm, Draco Meteor, Leech Seed, Glare
+---
+
+PkMn Trainer Cheren19 588 (Singles) (None)
+
+Skarmory   Lv.85  @Rocky Helmet   Sturdy         Mild     Stealth Rock, Spikes, Toxic, Roost
+Garchomp   Lv.85  @Yache Berry    Rough Skin     Docile   Dragon Dance, Dragon Rush, Earthquake, Stone Edge
+Starmie    Lv.85  @Life Orb       Natural Cure   Naive    Hydro Pump, Psychic, Thunderbolt, Ice Beam
+Ferrothorn Lv.85  @Leftovers      Iron Barbs     Brave    Protect, Gyro Ball, Power Whip, Leech Seed
+Emboar     Lv.85  @Life Orb       Reckless       Quiet    , , , 
+---
+
+Elite Four Caitlin 231 (Singles) (None)
+
+Musharna   Lv.90  @Light Clay     Synchronize    Relaxed  Psychic, Light Screen, Reflect, Hypnosis
+Gardevoir  Lv.90  @Focus Sash     Trace          Timid    Psychic, Shadow Ball, Calm Mind, Focus Blast
+Sigilyph   Lv.90  @Toxic Orb      Magic Guard    Docile   Psychic, Psycho Shift, Roost, Air Slash
+Reuniclus  Lv.90  @Life Orb       Magic Guard    Quiet    Psychic, Shadow Ball, Recover, Focus Blast
+---
+
+Elite Four Marshal 229 (Singles) (None)
+
+Mienshao   Lv.50  @Life Orb       Regenerator    Relaxed  Fake Out, U-turn, High Jump Kick, Knock Off
+Sawk       Lv.50  @Salac Berry    Sturdy         Quiet    Reversal, Rock Slide, Knock Off, Thunder Punch
+Conkeldurr Lv.50  @Life Orb       Sheer Force    Timid    Hammer Arm, Knock Off, Rock Slide, Mach Punch
+Infernape  Lv.90  @Focus Sash     Blaze          Jolly    Aura Sphere, Overheat, Nasty Plot, Vacuum Wave
+---
+
+Elite Four Grimsley 230 (Singles) (None)
+
+Liepard    Lv.90  @Focus Sash     Prankster      Relaxed  Thunder Wave, Dark Pulse, Grass Knot, Sucker Punch
+Scrafty    Lv.90  @Sitrus Berry   Intimidate     Adamant  Dragon Dance, Rock Slide, Drain Punch, Knock Off
+Krookodile Lv.90  @Choice Scarf   Moxie          Brave    Crunch, Dragon Claw, Earthquake, Rock Slide
+Bisharp    Lv.90  @Focus Sash     Defiant        Timid    Knock Off, Sucker Punch, Iron Head, Swords Dance
+---
+
+Elite Four Shauntal 228 (Singles) (None)
+
+Cofagrigus Lv.90  @Chesto Berry   Mummy          Relaxed  Will-O-Wisp, Trick Room, Rest, Hex
+Jellicent  Lv.90  @Mystic Water   Cursed Body    Sassy    Water Spout, Recover, Surf, Shadow Ball
+Golurk     Lv.90  @Life Orb       Iron Fist      Serious  Thunder Punch, Earthquake, Drain Punch, Shadow Punch
+Chandelure Lv.90  @Choice Scarf   Shadow Tag     Hardy    Energy Ball, Fire Blast, Trick, Shadow Ball
+---
+
+Team Plasma N3 586 (Singles) (None)
+
+Zoroark    Lv.93  @Focus Sash     Illusion       Hardy    Night Daze, Flamethrower, Focus Blast, Nasty Plot
+Thundurus  Lv.93  @Life Orb       Prankster      Calm     Thunder Wave, Volt Switch, Focus Blast, Nasty Plot
+Ferrothorn Lv.93  @Rocky Helmet   Iron Barbs     Calm     Gyro Ball, Power Whip, Leech Seed, Protect
+Archeops   Lv.93  @Flying Gem     -              Naive    Rock Slide, Acrobatics, U-turn, Heat Wave
+Reshiram   Lv.93  @Air Balloon    Turboblaze     Timid    Blue Flare, Dragon Pulse, Earth Power, Calm Mind
+Blaziken   Lv.93  @Life Orb       Speed Boost    Impish   Flare Blitz, Swords Dance, Close Combat, Thunder Punch
+---
+
+Team Plasma N4 587 (Singles) (None)
+
+Zoroark    Lv.93  @Focus Sash     Illusion       Modest   Night Daze, Flamethrower, Focus Blast, Nasty Plot
+Keldeo     Lv.93  @Expert Belt    Justified      Hasty    Scald, Secret Sword, Ice Beam, Calm Mind
+Ferrothorn Lv.93  @Rocky Helmet   Iron Barbs     Timid    Gyro Ball, Power Whip, Leech Seed, Protect
+Archeops   Lv.93  @Flying Gem     -              Bold     Rock Slide, Acrobatics, Heat Wave, U-turn
+Zekrom     Lv.93  @Air Balloon    Teravolt       Modest   Bolt Strike, Dragon Claw, Dragon Dance, Earthquake
+Blaziken   Lv.93  @Life Orb       Speed Boost    Careful  Flare Blitz, Close Combat, Swords Dance, Thunder Punch
+---
+
+Team Plasma Ghetsis 232 (Singles) (None)
+
+Gliscor    Lv.95  @Toxic Orb      Poison Heal    Brave    Earthquake, Stealth Rock, Protect, U-turn
+Heatran    Lv.95  @Air Balloon    Flash Fire     Naive    Magma Storm, Earth Power, Flash Cannon, Heat Wave
+Giratina-Origin Lv.95  @Griseous Orb   Pressure       Jolly    Shadow Ball, Dragon Tail, Dragon Pulse, Aura Sphere
+Genesect   Lv.95  @Occa Berry     Download       Quirky   Iron Head, Thunderbolt, Ice Beam, U-turn
+Rotom-Wash Lv.95  @Leftovers      Levitate       Quiet    Will-O-Wisp, Hydro Pump, Volt Switch, Protect
+Hydreigon  Lv.95  @Scope Lens     Filter         Relaxed  Draco Meteor, Focus Energy, Dark Pulse, Focus Blast
+---
+
+Elite Four Marshal2 564 (Singles) (None)
+
+Cobalion   Lv.100 @Focus Sash     Justified      Modest   Stealth Rock, Volt Switch, Sacred Sword, Iron Head
+Electivire Lv.75  @Fighting Gem   Motor Drive    Bold     Close Combat, Wild Charge, Ice Punch, Mach Punch
+Hariyama   Lv.100 @Leftovers      Guts           Quiet    Fake Out, Whirlwind, Drain Punch, Rock Slide
+Scrafty    Lv.100 @Leftovers      Shed Skin      Quiet    Bulk Up, Rock Tomb, Drain Punch, Rest
+Mienshao   Lv.100 @Life Orb       Regenerator    Serious  High Jump Kick, U-turn, Knock Off, Fake Out
+Conkeldurr Lv.100 @Flame Orb      Guts           Naive    Drain Punch, Facade, Detect, Knock Off
+---
+
+PkMn Trainer Cynthia 567 (Singles) (None)
+
+Tyranitar  Lv.100 @Chople Berry   Sand Stream    Naughty  Stealth Rock, Earthquake, Stone Edge, Crunch
+Dialga     Lv.100 @Sitrus Berry   Pressure       Modest   Roar of Time, Rest, Sleep Talk, Flash Cannon
+Excadrill  Lv.100 @Focus Sash     Sand Rush      Jolly    Swords Dance, Earthquake, Iron Head, Rock Slide
+Gliscor    Lv.100 @Brightpowder   Sand Veil      Rash     Fly, Roost, Earthquake, Swords Dance
+Arceus     Lv.100 @Iron Plate     Multitype      Lax      Recover, Calm Mind, Judgment, Earth Power
+Garchomp   Lv.100 @Yache Berry    Sand Veil      Lax      Dragon Rush, Swords Dance, Earthquake, Stone Edge
+---
+
+Champion Alder 407 (Singles) (None)
+
+Groudon    Lv.100 @Liechi Berry   Drought        Docile   Stealth Rock, Bulk Up, Heat Crash, Earthquake
+Darmanitan Lv.100 @Life Orb       Sheer Force    Bashful  Flare Blitz, Rock Slide, Earthquake, U-turn
+Arceus     Lv.100 @Silk Scarf     Multitype      Bold     Extreme Speed, Shadow Claw, Recover, Swords Dance
+Landorus-Therian Lv.100 @Yache Berry    Sand Force     Rash     Earthquake, Swords Dance, U-turn, Stone Edge
+Victini    Lv.100 @White Herb     Victory Star   Naive    Bolt Strike, V-create, Psyshock, Glaciate
+Volcarona  Lv.100 @Charti Berry   Flame Body     Quiet    Fiery Dance, Quiver Dance, Bug Buzz, Solar Beam
+---
+
+Elite Four Shauntal2 563 (Singles) (None)
+
+Froslass   Lv.100 @Focus Sash     Cursed Body    Brave    Spikes, Destiny Bond, Ice Beam, Shadow Ball
+Dusclops   Lv.100 @Eviolite       Pressure       Lonely   Will-O-Wisp, Night Shade, Pain Split, Disable
+Giratina   Lv.100 @Leftovers      Pressure       Rash     Will-O-Wisp, Rest, Hex, Roar
+Sableye    Lv.100 @Leftovers      Prankster      Hasty    Night Shade, Recover, Will-O-Wisp, Protect
+Blissey    Lv.100 @Leftovers      Natural Cure   Docile   Heal Bell, Seismic Toss, Soft-Boiled, Toxic
+Gengar     Lv.100 @Focus Sash     Levitate       Hardy    Shadow Ball, Psychic, Focus Blast, Sludge Wave
+---
+
+Elite Four Grimsley2 565 (Singles) (None)
+
+Krookodile Lv.100 @Focus Sash     Intimidate     Lax      Earthquake, Crunch, Stealth Rock, Stone Edge
+Darkrai    Lv.100 @Life Orb       Bad Dreams     Gentle   Dark Void, Dark Pulse, Focus Blast, Nasty Plot
+Mandibuzz  Lv.100 @Rocky Helmet   Overcoat       Calm     Foul Play, Toxic, Roost, Brave Bird
+Tyranitar  Lv.100 @Chople Berry   Unnerve        Relaxed  Dragon Dance, Stone Edge, Earthquake, Crunch
+Spiritomb  Lv.100 @Leftovers      Pressure       Adamant  Will-O-Wisp, Confuse Ray, Foul Play, Protect
+Hydreigon  Lv.100 @Wise Glasses   Filter         Relaxed  Dragon Pulse, Dark Pulse, Roost, Focus Blast
+---
+
+Elite Four Caitlin2 566 (Singles) (None)
+
+Deoxys-Speed Lv.100 @Focus Sash     Pressure       Adamant  Stealth Rock, Spikes, Psycho Boost, Thunderbolt
+Espeon     Lv.100 @Kasib Berry    Synchronize    Rash     Fiery Dance, Psychic, Shadow Ball, Signal Beam
+Alakazam   Lv.100 @Life Orb       Magic Guard    Relaxed  Psychic, Shadow Ball, Aura Sphere, Thunderbolt
+Latias     Lv.100 @Soul Dew       Levitate       Naughty  Draco Meteor, Mist Ball, Psyshock, Ice Beam
+Zoroark    Lv.100 @Chople Berry   Illusion       Naive    Night Daze, Flamethrower, Focus Blast, Nasty Plot
+Metagross  Lv.100 @Normal Gem     Heatproof      Naughty  Zen Headbutt, Bullet Punch, Explosion, Iron Head
+---
+
+PkMn Trainer Cheren24 593 (Singles) (None)
+
+Aggron     Lv.100 @Custap Berry   Sturdy         Impish   Stealth Rock, Heavy Slam, Stone Edge, Metal Burst
+Chandelure Lv.100 @Choice Scarf   Shadow Tag     Serious  Fire Blast, Shadow Ball, Energy Ball, Trick
+Salamence  Lv.100 @Yache Berry    Moxie          Impish   Dragon Dance, Outrage, Earthquake, Rock Slide
+Snorlax    Lv.100 @Leftovers      Immunity       Quiet    Shadow Claw, Body Slam, Rest, Curse
+Lugia      Lv.100 @Leftovers      Multiscale     Naughty  Aeroblast, Psychic, Roost, Earthquake
+Serperior  Lv.100 @Focus Sash     Contrary       Sassy    Leaf Storm, Draco Meteor, Leech Seed, Glare
+---
+
+PkMn Trainer Cheren22 591 (Singles) (None)
+
+Skarmory   Lv.100 @Rocky Helmet   Sturdy         Naughty  Stealth Rock, Spikes, Whirlwind, Roost
+Garchomp   Lv.100 @Yache Berry    Rough Skin     Rash     Dragon Rush, Earthquake, Stone Edge, Swords Dance
+Starmie    Lv.100 @Focus Sash     Natural Cure   Brave    Hydro Pump, Psychic, Thunderbolt, Ice Beam
+Ferrothorn Lv.100 @Leftovers      Iron Barbs     Modest   Gyro Ball, Power Whip, Leech Seed, Protect
+Palkia     Lv.100 @Lustrous Orb   Pressure       Gentle   Spacial Rend, Dragon Tail, Hydro Pump, Aura Sphere
+Emboar     Lv.100 @Life Orb       Reckless       Rash     Flare Blitz, Sucker Punch, Superpower, Wild Charge
+---
+
+PkMn Trainer Cheren23 592 (Singles) (None)
+
+Kyogre     Lv.100 @Sitrus Berry   Drizzle        Hardy    Hydro Pump, Thunder, Calm Mind, Ice Beam
+Toxicroak  Lv.100 @Life Orb       Dry Skin       Mild     Drain Punch, Poison Jab, Swords Dance, Sucker Punch
+Ludicolo   Lv.100 @Focus Sash     Swift Swim     Modest   Fake Out, Hydro Pump, Giga Drain, Ice Beam
+Dragonite  Lv.100 @Lum Berry      Multiscale     Impish   Dragon Dance, Extreme Speed, Aqua Tail, Hurricane
+Manaphy    Lv.100 @Leftovers      Hydration      Bold     Tail Glow, Rest, Surf, Ice Beam
+Samurott   Lv.100 @Focus Sash     Shell Armor    Brave    Aqua Tail, Aqua Jet, Swords Dance, Megahorn
+---
+
+-----------------
+Striaton City
+-----------------
+
+>>>>>>>>>>>>>>>>
+Waiter Maxwell 9 (Singles) (None)
+
+Pansage    Lv.12  @-              Gluttony       Relaxed  Bullet Seed, Yawn, Tackle, 
+Growlithe  Lv.13  @-              Intimidate     Bold     Will-O-Wisp, Bite, , Teleport
+-          Lv.137 @-              -              Hardy    Peck, Aqua Jet, Pound, 
+---
+

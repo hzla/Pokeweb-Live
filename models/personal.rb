@@ -97,7 +97,7 @@ class Personal
 			end
 
 			showdown[showdown_name]["bs"] = {"hp"=> pok["base_hp"], "at" => pok["base_atk"], "df" => pok["base_def"], "sa" => pok["base_spatk"], "sd" => pok["base_spdef"], "sp" => pok["base_speed"]}
-			showdown[showdown_name]["learnset_info"] = get_learnset_for pok, all_tm_names
+			# showdown[showdown_name]["learnset_info"] = get_learnset_for pok, all_tm_names
 		end
 		File.write("public/dist/poks.json", JSON.dump(showdown))
 		open("public/dist/poks.js", "w") do |f| 

@@ -104,7 +104,7 @@ class Trpok < Pokenarc
 		file_path = "#{$rom_name}/json/trpok/#{trainer}.json"
 		trpok = JSON.parse(File.open(file_path, "r"){|f| f.read})
 
-		pok_id = trpok["raw"]["species_id_#{pok_index}"]
+		pok_id = trpok["raw"]["species_id_#{pok_index}"] % 1024
 
 
 		learnset_path = "#{$rom_name}/json/learnsets/#{pok_id}.json"
@@ -346,7 +346,14 @@ class Trpok < Pokenarc
 			return "Unknown"
 		end
 
-		gender_table = File.read("texts/pl_genders.txt").split("\n")
+		gender_file = ""
+		if SessionSettings.base_rom == "HGSS"
+			gender_file = "texts/hgss_genders.txt"
+		else
+			gender_file = "texts/plat_genders.txt"
+		end
+
+		gender_table = File.read(gender_file).split("\n")
 		gender = gender_table[trainer_class] == "01" ? "female" : "male"
 
 		# if personal["gender"] < 127
@@ -399,7 +406,9 @@ class Trpok < Pokenarc
 		nature_id = (pid.to_i(16).to_s[-2..-1].to_i) % 25
 
 		# uncomment the next line if hgss
-		# nature_id = ((pid.to_i(16).to_s[-2..-1].to_i) + ab) % 25
+		if SessionSettings.base_rom == "HGSS"
+			nature_id = ((pid.to_i(16).to_s[-2..-1].to_i) + ab) % 25
+		end
 
 
 		RomInfo.natures[nature_id]
