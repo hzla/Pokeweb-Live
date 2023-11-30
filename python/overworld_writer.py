@@ -184,6 +184,18 @@ def write_narc_data(file_name, narc_format, narc, narc_name, rom_name):
 				# if entity has been deleted
 				if f'{overworld}_{m}_{ NARC_FORMAT[overworld][0][1]}' not in json_data["raw"]:
 					m += 1
+					if f'{overworld}_{m}_{ NARC_FORMAT[overworld][0][1]}' not in json_data["raw"]:
+						m += 1
+					if f'{overworld}_{m}_{ NARC_FORMAT[overworld][0][1]}' not in json_data["raw"]:
+						m += 1
+					if f'{overworld}_{m}_{ NARC_FORMAT[overworld][0][1]}' not in json_data["raw"]:
+						m += 1
+					if f'{overworld}_{m}_{ NARC_FORMAT[overworld][0][1]}' not in json_data["raw"]:
+						m += 1
+					if f'{overworld}_{m}_{ NARC_FORMAT[overworld][0][1]}' not in json_data["raw"]:
+						m += 1
+					if f'{overworld}_{m}_{ NARC_FORMAT[overworld][0][1]}' not in json_data["raw"]:
+						m += 1
 				else:
 					found = True
 
