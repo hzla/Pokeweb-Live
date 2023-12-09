@@ -136,10 +136,23 @@ class MyApp < Sinatra::Base
 		file_index = params["file_index"]
 		rom_name = $rom_name.split("/")[1]
 
+		p "python3 python/romfiles/file_manager.py -extract #{rom_name}.nds #{file_path} #{file_index}"
 		`python3 python/romfiles/file_manager.py -extract #{rom_name}.nds #{file_path} #{file_index}`
 		
 		file_path = file_path.gsub("/","")
 		send_file "./exports/#{rom_name}_#{file_path}_#{file_index}.bin", :filename => "#{rom_name}_#{file_path}_#{file_index}.bin" , :type => 'Application/octet-stream'
+	end
+
+	get '/files/:file_path' do 
+		redirect '/' if !$rom_name
+		file_path = params["file_path"].split("").join("/")
+		rom_name = $rom_name.split("/")[1]
+
+		p "python3 python/romfiles/file_manager.py -extract #{rom_name}.nds #{file_path}"
+		`python3 python/romfiles/file_manager.py -extract #{rom_name}.nds #{file_path}`
+		
+		file_path = file_path.gsub("/","")
+		send_file "./exports/#{rom_name}_#{file_path}.bin", :filename => "#{rom_name}_#{file_path}.bin" , :type => 'Application/octet-stream'
 	end
 
 	get '/rom/new' do 

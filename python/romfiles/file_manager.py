@@ -14,21 +14,28 @@ import sys
 # EXAMPLE OUTPUT: Outputs my_rom_edited.nds to current directory
 
 rom_path = sys.argv[2]
-file_path = sys.argv[3]
-subfile_name = int(sys.argv[4])
-
 rom_name = rom_path.split('.')[0]
+file_path = sys.argv[3]
+subfile_name = False
 
+if len(sys.argv) > 4:
+	subfile_name = int(sys.argv[4])
 
 rom = ndspy.rom.NintendoDSRom.fromFile(rom_path)
-narc = ndspy.narc.NARC(rom.files[rom.filenames[file_path]])
-subfile = narc.files[subfile_name]
+file_to_send = ndspy.narc.NARC(rom.files[rom.filenames[file_path]])
+
+if subfile_name:
+	file_to_send = file_to_send.files[subfile_name]
 
 if sys.argv[1] == "-extract":
-
 	file_path = file_path.replace("/","")
-	with open(f'exports/{rom_name}_{file_path}_{subfile_name}.bin', 'wb') as f:
-		f.write(subfile)
+	if subfile_name:
+		with open(f'exports/{rom_name}_{file_path}_{subfile_name}.bin', 'wb') as f:
+			f.write(file_to_send)
+	else:
+		with open(f'exports/{rom_name}_{file_path}.bin', 'wb') as f:
+			f.write(file_to_send.save())
+
 
 if sys.argv[1] == "-replace":
 	input_file = sys.argv[5]
