@@ -153,16 +153,22 @@ class Personal
 
 def self.scale_exp scale
 
-(1..708).each do |n|
-path = "#{$rom_name}/json/personal/#{n}.json"
-pok = JSON.parse(File.open(path, "r"){|f| f.read})
-val = pok["raw"]["base_exp"]
+	directory = $rom_name if !directory
 
-pok["raw"]["base_exp"] = [(val * scale).to_i, 255].min
-pok["readable"]["base_exp"] = [(val * scale).to_i, 255].min
+	files = Dir["#{directory}/json/personal/*.json"]
+	file_count = files.length - 2
 
-File.write(path, JSON.dump(pok))
-end
+	scale = scale / 100.0
+	(1..file_count).each do |n|
+		path = "#{$rom_name}/json/personal/#{n}.json"
+		pok = JSON.parse(File.open(path, "r"){|f| f.read})
+		val = pok["raw"]["base_exp"]
+
+		pok["raw"]["base_exp"] = [(val * scale).to_i, 255].min
+		pok["readable"]["base_exp"] = [(val * scale).to_i, 255].min
+
+		File.write(path, JSON.dump(pok))
+	end
 end
 
 

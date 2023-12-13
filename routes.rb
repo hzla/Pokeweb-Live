@@ -370,6 +370,13 @@ class MyApp < Sinatra::Base
 		erb :personal
 	end
 
+	get '/personal/scale/:scale' do 
+		redirect '/' if !$rom_name
+		Personal.scale_exp params[:scale].to_i
+
+		redirect '/personal'
+	end
+
 	get '/learnsets/:id/:index/delete' do 
 		redirect '/' if !$rom_name
 
