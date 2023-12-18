@@ -342,9 +342,6 @@ class Trpok < Pokenarc
 		ability = ability_slot
 		species = pok_id
 
-		if trainer_class == 0
-			return "Unknown"
-		end
 
 		gender_file = ""
 		if SessionSettings.base_rom == "HGSS"
@@ -368,11 +365,7 @@ class Trpok < Pokenarc
 		# 	gender = "female"
 		# end
 
-		if file_name == 993
-			p gender
-			p trainer_class
-			p gender_table[trainer_class]
-		end
+		p gender_file
 
 		# prng(77, )
 
@@ -386,14 +379,20 @@ class Trpok < Pokenarc
 	def self.prng level, species, difficulty, trainer_id, trainer_class, gender, ability
 		seed = (level + species + difficulty + trainer_id).to_s(16)
 
+
 		trainer_class.times do 
 			seed = seed.to_i 16
 			result = 0x41C64E6D * seed + 0x00006073
 			seed = result.to_s(16)[-8..-1]
 		end
+		# binding.pry
 		result = seed[0...-4]
 
-		mid_bytes = result[-4..-1]
+		if result != ""
+			mid_bytes = result[-4..-1]
+		else
+			mid_bytes = "0000"
+		end
 		low_bytes = gender == "male" ? "88" : "78"
 		high_bytes = "00"
 
