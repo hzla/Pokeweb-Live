@@ -391,7 +391,7 @@ class Trpok < Pokenarc
 		if result != ""
 			mid_bytes = result[-4..-1]
 		else
-			mid_bytes = "0000"
+			mid_bytes = seed
 		end
 		low_bytes = gender == "male" ? "88" : "78"
 		high_bytes = "00"
@@ -412,6 +412,7 @@ class Trpok < Pokenarc
 
 		RomInfo.natures[nature_id]
 	end
+
 
 
 	def self.convert_pid_to_nature pid, natures
@@ -562,11 +563,14 @@ class Trpok < Pokenarc
 		replace["Submission"]=  "Play Rough"
 		replace["Twister"]=  "Hurricane"
 		replace["Volt Tackle"]=  "Wild Charge"
+		replace["-"] = "(No Move)"
 		replace
 	end
 
 	def self.export_showdown tr_id, trdata, min_ivs, rival_set=0, gen=5
-		if $gen = 4
+		if SessionSettings.base_rom == "HGSS"
+			move_names = File.read("texts/moves.txt").split("\n")
+		else
 			move_names = File.read("texts/rp_moves.txt").split("\n")
 		end
 		file_path = "#{$rom_name}/json/trpok/#{tr_id}.json"
@@ -677,9 +681,15 @@ class Trpok < Pokenarc
 			(1..4).each do |n|
 				if poks["move_#{n}_#{i}"]
 					move = sub_showdown(poks["move_#{n}_#{i}"].move_titleize)
-					if rp_replacements[move]
-						move = rp_replacements[move]
-					end
+					if SessionSettings.base_rom == "HGSS"
+						if move == "-"
+							move = "(No Move)"
+						end
+					else
+						if rp_replacements[move]
+							move = rp_replacements[move]
+						end
+					end	
 					moves << move 
 				else
 					moves << ""
