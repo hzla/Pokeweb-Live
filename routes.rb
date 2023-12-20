@@ -639,9 +639,16 @@ class MyApp < Sinatra::Base
 
 	get '/headers' do 
 		redirect '/' if !$rom_name
-		@header_data = Header.get_all
-		@location_names = Header.location_names
+		
+		begin 
+			@header_data = Header.get_all
+			@location_names = Header.location_names
 
+		rescue
+			session[:rom_name] = nil
+			$rom_name =  nil
+			redirect '/?message=rom_load_failed'
+		end
 		erb :headers
 	end
 

@@ -16,6 +16,12 @@
     padding: 40px 20px;
 }
 
+#showcase {
+    max-width: calc(100% - 80px);
+    margin-left: 40px;
+    border: 2px solid white;
+}
+
 .editable-doc {
     background: #f2f2f2;
     color: black !important;
