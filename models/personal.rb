@@ -123,6 +123,23 @@ class Personal
 
 	end
 
+	def self.transfer_tm_data from, to, rom_name=nil
+		if !rom_name 
+			rom_name = $rom_name
+		end
+
+		from_mon = JSON.parse(File.read("#{rom_name}/json/personal/#{from}.json")) 
+		to_mon = JSON.parse(File.read("#{rom_name}/json/personal/#{to}.json")) 
+
+		fields = ["tm_1-32", "tm_33-64", "tm_65-95", "hm_2-6", "tutors", "driftveil_tutor", "lentimas_tutor", "humilau_tutor", "nacrene_tutor"]
+		fields.each do |field|
+			to_mon["readable"][field] = from_mon["readable"][field]
+			to_mon["raw"][field] = from_mon["raw"][field]
+		end
+
+		File.open("#{rom_name}/json/personal/#{to}.json", "w") { |f| f.write to_mon.to_json }
+	end
+
 	def self.balance
 
 		(1..708).each do |n|

@@ -383,6 +383,11 @@ class MyApp < Sinatra::Base
 		erb :personal
 	end
 
+	get '/personal/:from/copy_tms_to/:to' do 
+		Personal.transfer_tm_data params[:from], params[:to]
+		redirect '/personal'
+	end
+
 	get '/personal/scale/:scale' do 
 		redirect '/' if !$rom_name
 		Personal.scale_exp params[:scale].to_i
