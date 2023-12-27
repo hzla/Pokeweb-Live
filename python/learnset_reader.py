@@ -55,7 +55,9 @@ def to_readable(raw, file_name, base=5):
 			try:
 				readable[f'move_id_{n}'] = rom_data.MOVES[raw[f'move_id_{n}']]
 			except:
+				print(file_name)
 				print(raw[f'move_id_{n}'])
+				print("\n")
 				# code.interact(local=dict(globals(), **locals()))
 			readable[f'move_id_{n}_index'] = raw[f'move_id_{n}']
 	return readable

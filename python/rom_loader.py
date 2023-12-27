@@ -352,7 +352,7 @@ except:
 
 
 output_tms_json(arm9, rom_name)
-subprocess.run(['rm', '-rf', sys.argv[1]], check = True)
+# subprocess.run(['rm', '-rf', sys.argv[1]], check = True)
 
 if narc_info["base_rom"] == "PLAT":
 	subprocess.run(['cp', '-r', './texts', rom_name], check = True)

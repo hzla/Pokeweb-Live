@@ -25,6 +25,11 @@ class Trdata < Pokenarc
 		end
 	end
 
+	def self.add_rp_pointers
+		$rom_name = "projects/rp2"
+		pointers = File.read("Reference_Files/rp_order.txt").split("\n")
+	end
+
 	def self.get_all use_raw=false 
 		@@narc_name = "trdata"
 		super use_raw

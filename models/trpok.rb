@@ -112,17 +112,17 @@ class Trpok < Pokenarc
 
 		moves = []
 
-		(0..19).to_a.reverse.each do |n|
+		(0..20).to_a.each do |n|
 			lvl_learned = learnset["readable"]["lvl_learned_#{n}"]
 			p lvl_learned
 			p learnset["readable"]["move_id_#{n}"]
 			if lvl_learned && lvl_learned.to_i <= lvl.to_i
 				moves << [learnset["raw"]["move_id_#{n}"],learnset["readable"]["move_id_#{n}"]]
 			end
-			if moves.length == 4
-				break
-			end
 		end
+		moves = moves[-4..-1]
+
+		# binding.pry if trainer == 525
 
 		moves.each_with_index do |move, i|
 			trpok["raw"]["move_#{i + 1}_#{pok_index}"] = move[0]
@@ -248,6 +248,8 @@ class Trpok < Pokenarc
 		nature_info[3] = trpok["ivs_#{sub_index}"]
 		nature_info
 	end
+
+	
 
 	def self.get_nature_for(file_name, sub_index, desired_iv=255)
 		file_path = "#{$rom_name}/json/trpok/#{file_name}.json"
@@ -579,6 +581,7 @@ class Trpok < Pokenarc
 
 		trnames = File.read("#{$rom_name}/texts/tr_names.txt").split("\n")
 		trclasses = File.read("#{$rom_name}/texts/tr_classes.txt").split("\n")
+		pokedex = File.read("#{$rom_name}/texts/pokedex.txt").split("\n")
 
 		trdata["class"] = trclasses[trdata["class_id"]]
 		trdata["name"] = trnames[tr_id]
@@ -604,7 +607,7 @@ class Trpok < Pokenarc
 
 		(0..(poks["count"] - 1)).each do |i|
 			next if poks["ivs_#{i}"] < min_ivs
-			species = poks["species_id_#{i}"].downcase.titleize
+			species = pokedex[raw["species_id_#{i}"]].downcase.titleize
 
 			trname_count = @@tr_name_counts[trname_info]
 

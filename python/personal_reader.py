@@ -12,6 +12,8 @@ def to_readable(raw, file_name, base=5):
 	readable = copy.deepcopy(raw)
 
 	readable["index"] = file_name
+
+
 	
 	gen = "6"
 	if file_name <= 151:
@@ -29,7 +31,7 @@ def to_readable(raw, file_name, base=5):
 	readable["gen"] = gen
 
 	try:
-		readable["name"] = rom_data.POKEDEX[file_name]
+		readable["name"] = rom_data.POKEDEX[file_name].upper()
 	except IndexError:
 		readable["name"] = "Alt Form"
 

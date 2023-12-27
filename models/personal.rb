@@ -224,6 +224,23 @@ class Personal
 		[["HP", "base_hp"],["Attack", "base_atk"],["Defense", "base_def"],["Special Attack", "base_spatk"],["Special Defense", "base_spdef"],["Speed", "base_speed"]]
 	end
 
+	def self.transfer_tm_data from, to, rom_name=nil
+		if !rom_name 
+			rom_name = $rom_name
+		end
+
+		from_mon = JSON.parse(File.read("#{rom_name}/json/personal/#{from}.json")) 
+		to_mon = JSON.parse(File.read("#{rom_name}/json/personal/#{to}.json")) 
+
+		fields = ["tm_1-32", "tm_33-64", "tm_65-95", "hm_2-6", "tutors", "driftveil_tutor", "lentimas_tutor", "humilau_tutor", "nacrene_tutor"]
+		fields.each do |field|
+			to_mon["readable"][field] = from_mon["readable"][field]
+			to_mon["raw"][field] = from_mon["raw"][field]
+		end
+
+		File.open("#{rom_name}/json/personal/#{to}.json", "w") { |f| f.write to_mon.to_json }
+	end
+
 	def self.misc_integer_fields
 		# title to display, field_name in json
 		[["Catch Rate", "catchrate"],["Exp Yield", "base_exp"],["Gender", "gender"],["Hatch Rate", "hatch_cycle"],["Happiness", "base_happy"], ["# of Forms", "num_forms"]]
