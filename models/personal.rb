@@ -131,7 +131,7 @@ class Personal
 		from_mon = JSON.parse(File.read("#{rom_name}/json/personal/#{from}.json")) 
 		to_mon = JSON.parse(File.read("#{rom_name}/json/personal/#{to}.json")) 
 
-		fields = ["tm_1-32", "tm_33-64", "tm_65-95", "hm_2-6", "tutors", "driftveil_tutor", "lentimas_tutor", "humilau_tutor", "nacrene_tutor"]
+		fields = ["tm_1-32", "tm_33-64", "tm_65-95+hm_1", "hm_2-6", "tutors", "driftveil_tutor", "lentimas_tutor", "humilau_tutor", "nacrene_tutor"]
 		fields.each do |field|
 			to_mon["readable"][field] = from_mon["readable"][field]
 			to_mon["raw"][field] = from_mon["raw"][field]
