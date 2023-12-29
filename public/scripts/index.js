@@ -199,10 +199,40 @@ $(document).ready(function() {
     	}
     })
 
+  //   $(document).on('click', '#load-save', function(e){
+  //   	var file = $('#save-upload')[0].files[0]
+
+
+		// if (!file) {
+		// 	alert("no file uploaded")
+		// 	return
+		// }
+		
+		// let formData = new FormData();           
+	 //    formData.append("file", file);
+	    
+	 //    fetch(`/read_save`, {
+	 //      method: "POST", 
+	 //      body: formData
+	 //    }).then(response => {
+  //           console.log(JSON.stringify(response.json()))
+  //           return JSON.stringify(response.json())
+  //       });; 
+
+
+  //   })
+
 
 	$(document).on('change', '#xdelta', function() {
 		if(this.files[0].size > 50000000){
 	       alert("This file is too big, Make sure this is an xdelta between the rom you want to edit and the original base rom and NOT an xdelta between the rom you want to edit and a blank rom. Join DS Hacking Discord https://discord.gg/zAtqJDW2jC for more info");
+	       this.value = "";
+	    };
+	})
+
+	$(document).on('change', '#save-upload', function() {
+		if(this.files[0].size > 1000000){
+	       alert("This file is too big");
 	       this.value = "";
 	    };
 	})

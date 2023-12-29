@@ -1129,6 +1129,30 @@ class MyApp < Sinatra::Base
 	end
 
 
+	############ MISC
+
+	get '/savereader' do 
+		erb :save_reader
+	end
+
+	post '/read_save' do 
+		p params
+		file = params["filename"]["tempfile"]
+		file_name = "save#{rand(100000)}.sav"
+	
+		File.open("./exports/#{file_name}", 'wb') do |f|
+	    	f.write(file.read)
+	  	end
+	  	bin_data = IO.binread("./exports/#{file_name}")
+	  	@showdown = Save.read(bin_data)
+	  	`rm -rf ./exports/#{file_name}`
+
+	  	# p showdown
+
+
+	  	erb :showdown_export	
+	end
+
 end
 
 

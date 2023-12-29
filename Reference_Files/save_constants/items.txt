@@ -1,0 +1,709 @@
+????????
+Master Ball
+Ultra Ball
+Great Ball
+Poké Ball
+Safari Ball
+Net Ball
+Dive Ball
+Nest Ball
+Repeat Ball
+Timer Ball
+Luxury Ball
+Premier Ball
+Level Ball
+Lure Ball
+Moon Ball
+Friend Ball
+Love Ball
+Heavy Ball
+Fast Ball
+Heal Ball
+Quick Ball
+Dusk Ball
+Cherish Ball
+Sport Ball
+Park Ball
+Dream Ball
+Beast Ball
+Potion
+Antidote
+Burn Heal
+Ice Heal
+Awakening
+Paralyze Heal
+Full Restore
+Max Potion
+Hyper Potion
+Super Potion
+Full Heal
+Revive
+Max Revive
+Fresh Water
+Soda Pop
+Lemonade
+Moomoo Milk
+Energy Powder
+Energy Root
+Heal Powder
+Revival Herb
+Ether
+Max Ether
+Elixir
+Max Elixir
+Lava Cookie
+Blue Flute
+Yellow Flute
+Red Flute
+Black Flute
+White Flute
+Berry Juice
+Sweet Heart
+Big Malasada
+Old Gateau
+Sacred Ash
+Shoal Salt
+Shoal Shell
+Red Shard
+Blue Shard
+Yellow Shard
+Green Shard
+HP Up
+Protein
+Iron
+Carbos
+Calcium
+Rare Candy
+PP Up
+Zinc
+PP Max
+Guard Spec.
+Dire Hit
+X Attack
+X Defense
+X Speed
+X Accuracy
+X Sp. Atk
+X Sp. Def
+Poké Doll
+Fluffy Tail
+Super Repel
+Max Repel
+Ability Pill
+AbilityPatch
+Poké Vial
+Escape Rope
+Repel
+Sun Stone
+Moon Stone
+Fire Stone
+Thunder Stone
+Water Stone
+Leaf Stone
+Dawn Stone
+Dusk Stone
+Shiny Stone
+Ice Stone
+Red Apricorn
+Blue Apricorn
+YellwApricorn
+GreenApricorn
+Pink Apricorn
+WhiteApricorn
+BlackApricorn
+Tiny Mushroom
+Big Mushroom
+Balm Mushroom
+Pearl
+Big Pearl
+Pearl String
+Stardust
+Star Piece
+Comet Shard
+Nugget
+Big Nugget
+Relic Copper
+Relic Silver
+Relic Gold
+Relic Vase
+Relic Statue
+Relic Band
+Bottle Cap
+GldBottleCap
+Heart Scale
+Red Nectar
+Yellow Nectar
+Pink Nectar
+Purple Nectar
+Rare Bone
+Orange Mail
+Harbor Mail
+Glitter Mail
+Mech Mail
+Wood Mail
+Wave Mail
+Bead Mail
+Shadow Mail
+Tropic Mail
+Dream Mail
+Fab Mail
+Retro Mail
+Cheri Berry
+Chesto Berry
+Pecha Berry
+Rawst Berry
+Aspear Berry
+Leppa Berry
+Oran Berry
+Persim Berry
+Lum Berry
+Sitrus Berry
+Figy Berry
+Wiki Berry
+Mago Berry
+Aguav Berry
+Iapapa Berry
+Razz Berry
+Bluk Berry
+Nanab Berry
+Wepear Berry
+Pinap Berry
+Pomeg Berry
+Kelpsy Berry
+Qualot Berry
+Hondew Berry
+Grepa Berry
+Tamato Berry
+Cornn Berry
+Magost Berry
+Rabuta Berry
+Nomel Berry
+Spelon Berry
+Pamtre Berry
+Watmel Berry
+Durin Berry
+Belue Berry
+Liechi Berry
+Ganlon Berry
+Salac Berry
+Petaya Berry
+Apicot Berry
+Lansat Berry
+Starf Berry
+Micle Berry
+Enigma Berry
+Occa Berry
+Passho Berry
+Wacan Berry
+Rindo Berry
+Yache Berry
+Chople Berry
+Kebia Berry
+Shuca Berry
+Coba Berry
+Payapa Berry
+Tanga Berry
+Charti Berry
+Kasib Berry
+Haban Berry
+Colbur Berry
+Babiri Berry
+Chilan Berry
+Roseli Berry
+Custap Berry
+Jaboca Berry
+Rowap Berry
+Kee Berry
+Maranga Berry
+Bright Powder
+White Herb
+Macho Brace
+Exp. Share
+Quick Claw
+Soothe Bell
+Mental Herb
+Choice Band
+King's Rock
+Silver Powder
+Amulet Coin
+Cleanse Tag
+Soul Dew
+DeepSeaTooth
+DeepSeaScale
+Smoke Ball
+Everstone
+Focus Band
+Lucky Egg
+Scope Lens
+Metal Coat
+Leftovers
+Dragon Scale
+Oval Stone
+Protector
+Electirizer
+Magmarizer
+Dubious Disc
+Reaper Cloth
+Razor Claw
+Razor Fang
+Prism Scale
+Whipped Dream
+Sachet
+Light Ball
+Soft Sand
+Hard Stone
+Miracle Seed
+Black Glasses
+Black Belt
+Magnet
+Mystic Water
+Sharp Beak
+Poison Barb
+Never-MeltIce
+Spell Tag
+Twisted Spoon
+Charcoal
+Dragon Fang
+Silk Scarf
+Upgrade
+Shell Bell
+Power Bracer
+Power Belt
+Power Lens
+Power Band
+Power Anklet
+Power Weight
+Sea Incense
+Lax Incense
+Odd Incense
+Rock Incense
+Full Incense
+Wave Incense
+Rose Incense
+Luck Incense
+Pure Incense
+Lucky Punch
+Metal Powder
+Thick Club
+Leek
+Red Scarf
+Blue Scarf
+Pink Scarf
+Green Scarf
+Yellow Scarf
+Mach Bike
+Coin Case
+Dowsing MCHN
+Old Rod
+Good Rod
+Super Rod
+S.S. Ticket
+Contest Pass
+Wailmer Pail
+Devon Parts
+Soot Sack
+Basement Key
+Acro Bike
+{POKEBLOCK} Case
+Letter
+Eon Ticket
+Red Orb
+Blue Orb
+Scanner
+Go-Goggles
+Meteorite
+Key to Room 1
+Key to Room 2
+Key to Room 4
+Key to Room 6
+Storage Key
+Devon Scope
+Magma Stone
+Lunar Wing
+TM01
+TM02
+TM03
+TM04
+TM05
+TM06
+TM07
+TM08
+TM09
+TM10
+TM11
+TM12
+TM13
+TM14
+TM15
+TM16
+TM17
+TM18
+TM19
+TM20
+TM21
+TM22
+TM23
+TM24
+TM25
+TM26
+TM27
+TM28
+TM29
+TM30
+TM31
+TM32
+TM33
+TM34
+TM35
+TM36
+TM37
+TM38
+TM39
+TM40
+TM41
+TM42
+TM43
+TM44
+TM45
+TM46
+TM47
+TM48
+TM49
+TM50
+TM51
+TM52
+TM53
+TM54
+TM55
+TM56
+TM57
+TM58
+TM59
+TM60
+TM61
+TM62
+TM63
+TM64
+TM65
+TM66
+TM67
+TM68
+TM69
+TM70
+TM71
+TM72
+TM73
+TM74
+TM75
+TM76
+TM77
+TM78
+TM79
+TM80
+TM81
+TM82
+TM83
+TM84
+TM85
+TM86
+TM87
+TM88
+TM89
+TM90
+TM91
+TM92
+TM93
+TM94
+TM95
+TM96
+TM97
+TM98
+TM99
+TM100
+HM01
+HM02
+HM03
+HM04
+HM05
+HM06
+HM07
+HM08
+Parcel
+Poké Flute
+Secret Key
+Bike Voucher
+Gold Teeth
+Old Amber
+Card Key
+Lift Key
+Armor Fossil
+Skull Fossil
+Helix Fossil
+Dome Fossil
+Root Fossil
+Claw Fossil
+Cover Fossil
+Plume Fossil
+Jaw Fossil
+Sail Fossil
+Silph Scope
+Bicycle
+Town Map
+Vs. Seeker
+Fame Checker
+TM Case
+Berry Pouch
+Teachy TV
+Tri-Pass
+Rainbow Pass
+Tea
+Mystic Ticket
+Aurora Ticket
+Powder Jar
+Ruby
+Sapphire
+Magma Emblem
+Old Sea Map
+Wide Lens
+Muscle Band
+Wise Glasses
+Expert Belt
+Light Clay
+Life Orb
+Power Herb
+Toxic Orb
+Flame Orb
+Quick Powder
+Focus Sash
+Zoom Lens
+Metronome
+Iron Ball
+Lagging Tail
+Destiny Knot
+Black Sludge
+Icy Rock
+Smooth Rock
+Heat Rock
+Damp Rock
+Grip Claw
+Choice Scarf
+Sticky Barb
+Shed Shell
+Big Root
+Choice Specs
+Odd Keystone
+Adamant Orb
+Lustrous Orb
+Griseous Orb
+Gracidea
+Bug Memory
+Dark Memory
+Dragon Memory
+ElectrcMemory
+Fairy Memory
+FightngMemory
+Fire Memory
+Flying Memory
+Ghost Memory
+Grass Memory
+Ground Memory
+Ice Memory
+Poison Memory
+PsychicMemory
+Rock Memory
+Steel Memory
+Water Memory
+Flame Plate
+Splash Plate
+Zap Plate
+Meadow Plate
+Icicle Plate
+Fist Plate
+Toxic Plate
+Earth Plate
+Sky Plate
+Mind Plate
+Insect Plate
+Stone Plate
+Spooky Plate
+Draco Plate
+Dread Plate
+Iron Plate
+Eviolite
+Float Stone
+Rocky Helmet
+Air Balloon
+Red Card
+Ring Target
+Binding Band
+Eject Button
+Absorb Bulb
+Cell Battery
+Luminous Moss
+Snowball
+Weakness Policy
+Douse Drive
+Shock Drive
+Burn Drive
+Chill Drive
+Fire Gem
+Water Gem
+Electric Gem
+Grass Gem
+Ice Gem
+Fighting Gem
+Poison Gem
+Ground Gem
+Flying Gem
+Psychic Gem
+Bug Gem
+Rock Gem
+Ghost Gem
+Dragon Gem
+Dark Gem
+Steel Gem
+Normal Gem
+Fairy Gem
+Assault Vest
+Pixie Plate
+Safety Goggles
+Gengarite
+Gardevoirite
+Ampharosite
+Venusaurite
+Charizardite X
+Blastoisinite
+Mewtwonite X
+Mewtwonite Y
+Blazikenite
+Medichamite
+Houndoominite
+Aggronite
+Banettite
+Tyranitarite
+Scizorite
+Pinsirite
+Aerodactylite
+Lucarionite
+Abomasite
+Kangaskhanite
+Gyaradosite
+Absolite
+Charizardite Y
+Alakazite
+Heracronite
+Mawilite
+Manectite
+Garchompite
+Latiasite
+Latiosite
+Swampertite
+Sceptilite
+Sablenite
+Altarianite
+Galladite
+Audinite
+Metagrossite
+Sharpedonite
+Slowbronite
+Steelixite
+Pidgeotite
+Glalitite
+Diancite
+Miloticite
+Butterfrenite
+Machampite
+Kinglerite
+Laprasite
+Kingdranite
+Flygonite
+Cameruptite
+Lopunnite
+Salamencite
+Beedrillite
+Mega Bracelet
+Protective Pads
+Terrain Extender
+Electric Seed
+Grassy Seed
+Misty Seed
+Psychic Seed
+Adrenaline Orb
+Honey
+Health Feather
+Muscle Feather
+Resist Feather
+Genius Feather
+Clever Feather
+Swift Feather
+Pretty Feather
+Shiny Charm
+Oval Charm
+Z-Ring
+Normalium Z
+Fightinium Z
+Flyinium Z
+Poisinium Z
+Groundium Z
+Rockium Z
+Buginium Z
+Ghostium Z
+Steelium Z
+Firium Z
+Waterium Z
+Grassium Z
+Electrium Z
+Psychium Z
+Icium Z
+Dragonium Z
+Darkinium Z
+Fairium Z
+Aloraichium Z
+Decidium Z
+Eevium Z
+Incinium Z
+Kommonium Z
+Lunalium Z
+Lycanium Z
+Marshadium Z
+Mewnium Z
+Mimikium Z
+Pikanium Z
+Pikashunium Z
+Primarium Z
+Snorlium Z
+Solganium Z
+Tapunium Z
+U-Necrozium Z
+Berry Sweet
+Love Sweet
+Flower Sweet
+CLover Sweet
+Ribbon Sweet
+Strawberry Sweet
+Star Sweet
+Cracked Pot
+Sweet Apple
+Tart Apple
+Galarica Cuff
+Galarica Wreath
+Fossilized Bird
+Fossilized Dino
+Fossilized Drake
+Fossilized Fish
+Blunder Policy
+Throat Spray
+Room Service
+Utility Umbrella
+Heavy-Duty Boots
+Eject Pack
+Rusted Shield
+Rusted Sword
+Catching Charm
+Exp. Charm
+Iceroot Carrot
+Shaderoot Carrot
+Reins of Unity
+Wooden Crown
+Rotom Catalog
+Training Band
