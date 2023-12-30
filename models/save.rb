@@ -37,8 +37,9 @@ class Save
 
 		#change this to the larger of the two save indexes later
 		save_index = [save_index_a, save_index_b].max
+		# save_index = save_index_a
 
-		rotation = save_index % 14
+		rotation = (save_index % 14)
 		total_offset = rotation * 4096
 
 
@@ -69,7 +70,7 @@ class Save
 
 
 
-		trainer_string = box_data[4..7]
+		trainer_string = save[new_trainer_id_offset..new_trainer_id_offset + 3]
 
 		mon_count = 0
 
@@ -88,8 +89,13 @@ class Save
 			else
 
 				mon_data = box_data[n-4..n+75]
-				pid = mon_data[0..3].unpack("V")[0]
-				tid = mon_data[4..7].unpack("V")[0]
+
+				begin
+					pid = mon_data[0..3].unpack("V")[0]
+					tid = mon_data[4..7].unpack("V")[0]
+				rescue
+					# binding.pry
+				end
 				sub_order = order_formats[pid % 24]
 
 				key = tid ^ pid
