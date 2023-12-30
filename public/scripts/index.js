@@ -839,8 +839,13 @@ $(document).ready(function() {
 
 			}
 		} else {
-			data["narc"] = $('#texts').attr('data-narc')			
-			data["narc_const"] = "text"
+			// data["narc"] = $('#texts').attr('data-narc')			
+			// data["narc_const"] = "text"
+			data["narc"] = $(this).attr('data-narc')
+			data["file_name"] = index
+			data["field"] = field_name
+			data["value"] = value
+
 			
 
 			if (!$(this).hasClass('color-label')) {

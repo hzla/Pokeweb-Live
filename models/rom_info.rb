@@ -97,7 +97,7 @@ class RomInfo
 
 	def self.abilities
 		File.open("#{$rom_name}/texts/abilities.txt"){|f| f.read}.split("\n").map do |ab|
-			ab.titleize
+			ab.titleize.gsub("\r", "")
 		end
 	end
 

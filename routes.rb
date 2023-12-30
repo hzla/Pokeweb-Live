@@ -1144,7 +1144,7 @@ class MyApp < Sinatra::Base
 	    	f.write(file.read)
 	  	end
 	  	bin_data = IO.binread("./exports/#{file_name}")
-	  	@showdown = Save.read(bin_data)
+	  	@showdown = Save.read(bin_data, params["level"].to_i)
 	  	`rm -rf ./exports/#{file_name}`
 
 	  	# p showdown

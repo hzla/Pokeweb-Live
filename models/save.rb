@@ -2,7 +2,7 @@ class Save
 
 
 
-	def self.read(save_data)
+	def self.read(save_data, static_level=100)
 		save_index_a_offset = 0xffc
 		save_block_b_offset = 0x00E000
 		trainer_id_offset = 0xa
@@ -45,12 +45,18 @@ class Save
 		new_trainer_id_offset = total_offset + trainer_id_offset
 		trainer_id = save[new_trainer_id_offset..new_trainer_id_offset + 3].unpack("V")[0]
 		box_offset = (20480 + 4 + total_offset) % 57344
+		party_offset = (total_offset + 4096 + 0x238) % 57344
 
 
 
 
 		box_data = ""
 		box_data = save[box_offset..box_offset + 33599]
+
+		party_data = save[party_offset..party_offset + 599]
+
+		box_data += party_data
+
 
 
 
@@ -74,7 +80,7 @@ class Save
 
 		n = 0
 		while n < box_data.length
-			break if n > 33600
+			break if n > 34200
 			data = box_data[n..n+3]
 			if data != trainer_string
 				n += 4
@@ -107,8 +113,12 @@ class Save
 
 				species_id = [decrypted[growth_index * 3]].pack('V').unpack('vv')[0]
 
+				if species_id > 899
+					species_id += 7
+				end
+
 				exp = decrypted[growth_index * 3 + 1]
-				lvl = [get_level(species_id, exp, tables), 1].max
+				lvl = static_level
 				nature = RomInfo.natures[pid % 25]
 
 				
