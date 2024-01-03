@@ -48,7 +48,7 @@ class Action
 	def self.docs gen=5
 		output_pokedex gen
 		output_moves gen
-		output_encs
+		output_encs gen
 		Trdata.get_locations
 		output_trainers
 	end
@@ -399,6 +399,9 @@ class Action
 	end
 
 	def self.output_encs gen=5
+		if gen == 4
+			return g4_output_encs 
+		end
 		encs = Encounter.level_sorted 
 
 		open('documentation/encounters.txt', 'w') do |f|

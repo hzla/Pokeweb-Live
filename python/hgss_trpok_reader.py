@@ -213,13 +213,17 @@ def to_readable(raw, file_name, template, num_pokemon):
 	readable["count"] = num_pokemon
 	for n in range(0, num_pokemon):
 		
-		if (raw[f'species_id_{n}']) > 2048:
+		#change to 2048 for hg-engine
+		if (raw[f'species_id_{n}']) > 1024:
 			
-			form = raw[f'species_id_{n}'] // 2048 
-			base_form_id = raw[f'species_id_{n}'] - (2048 * form)
+			form = raw[f'species_id_{n}'] // 1024
+			base_form_id = raw[f'species_id_{n}'] - (1024 * form)
 
 
 			print(base_form_id)
+			print(raw[f'species_id_{n}'])
+			print(file_name)
+			print("%%%%%%%%%%%%%%%%")
 			readable[f'species_id_{n}'] = POKEDEX[base_form_id]
 
 			readable[f'form_{n}'] = form + 1

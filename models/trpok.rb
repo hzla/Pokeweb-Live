@@ -124,15 +124,20 @@ class Trpok < Pokenarc
 
 		# binding.pry if trainer == 525
 
-		moves.each_with_index do |move, i|
-			trpok["raw"]["move_#{i + 1}_#{pok_index}"] = move[0]
-			trpok["readable"]["move_#{i + 1}_#{pok_index}"] = move[1]
+		if moves 
+			moves.each_with_index do |move, i|
+				trpok["raw"]["move_#{i + 1}_#{pok_index}"] = move[0]
+				trpok["readable"]["move_#{i + 1}_#{pok_index}"] = move[1]
+			end
+		else
+			return []
 		end
 
 		if apply
 			File.open(file_path, "w") { |f| f.write trpok.to_json}
 		end
 		
+
 		moves.map {|m| m[1].name_titleize}
 
 	end
