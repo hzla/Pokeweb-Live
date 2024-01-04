@@ -125,7 +125,8 @@ class Save
 
 				exp = decrypted[growth_index * 3 + 1]
 				lvl = static_level
-				nature = RomInfo.natures[pid % 25]
+				nature_byte = [decrypted[misc_index * 3]].pack('V').unpack('vv')[1]
+				nature = RomInfo.natures[(nature_byte & 31744) >> 10]
 
 				
 				move1 = all_moves[[decrypted[moves_index * 3]].pack('V').unpack('vv')[0]]
@@ -140,7 +141,7 @@ class Save
 				iv_stats.each_with_index do |stat, i|
 					spread[stat] = middle_bits_from_index(ivs, i * 5, 5)
 				end
-				ability_slot = middle_bits_from_index(ivs, 31, 1)
+				ability_slot = (decrypted[misc_index * 3 + 2] & 96) >> 5
 
 				moves = [move1, move2, move3, move4]
 				
