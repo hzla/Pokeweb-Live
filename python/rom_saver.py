@@ -49,7 +49,11 @@ try:
 		
 		#always run text editor export
 		# if settings["enable_single_npc_dbl_battles"] == True:
-		edited.append("text")
+		
+		if settings["disable_text_exports"]:
+			edited.remove("text")
+		else:
+			edited.append("text")
 
 
 		if settings["output_overworlds"] == False:

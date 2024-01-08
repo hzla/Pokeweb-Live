@@ -323,6 +323,8 @@ class MyApp < Sinatra::Base
 		# begin
 			retries ||= 0
 			p "creating edited rom"
+			SessionSettings.set("edited", []) if !SessionSettings.get("edited")
+			
 			`#{py} python/trpok_writer.py validate #{$rom_name}`if SessionSettings.get("edited").include? "trpok"
 			`#{py} python/encounter_writer.py validate #{$rom_name}` if SessionSettings.get("edited").include? "encounter"
 			Learnset.repair_all if SessionSettings.get("edited").include? "learnset"

@@ -66,16 +66,31 @@ else:
 	# NARCS[3][0] = "a/0/5/7"
 
 
-
+use_vanilla_banks = False
 for narc in NARCS:
 	print(narc)
 	file_id = rom.filenames[narc[0]]
 	file = rom.files[file_id]
-	narc_file = ndspy.narc.NARC(file)
+
+	if narc[1] == "scripts":
+		with open(f'a056.narc', 'wb') as f:
+			f.write(file)
+
+	try:
+		narc_file = ndspy.narc.NARC(file)
+	except:
+		if narc[1] == "message_texts":
+			print("Ctrmap edited texts detected, switching to vanilla text banks")
+			use_vanilla_banks = narc_info["base_version"]
+
+
+
+
+	
 
 	# extract text banks
 	if narc[1][-5:] == "texts":
-		output_texts(f"{rom_name}/{narc[1]}", narc_file)
+		output_texts(f"{rom_name}/{narc[1]}", narc_file, use_vanilla_banks)
 
 	if narc[1] == "scripts":
 		output_scripts(f"{rom_name}/scripts", narc_file)
@@ -117,6 +132,10 @@ settings = {}
 settings["rom_name"] = rom_name
 settings["pw"] = pw
 settings.update(narc_info)
+if use_vanilla_banks:
+	settings["disable_text_exports"] = True
+else:
+	settings["disable_text_exports"] = False
 
 with open(f'{rom_name}/session_settings.json', "w") as outfile:  
 	json.dump(settings, outfile) 

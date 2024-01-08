@@ -252,10 +252,24 @@ def gen5put(texts):
     writer.writear(textblock.toarray())
     return writer.tostring()
 
-def output_texts(folder, narc):
+def output_texts(folder, narc, use_vanilla=False):
     n = 0
     texts = []
     print("outputting texts")
+    
+
+    if use_vanilla:
+        narc_name = folder.split("/")[2]
+        texts = json.load(open(f'templates/{use_vanilla}/{narc_name}/texts.json'))
+
+        with codecs.open(f'{folder}/texts.json', 'w', encoding='utf_8') as f:
+            json.dump(texts, f)
+
+        return
+
+
+
+
     for message in narc.files:   
         with open(f'{folder}/{n}.bin', "wb") as binary_file:
             binary_file.write(message)
