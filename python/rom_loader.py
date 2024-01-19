@@ -212,12 +212,13 @@ if narc_info["base_rom"] == "BW2":
 		f.write(overlay316.data)
 
 
-if len(sys.argv) >= 4 and sys.argv[3] != "true":
-	B2_EFFECT_TABLE_OFFSET = 0X000407F4
-	W2_EFFECT_TABLE_OFFSET = 0X000407F4
-else:
+if len(sys.argv) >= 4 and sys.argv[3] == "true":
 	B2_EFFECT_TABLE_OFFSET = 0X00040974
 	W2_EFFECT_TABLE_OFFSET = 0X00040974
+else:
+	B2_EFFECT_TABLE_OFFSET = 0X000407F4
+	W2_EFFECT_TABLE_OFFSET = 0X000407F4
+	
 
 with open(f'{rom_name}/overlay16.bin', 'wb') as f:
 	f.write(overlay16.data)
@@ -273,10 +274,10 @@ settings["date_created"] = time.time()
 
 
 print(sys.argv)
-if len(sys.argv) >= 4 and sys.argv[3] != "true":
-	settings["fairy"] = False
-else:
+if len(sys.argv) >= 4 and sys.argv[3] == "true":
 	settings["fairy"] = True
+else:
+	settings["fairy"] = False
 
 
 
