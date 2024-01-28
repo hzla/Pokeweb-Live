@@ -10,6 +10,17 @@ class Trdata < Pokenarc
 		super
 	end
 
+	def self.batch_set_flag flag, value=1
+		trainer_count = get_all.length
+		data = {"field" => flag, "int" => true, "narc" => "trdata", "value" => value}
+
+		(0..trainer_count - 1).each do |tr|
+			data["file_name"] = tr.to_s
+			write_data data
+		end
+		`python python/trdata_writer.py update #{(0..814 - 1).to_a.join(",")} #{$rom_name}`
+	end
+
 	def self.sprite tr_name, tr_class, tr_class_id, g_table
 		tr_class = tr_class.downcase.gsub("  ", " ").gsub(" ", "_").gsub("_m", "")
 		

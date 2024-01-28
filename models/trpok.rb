@@ -310,7 +310,8 @@ class Trpok < Pokenarc
 		n = desired_iv
 		pid = get_pid(trainer_id, trainer_class, pok_id, n, pok_lvl, ability_gender, personal_gender, false, ability_slot)
 
-		convert_pid_to_nature(pid, natures)
+		nature = convert_pid_to_nature(pid, natures)
+		return [nature, pid]
 		
 	end
 
@@ -567,13 +568,20 @@ class Trpok < Pokenarc
 
 			ability_id = poks["ability_#{i}"]
 
-			ability_id += 1 if ability_id < 1
-			ability = personal["ability_#{ability_id}"]
+			
 
 			item = poks["item_id_#{i}"]
 
-			nature = get_nature_for(tr_id, i, poks["ivs_#{i}"])
+			nature_info = get_nature_for(tr_id, i, poks["ivs_#{i}"])
+			nature = nature_info[0]
+			pid = nature_info[1] 
 			iv = poks["ivs_#{i}"] * 31 / 255
+
+
+			if ability_id == 0	
+				ability_id = ((pid >> 16) % 2) + 1
+			end
+			ability = personal["ability_#{ability_id}"]
 
 			moves = []
 			(1..4).each do |n|
