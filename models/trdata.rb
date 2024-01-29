@@ -18,7 +18,7 @@ class Trdata < Pokenarc
 			data["file_name"] = tr.to_s
 			write_data data
 		end
-		`python python/trdata_writer.py update #{(0..814 - 1).to_a.join(",")} #{$rom_name}`
+		`python python/trdata_writer.py update #{(0..trainer_count - 1).to_a.join(",")} #{$rom_name}`
 	end
 
 	def self.sprite tr_name, tr_class, tr_class_id, g_table
