@@ -146,8 +146,15 @@ class Save
 				moves = [move1, move2, move3, move4]
 				
 				set = {}
+				
+				begin
 
-				import_data += all_mons[species_id].strip + "\n"
+					import_data += all_mons[species_id].strip + "\n"
+				rescue
+					p "Error: Species ID #{species_id}"
+					import_data += "Unknown\n"
+					# binding.pry
+				end
 				import_data += "Level: #{lvl}\n"
 				import_data += "#{nature} Nature\n"
 				
