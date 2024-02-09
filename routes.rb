@@ -374,7 +374,6 @@ class MyApp < Sinatra::Base
 
 		@poke_data.each do |pok|
 			if pok
-				p pok["index"]
 				pok["learnset"] = expand_learnset_data @moves, pok["learnset"]
 			end # adds addtional move data to learnset data
 		end	
@@ -1153,6 +1152,12 @@ class MyApp < Sinatra::Base
 
 
 	  	erb :showdown_export	
+	end
+
+
+	get '/:narc_name/:copy_from/copy_to/:copy_to' do 
+		redirect_url = Pokenarc.copy params[:narc_name], params[:copy_from], params[:copy_to]
+		redirect redirect_url
 	end
 
 end

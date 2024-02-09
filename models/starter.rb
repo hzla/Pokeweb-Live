@@ -9,7 +9,6 @@ class Starter
 	end
 
 	def self.change_overlay_starters 
-		$rom_name = "projects/b2"
 		starter_selections = SessionSettings.get("starters").map do |starter|
 			RomInfo.raw_pokemon_names.index(starter)
 		end

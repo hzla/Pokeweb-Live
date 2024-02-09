@@ -3,6 +3,38 @@ class Pokenarc
 	@@upcases = []
 
 
+
+	def self.copy(narc_name, from, to)
+		constantizes = {"learnsets" => "personal"}
+
+		if narc_name == "personal" || narc_name == "moves" || narc_name == "items" 
+			static_name = get_data("#{$rom_name}/json/#{narc_name}/#{to}.json")["name"]
+
+		end
+
+
+
+		`cp #{$rom_name}/json/#{narc_name}/#{from}.json #{$rom_name}/json/#{narc_name}/#{to}.json`
+
+		if narc_name == "personal" || narc_name == "moves" || narc_name == "items" 
+			@@narc_name = narc_name
+			write_data({"field" => "name", "value" => static_name, "file_name" => to})
+
+			if narc_name == "personal"
+				write_data({"field" => "index", "value" => to, "file_name" => to})
+			end
+		end
+
+		if constantizes[narc_name]
+			"/#{constantizes[narc_name]}"
+		else
+			"/#{narc_name}"
+		end
+
+
+		
+	end
+
 	def self.get_data(file_name, type="readable")
 		if type != "all"
 			JSON.parse(File.open(file_name, "r"){|f| f.read})[type]
