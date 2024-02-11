@@ -74,9 +74,20 @@ class Move < Pokenarc
 			showdown[showdown_name]["type"] = move[1]["type"].titleize
 			showdown[showdown_name]["basePower"] = move[1]["power"]
 			showdown[showdown_name]["category"] = move[1]["category"]
-			showdown[showdown_name]["e_id"] = move[1]["effect_code"]
+			showdown[showdown_name]["e_id"] = move[1]["effect_code"] || 0
+			if move[1]["target"] == "All adjacent opponents" 
+				showdown[showdown_name]["target"] = "allAdjacentFoes"
+			end
+
+			if move[1]["target"] == "All excluding user" 
+				showdown[showdown_name]["target"] = "allAdjacent"
+			end
 			if move[1]["min_hits"] > 0
 				showdown[showdown_name]["multihit"] = [move[1]["min_hits"],move[1]["max_hits"]]
+			end
+
+			if move[1]["recoil"] > 0 and move[1]["recoil"] < 100
+				showdown[showdown_name]["recoil"] = [move[1]["recoil"], 100]
 			end
 		end
 		File.write("public/dist/moves.json", JSON.dump(showdown))

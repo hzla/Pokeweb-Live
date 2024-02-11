@@ -19,8 +19,9 @@ logs.txt
 .env
 passenger.3000.log
 /public/*.txt
-/public/dist
+/public/dist/*
 /public/*.json
 /public/calcs
 passenger.3000.log
 tmp.elf
+.DS_Store
