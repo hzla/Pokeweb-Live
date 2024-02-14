@@ -776,7 +776,8 @@ class MyApp < Sinatra::Base
 		py = "python3"
 		
 		begin
-			command = "#{py} python/#{narc_name}_writer.py update #{params['data']['file_names'].join(',')} "
+			command = "#{py} python/#{narc_name}_writer.py update #{params['data']['file_names'].join(',')} #{$rom_name}"
+			p command
 			pid = spawn command
 			Process.detach(pid)
 		rescue
