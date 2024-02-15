@@ -98,6 +98,12 @@ class Save
 
 				p all_mons[species_id]
 				ability = abils[all_mons[species_id]][ability_slot]
+
+				if !ability
+					ability = abils[all_mons[species_id]][0]
+				end
+
+
 				
 				moves_binary =  showdown_data[-19..-14].unpack('b*')[0]
 
