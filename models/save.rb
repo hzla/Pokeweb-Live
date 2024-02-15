@@ -75,7 +75,7 @@ class Save
 			else
 
 				if mon_count < party_count #for party pokemon
-					showdown_data = box_data[n+14..n+43]
+					showdown_data = box_data[n+14..n+56]
 				else
 					showdown_data = box_data[n+10..n+39]
 				end
@@ -103,15 +103,20 @@ class Save
 					ability = abils[all_mons[species_id]][0]
 				end
 
-
-				
-				moves_binary =  showdown_data[-19..-14].unpack('b*')[0]
-
 				moves = []
-				(0..3).each do |n|
-					move_id = moves_binary[n*10..((n+1) * 10 - 1)].reverse.to_i(2)
-					moves << all_moves[move_id]
+				
+				if mon_count < party_count
+
+					(0..3).each do |n|
+						moves << all_moves[showdown_data[12 + (n * 2)..13 + (n * 2)].unpack('S').first]
+					end
+
+				else
+					moves_binary =  showdown_data[-19..-14].unpack('b*')[0]
+					moves = parse_moves(moves_binary, all_moves)
 				end
+
+
 
 				p all_mons[species_id]
 				
@@ -133,6 +138,16 @@ class Save
 
 		import_data
 	end
+
+	def self.parse_moves(moves_binary, all_moves)
+		moves = []
+		(0..3).each do |n|
+			move_id = moves_binary[n*10..((n+1) * 10 - 1)].reverse.to_i(2)
+			moves << all_moves[move_id]
+		end
+		moves
+	end
+
 
 
 
