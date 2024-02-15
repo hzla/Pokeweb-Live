@@ -82,10 +82,7 @@ class Save
 				
 
 				ability_slot = 2 if showdown_data[-1].unpack('C')[0] == 191 # dream ability if last bit is 1
-
-				
 				species_id = showdown_data[0..1].unpack('v')[0]
-				lvl = 50
 
 				if !all_mons[species_id] #false positive for mon detection
 					p [species_id, n]
@@ -106,7 +103,7 @@ class Save
 				set = {}
 
 				import_data += all_mons[species_id].strip + "\n"
-				import_data += "Level: #{lvl}\n"
+				import_data += "Level: #{static_level}\n"
 				import_data += "#{nature} Nature\n"
 						
 				import_data += "Ability: #{ability_slot}\n"
