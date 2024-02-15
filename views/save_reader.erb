@@ -4,12 +4,13 @@
 
 
 
-		<div class="filter-title" id="offline">Read Save</div>
+		<div class="filter-title" id="offline">Read <%= @game.titleize %> Save</div>
 
 		<form id="save-form" action="/read_save" method="POST" enctype="multipart/form-data">
 			<input type="file" id="save-upload" name="filename" label="Upload Save"></input>
 			<input type="text" id="save-lvl" name="level" placeholder="Level to export at"></input>
 
+			<input type="text" id="game" name="game" value="<%= @game %>" style="display:none"></input>
 
 
 			<input class="btn -default" id="load-save" type="submit"/>

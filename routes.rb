@@ -1134,8 +1134,16 @@ class MyApp < Sinatra::Base
 	############ MISC
 
 	get '/savereader' do 
+		redirect '/savereader/inc_em'
 		erb :save_reader
 	end
+
+	get '/savereader/:game' do 
+		@game = params[:game]
+		erb :save_reader
+	end
+
+
 
 	post '/read_save' do 
 		p params
@@ -1146,7 +1154,7 @@ class MyApp < Sinatra::Base
 	    	f.write(file.read)
 	  	end
 	  	bin_data = IO.binread("./exports/#{file_name}")
-	  	@showdown = Save.read(bin_data, params["level"].to_i)
+	  	@showdown = Save.read(bin_data, params["level"].to_i, params["game"])
 	  	`rm -rf ./exports/#{file_name}`
 
 	  	# p showdown
