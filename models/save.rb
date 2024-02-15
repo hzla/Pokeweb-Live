@@ -9,6 +9,7 @@ class Save
 
 		all_moves = File.read("./Reference_Files/save_constants/moves_rad_red.txt").split("\n")
 		all_mons = File.read("./Reference_Files/save_constants/mons_rad_red.txt").split("\n")
+		abils = JSON.parse(File.read('./Reference_Files/save_constants/rr_abils.json'))
 
 		save = save_data
 
@@ -34,10 +35,15 @@ class Save
 		trainer_id = save[new_trainer_id_offset..new_trainer_id_offset + 3].unpack("V")[0]
 		box_offset = (20480 + 4 + total_offset) % 57344
 		party_offset = (total_offset + 4096 + 0x38) % 57344
+
 		box_data = ""
-		box_data = save[box_offset..box_offset + 33599]
+
 		party_data = save[party_offset..party_offset + 599]
 		box_data += party_data
+
+		box_data += save[box_offset..box_offset + 33599]
+
+
 
 		party_count = save[party_offset-4].unpack('C')[0]
 
@@ -84,11 +90,14 @@ class Save
 				ability_slot = 2 if showdown_data[-1].unpack('C')[0] == 191 # dream ability if last bit is 1
 				species_id = showdown_data[0..1].unpack('v')[0]
 
-				if !all_mons[species_id] #false positive for mon detection
+				if !all_mons[species_id] || all_mons[species_id] == "-----" #false positive for mon detection
 					p [species_id, n]
 					n += 2
 					next
 				end		
+
+				p all_mons[species_id]
+				ability = abils[all_mons[species_id]][ability_slot]
 				
 				moves_binary =  showdown_data[-19..-14].unpack('b*')[0]
 
@@ -106,7 +115,7 @@ class Save
 				import_data += "Level: #{static_level}\n"
 				import_data += "#{nature} Nature\n"
 						
-				import_data += "Ability: #{ability_slot}\n"
+				import_data += "Ability: #{ability}\n"
 				moves.each do |m|
 					import_data += "- #{m}\n"
 				end
