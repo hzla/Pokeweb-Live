@@ -862,7 +862,7 @@ Houndstone
 Tadbulb
 Bellibolt
 Finizen
-Palafin-Zero
+Palafin
 Palafin-Hero
 Noibat-Sevii
 Noivern-Sevii
