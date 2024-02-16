@@ -1,5 +1,19 @@
 class Save
 
+	def self.test
+		all_mons = File.read("./Reference_Files/save_constants/mons_rad_red.txt").split("\n")
+		abils = JSON.parse(File.read('./Reference_Files/save_constants/rr_abils.json'))
+
+		all_mons.each do |m|
+			if abils[m]
+			else
+				p m
+			end
+		end
+
+		return "done"
+	end
+
 
 	def self.read_rad_red(save_data, static_level=100)
 		save_index_a_offset = 0xffc
@@ -96,8 +110,8 @@ class Save
 					next
 				end		
 
-				p all_mons[species_id]
 				ability = abils[all_mons[species_id]][ability_slot]
+
 
 				if !ability
 					ability = abils[all_mons[species_id]][0]

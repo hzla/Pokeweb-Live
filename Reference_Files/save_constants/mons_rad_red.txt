@@ -81,7 +81,7 @@ Slowpoke
 Slowbro
 Magnemite
 Magneton
-Farfetch'd
+Farfetch’d
 Doduo
 Dodrio
 Seel
@@ -490,7 +490,7 @@ Skuntank
 Bronzor
 Bronzong
 Bonsly
-Mime-Jr.
+Mime Jr.
 Happiny
 Chatot
 Spiritomb
@@ -633,9 +633,9 @@ Duosion
 Reuniclus
 Ducklett
 Swanna
-Va-----lite
-Va-----lish
-Va-----luxe
+Vanillite
+Vanillish
+Vanilluxe
 Deerling
 Sawsbuck
 Emolga
@@ -701,12 +701,12 @@ Kyurem
 Keldeo
 Meloetta
 Genesect
-Unfezant-F
-Frillish-F
-Jellicent-F
+Unfezant
+Frillish
+Jellicent
 Klawf
-Burmy-Sandy
-Burmy-Trash
+Burmy
+Burmy
 Wormadam-Sandy
 Wormadam-Trash
 Shellos
@@ -736,14 +736,14 @@ Shaymin-Sky
 -----
 Basculin-Blue-Striped
 Darmanitan-Zen
-Deerling-Summer
-Deerling-Autumn
-Deerling-Winter
-Sawsbuck-Summer
-Sawsbuck-Autumn
-Sawsbuck-Winter
-Hippopotas-F
-Hippowdon-F
+Deerling
+Deerling
+Deerling
+Sawsbuck
+Sawsbuck
+Sawsbuck
+Hippopotas
+Hippowdon
 Meloetta-Pirouette
 Ting-Lu
 Chien-Pao
@@ -775,7 +775,7 @@ Spewpa
 Vivillon
 Litleo
 Pyroar
-Flabébé
+Flabébé
 Floette
 Florges
 Skiddo
@@ -787,7 +787,7 @@ Espurr
 Meowstic
 Honedge
 Doublade
-Aegislash-Shield
+Aegislash
 Spritzee
 Aromatisse
 Swirlix
@@ -829,7 +829,7 @@ Diancie
 Hoopa
 Hoopa-Unbound
 Volcanion
-Pyroar-F
+Pyroar
 Meowstic-F
 Aegislash-Blade
 -----
@@ -848,7 +848,7 @@ Lechonk
 Oinkologne
 Floette-Eternal
 Oinkologne-F
-Gimmighoul-Chest
+Gimmighoul
 Gimmighoul-Roaming
 Gholdengo
 Pumpkaboo-Super
@@ -956,12 +956,12 @@ Charjabug
 Vikavolt
 Crabrawler
 Crabominable
-Oricorio-Baile
+Oricorio
 Cutiefly
 Ribombee
 Rockruff
-Lycanroc-Midday
-Wishiwashi-Solo
+Lycanroc
+Wishiwashi
 Mareanie
 Toxapex
 Mudbray
@@ -1155,7 +1155,7 @@ Grimmsnarl
 Obstagoon
 Perrserker
 Cursola
-Sirfetch'd
+Sirfetch’d
 Mr. Rime
 Runerigus
 Milcery
@@ -1211,7 +1211,7 @@ Ponyta-Galar
 Rapidash-Galar
 Slowpoke-Galar
 Slowbro-Galar
-Farfetch'd-Galar
+Farfetch’d-Galar
 -----
 Weezing-Galar
 Mr. Mime-Galar
@@ -1289,9 +1289,9 @@ Clauncher-Sevii
 Clawitzer-Sevii
 Sizzlipede-Sevii
 Centiskorch-Sevii
-Centiskorch-Mega-Sevii
-Wishiwashi-Solo-Sevii
-Wishiwashi-School-Sevii
+Centiskorch-Sevii-Mega
+Wishiwashi-Sevii
+Wishiwashi-Sevii-School
 Dhelmise-Sevii
 Voltorb-Hisui
 Electrode-Hisui
@@ -1336,7 +1336,7 @@ Tatsugiri
 Wattrel
 Kilowattrel
 Bombirdier
-Squawkabilly-Green
+Squawkabilly
 Flamigo
 Nacli
 Naclstack
