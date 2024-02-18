@@ -15,7 +15,9 @@ class Save
 	end
 
 
-	def self.read_rad_red(save_data, static_level=100)
+
+
+	def self.read_rad_red(save_data, static_level=100, brute_force=false)
 		save_index_a_offset = 0xffc
 		save_block_b_offset = 0x00E000
 		trainer_id_offset = 0xa
@@ -45,6 +47,9 @@ class Save
 
 
 
+
+
+
 		new_trainer_id_offset = total_offset + trainer_id_offset
 		trainer_id = save[new_trainer_id_offset..new_trainer_id_offset + 3].unpack("V")[0]
 		box_offset = (20480 + 4 + total_offset) % 57344
@@ -62,6 +67,7 @@ class Save
 		party_count = save[party_offset-4].unpack('C')[0]
 
 
+
 		(0..8).each do |n|
 			box_start = ((n * 4096) + box_offset) % 57344
 			pc_box = save[box_start..box_start + 4095]
@@ -70,7 +76,8 @@ class Save
 
 
 
-		magic_string = box_data[18..19]
+		magic_string = "\x02\x02"
+
 
 		mon_count = 0
 
@@ -79,9 +86,12 @@ class Save
 
 		# p magic_string.unpack("v")[0]
 
+		box_data = save
+
+
 		n = 0
 		while n < box_data.length
-			break if n > 34200
+			# break if n > 57344
 			data = box_data[n..n+1]
 			if data != magic_string
 				n += 2

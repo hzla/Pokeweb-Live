@@ -89,6 +89,20 @@ class Move < Pokenarc
 			if move[1]["recoil"] > 0 and move[1]["recoil"] < 100
 				showdown[showdown_name]["recoil"] = [move[1]["recoil"], 100]
 			end
+
+			if move[1]["effect_category"].downcase.include?("stat")
+				showdown[showdown_name]["sf"] = true
+			end
+
+			if move[1]["punch_move"] == 1
+				showdown[showdown_name]["flags"] ||= {}
+				showdown[showdown_name]["flags"]["punch"] = true
+			end
+
+			if move[1]["sound_move"] == 1
+				showdown[showdown_name]["flags"] ||= {}
+				showdown[showdown_name]["flags"]["sound"] = true
+			end
 		end
 		File.write("public/dist/moves.json", JSON.dump(showdown))
 		open("public/dist/moves.js", "w") do |f| 
