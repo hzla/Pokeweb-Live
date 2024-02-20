@@ -86,12 +86,12 @@ class Save
 
 		# p magic_string.unpack("v")[0]
 
-		box_data = save
+		# box_data = save
 
 
 		n = 0
 		while n < box_data.length
-			# break if n > 57344
+			break if n > 34200
 			data = box_data[n..n+1]
 			if data != magic_string
 				n += 2
