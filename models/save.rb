@@ -66,7 +66,7 @@ class Save
 
 		party_count = save[party_offset-4].unpack('C')[0]
 
-
+		# binding.pry
 
 		(0..8).each do |n|
 			box_start = ((n * 4096) + box_offset) % 57344

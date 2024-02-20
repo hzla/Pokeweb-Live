@@ -4,24 +4,25 @@
 
 
 
-		<div class="filter-title" id="offline">Read <%= @game.titleize %> Save</div>
+		<div class="filter-title" id="offline"><%= @game_title %></div>
 
-		<form id="save-form" action="/read_save" method="POST" enctype="multipart/form-data">
-			<input type="file" id="save-upload" name="filename" label="Upload Save"></input>
+	<!-- 	<form id="save-form" action="/read_save" method="POST" enctype="multipart/form-data"> -->
+			<label for="save-upload" id="save-upload-btn">Choose Save</label>
+			<input type="file" id="save-upload" name="filename" label="Upload Save" hidden></input>
 			<input type="text" id="save-lvl" name="level" placeholder="Level to export at"></input>
 
 			<input type="text" id="game" name="game" value="<%= @game %>" style="display:none"></input>
 
 
-			<input class="btn -default" id="load-save" type="submit"/>
-		</form>
+			<button class="btn -default" id="load-save">Load & Copy to Clipboard</button>
+		<!-- </form> -->
 	
 	
 
 </div>
 
 <div class="pokemon-list">
-
+	<textarea id="showdown-export"><%= @showdown %></textarea>
 	
 </div>
 

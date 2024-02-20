@@ -1135,11 +1135,15 @@ class MyApp < Sinatra::Base
 
 	get '/savereader' do 
 		redirect '/savereader/inc_em'
+
+
 		erb :save_reader
 	end
 
 	get '/savereader/:game' do 
 		@game = params[:game]
+		supported_games = {"rad_red" => "Radical Red", "inc_em" => "Inclement Emerald"}
+		@game_title = supported_games[@game]
 		erb :save_reader
 	end
 
@@ -1147,7 +1151,7 @@ class MyApp < Sinatra::Base
 
 	post '/read_save' do 
 		p params
-		file = params["filename"]["tempfile"]
+		file = params["file"]["tempfile"]
 		file_name = "save#{rand(100000)}.sav"
 	
 		File.open("./exports/#{file_name}", 'wb') do |f|
@@ -1160,7 +1164,7 @@ class MyApp < Sinatra::Base
 	  	# p showdown
 
 
-	  	erb :showdown_export	
+	  	return {showdown: @showdown}.to_json	
 	end
 
 

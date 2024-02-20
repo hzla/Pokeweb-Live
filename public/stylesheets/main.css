@@ -14,8 +14,11 @@
 
 #showdown-export {
     margin: 80px 40px;
-    width: calc(100vw - 80px);
+    width: calc(82vw - 80px);
     height: calc(100vh - 160px);
+    max-width:  600px;
+    border-radius: 5px;
+    background: #f1f1f1;
 }
 
 .text-page-container {
@@ -26,6 +29,29 @@
     max-width: calc(100% - 80px);
     margin-left: 40px;
     border: 2px solid white;
+}
+
+#save-upload-btn {
+    display: block;
+    cursor: pointer;
+    height: 80px;
+    color: #f1f1f1;
+    text-align: center;
+    line-height: 80px;
+    font-size: 24px;
+    border-radius: 5px;
+    background: #BD93F9;
+}
+
+#save-lvl {
+    height: 80px;
+    padding:  2px 5px;
+    font-size: 24px;
+    text-align: center;
+}
+
+#load-save {
+    height: 80px;
 }
 
 .editable-doc {

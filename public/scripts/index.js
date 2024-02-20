@@ -1,5 +1,61 @@
 
 edit_in_progress = false
+async function postData(url = "", data = {}) {
+  // Default options are marked with *
+  const response = await fetch(url, {
+    method: "POST", // *GET, POST, PUT, DELETE, etc.
+    mode: "cors", // no-cors, *cors, same-origin
+    cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
+    credentials: "same-origin", // include, *same-origin, omit
+    headers: {
+      "Content-Type": "application/json",
+      // 'Content-Type': 'application/x-www-form-urlencoded',
+    },
+    redirect: "follow", // manual, *follow, error
+    referrerPolicy: "no-referrer", // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
+    body: JSON.stringify(data), // body data type must match "Content-Type" header
+  });
+  return response.json(); // parses JSON response into native JavaScript objects
+}
+
+
+$(document).on('click', '#load-save', async function() {
+		
+		var file = $('#save-upload')[0].files[0]
+		var level = $('#save-lvl').val()
+
+		
+		let formData = new FormData();           
+	    formData.append("file", file);
+	    formData.append("level", level);
+	    formData.append("game", window.location.href.split("/").pop());
+
+	    const response = await fetch(`/read_save`, {
+	      method: "POST", 
+	      body: formData
+	    })
+
+	    showdown = await response.json()
+
+	    $('textarea').val((showdown)["showdown"])
+	    navigator.clipboard.writeText(showdown["showdown"])
+
+	    $('#load-save').text('Copied!')
+
+	    setTimeout(function(){
+	    	 $('#load-save').text('Load & Copy to Clipboard')
+	    }, 1500)
+
+	 	
+
+
+	})
+
+$(document).on('change', '#save-upload', function(){
+
+	$('#save-upload-btn').text($(this).val().split('\\').pop())
+})
+
 
 $(document).ready(function() {
 	console.log("ready")
@@ -199,28 +255,7 @@ $(document).ready(function() {
     	}
     })
 
-  //   $(document).on('click', '#load-save', function(e){
-  //   	var file = $('#save-upload')[0].files[0]
 
-
-		// if (!file) {
-		// 	alert("no file uploaded")
-		// 	return
-		// }
-		
-		// let formData = new FormData();           
-	 //    formData.append("file", file);
-	    
-	 //    fetch(`/read_save`, {
-	 //      method: "POST", 
-	 //      body: formData
-	 //    }).then(response => {
-  //           console.log(JSON.stringify(response.json()))
-  //           return JSON.stringify(response.json())
-  //       });; 
-
-
-  //   })
 
 
 	$(document).on('change', '#xdelta', function() {
@@ -693,6 +728,11 @@ $(document).ready(function() {
 
 
 	})
+
+
+
+
+	
 
 
 	$(document).on('mousedown',"[contenteditable='true']", function(e){
