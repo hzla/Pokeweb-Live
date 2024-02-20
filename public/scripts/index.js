@@ -38,22 +38,32 @@ $(document).on('click', '#load-save', async function() {
 	    showdown = await response.json()
 
 	    $('textarea').val((showdown)["showdown"])
-	    navigator.clipboard.writeText(showdown["showdown"])
 
-	    $('#load-save').text('Copied!')
-
-	    setTimeout(function(){
-	    	 $('#load-save').text('Load & Copy to Clipboard')
-	    }, 1500)
-
-	 	
-
-
+	    $('textarea').selectRange(0, -1);
 	})
+
+
 
 $(document).on('change', '#save-upload', function(){
 
 	$('#save-upload-btn').text($(this).val().split('\\').pop())
+})
+
+$(document).on('keyup', '#save-lvl', function(){
+
+	if ($('textarea').val() != ""){
+		var lines = $('textarea').val().split("\n")
+
+		for (i in lines) {
+			line = lines[i]
+			if (line.includes("Level: ")) {
+				lines[i] = `Level: ${$(this).val()}`
+			}
+		}
+
+		$('textarea').val(lines.join("\n"))
+	}
+	
 })
 
 
