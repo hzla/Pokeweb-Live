@@ -59,6 +59,23 @@ def decompile_script(rom_name, move_id):
 		f.close()
 
 		subprocess.run(["python3", "python/MovScrCMDDecompiler.py", f"{rom_name}/move_scripts/{move_id}.bin", f"{rom_name}/json/moves/{move_id}.json" , '>', f"{rom_name}/move_scripts/{move_id}.txt"], check=True)
+		decompiled_script = open(f"{rom_name}/move_scripts/{move_id}.txt").read().splitlines()
+		remove_line_with_string(f"{rom_name}/move_scripts/{move_id}.txt", "project")
+
+def remove_line_with_string(file_path, string_to_remove):
+    # Read the content of the file
+    with open(file_path, 'r') as file:
+        lines = file.readlines()
+
+    # Check if the first line contains the specified string
+    if lines and string_to_remove in lines[0]:
+        # Remove the first line
+        lines.pop(0)
+
+        # Write the modified content back to the file
+        with open(file_path, 'w') as file:
+            file.writelines(lines)
+
 
 def compile_script(rom_name, move_id):
 	if move_id > 559:
