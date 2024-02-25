@@ -610,7 +610,7 @@ class Trpok < Pokenarc
 			pok[species][tr_name]["ivs"] = {"hp": iv,"at": iv,"df": iv,"sa": iv,"sd": iv,"sp": iv}
 			pok[species][tr_name]["battle_type"] = trdata["battle_type_1"]
 			pok[species][tr_name]["reward_item"] = trdata["reward_item"]
-			pok[species][tr_name]["item"] = item.titleize.item_titlize
+			pok[species][tr_name]["item"] = item_titlize(item).titleize
 			pok[species][tr_name]["nature"] = nature
 			pok[species][tr_name]["moves"] = moves
 			pok[species][tr_name]["sub_index"] = i
@@ -635,9 +635,10 @@ class Trpok < Pokenarc
 		
 	end
 
-	def item_titlize(input_str)
+	def self.item_titlize(input_str)
 	result = ''
 
+	return input_str if !input_str
 	input_str.chars.each_with_index do |char, index|
 	result += ' ' if index > 0 && char =~ /[A-Z]/ && input_str[index - 1] =~ /[a-z]/
 	result += char
