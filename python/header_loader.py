@@ -147,6 +147,7 @@ with open(f'{rom_name}/session_settings.json', "w") as outfile:
 
 #############################################################
 ################### CONVERT TO JSON #########################
+use_vanilla_headers = False
 
 headers_narc_data = ndspy.narc.NARC(rom.files[narc_info["headers"]])
 output_headers_json(headers_narc_data, rom_name)

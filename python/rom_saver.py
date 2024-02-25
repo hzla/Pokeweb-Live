@@ -52,6 +52,7 @@ try:
 		
 		if "disable_text_exports" in settings and settings["disable_text_exports"]:
 			edited.remove("text")
+			edited.remove("headers")
 		else:
 			edited.append("text")
 
