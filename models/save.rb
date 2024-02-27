@@ -99,7 +99,7 @@ class Save
 			else
 				is_party = ""
 				if mon_count < party_count #for party pokemon
-					is_party = " |Party|"
+					is_party = ""
 					showdown_data = box_data[n+14..n+56]
 				else
 					showdown_data = box_data[n+10..n+39]
