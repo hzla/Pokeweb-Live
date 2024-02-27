@@ -248,7 +248,7 @@ class Save
 
 
 
-		trainer_string = save[new_trainer_id_offset..new_trainer_id_offset + 3]
+		trainer_string = "\x02\x02"
 
 		mon_count = 0
 
@@ -260,13 +260,13 @@ class Save
 		n = 0
 		while n < box_data.length
 			break if n > 34200
-			data = box_data[n..n+3]
+			data = box_data[n..n+1]
 			if data != trainer_string
-				n += 4
+				n += 2
 				next
 			else
 
-				mon_data = box_data[n-4..n+75]
+				mon_data = box_data[n-18..n+61]
 
 				begin
 					pid = mon_data[0..3].unpack("V")[0]
