@@ -97,8 +97,9 @@ class Save
 				n += 2
 				next
 			else
-
+				is_party = ""
 				if mon_count < party_count #for party pokemon
+					is_party = " |Party|"
 					showdown_data = box_data[n+14..n+56]
 				else
 					showdown_data = box_data[n+10..n+39]
@@ -146,7 +147,7 @@ class Save
 				
 				set = {}
 
-				import_data += all_mons[species_id].strip + "\n"
+				import_data += all_mons[species_id].strip + is_party + "\n"
 				import_data += "Level: #{static_level}\n"
 				import_data += "#{nature} Nature\n"
 						
@@ -230,8 +231,8 @@ class Save
 
 
 		box_data = ""
-		box_data = save[box_offset..box_offset + 33599]
 
+		box_data = save[box_offset..box_offset + 33599]
 		party_data = save[party_offset..party_offset + 599]
 
 		box_data += party_data
@@ -324,10 +325,15 @@ class Save
 				moves = [move1, move2, move3, move4]
 				
 				set = {}
+
+				is_party = ""
+				if n >= 33600
+					is_party = " |Party|"
+				end
 				
 				begin
 
-					import_data += all_mons[species_id].strip + "\n"
+					import_data += all_mons[species_id].strip + is_party + "\n"
 				rescue
 					p "Error: Species ID #{species_id}"
 					import_data += "Unknown\n"
