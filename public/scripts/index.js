@@ -38,7 +38,7 @@ $(document).on('click', '#load-save', async function() {
 	    showdown = await response.json()
 
 	    $('textarea').val((showdown)["showdown"])
-
+	    console.log(showdown)
 	    $('textarea').selectRange(0, -1);
 	})
 
@@ -1288,6 +1288,21 @@ $(document).ready(function() {
 	  if ($(this).attr('data-autofill') == "evo_params") {
 	  	textbank = autofills["pokemon_names"].concat(autofills["items"]).concat(autofills["move_names"])
 	  }
+
+	  if ($(this).attr('data-autofill') == "mastersheet") {
+	  	textbank = autofills["true_pokemon_names"].concat(autofills["move_names"])
+	  }
+
+	  var suggestions = textbank.filter(function(e){
+	  	return e.toLowerCase().includes(query.toLowerCase())
+	  });
+	  callback(suggestions);
+	})
+
+	$(document).on('autocomplete:request', ".filter-input", function(event, query, callback) {
+
+	  	textbank = autofills["true_pokemon_names"].concat(autofills["move_names"])
+	  
 
 	  var suggestions = textbank.filter(function(e){
 	  	return e.toLowerCase().includes(query.toLowerCase())

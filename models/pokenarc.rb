@@ -68,6 +68,10 @@ class Pokenarc
 			entry = json["raw"] if use_raw
 			entry = json if use_raw == "both"
 
+			if @@narc_name == "trpok"
+				entry["raw"] = json["raw"]
+			end
+
 			collection[n] = entry
 		end
 		collection

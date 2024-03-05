@@ -85,13 +85,12 @@ class Trpok < Pokenarc
 	def self.write_data data, batch=false
 		@@narc_name = "trpok"
 		@@upcases = ["species", "move"]
-		p data
 		super
 	end
 
 	def self.get_poks_for count, trainer_poks
 		poks = []
-		(0..100).each do |n|
+		(0..20).each do |n|
 			if trainer_poks["species_id_#{n}"]
 				poks << trainer_poks["species_id_#{n}"].gsub(". ", "-").downcase
 			end
@@ -100,7 +99,7 @@ class Trpok < Pokenarc
 		poks
 	end
 
-	def self.fill_lvl_up_moves lvl, trainer, pok_index, output_json=true
+	def self.fill_lvl_up_moves lvl, trainer, pok_index, output_json=true, get_ids=false
 
 		file_path = "#{$rom_name}/json/trpok/#{trainer}.json"
 		trpok = JSON.parse(File.open(file_path, "r"){|f| f.read})
@@ -133,8 +132,11 @@ class Trpok < Pokenarc
 		if output_json
 			File.open(file_path, "w") { |f| f.write trpok.to_json }
 		end
-		
-		moves.map {|m| m[1].name_titleize}
+		if !get_ids
+			moves.map {|m| m[1].name_titleize}
+		else
+			moves.map {|m| [m[1].name_titleize, m[0]]}
+		end
 
 	end
 
@@ -501,6 +503,24 @@ class Trpok < Pokenarc
 		replace
 	end
 
+
+	def self.get_name trpok, i
+		species_name = trpok["species_id_#{i}"].downcase.titleize.gsub("Porygon Z", "Porygon-Z").gsub("Ho Oh","Ho-Oh").gsub("'","’")
+
+		form = trpok["form_#{i}"]
+
+		if form > 0
+			begin
+				species_name += "-#{RomInfo.form_info[species_name][form - 1]}"
+			rescue
+
+			end
+		end
+
+		species_name
+
+
+	end
 
 	def self.export_showdown tr_id, trdata, min_ivs, rival_set=0, gender_table
 

@@ -282,7 +282,7 @@ end
 
 	def self.base_stat_fields
 		# title to display, field_name in json
-		[["HP", "base_hp"],["Attack", "base_atk"],["Defense", "base_def"],["Special Attack", "base_spatk"],["Special Defense", "base_spdef"],["Speed", "base_speed"]]
+		[["HP", "base_hp"],["Att", "base_atk"],["Def", "base_def"],["Sp Att", "base_spatk"],["Sp Def", "base_spdef"],["Speed", "base_speed"]]
 	end
 
 	def self.misc_integer_fields

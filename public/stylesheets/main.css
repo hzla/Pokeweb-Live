@@ -614,12 +614,12 @@ table td {
     display: block;
 }
 
-#headers .expanded-field:hover .move-info, #encounters .expanded-field:hover .move-info, #trainers .expanded-field:hover .move-info {
+#headers .expanded-field:hover .move-info, #encounters .expanded-field:hover .move-info, #trainers .expanded-field:hover .move-info, #mastersheet .expanded-field:hover .move-info {
     display: block;
     left: 80px
 }
 
-#encounters .expanded-field:hover .move-info.expand-grass {
+#encounters .expanded-field:hover .move-info.expand-grass, #mastersheet .expanded-field:hover .move-info.expand-grass {
     display: block;
     left: 40px
 }
@@ -856,7 +856,7 @@ div.-active svg * {
     padding: 10px 20px;
 }
 
-#encounters.spreadsheet .expanded-card-content .expanded-field {
+#encounters.spreadsheet .expanded-card-content .expanded-field, #mastersheet.spreadsheet .expanded-card-content .expanded-field {
     padding: 0px 10px;
 }
 
@@ -928,7 +928,7 @@ div.-active svg * {
     padding: 10px 20px;
 }
 
-#encounters.spreadsheet .expanded-card-content .expanded-field {
+#encounters.spreadsheet .expanded-card-content .expanded-field, #mastersheet.spreadsheet .expanded-card-content .expanded-field  {
     padding: 0px 10px;
 }
 

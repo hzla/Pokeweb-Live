@@ -79,6 +79,7 @@ for narc in NARCS:
 	try:
 		narc_file = ndspy.narc.NARC(file)
 	except:
+		narc_file = ""
 		if narc[1] == "message_texts":
 			print("Ctrmap edited texts detected, switching to vanilla text banks")
 			use_vanilla_banks = narc_info["base_version"]
@@ -149,8 +150,12 @@ with open(f'{rom_name}/session_settings.json', "w") as outfile:
 ################### CONVERT TO JSON #########################
 use_vanilla_headers = False
 
-headers_narc_data = ndspy.narc.NARC(rom.files[narc_info["headers"]])
-output_headers_json(headers_narc_data, rom_name)
+try:
+	headers_narc_data = ndspy.narc.NARC(rom.files[narc_info["headers"]])
+except:
+	headers_narc_data = ""
+	use_vanilla_headers = narc_info["base_version"]
+output_headers_json(headers_narc_data, rom_name, use_vanilla_headers)
 
 
 

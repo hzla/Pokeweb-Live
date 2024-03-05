@@ -22,6 +22,8 @@ Dotenv.load
 
 Dir["models/*.rb"].each {|file| require_relative file}
 p "init"
+# $rom_name = "projects/B2"
+
 
 
 
@@ -55,8 +57,7 @@ class MyApp < Sinatra::Base
 			$rom_name = session[:rom_name]
 		end
 		@pb_proj = ""
-		# $rom_name = "projects/W2"
-
+		
 		if params["project"] && params["project"].length > 0
 			$rom_name = "projects/#{params["project"]}"
 			if !SessionSettings.get("public")
@@ -94,6 +95,27 @@ class MyApp < Sinatra::Base
 		end
 
 	end
+
+	####### Mastersheet ##########
+
+	 get '/mastersheet' do 
+	 	@master_data = Mastersheet.parse 
+	 	
+	 	@moves = Move.get_all
+		@move_names = Move.get_names_from @moves
+		@poke_data = Personal.poke_data
+		@encounters = Encounter.get_all
+		@location_names = Header.location_names
+		@evolutions = Evolution.get_all
+		@trainers = Trdata.get_all
+		@gender_table = Trdata.gender_table
+		@trainer_poks = Trpok.get_all
+
+
+
+
+	 	erb :mastersheet
+	 end
 
 	
 	################# GENERAL SPA EDITOR ######################

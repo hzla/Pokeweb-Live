@@ -55,8 +55,9 @@
 	</div>
 <% else %>
 	<div class="trainer-doc-item">
-		<%= img "pokesprite/#{sprite[trpok_index]}.png", 'doc-sprite' %>
-		<div class="trpok-item-info">Level <%= trpok["level_#{trpok_index}"] %></div>
+		<% species_name = Trpok.get_name(trpok, trpok_index) %>
+		<%= img "pokesprite/#{species_name.downcase.gsub(". ", "-")}.png", 'doc-sprite', ["species-id", trpok["raw"]["species_id_#{trpok_index}"]] %>
+		<div class="trpok-item-info doc-species" data-species-id="<%= trpok["raw"]["species_id_#{trpok_index}"] %>">Lvl <%= trpok["level_#{trpok_index}"] %> <%= species_name %></div>
 		<div class="trpok-item-info"><%= trpok["item_id_#{trpok_index}"].name_titleize || "----" %></div>
 		<% nature_info = Trpok.get_doc_nature(trdata_index, trpok_index, trpok["ivs_#{trpok_index}"], trpok, trdata, personals) %>
 		
@@ -74,15 +75,15 @@
 
 			<% (1..4).each do |m| %>
 
-					<div class="trpok-item-info"><%= trpok["move_#{m}_#{trpok_index}"].name_titleize %></div>
+					<div class="trpok-item-info doc-move" data-id="<%= trpok["raw"]["move_#{m}_#{trpok_index}"] %>"><%= trpok["move_#{m}_#{trpok_index}"].name_titleize %></div>
 
 			<% end %>	
 		<% else %>
-			<% moves = Trpok.fill_lvl_up_moves trpok["level_#{trpok_index}"], trdata_index, trpok_index, true  %>
+			<% moves = Trpok.fill_lvl_up_moves trpok["level_#{trpok_index}"], trdata_index, trpok_index, true, true  %>
 
 
 			<% moves.each do |m| %>
-				<div class="trpok-item-info"><%= m %></div>
+				<div class="trpok-item-info doc-move" data-id="<%= m[1] %>"><%= m[0] %></div>
 			<% end %>
 		<% end %>
 	</div>

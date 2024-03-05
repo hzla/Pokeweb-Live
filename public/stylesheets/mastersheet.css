@@ -1,0 +1,157 @@
+#mastersheet {
+	color:  #f1f1f1;
+	padding-left: 40px;
+	padding-top:  20px;
+}
+
+.master-sidebar input {
+	height:  40px;
+}
+
+.ms-pok td {
+	color:  #f1f1f1;
+}
+
+#mastersheet p {
+	font-size: 20px;
+	margin:  10px 0px;
+}
+
+#mastersheet h1, #mastersheet h2 {
+	margin-top: 40px;
+}
+
+#mastersheet h2 {
+	font-size:  36px;
+}
+
+#mastersheet h1 {
+	text-align: center;
+	font-size:  48px;
+}
+.ms-trainer .expanded-field-main {
+	width:  160px;
+}
+
+.ms-trainer.expanded-field.filterable {
+	display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.ms-trainer .expanded-card-content {
+	width: calc(100% - 180px);
+}
+
+.ms-trainer .trainer-name, #mastersheet img {
+	width: 160px;
+}
+
+#mastersheet .expanded-field:hover .move-info.expand-grass {
+	bottom:  30px;
+	left:  0px;
+}
+
+#mastersheet .expanded-field:hover .move-info.expand-water {
+	bottom:  30px;
+	left:  40px;
+}
+
+#mastersheet .filterable {
+	margin-top:  20px;
+}
+
+#mastersheet .encounter-wilds {
+	width:  calc(100% - 180px);
+}
+
+#mastersheet .doc-move, #mastersheet .encounter-locations, #mastersheet .doc-species    {
+	cursor:  pointer;
+	color:  #1abc9c;	
+}
+
+#mastersheet .doc-sprite:hover {
+	border: 1px solid #1abc9c;
+	border-radius:  4px;
+	cursor:  pointer;
+}
+
+
+.ms-pok .pokemon-card__name{
+	margin-top: 40px;
+}
+
+.ms-pok .pokemon-card__ability{
+	display: block;
+    width: auto;
+    margin-top:  10px;
+}
+
+.ms-pok .pokemon-card__info {
+	margin-left: 0px;
+}
+
+.ms-pok .pokemon-card__table td {
+	text-align:  left;
+}
+
+.ms-pok .expanded-left {
+	width:  100%;
+}
+
+.ms-pok .move-name, .ms-move .move-name {
+	width:  130px;
+}
+
+.ms-move .move-name {
+	margin-left: 20px;
+}
+
+.ms-move .move-power, .ms-move .move-accuracy {
+	width:  60px;
+}
+.ms-pok, .ms-move {
+	display:  none;
+}
+
+.repel-manip {
+	width: 100px;
+    position: absolute;
+    top: 10px;
+    left: 0px;
+}
+
+#enc-info {
+	display:  none;
+}
+
+.ms-pok .move-power, .ms-pok .move-accuracy {
+	width:  40px;
+}
+
+.ms-pok .expanded-left {
+	padding:  0px;
+}
+
+.ms-pok .move-level {
+	width:  30px;
+}
+
+.ms-enc-header {
+	font-size:  26px;
+	margin: 20px 0px;
+	text-align: center;
+}
+
+.ms-enc-row {
+	display: flex;
+	justify-content: space-between;
+	font-size: 20px;
+}
+
+.tr-notes {
+	margin-top:  20px;
+}
+
+
+

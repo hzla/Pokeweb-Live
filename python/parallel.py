@@ -3,7 +3,8 @@ import os
 import ndspy.narc
 import json
 import rom_data
-import sys
+import sys 
+import shutil
 
 from personal_reader import output_personal_json
 from learnset_reader import output_learnsets_json
@@ -47,9 +48,25 @@ with open(f'{rom_name}/session_settings.json', "r") as outfile:
 	narc_info = json.load(outfile) 
 
 narcs_to_output = ["trdata", "personal", "learnsets", "moves", "encounters", "items", "evolutions", "overworlds", "maps", "matrix"]
-# narcs_to_output = ["overworlds"]
+
+with open(f'{rom_name}/session_settings.json', "r") as outfile:  
+	settings = json.load(outfile) 
+	narcs_to_output =  [item for item in narcs_to_output if item not in settings["blacklist"]]
+
+
 if narc_info["base_rom"] == "BW2":
 	narcs_to_output += ["grottos", "marts", "grotto_odds", "move_effects_table"]
+
+
+for ctr_narc in settings["blacklist"]:
+	# path to source directory
+	src_dir = f"./templates/{settings["base_version"]}/json/{ctr_narc}"
+	# path to destination directory
+	dest_dir = f"./{rom_name}/json/{ctr_narc}" 
+	# getting all the files in the source directory
+	files = os.listdir(src_dir)
+	shutil.copytree(src_dir, dest_dir)
+	print(ctr_narc)
 
 
 rom_name = narc_info["rom_name"]

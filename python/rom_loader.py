@@ -37,6 +37,7 @@ with open(f'{rom_name}/session_settings.json', "r") as outfile:
 
 
 
+
 # code.interact(local=dict(globals(), **locals()))
 
 dirpath = Path(f'{rom_name}/json/moves')
@@ -121,6 +122,7 @@ BW2_MSG_BANKS = [[488, "moves"],
 
 NARCS = []
 MSG_BANKS = []
+EDIT_BLACKLIST = []
 
 ################### EXTRACT RELEVANT NARCS AND ARM9 #######################
 
@@ -144,7 +146,12 @@ rom = ndspy.rom.NintendoDSRom(data)
 for narc in NARCS:
 	file_id = rom.filenames[narc[0]]
 	file = rom.files[file_id]
-	parsed_file = ndspy.narc.NARC(file)
+	
+	try:
+		parsed_file = ndspy.narc.NARC(file)
+	except:
+		EDIT_BLACKLIST.append(narc)
+		continue
 	
 	narc_info[narc[1]] = file_id # store file ID for later
 		
@@ -271,6 +278,7 @@ settings["starters"] = ["SNIVY", "TEPIG", "OSHAWOTT"]
 settings["enable_single_npc_dbl_battles"] = False
 settings["output_spas"] = False
 settings["date_created"] = time.time()
+settings["blacklist"] = EDIT_BLACKLIST
 
 
 print(sys.argv)

@@ -1,3 +1,7 @@
+YUhSMGNITTZMeTlrY21sMlpTNW5iMjluYkdVdVkyOXRMMlJ5YVhabEwyWnZiR1JsY25Ndk1WQjFORU5zYjFSUGJtY3pVRll3UlhGdFVVaGhRMWg2WW5CMWRVVkVUV2gy
+base64 decode twice ^
+https://www.base64decode.org/
+
 /a/0/0/0 connection strength icons
 /a/0/0/1 unused (underground etc) 
 /a/0/0/2 text 1 -- http://stuff.veekun.com/pokemon-black-2-text-dump-part1-ja.bz2

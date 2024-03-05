@@ -7,6 +7,17 @@ class RomInfo
 		end
 	end
 
+    def self.true_pokemon_names
+        i = 0
+        Personal.poke_data.map do |n|
+            if !n
+                ""
+            else 
+                n["name"]
+            end
+        end
+    end
+
     def self.raw_pokemon_names
         file_path = "#{$rom_name}/texts/pokedex.txt"
         data = File.open(file_path, "r:ISO8859-1").read.split("\n").map do |pok|

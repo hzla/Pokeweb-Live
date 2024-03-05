@@ -87,8 +87,19 @@ def set_global_vars(rom_name):
 #################################################################
 
 
-def output_headers_json(headers, rom_name):
+def output_headers_json(headers, rom_name, use_vanilla=False):
 	set_global_vars(rom_name)
+	
+	if use_vanilla:
+        headers = json.load(open(f'templates/{use_vanilla}/json/headers/headers.json'))
+
+        with codecs.open(f'{ROM_NAME}/headers/headers.json', 'w', encoding='utf_8') as f:
+            json.dump(headers, f)
+
+        return
+
+
+
 	headers = headers.files[0]
 	header_count = int(len(headers) / HEADER_LENGTH)
 
