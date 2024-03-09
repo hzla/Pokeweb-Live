@@ -13,7 +13,7 @@
 
 <div class="pokemon-filter master-sidebar" style="top: 0px">	
 	<div class="filter-title">Lookup</div>
-	<input class="" placeholder="species or move name"/>
+	<input class="" placeholder="Species or move name"/>
 
 	<% @moves.each do |id, move|  %>			
 		<% if move %>
@@ -24,15 +24,21 @@
 
 	<% @poke_data.each_with_index do |pok, i|  %>
 		<% if pok %>
-			<%= erb :'_personal_mastersheet', :layout => false, :locals => { :pok => pok, :evo => @evolutions[i], id: i } %>
+			<%= erb :'_personal_mastersheet', :layout => false, :locals => { :pok => pok, :evo => @evolutions[i], id: i, locs: @pok_locations } %>
 		<% end %>
 	<% end %>
 
 	<div id="enc-info"></div>
 
 </div>
+<div id="ms-editor">
+	<textarea type="text" id="ms-source" ><%= File.read("#{$rom_name}/mastersheet.txt") %></textarea>
+	<div id="submit-ms">Update</div>
+</div>
 
 <div class="pokemon-list spreadsheet" id="mastersheet">
+
+
 	<% @master_data.each do |element| %>
 		<% if element[:content] %>
 			<%= Mastersheet.handle(element) %>
@@ -42,7 +48,7 @@
 			<% trainer = @trainers[i] %>
 			<div class="expanded-field filterable ms-trainer" data-index="<%= i %>">
 				<div class="expanded-field-main">
-					<div class="trainer-name"><%= img Trdata.sprite(trainer["name"],trainer['class'],trainer['class_id'], @gender_table) %> <%= "#{trainer['class']}" %> <%= trainer["name"] %> <%= trainer["location"] ? "(#{trainer["location"][0]})" : ""  %>
+					<div class="trainer-name"><%= img Trdata.sprite(trainer["name"],trainer['class'],trainer['class_id'], @gender_table) %> <%= "#{trainer['class']}" %> <%= trainer["name"]%>
 						
 
 						<% if trainer["battle_type_1"] != "Singles" %>
@@ -65,19 +71,18 @@
 			<% enc = @encounters[i] %>
 			<% season = "spring" %>
 
+			<h3><%= enc["locations"] && enc["locations"].uniq.join(", ").split(" (")[0] %></h3>
 			<div class="expanded-field filterable doc-enc" data-index="<%= i %>">
 				<div class="expanded-field-main">
-					<div class="encounter-locations"><%= enc["locations"] && enc["locations"].uniq.join(", ").split(" (")[0] %></div>
-					<input class="repel-manip" placeholder="Repel Lvl"/>
 					<div class="encounter-wilds" >
-						<% enc["wilds"].each do |wild| %>
-							<div class="wild">
+						<% enc["wilds"].each_with_index do |wild, i| %>
+							<div class="wild" data-species-name="<%= enc["nf-wilds"][i] %>">
 								<%= img "pokesprite/#{wild.downcase}.png" %>
 							</div>
 						<% end %>	
 					</div>
 					<%= svg "svgs/grass", 'move-info expand-action expand-grass svg', ["expand", "grass"] %>
-					<%= svg "svgs/water", 'move-info expand-action expand-water svg', ["expand", "water"] %>
+					<%= svg "svgs/water", 'move-info expand-action expand-water svg', ["expand", "water"] %>					
 				</div>
 
 
@@ -94,7 +99,7 @@
 							</div>
 							<% (0..11).each do |n| %>
 								<div class="expanded-field multi">
-									<div class='enc-slot enc-name'><%= enc["#{season}_#{field}_slot_#{n}"].name_titleize %></div>
+									<div class='enc-slot enc-name' data-species-id="<%= enc["#{season}_#{field}_slot_#{n}"].name_titleize %>"><%= enc["#{season}_#{field}_slot_#{n}"].name_titleize %></div>
 									<div class="enc-lvl"><%= enc["#{season}_#{field}_slot_#{n}_min_level"] %></div>
 									<div class="enc-lvl"><%= enc["#{season}_#{field}_slot_#{n}_max_level"] %></div>
 									<div class="enc-form"><%= (enc["#{season}_#{field}_slot_#{n}_form"] || 0) %></div>								
@@ -119,15 +124,13 @@
 							</div>
 							<% (0..4).each do |n| %>
 								<div class="expanded-field multi">
-									<div class="enc-slot enc-name"> <%= enc["#{season}_#{field}_slot_#{n}"].name_titleize %> </div>
+									<div class="enc-slot enc-name" data-species-id="<%= enc["#{season}_#{field}_slot_#{n}"].name_titleize %>"> <%= enc["#{season}_#{field}_slot_#{n}"].name_titleize %> </div>
 
 									<div class="enc-lvl"><%= enc["#{season}_#{field}_slot_#{n}_min_level"] %></div>
 									<div class="enc-lvl"><%= enc["#{season}_#{field}_slot_#{n}_max_level"] %></div>
 									<div class="enc-form"><%= (enc["#{season}_#{field}_slot_#{n}_form"] || 0) %></div>
 
 		
-
-									<%= field "#{season}_#{field}_slot_#{n}_form", 'enc-form', {value: (enc["#{season}_#{field}_slot_#{n}_form"] || 0),  narc: "encounter", type: "int-100"} %>
 
 									<div class="enc-percent"><%= Encounter.water_percent_for n %></div>
 								</div>
@@ -137,6 +140,8 @@
 				</div>
 
 			</div>
+		<% else %>
+		<br>
 		<% end %>
 	<% end %>
 </div>

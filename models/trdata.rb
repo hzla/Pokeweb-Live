@@ -23,8 +23,9 @@ class Trdata < Pokenarc
 
 	def self.sprite tr_name, tr_class, tr_class_id, g_table
 		tr_class = tr_class.downcase.gsub("  ", " ").gsub(" ", "_").gsub("_m", "")
+		tr_name = tr_name.downcase
 		
-		if tr_class.include?("pkmn_trainer") or tr_class.include?("leader") or tr_class.include?("plasma") or tr_class.include?("four") or tr_class.include?("champion") 
+		if tr_class.include?("pkmn_trainer") or tr_class.include?("leader") or tr_class.include?("plasma") or tr_class.include?("four") or tr_class.include?("champion") or tr_name.include?("benga") or tr_class.include?("subway") 
 			"trainer_sprites/#{tr_name.downcase}.png"
 		elsif tr_class[-2] == "_"
 			"trainer_sprites/#{tr_class}.png"

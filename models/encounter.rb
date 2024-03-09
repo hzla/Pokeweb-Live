@@ -13,6 +13,15 @@ class Encounter < Pokenarc
 		super
 	end
 
+	def self.search encs, location
+		location = location.downcase.gsub(" ", "")
+		encs.each_with_index do |enc, i|
+			enc_loc = enc["locations"][0].split(" (")[0].gsub(" ","").downcase
+			return i if location == enc_loc
+		end
+		return 0
+	end
+
 
 	def self.write_data data, batch=false
 		@@narc_name = "encounters"
@@ -100,20 +109,24 @@ class Encounter < Pokenarc
 
 		encounter_data.each_with_index do |enc, i|
 			wilds = []
+			unformatted_wilds = []
 			
 			seasons.each do |season|
 				grass_fields.each do |enc_type|
 					(0..11).each do |n|
 						wilds << enc["#{season}_#{enc_type}_slot_#{n}"].gsub(/[^0-9A-Za-z\-]/, '').name_titleize
+						unformatted_wilds << enc["#{season}_#{enc_type}_slot_#{n}"].name_titleize
 					end
 				end
 				water_fields.each do |enc_type|
 					(0..4).each do |n|
 						wilds << enc["#{season}_#{enc_type}_slot_#{n}"].gsub(/[^0-9A-Za-z\-]/, '').name_titleize
+						unformatted_wilds << enc["#{season}_#{enc_type}_slot_#{n}"].name_titleize
 					end
 				end
 			end
 			encounter_data[i]["wilds"] = wilds.reject(&:empty?).uniq
+			encounter_data[i]["nf-wilds"] = unformatted_wilds.reject(&:empty?).uniq
 			encounter_data[i]["index"] = i
 		end
 		encounter_data

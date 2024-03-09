@@ -18,54 +18,54 @@ class Personal
 		end
 
 
-		data[29]["name"] = "Nidoran-F"
-		data[32]["name"] = "Nidoran-M"
-		data[83]["name"] = "Farfetch’d"
+		# data[29]["name"] = "Nidoran-F"
+		# data[32]["name"] = "Nidoran-M"
+		# data[83]["name"] = "Farfetch’d"
 
 
-		if SessionSettings.base_rom == "BW2"
-			data[685]["name"] = "Deoxys-Attack"
-			data[686]["name"] = "Deoxys-Defense"
-			data[687]["name"] = "Deoxys-Speed"
-			data[688]["name"] = "Wormadam-Sandy"
-			data[689]["name"] = "Wormadam-Trash"
-			data[690]["name"] = "Shaymin-Sky"	
-			data[691]["name"] = "Giratina-Origin"
-			data[692]["name"] = "Rotom-Heat"
-			data[693]["name"] = "Rotom-Wash"
-			data[694]["name"] = "Rotom-Frost"
-			data[695]["name"] = "Rotom-Fan"
-			data[696]["name"] = "Rotom-Mow"
-			data[697]["name"] = "Castform-Sunny"
-			data[698]["name"] = "Castform-Rainy"
-			data[699]["name"] = "Castform-Snowy"
-			data[700]["name"] = "Basculin-Blue-Striped"
-			data[701]["name"] = "Darmanitan-Zen"
-			data[702]["name"] = "Meloetta-Pirouette"
-			data[703]["name"] = "Kyurem-White"
-			data[704]["name"] = "Kyurem-Black"
-			data[705]["name"] = "Keldeo-Resolute"
-			data[706]["name"] = "Tornadus-Therian"
-			data[707]["name"] = "Thundurus-Therian"
-			data[708]["name"] = "Landorus-Therian"
-		else
-			data[650]["name"] = "Deoxys-Attack"
-			data[651]["name"] = "Deoxys-Defense"
-			data[652]["name"] = "Deoxys-Speed"
-			data[655]["name"] = "Shaymin-Sky"	
-			data[656]["name"] = "Giratina-Origin"
-			data[657]["name"] = "Rotom-Heat"
-			data[658]["name"] = "Rotom-Wash"
-			data[659]["name"] = "Rotom-Frost"
-			data[660]["name"] = "Rotom-Fan"
-			data[661]["name"] = "Rotom-Mow"
-			data[662]["name"] = "Castform-Sunny"
-			data[663]["name"] = "Castform-Rainy"
-			data[664]["name"] = "Castform-Snowy"
-			data[665]["name"] = "Basculin-Blue-Striped"
-			data[666]["name"] = "Darmanitan-Zen"
-			data[667]["name"] = "Meloetta-Pirouette"
-		end
+		# if SessionSettings.base_rom == "BW2"
+		# 	data[685]["name"] = "Deoxys-Attack"
+		# 	data[686]["name"] = "Deoxys-Defense"
+		# 	data[687]["name"] = "Deoxys-Speed"
+		# 	data[688]["name"] = "Wormadam-Sandy"
+		# 	data[689]["name"] = "Wormadam-Trash"
+		# 	data[690]["name"] = "Shaymin-Sky"	
+		# 	data[691]["name"] = "Giratina-Origin"
+		# 	data[692]["name"] = "Rotom-Heat"
+		# 	data[693]["name"] = "Rotom-Wash"
+		# 	data[694]["name"] = "Rotom-Frost"
+		# 	data[695]["name"] = "Rotom-Fan"
+		# 	data[696]["name"] = "Rotom-Mow"
+		# 	data[697]["name"] = "Castform-Sunny"
+		# 	data[698]["name"] = "Castform-Rainy"
+		# 	data[699]["name"] = "Castform-Snowy"
+		# 	data[700]["name"] = "Basculin-Blue-Striped"
+		# 	data[701]["name"] = "Darmanitan-Zen"
+		# 	data[702]["name"] = "Meloetta-Pirouette"
+		# 	data[703]["name"] = "Kyurem-White"
+		# 	data[704]["name"] = "Kyurem-Black"
+		# 	data[705]["name"] = "Keldeo-Resolute"
+		# 	data[706]["name"] = "Tornadus-Therian"
+		# 	data[707]["name"] = "Thundurus-Therian"
+		# 	data[708]["name"] = "Landorus-Therian"
+		# else
+		# 	data[650]["name"] = "Deoxys-Attack"
+		# 	data[651]["name"] = "Deoxys-Defense"
+		# 	data[652]["name"] = "Deoxys-Speed"
+		# 	data[655]["name"] = "Shaymin-Sky"	
+		# 	data[656]["name"] = "Giratina-Origin"
+		# 	data[657]["name"] = "Rotom-Heat"
+		# 	data[658]["name"] = "Rotom-Wash"
+		# 	data[659]["name"] = "Rotom-Frost"
+		# 	data[660]["name"] = "Rotom-Fan"
+		# 	data[661]["name"] = "Rotom-Mow"
+		# 	data[662]["name"] = "Castform-Sunny"
+		# 	data[663]["name"] = "Castform-Rainy"
+		# 	data[664]["name"] = "Castform-Snowy"
+		# 	data[665]["name"] = "Basculin-Blue-Striped"
+		# 	data[666]["name"] = "Darmanitan-Zen"
+		# 	data[667]["name"] = "Meloetta-Pirouette"
+		# end
 
 		if ENV['RACK_ENV'] == 'test'
 			limit = 9
@@ -138,6 +138,20 @@ class Personal
 		end
 
 		File.open("#{rom_name}/json/personal/#{to}.json", "w") { |f| f.write to_mon.to_json }
+	end
+
+	def self.get_all_locations encs
+		locations = {}
+		
+		encs.each do |enc|
+			enc["wilds"].each do |wild|
+				locations[wild] ||= []
+				locations[wild] << enc["locations"][0].split(" (")[0]
+			end
+		end
+
+		locations
+		
 	end
 
 	def self.balance

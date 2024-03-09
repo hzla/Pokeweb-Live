@@ -1,7 +1,32 @@
 #mastersheet {
 	color:  #f1f1f1;
-	padding-left: 40px;
 	padding-top:  20px;
+}
+
+#ms-source {
+	height: 400px;
+	width:  400px;
+}
+
+#ms-editor {
+	height: 400px;
+	width:  400px;
+	position:  fixed;
+	top: 40px;
+	right: 40px;
+	z-index: 10;
+}
+
+#submit-ms {
+	height: 30px;
+	background: #bd93f9;
+	border-radius: 5px;
+	text-align: center;
+	width:  100%;
+	line-height: 30px;
+	margin-top: 5px;
+	cursor:  pointer;
+	color: #f1f1f1;
 }
 
 .master-sidebar input {
@@ -12,17 +37,35 @@
 	color:  #f1f1f1;
 }
 
+#manip-lvl {
+	display: inline;
+    width: 65px;
+}
+
 #mastersheet p {
 	font-size: 20px;
 	margin:  10px 0px;
+	min-height: 20px;
+	padding-left: 60px;
 }
 
 #mastersheet h1, #mastersheet h2 {
 	margin-top: 40px;
+	padding-left: 60px;
+}
+
+#mastersheet h3 {
+	margin-top: 20px;
+	margin-bottom:  20px;
+	font-size:  30px;
+	padding-left: 60px;
 }
 
 #mastersheet h2 {
 	font-size:  36px;
+	border-bottom:  2px solid #f1f1f1;
+	padding-top: 20px;
+	padding-bottom:  20px; 
 }
 
 #mastersheet h1 {
@@ -47,14 +90,18 @@
 	width: 160px;
 }
 
-#mastersheet .expanded-field:hover .move-info.expand-grass {
-	bottom:  30px;
-	left:  0px;
+#mastersheet .expanded-field .move-info.expand-grass, #mastersheet .expanded-field:hover .move-info.expand-grass  {
+	bottom:  0px;
+	left:  40px;
 }
 
-#mastersheet .expanded-field:hover .move-info.expand-water {
-	bottom:  30px;
-	left:  40px;
+#mastersheet .expanded-field .move-info.expand-water {
+	bottom:  0px;
+	left:  80px;
+}
+
+#mastersheet .move-info {
+	display: block;
 }
 
 #mastersheet .filterable {
@@ -65,7 +112,17 @@
 	width:  calc(100% - 180px);
 }
 
-#mastersheet .doc-move, #mastersheet .encounter-locations, #mastersheet .doc-species    {
+.doc-enc {
+	cursor: pointer;
+	border:  2px solid transparent;
+	box-sizing:  content-box;
+}
+
+.doc-enc:hover {
+	border: 2px solid #1abc9c;
+}
+
+#mastersheet .doc-move, #mastersheet .doc-species, #mastersheet .enc-name, .ms-enc-name    {
 	cursor:  pointer;
 	color:  #1abc9c;	
 }
@@ -115,14 +172,24 @@
 }
 
 .repel-manip {
-	width: 100px;
+	width: 120px;
     position: absolute;
-    top: 10px;
-    left: 0px;
+    bottom: 0px;
+    left: 100px;
+    background: none;
+    border: 1px solid #f1f1f1;
+    border-radius: 5px;
+    padding: 2px 10px;
+    height: 30px;
+    color: #f1f1f1;
 }
 
 #enc-info {
 	display:  none;
+}
+
+.ms-desc {
+	font-size:  18px;
 }
 
 .ms-pok .move-power, .ms-pok .move-accuracy {
@@ -143,6 +210,11 @@
 	text-align: center;
 }
 
+.ms-enc-main-header {
+	font-size:  32px;
+	margin: 20px 0px;
+	text-align: center;
+}
 .ms-enc-row {
 	display: flex;
 	justify-content: space-between;
@@ -153,5 +225,9 @@
 	margin-top:  20px;
 }
 
+#mastersheet .wild:hover, #mastersheet .wild.dupe  {
+	background: rgba(255, 85, 85, 0.5);
+	border-radius: 10px;
+}
 
 

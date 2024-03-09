@@ -1,6 +1,6 @@
-<div class="ms-pok" data-species-id="<%= id %>">
+<div class="ms-pok" data-species-id="<%= id %>" data-species-name="<%= pok["name"].titleize %>">
 	<div class="pokemon-card__info">
-		<div class="pokemon-card__name"><%= pok["name"].titleize %></div>
+		<div class="ms-enc-header"><%= pok["name"].titleize %></div>
 		<div class="pokemon-types">
 			<div data-narc="personal" data-autofill="types" data-field-name="type_1" class="pokemon-type -<%= pok["type_1"].downcase %>" contenteditable="true" data-autocomplete-spy><%= pok["type_1"] %></div>
 			<div data-narc="personal" data-autofill="types" data-field-name="type_2" class="pokemon-type -<%= pok["type_2"].downcase %>" contenteditable="true" data-autocomplete-spy><%= pok["type_2"] %></div>
@@ -27,10 +27,12 @@
 				</tr>
 			<% end %>
 		</tbody>
-	</table>	
+	</table>
 </div>
 
-<div class="expanded-card-content expanded-learnset ms-pok" data-species-id="<%= id %>">
+
+
+<div class="expanded-card-content expanded-learnset ms-pok" data-species-id="<%= id %>" data-species-name="<%= pok["name"].titleize %>">
 	<div class="expanded-left">
 		<% (0..24).each do |n| %>
 			<% if pok["learnset"]["move_id_#{n}_index"] %>
@@ -49,24 +51,18 @@
 	</div>	
 </div>
 
-<div class="expanded-card-content expanded-evos">	
-	<% [(0..2), (3..5), [6]].each do |range| %>
-		<div class="expanded-left">
-			<% range.each do |n| %>
-				<div class="expanded-field">
-					<div class="evo-label">Method</div>
-					<%= field "method_#{n}", 'evo-value', {value: evo["method_#{n}"],  narc: "evolution", autofill: "evo_methods"} %>
-				</div>
-				<div class="expanded-field">
-					<div class="evo-label">Parameter</div>
-					<%= field "param_#{n}", 'evo-value', {value: evo["param_#{n}"],  narc: "evolution", autofill: "evo_params"} %>
-				</div>
-				<div class="expanded-field">
-					<div class="evo-label">Evolves to</div>
-					<%= field "target_#{n}", 'evo-value', {value: evo["target_#{n}"].name_titleize,  narc: "evolution", autofill: "pokemon_names"} %>
-				</div>
-			<% end %>
-		</div>	
-	<% end %>		
+<div class="expanded-card-content expanded-evos ms-pok" data-species-id="<%= id %>" data-species-name="<%= pok["name"].titleize %>">	
+	<% (0..6).each do |n| %>
+		<% if evo["method_#{n}"] != "None" %>
+			<div class="ms-desc">Evo to <%= evo["target_#{n}"].name_titleize %> by <%= evo["method_#{n}"] %> / <%= evo["param_#{n}"]%></div>
+		<% end %>
+	<% end %>	
+
+	<% if locs[pok["name"].titleize] %>
+		<div class="ms-enc-header">Locations</div>
+		<div class="ms-desc"><%= locs[pok["name"].titleize].uniq.join(", ") %></div>	
+	<% end %>	
 </div>
+
+
 

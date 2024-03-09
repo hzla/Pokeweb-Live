@@ -19,6 +19,31 @@ class Trpok < Pokenarc
 		super
 	end
 	
+
+	def self.search trdata, trpok, tr_name, mon_lvl, mon_name
+		tr_name = tr_name.downcase.gsub(" ", "").strip
+		mon_name == mon_name.downcase.gsub(" ", "").strip
+		if mon_name == ""
+			no_name_match = true
+		else
+			no_name_match = false
+		end
+
+		trdata.each_with_index do |tr, i|
+			parsed_name = tr["name"].downcase.gsub(" ", "")
+			if tr_name == parsed_name
+				trpok_name = trpok[i]["species_id_0"].downcase.gsub(" ", "")
+				trpok_lvl = trpok[i]["level_0"]
+
+				if (no_name_match || (trpok_name == mon_name)) and trpok_lvl == mon_lvl
+					return i
+				end
+			end
+		end
+		return 0
+	end
+
+
 	def self.get_all_mods
 
 		@@narc_name = "trpok"

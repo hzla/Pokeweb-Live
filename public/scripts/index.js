@@ -35,7 +35,7 @@ $(document).on('click', '#load-save', async function() {
 	      body: formData
 	    })
 
-	    showdown = await response.json()
+	    showdown = await response
 
 	    $('textarea').val((showdown)["showdown"])
 	    console.log(showdown)

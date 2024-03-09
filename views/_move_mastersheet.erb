@@ -1,15 +1,14 @@
-<div class="expanded-field filterable ms-move" data-index="<%= move["index"] %>"  data-move-id="<%= move["index"] %>">
-	
+<div class="expanded-field filterable ms-move" data-index="<%= move["index"] %>"  data-move-id="<%= move["index"] %>">	
 	<div class="expanded-field-main">
-		<div class="move-name" data-narc="learnset">
+		<div class="move-name">
 			<%= move["name"].titleize %>
 		</div>
 		<div class="move-type">
-			<div class="btn -<%= move["type"].downcase %> -active" type="button" data-autofill="types"><%= move["type"][0..2] %></div>
+			<div class="btn -<%= move["type"].downcase %> -active" type="button"><%= move["type"][0..2] %></div>
 		</div>
-		<div data-narc="move" class="move-power" data-type="int-255" contenteditable="true" data-field-name="power"><%= move["power"] %>
+		<div  class="move-power"><%= move["power"] %>
 		</div>
-		<div data-type="int-101" data-narc="move" class="move-accuracy" contenteditable="true" data-field-name="accuracy"><%= move["accuracy"] %>
+		<div data-narc="move" class="move-accuracy"><%= move["accuracy"] %>
 		</div>
 	</div>	
 </div>

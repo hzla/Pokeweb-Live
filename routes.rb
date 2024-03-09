@@ -22,7 +22,7 @@ Dotenv.load
 
 Dir["models/*.rb"].each {|file| require_relative file}
 p "init"
-# $rom_name = "projects/B2"
+$rom_name = "projects/bb2redex14"
 
 
 
@@ -99,22 +99,43 @@ class MyApp < Sinatra::Base
 	####### Mastersheet ##########
 
 	 get '/mastersheet' do 
-	 	@master_data = Mastersheet.parse 
+	 	@encounters = Encounter.get_all
+		@trainers = Trdata.get_all
+		@gender_table = Trdata.gender_table
+		@trainer_poks = Trpok.get_all
+
+	 	@master_data = Mastersheet.parse @encounters, @trainers, @trainer_poks
 	 	
 	 	@moves = Move.get_all
 		@move_names = Move.get_names_from @moves
 		@poke_data = Personal.poke_data
-		@encounters = Encounter.get_all
+		
 		@location_names = Header.location_names
 		@evolutions = Evolution.get_all
-		@trainers = Trdata.get_all
-		@gender_table = Trdata.gender_table
-		@trainer_poks = Trpok.get_all
+
+		@pok_locations = Personal.get_all_locations @encounters
 
 
 
 
 	 	erb :mastersheet
+	 end
+
+	 post '/mastersheet' do 
+	 	content = params["content"]
+	 	# binding.pry
+	 	File.write("#{$rom_name}/mastersheet.txt", content)
+	 	@encounters = Encounter.get_all
+	 	@trainers = Trdata.get_all
+		@gender_table = Trdata.gender_table
+		@trainer_poks = Trpok.get_all
+	 	@master_data = Mastersheet.parse @encounters, @trainers, @trainer_poks
+		
+
+		@poke_data = Personal.poke_data
+		
+		erb :_mastersheet, layout: false
+
 	 end
 
 	

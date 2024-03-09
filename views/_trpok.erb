@@ -56,7 +56,7 @@
 <% else %>
 	<div class="trainer-doc-item">
 		<% species_name = Trpok.get_name(trpok, trpok_index) %>
-		<%= img "pokesprite/#{species_name.downcase.gsub(". ", "-")}.png", 'doc-sprite', ["species-id", trpok["raw"]["species_id_#{trpok_index}"]] %>
+		<%= img "pokesprite/#{species_name.downcase.gsub(" ", "-").gsub(".", "")}.png", 'doc-sprite', ["species-id", trpok["raw"]["species_id_#{trpok_index}"]] %>
 		<div class="trpok-item-info doc-species" data-species-id="<%= trpok["raw"]["species_id_#{trpok_index}"] %>">Lvl <%= trpok["level_#{trpok_index}"] %> <%= species_name %></div>
 		<div class="trpok-item-info"><%= trpok["item_id_#{trpok_index}"].name_titleize || "----" %></div>
 		<% nature_info = Trpok.get_doc_nature(trdata_index, trpok_index, trpok["ivs_#{trpok_index}"], trpok, trdata, personals) %>
