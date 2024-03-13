@@ -8,7 +8,7 @@
 		<div class="encounter-wilds" >
 			<% enc["wilds"].each do |wild| %>
 				<div class="wild" data-species-name="<%= wild %>">
-					<%= img "pokesprite/#{wild}.png" %>
+					<%= img "pokesprite/#{wild.downcase}.png" %>
 				</div>
 			<% end %>	
 		</div>
