@@ -6,7 +6,7 @@
 		<% i = element[:id] %>
 
 		<% trainer = @trainers[i] %>
-		<div class="expanded-field filterable ms-trainer" data-index="<%= i %>">
+		<div class="expanded-field filterable ms-trainer <%= element[:class] %>" data-index="<%= i %>">
 			<div class="expanded-field-main">
 				<div class="trainer-name"><%= img Trdata.sprite(trainer["name"],trainer['class'],trainer['class_id'], @gender_table) %> <%= "#{trainer['class']}" %> <%= trainer["name"] %> <%= trainer["location"] ? "(#{trainer["location"][0]})" : ""  %>
 					
@@ -27,79 +27,11 @@
 			</div>
 		</div>
 	<% elsif element[:tag] == "encounter" %>
-		<% i = element[:id] %>
-		<% enc = @encounters[i] %>
-		<% season = "spring" %>
-
-		<h3><%= enc["locations"] && enc["locations"].uniq.join(", ").split(" (")[0] %></h3>
-		<div class="expanded-field filterable doc-enc" data-index="<%= i %>">
-			<div class="expanded-field-main">
-				<div class="encounter-wilds" >
-					<% enc["wilds"].each_with_index do |wild, i| %>
-						<div class="wild" data-species-name="<%= enc["nf-wilds"][i] %>">
-							<%= img "pokesprite/#{wild.downcase}.png" %>
-						</div>
-					<% end %>	
-				</div>
-				<%= svg "svgs/grass", 'move-info expand-action expand-grass svg', ["expand", "grass"] %>
-				<%= svg "svgs/water", 'move-info expand-action expand-water svg', ["expand", "water"] %>					
-			</div>
-
-
-
-			<div class="expanded-card-content expanded-encounter expanded-grass expanded-<%= season %>">
-				<% Encounter.grass_fields.each do |field| %>
-					<div class="expanded-left">
-						<div class="expanded-field multi field-header">
-							<div class="enc-slot"><%= field.titleize %></div>
-							<div class="enc-lvl">Min</div>
-							<div class="enc-lvl">Max</div>
-							<div class="enc-form">Form</div>
-							<div class="enc-percent">%</div>
-						</div>
-						<% (0..11).each do |n| %>
-							<div class="expanded-field multi">
-								<div class='enc-slot enc-name' data-species-id="<%= enc["#{season}_#{field}_slot_#{n}"].name_titleize %>"><%= enc["#{season}_#{field}_slot_#{n}"].name_titleize %></div>
-								<div class="enc-lvl"><%= enc["#{season}_#{field}_slot_#{n}_min_level"] %></div>
-								<div class="enc-lvl"><%= enc["#{season}_#{field}_slot_#{n}_max_level"] %></div>
-								<div class="enc-form"><%= (enc["#{season}_#{field}_slot_#{n}_form"] || 0) %></div>								
-								<div class="enc-percent"><%= Encounter.grass_percent_for n %></div>
-							</div>
-						<% end %>
-					</div>
-				<% end %>
-			</div>
-
-
-
-			<div class="expanded-card-content expanded-encounter expanded-water expanded-<%= season %>">
-				<% Encounter.water_fields.each do |field| %>
-					<div class="expanded-left">
-						<div class="expanded-field multi field-header">
-							<div class="enc-slot"><%= field.titleize %></div>
-							<div class="enc-lvl">Min</div>
-							<div class="enc-lvl">Max</div>
-							<div class="enc-form">Form</div>
-							<div class="enc-percent">%</div>
-						</div>
-						<% (0..4).each do |n| %>
-							<div class="expanded-field multi">
-								<div class="enc-slot enc-name" data-species-id="<%= enc["#{season}_#{field}_slot_#{n}"].name_titleize %>"> <%= enc["#{season}_#{field}_slot_#{n}"].name_titleize %> </div>
-
-								<div class="enc-lvl"><%= enc["#{season}_#{field}_slot_#{n}_min_level"] %></div>
-								<div class="enc-lvl"><%= enc["#{season}_#{field}_slot_#{n}_max_level"] %></div>
-								<div class="enc-form"><%= (enc["#{season}_#{field}_slot_#{n}_form"] || 0) %></div>
-
-	
-
-								<div class="enc-percent"><%= Encounter.water_percent_for n %></div>
-							</div>
-						<% end %>
-					</div>
-				<% end %>
-			</div>
-
-		</div>
+		<% if $gen == 5 %>
+				<%= erb :"mastersheet/_encounter", :layout => false, :locals => { :i => element[:id], :enc=> @encounters[element[:id]], :season => "spring"} %>
+			<% else %>
+				<%= erb :"mastersheet/_hgss_encounter", :layout => false, :locals => { :i => element[:id], :enc=> @encounters[element[:id]], :season => "spring"} %>
+			<% end %>
 	<% else %>
 	<br>
 	<% end %>

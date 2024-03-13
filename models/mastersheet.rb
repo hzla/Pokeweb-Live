@@ -18,6 +18,9 @@ class Mastersheet
 				tag = "h1"
 				element[:content] = line[2..-1] 
 			elsif line.start_with?("!tr")
+				if line.start_with?("!trm")
+					element[:class] = "mand"
+				end
 				tag = "trainer"
 				trainer = line.split(" ")[1]
 				element[:id] = trainer.to_i

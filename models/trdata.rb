@@ -22,22 +22,38 @@ class Trdata < Pokenarc
 	end
 
 	def self.sprite tr_name, tr_class, tr_class_id, g_table
-		tr_class = tr_class.downcase.gsub("  ", " ").gsub(" ", "_").gsub("_m", "")
+		tr_class = tr_class.downcase.gsub(" ", "").gsub("_m", "").gsub("♂","").gsub("♀", "f").gsub("é","e").gsub("[pk][mn]", "pkmn_")
 		tr_name = tr_name.downcase
 		
-		if tr_class.include?("pkmn_trainer") or tr_class.include?("leader") or tr_class.include?("plasma") or tr_class.include?("four") or tr_class.include?("champion") or tr_name.include?("benga") or tr_class.include?("subway") 
-			"trainer_sprites/#{tr_name.downcase}.png"
+		sprite_name = ""
+		
+		special_classes = ["pkmn_trainer", "leader", "plasma", "four", "champion", "subway"]
+
+		if tr_class.include?("pkmn_trainer") or tr_class.include?("leader") or tr_class.include?("plasma") or tr_class.include?("four") or tr_class.include?("champion") or tr_name.include?("benga") or tr_class.include?("subway") or tr_class.include?("rival") or tr_class.include?("rocketboss") or tr_class.include?("mystery man") or tr_class.include?("passerby") or tr_class.include?("pkmntrainer") 
+			sprite_name = "trainer_sprites/#{tr_name.downcase.gsub(". ", "_").gsub("boy", "silver")}.png"
 		elsif tr_class[-2] == "_"
-			"trainer_sprites/#{tr_class}.png"
-		elsif g_table[tr_class_id.to_i] == "female"
-			"trainer_sprites/#{tr_class}_f.png"
+			sprite_name = "trainer_sprites/#{tr_class.gsub("pkmn", "pokemon")}.png"
+		elsif g_table[tr_class_id.to_i] == "female" && File.exist?("./public/images/trainer_sprites/#{tr_class}_f.png")	
+			sprite_name = "trainer_sprites/#{tr_class.gsub("pkmn", "pokemon")}_f.png"
 		else
-			"trainer_sprites/#{tr_class}.png"
+			sprite_name = "trainer_sprites/#{tr_class.gsub("pkmn", "pokemon")}.png"
 		end
+
+		if $gen == 4 && File.exist?("./public/images/#{sprite_name.gsub(".png", "-gen4.png")}")
+			sprite_name = sprite_name.gsub(".png", "-gen4.png")
+		end
+
+
+		sprite_name
 	end
 
 	def self.gender_table
 		genders = File.open("Reference_Files/trainer_genders.txt", "r").readlines
+		
+		if $gen == 4 
+			genders = File.open("Reference_Files/trainer_genders_hgss.txt", "r").readlines
+		end
+
 		genders.map do |line|
 			gender = nil
 			if line[-2] == "1"

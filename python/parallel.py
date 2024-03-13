@@ -60,7 +60,7 @@ if narc_info["base_rom"] == "BW2":
 
 for ctr_narc in settings["blacklist"]:
 	# path to source directory
-	src_dir = f"./templates/{settings["base_version"]}/json/{ctr_narc}"
+	src_dir = f"./templates/{settings['base_version']}/json/{ctr_narc}"
 	# path to destination directory
 	dest_dir = f"./{rom_name}/json/{ctr_narc}" 
 	# getting all the files in the source directory

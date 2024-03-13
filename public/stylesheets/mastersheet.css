@@ -3,8 +3,12 @@
 	padding-top:  20px;
 }
 
+#mastersheet .filterable, #mastersheet .expanded-card-content {
+	margin-top:  0px;
+}
+
 #ms-source {
-	height: 400px;
+	height: 90vh;
 	width:  400px;
 }
 
@@ -76,6 +80,14 @@
 	width:  160px;
 }
 
+.ms-trainer.mand {
+	border:  3px solid #bd93f9;
+}
+
+.ms-trainer.mand .trainer-name {
+	color: bd93f9;
+}
+
 .ms-trainer.expanded-field.filterable {
 	display: flex;
     justify-content: space-between;
@@ -90,6 +102,10 @@
 	width: 160px;
 }
 
+#mastersheet .trainer-doc-item {
+	transform: translate(0px, -20px);
+}
+
 #mastersheet .expanded-field .move-info.expand-grass, #mastersheet .expanded-field:hover .move-info.expand-grass  {
 	bottom:  0px;
 	left:  40px;
@@ -102,10 +118,6 @@
 
 #mastersheet .move-info {
 	display: block;
-}
-
-#mastersheet .filterable {
-	margin-top:  20px;
 }
 
 #mastersheet .encounter-wilds {
@@ -225,9 +237,13 @@
 	margin-top:  20px;
 }
 
-#mastersheet .wild:hover, #mastersheet .wild.dupe  {
+#mastersheet .wild.dupe  {
 	background: rgba(255, 85, 85, 0.5);
 	border-radius: 10px;
 }
 
+#mastersheet .wild:hover {
+	border: 1px solid #1abc9c;	
+	border-radius: 10px;
+}
 

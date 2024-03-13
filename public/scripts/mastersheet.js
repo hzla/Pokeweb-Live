@@ -1,28 +1,27 @@
 dupes = {}
 
 function getEncInfo(enc) {
+	if (gen == 4) {
+		var sections = [["Morning", "manip" ], ["Day", "manip" ],["Night", "manip"], ["Surf", "manip"], ["Rock Smash"], ["Old Rod"], ["Good Rod"], ["Super Rod"],["Hoenn"],["Sinnoh"]]
+		return parseEncTable(enc, sections)
+
+		return parseEncTable(enc, sections)
+	} else {
+		var sections = [["Grass", "manip" ], ["Grass Doubles", "manip" ],["Grass Special"], ["Surf", "manip"], ["Surf Special"], ["Super Rod"], ["Super Rod Special"]]
+		return parseEncTable(enc, sections)
+	}
+}
+
+function parseEncTable(enc, sections) {
 	var tables = enc.find('.expanded-left')
-
-	var grass = $(tables[0])
-	var grass_doubles = $(tables[1])
-	var grass_special = $(tables[2])
-
 	var level = $('#manip-lvl').val() || 1
-
 	if (level == "") {
 		level = 1
 	}
 	else {
 		level = parseInt(level)
 	}
-
-	var surf = $(tables[3])
-	var surf_special = $(tables[4])
-	var super_rod = $(tables[5])
-	var super_rod_special =$(tables[6])
-
-	var enc_types = [["Grass", grass, "manip" ], ["Grass Doubles", grass_doubles, "manip" ],["Grass Special", grass_special], ["Surf", surf, "manip"], ["Surf Special", surf_special], ["Super Rod", super_rod], ["Super Rod Special", super_rod_special]]
-
+	var enc_types = sections
 	var enc_probabilities = {}
 	enc_probabilities["totals"] = []
 
@@ -32,7 +31,7 @@ function getEncInfo(enc) {
 		var total_prob = 0
 
 
-		enc_type[1].find('.expanded-field:not(.field-header)').each(function(){
+		$(tables[i]).find('.expanded-field:not(.field-header)').each(function(){
 			var enc_name = $(this).find('.enc-name').text().trim()
 			enc_probabilities[enc_type[0]][enc_name] ||= 0
 			var prob = parseInt($(this).find('.enc-percent').text())
@@ -40,7 +39,7 @@ function getEncInfo(enc) {
 				prob = 0
 			}
 
-			if (enc_type[2]) {
+			if (enc_type[1]) {
 				var max_lvl = parseInt($(this).find('.enc-lvl').last().text())
 				if (level <= max_lvl) {
 					enc_probabilities[enc_type[0]][enc_name] += prob
@@ -51,18 +50,21 @@ function getEncInfo(enc) {
 				total_prob += prob
 			}
 		})
-
-
 		enc_probabilities["totals"].push(total_prob)
-
-
 	}
 	return [enc_probabilities, enc]
 }
 
 function displayEnc(info) {
+
 	var enc_html = ""
 	var enc_types = [["Grass"], ["Grass Doubles" ],["Grass Special"], ["Surf"], ["Surf Special"], ["Super Rod"], ["Super Rod Special"]]
+
+	if (gen == 4) {
+		enc_types = [["Morning"], ["Day"],["Night"], ["Surf"], ["Rock Smash"], ["Old Rod"], ["Good Rod"], ["Super Rod"],["Hoenn"],["Sinnoh"]]
+	}
+
+	console.log(info)
 
 	var probabilities = info[0]
 	var location_title = $(info[1]).prev().text()
@@ -88,10 +90,6 @@ function displayEnc(info) {
 }
 
 $(document).ready(function() {
-
-
-	
-
 	$(document).on('click', '.doc-species, .doc-sprite', function(e){
 		var species_id = parseInt($(this).attr('data-species-id'))
 		
@@ -128,24 +126,31 @@ $(document).ready(function() {
 		displayEnc(info)
 	})
 
-	$(document).on('click', '#mastersheet .wild', function() {
+	$(document).on('contextmenu', '#mastersheet .wild', function() {
 		var species_name = $(this).attr('data-species-name')
 		$(`[data-species-name='${species_name}']`).toggleClass('dupe')
 		dupes[species_name] = !!!dupes[species_name]
+		return false
+	})
+
+	$(document).on('click', '#mastersheet .wild', function(e) {
+		var species_name = $(this).attr('data-species-name')
+		
+		e.stopPropagation()
+
+		console.log(species_name)
+
+		$('.ms-pok, .ms-move, #enc-info').hide()
+		$(`[data-species-name='${species_name}']`).show()
+		
 	})
 
 	$(document).keydown(function(event) {
-      if (event.key === '`') {
-        $('#ms-editor').toggle();
-      }
-    });
+    if (event.key === '`') {
+      $('#ms-editor').toggle();
+    }
+  });
 
-    $(document).keydown(function(event) {
-      if (event.key === '~') {
-        e.stopPropagation()
-        $('#submit-ms').click();
-      }
-    });
 
 	$('.master-sidebar input').keypress(function (e) {
 	  if (e.which == 13) {

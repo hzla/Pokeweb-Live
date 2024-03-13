@@ -1,0 +1,71 @@
+
+
+<h3 style="display: none;"><%= enc["locations"] && enc["locations"].uniq.join(", ").split(" (")[0] %></h3>
+<div class="expanded-field filterable doc-enc" data-index="<%= i %>">
+	<div class="expanded-field-main">
+		<div class="encounter-wilds" >
+			<% enc["wilds"].each_with_index do |wild, i| %>
+				<div class="wild" data-species-name="<%= enc["nf-wilds"][i] %>">
+					<%= img "pokesprite/#{wild.downcase}.png" %>
+				</div>
+			<% end %>	
+		</div>
+		<%= svg "svgs/grass", 'move-info expand-action expand-grass svg', ["expand", "grass"] %>
+		<%= svg "svgs/water", 'move-info expand-action expand-water svg', ["expand", "water"] %>					
+	</div>
+
+
+
+	<div class="expanded-card-content expanded-encounter expanded-grass expanded-<%= season %>">
+		<% Encounter.grass_fields.each do |field| %>
+			<div class="expanded-left">
+				<div class="expanded-field multi field-header">
+					<div class="enc-slot"><%= field.titleize %></div>
+					<div class="enc-lvl">Min</div>
+					<div class="enc-lvl">Max</div>
+					<div class="enc-form">Form</div>
+					<div class="enc-percent">%</div>
+				</div>
+				<% (0..11).each do |n| %>
+					<div class="expanded-field multi">
+						<div class='enc-slot enc-name' data-species-id="<%= enc["#{season}_#{field}_slot_#{n}"].name_titleize %>"><%= enc["#{season}_#{field}_slot_#{n}"].name_titleize %></div>
+						<div class="enc-lvl"><%= enc["#{season}_#{field}_slot_#{n}_min_level"] %></div>
+						<div class="enc-lvl"><%= enc["#{season}_#{field}_slot_#{n}_max_level"] %></div>
+						<div class="enc-form"><%= (enc["#{season}_#{field}_slot_#{n}_form"] || 0) %></div>								
+						<div class="enc-percent"><%= Encounter.grass_percent_for n %></div>
+					</div>
+				<% end %>
+			</div>
+		<% end %>
+	</div>
+
+
+
+	<div class="expanded-card-content expanded-encounter expanded-water expanded-<%= season %>">
+		<% Encounter.water_fields.each do |field| %>
+			<div class="expanded-left">
+				<div class="expanded-field multi field-header">
+					<div class="enc-slot"><%= field.titleize %></div>
+					<div class="enc-lvl">Min</div>
+					<div class="enc-lvl">Max</div>
+					<div class="enc-form">Form</div>
+					<div class="enc-percent">%</div>
+				</div>
+				<% (0..4).each do |n| %>
+					<div class="expanded-field multi">
+						<div class="enc-slot enc-name" data-species-id="<%= enc["#{season}_#{field}_slot_#{n}"].name_titleize %>"> <%= enc["#{season}_#{field}_slot_#{n}"].name_titleize %> </div>
+
+						<div class="enc-lvl"><%= enc["#{season}_#{field}_slot_#{n}_min_level"] %></div>
+						<div class="enc-lvl"><%= enc["#{season}_#{field}_slot_#{n}_max_level"] %></div>
+						<div class="enc-form"><%= (enc["#{season}_#{field}_slot_#{n}_form"] || 0) %></div>
+
+
+
+						<div class="enc-percent"><%= Encounter.water_percent_for n %></div>
+					</div>
+				<% end %>
+			</div>
+		<% end %>
+	</div>
+
+</div>

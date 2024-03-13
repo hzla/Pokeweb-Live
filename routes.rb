@@ -22,7 +22,8 @@ Dotenv.load
 
 Dir["models/*.rb"].each {|file| require_relative file}
 p "init"
-$rom_name = "projects/bb2redex14"
+$rom_name = "projects/B2"
+$gen = SessionSettings.get("g4") ? 4 : 5
 
 
 
@@ -53,6 +54,7 @@ class MyApp < Sinatra::Base
 		$edit_mode = ENV["EDIT_MODE"]
 		$offline = ($mode == "offline")
 
+
 		if !$offline
 			$rom_name = session[:rom_name]
 		end
@@ -60,6 +62,7 @@ class MyApp < Sinatra::Base
 		
 		if params["project"] && params["project"].length > 0
 			$rom_name = "projects/#{params["project"]}"
+			$gen = SessionSettings.get("g4") ? 4 : 5
 			if !SessionSettings.get("public")
 				$rom_name = nil
 			end
@@ -88,6 +91,7 @@ class MyApp < Sinatra::Base
 			redirect '/?rom_load_failed=true'
 		end
 
+
 		tab_name = request.path_info.split('/')[1]
 		@active_header = tabs.find_index tab_name
 		if tab_name
@@ -99,21 +103,27 @@ class MyApp < Sinatra::Base
 	####### Mastersheet ##########
 
 	 get '/mastersheet' do 
-	 	@encounters = Encounter.get_all
-		@trainers = Trdata.get_all
-		@gender_table = Trdata.gender_table
-		@trainer_poks = Trpok.get_all
-
-	 	@master_data = Mastersheet.parse @encounters, @trainers, @trainer_poks
 	 	
-	 	@moves = Move.get_all
-		@move_names = Move.get_names_from @moves
-		@poke_data = Personal.poke_data
-		
-		@location_names = Header.location_names
-		@evolutions = Evolution.get_all
+	 	if !File.exist?("#{$rom_name}/mastersheet.txt")
+	 		File.write("#{$rom_name}/mastersheet.txt", "##{$rom_name.split("/")[-1]}")
+	 	end
 
-		@pok_locations = Personal.get_all_locations @encounters
+
+		 	@encounters = Encounter.get_all
+			@trainers = Trdata.get_all
+			@gender_table = Trdata.gender_table
+			@trainer_poks = Trpok.get_all
+
+		 	@master_data = Mastersheet.parse @encounters, @trainers, @trainer_poks
+		 	
+		 	@moves = Move.get_all
+			@move_names = Move.get_names_from @moves
+			@poke_data = Personal.poke_data
+			
+			@location_names = Header.location_names
+			@evolutions = Evolution.get_all
+
+			@pok_locations = Personal.get_all_locations @encounters
 
 
 

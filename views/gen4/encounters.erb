@@ -1,0 +1,125 @@
+<script>
+	// json object for filtering
+	encounters = <%= @encounters.to_json %>
+
+
+	// info for autocomplete
+	autofills = {
+		<% [:pokemon_names].each do |info| %>
+			"<%= info.to_s %>": <%= RomInfo.send(info) %>,
+		<% end %>
+	}
+</script>
+
+<div class="pokemon-filter">	
+	<div class="filter-title">Search</div>
+	<input class="filter-input" id="search-text"/>
+	<button class="btn -default" id="search-text-btn" type="button">Search</button>			
+	
+</div>
+
+<div class="pokemon-list spreadsheet" id="encounters">
+	<div class="expanded-field field-header">
+		<div class="expanded-field-main">
+			<div class="encounter-id">ID</div>
+			<div class="encounter-locations">Location/Header(s)</div>
+			<div class="encounter-wilds" >Pokemon</div>
+		</div>
+	</div>
+
+	<% @encounters.each_with_index do |enc, i| %>
+		<div class="expanded-field filterable" data-index="<%= i %>">
+			<div class="expanded-field-main">
+				<div class="encounter-id"><%= i %></div>
+
+				<div class="encounter-locations"><%= enc["locations"] %></div>
+
+				<div class="encounter-wilds" >
+					<% enc["wilds"].each do |wild| %>
+						<div class="wild">
+							<%= img "pokesprite/#{wild}.png" %>
+						</div>
+					<% end %>	
+				</div>
+				<%= svg "svgs/grass", 'move-info expand-action expand-grass svg', ["expand", "grass"] %>
+				<%= svg "svgs/water", 'move-info expand-action expand-water svg', ["expand", "water"] %>
+			</div>
+
+		
+
+				<div class="expanded-card-content expanded-encounter expanded-grass expanded-spring">
+					<% Encounter.hgss_grass_fields.each do |field| %>
+						<div class="expanded-left">
+							<% if field == "morning" %>
+								<div class="expanded-field field-header">
+									<div class="enc-slot">Grass Rate</div>
+									
+										<%= field "walking_rate", 'enc-rate', {value: enc["walking_rate"],  narc: "encounter", type: "int-100"} %>
+
+								</div>
+							<% end %>
+							<div class="expanded-field multi field-header">
+								<div class="enc-slot"><%= field.titleize %></div>
+								<div class="enc-lvl">Lvl</div>
+								<div class="enc-form">Form</div>
+								<div class="enc-percent">%</div>
+							</div>
+							<% (0..11).each do |n| %>
+								<div class="expanded-field multi">
+									<%= field "#{field}_#{n}_species_id", 'enc-slot enc-name', {value: enc[ "#{field}_#{n}_species_id"].name_titleize,  narc: "encounter", autofill: "pokemon_names"} %>
+
+									<%= field "walking_#{n}_level", 'enc-lvl', {value: enc["walking_#{n}_level"],  narc: "encounter", type: "int-100"} %>
+
+									<%= field "#{field}_#{n}_species_form", 'enc-form', {value: enc[ "#{field}_#{n}_species_form"],  narc: "encounter", type: "int-31"} %>								
+									<div class="enc-percent"><%= Encounter.grass_percent_for n %></div>
+								</div>
+							<% end %>
+						</div>
+					<% end %>
+				</div>
+	
+
+		
+				<div class="expanded-card-content expanded-encounter expanded-water expanded-spring">
+					<% Encounter.extra_fields.each_with_index do |field, i| %>
+						<div class="expanded-left">
+							<div class="expanded-field field-header">
+								<div class="enc-slot">Encounter Rate</div>
+								<% if field != "hoenn" && field != "sinnoh" %> 
+									<%= field "#{field}_rate", 'enc-rate', {value: enc["#{field}_rate"],  narc: "encounter", type: "int-100"} %>
+								<% else %>
+									<div class="enc-rate"><%= enc["walking_rate"] %></div>
+								<% end %>
+							</div>
+							<div class="expanded-field multi field-header">
+								<div class="enc-slot"><%= field.titleize %></div>
+								<div class="enc-lvl">Min</div>
+								<div class="enc-lvl">Max</div>
+								<div class="enc-form">Form</div>
+								<div class="enc-percent">%</div>
+							</div>
+							<% (0..(Encounter.extra_field_counts[i] - 1)).each do |n| %>
+								<div class="expanded-field multi">
+									<%= field "#{field}_#{n}_species_id", 'enc-slot enc-name', {value: enc["#{field}_#{n}_species_id"].name_titleize,  narc: "encounter", autofill: "pokemon_names"} %>
+
+									<%= field "#{field}_#{n}_min_level", 'enc-lvl', {value: enc["#{field}_#{n}_min_lvll"],  narc: "encounter", type: "int-100"} %>
+
+									<%= field "#{field}_#{n}_max_level", 'enc-lvl', {value: enc["#{field}_#{n}_max_lvl"],  narc: "encounter", type: "int-100"} %>
+
+									<%= field "#{field}_#{n}_species_form", 'enc-form', {value: (enc["#{field}_#{n}_species_form"]),  narc: "encounter", type: "int-100"} %>
+
+									<div class="enc-percent">
+									<% if ["surf", "old_rod", "good_rod", "super_rod"].include?(field) %>
+										<%= Encounter.extra_percent_for n %>
+									<% end %>				
+									</div>
+								</div>
+							<% end %>
+						</div>
+					<% end %>
+				</div>
+		</div>
+	<% end %>
+</div>
+
+
