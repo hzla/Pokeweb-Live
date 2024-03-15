@@ -154,8 +154,8 @@ class Save
 				n += 32
 			end
 		end
-		p mon_count
-		import_data
+		debug_info = {party_count: party_count, save_index_a: save_index_a, save_index_b: save_index_b }
+		{import_data: import_data, debug_info: debug_info}
 	end
 
 	def self.parse_moves(moves_binary, all_moves)
@@ -226,7 +226,7 @@ class Save
 
 		box_data = ""
 
-		box_data = save[box_offset..box_offset + 33599]
+		# box_data = save[box_offset..box_offset + 33599]
 		party_data = save[party_offset..party_offset + 599]
 
 		box_data += party_data
@@ -354,7 +354,8 @@ class Save
 
 
 		end
-		import_data
+		debug_info = {save_index_a: save_index_a, save_index_b: save_index_b }
+		{import_data: import_data, debug_info: debug_info}
 	end
 
 	def self.order_formats

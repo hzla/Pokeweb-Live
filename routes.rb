@@ -1212,13 +1212,12 @@ class MyApp < Sinatra::Base
 	    	f.write(file.read)
 	  	end
 	  	bin_data = IO.binread("./exports/#{file_name}")
-	  	@showdown = Save.read(bin_data, params["level"].to_i, params["game"])
+	  	save_info = Save.read(bin_data, params["level"].to_i, params["game"])
+	  	@showdown = save_info[:import_data]
+	  	debug_info = save_info[:debug_info]
 	  	`rm -rf ./exports/#{file_name}`
 
-	  	# p showdown
-
-
-	  	return {showdown: @showdown}.to_json	
+	  	return {showdown: @showdown, debug_info: debug_info}.to_json	
 	end
 
 

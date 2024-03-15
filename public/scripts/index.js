@@ -37,8 +37,11 @@ $(document).on('click', '#load-save', async function() {
 
 	    showdown = await response.text()
 
-	    $('textarea').val((JSON.parse(showdown)["showdown"]))
-	    $('textarea').selectRange(0, -1);
+	    $('#showdown-export').val( JSON.parse(showdown)["showdown"])
+	    $('#showdown-export').selectRange(0, -1);
+
+	    console.log(JSON.parse(showdown))
+	    $("#debug-info").val(JSON.stringify(JSON.parse(showdown)["debug_info"]))
 	})
 
 
