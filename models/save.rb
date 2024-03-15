@@ -15,9 +15,13 @@ class Save
 	end
 
 
+	def self.brute_force(save_data, static_level)
+	end
 
 
-	def self.read_rad_red(save_data, static_level=100, brute_force=false)
+
+
+	def self.read_rad_red(save_data, static_level=100, brute_force=false, party_search=false)
 		save_index_a_offset = 0xffc
 		save_block_b_offset = 0x00E000
 		trainer_id_offset = 0xa
@@ -33,21 +37,20 @@ class Save
 		save_index_b = save[save_index_b_offset..save_index_b_offset + 1].unpack("S")[0]
 		block_offset = 0
 
-		if save_index_b > save_index_a
+		if save_index_b > save_index_a && save_index_b != 65535
 			block_offset = save_block_b_offset
 		end
 
 		save = save[block_offset..block_offset + 57343]
 
 		save_index = [save_index_a, save_index_b].max
+		save_index = save_index_a if save_index_b == 65535
+		save_index = save_index_b if save_index_a == 65535
+
+
 
 		rotation = save_index % 14
 		total_offset = rotation * 4096
-
-
-
-
-
 
 
 		new_trainer_id_offset = total_offset + trainer_id_offset
@@ -60,14 +63,8 @@ class Save
 		party_data = save[party_offset..party_offset + 599]
 		box_data += party_data
 
-		box_data += save[box_offset..box_offset + 33599]
-
-
 
 		party_count = save[party_offset-4].unpack('C')[0]
-
-		# party_count = 6
-		# binding.pry
 
 		(0..8).each do |n|
 			box_start = ((n * 4096) + box_offset) % 57344
@@ -84,10 +81,6 @@ class Save
 
 		box_suboffset = 0
 		import_data = ""
-
-		# p magic_string.unpack("v")[0]
-
-		box_data = save
 
 
 		n = 0
@@ -131,7 +124,7 @@ class Save
 
 				moves = []
 				
-				if mon_count < party_count
+				if mon_count < party_count 
 
 					(0..3).each do |n|
 						moves << all_moves[showdown_data[12 + (n * 2)..13 + (n * 2)].unpack('S').first]
@@ -161,7 +154,7 @@ class Save
 				n += 32
 			end
 		end
-
+		p mon_count
 		import_data
 	end
 
@@ -180,7 +173,7 @@ class Save
 
 	def self.read(save_data, static_level=100, game="inc_em") #INCLEMENT EMERALD/POKEMERALD
 		if game == "rad_red"
-			return read_rad_red(save_data, static_level)
+			return read_rad_red(save_data, static_level, true, true)
 		end
 
 		save_index_a_offset = 0xffc
