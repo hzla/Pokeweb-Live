@@ -321,7 +321,7 @@ class Save
 				set = {}
 
 				is_party = ""
-				if n >= 33600
+				if n <= 600
 					is_party = " |Party|"
 				end
 				
