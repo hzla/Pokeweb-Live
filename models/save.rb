@@ -47,16 +47,33 @@ class Save
 		save_index = save_index_a if save_index_b == 65535
 		save_index = save_index_b if save_index_a == 65535
 
+		adjustment = 53248
+		if save_index_b + save_index_a >= 65535 
+			adjustment = 0
+		end
+
+
+
 
 
 		rotation = save_index % 14
-		total_offset = rotation * 4096
+		
 
-
-		new_trainer_id_offset = total_offset + trainer_id_offset
-		trainer_id = save[new_trainer_id_offset..new_trainer_id_offset + 3].unpack("V")[0]
-		box_offset = (20480 + 4 + total_offset) % 57344
+		total_offset = (rotation * 4096 + adjustment) % 57344
 		party_offset = (total_offset + 4096 + 0x38) % 57344
+		party_count = save[party_offset-4].unpack('C')[0]
+
+		if party_count == 0
+			adjustment = 0
+			total_offset = (rotation * 4096 + adjustment) % 57344
+			party_offset = (total_offset + 4096 + 0x38) % 57344
+			party_count = save[party_offset-4].unpack('C')[0]
+		end
+
+
+		# new_trainer_id_offset = total_offset + trainer_id_offset
+		# trainer_id = save[new_trainer_id_offset..new_trainer_id_offset + 3].unpack("V")[0]
+		box_offset = (20480 + 4 + total_offset) % 57344
 
 		box_data = ""
 
@@ -64,7 +81,6 @@ class Save
 		box_data += party_data
 
 
-		party_count = save[party_offset-4].unpack('C')[0]
 
 		(0..8).each do |n|
 			box_start = ((n * 4096) + box_offset) % 57344
@@ -81,6 +97,10 @@ class Save
 
 		box_suboffset = 0
 		import_data = ""
+
+		# box_data = save
+
+		p party_offset
 
 
 		n = 0
@@ -154,7 +174,7 @@ class Save
 				n += 32
 			end
 		end
-		debug_info = {party_count: party_count, save_index_a: save_index_a, save_index_b: save_index_b }
+		debug_info = {party_count: party_count, save_index_a: save_index_a, save_index_b: save_index_b}
 		{import_data: import_data, debug_info: debug_info}
 	end
 
