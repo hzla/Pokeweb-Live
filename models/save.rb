@@ -135,7 +135,11 @@ class Save
 					next
 				end		
 
-				ability = abils[all_mons[species_id]][ability_slot]
+				if abils[all_mons[species_id]]
+					ability = abils[all_mons[species_id]][ability_slot]
+				else
+					ability = "Unknown"
+				end
 
 
 				if !ability
