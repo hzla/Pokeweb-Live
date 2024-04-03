@@ -24,14 +24,17 @@ class Trdata < Pokenarc
 	def self.sprite tr_name, tr_class, tr_class_id, g_table
 		tr_class = tr_class.downcase.gsub(" ", "").gsub("_m", "").gsub("♂","").gsub("♀", "f").gsub("é","e").gsub("[pk][mn]", "pkmn_")
 		tr_name = tr_name.downcase
+
+
 		
 		sprite_name = ""
 		
-		special_classes = ["pkmn_trainer", "leader", "plasma", "four", "champion", "subway"]
+		if File.exist?("./public/images/trainer_sprites/#{tr_name.gsub("boy", "silver")}.png") && tr_name != "grunt"
+			sprite_name = "trainer_sprites/#{tr_name.gsub("boy", "silver")}.png"
+			return sprite_name
+		end
 
-		if tr_class.include?("pkmn_trainer") or tr_class.include?("leader") or tr_class.include?("plasma") or tr_class.include?("four") or tr_class.include?("champion") or tr_name.include?("benga") or tr_class.include?("subway") or tr_class.include?("rival") or tr_class.include?("rocketboss") or tr_class.include?("mystery man") or tr_class.include?("passerby") or tr_class.include?("pkmntrainer") 
-			sprite_name = "trainer_sprites/#{tr_name.downcase.gsub(". ", "_").gsub("boy", "silver")}.png"
-		elsif tr_class[-2] == "_"
+		if tr_class[-2] == "_"
 			sprite_name = "trainer_sprites/#{tr_class.gsub("pkmn", "pokemon")}.png"
 		elsif g_table[tr_class_id.to_i] == "female" && File.exist?("./public/images/trainer_sprites/#{tr_class}_f.png")	
 			sprite_name = "trainer_sprites/#{tr_class.gsub("pkmn", "pokemon")}_f.png"

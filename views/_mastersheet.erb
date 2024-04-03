@@ -11,9 +11,9 @@
 				<div class="trainer-name"><%= img Trdata.sprite(trainer["name"],trainer['class'],trainer['class_id'], @gender_table) %> <%= "#{trainer['class']}" %> <%= trainer["name"] %> <%= trainer["location"] ? "(#{trainer["location"][0]})" : ""  %>
 					
 
-					<% if trainer["battle_type_1"] != "Singles" %>
+					<% if trainer["battle_type_1"] != "Singles" && trainer["battle_type"] != "Singles" %>
 						
-						(<%= trainer["battle_type_1"] %>)	
+						(<%= trainer["battle_type_1"] || trainer["battle_type"] %>)	
 					<% end %>
 					<div class="tr-notes"><%= element[:notes].join(" ") if element[:notes] %></div>
 				</div>

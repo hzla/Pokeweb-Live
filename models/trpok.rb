@@ -225,6 +225,10 @@ class Trpok < Pokenarc
 	end
 
 	def self.get_doc_nature(file_name, sub_index, iv, trpok, trdata, personals)
+		if $gen == 4
+			return g4_get_nature_for(file_name, sub_index, iv)
+		end
+
 		ability_slot = trpok["ability_#{sub_index}"]
 
 		file_path = "#{$rom_name}/json/trpok/#{file_name}.json"
@@ -329,7 +333,7 @@ class Trpok < Pokenarc
 		pok_lvl = trpok["level_#{sub_index}"]
 		ability_gender = trpok["ability_#{sub_index}"]
 		personal_gender = personal["gender"]
-		ability_slot = ability_slot
+		ability_slot = ability_slot 
 
 
 		natures = RomInfo.natures
@@ -340,6 +344,90 @@ class Trpok < Pokenarc
 		nature = convert_pid_to_nature(pid, natures)
 		return [nature, pid]
 		
+	end
+
+	def self.g4_get_nature_for(file_name, sub_index, desired_iv=255)
+
+		file_path = "#{$rom_name}/json/trpok/#{file_name}.json"
+		trpok = JSON.parse(File.open(file_path, "r"){|f| f.read})
+		ability_slot = trpok["readable"]["ability_#{sub_index}"]
+		trpok = trpok["raw"]
+
+		file_path = "#{$rom_name}/json/trdata/#{file_name}.json"
+		trdata = JSON.parse(File.open(file_path, "r"){|f| f.read})["raw"]
+
+
+		pok_id = trpok["species_id_#{sub_index}"].to_i
+
+		if pok_id.to_i > 1024
+			pok_id = pok_id % 1024
+		end
+
+		file_path = "#{$rom_name}/json/personal/#{pok_id}.json"
+		personal = JSON.parse(File.open(file_path, "r"){|f| f.read})["readable"]
+
+		trainer_id = file_name.to_i
+		trainer_class = trdata["class"]
+		difficulty = trpok["ivs_#{sub_index}"]
+		level = trpok["level_#{sub_index}"]
+		ability = ability_slot / 16 - 1
+		species = pok_id
+
+
+		gender_file = ""
+		if SessionSettings.base_rom == "HGSS"
+			gender_file = "texts/hgss_genders.txt"
+		else
+			gender_file = "texts/plat_genders.txt"
+		end
+
+		gender_table = File.read(gender_file).split("\n")
+		gender = gender_table[trainer_class] == "01" ? "female" : "male"
+
+
+
+		# p [level, species, difficulty, trainer_id, trainer_class, gender, ability]
+		nature = prng(level, species, difficulty, trainer_id, trainer_class, gender, ability)
+		
+
+
+	end
+
+	def self.prng level, species, difficulty, trainer_id, trainer_class, gender, ability
+		seed = (level + species + difficulty + trainer_id).to_s(16)
+
+
+		trainer_class.times do 
+			seed = seed.to_i 16
+			result = 0x41C64E6D * seed + 0x00006073
+			seed = result.to_s(16)[-8..-1]
+		end
+		# binding.pry
+		result = seed[0...-4]
+
+		if result != ""
+			mid_bytes = result[-4..-1]
+		else
+			mid_bytes = seed
+		end
+		low_bytes = gender == "male" ? "88" : "78"
+		high_bytes = "00"
+
+		pid =  high_bytes + mid_bytes + low_bytes
+
+		ab = ability > 0 ? 1 : 0
+
+		# add ab if hgss
+
+		nature_id = (pid.to_i(16).to_s[-2..-1].to_i) % 25
+
+		# uncomment the next line if hgss
+		if SessionSettings.base_rom == "HGSS"
+			nature_id = ((pid.to_i(16).to_s[-2..-1].to_i) + ab) % 25
+		end
+
+
+		RomInfo.natures[nature_id]
 	end
 
 	def self.get_abilities_for tr_id, personals
@@ -357,10 +445,17 @@ class Trpok < Pokenarc
 				poks_array << "Unknown"
 				next
 			end
+
+			if pok_id > 1024
+				pok_id = pok_id % 1024
+			end
 			personal = personals[pok_id]
 
 		
 			ability_id = poks["ability_#{i}"]
+			if $gen == 4
+				ability_id = ability_id / 16
+			end
 			ability_id += 1 if ability_id < 1
 			ability = personal["ability_#{ability_id}"]
 			poks_array << ability
@@ -534,9 +629,10 @@ class Trpok < Pokenarc
 
 		form = trpok["form_#{i}"]
 
+		form_index = $gen == 4 ? 2 : 1
 		if form > 0
 			begin
-				species_name += "-#{RomInfo.form_info[species_name][form - 1]}"
+				species_name += "-#{RomInfo.form_info[species_name][form - form_index]}"
 			rescue
 
 			end

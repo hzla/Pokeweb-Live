@@ -37,10 +37,6 @@
 </div>
 
 <div class="pokemon-list spreadsheet" id="mastersheet">
-
-
-
-
 	<% @master_data.each_with_index do |element, n| %>
 		<% if element[:content] %>
 			<%= Mastersheet.handle(element) %>
@@ -53,13 +49,14 @@
 					<div class="trainer-name"><%= img Trdata.sprite(trainer["name"],trainer['class'],trainer['class_id'], @gender_table) %> <%= "#{trainer['class']}" %> <%= trainer["name"] %>
 						
 
-						<% if trainer["battle_type_1"] != "Singles" || trainer["battle_type"] != "Singles" %>
+						<% if trainer["battle_type_1"] != "Singles" && trainer["battle_type"] != "Singles" %>
 							(<%= trainer["battle_type_1"] || trainer["battle_type"] %>)	
 						<% end %>
 						<div class="tr-notes"><%= element[:notes].join(" ") if element[:notes] %></div>
 					</div>
 				</div>				
 				<div class="expanded-card-content expanded-docs">
+					<% p "trainer: #{i}" %>
 					<% (0.. @trainer_poks[i]["count"] - 1).each do |pok_index| %>					
 					<%= erb :_trpok, :layout => false, :locals => { :personals => @poke_data, :trdata => trainer, :trpok => @trainer_poks[i], :trpok_index => pok_index, :show => "", :trdata_index => i, :doc_view => true, :sprite => Trpok.get_poks_for(@trainer_poks[i]["count"] , @trainer_poks[i]), :has_moves => Trdata.has_moves?(trainer), :abilities => Trpok.get_abilities_for(i, @poke_data)} %>
 					<% end %>		

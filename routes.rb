@@ -22,8 +22,8 @@ Dotenv.load
 
 Dir["models/*.rb"].each {|file| require_relative file}
 p "init"
-# $rom_name = "projects/ajmastersheet"
-# $gen = SessionSettings.get("g4") ? 4 : 5
+$rom_name = "projects/bb2"
+$gen = SessionSettings.get("g4") ? 4 : 5
 
 
 
@@ -687,6 +687,9 @@ class MyApp < Sinatra::Base
 
 	get '/starters' do 
 
+		if SessionSettings.base_rom == "BW"
+			redirect '/'
+		end
 		@starters = SessionSettings.get "starters"
 		# if !SessionSettings.get("date_created")
 		# 	redirect "/headers"

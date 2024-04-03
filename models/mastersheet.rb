@@ -3,20 +3,28 @@ class Mastersheet
 
 	def self.parse encounters, trdata, trpok
 		source = File.open("#{$rom_name}/mastersheet.txt").read.split("\n")
+		tr_ids = []
 		sheet_items = []
+		last_location = ""
+		last_split = ""
+		prev_tr_id = nil
+		prev_tr_index = nil
+		tr_count = 0
 		
 		source.each do |line|
 			next if line == ""
 			element = {}
 			if line.start_with?("###")
 				tag = "h3"
-				element[:content] = line[4..-1] 
+				element[:content] = line[4..-1]
 			elsif line.start_with?("##")
 				tag = "h2"
 				element[:content] = line[3..-1] 
+				last_location = element[:content]
 			elsif line.start_with?("#")
 				tag = "h1"
 				element[:content] = line[2..-1] 
+				last_split = element[:content] if element[:content].downcase.include?("split")
 			elsif line.start_with?("!tr")
 				if line.start_with?("!trm")
 					element[:class] = "mand"
@@ -36,9 +44,25 @@ class Mastersheet
 						element[:id] = Trpok.search trdata, trpok, tr_name, mon_lvl, ""
 					else
 						element[:id] = Trpok.search trdata, trpok, tr_name, mon_lvl, mon_name
-					end
-					
+					end	
 				end
+				tr_data = {id: element[:id]}
+				
+				# set pointer to previous trainer
+				tr_data[:prev] = prev_tr_id
+				
+				# set pointer of previous trainer to current trainer if it exists
+				if prev_tr_index
+					tr_ids[prev_tr_index][:next] = element[:id]
+				end
+
+				# update previous trainer to current trainer
+				prev_tr_id = element[:id]
+				tr_count += 1
+				prev_tr_index = tr_count - 1
+
+				tr_ids << tr_data
+
 
 				element[:notes] = line.split(" ")[2..-1]
 			elsif line.start_with?("!enc")
@@ -58,7 +82,21 @@ class Mastersheet
 			element[:tag] = tag
 			sheet_items << element
 		end
+		tr_id_hash = {}
+		tr_ids.each do |tr|
+			tr_id_hash[tr[:id].to_i] = tr
+		end
+		File.write("#{$rom_name}/mastersheet_tr_ids.json", JSON.pretty_generate(tr_id_hash))
 		sheet_items
+	end
+
+	def self.add_pointers_to_npoint
+		tr_ids = JSON.parse(File.read("#{$rom_name}/mastersheet_tr_ids.json"))
+		npoint = JSON.parse(File.read("#{$rom_name}/npoint.json"))["formatted_sets"]
+		tr_ids.each_with_index do |tr, i|
+
+		end
+
 	end
 
 	def self.handle(element)
