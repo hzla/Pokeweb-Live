@@ -809,3 +809,196 @@ Bleakwind Storm
 Wildbolt Storm
 Sandsear Storm
 Springtide Storm
+Blood Moon
+Matcha Gotcha
+Ivy Cudgel
+Electro Shot
+Thunderclap
+Tachyon Cutter
+Psychic Noise
+Upper Hand
+Fickle Beam
+Burning Bulwark
+Placeholder
+Mighty Cleave
+Hard Press
+Dragon Cheer
+Alluring Voice
+Temper Flare
+Soupercell Slam
+Malignant Chain
+Placeholder
+Placeholder
+Placeholder
+Placeholder
+Placeholder
+Placeholder
+Placeholder
+Placeholder
+Placeholder
+Placeholder
+Placeholder
+Placeholder
+Placeholder
+Placeholder
+Placeholder
+Placeholder
+Placeholder
+Placeholder
+Placeholder
+Z-Move 1
+Z-Move 2
+Z-Move 3
+Z-Move 4
+Z-Move 5
+Z-Move 6
+Z-Move 7
+Z-Move 8
+Z-Move 9
+Z-Move 10
+Z-Move 11
+Z-Move 12
+Z-Move 13
+Z-Move 14
+Z-Move 15
+Z-Move 16
+Z-Move 17
+Z-Move 18
+Z-Move 19
+Z-Move 20
+Z-Move 21
+Z-Move 22
+Z-Move 23
+Z-Move 24
+Z-Move 25
+Z-Move 26
+Z-Move 27
+Z-Move 28
+Z-Move 29
+Z-Move 30
+Z-Move 31
+Z-Move 32
+Z-Move 33
+Z-Move 34
+Z-Move 35
+Z-Move 36
+Z-Move 37
+Z-Move 38
+Z-Move 39
+Z-Move 40
+Z-Move 41
+Z-Move 42
+Z-Move 43
+Z-Move 44
+Z-Move 45
+Z-Move 46
+Z-Move 47
+Z-Move 48
+Z-Move 49
+Z-Move 50
+Z-Move 51
+Z-Move 52
+Z-Move 53
+Guard
+Strike
+Strike
+Knuckle
+Knuckle
+Airstream
+Airstream
+Ooze
+Ooze
+Quake
+Quake
+Rockfall
+Rockfall
+Flutterby
+Flutterby
+Phantasm
+Phantasm
+Steelspike
+Steelspike
+Flare
+Flare
+Geyser
+Geyser
+Overgrowth
+Overgrowth
+Lightning
+Lightning
+Mindstorm
+Mindstorm
+Hailstorm
+Hailstorm
+Wyrmwind
+Wyrmwind
+Darkness
+Darkness
+Starfall
+Starfall
+Vine Lash
+Vine Lash
+Wildfire
+Wildfire
+Cannonade
+Cannonade
+Befuddle
+Befuddle
+Voltcrash
+Voltcrash
+Goldrush
+Goldrush
+Chistrike
+Chistrike
+Terror
+Terror
+Foamburst
+Foamburst
+Resonance
+Resonance
+Cuddle
+Cuddle
+Replenish
+Replenish
+Malodor
+Malodor
+Meltdown
+Meltdown
+Drum Solo
+Drum Solo
+Fireball
+Fireball
+Hydrosnipe
+Hydrosnipe
+Windrage
+Windrage
+Gravitas
+Gravitas
+Stonesurge
+Stonesurge
+Volcalith
+Volcalith
+Tartness
+Tartness
+Sweetness
+Sweetness
+Sandblast
+Sandblast
+Stunshock
+Stunshock
+Centiferno
+Centiferno
+Smite
+Smite
+Snooze
+Snooze
+Finale
+Finale
+Steelsurge
+Steelsurge
+Depletion
+Depletion
+One Blow
+One Blow
+Rapid Flow
+Rapid Flow
