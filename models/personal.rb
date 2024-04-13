@@ -159,11 +159,12 @@ class Personal
 
 	def self.get_all_locations encs
 		locations = {}
-		
 		encs.each do |enc|
-			enc["wilds"].each do |wild|
-				locations[wild] ||= []
-				locations[wild] << enc["locations"][0].split(" (")[0]
+			if enc["locations"]
+				enc["wilds"].each do |wild|
+					locations[wild] ||= []
+					locations[wild] << enc["locations"][0].split(" (")[0]
+				end
 			end
 		end
 

@@ -46,11 +46,13 @@ class Encounter < Pokenarc
 			wilds = []
 			
 			hgss_grass_fields.each do |enc_type|
+				p enc_type
 				(0..11).each do |n|
 					wilds << enc["#{enc_type}_#{n}_species_id"].gsub(/[^0-9A-Za-z\-]/, '').name_titleize
 				end
 			end
 			extra_fields.each_with_index do |enc_type, j|
+				p enc_type
 				(0..extra_field_counts[j] - 1).each do |n|
 					wilds << enc["#{enc_type}_#{n}_species_id"].gsub(/[^0-9A-Za-z\-]/, '').name_titleize
 				end
@@ -63,19 +65,23 @@ class Encounter < Pokenarc
 	end
 
 	def self.hgss_grass_fields
-		["morning", "day", "night"]
+		return ["morning", "day", "night"] if SessionSettings.base_rom == "HGSS"
+		["day"]
 	end
 
 	def self.hgss_water_fields
-		["surf", "surf_special", "super_rod" , "super_rod_special"]
+		return ["surf", "surf_special", "super_rod" , "super_rod_special"] if SessionSettings.base_rom == "HGSS"
+		 ["surf", "old_rod", "good_rod" , "super_rod"]
 	end
 
 	def self.extra_fields
-		["surf", "rock_smash", "old_rod", "good_rod", "super_rod", "hoenn", "sinnoh"]
+		return ["surf", "rock_smash", "old_rod", "good_rod", "super_rod", "hoenn", "sinnoh"] if SessionSettings.base_rom == "HGSS"
+		["surf", "old_rod", "good_rod", "super_rod", "radar"]
 	end
 
 	def self.extra_field_counts
-		[5,2,5,5,5,2,2]
+		return [5,2,5,5,5,2,2] if SessionSettings.base_rom == "HGSS"
+		[5,5,5,5,4]
 	end
 
 	def self.search encs, location

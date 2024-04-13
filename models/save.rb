@@ -41,6 +41,8 @@ class Save
 			block_offset = save_block_b_offset
 		end
 
+
+
 		save = save[block_offset..block_offset + 57343]
 
 		save_index = [save_index_a, save_index_b].max
@@ -221,9 +223,11 @@ class Save
 		save_index_b = save[save_index_b_offset..save_index_b_offset + 1].unpack("S")[0]
 		block_offset = 0
 
-		if save_index_b > save_index_a
+		if save_index_b > save_index_a || save_index_a == 65535
 			block_offset = save_block_b_offset
 		end
+
+
 
 		save = save[block_offset..block_offset + 57343]
 
@@ -234,6 +238,8 @@ class Save
 
 		#change this to the larger of the two save indexes later
 		save_index = [save_index_a, save_index_b].max
+		save_index = save_index_a if save_index_b == 65535
+		save_index = save_index_b if save_index_a == 65535
 		# save_index = save_index_a
 
 		rotation = (save_index % 14)
@@ -244,6 +250,10 @@ class Save
 		trainer_id = save[new_trainer_id_offset..new_trainer_id_offset + 3].unpack("V")[0]
 		box_offset = (20480 + 4 + total_offset) % 57344
 		party_offset = (total_offset + 4096 + 0x238) % 57344
+
+		p save_index
+		p party_offset
+		p (total_offset + 4096 + 0x238)
 
 
 

@@ -812,7 +812,12 @@ class Trpok < Pokenarc
 		    "Selfdestruct": "Self-Destruct",
 		    "Softboiled": "Soft-Boiled",
 		    "Vicegrip": "Vise Grip",
-		    "Hi Jump Kick": "High Jump Kick"
+		    "Hi Jump Kick": "High Jump Kick",
+		    "BlackGlasses": "Black Glasses",
+		    "BrightPowder": "Bright Powder",
+		    "NeverMeltIce": "Never-Melt Ice", 
+		    "SilverPowder": "Silver Powder",
+		    "TwistedSpoon": "Twisted Spoon"
 		}
 	end
 
