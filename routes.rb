@@ -78,7 +78,7 @@ class MyApp < Sinatra::Base
 		return if !$rom_name or $rom_name == ""
 
 		@rom_name = $rom_name.split("/")[1]
-		$gen = SessionSettings.get("g4") ? 4 : 5
+		# $gen = SessionSettings.get("g4") ? 4 : 5
 		tabs = ['headers', 'personal', 'trainers', 'encounters', 'moves', 'items', 'tms','marts', 'grottos', 'story_texts', 'info_texts',"files"]
 		
 		begin
