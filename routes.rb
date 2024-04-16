@@ -250,7 +250,7 @@ class MyApp < Sinatra::Base
 		end
 		
 		p params
-		fairy = params['fairy']
+		fairy = params['fairy'] 
 		
 
 		begin
@@ -623,6 +623,13 @@ class MyApp < Sinatra::Base
 		rom = $rom_name.split("/")[1]
 		p "python3 python/expansions/move_expander.py #{rom}"
 		`python3 python/expansions/move_expander.py #{rom}`
+
+		edited_narcs = SessionSettings.get "edited"
+		  if !edited_narcs
+		  	SessionSettings.set "edited", ["moves"]
+		  else
+		  	SessionSettings.set "edited", edited_narcs.push("moves").uniq
+		  end
 		redirect '/moves'
 	end
 

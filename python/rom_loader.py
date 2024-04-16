@@ -219,7 +219,9 @@ if narc_info["base_rom"] == "BW2":
 		f.write(overlay316.data)
 
 
-if len(sys.argv) >= 4 and sys.argv[3] == "true":
+print(sys.argv)
+
+if len(sys.argv) >= 4 and sys.argv[3] == "on":
 	B2_EFFECT_TABLE_OFFSET = 0X00040974
 	W2_EFFECT_TABLE_OFFSET = 0X00040974
 else:
@@ -282,7 +284,7 @@ settings["blacklist"] = EDIT_BLACKLIST
 
 
 print(sys.argv)
-if len(sys.argv) >= 4 and sys.argv[3] == "true":
+if len(sys.argv) >= 4 and sys.argv[3] == "on":
 	settings["fairy"] = True
 else:
 	settings["fairy"] = False
