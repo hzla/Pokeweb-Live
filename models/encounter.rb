@@ -84,6 +84,22 @@ class Encounter < Pokenarc
 		[5,5,5,5,4]
 	end
 
+	def self.update_locations
+		locations = File.read("#{$rom_name}/texts/enc_locations.txt").split("\n")
+
+
+		(0..136).each do |n|
+			file_path = "#{$rom_name}/json/encounters/#{n}.json"
+			json_data = JSON.parse(File.open(file_path, "r") {|f| f.read})
+
+			json_data["readable"]["locations"] = [locations[n]]
+
+			File.open(file_path, "w") { |f| f.write json_data.to_json }
+
+			p n
+		end
+	end
+
 	def self.search encs, location
 		location = location.downcase.gsub(" ", "")
 		encs.each_with_index do |enc, i|

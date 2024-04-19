@@ -21,6 +21,23 @@ class Trdata < Pokenarc
 		`python python/trdata_writer.py update #{(0..trainer_count - 1).to_a.join(",")} #{$rom_name}`
 	end
 
+	def self.update_names
+		tr_names = File.read("#{$rom_name}/texts/tr_names.txt").split("\n")
+		tr_classes = File.read("#{$rom_name}/texts/tr_classes.txt").split("\n")
+
+		(0..1066).each do |n|
+			file_path = "#{$rom_name}/json/trdata/#{n}.json"
+			json_data = JSON.parse(File.open(file_path, "r") {|f| f.read})
+
+			json_data["readable"]["name"] = tr_names[n]
+			json_data["readable"]["class"] = tr_classes[json_data["raw"]["class"]]
+
+			File.open(file_path, "w") { |f| f.write json_data.to_json }
+
+			p n
+		end
+	end
+
 	def self.sprite tr_name, tr_class, tr_class_id, g_table
 		tr_class = tr_class.downcase.gsub(" ", "").gsub("_m", "").gsub("♂","").gsub("♀", "f").gsub("é","e").gsub("[pk][mn]", "pkmn_")
 		tr_name = tr_name.downcase
