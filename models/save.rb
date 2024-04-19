@@ -197,7 +197,7 @@ class Save
 
 
 
-	def self.read(save_data, static_level=100, game="inc_em") #INCLEMENT EMERALD/POKEMERALD
+	def self.read(save_data, static_level=100, game="inc_em", manual_offset=0) #INCLEMENT EMERALD/POKEMERALD
 		if game == "rad_red"
 			return read_rad_red(save_data, static_level, true, true)
 		end
@@ -242,7 +242,8 @@ class Save
 		save_index = save_index_b if save_index_a == 65535
 		# save_index = save_index_a
 
-		rotation = (save_index % 14)
+		save_index = save_index - manual_offset
+		rotation = (save_index % 14) 
 		total_offset = rotation * 4096
 
 
@@ -385,11 +386,15 @@ class Save
 				mon_count += 1
 				n += 44
 			end
-
-
 		end
 		debug_info = {save_index_a: save_index_a, save_index_b: save_index_b }
-		{import_data: import_data, debug_info: debug_info}
+		if import_data == "" and manual_offset != 1
+			 p ("retrying with one more rotation")
+			 return read(save_data, static_level=100, game="inc_em", manual_offset=1)	 
+		else
+			return {import_data: import_data, debug_info: debug_info}
+		end
+
 	end
 
 	def self.order_formats
