@@ -122,6 +122,7 @@ class MyApp < Sinatra::Base
 			@poke_data = Personal.poke_data
 			
 			@location_names = Header.location_names
+			@item_locations = Item.locations
 			@evolutions = Evolution.get_all
 
 			@pok_locations = Personal.get_all_locations @encounters
@@ -254,6 +255,7 @@ class MyApp < Sinatra::Base
 		
 
 		begin
+			retries ||= 0
 			system "#{py} python/header_loader.py #{params['rom_name']} offline"
 			session[:rom_name] = "projects/#{params['rom_name'].split(".")[0]}"
 			$rom_name = "projects/#{params['rom_name'].split(".")[0]}"
@@ -262,7 +264,7 @@ class MyApp < Sinatra::Base
 			Process.detach(pid)
 		rescue
 			py = "python"
-			retry
+			retry if (retries += 1) < 2 
 		end
 		
 
@@ -309,6 +311,7 @@ class MyApp < Sinatra::Base
 			system "rm -rf ./base/#{base}.nds"
 
 			begin
+				retries ||= 0
 				system "#{py} python/header_loader.py #{params['rom_name']} #{pw}"
 				session[:rom_name] = "projects/#{params['rom_name'].split(".")[0]}"
 				command = "#{py} python/rom_loader.py #{params['rom_name']} online #{fairy}"
@@ -316,7 +319,7 @@ class MyApp < Sinatra::Base
 				Process.detach(pid)
 			rescue
 				py = "python"
-				retry
+				retry if (retries += 1) < 2 
 			end
 		else
 			# load base rom template folders
@@ -840,13 +843,14 @@ class MyApp < Sinatra::Base
 		py = "python3"
 		
 		begin
+			retries ||= 0
 			command = "#{py} python/#{narc_name}_writer.py update #{params['data']['file_names'].join(',')} #{$rom_name}"
 			p command
 			pid = spawn command
 			Process.detach(pid)
 		rescue
 			py = "python"
-			retry
+			retry if (retries += 1) < 2 
 		end
 
 		open('logs.txt', 'a') do |f|

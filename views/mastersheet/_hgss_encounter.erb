@@ -1,9 +1,15 @@
-<h3 style="display: none;"><%= enc["locations"][0].split(" (")[0] %></h3>
 <div class="expanded-field filterable doc-enc" data-index="<%= i %>">
 	<div class="expanded-field-main">
 		<div class="encounter-id"><%= i %></div>
 
-		<div class="encounter-locations"><%= enc["locations"][0].split(" (")[0] %></div>
+		<div class="encounter-locations">
+			<%= enc["locations"][0].split(" (")[0] if enc["locations"][0] %>
+			
+
+			<% if enc['high'] != 0 %>
+				<br> Lv. (<%= "#{enc['low']}-#{enc['high']}" %>)
+			<% end %>
+		</div>
 
 		<div class="encounter-wilds" >
 			<% enc["wilds"].each do |wild| %>
@@ -15,7 +21,7 @@
 		<%= svg "svgs/grass", 'move-info expand-action expand-grass svg', ["expand", "grass"] %>
 		<%= svg "svgs/water", 'move-info expand-action expand-water svg', ["expand", "water"] %>
 	</div>
-
+		<% plat = true %>
 		<div class="expanded-card-content expanded-encounter expanded-grass expanded-spring">
 			<% Encounter.hgss_grass_fields.each do |field| %>
 				<div class="expanded-left">
@@ -26,13 +32,31 @@
 						<div class="enc-percent">%</div>
 					</div>
 					<% (0..11).each do |n| %>
-						<div class="expanded-field multi">
 
-							<div class='enc-slot enc-name' data-species-id="<%= enc["#{field}_#{n}_species_id"].name_titleize %>"><%= enc["#{field}_#{n}_species_id"].name_titleize %></div>
-							<div class="enc-lvl"><%= enc["walking_#{n}_level"] %></div>
-							<div class="enc-form"><%= enc[ "#{field}_#{n}_species_form"] %></div>								
-							<div class="enc-percent"><%= Encounter.grass_percent_for n %></div>
-						</div>
+						<% if field != "day"  %>
+							<% if n == 2 || n == 3 %>
+								<% offset = 2 %>
+								<% displayed_field = field %>
+
+							<% else %>
+								<% offset = 0 %>
+								<% displayed_field = "day" %>
+							<% end %>
+
+							<div class="expanded-field multi">
+								<div class='enc-slot enc-name' data-species-id="<%= enc["#{displayed_field}_#{n  - offset}_species_id"].name_titleize %>"><%= enc["#{displayed_field}_#{n - offset}_species_id"].name_titleize %></div>
+								<div class="enc-lvl"><%= enc["walking_#{n - offset}_level"] %></div>
+								<div class="enc-form"><%= enc[ "#{displayed_field}_#{n - offset}_species_form"] %></div>								
+								<div class="enc-percent"><%= Encounter.grass_percent_for n %></div>
+							</div>
+						<% else %>
+							<div class="expanded-field multi">
+								<div class='enc-slot enc-name' data-species-id="<%= enc["day_#{n}_species_id"].name_titleize %>"><%= enc["day_#{n}_species_id"].name_titleize %></div>
+								<div class="enc-lvl"><%= enc["walking_#{n}_level"] %></div>
+								<div class="enc-form"><%= enc[ "#{field}_#{n}_species_form"] %></div>								
+								<div class="enc-percent"><%= Encounter.grass_percent_for n %></div>
+							</div>
+						<% end %>
 					<% end %>
 				</div>
 			<% end %>

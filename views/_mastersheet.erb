@@ -6,7 +6,7 @@
 		<% i = element[:id] %>
 
 		<% trainer = @trainers[i] %>
-		<div class="expanded-field filterable ms-trainer <%= element[:class] %>" data-index="<%= i %>">
+		<div class="expanded-field filterable ms-trainer <%= element[:class] %> <%= 'doubles' if element[:notes] && element[:notes].join("").downcase.include?("multi") %>" data-index="<%= i %>">
 			<div class="expanded-field-main">
 				<div class="trainer-name"><%= img Trdata.sprite(trainer["name"],trainer['class'],trainer['class_id'], @gender_table) %> <%= "#{trainer['class']}" %> <%= trainer["name"] %> <%= trainer["location"] ? "(#{trainer["location"][0]})" : ""  %>
 					

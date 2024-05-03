@@ -1,11 +1,12 @@
 dupes = {}
+plat = true
 
 function getEncInfo(enc) {
 	if (gen == 4) {
-		var sections = [["Morning", "manip" ], ["Day", "manip" ],["Night", "manip"], ["Surf", "manip"], ["Rock Smash"], ["Old Rod"], ["Good Rod"], ["Super Rod"],["Hoenn"],["Sinnoh"]]
+		// swithc order back for hgsss and remove radar and add back rock smash and hoenn sinnoh
+		var sections = [["Day", "manip" ], ["Morning", "manip" ],["Night", "manip"], ["Surf", "manip"], ["Old Rod"], ["Good Rod"], ["Super Rod"],["Radar"]]
 		return parseEncTable(enc, sections)
 
-		return parseEncTable(enc, sections)
 	} else {
 		var sections = [["Grass", "manip" ], ["Grass Doubles", "manip" ],["Grass Special"], ["Surf", "manip"], ["Surf Special"], ["Super Rod"], ["Super Rod Special"]]
 		return parseEncTable(enc, sections)
@@ -55,20 +56,21 @@ function parseEncTable(enc, sections) {
 	return [enc_probabilities, enc]
 }
 
-function displayEnc(info) {
+function displayEnc(info, manip_lvl=false) {
 
 	var enc_html = ""
 	var enc_types = [["Grass"], ["Grass Doubles" ],["Grass Special"], ["Surf"], ["Surf Special"], ["Super Rod"], ["Super Rod Special"]]
 
 	if (gen == 4) {
-		enc_types = [["Morning"], ["Day"],["Night"], ["Surf"], ["Rock Smash"], ["Old Rod"], ["Good Rod"], ["Super Rod"],["Hoenn"],["Sinnoh"]]
+		// swithc order back for hgsss
+		enc_types = [["Day"], ["Morning"],["Night"], ["Surf"], ["Old Rod"], ["Good Rod"], ["Super Rod"],["Radar"]]
 	}
 
-	console.log(info)
+
 
 	var probabilities = info[0]
 	var location_title = $(info[1]).prev().text()
-	var repel_manip = parseInt($('#manip-lvl').val()) || 1
+	var repel_manip = parseInt($('#manip-lvl').val()) || manip_lvl || 1
 
 	enc_html += `<div class='ms-enc-main-header'>${location_title} at Lv <input value='${repel_manip}' id='manip-lvl'/> </div>`
 
@@ -121,9 +123,13 @@ $(document).ready(function() {
 		lastClickedEnc = $(this)
 	})
 
-	$(document).on('blur', '#manip-lvl', function() {
-		info = getEncInfo(lastClickedEnc)
-		displayEnc(info)
+	$(document).on('keyup', '#manip-lvl', function(e) {    
+    if ($('#manip-lvl').val() != "") {
+     	info = getEncInfo(lastClickedEnc)
+			displayEnc(info)
+    }
+    $('#manip-lvl').focus()
+    $('#manip-lvl')[0].setSelectionRange($('#manip-lvl').val().length, $('#manip-lvl').val().length)
 	})
 
 	$(document).on('contextmenu', '#mastersheet .wild', function() {
@@ -166,7 +172,6 @@ $(document).ready(function() {
 	    		$(`[data-species-id='${i}']`).show()
 	    		return
 	    	}
-	    	
 	    }
 
 	    for (i in autofills["move_names"]) {
@@ -177,10 +182,15 @@ $(document).ready(function() {
 	    		$(`[data-move-id='${i}']`).show()
 	    		return
 	    	}
-	    	
 	    }
 
-	    $(this).css('border', '1px solid red')
+	    if (item_locations[value.toLowerCase().replace(" ", '')]) {
+	    	$('.ms-pok, .ms-move, #enc-info').hide()
+	    	$('#enc-info').html("<p>" +item_locations[value.toLowerCase().replace(" ", '')] + "</p>").show()
+	    	return
+	    }
+
+	    $(this).css('border', '2px solid red')
 	  }
 	});
 	$('#submit-ms').on('click', async function() {

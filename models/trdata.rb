@@ -10,6 +10,20 @@ class Trdata < Pokenarc
 		super
 	end
 
+	def self.items trdata
+		items = []
+		(1..4).each do |n|
+			if trdata["item_#{n}"] != "None"
+				items << trdata["item_#{n}"]
+			end
+		end
+		if items.length > 0
+			"Items: #{items.length}x #{items[0]}"
+		else
+			nil
+		end
+	end
+
 	def self.batch_set_flag flag, value=1
 		trainer_count = get_all.length
 		data = {"field" => flag, "int" => true, "narc" => "trdata", "value" => value}
@@ -46,9 +60,15 @@ class Trdata < Pokenarc
 		
 		sprite_name = ""
 		
+		# return the name of the trainer if it has a unique sprite
 		if File.exist?("./public/images/trainer_sprites/#{tr_name.gsub("boy", "silver")}.png") && tr_name != "grunt"
 			sprite_name = "trainer_sprites/#{tr_name.gsub("boy", "silver")}.png"
 			return sprite_name
+		end
+
+
+		if tr_class_id == 89 && $gen == 4
+			return "trainer_sprites/galactic_f.png"
 		end
 
 		if tr_class[-2] == "_"
@@ -58,11 +78,13 @@ class Trdata < Pokenarc
 		else
 			sprite_name = "trainer_sprites/#{tr_class.gsub("pkmn", "pokemon")}.png"
 		end
-
+	
 		if $gen == 4 && File.exist?("./public/images/#{sprite_name.gsub(".png", "-gen4.png")}")
 			sprite_name = sprite_name.gsub(".png", "-gen4.png")
+			if g_table[tr_class_id.to_i] == "female" && File.exist?("trainer_sprites/#{tr_class.gsub("pkmn", "pokemon")}_f-gen4.png")
+				sprite_name = "trainer_sprites/#{tr_class.gsub("pkmn", "pokemon")}_f-gen4.png"
+			end
 		end
-
 
 		sprite_name
 	end
@@ -71,7 +93,7 @@ class Trdata < Pokenarc
 		genders = File.open("Reference_Files/trainer_genders.txt", "r").readlines
 		
 		if $gen == 4 
-			genders = File.open("Reference_Files/trainer_genders_hgss.txt", "r").readlines
+			genders = File.open("texts/#{SessionSettings.base_rom}_genders.txt", "r").readlines
 		end
 
 		genders.map do |line|

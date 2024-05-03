@@ -22,6 +22,20 @@ class Item < Pokenarc
 		[col_1,col_2,col_3]
 	end
 
+	def self.locations
+		loc_list = File.read("#{$rom_name}/texts/item_locations.txt").split("\n")
+		locations = {}
+
+		loc_list.each do |line|
+			item_name = line.split("=>")[0].strip.downcase.gsub(" ", "")
+			loc = line.split("=>")[1].strip
+
+			locations[item_name] = loc
+		end
+
+		locations
+	end
+
 
 end
 

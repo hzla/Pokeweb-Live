@@ -18,6 +18,21 @@ class Trpok < Pokenarc
 		@@narc_name = "trpok"
 		super
 	end
+
+	def self.normalize_spellings
+		correct_spellings = File.read("#{$rom_name}/texts/pokedex.txt").split("\n").map(&:name_titleize)
+
+		get_all.each_with_index do |pok, i|
+			file_path = "#{$rom_name}/json/trpok/#{i}.json"
+			trpok = JSON.parse(File.open(file_path, "r"){|f| f.read})
+			(0..5).each do |n|
+				break if !trpok["readable"]["species_id_#{n}"]
+				trpok["readable"]["species_id_#{n}"] = correct_spellings[trpok["raw"]["species_id_#{n}"]]
+			end
+			File.open(file_path, "w") { |f| f.write trpok.to_json }
+		end
+		return "success"
+	end
 	
 
 	def self.search trdata, trpok, tr_name, mon_lvl, mon_name
@@ -129,7 +144,7 @@ class Trpok < Pokenarc
 		file_path = "#{$rom_name}/json/trpok/#{trainer}.json"
 		trpok = JSON.parse(File.open(file_path, "r"){|f| f.read})
 
-		pok_id = trpok["raw"]["species_id_#{pok_index}"]
+		pok_id = trpok["raw"]["species_id_#{pok_index}"] % 1024
 
 		return [] if !pok_id
 

@@ -1147,6 +1147,16 @@ div.-active svg * {
     position: relative;
 }
 
+.filterable.doubles {
+    width:  50%;
+    float:  left;
+    margin-bottom: 20px;
+}
+
+.doubles .trainer-doc-item {
+    width: 33.33%;
+}
+
 .expanded-card-content div:not(.multi).expanded-field div:nth-child(2), .expanded-card-subcontent div:not(.multi).expanded-field div:nth-child(2) {
     flex-grow: 5;
     text-align: right;

@@ -29,6 +29,7 @@ class Encounter < Pokenarc
 		header_count = header_data["count"]
 
 
+		
 		(1..539).each do |n|
 			header = header_data[n.to_s]
 			encounter_id = header["encounter"]
@@ -44,20 +45,31 @@ class Encounter < Pokenarc
 
 		encounter_data.each_with_index do |enc, i|
 			wilds = []
+			low = 100
+			high = 0
+
 			
 			hgss_grass_fields.each do |enc_type|
-				p enc_type
 				(0..11).each do |n|
-					wilds << enc["#{enc_type}_#{n}_species_id"].gsub(/[^0-9A-Za-z\-]/, '').name_titleize
+					break if (n > 1 && SessionSettings.base_rom == "PLAT" && enc_type != "day")
+					wilds << enc["#{enc_type}_#{n}_species_id"].gsub(/[^0-9A-Za-z\-]/, '').name_titleize	
+					if enc["walking_#{n}_level"] > high
+						high = enc["walking_#{n}_level"]
+					end
+
+					if enc["walking_#{n}_level"] < low
+						low = enc["walking_#{n}_level"]
+					end
 				end
 			end
 			extra_fields.each_with_index do |enc_type, j|
-				p enc_type
 				(0..extra_field_counts[j] - 1).each do |n|
 					wilds << enc["#{enc_type}_#{n}_species_id"].gsub(/[^0-9A-Za-z\-]/, '').name_titleize
 				end
 			end
 
+			encounter_data[i]["low"] = low
+			encounter_data[i]["high"] = high
 			encounter_data[i]["wilds"] = wilds.reject(&:empty?).uniq
 			encounter_data[i]["wilds"].delete("-----")
 		end
@@ -66,7 +78,7 @@ class Encounter < Pokenarc
 
 	def self.hgss_grass_fields
 		return ["morning", "day", "night"] if SessionSettings.base_rom == "HGSS"
-		["day"]
+		["day", "morning", "night"]
 	end
 
 	def self.hgss_water_fields
@@ -88,7 +100,7 @@ class Encounter < Pokenarc
 		locations = File.read("#{$rom_name}/texts/enc_locations.txt").split("\n")
 
 
-		(0..136).each do |n|
+		(0..182).each do |n|
 			file_path = "#{$rom_name}/json/encounters/#{n}.json"
 			json_data = JSON.parse(File.open(file_path, "r") {|f| f.read})
 
@@ -103,7 +115,8 @@ class Encounter < Pokenarc
 	def self.search encs, location
 		location = location.downcase.gsub(" ", "")
 		encs.each_with_index do |enc, i|
-			next if !enc["locations"]
+			next if !enc["locations"] || enc["locations"][0] == ""
+			p enc["locations"]
 			enc_loc = enc["locations"][0].split(" (")[0].gsub(" ","").downcase
 
 			return i if location == enc_loc

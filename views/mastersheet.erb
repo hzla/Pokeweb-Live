@@ -1,19 +1,23 @@
 <script>
 
+	item_locations = <%= @item_locations.to_json %>
+
 	// info for autocomplete
 	autofills = {
 		<% [:true_pokemon_names].each do |info| %>
 			"<%= info.to_s %>": <%= RomInfo.send(info) %>,
 		<% end %>
-		"move_names": <%= @move_names %>
+		"move_names": <%= @move_names %>,
 	}
+
+
 
 	$("#header").hide()
 </script>
 
 <div class="pokemon-filter master-sidebar" style="top: 0px">	
 	<div class="filter-title">Lookup</div>
-	<input class="" placeholder="Species or move name"/>
+	<input class="" placeholder="Species or move name or item name"/>
 
 	<% @moves.each do |id, move|  %>			
 		<% if move %>
@@ -44,7 +48,7 @@
 			<% i = element[:id] %>
 			<% trainer = @trainers[i] %>
 			
-			<div class="expanded-field filterable ms-trainer <%= element[:class] %>" data-index="<%= i %>" data-element="<% n %>" >
+			<div class="expanded-field filterable ms-trainer <%= element[:class] %> <%= 'doubles' if element[:notes] && element[:notes].join("").downcase.include?("multi") %>" data-index="<%= i %>" data-element="<% n %>" >
 				<div class="expanded-field-main">
 					<div class="trainer-name"><%= img Trdata.sprite(trainer["name"],trainer['class'],trainer['class_id'], @gender_table) %> <%= "#{trainer['class']}" %> <%= trainer["name"] %>
 						
@@ -52,7 +56,15 @@
 						<% if trainer["battle_type_1"] != "Singles" && trainer["battle_type"] != "Singles" %>
 							(<%= trainer["battle_type_1"] || trainer["battle_type"] %>)	
 						<% end %>
-						<div class="tr-notes"><%= element[:notes].join(" ") if element[:notes] %></div>
+						<div class="tr-notes"><%= element[:notes].join(" ") if element[:notes] %>
+							
+							<% item = Trdata.items(trainer) %>
+
+							<% if item %>
+								<%= item %>
+							<% end %>
+
+						</div>
 					</div>
 				</div>				
 				<div class="expanded-card-content expanded-docs">
