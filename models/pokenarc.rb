@@ -64,7 +64,12 @@ class Pokenarc
 					json = JSON.parse(file)
 				end
 			end
-			entry = json["readable"]
+
+			begin
+				entry = json["readable"]
+			rescue
+				p n
+			end
 			entry = json["raw"] if use_raw
 			entry = json if use_raw == "both"
 
