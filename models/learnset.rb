@@ -22,7 +22,11 @@ class Learnset < Pokenarc
 
 	def self.sort_readable id 
 		path = "#{$rom_name}/json/learnsets/#{id}.json"
-		data = get_data(path, "all")
+		begin
+			data = get_data(path, "all")
+		rescue
+			p id
+		end
 		readable = data["readable"]
 
 		sorted = []
