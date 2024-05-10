@@ -23,7 +23,7 @@ Dotenv.load
 Dir["models/*.rb"].each {|file| require_relative file}
 p "init"
 # $rom_name = "projects/bb2"
-$gen = SessionSettings.get("g4") ? 4 : 5
+# $gen = SessionSettings.get("g4") ? 4 : 5
 
 
 
