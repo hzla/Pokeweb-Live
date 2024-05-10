@@ -196,7 +196,7 @@ class Encounter < Pokenarc
 	def self.level_sorted gen=5
 		data = get_all
 		get_all.sort_by do |enc|
-			if $gen == 5
+			if gen == 5
 				get_max_level(enc["index"])
 			else
 				g4_get_max_level(enc["index"])
