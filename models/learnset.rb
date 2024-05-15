@@ -42,12 +42,12 @@ class Learnset < Pokenarc
 
 
 
-		sorted.sort_by! {|ls| ls["lvl_learned"]}
+		sorted.sort_by! {|ls| ls["lvl_learned"].to_i}
 
 
 		
 		sorted.each_with_index do |ls, i| 
-			data["readable"]["lvl_learned_#{i}"] = ls["lvl_learned"]
+			data["readable"]["lvl_learned_#{i}"] = ls["lvl_learned"].to_i
 			data["readable"]["move_id_#{i}"] = ls["move_id"]
 		end
 
