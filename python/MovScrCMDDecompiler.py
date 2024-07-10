@@ -94,6 +94,8 @@ with open(argv[1], 'rb') as SCRIPT:
                         break
             print(' ' * 4, CommandData["Name"], end=' ')
             print(*ParameterData, sep=', ')
+            # if 'Description' in CommandData:
+            #     print(' ' * 4, "// " + CommandData['Description'])
 
             if "LoadSPA" in CommandData["Name"]:
                 move_data["readable"]["spas"].append(ParameterData[0]) 

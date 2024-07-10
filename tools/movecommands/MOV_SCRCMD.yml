@@ -105,7 +105,7 @@
     - Name: p10
       Type: int
 8:
-  Name: CMD_8
+  Name: DoSPAScreenAnimation
   Parameters:
     - Name: p0
       Type: int
@@ -191,7 +191,7 @@
     - Name: p0
       Type: int
 12:
-  Name: DoSPAAnimation3
+  Name: DoSPAProjectileAnimation
   Parameters:
     - Name: p0
       Type: int
@@ -216,7 +216,7 @@
     - Name: p10
       Type: int
 13:
-  Name: CMD_d
+  Name: DoSPAProjectileAnimation2
   Parameters:
     - Name: p0
       Type: int
@@ -245,7 +245,7 @@
     - Name: p12
       Type: int
 14:
-  Name: CMD_e
+  Name: DoSPAProjectileAnimation3
   Parameters:
     - Name: p0
       Type: int
@@ -299,7 +299,7 @@
     - Name: p12
       Type: int
 16:
-  Name: CMD_10
+  Name: DoSPAMiscAnimation
   Parameters:
     - Name: p0
       Type: int
@@ -333,7 +333,7 @@
     - Name: p6
       Type: int
 18:
-  Name: MoveTarget
+  Name: ShakeSprite
   Parameters:
     - Name: p0
       Type: int
@@ -350,7 +350,7 @@
     - Name: p6
       Type: int
 19:
-  Name: MoveUser
+  Name: MoveSprite
   Parameters:
     - Name: p0
       Type: int
@@ -386,7 +386,7 @@
     - Name: p5
       Type: int
 21:
-  Name: MoveUser2
+  Name: DistortSprite
   Parameters:
     - Name: p0
       Type: int
@@ -403,7 +403,7 @@
     - Name: p6
       Type: int
 22:
-  Name: CMD_16
+  Name: TiltSprite
   Parameters:
     - Name: p0
       Type: int
@@ -418,7 +418,7 @@
     - Name: p5
       Type: int
 23:
-  Name: CMD_17
+  Name: SpriteOpacity
   Parameters:
     - Name: p0
       Type: int
@@ -459,7 +459,7 @@
     - Name: p3
       Type: int
 26:
-  Name: CMD_1a
+  Name: FreezeSprite
   Parameters:
     - Name: p0
       Type: int
@@ -767,7 +767,7 @@
     - Name: p0
       Type: int
 54:
-  Name: CMD_36
+  Name: SwitchAudioSide
   Parameters:
     - Name: p0
       Type: int
@@ -807,7 +807,7 @@
     - Name: p8
       Type: int
 56:
-  Name: CMD_38
+  Name: LetCMDsFinish
   Parameters:
     - Name: p0
       Type: int
@@ -817,12 +817,12 @@
     - Name: p0
       Type: int
 58:
-  Name: ToggleFreezeTarget
+  Name: AudioContainer
   Parameters:
     - Name: p0
       Type: int
 59:
-  Name: CMD_3b
+  Name: CheckMoveuser
   Parameters:
     - Name: p0
       Type: int
@@ -931,7 +931,7 @@
   Name: CMD_47
   Parameters:
 72:
-  Name: CMD_48
+  Name: CheckMoveUserElse
   Parameters:
     - Name: p0
       Type: int
@@ -939,7 +939,7 @@
   Name: CMD_49
   Parameters:
 74:
-  Name: CMD_4a
+  Name: CallMoveAnimation
   Parameters:
     - Name: p0
       Type: int

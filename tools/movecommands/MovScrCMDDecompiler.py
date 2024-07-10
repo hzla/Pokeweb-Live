@@ -42,6 +42,9 @@ with open('B2W2_MOVSCRCMD.s', 'w') as MOVSCRCMD_INC:
             for Parameter in Command['Parameters']:
                 SpaceCharacter = " " if Command['Parameters'].index(Parameter) != len(Command['Parameters']) - 1 else ""
                 MOVSCRCMD_INC.write(f'{Parameter["Name"]}{SpaceCharacter}')
+
+        
+
         MOVSCRCMD_INC.write('\n')
         MOVSCRCMD_INC.write(f'.hword {Index}\n')
         if Command['Parameters'] is not None:

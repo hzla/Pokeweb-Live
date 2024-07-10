@@ -71,7 +71,7 @@
 .word \p10
 .endm
 
-.macro CMD_8 p0 p1 p2 p3 p4 p5 p6 p7 p8 p9 p10 p11 p12 p13 p14
+.macro DoSPAScreenAnimation p0 p1 p2 p3 p4 p5 p6 p7 p8 p9 p10 p11 p12 p13 p14
 .hword 8
 .word \p0
 .word \p1
@@ -124,7 +124,7 @@
 .word \p0
 .endm
 
-.macro DoSPAAnimation3 p0 p1 p2 p3 p4 p5 p6 p7 p8 p9 p10
+.macro DoSPAProjectileAnimation p0 p1 p2 p3 p4 p5 p6 p7 p8 p9 p10
 .hword 12
 .word \p0
 .word \p1
@@ -139,7 +139,7 @@
 .word \p10
 .endm
 
-.macro CMD_d p0 p1 p2 p3 p4 p5 p6 p7 p8 p9 p10 p11 p12
+.macro DoSPAProjectileAnimation2 p0 p1 p2 p3 p4 p5 p6 p7 p8 p9 p10 p11 p12
 .hword 13
 .word \p0
 .word \p1
@@ -156,7 +156,7 @@
 .word \p12
 .endm
 
-.macro CMD_e p0 p1 p2 p3 p4 p5 p6 p7 p8 p9 p10
+.macro DoSPAProjectileAnimation3 p0 p1 p2 p3 p4 p5 p6 p7 p8 p9 p10
 .hword 14
 .word \p0
 .word \p1
@@ -188,7 +188,7 @@
 .word \p12
 .endm
 
-.macro CMD_10 p0 p1 p2 p3 p4 p5 p6
+.macro DoSPAMiscAnimation p0 p1 p2 p3 p4 p5 p6
 .hword 16
 .word \p0
 .word \p1
@@ -210,7 +210,7 @@
 .word \p6
 .endm
 
-.macro MoveTarget p0 p1 p2 p3 p4 p5 p6
+.macro ShakeSprite p0 p1 p2 p3 p4 p5 p6
 .hword 18
 .word \p0
 .word \p1
@@ -221,7 +221,7 @@
 .word \p6
 .endm
 
-.macro MoveUser p0 p1 p2 p3 p4 p5 p6 p7 p8
+.macro MoveSprite p0 p1 p2 p3 p4 p5 p6 p7 p8
 .hword 19
 .word \p0
 .word \p1
@@ -244,7 +244,7 @@
 .word \p5
 .endm
 
-.macro MoveUser2 p0 p1 p2 p3 p4 p5 p6
+.macro DistortSprite p0 p1 p2 p3 p4 p5 p6
 .hword 21
 .word \p0
 .word \p1
@@ -255,7 +255,7 @@
 .word \p6
 .endm
 
-.macro CMD_16 p0 p1 p2 p3 p4 p5
+.macro TiltSprite p0 p1 p2 p3 p4 p5
 .hword 22
 .word \p0
 .word \p1
@@ -265,7 +265,7 @@
 .word \p5
 .endm
 
-.macro CMD_17 p0 p1 p2 p3 p4 p5
+.macro SpriteOpacity p0 p1 p2 p3 p4 p5
 .hword 23
 .word \p0
 .word \p1
@@ -293,7 +293,7 @@
 .word \p3
 .endm
 
-.macro CMD_1a p0 p1
+.macro FreezeSprite p0 p1
 .hword 26
 .word \p0
 .word \p1
@@ -517,7 +517,7 @@
 .word \p0
 .endm
 
-.macro CMD_36 p0 p1 p2 p3 p4 p5 p6 p7
+.macro SwitchAudioSide p0 p1 p2 p3 p4 p5 p6 p7
 .hword 54
 .word \p0
 .word \p1
@@ -542,7 +542,7 @@
 .word \p8
 .endm
 
-.macro CMD_38 p0
+.macro LetCMDsFinish p0
 .hword 56
 .word \p0
 .endm
@@ -552,12 +552,12 @@
 .word \p0
 .endm
 
-.macro ToggleFreezeTarget p0
+.macro AudioContainer p0
 .hword 58
 .word \p0
 .endm
 
-.macro CMD_3b p0 p1 p2 p3
+.macro CheckMoveuser p0 p1 p2 p3
 .hword 59
 .word \p0
 .word \p1
@@ -644,7 +644,7 @@
 .hword 71
 .endm
 
-.macro CMD_48 p0
+.macro CheckMoveUserElse p0
 .hword 72
 .word \p0
 .endm
@@ -653,7 +653,7 @@
 .hword 73
 .endm
 
-.macro CMD_4a p0
+.macro CallMoveAnimation p0
 .hword 74
 .word \p0
 .endm
