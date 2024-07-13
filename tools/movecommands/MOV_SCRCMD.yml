@@ -12,7 +12,7 @@
     - Name: p4
       Type: int
 1:
-  Name: ZoomCamera
+  Name: AdjustCamera
   Parameters:
     - Name: p0
       Type: int
