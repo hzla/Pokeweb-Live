@@ -86,7 +86,7 @@ def get_script_names(readable):
 		return ["IDLE", "ATTACK"]
 
 	# Thief
-	if (readable["index"] == 158):
+	if (readable["index"] == 168):
 		return ["DEFAULT", "STEAL"]
 	
 	# Curse
