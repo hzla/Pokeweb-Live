@@ -315,6 +315,12 @@
       Type: int
     - Name: p6
       Type: int
+    - Name: p7
+      Type: int
+    - Name: p8
+      Type: int
+    - Name: p9
+      Type: int
 17:
   Name: CMD_11
   Parameters:
