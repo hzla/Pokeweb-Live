@@ -299,7 +299,7 @@
     - Name: p12
       Type: int
 16:
-  Name: DoSPAMiscAnimation
+  Name: DoSPACircleAnimation
   Parameters:
     - Name: p0
       Type: int
