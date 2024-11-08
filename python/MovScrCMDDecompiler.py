@@ -7,6 +7,7 @@ import json
 AddressesPerEntry = 0xE
 
 move_file_location = argv[2]
+script_names = argv[5].split(",")
 print(move_file_location)
 
 move_data = {}
@@ -73,15 +74,25 @@ with open(argv[1], 'rb') as SCRIPT:
     print(f'.align 4')
     print()
     print(f'.word {Count} @ Count')
+
+    if (Count == 1):
+        script_names[0] = "SCRIPT"
+    else:
+        if (len(script_names) < Count):
+            for Index in range(len(script_names(script_names)), Count):
+                script_names[Index] = f"{Index}"
+        for Index in range(Count):
+            script_names[Index] = f"SCRIPT_{script_names[Index]}"
+
     for Index in range(Count):
         Addresses += set(unpack('<' + 'L' * AddressesPerEntry, SCRIPT.read(AddressesPerEntry * 0x4)))
-        for Address in Addresses:
-            for Pass in range(AddressesPerEntry):
-                print(f'.word SCRIPT_{Address}')
+        for Pass in range(AddressesPerEntry):
+            print(f'.word {script_names[Index]}')
+
     print()
-    for Address in Addresses:
-        SCRIPT.seek(Address)
-        print(f'SCRIPT_{Address}:')
+    for Index in range(Count):
+        SCRIPT.seek(Addresses[Index])
+        print(f'{script_names[Index]}:')
         while True:
             CommandIndex = unpack('<H', SCRIPT.read(0x2))[0]
             CommandData = CommandSet[CommandIndex]
