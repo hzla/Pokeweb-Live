@@ -188,7 +188,7 @@
 .word \p12
 .endm
 
-.macro DoSPAMiscAnimation p0 p1 p2 p3 p4 p5 p6
+.macro DoSPACircleAnimation p0 p1 p2 p3 p4 p5 p6 p7 p8 p9
 .hword 16
 .word \p0
 .word \p1
@@ -197,6 +197,9 @@
 .word \p4
 .word \p5
 .word \p6
+.word \p7
+.word \p8
+.word \p9
 .endm
 
 .macro CMD_11 p0 p1 p2 p3 p4 p5 p6
