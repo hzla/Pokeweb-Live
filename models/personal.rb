@@ -25,6 +25,7 @@ class Personal
 		if $gen == 5
 
 			if SessionSettings.base_rom == "BW2"
+				data[652]["name"] = "UFO"
 				data[653]["name"] = "BrycenMan"
 				data[654]["name"] = "MT"
 				data[655]["name"] = "MT2"
@@ -33,11 +34,11 @@ class Personal
 				data[658]["name"] = "Humanoid"
 				data[659]["name"] = "Monster"
 				data[660]["name"] = "F00"
-				data[682]["name"] = "F001"
+				data[682]["name"] = "F002"
 				data[661]["name"] = "Majin"
 				data[662]["name"] = "WhiteDoor"
 				data[663]["name"] = "BlackDoor"
-				data[664]["name"] = "UFO"
+				data[664]["name"] = "UFO2"
 				data[665]["name"] = "UFO2"
 				data[666]["name"] = "Brycen Man"
 				data[685]["name"] = "Deoxys-Attack"

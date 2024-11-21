@@ -84,6 +84,7 @@
 
 				<div class="trainer-poks" >
 					<% if !show_doc_view %>
+						<% tr_index = i %>
 						<% if @trainer_poks[i] && @trainer_poks[i]["count"] %>
 							<% Trpok.get_poks_for(@trainer_poks[i]["count"] , @trainer_poks[i]).each_with_index do |pok, i| %>
 								<div class="wild">

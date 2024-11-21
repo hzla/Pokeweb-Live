@@ -7,6 +7,19 @@ class RomInfo
 		end
 	end
 
+    def self.showdown_abilities_by_id
+        file_path = "#{$rom_name}/texts/abilities.txt"
+        data = File.open(file_path, "r:ISO8859-1").read.split("\n").map do |p|
+            p.titleize.gsub("Lightningrod", "Lightning Rod").gsub("Compoundeyes", "Compound Eyes")
+        end
+    end
+
+    
+
+    def self.pokemon_growths
+        
+    end
+
     def self.true_pokemon_names
         i = 0
         Personal.poke_data.map do |n|

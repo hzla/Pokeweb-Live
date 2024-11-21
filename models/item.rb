@@ -13,6 +13,12 @@ class Item < Pokenarc
 		super
 	end
 
+	def self.get_showdown_names_from items
+		names = items.map do |m|
+			item_name = Trpok.item_titlize(m["name"])
+		end
+	end
+
 	def self.expanded_fields
 		col_1 = [[255, "item_type"], [255, "gain_values"], [255, "item_group"], [255, "battle_item_group"], [65535, "type_attribute"], [255, "name_order_id"], [1, "nature_gift_power"], [1, "battle_happiness"], [1, "ow_happiness"], [1, "hold_happiness"]]
 

@@ -84,6 +84,12 @@ def output_narc(rom, rom_name):
 		file_name = int(f.split(".")[0])
 		write_narc_data(file_name, NARC_FORMATS, narc, rom_name)
 
+	if rom == "none":
+		file_path = f'{ROM_NAME}/narcs/trpok.narc'
+		with open(file_path, 'wb') as f:
+			f.write(narc.save())
+		return 
+
 	rom.files[NARC_FILE_ID] = narc.save()
 	print("trpok narc saved")
 

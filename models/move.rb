@@ -135,6 +135,13 @@ class Move < Pokenarc
 		end
 	end
 
+	def self.get_showdown_names_from(moves)
+		names = moves.map do |m|
+			move_name = m[1]["name"].move_titleize
+			showdown_subs[move_name.to_sym] ? showdown_subs[move_name.to_sym] : move_name
+		end
+	end
+
 	def self.misc_int_fields
 		[{ "field_name" => "pp", "label" => "PP", "type" => "int-255"},
 			{ "field_name" => "priority", "label" => "Priority", "type" => "int-255"},

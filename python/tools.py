@@ -48,7 +48,14 @@ def output_narc(narc_name, rom, rom_name):
 			continue
 	
 	narc.endiannessOfBeginning = ">"
-	rom.files[NARC_FILE_ID] = narc.save()
+
+	if rom == "none":
+		file_path = f'{rom_data.ROM_NAME}/narcs/{narc_name}.narc'
+		with open(file_path, 'wb') as f:
+			f.write(narc.save())
+		return 
+	else:
+		rom.files[NARC_FILE_ID] = narc.save()
 
 	print("narc saved")
 

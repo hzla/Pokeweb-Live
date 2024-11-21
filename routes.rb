@@ -418,6 +418,10 @@ class MyApp < Sinatra::Base
 		"Rom Saved in /exports"
 	end
 
+	get '/narc/:narc_id' do 
+		
+	end
+
 
 
 	########################################## PERSONAL EDITOR ROUTES ####################

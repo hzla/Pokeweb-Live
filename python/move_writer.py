@@ -221,8 +221,9 @@ if len(sys.argv) > 2:
 		for file_name in file_names:
 			decompile_script(sys.argv[3], int(file_name))
 	else: #compile
-		for file_name in file_names:
-			compile_script(sys.argv[3], int(file_name))
+		if sys.argv[2] != "export":
+			for file_name in file_names:
+				compile_script(sys.argv[3], int(file_name))
 
 
 

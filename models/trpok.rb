@@ -139,6 +139,48 @@ class Trpok < Pokenarc
 		poks
 	end
 
+	def self.fill_all
+		trdatas = Trdata.get_all
+
+		trdatas.each_with_index do |trdata, tr_id|
+			next if trdata["has_moves"] != 0
+
+			file_path = "#{$rom_name}/json/trpok/#{tr_id}.json"
+			trpok = JSON.parse(File.open(file_path, "r"){|f| f.read})
+
+			(0...trdata["num_pokemon"]).each do |pok_index|
+
+				
+				pok_id = trpok["raw"]["species_id_#{pok_index}"] % 1024
+			
+				next [] if !pok_id
+
+				learnset_path = "#{$rom_name}/json/learnsets/#{pok_id}.json"
+				learnset = JSON.parse(File.open(learnset_path, "r"){|f| f.read})
+
+				moves = []
+				lvl = trpok["readable"]["level_#{pok_index}"]
+
+				(0..19).to_a.reverse.each do |n|
+					lvl_learned = learnset["readable"]["lvl_learned_#{n}"]
+					if lvl_learned && lvl_learned.to_i <= lvl.to_i
+						moves << [learnset["raw"]["move_id_#{n}"],learnset["readable"]["move_id_#{n}"]]
+					end
+					if moves.length == 4
+						break
+					end
+				end
+				# binding.pry
+
+				moves.each_with_index do |move, i|
+					trpok["raw"]["move_#{i + 1}_#{pok_index}"] = move[0]
+					trpok["readable"]["move_#{i + 1}_#{pok_index}"] = move[1]
+				end
+			end
+			File.open(file_path, "w") { |f| f.write trpok.to_json }
+		end
+	end
+
 	def self.fill_lvl_up_moves lvl, trainer, pok_index, output_json=true, get_ids=false
 
 		file_path = "#{$rom_name}/json/trpok/#{trainer}.json"
@@ -155,7 +197,7 @@ class Trpok < Pokenarc
 		moves = []
 
 		(0..19).to_a.reverse.each do |n|
-			lvl_learned = learnset["raw"]["lvl_learned_#{n}"]
+			lvl_learned = learnset["readable"]["lvl_learned_#{n}"]
 			if lvl_learned && lvl_learned.to_i <= lvl.to_i
 				moves << [learnset["raw"]["move_id_#{n}"],learnset["readable"]["move_id_#{n}"]]
 			end
@@ -687,6 +729,13 @@ class Trpok < Pokenarc
 
 			species = poks["species_id_#{i}"].downcase.titleize.gsub("Porygon Z", "Porygon-Z").gsub("Ho Oh","Ho-Oh").gsub("'","’")
 
+			# handle pokestar studios
+			binding.pry if tr_id == 868
+			if species == "    "
+				species = Personal.poke_data[pok_id]["name"].upcase
+
+			end
+
 
 			trname_count = @@tr_name_counts[trname_info]
 
@@ -721,6 +770,8 @@ class Trpok < Pokenarc
 				
 				end
 			end
+
+
 
 			ability_id = poks["ability_#{i}"]
 
@@ -792,15 +843,15 @@ class Trpok < Pokenarc
 	end
 
 	def self.item_titlize(input_str)
-	result = ''
+		result = ''
 
-	return input_str if !input_str
-	input_str.chars.each_with_index do |char, index|
-	result += ' ' if index > 0 && char =~ /[A-Z]/ && input_str[index - 1] =~ /[a-z]/
-	result += char
-	end
+		return input_str if !input_str
+		input_str.chars.each_with_index do |char, index|
+		result += ' ' if index > 0 && char =~ /[A-Z]/ && input_str[index - 1] =~ /[a-z]/
+		result += char
+		end
 
-	result.gsub("'", "’")
+		result.gsub("'", "’")
 	end
 
 	def self.showdown_subs
