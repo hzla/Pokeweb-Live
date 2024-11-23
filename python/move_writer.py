@@ -40,11 +40,20 @@ def output_narc(rom, rom_name):
 	return tools.output_narc("moves", rom, rom_name)
 
 def decompile_script(rom_name, move_id):
+	script_names = []
 	if move_id > 559:
 		ani = "battle_animations"
 		offset = 561
 	else:
 		ani = "move_animations"
+
+		json_file_path = f'{rom_data.ROM_NAME}/json/moves/{move_id}.json'
+		with open(json_file_path, "r", encoding='ISO8859-1') as outfile:  	
+			json_data = json.load(outfile)
+			if json_data["readable"] is not None:
+				readable = json_data["readable"]
+				script_names = get_script_names(readable)
+
 		offset = 0
 
 	with open(f'{rom_name}/session_settings.json', "r") as outfile:  
@@ -58,11 +67,56 @@ def decompile_script(rom_name, move_id):
 		f.write(script)
 		f.close()
 
-		subprocess.run(["python3", "python/MovScrCMDDecompiler.py", f"{rom_name}/move_scripts/{move_id}.bin", f"{rom_name}/json/moves/{move_id}.json" , '>', f"{rom_name}/move_scripts/{move_id}.txt"], check=True)
+		subprocess.run(["python3", "python/MovScrCMDDecompiler.py", f"{rom_name}/move_scripts/{move_id}.bin", f"{rom_name}/json/moves/{move_id}.json" , '>', f"{rom_name}/move_scripts/{move_id}.txt", ",".join(script_names)], check=True)
 		decompiled_script = open(f"{rom_name}/move_scripts/{move_id}.txt").read().splitlines()
 		remove_line_with_string(f"{rom_name}/move_scripts/{move_id}.txt", "project")
 
+def get_script_names(readable):
+	script_names = []
+
+	if (readable["requires_charge"]):
+		return ["CHARGE", "RELEASE"]
+
+	# Future Sight, Doom Desire
+	if (readable["index"] == 248 or readable["index"] == 353):
+		return ["USE", "ATTACK"]
+	
+	# Bide
+	if (readable["index"] == 117):
+		return ["IDLE", "ATTACK"]
+
+	# Thief
+	if (readable["index"] == 168):
+		return ["DEFAULT", "STEAL"]
+	
+	# Curse
+	if (readable["index"] == 174):
+		return ["NORMAL", "GHOST"]
+	
+	# Present
+	if (readable["index"] == 217):
+		return ["DAMAGE", "HEAL"]
+	
+	# Brick Break
+	if (readable["index"] == 280):
+		return ["DEFAULT", "Break"]
+	
+	# Weather Ball
+	if (readable["index"] == 311):
+		return ["NORMAL", "FIRE", "ICE", "ROCK", "WATER"]
+	
+	# Techno Blast
+	if (readable["index"] == 546):
+		return ["NORMAL", "WATER", "ELECTRIC", "FIRE", "ICE"]
+	
+	# Fusion Flare, Fusion Bolt
+	if (readable["index"] == 558 or readable["index"] == 559):
+		return ["DEFAULT", "COMBINED"]
+
+	return script_names
+
 def remove_line_with_string(file_path, string_to_remove):
+
     # Read the content of the file
     with open(file_path, 'r') as file:
         lines = file.readlines()
