@@ -51,8 +51,10 @@ try:
 		# if settings["enable_single_npc_dbl_battles"] == True:
 		
 		if "disable_text_exports" in settings and settings["disable_text_exports"]:
-			edited.remove("text")
-			edited.remove("headers")
+			if "text" in edited:
+				edited.remove("text")
+			if "headers" in edited:
+				edited.remove("headers")
 		else:
 			edited.append("text")
 
