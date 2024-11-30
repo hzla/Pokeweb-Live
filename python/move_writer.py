@@ -101,6 +101,10 @@ def get_script_names(readable):
 	if (readable["index"] == 280):
 		return ["DEFAULT", "Break"]
 	
+	# Secret Power
+	if (readable["index"] == 290):
+		return ["BODYSLAM", "MUDSLAP", "MUDSHOT", "AVALANCHE", "ICESHARD", "WATERPULSE", "ROCKTHROW", "NEEDLEARM"]
+	
 	# Weather Ball
 	if (readable["index"] == 311):
 		return ["NORMAL", "FIRE", "ICE", "ROCK", "WATER"]
