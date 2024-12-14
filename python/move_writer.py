@@ -23,6 +23,9 @@ def output_narc(rom, rom_name):
 			narc = ndspy.narc.NARC.fromFile(narcfile_path)
 			narc.endiannessOfBeginning = ">"
 
+			# create custom name table
+			narc.filenames = ndspy.fnt.Folder(files=[f"file_{i}" for i in range(len(narc.files))])
+
 			rom.files[narc_id] = narc.save()
 			print("spas saved")
 
@@ -32,6 +35,9 @@ def output_narc(rom, rom_name):
 
 			narc = ndspy.narc.NARC.fromFile(narcfile_path)
 			narc.endiannessOfBeginning = ">"
+
+			# create custom name table
+			narc.filenames = ndspy.fnt.Folder(files=[f"file_{i}" for i in range(len(narc.files))])
 
 			rom.files[narc_id] = narc.save()
 

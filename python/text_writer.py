@@ -50,6 +50,10 @@ def output_narc(rom, rom_name):
                 bank_bin = open(f'{ROM_NAME}/{narc_name}/{bank_id}.bin', "rb").read()
                 narc.files[bank_id] = bank_bin
 
+
+        # create custom name table
+        narc.filenames = ndspy.fnt.Folder(files=[f"file_{i}" for i in range(len(narc.files))])
+
         rom.files[NARC_FILE_IDS[narc_name]] = narc.save()
 
     ######## TRAINER TEXTS #########

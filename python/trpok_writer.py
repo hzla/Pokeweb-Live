@@ -90,6 +90,9 @@ def output_narc(rom, rom_name):
 			f.write(narc.save())
 		return 
 
+	# create custom name table
+	narc.filenames = ndspy.fnt.Folder(files=[f"file_{i}" for i in range(len(narc.files))])
+
 	rom.files[NARC_FILE_ID] = narc.save()
 	print("trpok narc saved")
 

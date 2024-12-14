@@ -27,7 +27,7 @@
 			</div>
 		</div>
 	<% elsif element[:tag] == "encounter" %>
-		<% if $gen == 5 %>
+		<% if true %>
 				<%= erb :"mastersheet/_encounter", :layout => false, :locals => { :i => element[:id], :enc=> @encounters[element[:id]], :season => "spring"} %>
 			<% else %>
 				<%= erb :"mastersheet/_hgss_encounter", :layout => false, :locals => { :i => element[:id], :enc=> @encounters[element[:id]], :season => "spring"} %>

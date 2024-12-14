@@ -89,6 +89,9 @@ def output_narc(rom, rom_name):
 	narc = ndspy.narc.NARC(rom.files[NARC_FILE_ID])
 	updated_narc = write_narc_data(HEADER_NARC_FORMAT, "headers", rom_name)
 	narc.files[0] = updated_narc
+
+	# create custom name table
+	narc.filenames = ndspy.fnt.Folder(files=[f"file_{i}" for i in range(len(narc.files))])
 	rom.files[NARC_FILE_ID] = narc.save()
 
 	print("narc saved")

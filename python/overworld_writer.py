@@ -119,6 +119,10 @@ def output_narc(rom, rom_name):
 		file_name = int(f.split(".")[0])
 		write_map_narc_data(file_name, narc, "maps", rom_name)
 
+
+	# create custom name table
+	narc.filenames = ndspy.fnt.Folder(files=[f"file_{i}" for i in range(len(narc.files))])
+
 	rom.files[MAP_NARC_ID] = narc.save()
 
 	

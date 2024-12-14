@@ -49,6 +49,10 @@ def output_narc(narc_name, rom, rom_name):
 	
 	narc.endiannessOfBeginning = ">"
 
+
+	# create custom name table
+	narc.filenames = ndspy.fnt.Folder(files=[f"file_{i}" for i in range(len(narc.files))])
+
 	if rom == "none":
 		file_path = f'{rom_data.ROM_NAME}/narcs/{narc_name}.narc'
 		with open(file_path, 'wb') as f:

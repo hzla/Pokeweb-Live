@@ -1,6 +1,6 @@
 dupes = {}
 plat = true
-
+gen = 5
 function getEncInfo(enc) {
 	if (gen == 4) {
 		// swithc order back for hgsss and remove radar and add back rock smash and hoenn sinnoh

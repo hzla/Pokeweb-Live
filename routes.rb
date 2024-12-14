@@ -23,7 +23,7 @@ Dotenv.load
 Dir["models/*.rb"].each {|file| require_relative file}
 p "init"
 # $rom_name = "projects/bb2"
-# $gen = SessionSettings.get("g4") ? 4 : 5
+# $gen = 4
 
 
 
@@ -122,7 +122,7 @@ class MyApp < Sinatra::Base
 			@poke_data = Personal.poke_data
 			
 			@location_names = Header.location_names
-			@item_locations = Item.locations
+			# @item_locations = Item.locations
 			@evolutions = Evolution.get_all
 
 			@pok_locations = Personal.get_all_locations @encounters

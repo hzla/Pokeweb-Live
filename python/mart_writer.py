@@ -51,6 +51,12 @@ def output_narc(rom, rom_name):
 		write_narc_data(file_name, NARC_FORMAT, narc, counts, "marts", rom_name)
 
 	counts_narc.files[0] = counts
+
+	# create custom name table
+	narc.filenames = ndspy.fnt.Folder(files=[f"file_{i}" for i in range(len(narc.files))])
+	
+
+
 	rom.files[NARC_FILE_ID] = narc.save()
 	rom.files[MART_COUNTS_NARC_FILE_ID] = counts_narc.save()
 	
