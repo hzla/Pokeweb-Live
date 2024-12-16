@@ -7,7 +7,7 @@
 .word \p4
 .endm
 
-.macro ZoomCamera p0 p1 p2 p3 p4 p5 p6 p7 p8 p9
+.macro AdjustCamera p0 p1 p2 p3 p4 p5 p6 p7 p8 p9
 .hword 1
 .word \p0
 .word \p1

@@ -1,25 +1,5 @@
 class Save
 
-	def self.test
-		all_mons = File.read("./Reference_Files/save_constants/mons_rad_red.txt").split("\n")
-		abils = JSON.parse(File.read('./Reference_Files/save_constants/rr_abils.json'))
-
-		all_mons.each do |m|
-			if abils[m]
-			else
-				p m
-			end
-		end
-
-		return "done"
-	end
-
-
-	def self.brute_force(save_data, static_level)
-	end
-
-
-
 
 	def self.read_rad_red(save_data, static_level=100, brute_force=false, party_search=false)
 		save_index_a_offset = 0xffc
@@ -53,10 +33,6 @@ class Save
 		if save_index_b + save_index_a >= 65535 
 			adjustment = 0
 		end
-
-
-
-
 
 		rotation = save_index % 14
 		
@@ -210,10 +186,7 @@ class Save
 		all_moves = File.read("./Reference_Files/save_constants/moves.txt").split("\n")
 		all_mons = File.read("./Reference_Files/save_constants/mons.txt").split("\n")
 
-
-
 		# if save_index odd should be at save_block B otherwise A
-
 
 		# save_path = "./IE.sav"
 		save = save_data
@@ -232,11 +205,7 @@ class Save
 		save = save[block_offset..block_offset + 57343]
 
 
-		#comment this out later
-		# block_offset = 0
 
-
-		#change this to the larger of the two save indexes later
 		save_index = [save_index_a, save_index_b].max
 		save_index = save_index_a if save_index_b == 65535
 		save_index = save_index_b if save_index_a == 65535
@@ -252,12 +221,6 @@ class Save
 		box_offset = (20480 + 4 + total_offset) % 57344
 		party_offset = (total_offset + 4096 + 0x238) % 57344
 
-		p save_index
-		p party_offset
-		p (total_offset + 4096 + 0x238)
-
-
-
 
 		box_data = ""
 
@@ -265,9 +228,6 @@ class Save
 		party_data = save[party_offset..party_offset + 599]
 
 		box_data += party_data
-
-
-
 
 
 		(0..8).each do |n|
@@ -285,7 +245,6 @@ class Save
 		box_suboffset = 0
 		import_data = ""
 
-		# p trainer_string.unpack("V")[0]
 
 		n = 0
 		while n < box_data.length

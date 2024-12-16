@@ -17,7 +17,11 @@
 
 <div class="pokemon-filter master-sidebar" style="top: 0px">	
 	<div class="filter-title">Lookup</div>
+	<div class="filter-title active">ToC</div>
 	<input class="" placeholder="Species or move name or item name"/>
+
+	<div id="toc">
+	</div>
 
 	<% @moves.each do |id, move|  %>			
 		<% if move %>
@@ -33,7 +37,6 @@
 	<% end %>
 
 	<div id="enc-info"></div>
-
 </div>
 <div id="ms-editor">
 	<textarea type="text" id="ms-source" ><%= File.read("#{$rom_name}/mastersheet.txt") %></textarea>

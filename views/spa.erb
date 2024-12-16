@@ -94,9 +94,9 @@
 				<% end %>
 			</div>
 
-			<div class="pallete-canvas">
+			<div class="pallete-canvas" data-narc="spas">
 				<% @colors[n]["colors"].each_with_index do |color, i| %>
-					<div contenteditable="true" class="pallete-color no-validate" style="background:<%= color %>;" data-color-index="<%= i %>" data-texture-index="<%= n %>" data-field-name="<%= "#{@id}_#{n}_#{i}" %>">
+					<div contenteditable="true" class="pallete-color no-validate" data-narc="spas" style="background:<%= color %>;" data-color-index="<%= i %>" data-texture-index="<%= n %>" data-field-name="<%= "#{@id}_#{n}_#{i}" %>">
 						<%= color[0] == "#" ? color : color[4..-2] %>
 					</div>
 				<% end %>

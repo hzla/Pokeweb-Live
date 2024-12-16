@@ -147,9 +147,10 @@
 
 .pokemon-filter>* {
     margin-bottom: 10px;
-    margin-right: 10px;
     width: 100%
 }
+
+
 
 .filter-msgbox {
     margin-top: 40px;

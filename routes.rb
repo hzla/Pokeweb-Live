@@ -526,12 +526,9 @@ class MyApp < Sinatra::Base
 		end
 		p params['data']
 
-
-
-
 		Object.const_get(narc_name.capitalize).write_data params["data"]
 
-		if narc_name == 'spas' or narc_name == "starters"
+		if narc_name == 'spas' or narc_name == "starters" or narc_name == "spa"
 			return {url: '200 OK'}.to_json
 		end
 

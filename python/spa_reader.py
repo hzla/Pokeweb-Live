@@ -421,10 +421,16 @@ if __name__ == "__main__":
 	if  sys.argv[1][0:3] == "int":
 		print(convert_to_rgb(sys.argv[1].split("int")[1]))
 
+	spa_narc_id = 248
+
+	if len(sys.argv) > 3:
+		with open(f'{sys.argv[2]}/session_settings.json', "r") as outfile:  
+			spa_narc_id = json.load(outfile)["move_spas"] 
 
 	
 	if len(sys.argv) > 3 and sys.argv[3] == "-r" and sys.argv[1] == "all":
 			
+
 		if sys.argv[2] == "projects/spa_rom":
 			if not os.path.isdir('projects/spa_rom'):
 				os.mkdir("projects/spa_rom")
@@ -438,7 +444,7 @@ if __name__ == "__main__":
 
 			data = rom.files[rom.filenames['a/0/2/9']]
 
-			with open(f'projects/spa_rom/narcs/move_spas-353.narc', 'wb') as f:
+			with open(f'projects/spa_rom/narcs/move_spas-{spa_narc_id}.narc', 'wb') as f:
 				f.write(data)
 
 
@@ -452,7 +458,7 @@ if __name__ == "__main__":
 			  "story_texts": 350,
 			  "scripts": 403,
 			  "personal": 363,
-			  "move_spas": 353,
+			  "move_spas": 248,
 			  "maps": 355,
 			  "matrix": 356,
 			  "overworlds": 473,
@@ -492,14 +498,17 @@ if __name__ == "__main__":
 			os.mkdir(f"{sys.argv[2]}/spas")
 
 
+		
 
-		narc = ndspy.narc.NARC.fromFile(f"{sys.argv[2]}/narcs/move_spas-353.narc") 
+
+
+		narc = ndspy.narc.NARC.fromFile(f"{sys.argv[2]}/narcs/move_spas-{spa_narc_id}.narc") 
 		# code.interact(local=dict(globals(), **locals()))
 		for idx, file in enumerate(narc.files):
 			read_spa(file, idx )
 
 	elif len(sys.argv) > 3 and sys.argv[3] == "-r":
-		narc = ndspy.narc.NARC.fromFile(f"{sys.argv[2]}/narcs/move_spas-353.narc") 
+		narc = ndspy.narc.NARC.fromFile(f"{sys.argv[2]}/narcs/move_spas-{spa_narc_id}.narc") 
 
 		read_spa(narc.files[int(sys.argv[1])])
 	else:
@@ -507,17 +516,25 @@ if __name__ == "__main__":
 
 
 	if len(sys.argv) > 3 and sys.argv[3] == "-w":
-		narc = ndspy.narc.NARC.fromFile(f"{sys.argv[2]}/narcs/move_spas-353.narc") 
+		
+		spa_narc_id = 0
+		with open(f'{sys.argv[2]}/session_settings.json', "r") as outfile:  
+			spa_narc_id = json.load(outfile)["move_spas"] 
+
+		print(spa_narc_id)
+
+
+		narc = ndspy.narc.NARC.fromFile(f"{sys.argv[2]}/narcs/move_spas-{spa_narc_id}.narc") 
 		data = write_spa()
 
 		narc.files[int(sys.argv[1])] = data
 
-		with open(f"{sys.argv[2]}/narcs/move_spas-353.narc", 'wb') as f:
+		with open(f"{sys.argv[2]}/narcs/move_spas-{spa_narc_id}.narc", 'wb') as f:
 			f.write(narc.save())
 
 
 	if len(sys.argv) > 3 and sys.argv[3] == "-copy":
-		narc = ndspy.narc.NARC.fromFile(f"{sys.argv[2]}/narcs/move_spas-353.narc") 
+		narc = ndspy.narc.NARC.fromFile(f"{sys.argv[2]}/narcs/move_spas-{spa_narc_id}.narc") 
 		copy_target_index = sys.argv[1].split("-")[0]
 		copy_target = narc.files[int(copy_target_index)]
 		
@@ -550,7 +567,7 @@ if __name__ == "__main__":
 				print(os.path.join(my_dir, new_file_name))
 
 
-		with open(f"{sys.argv[2]}/narcs/move_spas-353.narc", 'wb') as f:
+		with open(f"{sys.argv[2]}/narcs/move_spas-{spa_narc_id}.narc", 'wb') as f:
 			f.write(narc.save())
 
 	
