@@ -1,0 +1,2431 @@
+===================
+
+===================
+(Old)
+0  BP || 0 ACC || Status || Normal || 0 PP
+Effect: None
+
+(New)
+0  BP || 0 ACC || Status || Normal || 0 PP
+Effect: None
+
+===================
+Doubleslap
+===================
+(Old)
+15  BP || 85 ACC || Physical || Normal || 10 PP
+Effect: Hits target multiple times
+
+(New)
+25  BP || 100 ACC || Physical || Normal || 10 PP
+Effect: Hits target multiple times
+
+===================
+Comet Punch
+===================
+(Old)
+18  BP || 85 ACC || Physical || Normal || 15 PP
+Effect: Hits target multiple times
+
+(New)
+25  BP || 100 ACC || Physical || Normal || 15 PP
+Effect: Hits target multiple times
+
+===================
+Mega Punch
+===================
+(Old)
+80  BP || 85 ACC || Physical || Normal || 20 PP
+Effect: None
+
+(New)
+80  BP || 100 ACC || Physical || Normal || 20 PP
+Effect: None
+
+===================
+Fire Punch
+===================
+(Old)
+75  BP || 100 ACC || Physical || Fire || 15 PP
+Effect: Chance to Burn
+
+(New)
+80  BP || 100 ACC || Physical || Fire || 15 PP
+Effect: Chance to Burn
+
+===================
+Ice Punch
+===================
+(Old)
+75  BP || 100 ACC || Physical || Ice || 15 PP
+Effect: Chance to Freeze
+
+(New)
+80  BP || 100 ACC || Physical || Ice || 15 PP
+Effect: Chance to Freeze
+
+===================
+Thunderpunch
+===================
+(Old)
+75  BP || 100 ACC || Physical || Electric || 15 PP
+Effect: Chance to Paralyze
+
+(New)
+80  BP || 100 ACC || Physical || Electric || 15 PP
+Effect: Chance to Paralyze
+
+===================
+Swords Dance
+===================
+(Old)
+0  BP || 101 ACC || Status || Normal || 30 PP
+Effect: Sharply raises Atk
+
+(New)
+0  BP || 101 ACC || Status || Normal || 1 PP
+Effect: Sharply raises Atk
+
+===================
+Cut
+===================
+(Old)
+50  BP || 95 ACC || Physical || Normal || 30 PP
+Effect: None
+
+(New)
+60  BP || 100 ACC || Physical || Grass || 30 PP
+Effect: None
+
+===================
+Wing Attack
+===================
+(Old)
+60  BP || 100 ACC || Physical || Flying || 35 PP
+Effect: None
+
+(New)
+80  BP || 100 ACC || Physical || Flying || 35 PP
+Effect: None
+
+===================
+Fly
+===================
+(Old)
+90  BP || 95 ACC || Physical || Flying || 15 PP
+Effect: Fly effect
+
+(New)
+100  BP || 100 ACC || Physical || Flying || 15 PP
+Effect: Fly effect
+
+===================
+Slam
+===================
+(Old)
+80  BP || 75 ACC || Physical || Normal || 20 PP
+Effect: None
+
+(New)
+80  BP || 100 ACC || Physical || Normal || 20 PP
+Effect: None
+
+===================
+Mega Kick
+===================
+(Old)
+120  BP || 75 ACC || Physical || Normal || 5 PP
+Effect: None
+
+(New)
+120  BP || 90 ACC || Physical || Normal || 5 PP
+Effect: None
+
+===================
+Rolling Kick
+===================
+(Old)
+60  BP || 85 ACC || Physical || Fighting || 15 PP
+Effect: Chance to Flinch
+
+(New)
+60  BP || 100 ACC || Physical || Fighting || 15 PP
+Effect: Chance to Flinch
+
+===================
+Sand-Attack
+===================
+(Old)
+0  BP || 100 ACC || Status || Ground || 15 PP
+Effect: Lowers Accuracy
+
+(New)
+0  BP || 100 ACC || Status || Ground || 2 PP
+Effect: Lowers Accuracy
+
+===================
+Fury Attack
+===================
+(Old)
+15  BP || 85 ACC || Physical || Normal || 20 PP
+Effect: Hits target multiple times
+
+(New)
+15  BP || 100 ACC || Physical || Normal || 20 PP
+Effect: Hits target multiple times
+
+===================
+Wrap
+===================
+(Old)
+15  BP || 90 ACC || Physical || Normal || 20 PP
+Effect: Binding move effect
+
+(New)
+15  BP || 100 ACC || Physical || Normal || 20 PP
+Effect: Binding move effect
+
+===================
+Take Down
+===================
+(Old)
+90  BP || 85 ACC || Physical || Normal || 20 PP
+Effect: Recoil% damage dealt to self
+
+(New)
+90  BP || 100 ACC || Physical || Normal || 20 PP
+Effect: None
+
+===================
+Tail Whip
+===================
+(Old)
+0  BP || 100 ACC || Status || Normal || 30 PP
+Effect: Lowers Def
+
+(New)
+0  BP || 100 ACC || Status || Normal || 3 PP
+Effect: Lowers Def
+
+===================
+Twineedle
+===================
+(Old)
+25  BP || 100 ACC || Physical || Bug || 20 PP
+Effect: Hits twice; chance to poison
+
+(New)
+45  BP || 100 ACC || Physical || Bug || 20 PP
+Effect: Hits twice; chance to poison
+
+===================
+Pin Missile
+===================
+(Old)
+14  BP || 85 ACC || Physical || Bug || 20 PP
+Effect: Hits target multiple times
+
+(New)
+25  BP || 100 ACC || Physical || Bug || 20 PP
+Effect: Hits target multiple times
+
+===================
+Leer
+===================
+(Old)
+0  BP || 100 ACC || Status || Normal || 30 PP
+Effect: Lowers Def
+
+(New)
+0  BP || 100 ACC || Status || Normal || 3 PP
+Effect: Lowers Def
+
+===================
+Growl
+===================
+(Old)
+0  BP || 100 ACC || Status || Normal || 40 PP
+Effect: Lowers Atk
+
+(New)
+0  BP || 100 ACC || Status || Normal || 8 PP
+Effect: Lowers Atk
+
+===================
+Sing
+===================
+(Old)
+0  BP || 55 ACC || Status || Normal || 15 PP
+Effect: Causes Sleep
+
+(New)
+0  BP || 70 ACC || Status || Normal || 15 PP
+Effect: Causes Sleep
+
+===================
+Supersonic
+===================
+(Old)
+0  BP || 55 ACC || Status || Normal || 20 PP
+Effect: Guaranteed Confusion
+
+(New)
+0  BP || 100 ACC || Status || Normal || 20 PP
+Effect: Guaranteed Confusion
+
+===================
+Hydro Pump
+===================
+(Old)
+120  BP || 80 ACC || Special || Water || 5 PP
+Effect: None
+
+(New)
+120  BP || 85 ACC || Special || Water || 5 PP
+Effect: None
+
+===================
+Submission
+===================
+(Old)
+80  BP || 80 ACC || Physical || Fighting || 25 PP
+Effect: Recoil% damage dealt to self
+
+(New)
+80  BP || 100 ACC || Physical || Fighting || 25 PP
+Effect: Recoil% damage dealt to self
+
+===================
+Strength
+===================
+(Old)
+80  BP || 100 ACC || Physical || Normal || 15 PP
+Effect: None
+
+(New)
+90  BP || 100 ACC || Physical || Rock || 15 PP
+Effect: None
+
+===================
+Growth
+===================
+(Old)
+0  BP || 101 ACC || Status || Normal || 40 PP
+Effect: Raise Atk and SpAtk, doubled in sunlight
+
+(New)
+0  BP || 101 ACC || Status || Normal || 2 PP
+Effect: Raise Atk and SpAtk, doubled in sunlight
+
+===================
+Razor Leaf
+===================
+(Old)
+55  BP || 95 ACC || Physical || Grass || 25 PP
+Effect: High crit ratio
+
+(New)
+55  BP || 100 ACC || Physical || Grass || 25 PP
+Effect: High crit ratio
+
+===================
+Poisonpowder
+===================
+(Old)
+0  BP || 75 ACC || Status || Poison || 35 PP
+Effect: Guaranteed Poison
+
+(New)
+0  BP || 100 ACC || Status || Poison || 35 PP
+Effect: Guaranteed Poison
+
+===================
+Stun Spore
+===================
+(Old)
+0  BP || 75 ACC || Status || Grass || 30 PP
+Effect: Guaranteed Paralysis
+
+(New)
+0  BP || 90 ACC || Status || Grass || 30 PP
+Effect: Guaranteed Paralysis
+
+===================
+String Shot
+===================
+(Old)
+0  BP || 95 ACC || Status || Bug || 40 PP
+Effect: Lowers Spd
+
+(New)
+0  BP || 100 ACC || Status || Bug || 5 PP
+Effect: Lowers Spd
+
+===================
+Fire Spin
+===================
+(Old)
+35  BP || 85 ACC || Special || Fire || 15 PP
+Effect: Binding move effect
+
+(New)
+35  BP || 100 ACC || Special || Fire || 15 PP
+Effect: Binding move effect
+
+===================
+Rock Throw
+===================
+(Old)
+50  BP || 90 ACC || Physical || Rock || 15 PP
+Effect: None
+
+(New)
+60  BP || 100 ACC || Physical || Rock || 15 PP
+Effect: None
+
+===================
+Dig
+===================
+(Old)
+80  BP || 100 ACC || Physical || Ground || 10 PP
+Effect: Dig effect
+
+(New)
+90  BP || 100 ACC || Physical || Ground || 10 PP
+Effect: Dig effect
+
+===================
+Toxic
+===================
+(Old)
+0  BP || 90 ACC || Status || Poison || 10 PP
+Effect: Badly Poisons
+
+(New)
+0  BP || 100 ACC || Status || Poison || 10 PP
+Effect: Badly Poisons
+
+===================
+Hypnosis
+===================
+(Old)
+0  BP || 60 ACC || Status || Psychic || 20 PP
+Effect: Causes Sleep
+
+(New)
+0  BP || 70 ACC || Status || Psychic || 20 PP
+Effect: Causes Sleep
+
+===================
+Meditate
+===================
+(Old)
+0  BP || 101 ACC || Status || Psychic || 40 PP
+Effect: Raises Atk
+
+(New)
+0  BP || 101 ACC || Status || Psychic || 2 PP
+Effect: Raises Atk
+
+===================
+Agility
+===================
+(Old)
+0  BP || 101 ACC || Status || Psychic || 30 PP
+Effect: Sharply raises Spd
+
+(New)
+0  BP || 101 ACC || Status || Psychic || 2 PP
+Effect: Sharply raises Spd
+
+===================
+Screech
+===================
+(Old)
+0  BP || 85 ACC || Status || Normal || 40 PP
+Effect: Sharply lowers Def
+
+(New)
+0  BP || 100 ACC || Status || Normal || 40 PP
+Effect: Sharply lowers Def
+
+===================
+Double Team
+===================
+(Old)
+0  BP || 101 ACC || Status || Normal || 15 PP
+Effect: Raises Evasion
+
+(New)
+0  BP || 101 ACC || Status || Normal || 5 PP
+Effect: Raises Evasion
+
+===================
+Harden
+===================
+(Old)
+0  BP || 101 ACC || Status || Normal || 30 PP
+Effect: Raises Def
+
+(New)
+0  BP || 101 ACC || Status || Normal || 3 PP
+Effect: Raises Def
+
+===================
+Minimize
+===================
+(Old)
+0  BP || 101 ACC || Status || Normal || 20 PP
+Effect: Raises Evasion; weak to Stomp/Rollout/Bodyslam
+
+(New)
+0  BP || 101 ACC || Status || Normal || 1 PP
+Effect: Raises Evasion; weak to Stomp/Rollout/Bodyslam
+
+===================
+Smokescreen
+===================
+(Old)
+0  BP || 100 ACC || Status || Normal || 20 PP
+Effect: Lowers Accuracy
+
+(New)
+0  BP || 100 ACC || Status || Normal || 2 PP
+Effect: Lowers Accuracy
+
+===================
+Withdraw
+===================
+(Old)
+0  BP || 101 ACC || Status || Water || 40 PP
+Effect: Raises Def
+
+(New)
+0  BP || 101 ACC || Status || Water || 3 PP
+Effect: Raises Def
+
+===================
+Defense Curl
+===================
+(Old)
+0  BP || 101 ACC || Status || Normal || 40 PP
+Effect: Raises Def and 2x Rollout/ Ice Ball power
+
+(New)
+0  BP || 101 ACC || Status || Normal || 3 PP
+Effect: Raises Def and 2x Rollout/ Ice Ball power
+
+===================
+Barrier
+===================
+(Old)
+0  BP || 101 ACC || Status || Psychic || 30 PP
+Effect: Sharply raises Def
+
+(New)
+0  BP || 101 ACC || Status || Psychic || 2 PP
+Effect: Sharply raises Def
+
+===================
+Selfdestruct
+===================
+(Old)
+200  BP || 100 ACC || Physical || Normal || 5 PP
+Effect: Selfdestruct/ Explosion effect
+
+(New)
+200  BP || 100 ACC || Physical || Normal || 1 PP
+Effect: Selfdestruct/ Explosion effect
+
+===================
+Egg Bomb
+===================
+(Old)
+100  BP || 75 ACC || Physical || Normal || 10 PP
+Effect: None
+
+(New)
+100  BP || 100 ACC || Special || Grass || 10 PP
+Effect: None
+
+===================
+Lick
+===================
+(Old)
+20  BP || 100 ACC || Physical || Ghost || 30 PP
+Effect: Chance to Paralyze
+
+(New)
+50  BP || 100 ACC || Physical || Ghost || 30 PP
+Effect: Chance to Paralyze
+
+===================
+Smog
+===================
+(Old)
+20  BP || 70 ACC || Special || Poison || 20 PP
+Effect: Chance to Poison
+
+(New)
+20  BP || 100 ACC || Special || Poison || 20 PP
+Effect: Chance to Poison
+
+===================
+Bone Club
+===================
+(Old)
+65  BP || 85 ACC || Physical || Ground || 20 PP
+Effect: Chance to Flinch
+
+(New)
+65  BP || 100 ACC || Physical || Ground || 20 PP
+Effect: Chance to Flinch
+
+===================
+Clamp
+===================
+(Old)
+35  BP || 85 ACC || Physical || Water || 15 PP
+Effect: Binding move effect
+
+(New)
+25  BP || 100 ACC || Physical || Water || 15 PP
+Effect: Binding move effect
+
+===================
+Amnesia
+===================
+(Old)
+0  BP || 101 ACC || Status || Psychic || 20 PP
+Effect: Sharply raises SpDef
+
+(New)
+0  BP || 101 ACC || Status || Psychic || 2 PP
+Effect: Sharply raises SpDef
+
+===================
+Kinesis
+===================
+(Old)
+0  BP || 80 ACC || Status || Psychic || 15 PP
+Effect: Lowers Accuracy
+
+(New)
+0  BP || 100 ACC || Status || Psychic || 2 PP
+Effect: Lowers Accuracy
+
+===================
+Glare
+===================
+(Old)
+0  BP || 90 ACC || Status || Normal || 30 PP
+Effect: Guaranteed Paralysis
+
+(New)
+0  BP || 100 ACC || Status || Normal || 30 PP
+Effect: Guaranteed Paralysis
+
+===================
+Poison Gas
+===================
+(Old)
+0  BP || 80 ACC || Status || Poison || 40 PP
+Effect: Guaranteed Poison
+
+(New)
+0  BP || 100 ACC || Status || Poison || 40 PP
+Effect: Guaranteed Poison
+
+===================
+Leech Life
+===================
+(Old)
+20  BP || 100 ACC || Physical || Bug || 15 PP
+Effect: Damages target; heals user up to 50% of damage dealt
+
+(New)
+80  BP || 100 ACC || Physical || Bug || 15 PP
+Effect: Damages target; heals user up to 50% of damage dealt
+
+===================
+Flash
+===================
+(Old)
+0  BP || 100 ACC || Status || Normal || 20 PP
+Effect: Lowers Accuracy
+
+(New)
+0  BP || 100 ACC || Status || Normal || 5 PP
+Effect: Lowers Accuracy
+
+===================
+Psywave
+===================
+(Old)
+1  BP || 80 ACC || Special || Psychic || 15 PP
+Effect: Deals up to user's level x1.5 damage
+
+(New)
+1  BP || 100 ACC || Special || Psychic || 15 PP
+Effect: Deals up to user's level x1.5 damage
+
+===================
+Acid Armor
+===================
+(Old)
+0  BP || 101 ACC || Status || Poison || 40 PP
+Effect: Sharply raises Def
+
+(New)
+0  BP || 101 ACC || Status || Poison || 2 PP
+Effect: Sharply raises Def
+
+===================
+Crabhammer
+===================
+(Old)
+90  BP || 90 ACC || Physical || Water || 10 PP
+Effect: High crit ratio
+
+(New)
+100  BP || 100 ACC || Physical || Water || 10 PP
+Effect: High crit ratio
+
+===================
+Explosion
+===================
+(Old)
+250  BP || 100 ACC || Physical || Normal || 5 PP
+Effect: Selfdestruct/ Explosion effect
+
+(New)
+250  BP || 100 ACC || Physical || Normal || 1 PP
+Effect: Selfdestruct/ Explosion effect
+
+===================
+Fury Swipes
+===================
+(Old)
+18  BP || 80 ACC || Physical || Normal || 15 PP
+Effect: Hits target multiple times
+
+(New)
+18  BP || 100 ACC || Physical || Normal || 15 PP
+Effect: Hits target multiple times
+
+===================
+Bonemerang
+===================
+(Old)
+50  BP || 90 ACC || Physical || Ground || 10 PP
+Effect: Hits twice
+
+(New)
+50  BP || 100 ACC || Physical || Ground || 10 PP
+Effect: Hits twice
+
+===================
+Rest
+===================
+(Old)
+0  BP || 101 ACC || Status || Psychic || 10 PP
+Effect: Causes Sleep and restores all HP
+
+(New)
+0  BP || 101 ACC || Status || Psychic || 5 PP
+Effect: Causes Sleep and restores all HP
+
+===================
+Rock Slide
+===================
+(Old)
+75  BP || 90 ACC || Physical || Rock || 10 PP
+Effect: Chance to Flinch
+
+(New)
+75  BP || 100 ACC || Physical || Rock || 10 PP
+Effect: Chance to Flinch
+
+===================
+Hyper Fang
+===================
+(Old)
+80  BP || 90 ACC || Physical || Normal || 15 PP
+Effect: Chance to Flinch
+
+(New)
+80  BP || 100 ACC || Physical || Normal || 15 PP
+Effect: Chance to Flinch
+
+===================
+Sharpen
+===================
+(Old)
+0  BP || 101 ACC || Status || Normal || 30 PP
+Effect: Raises Atk
+
+(New)
+0  BP || 101 ACC || Status || Normal || 2 PP
+Effect: Raises Atk
+
+===================
+Super Fang
+===================
+(Old)
+1  BP || 90 ACC || Physical || Normal || 10 PP
+Effect: Deals damage equal to 1/2 target's current hp
+
+(New)
+1  BP || 100 ACC || Physical || Dark || 10 PP
+Effect: Deals damage equal to 1/2 target's current hp
+
+===================
+Triple Kick
+===================
+(Old)
+10  BP || 90 ACC || Physical || Fighting || 10 PP
+Effect: Hits the target up to 3 times; increases power by 10 with each hit
+
+(New)
+10  BP || 100 ACC || Physical || Fighting || 10 PP
+Effect: Hits the target up to 3 times; increases power by 10 with each hit
+
+===================
+Curse
+===================
+(Old)
+0  BP || 101 ACC || Status || Ghost || 10 PP
+Effect: Curse effect
+
+(New)
+0  BP || 101 ACC || Status || Ghost || 2 PP
+Effect: Curse effect
+
+===================
+Cotton Spore
+===================
+(Old)
+0  BP || 100 ACC || Status || Grass || 40 PP
+Effect: Sharply lowers Spd
+
+(New)
+0  BP || 100 ACC || Status || Grass || 5 PP
+Effect: Sharply lowers Spd
+
+===================
+Protect
+===================
+(Old)
+0  BP || 101 ACC || Status || Normal || 10 PP
+Effect: Protect/ Detect effect
+
+(New)
+0  BP || 101 ACC || Status || Normal || 5 PP
+Effect: Protect/ Detect effect
+
+===================
+Belly Drum
+===================
+(Old)
+0  BP || 101 ACC || Status || Normal || 10 PP
+Effect: Belly Drum effect
+
+(New)
+0  BP || 101 ACC || Status || Normal || 1 PP
+Effect: Belly Drum effect
+
+===================
+Octazooka
+===================
+(Old)
+65  BP || 85 ACC || Special || Water || 10 PP
+Effect: Lowers Accuracy
+
+(New)
+85  BP || 100 ACC || Special || Water || 10 PP
+Effect: Lowers Accuracy
+
+===================
+Spikes
+===================
+(Old)
+0  BP || 101 ACC || Status || Ground || 20 PP
+Effect: Spikes effect
+
+(New)
+0  BP || 101 ACC || Status || Ground || 0 PP
+Effect: Spikes effect
+
+===================
+Zap Cannon
+===================
+(Old)
+120  BP || 50 ACC || Special || Electric || 5 PP
+Effect: Chance to Paralyze
+
+(New)
+140  BP || 100 ACC || Special || Electric || 10 PP
+Effect: Chance to Paralyze
+
+===================
+Icy Wind
+===================
+(Old)
+55  BP || 95 ACC || Special || Ice || 15 PP
+Effect: Lowers Spd
+
+(New)
+55  BP || 100 ACC || Special || Ice || 15 PP
+Effect: None
+
+===================
+Bone Rush
+===================
+(Old)
+25  BP || 90 ACC || Physical || Ground || 10 PP
+Effect: Hits target multiple times
+
+(New)
+25  BP || 100 ACC || Physical || Ground || 10 PP
+Effect: Hits target multiple times
+
+===================
+Sandstorm
+===================
+(Old)
+0  BP || 101 ACC || Status || Rock || 10 PP
+Effect: Causes Sandstorm
+
+(New)
+0  BP || 101 ACC || Status || Rock || 1 PP
+Effect: Causes Sandstorm
+
+===================
+Charm
+===================
+(Old)
+0  BP || 100 ACC || Status || Normal || 20 PP
+Effect: Sharply lowers Atk
+
+(New)
+0  BP || 100 ACC || Status || Normal || 5 PP
+Effect: Sharply lowers Atk
+
+===================
+Rollout
+===================
+(Old)
+30  BP || 90 ACC || Physical || Rock || 20 PP
+Effect: Rollout effect
+
+(New)
+30  BP || 95 ACC || Physical || Rock || 20 PP
+Effect: Rollout effect
+
+===================
+Swagger
+===================
+(Old)
+0  BP || 90 ACC || Status || Normal || 15 PP
+Effect: Sharply raises target's Atk and causes Confusion
+
+(New)
+0  BP || 95 ACC || Status || Normal || 15 PP
+Effect: Sharply raises target's Atk and causes Confusion
+
+===================
+Spark
+===================
+(Old)
+65  BP || 100 ACC || Physical || Electric || 20 PP
+Effect: Chance to Paralyze
+
+(New)
+85  BP || 100 ACC || Physical || Electric || 20 PP
+Effect: Chance to Paralyze
+
+===================
+Fury Cutter
+===================
+(Old)
+20  BP || 95 ACC || Physical || Bug || 20 PP
+Effect: 2x power for every consecutive hit
+
+(New)
+20  BP || 100 ACC || Physical || Bug || 20 PP
+Effect: 2x power for every consecutive hit
+
+===================
+Steel Wing
+===================
+(Old)
+70  BP || 90 ACC || Physical || Steel || 25 PP
+Effect: Chance of raising Def
+
+(New)
+70  BP || 100 ACC || Physical || Steel || 25 PP
+Effect: Chance of raising Def
+
+===================
+Heal Bell
+===================
+(Old)
+0  BP || 101 ACC || Status || Normal || 5 PP
+Effect: Heal Bell effect
+
+(New)
+0  BP || 101 ACC || Status || Normal || 1 PP
+Effect: Heal Bell effect
+
+===================
+Safeguard
+===================
+(Old)
+0  BP || 101 ACC || Status || Normal || 25 PP
+Effect: Safeguard effect
+
+(New)
+0  BP || 101 ACC || Status || Normal || 3 PP
+Effect: Safeguard effect
+
+===================
+Megahorn
+===================
+(Old)
+120  BP || 85 ACC || Physical || Bug || 10 PP
+Effect: None
+
+(New)
+120  BP || 90 ACC || Physical || Bug || 10 PP
+Effect: None
+
+===================
+Baton Pass
+===================
+(Old)
+0  BP || 101 ACC || Status || Normal || 40 PP
+Effect: Baton Pass effect
+
+(New)
+0  BP || 101 ACC || Status || Normal || 2 PP
+Effect: Baton Pass effect
+
+===================
+Encore
+===================
+(Old)
+0  BP || 100 ACC || Status || Normal || 5 PP
+Effect: Locks target into last move used for 3-7 turns
+
+(New)
+0  BP || 100 ACC || Status || Normal || 1 PP
+Effect: Locks target into last move used for 3-7 turns
+
+===================
+Iron Tail
+===================
+(Old)
+100  BP || 75 ACC || Physical || Steel || 15 PP
+Effect: Lowers Def
+
+(New)
+100  BP || 90 ACC || Physical || Steel || 15 PP
+Effect: Lowers Def
+
+===================
+Rain Dance
+===================
+(Old)
+0  BP || 101 ACC || Status || Water || 5 PP
+Effect: Causes Rain
+
+(New)
+0  BP || 101 ACC || Status || Water || 1 PP
+Effect: Causes Rain
+
+===================
+Sunny Day
+===================
+(Old)
+0  BP || 101 ACC || Status || Fire || 5 PP
+Effect: Causes Harsh Sunlight
+
+(New)
+0  BP || 101 ACC || Status || Fire || 1 PP
+Effect: Causes Harsh Sunlight
+
+===================
+Psych Up
+===================
+(Old)
+0  BP || 101 ACC || Status || Normal || 10 PP
+Effect: Copies all of target's stat boosts
+
+(New)
+0  BP || 101 ACC || Status || Normal || 1 PP
+Effect: Copies all of target's stat boosts
+
+===================
+Ancientpower
+===================
+(Old)
+60  BP || 100 ACC || Special || Rock || 5 PP
+Effect: Omni Boost
+
+(New)
+60  BP || 100 ACC || Special || Rock || 10 PP
+Effect: Omni Boost
+
+===================
+Rock Smash
+===================
+(Old)
+40  BP || 100 ACC || Physical || Fighting || 15 PP
+Effect: Lowers Def
+
+(New)
+70  BP || 100 ACC || Physical || Fighting || 15 PP
+Effect: Lowers Def
+
+===================
+Whirlpool
+===================
+(Old)
+35  BP || 85 ACC || Special || Water || 15 PP
+Effect: Whirlpool effect
+
+(New)
+35  BP || 100 ACC || Special || Water || 15 PP
+Effect: Whirlpool effect
+
+===================
+Heat Wave
+===================
+(Old)
+100  BP || 90 ACC || Special || Fire || 10 PP
+Effect: Chance to Burn
+
+(New)
+100  BP || 100 ACC || Special || Fire || 10 PP
+Effect: Chance to Burn
+
+===================
+Hail
+===================
+(Old)
+0  BP || 101 ACC || Status || Ice || 10 PP
+Effect: Causes Hail
+
+(New)
+0  BP || 101 ACC || Status || Ice || 1 PP
+Effect: Causes Hail
+
+===================
+Flatter
+===================
+(Old)
+0  BP || 100 ACC || Status || Dark || 15 PP
+Effect: Raises target's SpAtk and causes Confusion
+
+(New)
+0  BP || 100 ACC || Status || Dark || 2 PP
+Effect: Raises target's SpAtk and causes Confusion
+
+===================
+Will-O-Wisp
+===================
+(Old)
+0  BP || 75 ACC || Status || Fire || 15 PP
+Effect: Guaranteed Burn; activates Flash Fire
+
+(New)
+0  BP || 90 ACC || Status || Fire || 15 PP
+Effect: Guaranteed Burn; activates Flash Fire
+
+===================
+Memento
+===================
+(Old)
+0  BP || 100 ACC || Status || Dark || 10 PP
+Effect: User faints and target's Atk and SpAtk are lowered sharply
+
+(New)
+0  BP || 100 ACC || Status || Dark || 1 PP
+Effect: User faints and target's Atk and SpAtk are lowered sharply
+
+===================
+Charge
+===================
+(Old)
+0  BP || 101 ACC || Status || Electric || 20 PP
+Effect: Next move deals 2x damage if it is Electric-type
+
+(New)
+0  BP || 101 ACC || Status || Electric || 5 PP
+Effect: Next move deals 2x damage if it is Electric-type
+
+===================
+Taunt
+===================
+(Old)
+0  BP || 100 ACC || Status || Dark || 20 PP
+Effect: Target can't use status moves for 3-5 turns
+
+(New)
+0  BP || 100 ACC || Status || Dark || 1 PP
+Effect: Target can't use status moves for 3-5 turns
+
+===================
+Wish
+===================
+(Old)
+0  BP || 101 ACC || Status || Normal || 10 PP
+Effect: 1/2 of user's max HP is restored at the end of next turn
+
+(New)
+0  BP || 101 ACC || Status || Normal || 2 PP
+Effect: 1/2 of user's max HP is restored at the end of next turn
+
+===================
+Superpower
+===================
+(Old)
+120  BP || 100 ACC || Physical || Fighting || 5 PP
+Effect: Lowers user's Atk and Def
+
+(New)
+120  BP || 100 ACC || Physical || Fighting || 10 PP
+Effect: Recoil% damage dealt to self
+
+===================
+Brick Break
+===================
+(Old)
+75  BP || 100 ACC || Physical || Fighting || 15 PP
+Effect: Removes Light Screen/ Reflect from target's side of the field
+
+(New)
+80  BP || 100 ACC || Physical || Fighting || 15 PP
+Effect: Removes Light Screen/ Reflect from target's side of the field
+
+===================
+Yawn
+===================
+(Old)
+0  BP || 101 ACC || Status || Normal || 10 PP
+Effect: Yawn effect
+
+(New)
+0  BP || 70 ACC || Status || Normal || 10 PP
+Effect: Yawn effect
+
+===================
+Knock Off
+===================
+(Old)
+20  BP || 100 ACC || Physical || Dark || 20 PP
+Effect: Renders the target's held item unusable
+
+(New)
+90  BP || 100 ACC || Physical || Dark || 20 PP
+Effect: Renders the target's held item unusable
+
+===================
+Endeavor
+===================
+(Old)
+1  BP || 100 ACC || Physical || Normal || 5 PP
+Effect: Target's HP becomes equal to the user's current HP
+
+(New)
+1  BP || 100 ACC || Physical || Dark || 5 PP
+Effect: Target's HP becomes equal to the user's current HP
+
+===================
+Refresh
+===================
+(Old)
+0  BP || 101 ACC || Status || Normal || 20 PP
+Effect: Cures user of Burn; Poison; or Paralysis
+
+(New)
+0  BP || 101 ACC || Status || Normal || 5 PP
+Effect: Cures user of Burn; Poison; or Paralysis
+
+===================
+Dive
+===================
+(Old)
+80  BP || 100 ACC || Physical || Water || 10 PP
+Effect: Dive effect
+
+(New)
+100  BP || 100 ACC || Physical || Water || 10 PP
+Effect: Dive effect
+
+===================
+Arm Thrust
+===================
+(Old)
+15  BP || 100 ACC || Physical || Fighting || 20 PP
+Effect: Hits target multiple times
+
+(New)
+25  BP || 100 ACC || Physical || Fighting || 20 PP
+Effect: Hits target multiple times
+
+===================
+Tail Glow
+===================
+(Old)
+0  BP || 101 ACC || Status || Bug || 20 PP
+Effect: Raise SpAtk by 3 Stages
+
+(New)
+0  BP || 101 ACC || Status || Bug || 1 PP
+Effect: Raise SpAtk by 3 Stages
+
+===================
+Luster Purge
+===================
+(Old)
+70  BP || 100 ACC || Special || Psychic || 5 PP
+Effect: Lowers SpDef
+
+(New)
+100  BP || 100 ACC || Special || Psychic || 10 PP
+Effect: Lowers SpDef
+
+===================
+Mist Ball
+===================
+(Old)
+70  BP || 100 ACC || Special || Psychic || 5 PP
+Effect: Lowers SpAtk
+
+(New)
+100  BP || 100 ACC || Special || Psychic || 10 PP
+Effect: Lowers SpAtk
+
+===================
+Featherdance
+===================
+(Old)
+0  BP || 100 ACC || Status || Flying || 15 PP
+Effect: Sharply lowers Atk
+
+(New)
+0  BP || 100 ACC || Status || Flying || 5 PP
+Effect: Sharply lowers Atk
+
+===================
+Blaze Kick
+===================
+(Old)
+85  BP || 90 ACC || Physical || Fire || 10 PP
+Effect: Chance of causing Burn; increased Crit ratio
+
+(New)
+85  BP || 100 ACC || Physical || Fire || 10 PP
+Effect: Chance of causing Burn; increased Crit ratio
+
+===================
+Ice Ball
+===================
+(Old)
+30  BP || 90 ACC || Physical || Ice || 20 PP
+Effect: Rollout effect
+
+(New)
+30  BP || 95 ACC || Physical || Ice || 20 PP
+Effect: Rollout effect
+
+===================
+Needle Arm
+===================
+(Old)
+60  BP || 100 ACC || Physical || Grass || 15 PP
+Effect: Chance to Flinch
+
+(New)
+80  BP || 100 ACC || Physical || Grass || 15 PP
+Effect: Chance to Flinch
+
+===================
+Hyper Voice
+===================
+(Old)
+90  BP || 100 ACC || Special || Normal || 10 PP
+Effect: None
+
+(New)
+100  BP || 100 ACC || Special || Normal || 10 PP
+Effect: None
+
+===================
+Poison Fang
+===================
+(Old)
+50  BP || 100 ACC || Physical || Poison || 15 PP
+Effect: Chance of Badly Poisoning
+
+(New)
+70  BP || 100 ACC || Physical || Poison || 15 PP
+Effect: Chance of Badly Poisoning
+
+===================
+Crush Claw
+===================
+(Old)
+75  BP || 95 ACC || Physical || Normal || 10 PP
+Effect: Lowers Def
+
+(New)
+100  BP || 100 ACC || Physical || Normal || 10 PP
+Effect: Lowers Def
+
+===================
+Blast Burn
+===================
+(Old)
+150  BP || 90 ACC || Special || Fire || 5 PP
+Effect: Recharge turn
+
+(New)
+150  BP || 100 ACC || Special || Fire || 10 PP
+Effect: Recoil% damage dealt to self
+
+===================
+Hydro Cannon
+===================
+(Old)
+150  BP || 90 ACC || Special || Water || 5 PP
+Effect: Recharge turn
+
+(New)
+150  BP || 100 ACC || Special || Water || 10 PP
+Effect: Recoil% damage dealt to self
+
+===================
+Meteor Mash
+===================
+(Old)
+100  BP || 85 ACC || Physical || Steel || 10 PP
+Effect: Chance of raising Atk
+
+(New)
+100  BP || 95 ACC || Physical || Steel || 10 PP
+Effect: Chance of raising Atk
+
+===================
+Astonish
+===================
+(Old)
+30  BP || 100 ACC || Physical || Ghost || 15 PP
+Effect: Chance to Flinch
+
+(New)
+60  BP || 100 ACC || Physical || Ghost || 15 PP
+Effect: Chance to Flinch
+
+===================
+Aromatherapy
+===================
+(Old)
+0  BP || 101 ACC || Status || Grass || 5 PP
+Effect: Heal Bell effect
+
+(New)
+0  BP || 101 ACC || Status || Grass || 2 PP
+Effect: Heal Bell effect
+
+===================
+Fake Tears
+===================
+(Old)
+0  BP || 100 ACC || Status || Dark || 20 PP
+Effect: Sharply lowers SpDef
+
+(New)
+0  BP || 100 ACC || Status || Dark || 5 PP
+Effect: Sharply lowers SpDef
+
+===================
+Air Cutter
+===================
+(Old)
+55  BP || 95 ACC || Special || Flying || 25 PP
+Effect: High crit ratio
+
+(New)
+55  BP || 100 ACC || Special || Flying || 25 PP
+Effect: High crit ratio
+
+===================
+Overheat
+===================
+(Old)
+140  BP || 90 ACC || Special || Fire || 5 PP
+Effect: Lowers user's SpAtk harshly
+
+(New)
+140  BP || 100 ACC || Special || Fire || 10 PP
+Effect: Recoil% damage dealt to self
+
+===================
+Rock Tomb
+===================
+(Old)
+50  BP || 80 ACC || Physical || Rock || 10 PP
+Effect: Lowers Spd
+
+(New)
+50  BP || 100 ACC || Physical || Rock || 10 PP
+Effect: None
+
+===================
+Metal Sound
+===================
+(Old)
+0  BP || 85 ACC || Status || Steel || 40 PP
+Effect: Sharply lowers SpDef
+
+(New)
+0  BP || 100 ACC || Status || Steel || 2 PP
+Effect: Sharply lowers SpDef
+
+===================
+Grasswhistle
+===================
+(Old)
+0  BP || 55 ACC || Status || Grass || 15 PP
+Effect: Causes Sleep
+
+(New)
+0  BP || 70 ACC || Status || Grass || 15 PP
+Effect: Causes Sleep
+
+===================
+Tickle
+===================
+(Old)
+0  BP || 100 ACC || Status || Normal || 20 PP
+Effect: Lowers target's Atk and Def
+
+(New)
+0  BP || 100 ACC || Status || Normal || 2 PP
+Effect: Lowers target's Atk and Def
+
+===================
+Cosmic Power
+===================
+(Old)
+0  BP || 101 ACC || Status || Psychic || 20 PP
+Effect: Raises user's Def and SpDef
+
+(New)
+0  BP || 101 ACC || Status || Psychic || 2 PP
+Effect: Raises user's Def and SpDef
+
+===================
+Signal Beam
+===================
+(Old)
+75  BP || 100 ACC || Special || Bug || 15 PP
+Effect: Chance to Confuse
+
+(New)
+85  BP || 100 ACC || Special || Bug || 15 PP
+Effect: Chance to Confuse
+
+===================
+Shadow Punch
+===================
+(Old)
+60  BP || 101 ACC || Physical || Ghost || 20 PP
+Effect: Always hits
+
+(New)
+80  BP || 101 ACC || Physical || Ghost || 20 PP
+Effect: Always hits
+
+===================
+Sky Uppercut
+===================
+(Old)
+85  BP || 90 ACC || Physical || Fighting || 15 PP
+Effect: Can hit Pokemon during semi-invulnerable turns of Fly/Bounce
+
+(New)
+85  BP || 100 ACC || Physical || Fighting || 15 PP
+Effect: Can hit Pokemon during semi-invulnerable turns of Fly/Bounce
+
+===================
+Sand Tomb
+===================
+(Old)
+35  BP || 85 ACC || Physical || Ground || 15 PP
+Effect: Binding move effect
+
+(New)
+35  BP || 100 ACC || Physical || Ground || 15 PP
+Effect: Binding move effect
+
+===================
+Muddy Water
+===================
+(Old)
+95  BP || 85 ACC || Special || Water || 10 PP
+Effect: Lowers Accuracy
+
+(New)
+95  BP || 100 ACC || Special || Water || 10 PP
+Effect: Lowers Accuracy
+
+===================
+Iron Defense
+===================
+(Old)
+0  BP || 101 ACC || Status || Steel || 15 PP
+Effect: Sharply raises Def
+
+(New)
+0  BP || 101 ACC || Status || Steel || 2 PP
+Effect: Sharply raises Def
+
+===================
+Howl
+===================
+(Old)
+0  BP || 101 ACC || Status || Normal || 40 PP
+Effect: Raises Atk
+
+(New)
+0  BP || 101 ACC || Status || Normal || 3 PP
+Effect: Raises Atk
+
+===================
+Frenzy Plant
+===================
+(Old)
+150  BP || 90 ACC || Special || Grass || 5 PP
+Effect: Recharge turn
+
+(New)
+150  BP || 100 ACC || Special || Grass || 10 PP
+Effect: Recoil% damage dealt to self
+
+===================
+Bulk Up
+===================
+(Old)
+0  BP || 101 ACC || Status || Fighting || 20 PP
+Effect: Raises user's Atk and Def
+
+(New)
+0  BP || 101 ACC || Status || Fighting || 2 PP
+Effect: Raises user's Atk and Def
+
+===================
+Bounce
+===================
+(Old)
+85  BP || 85 ACC || Physical || Flying || 5 PP
+Effect: Bounce effect
+
+(New)
+85  BP || 95 ACC || Physical || Flying || 5 PP
+Effect: Bounce effect
+
+===================
+Mud Shot
+===================
+(Old)
+55  BP || 95 ACC || Special || Ground || 15 PP
+Effect: Lowers Spd
+
+(New)
+55  BP || 100 ACC || Special || Ground || 15 PP
+Effect: Lowers Spd
+
+===================
+Water Sport
+===================
+(Old)
+0  BP || 101 ACC || Status || Water || 15 PP
+Effect: 1/3 damage dealt recoil
+
+(New)
+0  BP || 101 ACC || Status || Water || 15 PP
+Effect: Weakens Fire-type moves by 50% until user switches out
+
+===================
+Calm Mind
+===================
+(Old)
+0  BP || 101 ACC || Status || Psychic || 20 PP
+Effect: Raises user's SpAtk and SpDef
+
+(New)
+0  BP || 101 ACC || Status || Psychic || 2 PP
+Effect: Raises user's SpAtk and SpDef
+
+===================
+Dragon Dance
+===================
+(Old)
+0  BP || 101 ACC || Status || Dragon || 20 PP
+Effect: Raises user's Atk and Spd
+
+(New)
+0  BP || 101 ACC || Status || Dragon || 2 PP
+Effect: Raises user's Atk and Spd
+
+===================
+Rock Blast
+===================
+(Old)
+25  BP || 90 ACC || Physical || Rock || 10 PP
+Effect: Hits target multiple times
+
+(New)
+25  BP || 100 ACC || Physical || Rock || 10 PP
+Effect: Hits target multiple times
+
+===================
+Psycho Boost
+===================
+(Old)
+140  BP || 90 ACC || Special || Psychic || 5 PP
+Effect: Lowers user's SpAtk harshly
+
+(New)
+140  BP || 100 ACC || Special || Psychic || 10 PP
+Effect: Lowers user's SpAtk harshly
+
+===================
+Hammer Arm
+===================
+(Old)
+100  BP || 90 ACC || Physical || Fighting || 10 PP
+Effect: Lowers user's Spd
+
+(New)
+100  BP || 100 ACC || Physical || Fighting || 10 PP
+Effect: Lowers user's Spd
+
+===================
+Healing Wish
+===================
+(Old)
+0  BP || 101 ACC || Status || Psychic || 10 PP
+Effect: Healing Wish effect
+
+(New)
+0  BP || 101 ACC || Status || Psychic || 1 PP
+Effect: Healing Wish effect
+
+===================
+Acupressure
+===================
+(Old)
+0  BP || 101 ACC || Status || Normal || 30 PP
+Effect: Sharply raises a random stat of the target
+
+(New)
+0  BP || 101 ACC || Status || Normal || 2 PP
+Effect: Sharply raises a random stat of the target
+
+===================
+Metal Burst
+===================
+(Old)
+1  BP || 100 ACC || Physical || Steel || 10 PP
+Effect: Damage= 1.5x damage dealt by the target's last attack
+
+(New)
+1  BP || 100 ACC || Physical || Steel || 10 PP
+Effect: Damage= 1.5x damage dealt by the target's last attack
+
+===================
+Toxic Spikes
+===================
+(Old)
+0  BP || 101 ACC || Status || Poison || 20 PP
+Effect: Toxic Spikes effect
+
+(New)
+0  BP || 101 ACC || Status || Poison || 0 PP
+Effect: Toxic Spikes effect
+
+===================
+Magnet Rise
+===================
+(Old)
+0  BP || 101 ACC || Status || Electric || 10 PP
+Effect: User becomes immune to Ground-type attacks and field hazards for 5 turns
+
+(New)
+0  BP || 101 ACC || Status || Electric || 1 PP
+Effect: User becomes immune to Ground-type attacks and field hazards for 5 turns
+
+===================
+Rock Polish
+===================
+(Old)
+0  BP || 101 ACC || Status || Rock || 20 PP
+Effect: Sharply raises Spd
+
+(New)
+0  BP || 101 ACC || Status || Rock || 2 PP
+Effect: Sharply raises Spd
+
+===================
+Aqua Tail
+===================
+(Old)
+90  BP || 90 ACC || Physical || Water || 10 PP
+Effect: None
+
+(New)
+90  BP || 100 ACC || Physical || Water || 10 PP
+Effect: None
+
+===================
+Air Slash
+===================
+(Old)
+75  BP || 95 ACC || Special || Flying || 20 PP
+Effect: Chance to Flinch
+
+(New)
+75  BP || 100 ACC || Special || Flying || 20 PP
+Effect: Chance to Flinch
+
+===================
+Dragon Rush
+===================
+(Old)
+100  BP || 75 ACC || Physical || Dragon || 10 PP
+Effect: Chance to Flinch
+
+(New)
+100  BP || 90 ACC || Physical || Dragon || 10 PP
+Effect: Chance to Flinch
+
+===================
+Power Gem
+===================
+(Old)
+70  BP || 100 ACC || Special || Rock || 20 PP
+Effect: None
+
+(New)
+80  BP || 100 ACC || Special || Rock || 20 PP
+Effect: None
+
+===================
+Nasty Plot
+===================
+(Old)
+0  BP || 101 ACC || Status || Dark || 20 PP
+Effect: Sharply raises SpAtk
+
+(New)
+0  BP || 101 ACC || Status || Dark || 1 PP
+Effect: Sharply raises SpAtk
+
+===================
+Thunder Fang
+===================
+(Old)
+65  BP || 95 ACC || Physical || Electric || 15 PP
+Effect: Chance of causing Paralysis; chance of causing Flinch
+
+(New)
+75  BP || 100 ACC || Physical || Electric || 15 PP
+Effect: Chance of causing Paralysis; chance of causing Flinch
+
+===================
+Ice Fang
+===================
+(Old)
+65  BP || 95 ACC || Physical || Ice || 15 PP
+Effect: Chance of causing Freeze; chance of causing Flinch
+
+(New)
+75  BP || 100 ACC || Physical || Ice || 15 PP
+Effect: Chance of causing Freeze; chance of causing Flinch
+
+===================
+Fire Fang
+===================
+(Old)
+65  BP || 95 ACC || Physical || Fire || 15 PP
+Effect: Chance of causing Burn; chance of causing Flinch
+
+(New)
+75  BP || 100 ACC || Physical || Fire || 15 PP
+Effect: Chance of causing Burn; chance of causing Flinch
+
+===================
+Mud Bomb
+===================
+(Old)
+65  BP || 85 ACC || Special || Ground || 10 PP
+Effect: Lowers Accuracy
+
+(New)
+85  BP || 100 ACC || Special || Ground || 10 PP
+Effect: Lowers Accuracy
+
+===================
+Zen Headbutt
+===================
+(Old)
+80  BP || 90 ACC || Physical || Psychic || 15 PP
+Effect: Chance to Flinch
+
+(New)
+90  BP || 100 ACC || Physical || Psychic || 15 PP
+Effect: Chance to Flinch
+
+===================
+Mirror Shot
+===================
+(Old)
+65  BP || 85 ACC || Special || Steel || 10 PP
+Effect: Lowers Accuracy
+
+(New)
+65  BP || 100 ACC || Special || Steel || 10 PP
+Effect: Lowers Accuracy
+
+===================
+Rock Climb
+===================
+(Old)
+90  BP || 85 ACC || Physical || Normal || 20 PP
+Effect: Chance to Confuse
+
+(New)
+90  BP || 100 ACC || Physical || Rock || 20 PP
+Effect: Chance to Confuse
+
+===================
+Defog
+===================
+(Old)
+0  BP || 101 ACC || Status || Flying || 15 PP
+Effect: Defog effect
+
+(New)
+0  BP || 101 ACC || Status || Flying || 5 PP
+Effect: Defog effect
+
+===================
+Draco Meteor
+===================
+(Old)
+140  BP || 90 ACC || Special || Dragon || 5 PP
+Effect: Lowers user's SpAtk harshly
+
+(New)
+140  BP || 100 ACC || Special || Dragon || 10 PP
+Effect: Lowers user's SpAtk harshly
+
+===================
+Leaf Storm
+===================
+(Old)
+140  BP || 90 ACC || Special || Grass || 5 PP
+Effect: Lowers user's SpAtk harshly
+
+(New)
+140  BP || 100 ACC || Special || Grass || 10 PP
+Effect: Recoil% damage dealt to self
+
+===================
+Power Whip
+===================
+(Old)
+120  BP || 85 ACC || Physical || Grass || 10 PP
+Effect: None
+
+(New)
+120  BP || 90 ACC || Physical || Grass || 10 PP
+Effect: None
+
+===================
+Rock Wrecker
+===================
+(Old)
+150  BP || 90 ACC || Physical || Rock || 5 PP
+Effect: Recharge turn
+
+(New)
+150  BP || 100 ACC || Physical || Rock || 10 PP
+Effect: Recoil% damage dealt to self
+
+===================
+Gunk Shot
+===================
+(Old)
+120  BP || 70 ACC || Physical || Poison || 5 PP
+Effect: Chance to Poison
+
+(New)
+120  BP || 100 ACC || Physical || Poison || 5 PP
+Effect: Chance to Poison
+
+===================
+Magnet Bomb
+===================
+(Old)
+60  BP || 101 ACC || Physical || Steel || 20 PP
+Effect: Always hits
+
+(New)
+80  BP || 101 ACC || Special || Steel || 20 PP
+Effect: Always hits
+
+===================
+Stone Edge
+===================
+(Old)
+100  BP || 80 ACC || Physical || Rock || 5 PP
+Effect: High crit ratio
+
+(New)
+100  BP || 90 ACC || Physical || Rock || 5 PP
+Effect: High crit ratio
+
+===================
+Captivate
+===================
+(Old)
+0  BP || 100 ACC || Status || Normal || 20 PP
+Effect: Lowers opposite gender target's SpAtk harshly
+
+(New)
+0  BP || 100 ACC || Status || Normal || 5 PP
+Effect: Lowers opposite gender target's SpAtk harshly
+
+===================
+Stealth Rock
+===================
+(Old)
+0  BP || 101 ACC || Status || Rock || 20 PP
+Effect: Stealth Rocks effect
+
+(New)
+0  BP || 101 ACC || Status || Rock || 0 PP
+Effect: Stealth Rocks effect
+
+===================
+Charge Beam
+===================
+(Old)
+50  BP || 90 ACC || Special || Electric || 10 PP
+Effect: Chance of raising user's SpAtk
+
+(New)
+50  BP || 100 ACC || Special || Electric || 10 PP
+Effect: Chance of raising user's SpAtk
+
+===================
+Defend Order
+===================
+(Old)
+0  BP || 101 ACC || Status || Bug || 10 PP
+Effect: Raises user's Def and SpDef
+
+(New)
+0  BP || 101 ACC || Status || Bug || 2 PP
+Effect: Raises user's Def and SpDef
+
+===================
+Head Smash
+===================
+(Old)
+150  BP || 80 ACC || Physical || Rock || 5 PP
+Effect: 1/2 damage dealt recoil
+
+(New)
+150  BP || 100 ACC || Physical || Rock || 5 PP
+Effect: 1/2 damage dealt recoil
+
+===================
+Double Hit
+===================
+(Old)
+35  BP || 90 ACC || Physical || Normal || 10 PP
+Effect: Hits twice
+
+(New)
+35  BP || 100 ACC || Physical || Normal || 10 PP
+Effect: Hits twice
+
+===================
+Lunar Dance
+===================
+(Old)
+0  BP || 101 ACC || Status || Psychic || 10 PP
+Effect: Lunar Dance effect
+
+(New)
+0  BP || 101 ACC || Status || Psychic || 1 PP
+Effect: Lunar Dance effect
+
+===================
+Ominous Wind
+===================
+(Old)
+60  BP || 100 ACC || Special || Ghost || 5 PP
+Effect: Omni Boost
+
+(New)
+140  BP || 100 ACC || Special || Ghost || 10 PP
+Effect: Omni Boost
+
+===================
+Hone Claws
+===================
+(Old)
+0  BP || 101 ACC || Status || Dark || 15 PP
+Effect: Boost Attack and Accuracy
+
+(New)
+0  BP || 101 ACC || Status || Dark || 2 PP
+Effect: Boost Attack and Accuracy
+
+===================
+Autotomize
+===================
+(Old)
+0  BP || 101 ACC || Status || Steel || 15 PP
+Effect: Sharply Raise Speed and reduce weight 
+
+(New)
+0  BP || 101 ACC || Status || Steel || 2 PP
+Effect: Sharply Raise Speed and reduce weight 
+
+===================
+Telekinesis
+===================
+(Old)
+0  BP || 101 ACC || Status || Psychic || 15 PP
+Effect: Make all moves hit target
+
+(New)
+0  BP || 101 ACC || Status || Psychic || 1 PP
+Effect: Make all moves hit target
+
+===================
+Quiver Dance
+===================
+(Old)
+0  BP || 101 ACC || Status || Bug || 20 PP
+Effect: Raise SpAtk, SpDef, and Speed
+
+(New)
+0  BP || 101 ACC || Status || Bug || 1 PP
+Effect: Raise SpAtk, SpDef, and Speed
+
+===================
+Coil
+===================
+(Old)
+0  BP || 101 ACC || Status || Poison || 20 PP
+Effect: Raise Atk, Def, and Accuracy
+
+(New)
+0  BP || 101 ACC || Status || Poison || 2 PP
+Effect: Raise Atk, Def, and Accuracy
+
+===================
+Low Sweep
+===================
+(Old)
+60  BP || 100 ACC || Physical || Fighting || 20 PP
+Effect: Lowers Spd
+
+(New)
+60  BP || 100 ACC || Physical || Fighting || 20 PP
+Effect: None
+
+===================
+Shell Smash
+===================
+(Old)
+0  BP || 101 ACC || Status || Normal || 15 PP
+Effect: Lower Def and SpDef, Sharply raise Atk, SpAtk, and Speed
+
+(New)
+0  BP || 101 ACC || Status || Normal || 2 PP
+Effect: Lower Def and SpDef, Sharply raise Atk, SpAtk, and Speed
+
+===================
+Shift Gear
+===================
+(Old)
+0  BP || 101 ACC || Status || Steel || 10 PP
+Effect: Raise Atk and sharply raise Speed
+
+(New)
+0  BP || 101 ACC || Status || Steel || 2 PP
+Effect: Raise Atk and sharply raise Speed
+
+===================
+Incinerate
+===================
+(Old)
+30  BP || 100 ACC || Special || Fire || 15 PP
+Effect: Deal damage and remove target's berry
+
+(New)
+60  BP || 100 ACC || Special || Fire || 15 PP
+Effect: Deal damage and remove target's berry
+
+===================
+Water Pledge
+===================
+(Old)
+50  BP || 100 ACC || Special || Water || 10 PP
+Effect: Water Pledge effect
+
+(New)
+100  BP || 100 ACC || Special || Water || 10 PP
+Effect: Water Pledge effect
+
+===================
+Fire Pledge
+===================
+(Old)
+50  BP || 100 ACC || Special || Fire || 10 PP
+Effect: Fire Pledge effect
+
+(New)
+100  BP || 100 ACC || Special || Fire || 10 PP
+Effect: Fire Pledge effect
+
+===================
+Grass Pledge
+===================
+(Old)
+50  BP || 100 ACC || Special || Grass || 10 PP
+Effect: Grass Pledge effect
+
+(New)
+100  BP || 100 ACC || Special || Grass || 10 PP
+Effect: Grass Pledge effect
+
+===================
+Struggle Bug
+===================
+(Old)
+30  BP || 100 ACC || Special || Bug || 20 PP
+Effect: Lowers SpAtk
+
+(New)
+50  BP || 100 ACC || Special || Bug || 20 PP
+Effect: Lowers SpAtk
+
+===================
+Bulldoze
+===================
+(Old)
+60  BP || 100 ACC || Physical || Ground || 20 PP
+Effect: Lowers Spd
+
+(New)
+70  BP || 100 ACC || Physical || Ground || 20 PP
+Effect: None
+
+===================
+Frost Breath
+===================
+(Old)
+40  BP || 90 ACC || Special || Ice || 10 PP
+Effect: Always crit
+
+(New)
+40  BP || 95 ACC || Special || Ice || 10 PP
+Effect: Always crit
+
+===================
+Dragon Tail
+===================
+(Old)
+60  BP || 90 ACC || Physical || Dragon || 10 PP
+Effect: Circle Throw effect
+
+(New)
+60  BP || 95 ACC || Physical || Dragon || 10 PP
+Effect: Circle Throw effect
+
+===================
+Work Up
+===================
+(Old)
+0  BP || 101 ACC || Status || Normal || 30 PP
+Effect: Raise Atk and SpAtk
+
+(New)
+0  BP || 101 ACC || Status || Normal || 2 PP
+Effect: Raise Atk and SpAtk
+
+===================
+Electroweb
+===================
+(Old)
+55  BP || 95 ACC || Special || Electric || 15 PP
+Effect: Lowers Spd
+
+(New)
+55  BP || 100 ACC || Special || Electric || 15 PP
+Effect: None
+
+===================
+Wild Charge
+===================
+(Old)
+90  BP || 100 ACC || Physical || Electric || 15 PP
+Effect: Recoil% damage dealt to self
+
+(New)
+100  BP || 100 ACC || Physical || Electric || 15 PP
+Effect: Recoil% damage dealt to self
+
+===================
+Drill Run
+===================
+(Old)
+80  BP || 95 ACC || Physical || Ground || 10 PP
+Effect: High crit ratio
+
+(New)
+100  BP || 100 ACC || Physical || Ground || 10 PP
+Effect: High crit ratio
+
+===================
+Dual Chop
+===================
+(Old)
+40  BP || 90 ACC || Physical || Dragon || 15 PP
+Effect: Hits twice
+
+(New)
+40  BP || 100 ACC || Physical || Dragon || 15 PP
+Effect: Hits twice
+
+===================
+Razor Shell
+===================
+(Old)
+75  BP || 95 ACC || Physical || Water || 10 PP
+Effect: Lowers Def
+
+(New)
+75  BP || 100 ACC || Physical || Water || 10 PP
+Effect: Lowers Def
+
+===================
+Leaf Tornado
+===================
+(Old)
+65  BP || 90 ACC || Special || Grass || 10 PP
+Effect: Lowers Accuracy
+
+(New)
+65  BP || 100 ACC || Special || Grass || 10 PP
+Effect: Lowers Accuracy
+
+===================
+Cotton Guard
+===================
+(Old)
+0  BP || 101 ACC || Status || Grass || 10 PP
+Effect: Raise Def by 3 Stages
+
+(New)
+0  BP || 101 ACC || Status || Grass || 2 PP
+Effect: Raise Def by 3 Stages
+
+===================
+Night Daze
+===================
+(Old)
+85  BP || 95 ACC || Special || Dark || 10 PP
+Effect: Lowers Accuracy
+
+(New)
+140  BP || 100 ACC || Physical || Dark || 10 PP
+Effect: Lowers Accuracy
+
+===================
+Tail Slap
+===================
+(Old)
+25  BP || 85 ACC || Physical || Normal || 10 PP
+Effect: Hits target multiple times
+
+(New)
+25  BP || 100 ACC || Physical || Normal || 10 PP
+Effect: Hits target multiple times
+
+===================
+Gear Grind
+===================
+(Old)
+50  BP || 85 ACC || Physical || Steel || 15 PP
+Effect: Hits twice
+
+(New)
+50  BP || 100 ACC || Physical || Steel || 15 PP
+Effect: Hits twice
+
+===================
+Bolt Strike
+===================
+(Old)
+130  BP || 85 ACC || Physical || Electric || 5 PP
+Effect: Chance to Paralyze
+
+(New)
+130  BP || 100 ACC || Physical || Electric || 5 PP
+Effect: Chance to Paralyze
+
+===================
+Blue Flare
+===================
+(Old)
+130  BP || 85 ACC || Special || Fire || 5 PP
+Effect: Chance to Burn
+
+(New)
+130  BP || 100 ACC || Special || Fire || 5 PP
+Effect: Chance to Burn
+
+===================
+Snarl
+===================
+(Old)
+55  BP || 95 ACC || Special || Dark || 15 PP
+Effect: Lowers SpAtk
+
+(New)
+65  BP || 100 ACC || Special || Dark || 15 PP
+Effect: Lowers SpAtk
+
+===================
+Icicle Crash
+===================
+(Old)
+85  BP || 90 ACC || Physical || Ice || 10 PP
+Effect: Chance to Flinch
+
+(New)
+85  BP || 100 ACC || Physical || Ice || 10 PP
+Effect: Chance to Flinch
+

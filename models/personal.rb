@@ -97,7 +97,7 @@ class Personal
 			end
 
 			showdown[showdown_name]["bs"] = {"hp"=> pok["base_hp"], "at" => pok["base_atk"], "df" => pok["base_def"], "sa" => pok["base_spatk"], "sd" => pok["base_spdef"], "sp" => pok["base_speed"]}
-			# showdown[showdown_name]["learnset_info"] = get_learnset_for pok, all_tm_names
+			showdown[showdown_name]["learnset_info"] = get_learnset_for pok, all_tm_names
 		end
 		File.write("public/dist/poks.json", JSON.dump(showdown))
 		open("public/dist/poks.js", "w") do |f| 
@@ -259,9 +259,11 @@ class Personal
 	def self.get_tm_list(personal_data)
 		tms_1 = personal_data["tm_1-32"].to_s(2).rjust(32, '0').reverse
 		tms_2 = personal_data["tm_33-64"].to_s(2).rjust(32, '0').reverse
-		tms_3 = personal_data["tm_65-95+hm_1"].to_s(2).rjust(32, '0').reverse[0..-2] #65-95
-		hms_1 = personal_data["tm_65-95+hm_1"].to_s(2).rjust(32, '0').reverse[-1]
-		hms_2 = personal_data["hm_2-6"].to_s(2).rjust(5, '0').reverse
+		tms_3 = personal_data["tm_65-95+hm_1"].to_s(2).rjust(32, '0').reverse[0..-5] #65-92
+		hms_1 = personal_data["tm_65-95+hm_1"].to_s(2).rjust(32, '0').reverse[-4..-1] #hm1-4
+		hms_2 = personal_data["hm_2-6"].to_s(2).rjust(4, '0').reverse #hm-4-8
+
+		binding.pry if personal_data["index"] == 7
 
 
 		tms = tms_1 + tms_2 + tms_3

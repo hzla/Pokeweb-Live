@@ -9,10 +9,10 @@ class Tm
 		names = {}
 		tm_names = []
 		hm_names = []
-		(1..95).each do |tm|
+		(1..92).each do |tm|
 			tm_names << data["readable"]["tm_#{tm}"].move_titleize
 		end
-		(1..6).each do |hm|
+		(1..8).each do |hm|
 			hm_names << data["readable"]["hm_#{hm}"].move_titleize
 		end
 		{tm_names: tm_names, hm_names: hm_names}
@@ -22,12 +22,12 @@ class Tm
 		tm_moves = []
 		tm_data = get_data
 
-		(1..95).each do |tm_num|
+		(1..92).each do |tm_num|
 			tm_moves << moves[tm_data["raw"]["tm_#{tm_num}"]]
 		end
 
 		hm_moves = []
-		(1..6).each do |hm_num|
+		(1..8).each do |hm_num|
 			hm_moves << moves[tm_data["raw"]["hm_#{hm_num}"]]
 		end
 
