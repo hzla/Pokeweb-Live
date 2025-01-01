@@ -49,8 +49,13 @@
 			<div class="expanded-field-main">
 				<div class="trainer-id"><%= i %></div>
 
-				<div class="trainer-name"><%= trainer["name"] %> <%= trainer["location"] ? "(#{trainer["location"]})" : ""  %></div>
+				
 
+				<% begin %>
+					<div class="trainer-name"><%= trainer["name"] %> <%= trainer["location"] ? "(#{trainer["location"]})" : ""  %></div>
+				<% rescue %>
+					<% binding.pry %>
+				<% end %>
 				<%= field "class", 'trainer-class', {value: "#{trainer['class']} (#{trainer['class_id']})",  narc: "trdata", autofill: "class_names"} %>		
 
 				<%= field "battle_type_1", 'trainer-btype', {value: trainer["battle_type_1"],  narc: "trdata", autofill: "battle_types"} %>	

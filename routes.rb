@@ -26,8 +26,8 @@ p "init"
 
 class MyApp < Sinatra::Base
 	before do
-		$rom_name = "projects/aj114"
-		session[:rom_name] = "projects/aj114"
+		$rom_name = "projects/cleangold"
+		session[:rom_name] = "projects/cleangold"
 		$rom_name = session[:rom_name]
 		p $rom_name
 		$fairy = SessionSettings.fairy?
@@ -116,17 +116,17 @@ class MyApp < Sinatra::Base
 		  	end
 		  	
 			# create base rom
-			p "xdelta3 -d -s ./base/blank.nds ./base/#{base}.xdelta ./base/#{base}.nds"
-			system "xdelta3 -d -s ./base/blank.nds ./base/#{base}.xdelta ./base/#{base}.nds"
+			# p "xdelta3 -d -s ./base/blank.nds ./base/#{base}.xdelta ./base/#{base}.nds"
+			# system "xdelta3 -d -s ./base/blank.nds ./base/#{base}.xdelta ./base/#{base}.nds"
 
 			
 
-			# create uploaded rom
-			p "xdelta3 -d -s ./base/#{base}.nds ./xdeltas/#{rom_name}.xdelta #{rom_name}.nds"
-			system "xdelta3 -d -s ./base/#{base}.nds ./xdeltas/#{rom_name}.xdelta #{rom_name}.nds"
+			# # create uploaded rom
+			# p "xdelta3 -d -s ./base/#{base}.nds ./xdeltas/#{rom_name}.xdelta #{rom_name}.nds"
+			# system "xdelta3 -d -s ./base/#{base}.nds ./xdeltas/#{rom_name}.xdelta #{rom_name}.nds"
 
-			# delete base rom
-			system "rm -rf ./base/#{base}.nds"
+			# # delete base rom
+			# system "rm -rf ./base/#{base}.nds"
 
 			begin
 				system "#{py} python/header_loader.py #{params['rom_name']} #{pw}"
@@ -141,9 +141,7 @@ class MyApp < Sinatra::Base
 					["tr_classes", "tr_names", "locations"].each do |text|
 						system "mv ./projects/#{rom_name}/texts/#{text}_hgss.txt ./projects/#{rom_name}/texts/#{text}.txt "
 					end
-				end
-
-				
+				end		
 			rescue
 				py = "python"
 				retry

@@ -119,7 +119,7 @@ class Personal
 		learnset_info = []
 
 		n = 0
-
+		p ls
 		until !ls["lvl_learned_#{n}"] or learnset_info.length == 25
 			learnset_info << [ls["lvl_learned_#{n}"], ls["move_id_#{n}"].move_titleize]
 			n += 1
@@ -262,8 +262,6 @@ class Personal
 		tms_3 = personal_data["tm_65-95+hm_1"].to_s(2).rjust(32, '0').reverse[0..-5] #65-92
 		hms_1 = personal_data["tm_65-95+hm_1"].to_s(2).rjust(32, '0').reverse[-4..-1] #hm1-4
 		hms_2 = personal_data["hm_2-6"].to_s(2).rjust(4, '0').reverse #hm-4-8
-
-		binding.pry if personal_data["index"] == 7
 
 
 		tms = tms_1 + tms_2 + tms_3
