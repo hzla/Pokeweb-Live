@@ -80,7 +80,7 @@ for narc in NARCS:
 		narc_file = ndspy.narc.NARC(file)
 	except:
 		narc_file = ""
-		if narc[1] == "message_texts":
+		if narc[1] == "message_texts" or narc[1] == "story_texts":
 			print("Ctrmap edited texts detected, switching to vanilla text banks")
 			use_vanilla_banks = narc_info["base_version"]
 

@@ -54,7 +54,9 @@ class MyApp < Sinatra::Base
 		$edit_mode = ENV["EDIT_MODE"]
 		$offline = ($mode == "offline")
 
-
+		if $rom_name 
+			session[:rom_name] = $rom_name
+		end
 		if !$offline
 			$rom_name = session[:rom_name]
 		end
@@ -713,6 +715,8 @@ class MyApp < Sinatra::Base
 
 	get '/headers' do 
 		redirect '/' if !$rom_name
+
+
 		
 		begin 
 			@header_data = Header.get_all
