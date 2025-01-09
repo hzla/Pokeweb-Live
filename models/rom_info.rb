@@ -61,7 +61,7 @@ class RomInfo
 
     def self.delete_inactive
         now = Time.now.to_i
-        threshold = 60 * 60 * 24 * 90 #3 months
+        threshold = 60 * 60 * 24 * 45 #1.5 months
 
         active = 0
         inactive = 0
