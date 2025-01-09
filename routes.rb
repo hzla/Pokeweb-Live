@@ -54,9 +54,9 @@ class MyApp < Sinatra::Base
 		$edit_mode = ENV["EDIT_MODE"]
 		$offline = ($mode == "offline")
 
-		if $rom_name 
-			session[:rom_name] = $rom_name
-		end
+		# if $rom_name 
+		# 	session[:rom_name] = $rom_name
+		# end
 		if !$offline
 			$rom_name = session[:rom_name]
 		end
