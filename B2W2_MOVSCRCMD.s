@@ -532,7 +532,7 @@
 .word \p7
 .endm
 
-.macro StopSound p0 p1 p2 p3 p4 p5 p6 p7 p8
+.macro AdjustSound p0 p1 p2 p3 p4 p5 p6 p7 p8
 .hword 55
 .word \p0
 .word \p1
