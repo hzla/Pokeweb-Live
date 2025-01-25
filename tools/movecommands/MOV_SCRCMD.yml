@@ -792,7 +792,7 @@
     - Name: p7
       Type: int
 55:
-  Name: StopSound
+  Name: AdjustSound
   Parameters:
     - Name: p0
       Type: int
