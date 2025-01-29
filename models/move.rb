@@ -26,7 +26,7 @@ class Move < Pokenarc
 		moves = get_all[1..-1]
 		
 		#rp override
-		if $gen = 4
+		if $gen == 4
 			move_names = File.read("texts/rp_moves.txt").split("\n")
 		end
 		
