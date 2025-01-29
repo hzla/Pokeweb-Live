@@ -44,6 +44,32 @@ $(document).on('click', '#load-save', async function() {
 	    $("#debug-info").val(JSON.stringify(JSON.parse(showdown)["debug_info"]))
 	})
 
+$(document).on('click', '#load-save2', async function() {
+		
+		var file = $('#save-upload')[0].files[0]
+		var level = $('#save-lvl').val()
+
+		
+		let formData = new FormData();           
+	    formData.append("file", file);
+	    formData.append("level", level);
+	    formData.append("invert", 1);
+	    formData.append("game", window.location.href.split("/").pop());
+
+	    const response = await fetch(`/read_save`, {
+	      method: "POST", 
+	      body: formData
+	    })
+
+	    showdown = await response.text()
+
+	    $('#showdown-export').val( JSON.parse(showdown)["showdown"])
+	    $('#showdown-export').selectRange(0, -1);
+
+	    console.log(JSON.parse(showdown))
+	    $("#debug-info").val(JSON.stringify(JSON.parse(showdown)["debug_info"]))
+	})
+
 
 
 $(document).on('change', '#save-upload', function(){

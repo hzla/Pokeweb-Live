@@ -1234,7 +1234,7 @@ class MyApp < Sinatra::Base
 	    	f.write(file.read)
 	  	end
 	  	bin_data = IO.binread("./exports/#{file_name}")
-	  	save_info = Save.read(bin_data, params["level"].to_i, params["game"])
+	  	save_info = Save.read(bin_data, params["level"].to_i, params["game"], 0, params["invert"])
 	  	@showdown = save_info[:import_data]
 	  	debug_info = save_info[:debug_info]
 	  	`rm -rf ./exports/#{file_name}`

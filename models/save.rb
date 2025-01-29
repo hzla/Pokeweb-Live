@@ -173,7 +173,7 @@ class Save
 
 
 
-	def self.read(save_data, static_level=100, game="inc_em", manual_offset=0) #INCLEMENT EMERALD/POKEMERALD
+	def self.read(save_data, static_level=100, game="inc_em", manual_offset=0, invert_save_index=false) #INCLEMENT EMERALD/POKEMERALD
 		if game == "rad_red"
 			return read_rad_red(save_data, static_level, true, true)
 		end
@@ -204,11 +204,11 @@ class Save
 		save_index_b = save[save_index_b_offset..save_index_b_offset + 1].unpack("S")[0]
 		block_offset = 0
 
-		if save_index_b > save_index_a || save_index_a == 65535
-			# block_offset = save_block_b_offset
+		if save_index_b > save_index_a || save_index_a == 65535 || invert_save_index
+			block_offset = save_block_b_offset
 		end
 
-		block_offset = save_block_b_offset
+		# block_offset = save_block_b_offset
 
 
 		save = save[block_offset..block_offset + 57343]
@@ -393,9 +393,17 @@ class Save
 			end
 		end
 		debug_info = {save_index_a: save_index_a, save_index_b: save_index_b }
-		if import_data == "" and manual_offset != 1
-			 p ("retrying with one more rotation")
-			 return read(save_data, static_level=100, game="inc_em", manual_offset=1)	 
+		
+
+		if import_data == "" and game == "em_imp" and !invert_save_index
+			p ("retrying with other save index #{manual_offset}")
+			return read(save_data, 100, game, 0, true)	
+		end
+
+
+		if import_data == "" and manual_offset != 1 && game != "em_imp"
+			 p ("retrying with one more rotation #{manual_offset}")
+			 return read(save_data, static_level=100, game, manual_offset=1)	 
 		else
 			return {import_data: import_data, debug_info: debug_info}
 		end
