@@ -8,6 +8,5 @@ gem 'dotenv'
 gem 'activesupport', '6.1.7'
 gem 'pry'
 gem 'webrick'
-gem 'csv'
 
 
