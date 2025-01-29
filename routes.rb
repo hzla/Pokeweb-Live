@@ -11,12 +11,6 @@ require_relative 'helpers'
 require_relative 'models/pokenarc'
 
 
-require 'rack/protection'
-
-use Rack::Protection::Host, allowed_hosts: ['fishbowlweb.cloud']
-
-set :bind, '0.0.0.0'
-set :port, 3000
 
 
 if ENV["DEVMODE"] == "TRUE"

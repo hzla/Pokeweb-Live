@@ -205,9 +205,10 @@ class Save
 		block_offset = 0
 
 		if save_index_b > save_index_a || save_index_a == 65535
-			block_offset = save_block_b_offset
+			# block_offset = save_block_b_offset
 		end
 
+		block_offset = save_block_b_offset
 
 
 		save = save[block_offset..block_offset + 57343]
@@ -298,7 +299,9 @@ class Save
 
 
 
-				species_id = [decrypted[growth_index * 3]].pack('V').unpack('vv')[0]
+				species_id = [decrypted[growth_index * 3]].pack('V').unpack('vv')[0] & 0x07FF
+
+
 
 				if species_id > 899
 					species_id += 7
@@ -320,10 +323,10 @@ class Save
 				end
 
 				
-				move1 = all_moves[[decrypted[moves_index * 3]].pack('V').unpack('vv')[0]]
-				move2 = all_moves[[decrypted[moves_index * 3]].pack('V').unpack('vv')[1]]
-				move3 = all_moves[[decrypted[moves_index * 3 + 1]].pack('V').unpack('vv')[0]]
-				move4 = all_moves[[decrypted[moves_index * 3 + 1]].pack('V').unpack('vv')[1]]
+				move1 = all_moves[[decrypted[moves_index * 3]].pack('V').unpack('vv')[0] & 0x07FF]
+				move2 = all_moves[[decrypted[moves_index * 3]].pack('V').unpack('vv')[1] & 0x07FF]
+				move3 = all_moves[[decrypted[moves_index * 3 + 1]].pack('V').unpack('vv')[0] & 0x07FF]
+				move4 = all_moves[[decrypted[moves_index * 3 + 1]].pack('V').unpack('vv')[1] & 0x07FF]
 
 				ivs = [decrypted[misc_index * 3 + 1]][0]
 				iv_stats = ["HP", "Atk", "Def", "Spe", "SpA", "SpD"]
@@ -335,12 +338,20 @@ class Save
 				ability_slot = (decrypted[misc_index * 3 + 2] & 96) >> 5
 
 
+				# binding.pry
+
+				p species_id
+
 				if game == "em_imp"
-					if !abils[all_mons[species_id]]
-						all_mons[species_id] = all_mons[species_id].gsub(" ", "-")
-					end
-					if abils[all_mons[species_id]]
-						ability_slot = abils[all_mons[species_id]][ability_slot]
+					begin
+						if !abils[all_mons[species_id]]
+							all_mons[species_id] = all_mons[species_id].gsub(" ", "-")
+						end
+						if abils[all_mons[species_id]]
+							ability_slot = abils[all_mons[species_id]][ability_slot]
+						end
+					rescue
+						p "species_id unknown"
 					end
 				end
 
