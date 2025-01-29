@@ -1215,7 +1215,7 @@ class MyApp < Sinatra::Base
 
 	get '/savereader/:game' do 
 		@game = params[:game]
-		supported_games = {"rad_red" => "Radical Red", "inc_em" => "Inclement Emerald"}
+		supported_games = {"rad_red" => "Radical Red", "inc_em" => "Inclement Emerald", "em_imp" => "Emerald Imperium"}
 		@game_title = supported_games[@game]
 		erb :save_reader
 	end

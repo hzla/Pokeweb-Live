@@ -183,8 +183,16 @@ class Save
 		trainer_id_offset = 0xa
 		save_index_b_offset = save_block_b_offset + save_index_a_offset
 
+
+		if game == "em_imp"
+			all_mons = JSON.parse(File.read("./Reference_Files/save_constants/mons_em_imp.json"))
+		else	
+			all_mons = File.read("./Reference_Files/save_constants/mons.txt").split("\n")
+		end
+
 		all_moves = File.read("./Reference_Files/save_constants/moves.txt").split("\n")
-		all_mons = File.read("./Reference_Files/save_constants/mons.txt").split("\n")
+		abils = JSON.parse(File.read('./Reference_Files/save_constants/rr_abils.json'))
+		
 
 		# if save_index odd should be at save_block B otherwise A
 
@@ -260,6 +268,12 @@ class Save
 				begin
 					pid = mon_data[0..3].unpack("V")[0]
 					tid = mon_data[4..7].unpack("V")[0]
+
+
+					mask = 0b11111
+					modded_nature = (mon_data[8..9].unpack("vv")[0] >> 13) && mask
+
+
 				rescue
 					# binding.pry
 				end
@@ -293,7 +307,17 @@ class Save
 				exp = decrypted[growth_index * 3 + 1]
 				lvl = static_level
 				nature_byte = [decrypted[misc_index * 3]].pack('V').unpack('vv')[1]
+				
+
 				nature = RomInfo.natures[(nature_byte & 31744) >> 10]
+				
+				if game == "em_imp"
+					nature = RomInfo.natures[pid % 25]
+
+					if modded_nature <= 26
+						nature = RomInfo.natures[modded_nature]
+					end
+				end
 
 				
 				move1 = all_moves[[decrypted[moves_index * 3]].pack('V').unpack('vv')[0]]
@@ -309,6 +333,17 @@ class Save
 					spread[stat] = middle_bits_from_index(ivs, i * 5, 5)
 				end
 				ability_slot = (decrypted[misc_index * 3 + 2] & 96) >> 5
+
+
+				if game == "em_imp"
+					if !abils[all_mons[species_id]]
+						all_mons[species_id] = all_mons[species_id].gsub(" ", "-")
+					end
+					if abils[all_mons[species_id]]
+						ability_slot = abils[all_mons[species_id]][ability_slot]
+					end
+				end
+
 
 				moves = [move1, move2, move3, move4]
 				
