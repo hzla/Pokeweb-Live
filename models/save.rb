@@ -231,6 +231,8 @@ class Save
 		party_offset = (total_offset + 4096 + 0x238) % 57344
 
 
+		p "party_offset: #{party_offset}"
+
 		box_data = ""
 
 		# box_data = save[box_offset..box_offset + 33599]
@@ -239,14 +241,16 @@ class Save
 		box_data += party_data
 
 
+
+		p "box_offset: #{box_offset}"
+
 		(0..8).each do |n|
 			box_start = ((n * 4096) + box_offset) % 57344
 			pc_box = save[box_start..box_start + 4095]
 			box_data += pc_box
 		end
 
-
-
+		box_data = save_data if game == "em_imp"
 		trainer_string = "\x02\x02"
 
 		mon_count = 0
@@ -257,24 +261,20 @@ class Save
 
 		n = 0
 		while n < box_data.length
-			break if n > 34200
+			break if n > 34200 and game == "inc_em"
 			data = box_data[n..n+1]
 			if data != trainer_string
 				n += 2
 				next
 			else
-
+				p "found mon"
 				mon_data = box_data[n-18..n+61]
 
 				begin
 					pid = mon_data[0..3].unpack("V")[0]
 					tid = mon_data[4..7].unpack("V")[0]
-
-
 					mask = 0b11111
 					modded_nature = (mon_data[8..9].unpack("vv")[0] >> 13) && mask
-
-
 				rescue
 					# binding.pry
 				end
@@ -357,6 +357,11 @@ class Save
 
 
 				moves = [move1, move2, move3, move4]
+
+				if moves.index(nil)
+					n += 2
+					next
+				end
 				
 				set = {}
 
