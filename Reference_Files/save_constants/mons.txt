@@ -81,7 +81,7 @@ Slowpoke
 Slowbro
 Magnemite
 Magneton
-Farfetchd
+Farfetch’d
 Doduo
 Dodrio
 Seel
@@ -863,7 +863,7 @@ Grimmsnarl
 Obstagoon
 Perrserker
 Cursola
-Sirfetchd
+Sirfetch’d
 Mr-Rime
 Runerigus
 Milcery
@@ -977,7 +977,7 @@ Ponyta-Galarian
 Rapidash-Galarian
 Slowpoke-Galarian
 Slowbro-Galarian
-Farfetchd-Galarian
+Farfetch’d-Galarian
 Weezing-Galarian
 Mr-Mime-Galarian
 Articuno-Galarian
