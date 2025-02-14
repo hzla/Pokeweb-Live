@@ -1,6 +1,9 @@
 class Save
 
 
+
+
+
 	def self.read_rad_red(save_data, static_level=100, brute_force=false, party_search=false)
 		save_index_a_offset = 0xffc
 		save_block_b_offset = 0x00E000
@@ -186,11 +189,19 @@ class Save
 
 		if game == "em_imp"
 			all_mons = JSON.parse(File.read("./Reference_Files/save_constants/mons_em_imp.json"))
+			all_moves = File.read("./Reference_Files/save_constants/moves.txt").split("\n")
+		elsif game == "scram_em"
+			all_mons = JSON.parse(File.read("./Reference_Files/save_constants/mons_scram_em.json"))
+			all_moves = File.read("./Reference_Files/save_constants/moves_scram_em.txt").split("\n")
 		else	
 			all_mons = File.read("./Reference_Files/save_constants/mons.txt").split("\n")
+			all_moves = File.read("./Reference_Files/save_constants/moves.txt").split("\n")
 		end
 
-		all_moves = File.read("./Reference_Files/save_constants/moves.txt").split("\n")
+
+		
+		
+
 		abils = JSON.parse(File.read('./Reference_Files/save_constants/rr_abils.json'))
 		
 
@@ -303,7 +314,7 @@ class Save
 
 
 
-				if species_id > 899
+				if species_id > 899 && game != "scram_em"
 					species_id += 7
 				end
 
@@ -314,7 +325,7 @@ class Save
 
 				nature = RomInfo.natures[(nature_byte & 31744) >> 10]
 				
-				if game == "em_imp"
+				if game == "em_imp" || game == "scram_em"
 					nature = RomInfo.natures[pid % 25]
 
 					if modded_nature <= 26
@@ -366,7 +377,7 @@ class Save
 				set = {}
 
 				is_party = ""
-				if n <= 600
+				if n <= 600 && game != "scram_em"
 					is_party = " |Party|"
 				end
 				
