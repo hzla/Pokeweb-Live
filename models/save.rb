@@ -176,7 +176,7 @@ class Save
 
 
 
-	def self.read(save_data, static_level=100, game="inc_em", manual_offset=0, invert_save_index=false) #INCLEMENT EMERALD/POKEMERALD
+	def self.read(save_data, static_level=100, game="inc_em", manual_offset=0, invert_save_index=false, evs_on=false) #INCLEMENT EMERALD/POKEMERALD
 		if game == "rad_red"
 			return read_rad_red(save_data, static_level, true, true)
 		end
@@ -278,7 +278,6 @@ class Save
 				n += 2
 				next
 			else
-				p "found mon"
 				mon_data = box_data[n-18..n+61]
 
 				begin
@@ -306,6 +305,7 @@ class Save
 
 				growth_index = sub_order.index(1)
 				moves_index = sub_order.index(2)
+				evs_index = sub_order.index(3)
 				misc_index = sub_order.index(4)
 
 
@@ -334,6 +334,23 @@ class Save
 				end
 
 				
+				int1 = decrypted[evs_index * 3]
+				int2 = decrypted[evs_index * 3 + 1]
+
+				ev_spread = {}
+
+
+
+				ev_spread["HP"] = (int1 & 0xFF)
+				ev_spread["Atk"] = ((int1 >> 8) & 0xFF)
+				ev_spread["Def"] = ((int1 >> 16) & 0xFF)
+				ev_spread["Spe"]= ((int1 >> 24) & 0xFF)
+				ev_spread["SpA"] = (int2 & 0xFF)
+				ev_spread["SpD"] = ((int2 >> 8) & 0xFF)
+
+				p ev_spread
+
+				
 				move1 = all_moves[[decrypted[moves_index * 3]].pack('V').unpack('vv')[0] & 0x07FF]
 				move2 = all_moves[[decrypted[moves_index * 3]].pack('V').unpack('vv')[1] & 0x07FF]
 				move3 = all_moves[[decrypted[moves_index * 3 + 1]].pack('V').unpack('vv')[0] & 0x07FF]
@@ -351,7 +368,7 @@ class Save
 
 				# binding.pry
 
-				p species_id
+				# p species_id
 
 				if game == "em_imp"
 					begin
@@ -369,7 +386,7 @@ class Save
 
 				moves = [move1, move2, move3, move4]
 
-				if moves.index(nil)
+				if moves.index(nil) || moves.reject { |str| str == "None" }.uniq.length != moves.reject { |str| str == "None" }.length
 					n += 2
 					next
 				end
@@ -391,13 +408,27 @@ class Save
 				end
 				import_data += "Level: #{lvl}\n"
 				import_data += "#{nature} Nature\n"
+
+				if evs_on
+					import_data += "EVs: "
+					iv_stats.each do |stat|
+						import_data += "#{ev_spread[stat]} #{stat} / "
+					end
+					import_data = import_data[0..-4]
+					import_data += "\n"
+				end
 				
+
 				import_data += "IVs: "
 				iv_stats.each do |stat|
 					import_data += "#{spread[stat]} #{stat} / "
 				end
 				import_data = import_data[0..-4]
 				import_data += "\n"
+
+
+
+
 				
 				import_data += "Ability: #{ability_slot}\n"
 				moves.each do |m|
@@ -413,7 +444,7 @@ class Save
 
 		if import_data == "" and game == "em_imp" and !invert_save_index
 			p ("retrying with other save index #{manual_offset}")
-			return read(save_data, 100, game, 0, true)	
+			return read(save_data, 100, game, 0, true, evs_on)	
 		end
 
 

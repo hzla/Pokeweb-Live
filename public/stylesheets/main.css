@@ -21,6 +21,21 @@
     background: #f1f1f1;
 }
 
+#evs {
+    height: 30px;
+    width: 30px;
+    margin-top: 10px;
+    margin-left: 345px;
+}
+
+#evs-label {
+    font-size: 24px;
+    display: inline-block;
+    width: 65px;
+    line-height: 30px;
+    height: 30px;
+}
+
 .text-page-container {
     padding: 40px 20px;
 }

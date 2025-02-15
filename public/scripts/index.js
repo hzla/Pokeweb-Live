@@ -23,11 +23,13 @@ $(document).on('click', '#load-save', async function() {
 		
 		var file = $('#save-upload')[0].files[0]
 		var level = $('#save-lvl').val()
+		var evs = $('#evs').is(":checked")
 
 		
 		let formData = new FormData();           
 	    formData.append("file", file);
 	    formData.append("level", level);
+	    formData.append("evs", evs);
 	    formData.append("game", window.location.href.split("/").pop());
 
 	    const response = await fetch(`/read_save`, {

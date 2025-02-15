@@ -293,7 +293,7 @@ Dive
 Smelling Salts
 Camouflage
 Power Glow
-Luster Purge
+Lusterous Purge
 Feather Ball
 Feather Dance
 Teeter Dance
@@ -390,10 +390,10 @@ Worry Seed
 Sucker Punch
 Toxic Spikes
 Heart Swap
-Aqua Ring
+Rehydrate
 Magnet Rise
 Flare Blitz
-Force Palm
+Force Waves
 Aura Sphere
 Rock Polish
 Poison Jab
@@ -508,7 +508,7 @@ Hex
 Sky Drop
 Shift Gear
 Circle Throw
-Incinerate
+Bursting Flames
 Quash
 Acrobatics
 Reflect Type
@@ -563,7 +563,7 @@ Mat Block
 Belch
 Rototiller
 Sticky Web
-Fell Stinger
+Finishing Blow
 Phantom Force
 Trick-or-Treat
 Battle Cry
