@@ -26,8 +26,8 @@ p "init"
 
 class MyApp < Sinatra::Base
 	before do
-		$rom_name = "projects/cleangold"
-		session[:rom_name] = "projects/cleangold"
+		$rom_name = "projects/"
+		session[:rom_name] = "projects/"
 		$rom_name = session[:rom_name]
 		p $rom_name
 		$fairy = SessionSettings.fairy?

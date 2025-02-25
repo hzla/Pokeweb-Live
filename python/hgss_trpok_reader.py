@@ -244,7 +244,11 @@ def to_readable(raw, file_name, template, num_pokemon):
 
 		if (f'move_{1}_{0}') in raw:
 			for m in range(1,5):
-				readable[f'move_{m}_{n}'] = MOVES[raw[f'move_{m}_{n}']]
+				try:
+					readable[f'move_{m}_{n}'] = MOVES[raw[f'move_{m}_{n}']]
+				except:
+					print(f'trpok file {file_name}: pokemon {n}: move {m}: value: {raw[f'move_{m}_{n}']}')
+					readable[f'move_{m}_{n}'] = MOVES[0]
 
 		if (f'item_id_{n}') in raw:
 			readable[f'item_id_{n}'] = ITEMS[raw[f'item_id_{n}']]

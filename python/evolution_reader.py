@@ -22,8 +22,14 @@ def to_readable(raw, file_name, base=5):
 			# print(raw)
 			form = raw[f'target_{n}'] // 2048 
 			base_form_id = raw[f'target_{n}'] - (2048 * form )
-			readable[f'target_{n}'] = rom_data.POKEDEX[base_form_id]
-			readable[f'target_form_{n}'] = form + 1
+
+			try:
+				readable[f'target_{n}'] = rom_data.POKEDEX[base_form_id]
+				readable[f'target_form_{n}'] = form + 1
+			except:
+				print(f'{file_name} evoltion reader error: value: {raw[f'target_{n}']}')
+				readable[f'target_{n}'] = rom_data.POKEDEX[0]
+				readable[f'target_form_{n}'] = 0
 		else:
 			readable[f'target_{n}'] = rom_data.POKEDEX[(raw[f'target_{n}'])]
 			readable[f'target_form_{n}'] = 1
