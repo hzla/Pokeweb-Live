@@ -348,7 +348,6 @@ class Save
 				ev_spread["SpA"] = (int2 & 0xFF)
 				ev_spread["SpD"] = ((int2 >> 8) & 0xFF)
 
-				p ev_spread
 
 				
 				move1 = all_moves[[decrypted[moves_index * 3]].pack('V').unpack('vv')[0] & 0x07FF]
@@ -372,15 +371,35 @@ class Save
 
 				if game == "em_imp"
 					begin
+						
+						# p all_mons[species_id]
+						# p decrypted[misc_index].to_s(2).rjust(32, '0')
+						# p decrypted[misc_index + 1].to_s(2).rjust(32, '0')
+						# p decrypted[misc_index * 3 + 2].to_s(2).rjust(32, '0')
+
+						ability_slot = decrypted[misc_index * 3 + 2].to_s(2).rjust(32, '0')[1..2].to_i(2)
+  
+
+						# ability_slot = ((decrypted[misc_index + 2] & 0xFFFFFFFF) >> 29) & 0b11
+
+
 						if !abils[all_mons[species_id]]
 							all_mons[species_id] = all_mons[species_id].gsub(" ", "-")
 						end
 						if abils[all_mons[species_id]]
 							ability_slot = abils[all_mons[species_id]][ability_slot]
 						end
+
+						p ability_slot
+
+
+
 					rescue
-						p "species_id unknown"
+						p "species_id unknown: #{species_id}"
 					end
+
+
+
 				end
 
 
