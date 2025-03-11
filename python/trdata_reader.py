@@ -33,7 +33,10 @@ def to_readable(raw, file_name, base=5):
 		readable["battle_type"] = rom_data.BATTLE_TYPES[raw["battle_type"]]
 
 	for n in range(1, 5):
-		readable[f'item_{n}'] = rom_data.ITEMS[raw[f'item_{n}']]
+		try:
+			readable[f'item_{n}'] = rom_data.ITEMS[raw[f'item_{n}']]
+		except:
+			print(f'trdata {file_name}: item {raw[f'item_{n}']}')
 
 
 	if base == 4:
