@@ -269,6 +269,7 @@ class Save
 		box_suboffset = 0
 		import_data = ""
 
+		last_found_at = 0
 
 		n = 0
 		while n < box_data.length
@@ -314,7 +315,9 @@ class Save
 
 
 
-				if species_id > 899 && game != "scram_em"
+				if species_id > 899 && game != "scram_em" && game != "em_imp"
+					species_id += 7
+				elsif species_id > 905 && game == "em_imp"
 					species_id += 7
 				end
 
@@ -413,13 +416,14 @@ class Save
 				set = {}
 
 				is_party = ""
-				if n <= 600 && game != "scram_em"
+				if n <= 600 && game != "scram_em" && game != "em_imp"
 					is_party = " |Party|"
 				end
 				
 				begin
 
 					import_data += all_mons[species_id].strip + is_party + "\n"
+					last_found_at = n
 				rescue
 					p "Error: Species ID #{species_id}"
 					import_data += "Unknown\n"
