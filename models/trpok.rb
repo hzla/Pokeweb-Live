@@ -725,7 +725,7 @@ class Trpok < Pokenarc
 		(0..(poks["count"] - 1)).each do |i|
 			pok_id = raw["species_id_#{i}"]
 			next if !pok_id
-			next if poks["ivs_#{i}"] < min_ivs
+			next if poks["ivs_#{i}"].to_i < min_ivs
 
 			species = poks["species_id_#{i}"].downcase.titleize.gsub("Porygon Z", "Porygon-Z").gsub("Ho Oh","Ho-Oh").gsub("'","’")
 

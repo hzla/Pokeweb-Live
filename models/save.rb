@@ -193,6 +193,9 @@ class Save
 		elsif game == "scram_em"
 			all_mons = JSON.parse(File.read("./Reference_Files/save_constants/mons_scram_em.json"))
 			all_moves = File.read("./Reference_Files/save_constants/moves_scram_em.txt").split("\n")
+		elsif game == "runandbun"
+			all_mons = File.read("./Reference_Files/save_constants/mons_rnb.txt").split("\n")
+			all_moves = File.read("./Reference_Files/save_constants/moves_rnb.txt").split("\n")
 		else	
 			all_mons = File.read("./Reference_Files/save_constants/mons.txt").split("\n")
 			all_moves = File.read("./Reference_Files/save_constants/moves.txt").split("\n")
@@ -203,6 +206,8 @@ class Save
 		
 
 		abils = JSON.parse(File.read('./Reference_Files/save_constants/rr_abils.json'))
+
+		rnb_abils = File.read("./Reference_Files/save_constants/rnb_abils.txt").split("\n")
 		
 
 		# if save_index odd should be at save_block B otherwise A
@@ -261,7 +266,7 @@ class Save
 			box_data += pc_box
 		end
 
-		box_data = save_data if game == "em_imp"
+		box_data = save_data if game == "em_imp" || game == "runandbun"
 		trainer_string = "\x02\x02"
 
 		mon_count = 0
@@ -315,7 +320,7 @@ class Save
 
 
 
-				if species_id > 899 && game != "scram_em" && game != "em_imp"
+				if species_id > 899 && game != "scram_em" && game != "em_imp" && game != "runandbun"
 					species_id += 7
 				elsif species_id > 905 && game == "em_imp"
 					species_id += 7
@@ -328,7 +333,7 @@ class Save
 
 				nature = RomInfo.natures[(nature_byte & 31744) >> 10]
 				
-				if game == "em_imp" || game == "scram_em"
+				if game == "em_imp" || game == "scram_em" || game == "runandbun"
 					nature = RomInfo.natures[pid % 25]
 
 					if modded_nature <= 26
@@ -372,7 +377,7 @@ class Save
 
 				# p species_id
 
-				if game == "em_imp"
+				if game == "em_imp" || game == "runandbun"
 					begin
 						
 						# p all_mons[species_id]
@@ -386,14 +391,21 @@ class Save
 						# ability_slot = ((decrypted[misc_index + 2] & 0xFFFFFFFF) >> 29) & 0b11
 
 
-						if !abils[all_mons[species_id]]
-							all_mons[species_id] = all_mons[species_id].gsub(" ", "-")
-						end
-						if abils[all_mons[species_id]]
-							ability_slot = abils[all_mons[species_id]][ability_slot]
+						if game == "em_imp"
+
+							if !abils[all_mons[species_id]]
+								all_mons[species_id] = all_mons[species_id].gsub(" ", "-")
+							end
+							if abils[all_mons[species_id]]
+								ability_slot = abils[all_mons[species_id]][ability_slot]
+							end
+						else
+							ability_slot = rnb_abils[species_id].split(",")[ability_slot]
 						end
 
-						p ability_slot
+						# p ability_slot
+
+
 
 
 
