@@ -25,7 +25,7 @@ Dotenv.load
 
 Dir["models/*.rb"].each {|file| require_relative file}
 p "init"
-# $rom_name = "projects/bb2"
+# $rom_name = "projects/b2test"
 # $gen = 4
 
 

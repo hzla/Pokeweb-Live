@@ -103,7 +103,7 @@ def write_narc_data(file_name, narc_format, narc, rom_name):
 	narcfile_path = f'{ROM_NAME}/narcs/trpok-{NARC_FILE_ID}.narc'
 
 	stream = bytearray() # bytearray because is mutable
-
+	print(file_name)
 	with open(file_path, "r", encoding='ISO8859-1') as outfile:  	
 		json_data = json.load(outfile)	
 
@@ -149,7 +149,7 @@ def write_readable_to_raw(file_name, rom_name):
 		template = tr_data["raw"]["template"]
 
 
-
+		print(file_name)
 
 		new_raw_data = to_raw(json_data["readable"], template)
 		json_data["raw"] = new_raw_data
@@ -186,9 +186,9 @@ def to_raw(readable, template):
 			raw[f'ability_{n}'] += GENDERS.index(readable[f'gender_{n}'])
 
 
-
+			# print(readable)
 			for m in range(1,5):
-				if f'move_{m}_{n}' in readable:
+				if f'move_{m}_{n}' in readable && readable[f'move_{m}_{n}'] in MOVES:
 					raw[f'move_{m}_{n}'] = MOVES.index(readable[f'move_{m}_{n}'])
 				else: 
 					raw[f'move_{m}_{n}'] = 0

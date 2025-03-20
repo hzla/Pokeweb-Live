@@ -528,7 +528,7 @@ class Trpok < Pokenarc
 
 	def self.get_pid(trainer_id, trainer_class, pok_id, pok_iv, pok_lvl, ability_gender, personal_gender, trainer_gender, ability_slot)
 
-		seed = trainer_id + pok_id + pok_iv + pok_lvl
+		seed = trainer_id.to_i + pok_id.to_i + pok_iv.to_i + pok_lvl.to_i
 
 		trainer_class.to_i.times do 
 			seed = seed * 0x5D588B656C078965 + 0x269EC3
@@ -565,8 +565,39 @@ class Trpok < Pokenarc
 		result
 	end
 
+	def self.field_is_integer_string?(string)
+	  !!(string =~ /\A[+-]?\d+\z/)
+	end
+
+	def self.format_fields
+		tr_count = Dir.entries("#{$rom_name}/json/trpok/").length - 1
+
+
+
+		(0..tr_count).each do |n|
+			begin
+				file_path = "#{$rom_name}/json/trpok/#{n}.json"
+
+				trpok = JSON.parse(File.open(file_path, "r"){|f| f.read})
+
+				trpok["readable"].each do |k,v|
+					if v.is_a?(String) && field_is_integer_string?(v)
+						p "faulty string: #{v}, field: #{k}"
+						trpok["readable"][k] = v.to_i
+					end
+				end
+
+				File.write(file_path, trpok.to_json)
+			rescue
+				break
+			end
+		end
+	end
+
 
 	def self.export_all_showdown use_format=true
+		format_fields
+
 		data = []
 		sets = {}
 		@@tr_name_counts = {}
@@ -730,7 +761,7 @@ class Trpok < Pokenarc
 			species = poks["species_id_#{i}"].downcase.titleize.gsub("Porygon Z", "Porygon-Z").gsub("Ho Oh","Ho-Oh").gsub("'","’")
 
 			# handle pokestar studios
-			binding.pry if tr_id == 868
+			# binding.pry if tr_id == 868
 			if species == "    "
 				species = Personal.poke_data[pok_id]["name"].upcase
 
@@ -759,7 +790,7 @@ class Trpok < Pokenarc
 			file_path = "#{$rom_name}/json/personal/#{pok_id}.json"
 			personal = JSON.parse(File.open(file_path, "r"){|f| f.read})["readable"]
 			
-			form = poks["form_#{i}"]
+			form = poks["form_#{i}"].to_i
 
 			if form > 0 && !(["Deerling","Sawsbuck","Gastrodon","Shellos","Arceus"].include?(species))
 				species_name = species
@@ -782,7 +813,16 @@ class Trpok < Pokenarc
 			nature_info = get_nature_for(tr_id, i, poks["ivs_#{i}"])
 			nature = nature_info[0]
 			pid = nature_info[1] 
-			iv = poks["ivs_#{i}"] * 31 / 255
+			
+			p tr_id
+
+			begin
+
+				iv = poks["ivs_#{i}"].to_i * 31 / 255
+			rescue
+				p poks
+				throw
+			end
 
 
 			if ability_id == 0	
