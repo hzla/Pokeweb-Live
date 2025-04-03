@@ -188,7 +188,7 @@ def to_raw(readable, template):
 
 			# print(readable)
 			for m in range(1,5):
-				if f'move_{m}_{n}' in readable && readable[f'move_{m}_{n}'] in MOVES:
+				if f'move_{m}_{n}' in readable and readable[f'move_{m}_{n}'] in MOVES:
 					raw[f'move_{m}_{n}'] = MOVES.index(readable[f'move_{m}_{n}'])
 				else: 
 					raw[f'move_{m}_{n}'] = 0
