@@ -4,7 +4,7 @@ class Save
 
 
 
-	def self.read_rad_red(save_data, static_level=100, brute_force=false, party_search=false)
+	def self.read_rad_red(save_data, static_level=100, brute_force=false, party_search=false, invert=false)
 		save_index_a_offset = 0xffc
 		save_block_b_offset = 0x00E000
 		trainer_id_offset = 0xa
@@ -23,6 +23,14 @@ class Save
 		if save_index_b > save_index_a && save_index_b != 65535
 			block_offset = save_block_b_offset
 		end
+
+		if invert && block_offset == save_block_b_offset
+			block_offset = 0
+		elsif invert && block_offset == 0
+			block_offset = save_block_b_offset
+		else
+		end
+
 
 
 
@@ -178,7 +186,7 @@ class Save
 
 	def self.read(save_data, static_level=100, game="inc_em", manual_offset=0, invert_save_index=false, evs_on=false) #INCLEMENT EMERALD/POKEMERALD
 		if game == "rad_red"
-			return read_rad_red(save_data, static_level, true, true)
+			return read_rad_red(save_data, static_level, true, true, invert_save_index)
 		end
 
 		save_index_a_offset = 0xffc
