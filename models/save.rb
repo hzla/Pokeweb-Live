@@ -198,6 +198,7 @@ class Save
 		if game == "em_imp"
 			all_mons = JSON.parse(File.read("./Reference_Files/save_constants/mons_em_imp.json"))
 			all_moves = File.read("./Reference_Files/save_constants/moves.txt").split("\n")
+			items = File.read("./Reference_Files/save_constants/em_imp_items.txt").split("\n")
 		elsif game == "scram_em"
 			all_mons = JSON.parse(File.read("./Reference_Files/save_constants/mons_scram_em.json"))
 			all_moves = File.read("./Reference_Files/save_constants/moves_scram_em.txt").split("\n")
@@ -326,6 +327,10 @@ class Save
 
 				species_id = [decrypted[growth_index * 3]].pack('V').unpack('vv')[0] & 0x07FF
 
+				item_id = [decrypted[growth_index * 3]].pack('V').unpack('vv')[1] & 0x07FF
+
+
+
 
 
 				if species_id > 899 && game != "scram_em" && game != "em_imp" && game != "runandbun"
@@ -442,7 +447,11 @@ class Save
 				
 				begin
 
-					import_data += all_mons[species_id].strip + is_party + "\n"
+					import_data += all_mons[species_id].strip + is_party 
+					if game == "em_imp" && item_id != 0
+						import_data += " @ #{items[item_id].move_titleize.gsub("_", " ").gsub("Never Melt", "Never-Melt")}"
+					end
+					import_data += "\n"
 					last_found_at = n
 				rescue
 					p "Error: Species ID #{species_id}"

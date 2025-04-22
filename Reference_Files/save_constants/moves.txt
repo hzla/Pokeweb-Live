@@ -776,7 +776,7 @@ Bleakwind Storm
 Wildbolt Storm
 Sandsear Storm
 Lunar Blessing
-Take Heart\t
+Take Heart
 Tera Blast
 Silk Trap
 Axe Kick
