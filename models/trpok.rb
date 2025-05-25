@@ -324,6 +324,10 @@ class Trpok < Pokenarc
 
 		# $rom_name = "projects/renplat"
 
+		if sub_index == 0
+			$last_set_ability = 16
+		end
+
 		file_path = "#{$rom_name}/json/trpok/#{file_name}.json"
 		trpok = JSON.parse(File.open(file_path, "r"){|f| f.read})
 		ability_slot = trpok["readable"]["ability_#{sub_index}"]
@@ -349,6 +353,11 @@ class Trpok < Pokenarc
 		ability = ability_slot
 		species = pok_id
 
+
+
+		if ability > 15
+			$last_set_ability = ability 
+		end
 
 		gender_file = ""
 		if SessionSettings.base_rom == "HGSS"
@@ -377,15 +386,20 @@ class Trpok < Pokenarc
 		# prng(77, )
 
 		p [level, species, difficulty, trainer_id, trainer_class, gender, ability]
-		nature = prng(level, species, difficulty, trainer_id, trainer_class, gender, ability)
+		nature = prng(level, species, difficulty, trainer_id, trainer_class, gender, ability, $last_set_ability, sub_index)
 		
 
 
 	end
 
-	def self.prng level, species, difficulty, trainer_id, trainer_class, gender, ability
+	def self.prng level, species, difficulty, trainer_id, trainer_class, gender, ability, last_set_ability=0, sub_index=0
 		seed = (level + species + difficulty + trainer_id).to_s(16)
 
+		$nature_shift = false
+
+		# if trainer_id == 33 and sub_index == 4
+		# 	binding.pry
+		# end
 
 		trainer_class.times do 
 			seed = seed.to_i 16
@@ -405,16 +419,28 @@ class Trpok < Pokenarc
 
 		pid =  high_bytes + mid_bytes + low_bytes
 
-		ab = ability > 0 ? 1 : 0
+		# ab = ability > 16 ? 1 : 0
 
 		# add ab if hgss
 
 		nature_id = (pid.to_i(16).to_s[-2..-1].to_i) % 25
 
-		# uncomment the next line if hgss
+
+
+		if ability / 16 != 0 
+			ab = ability > 16 ? 1 : 0
+		else
+			if sub_index == 0
+				ab = 0
+			else
+				ab = last_set_ability > 16 ? 1 : 0
+				$nature_shift = true
+			end
+		end
 		if SessionSettings.base_rom == "HGSS"
 			nature_id = ((pid.to_i(16).to_s[-2..-1].to_i) + ab) % 25
 		end
+
 
 
 		RomInfo.natures[nature_id]
@@ -588,7 +614,7 @@ class Trpok < Pokenarc
 		trclasses = File.read("#{$rom_name}/texts/tr_classes.txt").split("\n")
 		pokedex = File.read("#{$rom_name}/texts/pokedex.txt").split("\n")
 
-		trdata["class"] = trclasses[trdata["class_id"].to_i].gsub("\r", "").strip
+		trdata["class"] = trclasses[trdata["class_id"].to_i].gsub("\r", "").strip.gsub(/_\d+/, '').titleize
 		trdata["name"] = trnames[tr_id].strip.gsub("\r", "").strip
 
 		# if trdata["name"] == "Zackary"
@@ -673,8 +699,6 @@ class Trpok < Pokenarc
 				ability_id = poks["ability_#{i}"] == 0 ? 1 : 2
 			end
 			
-			ability = personal["ability_#{ability_id}"]
-
 			item = poks["item_id_#{i}"]
 
 			if gen == 5
@@ -682,6 +706,14 @@ class Trpok < Pokenarc
 			else
 				nature = g4_get_nature_for(tr_id, i, poks["ivs_#{i}"])
 			end
+
+			if gen == 4 and $nature_shift
+				ability_id = 2
+			end
+
+			ability = personal["ability_#{ability_id}"]
+
+			# binding.pry if tr_id == 33 and i == 4
 
 			iv = poks["ivs_#{i}"] * 31 / 255
 
