@@ -255,7 +255,7 @@ end
 		begin
 			learnset_data = JSON.parse(File.open(learnset_data_path, "r"){|f| f.read})["readable"]
 		rescue
-			`cp #{$rom_name}/json/learnsets/#{pok_id + 1}.json #{learnset_data_path}`		
+			`cp #{$rom_name}/json/learnsets/#{pok_id.to_i + 1}.json #{learnset_data_path}`		
 			learnset_data = JSON.parse(File.open(learnset_data_path, "r"){|f| f.read})["readable"]
 		end
 
