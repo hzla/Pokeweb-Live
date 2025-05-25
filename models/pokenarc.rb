@@ -61,7 +61,16 @@ class Pokenarc
 					# binding.pry
 					File.write("#{$rom_name}/json/#{@@narc_name}/#{n}.json", validate_brackets(file))
 					file = validate_brackets(file)
-					json = JSON.parse(file)
+
+					
+					# copy from vanilla template files if fix fails
+					begin
+						json = JSON.parse(file)
+					rescue
+						`cp templates/#{SessionSettings.get("base_version")}/json/trpok/#{n}.json #{$rom_name}/json/trpok/#{n}.json`
+						file = File.open("#{$rom_name}/json/#{@@narc_name}/#{n}.json", "r:ISO8859-1") {|f| f.read }
+						json = JSON.parse(file)
+					end
 				end
 			end
 
