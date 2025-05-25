@@ -250,7 +250,14 @@ end
 		
 		return if !personal_data
 		learnset_data_path = "#{$rom_name}/json/learnsets/#{pok_id}.json"
-		learnset_data = JSON.parse(File.open(learnset_data_path, "r"){|f| f.read})["readable"]
+		
+
+		begin
+			learnset_data = JSON.parse(File.open(learnset_data_path, "r"){|f| f.read})["readable"]
+		rescue
+			`cp #{$rom_name}/json/learnsets/#{pok_id + 1}.json #{learnset_data_path}`		
+			learnset_data = JSON.parse(File.open(learnset_data_path, "r"){|f| f.read})["readable"]
+		end
 
 		personal_data["learnset"] = learnset_data
 		personal_data		
