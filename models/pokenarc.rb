@@ -84,6 +84,9 @@ class Pokenarc
 
 			if @@narc_name == "trpok"
 				entry["raw"] = json["raw"]
+				(0..5).each do |n|
+					entry["raw_species_id_#{n}"] = json["raw"]["species_id_#{n}"]
+				end
 			end
 
 			collection[n] = entry

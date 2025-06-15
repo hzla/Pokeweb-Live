@@ -92,6 +92,27 @@ class Personal
 		data[0..limit]
 	end
 
+	def self.pokestar_mons
+		mons = {}
+		mons[652] = "UFO"
+		mons[653] = "BrycenMan"
+		mons[654] = "MT"
+		mons[655] = "MT2"
+		mons[656] = "Transport"
+		mons[683] = "Black Belt"
+		mons[658] = "Humanoid"
+		mons[659] = "Monster"
+		mons[660] = "F00"
+		mons[682] = "F002"
+		mons[661] = "Majin"
+		mons[662] = "WhiteDoor"
+		mons[663] = "BlackDoor"
+		mons[664] = "UFO2"
+		mons[665] = "UFO2"
+		mons[666] = "Brycen Man"
+		mons
+	end
+
 	def self.export_showdown
 		poks = poke_data[1..-1]
 
