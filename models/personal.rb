@@ -119,10 +119,17 @@ class Personal
 		learnset_info = []
 
 		n = 0
-		p ls
-		until !ls["lvl_learned_#{n}"] or learnset_info.length == 25
-			learnset_info << [ls["lvl_learned_#{n}"], ls["move_id_#{n}"].move_titleize]
-			n += 1
+
+
+		begin 
+			until !ls["lvl_learned_#{n}"] or learnset_info.length == 25
+				learnset_info << [ls["lvl_learned_#{n}"], ls["move_id_#{n}"].move_titleize]
+				n += 1
+			end
+		rescue
+			p pok
+			p ls
+			return {learnset: [], tms: []}
 		end
 		{learnset: learnset_info, tms: pok_tm_list}
 

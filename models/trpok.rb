@@ -18,6 +18,38 @@ class Trpok < Pokenarc
 		@@narc_name = "trpok"
 		super
 	end
+
+
+	def self.correct_moves_from_text
+
+		move_list = File.open("#{$rom_name}/texts/moves.txt").read.split("\n")
+
+
+
+
+		@@narc_name = "trpok"
+		collection = []
+		files = Dir["#{$rom_name}/json/#{@@narc_name}/*.json"]
+		file_count = files.length
+
+		(0..file_count - 1).each do |n|
+			
+			file = File.open("#{$rom_name}/json/#{@@narc_name}/#{n}.json", "r:ISO8859-1") {|f| f.read }
+			json = JSON.parse(file)
+
+			(0..5).each do |i|
+				# if mon exists
+				if json["readable"]["move_1_#{i}"]				
+					(1..4).each do |j|
+						json["readable"]["move_#{j}_#{i}"] = move_list[json["raw"]["move_#{j}_#{i}"]].strip
+					end
+				end
+			end
+
+			File.write("#{$rom_name}/json/#{@@narc_name}/#{n}.json", json.to_json)
+
+		end
+	end
 	
 	def self.get_all_mods
 
@@ -381,11 +413,12 @@ class Trpok < Pokenarc
 		# 	gender = "female"
 		# end
 
-		p gender_file
+		if file_name == 169
+			p ability 
+			p $last_set_ability
+			p "////////"
+		end
 
-		# prng(77, )
-
-		p [level, species, difficulty, trainer_id, trainer_class, gender, ability]
 		nature = prng(level, species, difficulty, trainer_id, trainer_class, gender, ability, $last_set_ability, sub_index)
 		
 
@@ -395,7 +428,7 @@ class Trpok < Pokenarc
 	def self.prng level, species, difficulty, trainer_id, trainer_class, gender, ability, last_set_ability=0, sub_index=0
 		seed = (level + species + difficulty + trainer_id).to_s(16)
 
-		$nature_shift = false
+		# $nature_shift = false
 
 		# if trainer_id == 33 and sub_index == 4
 		# 	binding.pry
@@ -427,14 +460,16 @@ class Trpok < Pokenarc
 
 
 
-		if ability / 16 != 0 
+		if ability == 0 
 			ab = ability > 16 ? 1 : 0
 		else
 			if sub_index == 0
 				ab = 0
 			else
+				
 				ab = last_set_ability > 16 ? 1 : 0
 				$nature_shift = true
+
 			end
 		end
 		if SessionSettings.base_rom == "HGSS"
@@ -633,7 +668,8 @@ class Trpok < Pokenarc
 		end
 
 		poks_array = []
-	
+		
+		$nature_shift = false
 		
 
 		(0..(poks["count"] - 1)).each do |i|
@@ -709,6 +745,11 @@ class Trpok < Pokenarc
 
 			if gen == 4 and $nature_shift
 				ability_id = 2
+			end
+
+			if tr_id == 169
+				p $nature_shift
+				p ability_id
 			end
 
 			ability = personal["ability_#{ability_id}"]
