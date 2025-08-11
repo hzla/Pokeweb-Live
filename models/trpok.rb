@@ -428,7 +428,7 @@ class Trpok < Pokenarc
 	def self.prng level, species, difficulty, trainer_id, trainer_class, gender, ability, last_set_ability=0, sub_index=0
 		seed = (level + species + difficulty + trainer_id).to_s(16)
 
-		# $nature_shift = false
+		$nature_shift = false if sub_index == 0
 
 		# if trainer_id == 33 and sub_index == 4
 		# 	binding.pry
@@ -460,18 +460,19 @@ class Trpok < Pokenarc
 
 
 
-		if ability == 0 
+
+		if ability != 0 
 			ab = ability > 16 ? 1 : 0
 		else
 			if sub_index == 0
 				ab = 0
-			else
-				
+			else	
 				ab = last_set_ability > 16 ? 1 : 0
-				$nature_shift = true
+				$nature_shift = true if ab == 1
 
 			end
 		end
+
 		if SessionSettings.base_rom == "HGSS"
 			nature_id = ((pid.to_i(16).to_s[-2..-1].to_i) + ab) % 25
 		end
@@ -727,6 +728,8 @@ class Trpok < Pokenarc
 				end
 			end
 
+			
+
 			ability_id = poks["ability_#{i}"]
 
 			if gen == 5
@@ -747,10 +750,6 @@ class Trpok < Pokenarc
 				ability_id = 2
 			end
 
-			if tr_id == 169
-				p $nature_shift
-				p ability_id
-			end
 
 			ability = personal["ability_#{ability_id}"]
 
@@ -761,7 +760,7 @@ class Trpok < Pokenarc
 			moves = []
 			(1..4).each do |n|
 				if poks["move_#{n}_#{i}"]
-					move = sub_showdown(poks["move_#{n}_#{i}"].move_titleize)
+					move = sub_showdown(move_names[raw["move_#{n}_#{i}"]].move_titleize)
 					if SessionSettings.base_rom == "HGSS"
 						if move == "-"
 							move = "(No Move)"
@@ -810,6 +809,7 @@ class Trpok < Pokenarc
 
 			
 			pok[species][tr_name]["evs"] = {"df" => 0}
+
 
 			poks_array << pok
 
