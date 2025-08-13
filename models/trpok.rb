@@ -726,6 +726,10 @@ class Trpok < Pokenarc
 			end
 		end
 
+		if trpok["raw_species_id_#{i}"] >= 652 and trpok["raw_species_id_#{i}"] <= 666
+			species_name = Personal.pokestar_mons[trpok["raw_species_id_#{i}"]].downcase.titleize
+		end
+
 		species_name
 
 
