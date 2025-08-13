@@ -50,7 +50,7 @@ try:
 		#always run text editor export
 		# if settings["enable_single_npc_dbl_battles"] == True:
 		
-		if "disable_text_exports" in settings and settings["disable_text_exports"]:
+		if True:
 			if "text" in edited:
 				edited.remove("text")
 			if "headers" in edited:
