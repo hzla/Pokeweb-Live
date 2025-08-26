@@ -15,8 +15,13 @@ def to_readable(raw, file_name):
 
 	for n in range(25):
 		if f'move_id_{n}' in readable:
-			readable[f'move_id_{n}'] = rom_data.MOVES[raw[f'move_id_{n}']]
-			readable[f'move_id_{n}_index'] = raw[f'move_id_{n}']
+			try:
+				readable[f'move_id_{n}'] = rom_data.MOVES[raw[f'move_id_{n}']]
+				readable[f'move_id_{n}_index'] = raw[f'move_id_{n}']
+			except:
+				readable[f'move_id_{n}'] = rom_data.MOVES[0]
+				readable[f'move_id_{n}_index'] = raw[f'move_id_{n}']
+
 	return readable
 
 

@@ -40,9 +40,15 @@ def to_readable(raw, file_name):
 
 	readable["type_2"] = rom_data.TYPES[raw["type_2"]]
 
-	readable["item_1"] = rom_data.ITEMS[raw["item_1"]]
-	readable["item_2"] = rom_data.ITEMS[raw["item_2"]]
-	readable["item_3"] = rom_data.ITEMS[raw["item_3"]]
+	try:
+		readable["item_1"] = rom_data.ITEMS[raw["item_1"]]
+		readable["item_2"] = rom_data.ITEMS[raw["item_2"]]
+		readable["item_3"] = rom_data.ITEMS[raw["item_3"]]
+	except:
+		readable["item_1"] = rom_data.ITEMS[0]
+		readable["item_2"] = rom_data.ITEMS[0]
+		readable["item_3"] = rom_data.ITEMS[0]
+
 
 	readable["exp_rate"] = rom_data.GROWTHS[raw["exp_rate"]]
 

@@ -75,7 +75,11 @@ def to_readable(raw, file_name=""):
 	readable = copy.deepcopy(raw)
 
 	for n in range(258):
-		readable[f'move_id_{n}'] = MOVES[raw[f'move_id_{n}']] 
+		try:
+			readable[f'move_id_{n}'] = MOVES[raw[f'move_id_{n}']] 
+		except:
+			readable[f'move_id_{n}'] = MOVES[0] 
+
 
 	return readable
 
