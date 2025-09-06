@@ -7,6 +7,11 @@ class Learnset < Pokenarc
 		super
 	end
 
+	def self.get_all
+		@@narc_name == "learnsets"
+		super
+	end
+
 	def self.repair_all 
 		ls_count = Dir["#{$rom_name}/json/learnsets/*.json"].length - 1
 		(1..ls_count).each do |id|

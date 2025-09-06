@@ -5,12 +5,126 @@ class Encounter < Pokenarc
 		@@narc_name = "encounters"
 		data = super
 		expand_encounter_info(data, Header.get_all)
-
 	end
 
 	def self.get_data file_name, type="readable"
 		@@narc_name = "encounters"
 		super
+	end
+
+	def self.get_evo species_name, lvl, evo_data, names, mons
+		return "" if species_name == ""
+		species_index = names.index(species_name.downcase.gsub(" ", ""))
+		evo = evo_data[species_index]
+
+		target = nil
+
+		if !evo["method_0"] or evo["method_0"] == "None"
+			return species_name
+		else
+			target = evo["target_0"].downcase.gsub(" ", "")
+		end
+
+		# If the level to evolve is below the specified level
+		p evo["method_0"]
+		if evo["method_0"].include?("Level ") and !evo["method_0"].include?("with Item") and !evo["method_0"].include?("With Party") and evo["param_0"] <= lvl	
+			return get_evo(target, lvl, evo_data, names, mons)
+		end
+
+		# Force evo for happiness
+		if evo["method_0"] == "Max Happiness"
+			return get_evo(target, lvl, evo_data, names, mons)
+		end
+
+		# Force item evo after level 20
+		if evo["method_0"].include?("Item Use")
+			if lvl <= 20
+				return species_name 
+			else
+				return get_evo(target, lvl, evo_data, names, mons)
+			end
+		end
+
+		if evo["method_0"] == "After Learning Specific Move"
+			move = evo["param_0"]
+			learnset = mons[species_index]["learnset"]
+			lvl_learned = 100
+
+			(0..24).each do |slot|
+				if !learnset["move_id_#{slot}"]
+					p slot
+					break
+				end
+				if learnset["move_id_#{slot}"] == move
+					lvl_learned = learnset["lvl_learned_#{slot}"]
+				end
+			end
+
+			if lvl >= lvl_learned
+				return get_evo(target, lvl, evo_data, names, mons)
+			end
+		end
+
+		species_name
+	end
+
+
+	def self.export_showdown
+
+		evos = Evolution.get_all
+		names = RomInfo.pokemon_names.map {|s| s.downcase.gsub(" ", "")}
+		mons = Personal.poke_data
+
+
+		encs = get_all.map do |enc|
+			sd_enc = {}
+			
+			sd_enc["gr"] = []
+			sd_enc["grd"] = []
+
+			sd_enc["srf"] = []
+			sd_enc["srfsp"] = []
+
+			sd_enc["rod"] = []
+			sd_enc["rodsp"] = []
+
+
+			# get grass encounters
+			(0..11).each do |n|
+				lvl = enc["spring_grass_slot_#{n}_max_level"]
+				sd_enc["gr"] << enc["spring_grass_slot_#{n}"]
+
+				evolved = get_evo(enc["spring_grass_slot_#{n}"], lvl, evos, names, mons)
+
+				p enc["spring_grass_slot_#{n}"]
+				p "evolve to: #{evolved} at lvl #{lvl}"	
+				break
+
+
+				sd_enc["grd"] << enc["spring_grass_doubles_slot_#{n}"]
+			end
+			# get water encounters
+			(0..4).each do |n|
+				sd_enc["srf"] << enc["spring_surf_slot_#{n}"]
+				sd_enc["srfsp"] << enc["spring_surf_special_slot_#{n}"]
+
+				sd_enc["rod"] << enc["spring_super_rod_slot_#{n}"]
+				sd_enc["rodsp"] << enc["spring_super_rod_special_slot_#{n}"]
+			end
+
+			# get levels
+			sd_enc["gr_cap"] = enc["spring_grass_slot_11_max_level"]
+			sd_enc["srf_cap"] = enc["spring_surf_slot_4_max_level"]
+			sd_enc["rod_cap"] = enc["spring_super_rod_slot_4_max_level"]
+
+			sd_enc["loc"] = enc["locations"][0].split("(")[0].strip
+
+			sd_enc
+		end
+
+		File.write("./encs.json", JSON.pretty_generate(encs))
+
+		return "Success"
 	end
 
 

@@ -1,0 +1,5132 @@
+[
+  {
+    "gr": [
+      ""
+    ],
+    "grd": [],
+    "srf": [
+      "BASCULIN",
+      "CORPHISH",
+      "BASCULIN",
+      "BASCULIN",
+      "BASCULIN"
+    ],
+    "srfsp": [
+      "BASCULIN",
+      "BASCULIN",
+      "CRAWDAUNT",
+      "CRAWDAUNT",
+      "CRAWDAUNT"
+    ],
+    "rod": [
+      "GOLDEEN",
+      "PSYDUCK",
+      "GOLDEEN",
+      "GOLDEEN",
+      "GOLDEEN"
+    ],
+    "rodsp": [
+      "PSYDUCK",
+      "SEAKING",
+      "PSYDUCK",
+      "PSYDUCK",
+      "PSYDUCK"
+    ],
+    "gr_cap": 0,
+    "srf_cap": 65,
+    "rod_cap": 55,
+    "loc": "Striaton City"
+  },
+  {
+    "gr": [
+      "COTTONEE"
+    ],
+    "grd": [],
+    "srf": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "srfsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rod": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rodsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "gr_cap": 24,
+    "srf_cap": 0,
+    "rod_cap": 0,
+    "loc": "Castelia Gardens"
+  },
+  {
+    "gr": [
+      "PALPITOAD"
+    ],
+    "grd": [],
+    "srf": [
+      "STUNFISK",
+      "STUNFISK",
+      "STUNFISK",
+      "GASTRODON",
+      "GASTRODON"
+    ],
+    "srfsp": [
+      "STUNFISK",
+      "GASTRODON",
+      "STUNFISK",
+      "SEISMITOAD",
+      "SEISMITOAD"
+    ],
+    "rod": [
+      "BARBOACH",
+      "STUNFISK",
+      "WHISCASH",
+      "WHISCASH",
+      "WHISCASH"
+    ],
+    "rodsp": [
+      "BARBOACH",
+      "STUNFISK",
+      "WHISCASH",
+      "WHISCASH",
+      "WHISCASH"
+    ],
+    "gr_cap": 63,
+    "srf_cap": 65,
+    "rod_cap": 60,
+    "loc": "Icirrus City"
+  },
+  {
+    "gr": [
+      ""
+    ],
+    "grd": [],
+    "srf": [
+      "DUCKLETT",
+      "DUCKLETT",
+      "SURSKIT",
+      "SURSKIT",
+      "SURSKIT"
+    ],
+    "srfsp": [
+      "DUCKLETT",
+      "SURSKIT",
+      "SURSKIT",
+      "SURSKIT",
+      "SURSKIT"
+    ],
+    "rod": [
+      "REMORAID",
+      "SURSKIT",
+      "FEEBAS",
+      "FEEBAS",
+      "FEEBAS"
+    ],
+    "rodsp": [
+      "REMORAID",
+      "SURSKIT",
+      "SURSKIT",
+      "FEEBAS",
+      "FEEBAS"
+    ],
+    "gr_cap": 0,
+    "srf_cap": 40,
+    "rod_cap": 8,
+    "loc": "Aspertia City"
+  },
+  {
+    "gr": [
+      ""
+    ],
+    "grd": [],
+    "srf": [
+      "FRILLISH",
+      "BASCULIN",
+      "TENTACOOL",
+      "TENTACOOL",
+      "TENTACOOL"
+    ],
+    "srfsp": [
+      "ALOMOMOLA",
+      "ALOMOMOLA",
+      "TENTACRUEL",
+      "JELLICENT",
+      "JELLICENT"
+    ],
+    "rod": [
+      "FINNEON",
+      "KRABBY",
+      "HORSEA",
+      "CHINCHOU",
+      "CHINCHOU"
+    ],
+    "rodsp": [
+      "KRABBY",
+      "CHINCHOU",
+      "HORSEA",
+      "FINNEON",
+      "FINNEON"
+    ],
+    "gr_cap": 0,
+    "srf_cap": 40,
+    "rod_cap": 15,
+    "loc": "Virbank City"
+  },
+  {
+    "gr": [
+      ""
+    ],
+    "grd": [],
+    "srf": [
+      "CLAMPERL",
+      "TENTACOOL",
+      "TENTACRUEL",
+      "TENTACRUEL",
+      "TENTACRUEL"
+    ],
+    "srfsp": [
+      "ALOMOMOLA",
+      "ALOMOMOLA",
+      "TENTACRUEL",
+      "TENTACRUEL",
+      "TENTACRUEL"
+    ],
+    "rod": [
+      "LUVDISC",
+      "CLAMPERL",
+      "HUNTAIL",
+      "GOREBYSS",
+      "GOREBYSS"
+    ],
+    "rodsp": [
+      "CLAMPERL",
+      "LUVDISC",
+      "LUVDISC",
+      "LUVDISC",
+      "LUVDISC"
+    ],
+    "gr_cap": 0,
+    "srf_cap": 55,
+    "rod_cap": 55,
+    "loc": "Humilau City"
+  },
+  {
+    "gr": [
+      "WATCHOG"
+    ],
+    "grd": [],
+    "srf": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "srfsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rod": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rodsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "gr_cap": 66,
+    "srf_cap": 0,
+    "rod_cap": 0,
+    "loc": "Dreamyard"
+  },
+  {
+    "gr": [
+      ""
+    ],
+    "grd": [],
+    "srf": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "srfsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rod": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rodsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "gr_cap": 0,
+    "srf_cap": 0,
+    "rod_cap": 0,
+    "loc": "Dreamyard"
+  },
+  {
+    "gr": [
+      "GURDURR"
+    ],
+    "grd": [],
+    "srf": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "srfsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rod": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rodsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "gr_cap": 66,
+    "srf_cap": 0,
+    "rod_cap": 0,
+    "loc": "Pinwheel Forest"
+  },
+  {
+    "gr": [
+      "SWADLOON"
+    ],
+    "grd": [],
+    "srf": [
+      "MARILL",
+      "BASCULIN",
+      "AZUMARILL",
+      "AZUMARILL",
+      "AZUMARILL"
+    ],
+    "srfsp": [
+      "MARILL",
+      "BASCULIN",
+      "AZUMARILL",
+      "AZUMARILL",
+      "AZUMARILL"
+    ],
+    "rod": [
+      "GOLDEEN",
+      "BASCULIN",
+      "GOLDEEN",
+      "SEAKING",
+      "SEAKING"
+    ],
+    "rodsp": [
+      "GOLDEEN",
+      "BASCULIN",
+      "SEAKING",
+      "SEAKING",
+      "SEAKING"
+    ],
+    "gr_cap": 62,
+    "srf_cap": 65,
+    "rod_cap": 65,
+    "loc": "Pinwheel Forest"
+  },
+  {
+    "gr": [
+      "SCRAGGY"
+    ],
+    "grd": [],
+    "srf": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "srfsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rod": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rodsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "gr_cap": 24,
+    "srf_cap": 0,
+    "rod_cap": 0,
+    "loc": "Desert Resort"
+  },
+  {
+    "gr": [
+      "DWEBBLE"
+    ],
+    "grd": [],
+    "srf": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "srfsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rod": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rodsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "gr_cap": 26,
+    "srf_cap": 0,
+    "rod_cap": 0,
+    "loc": "Desert Resort"
+  },
+  {
+    "gr": [
+      "BALTOY"
+    ],
+    "grd": [],
+    "srf": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "srfsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rod": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rodsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "gr_cap": 25,
+    "srf_cap": 0,
+    "rod_cap": 0,
+    "loc": "Relic Castle"
+  },
+  {
+    "gr": [
+      "BALTOY"
+    ],
+    "grd": [],
+    "srf": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "srfsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rod": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rodsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "gr_cap": 26,
+    "srf_cap": 0,
+    "rod_cap": 0,
+    "loc": "Relic Castle"
+  },
+  {
+    "gr": [
+      "KROKOROK"
+    ],
+    "grd": [],
+    "srf": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "srfsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rod": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rodsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "gr_cap": 30,
+    "srf_cap": 0,
+    "rod_cap": 0,
+    "loc": "Relic Castle"
+  },
+  {
+    "gr": [
+      "KROKOROK"
+    ],
+    "grd": [],
+    "srf": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "srfsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rod": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rodsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "gr_cap": 30,
+    "srf_cap": 0,
+    "rod_cap": 0,
+    "loc": "Relic Castle"
+  },
+  {
+    "gr": [
+      "KROKOROK"
+    ],
+    "grd": [],
+    "srf": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "srfsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rod": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rodsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "gr_cap": 30,
+    "srf_cap": 0,
+    "rod_cap": 0,
+    "loc": "Relic Castle"
+  },
+  {
+    "gr": [
+      "COFAGRIGUS"
+    ],
+    "grd": [],
+    "srf": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "srfsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rod": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rodsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "gr_cap": 30,
+    "srf_cap": 0,
+    "rod_cap": 0,
+    "loc": "Relic Castle"
+  },
+  {
+    "gr": [
+      "BALTOY"
+    ],
+    "grd": [],
+    "srf": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "srfsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rod": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rodsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "gr_cap": 35,
+    "srf_cap": 0,
+    "rod_cap": 0,
+    "loc": "Relic Castle"
+  },
+  {
+    "gr": [
+      "CLAYDOL"
+    ],
+    "grd": [],
+    "srf": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "srfsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rod": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rodsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "gr_cap": 30,
+    "srf_cap": 0,
+    "rod_cap": 0,
+    "loc": "Relic Castle"
+  },
+  {
+    "gr": [
+      "NOSEPASS"
+    ],
+    "grd": [],
+    "srf": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "srfsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rod": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rodsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "gr_cap": 36,
+    "srf_cap": 0,
+    "rod_cap": 0,
+    "loc": "Chargestone Cave"
+  },
+  {
+    "gr": [
+      "NOSEPASS"
+    ],
+    "grd": [],
+    "srf": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "srfsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rod": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rodsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "gr_cap": 40,
+    "srf_cap": 0,
+    "rod_cap": 0,
+    "loc": "Chargestone Cave"
+  },
+  {
+    "gr": [
+      "NOSEPASS"
+    ],
+    "grd": [],
+    "srf": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "srfsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rod": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rodsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "gr_cap": 41,
+    "srf_cap": 0,
+    "rod_cap": 0,
+    "loc": "Chargestone Cave"
+  },
+  {
+    "gr": [
+      "BOLDORE"
+    ],
+    "grd": [],
+    "srf": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "srfsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rod": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rodsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "gr_cap": 68,
+    "srf_cap": 0,
+    "rod_cap": 0,
+    "loc": "Twist Mountain"
+  },
+  {
+    "gr": [
+      "BOLDORE"
+    ],
+    "grd": [],
+    "srf": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "srfsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rod": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rodsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "gr_cap": 68,
+    "srf_cap": 0,
+    "rod_cap": 0,
+    "loc": "Twist Mountain"
+  },
+  {
+    "gr": [
+      "BOLDORE"
+    ],
+    "grd": [],
+    "srf": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "srfsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rod": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rodsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "gr_cap": 68,
+    "srf_cap": 0,
+    "rod_cap": 0,
+    "loc": "Twist Mountain"
+  },
+  {
+    "gr": [
+      "CRYOGONAL"
+    ],
+    "grd": [],
+    "srf": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "srfsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rod": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rodsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "gr_cap": 68,
+    "srf_cap": 0,
+    "rod_cap": 0,
+    "loc": "Twist Mountain"
+  },
+  {
+    "gr": [
+      "TRANQUILL"
+    ],
+    "grd": [],
+    "srf": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "srfsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rod": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rodsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "gr_cap": 66,
+    "srf_cap": 0,
+    "rod_cap": 0,
+    "loc": "Dragonspiral Tower"
+  },
+  {
+    "gr": [
+      "TRANQUILL"
+    ],
+    "grd": [],
+    "srf": [
+      "BASCULIN",
+      "BASCULIN",
+      "BASCULIN",
+      "LAPRAS",
+      "LAPRAS"
+    ],
+    "srfsp": [
+      "BASCULIN",
+      "LAPRAS",
+      "BASCULIN",
+      "BASCULIN",
+      "BASCULIN"
+    ],
+    "rod": [
+      "DRATINI",
+      "BASCULIN",
+      "DRAGONAIR",
+      "DRAGONAIR",
+      "DRAGONAIR"
+    ],
+    "rodsp": [
+      "DRAGONAIR",
+      "BASCULIN",
+      "DRAGONAIR",
+      "DRAGONITE",
+      "DRAGONITE"
+    ],
+    "gr_cap": 66,
+    "srf_cap": 65,
+    "rod_cap": 60,
+    "loc": "Dragonspiral Tower"
+  },
+  {
+    "gr": [
+      "GOLETT"
+    ],
+    "grd": [],
+    "srf": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "srfsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rod": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rodsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "gr_cap": 67,
+    "srf_cap": 0,
+    "rod_cap": 0,
+    "loc": "Dragonspiral Tower"
+  },
+  {
+    "gr": [
+      "GOLURK"
+    ],
+    "grd": [],
+    "srf": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "srfsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rod": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rodsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "gr_cap": 69,
+    "srf_cap": 0,
+    "rod_cap": 0,
+    "loc": "Dragonspiral Tower"
+  },
+  {
+    "gr": [
+      "WOOBAT"
+    ],
+    "grd": [],
+    "srf": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "srfsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rod": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rodsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "gr_cap": 62,
+    "srf_cap": 0,
+    "rod_cap": 0,
+    "loc": "Victory Road"
+  },
+  {
+    "gr": [
+      "TANGELA"
+    ],
+    "grd": [],
+    "srf": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "srfsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rod": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rodsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "gr_cap": 56,
+    "srf_cap": 0,
+    "rod_cap": 0,
+    "loc": "Giant Chasm"
+  },
+  {
+    "gr": [
+      "PILOSWINE"
+    ],
+    "grd": [],
+    "srf": [
+      "SHELLOS",
+      "SEEL",
+      "DEWGONG",
+      "DEWGONG",
+      "DEWGONG"
+    ],
+    "srfsp": [
+      "SEEL",
+      "GASTRODON",
+      "SEEL",
+      "SEEL",
+      "SEEL"
+    ],
+    "rod": [
+      "SHELLDER",
+      "SHELLOS",
+      "SHELLDER",
+      "SHELLDER",
+      "SHELLDER"
+    ],
+    "rodsp": [
+      "CLOYSTER",
+      "CLOYSTER",
+      "GASTRODON",
+      "CLOYSTER",
+      "CLOYSTER"
+    ],
+    "gr_cap": 56,
+    "srf_cap": 60,
+    "rod_cap": 60,
+    "loc": "Giant Chasm"
+  },
+  {
+    "gr": [
+      "PILOSWINE"
+    ],
+    "grd": [],
+    "srf": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "srfsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rod": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rodsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "gr_cap": 56,
+    "srf_cap": 0,
+    "rod_cap": 0,
+    "loc": "Giant Chasm"
+  },
+  {
+    "gr": [
+      "PILOSWINE"
+    ],
+    "grd": [],
+    "srf": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "srfsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rod": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rodsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "gr_cap": 56,
+    "srf_cap": 0,
+    "rod_cap": 0,
+    "loc": "Giant Chasm"
+  },
+  {
+    "gr": [
+      "PILOSWINE"
+    ],
+    "grd": [],
+    "srf": [
+      "SHELLOS",
+      "SEEL",
+      "DEWGONG",
+      "DEWGONG",
+      "DEWGONG"
+    ],
+    "srfsp": [
+      "SEEL",
+      "GASTRODON",
+      "SEEL",
+      "SEEL",
+      "SEEL"
+    ],
+    "rod": [
+      "SHELLDER",
+      "SHELLOS",
+      "SHELLDER",
+      "SHELLDER",
+      "SHELLDER"
+    ],
+    "rodsp": [
+      "CLOYSTER",
+      "CLOYSTER",
+      "GASTRODON",
+      "CLOYSTER",
+      "CLOYSTER"
+    ],
+    "gr_cap": 56,
+    "srf_cap": 60,
+    "rod_cap": 60,
+    "loc": "Giant Chasm"
+  },
+  {
+    "gr": [
+      "KOFFING"
+    ],
+    "grd": [],
+    "srf": [
+      "GRIMER",
+      "GRIMER",
+      "PALPITOAD",
+      "PALPITOAD",
+      "PALPITOAD"
+    ],
+    "srfsp": [
+      "STUNFISK",
+      "PALPITOAD",
+      "SEISMITOAD",
+      "MUK",
+      "MUK"
+    ],
+    "rod": [
+      "GRIMER",
+      "STUNFISK",
+      "STUNFISK",
+      "GRIMER",
+      "GRIMER"
+    ],
+    "rodsp": [
+      "GRIMER",
+      "STUNFISK",
+      "STUNFISK",
+      "GRIMER",
+      "GRIMER"
+    ],
+    "gr_cap": 20,
+    "srf_cap": 40,
+    "rod_cap": 20,
+    "loc": "Castelia Sewers"
+  },
+  {
+    "gr": [
+      "KOFFING"
+    ],
+    "grd": [],
+    "srf": [
+      "GRIMER",
+      "GRIMER",
+      "PALPITOAD",
+      "PALPITOAD",
+      "PALPITOAD"
+    ],
+    "srfsp": [
+      "STUNFISK",
+      "PALPITOAD",
+      "SEISMITOAD",
+      "MUK",
+      "MUK"
+    ],
+    "rod": [
+      "GRIMER",
+      "STUNFISK",
+      "STUNFISK",
+      "GRIMER",
+      "GRIMER"
+    ],
+    "rodsp": [
+      "GRIMER",
+      "STUNFISK",
+      "STUNFISK",
+      "GRIMER",
+      "GRIMER"
+    ],
+    "gr_cap": 20,
+    "srf_cap": 40,
+    "rod_cap": 20,
+    "loc": "Castelia Sewers"
+  },
+  {
+    "gr": [
+      "KOFFING"
+    ],
+    "grd": [],
+    "srf": [
+      "GRIMER",
+      "GRIMER",
+      "PALPITOAD",
+      "PALPITOAD",
+      "PALPITOAD"
+    ],
+    "srfsp": [
+      "STUNFISK",
+      "PALPITOAD",
+      "SEISMITOAD",
+      "MUK",
+      "MUK"
+    ],
+    "rod": [
+      "GRIMER",
+      "STUNFISK",
+      "STUNFISK",
+      "GRIMER",
+      "GRIMER"
+    ],
+    "rodsp": [
+      "GRIMER",
+      "STUNFISK",
+      "STUNFISK",
+      "GRIMER",
+      "GRIMER"
+    ],
+    "gr_cap": 20,
+    "srf_cap": 40,
+    "rod_cap": 20,
+    "loc": "Castelia Sewers"
+  },
+  {
+    "gr": [
+      "KOFFING"
+    ],
+    "grd": [],
+    "srf": [
+      "GRIMER",
+      "GRIMER",
+      "PALPITOAD",
+      "PALPITOAD",
+      "PALPITOAD"
+    ],
+    "srfsp": [
+      "STUNFISK",
+      "PALPITOAD",
+      "SEISMITOAD",
+      "MUK",
+      "MUK"
+    ],
+    "rod": [
+      "GRIMER",
+      "STUNFISK",
+      "STUNFISK",
+      "GRIMER",
+      "GRIMER"
+    ],
+    "rodsp": [
+      "GRIMER",
+      "STUNFISK",
+      "STUNFISK",
+      "GRIMER",
+      "GRIMER"
+    ],
+    "gr_cap": 20,
+    "srf_cap": 40,
+    "rod_cap": 20,
+    "loc": "Castelia Sewers"
+  },
+  {
+    "gr": [
+      "KOFFING"
+    ],
+    "grd": [],
+    "srf": [
+      "GRIMER",
+      "GRIMER",
+      "PALPITOAD",
+      "PALPITOAD",
+      "PALPITOAD"
+    ],
+    "srfsp": [
+      "STUNFISK",
+      "PALPITOAD",
+      "SEISMITOAD",
+      "MUK",
+      "MUK"
+    ],
+    "rod": [
+      "GRIMER",
+      "STUNFISK",
+      "STUNFISK",
+      "GRIMER",
+      "GRIMER"
+    ],
+    "rodsp": [
+      "GRIMER",
+      "STUNFISK",
+      "STUNFISK",
+      "GRIMER",
+      "GRIMER"
+    ],
+    "gr_cap": 20,
+    "srf_cap": 40,
+    "rod_cap": 20,
+    "loc": "Castelia Sewers"
+  },
+  {
+    "gr": [
+      "WATCHOG"
+    ],
+    "grd": [],
+    "srf": [
+      "FRILLISH",
+      "TENTACOOL",
+      "TENTACRUEL",
+      "TENTACRUEL",
+      "TENTACRUEL"
+    ],
+    "srfsp": [
+      "ALOMOMOLA",
+      "TENTACRUEL",
+      "JELLICENT",
+      "JELLICENT",
+      "JELLICENT"
+    ],
+    "rod": [
+      "FINNEON",
+      "CHINCHOU",
+      "SEADRA",
+      "SEADRA",
+      "SEADRA"
+    ],
+    "rodsp": [
+      "LUMINEON",
+      "QWILFISH",
+      "LANTURN",
+      "KINGDRA",
+      "KINGDRA"
+    ],
+    "gr_cap": 65,
+    "srf_cap": 65,
+    "rod_cap": 60,
+    "loc": "P2 Laboratory"
+  },
+  {
+    "gr": [
+      ""
+    ],
+    "grd": [],
+    "srf": [
+      "FRILLISH",
+      "MANTYKE",
+      "WAILMER",
+      "WAILMER",
+      "WAILMER"
+    ],
+    "srfsp": [
+      "MANTYKE",
+      "WAILMER",
+      "WAILORD",
+      "MANTYKE",
+      "MANTYKE"
+    ],
+    "rod": [
+      "REMORAID",
+      "CHINCHOU",
+      "HORSEA",
+      "HORSEA",
+      "HORSEA"
+    ],
+    "rodsp": [
+      "HORSEA",
+      "OCTILLERY",
+      "LANTURN",
+      "LANTURN",
+      "LANTURN"
+    ],
+    "gr_cap": 0,
+    "srf_cap": 46,
+    "rod_cap": 46,
+    "loc": "Undella Bay"
+  },
+  {
+    "gr": [
+      ""
+    ],
+    "grd": [],
+    "srf": [
+      "AZURILL",
+      "SURSKIT",
+      "DRATINI",
+      "AZURILL",
+      "AZURILL"
+    ],
+    "srfsp": [
+      "SURSKIT",
+      "MARILL",
+      "DRATINI",
+      "DRAGONAIR",
+      "DRAGONAIR"
+    ],
+    "rod": [
+      "POLIWAG",
+      "POLIWAG",
+      "POLIWAG",
+      "BASCULIN",
+      "BASCULIN"
+    ],
+    "rodsp": [
+      "POLIWAG",
+      "BASCULIN",
+      "DRATINI",
+      "DRATINI",
+      "DRATINI"
+    ],
+    "gr_cap": 0,
+    "srf_cap": 35,
+    "rod_cap": 5,
+    "loc": "Floccesy Ranch"
+  },
+  {
+    "gr": [
+      "LILLIPUP"
+    ],
+    "grd": [],
+    "srf": [
+      "MAGIKARP",
+      "BASCULIN",
+      "MAGIKARP",
+      "MAGIKARP",
+      "MAGIKARP"
+    ],
+    "srfsp": [
+      "MAGIKARP",
+      "BASCULIN",
+      "MAGIKARP",
+      "MAGIKARP",
+      "MAGIKARP"
+    ],
+    "rod": [
+      "POLIWAG",
+      "GOLDEEN",
+      "POLIWAG",
+      "GOLDEEN",
+      "GOLDEEN"
+    ],
+    "rodsp": [
+      "GOLDEEN",
+      "POLIWAG",
+      "POLIWAG",
+      "POLIWAG",
+      "POLIWAG"
+    ],
+    "gr_cap": 9,
+    "srf_cap": 35,
+    "rod_cap": 15,
+    "loc": "Floccesy Ranch"
+  },
+  {
+    "gr": [
+      "EKANS"
+    ],
+    "grd": [],
+    "srf": [
+      "FRILLISH",
+      "BASCULIN",
+      "TENTACOOL",
+      "TENTACOOL",
+      "TENTACOOL"
+    ],
+    "srfsp": [
+      "ALOMOMOLA",
+      "ALOMOMOLA",
+      "TENTACRUEL",
+      "JELLICENT",
+      "JELLICENT"
+    ],
+    "rod": [
+      "FINNEON",
+      "QWILFISH",
+      "QWILFISH",
+      "CORPHISH",
+      "CORPHISH"
+    ],
+    "rodsp": [
+      "CORPHISH",
+      "QWILFISH",
+      "FINNEON",
+      "FINNEON",
+      "FINNEON"
+    ],
+    "gr_cap": 15,
+    "srf_cap": 40,
+    "rod_cap": 15,
+    "loc": "Virbank Complex"
+  },
+  {
+    "gr": [
+      "MAGNEMITE"
+    ],
+    "grd": [],
+    "srf": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "srfsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rod": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rodsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "gr_cap": 15,
+    "srf_cap": 0,
+    "rod_cap": 0,
+    "loc": "Inner Complex"
+  },
+  {
+    "gr": [
+      "SPOINK"
+    ],
+    "grd": [],
+    "srf": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "srfsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rod": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rodsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "gr_cap": 42,
+    "srf_cap": 0,
+    "rod_cap": 0,
+    "loc": "Reversal Mountain"
+  },
+  {
+    "gr": [
+      "MIENFOO"
+    ],
+    "grd": [],
+    "srf": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "srfsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rod": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rodsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "gr_cap": 43,
+    "srf_cap": 0,
+    "rod_cap": 0,
+    "loc": "Reversal Mountain"
+  },
+  {
+    "gr": [
+      "MIENFOO"
+    ],
+    "grd": [],
+    "srf": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "srfsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rod": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rodsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "gr_cap": 45,
+    "srf_cap": 0,
+    "rod_cap": 0,
+    "loc": "Reversal Mountain"
+  },
+  {
+    "gr": [
+      "MIENFOO"
+    ],
+    "grd": [],
+    "srf": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "srfsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rod": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rodsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "gr_cap": 43,
+    "srf_cap": 0,
+    "rod_cap": 0,
+    "loc": "Reversal Mountain"
+  },
+  {
+    "gr": [
+      "MIENFOO"
+    ],
+    "grd": [],
+    "srf": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "srfsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rod": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rodsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "gr_cap": 43,
+    "srf_cap": 0,
+    "rod_cap": 0,
+    "loc": "Reversal Mountain"
+  },
+  {
+    "gr": [
+      "MIENFOO"
+    ],
+    "grd": [],
+    "srf": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "srfsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rod": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rodsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "gr_cap": 43,
+    "srf_cap": 0,
+    "rod_cap": 0,
+    "loc": "Reversal Mountain"
+  },
+  {
+    "gr": [
+      "MIENFOO"
+    ],
+    "grd": [],
+    "srf": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "srfsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rod": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rodsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "gr_cap": 43,
+    "srf_cap": 0,
+    "rod_cap": 0,
+    "loc": "Reversal Mountain"
+  },
+  {
+    "gr": [
+      "MIENFOO"
+    ],
+    "grd": [],
+    "srf": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "srfsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rod": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rodsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "gr_cap": 43,
+    "srf_cap": 0,
+    "rod_cap": 0,
+    "loc": "Reversal Mountain"
+  },
+  {
+    "gr": [
+      "MIENFOO"
+    ],
+    "grd": [],
+    "srf": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "srfsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rod": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rodsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "gr_cap": 45,
+    "srf_cap": 0,
+    "rod_cap": 0,
+    "loc": "Reversal Mountain"
+  },
+  {
+    "gr": [
+      "MIENFOO"
+    ],
+    "grd": [],
+    "srf": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "srfsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rod": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rodsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "gr_cap": 43,
+    "srf_cap": 0,
+    "rod_cap": 0,
+    "loc": "Reversal Mountain"
+  },
+  {
+    "gr": [
+      "MIENFOO"
+    ],
+    "grd": [],
+    "srf": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "srfsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rod": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rodsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "gr_cap": 43,
+    "srf_cap": 0,
+    "rod_cap": 0,
+    "loc": "Reversal Mountain"
+  },
+  {
+    "gr": [
+      "MIENFOO"
+    ],
+    "grd": [],
+    "srf": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "srfsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rod": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rodsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "gr_cap": 43,
+    "srf_cap": 0,
+    "rod_cap": 0,
+    "loc": "Reversal Mountain"
+  },
+  {
+    "gr": [
+      "MIENFOO"
+    ],
+    "grd": [],
+    "srf": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "srfsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rod": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rodsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "gr_cap": 43,
+    "srf_cap": 0,
+    "rod_cap": 0,
+    "loc": "Reversal Mountain"
+  },
+  {
+    "gr": [
+      "LITWICK"
+    ],
+    "grd": [],
+    "srf": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "srfsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rod": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rodsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "gr_cap": 43,
+    "srf_cap": 0,
+    "rod_cap": 0,
+    "loc": "Strange House"
+  },
+  {
+    "gr": [
+      "LITWICK"
+    ],
+    "grd": [],
+    "srf": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "srfsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rod": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rodsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "gr_cap": 43,
+    "srf_cap": 0,
+    "rod_cap": 0,
+    "loc": "Strange House"
+  },
+  {
+    "gr": [
+      "LITWICK"
+    ],
+    "grd": [],
+    "srf": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "srfsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rod": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rodsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "gr_cap": 43,
+    "srf_cap": 0,
+    "rod_cap": 0,
+    "loc": "Strange House"
+  },
+  {
+    "gr": [
+      "LITWICK"
+    ],
+    "grd": [],
+    "srf": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "srfsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rod": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rodsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "gr_cap": 43,
+    "srf_cap": 0,
+    "rod_cap": 0,
+    "loc": "Strange House"
+  },
+  {
+    "gr": [
+      "LITWICK"
+    ],
+    "grd": [],
+    "srf": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "srfsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rod": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rodsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "gr_cap": 43,
+    "srf_cap": 0,
+    "rod_cap": 0,
+    "loc": "Strange House"
+  },
+  {
+    "gr": [
+      "LITWICK"
+    ],
+    "grd": [],
+    "srf": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "srfsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rod": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rodsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "gr_cap": 43,
+    "srf_cap": 0,
+    "rod_cap": 0,
+    "loc": "Strange House"
+  },
+  {
+    "gr": [
+      "LITWICK"
+    ],
+    "grd": [],
+    "srf": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "srfsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rod": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rodsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "gr_cap": 43,
+    "srf_cap": 0,
+    "rod_cap": 0,
+    "loc": "Strange House"
+  },
+  {
+    "gr": [
+      "LITWICK"
+    ],
+    "grd": [],
+    "srf": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "srfsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rod": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rodsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "gr_cap": 43,
+    "srf_cap": 0,
+    "rod_cap": 0,
+    "loc": "Strange House"
+  },
+  {
+    "gr": [
+      "LITWICK"
+    ],
+    "grd": [],
+    "srf": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "srfsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rod": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rodsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "gr_cap": 43,
+    "srf_cap": 0,
+    "rod_cap": 0,
+    "loc": "Strange House"
+  },
+  {
+    "gr": [
+      "LITWICK"
+    ],
+    "grd": [],
+    "srf": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "srfsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rod": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rodsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "gr_cap": 43,
+    "srf_cap": 0,
+    "rod_cap": 0,
+    "loc": "Strange House"
+  },
+  {
+    "gr": [
+      "BANETTE"
+    ],
+    "grd": [],
+    "srf": [
+      "BASCULIN",
+      "MARILL",
+      "BASCULIN",
+      "BASCULIN",
+      "BASCULIN"
+    ],
+    "srfsp": [
+      "MARILL",
+      "BASCULIN",
+      "AZUMARILL",
+      "AZUMARILL",
+      "AZUMARILL"
+    ],
+    "rod": [
+      "FRILLISH",
+      "BASCULIN",
+      "FRILLISH",
+      "FRILLISH",
+      "FRILLISH"
+    ],
+    "rodsp": [
+      "FRILLISH",
+      "BASCULIN",
+      "FRILLISH",
+      "FRILLISH",
+      "FRILLISH"
+    ],
+    "gr_cap": 62,
+    "srf_cap": 70,
+    "rod_cap": 70,
+    "loc": "Victory Road"
+  },
+  {
+    "gr": [
+      "COTTONEE"
+    ],
+    "grd": [],
+    "srf": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "srfsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rod": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rodsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "gr_cap": 62,
+    "srf_cap": 0,
+    "rod_cap": 0,
+    "loc": "Victory Road"
+  },
+  {
+    "gr": [
+      "TRANQUILL"
+    ],
+    "grd": [],
+    "srf": [
+      "BUIZEL",
+      "BASCULIN",
+      "FLOATZEL",
+      "FLOATZEL",
+      "FLOATZEL"
+    ],
+    "srfsp": [
+      "BUIZEL",
+      "BASCULIN",
+      "FLOATZEL",
+      "FLOATZEL",
+      "FLOATZEL"
+    ],
+    "rod": [
+      "FRILLISH",
+      "BASCULIN",
+      "FRILLISH",
+      "FRILLISH",
+      "FRILLISH"
+    ],
+    "rodsp": [
+      "FRILLISH",
+      "BASCULIN",
+      "FRILLISH",
+      "FRILLISH",
+      "FRILLISH"
+    ],
+    "gr_cap": 62,
+    "srf_cap": 70,
+    "rod_cap": 70,
+    "loc": "Victory Road"
+  },
+  {
+    "gr": [
+      "BOLDORE"
+    ],
+    "grd": [],
+    "srf": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "srfsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rod": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rodsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "gr_cap": 62,
+    "srf_cap": 0,
+    "rod_cap": 0,
+    "loc": "Victory Road"
+  },
+  {
+    "gr": [
+      "BOLDORE"
+    ],
+    "grd": [],
+    "srf": [
+      "BASCULIN",
+      "MARILL",
+      "BASCULIN",
+      "BASCULIN",
+      "BASCULIN"
+    ],
+    "srfsp": [
+      "MARILL",
+      "BASCULIN",
+      "BASCULIN",
+      "AZUMARILL",
+      "AZUMARILL"
+    ],
+    "rod": [
+      "FRILLISH",
+      "BASCULIN",
+      "FRILLISH",
+      "FRILLISH",
+      "FRILLISH"
+    ],
+    "rodsp": [
+      "FRILLISH",
+      "BASCULIN",
+      "FRILLISH",
+      "FRILLISH",
+      "FRILLISH"
+    ],
+    "gr_cap": 62,
+    "srf_cap": 70,
+    "rod_cap": 70,
+    "loc": "Victory Road"
+  },
+  {
+    "gr": [
+      "GURDURR"
+    ],
+    "grd": [],
+    "srf": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "srfsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rod": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rodsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "gr_cap": 62,
+    "srf_cap": 0,
+    "rod_cap": 0,
+    "loc": "Victory Road"
+  },
+  {
+    "gr": [
+      "DRUDDIGON"
+    ],
+    "grd": [],
+    "srf": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "srfsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rod": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rodsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "gr_cap": 62,
+    "srf_cap": 0,
+    "rod_cap": 0,
+    "loc": "Victory Road"
+  },
+  {
+    "gr": [
+      "ABSOL"
+    ],
+    "grd": [],
+    "srf": [
+      "BASCULIN",
+      "MARILL",
+      "BASCULIN",
+      "BASCULIN",
+      "BASCULIN"
+    ],
+    "srfsp": [
+      "MARILL",
+      "BASCULIN",
+      "AZUMARILL",
+      "AZUMARILL",
+      "AZUMARILL"
+    ],
+    "rod": [
+      "FRILLISH",
+      "BASCULIN",
+      "FRILLISH",
+      "FRILLISH",
+      "FRILLISH"
+    ],
+    "rodsp": [
+      "FRILLISH",
+      "BASCULIN",
+      "FRILLISH",
+      "FRILLISH",
+      "FRILLISH"
+    ],
+    "gr_cap": 62,
+    "srf_cap": 70,
+    "rod_cap": 70,
+    "loc": "Victory Road"
+  },
+  {
+    "gr": [
+      "TRANQUILL"
+    ],
+    "grd": [],
+    "srf": [
+      "BUIZEL",
+      "BASCULIN",
+      "FLOATZEL",
+      "FLOATZEL",
+      "FLOATZEL"
+    ],
+    "srfsp": [
+      "BUIZEL",
+      "BASCULIN",
+      "FLOATZEL",
+      "FLOATZEL",
+      "FLOATZEL"
+    ],
+    "rod": [
+      "FRILLISH",
+      "BASCULIN",
+      "FRILLISH",
+      "FRILLISH",
+      "FRILLISH"
+    ],
+    "rodsp": [
+      "FRILLISH",
+      "BASCULIN",
+      "FRILLISH",
+      "FRILLISH",
+      "FRILLISH"
+    ],
+    "gr_cap": 62,
+    "srf_cap": 70,
+    "rod_cap": 70,
+    "loc": "Victory Road"
+  },
+  {
+    "gr": [
+      "RHYDON"
+    ],
+    "grd": [],
+    "srf": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "srfsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rod": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rodsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "gr_cap": 68,
+    "srf_cap": 0,
+    "rod_cap": 0,
+    "loc": "Victory Road"
+  },
+  {
+    "gr": [
+      "RHYHORN"
+    ],
+    "grd": [],
+    "srf": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "srfsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rod": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rodsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "gr_cap": 20,
+    "srf_cap": 0,
+    "rod_cap": 0,
+    "loc": "Relic Passage"
+  },
+  {
+    "gr": [
+      "BOLDORE"
+    ],
+    "grd": [],
+    "srf": [
+      "SHELLOS",
+      "BASCULIN",
+      "SHELLOS",
+      "SHELLOS",
+      "SHELLOS"
+    ],
+    "srfsp": [
+      "SHELLOS",
+      "BASCULIN",
+      "GASTRODON",
+      "GASTRODON",
+      "GASTRODON"
+    ],
+    "rod": [
+      "BARBOACH",
+      "BARBOACH",
+      "BARBOACH",
+      "BARBOACH",
+      "BARBOACH"
+    ],
+    "rodsp": [
+      "BARBOACH",
+      "BARBOACH",
+      "WHISCASH",
+      "WHISCASH",
+      "WHISCASH"
+    ],
+    "gr_cap": 42,
+    "srf_cap": 35,
+    "rod_cap": 35,
+    "loc": "Relic Passage"
+  },
+  {
+    "gr": [
+      "BOLDORE"
+    ],
+    "grd": [],
+    "srf": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "srfsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rod": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rodsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "gr_cap": 38,
+    "srf_cap": 0,
+    "rod_cap": 0,
+    "loc": "Relic Passage"
+  },
+  {
+    "gr": [
+      "SANDSHREW"
+    ],
+    "grd": [],
+    "srf": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "srfsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rod": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rodsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "gr_cap": 36,
+    "srf_cap": 0,
+    "rod_cap": 0,
+    "loc": "Clay Tunnel"
+  },
+  {
+    "gr": [
+      "SANDSHREW"
+    ],
+    "grd": [],
+    "srf": [
+      "SEEL",
+      "FEEBAS",
+      "SEEL",
+      "FEEBAS",
+      "FEEBAS"
+    ],
+    "srfsp": [
+      "SEEL",
+      "FEEBAS",
+      "SEEL",
+      "FEEBAS",
+      "FEEBAS"
+    ],
+    "rod": [
+      "SEEL",
+      "BARBOACH",
+      "SEEL",
+      "SEEL",
+      "SEEL"
+    ],
+    "rodsp": [
+      "SEEL",
+      "BARBOACH",
+      "SEEL",
+      "SEEL",
+      "SEEL"
+    ],
+    "gr_cap": 36,
+    "srf_cap": 40,
+    "rod_cap": 40,
+    "loc": "Clay Tunnel"
+  },
+  {
+    "gr": [
+      "SANDSHREW"
+    ],
+    "grd": [],
+    "srf": [
+      "SEEL",
+      "FEEBAS",
+      "SEEL",
+      "FEEBAS",
+      "FEEBAS"
+    ],
+    "srfsp": [
+      "SEEL",
+      "FEEBAS",
+      "SEEL",
+      "FEEBAS",
+      "FEEBAS"
+    ],
+    "rod": [
+      "SEEL",
+      "BARBOACH",
+      "SEEL",
+      "SEEL",
+      "SEEL"
+    ],
+    "rodsp": [
+      "SEEL",
+      "BARBOACH",
+      "SEEL",
+      "SEEL",
+      "SEEL"
+    ],
+    "gr_cap": 36,
+    "srf_cap": 40,
+    "rod_cap": 40,
+    "loc": "Clay Tunnel"
+  },
+  {
+    "gr": [
+      "GRAVELER"
+    ],
+    "grd": [],
+    "srf": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "srfsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rod": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rodsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "gr_cap": 69,
+    "srf_cap": 0,
+    "rod_cap": 0,
+    "loc": "Underground Ruins"
+  },
+  {
+    "gr": [
+      "GRAVELER"
+    ],
+    "grd": [],
+    "srf": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "srfsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rod": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rodsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "gr_cap": 69,
+    "srf_cap": 0,
+    "rod_cap": 0,
+    "loc": "Underground Ruins"
+  },
+  {
+    "gr": [
+      "GRAVELER"
+    ],
+    "grd": [],
+    "srf": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "srfsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rod": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rodsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "gr_cap": 69,
+    "srf_cap": 0,
+    "rod_cap": 0,
+    "loc": "Underground Ruins"
+  },
+  {
+    "gr": [
+      "GRAVELER"
+    ],
+    "grd": [],
+    "srf": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "srfsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rod": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rodsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "gr_cap": 69,
+    "srf_cap": 0,
+    "rod_cap": 0,
+    "loc": "Rock Peak Chamber"
+  },
+  {
+    "gr": [
+      "GRAVELER"
+    ],
+    "grd": [],
+    "srf": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "srfsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rod": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rodsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "gr_cap": 69,
+    "srf_cap": 0,
+    "rod_cap": 0,
+    "loc": "Iceberg Chamber"
+  },
+  {
+    "gr": [
+      "GRAVELER"
+    ],
+    "grd": [],
+    "srf": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "srfsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rod": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rodsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "gr_cap": 69,
+    "srf_cap": 0,
+    "rod_cap": 0,
+    "loc": "Iron Chamber"
+  },
+  {
+    "gr": [
+      "WOOBAT"
+    ],
+    "grd": [],
+    "srf": [
+      "FRILLISH",
+      "SEEL",
+      "FRILLISH",
+      "FRILLISH",
+      "FRILLISH"
+    ],
+    "srfsp": [
+      "SEEL",
+      "JELLICENT",
+      "DEWGONG",
+      "DEWGONG",
+      "DEWGONG"
+    ],
+    "rod": [
+      "LUVDISC",
+      "SHELLDER",
+      "LUVDISC",
+      "LUVDISC",
+      "LUVDISC"
+    ],
+    "rodsp": [
+      "SHELLDER",
+      "LUVDISC",
+      "CLOYSTER",
+      "LUVDISC",
+      "LUVDISC"
+    ],
+    "gr_cap": 44,
+    "srf_cap": 40,
+    "rod_cap": 70,
+    "loc": "Seaside Cave"
+  },
+  {
+    "gr": [
+      "WOOBAT"
+    ],
+    "grd": [],
+    "srf": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "srfsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rod": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rodsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "gr_cap": 46,
+    "srf_cap": 0,
+    "rod_cap": 0,
+    "loc": "Seaside Cave"
+  },
+  {
+    "gr": [
+      "SERVINE"
+    ],
+    "grd": [],
+    "srf": [
+      "PSYDUCK",
+      "DRATINI",
+      "PSYDUCK",
+      "GOLDUCK",
+      "GOLDUCK"
+    ],
+    "srfsp": [
+      "GOLDUCK",
+      "DRAGONAIR",
+      "GOLDUCK",
+      "DRAGONITE",
+      "DRAGONITE"
+    ],
+    "rod": [
+      "MAGIKARP",
+      "MAGIKARP",
+      "FEEBAS",
+      "MAGIKARP",
+      "MAGIKARP"
+    ],
+    "rodsp": [
+      "MAGIKARP",
+      "FEEBAS",
+      "MILOTIC",
+      "GYARADOS",
+      "GYARADOS"
+    ],
+    "gr_cap": 100,
+    "srf_cap": 100,
+    "rod_cap": 100,
+    "loc": "Nature Preserve"
+  },
+  {
+    "gr": [
+      ""
+    ],
+    "grd": [],
+    "srf": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "srfsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rod": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rodsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "gr_cap": 0,
+    "srf_cap": 0,
+    "rod_cap": 0,
+    "loc": "Driftveil Drawbridge"
+  },
+  {
+    "gr": [
+      "EXEGGCUTE"
+    ],
+    "grd": [],
+    "srf": [
+      "MARILL",
+      "BASCULIN",
+      "MARILL",
+      "MARILL",
+      "MARILL"
+    ],
+    "srfsp": [
+      "SWANNA",
+      "LAPRAS",
+      "AZUMARILL",
+      "AZUMARILL",
+      "AZUMARILL"
+    ],
+    "rod": [
+      "CARVANHA",
+      "BASCULIN",
+      "CARVANHA",
+      "CARVANHA",
+      "CARVANHA"
+    ],
+    "rodsp": [
+      "BASCULIN",
+      "CARVANHA",
+      "SHARPEDO",
+      "SHARPEDO",
+      "SHARPEDO"
+    ],
+    "gr_cap": 48,
+    "srf_cap": 48,
+    "rod_cap": 48,
+    "loc": "Village Bridge"
+  },
+  {
+    "gr": [
+      ""
+    ],
+    "grd": [],
+    "srf": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "srfsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rod": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rodsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "gr_cap": 0,
+    "srf_cap": 0,
+    "rod_cap": 0,
+    "loc": "Marvelous Bridge"
+  },
+  {
+    "gr": [
+      "LILLIPUP"
+    ],
+    "grd": [],
+    "srf": [
+      "BASCULIN",
+      "BASCULIN",
+      "BASCULIN",
+      "BASCULIN",
+      "BASCULIN"
+    ],
+    "srfsp": [
+      "BASCULIN",
+      "BASCULIN",
+      "BASCULIN",
+      "BASCULIN",
+      "BASCULIN"
+    ],
+    "rod": [
+      "BASCULIN",
+      "FEEBAS",
+      "BASCULIN",
+      "BASCULIN",
+      "BASCULIN"
+    ],
+    "rodsp": [
+      "FEEBAS",
+      "BASCULIN",
+      "FEEBAS",
+      "MILOTIC",
+      "MILOTIC"
+    ],
+    "gr_cap": 61,
+    "srf_cap": 60,
+    "rod_cap": 70,
+    "loc": "Route 1"
+  },
+  {
+    "gr": [
+      "WATCHOG"
+    ],
+    "grd": [],
+    "srf": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "srfsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rod": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rodsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "gr_cap": 65,
+    "srf_cap": 0,
+    "rod_cap": 0,
+    "loc": "Route 2"
+  },
+  {
+    "gr": [
+      "HERDIER"
+    ],
+    "grd": [],
+    "srf": [
+      "LOTAD",
+      "BASCULIN",
+      "LOMBRE",
+      "LOMBRE",
+      "LOMBRE"
+    ],
+    "srfsp": [
+      "LOTAD",
+      "BASCULIN",
+      "LOMBRE",
+      "LOMBRE",
+      "LOMBRE"
+    ],
+    "rod": [
+      "CORPHISH",
+      "BASCULIN",
+      "CORPHISH",
+      "CRAWDAUNT",
+      "CRAWDAUNT"
+    ],
+    "rodsp": [
+      "CORPHISH",
+      "BASCULIN",
+      "CRAWDAUNT",
+      "CRAWDAUNT",
+      "CRAWDAUNT"
+    ],
+    "gr_cap": 65,
+    "srf_cap": 65,
+    "rod_cap": 65,
+    "loc": "Route 3"
+  },
+  {
+    "gr": [
+      "BOLDORE"
+    ],
+    "grd": [],
+    "srf": [
+      "WOOPER",
+      "BASCULIN",
+      "QUAGSIRE",
+      "QUAGSIRE",
+      "QUAGSIRE"
+    ],
+    "srfsp": [
+      "WOOPER",
+      "BASCULIN",
+      "QUAGSIRE",
+      "BASCULIN",
+      "QUAGSIRE"
+    ],
+    "rod": [
+      "BARBOACH",
+      "SHELLDER",
+      "WHISCASH",
+      "WHISCASH",
+      "WHISCASH"
+    ],
+    "rodsp": [
+      "SHELLDER",
+      "WHISCASH",
+      "WHISCASH",
+      "CLOYSTER",
+      "CLOYSTER"
+    ],
+    "gr_cap": 68,
+    "srf_cap": 65,
+    "rod_cap": 65,
+    "loc": "Wellspring Cave"
+  },
+  {
+    "gr": [
+      "BOLDORE"
+    ],
+    "grd": [],
+    "srf": [
+      "WOOPER",
+      "BASCULIN",
+      "QUAGSIRE",
+      "QUAGSIRE",
+      "QUAGSIRE"
+    ],
+    "srfsp": [
+      "WOOPER",
+      "BASCULIN",
+      "QUAGSIRE",
+      "BASCULIN",
+      "QUAGSIRE"
+    ],
+    "rod": [
+      "BARBOACH",
+      "SHELLDER",
+      "WHISCASH",
+      "WHISCASH",
+      "WHISCASH"
+    ],
+    "rodsp": [
+      "SHELLDER",
+      "WHISCASH",
+      "WHISCASH",
+      "CLOYSTER",
+      "CLOYSTER"
+    ],
+    "gr_cap": 68,
+    "srf_cap": 65,
+    "rod_cap": 65,
+    "loc": "Wellspring Cave"
+  },
+  {
+    "gr": [
+      "DWEBBLE"
+    ],
+    "grd": [],
+    "srf": [
+      "TENTACOOL",
+      "FRILLISH",
+      "TENTACOOL",
+      "TENTACOOL",
+      "TENTACOOL"
+    ],
+    "srfsp": [
+      "ALOMOMOLA",
+      "ALOMOMOLA",
+      "TENTACRUEL",
+      "TENTACRUEL",
+      "TENTACRUEL"
+    ],
+    "rod": [
+      "RELICANTH",
+      "LUVDISC",
+      "CLAMPERL",
+      "CLAMPERL",
+      "CLAMPERL"
+    ],
+    "rodsp": [
+      "RELICANTH",
+      "LUVDISC",
+      "CLAMPERL",
+      "CLAMPERL",
+      "CLAMPERL"
+    ],
+    "gr_cap": 20,
+    "srf_cap": 40,
+    "rod_cap": 20,
+    "loc": "Route 4"
+  },
+  {
+    "gr": [
+      "DWEBBLE"
+    ],
+    "grd": [],
+    "srf": [
+      "TENTACOOL",
+      "FRILLISH",
+      "TENTACOOL",
+      "TENTACOOL",
+      "TENTACOOL"
+    ],
+    "srfsp": [
+      "ALOMOMOLA",
+      "ALOMOMOLA",
+      "TENTACRUEL",
+      "TENTACRUEL",
+      "TENTACRUEL"
+    ],
+    "rod": [
+      "RELICANTH",
+      "LUVDISC",
+      "CLAMPERL",
+      "CLAMPERL",
+      "CLAMPERL"
+    ],
+    "rodsp": [
+      "RELICANTH",
+      "LUVDISC",
+      "CLAMPERL",
+      "CLAMPERL",
+      "CLAMPERL"
+    ],
+    "gr_cap": 20,
+    "srf_cap": 40,
+    "rod_cap": 20,
+    "loc": "Route 4"
+  },
+  {
+    "gr": [
+      "SOLOSIS"
+    ],
+    "grd": [],
+    "srf": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "srfsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rod": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rodsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "gr_cap": 29,
+    "srf_cap": 0,
+    "rod_cap": 0,
+    "loc": "Route 5"
+  },
+  {
+    "gr": [
+      "DEERLING"
+    ],
+    "grd": [],
+    "srf": [
+      "BASCULIN",
+      "MARILL",
+      "BASCULIN",
+      "BASCULIN",
+      "BASCULIN"
+    ],
+    "srfsp": [
+      "BASCULIN",
+      "BASCULIN",
+      "AZUMARILL",
+      "AZUMARILL",
+      "AZUMARILL"
+    ],
+    "rod": [
+      "CHINCHOU",
+      "TENTACOOL",
+      "BARBOACH",
+      "BARBOACH",
+      "BARBOACH"
+    ],
+    "rodsp": [
+      "TENTACOOL",
+      "CHINCHOU",
+      "BARBOACH",
+      "BARBOACH",
+      "BARBOACH"
+    ],
+    "gr_cap": 36,
+    "srf_cap": 30,
+    "rod_cap": 25,
+    "loc": "Route 6"
+  },
+  {
+    "gr": [
+      "BOLDORE"
+    ],
+    "grd": [],
+    "srf": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "srfsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rod": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rodsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "gr_cap": 36,
+    "srf_cap": 0,
+    "rod_cap": 0,
+    "loc": "Mistralton Cave"
+  },
+  {
+    "gr": [
+      "BOLDORE"
+    ],
+    "grd": [],
+    "srf": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "srfsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rod": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rodsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "gr_cap": 37,
+    "srf_cap": 0,
+    "rod_cap": 0,
+    "loc": "Mistralton Cave"
+  },
+  {
+    "gr": [
+      "BOLDORE"
+    ],
+    "grd": [],
+    "srf": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "srfsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rod": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rodsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "gr_cap": 38,
+    "srf_cap": 0,
+    "rod_cap": 0,
+    "loc": "Mistralton Cave"
+  },
+  {
+    "gr": [
+      "YANMA"
+    ],
+    "grd": [],
+    "srf": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "srfsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rod": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rodsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "gr_cap": 41,
+    "srf_cap": 0,
+    "rod_cap": 0,
+    "loc": "Route 7"
+  },
+  {
+    "gr": [
+      "LITWICK"
+    ],
+    "grd": [],
+    "srf": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "srfsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rod": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rodsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "gr_cap": 42,
+    "srf_cap": 0,
+    "rod_cap": 0,
+    "loc": "Celestial Tower"
+  },
+  {
+    "gr": [
+      "LITWICK"
+    ],
+    "grd": [],
+    "srf": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "srfsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rod": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rodsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "gr_cap": 43,
+    "srf_cap": 0,
+    "rod_cap": 0,
+    "loc": "Celestial Tower"
+  },
+  {
+    "gr": [
+      "LITWICK"
+    ],
+    "grd": [],
+    "srf": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "srfsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rod": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rodsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "gr_cap": 43,
+    "srf_cap": 0,
+    "rod_cap": 0,
+    "loc": "Celestial Tower"
+  },
+  {
+    "gr": [
+      "LAMPENT"
+    ],
+    "grd": [],
+    "srf": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "srfsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rod": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rodsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "gr_cap": 44,
+    "srf_cap": 0,
+    "rod_cap": 0,
+    "loc": "Celestial Tower"
+  },
+  {
+    "gr": [
+      "PALPITOAD"
+    ],
+    "grd": [],
+    "srf": [
+      "STUNFISK",
+      "STUNFISK",
+      "STUNFISK",
+      "GASTRODON",
+      "STUNFISK"
+    ],
+    "srfsp": [
+      "STUNFISK",
+      "GASTRODON",
+      "STUNFISK",
+      "SEISMITOAD",
+      "SEISMITOAD"
+    ],
+    "rod": [
+      "BARBOACH",
+      "STUNFISK",
+      "WHISCASH",
+      "WHISCASH",
+      "WHISCASH"
+    ],
+    "rodsp": [
+      "BARBOACH",
+      "STUNFISK",
+      "WHISCASH",
+      "WHISCASH",
+      "WHISCASH"
+    ],
+    "gr_cap": 66,
+    "srf_cap": 65,
+    "rod_cap": 65,
+    "loc": "Route 8"
+  },
+  {
+    "gr": [
+      "PALPITOAD"
+    ],
+    "grd": [],
+    "srf": [
+      "STUNFISK",
+      "STUNFISK",
+      "STUNFISK",
+      "GASTRODON",
+      "STUNFISK"
+    ],
+    "srfsp": [
+      "STUNFISK",
+      "GASTRODON",
+      "STUNFISK",
+      "SEISMITOAD",
+      "SEISMITOAD"
+    ],
+    "rod": [
+      "BARBOACH",
+      "STUNFISK",
+      "WHISCASH",
+      "WHISCASH",
+      "WHISCASH"
+    ],
+    "rodsp": [
+      "BARBOACH",
+      "STUNFISK",
+      "WHISCASH",
+      "WHISCASH",
+      "WHISCASH"
+    ],
+    "gr_cap": 66,
+    "srf_cap": 65,
+    "rod_cap": 65,
+    "loc": "Moor of Icirrus"
+  },
+  {
+    "gr": [
+      "POOCHYENA"
+    ],
+    "grd": [],
+    "srf": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "srfsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rod": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rodsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "gr_cap": 51,
+    "srf_cap": 0,
+    "rod_cap": 0,
+    "loc": "Route 9"
+  },
+  {
+    "gr": [
+      "SHELMET"
+    ],
+    "grd": [],
+    "srf": [
+      "BUIZEL",
+      "BASCULIN",
+      "FLOATZEL",
+      "FLOATZEL",
+      "FLOATZEL"
+    ],
+    "srfsp": [
+      "BUIZEL",
+      "BASCULIN",
+      "FLOATZEL",
+      "FLOATZEL",
+      "FLOATZEL"
+    ],
+    "rod": [
+      "FINNEON",
+      "BASCULIN",
+      "FINNEON",
+      "FINNEON",
+      "FINNEON"
+    ],
+    "rodsp": [
+      "FINNEON",
+      "BASCULIN",
+      "LUMINEON",
+      "LUMINEON",
+      "LUMINEON"
+    ],
+    "gr_cap": 51,
+    "srf_cap": 53,
+    "rod_cap": 53,
+    "loc": "Route 11"
+  },
+  {
+    "gr": [
+      "PONYTA"
+    ],
+    "grd": [],
+    "srf": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "srfsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rod": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rodsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "gr_cap": 45,
+    "srf_cap": 0,
+    "rod_cap": 0,
+    "loc": "Route 12"
+  },
+  {
+    "gr": [
+      "TANGELA"
+    ],
+    "grd": [],
+    "srf": [
+      "LUVDISC",
+      "FRILLISH",
+      "CORSOLA",
+      "CORSOLA",
+      "CORSOLA"
+    ],
+    "srfsp": [
+      "JELLICENT",
+      "CORSOLA",
+      "JELLICENT",
+      "CORSOLA",
+      "CORSOLA"
+    ],
+    "rod": [
+      "KRABBY",
+      "STARYU",
+      "LUVDISC",
+      "STARYU",
+      "STARYU"
+    ],
+    "rodsp": [
+      "STARYU",
+      "KINGLER",
+      "LUVDISC",
+      "STARMIE",
+      "STARMIE"
+    ],
+    "gr_cap": 44,
+    "srf_cap": 46,
+    "rod_cap": 46,
+    "loc": "Route 13"
+  },
+  {
+    "gr": [
+      "GOLDUCK"
+    ],
+    "grd": [],
+    "srf": [
+      "BASCULIN",
+      "BUIZEL",
+      "BASCULIN",
+      "BASCULIN",
+      "BASCULIN"
+    ],
+    "srfsp": [
+      "BUIZEL",
+      "BASCULIN",
+      "FLOATZEL",
+      "FLOATZEL",
+      "FLOATZEL"
+    ],
+    "rod": [
+      "PSYDUCK",
+      "PSYDUCK",
+      "GOLDUCK",
+      "GOLDUCK",
+      "GOLDUCK"
+    ],
+    "rodsp": [
+      "PSYDUCK",
+      "GOLDUCK",
+      "GOLDUCK",
+      "GOLDUCK",
+      "GOLDUCK"
+    ],
+    "gr_cap": 44,
+    "srf_cap": 46,
+    "rod_cap": 46,
+    "loc": "Route 14"
+  },
+  {
+    "gr": [
+      "COTTONEE"
+    ],
+    "grd": [],
+    "srf": [
+      "GOLDEEN",
+      "QWILFISH",
+      "GOLDEEN",
+      "SLOWPOKE",
+      "SLOWPOKE"
+    ],
+    "srfsp": [
+      "SEAKING",
+      "QWILFISH",
+      "SEAKING",
+      "SEAKING",
+      "SEAKING"
+    ],
+    "rod": [
+      "CORPHISH",
+      "BASCULIN",
+      "CORPHISH",
+      "CORPHISH",
+      "CORPHISH"
+    ],
+    "rodsp": [
+      "CORPHISH",
+      "BASCULIN",
+      "CRAWDAUNT",
+      "CRAWDAUNT",
+      "CRAWDAUNT"
+    ],
+    "gr_cap": 44,
+    "srf_cap": 46,
+    "rod_cap": 46,
+    "loc": "Abundant Shrine"
+  },
+  {
+    "gr": [
+      "SANDSLASH"
+    ],
+    "grd": [],
+    "srf": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "srfsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rod": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rodsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "gr_cap": 63,
+    "srf_cap": 0,
+    "rod_cap": 0,
+    "loc": "Route 15"
+  },
+  {
+    "gr": [
+      "SOLOSIS"
+    ],
+    "grd": [],
+    "srf": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "srfsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rod": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "rodsp": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "gr_cap": 29,
+    "srf_cap": 0,
+    "rod_cap": 0,
+    "loc": "Route 16"
+  },
+  {
+    "gr": [
+      "COMBEE"
+    ],
+    "grd": [],
+    "srf": [
+      "BUIZEL",
+      "BASCULIN",
+      "BUIZEL",
+      "BUIZEL",
+      "BUIZEL"
+    ],
+    "srfsp": [
+      "BUIZEL",
+      "BASCULIN",
+      "FLOATZEL",
+      "FLOATZEL",
+      "FLOATZEL"
+    ],
+    "rod": [
+      "PSYDUCK",
+      "BASCULIN",
+      "PSYDUCK",
+      "PSYDUCK",
+      "PSYDUCK"
+    ],
+    "rodsp": [
+      "PSYDUCK",
+      "BASCULIN",
+      "PSYDUCK",
+      "PSYDUCK",
+      "PSYDUCK"
+    ],
+    "gr_cap": 29,
+    "srf_cap": 31,
+    "rod_cap": 22,
+    "loc": "Lostlorn Forest"
+  },
+  {
+    "gr": [
+      "SCRAFTY"
+    ],
+    "grd": [],
+    "srf": [
+      "FRILLISH",
+      "TENTACOOL",
+      "TENTACRUEL",
+      "TENTACRUEL",
+      "TENTACRUEL"
+    ],
+    "srfsp": [
+      "ALOMOMOLA",
+      "TENTACRUEL",
+      "JELLICENT",
+      "JELLICENT",
+      "JELLICENT"
+    ],
+    "rod": [
+      "FINNEON",
+      "CHINCHOU",
+      "FINNEON",
+      "SEADRA",
+      "SEADRA"
+    ],
+    "rodsp": [
+      "LUMINEON",
+      "QWILFISH",
+      "LANTURN",
+      "KINGDRA",
+      "KINGDRA"
+    ],
+    "gr_cap": 67,
+    "srf_cap": 65,
+    "rod_cap": 60,
+    "loc": "Route 18"
+  },
+  {
+    "gr": [
+      "PATRAT"
+    ],
+    "grd": [],
+    "srf": [
+      "MARILL",
+      "SURSKIT",
+      "MARILL",
+      "MARILL",
+      "MARILL"
+    ],
+    "srfsp": [
+      "SURSKIT",
+      "AZUMARILL",
+      "SURSKIT",
+      "SURSKIT",
+      "SURSKIT"
+    ],
+    "rod": [
+      "BASCULIN",
+      "BASCULIN",
+      "STARYU",
+      "SURSKIT",
+      "SURSKIT"
+    ],
+    "rodsp": [
+      "BASCULIN",
+      "SURSKIT",
+      "BASCULIN",
+      "BASCULIN",
+      "BASCULIN"
+    ],
+    "gr_cap": 5,
+    "srf_cap": 40,
+    "rod_cap": 5,
+    "loc": "Route 19"
+  },
+  {
+    "gr": [
+      "PIDOVE"
+    ],
+    "grd": [],
+    "srf": [
+      "AZURILL",
+      "SURSKIT",
+      "DRATINI",
+      "AZURILL",
+      "AZURILL"
+    ],
+    "srfsp": [
+      "SURSKIT",
+      "MARILL",
+      "DRATINI",
+      "DRAGONAIR",
+      "DRAGONAIR"
+    ],
+    "rod": [
+      "BASCULIN",
+      "DRATINI",
+      "DRATINI",
+      "DRATINI",
+      "DRATINI"
+    ],
+    "rodsp": [
+      "BASCULIN",
+      "DRATINI",
+      "DRATINI",
+      "DRATINI",
+      "DRATINI"
+    ],
+    "gr_cap": 7,
+    "srf_cap": 35,
+    "rod_cap": 5,
+    "loc": "Route 20"
+  },
+  {
+    "gr": [
+      "MIENFOO"
+    ],
+    "grd": [],
+    "srf": [
+      "LOTAD",
+      "SURSKIT",
+      "LOTAD",
+      "LOTAD",
+      "LOTAD"
+    ],
+    "srfsp": [
+      "LOMBRE",
+      "MASQUERAIN",
+      "LOMBRE",
+      "LOMBRE",
+      "LOMBRE"
+    ],
+    "rod": [
+      "GOLDEEN",
+      "BASCULIN",
+      "GOLDEEN",
+      "GOLDEEN",
+      "GOLDEEN"
+    ],
+    "rodsp": [
+      "GOLDEEN",
+      "BASCULIN",
+      "SEAKING",
+      "SEAKING",
+      "SEAKING"
+    ],
+    "gr_cap": 56,
+    "srf_cap": 55,
+    "rod_cap": 55,
+    "loc": "Route 22"
+  },
+  {
+    "gr": [
+      "BOUFFALANT"
+    ],
+    "grd": [],
+    "srf": [
+      "WOOPER",
+      "SHELLOS",
+      "GASTRODON",
+      "QUAGSIRE",
+      "QUAGSIRE"
+    ],
+    "srfsp": [
+      "SHELLOS",
+      "QUAGSIRE",
+      "GASTRODON",
+      "GASTRODON",
+      "GASTRODON"
+    ],
+    "rod": [
+      "KRABBY",
+      "BASCULIN",
+      "KINGLER",
+      "KINGLER",
+      "KINGLER"
+    ],
+    "rodsp": [
+      "KRABBY",
+      "BASCULIN",
+      "KINGLER",
+      "KINGLER",
+      "KINGLER"
+    ],
+    "gr_cap": 61,
+    "srf_cap": 65,
+    "rod_cap": 65,
+    "loc": "Route 23"
+  },
+  {
+    "gr": [
+      ""
+    ],
+    "grd": [],
+    "srf": [
+      "FRILLISH",
+      "BASCULIN",
+      "STARYU",
+      "STARYU",
+      "STARYU"
+    ],
+    "srfsp": [
+      "STARYU",
+      "BASCULIN",
+      "JELLICENT",
+      "JELLICENT",
+      "JELLICENT"
+    ],
+    "rod": [
+      "REMORAID",
+      "TENTACOOL",
+      "LUVDISC",
+      "LUVDISC",
+      "LUVDISC"
+    ],
+    "rodsp": [
+      "TENTACOOL",
+      "LUVDISC",
+      "CLOYSTER",
+      "CLOYSTER",
+      "CLOYSTER"
+    ],
+    "gr_cap": 0,
+    "srf_cap": 46,
+    "rod_cap": 46,
+    "loc": "Undella Town"
+  },
+  {
+    "gr": [
+      ""
+    ],
+    "grd": [],
+    "srf": [
+      "FRILLISH",
+      "MANTYKE",
+      "PHIONE",
+      "PHIONE",
+      "PHIONE"
+    ],
+    "srfsp": [
+      "PHIONE",
+      "MANTINE",
+      "PHIONE",
+      "JELLICENT",
+      "JELLICENT"
+    ],
+    "rod": [
+      "FINNEON",
+      "SEADRA",
+      "FINNEON",
+      "FINNEON",
+      "FINNEON"
+    ],
+    "rodsp": [
+      "SEADRA",
+      "QWILFISH",
+      "LUMINEON",
+      "KINGDRA",
+      "KINGDRA"
+    ],
+    "gr_cap": 0,
+    "srf_cap": 65,
+    "rod_cap": 60,
+    "loc": "Route 17"
+  },
+  {
+    "gr": [
+      ""
+    ],
+    "grd": [],
+    "srf": [
+      "SHELLDER",
+      "STARYU",
+      "BASCULIN",
+      "BASCULIN",
+      "BASCULIN"
+    ],
+    "srfsp": [
+      "SHELLDER",
+      "BASCULIN",
+      "CLOYSTER",
+      "CLOYSTER",
+      "CLOYSTER"
+    ],
+    "rod": [
+      "SHELLDER",
+      "STARYU",
+      "CLOYSTER",
+      "CLOYSTER",
+      "CLOYSTER"
+    ],
+    "rodsp": [
+      "CLOYSTER",
+      "RELICANTH",
+      "CLOYSTER",
+      "CLOYSTER",
+      "CLOYSTER"
+    ],
+    "gr_cap": 0,
+    "srf_cap": 55,
+    "rod_cap": 55,
+    "loc": "Route 21"
+  }
+]

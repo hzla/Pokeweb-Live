@@ -21,7 +21,7 @@ Dotenv.load
 
 Dir["models/*.rb"].each {|file| require_relative file}
 p "init"
-
+$rom_name = "projects/bb2redex14"
 
 
 class MyApp < Sinatra::Base
@@ -53,7 +53,6 @@ class MyApp < Sinatra::Base
 			$rom_name = session[:rom_name]
 		end
 		@pb_proj = ""
-		# $rom_name = "projects/W2"
 
 		if params["project"] && params["project"].length > 0
 			$rom_name = "projects/#{params["project"]}"
