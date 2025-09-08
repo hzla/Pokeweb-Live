@@ -19,3 +19,5 @@ logs.txt
 *.o
 .env
 passenger.3000.log
+/public/*.txt
+Gemfile.lock

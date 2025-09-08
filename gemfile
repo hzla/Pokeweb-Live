@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 gem "sinatra", ">= 2.2.3"
 gem 'terminal-table'
 gem "passenger", ">= 5.3.2", require: "phusion_passenger/rack_handler"
+gem 'webrick'
 gem 'dotenv'
 gem 'activesupport', '6.1.7'
 gem 'pry'
