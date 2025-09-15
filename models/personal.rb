@@ -117,6 +117,7 @@ class Personal
 		poks = poke_data[1..-1]
 
 		learnsets = Learnset.get_all
+		evos = Evolution.get_all("both")[1..-1]
 		all_tm_names = Tm.get_names
 
 		showdown = {}
@@ -132,7 +133,66 @@ class Personal
 
 			showdown[showdown_name]["bs"] = {"hp"=> pok["base_hp"], "at" => pok["base_atk"], "df" => pok["base_def"], "sa" => pok["base_spatk"], "sd" => pok["base_spdef"], "sp" => pok["base_speed"]}
 			showdown[showdown_name]["learnset_info"] = get_learnset_for pok, all_tm_names
+			showdown[showdown_name]["abs"] = [pok["ability_1"], pok["ability_2"], pok["ability_3"]].map(&:name_titleize)
 		end
+
+		evos.each_with_index do |evo, i|
+			readable = evo["readable"]
+			raw = evo["raw"]
+
+			(0..6).each do |j|
+
+				break if raw["target_#{j}"] == 0
+
+				target = readable["target_#{j}"].name_titleize
+
+				# level evolution
+				if [4,9,10,11,12,13,14,15,23,24].include?(raw["method_#{j}"])
+					showdown[target]["evoType"] = "level"
+					showdown[target]["evoLevel"] = raw["param_#{j}"]
+				end
+
+				if raw["method_#{j}"] == 1
+					showdown[target]["evoType"] = "levelFriendship"
+				end
+
+				if raw["method_#{j}"] == 2
+					showdown[target]["evoType"] = "levelFriendship"
+					showdown[target]["evoCondition"] = "during the day"
+				end
+
+				if raw["method_#{j}"] == 3
+					showdown[target]["evoType"] = "levelFriendship"
+					showdown[target]["evoCondition"] = "during the night"
+				end
+
+				if [5,6,7,16,22].include?(raw["method_#{j}"])
+					showdown[target]["evoType"] = "trade"
+				end
+
+				if [8,17,18,19,20].include?(raw["method_#{j}"])
+					showdown[target]["evoType"] = "useItem"
+					showdown[target]["evoItem"] = readable["param_#{j}"].name_titleize
+				end
+
+				if [21].include?(raw["method_#{j}"])
+					showdown[target]["evoType"] = "levelMove"
+					showdown[target]["evoMove"] = readable["param_#{j}"].name_titleize
+				end
+
+				if [25,26,27,28].include?(raw["method_#{j}"])
+					showdown[target]["evoType"] = "levelExtra"
+					showdown[target]["evoCondition"] = readable["method_#{j}"]
+				end
+			end
+		end
+
+
+
+
+
+
+
 		File.write("public/dist/poks.json", JSON.dump(showdown))
 		open("public/dist/poks.js", "w") do |f| 
 			f.puts "var pwPoks ="
