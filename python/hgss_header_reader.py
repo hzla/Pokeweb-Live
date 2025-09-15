@@ -24,7 +24,7 @@ def set_global_vars(rom_name):
 		ROM_NAME = settings['rom_name']
 		BASE_ROM = settings['base_rom']
 
-	LOCATIONS = open(f'texts/locations_hgss.txt', mode="r" ,encoding='utf-8').read().splitlines()
+	LOCATIONS = open(f'texts/locations.txt', mode="r" ,encoding='utf-8').read().splitlines()
 
 	HEADER_LENGTH = 24
 	HEADER_COUNT = 540

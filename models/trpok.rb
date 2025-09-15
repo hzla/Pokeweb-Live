@@ -675,7 +675,7 @@ class Trpok < Pokenarc
 
 		(0..(poks["count"] - 1)).each do |i|
 			next if poks["ivs_#{i}"] < min_ivs
-			species = pokedex[raw["species_id_#{i}"]].downcase.titleize
+			species = pokedex[raw["species_id_#{i}"]].downcase.titleize.gsub("n Z", "n-Z").gsub("Ho Oh", "Ho-Oh")
 
 			trname_count = @@tr_name_counts[trname_info]
 
@@ -735,7 +735,7 @@ class Trpok < Pokenarc
 			if gen == 5
 				ability_id += 1 if ability_id < 1
 			else
-				ability_id = poks["ability_#{i}"] == 0 ? 1 : 2
+				ability_id = (poks["ability_#{i}"] == 0 or poks["ability_#{i}"] == 16)? 1 : 2
 			end
 			
 			item = poks["item_id_#{i}"]

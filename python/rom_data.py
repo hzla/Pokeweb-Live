@@ -428,10 +428,10 @@ def set_hgss_global_vars(rom_name, expanded=False):
 
 	TEMPLATE_FLAGS =["has_moves", "has_items", "set_abilities", "set_ball", "set_iv_ev", "set_nature", "shiny_lock", "additional_flags"]
 
-	TRAINER_CLASSES = open(f'texts/tr_classes_hgss.txt', "r").read().splitlines()
-	TRAINER_NAMES = open(f'texts/tr_names_hgss.txt', "r").read().splitlines()
+	TRAINER_CLASSES = open(f'texts/tr_classes.txt', "r").read().splitlines()
+	TRAINER_NAMES = open(f'texts/tr_names.txt', "r").read().splitlines()
 
-	LOCATIONS = open(f'texts/locations_hgss.txt', mode="r" ,encoding='utf-8').read().splitlines()
+	LOCATIONS = open(f'texts/locations.txt', mode="r" ,encoding='utf-8').read().splitlines()
 	BATTLE_TYPES = ["Singles", "Doubles"]
 
 	AIS = ["Prioritize Effectiveness",
