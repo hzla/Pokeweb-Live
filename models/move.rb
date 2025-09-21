@@ -20,19 +20,24 @@ class Move < Pokenarc
 		moves
 	end
 
-
+	def self.add_space_between_lower_and_upper(str)
+		return "" if !str
+	  str.gsub(/([a-z])([A-Z])/, '\1 \2')
+	end
 
 	def self.export_showdown
 		moves = get_all[1..-1]
 		
 		#rp override
-		if $gen == 4
-			move_names = File.read("texts/rp_moves.txt").split("\n")
-		end
+
+		move_names = File.read("#{$rom_name}/texts/moves.txt").split("\n")
+
 		
 		showdown = {}
 		moves.each_with_index do |move, i|
-			showdown_name = move_names[i + 1] #sub_showdown(move[1]["name"].move_titleize)
+			showdown_name = sub_showdown(add_space_between_lower_and_upper(move_names[i + 1])) #sub_showdown(move[1]["name"].move_titleize)
+			p showdown_name
+
 
 			showdown[showdown_name] = {}
 			showdown[showdown_name]["type"] = move[1]["type"].titleize.gsub("Mystery", "Fairy")
@@ -126,10 +131,12 @@ class Move < Pokenarc
 		    "Softboiled": "Soft-Boiled",
 		    "Vicegrip": "Vise Grip",
 		    "Hi Jump Kick": "High Jump Kick",
+		    "Headlongrush": "Headlong Rush"
 		}
 	end
 
 	def self.sub_showdown(move)
+		return "" if !move
 		subs = showdown_subs
 		if showdown_subs[move.to_sym]
 			return showdown_subs[move.to_sym]

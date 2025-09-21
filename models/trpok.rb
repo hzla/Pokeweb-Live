@@ -638,7 +638,7 @@ class Trpok < Pokenarc
 
 	def self.export_showdown tr_id, trdata, min_ivs, rival_set=0, gen=5
 		if SessionSettings.base_rom == "HGSS"
-			move_names = File.read("texts/moves.txt").split("\n")
+			move_names = File.read("#{$rom_name}/texts/moves.txt").split("\n")
 		else
 			move_names = File.read("texts/rp_moves.txt").split("\n")
 		end
@@ -675,14 +675,14 @@ class Trpok < Pokenarc
 
 		(0..(poks["count"] - 1)).each do |i|
 			next if poks["ivs_#{i}"] < min_ivs
-			species = pokedex[raw["species_id_#{i}"]].downcase.titleize.gsub("n Z", "n-Z").gsub("Ho Oh", "Ho-Oh")
-
+			species = pokedex[raw["species_id_#{i}"] % 1024].downcase.titleize.gsub("n Z", "n-Z").gsub("Ho Oh", "Ho-Oh").gsub(/ S$/, "-S")
+ 
 			trname_count = @@tr_name_counts[trname_info]
 
 			show_count = (trname_count > 1 || trdata["name"] == "Grunt" || trdata["name"] == "Shadow" )
 			
 			level = poks["level_#{i}"]
-			tr_name = "Lvl #{level} #{trdata["class"].gsub("⒆⒇", "PKMN").gsub("[PK][MN]", "Pkmn")} #{trdata["name"]}#{trname_count if show_count } "
+			tr_name = "Lvl #{level} #{trdata["class"].gsub("⒆⒇", "PKMN").gsub("[PK][MN]", "Pkmn").gsub("[pk][mn]", "Pkmn")} #{trdata["name"]}#{trname_count if show_count } "
 			tr_name += " - #{trdata["location"]}" if trdata["location"]
 
 
@@ -708,7 +708,7 @@ class Trpok < Pokenarc
 					
 					end
 				end
-				p species
+				
 			end
 
 			file_path = "#{$rom_name}/json/personal/#{pok_id}.json"
@@ -720,6 +720,8 @@ class Trpok < Pokenarc
 
 				if form > 0 && !(["Deerling","Sawsbuck","Gastrodon","Shellos","Arceus"].include?(species))
 					species_name = species
+
+					p species
 					begin
 						species += "-#{RomInfo.form_info[species_name][form - 1]}"
 					rescue
@@ -760,7 +762,7 @@ class Trpok < Pokenarc
 			moves = []
 			(1..4).each do |n|
 				if poks["move_#{n}_#{i}"]
-					move = sub_showdown(move_names[raw["move_#{n}_#{i}"]].move_titleize)
+					move = sub_showdown(move_names[raw["move_#{n}_#{i}"]].move_titleize).gsub(/^Hp/, "Hidden Power")
 					if SessionSettings.base_rom == "HGSS"
 						if move == "-"
 							move = "(No Move)"
@@ -796,7 +798,7 @@ class Trpok < Pokenarc
 				pok[species][tr_name]["form"] = form || ""
 			end
 			
-			pok[species][tr_name]["item"] = item.titleize
+			pok[species][tr_name]["item"] = sub_showdown item.titleize
 			pok[species][tr_name]["ivs"] = {"hp": iv,"at": iv,"df": iv,"sa": iv,"sd": iv,"sp": iv}
 			pok[species][tr_name]["nature"] = nature
 			pok[species][tr_name]["moves"] = moves
@@ -848,7 +850,12 @@ class Trpok < Pokenarc
 		    "Selfdestruct": "Self-Destruct",
 		    "Softboiled": "Soft-Boiled",
 		    "Vicegrip": "Vise Grip",
-		    "Hi Jump Kick": "High Jump Kick"
+		    "Hi Jump Kick": "High Jump Kick",
+		    "BlackGlasses": "Black Glasses",
+		    "Brightpowder": "Bright Powder",
+		    "Nevermeltice": "Never-Melt Ice", 
+		    "Silverpowder": "Silver Powder",
+		    "Twistedspoon": "Twisted Spoon"
 		}
 	end
 

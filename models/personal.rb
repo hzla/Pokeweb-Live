@@ -89,6 +89,11 @@ class Personal
 		poks.each do |pok|
 			next if !pok
 			showdown_name = pok["name"].name_titleize
+
+			if showdown_name.include?("(")
+				showdown_name = showdown_name.gsub("(", "").gsub(")", "").name_titleize.gsub(" ", "-")
+			end
+
 			showdown[showdown_name] = {}
 			if pok["type_1"] == pok["type_2"]
 				showdown[showdown_name]["types"] = [pok["type_1"]]
