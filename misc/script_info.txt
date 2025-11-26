@@ -1,1 +1,15 @@
 https://projectpokemon.org/home/forums/topic/22263-pokemon-black-scripting-lessonsi-try/?tab=comments#comment-142416
+
+
+create Base
+
+xdelta3 -d -s ./base/blank.nds ./base/W2.xdelta ./base/W2.nds
+
+create uploaded
+
+xdelta3 -d -s ./base/W2.nds ./xdeltas/nuzvivor2026.xdelta nuzvivor2026.nds
+
+
+try to save
+
+python3 python/rom_saver.py nuzvivor2026.nds

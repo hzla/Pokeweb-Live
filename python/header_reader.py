@@ -9,6 +9,7 @@ from os import path
 import json
 import copy
 import re
+import codecs
 
 import text_reader
 
@@ -93,7 +94,10 @@ def output_headers_json(headers, rom_name, use_vanilla=False):
 	if use_vanilla:
 		headers = json.load(open(f'templates/{use_vanilla}/json/headers/headers.json'))
 
-		with codecs.open(f'{ROM_NAME}/headers/headers.json', 'w', encoding='utf_8') as f:
+		path = f"{ROM_NAME}/json/headers"
+		os.makedirs(path, exist_ok=True)
+
+		with codecs.open(f'{ROM_NAME}/json/headers/headers.json', 'w', encoding='utf_8') as f:
 			json.dump(headers, f)
 
 		return

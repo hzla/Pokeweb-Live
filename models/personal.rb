@@ -113,6 +113,11 @@ class Personal
 		mons
 	end
 
+	def self.export_dex
+		poks = poke_data[1..-1]
+		evos = Evolution.get_all("both")[1..-1]
+	end
+
 	def self.export_showdown
 		poks = poke_data[1..-1]
 
@@ -144,7 +149,12 @@ class Personal
 
 				break if raw["target_#{j}"] == 0
 
+
+
 				target = readable["target_#{j}"].name_titleize
+
+				showdown[poks[i]["name"].name_titleize]["evos"] ||= []
+				showdown[poks[i]["name"].name_titleize]["evos"] << target
 
 				# level evolution
 				if [4,9,10,11,12,13,14,15,23,24].include?(raw["method_#{j}"])

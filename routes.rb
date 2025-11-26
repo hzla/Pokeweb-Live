@@ -10,9 +10,6 @@ require 'date'
 require_relative 'helpers'
 require_relative 'models/pokenarc'
 
-
-
-
 if ENV["DEVMODE"] == "TRUE"
 	require 'pry'
 	require "sinatra/reloader"
@@ -28,7 +25,7 @@ p "init"
 
 $gen = 5
 
-
+# $rom_name = "projects/bb2redex14"
 
 
 
@@ -58,6 +55,7 @@ class MyApp < Sinatra::Base
 		$edit_mode = ENV["EDIT_MODE"]
 		$offline = ($mode == "offline")
 
+		# $rom_name = "projects/bb2redex14"
 		if $rom_name 
 			session[:rom_name] = $rom_name
 		end
@@ -75,12 +73,7 @@ class MyApp < Sinatra::Base
 			@pb_proj = "?project=#{params["project"]}"
 		end
 
-		
-
-		# if ENV['RACK_ENV'] == 'test'
-		# 	$rom_name = ENV['ROM']
-		# end
-
+	
 		$fairy = SessionSettings.fairy?
 
 		return if !$rom_name or $rom_name == ""
@@ -94,7 +87,9 @@ class MyApp < Sinatra::Base
 				tabs.delete('marts')
 				tabs.delete('grottos')
 			end
+
 		rescue
+			binding.pry
 			session[:rom_name] = nil
 			$rom_name = nil
 			redirect '/?rom_load_failed=true'
@@ -661,7 +656,9 @@ class MyApp < Sinatra::Base
 		redirect '/' if !$rom_name
 		bank = "story_texts"
 		n = params[:id]
+
 		command = "dotnet tools/beatertext/BeaterText.dll -d #{$rom_name}/#{bank}/#{n}.bin #{$rom_name}/#{bank}/#{n}.txt"
+		p command
 		system command
 
 		texts = File.open("#{$rom_name}/#{bank}/#{n}.txt").read()

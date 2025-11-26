@@ -14,6 +14,27 @@ class RomInfo
         end
     end
 
+    def self.export_abilities
+        message_texts = JSON.parse File.read("#{$rom_name}/message_texts/texts.json")
+        if SessionSettings.base_rom == "BW2"
+            ability_names = message_texts[374].map {|entry| entry[1]}
+            ability_descs = message_texts[375].map {|entry| entry[1]}
+        end
+
+        ability_overrides = {}
+
+        ability_names.each_with_index do |ab, i|
+            ab_id = ab.downcase.gsub(" ", "").gsub("-", "").gsub(".", "").gsub(",", "")
+            ab_data = {}
+            ab_data["name"] = ab
+            ab_data["desc"] = ability_descs[i].gsub('\\n', " ")
+            ability_overrides[ab_id] = ab_data
+        end
+
+        File.write("./exports/abilities.json", JSON.pretty_generate(ability_overrides))
+
+    end
+
     
 
     def self.pokemon_growths

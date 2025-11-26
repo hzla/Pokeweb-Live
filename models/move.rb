@@ -60,20 +60,32 @@ class Move < Pokenarc
 		File.write("Reference_Files/move_anim_info.json", JSON.pretty_generate(cmds))
 	end
 
-
-
-
-	def self.export_showdown
+	def self.export_showdown export_dex=false
 		moves = get_all[1..-1]
 
+		if export_dex
+			message_texts = JSON.parse File.read("#{$rom_name}/message_texts/texts.json")
+			if SessionSettings.base_rom == "BW2"
+	            move_descs = message_texts[402].map {|entry| entry[1].gsub('\\n', " ")}
+	        end
+		end
+
 		showdown = {}
-		moves.each do |move|
+		moves.each_with_index do |move, i|
 			showdown_name = sub_showdown(move[1]["name"].move_titleize)
 
 			showdown[showdown_name] = {}
 			showdown[showdown_name]["type"] = move[1]["type"].titleize
 			showdown[showdown_name]["basePower"] = move[1]["power"]
 			showdown[showdown_name]["category"] = move[1]["category"]
+			showdown[showdown_name]["pp"] = move[1]["pp"]
+			showdown[showdown_name]["accuracy"] = move[1]["accuracy"]
+			showdown[showdown_name]["priority"] = move[1]["priority"]
+
+			if export_dex
+				showdown[showdown_name]["desc"] = move_descs[i + 1]
+			end
+
 			showdown[showdown_name]["e_id"] = move[1]["effect_code"] || 0
 			if move[1]["target"] == "All adjacent opponents" 
 				showdown[showdown_name]["target"] = "allAdjacentFoes"
@@ -104,11 +116,10 @@ class Move < Pokenarc
 				showdown[showdown_name]["flags"]["sound"] = true
 			end
 		end
-		File.write("public/dist/moves.json", JSON.dump(showdown))
-		open("public/dist/moves.js", "w") do |f| 
-			f.puts "var pwMoves ="
-			f.puts JSON.dump(showdown)
+		if export_dex
+			File.write("./exports/moves.json", JSON.pretty_generate(showdown))
 		end
+		"success"
 	end
 
 	def self.write_data data, batch=false
