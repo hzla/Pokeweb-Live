@@ -65,7 +65,7 @@ for ctr_narc in settings["blacklist"]:
 	dest_dir = f"./{rom_name}/json/{ctr_narc}" 
 	# getting all the files in the source directory
 	files = os.listdir(src_dir)
-	shutil.copytree(src_dir, dest_dir)
+	shutil.copytree(src_dir, dest_dir, dirs_exist_ok=True)
 	print(ctr_narc)
 
 
