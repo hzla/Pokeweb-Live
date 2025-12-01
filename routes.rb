@@ -25,7 +25,7 @@ p "init"
 
 $gen = 5
 
-$rom_name = "projects/bb2redex14"
+# $rom_name = "projects/bb2redex14"
 
 
 
