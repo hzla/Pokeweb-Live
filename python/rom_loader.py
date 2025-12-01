@@ -150,7 +150,7 @@ for narc in NARCS:
 	try:
 		parsed_file = ndspy.narc.NARC(file)
 	except:
-		EDIT_BLACKLIST.append(narc)
+		EDIT_BLACKLIST.append(narc[1])
 		continue
 	
 	narc_info[narc[1]] = file_id # store file ID for later

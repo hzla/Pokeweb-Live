@@ -114,8 +114,7 @@ class Personal
 	end
 
 	def self.export_dex
-		poks = poke_data[1..-1]
-		evos = Evolution.get_all("both")[1..-1]
+		export_showdown
 	end
 
 	def self.export_showdown
@@ -139,6 +138,7 @@ class Personal
 			showdown[showdown_name]["bs"] = {"hp"=> pok["base_hp"], "at" => pok["base_atk"], "df" => pok["base_def"], "sa" => pok["base_spatk"], "sd" => pok["base_spdef"], "sp" => pok["base_speed"]}
 			showdown[showdown_name]["learnset_info"] = get_learnset_for pok, all_tm_names
 			showdown[showdown_name]["abs"] = [pok["ability_1"], pok["ability_2"], pok["ability_3"]].map(&:name_titleize)
+			showdown[showdown_name]["learnset_info"]["tutors"] = get_tutor_moves(pok)
 		end
 
 		evos.each_with_index do |evo, i|
@@ -197,13 +197,7 @@ class Personal
 			end
 		end
 
-
-
-
-
-
-
-		File.write("public/dist/poks.json", JSON.dump(showdown))
+		File.write("./exports/poks.json", JSON.pretty_generate(showdown))
 		open("public/dist/poks.js", "w") do |f| 
 			f.puts "var pwPoks ="
 			f.puts JSON.dump(showdown)
@@ -464,6 +458,27 @@ end
 
 	def self.get_tutor_list(personal_data, field="tutors", length=31)
 		personal_data[field].to_s(2).rjust(length, '0').reverse.split("")
+	end
+
+	def self.get_tutor_moves personal_data
+		moves = []
+
+		tutors = {}
+		tutors["tutors"] = ["Grass Pledge", "Fire Pledge", "Water Pledge", "Frenzy Plant", "Blast Burn", "Hydro Cannon", "Draco Meteor" ]
+		tutors["driftveil_tutor"] = ["Bug Bite", "Covet","Super Fang","Dual Chop","Signal Beam","Iron Head","Seed Bomb","Drill Run", "Bounce", "Low Kick", "Gunk Shot", "Uproar", "Thunder Punch", "Fire Punch", "Ice Punch"]
+		tutors["lentimas_tutor"] = ["Magic Coat", "Block","Earth Power","Foul Play","Gravity","Magnet Rise","Iron Defense","Last Resort","Superpower","Electroweb","Icy Wind","Aqua Tail","Dark Pulse","Zen Headbutt","Dragon Pulse","Hyper Voice","Iron Tail"]
+		tutors["humilau_tutor"] = ["Bind","Snore","Knock Off","Synthesis","Heat Wave","Role Play","Heal Bell","Tailwind","Sky Attack","Pain Split","Giga Drain","Drain Punch","Roost"]
+		tutors["nacrene_tutor"] = ["Gastro Acid","Worry Seed","Spite","After You","Helping Hand","Trick","Magic Room","Wonder Room","Endeavor","Outrage","Recycle","Snatch","Stealth Rock","Sleep Talk","Skill Swap"]
+		
+		["tutors", "driftveil_tutor", "lentimas_tutor", "humilau_tutor", "nacrene_tutor"].each do |tutor|
+			tutor_data = get_tutor_list(personal_data, tutor)
+			tutor_data.each_with_index do |can_learn, i|
+				if can_learn == "1"
+					moves << tutors[tutor][i]
+				end
+			end
+		end
+		moves
 	end
 
 	def self.tutor_names

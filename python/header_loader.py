@@ -33,7 +33,7 @@ for folder in ["narcs", "texts", "json", "message_texts", "story_texts", "script
 
 ################# HARDCODED ROM INFO ##############################
 
-NARCS = [["a/0/1/2", "headers"],["a/0/0/2", "message_texts"], ["a/0/0/3", "story_texts"]]
+NARCS = [["a/0/1/2", "headers"],["a/0/0/2", "message_texts"], ["a/0/0/3", "story_texts"], ["a/0/5/6", "scripts"]]
 BW_MSG_BANKS = [[89, "locations"]]
 BW2_MSG_BANKS = [[109, "locations"]]
 MSG_BANKS = []

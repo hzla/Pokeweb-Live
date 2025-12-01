@@ -292,7 +292,88 @@ class Encounter < Pokenarc
 		[60, 30, 5, 4, 1][n]
 	end
 
-	def self.output_documentation
+	def self.export_dex
+		dex_data = {}
+		rates = {
+		    "grass": [20,20,10,10,10,10,5,5,4,4,1,1],
+		    "grass_special": [20,20,10,10,10,10,5,5,4,4,1,1],
+		    "grass_doubles": [20,20,10,10,10,10,5,5,4,4,1,1],
+		    "surf": [60,30,5,4,1],
+		    "surf_special": [60,30,5,4,1],
+		    "super_rod": [40,40,15,4,1],
+		    "super_rod_special": [40,40,15,4,1],
+		}
+
+		locations_count = {}
+
+		all_encs = get_all
+
+		all_encs.each do |enc|
+			loc_name = enc["locations"][0].split("(")[0].strip.downcase.gsub(" ","").gsub("-", "").gsub(".", "").gsub("'", "")
+
+			if locations_count[loc_name]
+				locations_count[loc_name] += 1
+			else
+				locations_count[loc_name] = 1
+			end
+
+			
+
+			loc_data = {}
+			loc_data["name"] = enc["locations"][0].split("(")[0]
+
+			if locations_count[loc_name] >= 2
+				loc_data["name"] += "#{locations_count[loc_name]}" 
+				loc_name += "#{locations_count[loc_name]}"
+
+			end
+
+			grass_fields.each do |enc_type|
+				loc_data[enc_type] = {}
+				loc_data[enc_type]["encs"] = []
+
+				(0..11).each do |n|
+					enc_data = {}
+					enc_data["s"] = enc["spring_#{enc_type}_slot_#{n}"].gsub(/[^0-9A-Za-z\-]/, '').name_titleize
+					enc_data["mn"] = enc["spring_#{enc_type}_slot_#{n}_min_level"] 
+					enc_data["mx"] = enc["spring_#{enc_type}_slot_#{n}_max_level"] 
+
+					break if enc_data["s"] == ""
+
+					loc_data[enc_type]["encs"] << enc_data
+				end
+			end
+
+			water_fields.each do |enc_type|
+				loc_data[enc_type] = {}
+				loc_data[enc_type]["encs"] = []
+
+				(0..4).each do |n|
+					enc_data = {}
+					enc_data["s"] = enc["spring_#{enc_type}_slot_#{n}"].gsub(/[^0-9A-Za-z\-]/, '').name_titleize
+					enc_data["mn"] = enc["spring_#{enc_type}_slot_#{n}_min_level"] 
+					enc_data["mx"] = enc["spring_#{enc_type}_slot_#{n}_max_level"] 
+
+					break if enc_data["s"] == ""
+					loc_data[enc_type]["encs"] << enc_data
+				end
+			end
+			dex_data[loc_name] = loc_data
+		end
+
+		dex_data["rates"] = rates
+		File.write("./exports/encs.json", dex_data.to_json)
+		dex_data
+
 	end
 end
+
+
+
+
+
+
+
+
+
 

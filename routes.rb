@@ -25,7 +25,7 @@ p "init"
 
 $gen = 5
 
-# $rom_name = "projects/bb2redex14"
+$rom_name = "projects/bb2redex14"
 
 
 
@@ -55,7 +55,7 @@ class MyApp < Sinatra::Base
 		$edit_mode = ENV["EDIT_MODE"]
 		$offline = ($mode == "offline")
 
-		# $rom_name = "projects/bb2redex14"
+		# $rom_name = "projects/b2kplus"
 		if $rom_name 
 			session[:rom_name] = $rom_name
 		end

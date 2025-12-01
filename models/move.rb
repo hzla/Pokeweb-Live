@@ -60,7 +60,69 @@ class Move < Pokenarc
 		File.write("Reference_Files/move_anim_info.json", JSON.pretty_generate(cmds))
 	end
 
-	def self.export_showdown export_dex=false
+	def self.export_dex 
+		moves = get_all[1..-1]
+
+		
+		message_texts = JSON.parse File.read("#{$rom_name}/message_texts/texts.json")
+		if SessionSettings.base_rom == "BW2"
+            move_descs = message_texts[402].map {|entry| entry[1].gsub('\\n', " ")}
+        end
+
+		showdown = {}
+		moves.each_with_index do |move, i|
+			showdown_name = sub_showdown(move[1]["name"].move_titleize)
+
+			showdown[showdown_name] = {}
+			showdown[showdown_name]["t"] = move[1]["type"].titleize
+			showdown[showdown_name]["bp"] = move[1]["power"]
+			showdown[showdown_name]["cat"] = move[1]["category"]
+			showdown[showdown_name]["pp"] = move[1]["pp"]
+			showdown[showdown_name]["acc"] = move[1]["accuracy"]
+			showdown[showdown_name]["prio"] = move[1]["priority"]
+
+
+			showdown[showdown_name]["desc"] = move_descs[i + 1]
+
+
+			showdown[showdown_name]["e_id"] = move[1]["effect_code"] || 0
+			if move[1]["target"] == "All adjacent opponents" 
+				showdown[showdown_name]["tar"] = "allAdjacentFoes"
+			end
+
+			if move[1]["target"] == "All excluding user" 
+				showdown[showdown_name]["tar"] = "allAdjacent"
+			end
+			if move[1]["min_hits"] > 0
+				showdown[showdown_name]["multihit"] = [move[1]["min_hits"],move[1]["max_hits"]]
+			end
+
+			if move[1]["recoil"] > 0 and move[1]["recoil"] < 100
+				showdown[showdown_name]["recoil"] = [move[1]["recoil"], 100]
+			end
+
+			if move[1]["effect_category"].downcase.include?("stat")
+				showdown[showdown_name]["sf"] = true
+			end
+
+			if move[1]["punch_move"] == 1
+				showdown[showdown_name]["flags"] ||= {}
+				showdown[showdown_name]["flags"]["punch"] = true
+			end
+
+			if move[1]["sound_move"] == 1
+				showdown[showdown_name]["flags"] ||= {}
+				showdown[showdown_name]["flags"]["sound"] = true
+			end
+		end
+
+		File.write("./exports/moves.json", showdown.to_json)
+
+		showdown
+	end
+
+
+	def self.export_showdown 
 		moves = get_all[1..-1]
 
 		if export_dex
@@ -81,10 +143,6 @@ class Move < Pokenarc
 			showdown[showdown_name]["pp"] = move[1]["pp"]
 			showdown[showdown_name]["accuracy"] = move[1]["accuracy"]
 			showdown[showdown_name]["priority"] = move[1]["priority"]
-
-			if export_dex
-				showdown[showdown_name]["desc"] = move_descs[i + 1]
-			end
 
 			showdown[showdown_name]["e_id"] = move[1]["effect_code"] || 0
 			if move[1]["target"] == "All adjacent opponents" 
@@ -116,9 +174,7 @@ class Move < Pokenarc
 				showdown[showdown_name]["flags"]["sound"] = true
 			end
 		end
-		if export_dex
-			File.write("./exports/moves.json", JSON.pretty_generate(showdown))
-		end
+
 		"success"
 	end
 

@@ -23,7 +23,6 @@ class Header
 				
 				script = v["script_id"]
 				text = v["text_bank_id"]
-				p script
 				break
 			end
 		end

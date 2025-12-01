@@ -30,15 +30,30 @@ class RomInfo
             ab_data["desc"] = ability_descs[i].gsub('\\n', " ")
             ability_overrides[ab_id] = ab_data
         end
-
         File.write("./exports/abilities.json", JSON.pretty_generate(ability_overrides))
+        ability_overrides
 
     end
 
     
 
-    def self.pokemon_growths
-        
+    def self.export_dex
+        dex_npoint = {}
+
+        p "exporting Mons"
+        dex_npoint["poks"] = Personal.export_dex
+        p "exporting Moves"
+        dex_npoint["moves"] = Move.export_dex
+        p "exporting Abilities"
+        dex_npoint["abilities"] = export_abilities
+        p "exporting Encounters"
+        dex_npoint["encs"] = Encounter.export_dex
+        p "exporting Items"
+        dex_npoint["items"] = Item.export_dex
+
+        File.write('./exports/dex_npoint.json', JSON.pretty_generate(dex_npoint))
+
+        p "Output to exports/ folder"
     end
 
     def self.true_pokemon_names
