@@ -124,12 +124,16 @@ class RomInfo
 
     def self.form_info
         forms = {}
+        forms["Kyogre"] = ["Primal"]
+        forms["Groudon"] = ["Primal"]
         forms["Deoxys"] = ['Attack', 'Defense', 'Speed']
         forms["Shaymin"] = ["Sky"]
         forms["Giratina"] = ["Origin"]
+        forms["Palkia"] = ["Origin"]
+        forms["Dialga"] = ["Origin"]
         forms["Rotom"] = ["Heat", "Wash", "Frost", "Fan", "Mow"]
         forms["Castorm"] = ["Sunny", "Rainy", "Snowy"]
-        forms["Basculin"] = ["Blue-Striped"]
+        forms["Basculin"] = ["Blue-Striped", "White-Striped"]
         forms["Darmanitan"] = ["Zen"]
         forms["Meloetta"] = ["Pirouette"]
         forms["Kyurem"] = ["White", "Black"]
@@ -137,8 +141,44 @@ class RomInfo
         forms["Tornadus"] = ["Therian"]
         forms["Thundurus"] = ["Therian"]
         forms["Landorus"] = ["Therian"]
+        forms["Burmy"] = ["Sandy", "Trash"]
         forms["Wormadam"] = ["Sandy", "Trash"]
         forms["Genesect"] = ["Douse", "Chill", "Burn", "Shock"]
+        forms["Greninja"] = ["Ash", "Bond"]
+        forms["Meowstic"] = ["F"]
+        forms["Indeedee"] = ["F"]
+        forms["Pumpkaboo"] = ["Small","Large","Jumbo"]
+        forms["Gourgeist"] = ["Small","Large","Jumbo"]
+        forms["Zygarde"] = ["10%", "Complete"]
+        forms["Hoopa"] = ["Unbound"]
+        forms["Oricorio"] = ["Baile", "Pom-Pom", "Pa'u", "Sensu"]
+        forms["Lycanroc"] = ["Midnight", "Dusk"]
+        forms["Necrozma"] = ["Dusk-Mane", "Dawn-Wings", "Ultra"]
+        forms["Toxtricity"] = ["Low-Key"]
+        forms["Sinistea"] = ["Phony", "Antique"]
+        forms["Polteageist"] = ["Phony", "Antique"]
+        forms["Urshifu"] = ["Rapid-Strike"]
+        forms["Zarude"] = ["Dada"]
+        forms["Calyrex"] = ["Ice", "Shadow"]
+        forms["Ursaluna"] = ["Bloodmoon"]
+        forms["Maushold"] = ["Four"]
+        forms["Slowbro"] = ["Mega"]
+        forms["Tauros"] = ["Paldea-Combat", "Paldea-Blaze", "Paldea-Aqua"]
+
+        alolan_mons = ["Rattata, Raticate","Raichu","Sandshrew", "Sandlsash", "Vulpix","Ninetales","Diglett","Dugtrio","Geodude", "Graveler","Golem","Persian","Grimer", "Muk","Exeggutor","Marowak"]   
+        galar_mons = ["Meowth", "Ponyta","Rapidash", "Slowpoke","Slowbro", "Farfetch'd","Weezing", "Mr. Mime","Articuno","Zapdos","Moltres","Slowking","Corsola","Zigzagoon","Linoone","Darmanitan","Yamask","Stunfisk"]
+        hisui_mons = ["Growlithe","Arcanine","Voltorb", "Electrode","Typhlosion","Qwilfish","Sneasel","Lilligant","Zorua", "Zoroark","Braviary","Sligoo","Goodra","Avalugg","Decidueye"]
+        paldea_mons = ["Wooper"]
+
+        regional_mons = [alolan_mons, galar_mons, hisui_mons, paldea_mons]
+        region_names = ["Alola", "Galar","Hisui","Paldea"]
+        regional_mons.each_with_index do |region, i|
+            region.each do |mon|
+                forms[mon] ||= []
+                forms[mon] << region_names[i]
+            end
+        end
+        
         forms
     end
 

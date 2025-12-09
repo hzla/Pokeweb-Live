@@ -13,10 +13,17 @@ def to_readable(raw, file_name, base=5):
 	readable = copy.deepcopy(raw)
 	readable['index'] = file_name
 
-	max_moves = 25
+	
+
+	# vanilla: 25, hg-engine: 40
+	
 
 	if base == 4:
-		max_moves = 20
+		max_moves = 40
+
+	max_moves = 40
+
+
 
 	
 
@@ -54,12 +61,15 @@ def to_readable(raw, file_name, base=5):
 		if f'move_id_{n}' in readable:
 			try:
 				readable[f'move_id_{n}'] = rom_data.MOVES[raw[f'move_id_{n}']]
+				# print(readable[f'move_id_{n}'])
 			except:
-				print(file_name)
-				print(raw[f'move_id_{n}'])
-				print("\n")
+				# print(file_name)
+				# print(raw[f'move_id_{n}'])
+				# print("\n")
+				10
 				# code.interact(local=dict(globals(), **locals()))
 			readable[f'move_id_{n}_index'] = raw[f'move_id_{n}']
+
 	return readable
 
 

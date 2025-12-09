@@ -73,6 +73,94 @@ class Personal
 		data
 	end
 
+	def self.export_dex
+		poks = poke_data[1..-1]
+
+		learnsets = Learnset.get_all
+		evos = Evolution.get_all("both")[1..-1]
+		all_tm_names = Tm.get_names
+
+		showdown = {}
+		poks.each do |pok|
+			next if !pok
+			showdown_name = pok["name"].name_titleize
+			showdown[showdown_name] = {}
+			if pok["type_1"] == pok["type_2"]
+				showdown[showdown_name]["types"] = [pok["type_1"]]
+			else
+				showdown[showdown_name]["types"] = [pok["type_1"], pok["type_2"]]
+			end
+
+			showdown[showdown_name]["bs"] = {"hp"=> pok["base_hp"], "at" => pok["base_atk"], "df" => pok["base_def"], "sa" => pok["base_spatk"], "sd" => pok["base_spdef"], "sp" => pok["base_speed"]}
+			showdown[showdown_name]["learnset_info"] = get_learnset_for pok, all_tm_names
+			showdown[showdown_name]["abs"] = [pok["ability_1"], pok["ability_2"], pok["ability_3"]].map(&:name_titleize)
+			showdown[showdown_name]["learnset_info"]["tutors"] = get_tutor_moves(pok)
+		end
+
+		evos.each_with_index do |evo, i|
+			readable = evo["readable"]
+			raw = evo["raw"]
+
+			(0..6).each do |j|
+
+				break if raw["target_#{j}"] == 0
+
+
+
+				target = readable["target_#{j}"].name_titleize
+
+				showdown[poks[i]["name"].name_titleize]["evos"] ||= []
+				showdown[poks[i]["name"].name_titleize]["evos"] << target
+
+				# level evolution
+				if [4,9,10,11,12,13,14,15,23,24].include?(raw["method_#{j}"])
+					showdown[target]["evoType"] = "level"
+					showdown[target]["evoLevel"] = raw["param_#{j}"]
+				end
+
+				if raw["method_#{j}"] == 1
+					showdown[target]["evoType"] = "levelFriendship"
+				end
+
+				if raw["method_#{j}"] == 2
+					showdown[target]["evoType"] = "levelFriendship"
+					showdown[target]["evoCondition"] = "during the day"
+				end
+
+				if raw["method_#{j}"] == 3
+					showdown[target]["evoType"] = "levelFriendship"
+					showdown[target]["evoCondition"] = "during the night"
+				end
+
+				if [5,6,7,16,22].include?(raw["method_#{j}"])
+					showdown[target]["evoType"] = "trade"
+				end
+
+				if [8,17,18,19,20].include?(raw["method_#{j}"])
+					showdown[target]["evoType"] = "useItem"
+					showdown[target]["evoItem"] = readable["param_#{j}"].name_titleize
+				end
+
+				if [21].include?(raw["method_#{j}"])
+					showdown[target]["evoType"] = "levelMove"
+					showdown[target]["evoMove"] = readable["param_#{j}"].name_titleize
+				end
+
+				if [25,26,27,28].include?(raw["method_#{j}"])
+					showdown[target]["evoType"] = "levelExtra"
+					showdown[target]["evoCondition"] = readable["method_#{j}"]
+				end
+			end
+		end
+
+		File.write("./exports/poks.json", JSON.pretty_generate(showdown))
+		open("public/dist/poks.js", "w") do |f| 
+			f.puts "var pwPoks ="
+			f.puts JSON.dump(showdown)
+		end
+		showdown
+	end
+
 	def self.export_showdown
 		poks = poke_data[1..-1]
 
@@ -169,11 +257,15 @@ class Personal
 		return if !personal_data
 		learnset_data_path = "#{$rom_name}/json/learnsets/#{pok_id}.json"
 
+
+
 		begin
 			learnset_data = JSON.parse(File.open(learnset_data_path, "r"){|f| f.read})["readable"]
 		rescue
-			learnset_data_path = "#{$rom_name}/json/learnsets/#{pok_id + 1}.json"
-			learnset_data = JSON.parse(File.open(learnset_data_path, "r"){|f| f.read})["readable"]
+			learnset_data = {}
+			# learnset_data_path = "#{$rom_name}/json/learnsets/#{pok_id + 1}.json"
+			# learnset_data = JSON.parse(File.open(learnset_data_path, "r"){|f| f.read})["readable"]
+
 		end
 
 		personal_data["learnset"] = learnset_data

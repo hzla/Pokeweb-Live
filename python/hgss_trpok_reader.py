@@ -213,24 +213,25 @@ def to_readable(raw, file_name, template, num_pokemon):
 	readable["count"] = num_pokemon
 	for n in range(0, num_pokemon):
 		
-		#change to 2048 for hg-engine
-		if (raw[f'species_id_{n}']) > 1024:
+		#change to 2048 for hg-engine else 1024
+		max_species = 2048
+		if (raw[f'species_id_{n}']) > max_species:
 			
-			form = raw[f'species_id_{n}'] // 1024
-			base_form_id = raw[f'species_id_{n}'] - (1024 * form)
+			form = raw[f'species_id_{n}'] // max_species
+			base_form_id = raw[f'species_id_{n}'] - (max_species * form)
 
 
-			print(base_form_id)
-			print(raw[f'species_id_{n}'])
-			print(file_name)
-			print("%%%%%%%%%%%%%%%%")
+			# print(base_form_id)
+			# print(raw[f'species_id_{n}'])
+			# print(file_name)
+			# print("%%%%%%%%%%%%%%%%")
 			readable[f'species_id_{n}'] = POKEDEX[base_form_id]
 
 			readable[f'form_{n}'] = form + 1
 		else:
-			if (raw[f'species_id_{n}'] > 1024):
-				raw[f'species_id_{n}'] -= 1024
-				print(raw[f'species_id_{n}'])
+			if (raw[f'species_id_{n}'] > max_species):
+				raw[f'species_id_{n}'] -= max_species
+				# print(raw[f'species_id_{n}'])
 			readable[f'species_id_{n}'] = POKEDEX[(raw[f'species_id_{n}'])]
 			readable[f'form_{n}'] = 1
 		

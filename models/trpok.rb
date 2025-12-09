@@ -657,6 +657,8 @@ class Trpok < Pokenarc
 		# 	p trdata["class"]
 		# end
 
+		max_species = 2048
+
 
 		trdata["class"] = "" if !trdata["class"]
 
@@ -675,7 +677,7 @@ class Trpok < Pokenarc
 
 		(0..(poks["count"] - 1)).each do |i|
 			next if poks["ivs_#{i}"] < min_ivs
-			species = pokedex[raw["species_id_#{i}"] % 1024].downcase.titleize.gsub("n Z", "n-Z").gsub("Ho Oh", "Ho-Oh").gsub(/ S$/, "-S")
+			species = pokedex[raw["species_id_#{i}"] % max_species].downcase.titleize.gsub("n Z", "n-Z").gsub("Ho Oh", "Ho-Oh").gsub(/ S$/, "-S")
  
 			trname_count = @@tr_name_counts[trname_info]
 
@@ -696,13 +698,15 @@ class Trpok < Pokenarc
 			
 			pok_id = raw["species_id_#{i}"]
 
-			if pok_id >= 1024
-				form = pok_id / 1024
-				pok_id = pok_id % 1024
+			if pok_id >= max_species
+				form = pok_id / max_species
+				pok_id = pok_id % max_species
 
 				if form > 0 && !(["Deerling","Sawsbuck","Gastrodon","Shellos","Arceus"].include?(species))
 					species_name = species
 					begin
+						p "#{species_name} form # #{form}"
+						p RomInfo.form_info[species_name]
 						species += "-#{RomInfo.form_info[species_name][form - 1]}"
 					rescue
 					

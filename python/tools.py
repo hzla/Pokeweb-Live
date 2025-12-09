@@ -105,10 +105,18 @@ def output_json(narc, narc_name, to_readable, rom_name, base=5):
 	global TRPOK_INFO
 	TRPOK_INFO = []
 
-	for data in narc.files:
-		data_name = data_index
-		read_narc_data(data, narc_format, data_name, narc_name, rom_data.ROM_NAME, to_readable, base)
-		data_index += 1
+	print(f'{narc_name} file count: {len(narc.files)}')
+
+
+	if narc_name == "learnsets" and len(narc.files) == 1:
+		for i in range(0,1393):
+			data = narc.files[0][i*160:(i * 160)+160]
+			read_narc_data(data, narc_format, i, narc_name, rom_data.ROM_NAME, to_readable, base)
+	else:
+		for data in narc.files:
+			data_name = data_index
+			read_narc_data(data, narc_format, data_name, narc_name, rom_data.ROM_NAME, to_readable, base)
+			data_index += 1
 
 	if narc_name == "trdata":
 		if BASE_ROM == "HGSS" or BASE_ROM == "PLAT":
@@ -136,6 +144,11 @@ def read_narc_data(data, narc_format, file_name, narc_name, rom_name, to_readabl
 			if file["raw"][entry[1]] == 65535:
 				file["raw"].pop(entry[1])
 				break
+
+
+			# if file_name == 1:
+				# print("\n\n")
+				# print(data)
 
 			if rom_data.BASE_VERSION == "SS" or rom_data.BASE_VERSION == "PL":
 				ls_id = int(entry[1].split("_")[2])

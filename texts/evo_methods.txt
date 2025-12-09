@@ -22,6 +22,20 @@ After Learning Specific Move
 Level With Party Member
 Level Requirement + Male
 Level Requirement + Female
-Level Up in Electric Field
-Level Up by Moss Rock
-Level Up by Icy Stone
+Level at Mt. Coronet
+Level at Eterna City
+Level at route 217
+Level Requirement + Day
+Level Requirement + Night
+Level Requirement + Dusk
+Level Requirement + Rain
+Level with Move Type
+Level with Dark Type in Party
+Evo trade with mon
+EVO_LEVEL_NATURE_AMPED
+EVO_LEVEL_NATURE_LOW_KEY
+After number of critical hits
+After hurt in battle 
+
+
+

@@ -68,7 +68,10 @@ def to_readable(raw, file_name, base=5):
 	readable["type"] = rom_data.TYPES[raw["type"]]
 	readable["category"] = rom_data.CATEGORIES[raw["category"]]
 
-	readable["effect"] = rom_data.EFFECTS[raw["effect"]]
+	try:
+		readable["effect"] = rom_data.EFFECTS[raw["effect"]]
+	except:
+		readable["effect"] = f'effect {raw["effect"]}'
 	
 	
 
