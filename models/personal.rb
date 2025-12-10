@@ -94,7 +94,7 @@ class Personal
 			showdown[showdown_name]["bs"] = {"hp"=> pok["base_hp"], "at" => pok["base_atk"], "df" => pok["base_def"], "sa" => pok["base_spatk"], "sd" => pok["base_spdef"], "sp" => pok["base_speed"]}
 			showdown[showdown_name]["learnset_info"] = get_learnset_for pok, all_tm_names
 			showdown[showdown_name]["abs"] = [pok["ability_1"], pok["ability_2"], pok["ability_3"]].map(&:name_titleize)
-			showdown[showdown_name]["learnset_info"]["tutors"] = get_tutor_moves(pok)
+			showdown[showdown_name]["learnset_info"]["tutors"] = [] #get_tutor_moves(pok)
 		end
 
 		evos.each_with_index do |evo, i|
@@ -108,6 +108,7 @@ class Personal
 
 
 				target = readable["target_#{j}"].name_titleize
+				showdown[target] ||= {}
 
 				showdown[poks[i]["name"].name_titleize]["evos"] ||= []
 				showdown[poks[i]["name"].name_titleize]["evos"] << target

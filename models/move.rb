@@ -25,6 +25,28 @@ class Move < Pokenarc
 	  str.gsub(/([a-z])([A-Z])/, '\1 \2')
 	end
 
+	def self.export_dex 
+		moves = get_all[1..-1]
+
+		showdown = {}
+		moves.each_with_index do |move, i|
+			showdown_name = sub_showdown(move[1]["name"].move_titleize)
+
+			showdown[showdown_name] = {}
+			showdown[showdown_name]["t"] = move[1]["type"].titleize
+			showdown[showdown_name]["bp"] = move[1]["power"]
+			showdown[showdown_name]["cat"] = move[1]["category"]
+			showdown[showdown_name]["pp"] = move[1]["pp"]
+			showdown[showdown_name]["acc"] = move[1]["accuracy"]
+			showdown[showdown_name]["prio"] = move[1]["priority"]
+
+		end
+
+		File.write("./exports/moves.json", showdown.to_json)
+
+		showdown
+	end
+
 	def self.export_showdown
 		moves = get_all[1..-1]
 		

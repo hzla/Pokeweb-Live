@@ -17,6 +17,8 @@ end
 enable :sessions
 Dotenv.load
 
+$rom_name = "projects/my_rom"
+
 
 Dir["models/*.rb"].each {|file| require_relative file}
 
