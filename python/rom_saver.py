@@ -29,7 +29,7 @@ import text_writer
 # code.interact(local=dict(globals(), **locals()))
 
 # _writer files to run
-narcs = ["personal","text", "learnset","move","header","encounter","trdata","trpok","item","evolution", "overworld"]
+narcs = ["personal", "text", "learnset","move","header","encounter","trdata","trpok","item","evolution", "overworld"]
 bw_narcs = ["mart" , "grotto"]
 
 try: 
@@ -72,6 +72,8 @@ try:
 
 		#only output edited narcs
 		narcs = list(set(narcs) & set(edited))
+
+		print(f"Outputting")
 
 
 		if "starters" in settings and settings["starters"] != ["SNIVY", "TEPIG", "OSHAWOTT"] and settings["base_rom"] == "BW2" and settings["fairy"] == False:

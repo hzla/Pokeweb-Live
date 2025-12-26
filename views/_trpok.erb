@@ -12,7 +12,7 @@
 				<%= field "level_#{trpok_index}", 'tr-item trpok-lvl', {value: trpok["level_#{trpok_index}"],  narc: "trpok", type: "int-100"} %>	
 			</div>
 			<div class="expanded-field">
-				<div class="expanded-trlabel">Ability Slot</div>
+				<div class="expanded-trlabel">Ability Slot (<%= abilities[trpok_index].move_titleize %>)</div>
 				<%= field "ability_#{trpok_index}", 'tr-item', {value: trpok["ability_#{trpok_index}"],  narc: "trpok", type: "int-3"} %>	
 			</div>
 			<div class="expanded-field">
@@ -20,7 +20,7 @@
 				<%= field "gender_#{trpok_index}", 'tr-item', {value: trpok["gender_#{trpok_index}"],  narc: "trpok", autofill: "genders"} %>	
 			</div>
 			<div class="expanded-field">
-				<div class="expanded-trlabel iv-label">IVs
+				<div class="expanded-trlabel iv-label">IVs: (<%= Trpok.get_doc_nature(trdata_index, trpok_index, trpok["ivs_#{trpok_index}"], trpok, trdata, personals) %>)
 
 
 

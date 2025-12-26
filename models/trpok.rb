@@ -1,13 +1,17 @@
 class Trpok < Pokenarc
-	def self.get_all
+	def self.get_all personal=nil
 		@@narc_name = "trpok"
 		poks = super
 		poks.each_with_index do |pok, i|
 			poks[i]["index"] = i
 			poks[i]["class"] = get_trainer_class(i)
 		end
+
+		
+
 		poks
 	end
+
 
 	def self.get_trainer_class id
 		Trdata.get_data("#{$rom_name}/json/trdata/#{id}.json")["class"]
@@ -312,6 +316,8 @@ class Trpok < Pokenarc
 
 		convert_pid_to_nature(pid, natures)
 	end
+
+	# def self.get_nature 
 
 
 	def self.get_nature_info_for(file_name, sub_index, desired_iv=255)

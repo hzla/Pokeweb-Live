@@ -166,7 +166,7 @@
 			<% if @trainer_poks[i] %>
 				<% (0.. @trainer_poks[i]["count"] - 1).each do |pok_index| %>
 
-					<%= erb :_trpok, :layout => false, :locals => { :trpok => @trainer_poks[i], :trpok_index => pok_index, :show => "", :trdata_index => i, :doc_view => false } %>
+					<%= erb :_trpok, :layout => false, :locals => { :trpok => @trainer_poks[i], :trpok_index => pok_index, :show => "", :trdata_index => i, :doc_view => false, :personals => personals, :trdata => trainer, :abilities => Trpok.get_abilities_for(i, personals) } %>
 
 				<% end %>	
 			<% end %>

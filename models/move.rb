@@ -81,8 +81,9 @@ class Move < Pokenarc
 			showdown[showdown_name]["acc"] = move[1]["accuracy"]
 			showdown[showdown_name]["prio"] = move[1]["priority"]
 
-
-			showdown[showdown_name]["desc"] = move_descs[i + 1]
+			if SessionSettings.base_rom == "BW2"
+				showdown[showdown_name]["desc"] = move_descs[i + 1]
+			end
 
 
 			showdown[showdown_name]["e_id"] = move[1]["effect_code"] || 0
@@ -136,6 +137,8 @@ class Move < Pokenarc
 		moves.each_with_index do |move, i|
 			showdown_name = sub_showdown(move[1]["name"].move_titleize)
 
+			binding.pry if showdown_name == "Dragon Rush"
+
 			showdown[showdown_name] = {}
 			showdown[showdown_name]["type"] = move[1]["type"].titleize
 			showdown[showdown_name]["basePower"] = move[1]["power"]
@@ -175,7 +178,12 @@ class Move < Pokenarc
 			end
 		end
 
+		open("public/dist/moves.json", "w") do |f| 
+			f.puts JSON.dump(showdown)
+		end
+
 		"success"
+		showdown
 	end
 
 	def self.write_data data, batch=false

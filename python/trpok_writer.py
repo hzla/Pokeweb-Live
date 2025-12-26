@@ -103,7 +103,7 @@ def write_narc_data(file_name, narc_format, narc, rom_name):
 	narcfile_path = f'{ROM_NAME}/narcs/trpok-{NARC_FILE_ID}.narc'
 
 	stream = bytearray() # bytearray because is mutable
-	print(file_name)
+	# print(file_name)
 	with open(file_path, "r", encoding='ISO8859-1') as outfile:  	
 		json_data = json.load(outfile)	
 

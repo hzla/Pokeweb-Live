@@ -138,7 +138,9 @@ class Personal
 			showdown[showdown_name]["bs"] = {"hp"=> pok["base_hp"], "at" => pok["base_atk"], "df" => pok["base_def"], "sa" => pok["base_spatk"], "sd" => pok["base_spdef"], "sp" => pok["base_speed"]}
 			showdown[showdown_name]["learnset_info"] = get_learnset_for pok, all_tm_names
 			showdown[showdown_name]["abs"] = [pok["ability_1"], pok["ability_2"], pok["ability_3"]].map(&:name_titleize)
-			showdown[showdown_name]["learnset_info"]["tutors"] = get_tutor_moves(pok)
+			if SessionSettings.base_rom == "BW2"
+				showdown[showdown_name]["learnset_info"]["tutors"] = get_tutor_moves(pok)
+			end
 		end
 
 		evos.each_with_index do |evo, i|
@@ -198,8 +200,7 @@ class Personal
 		end
 
 		File.write("./exports/poks.json", JSON.pretty_generate(showdown))
-		open("public/dist/poks.js", "w") do |f| 
-			f.puts "var pwPoks ="
+		open("public/dist/poks.json", "w") do |f| 
 			f.puts JSON.dump(showdown)
 		end
 		showdown
