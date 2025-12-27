@@ -125,10 +125,13 @@ class Personal
 		all_tm_names = Tm.get_names
 
 		showdown = {}
-		poks.each do |pok|
+		poks.each_with_index do |pok, i|
 			next if !pok
 			showdown_name = pok["name"].name_titleize
+
 			showdown[showdown_name] = {}
+			showdown[showdown_name]["name"] = showdown_name
+			showdown[showdown_name]["num"] = i + 1
 			if pok["type_1"] == pok["type_2"]
 				showdown[showdown_name]["types"] = [pok["type_1"]]
 			else
@@ -199,9 +202,9 @@ class Personal
 			end
 		end
 
-		File.write("./exports/poks.json", JSON.pretty_generate(showdown))
-		open("public/dist/poks.json", "w") do |f| 
-			f.puts JSON.dump(showdown)
+		open("./exports/dex/species.js", "w") do |f| 
+			f.print ("exports.BattlePokedex = ")
+			f.print JSON.pretty_generate(showdown)
 		end
 		showdown
 	end

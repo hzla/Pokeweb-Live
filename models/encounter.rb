@@ -362,7 +362,10 @@ class Encounter < Pokenarc
 		end
 
 		dex_data["rates"] = rates
-		File.write("./exports/encs.json", dex_data.to_json)
+		open("./exports/dex/encounters.js", "w") do |f|
+			f.print "exports.BattleLocationdex = " 
+			f.print JSON.pretty_generate(dex_data)
+		end
 		dex_data
 
 	end

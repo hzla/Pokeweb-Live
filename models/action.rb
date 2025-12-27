@@ -37,6 +37,18 @@ class Action
       Net::HTTP.post_form(URI.parse("https://pastebin.com/api/api_post.php"), params).body
   end
 
+  def self.dex
+  	Personal.export_dex
+  	Move.export_dex
+  	RomInfo.export_abilities
+  	Encounter.export_dex
+
+  	# Can run Item.get_locations first if on BW2
+  	Item.export_dex
+
+  	
+  end
+
   def self.np_payload
 		payload = {}
 		["moves", "poks", "formatted_sets"].each do |data|

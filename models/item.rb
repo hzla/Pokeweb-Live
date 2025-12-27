@@ -48,8 +48,14 @@ class Item < Pokenarc
 		trainers = Trdata.get_all
 
 		dex_items = {}
-		item_descs = message_texts[63].map {|entry| entry[1]}
-		item_names = message_texts[64].map {|entry| entry[1]}
+
+		if SessionSettings.base_rom == "BW2"
+			item_descs = message_texts[63].map {|entry| entry[1]}
+			item_names = message_texts[64].map {|entry| entry[1]}
+		else
+			item_descs = message_texts[53].map {|entry| entry[1]}
+			item_names = message_texts[54].map {|entry| entry[1]}
+		end
 
 
 
@@ -81,7 +87,10 @@ class Item < Pokenarc
 			end
 		end
 
-		File.write("./exports/items.json", JSON.pretty_generate(dex_items))
+		open("./exports/dex/items.js", "w") do |f|
+			f.print "exports.BattleItems = " 
+			f.print JSON.pretty_generate(dex_items)
+		end
 		dex_items
 	end
 

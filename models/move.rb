@@ -67,6 +67,8 @@ class Move < Pokenarc
 		message_texts = JSON.parse File.read("#{$rom_name}/message_texts/texts.json")
 		if SessionSettings.base_rom == "BW2"
             move_descs = message_texts[402].map {|entry| entry[1].gsub('\\n', " ")}
+        else
+        	move_descs = message_texts[202].map {|entry| entry[1].gsub('\\n', " ")}
         end
 
 		showdown = {}
@@ -80,10 +82,12 @@ class Move < Pokenarc
 			showdown[showdown_name]["pp"] = move[1]["pp"]
 			showdown[showdown_name]["acc"] = move[1]["accuracy"]
 			showdown[showdown_name]["prio"] = move[1]["priority"]
+			showdown[showdown_name]["name"] = showdown_name
+			showdown[showdown_name]["num"] = i
 
-			if SessionSettings.base_rom == "BW2"
-				showdown[showdown_name]["desc"] = move_descs[i + 1]
-			end
+
+			showdown[showdown_name]["desc"] = move_descs[i + 1]
+
 
 
 			showdown[showdown_name]["e_id"] = move[1]["effect_code"] || 0
@@ -117,7 +121,10 @@ class Move < Pokenarc
 			end
 		end
 
-		File.write("./exports/moves.json", showdown.to_json)
+		open("./exports/dex/moves.js", "w") do |f|
+			f.print "exports.BattleMovedex = " 
+			f.print JSON.pretty_generate(showdown)
+		end
 
 		showdown
 	end

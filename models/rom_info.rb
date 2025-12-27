@@ -19,6 +19,9 @@ class RomInfo
         if SessionSettings.base_rom == "BW2"
             ability_names = message_texts[374].map {|entry| entry[1]}
             ability_descs = message_texts[375].map {|entry| entry[1]}
+        else
+            ability_names = message_texts[182].map {|entry| entry[1]}
+            ability_descs = message_texts[183].map {|entry| entry[1]}
         end
 
         ability_overrides = {}
@@ -30,7 +33,10 @@ class RomInfo
             ab_data["desc"] = ability_descs[i].gsub('\\n', " ")
             ability_overrides[ab_id] = ab_data
         end
-        File.write("./exports/abilities.json", JSON.pretty_generate(ability_overrides))
+        open("./exports/dex/abilities.js", "w") do |f|
+            f.print "exports.BattleAbilities = " 
+            f.print JSON.pretty_generate(ability_overrides)
+        end
         ability_overrides
 
     end
@@ -50,10 +56,17 @@ class RomInfo
         dex_npoint["encs"] = Encounter.export_dex
         p "exporting Items"
         dex_npoint["items"] = Item.export_dex
+        
+        p "creating overrides"        
+        open("./exports/dex/overrides.js", "w") do |f|
+            f.print "overrides = " 
+            f.print JSON.pretty_generate(dex_npoint)
+        end
 
-        File.write('./exports/dex_npoint.json', JSON.pretty_generate(dex_npoint))
+        p "building search index"
+        `node exports/dex/build_index.js`
 
-        p "Output to exports/ folder"
+        p "Output to exports/dex/ folder"
     end
 
     def self.true_pokemon_names
