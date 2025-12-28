@@ -13,6 +13,10 @@ class String
     self.to_i.to_s == self
   end
 
+  def clean
+  	self.gsub(/[^a-zA-Z0-9]/, '').downcase
+  end
+
   def move_titleize
   	if !self 
   		return ""

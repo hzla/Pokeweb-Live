@@ -46,6 +46,8 @@ class RomInfo
     def self.export_dex
         dex_npoint = {}
 
+        game_name = $rom_name.split("/")[1].clean
+
         p "exporting Mons"
         dex_npoint["poks"] = Personal.export_dex
         p "exporting Moves"
@@ -58,13 +60,13 @@ class RomInfo
         dex_npoint["items"] = Item.export_dex
         
         p "creating overrides"        
-        open("./exports/dex/overrides.js", "w") do |f|
+        open("./exports/dex/#{game_name}.js", "w") do |f|
             f.print "overrides = " 
             f.print JSON.pretty_generate(dex_npoint)
         end
 
         p "building search index"
-        `node exports/dex/build_index.js`
+        `node tools/dex/build_index.js #{game_name}`
 
         p "Output to exports/dex/ folder"
     end

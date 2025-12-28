@@ -996,6 +996,19 @@ class MyApp < Sinatra::Base
 		redirect "/#{$rom_name.split("/")[1]}_pokedex.txt"
 	end
 
+	get '/export_dex' do 
+		RomInfo.export_dex
+		rom_name = $rom_name.split("/")[1].clean
+
+		send_file "./exports/dex/#{rom_name}.js", :filename => "./exports/dex/#{rom_name}.js" , :type => 'Application/octet-stream'
+	end
+
+	get '/export_searchindex' do 
+		# RomInfo.export_dex
+		rom_name = $rom_name.split("/")[1].clean
+		send_file "./exports/dex/#{rom_name}-searchindex.js", :filename => "./exports/dex/#{rom_name}-searchindex.js" , :type => 'Application/octet-stream'
+	end
+
 	get '/publish_calc' do 
 		if !SessionSettings.get("tr_locations_found")
 			Trdata.get_locations
