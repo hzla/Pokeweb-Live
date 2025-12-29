@@ -144,8 +144,6 @@ class Move < Pokenarc
 		moves.each_with_index do |move, i|
 			showdown_name = sub_showdown(move[1]["name"].move_titleize)
 
-			binding.pry if showdown_name == "Dragon Rush"
-
 			showdown[showdown_name] = {}
 			showdown[showdown_name]["type"] = move[1]["type"].titleize
 			showdown[showdown_name]["basePower"] = move[1]["power"]
