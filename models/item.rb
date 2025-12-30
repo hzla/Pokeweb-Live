@@ -126,10 +126,16 @@ class Item < Pokenarc
 	def self.script_to_item
 		items = get_all
 
-		`dotnet tools/beaterscript/BeaterScript.dll -d #{$rom_name}/scripts/1240.bin BW2 #{$rom_name}/scripts/1240.txt`
+		if SessionSettings.base_rom == "BW2"
+			script_id = 1240
+		else
+			script_id = 864
+			
+		end
+		`dotnet tools/beaterscript/BeaterScript.dll -d #{$rom_name}/scripts/#{script_id}.bin BW2 #{$rom_name}/scripts/#{script_id}.txt`
 		# system command
 
-		scripts = File.readlines("#{$rom_name}/scripts/1240.txt")
+		scripts = File.readlines("#{$rom_name}/scripts/#{script_id}.txt")
 
 		item_scripts = {}
 		script_id = 0

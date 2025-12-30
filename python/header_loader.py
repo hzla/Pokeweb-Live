@@ -60,6 +60,7 @@ except:
 	narc_info["base_version"] = "B2"
 	narc_info["base_rom"] = "BW2"
 
+
 with open(f'{rom_name}/arm9.bin', 'wb') as f:
 	f.write(arm9)
 
@@ -68,6 +69,7 @@ if narc_info["base_rom"] == "BW2":
 	MSG_BANKS = BW2_MSG_BANKS
 else:
 	MSG_BANKS = BW_MSG_BANKS
+	NARCS[3][0] = "a/0/5/7"
 	# NARCS[3][0] = "a/0/5/7"
 
 

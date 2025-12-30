@@ -289,6 +289,9 @@ def output_texts(folder, narc, use_vanilla=False):
 def output_scripts(folder, narc):
     print("outputting scripts")
     
+    print(len(narc.files))
+    print("HIIIIIIII")
+
     for n, message in enumerate(narc.files):   
         with open(f'{folder}/{n}.bin', "wb") as binary_file:
             binary_file.write(message)
