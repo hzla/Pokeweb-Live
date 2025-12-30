@@ -13,6 +13,8 @@ class Trpok < Pokenarc
 	end
 
 
+
+
 	def self.get_trainer_class id
 		Trdata.get_data("#{$rom_name}/json/trdata/#{id}.json")["class"]
 	end
@@ -233,6 +235,8 @@ class Trpok < Pokenarc
 		file_path = "#{$rom_name}/json/trpok/#{file_name}.json"
 		json_data = JSON.parse(File.open(file_path, "r"){|f| f.read})
 
+		new_species = json_data["species_id_#{n - 1}"] || "Bulbasaur"
+
 
 		new_readable_data = {"ivs_#{n}": 0, "ability_#{n}": 0, "level_#{n}": 0, "padding_#{n}": 0, "species_id_#{n}": "-", "form_#{n}": 0, "gender_#{n}": "Default"}
 
@@ -297,7 +301,7 @@ class Trpok < Pokenarc
 
 		pok_id = trpok["species_id_#{sub_index}"]
 
-		return "Unknown" if !pok_id
+		return "Unknown" if !pok_id || pok_id.is_a?(String)
 		personal = personals[pok_id]
 
 
@@ -502,9 +506,11 @@ class Trpok < Pokenarc
 
 		poks_array = []
 
+				
+
 		(0..(poks["count"] - 1)).each do |i|			
 			pok_id = raw["species_id_#{i}"]
-			if !pok_id
+			if !pok_id || pok_id.is_a?(String)
 				poks_array << "Unknown"
 				next
 			end
@@ -516,6 +522,7 @@ class Trpok < Pokenarc
 
 		
 			ability_id = poks["ability_#{i}"]
+
 			if $gen == 4
 				ability_id = ability_id / 16
 			end
