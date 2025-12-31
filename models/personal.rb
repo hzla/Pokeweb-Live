@@ -140,7 +140,7 @@ class Personal
 
 			showdown[showdown_name]["bs"] = {"hp"=> pok["base_hp"], "at" => pok["base_atk"], "df" => pok["base_def"], "sa" => pok["base_spatk"], "sd" => pok["base_spdef"], "sp" => pok["base_speed"]}
 			showdown[showdown_name]["learnset_info"] = get_learnset_for pok, all_tm_names
-			showdown[showdown_name]["abs"] = [pok["ability_1"], pok["ability_2"], pok["ability_3"]].map(&:name_titleize)
+			showdown[showdown_name]["abs"] = [pok["ability_1"], pok["ability_2"], pok["ability_3"]].map(&:name_titleize).map do {|ab| ab.gsub("Lightningrod", "Lightning Rod").gsub("Compoundeyes", "Compound Eyes")}
 			if SessionSettings.base_rom == "BW2"
 				showdown[showdown_name]["learnset_info"]["tutors"] = get_tutor_moves(pok)
 			end
@@ -215,7 +215,7 @@ class Personal
 		tm_list = get_tm_list(pok)
 		pok_tm_list = get_tm_names tm_list, all_tm_names
 
-
+		showdown_subs = Move.showdown_subs
 
 
 		learnset_info = []
@@ -223,7 +223,9 @@ class Personal
 		n = 0
 
 		until !ls["lvl_learned_#{n}"] or learnset_info.length == 25
-			learnset_info << [ls["lvl_learned_#{n}"], ls["move_id_#{n}"].move_titleize]
+			move_name = ls["move_id_#{n}"].move_titleize
+			move_name = showdown_subs[move_name.to_sym] ? showdown_subs[move_name.to_sym] : move_name
+			learnset_info << [ls["lvl_learned_#{n}"], move_name]
 			n += 1
 		end
 		{learnset: learnset_info, tms: pok_tm_list}
@@ -443,16 +445,22 @@ end
 	end
 
 	def self.get_tm_names(tm_list, all_tm_names)
+		showdown_subs = Move.showdown_subs
+
 		learnset_tms = []
 		tm_list[:tms].each_with_index do |tm, i|
 			if tm == "1"
-				learnset_tms << all_tm_names[:tm_names][i]
+				move_name = all_tm_names[:tm_names][i]
+				move_name = showdown_subs[move_name.to_sym] ? showdown_subs[move_name.to_sym] : move_name
+				learnset_tms << move_name
 			end
 		end
 
 		tm_list[:hms].each_with_index do |hm, i|
 			if hm == "1"
-				learnset_tms << all_tm_names[:hm_names][i]
+				move_name = all_tm_names[:tm_names][i]
+				move_name = showdown_subs[move_name.to_sym] ? showdown_subs[move_name.to_sym] : move_name
+				learnset_tms << move_name
 			end
 		end
 

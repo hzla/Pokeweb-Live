@@ -997,10 +997,17 @@ class MyApp < Sinatra::Base
 	end
 
 	get '/export_dex' do 
+		unless File.directory?("./exports/dex")
+  			Dir.mkdir("./exports/dex")
+  		end
 		RomInfo.export_dex
-		rom_name = $rom_name.split("/")[1].clean
+		@rom_name = $rom_name.split("/")[1].clean
+		
+		@message = "run 'node tools/dex/build_index.js #{@rom_name}' in terminal if you need to build a custom search index (if you have changed location names or have custom pokemon/move/item names that don't exist in the vanilla games)"
 
-		send_file "./exports/dex/#{rom_name}.js", :filename => "./exports/dex/#{rom_name}.js" , :type => 'Application/octet-stream'
+		erb :export_dex
+
+		# send_file "./exports/dex/#{rom_name}.js", :filename => "./exports/dex/#{rom_name}.js" , :type => 'Application/octet-stream'
 	end
 
 	get '/export_searchindex' do 
