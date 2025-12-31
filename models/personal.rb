@@ -140,7 +140,9 @@ class Personal
 
 			showdown[showdown_name]["bs"] = {"hp"=> pok["base_hp"], "at" => pok["base_atk"], "df" => pok["base_def"], "sa" => pok["base_spatk"], "sd" => pok["base_spdef"], "sp" => pok["base_speed"]}
 			showdown[showdown_name]["learnset_info"] = get_learnset_for pok, all_tm_names
-			showdown[showdown_name]["abs"] = [pok["ability_1"], pok["ability_2"], pok["ability_3"]].map(&:name_titleize).map do {|ab| ab.gsub("Lightningrod", "Lightning Rod").gsub("Compoundeyes", "Compound Eyes")}
+			showdown[showdown_name]["abs"] = [pok["ability_1"], pok["ability_2"], pok["ability_3"]].map(&:name_titleize).map do |ab|
+				ab.gsub("Lightningrod", "Lightning Rod").gsub("Compoundeyes", "Compound Eyes")
+			end
 			if SessionSettings.base_rom == "BW2"
 				showdown[showdown_name]["learnset_info"]["tutors"] = get_tutor_moves(pok)
 			end
