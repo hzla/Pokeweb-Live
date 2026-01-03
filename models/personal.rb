@@ -208,6 +208,9 @@ class Personal
 			f.print ("exports.BattlePokedex = ")
 			f.print JSON.pretty_generate(showdown)
 		end
+		open("./public/dist/poks.json", "w") do |f| 
+			f.print JSON.pretty_generate(showdown)
+		end
 		showdown
 	end
 

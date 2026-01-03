@@ -123,7 +123,8 @@ def to_readable(raw, file_name, template, num_pokemon):
 			raw[f'ability_{n}'] = 0
 
 		readable[f'ability_{n}'] = math.floor(raw[f'ability_{n}'] / 16)	
-		readable[f'gender_{n}'] = GENDERS[raw[f'ability_{n}'] % 16]
+
+		readable[f'gender_{n}'] = GENDERS[min(raw[f'ability_{n}'] % 16, 2)]
 
 		if template == 1 or template == 3:
 			for m in range(1,5):

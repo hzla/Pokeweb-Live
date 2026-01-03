@@ -235,9 +235,6 @@ class Trpok < Pokenarc
 		file_path = "#{$rom_name}/json/trpok/#{file_name}.json"
 		json_data = JSON.parse(File.open(file_path, "r"){|f| f.read})
 
-		new_species = json_data["species_id_#{n - 1}"] || "Bulbasaur"
-
-
 		new_readable_data = {"ivs_#{n}": 0, "ability_#{n}": 0, "level_#{n}": 0, "padding_#{n}": 0, "species_id_#{n}": "-", "form_#{n}": 0, "gender_#{n}": "Default"}
 
 		json_data["readable"] = json_data["readable"].merge(new_readable_data)

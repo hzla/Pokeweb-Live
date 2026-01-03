@@ -91,12 +91,21 @@ def read_data(data, narc_format, file_name, folder_name):
 def to_readable(raw, file_name=""):
 	readable = copy.deepcopy(raw)
 
+
+
 	for n in range(1, 93):
-		readable[f'tm_{n}'] = MOVES[raw[f'tm_{n}']]
+		try:
+			readable[f'tm_{n}'] = MOVES[raw[f'tm_{n}']]
+		except:
+			readable[f'tm_{n}'] = f"Move ${raw[f'tm_{n}']}"
 	for n in range(1, 7):
 		readable[f'hm_{n}'] = MOVES[raw[f'hm_{n}']]
 	for n in range(93, 96):
-		readable[f'tm_{n}'] = MOVES[raw[f'tm_{n}']]
+		try:
+			readable[f'tm_{n}'] = MOVES[raw[f'tm_{n}']]
+		except:
+			readable[f'tm_{n}'] = f"Move ${raw[f'tm_{n}']}"
+
 	
 	return readable
 

@@ -308,8 +308,12 @@ class Encounter < Pokenarc
 
 		all_encs = get_all
 
-		all_encs.each do |enc|
-			loc_name = enc["locations"][0].split("(")[0].strip.downcase.gsub(" ","").gsub("-", "").gsub(".", "").gsub("'", "")
+		all_encs.each_with_index do |enc, idx|
+			begin
+				loc_name = enc["locations"][0].split("(")[0].strip.downcase.gsub(" ","").gsub("-", "").gsub(".", "").gsub("'", "")
+			rescue
+				loc_name = "Unknown Location"
+			end
 
 			if locations_count[loc_name]
 				locations_count[loc_name] += 1
@@ -320,7 +324,12 @@ class Encounter < Pokenarc
 			
 
 			loc_data = {}
-			loc_data["name"] = enc["locations"][0].split("(")[0]
+
+			begin
+				loc_data["name"] = enc["locations"][0].split("(")[0]
+			rescue
+				loc_data["name"] = "Unknown Location"
+			end
 
 			if locations_count[loc_name] >= 2
 				loc_data["name"] += "#{locations_count[loc_name]}" 

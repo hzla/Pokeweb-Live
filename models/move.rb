@@ -125,6 +125,9 @@ class Move < Pokenarc
 			f.print "exports.BattleMovedex = " 
 			f.print JSON.pretty_generate(showdown)
 		end
+		open("./public/dist/moves.json", "w") do |f|
+			f.print JSON.pretty_generate(showdown)
+		end
 
 		showdown
 	end

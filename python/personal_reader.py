@@ -55,9 +55,13 @@ def to_readable(raw, file_name):
 	readable["egg_group_1"] = rom_data.EGG_GROUPS[raw["egg_group_1"]]
 	readable["egg_group_2"] = rom_data.EGG_GROUPS[raw["egg_group_2"]]
 
-	readable["ability_1"] = rom_data.ABILITIES[raw["ability_1"]]
-	readable["ability_2"] = rom_data.ABILITIES[raw["ability_2"]]
-	readable["ability_3"] = rom_data.ABILITIES[raw["ability_3"]]
+	if (raw["ability_1"] > 165):
+		print(f"${readable["name"]}: ${raw["ability_1"]}")
+
+
+	readable["ability_1"] = rom_data.ABILITIES[min(raw["ability_1"], len(rom_data.ABILITIES) - 1)]
+	readable["ability_2"] = rom_data.ABILITIES[min(raw["ability_2"], len(rom_data.ABILITIES) - 1)]
+	readable["ability_3"] = rom_data.ABILITIES[min(raw["ability_3"], len(rom_data.ABILITIES) - 1)]
 
 	readable["form_sprites"] = "Default"
 
