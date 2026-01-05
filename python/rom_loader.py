@@ -110,7 +110,7 @@ BW2_NARCS = [["a/0/1/6", "personal"],
 
 BW2_MSG_BANKS = [[488, "moves"],
 [487, "abilities"],
-[486, "pokedex"],
+[90, "pokedex"],
 [383, "tr_classes"],
 [382, "tr_names"],
 [64, "items"]]
@@ -259,6 +259,8 @@ with open(f'{rom_name}/message_texts/texts.json', 'r') as f:
 			for idx, line in enumerate(text):
 				try:
 					line[1] = line[1].replace("―", "").replace("⑮", " F").replace("⑭", " M").replace("⒆⒇", "PkMn").replace("é", "e").encode("ascii", "ignore").decode()
+					if msg_bank[1] == "pokedex":
+						line[1] = line[1].upper()
 					outfile.write(line[1] + "\n")
 				except:
 					print(line[1])

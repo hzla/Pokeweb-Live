@@ -79,9 +79,9 @@ class Item < Pokenarc
 					tr_name = tr["name"]
 
 					if dex_items[item_id]["rewards"]
-						dex_items[item_id]["rewards"] += ", Rewarded after beating #{tr["class"]} #{tr_name}" if !dex_items[item_id]["rewards"].include?("Rewarded after beating #{tr["class"]} #{tr_name}")
+						dex_items[item_id]["rewards"] += ", #{tr["class"]} #{tr_name}" if !dex_items[item_id]["rewards"].include?("#{tr["class"]} #{tr_name}")
 					else
-						dex_items[item_id]["rewards"] = "Rewarded after beating #{tr["class"]} #{tr_name}" 
+						dex_items[item_id]["rewards"] = "#{tr["class"]} #{tr_name}" 
 					end
 				end
 			end

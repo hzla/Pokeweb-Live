@@ -137,6 +137,7 @@ class Personal
 			else
 				showdown[showdown_name]["types"] = [pok["type_1"], pok["type_2"]]
 			end
+			showdown[showdown_name]["items"] = [pok["item_1"], pok["item_2"], pok["item_3"]]
 
 			showdown[showdown_name]["bs"] = {"hp"=> pok["base_hp"], "at" => pok["base_atk"], "df" => pok["base_def"], "sa" => pok["base_spatk"], "sd" => pok["base_spdef"], "sp" => pok["base_speed"]}
 			showdown[showdown_name]["learnset_info"] = get_learnset_for pok, all_tm_names
