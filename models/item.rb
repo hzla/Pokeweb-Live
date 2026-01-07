@@ -46,6 +46,8 @@ class Item < Pokenarc
 		message_texts = JSON.parse File.read("#{$rom_name}/message_texts/texts.json")
 		items = get_all
 		trainers = Trdata.get_all
+		poks = Personal.poke_data
+		marts = Mart.get_all
 
 		dex_items = {}
 
@@ -56,8 +58,6 @@ class Item < Pokenarc
 			item_descs = message_texts[53].map {|entry| entry[1]}
 			item_names = message_texts[54].map {|entry| entry[1]}
 		end
-
-
 
 		item_names.each_with_index do |item, i|
 			item_data = {}
@@ -72,17 +72,52 @@ class Item < Pokenarc
 		end
 
 		trainers.each do |tr|
-
 			if tr["reward_item"] && tr["reward_item"] != "None"
 				item_id = tr["reward_item"].downcase.gsub(" ","").gsub("-", "").gsub(".", "").gsub("'", "")
 				if dex_items[item_id]
-					tr_name = tr["name"]
+					tr_title = "#{tr["class"]} #{tr["name"]}"
+
+					if tr["location"] and tr["location"][0] != ""
+						tr_title += " - #{tr["location"][0]}"
+					end
 
 					if dex_items[item_id]["rewards"]
-						dex_items[item_id]["rewards"] += ", #{tr["class"]} #{tr_name}" if !dex_items[item_id]["rewards"].include?("#{tr["class"]} #{tr_name}")
+						dex_items[item_id]["rewards"] << tr_title
 					else
-						dex_items[item_id]["rewards"] = "#{tr["class"]} #{tr_name}" 
+						dex_items[item_id]["rewards"] ||= []
+						dex_items[item_id]["rewards"] << tr_title
 					end
+
+					dex_items[item_id]["rewards"] = dex_items[item_id]["rewards"].uniq
+				end
+			end
+		end
+
+		poks.each do |pok|
+			if pok
+				items = [pok["item_1"],pok["item_2"],pok["item_3"]]
+				species = pok["name"].name_titleize
+
+				items.each_with_index do |item|
+					if item != "None"
+						item_id = item.downcase.gsub(" ","").gsub("-", "").gsub(".", "").gsub("'", "")
+						dex_items[item_id]["wilds"] ||= []
+						dex_items[item_id]["wilds"] << species
+						dex_items[item_id]["wilds"] = dex_items[item_id]["wilds"].uniq
+					end
+				end	
+			end
+		end
+
+		marts.each do |mart|
+			if mart
+				items = Mart.inventory(mart).split(", ")
+				location = mart["name"]
+				items.each do |item|
+					item_id = item.downcase.gsub(" ","").gsub("-", "").gsub(".", "").gsub("'", "").gsub("pokeball", "pokéball").gsub("pokedoll", "pokédoll")
+					dex_items[item_id]["marts"] ||= []
+					dex_items[item_id]["marts"] << location
+					dex_items[item_id]["marts"] = dex_items[item_id]["marts"].uniq
 				end
 			end
 		end
@@ -107,20 +142,23 @@ class Item < Pokenarc
 					script_id = overworld["npc_#{n}_script_id"]
 					if (script_id > 7000 and script_id <= 7400)
 
-						p "now looking up script #{script_id} item #{items[script_to_item[script_id]]["name"]}"
+						
+
+						print "\rnow looking up script #{script_id} item #{items[script_to_item[script_id]]["name"]}..."
 
 						file_path = "#{$rom_name}/json/items/#{script_to_item[script_id]}.json"
 						json_data = JSON.parse(File.open(file_path, "r") {|f| f.read})
 
 						location = Header.find_location_by_map_id(i)
-						p "found at #{location[0]}"
 						json_data["readable"]["location"] ||= []
 						json_data["readable"]["location"] << location[0]
 						File.open(file_path, "w") { |f| f.write json_data.to_json }
+						$stdout.flush
 					end
 				end
 			end
 		end
+		return "success"
 	end
 
 	def self.script_to_item

@@ -39,6 +39,8 @@ class Trpok < Pokenarc
 		end
 		return "success"
 	end
+
+
 	
 
 	def self.search trdata, trpok, tr_name, mon_lvl, mon_name
@@ -185,6 +187,20 @@ class Trpok < Pokenarc
 			end
 			File.open(file_path, "w") { |f| f.write trpok.to_json }
 		end
+	end
+
+	# fill in moves for all default learnset trainers
+	def self.fill_all_lvl_up_moves
+		trainers = Trpok.get_all
+		trdatas = Trdata.get_all
+
+		trainers.each_with_index do |tr, idx|
+			num_poks = trdatas[idx]["num_pokemon"].to_i
+			(0..num_poks - 1).each do |subindex|
+				Trpok.fill_lvl_up_moves tr["level_#{subindex}"], idx, subindex, true, true
+			end
+		end
+
 	end
 
 	def self.fill_lvl_up_moves lvl, trainer, pok_index, output_json=true, get_ids=false

@@ -41,9 +41,23 @@ class RomInfo
 
     end
 
+    def self.populate_dex_data
+        # Go through overworlds and find trainer locations
+        p "grabbing trainer locations: should take a few seconds"
+        Trdata.get_locations
+
+        # Filling in lvl up learnsets for trainers that don't have moves
+        p "filling in move names for defaul learnset trainers: should take 5-30 seconds"
+        Trpok.fill_all_lvl_up_moves
+
+        p "searching for all item pickup locations: should take 30 seconds to a few minutes"
+        # Go through item global script and find location from overworlds
+        Item.get_locations true
+    end
+
     
 
-    def self.export_dex
+    def self.export_dex build_index=true
         dex_npoint = {}
 
         game_name = $rom_name.split("/")[1].clean
@@ -65,8 +79,10 @@ class RomInfo
             f.print JSON.pretty_generate(dex_npoint)
         end
 
-        p "building search index"
-        `node tools/dex/build_index.js #{game_name}`
+        if build_index
+            p "building search index"
+            `node tools/dex/build_index.js #{game_name}`
+        end
 
         p "Output to exports/dex/ folder"
     end

@@ -251,7 +251,7 @@ function getItem(collection, str) {
 
 	buf += 'exports.BattleArticleTitles = {}' + ';\n\n';
 
-	fs.writeFileSync(`../exports/dex/${gameName}-searchindex.js`, buf);
+	fs.writeFileSync(`../exports/dex/${gameName}_searchindex.js`, buf);
 }
 
 console.log("DONE");

@@ -1010,6 +1010,11 @@ class MyApp < Sinatra::Base
 		# send_file "./exports/dex/#{rom_name}.js", :filename => "./exports/dex/#{rom_name}.js" , :type => 'Application/octet-stream'
 	end
 
+	get '/item_locations' do 
+		Item.get_locations true
+		redirect '/?success=true'
+	end
+
 	get '/export_searchindex' do 
 		# RomInfo.export_dex
 		rom_name = $rom_name.split("/")[1].clean
