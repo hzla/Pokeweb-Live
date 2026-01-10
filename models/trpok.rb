@@ -374,6 +374,8 @@ class Trpok < Pokenarc
 			sprite = Trdata.sprite(trdata["name"], trdata["class"], trdata["class_id"], Trdata.gender_table)
 			trpok_file["readable"]["tr_sprite"] = sprite
 
+			trpok_file["readable"]["name"] = trdata["name"]
+
 			File.write(file_path, trpok_file.to_json)
 		end
 		nature
