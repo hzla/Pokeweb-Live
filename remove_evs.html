@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BW/B2W2 – Remove EV Yields (personal NARC a/0/1/6)</title>
+  <style>
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin: 24px; max-width: 900px; }
+    .row { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+    button { padding: 10px 14px; font-size: 14px; cursor: pointer; }
+    input[type="file"] { padding: 8px; }
+    pre { background: #f6f6f6; padding: 12px; border-radius: 10px; overflow: auto; }
+    .ok { color: #0a7; }
+    .err { color: #c22; }
+    a.download { display: inline-block; margin-top: 10px; }
+    code { background: #f0f0f0; padding: 2px 4px; border-radius: 6px; }
+  </style>
+</head>
+<body>
+  <h1>BW/B2W2 ROM Patcher: Remove all Pokémon EV yields</h1>
+  <p>
+    This patches the personal NARC at <code>a/0/1/6</code> and sets each entry’s <code>evs</code> field
+    (2 bytes at offset <code>0x0A</code>) to <code>0x0000</code>.
+  </p>
+
+  <div class="row">
+    <input id="romFile" type="file" accept=".nds,.NDS,application/octet-stream" />
+    <button id="patchBtn" disabled>Patch ROM</button>
+  </div>
+
+  <a id="downloadLink" class="download" style="display:none;"></a>
+
+  <h3>Log</h3>
+  <pre id="log"></pre>
+
+<script>
+(() => {
+  const PERSONAL_PATH = "a/0/1/6";
+  const EVS_OFFSET_IN_PERSONAL_ENTRY = 0x0A; // 10
+  const logEl = document.getElementById("log");
+  const fileEl = document.getElementById("romFile");
+  const btnEl = document.getElementById("patchBtn");
+  const dlEl = document.getElementById("downloadLink");
+
+  function log(msg, cls) {
+    const line = cls ? `[${cls.toUpperCase()}] ${msg}` : msg;
+    logEl.textContent += line + "\n";
+    if (cls === "err") console.error(msg);
+  }
+
+  function u32le(dv, off) { return dv.getUint32(off, true); }
+  function u16le(dv, off) { return dv.getUint16(off, true); }
+
+  function readAscii(u8, off, len) {
+    let s = "";
+    for (let i = 0; i < len; i++) s += String.fromCharCode(u8[off + i]);
+    return s;
+  }
+
+  function assert(cond, msg) {
+    if (!cond) throw new Error(msg);
+  }
+
+  // ---- NitroFS (FNT/FAT) parsing to find fileId by path ----
+  function parseFNTAndResolveFileId(romU8) {
+    const dv = new DataView(romU8.buffer);
+
+    // NDS header: FNT offset @ 0x40, size @ 0x44; FAT offset @ 0x48, size @ 0x4C
+    const fntOff = u32le(dv, 0x40);
+    const fntSize = u32le(dv, 0x44);
+    const fatOff = u32le(dv, 0x48);
+    const fatSize = u32le(dv, 0x4C);
+
+    assert(fntOff > 0 && fntSize > 0, "FNT offset/size invalid.");
+    assert(fatOff > 0 && fatSize > 0, "FAT offset/size invalid.");
+    assert(fntOff + fntSize <= romU8.length, "FNT out of bounds.");
+    assert(fatOff + fatSize <= romU8.length, "FAT out of bounds.");
+
+    const fnt = romU8.subarray(fntOff, fntOff + fntSize);
+
+    // Directory IDs: root is 0xF000
+    // Directory table starts at 0, entries are 8 bytes:
+    //  u32 subtableOffset, u16 firstFileId, u16 parentDirId
+    // name tables begin immediately after dir table, but we can just use subtableOffset directly.
+
+    const ROOT_DIR_ID = 0xF000;
+
+    function dirIndex(dirId) {
+      return dirId & 0x0FFF; // lower 12 bits index into directory table
+    }
+
+    function readDirEntry(dirId) {
+      const idx = dirIndex(dirId);
+      const off = idx * 8;
+      assert(off + 8 <= fnt.length, `Directory table OOB for dirId ${dirId.toString(16)}`);
+      const dvF = new DataView(fnt.buffer, fnt.byteOffset, fnt.byteLength);
+      return {
+        subtableOffset: dvF.getUint32(off, true),
+        firstFileId: dvF.getUint16(off + 4, true),
+        parentDirId: dvF.getUint16(off + 6, true),
+      };
+    }
+
+    function findInDir(dirId, name) {
+      const dvF = new DataView(fnt.buffer, fnt.byteOffset, fnt.byteLength);
+      const { subtableOffset, firstFileId } = readDirEntry(dirId);
+      let p = subtableOffset;
+      let fileId = firstFileId;
+
+      while (true) {
+        assert(p < fnt.length, "FNT name table OOB.");
+        const lenByte = fnt[p++];
+        if (lenByte === 0) break; // end of directory listing
+
+        const isDir = (lenByte & 0x80) !== 0;
+        const nameLen = (lenByte & 0x7F);
+
+        assert(p + nameLen <= fnt.length, "FNT name entry OOB.");
+        const entryName = new TextDecoder("ascii").decode(fnt.subarray(p, p + nameLen));
+        p += nameLen;
+
+        if (isDir) {
+          assert(p + 2 <= fnt.length, "FNT dir id OOB.");
+          const childDirId = dvF.getUint16(p, true);
+          p += 2;
+
+          if (entryName === name) {
+            return { type: "dir", dirId: childDirId };
+          }
+        } else {
+          // file
+          if (entryName === name) {
+            return { type: "file", fileId };
+          }
+          fileId++;
+        }
+      }
+      return null;
+    }
+
+    function resolvePathToFileId(path) {
+      const parts = path.split("/").filter(Boolean);
+      let dirId = ROOT_DIR_ID;
+
+      for (let i = 0; i < parts.length; i++) {
+        const part = parts[i];
+        const last = i === parts.length - 1;
+        const found = findInDir(dirId, part);
+        if (!found) return null;
+
+        if (last) {
+          if (found.type !== "file") return null;
+          return found.fileId;
+        } else {
+          if (found.type !== "dir") return null;
+          dirId = found.dirId;
+        }
+      }
+      return null;
+    }
+
+    return { fntOff, fntSize, fatOff, fatSize, fileId: resolvePathToFileId(PERSONAL_PATH) };
+  }
+
+  function getFatEntry(romU8, fatOff, fileId) {
+    const dv = new DataView(romU8.buffer);
+    const entryOff = fatOff + fileId * 8;
+    assert(entryOff + 8 <= romU8.length, "FAT entry OOB.");
+    const start = dv.getUint32(entryOff, true);
+    const end = dv.getUint32(entryOff + 4, true);
+    assert(end >= start, "FAT entry end < start.");
+    assert(end <= romU8.length, "FAT entry points outside ROM.");
+    return { start, end, size: end - start };
+  }
+
+  // ---- NARC parsing + in-place EV zeroing (no size changes) ----
+  function patchNarcInPlace(narcU8) {
+    const dv = new DataView(narcU8.buffer, narcU8.byteOffset, narcU8.byteLength);
+
+    function readTag(off) {
+      assert(off + 4 <= narcU8.length, "NARC tag OOB.");
+      return String.fromCharCode(narcU8[off], narcU8[off+1], narcU8[off+2], narcU8[off+3]);
+    }
+
+    // NARC header:
+    // 0x00 'NARC'
+    // 0x04 byte order (0xFFFE), 0x06 version, 0x08 fileSize, 0x0C headerSize, 0x0E sectionCount
+    assert(readTag(0) === "NARC", "Not a NARC (missing 'NARC').");
+
+    const headerSize = dv.getUint16(0x0C, true);
+    const sectionCount = dv.getUint16(0x0E, true);
+    assert(headerSize >= 0x10, "Bad NARC header size.");
+    assert(sectionCount >= 3, "Unexpected NARC section count (expected >= 3).");
+
+    // Sections typically: BTAF, BTNF, GMIF (in that order)
+    let off = headerSize;
+
+    const sec1 = readTag(off); const sec1Size = dv.getUint32(off + 4, true);
+    assert(sec1 === "BTAF", `Expected BTAF, got ${sec1}.`);
+    const btafOff = off;
+    off += sec1Size;
+
+    const sec2 = readTag(off); const sec2Size = dv.getUint32(off + 4, true);
+    assert(sec2 === "BTNF", `Expected BTNF, got ${sec2}.`);
+    const btnfOff = off;
+    off += sec2Size;
+
+    const sec3 = readTag(off); const sec3Size = dv.getUint32(off + 4, true);
+    assert(sec3 === "GMIF", `Expected GMIF, got ${sec3}.`);
+    const gmifOff = off;
+
+    // BTAF layout:
+    // 0x00 'BTAF'
+    // 0x04 sectionSize
+    // 0x08 fileCount (u16), reserved (u16)
+    // 0x0C fileCount * (u32 start, u32 end) relative to GMIF data start
+    const fileCount = dv.getUint16(btafOff + 0x08, true);
+    const allocTableOff = btafOff + 0x0C;
+
+    // GMIF layout:
+    // 0x00 'GMIF'
+    // 0x04 sectionSize
+    // 0x08 data...
+    const gmifDataStart = gmifOff + 0x08;
+
+    let modified = 0;
+    let tooSmall = 0;
+
+    for (let i = 0; i < fileCount; i++) {
+      const entOff = allocTableOff + i * 8;
+      assert(entOff + 8 <= narcU8.length, "BTAF allocation entry OOB.");
+
+      const relStart = dv.getUint32(entOff, true);
+      const relEnd = dv.getUint32(entOff + 4, true);
+      const absStart = gmifDataStart + relStart;
+      const absEnd = gmifDataStart + relEnd;
+
+      if (absEnd > narcU8.length || absStart > absEnd) {
+        throw new Error(`Bad NARC allocation for file ${i} (start/end invalid).`);
+      }
+
+      const entryLen = absEnd - absStart;
+      if (entryLen < EVS_OFFSET_IN_PERSONAL_ENTRY + 2) {
+        tooSmall++;
+        continue;
+      }
+
+      const evOff = absStart + EVS_OFFSET_IN_PERSONAL_ENTRY;
+      const curLo = narcU8[evOff];
+      const curHi = narcU8[evOff + 1];
+      if (curLo !== 0 || curHi !== 0) modified++;
+
+      narcU8[evOff] = 0;
+      narcU8[evOff + 1] = 0;
+    }
+
+    return { fileCount, modified, tooSmall };
+  }
+
+  // ---- Main flow ----
+  fileEl.addEventListener("change", () => {
+    btnEl.disabled = !fileEl.files || fileEl.files.length === 0;
+    dlEl.style.display = "none";
+    dlEl.removeAttribute("href");
+    dlEl.textContent = "";
+    logEl.textContent = "";
+    if (btnEl.disabled) return;
+    log(`Selected: ${fileEl.files[0].name}`);
+  });
+
+  btnEl.addEventListener("click", async () => {
+    dlEl.style.display = "none";
+    dlEl.removeAttribute("href");
+    dlEl.textContent = "";
+    logEl.textContent = "";
+
+    const f = fileEl.files?.[0];
+    if (!f) return;
+
+    try {
+      log("Reading ROM...");
+      const buf = await f.arrayBuffer();
+      const romU8 = new Uint8Array(buf);
+
+      log("Parsing NitroFS (FNT/FAT)...");
+      const { fatOff, fatSize, fileId } = parseFNTAndResolveFileId(romU8);
+      assert(fileId !== null, `Could not resolve '${PERSONAL_PATH}' in this ROM's filename table.`);
+
+      log(`Found '${PERSONAL_PATH}' as fileId ${fileId}.`);
+      const fat = getFatEntry(romU8, fatOff, fileId);
+      log(`ROM FAT entry: start=0x${fat.start.toString(16)} end=0x${fat.end.toString(16)} size=${fat.size} bytes`);
+
+      // Copy the NARC slice so we can patch it, then write back in-place (sizes unchanged)
+      const narcU8 = romU8.slice(fat.start, fat.end);
+
+      log("Patching NARC in-place (zero EV yields)...");
+      const res = patchNarcInPlace(narcU8);
+
+      log(`NARC subfiles: ${res.fileCount}`);
+      log(`EV fields modified (nonzero -> zero): ${res.modified}`, "ok");
+      if (res.tooSmall) log(`Entries too small to patch (skipped): ${res.tooSmall}`);
+
+      // Write patched NARC back into ROM
+      romU8.set(narcU8, fat.start);
+
+      // Offer download
+      const outName = f.name.replace(/\.nds$/i, "") + "_no_evs.nds";
+      const blob = new Blob([romU8], { type: "application/octet-stream" });
+      const url = URL.createObjectURL(blob);
+
+      dlEl.href = url;
+      dlEl.download = outName;
+      dlEl.textContent = `Download patched ROM: ${outName}`;
+      dlEl.style.display = "inline-block";
+
+      log("Done.", "ok");
+    } catch (e) {
+      log(`Error: ${e?.message || e}`, "err");
+    }
+  });
+})();
+</script>
+</body>
+</html>

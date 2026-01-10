@@ -32,6 +32,24 @@ class Move < Pokenarc
 		JSON.parse(File.open("#{$rom_name}/json/arm9/effect_mappings.json", "r"){|f| f.read})
 	end
 
+	def self.replacements
+		vanilla_moves = File.readlines("documentation/vanilla/texts/moves.txt")
+		rom_moves = File.readlines("#{$rom_name}/texts/moves.txt")
+
+		subs = {}
+
+		vanilla_moves.each_with_index do |move, i|
+			move_id = move.clean
+			rom_move_id = rom_moves[i].clean
+
+			if move_id != rom_move_id
+				subs[move_id] = rom_move_id
+			end
+		end
+
+		subs
+	end
+
 	def self.info
 		$rom_name = 'projects/b2test'
 		moves = get_all

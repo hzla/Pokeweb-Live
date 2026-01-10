@@ -55,8 +55,6 @@ class RomInfo
         Item.get_locations true
     end
 
-    
-
     def self.export_dex build_index=true
         dex_npoint = {}
 
@@ -85,6 +83,12 @@ class RomInfo
         end
 
         p "Output to exports/dex/ folder"
+    end
+
+    def self.dexcalc
+        populate_dex_data
+        export_dex true
+        Action.np_payload
     end
 
     def self.true_pokemon_names

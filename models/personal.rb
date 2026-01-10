@@ -117,6 +117,24 @@ class Personal
 		export_showdown
 	end
 
+	def self.replacements
+		vanilla_poks = File.readlines("documentation/vanilla/texts/pokedex.txt")
+		rom_poks = File.readlines("#{$rom_name}/texts/pokedex.txt")
+
+		subs = {}
+
+		vanilla_poks.each_with_index do |pok, i|
+			pok_id = pok.clean
+			rom_pok_id = rom_poks[i].clean.gsub("fletcinder", "fletchinder").gsub("lycanrocm", "lycanrocmidnight")
+
+			if pok_id != rom_pok_id
+				subs[pok_id] = rom_pok_id
+			end
+		end
+
+		subs
+	end
+
 	def self.export_showdown
 		poks = poke_data[1..-1]
 

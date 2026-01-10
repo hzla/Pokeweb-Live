@@ -10,6 +10,23 @@ class Trdata < Pokenarc
 		super
 	end
 
+	def self.challenge_mode_indexes 
+		{
+			"Leader Cheren": 2,
+			"Leader Roxie": 2,	
+			"Leader Burgh": 2,	
+			"Leader Elesa": 2,	
+			"Leader Clay": 2,	
+			"Leader Skyla": 2,	
+			"Leader Drayden": 2,	
+			"Leader Marlon": 2,
+			"Grimsley": 3,
+			"Shauntal": 3,
+			"Marshal": 3,
+			"Caitlyn": 3		
+		}
+	end
+
 	def self.items trdata
 		items = []
 		(1..4).each do |n|

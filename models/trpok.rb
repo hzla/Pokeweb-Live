@@ -195,9 +195,12 @@ class Trpok < Pokenarc
 		trdatas = Trdata.get_all
 
 		trainers.each_with_index do |tr, idx|
-			num_poks = trdatas[idx]["num_pokemon"].to_i
-			(0..num_poks - 1).each do |subindex|
-				Trpok.fill_lvl_up_moves tr["level_#{subindex}"], idx, subindex, true, true
+			if trdatas[idx]["has_moves"] == 0
+
+				num_poks = trdatas[idx]["num_pokemon"].to_i
+				(0..num_poks - 1).each do |subindex|
+					Trpok.fill_lvl_up_moves tr["level_#{subindex}"], idx, subindex, true, true
+				end
 			end
 		end
 

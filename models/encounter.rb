@@ -292,8 +292,9 @@ class Encounter < Pokenarc
 		[60, 30, 5, 4, 1][n]
 	end
 
-	def self.export_dex
+	def self.export_dex 
 		dex_data = {}
+
 		rates = {
 		    "grass": [20,20,10,10,10,10,5,5,4,4,1,1],
 		    "grass_special": [20,20,10,10,10,10,5,5,4,4,1,1],
@@ -302,7 +303,14 @@ class Encounter < Pokenarc
 		    "surf_special": [60,30,5,4,1],
 		    "super_rod": [40,40,15,4,1],
 		    "super_rod_special": [40,40,15,4,1],
+		    "grotto1": [15,15,15,15,4,4,4,4,1,1,1,1],
+		    "grotto2": [15,15,15,15,4,4,4,4,1,1,1,1],
 		}
+		grottos = nil
+		if SessionSettings.base_rom == "BW2"
+			grottos = Grotto.get_all
+			version = SessionSettings.get("base_version") == "W2" ? "white" : "black"
+		end
 
 		locations_count = {}
 
@@ -321,8 +329,6 @@ class Encounter < Pokenarc
 				locations_count[loc_name] = 1
 			end
 
-			
-
 			loc_data = {}
 
 			begin
@@ -331,10 +337,33 @@ class Encounter < Pokenarc
 				loc_data["name"] = "Unknown Location"
 			end
 
+			grotto_count = 1
+
+			grottos.each do |grotto|
+				if grotto["name"].clean == loc_name or grotto["name"].split("(")[0].clean == loc_name
+					loc_data["grotto#{grotto_count}"] = {}
+					loc_data["grotto#{grotto_count}"]["encs"] = []
+					loc_data["grotto#{grotto_count}"]["name"] = grotto["name"]
+					["rare","uncommon","common"].each do |rarity|
+						(0..3).each do |n|
+							enc_data = {}
+							enc_data["s"] = grotto["#{version}_#{rarity}_pok_#{n}"].gsub(/[^0-9A-Za-z\-]/, '').name_titleize
+							enc_data["mn"] = grotto["#{version}_#{rarity}_min_lvl_#{n}"] 
+							enc_data["mx"] = grotto["#{version}_#{rarity}_max_lvl_#{n}"] 
+
+							break if enc_data["s"] == ""
+							loc_data["grotto#{grotto_count}"]["encs"] << enc_data
+						end
+					end
+					grotto_count += 1
+				end
+			end
+
+
+
 			if locations_count[loc_name] >= 2
 				loc_data["name"] += "#{locations_count[loc_name]}" 
 				loc_name += "#{locations_count[loc_name]}"
-
 			end
 
 			grass_fields.each do |enc_type|
