@@ -105,6 +105,15 @@
 	width: 100%;
 }
 
+
+#mastersheet h4 {
+	margin-top: 20px;
+	margin-bottom:  20px;
+	font-size:  24px;
+	padding-left: 60px;
+	width: 100%;
+}
+
 #mastersheet h3 {
 	margin-top: 20px;
 	margin-bottom:  20px;
