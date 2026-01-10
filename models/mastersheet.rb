@@ -1,6 +1,33 @@
 class Mastersheet
 
 
+	def self.export_json
+		encs = Encounter.get_all
+		Trpok.fill_in_natures_and_abilities
+		trpok = Trpok.get_all
+		trdata = Trdata.get_all
+
+		mastersheet_json = parse(encs, trdata, trpok)
+		rom_title = $rom_name.split("/")[-1]
+
+		File.open("exports/#{rom_title}_mastersheet.js", "w") do |file|
+			file.print "masterData ="
+			file.puts JSON.pretty_generate(mastersheet_json)
+
+			file.print "encountersById = "
+			file.puts JSON.pretty_generate(Encounter.mastersheet_data(encs))
+
+			trpok = Trpok.get_all.map do |trpok|
+				trpok_data = trpok
+				trpok_data["raw"] = nil
+				trpok_data
+			end
+
+			file.print "trainersById = "
+			file.puts JSON.pretty_generate(trpok)
+		end
+	end
+
 	def self.parse(encounters, trdata, trpok)
 	  source = File.open("#{$rom_name}/mastersheet.txt").read.split("\n")
 
@@ -17,7 +44,7 @@ class Mastersheet
 
 	    # LINE BREAK SUPPORT (blank lines)
 	    if line == ""
-	      sheet_items << { tag: "br" }
+	      sheet_items << { tag: "p", content: " "}
 	      next
 	    end
 
@@ -297,7 +324,7 @@ class Mastersheet
 	  tag = element[:tag]
 
 	  # 1) Line breaks
-	  return "<br/>" if tag == "br"
+	  return "<p></p>" if tag == "p"
 
 	  # 2) Rich inline content (links) if present
 	  inner =

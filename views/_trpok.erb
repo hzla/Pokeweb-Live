@@ -21,9 +21,6 @@
 			</div>
 			<div class="expanded-field">
 				<div class="expanded-trlabel iv-label">IVs: (<%= Trpok.get_doc_nature(trdata_index, trpok_index, trpok["ivs_#{trpok_index}"], trpok, trdata, personals) if defined?(abilities)  %>)
-
-
-
 				</div>
 				<%= field "ivs_#{trpok_index}", 'tr-item', {value: trpok["ivs_#{trpok_index}"],  narc: "trpok", type: "int-255"} %>
 

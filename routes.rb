@@ -125,7 +125,6 @@ class MyApp < Sinatra::Base
 			@poke_data = Personal.poke_data
 			
 			@location_names = Header.location_names
-			# @item_locations = Item.locations
 			@evolutions = Evolution.get_all
 
 			@pok_locations = Personal.get_all_locations @encounters

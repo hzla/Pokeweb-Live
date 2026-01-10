@@ -5,7 +5,6 @@ class Encounter < Pokenarc
 		@@narc_name = "encounters"
 		data = super
 		expand_encounter_info(data, Header.get_all)
-
 	end
 
 	def self.get_all
@@ -22,6 +21,18 @@ class Encounter < Pokenarc
 	def self.get_data file_name, type="readable"
 		@@narc_name = "encounters"
 		super
+	end
+
+	def self.mastersheet_data encs
+		encs = encs.map do |enc|
+			minified = {}
+			minified["wilds"] = enc["wilds"]
+			minified["name"] = ""
+			if enc["locations"]
+				minified["name"] = enc["locations"][0].split(" (")[0]
+			end
+			minified
+		end	
 	end
 
 	def self.hgss_expand_encounter_info(encounter_data, header_data)
@@ -116,7 +127,6 @@ class Encounter < Pokenarc
 		location = location.downcase.gsub(" ", "")
 		encs.each_with_index do |enc, i|
 			next if !enc["locations"] || enc["locations"][0] == ""
-			p enc["locations"]
 			enc_loc = enc["locations"][0].split(" (")[0].gsub(" ","").downcase
 
 			return i if location == enc_loc

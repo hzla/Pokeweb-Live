@@ -203,7 +203,7 @@ class Trpok < Pokenarc
 				end
 			end
 		end
-
+		p "success"
 	end
 
 	def self.fill_lvl_up_moves lvl, trainer, pok_index, output_json=true, get_ids=false
@@ -305,7 +305,28 @@ class Trpok < Pokenarc
 		File.open(trdata_path, "w") { |f| f.write tr_data.to_json }
 	end
 
-	def self.get_doc_nature(file_name, sub_index, iv, trpok, trdata, personals)
+	def self.fill_in_natures_and_abilities
+		trpoks = get_all
+		trdatas = Trdata.get_all
+		personals = Personal.poke_data
+
+		$last_set_ability = 1
+
+		trpoks.each_with_index do |trpok, file_name|
+			trdata = trdatas[file_name]
+			num_poks = trdata["num_pokemon"]
+
+			$last_set_ability = 1
+
+			(0..num_poks - 1).each do |sub_index|
+				iv = trpok["ivs_#{sub_index}"]
+				get_doc_nature(file_name, sub_index, iv, trpok, trdata, personals, true)
+			end
+		end
+		return "success"
+	end
+
+	def self.get_doc_nature(file_name, sub_index, iv, trpok, trdata, personals, write=false)
 		if $gen == 4
 			return g4_get_nature_for(file_name, sub_index, iv)
 		end
@@ -313,7 +334,8 @@ class Trpok < Pokenarc
 		ability_slot = trpok["ability_#{sub_index}"]
 
 		file_path = "#{$rom_name}/json/trpok/#{file_name}.json"
-		trpok = JSON.parse(File.open(file_path, "r"){|f| f.read})["raw"]
+		trpok_file = JSON.parse(File.open(file_path, "r"){|f| f.read})
+		trpok = trpok_file["raw"]
 
 		pok_id = trpok["species_id_#{sub_index}"]
 
@@ -329,12 +351,32 @@ class Trpok < Pokenarc
 		ability_gender = trpok["ability_#{sub_index}"]
 		personal_gender = personal["gender"]
 
+
+
 		natures = RomInfo.natures
 
 
 		pid = get_pid(trainer_id, trainer_class, pok_id, iv, pok_lvl, ability_gender, personal_gender, false, ability_slot)
 
-		convert_pid_to_nature(pid, natures)
+		nature = convert_pid_to_nature(pid, natures)
+
+		if write
+			trpok_file["readable"]["nature_#{sub_index}"] = nature
+
+			ability_to_be_set = ability_slot
+			if ability_slot = 0
+				ability_to_be_set = $last_set_ability
+			else
+				$last_set_ability = ability_slot
+			end
+			trpok_file["readable"]["ability_name_#{sub_index}"] = personal["ability_#{ability_to_be_set}"].name_titleize
+
+			sprite = Trdata.sprite(trdata["name"], trdata["class"], trdata["class_id"], Trdata.gender_table)
+			trpok_file["readable"]["tr_sprite"] = sprite
+
+			File.write(file_path, trpok_file.to_json)
+		end
+		nature
 	end
 
 	# def self.get_nature 
