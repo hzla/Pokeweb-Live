@@ -364,7 +364,7 @@ class Trpok < Pokenarc
 			trpok_file["readable"]["nature_#{sub_index}"] = nature
 
 			ability_to_be_set = ability_slot
-			if ability_slot = 0
+			if ability_slot == 0
 				ability_to_be_set = $last_set_ability
 			else
 				$last_set_ability = ability_slot

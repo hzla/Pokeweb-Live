@@ -482,7 +482,7 @@ end
 
 		tm_list[:hms].each_with_index do |hm, i|
 			if hm == "1"
-				move_name = all_tm_names[:tm_names][i]
+				move_name = all_tm_names[:hm_names][i]
 				move_name = showdown_subs[move_name.to_sym] ? showdown_subs[move_name.to_sym] : move_name
 				learnset_tms << move_name
 			end

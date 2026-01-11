@@ -347,25 +347,26 @@ class Encounter < Pokenarc
 				loc_data["name"] = "Unknown Location"
 			end
 
-			grotto_count = 1
+			if SessionSettings.base_rom == "BW2"
+				grotto_count = 1
+				grottos.each do |grotto|
+					if grotto["name"].clean == loc_name or grotto["name"].split("(")[0].clean == loc_name
+						loc_data["grotto#{grotto_count}"] = {}
+						loc_data["grotto#{grotto_count}"]["encs"] = []
+						loc_data["grotto#{grotto_count}"]["name"] = grotto["name"]
+						["rare","uncommon","common"].each do |rarity|
+							(0..3).each do |n|
+								enc_data = {}
+								enc_data["s"] = grotto["#{version}_#{rarity}_pok_#{n}"].gsub(/[^0-9A-Za-z\-]/, '').name_titleize
+								enc_data["mn"] = grotto["#{version}_#{rarity}_min_lvl_#{n}"] 
+								enc_data["mx"] = grotto["#{version}_#{rarity}_max_lvl_#{n}"] 
 
-			grottos.each do |grotto|
-				if grotto["name"].clean == loc_name or grotto["name"].split("(")[0].clean == loc_name
-					loc_data["grotto#{grotto_count}"] = {}
-					loc_data["grotto#{grotto_count}"]["encs"] = []
-					loc_data["grotto#{grotto_count}"]["name"] = grotto["name"]
-					["rare","uncommon","common"].each do |rarity|
-						(0..3).each do |n|
-							enc_data = {}
-							enc_data["s"] = grotto["#{version}_#{rarity}_pok_#{n}"].gsub(/[^0-9A-Za-z\-]/, '').name_titleize
-							enc_data["mn"] = grotto["#{version}_#{rarity}_min_lvl_#{n}"] 
-							enc_data["mx"] = grotto["#{version}_#{rarity}_max_lvl_#{n}"] 
-
-							break if enc_data["s"] == ""
-							loc_data["grotto#{grotto_count}"]["encs"] << enc_data
+								break if enc_data["s"] == ""
+								loc_data["grotto#{grotto_count}"]["encs"] << enc_data
+							end
 						end
+						grotto_count += 1
 					end
-					grotto_count += 1
 				end
 			end
 
