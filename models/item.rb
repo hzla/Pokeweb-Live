@@ -114,7 +114,7 @@ class Item < Pokenarc
 				items = Mart.inventory(mart).split(", ")
 				location = mart["name"]
 				items.each do |item|
-					item_id = item.downcase.gsub(" ","").gsub("-", "").gsub(".", "").gsub("'", "").gsub("pokeball", "pokéball").gsub("pokedoll", "pokédoll")
+					item_id = item.downcase.gsub(" ","").gsub("-", "").gsub(".", "").gsub("'", "").gsub("poke","poké")
 					dex_items[item_id]["marts"] ||= []
 					dex_items[item_id]["marts"] << location
 					dex_items[item_id]["marts"] = dex_items[item_id]["marts"].uniq
