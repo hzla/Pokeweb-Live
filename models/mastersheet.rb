@@ -156,64 +156,69 @@ class Mastersheet
 	end
 
 	def self.parse_inline(text)
-	  # Returns array of parts: [{type: "text", text: "..."}, {type: "link", text: "...", href: "..."}]
-	  parts = []
-	  i = 0
+  parts = []
+  i = 0
 
-	  while i < text.length
-	    # Markdown link: [text](url)
-	    if text[i] == "[" 
-	      close_bracket = text.index("]", i)
-	      if close_bracket && text[close_bracket + 1] == "("
-	        close_paren = text.index(")", close_bracket + 2)
-	        if close_paren
-	          link_text = text[(i + 1)...close_bracket]
-	          href = text[(close_bracket + 2)...close_paren]
-	          parts << { type: "link", text: link_text, href: href }
-	          i = close_paren + 1
-	          next
-	        end
-	      end
-	    end
+  while i < text.length
+    # Markdown link: [text](url)
+    if text[i] == "["
+      close_bracket = text.index("]", i)
+      if close_bracket && text[close_bracket + 1] == "("
+        close_paren = text.index(")", close_bracket + 2)
+        if close_paren
+          link_text = text[(i + 1)...close_bracket]
+          href = text[(close_bracket + 2)...close_paren]
+          parts << { type: "link", text: link_text, href: href }
+          i = close_paren + 1
+          next
+        end
+      end
 
-	    # Bare URL (optional): http(s)://...
-	    # Keep simple to avoid false positives.
-	    if text[i..].start_with?("http://") || text[i..].start_with?("https://")
-	      j = i
-	      j += 1 while j < text.length && !text[j].match?(/\s/)
-	      url = text[i...j]
-	      parts << { type: "link", text: url, href: url }
-	      i = j
-	      next
-	    end
+      # IMPORTANT: not a valid markdown link; consume '[' as text
+      parts << { type: "text", text: "[" }
+      i += 1
+      next
+    end
 
-	    # Otherwise, accumulate plain text until next special token
-	    next_special = [
-	      text.index("[", i),
-	      text.index("http://", i),
-	      text.index("https://", i)
-	    ].compact.min
+    # Bare URL (optional)
+    if text[i..].start_with?("http://") || text[i..].start_with?("https://")
+      j = i
+      j += 1 while j < text.length && !text[j].match?(/\s/)
+      url = text[i...j]
+      parts << { type: "link", text: url, href: url }
+      i = j
+      next
+    end
 
-	    if next_special
-	      parts << { type: "text", text: text[i...next_special] } if next_special > i
-	      i = next_special
-	    else
-	      parts << { type: "text", text: text[i..] }
-	      break
-	    end
-	  end
+    # Accumulate plain text until next '[' or 'http'
+    next_bracket = text.index("[", i)
+    next_http    = text.index("http://", i)
+    next_https   = text.index("https://", i)
 
-	  # Merge adjacent text parts to keep output clean
-	  merged = []
-	  parts.each do |p|
-	    if p[:type] == "text" && merged.any? && merged[-1][:type] == "text"
-	      merged[-1][:text] << p[:text]
-	    else
-	      merged << p
-	    end
-	  end
-	  merged
-	end
+    next_special = [next_bracket, next_http, next_https].compact.min
+
+    if next_special
+      if next_special > i
+        parts << { type: "text", text: text[i...next_special] }
+      end
+      i = next_special
+    else
+      parts << { type: "text", text: text[i..] }
+      break
+    end
+  end
+
+  # merge adjacent text parts
+  merged = []
+  parts.each do |p|
+    if p[:type] == "text" && merged.any? && merged[-1][:type] == "text"
+      merged[-1][:text] << p[:text]
+    else
+      merged << p
+    end
+  end
+  merged
+end
 
 	def self.split_with_line_breaks(text)
 	  # Supports explicit <br> tokens inside a line
