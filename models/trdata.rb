@@ -355,8 +355,18 @@ class Trdata < Pokenarc
 
 
 	def self.export_showdown
-		
+		showdown = {}
+		trainers = Trdata.get_all
+		trainers.each_with_index do |tr, i|
+			showdown[i] = sprite_info(tr)
+		end
+		showdown
 	end
+
+	def self.sprite_info trdata
+		{"ow": trdata["sprite"], "perm": trdata["perm"], "dir": trdata["direction"]}
+	end
+
 
 	def self.get_locations
 		overworlds = Overworld.get_all
@@ -377,12 +387,21 @@ class Trdata < Pokenarc
 					file_path = "#{$rom_name}/json/trdata/#{script_id % 1000}.json"
 					json_data = JSON.parse(File.open(file_path, "r") {|f| f.read})
 
+					sprite = overworld["npc_#{n}_overworld_sprite"]
+					perm = overworld["npc_#{n}_movement_permissions"]
+					direction = overworld["npc_#{n}_direction"]
+
 					location = Header.find_location_by_map_id(i)
 					json_data["readable"]["location"] = location
+					json_data["readable"]["sprite"] = Overworld.png_id(sprite)
+					json_data["readable"]["perm"] = perm
+					json_data["readable"]["direction"] = direction
+
 					File.open(file_path, "w") { |f| f.write json_data.to_json }
 				end
 			end
 		end
+		return "success"
 	end
 
 

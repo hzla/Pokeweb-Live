@@ -51,11 +51,16 @@ class Action
 
   def self.np_payload
 		payload = {}
+		payload["pok_replacements"] = Personal.replacements
+  	payload["move_replacements"] = Move.replacements
+  	payload["ability_replacements"] = Personal.ability_replacements
+  	payload["item_replacements"] = Item.replacements
+
+
 		["moves", "poks", "formatted_sets"].each do |data|
   		payload[data] = JSON.parse(File.open("public/dist/#{data}.json", "r"){|f| f.read})
   	end
-  	payload["pok_replacements"] = Personal.replacements
-  	payload["move_replacements"] = Move.replacements
+
   	payload
   end
 

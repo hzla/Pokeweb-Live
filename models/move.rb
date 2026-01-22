@@ -116,6 +116,11 @@ class Move < Pokenarc
 			if move[1]["target"] == "All excluding user" 
 				showdown[showdown_name]["tar"] = "allAdjacent"
 			end
+
+			if move[1]["crit"] == 6
+				showdown[showdown_name]["willCrit"] = true
+			end
+
 			if move[1]["min_hits"] > 0
 				showdown[showdown_name]["multihit"] = [move[1]["min_hits"],move[1]["max_hits"]]
 			end

@@ -135,6 +135,24 @@ class Personal
 		subs
 	end
 
+	def self.ability_replacements
+		vanilla_abils = File.readlines("documentation/vanilla/texts/abilities.txt")
+		rom_abils = File.readlines("#{$rom_name}/texts/abilities.txt")
+
+		subs = {}
+
+		vanilla_abils.each_with_index do |pok, i|
+			pok_id = pok.clean
+			rom_pok_id = rom_abils[i].clean
+
+			if pok_id != rom_pok_id
+				subs[pok_id] = rom_pok_id
+			end
+		end
+
+		subs
+	end
+
 	def self.export_showdown
 		poks = poke_data[1..-1]
 

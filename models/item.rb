@@ -28,6 +28,26 @@ class Item < Pokenarc
 		[col_1,col_2,col_3]
 	end
 
+	def self.replacements
+		vanilla_items = File.readlines("documentation/vanilla/texts/items.txt")
+		rom_items = File.readlines("#{$rom_name}/texts/items.txt")
+
+		subs = {}
+		begin
+			vanilla_items.each_with_index do |item, i|
+				item_id = item.clean
+				rom_item_id = rom_items[i].clean
+
+				if item_id != rom_item_id
+					subs[item_id] = rom_item_id
+				end
+			end
+		rescue
+			return {}
+		end
+		subs
+	end
+
 	def self.locations
 		loc_list = File.read("#{$rom_name}/texts/item_locations.txt").split("\n")
 		locations = {}

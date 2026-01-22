@@ -1025,6 +1025,12 @@ class MyApp < Sinatra::Base
 			Trdata.get_locations
 			SessionSettings.set("tr_locations_found", true)
 		end
+
+		# we need to create this folder because Move.export_showdown also runs Move.export_dex
+		unless File.directory?("./exports/dex")
+  			Dir.mkdir("./exports/dex")
+  		end
+
 		Move.export_showdown
 		Personal.export_showdown
 		Trpok.export_all_showdown
