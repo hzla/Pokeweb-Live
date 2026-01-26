@@ -224,12 +224,16 @@ class Personal
 					showdown[target]["evoType"] = "trade"
 				end
 
-				if [8,17,18,19,20].include?(raw["method_#{j}"])
+				item_methods = $gen == 4 ? [6,8,17,18,19,20] : [8,17,18,19,20]
+
+				if item_methods.include?(raw["method_#{j}"])
 					showdown[target]["evoType"] = "useItem"
 					showdown[target]["evoItem"] = readable["param_#{j}"].name_titleize
 				end
 
-				if [21].include?(raw["method_#{j}"])
+				move_methods = $gen == 4 ? [20] : [21]
+				
+				if move_methods.include?(raw["method_#{j}"])
 					showdown[target]["evoType"] = "levelMove"
 					showdown[target]["evoMove"] = readable["param_#{j}"].name_titleize
 				end
@@ -250,6 +254,7 @@ class Personal
 		end
 		showdown
 	end
+
 
 	def self.get_learnset_for pok, all_tm_names
 		ls = pok["learnset"]
