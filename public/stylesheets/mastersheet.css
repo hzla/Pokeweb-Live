@@ -1,8 +1,8 @@
 #mastersheet {
 	color:  #f1f1f1;
 	padding-top:  20px;
-	max-width: calc(82vw - 40px);
-	margin-left: calc(18vw + 20px);
+	max-width: calc(80vw - 40px);
+	margin-left: calc(20vw + 20px);
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: flex-start;
@@ -14,11 +14,22 @@
 
 .master-sidebar.pokemon-filter {
 	background: rgba(255,255,255,0.05);
-	display: flex;
-    flex-wrap: wrap;
     padding-top: 0px;
     max-height: 100vh;
-    height: auto;
+    padding: 0px;
+    display: fixed;
+    top: 0;
+    left: 0;
+    width: 20vw;
+}
+
+#toc {
+	position: fixed;
+	left: 0;
+	top: 44px;
+	width: 20vw;
+	overflow: scroll;
+	height: calc(100vh - 44px);
 }
 
 #mastersheet .filterable, #mastersheet .expanded-card-content {
@@ -34,6 +45,14 @@
 	width: 100%;
 }
 
+.doc-ab {
+	cursor: pointer;
+}
+
+.doc-ab:hover, .doc-move:hover, .doc-species:hover, .doc-held-item:hover {
+	text-decoration: underline;
+}
+
 #mastersheet ul {
 	width: 100%;
 	padding-left: 80px;
@@ -42,11 +61,6 @@
 #mastersheet .filterable {
 	background: rgba(255,255,255,0.05)
 }
-
-
-
-
-
 
 #ms-source {
 	height: 90vh;
@@ -94,9 +108,19 @@
 
 #mastersheet p {
 	font-size: 20px;
-	margin:  10px 0px;
-	min-height: 20px;
+	/*margin:  10px 0px;*/
 	padding-left: 60px;
+	width: 100%;
+}
+
+#mastersheet ul {
+	width: 100%;
+	padding-left: 80px;
+}
+
+#mastersheet li {
+	width: 100%;
+	padding-left: 80px;
 }
 
 #mastersheet h1, #mastersheet h2 {
@@ -122,8 +146,17 @@
 	width: 100%;
 }
 
-#mastersheet p {
+#mastersheet h4 {
+	margin-top: 20px;
+	margin-bottom:  0px;
+	font-size:  20px;
+	padding-left: 60px;
 	width: 100%;
+}
+
+#mastersheet li {
+	padding-left: 80px;
+	list-style-position: inside;
 }
 
 #mastersheet h2 {
@@ -137,6 +170,10 @@
 	text-align: center;
 	font-size:  48px;
 	border-bottom: 4px solid #f1f1f1;
+}
+
+#mastersheet .expanded-field {
+	border: 1px solid rgba(255, 255, 255, 0.15);
 }
 .ms-trainer .expanded-field-main {
 	width:  120px;
@@ -181,6 +218,11 @@
 	margin-bottom: 10px;
 }
 
+.trainer-doc-item .trpok-item-info {
+	border-bottom: 1px solid rgba(255,255,255,0.2);
+	width: 100%;
+}
+
 #mastersheet .expanded-field.filterable.ms-trainer {
 	width: auto;
 }
@@ -214,9 +256,15 @@
 	border: 2px solid #1abc9c;
 }
 
-#mastersheet .doc-move, #mastersheet .doc-species, #mastersheet .enc-name, .ms-enc-name    {
+.doc-held-item {
+	cursor: pointer;
+}
+
+#mastersheet .doc-move, #mastersheet .doc-species, #mastersheet .enc-name, .ms-enc-name  {
 	cursor:  pointer;
-	color:  #1abc9c;	
+	color:  #1abc9c;
+	height: 25px;	
+	overflow: hidden;
 }
 
 #mastersheet .doc-sprite:hover {
@@ -352,7 +400,15 @@
 	font-size: 28px;
 	margin: 20px 0px;
 	padding-left: 20px;
-	color: bd93f9;
+	color: #bd93f9;
+	position: sticky;
+  	top: 0;
+  	z-index: 10;
+  	/* optional: make the "stick" look nicer */
+  	/*border-bottom: 1px solid rgba(0,0,0,0.08);*/
+  	background: #282a36;
+  	border-bottom: 1px solid #bd93f9;
+  	text-align: center;
 }
 
 .toc-item {
@@ -361,11 +417,18 @@
 }
 
 .master-sidebar.pokemon-filter > .filter-title {
-    width: 50%;
-    margin: 0;
-    margin-bottom: 20px;
+    width: 10vw;
     cursor: pointer;
-    height: 70px;
+    height: 44px;
+    position: fixed;
+    top: 0;
+    margin: 0;
+    line-height: 44px;
+    padding: 0;
+}
+
+.master-sidebar.pokemon-filter > .dex-tab {
+	left: 10vw;
 }
 
 .master-sidebar .filter-title.active {
@@ -373,10 +436,180 @@
     color: #f2f2f2;
 }
 
+.master-sidebar .filter-title:hover {
+    text-decoration: underline;
+}
+
+
+/* ---------------- gifts / items / notif (table-like blocks) ---------------- */
+
+#mastersheet .ms-block {
+  width: 100%;
+  margin: 24px 0;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+#mastersheet .ms-row {
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+}
+
+/* Left “label” column (Gift Encounter / Items / WARNING!) */
+#mastersheet .ms-left {
+  flex: 0 0 260px;
+  padding: 12px 16px;
+  box-sizing: border-box;
+  /* leave colors/borders alone per request; these just make it readable */
+  background: rgba(255,255,255,0.06);
+}
+
+#mastersheet .ms-left-title {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+#mastersheet .ms-left-desc {
+  margin-top: 8px;
+  font-size: 16px;
+  opacity: 0.9;
+  text-align: center;
+}
+
+/* Right side content area */
+#mastersheet .ms-cells,
+#mastersheet .ms-item-rows,
+#mastersheet .ms-notif-body {
+  flex: 1 1 auto;
+  background: rgba(255,255,255,0.10);
+  box-sizing: border-box;
+}
+
+/* ---------------- gifts grid ---------------- */
+
+#mastersheet .ms-cells {
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+  gap: 0; /* looks like a table */
+}
+
+#mastersheet .ms-cell {
+  flex: 1 1 0;
+  min-width: 140px;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border-left: 1px solid rgba(255,255,255,0.15);
+}
+
+#mastersheet .ms-cell:first-child {
+  border-left: none;
+}
+
+#mastersheet .ms-cell-top img {
+  width: 72px;      /* override your global #mastersheet img { width:160px } */
+  height: 72px;
+  object-fit: contain;
+}
+
+#mastersheet .ms-cell-bottom {
+  margin-top: 8px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+/* -------- gifts: center sprite if bottom is empty -------- */
+
+#mastersheet .ms-gift-cell {
+  display: flex;
+  flex-direction: column;
+}
+
+/* default behavior */
+#mastersheet .ms-cell-top {
+  flex: 0 0 auto;
+}
+
+/* when there is NO bottom content, let top fill + center */
+#mastersheet .ms-gift-cell:has(.ms-cell-bottom:empty) .ms-cell-top {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* when there is NO bottom content, let top fill + center */
+#mastersheet .ms-gift-cell:has(.ms-cell-bottom:empty) .ms-cell-top img {
+	width: 100%;
+}
+
+/* optional: remove spacing when empty */
+#mastersheet .ms-gift-cell:has(.ms-cell-bottom:empty) .ms-cell-bottom {
+  display: none;
+}
+
+
+/* increase image size */
+#mastersheet .ms-gift-cell .ms-cell-top img {
+  width: 96px;        /* ← change this number */
+  height: 96px;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+/* when bottom is empty, allow sprite to grow a bit more */
+#mastersheet .ms-gift-cell:has(.ms-cell-bottom:empty) .ms-cell-top img {
+  width: 120px;       /* bigger when centered */
+  height: 120px;
+}
+
+/* ---------------- items: 2 per row ---------------- */
+
+#mastersheet .ms-item-rows {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* two items per row */
+}
+
+#mastersheet .ms-item-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 10px 14px;
+  box-sizing: border-box;
+
+  /* visual separation like table cells */
+  border-top: 1px solid rgba(255,255,255,0.15);
+  border-bottom: 1px solid rgba(255,255,255,0.15);
+  border-right: 1px solid rgba(255,255,255,0.15);
+}
+
+/* remove top border for first row */
+#mastersheet .ms-item-row:nth-child(1),
+#mastersheet .ms-item-row:nth-child(2) {
+  border-top: none;
+}
+
+.ms-item-icon {
+	height: 32px;
+	width: 32px;
+}
+
+/* ---------------- notif ---------------- */
+
+#mastersheet .ms-notif-body {
+  padding: 12px 16px;
+  box-sizing: border-box;
+  font-size: 18px;
+  line-height: 1.3;
+}
+
 
 
 /* Dynamic Calc Stuff */
-
-
-
-

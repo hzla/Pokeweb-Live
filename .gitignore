@@ -25,3 +25,4 @@ passenger.3000.log
 passenger.3000.log
 tmp.elf
 .DS_Store
+/public/scripts/*mastersheet.js

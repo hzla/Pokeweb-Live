@@ -246,29 +246,29 @@ $(document).ready(function() {
 	    $(this).css('border', '2px solid red')
 	  }
 	});
-	$('#submit-ms').on('click', async function() {
-		var content = $('textarea').val()
 
-		let formData = new FormData();  
-		formData.append("content", content);  
-		
+	$('#submit-ms').on('click', async function () {
+	  const content = $('textarea').val();
 
-		const response = await fetch(`/mastersheet`, {
-	      method: "POST", 
-	      body: formData
-	    })
+	  const formData = new FormData();
+	  formData.append("content", content);
 
-	    var html = await response.text()
-	    var parser = new DOMParser();
+	  const response = await fetch('/mastersheet', {
+	    method: "POST",
+	    body: formData
+	  });
 
-        // Parse the text
-        var doc = parser.parseFromString(html, "text/html");	
-	    $('#mastersheet').html(html)
+	  const data = await response.json();
 
-	    // save memory
-	    html = null 
+	  // update globals
+	  window.masterData = data.masterData;
+	  window.trainersById = data.trainersById;
+	  window.encountersById = data.encountersById;
 
-	})
+	  // re-render
+	  document.querySelector("#mastersheet").innerHTML =
+	    renderMasterData(masterData, trainersById, encountersById);
+	});
 
 
  $('#toc div').on('click', function(event) {

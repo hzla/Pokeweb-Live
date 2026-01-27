@@ -2,30 +2,40 @@ class Mastersheet
 
 
 	def self.export_json
-		encs = Encounter.get_all
-		Trpok.fill_in_natures_and_abilities
-		trpok = Trpok.get_all
-		trdata = Trdata.get_all
+	  encs = Encounter.get_all
+	  Trpok.fill_in_natures_and_abilities
+	  trpok = Trpok.get_all
+	  trdata = Trdata.get_all
 
-		mastersheet_json = parse(encs, trdata, trpok)
-		rom_title = $rom_name.split("/")[-1]
+	  master_data = parse(encs, trdata, trpok)
+	  encounters_by_id = Encounter.mastersheet_data(encs)
 
-		File.open("exports/#{rom_title}_mastersheet.js", "w") do |file|
-			file.print "masterData ="
-			file.puts JSON.pretty_generate(mastersheet_json)
+	  trainers_by_id = Trpok.get_all.map do |tr|
+	    tr_data = tr
+	    tr_data["raw"] = nil
+	    tr_data
+	  end
 
-			file.print "encountersById = "
-			file.puts JSON.pretty_generate(Encounter.mastersheet_data(encs))
+	  payload = {
+	    "masterData" => master_data,
+	    "encountersById" => encounters_by_id,
+	    "trainersById" => trainers_by_id
+	  }
 
-			trpok = Trpok.get_all.map do |trpok|
-				trpok_data = trpok
-				trpok_data["raw"] = nil
-				trpok_data
-			end
+	  rom_title = $rom_name.split("/")[-1]
 
-			file.print "trainersById = "
-			file.puts JSON.pretty_generate(trpok)
-		end
+	  File.open("public/scripts/#{rom_title}_mastersheet.js", "w") do |file|
+	    file.puts "masterData ="
+	    file.puts JSON.pretty_generate(master_data)
+
+	    file.puts "encountersById ="
+	    file.puts JSON.pretty_generate(encounters_by_id)
+
+	    file.puts "trainersById ="
+	    file.puts JSON.pretty_generate(trainers_by_id)
+	  end
+
+	  payload
 	end
 
 	def self.parse(encounters, trdata, trpok)
@@ -39,14 +49,79 @@ class Mastersheet
 	  prev_tr_index = nil
 	  tr_count = 0
 
-	  source.each do |raw_line|
-	    line = raw_line.rstrip
+		i = 0
+		while i < source.length
+		  raw_line = source[i]
+		  element = {}
 
-	    # LINE BREAK SUPPORT (blank lines)
-	    if line == ""
-	      sheet_items << { tag: "p", content: " "}
-	      next
-	    end
+		  line = raw_line.to_s.gsub("\t", "  ").rstrip
+		  stripped = line.strip
+
+		  # LINE BREAK SUPPORT (blank lines)
+			if stripped == ""
+			  i += 1
+			  next
+			end
+
+		  # !gifts <title> ... end
+			if stripped.start_with?("!gifts")
+			  title = stripped.sub("!gifts", "").strip
+			  i += 1
+			  gifts_desc, gift_list, gift_descs, end_i = _parse_block_list(source, i)
+
+			  element[:tag] = "gifts"
+			  element[:giftsTitle] = title
+			  element[:giftsDescription] = gifts_desc
+			  element[:giftPokemonList] = gift_list
+			  element[:giftPokemonDescriptions] = gift_descs
+
+			  sheet_items << element
+			  i = (end_i < source.length && source[end_i].to_s.strip.downcase == "end") ? end_i + 1 : end_i
+			  next
+			end
+
+			# !items <title> ... end
+			if stripped.start_with?("!items")
+			  title = stripped.sub("!items", "").strip
+			  i += 1
+			  items_desc, item_list, item_descs, end_i = _parse_block_list(source, i)
+
+			  element[:tag] = "items"
+			  element[:itemsTitle] = title
+			  element[:itemsDescription] = items_desc
+			  element[:itemList] = item_list
+			  element[:itemDescriptions] = item_descs
+
+			  sheet_items << element
+			  i = (end_i < source.length && source[end_i].to_s.strip.downcase == "end") ? end_i + 1 : end_i
+			  next
+			end
+
+			# !notif TITLE, text..., optionalColor
+			if stripped.start_with?("!notif")
+			  payload = stripped.sub("!notif", "").strip
+			  parts = payload.split(",").map(&:strip)
+
+			  title = parts[0] || ""
+			  font = nil
+			  text_parts = []
+
+			  if parts.length >= 3 && _is_color_token?(parts[-1])
+			    font = parts[-1]
+			    text_parts = parts[1..-2]
+			  else
+			    text_parts = parts[1..-1]
+			  end
+
+			  element[:tag] = "notif"
+			  element[:notificationTitle] = title
+			  element[:text] = (text_parts || []).join(",").strip
+			  element[:fontColor] = font if font
+
+			  sheet_items << element
+			  i += 1
+			  next
+			end
 
 	    element = {}
 
@@ -146,6 +221,7 @@ class Mastersheet
 
 	    element[:tag] = tag
 	    sheet_items << element
+	    i += 1
 	  end
 
 	  tr_id_hash = {}
@@ -369,6 +445,43 @@ end
 	def self.get_pok(id)
 		
 	end
+
+	def self._is_color_token?(s)
+  return false if s.nil?
+  t = s.strip
+  return true if t.match?(/\A#[0-9a-fA-F]{3}\z/)
+  return true if t.match?(/\A#[0-9a-fA-F]{6}\z/)
+  return true if t.match?(/\Argb\(\s*\d+\s*,\s*\d+\s*,\s*\d+\s*\)\z/i)
+  return true if t.match?(/\Argba\(\s*\d+\s*,\s*\d+\s*,\s*\d+\s*,\s*(0(\.\d+)?|1(\.0+)?)\s*\)\z/i)
+  return true if t.match?(/\A[a-zA-Z]+\z/) # loose named-color support
+  false
+end
+
+def self._parse_block_list(source, start_i)
+  list = []
+  descs = []
+  desc = ""
+
+  i = start_i
+  while i < source.length
+    line = source[i].to_s.strip
+    break if line.downcase == "end"
+
+    if line != ""
+      if line.match?(/\A(desc|description)\s*:\s*/i)
+        desc = line.sub(/\A(desc|description)\s*:\s*/i, "").strip
+      else
+        name, rest = line.split(",", 2).map { |x| x&.strip }
+        list << (name || "")
+        descs << (rest && rest != "" ? rest : nil)
+      end
+    end
+
+    i += 1
+  end
+
+  [desc, list, descs, i] # i points at 'end' or source.length
+end
 
 
 

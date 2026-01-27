@@ -25,7 +25,7 @@ p "init"
 
 $gen = 5
 
-# $rom_name = "projects/tarnishedplat"
+$rom_name = "projects/cascadewhite105"
 # $gen = 4
 
 
@@ -108,27 +108,19 @@ class MyApp < Sinatra::Base
 	####### Mastersheet ##########
 
 	 get '/mastersheet' do 
-	 	
+	 	@rom_title = $rom_name.split("/")[-1]
+
 	 	if !File.exist?("#{$rom_name}/mastersheet.txt")
 	 		File.write("#{$rom_name}/mastersheet.txt", "##{$rom_name.split("/")[-1]}")
 	 	end
 
+	 	# Export mastersheet
 
-		 	@encounters = Encounter.get_all
-			@trainers = Trdata.get_all
-			@gender_table = Trdata.gender_table
-			@trainer_poks = Trpok.get_all
+	 	Mastersheet.export_json
 
-		 	@master_data = Mastersheet.parse @encounters, @trainers, @trainer_poks
+
+		@master_data = Mastersheet.parse @encounters, @trainers, @trainer_poks
 		 	
-		 	@moves = Move.get_all
-			@move_names = Move.get_names_from @moves
-			@poke_data = Personal.poke_data
-			
-			@location_names = Header.location_names
-			@evolutions = Evolution.get_all
-
-			@pok_locations = Personal.get_all_locations @encounters
 
 
 
@@ -138,19 +130,15 @@ class MyApp < Sinatra::Base
 
 	 post '/mastersheet' do 
 	 	content = params["content"]
+
+	 	@rom_title = $rom_name.split("/")[-1]
+
 	 	# binding.pry
 	 	File.write("#{$rom_name}/mastersheet.txt", content)
-	 	@encounters = Encounter.get_all
-	 	@trainers = Trdata.get_all
-		@gender_table = Trdata.gender_table
-		@trainer_poks = Trpok.get_all
-	 	@master_data = Mastersheet.parse @encounters, @trainers, @trainer_poks
-		
+	 	@master_data = Mastersheet.export_json
 
-		@poke_data = Personal.poke_data
-		
-		erb :_mastersheet, layout: false
-
+		content_type :json
+  		@master_data.to_json
 	 end
 
 	
