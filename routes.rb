@@ -25,7 +25,7 @@ p "init"
 
 $gen = 5
 
-$rom_name = "projects/cascadewhite105"
+# $rom_name = "projects/cascadewhite105"
 # $gen = 4
 
 
