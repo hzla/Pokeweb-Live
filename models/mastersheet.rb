@@ -59,6 +59,7 @@ class Mastersheet
 
 		  # LINE BREAK SUPPORT (blank lines)
 			if stripped == ""
+				sheet_items << {content: "", content_parts: {type: "text", text: ""}, tag: "p" }
 			  i += 1
 			  next
 			end
