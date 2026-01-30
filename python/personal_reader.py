@@ -56,7 +56,7 @@ def to_readable(raw, file_name):
 	readable["egg_group_2"] = rom_data.EGG_GROUPS[raw["egg_group_2"]]
 
 	if (raw["ability_1"] > 165):
-		print(f"${readable["name"]}: ${raw["ability_1"]}")
+		print(f"${readable['name']}: ${raw['ability_1']}")
 
 
 	readable["ability_1"] = rom_data.ABILITIES[min(raw["ability_1"], len(rom_data.ABILITIES) - 1)]
