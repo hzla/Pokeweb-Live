@@ -155,8 +155,9 @@
 }
 
 #mastersheet li {
-	padding-left: 80px;
-	list-style-position: inside;
+  padding-left: 22px;
+  list-style-position: inside;
+  text-indent: -22px;
 }
 
 #mastersheet h2 {
@@ -175,11 +176,17 @@
 #mastersheet .expanded-field {
 	border: 1px solid rgba(255, 255, 255, 0.15);
 }
+
+#mastersheet .expanded-field.doc-enc {
+	border: 1px solid #469e62;
+}
+
+
 .ms-trainer .expanded-field-main {
 	width:  120px;
 }
 
-.ms-trainer.mand {
+#mastersheet .ms-trainer.mand {
 	border:  1px solid #bd93f9;
 
 }
@@ -191,7 +198,7 @@
 
 
 .ms-trainer.mand .trainer-name {
-	color: bd93f9;
+	color: #bd93f9;
 }
 
 .ms-trainer.expanded-field.filterable {
@@ -449,6 +456,11 @@
   border: 1px solid rgba(255, 255, 255, 0.15);
 }
 
+#mastersheet .ms-notif, #mastersheet .ms-gifts {
+	width: auto;
+	max-width: 100%;
+}
+
 #mastersheet .ms-row {
   display: flex;
   align-items: stretch;
@@ -460,8 +472,15 @@
   flex: 0 0 260px;
   padding: 12px 16px;
   box-sizing: border-box;
-  /* leave colors/borders alone per request; these just make it readable */
   background: rgba(255,255,255,0.06);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+#mastersheet .ms-items {
+	border: 1px solid #f1fa8c;
 }
 
 #mastersheet .ms-left-title {
@@ -491,14 +510,15 @@
 
 #mastersheet .ms-cells {
   display: flex;
-  align-items: stretch;
   justify-content: flex-start;
+  flex-wrap: wrap;
   gap: 0; /* looks like a table */
+  max-width: calc(100% - 260px);
 }
 
 #mastersheet .ms-cell {
   flex: 1 1 0;
-  min-width: 140px;
+  width: 120px;
   padding: 10px;
   box-sizing: border-box;
   display: flex;
@@ -507,6 +527,8 @@
   justify-content: space-between;
   border-left: 1px solid rgba(255,255,255,0.15);
 }
+
+
 
 #mastersheet .ms-cell:first-child {
   border-left: none;
@@ -611,5 +633,10 @@
 }
 
 
+
+#mastersheet .flex-break {
+  flex: 0 0 100%;
+  height: 0;
+}
 
 /* Dynamic Calc Stuff */

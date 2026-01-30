@@ -57,7 +57,7 @@ try:
 	narc_info["base_version"] = version_identifier[arm9_sample][0]
 	narc_info["base_rom"] = version_identifier[arm9_sample][1]
 except:
-	narc_info["base_version"] = "B2"
+	narc_info["base_version"] = "W2"
 	narc_info["base_rom"] = "BW2"
 
 

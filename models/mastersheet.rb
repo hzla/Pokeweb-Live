@@ -4,16 +4,52 @@ class Mastersheet
 	def self.export_json
 	  encs = Encounter.get_all
 	  Trpok.fill_in_natures_and_abilities
-	  trpok = Trpok.get_all
-	  trdata = Trdata.get_all
+	  trpok_info = Trpok.get_all
+	  trdata_info = Trdata.get_all
+	  personals = Personal.poke_data
 
-	  master_data = parse(encs, trdata, trpok)
+	  master_data = parse(encs, trdata_info, trpok_info)
 	  encounters_by_id = Encounter.mastersheet_data(encs)
 
+	  i = 0
 	  trainers_by_id = Trpok.get_all.map do |tr|
-	    tr_data = tr
-	    tr_data["raw"] = nil
-	    tr_data
+	    
+	    trdata_info_file = trdata_info[i]
+	    num_pokemon = trdata_info_file["num_pokemon"]
+
+	    (0..num_pokemon - 1).each do |n|
+	    	# Detect alt forms
+	    	form = tr["form_#{n}"] 
+
+	    	if form > 0
+	    		species = tr["species_id_#{n}"]
+	    		if !(["Arceus", "Deerling"].include?(species))
+						
+	    			# Update name
+						species_name = tr["species_id_#{n}"].titleize
+
+						if !RomInfo.form_info[species_name]
+							p "No form info available for #{species_name} on Trainer #{i}"
+							next
+						end
+						species_name += "-#{RomInfo.form_info[species_name][form - 1]}"
+						tr["species_id_#{n}"] = species_name.upcase
+
+						# Update Ability
+						alt_form_personal_file_index = personals[tr["raw"]["species_id_#{n}"]]["form_id"] + form - 1
+						alt_form_personal_file = personals[alt_form_personal_file_index]
+						ability_index = tr["ability_#{n}"]
+
+						tr["ability_name_#{n}"] = alt_form_personal_file["abilities_#{[ability_index, 1].min}"]
+					end
+	    	end
+	    end
+			ms_trainer = tr
+	    ms_trainer["type"] = trdata_info_file["battle_type_1"]
+			# Clear the raw section to save space 
+	    ms_trainer["raw"] = nil
+	    i += 1
+	    ms_trainer
 	  end
 
 	  payload = {

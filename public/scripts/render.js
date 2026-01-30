@@ -13,7 +13,7 @@
  */
 
 // POKEWEB MODE
-IMAGE_FOLDER = "images"
+ IMAGE_FOLDER = "images"
 // CALC MODE
 // IMAGE_FOLDER = "img"
 
@@ -150,16 +150,18 @@ function renderInlineParts(el) {
 /* ----------------------------- trainer rendering --------------------------- */
 
 function renderTrainerCard(masterEl, trainer, elementIndex) {
-  // masterEl.class is your mastersheet-specific grouping class (e.g. "mand")
+
   const msClass = masterEl.class ? escapeAttr(masterEl.class) : "";
   const notes = Array.isArray(masterEl.notes) ? masterEl.notes : [];
 
-  // You can tweak these to match your exact naming convention
   const dataIndex = masterEl.id ?? "";
-  const dataElement = ""; // in your sample it was empty; you can set to elementIndex if you want.
+  const dataElement = ""; 
 
   const trainerDisplayName = buildTrainerDisplayName(trainer);
   const trainerSpriteSrc = buildTrainerSpriteSrc(trainer);
+
+  const battleType = trainer.type
+  const shouldShowBattleType = (battleType == "Doubles" || battleType == "Triples")
 
   let html = "";
   html += `<div class="expanded-field filterable ms-trainer ${msClass} " data-index="${escapeAttr(
@@ -170,8 +172,15 @@ function renderTrainerCard(masterEl, trainer, elementIndex) {
   html += `<img src="${escapeAttr(trainerSpriteSrc)}" class="" loading="lazy" data-="" /> `;
   html += `${trainerDisplayName}\n`;
   html += `      <div class="tr-notes">\n`;
-  // If notes contain markup you want to preserve, remove escapeHtml here.
+
   for (const n of notes) html += `        ${escapeHtml(String(n))}\n`;
+
+  if (shouldShowBattleType) {
+    html += `<br>(${battleType})\n`
+  }
+
+ 
+
   html += `      </div>\n`;
   html += `    </div>\n`;
   html += `  </div>\n\n`;
@@ -355,7 +364,6 @@ function normalizeSpriteFileName(name) {
     .replace(/['’]/g, "")
     .replace(/[♀]/g, "f")
     .replace(/[♂]/g, "m")
-    .replace(/[\s-]+/g, "_");
 }
 
 /* -------------------------- gifts / items / notif -------------------------- */
@@ -397,6 +405,7 @@ function renderGiftsBlock(el) {
 
   // table-like layout using divs (no strict styling assumptions)
   let html = "";
+  html += `<div class="flex-break"></div>\n`
   html += `<div class="ms-block ms-gifts">\n`;
   html += `  <div class="ms-row">\n`;
   html += `    <div class="ms-left">\n`;
@@ -430,6 +439,7 @@ function renderGiftsBlock(el) {
 
   html += `  </div>\n`;
   html += `</div>\n`;
+  html += `<div class="flex-break"></div>\n`
 
   return html;
 }
@@ -487,14 +497,16 @@ function renderNotificationBlock(el) {
   const color = el.fontColor ?? ""
 
   let html = "";
+  html += `<div class="flex-break"></div>\n`
   html += `<div class="ms-block ms-notif">\n`;
   html += `  <div class="ms-row">\n`;
   html += `    <div class="ms-left" style="background: ${color}">\n`;
   html += `      <div class="ms-left-title">${title}</div>\n`;
   html += `    </div>\n`;
-  html += `    <div class="ms-notif-body">${body}</div>\n`;
+  html += `    <div class="ms-notif-body">${body.replaceAll(",", ", ")}</div>\n`;
   html += `  </div>\n`;
   html += `</div>\n`;
+  html += `<div class="flex-break"></div>\n`
 
   return html;
 }
