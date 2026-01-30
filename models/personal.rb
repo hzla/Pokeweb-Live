@@ -25,11 +25,11 @@ class Personal
 		if $gen == 5
 
 			if SessionSettings.base_rom == "BW2"
-				data[652]["name"] = "UFO"
-				data[653]["name"] = "BrycenMan"
-				data[654]["name"] = "MT"
-				data[655]["name"] = "MT2"
-				data[656]["name"] = "Transport"
+				data[652]["name"] = "Sawsbuck-Summer"
+				data[653]["name"] = "Sawsbuck-Autumn"
+				data[654]["name"] = "Sawsbuck-Winter"
+				data[655]["name"] = "Shellos-East"
+				data[656]["name"] = "Gastrodon-East"
 				data[683]["name"] = "Black Belt"
 				data[658]["name"] = "Humanoid"
 				data[659]["name"] = "Monster"
@@ -524,10 +524,10 @@ end
 
 		tutors = {}
 		tutors["tutors"] = ["Grass Pledge", "Fire Pledge", "Water Pledge", "Frenzy Plant", "Blast Burn", "Hydro Cannon", "Draco Meteor" ]
-		tutors["driftveil_tutor"] = ["Bug Bite", "Covet","Super Fang","Dual Chop","Signal Beam","Iron Head","Seed Bomb","Drill Run", "Bounce", "Low Kick", "Gunk Shot", "Uproar", "Thunder Punch", "Fire Punch", "Ice Punch"]
-		tutors["lentimas_tutor"] = ["Magic Coat", "Block","Earth Power","Foul Play","Gravity","Magnet Rise","Iron Defense","Last Resort","Superpower","Electroweb","Icy Wind","Aqua Tail","Dark Pulse","Zen Headbutt","Dragon Pulse","Hyper Voice","Iron Tail"]
-		tutors["humilau_tutor"] = ["Bind","Snore","Knock Off","Synthesis","Heat Wave","Role Play","Heal Bell","Tailwind","Sky Attack","Pain Split","Giga Drain","Drain Punch","Roost"]
-		tutors["nacrene_tutor"] = ["Gastro Acid","Worry Seed","Spite","After You","Helping Hand","Trick","Magic Room","Wonder Room","Endeavor","Outrage","Recycle","Snatch","Stealth Rock","Sleep Talk","Skill Swap"]
+		tutors["driftveil_tutor"] = ["Skitter Smack", "Seed Bomb","Skill Swap","Dual Chop","Signal Beam","Iron Head","Psychic Noise","Drill Run", "Bounce", "Low Kick", "Cross Poison", "Seething Cold", "Thunder Punch", "Fire Punch", "Ice Punch"]
+		tutors["lentimas_tutor"] = ["Magic Coat", "Barrier","Earth Power","Foul Play","Gravity","Zen Headbutt","Self Destruct","Explosion","Focus Punch","Sweet Scent","Gastro Acid","Aqua Tail","Protect","Psyblade","Follow Me","Defense Curl","Iron Tail"]
+		tutors["humilau_tutor"] = ["Double-Edge","Heal Pulse","Lucky Chant","Synthesis","Overheat","Helping Hand","Healing Wish","Rest","Head Smash","Toxic","Outrage","Superpower","Roost"]
+		tutors["nacrene_tutor"] = ["Fake Tears","Screech","Incinerate","Defog","Sparkle","Electroweb","Chilling Water","Low Sweep","Struggle Bug","Breaking Swipe","Icy Wind","Natural Gift","Snarl","Take Down","Uproar"]
 		
 		["tutors", "driftveil_tutor", "lentimas_tutor", "humilau_tutor", "nacrene_tutor"].each do |tutor|
 			tutor_data = get_tutor_list(personal_data, tutor)
@@ -551,10 +551,10 @@ end
 	def self.tutor_moves list="default"
 		tutors = {}
 		tutors["tutors"] = ["Grass Pledge", "Fire Pledge", "Water Pledge", "Frenzy Plant", "Blast Burn", "Hydro Cannon", "Draco Meteor" ]
-		tutors["driftveil_tutor"] = ["Bug Bite", "Covet","Super Fang","Dual Chop","Signal Beam","Iron Head","Seed Bomb","Drill Run", "Bounce", "Low Kick", "Gunk Shot", "Uproar", "Thunder Punch", "Fire Punch", "Ice Punch"]
-		tutors["lentimas_tutor"] = ["Magic Coat", "Block","Earth Power","Foul Play","Gravity","Magnet Rise","Iron Defense","Last Resort","Superpower","Electroweb","Icy Wind","Aqua Tail","Dark Pulse","Zen Headbutt","Dragon Pulse","Hyper Voice","Iron Tail"]
-		tutors["humilau_tutor"] = ["Bind","Snore","Knock Off","Synthesis","Heat Wave","Role Play","Heal Bell","Tailwind","Sky Attack","Pain Split","Giga Drain","Drain Punch","Roost"]
-		tutors["nacrene_tutor"] = ["Gastro Acid","Worry Seed","Spite","After You","Helping Hand","Trick","Magic Room","Wonder Room","Endeavor","Outrage","Recycle","Snatch","Stealth Rock","Sleep Talk","Skill Swap"]
+		tutors["driftveil_tutor"] = ["Skitter Smack", "Seed Bomb","Skill Swap","Dual Chop","Signal Beam","Iron Head","Psychic Noise","Drill Run", "Bounce", "Low Kick", "Cross Poison", "Seething Cold", "Thunder Punch", "Fire Punch", "Ice Punch"]
+		tutors["lentimas_tutor"] = ["Magic Coat", "Barrier","Earth Power","Foul Play","Gravity","Zen Headbutt","Self Destruct","Explosion","Focus Punch","Sweet Scent","Gastro Acid","Aqua Tail","Protect","Psyblade","Follow Me","Defense Curl","Iron Tail"]
+		tutors["humilau_tutor"] = ["Double-Edge","Heal Pulse","Lucky Chant","Synthesis","Overheat","Helping Hand","Healing Wish","Rest","Head Smash","Toxic","Outrage","Superpower","Roost"]
+		tutors["nacrene_tutor"] = ["Fake Tears","Screech","Incinerate","Defog","Sparkle","Electroweb","Chilling Water","Low Sweep","Struggle Bug","Breaking Swipe","Icy Wind","Natural Gift","Snarl","Take Down","Uproar"]
 		tutors[list]
 	end
 
