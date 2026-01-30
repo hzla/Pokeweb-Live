@@ -25,9 +25,9 @@ p "init"
 
 $gen = 5
 
-# if ENV["ROMNAME"]
-# 	$rom_name = ENV["ROMNAME"]
-# end
+if ENV["ROMNAME"]
+	$rom_name = ENV["ROMNAME"]
+end
 # $gen = 4
 
 
