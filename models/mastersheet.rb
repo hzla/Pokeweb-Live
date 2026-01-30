@@ -40,7 +40,7 @@ class Mastersheet
 						alt_form_personal_file = personals[alt_form_personal_file_index]
 						ability_index = tr["ability_#{n}"]
 
-						tr["ability_name_#{n}"] = alt_form_personal_file["ability_#{[ability_index, 1].min}"].titleize
+						tr["ability_name_#{n}"] = alt_form_personal_file["ability_#{[ability_index, 1].max}"].titleize
 					end
 	    	end
 	    end
