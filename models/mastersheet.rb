@@ -43,6 +43,14 @@ class Mastersheet
 						tr["ability_name_#{n}"] = alt_form_personal_file["ability_#{[ability_index, 1].max}"].titleize
 					end
 	    	end
+
+	    	# Get correct AI exclusive ability
+
+	    	ability_index = tr["ability_#{n}"]
+
+	    	if ability_index > 3
+	    		tr["ability_name_#{n}"] = Trpok.aiAbilities[tr["raw"]["species_id_#{n}"]][ability_index - 4]
+	    	end
 	    end
 			ms_trainer = tr
 	    ms_trainer["type"] = trdata_info_file["battle_type_1"]
