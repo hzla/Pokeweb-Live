@@ -12,9 +12,6 @@ class Trpok < Pokenarc
 		poks
 	end
 
-
-
-
 	def self.get_trainer_class id
 		Trdata.get_data("#{$rom_name}/json/trdata/#{id}.json")["class"]
 	end
@@ -868,21 +865,7 @@ class Trpok < Pokenarc
 			personal = JSON.parse(File.open(file_path, "r"){|f| f.read})["readable"]
 			
 			form = poks["form_#{i}"].to_i
-
-			if form > 0 && !(["Deerling","Sawsbuck","Gastrodon","Shellos","Arceus"].include?(species))
-				species_name = species
-
-				begin
-					species += "-#{RomInfo.form_info[species_name][form - 1]}"
-				rescue
-				
-				end
-			end
-
-
-
 			ability_id = poks["ability_#{i}"]
-
 			
 
 			item = poks["item_id_#{i}"]
@@ -891,7 +874,6 @@ class Trpok < Pokenarc
 			nature = nature_info[0]
 			pid = nature_info[1] 
 			
-			p tr_id
 
 			begin
 
@@ -906,6 +888,21 @@ class Trpok < Pokenarc
 				ability_id = ((pid >> 16) % 2) + 1
 			end
 			ability = personal["ability_#{ability_id}"]
+
+			# Adjust species name/ability for alt forms
+			if form > 0 && !(["Arceus", "Deerling"].include?(species))
+				species_name = species
+
+				begin
+					species += "-#{RomInfo.form_info[species_name][form - 1]}"
+				rescue
+				
+				end
+				alt_form_file_path = "#{$rom_name}/json/personal/#{personal["form_id"] + form - 1}.json"
+				alt_form_personal_file = JSON.parse(File.open(alt_form_file_path, "r"){|f| f.read})["readable"]
+				ability_index = poks["ability_#{i}"]
+				ability = alt_form_personal_file["ability_#{ability_index}"]
+			end
 
 			moves = []
 			(1..4).each do |n|

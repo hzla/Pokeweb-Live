@@ -25,7 +25,9 @@ p "init"
 
 $gen = 5
 
-# $rom_name = "projects/cascadewhite106"
+if ENV["ROMNAME"]
+	$rom_name = ENV["ROMNAME"]
+end
 # $gen = 4
 
 
