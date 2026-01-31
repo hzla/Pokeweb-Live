@@ -191,19 +191,25 @@ class Personal
 
 			(0..6).each do |j|
 
-				break if raw["target_#{j}"] == 0
-
-
+				break if raw["target_#{j}"] == 0 || raw["param_#{j}"] == 0
 
 				target = readable["target_#{j}"].name_titleize
 
 				showdown[poks[i]["name"].name_titleize]["evos"] ||= []
+				showdown[poks[i]["name"].name_titleize]["evoMethods"] ||= []
+				showdown[poks[i]["name"].name_titleize]["evoParams"] ||= []
 				showdown[poks[i]["name"].name_titleize]["evos"] << target
+
+				evo_param = ""
+
+				
+				# Update data on the target evolution
 
 				# level evolution
 				if [4,9,10,11,12,13,14,15,23,24].include?(raw["method_#{j}"])
 					showdown[target]["evoType"] = "level"
 					showdown[target]["evoLevel"] = raw["param_#{j}"]
+					evo_param = raw["param_#{j}"]
 				end
 
 				if raw["method_#{j}"] == 1
@@ -213,11 +219,13 @@ class Personal
 				if raw["method_#{j}"] == 2
 					showdown[target]["evoType"] = "levelFriendship"
 					showdown[target]["evoCondition"] = "during the day"
+					evo_param = "during the day"
 				end
 
 				if raw["method_#{j}"] == 3
 					showdown[target]["evoType"] = "levelFriendship"
 					showdown[target]["evoCondition"] = "during the night"
+					evo_param = "during the night"
 				end
 
 				if [5,6,7,16,22].include?(raw["method_#{j}"])
@@ -229,6 +237,7 @@ class Personal
 				if item_methods.include?(raw["method_#{j}"])
 					showdown[target]["evoType"] = "useItem"
 					showdown[target]["evoItem"] = readable["param_#{j}"].name_titleize
+					evo_param = readable["param_#{j}"].name_titleize
 				end
 
 				move_methods = $gen == 4 ? [20] : [21]
@@ -236,14 +245,22 @@ class Personal
 				if move_methods.include?(raw["method_#{j}"])
 					showdown[target]["evoType"] = "levelMove"
 					showdown[target]["evoMove"] = readable["param_#{j}"].name_titleize
+					evo_param = readable["param_#{j}"].name_titleize
 				end
 
 				if [25,26,27,28].include?(raw["method_#{j}"])
 					showdown[target]["evoType"] = "levelExtra"
 					showdown[target]["evoCondition"] = readable["method_#{j}"]
+					evo_param = readable["method_#{j}"]
 				end
+
+				# Update data on the source pokemon
+				showdown[poks[i]["name"].name_titleize]["evoMethods"] << showdown[target]["evoType"]
+				showdown[poks[i]["name"].name_titleize]["evoParams"] << evo_param			
 			end
 		end
+
+
 
 		open("./exports/dex/species.js", "w") do |f| 
 			f.print ("exports.BattlePokedex = ")
