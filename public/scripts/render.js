@@ -12,11 +12,21 @@
  *
  */
 
-// POKEWEB MODE
- IMAGE_FOLDER = "images"
-// CALC MODE
-// IMAGE_FOLDER = "img"
+// POKEWEB MODE or Use LIVE CALC MODE if not serving dex and calc locally
+// clicking on trainers will not update calc when testing locally (need same domain)
+IMAGE_FOLDER = "images"
+DEX_URL = "http://localhost:3001" 
+CALC_URL = "http://localhost:3002?data=casc"
 
+// LIVE CALC MODE
+// IMAGE_FOLDER = "img"
+// DEX_URL = "https://https://ddex-chi.vercel.app?game=cascadewhite"
+// CALC_URL = "https://hzla.github.io/Dynamic-Calc-Decomps"
+
+// LOCAL CALC MODE
+// IMAGE_FOLDER = "img"
+// DEX_URL = "http://localhost:3001" 
+// CALC_URL = "http://localhost:3002?data=casc"
 
 function renderMasterData(masterData, trainersById, encountersById) {
   let html = "";
@@ -535,7 +545,7 @@ function prettifyMoveName(s) {
 function loadDex(url) {
   // Create iframe element
 
-  if ($('iframe').length > 0) {
+  if ($('iframe.dex-window').length > 0) {
     $('iframe').show()
     $('.iframe-close-btn').show()
     return;
@@ -544,11 +554,12 @@ function loadDex(url) {
   const iframe = document.createElement('iframe');
 
   // Set iframe properties
-  iframe.src = `https://ddex-chi.vercel.app/${url}`;
+  iframe.src = `${DEX_URL}/${url}`;
+  iframe.classList.add("dex-window");
   iframe.style.position = 'fixed';
   iframe.style.top = '44px';
   iframe.style.left = '0%';
-  iframe.style.width = '20vw';
+  iframe.style.width = '18vw';
   iframe.style.height = 'calc(100vh - 44px)';
   iframe.style.border = '2px solid #333';
   iframe.style.zIndex = '999999';
@@ -565,12 +576,12 @@ function extractPokemonName(str) {
 }
 
 function loadDexPage(collection, speciesName) {
-  $('iframe').remove()
+  $('iframe.dex-window').remove()
   $('#toc').hide()
   $('.filter-title').removeClass('active')
   $('.dex-tab').addClass('active')
   loadDex(`${collection}/${speciesName}`)
-  $('iframe').show()
+  $('iframe.dex-window').show()
 }
 
 function constructToc() {
@@ -738,21 +749,28 @@ $(document).ready(function() {
     })
 
     $('.dex-tab').click(function() {
-      $('iframe').show()
+      $('iframe.dex-window').show()
       $('#toc').hide()
       $('.filter-title').removeClass('active')
       $(this).addClass('active')
+    })
 
+    $('.calc-tab').click(function() {
+      $('.calc-drawer').show()
+      loadCalc(CALC_URL)
+      $('.filter-title').removeClass('active')
+      $(this).addClass('active')
     })
 
     $('.toc-tab').click(function() {
-      $('iframe').hide()
+      $('iframe.dex-window, .calc-drawer').hide()
       $('#toc').show()
       $('.filter-title').removeClass('active')
       $(this).addClass('active')
     })
 
     $('#toc div').on('click', function(event) {
+        $('iframe.dex-window, .calc-drawer').hide()
         event.preventDefault(); // Prevent default action, like link navigation
 
         // Get the value of the data-link attribute from the clicked element
@@ -776,11 +794,151 @@ $(document).ready(function() {
 
     const toc = document.getElementById('toc');
     window.addEventListener("resize", layoutPile);
-
 })
 
+/* ------------------------------ Tab Communications ---------------------------- */
+
+// --- Calc loader w/ readiness gate ---
+let calcReady = false;
+let calcReadyPromise = null;
+
+function openExistingDrawer() {
+  const existing = document.querySelector('.calc-drawer');
+  if (!existing) return null;
+
+  existing.style.display = '';
+  $('.iframe-close-btn').show();
+  requestAnimationFrame(() => existing.classList.add('is-open'));
+  return existing;
+}
+
+function loadCalc(url) {
+  // If already created, just open + return the existing readiness promise
+  const existing = openExistingDrawer();
+  if (existing) {
+    // If it's already ready, resolve immediately
+    if (calcReady) return Promise.resolve();
+    // Otherwise return whatever promise we created when we first built it
+    if (calcReadyPromise) return calcReadyPromise;
+
+    // Fallback: if something created the drawer without our promise, wire it now
+    const iframe = existing.querySelector('iframe.calc-window');
+    calcReadyPromise = new Promise((resolve) => {
+      if (!iframe) return resolve(); // nothing to wait for
+      if (iframe.contentWindow && iframe.contentDocument?.readyState === "complete") {
+        calcReady = true;
+        return resolve();
+      }
+      iframe.addEventListener('load', () => {
+        calcReady = true;
+        resolve();
+      }, { once: true });
+
+      // Safety timeout so you don't get stuck forever
+      setTimeout(() => resolve(), 8000);
+    });
+    return calcReadyPromise;
+  }
+
+  // Create drawer
+  const drawer = document.createElement('div');
+  drawer.className = 'calc-drawer';
+
+  Object.assign(drawer.style, {
+    position: 'fixed',
+    top: '0',
+    right: '0',
+    width: '82vw',
+    height: '100vh',
+    zIndex: '999999',
+    overflow: 'hidden',
+    border: '2px solid #333',
+    boxShadow: '0 4px 20px rgba(0,0,0,0.3)',
+    background: 'transparent',
+    transform: 'translateX(100%)',
+    transition: 'transform 0.5s ease-out',
+    willChange: 'transform'
+  });
+
+  const iframe = document.createElement('iframe');
+  iframe.className = 'calc-window';
+
+  // Start loading ASAP
+  iframe.src = CALC_URL; // or `${CALC_URL}/${url}` if needed
+  iframe.loading = 'eager';
+
+  Object.assign(iframe.style, {
+    width: '100%',
+    height: '100%',
+    border: '0',
+    display: 'block',
+    background: 'transparent'
+  });
+
+  drawer.appendChild(iframe);
+  document.body.appendChild(drawer);
+
+  // Trigger slide-in next frame
+  requestAnimationFrame(() => {
+    drawer.style.transform = 'translateX(0)';
+    drawer.classList.add('is-open');
+  });
+
+  // Create a one-time readiness promise for THIS iframe
+  calcReady = false;
+  calcReadyPromise = new Promise((resolve) => {
+    iframe.addEventListener('load', () => {
+      calcReady = true;
+      resolve();
+    }, { once: true });
+
+    // Safety timeout so click doesn't get stuck if load never fires
+    setTimeout(() => resolve(), 8000);
+  });
+
+  return calcReadyPromise;
+}
 
 
+// --- BroadcastChannel plumbing (unchanged) ---
+const channel = new BroadcastChannel("my_app_channel");
+const TAB_ID = crypto.randomUUID?.() ?? String(Date.now()) + Math.random();
+
+function onMessage(handler) {
+  channel.addEventListener("message", (e) => {
+    const msg = e.data;
+    if (!msg || msg.sender === TAB_ID) return;
+    handler(msg);
+  });
+}
+
+function send(type, payload) {
+  channel.postMessage({
+    sender: TAB_ID,
+    type,
+    payload,
+    ts: Date.now(),
+  });
+}
+
+function close() {
+  channel.close();
+}
+
+
+// --- Click: ensure calc is loaded BEFORE sending setId ---
+$(document).on("click", ".trainer-name", async function () {
+  const setId = $(this).closest(".ms-trainer").attr("data-index");
+  if (setId == null) return;
+
+  // Open/create + wait until iframe load fired
+  await loadCalc(CALC_URL);
+
+  // Now it's safe to send (calc is loaded)
+  send("SET_ID", { setId: String(setId) });
+  $('.filter-title').removeClass('active')
+  $('.calc-tab').addClass('active')
+});
 
 
 

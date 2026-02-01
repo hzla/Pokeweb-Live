@@ -1,8 +1,8 @@
 #mastersheet {
 	color:  #f1f1f1;
 	padding-top:  20px;
-	max-width: calc(80vw - 40px);
-	margin-left: calc(20vw + 20px);
+	max-width: calc(82vw - 40px);
+	margin-left: calc(18vw + 20px);
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: flex-start;
@@ -17,17 +17,17 @@
     padding-top: 0px;
     max-height: 100vh;
     padding: 0px;
-    display: fixed;
+    position: fixed;
     top: 0;
     left: 0;
-    width: 20vw;
+    width: 18vw;
 }
 
 #toc {
 	position: fixed;
 	left: 0;
 	top: 44px;
-	width: 20vw;
+	width: 18vw;
 	overflow: scroll;
 	height: calc(100vh - 44px);
 }
@@ -199,6 +199,11 @@
 
 .ms-trainer.mand .trainer-name {
 	color: #bd93f9;
+}
+
+.ms-trainer .trainer-name:hover {
+	text-decoration: underline;
+	cursor: pointer;
 }
 
 .ms-trainer.expanded-field.filterable {
@@ -423,8 +428,8 @@
 	padding-left: 40px;
 }
 
-.master-sidebar.pokemon-filter > .filter-title {
-    width: 10vw;
+#filter-tabs {
+    width: 18vw;
     cursor: pointer;
     height: 44px;
     position: fixed;
@@ -432,11 +437,18 @@
     margin: 0;
     line-height: 44px;
     padding: 0;
+    display: flex;
 }
 
-.master-sidebar.pokemon-filter > .dex-tab {
-	left: 10vw;
+#filter-tabs .filter-title {
+	cursor: pointer;
+	text-align: center;
+	width: 33.33%;
+	margin: 0;
+	padding: 0;
 }
+
+
 
 .master-sidebar .filter-title.active {
     background: #bd93f9;
