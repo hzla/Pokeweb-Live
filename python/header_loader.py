@@ -79,10 +79,6 @@ for narc in NARCS:
 	file_id = rom.filenames[narc[0]]
 	file = rom.files[file_id]
 
-	if narc[1] == "scripts":
-		with open(f'a056.narc', 'wb') as f:
-			f.write(file)
-
 	try:
 		narc_file = ndspy.narc.NARC(file)
 	except:
