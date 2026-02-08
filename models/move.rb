@@ -93,9 +93,16 @@ class Move < Pokenarc
         	move_descs = message_texts[202].map {|entry| entry[1].gsub('\\n', " ")}
         end
 
+        vanilla_move_descs = JSON.parse File.read("documentation/vanilla/move_descriptions.json")
+
+        
+
 		showdown = {}
 		moves.each_with_index do |move, i|
 			showdown_name = sub_showdown(move[1]["name"].move_titleize)
+
+			normalized_move_name = showdown_name.clean
+
 
 			showdown[showdown_name] = {}
 			showdown[showdown_name]["t"] = move[1]["type"].titleize
@@ -108,7 +115,15 @@ class Move < Pokenarc
 			showdown[showdown_name]["num"] = i
 
 
+			if vanilla_move_descs[normalized_move_name] && vanilla_move_descs[normalized_move_name] != move_descs[i + 1] 
+				# p "updated description for #{showdown_name}"
+				# p "   old: #{vanilla_move_descs[normalized_move_name]}"
+				# p "   new: #{move_descs[i + 1]}"
+				# puts
+				showdown[showdown_name]["oldDesc"] = vanilla_move_descs[normalized_move_name]	
+			end
 			showdown[showdown_name]["desc"] = move_descs[i + 1]
+
 
 
 
@@ -147,7 +162,7 @@ class Move < Pokenarc
 				showdown[showdown_name]["flags"]["sound"] = true
 			end
 		end
-
+		
 		open("./exports/dex/moves.js", "w") do |f|
 			f.print "exports.BattleMovedex = " 
 			f.print JSON.pretty_generate(showdown)
