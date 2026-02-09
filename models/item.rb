@@ -70,6 +70,7 @@ class Item < Pokenarc
 		marts = Mart.get_all
 
 		dex_items = {}
+		vanilla_descs = JSON.parse File.read("documentation/vanilla/items.json")
 
 		if SessionSettings.base_rom == "BW2"
 			item_descs = message_texts[63].map {|entry| entry[1]}
@@ -82,10 +83,18 @@ class Item < Pokenarc
 		item_names.each_with_index do |item, i|
 			item_data = {}
 
-			item_id = item.downcase.gsub(" ","").gsub("-", "").gsub(".", "").gsub("'", "")
+			item_id = item.downcase.gsub(" ","").gsub("-", "").gsub(".", "").gsub("'", "").gsub("poke","poké")
 
 			item_data["name"] = item
-			item_data["desc"] = item_descs[i].gsub("\n", " ")
+			item_data["desc"] = item_descs[i].gsub('\\n', " ")
+
+			if item_data["desc"] != vanilla_descs[item_id]
+				item_data["oldDesc"] = vanilla_descs[item_id]
+			end
+			
+			if !vanilla_descs[item_id]
+				item_data["new"] = true
+			end
 
 			item_data["location"] = items[i]["location"] ? items[i]["location"].join(", ") : ""
 			dex_items[item_id] = item_data
@@ -93,7 +102,7 @@ class Item < Pokenarc
 
 		trainers.each do |tr|
 			if tr["reward_item"] && tr["reward_item"] != "None"
-				item_id = tr["reward_item"].downcase.gsub(" ","").gsub("-", "").gsub(".", "").gsub("'", "")
+				item_id = tr["reward_item"].downcase.gsub(" ","").gsub("-", "").gsub(".", "").gsub("'", "").gsub("poke","poké")
 				if dex_items[item_id]
 					tr_title = "#{tr["class"]} #{tr["name"]}"
 
@@ -120,7 +129,7 @@ class Item < Pokenarc
 
 				items.each_with_index do |item|
 					if item != "None"
-						item_id = item.downcase.gsub(" ","").gsub("-", "").gsub(".", "").gsub("'", "")
+						item_id = item.downcase.gsub(" ","").gsub("-", "").gsub(".", "").gsub("'", "").gsub("poke","poké")
 						dex_items[item_id]["wilds"] ||= []
 						dex_items[item_id]["wilds"] << species
 						dex_items[item_id]["wilds"] = dex_items[item_id]["wilds"].uniq

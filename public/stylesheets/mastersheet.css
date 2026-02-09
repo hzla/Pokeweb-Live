@@ -233,6 +233,10 @@
 .trainer-doc-item .trpok-item-info {
 	border-bottom: 1px solid rgba(255,255,255,0.2);
 	width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: clip;
+  height: 25px;
 }
 
 #mastersheet .expanded-field.filterable.ms-trainer {

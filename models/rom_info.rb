@@ -16,6 +16,8 @@ class RomInfo
 
     def self.export_abilities
         message_texts = JSON.parse File.read("#{$rom_name}/message_texts/texts.json")
+        vanilla_descs = JSON.parse File.read("documentation/vanilla/abilities.json")
+
         if SessionSettings.base_rom == "BW2"
             ability_names = message_texts[374].map {|entry| entry[1]}
             ability_descs = message_texts[375].map {|entry| entry[1]}
@@ -27,16 +29,23 @@ class RomInfo
         ability_overrides = {}
 
         ability_names.each_with_index do |ab, i|
-            ab_id = ab.downcase.gsub(" ", "").gsub("-", "").gsub(".", "").gsub(",", "")
+            ab_id = ab.downcase.clean
             ab_data = {}
             ab_data["name"] = ab
             ab_data["desc"] = ability_descs[i].gsub('\\n', " ")
+
+            if ab_data["desc"] != vanilla_descs[ab_id]
+                ab_data["oldDesc"] = vanilla_descs[ab_id]
+            end
+            if !vanilla_descs[ab_id]
+                ab_data["new"] = true
+            end
             ability_overrides[ab_id] = ab_data
         end
-        open("./exports/dex/abilities.js", "w") do |f|
-            f.print "exports.BattleAbilities = " 
-            f.print JSON.pretty_generate(ability_overrides)
-        end
+
+        File.write("documentation/vanilla/abilities.json", JSON.pretty_generate(vanilla_descs))
+
+
         ability_overrides
 
     end

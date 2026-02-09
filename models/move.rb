@@ -115,13 +115,13 @@ class Move < Pokenarc
 			showdown[showdown_name]["num"] = i
 
 
-			if vanilla_move_descs[normalized_move_name] && vanilla_move_descs[normalized_move_name] != move_descs[i + 1] 
-				# p "updated description for #{showdown_name}"
-				# p "   old: #{vanilla_move_descs[normalized_move_name]}"
-				# p "   new: #{move_descs[i + 1]}"
-				# puts
+			if vanilla_move_descs[normalized_move_name] != move_descs[i + 1] 
 				showdown[showdown_name]["oldDesc"] = vanilla_move_descs[normalized_move_name]	
 			end
+			if !vanilla_move_descs[normalized_move_name]
+				showdown[showdown_name]["new"] = true
+			end
+				
 			showdown[showdown_name]["desc"] = move_descs[i + 1]
 
 

@@ -77,10 +77,56 @@ class Mastersheet
 
 	    file.puts "trainersById ="
 	    file.puts JSON.pretty_generate(trainers_by_id)
+
+	    file.puts "highlights ="
+	    file.puts JSON.pretty_generate(highlighted_elements)
 	  end
 
 	  payload
 	end
+
+	# Gets all 
+	def self.highlighted_elements
+		rom_title = $rom_name.split("projects/")[1]
+
+		to_highlight = {"new" => {}, "changed" => {}}
+
+		if File.exist?("exports/dex/#{rom_title}.js")
+			rom_data = JSON.parse File.read("exports/dex/#{rom_title}.js")[12..-1] 
+		else
+			return to_highlight
+		end
+
+		rom_data["items"].each do |item, desc|
+			if desc["new"] == true
+				to_highlight["new"][item] = 1
+			end
+			if desc["oldDesc"] 
+				to_highlight["changed"][item] = 1
+			end
+		end
+
+		rom_data["moves"].each do |item, desc|
+			if desc["new"] == true
+				to_highlight["new"][item.clean] = 1
+			end
+			if desc["oldDesc"] 
+				to_highlight["changed"][item.clean] = 1
+			end
+		end
+
+		rom_data["abilities"].each do |item, desc|
+			if desc["new"] == true
+				to_highlight["new"][item] = 1
+			end
+			if desc["oldDesc"]
+				to_highlight["changed"][item] = 1
+			end
+		end
+		to_highlight
+	end
+
+
 
 	def self.parse(encounters, trdata, trpok)
 	  source = File.open("#{$rom_name}/mastersheet.txt").read.split("\n")
