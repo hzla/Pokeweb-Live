@@ -69,16 +69,17 @@ class Trdata < Pokenarc
 		end
 	end
 
+	# Trainers that get their own sprite in the showdown sprite repo
+	def self.named_trainer_sprites
+		["virizion","cobalion", "terrakion","bianca","n","shauntal","marshal","grimsley","caitlin","elesa","burgh","skyla","cheren","roxie","clay","drayden","marlon","rival","benga","iris","colress","ghetsis","rood","zinzolin","shadow","cynthia","volkner","chili","cress","cilan","alder","ingo","emmet","brock","misty","erika","janine","sabrina","blaine","giovanni","red","blue","lenora"]
+	end
+
 	def self.sprite tr_name, tr_class, tr_class_id, g_table
 		tr_class = tr_class.downcase.gsub(" ", "").gsub("_m", "").gsub("♂","").gsub("♀", "f").gsub("é","e").gsub("[pk][mn]", "pkmn_")
 		tr_name = tr_name.downcase
-
-
-		
-		sprite_name = ""
-		
+	
 		# return the name of the trainer if it has a unique sprite
-		if File.exist?("./public/images/trainer_sprites/#{tr_name.gsub("boy", "silver")}.png") && tr_name != "grunt"
+		if File.exist?("./public/images/trainer_sprites/#{tr_name.gsub("boy", "silver")}.png") && tr_name != "grunt" && named_trainer_sprites.include?(tr_name)
 			sprite_name = "trainer_sprites/#{tr_name.gsub("boy", "silver")}.png"
 			return sprite_name
 		end
@@ -90,11 +91,13 @@ class Trdata < Pokenarc
 
 		if tr_class[-2] == "_"
 			sprite_name = "trainer_sprites/#{tr_class.gsub("pkmn", "pokemon")}.png"
-		elsif g_table[tr_class_id.to_i] == "female" && File.exist?("./public/images/trainer_sprites/#{tr_class}_f.png")	
-			sprite_name = "trainer_sprites/#{tr_class.gsub("pkmn", "pokemon")}_f.png"
+		elsif g_table[tr_class_id.to_i] == "female" && File.exist?("./public/images/trainer_sprites/#{tr_class}f.png")	
+			sprite_name = "trainer_sprites/#{tr_class.gsub("pkmn", "pokemon")}f.png"
 		else
 			sprite_name = "trainer_sprites/#{tr_class.gsub("pkmn", "pokemon")}.png"
 		end
+
+
 	
 		if $gen == 4 && File.exist?("./public/images/#{sprite_name.gsub(".png", "-gen4.png")}")
 			sprite_name = sprite_name.gsub(".png", "-gen4.png")
