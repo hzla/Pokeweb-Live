@@ -86,12 +86,16 @@ class Move < Pokenarc
 		moves = get_all[1..-1]
 
 		
-		message_texts = JSON.parse File.read("#{$rom_name}/message_texts/texts.json")
-		if SessionSettings.base_rom == "BW2"
-            move_descs = message_texts[402].map {|entry| entry[1].gsub('\\n', " ")}
-        else
-        	move_descs = message_texts[202].map {|entry| entry[1].gsub('\\n', " ")}
-        end
+		
+		move_descs = []
+		if $gen == 5
+			message_texts = JSON.parse File.read("#{$rom_name}/message_texts/texts.json")
+			if SessionSettings.base_rom == "BW2"
+	            move_descs = message_texts[402].map {|entry| entry[1].gsub('\\n', " ")}
+	        else
+	        	move_descs = message_texts[202].map {|entry| entry[1].gsub('\\n', " ")}
+	        end
+	    end
 
         vanilla_move_descs = JSON.parse File.read("documentation/vanilla/move_descriptions.json")
 
@@ -112,20 +116,8 @@ class Move < Pokenarc
 			showdown[showdown_name]["acc"] = move[1]["accuracy"]
 			showdown[showdown_name]["prio"] = move[1]["priority"]
 			showdown[showdown_name]["name"] = showdown_name
-			showdown[showdown_name]["num"] = i
-
-
-			if vanilla_move_descs[normalized_move_name] != move_descs[i + 1] 
-				showdown[showdown_name]["oldDesc"] = vanilla_move_descs[normalized_move_name]	
-			end
-			if !vanilla_move_descs[normalized_move_name]
-				showdown[showdown_name]["new"] = true
-			end
-				
-			showdown[showdown_name]["desc"] = move_descs[i + 1]
-
-
-
+			showdown[showdown_name]["num"] = i				
+			
 
 			showdown[showdown_name]["e_id"] = move[1]["effect_code"] || 0
 			if move[1]["target"] == "All adjacent opponents" 
@@ -140,26 +132,35 @@ class Move < Pokenarc
 				showdown[showdown_name]["willCrit"] = true
 			end
 
-			if move[1]["min_hits"] > 0
-				showdown[showdown_name]["multihit"] = [move[1]["min_hits"],move[1]["max_hits"]]
-			end
+			if $gen == 5
+				showdown[showdown_name]["desc"] = move_descs[i + 1]
+				if vanilla_move_descs[normalized_move_name] != move_descs[i + 1] 
+					showdown[showdown_name]["oldDesc"] = vanilla_move_descs[normalized_move_name]	
+				end
+				if !vanilla_move_descs[normalized_move_name]
+					showdown[showdown_name]["new"] = true
+				end
+				if move[1]["min_hits"] > 0
+					showdown[showdown_name]["multihit"] = [move[1]["min_hits"],move[1]["max_hits"]]
+				end
 
-			if move[1]["recoil"] > 0 and move[1]["recoil"] < 100
-				showdown[showdown_name]["recoil"] = [move[1]["recoil"], 100]
-			end
+				if move[1]["recoil"] > 0 and move[1]["recoil"] < 100
+					showdown[showdown_name]["recoil"] = [move[1]["recoil"], 100]
+				end
 
-			if move[1]["effect_category"].downcase.include?("stat")
-				showdown[showdown_name]["sf"] = true
-			end
+				if move[1]["effect_category"].downcase.include?("stat")
+					showdown[showdown_name]["sf"] = true
+				end
 
-			if move[1]["punch_move"] == 1
-				showdown[showdown_name]["flags"] ||= {}
-				showdown[showdown_name]["flags"]["punch"] = true
-			end
+				if move[1]["punch_move"] == 1
+					showdown[showdown_name]["flags"] ||= {}
+					showdown[showdown_name]["flags"]["punch"] = true
+				end
 
-			if move[1]["sound_move"] == 1
-				showdown[showdown_name]["flags"] ||= {}
-				showdown[showdown_name]["flags"]["sound"] = true
+				if move[1]["sound_move"] == 1
+					showdown[showdown_name]["flags"] ||= {}
+					showdown[showdown_name]["flags"]["sound"] = true
+				end
 			end
 		end
 		
